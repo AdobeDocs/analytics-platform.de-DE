@@ -6,11 +6,24 @@ feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
 role: Admin
 TQID: https://experienceleague.adobe.com/oCI3IKOfeOTpNQYOflo5QngPfu4ytnpyewA8ccOf64Q
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1998
@@ -102,7 +115,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Beispiel für die Schaltfläche zum Hinzufügen eines Feldes zum Schema](./assets/example-loalty-schema-plus.png)
 
-1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL Profile Core v2]** aus.
+1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]&#x200B;**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL Profile Core v2]** aus.
 
    ![Identifizierungsobjekt](./assets/identifcation-loyalty-field.png)
 
@@ -225,7 +238,7 @@ Gehen Sie folgendermaßen vor, um Workflows zu verwenden:
 
 6. Wählen Sie **[!UICONTROL Beenden]**, um Ihre Batch-Daten in Adobe Experience Platform aufzunehmen.
 
-Weitere [ zu finden Sie unter „Zuordnen CSV-Datei zu einem vorhandenen XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=de)Schema“:
+Weitere [&#x200B; zu finden Sie unter „Zuordnen CSV-Datei zu einem vorhandenen XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=de)Schema“:
 
 - Erfahren Sie, wie Sie Daten zuordnen, wenn Ihre eingehenden Daten nicht mit Ihrem XDM-Schema kompatibel sind.
 - Verwenden von Zuordnungsvorlagen,
@@ -315,7 +328,7 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
    Behalten Sie die Einstellungen bei und wählen Sie **[!UICONTROL Speichern und beenden]**.
 
-Weitere [ dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
+Weitere [&#x200B; dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
 
 
 ## Einrichten eines Projekts

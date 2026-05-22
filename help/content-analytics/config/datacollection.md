@@ -6,11 +6,18 @@ feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 TQID: https://experienceleague.adobe.com/B2j6BrXAHMu-3LKI61LbK01i-UdpMlELsqYSfAWYDCo
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
 source-wordcount: 1093
@@ -48,7 +55,7 @@ Die Content Analytics-Bibliothek erfasst Daten in folgenden Fällen:
 
 * Content Analytics ist in der Tag-Bibliothek enthalten, die auf der Seite geladen oder in der Mobile App verwendet wird.
 * Die Seiten-URL und die Asset-URL werden in der [Content Analytics-Web-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"} konfiguriert, die Teil der enthaltenen Tag-Bibliothek ist.
-* Die Asset-URL, der Asset-Speicherort oder der Erlebnisspeicherort sind in der [Content Analytics Mobile-Erweiterung nicht ](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/).
+* Die Asset-URL, der Asset-Speicherort oder der Erlebnisspeicherort sind in der [Content Analytics Mobile-Erweiterung nicht &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/).
 
 
 ## Content Analytics-Ereignis
@@ -126,7 +133,7 @@ Content Analytics verarbeitet Identitäten für den Webkanal wie folgt:
 * Feldbasiertes Stitching wird nicht unterstützt, da das Schema systemeigen ist. Sie können dem Schema also kein weiteres Feld zur Unterstützung von feldbasiertem Stitching hinzufügen.
 
 
-Um sicherzustellen, dass Content Analytics-Identitätsdaten und Web-SDK-Daten-Identitätsdaten auf Feldebene korrekt zugeordnet werden, ändern Sie den Rückruf Web SDK [on vor ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}.
+Um sicherzustellen, dass Content Analytics-Identitätsdaten und Web-SDK-Daten-Identitätsdaten auf Feldebene korrekt zugeordnet werden, ändern Sie den Rückruf Web SDK [on vor &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"}.
 
 1. Navigieren Sie zu Ihrer **[!UICONTROL Tags]**-Eigenschaft, die die Adobe Experience Platform Web SDK-Erweiterung und die Adobe Content Analytics-Erweiterung enthält.
 1. Wählen Sie ![Stecker](/help/assets/icons/Plug.svg) **[!UICONTROL Erweiterungen]** aus.
@@ -157,7 +164,7 @@ Um sicherzustellen, dass Content Analytics-Identitätsdaten und Web-SDK-Daten-Id
 
 ### Mobile
 
-Weitere Informationen [ Arbeiten mit Identitäten in Ihrer Mobile App finden Sie unter ](https://developer.adobe.com/client-sdks/home/base/mobile-core/identity/)Identity for Experience Cloud ID Service-Erweiterung](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/) und [Identity for Edge Network Mobile-Erweiterung .
+Weitere Informationen [&#x200B; Arbeiten mit Identitäten in Ihrer Mobile App finden Sie unter &#x200B;](https://developer.adobe.com/client-sdks/home/base/mobile-core/identity/)Identity for Experience Cloud ID Service-Erweiterung[&#128279;](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/) und Identity for Edge Network Mobile-Erweiterung .
 
 Sobald sich die Identität in der Mobile App ändert, wird der aktuelle [Batch](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/#batching-settings) der Content Analytics-Daten zurückgesetzt, um eine neue Erfassung der Content Analytics-Daten für die neue Identität zu starten.
 

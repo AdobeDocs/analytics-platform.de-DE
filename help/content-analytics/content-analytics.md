@@ -6,11 +6,26 @@ feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 TQID: https://experienceleague.adobe.com/x5FpRmZ-Wv6pPxYBEAyDzRqUSUpmwHFwbi55FwVKT5A
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
 source-wordcount: 905
@@ -52,10 +67,10 @@ Content Analytics verwendet Web- und mobile Bildansichtsdaten aus Experience Pla
 
 ![Content Analytics – Funktionsweise](assets/aca-overview-new.gif)
 
-1. Wenn ein(e) Benutzende(r) eine Website oder [ App besucht (für Content Analytics konfiguriert](config/configuration.md) zeichnet das Experience Platform Web oder Mobile SDK Impressionen und Interaktionen mit Inhalten auf.
+1. Wenn ein(e) Benutzende(r) eine Website oder [&#x200B; App besucht (für Content Analytics konfiguriert](config/configuration.md) zeichnet das Experience Platform Web oder Mobile SDK Impressionen und Interaktionen mit Inhalten auf.
 1. Der Identity and Feature Service verarbeitet diese Interaktionen. Dieser Prozess umfasst einen Abrufdienst, der die öffentlich zugänglichen Versionen der konfigurierten URLs, die die Interaktionen definieren, erneut aufruft. Bei allen abgerufenen URLs bewirkt der Identity Service eine eindeutige Identifizierung der Erlebnisse und Assets. Der Feature Service wendet KI-/ML-Services an, um Erlebnis- und Asset-Metadaten und -Attribute zu ermitteln.
 1. Die Ergebnisse dieser Services ([Komponenten, Attribute und Identitäten](/help/content-analytics/report/components.md)) werden verwendet, um die relevanten spezifischen Content Analytics-Datensätze in Experience Platform zu aktualisieren.
-1. Sie können die Content Analytics-Daten zusammen mit Verhaltensdaten und anderen Lookup-Daten in einer Customer Journey Analytics-Einrichtung ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) und [Workspace](/help/analysis-workspace/home.md)) verwenden. Dieses Setup bildet die Grundlage für die einzigartigen Einblicke auf Makroebene in Ihren Inhalt. <br/>Mit der [Content Analytics-Vorlage können Sie Ihre Content Analytics-Berichte und -Analysen schnell ](/help/content-analytics/report/report.md#template).
+1. Sie können die Content Analytics-Daten zusammen mit Verhaltensdaten und anderen Lookup-Daten in einer Customer Journey Analytics-Einrichtung ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) und [Workspace](/help/analysis-workspace/home.md)) verwenden. Dieses Setup bildet die Grundlage für die einzigartigen Einblicke auf Makroebene in Ihren Inhalt. <br/>Mit der [Content Analytics-Vorlage können Sie Ihre Content Analytics-Berichte und -Analysen schnell &#x200B;](/help/content-analytics/report/report.md#template).
 
 
 >[!NOTE]
