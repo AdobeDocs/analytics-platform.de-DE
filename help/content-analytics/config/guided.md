@@ -28,7 +28,7 @@ topic_v2:
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 4111
-ht-degree: 61%
+ht-degree: 63%
 
 ---
 
@@ -186,7 +186,7 @@ Wenn Sie bereits eine Verbindung ausgewählt haben, diese jedoch ändern möchte
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_new_dialog"
 >title="Ausgewählte Datenansichten"
->abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, um Content Analytics-Datensätze einzuschließen. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
+>abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Content Analytics-Datensätze umfasst. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_change_dialog"
@@ -257,7 +257,7 @@ Anschließend können Sie den Kanal detaillierter konfigurieren. Diese Konfigura
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
 >title="Datenerfassung für Speicherorte für mobile Erlebnisse"
->abstract="Geben Sie an, welche Erlebnisspeicherorte bei der Datenerfassung für Content Analytics **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Erlebnisorte ausschließen."
+>abstract="Geben Sie an, welche Erlebnisspeicherorte bei der Datenerfassung für Content Analytics **ausgeschlossen** werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Erlebnisspeicherorte ausschließen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
@@ -267,7 +267,7 @@ Anschließend können Sie den Kanal detaillierter konfigurieren. Diese Konfigura
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
 >title="Datenerfassung für Speicherorte für mobile Assets"
->abstract="Geben Sie an, welche Asset-Speicherorte bei der Datenerfassung für Content Analytics **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Asset-Speicherorte ausschließen."
+>abstract="Geben Sie an, welche Asset-Speicherorte bei der Datenerfassung für Content Analytics **ausgeschlossen** werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Asset-Speicherorte ausschließen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
@@ -277,7 +277,7 @@ Anschließend können Sie den Kanal detaillierter konfigurieren. Diese Konfigura
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
 >title="Datenerfassung für URLs mobiler Assets"
->abstract="Geben Sie an, welche Asset-URLs bei der Datenerfassung für Content Analytics **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Asset-URLs ausschließen."
+>abstract="Geben Sie an, welche Asset-URLs bei der Datenerfassung für Content Analytics **ausgeschlossen** werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Asset-URLs ausschließen."
 
 Für den mobilen Kanal können Sie [Erlebniserfassung und -definition](#experience-capture-and-definition), [Datenerfassung](#data-collection) und [Überschreibungen](#header-overrides) konfigurieren.
 
@@ -309,15 +309,15 @@ Konfigurieren der Datenerfassung:
       1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
       1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
 
-* Geben Sie an, welche Erlebnisspeicherorte bei der Datenerfassung für Content Analytics ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Erlebnisorte ausschließen.
+* Geben Sie an, welche Erlebnisspeicherorte bei der Datenerfassung für Content Analytics ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Erlebnisspeicherorte ausschließen.
 
   Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL Auszuschließende Erlebnisspeicherorte]** an. <br/>Beispiel: `^(?!.*documentation).*`, um alle Dokumentations-Erlebnisspeicherorte von Content Analytics auszuschließen.
 
-* Geben Sie an, welche Asset-Speicherorte bei der Datenerfassung für Content Analytics ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Asset-Speicherorte ausschließen.
+* Geben Sie an, welche Asset-Speicherorte bei der Datenerfassung für Content Analytics ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Asset-Speicherorte ausschließen.
 
   Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL Auszuschließende Asset-Speicherorte]** an. <br/>Beispiel: `^(?!.*(logo\.jpg)).*$`, um alle Asset-Speicherorte mit JPEG-Logo-Bildern aus Content Analytics auszuschließen.
 
-* Geben Sie an, welche Asset-URLs bei der Datenerfassung für Content Analytics ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Asset-URLs ausschließen.
+* Geben Sie an, welche Asset-URLs bei der Datenerfassung für Content Analytics ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Asset-URLs ausschließen.
 
   Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL auszuschließende Asset-URLs]** an. <br/>Zum Beispiel: `^(?!.*(logo\.jpg)).*$`, um alle Asset-URLs auszuschließen, die auf JPEG-Logo-Bilder in Content Analytics verweisen.
 
@@ -393,7 +393,7 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_header"
 >title="Datenerfassung"
->abstract="Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Seiten ausschließen."
+>abstract="Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Seiten ausschließen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_boldheader"
@@ -403,7 +403,7 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="Datenerfassung"
->abstract="Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Assets ausschließen."
+>abstract="Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Assets ausschließen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
@@ -441,7 +441,7 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_header"
 >title="Datenerfassung für Web-Assets"
->abstract="Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Assets ausschließen."
+>abstract="Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Assets ausschließen."
 
 
 ##### Erlebniserfassung und -definition {#web-experience-capture-and-definition}
@@ -516,11 +516,11 @@ Konfigurieren der Datenerfassung:
 
      Verwenden Sie eine neue Tags-Eigenschaft, wenn Sie mithilfe der [Content Analytics-JavaScript-Bibliothek eine Tags-unabhängige Implementierung für den Webkanal erstellen &#x200B;](/help/content-analytics/config/tags-agnostic.md). Die Tags-Eigenschaft wird erstellt, Sie werden die Eigenschaft jedoch nicht in der agnostischen Implementierung verwenden. Für die agnostische Implementierung müssen Sie jedoch den Assistenten für geführte Konfigurationen mindestens einmal ausgeführt haben.
 
-* Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Seiten ausschließen.
+* Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Seiten ausschließen.
 
   Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL Seiten zum Ein-/Ausschließen]** an. <br/>Beispiel: `^(?!.*documentation).*`, um alle Dokumentationsseiten aus Content Analytics auszuschließen.
 
-* Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics eingeschlossen oder ausgeschlossen werden sollen. Stellen Sie sicher, dass Sie persönlich identifizierbare Assets ausschließen.
+* Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics eingeschlossen oder ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Assets ausschließen.
 
   Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL Ein-/Auszuschließendes Asset]** an. <br/>Beispiel: `^(?!.*(logo\.jpg)).*$`, um alle Logo-Bilder im JPEG-Format aus Content Analytics auszuschließen.
 

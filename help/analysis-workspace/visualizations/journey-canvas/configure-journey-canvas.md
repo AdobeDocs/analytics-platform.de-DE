@@ -25,7 +25,7 @@ topic_v2:
 source-git-commit: c6b215f9fe718d0d3e8f81b7f55421c909b69c5a
 workflow-type: tm+mt
 source-wordcount: 6499
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -93,7 +93,7 @@ Weitere Informationen zur Journey-Arbeitsfläche finden Sie unter [Journey-Arbei
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_percentage_value"
 >title="Berechnung der Prozentsätze wählen"
->abstract="Die Prozentsätze, die für jeden Knoten angezeigt werden, basieren auf der primären und der sekundären Metrik, die Sie konfigurieren. Sie können auswählen, ob die Prozentsätze sich auf den Startknoten, den vorherigen Knoten oder auf alle Daten in der Report Suite beziehen sollen."
+>abstract="Die Prozentwerte, die für die einzelnen Knoten angezeigt werden, basieren auf der primären und der sekundären Metrik, die Sie konfigurieren. Sie können festlegen, ob sich die Prozentwerte auf den Startknoten, den vorherigen Knoten oder auf alle Daten in der Report Suite beziehen sollen."
 
 <!-- markdownlint-enable MD034 -->
 
