@@ -95,6 +95,6 @@ Content Analytics verwendet Web- und mobile Bildansichtsdaten aus Experience Pla
 >
 >[Content Analytics-Berichte](report/report.md)
 >[Konfigurieren von Content Analytics](config/configuration.md)
->[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722)
+>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722?profile.language=de)
 >
 
