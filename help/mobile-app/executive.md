@@ -36,7 +36,7 @@ Im Folgenden finden Sie Informationen zu Best Practices für die Verwendung und 
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Unterstützung von Führungskräften beim Zugriff auf mobile Scorecards](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Unterstützung von Führungskräften beim Zugriff auf mobile Scorecards](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

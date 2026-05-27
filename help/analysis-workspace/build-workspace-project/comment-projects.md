@@ -160,9 +160,9 @@ So fügen Sie eine andere Person in Ihren Kommentar ein:
 
 ## Benachrichtigungen über Kommentare erhalten
 
-Projektbesitzer und [bestimmte Personen, die Sie &#x200B;](#include-others-in-a-comment), erhalten Benachrichtigungen basierend auf ihren CX Enterprise-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [CX Enterprise Notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) (![CX Enterprise Notification icon) &#x200B;](assets/experience-cloud-notification.svg) Customer Journey Analytics sichtbar ist.
+Projektbesitzer und [bestimmte Personen, die Sie &#x200B;](#include-others-in-a-comment), erhalten Benachrichtigungen basierend auf ihren CX Enterprise-Benachrichtigungseinstellungen. Standardmäßig erhalten sie eine In-App-Benachrichtigung, die über das Symbol [CX Enterprise Notification](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#view-notifications) (![CX Enterprise Notification icon) &#x200B;](assets/experience-cloud-notification.svg) Customer Journey Analytics sichtbar ist.
 
-Darüber hinaus können Benutzer ihre CX Enterprise-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, indem sie [E-Mail-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
+Darüber hinaus können Benutzer ihre CX Enterprise-Benachrichtigungseinstellungen so konfigurieren, dass sie E-Mail-Benachrichtigungen und Slack-Benachrichtigungen erhalten, indem sie [E-Mail-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) und [Slack-Benachrichtigungen abonnieren](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#slack).
 
 ## Platzieren eines Abzeichens für einen vorhandenen Kommentar
 
