@@ -6,11 +6,24 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 TQID: https://experienceleague.adobe.com/oNFeGuF3o7WGgp6nxSFv1GAVMcXL3Pt9N3isQo0r6TA
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1545
@@ -31,7 +44,7 @@ ht-degree: 10%
 
 {{upgrade-note-step}}
 
-Adobe empfiehlt die Erstellung eines benutzerdefinierten [Experience-Datenmodell](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home)-Schemas (XDM) für Customer Journey Analytics bei der Implementierung der [Adobe Experience Platform-Datenerfassung](https://experienceleague.adobe.com/en/docs/experience-platform/collection/home). Das Erstellen dieses Schemas erfolgt in der Regel, bevor Implementierungsänderungen oder Code berührt werden. Mit einem benutzerdefinierten Schema können Sie einen knappen, organisationsspezifischen Datenvertrag entwerfen, ohne Einschränkungen von Adobe Analytics zu erben. Weitere [ zu den für Ihr Unternehmen verfügbaren Schematypen finden ](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) unter „Wählen Sie Ihr Schema für die Customer Journey Analytics aus .
+Adobe empfiehlt die Erstellung eines benutzerdefinierten [Experience-Datenmodell](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home)-Schemas (XDM) für Customer Journey Analytics bei der Implementierung der [Adobe Experience Platform-Datenerfassung](https://experienceleague.adobe.com/en/docs/experience-platform/collection/home). Das Erstellen dieses Schemas erfolgt in der Regel, bevor Implementierungsänderungen oder Code berührt werden. Mit einem benutzerdefinierten Schema können Sie einen knappen, organisationsspezifischen Datenvertrag entwerfen, ohne Einschränkungen von Adobe Analytics zu erben. Weitere [&#x200B; zu den für Ihr Unternehmen verfügbaren Schematypen finden &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) unter „Wählen Sie Ihr Schema für die Customer Journey Analytics aus .
 
 Schemata sind als optimierte Versionen dazu gedacht, wie Ihre Daten langfristig strukturiert sein sollen. Änderungen an Schemata sind teuer, da sie sich auf die Datenerfassung, Validierung und nachgelagerten Services auswirken. Sie können Schemata im Laufe der Zeit hinzufügen, wie es die Geschäftsanforderungen zulassen. Schemafelder können jedoch nicht entfernt werden, sobald Daten in sie fließen.
 
@@ -114,7 +127,7 @@ Halten Sie sich beim Entwickeln eines Schemas an die Fakten. Beispiel: `error.ty
 
 Einige Unternehmen müssen beim Upgrade auf Customer Journey Analytics weiterhin Berichte für Adobe Analytics erstellen. Sie können die Parität wahren, ohne Analytics-spezifische Artefakte in Ihr langfristiges Schema-Design einzuführen, indem Sie den folgenden Ansatz verwenden:
 
-1. **Verwenden von XDM-Feldpfaden, die Adobe Analytics erkennt und automatisch zuordnet:** Wenn Sie erkannte XDM-Felder über die Edge Network an Adobe Analytics senden, werden sie [ automatisch ](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/xdm-var-mapping).
+1. **Verwenden von XDM-Feldpfaden, die Adobe Analytics erkennt und automatisch zuordnet:** Wenn Sie erkannte XDM-Felder über die Edge Network an Adobe Analytics senden, werden sie [&#x200B; automatisch &#x200B;](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/xdm-var-mapping).
 1. **Verwenden benutzerdefinierter XDM-Felder für organisationsspezifische Konzepte:** Alle XDM-Felder, die nicht automatisch einer Analytics-Variablen zugeordnet sind, werden als [Kontextdatenvariablen](https://experienceleague.adobe.com/de/docs/analytics/implementation/vars/page-vars/contextdata) in Adobe Analytics weitergeleitet.
 1. **Verwenden Sie Adobe Analytics-Verarbeitungsregeln, um diese Kontextdatenvariablen Props/eVars zuzuordnen:** [Verarbeitungsregeln](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) ermöglichen es Ihnen letztendlich, jedes benutzerdefinierte XDM-Feld einer beliebigen eVar oder Eigenschaft zuzuordnen. Dieses Konzept unterstützt die Paritätsberichterstattung in Adobe Analytics, wobei Ihr Schema sauber und auf Customer Journey Analytics zentriert bleibt.
 
@@ -134,9 +147,9 @@ Definieren Sie einen eindeutigen Verantwortlichen für Schemaänderungen. Ein st
 Das Schema-Design sollte die Datenschutz- und Governance-Erwartungen gemäß den Datenschutzrichtlinien Ihres Unternehmens widerspiegeln. Beachten Sie beim Entwickeln Ihres Schemas die folgenden Punkte:
 
 * Nur das erfassen, was Sie zur Unterstützung definierter Anwendungsfälle benötigen.
-* Stellen Sie sicher, dass die Anforderungen an Einverständnis und Datennutzung in Ihrer Sammlungsstrategie berücksichtigt werden. Weitere [ finden Sie unter „Verwenden der Web-SDK zur Verarbeitung ](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk) Kundeneinverständnisdaten .
-* Beachten Sie, wie sensible Felder in den Governance-Tools von Adobe Experience Platform gekennzeichnet und gesteuert werden. Weitere Informationen finden Sie unter [Adobe Customer Journey Analytics ](/help/privacy/privacy-overview.md) Data Governance.
+* Stellen Sie sicher, dass die Anforderungen an Einverständnis und Datennutzung in Ihrer Sammlungsstrategie berücksichtigt werden. Weitere [&#x200B; finden Sie unter „Verwenden der Web-SDK zur Verarbeitung &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk) Kundeneinverständnisdaten .
+* Beachten Sie, wie sensible Felder in den Governance-Tools von Adobe Experience Platform gekennzeichnet und gesteuert werden. Weitere Informationen finden Sie unter [Adobe Customer Journey Analytics &#x200B;](/help/privacy/privacy-overview.md) Data Governance.
 
 ## Nächste Schritte
 
-Sobald Sie eine Schemaarchitektur eingerichtet und vereinbart haben, können Sie sie in Adobe Experience Platform erstellen. Weitere [ finden Sie unter „Erstellen eines benutzerdefinierten Schemas zur Verwendung mit ](cja-upgrade-schema-create.md)&quot;.
+Sobald Sie eine Schemaarchitektur eingerichtet und vereinbart haben, können Sie sie in Adobe Experience Platform erstellen. Weitere [&#x200B; finden Sie unter „Erstellen eines benutzerdefinierten Schemas zur Verwendung mit &#x200B;](cja-upgrade-schema-create.md)&quot;.
