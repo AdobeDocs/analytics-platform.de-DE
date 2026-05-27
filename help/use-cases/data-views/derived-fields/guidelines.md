@@ -7,11 +7,27 @@ exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 autotag-review: '2026-05-19T11:02:42.011Z'
 TQID: 'https://experienceleague.adobe.com/k0nhhAy1CuLa7bEhu1XGqjsQdn9nEAnGb1LbMMeiCLM'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2: id: f3ca85c1-72de-4df2-97ed-05753cd77c47id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 2842
@@ -22,7 +38,7 @@ ht-degree: 1%
 
 # Richtlinien für abgeleitete Felder
 
-Mit [ (abgeleiteten ](/help/data-views/derived-fields/derived-fields.md)) können Sie Daten zur Abfragezeit transformieren, klassifizieren und anreichern, ohne die Quelldatensätze zu ändern. Diese Flexibilität kann zu Komplexität, Leistungsproblemen und Wartungsaufwand führen, wenn sie ohne Disziplin angewendet wird.
+Mit [&#x200B; (abgeleiteten &#x200B;](/help/data-views/derived-fields/derived-fields.md)) können Sie Daten zur Abfragezeit transformieren, klassifizieren und anreichern, ohne die Quelldatensätze zu ändern. Diese Flexibilität kann zu Komplexität, Leistungsproblemen und Wartungsaufwand führen, wenn sie ohne Disziplin angewendet wird.
 
 Dieser Artikel enthält Richtlinien (Best Practices, Leitplanken und allgemeine Fallstricke) für die Arbeit mit abgeleiteten Feldern. Die vorgesehene Zielgruppe sind Datenarchitekten, Produktadministratoren und Analysten, die Folgendes tun müssen:
 
@@ -82,7 +98,7 @@ In diesem Abschnitt werden Standardsegmente für Datenansichten erläutert, die 
 
 ## Zu komplexe Wenn-Regelketten
 
-In diesem Abschnitt werden überkomplexe Ketten von Wenn[Regeln ](/help/data-views/derived-fields/derived-fields.md#case-when).
+In diesem Abschnitt werden überkomplexe Ketten von Wenn[Regeln &#x200B;](/help/data-views/derived-fields/derived-fields.md#case-when).
 
 Customer Journey Analytics erzwingt explizite [Funktions- und Operatorbeschränkungen](/help/data-views/derived-fields/derived-fields.md#limitations) pro abgeleitetem Feld (z. B. maximale Anzahl von Operatoren, maximale Anzahl von Funktionen pro Typ). Überkomplexe Funktionen und Ketten innerhalb von Funktionen sind schwieriger zu pflegen und fehleranfälliger.
 
@@ -103,12 +119,12 @@ Customer Journey Analytics erzwingt explizite [Funktions- und Operatorbeschränk
 **Risikodiagnose: Leistung, Datenqualität, hohe Wartung**
 
 * Wartbarkeit und Fehlerrisiko: Logik, die als monolithischer Regelblock kodiert ist, ist schwer zu debuggen und zu aktualisieren.
-* Potenzielle Leistung und Risiko begrenzen: Sie können (Benutzer- oder [) erreichen oder sich ihnen ](/help/data-views/derived-fields/derived-fields.md#limitations), insbesondere bei klassifizierungsähnlichen Mustern.
+* Potenzielle Leistung und Risiko begrenzen: Sie können (Benutzer- oder [) erreichen oder sich ihnen &#x200B;](/help/data-views/derived-fields/derived-fields.md#limitations), insbesondere bei klassifizierungsähnlichen Mustern.
 
 **Recommendations**
 
 * Aufspaltung in mehrere abgeleitete Felder. Trennen Sie beispielsweise *Kampagnennormalisierung* (Zuordnung inkonsistenter Kampagnenkennungen zu einem kanonischen Wert) von Kanal-Bucketing, anstatt alles in einer riesigen Regel zu kombinieren.
-* Verwenden von Lookup-Datensätzen. Viele **[!UICONTROL Bedingungen _Wenn Wert_ Kriterium _Kriterium_ dann _Wert_ auf Wert]** werden besser als [Lookup-Datensatz](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) kombiniert mit der [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup)-Funktion implementiert, anstatt lange [](/help/data-views/derived-fields/derived-fields.md#case-when) WennKetten zu verwenden.
+* Verwenden von Lookup-Datensätzen. Viele **[!UICONTROL Bedingungen _Wenn Wert_ Kriterium _Kriterium_ dann _Wert_ auf Wert]** werden besser als [Lookup-Datensatz](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) kombiniert mit der [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup)-Funktion implementiert, anstatt lange [&#128279;](/help/data-views/derived-fields/derived-fields.md#case-when) WennKetten zu verwenden.
 * Verwenden Sie Komponentenfilter für Datenansichten. Wenn ein Teil der Logik einfach fehlerhafte Werte herausfiltert, verwenden Sie [Einschließen/Ausschließen](/help/data-views/component-settings/include-exclude-values.md) auf der Komponentenebene der Datenansicht, anstatt diese Logik in ein abgeleitetes Feld einzubetten.
 
 ## Falsche Verwendung
@@ -132,7 +148,7 @@ In diesem Abschnitt wird die falsche Verwendung abgeleiteter Felder erläutert. 
      +++
 
      Verwenden Sie stattdessen [Wert-Bucketing](/help/data-views/component-settings/value-bucketing.md) für eine Dimension in Ihrer Datenansicht.
-   * Persistenz- oder Attributionslogik, codiert mit [Nächste oder Vorherige](/help/data-views/derived-fields/derived-fields.md#next-or-previous) oder manueller Sequenzlogik, bei der die Einstellungen [ Datenansicht (Attribution](/help/data-views/component-settings/attribution.md) und [Gültigkeit](/help/data-views/component-settings/persistence.md) ausreichen würden.
+   * Persistenz- oder Attributionslogik, codiert mit [Nächste oder Vorherige](/help/data-views/derived-fields/derived-fields.md#next-or-previous) oder manueller Sequenzlogik, bei der die Einstellungen [&#x200B; Datenansicht (Attribution](/help/data-views/component-settings/attribution.md) und [Gültigkeit](/help/data-views/component-settings/persistence.md) ausreichen würden.
    * Eine abgeleitete Metrik, die einfach eine vorhandene Metrik unter einer Bedingung zählt.
 
      +++ Beispiel
@@ -153,8 +169,8 @@ In diesem Abschnitt wird die falsche Verwendung abgeleiteter Felder erläutert. 
 
 * Kürzung/Kleinschreibung: Verwenden Sie die Komponenteneinstellungen [Teilzeichenfolge](/help/data-views/component-settings/substring.md) und [Verhalten](/help/data-views/component-settings/behavior.md), es sei denn, Sie benötigen kombinierte mehrstufige Transformationen.
 * Werteausschluss: Verwenden Sie [Werte einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) für Metriken oder Dimensionswerte auf der Komponentenebene der Datenansicht, nicht in einem abgeleiteten Feld.
-* Attribution und Persistenz: Verwenden Sie die Einstellungen [ Datenansicht ](/help/data-views/component-settings/persistence.md)Persistenz **[!UICONTROL (Zuordnungsmodell]** und **[!UICONTROL Gültigkeit]**) für Dimensionen, anstatt sie in einem abgeleiteten Feld mit [Weiter oder Zurück](/help/data-views/derived-fields/derived-fields.md#next-or-previous) oder einer anderen sequenziellen Logik zu simulieren.
-* Numerische Bucketing: Das abgeleitete Feld bleibt numerisch und die Datenansicht kann oben eine Dimension mit Buckets erstellen statt Bereichsbeschriftungen in einer Wenn-Kette mit &quot;[&quot; ](/help/data-views/derived-fields/derived-fields.md#case-when).
+* Attribution und Persistenz: Verwenden Sie die Einstellungen [&#x200B; Datenansicht &#x200B;](/help/data-views/component-settings/persistence.md)Persistenz **[!UICONTROL (Zuordnungsmodell]** und **[!UICONTROL Gültigkeit]**) für Dimensionen, anstatt sie in einem abgeleiteten Feld mit [Weiter oder Zurück](/help/data-views/derived-fields/derived-fields.md#next-or-previous) oder einer anderen sequenziellen Logik zu simulieren.
+* Numerische Bucketing: Das abgeleitete Feld bleibt numerisch und die Datenansicht kann oben eine Dimension mit Buckets erstellen statt Bereichsbeschriftungen in einer Wenn-Kette mit &quot;[&quot; &#x200B;](/help/data-views/derived-fields/derived-fields.md#case-when).
 * Bedingte Logik: Konvertiert eine einfache 0- oder 1-Flag-Logik in:
    * Die ursprüngliche Metrik mit der Filterlogik Werte einschließen oder ausschließen , wie sie in Analysis Workspace angewendet wird.
    * Eine gefilterte Metrik mithilfe der Konfiguration der Komponenteneinstellungen für die Datenansicht.
@@ -190,7 +206,7 @@ In diesem Abschnitt werden Fallstricke bei der Marketing-Kanal- und Kampagnenlog
 
 >[!NOTE]
 >
->Eine Vereinfachung im Vorfeld sollte in Betracht gezogen werden[ indem ](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/home)Datenvorbereitung“, [Lookup-Datensätze](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) oder abgeleitete Feldfunktionen wie [Klassifizieren](/help/data-views/derived-fields/derived-fields.md#classify) verwendet werden, um ähnliche Regeln für Marketing-Kanäle zu konsolidieren und die Anzahl der Operatoren in Ihrer Wenn](/help/data-views/derived-fields/derived-fields.md#case-when)-Logik von [ zu reduzieren. Beschränken Sie außerdem die Anzahl der Felder mit hoher Kardinalität, auf die in der Kanalklassifizierungslogik verwiesen wird (z. B.: viele verschiedene Abfrageparameterschlüssel), da diese Felder sowohl die Kardinalität als auch die Abfragekosten erhöhen.
+>Eine Vereinfachung im Vorfeld sollte in Betracht gezogen werden[&#x200B; indem &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/home)Datenvorbereitung“, [Lookup-Datensätze](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) oder abgeleitete Feldfunktionen wie [Klassifizieren](/help/data-views/derived-fields/derived-fields.md#classify) verwendet werden, um ähnliche Regeln für Marketing-Kanäle zu konsolidieren und die Anzahl der Operatoren in Ihrer Wenn[&#128279;](/help/data-views/derived-fields/derived-fields.md#case-when)-Logik von  zu reduzieren. Beschränken Sie außerdem die Anzahl der Felder mit hoher Kardinalität, auf die in der Kanalklassifizierungslogik verwiesen wird (z. B.: viele verschiedene Abfrageparameterschlüssel), da diese Felder sowohl die Kardinalität als auch die Abfragekosten erhöhen.
 
 **Muster**
 
@@ -218,7 +234,7 @@ In diesem Abschnitt wird die Verwendung nicht normalisierter Zeichenfolgenschlü
 **Muster**
 
 * Eine [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup)-Funktion über ein Ereignis- oder Profilfeld, das einen Lookup-Datensatz befüllt.
-* Kein vorheriger [ (](/help/data-views/derived-fields/derived-fields.md#lowercase)), [Trim](/help/data-views/derived-fields/derived-fields.md#trim) oder [Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace) standardisiert den Schlüssel.
+* Kein vorheriger [&#x200B; (](/help/data-views/derived-fields/derived-fields.md#lowercase)), [Trim](/help/data-views/derived-fields/derived-fields.md#trim) oder [Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace) standardisiert den Schlüssel.
 * Häufige Kandidaten: URL, Kampagnen-ID, E-Mail, Konto-ID.
 
 **Risikodiagnose: Datenqualität, hohe Wartung**
@@ -305,12 +321,12 @@ In diesem Abschnitt wird die übermäßige Verwendung von [Weiter oder Zurück](
 **Risikodiagnose: Datenqualität, hohe Wartung**
 
 * Komplexität und Fragilität: Umfangreiche sequenzielle Logik ist schwieriger zu argumentieren und kann abbrechen, wenn Sitzungsregeln oder Änderungen angeordnet werden.
-* Redundanz mit Persistenz der Dimensionen: Die Einstellungen [ Datenansicht „Persistenz](/help/data-views/component-settings/persistence.md) (Zuordnungsmodell) für die Dimension decken einige Anwendungsfälle besser ab (z. B. Letztkontakt-Kanal in einer Sitzung).
+* Redundanz mit Persistenz der Dimensionen: Die Einstellungen [&#x200B; Datenansicht „Persistenz](/help/data-views/component-settings/persistence.md) (Zuordnungsmodell) für die Dimension decken einige Anwendungsfälle besser ab (z. B. Letztkontakt-Kanal in einer Sitzung).
 
 **Recommendations**
 
 * Bei Mustern, die der standardmäßigen Persistenz ähneln (z. B. beim Weiterleiten eines Werts über eine Sitzung oder Person hinweg), verwenden Sie die [Persistenz](/help/data-views/component-settings/persistence.md)-Einstellungen der Dimension (**[!UICONTROL Zuordnungsmodell]** und **[!UICONTROL Gültigkeit]**) in der Datenansicht, anstatt diese Muster mit [Weiter oder Zurück](/help/data-views/derived-fields/derived-fields.md#next-or-previous) zu simulieren.
-* Reservieren Sie [Weiter oder ](/help/data-views/derived-fields/derived-fields.md#next-or-previous)) für erweiterte mehrstufige Pfade oder funnel-Kennzeichnungen, die durch Persistenz der Dimension allein nicht erreicht werden können (z. B.: Kanalsequenzverkettung).
+* Reservieren Sie [Weiter oder &#x200B;](/help/data-views/derived-fields/derived-fields.md#next-or-previous)) für erweiterte mehrstufige Pfade oder funnel-Kennzeichnungen, die durch Persistenz der Dimension allein nicht erreicht werden können (z. B.: Kanalsequenzverkettung).
 
 ## Sitzungs- und Personenkontext werden ignoriert
 
@@ -343,12 +359,12 @@ In diesem Abschnitt werden die Auswirkungen beschrieben, die sich ergeben, wenn 
 
 >[!NOTE]
 >
->Verringern Sie die Abhängigkeit von Feldern mit hoher Kardinalität in komplexen abgeleiteten Feldern, wo möglich (z. B.: Verwenden normalisierter Schlüssel oder gruppierter Klassifizierungen), um die Abfragekosten und die Wahrscheinlichkeit zu begrenzen, dass [ (Benutzer- oder Funktionsbeschränkungen](/help/data-views/derived-fields/derived-fields.md#limitations) erreicht werden.
+>Verringern Sie die Abhängigkeit von Feldern mit hoher Kardinalität in komplexen abgeleiteten Feldern, wo möglich (z. B.: Verwenden normalisierter Schlüssel oder gruppierter Klassifizierungen), um die Abfragekosten und die Wahrscheinlichkeit zu begrenzen, dass [&#x200B; (Benutzer- oder Funktionsbeschränkungen](/help/data-views/derived-fields/derived-fields.md#limitations) erreicht werden.
 
 Customer Journey Analytics [Dokumente](/help/data-views/derived-fields/derived-fields.md#limitations) Maximale Funktionen und Operatoren pro abgeleitetem Feld, einschließlich Einschränkungen pro Funktionstyp.Muster**
 
 * Ein abgeleitetes Feld verwendet viele [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup), [Math](/help/data-views/derived-fields/derived-fields.md#math)-Vorgänge, [Split](/help/data-views/derived-fields/derived-fields.md#split) oder andere Funktionen.
-* Die Anzahl der Operatoren liegt nahe an den [dokumentierten ](/help/data-views/derived-fields/derived-fields.md#limitations)) (z. B.: mehr als 70 % - 80 % der zulässigen Zählungen).
+* Die Anzahl der Operatoren liegt nahe an den [dokumentierten &#x200B;](/help/data-views/derived-fields/derived-fields.md#limitations)) (z. B.: mehr als 70 % - 80 % der zulässigen Zählungen).
 
 **Risikodiagnose: Leistung, hohe Wartung**
 
