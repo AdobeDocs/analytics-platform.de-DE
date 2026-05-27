@@ -7,22 +7,11 @@ type: Documentation
 solution: Customer Journey Analytics
 exl-id: 1d5d87d8-1920-406b-8cce-41b89b7ae70b
 TQID: https://experienceleague.adobe.com/9oEoM8cI6Bxl-PXmiT-OhskFK3XlaPVkQSFOi4Dyajg
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: ef46ac31-f951-48d6-bae5-51c52ab47fb8id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1309
@@ -34,9 +23,9 @@ ht-degree: 40%
 
 Sie können Customer Journey Analytics-Arbeitsmappen aus Report Builder an Cloud-Anbieter wie Google, Azure und Amazon exportieren.
 
-[Der Export von Berichten aus Report Builder in die Cloud bietet &#x200B;](#advantages-of-exporting-to-the-cloud) die Möglichkeit, Berichte in Tools von Drittanbietern zu verwenden oder sie mit externen Daten zu kombinieren.
+[Der Export von Berichten aus Report Builder in die Cloud bietet ](#advantages-of-exporting-to-the-cloud) die Möglichkeit, Berichte in Tools von Drittanbietern zu verwenden oder sie mit externen Daten zu kombinieren.
 
-Bevor Sie Arbeitsmappen aus Report Builder in ein Cloud-Ziel exportieren, stellen Sie sicher, dass Ihre Datenblöcke, Ihre Umgebung und Ihre Berechtigungen die [Exportanforderungen“ &#x200B;](#export-requirements).
+Bevor Sie Arbeitsmappen aus Report Builder in ein Cloud-Ziel exportieren, stellen Sie sicher, dass Ihre Datenblöcke, Ihre Umgebung und Ihre Berechtigungen die [Exportanforderungen“ ](#export-requirements).
 
 ## Grundlegendes zum Exportprozess
 
@@ -56,13 +45,13 @@ Verwenden Sie den folgenden Prozess beim Exportieren von Arbeitsmappen aus Repor
 
 >[!NOTE]
 >
->Bevor Sie Daten exportieren, wie in diesem Abschnitt beschrieben, erfahren Sie [&#x200B; Abschnitt über den &#x200B;](#understand-the-export-process) .
+>Bevor Sie Daten exportieren, wie in diesem Abschnitt beschrieben, erfahren Sie [ Abschnitt über den ](#understand-the-export-process) .
 
 So exportieren Sie Berichte aus Report Builder:
 
 1. Falls noch nicht geschehen, konfigurieren Sie ein Exportkonto und einen Speicherort, wie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) beschrieben.
 
-1. Öffnen Sie in der Excel-Tabelle, die die zu exportierenden Daten enthält, das rechte Bedienfeld {**}Adobe Report Builder.**
+1. Öffnen Sie in der Excel-Tabelle, die die zu exportierenden Daten enthält, das rechte Bedienfeld {]**}Adobe Report Builder.**[!UICONTROL 
 
 1. Wählen Sie [!UICONTROL **Zeitplan**] aus.
 
@@ -72,7 +61,7 @@ So exportieren Sie Berichte aus Report Builder:
 
    Um die Arbeitsmappe nach einem Zeitplan zu exportieren, den Sie bereits erstellt haben, wählen Sie den Zeitplan aus der Liste der Zeitpläne aus und klicken Sie auf **[!UICONTROL Planmäßig senden]**.
 
-1. Geben Sie im rechten Bedienfeld **0&rbrace;Adobe Report Builder&quot; die folgenden Informationen an, um mit der Erstellung eines neuen Zeitplans fortzufahren:**
+1. Geben Sie im rechten Bedienfeld **]0}Adobe Report Builder&quot; die folgenden Informationen an, um mit der Erstellung eines neuen Zeitplans fortzufahren:[!UICONTROL **
 
    ![Registerkarte Report Builder-Zeitpläne](assets/report-builder-schedule-cloud.png)
 
@@ -84,7 +73,7 @@ So exportieren Sie Berichte aus Report Builder:
    | **[!UICONTROL Zeitstempel an Dateinamen anhängen]** | Wählen Sie diese Option aus, um einen Zeitstempel an den Dateinamen anzuhängen, um das Datum der Aktualisierung der Arbeitsmappe anzugeben. Ein Zeitstempel ist hilfreich, um zu sehen, welche Version einer Arbeitsmappe an einem bestimmten Datum gesendet wurde. Wenn diese Option aktiviert ist, können Sie zwischen folgenden Optionen wählen: |
    | **[!UICONTROL Dateinamenvorschau]** <!--should be File name preview --> | Zeigt eine Vorschau davon an, wie der Dateiname nach dem Export angezeigt wird. |
    | **[!UICONTROL Passwortschutz für die Arbeitsmappe]** | Geben Sie ein Kennwort zum Schützen der exportierten Datei an, damit nur Benutzer mit dem Kennwort darauf zugreifen können. <p>Kennwörter müssen mindestens 8 Zeichen lang sein und mindestens 1 Zahl und 1 Sonderzeichen enthalten (z. B. `!`, `@`, `#` und `$`).</p> |
-   | **[!UICONTROL E-Mail]** | Wählen Sie diese Option, um die Datei an eine bestimmte E-Mail-Adresse zu senden. Weitere Informationen finden Sie unter &quot;[&#x200B; von Arbeitsmappen durch Freigabe per E-Mail](/help/report-builder/schedule-reportbuilder.md). |
+   | **[!UICONTROL E-Mail]** | Wählen Sie diese Option, um die Datei an eine bestimmte E-Mail-Adresse zu senden. Weitere Informationen finden Sie unter &quot;[ von Arbeitsmappen durch Freigabe per E-Mail](/help/report-builder/schedule-reportbuilder.md). |
    | **[!UICONTROL Andere Sendungen]** | Wählen Sie diese Option aus, um die Datei an ein Cloud-Konto zu senden, und verwenden Sie dann die Dropdown-Menüs **[!UICONTROL Konto]** und **[!UICONTROL Speicherort]**, die unten beschrieben werden, um das Konto und den Speicherort auszuwählen. |
    | **[!UICONTROL Konto]** | Wählen Sie das Cloud-Exportkonto aus, an das die Daten gesendet werden sollen. <p>Wenn Sie noch kein Cloud-Konto konfiguriert haben, das Sie verwenden möchten, können Sie auch ein neues Konto konfigurieren:<ol><li>Wählen Sie [!UICONTROL **Konto hinzufügen**] aus und geben Sie dann die folgenden Informationen an:<ul><li>[!UICONTROL **Name des Standortkontos**]: Geben Sie einen Namen für das Standortkonto an. Dieser Name wird beim Erstellen eines Speicherorts angezeigt. </li><li>[!UICONTROL **Beschreibung des Standortkontos**]: Geben Sie eine kurze Beschreibung des Kontos ein, um es von anderen Konten desselben Kontotyps zu unterscheiden.</li><li>**[!UICONTROL Konto für alle Benutzer in Ihrer Organisation verfügbar machen]**: Wählen Sie diese Option, um anderen Benutzern in Ihrer Organisation die Verwendung des Kontos zu ermöglichen. Beachten Sie bei der Freigabe von Kontos Folgendes:<ul><li>Die Freigabe von Konten, die von Ihnen freigegeben wurden, kann nicht aufgehoben werden.</li><li>Freigegebene Konten können nur vom Kontoinhaber bearbeitet werden.</li><li>Alle Personen können einen Speicherort für das freigegebene Konto erstellen.</li></ul></li><li>[!UICONTROL **Kontotyp**]: Wählen Sie den Typ des Cloud-Kontos aus, in das Sie exportieren. Verfügbare Kontotypen sind Amazon S3 Role ARN, Google Cloud Platform, Azure SAS und Azure RBAC.</li></ul><li>Um die Konfiguration Ihres Kontos abzuschließen, fahren Sie mit dem unten stehenden Link fort, der dem von Ihnen ausgewählten [!UICONTROL **Kontotyp**] entspricht:<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li></ul></ol> |
    | **[!UICONTROL Ort]** | Wählen Sie den Speicherort in dem Konto aus, an den die Exportdaten gesendet werden sollen.<p>Falls Sie den Speicherort, den Sie für das ausgewählte Konto verwenden möchten, noch nicht konfiguriert haben, können Sie auch einen neuen Speicherort konfigurieren:<ol><li>Wählen Sie [!UICONTROL **Speicherort hinzufügen**] aus und geben Sie dann die folgenden Informationen an: <ul><li>[!UICONTROL **Name:**] Der Name des Speicherorts.</li><li>[!UICONTROL **Beschreibung**]: Geben Sie eine kurze Beschreibung des Speicherorts an, um ihn von anderen Speicherorten im Konto zu unterscheiden.</li><li>**[!UICONTROL Standort für alle Benutzer in Ihrer Organisation verfügbar machen]**: Wählen Sie diese Option, um anderen Benutzern in Ihrer Organisation die Verwendung des Standorts zu ermöglichen. Beachten Sie bei der Freigabe von Kontos Folgendes:<ul><li>Die Freigabe von Speicherorten, die Sie freigeben, kann nicht aufgehoben werden.</li><li>Freigegebene Speicherorte können nur vom Kontoinhaber bearbeitet werden.</li><li>Standorte können nur freigegeben werden, wenn das Konto, mit dem der Standort verknüpft ist, auch freigegeben ist.</li></ul></li><li>[!UICONTROL **Standortkonto**]: Wählen Sie das Konto aus, in dem Sie den Speicherort erstellen möchten.</li></ul><li>Um die Konfiguration Ihres Speicherorts abzuschließen, fahren Sie mit dem untenstehenden Link fort, der dem Kontotyp entspricht, den Sie im Feld [!UICONTROL **Standortkonto**] ausgewählt haben:<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li></ul> |

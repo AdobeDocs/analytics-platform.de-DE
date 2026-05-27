@@ -7,16 +7,11 @@ exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
 autotag-review: '2026-05-19T09:24:34.962Z'
 TQID: 'https://experienceleague.adobe.com/Y7Q0pAx9s4p2YxrcfVKsvJcppHFmtNCKAgA0oCc0CeA'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1022
@@ -57,7 +52,7 @@ Bevor Sie die Zuordnung verwenden, sollten Sie sicherstellen, dass Ihr Unternehm
 
 Sie profitieren von der Cross-Channel-Analyse, wenn Sie einen oder mehrere Ihrer zugeordneten Datensätze als Teil der Definition Ihrer Customer Journey Analytics-Verbindung mit anderen Datensätzen kombinieren, z. B. Callcenter-Daten. Bei dieser Verbindungskonfiguration wird davon ausgegangen, dass diese anderen Datensätze bereits eine Personen-ID aus demselben Namespace in möglichst vielen Zeilen enthalten.
 
-Sobald Ihr Unternehmen die generischen [Voraussetzungen](overview.md#prerequisites) erfüllt, die üblichen [Einschränkungen](overview.md#limitations) sowie die für [&#x200B; (feldbasiert](fbs.md) und [diagrammbasiert](gbs.md)) spezifischen Voraussetzungen und Einschränkungen versteht, können Sie diese Schritte ausführen, um die Zuordnung in Customer Journey Analytics anzufordern und zu verwenden.
+Sobald Ihr Unternehmen die generischen [Voraussetzungen](overview.md#prerequisites) erfüllt, die üblichen [Einschränkungen](overview.md#limitations) sowie die für [ (feldbasiert](fbs.md) und [diagrammbasiert](gbs.md)) spezifischen Voraussetzungen und Einschränkungen versteht, können Sie diese Schritte ausführen, um die Zuordnung in Customer Journey Analytics anzufordern und zu verwenden.
 
 ## Einschränkungen
 
@@ -76,7 +71,7 @@ Verwechseln Sie die Zuordnung nicht mit:
 
 ## Optionen
 
-Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die verfügbaren Zuordnungsmethoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Zusammenfügen zulässig sind. Weitere Informationen finden Sie in der &lbrace;0[&#128279;](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) Customer Journey Analytics-Produktbeschreibung. Legen Sie die verfügbaren Optionen fest, bevor Sie das Zusammenfügen aktivieren.
+Das Customer Journey Analytics-Paket, zu dem Sie berechtigt sind, bestimmt die verfügbaren Zuordnungsmethoden, Optionen für die anfängliche Aufstockungsdauer, das Lookback-Fenster, die Wiederholungshäufigkeit und die maximale Anzahl von Datensätzen, die für das Zusammenfügen zulässig sind. Weitere Informationen finden Sie in der {0](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html) Customer Journey Analytics-Produktbeschreibung. [Legen Sie die verfügbaren Optionen fest, bevor Sie das Zusammenfügen aktivieren.
 
 | | Customer Journey Analytics-<br/> | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
