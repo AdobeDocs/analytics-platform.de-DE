@@ -20,9 +20,9 @@ topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: df1ab1af7757ef012b4c233e6206ee6c6cde6686
 workflow-type: tm+mt
-source-wordcount: 832
+source-wordcount: 889
 ht-degree: 1%
 
 ---
@@ -112,3 +112,7 @@ Die folgenden Überlegungen gelten für Systemschlüssel und -felder:
 
 * Primärschlüssel, Versionsdeskriptor und Zeitstempeldeskriptor müssen Felder auf Stammebene im relationalen XDM-Schema sein. Verwenden Sie [Feldzuordnung](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) während der Aufnahme, um diese Anforderung zu unterstützen.
 * Sie können die entsprechenden Quellfelder während der [Zuordnungsphase](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) auslassen.
+
+## Batch-Größe der gespiegelten Daten
+
+Für jeden gespiegelten Datensatz, der als Teil einer Verbindung konfiguriert ist, müssen Sie sicherstellen, dass jeder Batch, der Daten für den gespiegelten Datensatz aufnimmt, 100 GB nicht überschreitet. Weitere Informationen finden [&#x200B; in den Leitplanken &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"} Batch-Aufnahme .

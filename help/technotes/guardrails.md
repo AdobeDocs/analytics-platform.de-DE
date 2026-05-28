@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics-Leitplanken
-description: Erfahren Sie mehr über die Leitplanken für Customer Journey Analytics
+description: Erfahren Sie mehr über die Schutzmaßnahmen für Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
@@ -26,7 +26,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: df1ab1af7757ef012b4c233e6206ee6c6cde6686
 workflow-type: tm+mt
 source-wordcount: 2441
 ht-degree: 12%
@@ -43,7 +43,7 @@ In diesem Dokument gibt es zwei Arten von Standardbeschränkungen:
 
 | Art der Leitplanke | Beschreibung |
 |----------|---------|
-| **Leistungs-Leitplanken (weiches Limit)** | Leistungs-Leitplanken sind Nutzungsbeschränkungen, die sich auf den Umfang Ihrer Anwendungsfälle beziehen. Beim Überschreiten der Leistungsleitplanken kann es zu Leistungseinbußen und Latenzzeiten kommen. Adobe ist für eine solche Leistungsbeeinträchtigung nicht verantwortlich. Kunden, die eine Leistungsschutzmaßnahme durchgängig überschreiten, können sich dafür entscheiden, zusätzliche Kapazität zu lizenzieren, um eine Leistungsbeeinträchtigung zu vermeiden. |
+| **Leistungs-Leitplanken (weiches Limit)** | Die Leistung betreffende Leitplanken sind Nutzungsbeschränkungen, die sich auf den Umfang Ihrer Anwendungsfälle beziehen. Beim Überschreiten der Leistungsleitplanken kann es zu Leistungseinbußen und Latenzzeiten kommen. Adobe ist für eine solche Leistungsbeeinträchtigung nicht verantwortlich. Kunden, die ständig eine Leistungsschutzmaßnahme überschreiten, können sich dafür entscheiden, zusätzliche Kapazität zu lizenzieren, um eine Leistungsbeeinträchtigung zu vermeiden. |
 | **Vom System erzwungene Leitplanken (feste Grenze)** | Systemerzwungene Leitplanken werden von der Customer Journey Analytics-Benutzeroberfläche oder -API erzwungen. Dies sind Beschränkungen, die Sie nicht überschreiten können, da die Benutzeroberfläche und die API Sie daran hindern oder einen Fehler zurückgeben. |
 
 {style="table-layout:auto"}
@@ -58,10 +58,10 @@ Einige der Funktionen und ihr zugehöriger Wert für das Limit hängen vom Custo
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Maximale Wartezeit erneut versuchen | 90 | Vom System erzwungene Leitplanke | Die maximale Anzahl von Sekunden, bevor die Reporting-Engine antwortet, dass die Anfrage zu lange dauert, bis Ergebnisse zurückgegeben werden (möglicherweise aufgrund anderer gleichzeitiger anderer Anfragen). Es ist möglich, erneut eine Anfrage auszuführen. |
-| Zeitüberschreitung nicht erneut versuchen | 600 | Vom System erzwungene Leitplanke | Maximale Anzahl von Sekunden bis zum Timeout von Ad-hoc-SQL-Abfragen. Andernfalls gibt die maximale Anzahl von Sekunden vor der Berichterstellungs-Engine an, dass es zu lange gedauert hat, bis die Anfrage Ergebnisse zurückgibt. Daher sollte dies nicht erneut versucht werden. Die Anfrage gibt höchstwahrscheinlich nie Ergebnisse aufgrund von Problemen im Hintergrundprozess zurück. |
-| Metriken | 150 | Vom System erzwungene Leitplanke | Maximale Anzahl von Metriken in einer Anfrage. |
-| Interaktive Abfrageausgabezeilen | 50.000 | Vom System erzwungene Leitplanke | Standardanzahl der zurückgegebenen Zeilen, sofern nicht anders angegeben. |
+| Maximale Wartezeit erneut versuchen | 90 | Vom System erzwungene Leitplanken | Die maximale Anzahl von Sekunden, bevor die Reporting-Engine antwortet, dass die Anfrage zu lange dauert, bis Ergebnisse zurückgegeben werden (möglicherweise aufgrund anderer gleichzeitiger anderer Anfragen). Es ist möglich, erneut eine Anfrage auszuführen. |
+| Zeitüberschreitung nicht erneut versuchen | 600 | Vom System erzwungene Leitplanken | Maximale Anzahl von Sekunden bis zum Timeout von Ad-hoc-SQL-Abfragen. Andernfalls gibt die maximale Anzahl von Sekunden vor der Berichterstellungs-Engine an, dass es zu lange gedauert hat, bis die Anfrage Ergebnisse zurückgibt. Daher sollte dies nicht erneut versucht werden. Die Anfrage gibt höchstwahrscheinlich nie Ergebnisse aufgrund von Problemen im Hintergrundprozess zurück. |
+| Metriken | 150 | Vom System erzwungene Leitplanken | Maximale Anzahl von Metriken in einer Anfrage. |
+| Interaktive Abfrageausgabezeilen | 50.000 | Vom System erzwungene Leitplanken | Standardanzahl der zurückgegebenen Zeilen, sofern nicht anders angegeben. |
 
 {style="table-layout:auto"}
 
@@ -69,24 +69,24 @@ Einige der Funktionen und ihr zugehöriger Wert für das Limit hängen vom Custo
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Sichtbare Zeilen pro Tabelle | 400 | Vom System erzwungene Leitplanke | Maximale Anzahl sichtbarer Zeilen in einer beliebigen Freiformtabelle in einem Analysis Workspace-Projekt. |
-| Exportierbare Zeilen pro Tabelle | 50.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Zeilen, die pro Dimension exportiert werden können. |
-| Bedienfelder pro Projekt | 15 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Bedienfeldern](../analysis-workspace/home.md#panels) pro Projekt. |
-| Visualisierungen pro Bedienfeld | 25 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Visualisierungen](../analysis-workspace/home.md#visualizations) pro Bedienfeld. |
-| Abgeleitete Felder pro Freiformtabelle | 5 | Vom System erzwungene Leitplanke | Maximale Anzahl verschiedener abgeleiteter Felder in einer einzelnen Freiformtabelle. |
-| Kommentare pro Projekt | 1.000 | Vom System erzwungene Leitplanke | Maximale Anzahl an Kommentaren pro Projekt. |
-| Kommentare pro Projekt | 1.000 | Vom System erzwungene Leitplanke | Maximale Anzahl an Kommentaren pro Projekt. |
-| Antworten pro Kommentar | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl von Antworten pro Kommentar. |
-| Bilder pro Kommentar | 5 | Vom System erzwungene Leitplanke | Maximale Anzahl von Bildern pro Kommentar. |
-| Bildgröße | 2 | Vom System erzwungene Leitplanke | Maximale Upload-Größe pro Bild in MB. |
-| Antworten pro Kommentar | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl von Antworten pro Kommentar. |
-| Bilder pro Kommentar | 5 | Vom System erzwungene Leitplanke | Maximale Anzahl von Bildern pro Kommentar. |
-| Bildgröße | 2 | Vom System erzwungene Leitplanke | Maximale Upload-Größe pro Bild in MB |
+| Sichtbare Zeilen pro Tabelle | 400 | Vom System erzwungene Leitplanken | Maximale Anzahl sichtbarer Zeilen in einer beliebigen Freiformtabelle in einem Analysis Workspace-Projekt. |
+| Exportierbare Zeilen pro Tabelle | 50.000 | Vom System erzwungene Leitplanken | Maximale Anzahl von Zeilen, die pro Dimension exportiert werden können. |
+| Bedienfelder pro Projekt | 15 | Vom System erzwungene Leitplanken | Maximale Anzahl von [Bedienfeldern](../analysis-workspace/home.md#panels) pro Projekt. |
+| Visualisierungen pro Bedienfeld | 25 | Vom System erzwungene Leitplanken | Maximale Anzahl von [Visualisierungen](../analysis-workspace/home.md#visualizations) pro Bedienfeld. |
+| Abgeleitete Felder pro Freiformtabelle | 5 | Vom System erzwungene Leitplanken | Maximale Anzahl verschiedener abgeleiteter Felder in einer einzelnen Freiformtabelle. |
+| Kommentare pro Projekt | 1.000 | Vom System erzwungene Leitplanken | Maximale Anzahl an Kommentaren pro Projekt. |
+| Kommentare pro Projekt | 1.000 | Vom System erzwungene Leitplanken | Maximale Anzahl an Kommentaren pro Projekt. |
+| Antworten pro Kommentar | 100 | Vom System erzwungene Leitplanken | Maximale Anzahl von Antworten pro Kommentar. |
+| Bilder pro Kommentar | 5 | Vom System erzwungene Leitplanken | Maximale Anzahl von Bildern pro Kommentar. |
+| Bildgröße | 2 | Vom System erzwungene Leitplanken | Maximale Upload-Größe pro Bild in MB. |
+| Antworten pro Kommentar | 100 | Vom System erzwungene Leitplanken | Maximale Anzahl von Antworten pro Kommentar. |
+| Bilder pro Kommentar | 5 | Vom System erzwungene Leitplanken | Maximale Anzahl von Bildern pro Kommentar. |
+| Bildgröße | 2 | Vom System erzwungene Leitplanken | Maximale Upload-Größe pro Bild in MB |
 
 {style="table-layout:auto"}
 
 
-<!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced Guardrail - Maximum number of dimensions per freeform table. -->
+<!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced guardrail - Maximum number of dimensions per freeform table. -->
 
 <!--
 
@@ -104,12 +104,12 @@ Einige der Funktionen und ihr zugehöriger Wert für das Limit hängen vom Custo
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Zielgruppensegmente | 20 | Vom System erzwungene Leitplanke | Maximale Anzahl [Segmente](../components/segments/seg-overview.md) pro Zielgruppe. |
-| Anzahl der Zielgruppenidentitäten | 20 Million | Vom System erzwungene Leitplanke | Maximale Anzahl von Identitäten pro Zielgruppe. |
-| Häufigkeit der Zielgruppenaktualisierung | 4 | Vom System erzwungene Leitplanke | Die maximale Häufigkeit in Stunden, in [&#x200B; eine &#x200B;](../components/audiences/audiences-overview.md) aktualisiert werden kann. |
-| Lookback-Fenster zur Zielgruppenaktualisierung | 90 | Vom System erzwungene Leitplanke | Maximale Anzahl von Tagen für das Aktualisierungs-Lookback-Fenster |
-| Ablaufdatum der Zielgruppe aktualisieren | 13 | Vom System erzwungene Leitplanke | Die maximale Anzahl von Monaten, die die Zielgruppe ab dem Erstellungsdatum nicht mehr aktualisiert wird. Kunden können dies um weitere 13 Monate verlängern. |
-| Anzahl der aktualisierten Zielgruppen | 75, 150 | Vom System erzwungene Leitplanke | Maximale Anzahl an Zielgruppen, die aktualisiert werden. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Zielgruppensegmente | 20 | Vom System erzwungene Leitplanken | Maximale Anzahl [Segmente](../components/segments/seg-overview.md) pro Zielgruppe. |
+| Anzahl der Zielgruppenidentitäten | 20 Million | Vom System erzwungene Leitplanken | Maximale Anzahl von Identitäten pro Zielgruppe. |
+| Häufigkeit der Zielgruppenaktualisierung | 4 | Vom System erzwungene Leitplanken | Die maximale Häufigkeit in Stunden, in [&#x200B; eine &#x200B;](../components/audiences/audiences-overview.md) aktualisiert werden kann. |
+| Lookback-Fenster zur Zielgruppenaktualisierung | 90 | Vom System erzwungene Leitplanken | Maximale Anzahl von Tagen für das Aktualisierungs-Lookback-Fenster |
+| Ablaufdatum der Zielgruppe aktualisieren | 13 | Vom System erzwungene Leitplanken | Die maximale Anzahl von Monaten, die die Zielgruppe ab dem Erstellungsdatum nicht mehr aktualisiert wird. Kunden können dies um weitere 13 Monate verlängern. |
+| Anzahl der aktualisierten Zielgruppen | 75, 150 | Vom System erzwungene Leitplanken | Maximale Anzahl an Zielgruppen, die aktualisiert werden. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
 
@@ -120,7 +120,7 @@ Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattfo
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|:---:|
-| Arbeitsaufträge | 20 | Vom System erzwungene Leitplanke | Maximale Anzahl an automatisierten Arbeitsaufträgen zur Datensatzgültigkeit pro Monat. |
+| Arbeitsaufträge | 20 | Vom System erzwungene Leitplanken | Maximale Anzahl an automatisierten Arbeitsaufträgen zur Datensatzgültigkeit pro Monat. |
 
 {style="table-layout:auto"}
 
@@ -130,19 +130,19 @@ Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattfo
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Projekte | 50.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Projekten für eine Organisation. |
-| Datenansichten | 2.000 | Vom System erzwungene Leitplanke | Maximale Anzahl [Datenansichten](../data-views/data-views.md) für eine Organisation. |
-| Datenansichten | 500-1000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Datenansichten für eine Verbindung. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
-| Datensätze | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl [Datensätze](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=de) pro Verbindung |
-| Verbindungen | 1.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Verbindungen](../connections/overview.md) für eine Organisation. |
-| Connection Title | 500 | Vom System erzwungene Leitplanke | Maximale Zeichenanzahl für einen Verbindungstitel. |
-| Metriken | 5.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Metriken in einer Datenansicht. |
-| Dimensionen | 5.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Dimensionen in einer Datenansicht. |
-| Titel der Anmerkung | 100 | Vom System erzwungene Leitplanke | Maximale Zeichenanzahl für einen Anmerkungstitel. |
-| Beschreibung der Anmerkung | 250 | Vom System erzwungene Leitplanke | Maximale Zeichenanzahl für eine Anmerkungsbeschreibung |
-| Schemafelder | 10 | Vom System erzwungene Leitplanke | Maximale Anzahl von Schemafeldern (ohne Standardfelder) beim Definieren von Regeln für ein ([&#x200B; Feld](../data-views/derived-fields/derived-fields.md). |
-| Lookup-/Profilfelder | 3 | Vom System erzwungene Leitplanke | Maximale Anzahl von Lookup- oder Profilschemafeldern innerhalb der maximalen Anzahl von Schemafeldern (ohne Standardfelder) beim Definieren von Regeln für ein abgeleitetes Feld. |
-| Abgeleitete Felder | 100 - 500 | Vom System erzwungene Leitplanke | Maximale Anzahl abgeleiteter Felder pro Verbindung Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Projekte | 50.000 | Vom System erzwungene Leitplanken | Maximale Anzahl von Projekten für eine Organisation. |
+| Datenansichten | 2.000 | Vom System erzwungene Leitplanken | Maximale Anzahl [Datenansichten](../data-views/data-views.md) für eine Organisation. |
+| Datenansichten | 500-1000 | Vom System erzwungene Leitplanken | Maximale Anzahl von Datenansichten für eine Verbindung. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Datensätze | 100 | Vom System erzwungene Leitplanken | Maximale Anzahl [Datensätze](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=de) pro Verbindung |
+| Verbindungen | 1.000 | Vom System erzwungene Leitplanken | Maximale Anzahl von [Verbindungen](../connections/overview.md) für eine Organisation. |
+| Connection Title | 500 | Vom System erzwungene Leitplanken | Maximale Zeichenanzahl für einen Verbindungstitel. |
+| Metriken | 5.000 | Vom System erzwungene Leitplanken | Maximale Anzahl von Metriken in einer Datenansicht. |
+| Dimensionen | 5.000 | Vom System erzwungene Leitplanken | Maximale Anzahl von Dimensionen in einer Datenansicht. |
+| Titel der Anmerkung | 100 | Vom System erzwungene Leitplanken | Maximale Zeichenanzahl für einen Anmerkungstitel. |
+| Beschreibung der Anmerkung | 250 | Vom System erzwungene Leitplanken | Maximale Zeichenanzahl für eine Anmerkungsbeschreibung |
+| Schemafelder | 10 | Vom System erzwungene Leitplanken | Maximale Anzahl von Schemafeldern (ohne Standardfelder) beim Definieren von Regeln für ein ([&#x200B; Feld](../data-views/derived-fields/derived-fields.md). |
+| Lookup-/Profilfelder | 3 | Vom System erzwungene Leitplanken | Maximale Anzahl von Lookup- oder Profilschemafeldern innerhalb der maximalen Anzahl von Schemafeldern (ohne Standardfelder) beim Definieren von Regeln für ein abgeleitetes Feld. |
+| Abgeleitete Felder | 100 - 500 | Vom System erzwungene Leitplanken | Maximale Anzahl abgeleiteter Felder pro Verbindung Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
 
@@ -151,9 +151,9 @@ Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattfo
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Felder | 10.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Eigenschaften oder Feldern pro Zeile in einem Datensatz. |
-| Eindeutige Zeichenfolgen | 10 Millionen - 1 Milliarde | Vom System erzwungene Leitplanke | Maximale Anzahl eindeutiger Schlüssel pro Lookup-Datensatz. Hängt vom Customer Journey Analytics-Paket ab (siehe Produktbeschreibung).<ul><li>Stiftung: 10 Millionen.</li><li>Select: 100 Millionen.</li><li>Prime: 250 Millionen.</li><li>Ultimate: 1 Milliarde</li><ul> |
-| Zeilen pro Person | 1 Million | Vom System erzwungene Leitplanke | Maximale Anzahl von Zeilen pro eindeutiger Personen-ID in einem bestimmten Monat innerhalb einer Verbindung. |
+| Felder | 10.000 | Vom System erzwungene Leitplanken | Maximale Anzahl von Eigenschaften oder Feldern pro Zeile in einem Datensatz. |
+| Eindeutige Zeichenfolgen | 10 Millionen - 1 Milliarde | Vom System erzwungene Leitplanken | Maximale Anzahl eindeutiger Schlüssel pro Lookup-Datensatz. Hängt vom Customer Journey Analytics-Paket ab (siehe Produktbeschreibung).<ul><li>Stiftung: 10 Millionen.</li><li>Select: 100 Millionen.</li><li>Prime: 250 Millionen.</li><li>Ultimate: 1 Milliarde</li><ul> |
+| Zeilen pro Person | 1 Million | Vom System erzwungene Leitplanken | Maximale Anzahl von Zeilen pro eindeutiger Personen-ID in einem bestimmten Monat innerhalb einer Verbindung. |
 | Zeilen pro Tag | 2,5 Mrd | Leistungs-Schutzmaßnahme | Maximale durchschnittliche Anzahl von Zeilen pro Tag in einer Verbindung. |
 | Zeilen pro Verbindung pro Jahr | Variiert je nach zugewiesenem Rechenzentrum (weitere Informationen in der Beschreibung) | Leistungs-Schutzmaßnahme | Zeilenbegrenzung pro Jahr in einer Verbindung. Die unten aufgeführten Beschränkungen gelten ab dem 20. Januar 2026 und können im Laufe der Zeit erhöht werden, um mehr Zeilen pro Verbindung zuzulassen. <p>Die Zeilenbegrenzung variiert je nach zugewiesenem Rechenzentrum wie folgt:</p><ul><li>**USA Azure (Standard für US-Kunden)**: Ungefähr 500 Mrd. (etwa 42 Mrd. pro Monat)</li><li>**USA AWS (auf Anfrage für US-Kunden erhältlich)**: Ungefähr 30 Mrd. (etwa 2,5 Mrd. pro Monat)</li><li>**Amsterdam**: rund 200 Milliarden (rund 16,5 Milliarden pro Monat)</li><li>**Alle anderen Rechenzentren**: 25 Milliarden (etwa 2 Milliarden pro Monat)</li></ul><p>Wenn Sie erwarten, diese Grenzwerte zu überschreiten, und Leistungsprobleme vermeiden möchten, wenden Sie sich an Ihr Adobe-Accountteam, um alternative Konfigurationen zu besprechen.</p><p>Unternehmen können bei der ersten Implementierung von AEP+Apps ihr Rechenzentrum auswählen. Diese Entscheidung basiert in der Regel auf den eigenen Anforderungen an die Datenresidenz jedes Kunden. Bei der Auswahl eines Rechenzentrums sollten alle Anwendungsfälle für AEP+Apps (nicht nur Zeilenvolumen in Customer Journey Analytics) berücksichtigt werden.</p><p>Informationen zum Anzeigen des Ihnen zugewiesenen Rechenzentrums finden Sie unter [Customer Journey Analytics-Hosting-Standorte](/help/technotes/data-centers.md).</p> |
 | Zeilengröße | 2 | Leistungs-Schutzmaßnahme/Vom System erzwungene Schutzmaßnahme | Durchschnittliche Größe in Kilobyte pro Datenzeile, die in Customer Journey Analytics aufgenommen wird (weiche Grenze). Eine statische Begrenzung für die Zeilengröße wird durch Leitplanken für die Datenaufnahme in Experience Platform bestimmt. |
@@ -168,7 +168,7 @@ Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
 | Datenexport | Insgesamt autorisierter Data-Lake-Speicher | Leistungs-Schutzmaßnahme | Der Kunde kann den Export von Zieldatensätzen verwenden, um Kundendaten im Data Lake bis zur insgesamt autorisierten Data Lake-Datenspeicherung zu exportieren. |
-| Verfügbare Datensätze | Profil und Ereignis | Erzwungene Schutzmaßnahme des Systems | Ereignis-, Profil- oder Lookup-Datensätze, die in der Experience Platform-Benutzeroberfläche nach der Aufnahme oder Erfassung von Daten über Quellen, Web SDK, Mobile SDK, Analytics Data Connector und Audience Manager erstellt wurden. |
+| Verfügbare Datensätze | Profil und Ereignis | Vom System erzwungene Leitplanken | Ereignis-, Profil- oder Lookup-Datensätze, die in der Experience Platform-Benutzeroberfläche nach der Aufnahme oder Erfassung von Daten über Quellen, Web SDK, Mobile SDK, Analytics Data Connector und Audience Manager erstellt wurden. |
 
 {style="table-layout:auto"}
 
@@ -179,8 +179,8 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Data Landing Zone pro Sandbox | 1 | Vom System erzwungene Leitplanke | Maximale Anzahl von Data Landing Zones pro Sandbox. |
-| Datenspeicherung | 7 | Vom System erzwungene Leitplanke | Maximale Anzahl von Tagen, an denen Daten in der Data Landing Zone gespeichert werden, bevor sie gelöscht werden. |
+| Data Landing Zone pro Sandbox | 1 | Vom System erzwungene Leitplanken | Maximale Anzahl von Data Landing Zones pro Sandbox. |
+| Datenspeicherung | 7 | Vom System erzwungene Leitplanken | Maximale Anzahl von Tagen, an denen Daten in der Data Landing Zone gespeichert werden, bevor sie gelöscht werden. |
 
 {style="table-layout:auto"}
 
@@ -189,9 +189,9 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Zusammengefügte Datensätze | 5 - 50 | Vom System erzwungene Leitplanke | Maximale Anzahl an zugeordneten Datensätzen pro Kunde. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
-| Aufstockungslänge | 6 - 25 | Vom System erzwungene Leitplanke | Maximale Anzahl von Monaten für die Aufstockung von Daten. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
-| Lookback-Fenster/Wiederholungshäufigkeit | 1/1 - 30/7 | Vom System erzwungene Leitplanke | Maximales Lookback-Fenster in Tagen/Wiederholungshäufigkeit. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Zusammengefügte Datensätze | 5 - 50 | Vom System erzwungene Leitplanken | Maximale Anzahl an zugeordneten Datensätzen pro Kunde. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Aufstockungslänge | 6 - 25 | Vom System erzwungene Leitplanken | Maximale Anzahl von Monaten für die Aufstockung von Daten. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Lookback-Fenster/Wiederholungshäufigkeit | 1/1 - 30/7 | Vom System erzwungene Leitplanken | Maximales Lookback-Fenster in Tagen/Wiederholungshäufigkeit. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
 
@@ -200,24 +200,24 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Zusammengefügte Datensätze | 15 - 50 | Vom System erzwungene Leitplanke | Maximale Anzahl an zugeordneten Datensätzen pro Kunde. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
-| Aufstockungslänge | 6 - 25 | Vom System erzwungene Leitplanke | Maximale Anzahl von Monaten für die Aufstockung von Daten. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
-| Lookback-Fenster/Wiederholungshäufigkeit | 1/1 - 30/7 | Vom System erzwungene Leitplanke | Maximales Lookback-Fenster in Tagen/Wiederholungshäufigkeit. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Zusammengefügte Datensätze | 15 - 50 | Vom System erzwungene Leitplanken | Maximale Anzahl an zugeordneten Datensätzen pro Kunde. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Aufstockungslänge | 6 - 25 | Vom System erzwungene Leitplanken | Maximale Anzahl von Monaten für die Aufstockung von Daten. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Lookback-Fenster/Wiederholungshäufigkeit | 1/1 - 30/7 | Vom System erzwungene Leitplanken | Maximales Lookback-Fenster in Tagen/Wiederholungshäufigkeit. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 
 
 ## Segmente und berechnete Metriken
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Container pro Segment | 50 | Vom System erzwungene Leitplanke | Maximale Anzahl von Containern pro Segment. |
-| Metriken pro berechneter Metrik | 25 | Vom System erzwungene Leitplanke | Maximale Anzahl von Metriken pro berechneter Metrik. |
-| Metriken und Dimensionen pro Segment | 25 | Vom System erzwungene Leitplanke | Maximale Anzahl eindeutiger Metriken und Dimensionen pro Segment. |
-| Verschachtelte Container pro Segment | 10 | Vom System erzwungene Leitplanke | Maximale Anzahl verschachtelter Container pro Segment. |
-| Regeln pro Segment | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl von Regeln pro Segment. |
-| Zeichenfolgenvergleiche pro Dimension und Segment | 100 | Vom System erzwungene Leitplanke | Maximale Anzahl von Zeichenfolgenvergleichen pro Dimension und Segment. |
-| Berechnete Metriken | 50.000 | Vom System erzwungene Leitplanke | Maximale Anzahl berechneter Metriken für eine Organisation. |
-| Segmente | 50.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von Segmenten, die Sie für eine Organisation definieren können. |
-| API-Aufrufe | 120 | Vom System erzwungene Leitplanke | API-Anfragen pro Minute (12 Anfragen alle 6 Sekunden). |
+| Container pro Segment | 50 | Vom System erzwungene Leitplanken | Maximale Anzahl von Containern pro Segment. |
+| Metriken pro berechneter Metrik | 25 | Vom System erzwungene Leitplanken | Maximale Anzahl von Metriken pro berechneter Metrik. |
+| Metriken und Dimensionen pro Segment | 25 | Vom System erzwungene Leitplanken | Maximale Anzahl eindeutiger Metriken und Dimensionen pro Segment. |
+| Verschachtelte Container pro Segment | 10 | Vom System erzwungene Leitplanken | Maximale Anzahl verschachtelter Container pro Segment. |
+| Regeln pro Segment | 100 | Vom System erzwungene Leitplanken | Maximale Anzahl von Regeln pro Segment. |
+| Zeichenfolgenvergleiche pro Dimension und Segment | 100 | Vom System erzwungene Leitplanken | Maximale Anzahl von Zeichenfolgenvergleichen pro Dimension und Segment. |
+| Berechnete Metriken | 50.000 | Vom System erzwungene Leitplanken | Maximale Anzahl berechneter Metriken für eine Organisation. |
+| Segmente | 50.000 | Vom System erzwungene Leitplanken | Maximale Anzahl von Segmenten, die Sie für eine Organisation definieren können. |
+| API-Aufrufe | 120 | Vom System erzwungene Leitplanken | API-Anfragen pro Minute (12 Anfragen alle 6 Sekunden). |
 
 {style="table-layout:auto"}
 
@@ -226,9 +226,9 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Kacheln | 16 | Vom System erzwungene Leitplanke | Maximale Anzahl an Kacheln pro Scorecard |
-| Segmente | 10 | Vom System erzwungene Leitplanke | Maximale Anzahl von Segmenten pro Scorecard. |
-| Dimensionen | 10 | Vom System erzwungene Leitplanke | Maximale Anzahl von Dimensionen pro Scorecard. |
+| Kacheln | 16 | Vom System erzwungene Leitplanken | Maximale Anzahl an Kacheln pro Scorecard |
+| Segmente | 10 | Vom System erzwungene Leitplanken | Maximale Anzahl von Segmenten pro Scorecard. |
+| Dimensionen | 10 | Vom System erzwungene Leitplanken | Maximale Anzahl von Dimensionen pro Scorecard. |
 
 {style="table-layout:auto"}
 
@@ -236,11 +236,11 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Größe der Arbeitsmappen-Datei | 5 | Vom System erzwungene Leitplanke | Maximale Dateigröße in MB einer geplanten Arbeitsmappe. |
-| Datenblöcke | 1.000 | Vom System erzwungene Leitplanke | Maximale Anzahl von [Datenblöcken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=de) pro Arbeitsmappe. |
-| Metriken | 20 | Vom System erzwungene Leitplanke | Maximale Anzahl von Metriken pro Datenblock. |
-| Datumsbereich | 13 | Vom System erzwungene Leitplanke | Maximale Anzahl von Monaten, die ein Datumsbereich pro Datenblock umfassen kann. |
-| Zeilen | 50.000 | Vom System erzwungene Leitplanke | Maximale Zeilenanzahl pro Datenblock. |
+| Größe der Arbeitsmappen-Datei | 5 | Vom System erzwungene Leitplanken | Maximale Dateigröße in MB einer geplanten Arbeitsmappe. |
+| Datenblöcke | 1.000 | Vom System erzwungene Leitplanken | Maximale Anzahl von [Datenblöcken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=de) pro Arbeitsmappe. |
+| Metriken | 20 | Vom System erzwungene Leitplanken | Maximale Anzahl von Metriken pro Datenblock. |
+| Datumsbereich | 13 | Vom System erzwungene Leitplanken | Maximale Anzahl von Monaten, die ein Datumsbereich pro Datenblock umfassen kann. |
+| Zeilen | 50.000 | Vom System erzwungene Leitplanken | Maximale Zeilenanzahl pro Datenblock. |
 
 {style="table-layout:auto"}
 
@@ -249,10 +249,10 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Zeilen pro Bericht | 3 Millionen - 300 Millionen | Vom System erzwungene Leitplanke | Maximale Anzahl an Berichtszeilen pro Bericht. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
-| Aufschlüsselungen nach Tabelle | 5 | Vom System erzwungene Leitplanke | Maximale Anzahl von Aufschlüsselungen pro Tabelle. |
-| Metriken pro Tabelle | 5 | Vom System erzwungene Leitplanke | Maximale Anzahl von Metriken pro Tabelle. |
-| Zeitplanfrequenz | 1 | Vom System erzwungene Leitplanke | Exporte können einmal (1) täglich oder nach einem längeren Zeitplan geplant werden (z. B. alle 2 Tage oder wöchentlich). |
+| Zeilen pro Bericht | 3 Millionen - 300 Millionen | Vom System erzwungene Leitplanken | Maximale Anzahl an Berichtszeilen pro Bericht. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Aufschlüsselungen nach Tabelle | 5 | Vom System erzwungene Leitplanken | Maximale Anzahl von Aufschlüsselungen pro Tabelle. |
+| Metriken pro Tabelle | 5 | Vom System erzwungene Leitplanken | Maximale Anzahl von Metriken pro Tabelle. |
+| Zeitplanfrequenz | 1 | Vom System erzwungene Leitplanken | Exporte können einmal (1) täglich oder nach einem längeren Zeitplan geplant werden (z. B. alle 2 Tage oder wöchentlich). |
 
 {style="table-layout:auto"}
 
@@ -261,9 +261,9 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Freigegebene Bibliothek | 1 | Vom System erzwungene Leitplanke | Maximale Anzahl an freigegebenen Bibliotheken für eine Verbindung |
-| Shared Metrics | 10.000 | Vom System erzwungene Leitplanke | Maximale Anzahl an freigegebenen Metriken pro freigegebener Bibliothek. |
-| Freigegebene Dimensionen | 10.000 | Vom System erzwungene Leitplanke | Maximale Anzahl an freigegebenen Dimensionen pro freigegebener Bibliothek. |
+| Freigegebene Bibliothek | 1 | Vom System erzwungene Leitplanken | Maximale Anzahl an freigegebenen Bibliotheken für eine Verbindung |
+| Shared Metrics | 10.000 | Vom System erzwungene Leitplanken | Maximale Anzahl an freigegebenen Metriken pro freigegebener Bibliothek. |
+| Freigegebene Dimensionen | 10.000 | Vom System erzwungene Leitplanken | Maximale Anzahl an freigegebenen Dimensionen pro freigegebener Bibliothek. |
 
 {style="table-layout:auto"}
 
@@ -272,7 +272,7 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
-| Datenansichten | 50 | Vom System erzwungene Leitplanke | Maximale Anzahl von Datenansichten, die für Data Insights Agent aktiviert werden können. Wenn weitere Datenansichten aktiviert sind, stehen dem Data Insights Agent nur die am häufigsten verwendeten Datenansichten zur Verfügung. Diese Schutzmaßnahme hat keine Auswirkungen auf die [Schutzmechanismen, die die maximale Anzahl von Datenansichten definieren, die Sie für eine Verbindung oder in Ihrer Organisation definieren können](#connections-data-views-projects). |
+| Datenansichten | 50 | Vom System erzwungene Leitplanken | Maximale Anzahl von Datenansichten, die für Data Insights Agent aktiviert werden können. Wenn weitere Datenansichten aktiviert sind, stehen dem Data Insights Agent nur die am häufigsten verwendeten Datenansichten zur Verfügung. Diese Schutzmaßnahme hat keine Auswirkungen auf die [Schutzmechanismen, die die maximale Anzahl von Datenansichten definieren, die Sie für eine Verbindung oder in Ihrer Organisation definieren können](#connections-data-views-projects). |
 
 
 ## Customer Journey Analytics B2B Edition
