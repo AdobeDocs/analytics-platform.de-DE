@@ -28,7 +28,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
-source-wordcount: 2181
+source-wordcount: 2168
 ht-degree: 89%
 
 ---
@@ -102,7 +102,7 @@ So geben Sie eine bestimmte Projektrolle für Benutzende oder Gruppen in Ihrer O
 
    Oder
 
-   Wenn Sie nur ein einzelnes Projekt freigeben möchten, können Sie das freizugebende Projekt öffnen und dann **[!UICONTROL Freigeben]** > **[!UICONTROL Für Arbeitsbereich-Benutzende freigeben]** auswählen.
+   Um nur ein einzelnes Projekt freizugeben, können Sie das Projekt öffnen, das Sie freigeben möchten, und dann **[!UICONTROL Freigeben]** > **[!UICONTROL Für Workspace-Benutzer freigeben]**.
 Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projekt zuerst zu speichern.
 
    Das Dialogfeld „Freigeben“ wird angezeigt. Die Abschnitte [!UICONTROL **Über Link freigeben**] und [!UICONTROL **Einstellungen**] des Dialogfelds sind nur sichtbar, wenn ein einzelnes Projekt freigegeben wird.
@@ -152,8 +152,8 @@ So geben Sie den Projekt-Link für Personen in Ihrer Organisation frei:
 
 >[!CONTEXTUALHELP]
 >id="workspace_share_with_anyone_require_aec_authentication"
->title="CX Enterprise-Authentifizierung verlangen"
->abstract="Ihr Unternehmen verlangt, dass sich Benutzer bei CX Enterprise anmelden, um diesen Link verwenden zu können."
+>title="CX Enterprise-Authentifizierung erforderlich"
+>abstract="Ihre Organisation verlangt, dass sich Benutzende bei CX Enterprise anmelden, um diesen Link zu verwenden."
 
 
 Sie können jetzt den [schreibgeschützten Zugriff](/help/analysis-workspace/curate-share/view-only-projects.md) auf Analysis Workspace-Projekte für Personen freischalten, die keinen Zugriff auf Customer Journey Analytics haben. Diese Zugriffsberechtigung kann Folgendes umfassen:

@@ -28,7 +28,7 @@ topic_v2:
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 4111
-ht-degree: 63%
+ht-degree: 64%
 
 ---
 
@@ -376,8 +376,8 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Datenerfassung"
->abstract="Definieren Sie, welche Tag-Eigenschaft verwendet werden soll, oder erstellen Sie eine neue. Definieren Sie zudem mithilfe regulärer Ausdrücke die ein- oder auszuschließenden Seiten und Assets.<br/>Wählen Sie für eine Tag-unabhängige Implementierung **[!UICONTROL Neu erstellen]**.  Eine Tags-Eigenschaft wird erstellt, aber Sie müssen sie nicht verwenden."
->additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Content Analytics JavaScript-Bibliothek"
+>abstract="Definieren Sie, welche Tag-Eigenschaft verwendet werden soll, oder erstellen Sie eine neue. Definieren Sie zudem mithilfe regulärer Ausdrücke die ein- oder auszuschließenden Seiten und Assets.<br/>Wählen Sie für eine Tag-unabhängige Implementierung die Option **[!UICONTROL Neu erstellen]** aus.  Eine Tags-Eigenschaft wird erstellt, Sie müssen sie jedoch nicht verwenden."
+>additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Content Analytics-JavaScript-Bibliothek"
 
 
 >[!CONTEXTUALHELP]
