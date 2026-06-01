@@ -27,10 +27,10 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: e430f26e2b6357a288adb4389a266f26acab68c4
 workflow-type: tm+mt
-source-wordcount: 1129
-ht-degree: 14%
+source-wordcount: 1448
+ht-degree: 8%
 
 ---
 
@@ -51,38 +51,76 @@ Siehe [Berichtsvergleich](#reporting-comparison) für weitere Details.
 >
 
 
-So erstellen Sie Berichte zu Marketo Engage-Daten in Customer Journey Analytics:
+Gehen Sie wie folgt vor, um Berichte zu Marketo Engage-Daten in Customer Journey Analytics zu erstellen:
 
-+++ &#x200B;1. Zuordnen von Marketo-Quelldatenfeldern zu ihren XDM-Zielen
++++ID-Strategie auswählen
+
+Wenn Sie Marketo-Aktivitätsdaten in Customer Journey Analytics aufnehmen möchten, müssen Sie eine geeignete ID-Strategie auswählen, um sicherzustellen, dass Marketo-Daten mit Customer Journey Analytics-Daten verknüpft werden können.
+
+Marketo-Daten enthalten nativ keine ECID, das ECID-Feld kann jedoch als benutzerdefiniertes Feld hinzugefügt werden, das mit der `munchkin.js`-Bibliothek erfasst wird. Durch diese Hinzufügung wird eine gemeinsame Kennung zwischen Marketo und vorhandenen Customer Journey Analytics-Web-Daten erstellt.
+
+Um Marketo- und Customer Journey Analytics-Daten zu verknüpfen[&#x200B; verwenden Sie das &#x200B;](/help/stitching/gbs.md)-basierte Stitching für die entsprechenden Datensätze. Je nach Implementierung können Sie mehrere verfügbare IDs verwenden:
+
+* ECID, bereitgestellt vom Experience Platform Identity Service
+* E-Mail
+* Munchkin-ID, bereitgestellt von Marketo Engage
+* Händler-ID
+* Dunn &amp; Bradstreet Duns\#
+* Demandbase-ID
+* (Potenziell andere)
+
+Diagrammbasiertes Stitching hilft auf folgende Weise:
+
+* Behält eine persistente ID für Web-Ereignisse bei.
+* Verwendet das Identitätsdiagramm, um bekannte Identitäten (wie E-Mail) nach Möglichkeit aufzulösen.
+* Wenn keine deterministische Übereinstimmung vorhanden ist, wird die diagrammbasierte Zuordnung auf die persistente ID zurückgesetzt, anstatt das Ereignis wegzulassen.
+
+Diagrammbasiertes Stitching ist aus folgenden Gründen eine praktikable Lösung zur Verknüpfung von Marketo- und Customer Journey Analytics-Daten:
+
+* Web-Ereignisdaten haben in jeder Zeile eine persistente ID (z. B. ECID).
+* Marketo-Daten enthalten verlässliche IDs in den Daten mit Munckin-ID, ECID und E-Mail.
+* Die diagrammbasierte Zuordnung überbrückt die ECID deterministisch mit der Munchkin-ID, der E-Mail-Adresse oder einer anderen ID, die in den Marketo-Daten verfügbar ist.
+* Diagrammbasiertes Stitching verwendet die explizit konfigurierten Identitätsdiagramm-Verknüpfungsregeln und -Namespaces.
+
+Um diese ID-Strategie zu überprüfen, sollten Sie ein gesteuertes diagrammbasiertes Stitching-Pilotprogramm ausführen.
+
+1. Fügen Sie ECID als benutzerdefiniertes Feld in Marketo hinzu und fügen Sie das benutzerdefinierte Feld dem Client-seitigen JavaScript-Code von munckin.js für die Marketo Engage-Datenerfassung hinzu.
+1. Richten Sie eine temporäre Kunden-Journey-Verbindung ein, die sowohl einen Marketo-Datensatz als auch einen Web-Ereignis-Datensatz enthält.
+1. Definieren Sie einen engen Datenbereich, um eine begrenzte, aber darstellbare Datenmenge einzubringen.
+1. Überprüfen Sie die Zuordnung durch Einrichtung einer Datenansicht und von Berichten in Workspace. Weitere Informationen finden Sie in den folgenden Schritten.
+
++++
+
++++Zuordnen von Marketo-Quelldatenfeldern zu ihren XDM-Zielen
 
 Ordnen Sie die Objekte [Personen](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) und [Aktivitäten](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) den jeweiligen XDM-Schema-Zielfeldern zu.
 
 +++
 
-+++ &#x200B;2. Aufnehmen von Marketo-Daten in Adobe Experience Platform
++++Aufnehmen von Marketo-Daten in Adobe Experience Platform
 
-Verwenden Sie den [Marketo Engage-Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo), um Daten aus Marketo in Experience Platform zu übertragen und mithilfe von Anwendungen, die mit Platform verbunden sind, auf dem neuesten Stand zu halten.
+Verwenden Sie den [Marketo Engage-Connector](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo), um Daten aus Marketo in Experience Platform zu übertragen und mithilfe von Experience Platform-Programmen auf dem neuesten Stand zu halten.
 
 +++
 
-+++ &#x200B;3. Einrichten einer Verbindung zu diesem Datensatz in Customer Journey Analytics
++++ Einrichten einer Verbindung zu diesem Datensatz in Customer Journey Analytics
 
 Um Berichte zu Experience Platform-Datensätzen zu erstellen, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Experience Platform und Customer Journey Analytics herstellen. Siehe [Erstellen oder Bearbeiten einer Verbindung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-connections/create-connection).
 
 +++
 
 
-+++ &#x200B;4. Eine oder mehrere Datenansichten erstellen
++++Eine oder mehrere Datenansichten erstellen
 
 Eine [Datenansicht](/help/data-views/data-views.md) ist ein für Customer Journey Analytics spezifischer Container, mit dem Sie bestimmen können, wie Daten aus einer Verbindung interpretiert werden. Sie enthält alle in Analysis Workspace verfügbaren Dimensionen und Metriken, in diesem Fall für Marketo spezifische Metriken und Dimensionen. Die Datenansicht gibt auch an, aus welchen Spalten diese Dimensionen und Metriken ihre Daten beziehen. Datenansichten werden in Vorbereitung auf das Reporting in Analysis Workspace definiert.
 
 +++ 
 
-+++ &#x200B;5. Bericht in Analysis Workspace
++++Bericht in Analysis Workspace
 
 Ein möglicher Anwendungsfall ist: Wie viele Web-Seitenbesuche durch Leads hatten Sie im April/Juni 2020?
 
-1. Öffnen Sie [Analysis Workspace](/help/analysis-workspace/home.md) und erstellen Sie ein neues Projekt.
+1. Öffnen Sie [Analytics Workspace](/help/analysis-workspace/home.md) und erstellen Sie ein neues Projekt.
 Kunden mit B2B/B2P CDP können eine B2C-Analyse in Customer Journey Analytics durchführen. B2B-Objekte sind noch nicht verfügbar.
 
 1. Erstellen Sie [Segment](/help/components/segments/seg-create.md) für Web-Seitenansichten wie folgt: Ereignistyp = web.webpagedetails.pageViews :
