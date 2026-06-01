@@ -26,10 +26,10 @@ topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: b4547b6c48adb97f6749ef54147f369632c44fa9
 workflow-type: tm+mt
-source-wordcount: 447
-ht-degree: 4%
+source-wordcount: 496
+ht-degree: 3%
 
 ---
 
@@ -62,6 +62,13 @@ Siehe auch die [Experience Platform-Dokumentation zu Data Mirror](https://experi
 >Data Mirror ist eine Funktion, die sich derzeit in der Beta-Phase befindet und die die Synchronisierung von Daten aus ausgewählten Data Warehouses mithilfe der Änderungsdatenerfassung (CDC) für Analysen in Customer Journey Analytics unterstützt. <br/>Diese Funktion wird am 18. Juni 2026 allgemein für Customer Journey Analytics verfügbar sein. Informationen dazu, wie sich dies künftig auf die jährliche Aufnahmebegrenzung auswirken könnte, finden Sie in der entsprechenden Produktbeschreibung. Bitte beachten Sie, dass Ihr Unternehmen weiterhin Zugriff auf die Funktion hat, wenn Data Mirror von der Beta-Version zur allgemeinen Verfügbarkeit übergeht.
 >
 
+>[!IMPORTANT]
+>
+>Die Änderungsdatensätze, die Sie in Experience Platform für Data Mirror for Customer Journey Analytics erstellen, sollten nicht in anderen Experience Platform-Lösungen wie Real-Time Customer Data Platform oder Journey Optimizer wiederverwendet werden. Wenn Sie dieselben Daten für diese Lösungen verwenden möchten, sollten Sie alternative Datensätze mit denselben Daten erstellen.
+>
+
+
+
 Experience Platform Data Mirror für Customer Journey Analytics ist für ausgewählte native Data Warehouse-Lösungen ([!DNL Azure Databricks], [!DNL Google BigQuery] und [!DNL Snowflake]) verfügbar. Die Customer Journey Analytics-Version von Experience Platform Data Mirror erfordert eine ordnungsgemäße Konfiguration der folgenden Anwendungen oder Komponenten:
 
 * [Native Data-Warehouse-Lösungen](datawarehouse.md)
@@ -70,6 +77,6 @@ Experience Platform Data Mirror für Customer Journey Analytics ist für ausgew�
 
 >[!MORELIKETHIS]
 >
->[Schnellstartanleitung zu Data Mirror: Relationale Daten spiegeln und verwenden](relational.md)
+>[Data Mirror-Schnellstartanleitung: Spiegeln und Verwenden von relationalen Daten](relational.md)
 >[Data Mirror (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-mirror/overview)
 >[Relationale Schemata (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/relational)
