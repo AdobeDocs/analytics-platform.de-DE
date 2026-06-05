@@ -5,13 +5,12 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: 774ac76b0a49d8172b31dc97563c13debb0858a7
+source-git-commit: f7bbbaf0b737ab33088c7c585d6415f93deff4c8
 workflow-type: tm+mt
 source-wordcount: '2431'
 ht-degree: 13%
 
 ---
-
 
 # Freigegebene Suchen
 
@@ -57,7 +56,7 @@ Der Container Übereinstimmung nach handhabt die häufigsten Fälle, ohne dass S
 
 ### Übereinstimmung nach Feld
 
-Alternativ können Sie Profildatensätze anhand des Felds abgleichen. Diese Übereinstimmung führt zu direkten Suchen für jedes Ereignis in den Ereignisdaten, basierend auf einer bestimmten Identität. Bei Verwendung des Felds „Übereinstimmung nach“ können Ergebnisse doppelte Daten enthalten, was zu verwirrenden Ergebnissen führen kann, insbesondere bei Verwendung mit Metriken. Eine ausführlichere Erläuterung finden [&#x200B; unter &#x200B;](#example).
+Alternativ können Sie Profildatensätze anhand des Felds abgleichen. Diese Übereinstimmung führt zu direkten Suchen für jedes Ereignis in den Ereignisdaten, basierend auf einer bestimmten Identität. Bei Verwendung des Felds „Übereinstimmung nach“ können Ergebnisse doppelte Daten enthalten, was zu verwirrenden Ergebnissen führen kann, insbesondere bei Verwendung mit Metriken. Eine ausführlichere Erläuterung finden [ unter ](#example).
 
 ### Identitätszuordnungen als Schlüsselfelder
 
@@ -145,7 +144,7 @@ Die Beispieldaten für jeden Datensatz:
 
 >[!ENDTABS]
 
-Wenn diese Verbindung erstellt wird[&#x200B; werden &#x200B;](/help/getting-started/cja-b2b-concepts-features.md#containers)Container“ automatisch als Teil der Kernfunktionalität von Customer Journey Analytics erstellt.
+Wenn diese Verbindung erstellt wird[ werden ](/help/getting-started/cja-b2b-concepts-features.md#containers)Container“ automatisch als Teil der Kernfunktionalität von Customer Journey Analytics erstellt.
 
 Das folgende Diagramm zeigt die Entitätsbeziehungen für diese Verbindung.
 
