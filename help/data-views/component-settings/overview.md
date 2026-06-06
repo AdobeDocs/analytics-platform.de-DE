@@ -23,10 +23,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: dcc1be6e0c0e0dab19b4067232e48dc175011ed1
 workflow-type: tm+mt
-source-wordcount: 3784
-ht-degree: 53%
+source-wordcount: 4127
+ht-degree: 48%
 
 ---
 
@@ -173,19 +173,19 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 
 | Name | Beschreibung |
 |------|-------------|
-| Inhalts-ID | Inhalts-ID |
-| Inhaltsbesuchszeit | Besuchszeit für Inhalt. |
-| Folge | Folge. |
-| Ereignistyp | Ereignistyp. |
-| Besuchszeit für Medien | Mit Medien verbrachte Zeit. |
-| Staffel | Staffel. |
-| Sekunden seit dem letzten Aufruf | Sekunden seit letztem Aufruf. |
-| Serie | Anzeigen. |
-| Zeit bis Start | Zeit bis zum Start. |
-| Gesamtpufferdauer | Gesamtdauer des Puffers. |
-| Pausierung – Gesamtdauer | Pausierung - Gesamtdauer |
-| Videolänge | Videolänge. |
-| Videoname | Videoname. |
+| [Inhalts-ID](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/content) | Die eindeutige Kennung für den wiedergegebenen Inhalt. Aktiviert die **[!UICONTROL Content-ID]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Besuchszeit für Inhalt](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/content-time-spent) | Mit der Anzeige von Inhalten verbrachte Zeit, ohne Anzeigen. Die erweiterte Einstellung **[!UICONTROL Besuchszeit für Inhalt]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) wird unterstützt. |
+| [Folge](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/episode) | Episode Nummer innerhalb einer Serie. Aktiviert das Filtern nach Episode im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| Ereignistyp | Der Medienereignistyp, z. B. `media.play` oder `media.ping`. Erforderlich, damit Customer Journey Analytics die abgeleitete Metrik [Gleichzeitige Medienbetrachter](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) berechnet. |
+| [Besuchszeit für Medien](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/media-time-spent) | Gesamtzeit, einschließlich Inhalt, Anzeigen, Pufferung und Pausen. Wirkt sich auf [&#x200B; Bedienfeld „Mit Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) und die erweiterte Einstellung **[!UICONTROL Mit Medienwiedergabe verbrachte Zeit]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) aus. |
+| [Staffel](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/season) | Staffelnummer innerhalb einer Serie. Aktiviert die Filterung nach Saison im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| Sekunden seit dem letzten Aufruf | Zeit in Sekunden seit dem letzten Heartbeat-Ping. Erforderlich, damit Customer Journey Analytics die abgeleitete Metrik [Gleichzeitige Medienbetrachter](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) berechnet, die angibt, wann eine Sitzung noch aktiv ist. |
+| [Anzeigen](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/show) | Der Name des Programms oder der Serie. Aktiviert das Filtern nach Anzeige im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Zeit bis zum Start](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/time-to-start) | Zeit zwischen Inhaltsauswahl und Beginn der Wiedergabe. In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
+| [Gesamtdauer des Puffers](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | Gesamtdauer der Pufferung während einer Sitzung. In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
+| [Pausierung insgesamt](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/total-pause-duration) | Gesamtbesuchszeit für Pausen während einer Sitzung In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
+| [Videolänge](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/content-length) | Inhaltsdauer in Sekunden. Erforderlich für den Modus **[!UICONTROL Bestimmter Inhalt]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Videoname](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/content-name) | Der Anzeigename des Inhalts. Aktiviert die **[!UICONTROL Videoname]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
 
 +++
 
