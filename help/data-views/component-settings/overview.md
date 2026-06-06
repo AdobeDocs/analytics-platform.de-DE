@@ -6,27 +6,15 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 TQID: https://experienceleague.adobe.com/Ozf-XAsirDMkZLIQCX4SLGD7SvKinu3O4fwJ4ifgSvQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebb
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: dcc1be6e0c0e0dab19b4067232e48dc175011ed1
 workflow-type: tm+mt
-source-wordcount: 3784
-ht-degree: 53%
+source-wordcount: 4127
+ht-degree: 48%
 
 ---
 
@@ -77,7 +65,7 @@ Die folgenden Informationen beschreiben die Einstellungen, die eine Datenansicht
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen zum Komponententyp](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen zum Komponententyp](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -113,7 +101,7 @@ Die Vorteile von Kontextkennzeichnungen sind:
 
 Kontextkennzeichnungen können in den folgenden Situationen erforderlich sein:
 
-* Um einen Komponentensatz zu definieren, können Sie ihn in Analysis Workspace-Projekten im Experimentier[Reporting über das &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)Experimentier-Bedienfeld“ verwenden.
+* Um einen Komponentensatz zu definieren, können Sie ihn in Analysis Workspace-Projekten im Experimentier[Reporting über das ](/help/analysis-workspace/c-panels/experimentation.md)Experimentier-Bedienfeld“ verwenden.
 
   Weitere Informationen finden Sie unter [Integrieren mit Journey Optimizer](/help/integrations/ajo.md#data-view) und [Zielgruppenberichte](/help/integrations/at.md).
 
@@ -173,19 +161,19 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 
 | Name | Beschreibung |
 |------|-------------|
-| Inhalts-ID | Inhalts-ID |
-| Inhaltsbesuchszeit | Besuchszeit für Inhalt. |
-| Folge | Folge. |
-| Ereignistyp | Ereignistyp. |
-| Besuchszeit für Medien | Mit Medien verbrachte Zeit. |
-| Staffel | Staffel. |
-| Sekunden seit dem letzten Aufruf | Sekunden seit letztem Aufruf. |
-| Serie | Anzeigen. |
-| Zeit bis Start | Zeit bis zum Start. |
-| Gesamtpufferdauer | Gesamtdauer des Puffers. |
-| Pausierung – Gesamtdauer | Pausierung - Gesamtdauer |
-| Videolänge | Videolänge. |
-| Videoname | Videoname. |
+| [Inhalts-ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content) | Die eindeutige Kennung für den wiedergegebenen Inhalt. Aktiviert die **[!UICONTROL Content-ID]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Besuchszeit für Inhalt](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/content-time-spent) | Mit der Anzeige von Inhalten verbrachte Zeit, ohne Anzeigen. Die erweiterte Einstellung **[!UICONTROL Besuchszeit für Inhalt]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) wird unterstützt. |
+| [Folge](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/episode) | Episode Nummer innerhalb einer Serie. Aktiviert das Filtern nach Episode im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| Ereignistyp | Der Medienereignistyp, z. B. `media.play` oder `media.ping`. Erforderlich, damit Customer Journey Analytics die abgeleitete Metrik [Gleichzeitige Medienbetrachter](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) berechnet. |
+| [Besuchszeit für Medien](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/media-time-spent) | Gesamtzeit, einschließlich Inhalt, Anzeigen, Pufferung und Pausen. Wirkt sich auf [ Bedienfeld „Mit Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) und die erweiterte Einstellung **[!UICONTROL Mit Medienwiedergabe verbrachte Zeit]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) aus. |
+| [Staffel](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/season) | Staffelnummer innerhalb einer Serie. Aktiviert die Filterung nach Saison im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| Sekunden seit dem letzten Aufruf | Zeit in Sekunden seit dem letzten Heartbeat-Ping. Erforderlich, damit Customer Journey Analytics die abgeleitete Metrik [Gleichzeitige Medienbetrachter](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) berechnet, die angibt, wann eine Sitzung noch aktiv ist. |
+| [Anzeigen](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/show) | Der Name des Programms oder der Serie. Aktiviert das Filtern nach Anzeige im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Zeit bis zum Start](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/time-to-start) | Zeit zwischen Inhaltsauswahl und Beginn der Wiedergabe. In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
+| [Gesamtdauer des Puffers](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | Gesamtdauer der Pufferung während einer Sitzung. In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
+| [Pausierung insgesamt](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-pause-duration) | Gesamtbesuchszeit für Pausen während einer Sitzung In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
+| [Videolänge](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-length) | Inhaltsdauer in Sekunden. Erforderlich für den Modus **[!UICONTROL Bestimmter Inhalt]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Videoname](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-name) | Der Anzeigename des Inhalts. Aktiviert die **[!UICONTROL Videoname]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
 
 +++
 
