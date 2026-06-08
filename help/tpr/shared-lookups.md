@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: f7bbbaf0b737ab33088c7c585d6415f93deff4c8
+source-git-commit: e1c7ffa9a2ac58717ee0050d4e7019b6f3f94518
 workflow-type: tm+mt
 source-wordcount: '2431'
 ht-degree: 13%
@@ -56,7 +56,7 @@ Der Container Übereinstimmung nach handhabt die häufigsten Fälle, ohne dass S
 
 ### Übereinstimmung nach Feld
 
-Alternativ können Sie Profildatensätze anhand des Felds abgleichen. Diese Übereinstimmung führt zu direkten Suchen für jedes Ereignis in den Ereignisdaten, basierend auf einer bestimmten Identität. Bei Verwendung des Felds „Übereinstimmung nach“ können Ergebnisse doppelte Daten enthalten, was zu verwirrenden Ergebnissen führen kann, insbesondere bei Verwendung mit Metriken. Eine ausführlichere Erläuterung finden [&#x200B; unter &#x200B;](#example).
+Alternativ können Sie Profildatensätze anhand des Felds abgleichen. Diese Übereinstimmung führt zu direkten Suchen für jedes Ereignis in den Ereignisdaten, basierend auf einer bestimmten Identität. Bei Verwendung des Felds „Übereinstimmung nach“ können Ergebnisse doppelte Daten enthalten, was zu verwirrenden Ergebnissen führen kann, insbesondere bei Verwendung mit Metriken. Eine ausführlichere Erläuterung finden [ unter ](#example).
 
 ### Identitätszuordnungen als Schlüsselfelder
 
@@ -144,7 +144,7 @@ Die Beispieldaten für jeden Datensatz:
 
 >[!ENDTABS]
 
-Wenn diese Verbindung erstellt wird[&#x200B; werden &#x200B;](/help/getting-started/cja-b2b-concepts-features.md#containers)Container“ automatisch als Teil der Kernfunktionalität von Customer Journey Analytics erstellt.
+Wenn diese Verbindung erstellt wird[ werden ](/help/getting-started/cja-b2b-concepts-features.md#containers)Container“ automatisch als Teil der Kernfunktionalität von Customer Journey Analytics erstellt.
 
 Das folgende Diagramm zeigt die Entitätsbeziehungen für diese Verbindung.
 
@@ -333,7 +333,7 @@ Anstelle einer Übereinstimmung nach Container können Sie auch eine Übereinsti
 | O-987 | BigCo-DX | **A-456** | A-789 | Öffnen Sie | **$ 16 MIO** |
 | O-888 | Giant DX | **A-789** | A-789 | Öffnen Sie | **$ 13 MIO** |
 
-* 3 Opportunitys für Account A-123 (Acme) mit einem Gesamtbetrag von **$ 13 Mio.**.
+* 3 Opportunitys für das Konto A-123 (Acme) mit insgesamt **$ 11 Mio.**.
 * 2 Opportunitys für Account A-456 (BigCo) mit einer Gesamtsumme von **$23M**.
 * 1 Opportunity für das Konto A-789 (Giant) mit insgesamt **$ 13 Millionen**.
 
