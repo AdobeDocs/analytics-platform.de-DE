@@ -24,9 +24,9 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4882eaa340d1139b8f93affb645219c999d293f0
+source-git-commit: 3b6264a1e159632e5a3246554c055488cfc6b39b
 workflow-type: tm+mt
-source-wordcount: 5865
+source-wordcount: 5863
 ht-degree: 93%
 
 ---
@@ -62,8 +62,8 @@ Für [!UICONTROL Verbindungen] gibt es zwei Benutzeroberflächen: [[!UICONTROL L
 
 Die Benutzeroberfläche **[!UICONTROL Liste]** ist die Standardbenutzeroberfläche für Verbindungen. Wenn sie nicht ausgewählt ist, wählen Sie die Registerkarte **[!UICONTROL Liste]** aus, um auf die Benutzeroberfläche zuzugreifen.
 
-In der Benutzeroberfläche **[!UICONTROL Liste]** wird eine Tabelle aller verfügbaren Verbindungen angezeigt.
-
+Die **[!UICONTROL List]** zeigt eine Tabelle aller verfügbaren Verbindungen an.
+△
 ![Listenansicht](assets/list-view.png)
 
 Die folgenden Spalten oder Symbole sind in der Tabelle verfügbar.
@@ -434,7 +434,7 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 
 
 >[!CONTEXTUALHELP]
->id="connections_extendeddatacapacitiyrows"
+>id="connections_extendeddatacapacityrows"
 >title="Erweiterte Datenkapazitätszeilen"
 >abstract="Die Gesamtzahl der verfügbaren Zeilen über einen Zeitraum, der älter als 13 Monate ist, für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
 
@@ -460,7 +460,7 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 
 
 >[!CONTEXTUALHELP]
->id="connections_b2b_correportablebpp"
+>id="connections_b2b_coreportablebpp"
 >title="Berichtspflichtige Zeilen für das Kernprofil von Geschäftspersonen"
 >abstract="Die Gesamtzahl der im Geschäftsprofil berichteten Zeilen, die in den letzten 13 Monaten für den aktuellen Monat verfügbar waren, mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
 
