@@ -24,10 +24,10 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 4882eaa340d1139b8f93affb645219c999d293f0
 workflow-type: tm+mt
-source-wordcount: 5351
-ht-degree: 97%
+source-wordcount: 5865
+ht-degree: 93%
 
 ---
 
@@ -81,7 +81,7 @@ Die folgenden Spalten oder Symbole sind in der Tabelle verfügbar.
 | **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für Datensätze: <p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Ein]**&#x200B;für Datensätze, die zum Importieren neuer Daten konfiguriert sind, und<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für Datensätze, die nicht für den Import neuer Daten konfiguriert sind. |
 | **[!UICONTROL Erstellt am]** | Der Zeitstempel, wann die Verbindung erstellt wurde. |
 | **[!UICONTROL Zuletzt geändert]** | Der Zeitstempel, wann die Verbindung zuletzt aktualisiert wurde. |
-| **[!UICONTROL Aufstockungsdaten]** | Der Status für die Aufstockung von Daten in allen Datensätzen:<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**&#x200B;für die Anzahl der datensatzübergreifend fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**&#x200B;für die Anzahl der datensatzübergreifend verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen für Datensätze,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls für die Datensätze in der Verbindung keine Aufstockungen definiert sind. |
+| **[!UICONTROL Aufstockungsdaten]** | Der Status für die Aufstockung von Daten in allen Datensätzen:<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**&#x200B;für die Anzahl der datensatzübergreifend fehlgeschlagenen Aufstockungen über Datensätze,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**&#x200B;für die Anzahl der datensatzübergreifend verarbeiteten Aufstockungen,<p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen für Datensätze,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls für die Datensätze in der Verbindung keine Aufstockungen definiert sind. |
 | **[!UICONTROL Integrationen]** | Zeigt alle Experience Platform-Programme an, die für die Verbindung aktiviert sind. |
 | **[!UICONTROL In CJA verwenden]** | Zeigt an, ob die Verbindung für die Verwendung mit Customer Journey Analytics aktiviert wurde. |
 
@@ -433,6 +433,63 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 >abstract="Kumulative berichtsfähige Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Bei der Auswahl von Januar bis März spiegeln die Werte die Momentaufnahme von März wider."
 
 
+>[!CONTEXTUALHELP]
+>id="connections_extendeddatacapacitiyrows"
+>title="Erweiterte Datenkapazitätszeilen"
+>abstract="Die Gesamtzahl der verfügbaren Zeilen über einen Zeitraum, der älter als 13 Monate ist, für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_extendeddatacapacityrows"
+>title="Erweiterte Datenkapazitätszeilen"
+>abstract="Erweiterte Datenkapazitätszeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Bei der Auswahl von Januar bis März spiegeln die Werte die Momentaufnahme von März wider."
+
+>[!CONTEXTUALHELP]
+>id="connections_aca_corereportablerows"
+>title="Content Analytics Core Reporting-Zeilen"
+>abstract="Die Gesamtzahl der für Content Analytics spezifischen Zeilen, die in den letzten 13 Monaten für den aktuellen Monat verfügbar waren, mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_aca_monthlyreportablerows"
+>title="Monatliche Content Analytics-Zeilen"
+>abstract="Verfolgt die Anzahl der für das Reporting verfügbaren Content Analytics-Zeilen. Berichtsfähige Zeilen sind die aufgenommenen Zeilen abzüglich der Zeilen, die bei der Aufnahme übersprungen und gelöscht wurden. Berichtsfähige Zeilen dienen als Schlüsselmetrik für die Rechnungsstellung und Datennutzung."
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_aca_corereportablerows"
+>title="Content Analytics Core Reporting-Zeilen"
+>abstract="Content Analytics Core Reporting-Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Bei der Auswahl von Januar bis März spiegeln die Werte die Momentaufnahme von März wider."
+
+
+>[!CONTEXTUALHELP]
+>id="connections_b2b_correportablebpp"
+>title="Berichtspflichtige Zeilen für das Kernprofil von Geschäftspersonen"
+>abstract="Die Gesamtzahl der im Geschäftsprofil berichteten Zeilen, die in den letzten 13 Monaten für den aktuellen Monat verfügbar waren, mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
+
+>[!CONTEXTUALHELP]
+>id="connections_b2b_historicalreportablebpp"
+>title="Berichtszeilen für historische Geschäftsprofile"
+>abstract="Die Gesamtzahl der im Geschäftsprofil berichtspflichtigen Zeilen, die über einen Zeitraum verfügbar sind, der älter als 13 Monate für den aktuellen Monat ist, mit einer prozentualen Änderung im Vergleich zum Vormonat. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_b2b_corereportablebpp"
+>title="Berichtszeilen zum Kerngeschäftsprofil"
+>abstract="Berichtszeilen zum Kerngeschäftsprofil sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Bei der Auswahl von Januar bis März spiegeln die Werte die Momentaufnahme von März wider."
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_b2b_historicalreportablebpp"
+>title="Berichtszeilen für historische Geschäftsprofile"
+>abstract="Berichtszeilen zu historischen Geschäftsprofilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Bei der Auswahl von Januar bis März spiegeln die Werte die Momentaufnahme von März wider."
+
+>[!CONTEXTUALHELP]
+>id="connections_monthlymediastarts"
+>title="Monatliche Medienstarts"
+>abstract="Die Gesamtzahl der monatlichen Medien beginnt in den letzten 13 Monaten für den aktuellen Monat mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise wird am 1. Februar 2024 die Gesamtzahl der verfügbaren Medienstarts mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 angezeigt."
+
+>[!CONTEXTUALHELP]
+>id="△△ "
+>title="Monatliche Medienstarts"
+>abstract="Monatliche Medienstarts sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Bei der Auswahl von Januar bis März spiegeln die Werte die Momentaufnahme von März wider."
+
+
 In der Benutzeroberfläche [!UICONTROL Nutzung] wird die Verwendung von aufgenommenen und berichtsfähigen Zeilen über alle Verbindungen hinweg angezeigt. Wenn sie nicht ausgewählt ist, wählen Sie die Registerkarte **[!UICONTROL Nutzung]** aus, um auf die Benutzeroberfläche zuzugreifen.
 
 Über diese Benutzeroberfläche können Sie ermitteln, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Bedingungen entspricht. Zusätzlich zur Überwachung können Sie die Benutzeroberfläche „Nutzung“ verwenden, um die Verlängerung Ihrer Customer Journey Analytics-Lizenz zu planen.
@@ -520,6 +577,6 @@ Die Benutzeroberfläche „Nutzung“ besteht aus zwei Panels:
 
 >[!MORELIKETHIS]
 >
->Tutorial [Anzeigen, Beheben von Problemen und Ändern von Verbindungseinstellungen](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).
->[Verwalten der Nutzung von Customer Journey Analytics](/help/technotes/estimate-usage.md)
+>[Tutorial zum Anzeigen, Beheben und Ändern &#x200B;](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja) Verbindungseinstellungen.
+>[Verwalten der Customer Journey Analytics-Nutzung](/help/technotes/estimate-usage.md)
 >
