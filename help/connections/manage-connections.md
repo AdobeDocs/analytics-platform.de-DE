@@ -24,7 +24,7 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3b6264a1e159632e5a3246554c055488cfc6b39b
+source-git-commit: 632179a04d3fa05943ff1cc15c3670e7a81b3ea2
 workflow-type: tm+mt
 source-wordcount: 5863
 ht-degree: 93%
@@ -485,7 +485,7 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 >abstract="Die Gesamtzahl der monatlichen Medien beginnt in den letzten 13 Monaten für den aktuellen Monat mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise wird am 1. Februar 2024 die Gesamtzahl der verfügbaren Medienstarts mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 angezeigt."
 
 >[!CONTEXTUALHELP]
->id="△△ "
+>id="connections_breakdown_monthlymediastarts"
 >title="Monatliche Medienstarts"
 >abstract="Monatliche Medienstarts sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Bei der Auswahl von Januar bis März spiegeln die Werte die Momentaufnahme von März wider."
 
