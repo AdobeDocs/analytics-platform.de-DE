@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 50c7bb7b18b45b5ffac0eebacca2bb0d2ed0c28d
 workflow-type: tm+mt
-source-wordcount: 6915
+source-wordcount: 6944
 ht-degree: 94%
 
 ---
@@ -49,6 +49,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 |---|---|
+| **Juni 2026** | |
+| Neuer GA4-Leitfaden | Hinzugefügt [Übergang von Google Analytics 4 zu Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
 | **Mai 2026** | |
 | JavaScript-Bibliothek für Content Analytics | Dokumentation zur Implementierung von Content Analytics für den Webkanal mithilfe der [Content Analytics-JavaScript-Bibliothek](/help/content-analytics/config/tags-agnostic.md) ohne Experience Platform-Datenerfassungs-Tags. |
 | Überlegungen zu Data Mirror | [Dokumentation](/help/data-mirror/considerations.md) in der Faktoren beschrieben werden, die Sie beim Einrichten von [Data Mirror-Datensätzen berücksichtigen &#x200B;](/help/data-mirror/data-mirror.md). |
