@@ -5,11 +5,17 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: c2d8f4a1-7b3e-4c9f-a5d2-8e1b6c3f9072
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 2125f1a16ffed79f77757120c5679dd4defa1638
 workflow-type: tm+mt
 source-wordcount: 3200
@@ -64,7 +70,7 @@ In Analysis Workspace **[!UICONTROL die Dimension]** Marketing-Kanal“ mit dem 
 
 Die Aufschlüsselungen von GA4 werden diesen Customer Journey Analytics-Dimensionen zugeordnet:
 
-* **channel**: **[!UICONTROL Marketing-Kanal]**. Customer Journey Analytics verfügt über keine integrierten Kanalgruppierungen - sie werden mithilfe der Funktionsvorlage „Marketing[Kanäle](/help/data-views/derived-fields/derived-fields.md) als **[!UICONTROL abgeleitetes Feld definiert oder Regeln]** Adobe Analytics übernommen, wenn der Analytics-Quell-Connector verwendet wird (siehe &quot;[ von Marketing-Kanal-Dimensionen ](/help/use-cases/aa-data/marketing-channels.md)).
+* **channel**: **[!UICONTROL Marketing-Kanal]**. Customer Journey Analytics verfügt über keine integrierten Kanalgruppierungen - sie werden mithilfe der Funktionsvorlage „Marketing[Kanäle](/help/data-views/derived-fields/derived-fields.md) als **[!UICONTROL abgeleitetes Feld definiert oder Regeln]** Adobe Analytics übernommen, wenn der Analytics-Quell-Connector verwendet wird (siehe &quot;[&#x200B; von Marketing-Kanal-Dimensionen &#x200B;](/help/use-cases/aa-data/marketing-channels.md)).
 * **Source/Medium und Empfehlungen**: **[!UICONTROL Referrer-]** und **[!UICONTROL Referrer-Typ]**.
 * **Kampagne**: Die `utm_*` Parameter von GA4 werden nicht automatisch erfasst. Jeder muss während der Implementierung einem XDM-Feld zugeordnet werden, bevor es als Dimension angezeigt wird. Wenn Kampagnenwerte als Trackingcode eingehen, verwenden Sie die Dimension **[!UICONTROL Trackingcode]** .
 
@@ -74,7 +80,7 @@ Die Aufschlüsselungen von GA4 werden diesen Customer Journey Analytics-Dimensio
 
 Die Attributionsberichte von GA4 (unter Advertising) zeigen, wie verschiedene Kanäle zu Konversionen beitragen und ermöglichen Modellvergleiche und Konversionspfadanalysen.
 
-Verwenden Sie in Analysis Workspace das Bedienfeld [[!UICONTROL Attribution] : ](/help/analysis-workspace/c-panels/attribution.md)
+Verwenden Sie in Analysis Workspace das Bedienfeld [[!UICONTROL Attribution] : &#x200B;](/help/analysis-workspace/c-panels/attribution.md)
 
 1. Wählen Sie das Symbol Bedienfelder aus und ziehen Sie ein Bedienfeld **[!UICONTROL Attribution]** auf die Arbeitsfläche.
 2. Ziehen Sie die Dimension **[!UICONTROL Marketing]** Kanal) in das Feld **[!UICONTROL Dimension hinzufügen]**.
@@ -91,7 +97,7 @@ Das [!UICONTROL Attributionsbedienfeld] erstellt eine Modellvergleichstabelle un
 
 Der Bericht „Seiten und Bildschirme“ von GA4 zeigt Leistungsmetriken für einzelne Seiten und Anwendungsbildschirme an.
 
-Ziehen Sie in Analysis Workspace die Dimension **[!UICONTROL Seite]** in eine [[!UICONTROL Freiformtabelle]](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) und fügen Sie Ihre gewünschten Metriken hinzu. Zu den gebräuchlichen Metriken gehören ****, **[!UICONTROL Personen]**, **[!UICONTROL Absprungrate]** und **[!UICONTROL Aufgewendete Zeit pro Sitzung]**.
+Ziehen Sie in Analysis Workspace die Dimension **[!UICONTROL Seite]** in eine [[!UICONTROL Freiformtabelle]](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) und fügen Sie Ihre gewünschten Metriken hinzu. Zu den gebräuchlichen Metriken gehören **&#x200B;**, **[!UICONTROL Personen]**, **[!UICONTROL Absprungrate]** und **[!UICONTROL Aufgewendete Zeit pro Sitzung]**.
 
 Um Seiten nach URL-Pfadstruktur zu gruppieren (z. B. `/blog/` oder `/products/`), verwenden Sie die Dimension **[!UICONTROL Site-Bereich]** , wenn Ihre Implementierung sie definiert, oder erstellen Sie ein [abgeleitetes Feld](/help/data-views/derived-fields/derived-fields.md) das die Seiten-URL mit der Funktion **[!UICONTROL URL Parse]** analysiert. Wenn Sie eine explizite Zuordnung von Seite zu Abschnitt beibehalten, kann stattdessen ein [Lookup](/help/connections/standard-lookups.md)Datensatz) die Gruppierung bereitstellen.
 
@@ -129,7 +135,7 @@ Um die Konversionsliste von GA4 nach Namen neu zu erstellen, verwenden Sie **Seg
 
 Um eine Konversionsrate hinzuzufügen, erstellen Sie eine berechnete Metrik (wählen Sie das Symbol **+** neben der Metrikliste aus), die als Konversionsmetrik dividiert durch **[!UICONTROL Sitzungen]** oder **[!UICONTROL Personen]** definiert ist.
 
-Jede Konvertierung, die Sie hier isolieren, kann auch als wiederverwendbare Metrik in Ihrer Datenansicht definiert werden. Wie Sie dies einrichten können, erfahren Sie **Eintrag „Schlüsselereignisse → Benutzerdefinierte**&quot; unter [Allgemeine ](#common-metrics)&quot;.
+Jede Konvertierung, die Sie hier isolieren, kann auch als wiederverwendbare Metrik in Ihrer Datenansicht definiert werden. Wie Sie dies einrichten können, erfahren Sie **Eintrag „Schlüsselereignisse → Benutzerdefinierte**&quot; unter [Allgemeine &#x200B;](#common-metrics)&quot;.
 
 +++
 
@@ -346,7 +352,7 @@ Customer Journey Analytics verfügt über keine integrierte Metrik für engagier
 
 Die „Interaktionsrate **von GA4** der Prozentsatz der Sitzungen, die interagiert wurden: Interaktionssitzungen dividiert durch die Gesamtzahl der Sitzungen.
 
-Erstellen Sie sie in Customer Journey Analytics als berechnete Metrik aus Ihrer Definition für „Interaktive Sitzungen“. Eine [ Anleitung finden Sie ](compare-data.md#engagement-rate) „Interaktive Sitzungen“.
+Erstellen Sie sie in Customer Journey Analytics als berechnete Metrik aus Ihrer Definition für „Interaktive Sitzungen“. Eine [&#x200B; Anleitung finden Sie &#x200B;](compare-data.md#engagement-rate) „Interaktive Sitzungen“.
 
 +++
 
@@ -368,7 +374,7 @@ In Customer Journey Analytics lautet die äquivalente Metrik **[!UICONTROL Ereig
 
 +++Sitzungen → Sitzungen
 
-In den **Sitzungen** von GA4 und in **[!UICONTROL Sitzungen]** von Customer Journey Analytics wird die Anzahl der Sitzungen in einem Datumsbereich gemessen. Die Anzahl kann aufgrund unterschiedlicher Sitzungsdefinitionsregeln unterschiedlich sein. Einzelheiten finden [ unter „Warum sich GA4- und Customer Journey Analytics](compare-data.md#sessions)Daten unterscheiden.
+In den **Sitzungen** von GA4 und in **[!UICONTROL Sitzungen]** von Customer Journey Analytics wird die Anzahl der Sitzungen in einem Datumsbereich gemessen. Die Anzahl kann aufgrund unterschiedlicher Sitzungsdefinitionsregeln unterschiedlich sein. Einzelheiten finden [&#x200B; unter „Warum sich GA4- und Customer Journey Analytics](compare-data.md#sessions)Daten unterscheiden.
 
 +++
 
@@ -390,9 +396,9 @@ Die „Absprungrate **von GA4** der Prozentsatz der Sitzungen, die nicht interag
 
 Die Metrik **[!UICONTROL Absprungrate]** von Customer Journey Analytics verwendet standardmäßig eine andere Definition und kann pro Datenansicht konfiguriert werden. Diese Unterschiede führen zu wesentlich unterschiedlichen Zahlen, die unterschiedliche Verhaltensweisen messen.
 
-Um die Absprungrate von GA4 in Customer Journey Analytics abzuschätzen, erstellen Sie eine Metrik für die Interaktionsrate und invertieren Sie sie mit einer zweiten berechneten Metrik, die als `1 - Engagement Rate` definiert ist. Informationen [ schrittweisen Erstellung finden ](compare-data.md#engagement-rate) unter „Interaktive Sitzungen .
+Um die Absprungrate von GA4 in Customer Journey Analytics abzuschätzen, erstellen Sie eine Metrik für die Interaktionsrate und invertieren Sie sie mit einer zweiten berechneten Metrik, die als `1 - Engagement Rate` definiert ist. Informationen [&#x200B; schrittweisen Erstellung finden &#x200B;](compare-data.md#engagement-rate) unter „Interaktive Sitzungen .
 
-Eine ausführliche Erläuterung [ Definitionsunterschieds finden Sie unter ](compare-data.md#bounce-rate)Warum sich GA4- und Customer Journey Analytics-Daten unterscheiden“.
+Eine ausführliche Erläuterung [&#x200B; Definitionsunterschieds finden Sie unter &#x200B;](compare-data.md#bounce-rate)Warum sich GA4- und Customer Journey Analytics-Daten unterscheiden“.
 
 +++
 
