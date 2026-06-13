@@ -234,7 +234,7 @@ Ziehen Sie eine dieser Dimensionen aus dem Bedienfeld Komponenten in eine [[!UIC
 
 >[!NOTE]
 >
->Da moderne Browser die Details in der Benutzeragenten-Zeichenfolge reduziert haben, hängen vollständige und genaue Werte von der Erfassung von [Benutzeragenten-Client-](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)) in Ihrer Web SDK-Konfiguration ab.
+>Da moderne Browser die Details in der Benutzeragenten-Zeichenfolge reduziert haben, hängen vollständige und genaue Werte von der Erfassung von [Benutzeragenten-Client-](https://experienceleague.adobe.com/de/docs/experience-platform/collection/use-cases/client-hints)) in Ihrer Web SDK-Konfiguration ab.
 
 +++
 

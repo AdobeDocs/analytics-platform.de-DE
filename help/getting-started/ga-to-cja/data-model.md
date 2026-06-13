@@ -79,7 +79,7 @@ GA4 erfasst automatisch eine Reihe von Ereignissen über seine SDK. In der folge
 
 In GA4 haben benutzerdefinierte Ereignisse einen Namen und bis zu 25 Parameter. In Customer Journey Analytics werden benutzerdefinierte Ereignisse benutzerdefinierten XDM-Schemafeldern zugeordnet, die während der Implementierung definiert wurden:
 
-* Der **Ereignisname** wird zu einem Feldwert in einem XDM-Feld (normalerweise [`xdm.eventType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/experienceevent)).
+* Der **Ereignisname** wird zu einem Feldwert in einem XDM-Feld (normalerweise [`xdm.eventType`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/experienceevent)).
 * Jeder **Parameter** wird zu einem separaten XDM-Schemafeld. Jedes XDM-Feld kann beim [Konfigurieren einer Datenansicht“ entweder als Dimension oder Metrik &#x200B;](/help/data-views/component-settings/overview.md) werden.
 
 >[!NOTE]
