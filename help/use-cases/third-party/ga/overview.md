@@ -17,14 +17,20 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 046df00868ca4a5b3bab3eb36cca7d91b141333a
 workflow-type: tm+mt
-source-wordcount: 303
-ht-degree: 79%
+source-wordcount: 342
+ht-degree: 70%
 
 ---
 
 # Migrieren von Daten aus Google Analytics
+
+>[!BEGINSHADEBOX]
+
+Dieses Handbuch behandelt die Datenmigration für Administratoren. Wenn Sie als Analyst Ihre GA4-Berichte in Customer Journey Analytics finden möchten, lesen Sie [Wechsel von Google Analytics 4 zu Customer Journey Analytics](/help/getting-started/ga-to-cja/home.md) und [GA4-Berichte in Customer Journey Analytics](/help/getting-started/ga-to-cja/reports.md).
+
+>[!ENDSHADEBOX]
 
 Wenn Sie Customer Journey Analytics erst seit Kurzem verwenden, kann es sein, dass Ihr Unternehmen Daten auf einer anderen Analyseplattform hat, z. B. Google Analytics. Sie können diese Schritte ausführen, um diese Daten in Adobe Experience Platform zu verschieben und so Berichte in Customer Journey Analytics anzuzeigen.
 
