@@ -24,9 +24,9 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ffa7a6d6502dc687b5bbd0aafe4b7e7ec82313fe
+source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
 workflow-type: tm+mt
-source-wordcount: 5831
+source-wordcount: 5868
 ht-degree: 91%
 
 ---
@@ -488,6 +488,13 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 >id="connections_breakdown_monthlymediastarts"
 >title="Monatliche Medienstarts"
 >abstract="Monatliche Medienstarts sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_aca_monthlyreportablerows"
+>title="Monatliche Content Analytics-Zeilen"
+>abstract="Monatliche Content Analytics-Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+
 
 
 In der Benutzeroberfläche [!UICONTROL Nutzung] wird die Verwendung von aufgenommenen und berichtsfähigen Zeilen über alle Verbindungen hinweg angezeigt. Wenn sie nicht ausgewählt ist, wählen Sie die Registerkarte **[!UICONTROL Nutzung]** aus, um auf die Benutzeroberfläche zuzugreifen.
