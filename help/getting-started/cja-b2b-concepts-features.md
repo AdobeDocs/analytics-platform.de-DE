@@ -23,10 +23,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+source-git-commit: 9c87ce4fb30c7d1d66ce88174443369ef44a7377
 workflow-type: tm+mt
-source-wordcount: 1485
-ht-degree: 2%
+source-wordcount: 1545
+ht-degree: 3%
 
 ---
 
@@ -95,6 +95,9 @@ Sie können auch den Standard-Container für diese Visualisierungen unter [Benut
 
 Segmente, Attribution und Visualisierungen unterstützen Sie zusammen mit den B2B-Containern bei der umfassenden B2B-Analyse und bei der Erweiterung Ihrer Erkenntnisse.
 
+## Schemata
+
+Der Customer Journey Analytics B2B-Editor verwendet das [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de), um B2B-Daten zu standardisieren und Schemas für Ihre B2B-Daten zu definieren. Sie können Ihre Schemata auf den [Standardklassen basieren, die in Real-Time CDP B2B edition bereitgestellt werden](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/schemas/b2b) oder Sie können Ihre eigenen benutzerdefinierten Klassen und Schemata verwenden. Die [Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)-Artikel verwenden Real-Time CDP B2B edition-Klassen und -Schemata. Eine Real-Time CDP B2B edition-Lizenz ist jedoch nicht erforderlich, um die Standardklassen und -schemata zu verwenden.
 
 ## Datensätze
 
@@ -103,7 +106,7 @@ Customer Journey Analytics B2B unterscheidet zwischen den folgenden Datentypen u
 | Datentyp | Zeitreihe | Container-Datensätze | Feldeinträge |
 |---|---|---|---|
 | **Datensätze** | **Ereignisdatensätze**<br/> Beispiel:<ul><li>Digitale Analyse</li><li>CRM-Ereignisse</li><li>Persönliche Ereignisse</li><li>Callcenter-Daten</li></ul> | **Profildatensätze**<br/> Beispiel:<ul><li>CRM-Datensätze</li><li>AJO B2B-Einträge</li><li>CDP-Einträge</li><ul> | **Klassifizierungen**<br/> Beispiel:<ul><li>Kampagneneinträge</li><li>Einträge in der Marketing-Liste</li><li>Inhaltsmetadaten</li><li>Produktaufzeichnungen</li></ul> |
-| Voraussetzungen | **Zeitstempel**<br> Jeder Datensatz benötigt:<ul><li>Konto-ID</li><li>Globale Konto-ID (optional)</li></ul> | **Konto-ID**<br> Datensätze benötigen eine Container-ID, z. B.:<ul><li>Konto</li><li>Person</li><li>Opportunity</li><li>Käufergruppe</li></ul> | **Übereinstimmende Schlüssel**<br> Datensätze benötigen eine ID, die in einem Container oder Ereignis-Datensatz enthalten ist, z. B.:<ul><li>Kampagnenkennung</li><li>Inhalts-ID</li><li>Produkt-ID</li></ul> |
+| Voraussetzungen | **Zeitstempel**<br> Jeder Datensatz benötigt:<ul><li>Konto-ID</li><li>Globale Konto-ID (optional)</li></ul> | **Konto-ID**<br> Datensätze benötigen eine Container-ID, z. B.:<ul><li>Konto</li><li>Person</li><li>Opportunity</li><li>Käufergruppe</li></ul> | **Übereinstimmende Schlüssel**<br> Datensätze benötigen eine ID, die in einem Container oder Ereignis-Datensatz enthalten ist, z. B.:<ul><li>Kampagnen-ID</li><li>Inhalts-ID</li><li>Produkt-ID</li></ul> |
 
 {style="table-layout:fixed"}
 

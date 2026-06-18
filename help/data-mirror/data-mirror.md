@@ -4,7 +4,6 @@ description: Erfahren Sie, wie Sie Daten zwischen nativen Data Warehouse-Lösung
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 autotag-review: '2026-05-19T08:55:53.979Z'
 TQID: 'https://experienceleague.adobe.com/10YCh2cnMTVriKKVOyYfzFfngvGQ2VVHOxzedE5NpWA'
@@ -26,16 +25,14 @@ topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: b4547b6c48adb97f6749ef54147f369632c44fa9
+source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 496
+source-wordcount: 455
 ht-degree: 3%
 
 ---
 
 # Übersicht über Experience Platform Data Mirror
-
-{{release-limited-testing}}
 
 Data Mirror ist eine Experience Platform-Funktion, die die Aufnahme von Änderungen auf Zeilenebene aus externen Datenbanken in den Data Lake mithilfe relationaler Schemata ermöglicht. Sie behält Datenbeziehungen bei, erzwingt Eindeutigkeit und unterstützt die Versionierung, ohne dass ETL-Prozesse (Upstream Extract, Transform, Load) erforderlich sind.
 
@@ -59,7 +56,7 @@ Siehe auch die [Experience Platform-Dokumentation zu Data Mirror](https://experi
 
 >[!NOTE]
 >
->Data Mirror ist eine Funktion, die sich derzeit in der Beta-Phase befindet und die die Synchronisierung von Daten aus ausgewählten Data Warehouses mithilfe der Änderungsdatenerfassung (CDC) für Analysen in Customer Journey Analytics unterstützt. <br/>Diese Funktion wird am 18. Juni 2026 allgemein für Customer Journey Analytics verfügbar sein. Informationen dazu, wie sich dies künftig auf die jährliche Aufnahmebegrenzung auswirken könnte, finden Sie in der entsprechenden Produktbeschreibung. Bitte beachten Sie, dass Ihr Unternehmen weiterhin Zugriff auf die Funktion hat, wenn Data Mirror von der Beta-Version zur allgemeinen Verfügbarkeit übergeht.
+>Data Mirror ist eine Funktion, die die Synchronisierung von Daten aus ausgewählten Data Warehouses mithilfe der Change Data Capture (CDC) für die Analyse in Customer Journey Analytics unterstützt. <br/>Unter der entsprechenden Produktbeschreibung erfahren Sie, wie sich die Funktion auf die jährliche Aufnahmebegrenzung auswirken kann.
 >
 
 >[!IMPORTANT]

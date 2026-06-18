@@ -4,7 +4,6 @@ description: Erläuterung der Spiegelung und Verwendung relationaler Daten in Cu
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
 TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
 product_v2:
@@ -21,16 +20,14 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 2356
+source-wordcount: 2355
 ht-degree: 15%
 
 ---
 
 # Relationale Daten spiegeln und verwenden
-
-{{release-limited-testing}}
 
 In dieser Kurzanleitung wird erläutert, wie Sie [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) verwenden können, um relationale Daten aus einer Data Warehouse-nativen Lösung in Adobe Experience Platform zu spiegeln. Und dann benutzen wir diese Daten in Customer Journey Analytics.
 

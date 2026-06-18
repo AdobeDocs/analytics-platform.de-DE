@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 9c87ce4fb30c7d1d66ce88174443369ef44a7377
 workflow-type: tm+mt
-source-wordcount: 528
-ht-degree: 0%
+source-wordcount: 623
+ht-degree: 3%
 
 ---
 
@@ -64,7 +64,7 @@ Alle vorhandenen Verbindungen werden als [personenbasierte Verbindungen“ &#x20
 
 Um B2B-Funktionen in Ihrer vorhandenen Implementierung zu implementieren, müssen Sie die folgenden Schritte ausführen:
 
-1. Modellieren Ihrer B2B-Daten. Customer Journey Analytics B2B edition geht zumindest von Account-basierten Zeitreihen-Ereignisdaten aus und profitiert von zusätzlichen Profil- oder Lookup-Datensatzdaten. z. B. Kontodaten, Daten zu Einkaufsgruppen, Opportunity-Daten, Daten zu Mitgliedern von Marketing-Listen und mehr.
+1. Modellieren Ihrer B2B-Daten. Sie können das [Adobe Experience-Datenmodell (XDM) verwenden](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) um B2B-Daten zu standardisieren und Schemas für Ihre B2B-Daten zu definieren.<br/>Sie können Ihre Schemata auf den [Standardklassen basieren, die in Real-Time CDP B2B edition bereitgestellt werden](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/schemas/b2b) oder Sie können Ihre eigenen benutzerdefinierten Klassen und Schemata verwenden. Die [Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)-Artikel verwenden Real-Time CDP B2B edition-Klassen und -Schemata. Eine Real-Time CDP B2B edition-Lizenz ist jedoch nicht erforderlich, um die Standardklassen und -schemata zu verwenden. <br/>Customer Journey Analytics B2B edition geht von mindestens Account-basierten Zeitreihen-Ereignisdaten aus und profitiert von zusätzlichen Profil- oder Lookup-Datensatzdaten. z. B. Kontodaten, Daten zu Einkaufsgruppen, Opportunity-Daten, Daten zu Mitgliedern von Marketing-Listen und mehr.
 
    * Definieren Sie, welche Kennung Sie als primäre Kontokennung (Konto-ID) verwenden möchten. Häufig hilft Ihnen ein bestehendes CRM- oder anderes Tool (z. B. Demandbase), diese Kennung zu ermitteln.
    * Identifizieren Sie zusätzliche Kennungen für die anderen B2B-Daten, die Sie verwenden möchten: Kennung des globalen Kontos, Opportunity-Kennung, Einkaufsgruppenkennung und Personenkennung.
