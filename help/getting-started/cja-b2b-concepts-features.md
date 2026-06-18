@@ -7,26 +7,15 @@ role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
 TQID: https://experienceleague.adobe.com/pXiDvk--5tAJYGj8lfq7KQfVLQqVOePbBZqCXT10rZ0
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 9c87ce4fb30c7d1d66ce88174443369ef44a7377
 workflow-type: tm+mt
-source-wordcount: 1485
-ht-degree: 2%
+source-wordcount: 1545
+ht-degree: 3%
 
 ---
 
@@ -91,10 +80,13 @@ Sie können die B2B-Container für bestimmte B2B-Funktionen in Analysis Workspac
 * **Attribution**: Sie können die neuen B2B-Container im [Attributionsbereich](/help/analysis-workspace/c-panels/attribution.md), in [Attributionskomponenteneinstellungen](/help/data-views/component-settings/attribution.md), in [berechneten Metriken](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) oder in [Spalten in einer Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). Account-Lookbacks werden auf 13 Monate verlängert.
 
 * **Visualisierungen**: [Ausfallen](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md), [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) und [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) Visualisierungen unterstützen die neuen B2B-Container. Beispiel: Sie können die neuen Container verwenden, um zu verstehen, wie Einkaufsgruppen Inhalte konsumieren oder wie sich Opportunity-Kohorten dem Verkaufsabschluss nähern.
-Sie können auch den Standard-Container für diese Visualisierungen unter [Benutzereinstellungen“ &#x200B;](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+Sie können auch den Standard-Container für diese Visualisierungen unter [Benutzereinstellungen“ ](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 
 Segmente, Attribution und Visualisierungen unterstützen Sie zusammen mit den B2B-Containern bei der umfassenden B2B-Analyse und bei der Erweiterung Ihrer Erkenntnisse.
 
+## Schemata
+
+Der Customer Journey Analytics B2B-Editor verwendet das [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de), um B2B-Daten zu standardisieren und Schemas für Ihre B2B-Daten zu definieren. Sie können Ihre Schemata auf den [Standardklassen basieren, die in Real-Time CDP B2B edition bereitgestellt werden](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/schemas/b2b) oder Sie können Ihre eigenen benutzerdefinierten Klassen und Schemata verwenden. Die [Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)-Artikel verwenden Real-Time CDP B2B edition-Klassen und -Schemata. Eine Real-Time CDP B2B edition-Lizenz ist jedoch nicht erforderlich, um die Standardklassen und -schemata zu verwenden.
 
 ## Datensätze
 
@@ -103,7 +95,7 @@ Customer Journey Analytics B2B unterscheidet zwischen den folgenden Datentypen u
 | Datentyp | Zeitreihe | Container-Datensätze | Feldeinträge |
 |---|---|---|---|
 | **Datensätze** | **Ereignisdatensätze**<br/> Beispiel:<ul><li>Digitale Analyse</li><li>CRM-Ereignisse</li><li>Persönliche Ereignisse</li><li>Callcenter-Daten</li></ul> | **Profildatensätze**<br/> Beispiel:<ul><li>CRM-Datensätze</li><li>AJO B2B-Einträge</li><li>CDP-Einträge</li><ul> | **Klassifizierungen**<br/> Beispiel:<ul><li>Kampagneneinträge</li><li>Einträge in der Marketing-Liste</li><li>Inhaltsmetadaten</li><li>Produktaufzeichnungen</li></ul> |
-| Voraussetzungen | **Zeitstempel**<br> Jeder Datensatz benötigt:<ul><li>Konto-ID</li><li>Globale Konto-ID (optional)</li></ul> | **Konto-ID**<br> Datensätze benötigen eine Container-ID, z. B.:<ul><li>Konto</li><li>Person</li><li>Opportunity</li><li>Käufergruppe</li></ul> | **Übereinstimmende Schlüssel**<br> Datensätze benötigen eine ID, die in einem Container oder Ereignis-Datensatz enthalten ist, z. B.:<ul><li>Kampagnenkennung</li><li>Inhalts-ID</li><li>Produkt-ID</li></ul> |
+| Voraussetzungen | **Zeitstempel**<br> Jeder Datensatz benötigt:<ul><li>Konto-ID</li><li>Globale Konto-ID (optional)</li></ul> | **Konto-ID**<br> Datensätze benötigen eine Container-ID, z. B.:<ul><li>Konto</li><li>Person</li><li>Opportunity</li><li>Käufergruppe</li></ul> | **Übereinstimmende Schlüssel**<br> Datensätze benötigen eine ID, die in einem Container oder Ereignis-Datensatz enthalten ist, z. B.:<ul><li>Kampagnen-ID</li><li>Inhalts-ID</li><li>Produkt-ID</li></ul> |
 
 {style="table-layout:fixed"}
 
