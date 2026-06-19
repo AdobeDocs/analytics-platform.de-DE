@@ -36,7 +36,7 @@ topic_v2:
 source-git-commit: 50c7bb7b18b45b5ffac0eebacca2bb0d2ed0c28d
 workflow-type: tm+mt
 source-wordcount: 6944
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -52,24 +52,24 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | **Juni 2026** | |
 | Neuer GA4-Leitfaden | Hinzugefügt [Übergang von Google Analytics 4 zu Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
 | **Mai 2026** | |
-| JavaScript-Bibliothek für Content Analytics | Dokumentation zur Implementierung von Content Analytics für den Webkanal mithilfe der [Content Analytics-JavaScript-Bibliothek](/help/content-analytics/config/tags-agnostic.md) ohne Experience Platform-Datenerfassungs-Tags. |
-| Überlegungen zu Data Mirror | [Dokumentation](/help/data-mirror/considerations.md) in der Faktoren beschrieben werden, die Sie beim Einrichten von [Data Mirror-Datensätzen berücksichtigen &#x200B;](/help/data-mirror/data-mirror.md). |
-| Content Analytics Mobile-Kanal | Aktualisierungen der [Content Analytics-Dokumentation](/help/content-analytics/content-analytics.md) um die Funktionen und die Konfiguration des Content Analytics Mobile-Kanals zu beschreiben. |
+| JavaScript-Bibliothek für Content Analytics | Dokumentation zur Implementierung von Content Analytics für den Web-Kanal mithilfe der [Content Analytics-JavaScript-Bibliothek](/help/content-analytics/config/tags-agnostic.md) ohne Experience Platform-Datenerfassungs-Tags. |
+| Überlegungen zu Data Mirror | [Dokumentation](/help/data-mirror/considerations.md), in der Faktoren beschrieben werden, die Sie beim Einrichten von [Data Mirror-Datensätzen](/help/data-mirror/data-mirror.md) berücksichtigen sollten. |
+| Content Analytics – Mobiler Kanal | Aktualisierungen der [Content Analytics-Dokumentation](/help/content-analytics/content-analytics.md), um die Funktionen und die Konfiguration des mobilen Kanals von Content Analytics zu beschreiben. |
 | **April 2026** | |
-| Richtlinien für abgeleitete Felder | Es wurde ein Artikel mit [Richtlinien](/help/use-cases/data-views/derived-fields/guidelines.md) (Best Practices, Leitplanken und allgemeine Fallstricke) für die Arbeit mit abgeleiteten Feldern hinzugefügt. |
-| Fehlende Dokumentation für zwei Datensätze hinzugefügt, die bei der Integration von Journey Optimizer einbezogen werden können | [Zwei zusätzliche, nicht profilgenerierte Datensätze](/help/integrations/ajo.md#high-throughput-add-on-datasets) werden in die Verbindung aufgenommen, wenn das Add-on Transaktionsnachrichten mit hohem Durchsatz für Ihre IMS-Organisation aktiviert ist. |
-| Anwendungsfälle für die Kohortenanalyse aktualisiert | Basierend auf dem Feedback, das zu den Anwendungsfällen der Kohortenanalyse durch Analysis Workspace-Beispiele hinzugefügt wurde. |
+| Richtlinien für abgeleitete Felder | Ein Artikel mit [Richtlinien](/help/use-cases/data-views/derived-fields/guidelines.md) (Best Practices, Schutzmechanismen und häufige Fallstricke) für die Arbeit mit abgeleiteten Feldern wurde hinzugefügt. |
+| Fehlende Dokumentation für zwei Datensätze hinzugefügt, die bei der Integration von Journey Optimizer einbezogen werden können | [Zwei zusätzliche vom System und nicht profilgenerierte Datensätze](/help/integrations/ajo.md#high-throughput-add-on-datasets) werden in die Verbindung aufgenommen, wenn das Add-on für Transaktionsnachrichten mit hohem Durchsatz für Ihre IMS-Organisation aktiviert ist. |
+| Aktualisierte Anwendungsfälle für die Kohortenanalyse | Basierend auf Feedback wurden den Anwendungsfällen der Kohortenanalyse Analysis Workspace-Beispiele hinzugefügt. |
 | **März 2026** | |
-| Aufschlüsseln eines Bedienfelds | Die Dokumentation um den [Ablagebereich für ein Bedienfeld“ wurde neu strukturiert](/help/analysis-workspace/c-panels/panels.md#drop-zone) um die neue Funktion [Aufschlüsselung](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) zu unterstützen. |
+| Aufschlüsseln eines Panels | Die Dokumentation um den [Ablagebereich für ein Panel](/help/analysis-workspace/c-panels/panels.md#drop-zone) wurde neu strukturiert, um die neue Funktion [Aufschlüsseln](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) zu unterstützen. |
 | Technote zu fehlerhaften IDs (BAVIDs) | Neue [Technote zu fehlerhaften IDs](/help/technotes/badids.md). In der Technote wird erläutert, wie eine fehlerhafte ID definiert wird, wo in der Customer Journey Analytics-Benutzeroberfläche fehlerhafte IDs verwendet werden und wie Daten in Ihrer Verbindung auf fehlerhafte IDs untersucht werden. |
-| Neugestaltung der Datensatzvorschau in Verbindungen | Die Dokumentation für ein verbessertes Datenvorschau-Erlebnis beim [&#x200B; (Hinzufügen](/help/connections/create-connection.md#add-datasets) oder [Bearbeiten](/help/connections/create-connection.md#edit-a-dataset) von Datensätzen in einer personenbasierten Verbindung wurde aktualisiert, einschließlich der Dokumentation zu zusätzlichen [Zusammenfügen von Vorschauinformationen](/help/stitching/use-stitching-ui.md#datasets-preview) für Datensätze mit aktiviertem Zusammenfügen. |
-| Miniaturansichten und Vorschauen in Content Analytics | Dokumentation zu [Miniaturen](/help/content-analytics/report/report.md#thumbnails) und [Vorschauen](/help/content-analytics/report/report.md#previews) für zusätzliche Visualisierungen in Content Analytics. |
+| Neugestaltung der Datensatzvorschau in Verbindungen | Die Dokumentation für ein verbessertes Datenvorschau-Erlebnis beim [Hinzufügen](/help/connections/create-connection.md#add-datasets) oder [Bearbeiten](/help/connections/create-connection.md#edit-a-dataset) von Datensätzen in einer personenbasierten Verbindung wurde aktualisiert, einschließlich der Dokumentation zum zusätzlichen [Zuordnen von Vorschauinformationen](/help/stitching/use-stitching-ui.md#datasets-preview) für Datensätze mit aktivierter Zuordnung. |
+| Content Analytics-Miniaturen und -Vorschauen | Dokumentation zu [Miniaturen](/help/content-analytics/report/report.md#thumbnails) und [Vorschauen](/help/content-analytics/report/report.md#previews) für zusätzliche Visualisierungen in Content Analytics. |
 | **Februar 2026** | |
-| Überschreibungen des Headers | Dokumentation zur zusätzlichen Konfiguration [Header überschreibt](/help/content-analytics/config/guided.md#header-overrides) für Content Analytics. |
-| Schutzmaßnahme bei berechneten Metriken | Die [Schutzmaßnahme für die maximale Anzahl berechneter Metriken für eine Organisation“ wurde &#x200B;](/help/technotes/guardrails.md#segments-and-calculated-metrics). Der Maximalwert beträgt jetzt 50.000. |
-| Eigenständige Content Analytics | Es wurde Dokumentation für eine [eigenständige Konfiguration von Content Analytics&quot; &#x200B;](/help/content-analytics/config/standalone.md). |
+| Überschreibungen des Headers | Dokumentation zur zusätzlichen [Konfiguration von Header-Überschreibungen](/help/content-analytics/config/guided.md#header-overrides) für Content Analytics. |
+| Schutzmechanismus für berechnete Metriken | Der [Schutzmechanismus für die maximale Anzahl berechneter Metriken für eine Organisation](/help/technotes/guardrails.md#segments-and-calculated-metrics) wurde aktualisiert. Der Maximalwert beträgt jetzt 50.000. |
+| Eigenständige Content Analytics-Konfiguration | Eine Dokumentation für eine [eigenständige Konfiguration von Content Analytics](/help/content-analytics/config/standalone.md) wurde hinzugefügt. |
 | **Januar 2026** | |
-| Schema planen | Wesentliche Informationen und Kontext wurden hinzugefügt zu [Entwickeln eines Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
+| Schema planen | Wesentliche Informationen und Kontext für die [Planung eines Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md) wurden hinzugefügt. |
 
 
 ## 2025
@@ -77,7 +77,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Dezember 2025** | |
-| Auswirkungen von Sandbox-Änderungen | Die Auswirkungen eines Löschens oder Zurücksetzens einer Sandbox wurden zum Artikel [Auswirkungen von Löschen und Zurücksetzen](/help/technotes/deletion.md) hinzugefügt. |
+| Auswirkungen von Sandbox-Änderungen | Die Auswirkungen des Löschens oder Zurücksetzens einer Sandbox wurden zum Artikel [Auswirkungen des Löschens und Zurücksetzens](/help/technotes/deletion.md) hinzugefügt. |
 | **November 2025** | |
 | Leitlinien für Zeilen pro Tag in einer Verbindung | Es wurden [Informationen zu Leitlinien für Datenübertragungsbeschränkungen](/help/technotes/guardrails.md) bezüglich der maximalen durchschnittlichen Anzahl von Zeilen pro Tag in einer Verbindung hinzugefügt. |
 | **Oktober 2025** | |
@@ -362,7 +362,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | September 2021 | [Kundenkalender](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#calendar) – Dokumentation |
 | September 2021 | [Boolesche Felder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=de) – Dokumentation |
 | September 2021 | Aufschlüsselnung der Komponenteneinstellungen in Datenansichten in einzelne Dateien:<ul><li>[[!UICONTROL Komponenteneinstellungen] - Übersicht](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL &#x200B; Attribution] – Komponenteneinstellungen](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL Verhalten] – Komponenteneinstellungen](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL Format] – Komponenteneinstellungen](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL Einschließen/ausschließen] – Komponenteneinstellungen](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL Metrik-Deduplizierung] – Komponenteneinstellungen](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL Kein Wert] – Komponenteneinstellungen](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL Persistenz] – Komponenteneinstellungen](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL Wert-Bucketing] – Komponenteneinstellungen](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
-| September 2021 | Neuer Abschnitt über die [Auswirkungen der Zusammenführung von Report Suites](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#6.-considerations-when-merging-report-suites-in-cja) in Customer Journey Analytics. |
+| September 2021 | Neuer Abschnitt über die [Auswirkungen der Zusammenführung von Report Suites](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#?lang=de6.-considerations-when-merging-report-suites-in-cja) in Customer Journey Analytics. |
 | **August 2021** | |
 | August 2021 | Neuer Abschnitt zum Erlebnis mit erweiterten [Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de) in Customer Journey Analytics. |
 | August 2021 | Neuer Abschnitt zu [Groß-/Kleinschreibung in Datenansichtsdimensionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#configure-behavior-settings). |
