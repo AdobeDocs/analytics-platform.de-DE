@@ -19,9 +19,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 402
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -35,9 +35,9 @@ Customer Journey Analytics-Versionen basieren auf einem Modell der kontinuierlic
 
 * **Eingeschränktes Testen**: Eine schrittweise Veröffentlichung beginnt mit Tests durch Adobe-interne Benutzende. Sie wird dann einer kleinen Gruppe von Kundenkonten zur Verfügung gestellt, um sicherzustellen, dass die Funktion den Kundenanforderungen und Erwartungen entspricht.
 
-* **Start des Rollouts**: Der Rollout einer stufenweisen Veröffentlichung beginnt mit der eingeschränkten Testphase. Die Verfügbarkeit der Version für Kunden wird dann im Laufe einiger Monate von 0 % auf 100 % skaliert. Der schrittweise Rollout erfolgt auf der Ebene der CX Enterprise-Organisation, sodass alle berechtigten Benutzenden in einer Organisation dasselbe Erlebnis erhalten.
+* **Start des Rollouts**: Der Rollout einer stufenweisen Veröffentlichung beginnt mit der eingeschränkten Testphase. Die Verfügbarkeit der Version für Kunden wird dann im Laufe einiger Monate von 0 % auf 100 % skaliert. Die schrittweise Einführung erfolgt auf der CX Enterprise-Organisationsebene, sodass alle Benutzenden mit Berechtigung in einem Unternehmen dasselbe Erlebnis erhalten.
 
-* **Allgemeine Verfügbarkeit (GA)**: Die Funktion steht 100 % berechtigten CX Enterprise-Organisationen zur Verfügung und die Funktionsveröffentlichung ist abgeschlossen.
+* **Allgemeine Verfügbarkeit (GA)**: Die Funktion steht 100 % der berechtigten CX Experience-Organisationen zur Verfügung und die Veröffentlichung der Funktion ist abgeschlossen.
 
 Bei jeder Funktionsveröffentlichung kann die Timeline von RTP bis GA variieren. Ziel ist es, die Veröffentlichungen kurz zu halten, sodass innerhalb von 2 Monaten nach Beginn der Veröffentlichung (RTP) eine Funktion allgemein verfügbar (GA) ist.
 
