@@ -66,7 +66,7 @@ ht-degree: 95%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Journey-Arbeitsflächen-Visualisierung in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Übersicht über das Journey-Arbeitsflächen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/journey-canvas/journey-canvas) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Journey-Arbeitsflächen-Visualisierung in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Übersicht über das Journey-Arbeitsflächen](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/journey-canvas/journey-canvas) für die_![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
