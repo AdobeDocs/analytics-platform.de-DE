@@ -22,10 +22,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 236959f0e060e35a285777f40b8d1ef90855ed5c
+source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
 workflow-type: tm+mt
-source-wordcount: 1438
-ht-degree: 46%
+source-wordcount: 1215
+ht-degree: 51%
 
 ---
 
@@ -74,18 +74,11 @@ Miniaturansichten werden angezeigt, wenn Sie den Mauszeiger über einen Datenpun
 
 ### Linie
 
-{{release-limited-testing-section}}
-
 ![Content Analytics-Miniaturen für Zeile](/help/content-analytics/assets/aca-line-thumbnail.png)
 
 Miniaturen werden angezeigt, wenn Sie den Mauszeiger über einen Datenpunkt in einer [&#x200B; bewegen](/help/analysis-workspace/visualizations/line.md).
 
 ## Vorschau
-
->[!AVAILABILITY]
->
->Die in diesem Abschnitt beschriebenen Balken- und Streuvisualisierungen werden eingeschränkt getestet und sind möglicherweise in Ihrer Umgebung nicht verfügbar. Dieser Hinweis wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Veröffentlichungen von Funktionen für Customer Journey Analytics](/help/release-notes/releases.md).
->
 
 Sie können ein Vorschaufenster öffnen. Gehen Sie dazu wie folgt vor:
 
@@ -129,7 +122,7 @@ Sie können die Aufschlüsselung **[!UICONTROL Inhaltskanal]** verwenden, um das
 
 Die vier Bedienfelder sind:
 
-* **Welche Inhalte schneiden am besten ab?**
+* **Welche Inhalte erzielen die besten Ergebnisse?**
 In diesem Bedienfeld wird ermittelt, welche Erlebnisse und Assets die Interaktion und Konversion fördern. Erlebnisse sind vollständige Web-Seiten, die zu einem bestimmten Zeitpunkt erfasst werden, oder eine Kombination aus Text, Assets und Aktionsaufrufen, die in einer Mobile App definiert sind.
 
    * **Erlebnisse**
@@ -149,7 +142,7 @@ In diesem Bedienfeld wird ermittelt, welche Erlebnisse und Assets die Interaktio
 Eine Visualisierung [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) die den Asset-CTR anzeigt.
       * **Am häufigsten konvertierte Assets**
 Eine [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) Visualisierung, die basierend auf der ausgewählten Konversionsmetrik die am häufigsten konvertierten Assets anzeigt.
-      * **Assets mit der besten Performance**
+      * **Assets mit der besten Leistung**
 Eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) für die Assets mit der besten Performance.
 Assets - Ansichten im Vergleich zur Konversion.
 Eine [Streudiagramm](/help/analysis-workspace/visualizations/scatterplot.md)-Visualisierung, die ein Streudiagramm der Asset-Ansichten im Vergleich zu den Asset-Konversionen zeigt.
@@ -193,7 +186,7 @@ Eine [Freiformtabelle“, &#x200B;](/help/analysis-workspace/visualizations/free
 * **Wo werden Assets auf meiner Site angezeigt?**
 In dieser Freiformtabelle wird angegeben, wo die am häufigsten angezeigten Assets angezeigt werden. Verwenden Sie diese Analyse, um leistungsstarke Seiten zu identifizieren und die Asset-Platzierung zu optimieren.
 
-   * **Wo werden die am häufigsten angesehenen Assets angezeigt?**
+   * **Wo werden die am häufigsten angezeigten Assets angezeigt?**
 Sie können jedes Asset nach Dimensionen aufschlüsseln, damit Sie besser verstehen können, wo dieses Bild angezeigt wird.
 
      Im Beispiel [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) wird **[!UICONTROL Asset-Wahrnehmungs-ID]** anstelle von [!UICONTROL Element-ID] verwendet. Manchmal kann exakt dasselbe Bild mit einer anderen Bild-URL auf Ihrer Site dupliziert werden. Mit dem Attribut [!UICONTROL Asset-Wahrnehmungs-ID] können diese Duplikate unter einer einzigen ID gruppiert werden.
