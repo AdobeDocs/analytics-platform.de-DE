@@ -27,16 +27,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
+source-git-commit: 9d0d572a176bf61f2b02ba1c98f0fc4202797692
 workflow-type: tm+mt
-source-wordcount: 229
-ht-degree: 51%
+source-wordcount: 298
+ht-degree: 39%
 
 ---
 
 # Aktuelle Versionshinweise zu Customer Journey Analytics (Juni 2026)
 
-**Letzte Aktualisierung**: 22. Juni 2026
+**Letzte Aktualisierung**: 23. Juni 2026
 
 Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Juni 2026. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -45,6 +45,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Juni
 | Funktion und Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | -----------|-----------|-----------|
 | **Data Mirror** <br/>[Data Mirror](/help/data-mirror/data-mirror.md) ist eine Experience Platform-Funktion, die die Änderungsaufnahme (Change Data Capture) auf Zeilenebene von externen Data Warehouse-Lösungen ([!DNL Snowflake], [!DNL Azure Databricks] und [!DNL Google BigQuery]) in Customer Journey Analytics mithilfe relationaler Schemata ermöglicht. Sie behält Datenbeziehungen bei, erzwingt Eindeutigkeit und unterstützt die Versionierung, ohne dass ETL-Prozesse (Upstream Extract, Transform, Load) erforderlich sind. | &#x200B;25. März 2026 | &#x200B;17. Juni 2026 |
+| **Überprüfen Ihrer Daten im KI** Assistenten<br/>Sie können den KI-Assistenten verwenden, um [die Datenqualität Ihrer Adobe Experience Platform-Datensätze zu überprüfen](https://experienceleague.adobe.com/de/docs/experience-cloud-ai/experience-cloud-ai/agents/data-validation). Basierend auf Agent Orchestrator kann die Datenvalidierungsfunktion statistische und semantische Validierungen für Datensätze durchführen, Datensatzfelder analysieren, Datenqualitätsprobleme identifizieren und Zusammenfassungen natürlicher Sprachen mit umsetzbaren Einblicken zurückgeben. | | &#x200B;22. Juni 2026 |
 
 ### Fehlerbehebungen in Customer Journey Analytics
 
