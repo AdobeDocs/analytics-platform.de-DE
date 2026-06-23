@@ -27,7 +27,7 @@ topic_v2:
 source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
 workflow-type: tm+mt
 source-wordcount: 5868
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -435,18 +435,18 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 
 >[!CONTEXTUALHELP]
 >id="connections_extendeddatacapacityrows"
->title="Erweiterte Datenkapazitätszeilen"
+>title="Zeilen für erweiterte Datenkapazität"
 >abstract="Die Gesamtzahl der verfügbaren Zeilen über einen Zeitraum, der älter als 13 Monate ist, für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_extendeddatacapacityrows"
->title="Erweiterte Datenkapazitätszeilen"
+>title="Zeilen für erweiterte Datenkapazität"
 >abstract="Erweiterte Datenkapazitätszeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_aca_corereportablerows"
->title="Content Analytics Core Reporting-Zeilen"
->abstract="Die Gesamtzahl der für Content Analytics spezifischen Zeilen, die in den letzten 13 Monaten für den aktuellen Monat verfügbar waren, mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
+>title="Berichtsfähige Zeilen zu Content Analytics-Kerndaten"
+>abstract="Die Gesamtzahl der in den letzten 13 Monaten verfügbaren Content Analytics-spezifischen Zeilen für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_aca_monthlyreportablerows"
@@ -455,34 +455,34 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_corereportablerows"
->title="Content Analytics Core Reporting-Zeilen"
->abstract="Content Analytics Core Reporting-Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>title="Berichtsfähige Zeilen zu Content Analytics-Kerndaten"
+>abstract="Berichtsfähige Zeilen zu Content Analytics-Kerndaten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
 
 
 >[!CONTEXTUALHELP]
 >id="connections_b2b_coreportablebpp"
->title="Berichtspflichtige Zeilen für das Kernprofil von Geschäftspersonen"
->abstract="Die Gesamtzahl der im Geschäftsprofil berichteten Zeilen, die in den letzten 13 Monaten für den aktuellen Monat verfügbar waren, mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
+>title="Berichtsfähige Zeilen für das Kernprofil von Geschäftspersonen"
+>abstract="Die Gesamtzahl der in den letzten 13 Monaten verfügbaren berichtsfähigen Zeilen für Unternehmensprofile für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
 
 >[!CONTEXTUALHELP]
 >id="connections_b2b_historicalreportablebpp"
->title="Berichtszeilen für historische Geschäftsprofile"
->abstract="Die Gesamtzahl der im Geschäftsprofil berichtspflichtigen Zeilen, die über einen Zeitraum verfügbar sind, der älter als 13 Monate für den aktuellen Monat ist, mit einer prozentualen Änderung im Vergleich zum Vormonat. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
+>title="Berichtsfähige Zeilen zu historischen Unternehmensprofilen"
+>abstract="Die Gesamtzahl der berichtsfähigen Zeilen für Unternehmensprofile über einen Zeitraum, der älter als 13 Monate ist, für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_corereportablebpp"
->title="Berichtszeilen zum Kerngeschäftsprofil"
->abstract="Berichtszeilen zum Kerngeschäftsprofil sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>title="Berichtsfähige Zeilen zu wichtigen Unternehmensprofilen"
+>abstract="Berichtsfähige Zeilen zu wichtigen Unternehmensprofilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_historicalreportablebpp"
->title="Berichtszeilen für historische Geschäftsprofile"
->abstract="Berichtszeilen zu historischen Geschäftsprofilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>title="Berichtsfähige Zeilen zu historischen Unternehmensprofilen"
+>abstract="Berichtsfähige Zeilen zu historischen Unternehmensprofilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_monthlymediastarts"
 >title="Monatliche Medienstarts"
->abstract="Die Gesamtzahl der monatlichen Medien beginnt in den letzten 13 Monaten für den aktuellen Monat mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise wird am 1. Februar 2024 die Gesamtzahl der verfügbaren Medienstarts mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 angezeigt."
+>abstract="Die Gesamtzahl der in den letzten 13 Monaten verfügbaren monatlichen Medienstarts für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Medienstarts mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_monthlymediastarts"
