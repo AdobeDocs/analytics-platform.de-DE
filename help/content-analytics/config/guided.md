@@ -25,10 +25,10 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: e557971b741732dae55ba56ee4a44c039a5e3d78
 workflow-type: tm+mt
-source-wordcount: 4111
-ht-degree: 64%
+source-wordcount: 4177
+ht-degree: 63%
 
 ---
 
@@ -546,6 +546,13 @@ Optional können Sie im Abschnitt **[!UICONTROL Überschreibungen der Kopfzeile]
 1. Aktivieren **[!UICONTROL Konfigurieren von Kopfzeilenüberschreibungen]**.
 1. Geben Sie den **[!UICONTROL Header-Namen]** ein. Zum Beispiel `x-asset-service`.
 1. Geben Sie den **[!UICONTROL Header-Wert]** ein. Was auch immer Sie angeben, ist geheim und in der Benutzeroberfläche nicht sichtbar (es sei denn, Sie geben explizit den Wert ![Sichtbarkeit](/help/assets/icons/Visibility.svg) während der Eingabe an).
+
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
+>title="Keine Quell-Connectoren"
+>abstract="Bezahlte Medien erfordern Experience Platform-Quell-Connectoren für Ihre Werbe-Publisher. In dieser Sandbox sind keine Google Ads- oder Meta Ads-Connectoren verfügbar. Konfigurieren Sie einen oder mehrere dieser Connectoren in der Schnittstelle **[!UICONTROL Experience Platform]** > **[!UICONTROL Sources]** und kehren Sie zu diesem Schritt zurück, um die Konfiguration von bezahlten Content Analytics-Medien fortzusetzen."
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads-Quelle"
 
 #### Speichern {#web-save}
 
