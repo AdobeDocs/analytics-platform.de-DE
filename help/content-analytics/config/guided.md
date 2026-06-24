@@ -552,7 +552,7 @@ Optional können Sie im Abschnitt **[!UICONTROL Überschreibungen der Kopfzeile]
 >id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
 >title="Keine Quell-Connectoren"
 >abstract="Bezahlte Medien erfordern Experience Platform-Quell-Connectoren für Ihre Werbe-Publisher. In dieser Sandbox sind keine Google Ads- oder Meta Ads-Connectoren verfügbar. Konfigurieren Sie einen oder mehrere dieser Connectoren in der Schnittstelle **[!UICONTROL Experience Platform]** > **[!UICONTROL Sources]** und kehren Sie zu diesem Schritt zurück, um die Konfiguration von bezahlten Content Analytics-Medien fortzusetzen."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads-Quelle"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads-Quelle"
 
 ##### Speichern {#web-save}
 
