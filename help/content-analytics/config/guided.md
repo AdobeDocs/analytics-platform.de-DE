@@ -25,7 +25,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e557971b741732dae55ba56ee4a44c039a5e3d78
+source-git-commit: 6af3e9063dc192814c888e786ca61ff1703aedf5
 workflow-type: tm+mt
 source-wordcount: 4177
 ht-degree: 63%
@@ -554,7 +554,7 @@ Optional können Sie im Abschnitt **[!UICONTROL Überschreibungen der Kopfzeile]
 >abstract="Bezahlte Medien erfordern Experience Platform-Quell-Connectoren für Ihre Werbe-Publisher. In dieser Sandbox sind keine Google Ads- oder Meta Ads-Connectoren verfügbar. Konfigurieren Sie einen oder mehrere dieser Connectoren in der Schnittstelle **[!UICONTROL Experience Platform]** > **[!UICONTROL Sources]** und kehren Sie zu diesem Schritt zurück, um die Konfiguration von bezahlten Content Analytics-Medien fortzusetzen."
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads-Quelle"
 
-#### Speichern {#web-save}
+##### Speichern {#web-save}
 
 Nachdem Sie die Details für den Webkanal angegeben haben, klicken Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern. Wählen Sie **[!UICONTROL Abbrechen]**, um die Konfiguration abzubrechen.
 
