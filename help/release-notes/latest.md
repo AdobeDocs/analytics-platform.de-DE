@@ -27,16 +27,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9d0d572a176bf61f2b02ba1c98f0fc4202797692
+source-git-commit: 8cdfe0db0aabba05fbebe7d9215182e0fca31d66
 workflow-type: tm+mt
-source-wordcount: 298
-ht-degree: 39%
+source-wordcount: 615
+ht-degree: 44%
 
 ---
 
 # Aktuelle Versionshinweise zu Customer Journey Analytics (Juni 2026)
 
-**Letzte Aktualisierung**: 23. Juni 2026
+**Letzte Aktualisierung**: 25. Juni 2026
 
 Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Juni 2026. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -49,21 +49,27 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Juni
 
 ### Fehlerbehebungen in Customer Journey Analytics
 
-**Analysis Workspace**:
+**Analysis Workspace**: AN-456858, AN-455865, AN-455706, AN-455592, AN-455484, AN-455180, AN-454999, AN-454170, AN-454145, AN-453793, AN-452921, AN-451643, AN-451600, AN-451525, AN-452009, AN-451477, AN-451262, AN-451958, AN-451161, AN-450772, AN-443594, AN-AN-434416, AN-AN-ALL, AN-AN-US
 **Komponenten**:
-**Verbindungen**:
+**Verbindungen**: AN-457065, AN-453705
 **Content Analytics**: AN-451203, AN-447596
 **Geführte Analyse**:
-**Exporte**:
-**Datenansichten**:
+**Exporte**: AN-452006, AN-451989, AN-440567
+**Datenansichten**: AN-451198
 **Implementierung**:
-**Report Builder**: AN-440912
-**Reporting**:
+**Report Builder**: AN-440912, AN-457586, AN-457533, AN-455713, AN-455623, AN-455063, AN-454512, AN-454053, AN-453977, AN-453781, AN-453683, AN-451731, AN-451190, AN-449813, AN-451974, AN-447173, AN-447139, AN-451735, AN-446184, AN-445794, AN-445354, AN-AN-442819, AN-AN-ALL, AN-AN-US
+**Reporting**: AN-454589, AN-454517, AN-453982, AN-451822, AN-451497, AN-451463, AN-451259, AN-451215, AN-450661, AN-447699, AN-448375, AN-447692
 **Segmentierung**:
-**Geplante Berichte**:
+**Terminierte Berichte**: AN-451980, AN-451882, AN-450715
 **Freigegebene Metriken und Dimensionen**:
 **Zielgruppenanalyse**: AN-449656, AN-450400
-**Sonstige**:
+**Sonstige**: AN-457063, AN-454140, AN-453937, AN-453825, AN-452959, AN-452934, AN-452296, AN-451781, AN-450974
+
+## Zurückgestellte Funktionen
+
+| Funktion und Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
+| -----------|-----------|-----------|
+| **Streaming-Mediendienste: Unterstützung von Zeitplandaten** <br/>Sie können jetzt Zeitplandaten von früheren Live-Inhalten von Streaming-Medien hochladen, um Zuschauerzahlen einfacher und genauer zu verfolgen.<p>Im Folgenden finden Sie Beispiele für Live-Inhalte, die mit dem Upload von Zeitplandaten unterstützt werden:</p><ul><li>FAST-Plattformen (Free Ad Supported TV)</li><li>Lokale Datenströme</li><li>Live-Sportübertragungen</li></ul><p>Durch das Hochladen von Zeitplandaten können Sie die Zuschauerzahlen für einzelne Programme verfolgen, die in dem von Ihnen in der Upload-Datei angegebenen Zeitraum gelaufen sind. Sie können sogar Zuschauerzahlen für bestimmte Themen oder Programmsegmente erfassen.</p><p>Diese Funktionen sind unabhängig davon verfügbar, wie Sie die Erfassung von Streaming-Medien implementiert haben.</p><p>Zuvor war es bei der Analyse von Live-Inhalten schwierig, eine bestimmte Sitzung genau mit bestimmten Programmen zu verknüpfen, und es war nicht möglich, eine bestimmte Sitzung mit einzelnen Themen oder Programmsegmenten zu verknüpfen.</p><p>Weitere Informationen finden Sie unter [Hochladen von Zeitplandaten zum Nachverfolgen von Live-Inhalten](https://experienceleague.adobe.com/de/docs/media-analytics/using/media-use-cases/track-schedule-data) | &#x200B;29. Oktober 2025 | TBD<p>(Ursprünglich für den 29. Oktober 2025 geplant)</p> |
 
 >[!MORELIKETHIS]
 >
