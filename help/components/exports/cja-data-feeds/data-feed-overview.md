@@ -19,7 +19,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 8c577ff8508f15944ced77aaf20b692c911fdd3e
 workflow-type: tm+mt
 source-wordcount: 221
 ht-degree: 21%
@@ -36,7 +36,7 @@ Stellen Sie sicher, dass Sie alle folgenden Anforderungen erfüllen, bevor Sie D
 
 * Eine funktionierende Implementierung mit Daten, die in Adobe Customer Journey Analytics <!-- For more information, see Data ingestion overview - add link --> aufgenommen werden
 * Ihr Konto ist ein Analytics-Produktadministrator oder Ihr Konto gehört zu einem Produktprofil mit Zugriff auf Daten-Feeds <!--???-->
-* Ein Bucket, der für {DNL Amazon S3}, {DNL Google Cloud Platform}, {DNL Azure RBAC} oder {DNL Azure SAS}
+* Ein Bucket, der für [!DNL Amazon S3], [!DNL Google Cloud Platform], [!DNL Azure RBAC] oder [!DNL Azure SAS] konfiguriert wurde
 
 ## Erste Schritte
 

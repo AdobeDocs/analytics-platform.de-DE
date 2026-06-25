@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 8c577ff8508f15944ced77aaf20b692c911fdd3e
 workflow-type: tm+mt
-source-wordcount: 934
+source-wordcount: 933
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ Daten-Feeds in Customer Journey Analytics und Adobe Analytics ermöglichen den E
 | **Berechnete Metriken**<br/> | Nicht verfügbar | Nicht verfügbar |
 | **Persistenzmodell** | Flexibel. Persistenzeinstellungen aus der Datenansicht (Zuordnung und Gültigkeit) werden zum Zeitpunkt der Berichterstellung angewendet, wenn der Feed generiert wird. Unterstützt alle in einer Datenansicht verfügbaren Zuordnungseinstellungen: **Original**, **Zuletzt**, **Alle**, **Erster bekannter** und **Letzter bekannter**. | Es werden nur **Attributionsmodelle „Zuletzt verwendet (Letztkontakt** und **Ausgangswert (Erstkontakt)** dargestellt. Die lineare Zuordnung wird wie beim letzten Kontakt gehandhabt. |
 | **Ausgabedateiformat** | Parquet<p>unterstützt nativ komplexe verschachtelte und strukturierte Daten. Produktlisten werden als strukturierte Arrays/verschachtelte Objekte dargestellt. </p><p>Erfordert ein Parquet-orientiertes Tool zum Lesen, z. B. BigQuery, Snowflake oder Apache Spark.</p> | TSV<p>Flache, für Menschen lesbare Zeilen. unterstützt nicht nativ strukturierte Daten. Komplexe Felder wie Produktlisten müssen als proprietäre, durch Trennzeichen getrennte Zeichenfolgen codiert werden, was eine benutzerdefinierte Parsing-Logik erfordert.</p> |
-| **Versandziele** | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform, Snowflake. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. unterstützt auch **SFTP**. |
+| **Versandziele** | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. unterstützt auch **SFTP**. |
 
 {style="table-layout:auto"}
 
