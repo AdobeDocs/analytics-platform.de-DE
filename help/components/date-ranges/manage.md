@@ -5,20 +5,14 @@ feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
 TQID: https://experienceleague.adobe.com/zGfFrHDk1cHYcR-AU7Ulmw1YPRE2axM3t0YxEgavV34
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
-source-wordcount: 606
-ht-degree: 29%
+source-wordcount: 590
+ht-degree: 25%
 
 ---
 
@@ -42,8 +36,8 @@ In der ➊ Datumsbereiche werden alle Datumsbereiche angezeigt. Die Liste umfass
 
 | Spalte | Beschreibung |
 | --- | --- |
-| ![UnausgefüllterStern](/help/assets/icons/StarOutline.svg) | Wählen Sie aus![&#x200B; um einen Datumsbereich &#x200B;](/help/assets/icons/Star.svg)Star“ oder ![StarOutline](/help/assets/icons/StarOutline.svg) zu bevorzugen. |
-| **[!UICONTROL Titel und Beschreibung]** | Um den Titel und die Beschreibung zu bearbeiten, klicken Sie auf den Titel-Link, der den [Generator für Datumsbereiche“ &#x200B;](/help/components/date-ranges/create.md#date-range-builder). |
+| ![UnausgefüllterStern](/help/assets/icons/StarOutline.svg) | Wählen Sie aus![ um einen Datumsbereich ](/help/assets/icons/Star.svg)Star“ oder ![StarOutline](/help/assets/icons/StarOutline.svg) zu bevorzugen. |
+| **[!UICONTROL Titel und Beschreibung]** | Um den Titel und die Beschreibung zu bearbeiten, klicken Sie auf den Titel-Link, der den [Generator für Datumsbereiche“ ](/help/components/date-ranges/create.md#date-range-builder). |
 | **[!UICONTROL Inhabende]** | Der Inhaber des Datumsbereichs. |
 | **[!UICONTROL Tags]** | Die Tags für diesen Datumsbereich. |
 | **[!UICONTROL Freigegeben für]** | Die Einzelpersonen oder Gruppen, für die Sie den Datumsbereich freigegeben haben. Wählen Sie aus, um das Dialogfeld **[!UICONTROL Datumsbereich freigeben]** zu öffnen. |
@@ -59,7 +53,7 @@ Sie können Aktionen für Datumsbereiche mithilfe der Aktionsleiste ➋. Die Akt
 
 | Symbol | Aktion | Beschreibung |
 |:---:|---|---|
-| ![Hinzufügen](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Hinzufügen]** | Fügen Sie mithilfe des Datumsbereichserstellers [&#x200B; weiteren &#x200B;](create.md#date-range-builder) hinzu. |
+| ![Hinzufügen](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Hinzufügen]** | Fügen Sie mithilfe des Datumsbereichserstellers [ weiteren ](create.md#date-range-builder) hinzu. |
 | ![Durchsuchen](/help/assets/icons/Search.svg) | [!UICONTROL *Nach Titel suchen*] | Wenn kein Datumsbereich in der Liste ausgewählt ist, suchen Sie mithilfe dieses Suchfelds nach Datumsbereichen. |
 | ![Beschriftung](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Markieren Sie die ausgewählten Datumsbereiche. Wählen Sie im **[!UICONTROL Datumsbereich des Tags]** die Tags für die ausgewählten Datumsbereiche aus bzw. heben Sie die Auswahl auf. Klicken Sie **[!UICONTROL Speichern]**, um die Tags für die ausgewählten Datumsbereiche zu speichern. |
 | ![Freigeben](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Freigeben]** | Freigeben der ausgewählten Datumsbereiche. Im Dialogfeld **[!UICONTROL Datumsbereich freigeben]** können Sie ![Suchen](/help/assets/icons/Search.svg)*Einzelpersonen oder Gruppen suchen* oder **[!UICONTROL Organisation]** oder **[!UICONTROL Gruppen]**. Wählen Sie **[!UICONTROL Speichern]**, um Freigabedetails für die ausgewählten Datumsbereiche zu speichern. |
@@ -75,7 +69,7 @@ Die Filterleiste zeigt ➌ die aktiven Filter an (falls vorhanden). Mit ![XGrö�
 
 ### Panel „Filter“
 
-Sie können Datumsbereiche mithilfe der ➍ des **Bedienfelds** Filter filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Datumsbereiche an, die den Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
+Sie können Datumsbereiche mithilfe der ➍ des ]**Bedienfelds**[!UICONTROL  Filter filtern. Das Bedienfeld „Filter“ zeigt den Filtertyp und die Anzahl der Datumsbereiche an, die den Filter berücksichtigen. Wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus, um die Anzeige des Bedienfelds „Filter“ umzuschalten.
 
 So filtern Sie die Filterliste:
 
@@ -84,7 +78,7 @@ So filtern Sie die Filterliste:
 
    >[!INFO]
    >
-   >*Elemente* beziehen sich auf die Datumsbereichselemente, die in der [Datumsbereichsliste“ angezeigt &#x200B;](#date-ranges-list).
+   >*Elemente* beziehen sich auf die Datumsbereichselemente, die in der [Datumsbereichsliste“ angezeigt ](#date-ranges-list).
    > 
 
 #### Filterabschnitte
@@ -103,17 +97,9 @@ Sie können einen Datumsbereich auf zwei Arten bearbeiten:
 
 * Verwenden Sie in einem Workspace-Projekt das Symbol [Komponenteninformationen](/help/components/use-components-in-workspace.md#component-info) aus.
 
-* Wählen Sie in [[!UICONTROL &#x200B; Liste &#x200B;]Datumsbereiche](#date-ranges-list) den Titel des Datumsbereichs aus.
+* Wählen Sie in [[!UICONTROL  Liste ]Datumsbereiche](#date-ranges-list) den Titel des Datumsbereichs aus.
 
-Sie verwenden den [Generator für Datumsbereiche](/help/components/date-ranges/create.md#date-range-builder), um den Datumsbereich zu bearbeiten.
-
-
-
-
-Verwenden Sie den Datumsbereichs-Manager, um Datumsbereiche freizugeben, umzubenennen oder zu löschen. So greifen Sie auf den Datumsbereichs-Manager zu:
-
-1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen bei [analytics.adobe.com](https://analytics.adobe.com) an.
-1. Navigieren Sie zu [!UICONTROL Komponenten] > [!UICONTROL Datumsbereiche].
+Verwenden Sie den [Generator für Datumsbereiche](/help/components/date-ranges/create.md#date-range-builder), um den Datumsbereich zu bearbeiten.Verwenden Sie den [Datumsbereichsmanager](/help/components/date-ranges/manage.md) zum Freigeben, Umbenennen oder Löschen von Datumsbereichen.
 
 
 <!--
