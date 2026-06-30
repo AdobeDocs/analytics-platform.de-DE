@@ -26,10 +26,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
-source-wordcount: 2168
-ht-degree: 89%
+source-wordcount: 2183
+ht-degree: 90%
 
 ---
 
@@ -102,8 +102,7 @@ So geben Sie eine bestimmte Projektrolle für Benutzende oder Gruppen in Ihrer O
 
    Oder
 
-   Um nur ein einzelnes Projekt freizugeben, können Sie das Projekt öffnen, das Sie freigeben möchten, und dann **[!UICONTROL Freigeben]** > **[!UICONTROL Für Workspace-Benutzer freigeben]**.
-Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projekt zuerst zu speichern.
+   Wenn Sie nur ein einzelnes Projekt freigeben möchten, können Sie das freizugebende Projekt öffnen und dann **[!UICONTROL Freigeben]** > **[!UICONTROL Für Arbeitsbereich-Benutzende freigeben]** auswählen.Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projekt zuerst zu speichern.
 
    Das Dialogfeld „Freigeben“ wird angezeigt. Die Abschnitte [!UICONTROL **Über Link freigeben**] und [!UICONTROL **Einstellungen**] des Dialogfelds sind nur sichtbar, wenn ein einzelnes Projekt freigegeben wird.
 
@@ -203,9 +202,9 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
 1. Wählen Sie aus, ob die folgende Sicherheitsoption aktiviert werden soll (diese Option kann von Ihren Customer Journey-Admins gesteuert werden):
 
-   * **[!UICONTROL CX Enterprise-Authentifizierung erforderlich]:**
+   * **[!UICONTROL Experience Cloud-Authentifizierung verlangen]:**
 
-     Wenn diese Option aktiviert ist, können nur diejenigen Benutzer auf das Projekt zugreifen, die sich bei der CX Enterprise-Organisation anmelden können, in der das Projekt erstellt wurde, das Sie freigeben. Für Benutzende, für die Sie es freigeben, ist jedoch kein Zugriff auf Customer Journey Analytics erforderlich.
+     Wenn diese Option aktiviert ist, können nur diejenigen Benutzer auf das Projekt zugreifen, die sich bei der CX Enterprise (Experience Cloud)-Organisation anmelden können, in der das Projekt erstellt wurde, das Sie freigeben. Für Benutzende, für die Sie es freigeben, ist jedoch kein Zugriff auf Customer Journey Analytics erforderlich.
 
      Customer Journey Analytics-Admins können diese Voreinstellung für das Unternehmen konfigurieren, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md) beschrieben. Je nachdem, wie die Admins diese Option konfiguriert haben, können die folgenden Szenarien auftreten:
 
