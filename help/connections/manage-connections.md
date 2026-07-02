@@ -26,8 +26,8 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
 workflow-type: tm+mt
-source-wordcount: 5868
-ht-degree: 95%
+source-wordcount: 5884
+ht-degree: 97%
 
 ---
 
@@ -62,8 +62,7 @@ Für [!UICONTROL Verbindungen] gibt es zwei Benutzeroberflächen: [[!UICONTROL L
 
 Die Benutzeroberfläche **[!UICONTROL Liste]** ist die Standardbenutzeroberfläche für Verbindungen. Wenn sie nicht ausgewählt ist, wählen Sie die Registerkarte **[!UICONTROL Liste]** aus, um auf die Benutzeroberfläche zuzugreifen.
 
-Die **[!UICONTROL List]** zeigt eine Tabelle aller verfügbaren Verbindungen an.
-△
+In der Benutzeroberfläche **[!UICONTROL Liste]** wird eine Tabelle aller verfügbaren Verbindungen angezeigt.△
 ![Listenansicht](assets/list-view.png)
 
 Die folgenden Spalten oder Symbole sind in der Tabelle verfügbar.
@@ -420,17 +419,17 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_corereportablerows"
 >title="Berichtsfähige Zeilen zu Kerndaten"
->abstract="Berichtsfähige Zeilen zu Kerndaten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Berichtsfähige Zeilen zu Kerndaten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_historicalreportablerows"
 >title="Berichtsfähige Zeilen zu historischen Daten"
->abstract="Berichtsfähige Zeilen zu historischen Daten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Berichtsfähige Zeilen zu historischen Daten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_cumulativereportablerows"
 >title="Kumulative berichtsfähige Zeilen"
->abstract="Kumulative berichtsfähige Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Kumulative berichtsfähige Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 
 >[!CONTEXTUALHELP]
@@ -441,7 +440,7 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_extendeddatacapacityrows"
 >title="Zeilen für erweiterte Datenkapazität"
->abstract="Erweiterte Datenkapazitätszeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Zeilen für erweiterte Datenkapazität sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_aca_corereportablerows"
@@ -456,7 +455,7 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_corereportablerows"
 >title="Berichtsfähige Zeilen zu Content Analytics-Kerndaten"
->abstract="Berichtsfähige Zeilen zu Content Analytics-Kerndaten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Berichtsfähige Zeilen zu Content Analytics-Kerndaten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 
 >[!CONTEXTUALHELP]
@@ -472,12 +471,12 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_corereportablebpp"
 >title="Berichtsfähige Zeilen zu wichtigen Unternehmensprofilen"
->abstract="Berichtsfähige Zeilen zu wichtigen Unternehmensprofilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Berichtsfähige Zeilen zu wichtigen Unternehmensprofilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_historicalreportablebpp"
 >title="Berichtsfähige Zeilen zu historischen Unternehmensprofilen"
->abstract="Berichtsfähige Zeilen zu historischen Unternehmensprofilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Berichtsfähige Zeilen zu historischen Unternehmensprofilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_monthlymediastarts"
@@ -487,13 +486,13 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_monthlymediastarts"
 >title="Monatliche Medienstarts"
->abstract="Monatliche Medienstarts sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Monatliche Medienstarts sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_monthlyreportablerows"
 >title="Monatliche Content Analytics-Zeilen"
->abstract="Monatliche Content Analytics-Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Monatliche Content Analytics-Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 
 
@@ -584,6 +583,5 @@ Die Benutzeroberfläche „Nutzung“ besteht aus zwei Panels:
 
 >[!MORELIKETHIS]
 >
->[Tutorial zum Anzeigen, Beheben und Ändern &#x200B;](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja) Verbindungseinstellungen.
->[Verwalten der Customer Journey Analytics-Nutzung](/help/technotes/estimate-usage.md)
+>Tutorial [Anzeigen, Beheben von Problemen und Ändern von Verbindungseinstellungen](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).Verwalten der Nutzung von Customer Journey Analytics&rbrack;(/help/technotes/estimate-usage.md)
 >
