@@ -8,26 +8,15 @@ feature: Connections
 role: Admin
 autotag-review: '2026-05-19T08:50:02.853Z'
 TQID: 'https://experienceleague.adobe.com/iJ5jp3wtWSrJzCnJqIceIHwwLideF-U2puXvit5GFac'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
 workflow-type: tm+mt
-source-wordcount: 5868
-ht-degree: 95%
+source-wordcount: 5884
+ht-degree: 97%
 
 ---
 
@@ -62,8 +51,7 @@ Für [!UICONTROL Verbindungen] gibt es zwei Benutzeroberflächen: [[!UICONTROL L
 
 Die Benutzeroberfläche **[!UICONTROL Liste]** ist die Standardbenutzeroberfläche für Verbindungen. Wenn sie nicht ausgewählt ist, wählen Sie die Registerkarte **[!UICONTROL Liste]** aus, um auf die Benutzeroberfläche zuzugreifen.
 
-Die **[!UICONTROL List]** zeigt eine Tabelle aller verfügbaren Verbindungen an.
-△
+In der Benutzeroberfläche **[!UICONTROL Liste]** wird eine Tabelle aller verfügbaren Verbindungen angezeigt.△
 ![Listenansicht](assets/list-view.png)
 
 Die folgenden Spalten oder Symbole sind in der Tabelle verfügbar.
@@ -74,14 +62,14 @@ Die folgenden Spalten oder Symbole sind in der Tabelle verfügbar.
 | ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Um Informationen zu [!UICONTROL enthaltenen Datensätzen], [!UICONTROL Sandbox], der oder dem [!UICONTROL Verantwortlichen] usw. anzuzeigen, wählen Sie ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) neben dem Verbindungsnamen aus.<p>Ein Popup-Fenster zeigt Details zum Datensatz an. <p>![Popup mit Verbindungsinformationen](assets/connection-info-popup.png) |
 | ![Datenansicht](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | Um für die Verbindung [eine Datenansicht zu erstellen](#create-a-data-view), wählen Sie ![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) aus. Dieses Symbol wird nur angezeigt, wenn der Verbindung noch keine Datenansicht zugeordnet ist. |
 | ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Wählen Sie ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) aus, um ein Kontextmenü zu öffnen. Folgende Optionen stehen zur Auswahl: <p>![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]**, um eine Verbindung zu [bearbeiten](#edit-a-connection).<p>![Löschen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Löschen]**, um eine Verbindung zu [löschen](#delete-a-connection).<p>![Datenansicht](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Neue Datenansicht erstellen]**, um für die Verbindung [eine neue Datenansicht zu erstellen](#create-a-data-view).<p>![Pfadsymbol](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Verbindungszuordnung]**, um eine [Verbindungszuordnung](#map-a-connection) für die Verbindung anzuzeigen. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Verbindungstyp &#x200B;]** | Der Typ der Verbindung: **[!UICONTROL Personen]**- oder **[!UICONTROL Konto]**-basierte Verbindung. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Verbindungstyp ]** | Der Typ der Verbindung: **[!UICONTROL Personen]**- oder **[!UICONTROL Konto]**-basierte Verbindung. |
 | **[!UICONTROL Datensätze]** | Ein oder mehrere Links zu den Datensätzen, die Teil der Verbindung sind. Sie können den Datensatz-Hyperlink auswählen, um den Datensatz in der Verbindung anzuzeigen. Wenn weitere Datensätze Teil der ausgewählten Verbindung sind, wählen Sie **[!UICONTROL +*x* mehr]** aus, um das Panel **[!UICONTROL Enthaltene Datensätze]** anzuzeigen. In diesem Panel werden Links zu allen Datensätzen und eine Option zum ![Suchen](/help/assets/icons/Search.svg) Suchen nach bestimmten Datensätzen angezeigt, die Teil der Verbindung sind.<p>![Enthaltene Datensätze](assets/datasets-included.png)<p>Wählen Sie einen Datensatznamen aus, um den Datensatz in der Experience Platform-Benutzeroberfläche in einer neuen Registerkarte zu öffnen. |
 | **[!UICONTROL Sandbox]** | Die [Experience Platform-Sandbox](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/home), aus der diese Verbindung ihre Datensätze abruft. Sie wählen diese Sandbox beim Erstellen der Verbindung aus. Sobald eine Verbindung gespeichert wurde, können Sie die Sandbox nicht mehr ändern. |
 | **[!UICONTROL Inhaber]** | Die Person, die die Verbindung hergestellt hat. |
-| **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für Datensätze: <p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Ein]**&#x200B;für Datensätze, die zum Importieren neuer Daten konfiguriert sind, und<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für Datensätze, die nicht für den Import neuer Daten konfiguriert sind. |
+| **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für Datensätze: <p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Ein]**für Datensätze, die zum Importieren neuer Daten konfiguriert sind, und<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für Datensätze, die nicht für den Import neuer Daten konfiguriert sind. |
 | **[!UICONTROL Erstellt am]** | Der Zeitstempel, wann die Verbindung erstellt wurde. |
 | **[!UICONTROL Zuletzt geändert]** | Der Zeitstempel, wann die Verbindung zuletzt aktualisiert wurde. |
-| **[!UICONTROL Aufstockungsdaten]** | Der Status für die Aufstockung von Daten in allen Datensätzen:<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**&#x200B;für die Anzahl der datensatzübergreifend fehlgeschlagenen Aufstockungen über Datensätze,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**&#x200B;für die Anzahl der datensatzübergreifend verarbeiteten Aufstockungen,<p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen für Datensätze,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls für die Datensätze in der Verbindung keine Aufstockungen definiert sind. |
+| **[!UICONTROL Aufstockungsdaten]** | Der Status für die Aufstockung von Daten in allen Datensätzen:<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl der datensatzübergreifend fehlgeschlagenen Aufstockungen über Datensätze,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**für die Anzahl der datensatzübergreifend verarbeiteten Aufstockungen,<p>![Status grün](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen für Datensätze,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls für die Datensätze in der Verbindung keine Aufstockungen definiert sind. |
 | **[!UICONTROL Integrationen]** | Zeigt alle Experience Platform-Programme an, die für die Verbindung aktiviert sind. |
 | **[!UICONTROL In CJA verwenden]** | Zeigt an, ob die Verbindung für die Verwendung mit Customer Journey Analytics aktiviert wurde. |
 
@@ -100,7 +88,7 @@ Um einen Filter auf die Liste der Verbindungen anzuwenden, wählen Sie ![Filter]
 | **[!UICONTROL Datensätze]** | Es werden nur Verbindungen angezeigt, die mit den von Ihnen ausgewählten Datensätzen verknüpft sind. |
 | **[!UICONTROL Inhabende]** | Es werden nur Verbindungen angezeigt, die den von Ihnen ausgewählten Personen gehören. |
 | **[!UICONTROL Sandbox]** | Es werden nur Verbindungen angezeigt, die in den von Ihnen ausgewählten Sandboxes verfügbar sind. |
-| **[!UICONTROL Verbindungstyp]** | Filtern Sie nach **[!UICONTROL &lbrace;person]**-basierten oder **[!UICONTROL account]**-basierten [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}Verbindungen. |
+| **[!UICONTROL Verbindungstyp]** | Filtern Sie nach **[!UICONTROL {person]**-basierten oder **[!UICONTROL account]**-basierten [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}Verbindungen. |
 | **[!UICONTROL In CJA verwenden]** | Wählen Sie **[!UICONTROL Ein]** aus, um nur Verbindungen anzuzeigen, die für die Verwendung mit Customer Journey Analytics aktiviert sind. Wählen Sie **[!UICONTROL Aus]** aus, um nur Verbindungen anzuzeigen, die noch nicht für die Verwendung mit Customer Journey Analytics aktiviert sind. |
 | **[!UICONTROL Integrationen]** | Es werden nur Verbindungen mit ausgewählten Integrationen angezeigt. |
 
@@ -190,7 +178,7 @@ So verwenden Sie eine Journey Optimizer-Verbindung in Customer Journey Analytics
 
 1. Suchen Sie die Journey Optimizer-Verbindung, die Sie mit Customer Journey Analytics verwenden möchten.
 
-   1. Wählen Sie auf der Registerkarte **[!UICONTROL Verbindungen]** die Option ![&#x200B; Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** aus.
+   1. Wählen Sie auf der Registerkarte **[!UICONTROL Verbindungen]** die Option ![ Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** aus.
 
    1. Wählen im Abschnitt **[!UICONTROL In CJA verwenden]** die Option **[!UICONTROL Aus]** aus.
 
@@ -231,7 +219,7 @@ So entfernen Sie die Verbindung aus Customer Journey Analytics:
 
 1. Suchen Sie die Journey Optimizer-Verbindung, die Sie aus Customer Journey Analytics entfernen möchten.
 
-   1. Wählen Sie auf der Registerkarte **[!UICONTROL Verbindungen]** die Option ![&#x200B; Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** aus.
+   1. Wählen Sie auf der Registerkarte **[!UICONTROL Verbindungen]** die Option ![ Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** aus.
 
    1. Wählen  im Abschnitt **[!UICONTROL In CJA verwenden]** die Option **[!UICONTROL Ein]** aus.
 
@@ -299,8 +287,8 @@ Die Datensatztabelle beinhaltet die folgenden Spalten für jeden Datensatz:
 | **[!UICONTROL Zusammengefügt]** | Wenn ein Datensatz [für das Zusammenfügen in der Verbindungs-Benutzeroberfläche aktiviert](/help/stitching/use-stitching-ui.md) ist, lautet der Wert **[!UICONTROL true]**. Andernfalls lautet der Wert **[!UICONTROL false]**. Zugeordnete Datensätze, die das Ergebnis der [Verknüpfungsanfrage“ sind](/help/stitching//use-stitching.md) werden in dieser Tabelle nicht als zugeordnet identifiziert und haben standardmäßig den Wert **[!UICONTROL false]**. |
 | **[!UICONTROL Schema]** | Das Experience Platform-Schema, auf dem der Datensatz basiert. |
 | **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für den Datensatz: <p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**, wenn der Datensatz für den Import neuer Daten konfiguriert ist,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]**, wenn der Datensatz so konfiguriert ist, dass keine neuen Daten importiert werden. |
-| **[!UICONTROL Umwandeln von Daten]** | Der Umwandlungsstatus von entsprechenden B2B-Lookup-Datensätzen. Weitere Informationen finden Sie unter [Umwandeln von Datensätzen für B2B-Suchen](transform-datasets-b2b-lookups.md).<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**&#x200B;für entsprechende Datensätze, die für die Umwandlung aktiviert sind, <p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für entsprechende Datensätze, die nicht für die Umwandlung aktiviert sind,<p>**[!UICONTROL Nicht zutreffend]** für alle anderen Datensätze, nicht für eine Umwandlung in Frage kommen. |
-| **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**&#x200B;für die Anzahl der fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**&#x200B;für die Anzahl der verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls keine Aufstockungen konfiguriert sind. |
+| **[!UICONTROL Umwandeln von Daten]** | Der Umwandlungsstatus von entsprechenden B2B-Lookup-Datensätzen. Weitere Informationen finden Sie unter [Umwandeln von Datensätzen für B2B-Suchen](transform-datasets-b2b-lookups.md).<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**für entsprechende Datensätze, die für die Umwandlung aktiviert sind, <p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für entsprechende Datensätze, die nicht für die Umwandlung aktiviert sind,<p>**[!UICONTROL Nicht zutreffend]** für alle anderen Datensätze, nicht für eine Umwandlung in Frage kommen. |
+| **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl der fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**für die Anzahl der verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls keine Aufstockungen konfiguriert sind. |
 
 >[!IMPORTANT]
 >
@@ -321,12 +309,12 @@ Wenn kein einzelner Datensatz in der Datensatztabelle ausgewählt ist, zeigt das
 | **[!UICONTROL Beschreibung der Verbindung]** | Eine detailliertere Beschreibung, die den Zweck dieser Verbindung angibt. |
 | **[!UICONTROL Sandbox]** | Die [Experience Platform-Sandbox](https://experienceleague.adobe.com/de/docs/experience-platform/sandbox/home), aus der diese Verbindung ihre Datensätze abruft. Sie wählen diese Sandbox beim Erstellen der Verbindung aus. Sobald eine Verbindung gespeichert wurde, können Sie die Sandbox nicht mehr ändern. |
 | **[!UICONTROL Verbindungs-ID]** | Eine eindeutige Kennung für die Verbindung. Sie können ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) verwenden, um den Wert zu kopieren. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Primärer ID-Typ &#x200B;]** | Der primäre ID-Typ für die Verbindung: **[!UICONTROL Person]** für eine personenbasierte Verbindung, **[!UICONTROL Konto]** für eine kontobasierte Verbindung. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container &#x200B;]** | Die konfigurierten Container für die Verbindung. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Primärer ID-Typ ]** | Der primäre ID-Typ für die Verbindung: **[!UICONTROL Person]** für eine personenbasierte Verbindung, **[!UICONTROL Konto]** für eine kontobasierte Verbindung. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Container ]** | Die konfigurierten Container für die Verbindung. |
 | **[!UICONTROL Datenaufrufe, die Verbindungen verwenden]** | Die Datenansichten, die diese Verbindung verwenden. |
-| **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für Datensätze: <p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**&#x200B;für die Anzahl der Datensätze, die für den Import neuer Daten konfiguriert sind,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für die Anzahl der Datensätze, für die der Import neuer Daten deaktiviert ist. |
-| **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für Datensätze:<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**&#x200B;für die Anzahl der datensatzübergreifend fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**&#x200B;für die Anzahl der datensatzübergreifend verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen für Datensätze,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls für die Datensätze in der Verbindung keine Aufstockungen definiert sind. |
-| **[!UICONTROL Umwandeln von Daten]** | Der Umwandlungsstatus von entsprechenden B2B-Lookup-Datensätzen. Weitere Informationen finden Sie unter [Umwandeln von Datensätzen für B2B-Suchen](transform-datasets-b2b-lookups.md).<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**&#x200B;für die Anzahl der für die Umwandlung aktivierten Datensätze. |
+| **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für Datensätze: <p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**für die Anzahl der Datensätze, die für den Import neuer Daten konfiguriert sind,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]** für die Anzahl der Datensätze, für die der Import neuer Daten deaktiviert ist. |
+| **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für Datensätze:<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl der datensatzübergreifend fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**für die Anzahl der datensatzübergreifend verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen für Datensätze,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls für die Datensätze in der Verbindung keine Aufstockungen definiert sind. |
+| **[!UICONTROL Umwandeln von Daten]** | Der Umwandlungsstatus von entsprechenden B2B-Lookup-Datensätzen. Weitere Informationen finden Sie unter [Umwandeln von Datensätzen für B2B-Suchen](transform-datasets-b2b-lookups.md).<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**für die Anzahl der für die Umwandlung aktivierten Datensätze. |
 | **[!UICONTROL Erstellt von]** | Der Name der Person, die die Verbindung erstellt hat. |
 | **[!UICONTROL Zuletzt geändert]** | Der Zeitstempel der letzten Änderung der Verbindung. |
 | **[!UICONTROL Zuletzt geändert von]** | Der Name der Person, die die Verbindung zuletzt aktualisiert hat. |
@@ -337,8 +325,8 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 
 | Details | Beschreibung |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL ID des globalen Kontos &#x200B;]** | Die Identität, die Sie als ID des globalen Kontos für die Verbindung angegeben haben. Gilt nur für eine kontobasierte Verbindung, für die ein Container für ein globales Konto konfiguriert ist. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Konto-ID &#x200B;]** | Die Identität, die Sie als Konto-ID für die Verbindung angegeben haben. Gilt nur für eine kontobasierte Verbindung, für die kein globaler Konto-Container konfiguriert ist. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL ID des globalen Kontos ]** | Die Identität, die Sie als ID des globalen Kontos für die Verbindung angegeben haben. Gilt nur für eine kontobasierte Verbindung, für die ein Container für ein globales Konto konfiguriert ist. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Konto-ID ]** | Die Identität, die Sie als Konto-ID für die Verbindung angegeben haben. Gilt nur für eine kontobasierte Verbindung, für die kein globaler Konto-Container konfiguriert ist. |
 | **[!UICONTROL Personen-ID]** | Die Identität, die Sie als Personen-ID für die Verbindung angegeben haben. |
 | **[!UICONTROL Schlüssel]** | Der Schlüssel, den Sie für einen Lookup-Datensatz angegeben haben. |
 | **[!UICONTROL Übereinstimmender Schlüssel]** | Der übereinstimmende Schlüssel, den Sie für einen Lookup-Datensatz angegeben haben. |
@@ -350,7 +338,7 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 | **[!UICONTROL Gelöschte Einträge]** | Die Anzahl der Datensatzeinträge (Zeilen), die im ausgewählten Datumsbereich aus einer Verbindung entfernt wurden. |
 | **[!UICONTROL Zuletzt hinzugefügt]** | Der Zeitstempel des letzten Batches, der einer Verbindung hinzugefügt wurde. |
 | **[!UICONTROL Importieren neuer Daten]** | Der Status des Imports neuer Daten für den Datensatz: <p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Ein]**, wenn der Datensatz für den Import neuer Daten konfiguriert ist,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _x Aus_]**, wenn der Datensatz so konfiguriert ist, dass keine neuen Daten importiert werden. |
-| **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**&#x200B;für die Anzahl der fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**&#x200B;für die Anzahl der verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls keine Aufstockungen konfiguriert sind.<p>Um ein Dialogfeld mit einer Übersicht über die früheren Aufstockungen für den Datensatz anzuzeigen, wählen Sie <img src="./assets/pastbackfill.svg" alt="Frühere Aufstockungen" width="15"/> **[!UICONTROL Frühere Aufstockungen]** aus. |
+| **[!UICONTROL Aufstockungsdaten]** | Der Status der Aufstockungsdaten für den Datensatz.<p>![Status red](assets/status-red.svg)   **[!UICONTROL _x _Aufstockungen fehlgeschlagen]**für die Anzahl der fehlgeschlagenen Aufstockungen,<p>![Status orange](assets/status-orange.svg)   **[!UICONTROL _x _Aufstockungen werden verarbeitet]**für die Anzahl der verarbeiteten Aufstockungen,<p>![Status green](assets/status-green.svg)   **[!UICONTROL _x _Aufstockungen abgeschlossen]**für die Anzahl der abgeschlossenen Aufstockungen,<p>![Status gray](assets/status-gray.svg)   **[!UICONTROL _Aus_]**, falls keine Aufstockungen konfiguriert sind.<p>Um ein Dialogfeld mit einer Übersicht über die früheren Aufstockungen für den Datensatz anzuzeigen, wählen Sie <img src="./assets/pastbackfill.svg" alt="Frühere Aufstockungen" width="15"/> **[!UICONTROL Frühere Aufstockungen]** aus. |
 | **[!UICONTROL Datenquellentyp]** | Der Datenquellentyp, wie beim Hinzufügen des Datensatzes zur Verbindung definiert. |
 | **[!UICONTROL Typ des Datensatzes]** | Der [Datensatztyp](create-connection.md#dataset-types). Mögliche Typen sind **[!UICONTROL Ereignis]**, **[!UICONTROL Profil]**, **[!UICONTROL Lookup]** oder **[!UICONTROL Zusammenfassung]**. Ein Ad-hoc- oder relationaler Datensatz wird durch **[!UICONTROL (Ad-hoc)]** oder **[!UICONTROL (Relational)]** identifiziert. Zum Beispiel **[!UICONTROL Ereignis (Ad-hoc)]** oder **[!UICONTROL Lookup (Relational)]**. |
 | **[!UICONTROL Schema]** | Das Experience Platform-Schema, auf dem dieser Datensatz basiert. |
@@ -420,17 +408,17 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_corereportablerows"
 >title="Berichtsfähige Zeilen zu Kerndaten"
->abstract="Berichtsfähige Zeilen zu Kerndaten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Berichtsfähige Zeilen zu Kerndaten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_historicalreportablerows"
 >title="Berichtsfähige Zeilen zu historischen Daten"
->abstract="Berichtsfähige Zeilen zu historischen Daten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Berichtsfähige Zeilen zu historischen Daten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_cumulativereportablerows"
 >title="Kumulative berichtsfähige Zeilen"
->abstract="Kumulative berichtsfähige Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Kumulative berichtsfähige Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 
 >[!CONTEXTUALHELP]
@@ -441,7 +429,7 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_extendeddatacapacityrows"
 >title="Zeilen für erweiterte Datenkapazität"
->abstract="Erweiterte Datenkapazitätszeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Zeilen für erweiterte Datenkapazität sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_aca_corereportablerows"
@@ -456,7 +444,7 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_corereportablerows"
 >title="Berichtsfähige Zeilen zu Content Analytics-Kerndaten"
->abstract="Berichtsfähige Zeilen zu Content Analytics-Kerndaten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Berichtsfähige Zeilen zu Content Analytics-Kerndaten sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 
 >[!CONTEXTUALHELP]
@@ -472,12 +460,12 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_corereportablebpp"
 >title="Berichtsfähige Zeilen zu wichtigen Unternehmensprofilen"
->abstract="Berichtsfähige Zeilen zu wichtigen Unternehmensprofilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Berichtsfähige Zeilen zu wichtigen Unternehmensprofilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_historicalreportablebpp"
 >title="Berichtsfähige Zeilen zu historischen Unternehmensprofilen"
->abstract="Berichtsfähige Zeilen zu historischen Unternehmensprofilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Berichtsfähige Zeilen zu historischen Unternehmensprofilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 >[!CONTEXTUALHELP]
 >id="connections_monthlymediastarts"
@@ -487,13 +475,13 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_monthlymediastarts"
 >title="Monatliche Medienstarts"
->abstract="Monatliche Medienstarts sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Monatliche Medienstarts sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_monthlyreportablerows"
 >title="Monatliche Content Analytics-Zeilen"
->abstract="Monatliche Content Analytics-Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln den Schnappschuss für den ausgewählten Monat wider."
+>abstract="Monatliche Content Analytics-Zeilen sind Momentaufnahmenwerte, keine aggregierten Gesamtwerte. Diese Werte werden basierend auf dem letzten Monat im ausgewählten Datumsbereich dynamisch aktualisiert. Die Werte spiegeln die Momentaufnahme für den ausgewählten Monat wider."
 
 
 
@@ -584,6 +572,5 @@ Die Benutzeroberfläche „Nutzung“ besteht aus zwei Panels:
 
 >[!MORELIKETHIS]
 >
->[Tutorial zum Anzeigen, Beheben und Ändern &#x200B;](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja) Verbindungseinstellungen.
->[Verwalten der Customer Journey Analytics-Nutzung](/help/technotes/estimate-usage.md)
+>Tutorial [Anzeigen, Beheben von Problemen und Ändern von Verbindungseinstellungen](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).Verwalten der Nutzung von Customer Journey Analytics](/help/technotes/estimate-usage.md)
 >
