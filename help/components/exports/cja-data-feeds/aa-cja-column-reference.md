@@ -45,7 +45,7 @@ Diese Referenz hilft Dateningenieuren, Adobe Analytics-Daten-Feed-Spalten zu bew
 
 >[!NOTE]
 >
->Diese Referenz enthält nur Spalten, die von Adobe auf der Grundlage der [Analytics-Daten-Feed-Spaltenreferenz) als aktuell &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference) werden. Wenn Sie eine Analytics-Daten-Feed-Spalte haben, die nicht in dieser Tabelle aufgeführt ist und die Sie aktiv verwenden, finden Sie im Lösungs-Design-Dokument Ihres Unternehmens die beste Entsprechung in Customer Journey Analytics.
+>Diese Referenz enthält nur Spalten, die von Adobe auf der Grundlage der [Analytics-Daten-Feed-Spaltenreferenz) als aktuell &#x200B;](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference) werden. Wenn Sie eine Analytics-Daten-Feed-Spalte haben, die nicht in dieser Tabelle aufgeführt ist und die Sie aktiv verwenden, finden Sie im Lösungs-Design-Dokument Ihres Unternehmens die beste Entsprechung in Customer Journey Analytics.
 
 +++**`accept_language`**
 
@@ -166,7 +166,7 @@ Client-Hinweise, die über die JavaScript-API für Client-Hinweise von Benutzera
 
 In Adobe Analytics wurden Client-Hinweise als verkettete Zeichenfolge in diese Spalte aufgenommen. Es gilt als modernerer Ansatz als die `user_agent`.
 
-Sie können diese Daten mithilfe der [`highEntropyUserAgentHints`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/context) Kontextzeichenfolge bei der Konfiguration der Web-SDK erfassen. Anstelle einer langen verketteten Zeichenfolge werden mehrere XDM-Felder ausgefüllt:
+Sie können diese Daten mithilfe der [`highEntropyUserAgentHints`](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/commands/configure/context) Kontextzeichenfolge bei der Konfiguration der Web-SDK erfassen. Anstelle einer langen verketteten Zeichenfolge werden mehrere XDM-Felder ausgefüllt:
 
 * **Betriebssystemversion**: `xdm.environment.browserDetails.userAgentClientHints.platformVersion`
 * **Architektur**: `xdm.environment.browserDetails.userAgentClientHints.architecture`
@@ -176,7 +176,7 @@ Sie können diese Daten mithilfe der [`highEntropyUserAgentHints`](https://exper
 * **Browser-Name**: `xdm.environment.browserDetails.userAgentClientHints.brand`
 * **Browser-Version**: `xdm.environment.browserDetails.userAgentClientHints.version`
 
-Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)-Client-Hinweise für Benutzeragenten .
+Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/collection/use-cases/client-hints)-Client-Hinweise für Benutzeragenten .
 
 {{cja-df-ua}}
 
@@ -322,7 +322,7 @@ Customer Journey Analytics hat kein Konzept von Zeitstempeln im Vergleich zu Rep
 
 Die benutzerdefinierte Besucher-ID, sofern sie über `visitorID` festgelegt wurde.
 
-Customer Journey Analytics unterstützt eine beliebige Anzahl von Identitäten mithilfe von [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap). Wenn Ihr Unternehmen benutzerdefinierte Identitäten verwendet, ist dies wahrscheinlich innerhalb der Identitätszuordnung.
+Customer Journey Analytics unterstützt eine beliebige Anzahl von Identitäten mithilfe von [`identityMap`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/profile/identitymap). Wenn Ihr Unternehmen benutzerdefinierte Identitäten verwendet, ist dies wahrscheinlich innerhalb der Identitätszuordnung.
 
 {{cja-df-post}}
 
@@ -388,7 +388,7 @@ Listet jedes Ereignis auf, das als Duplikat gezählt wurde.
 
 {{cja-df-na}}
 
-Customer Journey Analytics hat kein einzelnes Feld, das als Deduplizierungs-Markierung für alle Metriken dient. Stattdessen enthält jede Metrik ihre eigenen [Metrik-Deduplizierungs-Komponenteneinstellungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication). Daher gibt es in Customer Journey Analytics kein entsprechendes Feld für diese Daten-Feed-Spalte in Adobe Analytics.
+Customer Journey Analytics hat kein einzelnes Feld, das als Deduplizierungs-Markierung für alle Metriken dient. Stattdessen enthält jede Metrik ihre eigenen [Metrik-Deduplizierungs-Komponenteneinstellungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication). Daher gibt es in Customer Journey Analytics kein entsprechendes Feld für diese Daten-Feed-Spalte in Adobe Analytics.
 
 +++
 
@@ -396,7 +396,7 @@ Customer Journey Analytics hat kein einzelnes Feld, das als Deduplizierungs-Mark
 
 Markierung, die bestimmt, ob das Kaufereignis für diesen Treffer ignoriert wird, weil es ein Duplikat ist.
 
-Es gibt zwar keine direkte Übersetzung für diese Analytics-Daten-Feed-Spalte, aber die Funktion, Käufe zu deduplizieren, ist noch vorhanden. Bei Verwendung der Feldergruppe [[!UICONTROL Commerce-]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)Details&#39; können Sie [Metrik-Deduplizierung - Komponenteneinstellungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) festlegen, bei die **[!UICONTROL Deduplizierungs-ID]** `xdm.commerce.purchases.id` ist.
+Es gibt zwar keine direkte Übersetzung für diese Analytics-Daten-Feed-Spalte, aber die Funktion, Käufe zu deduplizieren, ist noch vorhanden. Bei Verwendung der Feldergruppe [[!UICONTROL Commerce-]](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/event/commerce-details)Details&#39; können Sie [Metrik-Deduplizierung - Komponenteneinstellungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) festlegen, bei die **[!UICONTROL Deduplizierungs-ID]** `xdm.commerce.purchases.id` ist.
 
 Wenn eine direkte Übersetzung erforderlich ist, wenn Sie eine Markierung für doppelte Käufe benötigen, können Sie ein [Abgeleitetes Feld](/help/data-views/derived-fields/derived-fields.md) mithilfe der Funktion **Deduplizieren** im Regelsatz verwenden.
 
@@ -431,7 +431,7 @@ Diese Spalte wird je nach Ihrer Implementierung wahrscheinlich Dutzenden von sep
 
 {{cja-df-post}}
 
-Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details)-Feldergruppe verwendet, sind einige Metriken möglicherweise direkt den folgenden XDM-Feldern zugeordnet:
+Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/event/commerce-details)-Feldergruppe verwendet, sind einige Metriken möglicherweise direkt den folgenden XDM-Feldern zugeordnet:
 
 * **Checkouts**: `xdm.commerce.checkouts.value`
 * **Hinzufügungen zum Warenkorb**: `xdm.commerce.productListAdds.value`
@@ -444,7 +444,7 @@ Wenn Ihr Schema die [[!UICONTROL Commerce Details]](https://experienceleague.ado
 Einige Metriken verwenden möglicherweise die Ereignis-Serialisierung, wodurch Adobe Analytics die volle Kontrolle über die Deduplizierung ermöglicht. Sie können die Komponenteneinstellung [Metrik-Deduplizierung](/help/data-views/component-settings/metric-deduplication.md) verwenden, um eine Deduplizierungsparität zu erzielen.
 
 * Wenn Ihre Metrik nach Besuch in Adobe Analytics dedupliziert wird, können Sie in den Komponenteneinstellungen dieser Metrik den Deduplizierungsbereich auf Sitzung festlegen.
-* Wenn Ihre Metrik nach Ereignis-ID in Adobe Analytics dedupliziert wird, enthält das XDM-Objekt für diese Metrik wahrscheinlich sowohl ein `value`- als auch ein `id`. Wenn Ihr Schema die Feldergruppe [[!UICONTROL Commerce-Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) verwendet, befinden sich diese Metriken wahrscheinlich in diesen XDM-Feldern, für die Sie in den Komponenteneinstellungen der **das Feld** Deduplizierungs-ID) festlegen können:
+* Wenn Ihre Metrik nach Ereignis-ID in Adobe Analytics dedupliziert wird, enthält das XDM-Objekt für diese Metrik wahrscheinlich sowohl ein `value`- als auch ein `id`. Wenn Ihr Schema die Feldergruppe [[!UICONTROL Commerce-Details]](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/event/commerce-details) verwendet, befinden sich diese Metriken wahrscheinlich in diesen XDM-Feldern, für die Sie in den Komponenteneinstellungen der **das Feld** Deduplizierungs-ID) festlegen können:
 
    * **Checkouts**: `xdm.commerce.checkouts.id`
    * **Hinzufügungen zum Warenkorb**: `xdm.commerce.productListAdds.id`
@@ -463,7 +463,7 @@ Markierung, die bestimmt, ob der Treffer aus dem Reporting ausgeschlossen wird. 
 
 Customer Journey Analytics berücksichtigt „ausgeschlossene Treffer“ nicht standardmäßig. Sie können diese Funktion jedoch neu erstellen, wenn Sie über ein XDM-Feld verfügen, das bestimmte Treffer kennzeichnet, die ausgeschlossen werden sollen:
 
-1. Stellen Sie sicher, dass das XDM-Feld, das ausgeschlossene Treffer kennzeichnet, als Komponente enthalten ist (Dimension oder Metrik, je nachdem, wie Sie dieses Flag eingerichtet haben). Die Auswahl [Komponente in Berichten ausblenden](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) ist wahrscheinlich für dieses Feld von Vorteil.
+1. Stellen Sie sicher, dass das XDM-Feld, das ausgeschlossene Treffer kennzeichnet, als Komponente enthalten ist (Dimension oder Metrik, je nachdem, wie Sie dieses Flag eingerichtet haben). Die Auswahl [Komponente in Berichten ausblenden](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/overview) ist wahrscheinlich für dieses Feld von Vorteil.
 1. Wählen [&#x200B; in den Einstellungen &#x200B;](/help/data-views/session-settings.md) Datenansicht das Dropdown-Menü **[!UICONTROL Segment hinzufügen]** und wählen Sie **[!UICONTROL Segment erstellen]**.
 1. Erstellen Sie ein Segment, das alle Ereignisse ausschließt, bei denen die Ausschlusstrefferkomponente vorhanden ist oder Werte enthält, die ausgeschlossen werden sollen.
 1. Wählen **[!UICONTROL sowohl]** Segment als auch in der Datenansicht „Speichern“ aus.
