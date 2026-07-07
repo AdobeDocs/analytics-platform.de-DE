@@ -14,10 +14,10 @@ subfeature_v2:
   - id: df28738e-9c71-4aa8-929e-edde22340cc6
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: b7493ad9283b5830c36b8e3ac942bf9295b693f8
+source-git-commit: 7c679fcbf52d2a5832d16bf138bd197f11f4ceb7
 workflow-type: tm+mt
-source-wordcount: 461
-ht-degree: 88%
+source-wordcount: 434
+ht-degree: 87%
 
 ---
 
@@ -39,9 +39,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="datadictionary_share_primary"
 >title="Primäre Komponente freigeben"
->abstract="Wenn diese Option ausgewählt ist, wird die primäre Komponente für alle Benutzenden freigegeben, die Zugriff auf die duplizierten Komponenten haben (sowohl für die Verantwortlichen als auch für alle anderen Benutzenden, für die die Komponenten freigegeben sind). Diese Benutzenden können die primäre Komponente dann für zukünftige Projekte aus der Komponentenliste auswählen. Sie können die Komponente jedoch nicht bearbeiten, selbst wenn sie die Verantwortlichen einer duplizierten Komponente waren, die konsolidiert wurde. <br/>Diese Option ist nur verfügbar, wenn die primäre Komponente ein Segment, eine berechnete Metrik oder ein Datumsbereich ist. Metriken und Dimensionen sind stets für alle Benutzenden verfügbar."
->
->When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
+>abstract="Wenn diese Option ausgewählt ist, wird die primäre Komponente für alle Benutzenden freigegeben, die Zugriff auf die duplizierten Komponenten haben (sowohl für die Verantwortlichen als auch für alle anderen Benutzenden, für die die Komponenten freigegeben sind). Diese Benutzenden können die primäre Komponente dann für zukünftige Projekte aus der Komponentenliste auswählen. Sie können die Komponente jedoch nicht bearbeiten, selbst wenn sie die Verantwortlichen einer duplizierten Komponente waren, die konsolidiert wurde."
 
 <!-- markdownlint-disable MD034 -->
 
