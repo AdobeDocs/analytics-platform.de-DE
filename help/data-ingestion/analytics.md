@@ -38,7 +38,7 @@ In dieser Kurzanleitung wird erläutert, wie Sie die von Adobe Analytics erfasst
 >
 >Sie haben Adobe Analytics mithilfe einer der dokumentierten Implementierungsmethoden auf einer oder mehreren Ihrer Websites lizenziert und bereitgestellt:
 >
->- [Implementierung von Analytics mithilfe Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
+>- [Implementierung von Analytics mithilfe Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=de)
 >- [Implementierung von Analytics mithilfe der Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=de)
 >- [Implementierung von Analytics mithilfe von JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=de)
 
