@@ -6,30 +6,15 @@ feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
 TQID: https://experienceleague.adobe.com/BuizkumbeMPhg7dWvJrFta3CYfQnqivOlXd2RtX9gm4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df28738e-9c71-4aa8-929e-edde22340cc6
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df28738e-9c71-4aa8-929e-edde22340cc6id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
-source-wordcount: 3648
-ht-degree: 87%
+source-wordcount: 3523
+ht-degree: 85%
 
 ---
 
@@ -57,7 +42,6 @@ Gehen Sie dazu folgendermaßen vor:
 >
 > Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von auf Ihrer Site erfassten Daten in Adobe Experience Platform und deren Verwendung in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
 
-
 ## Einrichten eines Schemas und eines Datensatzes
 
 Um Daten in Adobe Experience Platform aufzunehmen, müssen Sie zunächst definieren, welche Daten Sie erfassen möchten. Alle in Adobe Experience Platform aufgenommenen Daten müssen einer standardmäßigen, denormalisierten Struktur entsprechen, damit sie von nachgelagerten Funktionen erkannt und genutzt werden können. Das Experience-Datenmodell (XDM) ist das Standard-Framework, das diese Struktur in Form von Schemata bereitstellt.
@@ -68,15 +52,14 @@ Alle in Adobe Experience Platform aufgenommene Daten müssen einem vordefinierte
 
 ### Einrichten eines Schemas
 
-Angenommen, Sie möchten einige Daten von Profilen tracken, die Ihre Website besuchen, z. B. Seitenname und Identifizierung.
-Zunächst müssen Sie ein Schema definieren, das diese Daten modelliert.
+Angenommen, Sie möchten einige Daten von Profilen tracken, die Ihre Website besuchen, z. B. Seitenname und Identifizierung.Zunächst müssen Sie ein Schema definieren, das diese Daten modelliert.
 
 Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie in der Adobe Experience Platform-Benutzeroberfläche in der linken Leiste die Option **[!UICONTROL Schemata]** in [!UICONTROL DATEN-MANAGEMENT] aus.
 
 1. Wählen Sie **[!UICONTROL Schema erstellen]** aus.
-.
+
 1. Im Schritt Klasse auswählen des Assistenten Schema erstellen :
 
    1. Wählen Sie **[!UICONTROL Erlebnisereignis]** aus.
@@ -122,7 +105,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Beispiel für die Schaltfläche zum Hinzufügen eines Feldes zum Schema](./assets/example-schema-plus.png)
 
-1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]&#x200B;**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL ExperienceEvent Core v2.1]** aus.
+1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL ExperienceEvent Core v2.1]** aus.
 
    >[!NOTE]
    >
@@ -301,7 +284,7 @@ Gehen Sie folgendermaßen vor, um die Adobe Experience Platform Web SDK-Erweiter
 
 Weitere Informationen finden Sie unter [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=de).
 
-Das Web SDK enthält nativ den [!UICONTROL Adobe Experience Cloud ID Service], sodass Sie die ID-Service-Erweiterung nicht zu Ihrem Tag hinzufügen müssen.
+Der Web-SDK umfasst den Experience Platform Identity Service. Sie müssen also die Tag-Erweiterung [!UICONTROL Experience Cloud ID-]) nicht zu Ihrer Eigenschaft hinzufügen.
 
 #### **Datenelemente**
 
@@ -333,27 +316,7 @@ Gehen Sie folgendermaßen vor, um ein Datenelement für den Seitennamen zu defin
 
    - Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Sie möchten jetzt ein Datenelement einrichten, das auf die Experience Cloud-ID verweist, die automatisch vom Adobe Experience Platform Web SDK bereitgestellt und über die Experience Cloud ID Service-Erweiterung verfügbar ist.
-
-Gehen Sie folgendermaßen vor, um ein ECID-Datenelement zu definieren:
-
-1. Wählen Sie **[!UICONTROL Datenelemente]** in der linken Leiste aus.
-
-2. Wählen Sie **[!UICONTROL Datenelement hinzufügen]** aus.
-
-3. Im Dialog [!UICONTROL Datenelement erstellen]:
-
-   - Benennen Sie Ihr Datenelement, z. B. `ECID`.
-
-   - Wählen Sie **[!UICONTROL Experience Cloud ID Service]** in der Liste [!UICONTROL Erweiterung] aus.
-
-   - Wählen Sie **[!UICONTROL ECID]** in der Liste [!UICONTROL Datenelementtyp].
-
-     ![ECID-Datenelement](./assets/ecid-dataelement.png)
-
-   - Wählen Sie **[!UICONTROL Speichern]** aus.
-
-Abschließend möchten Sie Ihre spezifischen Datenelemente dem zuvor definierten Schema zuordnen. Sie definieren ein weiteres Datenelement, das Ihrem XDM-Schema entspricht.
+Als Nächstes möchten Sie nun jedes Ihrer spezifischen Datenelemente dem zuvor definierten Schema zuordnen. Sie definieren ein weiteres Datenelement, das Ihrem XDM-Schema entspricht.
 
 Gehen Sie folgendermaßen vor, um ein XDM-Objekt-Datenelement zu definieren:
 
@@ -372,13 +335,6 @@ Gehen Sie folgendermaßen vor, um ein XDM-Objekt-Datenelement zu definieren:
    - Wählen Sie Ihre Sandbox in der Liste [!UICONTROL Sandbox] aus.
 
    - Wählen Sie Ihr Schema in der Liste [!UICONTROL Schema] aus.
-
-   - Ordnen Sie das Attribut `identification > core > ecid`, das in Ihrem Schema definiert ist, dem ECID-Datenelement zu. Wählen Sie das Zylindersymbol aus, um das ECID-Datenelement in der Liste der Datenelemente einfach auswählen zu können.
-
-     ![ECID-Datenelement auswählen](./assets/pick-ecid-dataelement.png)
-
-     ![ECID-Datenelement zuordnen](./assets/map-ecid.png)
-
 
    - Ordnen Sie das Attribut `web > webPageDetails > name`, das in Ihrem Schema definiert ist, dem Datenelement „Seitenname“ zu.
 
@@ -588,7 +544,7 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
    Behalten Sie die Einstellungen bei und wählen Sie **[!UICONTROL Speichern und beenden]**.
 
-Weitere [&#x200B; dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
+Weitere [ dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
 
 
 ## Einrichten eines Projekts
@@ -621,4 +577,4 @@ Weitere Informationen zum Erstellen von Projekten und zum Durchführen einer Ana
 
 >[!SUCCESS]
 >
->Sie haben jetzt alle Schritte ausgeführt. Definieren Sie zunächst, welche Daten erfasst werden sollen (Schema) und wo sie in Adobe Experience Platform gespeichert werden sollen (Datensatz). Anschließend haben Sie einen Datenstrom auf der Edge Network konfiguriert, um sicherzustellen, dass Daten an diesen Datensatz weitergeleitet werden können. Anschließend haben Sie Ihr Tag definiert und bereitgestellt. Dieses enthält die Erweiterungen (Adobe Experience Platform Web SDK, Experience Cloud ID Service), Datenelemente und Regeln, anhand derer Daten auf Ihrer Website erfasst und an Ihren Datenstrom weitergeleitet werden. Sie haben eine Verbindung in Customer Journey Analytics definiert, um Ihre Website-Tracking-Daten und andere Daten zu verwenden. Durch die Definition Ihrer Datenansicht konnten Sie festlegen, welche Dimension und Metriken verwendet werden sollen. Abschließend haben Sie Ihr erstes Projekt erstellt, in dem Ihre Daten visualisiert und analysiert wurden.
+>Sie haben jetzt alle Schritte ausgeführt. Definieren Sie zunächst, welche Daten erfasst werden sollen (Schema) und wo sie in Adobe Experience Platform gespeichert werden sollen (Datensatz). Anschließend haben Sie einen Datenstrom auf der Edge Network konfiguriert, um sicherzustellen, dass Daten an diesen Datensatz weitergeleitet werden können. Anschließend haben Sie Ihr Tag definiert und bereitgestellt. Dieses enthält die Adobe Experience Platform Web SDK-Erweiterung, Datenelemente und Regeln, um Daten von Ihrer Website zu erfassen und an Ihren Datenstrom zu senden. Sie haben eine Verbindung in Customer Journey Analytics definiert, um Ihre Website-Tracking-Daten und andere Daten zu verwenden. Durch die Definition Ihrer Datenansicht konnten Sie festlegen, welche Dimension und Metriken verwendet werden sollen. Abschließend haben Sie Ihr erstes Projekt erstellt, in dem Ihre Daten visualisiert und analysiert wurden.

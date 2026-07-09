@@ -7,22 +7,15 @@ feature: Basics
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 autotag-review: '2026-05-19T08:20:10.493Z'
 TQID: 'https://experienceleague.adobe.com/CZMnHpY8nofEV8fbpLSe7TUZCR7nOd8xKWoMkCzfH0I'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
-source-wordcount: 1664
-ht-degree: 100%
+source-wordcount: 1377
+ht-degree: 95%
 
 ---
 
@@ -47,9 +40,9 @@ Datenelemente sind die Bausteine Ihres Datenwörterbuchs (oder Ihrer Data Map). 
 
 In den folgenden Abschnitten werden empfohlene Datenelemente und andere gängige Datenelemente beschrieben, die Sie konfigurieren können.
 
-Es gibt verschiedene Arten von Datenelementen. Zwei häufig verwendete Datenelemente, die Sie konfigurieren können, dienen dazu, den Seitennamen, den Personen auf Ihrer Site sehen, und die Experience Cloud-ID jeder Person, die Ihre Site besucht, zu erfassen.
+Es gibt verschiedene Arten von Datenelementen. Ein häufig verwendetes Datenelement, das Sie konfigurieren können, ist ein Datenelement, das den Seitennamen erfasst, den Personen auf Ihrer Site anzeigen.
 
-Nachdem Sie diese beiden Datenelemente konfiguriert haben, können Sie zusätzliche Datenelemente für die spezifischen Daten konfigurieren, die erfasst werden sollen.
+Nachdem Sie das Datenelement „Seitenname“ konfiguriert haben, können Sie zusätzliche Datenelemente für die spezifischen Daten konfigurieren, die Sie erfassen möchten.
 
 Wenn Sie alle gewünschten Datenelemente definiert haben, müssen Sie schließlich die Datenelemente dem zuvor erstellten [Schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) zuweisen. Definieren Sie hierzu ein weiteres Datenelement, das Ihrem XDM-Schema entspricht.
 
@@ -93,55 +86,11 @@ So erstellen Sie ein Datenelement „Seitenname“:
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-   Sie möchten jetzt ein Datenelement einrichten, das auf die Experience Cloud-ID verweist, die automatisch vom Adobe Experience Platform Web SDK bereitgestellt und über die Experience Cloud ID Service-Erweiterung verfügbar ist.
-
-1. Fahren Sie mit [Datenelement „ECID“](#ecid-data-element) fort.
-
-#### Datenelement „ECID“
-
-Ein gängiges Datenelement, das für die meisten Organisationen verwendet werden kann, ist ein Datenelement, das die Experience Cloud-ID jeder Person erfasst, die Ihre Site besucht.
-
-So erstellen Sie ein Datenelement „ECID“:
-
-1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen bei experiencecloud.adobe.com an.
-
-1. Navigieren Sie in Adobe Experience Platform zu **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
-
-1. Wählen Sie das neu erstellte Tag aus der Liste der [!UICONTROL Tag-Eigenschaften] aus, um es zu öffnen.
-
-1. (Bedingt) Installieren Sie die Erweiterung für den Experience Cloud ID-Dienst, sofern noch nicht geschehen:
-
-   1. Wählen Sie **[!UICONTROL Erweiterungen]** in der linken Leiste aus.
-
-   1. Die Registerkarte **[!UICONTROL Installiert]** ist standardmäßig ausgewählt. Wenn die Kachel **[!UICONTROL Experience Cloud ID-Dienst]** aufgeführt ist, fahren Sie mit Schritt 5 fort.
-
-   1. Wenn die Kachel **[!UICONTROL Experience Cloud ID-Dienst]** nicht aufgeführt ist, wählen Sie die Registerkarte **[!UICONTROL Katalog]** aus.
-
-   1. Suchen Sie im Suchfeld nach **[!UICONTROL Experience Cloud ID-Dienst]** und wählen Sie dann die Kachel aus, wenn sie angezeigt wird
-
-   1. Wählen Sie **[!UICONTROL Installieren]** > **[!UICONTROL Speichern]** aus.
-
-1. Wählen Sie **[!UICONTROL Datenelemente]** in der linken Leiste aus.
-
-1. Wählen Sie **[!UICONTROL Datenelement hinzufügen]** aus.
-
-1. Geben Sie im Dialogfeld **[!UICONTROL Datenelemente erstellen]** die folgenden Informationen an:
-
-   * **[!UICONTROL Name]**: Der Name Ihres Datenelements. Zum Beispiel `ECID`.
-
-   * **[!UICONTROL Erweiterung]**: Wählen Sie **[!UICONTROL Experience Cloud ID-Dienst]** aus der Liste aus.
-
-   * **[!UICONTROL Datenelementtyp]**: Wählen Sie **[!UICONTROL ECID]** aus der Liste aus.
-
-     ![ECID-Datenelement](assets/ecid-dataelement.png)
-
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
-
 1. Fahren Sie mit [Erstellen zusätzlicher Datenelemente](#create-additional-data-elements) fort.
 
 ### Erstellen zusätzlicher Datenelemente
 
-Erstellen Sie ein Datenelement für jeden Datentyp, der erfasst werden soll. Gehen Sie so wie unter [Datenelement „Seitenname“](#page-name-data-element) und [Datenelement „ECID“](#ecid-data-element) beschrieben vor, um das jeweilige zusätzliche Datenelement zu erstellen.
+Erstellen Sie ein Datenelement für jeden Datentyp, der erfasst werden soll. Verwenden Sie denselben Prozess, der unter [Datenelement „Seitenname“ beschrieben wird](#page-name-data-element) um jedes zusätzliche Datenelement zu erstellen.
 
 Die Datenelemente, die Sie erstellen, sollten ein entsprechendes Feld in Ihrem Schema aufweisen.
 
@@ -200,12 +149,6 @@ Gehen Sie folgendermaßen vor, um ein XDM-Objekt-Datenelement zu definieren:
    * **[!UICONTROL Sandbox]**: Wählen Sie Ihre Sandbox aus der Liste aus.
 
    * **[!UICONTROL Schema]**: Wählen Sie Ihr Schema aus der Liste aus.
-
-1. Ordnen Sie das Attribut `identification > core > ecid`, das in Ihrem Schema definiert ist, dem ECID-Datenelement zu. Wählen Sie das Zylindersymbol aus, um das ECID-Datenelement in der Liste der Datenelemente einfach auswählen zu können.
-
-   ![ECID-Datenelement auswählen](assets/pick-ecid-dataelement.png)
-
-   ![ECID-Datenelement zuordnen](assets/map-ecid.png)
 
 1. Ordnen Sie das Attribut `web > webPageDetails > name`, das in Ihrem Schema definiert ist, dem Datenelement „Seitenname“ zu.
 
