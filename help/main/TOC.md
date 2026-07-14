@@ -2,10 +2,10 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 2125f1a16ffed79f77757120c5679dd4defa1638
+source-git-commit: 6b2b6fbf16c7aa7a7a31bb46ac63e4150bf2cfc8
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 91%
+source-wordcount: '1452'
+ht-degree: 92%
 
 ---
 
@@ -369,6 +369,7 @@ ht-degree: 91%
       + [Verwalten von Segmenten](/help/components/segments/seg-manage.md)
       + [Operatoren](/help/components/segments/seg-operators.md)
       + [Segmente verwenden](/help/components/segments/seg-use.md)
+      + {hide-from-toc}[Analyse von Unterereignissen](/help/components/segments/sub-event.md)
    + Berechnete Metriken {#cja-calcmetrics}
       + [Überblick](../components/calc-metrics/calc-metr-overview.md)
       + Workflow {#cm-workflow}
