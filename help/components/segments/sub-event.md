@@ -4,8 +4,10 @@ description: Erfahren Sie, wie Sie mit der Analyse von Unterereignissen einzelne
 feature: Segmentation
 hold: true
 hide: true
-feature_v2: id: c153fd90-23e1-4614-81d3-3cc7571227f7
-subfeature_v2: id: a544b409-2610-410d-a842-474ac1d0d54e
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+subfeature_v2:
+  - id: a544b409-2610-410d-a842-474ac1d0d54e
 source-git-commit: 6b2b6fbf16c7aa7a7a31bb46ac63e4150bf2cfc8
 workflow-type: tm+mt
 source-wordcount: 564
@@ -39,23 +41,23 @@ Sie möchten auch den Online-Umsatz aller anderen Kategorien mit Ausnahme der Ka
 
 >[!TAB Ereignisanalyse]
 
-Im Segmentierungs-Builder oder als Teil eines **[!UICONTROL Schnellsegments]** geben Sie an, **[!UICONTROL ****Dimension]****[!UICONTROL product_category]****[!UICONTROL gleich]****[!UICONTROL Professional Suites]** im **[!UICONTROL Events]**-Container einzuschließen.
+Im Segmentierungs-Builder oder als Teil eines **[!UICONTROL Schnellsegments]** geben Sie an, **[!UICONTROL **&#x200B;**&#x200B;Dimension]&#x200B;**&#x200B;**&#x200B;[!UICONTROL product_category]&#x200B;**&#x200B;**&#x200B;[!UICONTROL gleich]&#x200B;**&#x200B;**&#x200B;[!UICONTROL Professional Suites] **&#x200B; im &#x200B;** [!UICONTROL Events]**-Container einzuschließen.
 
 ![Panel mit Segmentierung auf Ereignisebene für die Produktkategorie Professional Suites](./assets/product-category-segmentation-events.png)
 
-Als Ergebnis werden alle Bestellungen berücksichtigt, die mindestens eine **[!UICONTROL Professional]****[!UICONTROL product_category]** enthalten, und der Umsatz aus anderen Produkten in diesen Bestellungen wird in die Metrik **[!UICONTROL Umsatz]** einbezogen.Wenn Sie Berichte zu Kategorien erstellen, werden alle anderen Werte für **[!UICONTROL product_category]** gemeldet, die Teil einer Bestellung waren, die ein Produkt der **[!UICONTROL Professional Suites]****[!UICONTROL product_category]**.
+Als Ergebnis werden alle Bestellungen berücksichtigt, die mindestens eine **[!UICONTROL Professional]**&#x200B;**[!UICONTROL product_category]** enthalten, und der Umsatz aus anderen Produkten in diesen Bestellungen wird in die Metrik **[!UICONTROL Umsatz]** einbezogen.Wenn Sie Berichte zu Kategorien erstellen, werden alle anderen Werte für **[!UICONTROL product_category]** gemeldet, die Teil einer Bestellung waren, die ein Produkt der **[!UICONTROL Professional Suites]**&#x200B;**[!UICONTROL product_category]**.
 
 >[!TAB Analyse von Unterereignissen]
 
-Im Segmentierungs-Builder oder als Teil eines **[!UICONTROL Schnellsegments]** geben Sie an, **[!UICONTROL {4]** Dimension ]****[!UICONTROL  product_category ]****[!UICONTROL  gleich ]****[!UICONTROL  Professional Suites ]**im**[!UICONTROL  products ]**-Container einzuschließen.**[!UICONTROL 
+Im Segmentierungs-Builder oder als Teil eines **[!UICONTROL Schnellsegments]** geben Sie an, **[!UICONTROL &lbrace;4]** Dimension **&#x200B;**&#x200B;[!UICONTROL &#x200B; product_category &#x200B;]&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B; gleich &#x200B;]&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B; Professional Suites &#x200B;]&#x200B;**im**&#x200B;[!UICONTROL &#x200B; products &#x200B;]&#x200B;**-Container einzuschließen.**
 
 ![Panel, das die Segmentierung auf der Ebene der Unterveranstaltungen für die Produktkategorie Professional Suites anzeigt](./assets/product-category-segmentation-subevents.png)
 
-Als Ergebnis werden alle Bestellungen berücksichtigt, die mindestens **[!UICONTROL Professional Suites]** **[!UICONTROL product_category]** enthalten, und nur der Umsatz von Produkten, die zur **[!UICONTROL Professional Suites]****[!UICONTROL product_category]** gehören, wird in die Metrik **[!UICONTROL Revenue]** einbezogen.Wenn Sie Berichte zu Kategorien erstellen, wird nur die **[!UICONTROL Professional]****[!UICONTROL Rproduct_category]** angezeigt.
+Als Ergebnis werden alle Bestellungen berücksichtigt, die mindestens **[!UICONTROL Professional Suites]** **[!UICONTROL product_category]** enthalten, und nur der Umsatz von Produkten, die zur **[!UICONTROL Professional Suites]**&#x200B;**[!UICONTROL product_category]** gehören, wird in die Metrik **[!UICONTROL Revenue]** einbezogen.Wenn Sie Berichte zu Kategorien erstellen, wird nur die **[!UICONTROL Professional]**&#x200B;**[!UICONTROL Rproduct_category]** angezeigt.
 
 >[!TAB Analyse von Unterereignissen (ausschließen)]
 
-Im Segmentierungs-Builder oder als Teil eines **[!UICONTROL Schnellsegments]** geben Sie an, **[!UICONTROL {4]** Dimension ]****[!UICONTROL  product_category ]******gleich****im**[!UICONTROL  products ]**-Container auszuschließen.**[!UICONTROL 
+Im Segmentierungs-Builder oder als Teil eines **[!UICONTROL Schnellsegments]** geben Sie an, **[!UICONTROL &lbrace;4]** Dimension **&#x200B;**&#x200B;[!UICONTROL &#x200B; product_category &#x200B;]&#x200B;**&#x200B;**&#x200B;**gleich**&#x200B;**im**&#x200B;[!UICONTROL &#x200B; products &#x200B;]&#x200B;**-Container auszuschließen.**
 
 ![Bedienfeld, das die Segmentierung auf der Ebene untergeordneter Treffer anzeigt, um die Produktkategoriemänner auszuschließen](./assets/product-category-segmentation-subevents-exclude.png)
 
