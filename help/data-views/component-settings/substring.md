@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
+hold: true
 autotag-review: '2026-05-19T09:11:52.108Z'
 TQID: 'https://experienceleague.adobe.com/zvIcmaZiq3dtL-6b8fal6l2pWVLUbfVcOGWgyuqMqjE'
 product_v2:
@@ -17,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 65ed91c47b271257451243db6f7e50e127ff4b68
 workflow-type: tm+mt
-source-wordcount: 930
-ht-degree: 93%
+source-wordcount: 955
+ht-degree: 91%
 
 ---
 
@@ -62,7 +63,7 @@ Verwenden Sie diese Methode für Felder, die ein Trennzeichen einsetzen, um mehr
 * **[!UICONTROL Kriterium]**: Hiermit geben Sie an, wie Sie die durch Trennzeichen getrennte Werteliste handhaben möchten.
    * **[!UICONTROL Von links]**: Starten Sie am Beginn der durch Trennzeichen getrennten Liste und zählen Sie weiter.
    * **[!UICONTROL Von rechts]**: Beginnen Sie am Ende der durch Trennzeichen getrennten Liste und zählen Sie rückwärts.
-   * **[!UICONTROL In Array konvertieren]**: Hiermit wird diese Dimension so gehandhabt, als wäre sie ein Objekt-Array-Schemaelement.
+   * **[!UICONTROL In Array konvertieren]**: Hiermit wird diese Dimension so gehandhabt, als wäre sie ein Objekt-Array-Schemaelement. Die Dimension wird als [benutzerdefinierter Container](/help/data-views/create-dataview.md#containers-1) verfügbar, den Sie in Ihrer Datenansicht auswählen und für die [Analyse von Unterereignissen](/help/components/segments/sub-event.md) in einem Workspace-Projekt verwenden können.
 * **[!UICONTROL Trennzeichen]**: Das Trennzeichen, das vom Feld verwendet wird.
 * **[!UICONTROL Index]**: Nur vorhanden, wenn das Kriterium „Von links/rechts“ ist. Die Elementnummer, als ob sie sich in einem Array befände. Wenn die Zeichenfolgeneingabe beispielsweise `"Fox,Turtle,Rabbit,Wolf"` mit einem Index von 3 ist, ist die Ausgabe `"Rabbit"`. Wenn der Index höher ist als die Anzahl der durch Trennzeichen getrennten Elemente, werden [Keine Wertoptionen](no-value-options.md) angewendet.
 
