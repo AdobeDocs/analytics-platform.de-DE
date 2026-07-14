@@ -80,5 +80,5 @@ Im Rahmen der Visualisierung sind bestimmte Histogrammeinstellungen verfügbar.
 
 >[!MORELIKETHIS]
 >
->[Hinzufügen einer Visualisierung zu einem BedienfeldEinstellungen der VisualisierungKontextmenü der VisualisierungVerwenden von Histogrammen zur Identifizierung unerwarteter Datenwerte](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168)
+>[Hinzufügen einer Visualisierung zu einem BedienfeldEinstellungen der VisualisierungKontextmenü der VisualisierungVerwenden von Histogrammen zur Identifizierung unerwarteter Datenwerte](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168?profile.language=de)
 
