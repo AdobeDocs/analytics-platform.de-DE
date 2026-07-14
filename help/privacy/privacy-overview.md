@@ -65,4 +65,4 @@ Der California Consumer Privacy Act (CCPA) erweitert die Datenschutzrechte und d
 
 >[!MORELIKETHIS]
 >
->* [Blog: Effektive Governance in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?lang=de)
+>* [Blog: Effektive Governance in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=de&lang=de)
