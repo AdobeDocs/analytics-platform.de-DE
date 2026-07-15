@@ -6,11 +6,24 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 TQID: https://experienceleague.adobe.com/EXiKrWVfmMRgZ4GF0OR410Mr2-P5IEjPy3Hf0FmRDJ8
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
 source-wordcount: 3152
@@ -91,7 +104,7 @@ Dieser Abschnitt ist nur für Admins sichtbar, denen Journey Optimizer bereitges
 
 ### KI-Einstellungen
 
-Wählen Sie **[!UICONTROL Für Data Insights Agent aktivieren]** aus, um die Datenansicht für die [Data Insights Agent zu ](/help/data-analysis-ai.md). Der Data Insights Agent ist ein generativer KI-Konversationsagent, auf den über den KI-Assistenten in Customer Journey Analytics zugegriffen werden kann. So können Sie Daten schnell mit Text-Prompts analysieren. Der Agent erstellt relevante Visualisierungen in Analysis Workspace mithilfe von Komponenten aus Ihrer Datenansicht und unter Verwendung Ihrer tatsächlichen Daten.
+Wählen Sie **[!UICONTROL Für Data Insights Agent aktivieren]** aus, um die Datenansicht für die [Data Insights Agent zu &#x200B;](/help/data-analysis-ai.md). Der Data Insights Agent ist ein generativer KI-Konversationsagent, auf den über den KI-Assistenten in Customer Journey Analytics zugegriffen werden kann. So können Sie Daten schnell mit Text-Prompts analysieren. Der Agent erstellt relevante Visualisierungen in Analysis Workspace mithilfe von Komponenten aus Ihrer Datenansicht und unter Verwendung Ihrer tatsächlichen Daten.
 
 
 ### Kalender
@@ -133,13 +146,13 @@ Gibt den Namen der Container für die Datenansicht an. Container-Namen werden h�
 
 | Container-Name | Anzeigename (Standard) | Beschreibung |
 | --- | --- | --- |
-| globalAccount | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Global-Konto ]** | Der Container [!UICONTROL Globales Konto] enthält sämtliche Sitzungen und Ereignisse für globale Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| globalAccount | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Global-Konto &#x200B;]** | Der Container [!UICONTROL Globales Konto] enthält sämtliche Sitzungen und Ereignisse für globale Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
 | Person | **[!UICONTROL Person]** | Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Personen innerhalb des angegebenen Zeitrahmens. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Besucher“ oder „Benutzer“), können Sie den Container hier umbenennen. |
 | Sitzung | **[!UICONTROL Sitzung]** | Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in „Besuch“ oder einen anderen von Ihrem Unternehmen bevorzugten Begriff umbenennen. |
-| Opportunity | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity ]** | Der Container [!UICONTROL Opportunity] enthält sämtliche Sitzungen und Ereignisse für Opportunitys innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
-| Einkaufsgruppe | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Buying-Gruppe ]** | Der Container [!UICONTROL Käufergruppe] enthält sämtliche Sitzungen und Ereignisse für Käufergruppen innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| Opportunity | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity &#x200B;]** | Der Container [!UICONTROL Opportunity] enthält sämtliche Sitzungen und Ereignisse für Opportunitys innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| Einkaufsgruppe | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Buying-Gruppe &#x200B;]** | Der Container [!UICONTROL Käufergruppe] enthält sämtliche Sitzungen und Ereignisse für Käufergruppen innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
 | event | **[!UICONTROL Ereignis]** | Der Container [!UICONTROL Ereignis] definiert einzelne Ereignisse in einem Datensatz. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Hits“ oder „Seitenansichten“), können Sie den Container hier umbenennen. |
-| account | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account ]** | Der Container [!UICONTROL Konto] enthält sämtliche Sitzungen und Ereignisse für Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| account | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account &#x200B;]** | Der Container [!UICONTROL Konto] enthält sämtliche Sitzungen und Ereignisse für Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
 
 So benennen Sie System-Container um:
 
@@ -150,10 +163,10 @@ So benennen Sie System-Container um:
 
 ### Benutzerdefinierte Container
 
-Sie fügen Ihrer Datenansicht benutzerdefinierte Container hinzu, damit Sie diese Container für die [ von Unterereignissen ](/help/components/segments/sub-event.md) können. Benutzerdefinierte Container können wie folgt definiert werden:
+Sie fügen Ihrer Datenansicht benutzerdefinierte Container hinzu, damit Sie diese Container für die [&#x200B; von Unterereignissen &#x200B;](/help/components/segments/sub-event.md) können. Benutzerdefinierte Container können wie folgt definiert werden:
 
 * Objekte oder Arrays, die in den Datensätzen verfügbar sind, die Teil der Verbindung sind. Zum Beispiel **[!UICONTROL productListItems]**, **[!UICONTROL content_assets]** oder **[!UICONTROL placeContext.activePOIs]**.
-* abgeleitete Felder, die mithilfe der Funktion [Aufspaltung“ ein ](/help/data-views/derived-fields/derived-fields.md#split) zurückgeben
+* abgeleitete Felder, die mithilfe der Funktion [Aufspaltung“ ein &#x200B;](/help/data-views/derived-fields/derived-fields.md#split) zurückgeben
 * Datenansichtskomponenten, die so konfiguriert sind, dass sie ein Array unter Verwendung der Komponenteneinstellungen [Teilzeichenfolge](/help/data-views/component-settings/substring.md) mit der Option [Trennzeichen](/help/data-views/component-settings/substring.md#delimiter) zurückgeben.
 
 Hinzufügen eines benutzerdefinierten Containers:
@@ -176,7 +189,7 @@ So bearbeiten Sie einen benutzerdefinierten Container:
 So löschen Sie einen benutzerdefinierten Container:
 
 1. Wählen Sie ![Mehr](/help/assets/icons/More.svg) für den benutzerdefinierten Container in der Spalte Anzeigename aus.
-1. Wählen Sie ![ Kontextmenü ](/help/assets/icons/Delete.svg)Löschen **[!UICONTROL Löschen]** aus.
+1. Wählen Sie ![&#x200B; Kontextmenü &#x200B;](/help/assets/icons/Delete.svg)Löschen **[!UICONTROL Löschen]** aus.
 
    >[!NOTE]
    >
@@ -203,7 +216,7 @@ Als Nächstes können Sie die Komponenten einer Datenansicht festlegen, d. h., 
 
    ![Registerkarte „Komponenten“](assets/dataview-components.png)
 
-   Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze enthält, und unten ihre [!UICONTROL Schemafelder].  Alle Datenansichten enthalten Standardkomponenten wie Ereignisse, Personen, Sitzungsmetriken und Zeitdimensionen.<ul><li>Wenn Sie [benutzerdefinierte Container](#containers-1) definieren, werden Metriken automatisch als ![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _benutzerdefinierter Container-Name _Vorfälle]**hinzugefügt.</li><li>Das System wendet standardmäßig den Filter **[!UICONTROL wird nicht]**) an, sodass nur nicht veraltete Schemafelder angezeigt werden.</li></ul>
+   Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze enthält, und unten ihre [!UICONTROL Schemafelder].  Alle Datenansichten enthalten Standardkomponenten wie Ereignisse, Personen, Sitzungsmetriken und Zeitdimensionen.<ul><li>Wenn Sie [benutzerdefinierte Container](#containers-1) definieren, werden Metriken automatisch als ![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _benutzerdefinierter Container-Name _Vorfälle]**&#x200B;hinzugefügt.</li><li>Das System wendet standardmäßig den Filter **[!UICONTROL wird nicht]**) an, sodass nur nicht veraltete Schemafelder angezeigt werden.</li></ul>
 
 1. Suchen Sie nach einem Schemafeld mit ![Suchsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Suchschemafeldern]** oder suchen Sie ein Feld, indem Sie in eine der Datensatzsammlungen wechseln, z. B. ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL Ereignisdatensätze]** oder ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL Lookup-Datensätze]**. Für Ereignis-Datensätze sind separate Sammlungen für ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL XDM-]** und ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL Adhoc- und relationale Felder]** verfügbar.<br/>Alternativ können Sie ein abgeleitetes Feld mit ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Abgeleitetes Feld erstellen**. Weitere Informationen finden Sie unter [Abgeleitete Felder](./derived-fields/derived-fields.md).
 
@@ -238,7 +251,7 @@ Sie können ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/
 
 >[!TIP]
 >
->Wenn die Komponenten nicht ordnungsgemäß in Ihre Datenansicht geladen werden und eine Fehlermeldung angezeigt wird, finden Sie unter [ von Berechtigungen ](../troubleshooting/lack-of-permissions.md) eine Lösung.
+>Wenn die Komponenten nicht ordnungsgemäß in Ihre Datenansicht geladen werden und eine Fehlermeldung angezeigt wird, finden Sie unter [&#x200B; von Berechtigungen &#x200B;](../troubleshooting/lack-of-permissions.md) eine Lösung.
 
 
 ### Eingeschlossene Komponenten {#included-components}

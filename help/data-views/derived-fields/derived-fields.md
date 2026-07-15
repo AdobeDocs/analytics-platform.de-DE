@@ -6,11 +6,22 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: beb7a3c1-66ab-4786-b879-7621375b3c40
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
 source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
 source-wordcount: 10573
@@ -62,8 +73,8 @@ Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die Ober
 |---------|----------|--------|
 | 1 | **Auswahl** | Sie verwenden den Auswahlbereich, um Ihre Funktion, Funktionsvorlage, das Schemafeld oder das Standardfeld auszuwählen und per Drag-and-Drop auf den Regel-Builder zu ziehen. <br/>Verwenden Sie die Dropdown-Liste, um zwischen Folgendem auszuwählen: <br/>![Funktion](assets/Smock_Function_18_N.svg) [!UICONTROL Funktionen] - listet verfügbare [Funktionen](#function-reference) auf, </br>![Funktionsvorlagensymbol](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Funktionsvorlagen] - listet verfügbare [Funktionsvorlagen](#function-templates) auf, <br/>![Schemafeldsymbol](assets/Smock_Folder_18_N.svg) [!UICONTROL Schemafelder] - listet verfügbare Felder aus Datensatzkategorien (Ereignis, Profil, Lookup) und zuvor definierte abgeleitete Felder auf, und <br/>![Standardfeldsymbol](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standardfelder] - verfügbare Standardfelder (wie Plattform-Datensatz-ID). In der Auswahl werden nur Zeichenfolgen- und numerische Standardfelder angezeigt. Wenn die Funktion andere Datentypen unterstützt, können Standardfelder mit diesen anderen Datentypen für Werte oder Felder in der Oberfläche für Regeln ausgewählt werden.<br/>Sie können mithilfe des Suchfelds ![Suchsymbol](assets/Smock_Search_18_N.svg) nach Funktion, Funktionsvorlagen, Schema und Standardfeldern suchen. <br/>Sie können die ausgewählte Objektliste filtern, indem Sie ![Filtersymbol](assets/Smock_Filter_18_N.svg) auswählen und im Dialogfeld [!UICONTROL Felder filtern nach] Filter angeben. Sie können jeden Filter einfach mit ![Symbol „Schließen“](assets/CrossSize75.svg) entfernen. |
 | 2 | **Regel-Builder** | Das abgeleitete Feld wird sequenziell mit einer oder mehreren Regeln erstellt. Eine Regel ist eine spezifische Implementierung einer Funktion und wird daher immer nur einer Funktion zugeordnet. Sie erstellen eine Regel, indem Sie eine Funktion per Drag-and-Drop in den Regel-Builder ziehen. Der Funktionstyp bestimmt die Oberfläche der Regel.<br/>Weitere Informationen finden Sie auf der [Oberfläche für Regeln](#rule-interface). <br/>Sie können eine Funktion am Anfang, Ende oder zwischen Regeln einfügen, die bereits im Regel-Builder verfügbar sind. Die letzte Regel im Regel-Builder bestimmt die endgültige Ausgabe des abgeleiteten Felds. |
-| 3 | **[!UICONTROL ** Feldeinstellungen **]** | Sie können Ihr abgeleitetes Feld benennen, beschreiben und seinen Feldtyp überprüfen. |
-| 4 | **[!UICONTROL ** Endgültige Ausgabe **]** | Dieser Bereich zeigt eine spontan aktualisierte Vorschau der Ausgabewerte, basierend auf den Daten der letzten 30 Tage und den Änderungen, die Sie an dem abgeleiteten Feld im Regel-Builder vornehmen. |
+| 3 | **[!UICONTROL **&#x200B; Feldeinstellungen &#x200B;**]** | Sie können Ihr abgeleitetes Feld benennen, beschreiben und seinen Feldtyp überprüfen. |
+| 4 | **[!UICONTROL **&#x200B; Endgültige Ausgabe &#x200B;**]** | Dieser Bereich zeigt eine spontan aktualisierte Vorschau der Ausgabewerte, basierend auf den Daten der letzten 30 Tage und den Änderungen, die Sie an dem abgeleiteten Feld im Regel-Builder vornehmen. |
 
 {style="table-layout:auto"}
 
@@ -72,7 +83,7 @@ Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die Ober
 Beim erstmaligen Zugriff auf die Oberfläche für abgeleitete Felder wird der Assistent [!UICONTROL Mit einer Feldvorlage beginnen] angezeigt.
 
 1. Wählen Sie die Vorlage aus, die die Art des Feldes, das erstellt werden soll, am besten beschreibt.
-2. Wählen Sie zum Fortfahren die Schaltfläche **[!UICONTROL ** Auswählen **]** aus.
+2. Wählen Sie zum Fortfahren die Schaltfläche **[!UICONTROL **&#x200B; Auswählen &#x200B;**]** aus.
 
 Das Dialogfeld für das abgeleitete Feld wird mit Regeln (und Funktionen) gefüllt, die für den ausgewählten Feldtyp erforderlich oder nützlich sind. Weitere Informationen zu den verfügbaren Vorlagen finden Sie unter [Funktionsvorlagen](#function-templates).
 
@@ -86,7 +97,7 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Oberfläche f
 |---------|----------|--------|
 | A | **Regelname** | Standardmäßig lautet der Regelname **Regel X** (X verweist auf eine Sequenznummer). Wählen Sie zum Bearbeiten eines Regelnamens den Namen aus und geben Sie den neuen Namen ein, z. B. `Query Parameter`. |
 | B | **Funktionsname** | Der ausgewählte Funktionsname für die Regel, z. B. [!UICONTROL URL PARSE]. Wenn die Funktion die letzte in der Sequenz der Funktionen ist und die endgültigen Ausgabewerte bestimmt, folgt auf den Funktionsnamen [!UICONTROL - ENDGÜLTIGE AUSGABE], zum Beispiel [!UICONTROL URL-PARSEN - ENDGÜLTIGE AUSGABE]. <br/>Um ein Popup mit weiteren Informationen zur Funktion anzuzeigen, wählen Sie ![Hilfesymbol](assets/Smock_HelpOutline_18_N.svg) aus. |
-| C | **Regelbeschreibung** | Sie können optional eine Beschreibung zu einer Regel hinzufügen.<br/>Wählen Sie ![Mehr-Symbol](assets/More.svg) und dann **[!UICONTROL ** Beschreibung hinzufügen **]** aus, um eine Beschreibung hinzuzufügen, oder **[!UICONTROL ** Beschreibung bearbeiten **]**, um eine vorhandene Beschreibung zu bearbeiten.<br/>Verwenden Sie den Editor, um eine Beschreibung einzugeben. Sie können den Text mithilfe der Symbolleiste formatieren (mit Stilauswahl, Fett, Kursiv, Unterstrichen, Rechts, Links, Zentriert, Farbe, Zahlenliste, Aufzählungsliste) und Links zu externen Informationen hinzufügen. <br/>Um die Bearbeitung der Beschreibung abzuschließen, klicken Sie auf eine Stelle außerhalb des Editors. |
+| C | **Regelbeschreibung** | Sie können optional eine Beschreibung zu einer Regel hinzufügen.<br/>Wählen Sie ![Mehr-Symbol](assets/More.svg) und dann **[!UICONTROL ** Beschreibung hinzufügen **]** aus, um eine Beschreibung hinzuzufügen, oder **[!UICONTROL **&#x200B; Beschreibung bearbeiten &#x200B;**]**, um eine vorhandene Beschreibung zu bearbeiten.<br/>Verwenden Sie den Editor, um eine Beschreibung einzugeben. Sie können den Text mithilfe der Symbolleiste formatieren (mit Stilauswahl, Fett, Kursiv, Unterstrichen, Rechts, Links, Zentriert, Farbe, Zahlenliste, Aufzählungsliste) und Links zu externen Informationen hinzufügen. <br/>Um die Bearbeitung der Beschreibung abzuschließen, klicken Sie auf eine Stelle außerhalb des Editors. |
 | D | **Funktionsbereich** | Definiert die Logik der Funktion. Die Oberfläche hängt vom Typ der Funktion ab. Das Dropdown-Menü für [!UICONTROL Feld] oder [!UICONTROL Wert] zeigt alle verfügbaren Feldkategorien (Regeln, Standardfelder, Felder) basierend auf dem von der Funktion erwarteten Eingabetyp an. Alternativ können Sie ein Feld aus der Auswahl „Schema und Standardfelder“ per Drag-and-Drop auf ein Feld oder einen Wert ziehen. Wenn dieses gezogene Feld aus einem Lookup-Datensatz stammt, wird automatisch eine Lookup-Funktion vor der von Ihnen definierten Funktion eingefügt. <br/>Ausführliche Informationen zu jeder der unterstützten Funktionen finden Sie unter [Funktionsreferenz](#function-reference). |
 
 {style="table-layout:auto"}
@@ -95,24 +106,24 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Oberfläche f
 
 1. Wählen Sie eine vorhandene Datenansicht aus oder erstellen Sie eine Datenansicht. Weitere Informationen finden Sie unter [Datenansichten](../data-views.md).
 
-2. Wählen Sie die Registerkarte **[!UICONTROL ** Komponenten **]** der Datenansicht aus.
+2. Wählen Sie die Registerkarte **[!UICONTROL **&#x200B; Komponenten &#x200B;**]** der Datenansicht aus.
 
-3. Wählen Sie in der linken Leiste **[!UICONTROL ** Abgeleitetes Feld erstellen **]** aus.
+3. Wählen Sie in der linken Leiste **[!UICONTROL **&#x200B; Abgeleitetes Feld erstellen &#x200B;**]** aus.
 
 4. Um Ihr abgeleitetes Feld zu definieren, verwenden Sie die Oberfläche [!UICONTROL Abgeleitetes Feld erstellen]. Siehe [Oberfläche für abgeleitete Felder](#derived-field-interface).
 
-   Wählen Sie zum Speichern des neuen abgeleiteten Felds **[!UICONTROL ** Speichern **]** aus.
+   Wählen Sie zum Speichern des neuen abgeleiteten Felds **[!UICONTROL **&#x200B; Speichern &#x200B;**]** aus.
 
-5. Das neue abgeleitete Feld wird zu [!UICONTROL „Abgeleitete Felder“ >] „Container“ als Teil der **[!UICONTROL ** Schemafelder **]** in der linken Leiste der Datenansicht hinzugefügt.
+5. Das neue abgeleitete Feld wird zu [!UICONTROL „Abgeleitete Felder“ >] „Container“ als Teil der **[!UICONTROL **&#x200B; Schemafelder &#x200B;**]** in der linken Leiste der Datenansicht hinzugefügt.
 
 
 ## Bearbeiten eines abgeleiteten Felds {#edit}
 
 1. Wählen Sie eine vorhandene Datenansicht aus. Weitere Informationen finden Sie unter [Datenansichten](../data-views.md).
 
-2. Wählen Sie die Registerkarte **[!UICONTROL ** Komponenten **]** der Datenansicht aus.
+2. Wählen Sie die Registerkarte **[!UICONTROL **&#x200B; Komponenten &#x200B;**]** der Datenansicht aus.
 
-3. Wählen Sie links im Bereich [!UICONTROL Verbindung] die Registerkarte **[!UICONTROL ** Schemafelder **]** aus.
+3. Wählen Sie links im Bereich [!UICONTROL Verbindung] die Registerkarte **[!UICONTROL **&#x200B; Schemafelder &#x200B;**]** aus.
 
 4. Wählen Sie **[!UICONTROL **„Abgeleitete Felder“ >**]** „Container“ aus.
 
@@ -120,11 +131,11 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Oberfläche f
 
 6. Verwenden Sie zum Bearbeiten des abgeleiteten Felds die Oberfläche [!UICONTROL Abgeleitetes Feld bearbeiten]. Siehe [Oberfläche für abgeleitete Felder](#derived-field-interface).
 
-   - Wählen Sie **[!UICONTROL ** Speichern **]**, um das aktualisierte abgeleitete Feld zu speichern.
+   - Wählen Sie **[!UICONTROL **&#x200B; Speichern &#x200B;**]**, um das aktualisierte abgeleitete Feld zu speichern.
 
-   - Wählen Sie **[!UICONTROL ** Abbrechen **]**, um alle Änderungen am abgeleiteten Feld abzubrechen.
+   - Wählen Sie **[!UICONTROL **&#x200B; Abbrechen &#x200B;**]**, um alle Änderungen am abgeleiteten Feld abzubrechen.
 
-   - Wählen Sie **[!UICONTROL ** Speichern unter **]**, um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld, dem `(copy)` hinzugefügt wurde.
+   - Wählen Sie **[!UICONTROL **&#x200B; Speichern unter &#x200B;**]**, um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld, dem `(copy)` hinzugefügt wurde.
 
 Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder Metriken in Ihrer Datenansicht verwendet haben:
 
@@ -134,11 +145,11 @@ Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder 
 
 1. Verwenden Sie zum Bearbeiten des abgeleiteten Felds die Oberfläche [!UICONTROL Abgeleitetes Feld bearbeiten]. Siehe [Oberfläche für abgeleitete Felder](#derived-field-interface).
 
-   - Wählen Sie **[!UICONTROL ** Speichern **]**, um das aktualisierte abgeleitete Feld zu speichern.
+   - Wählen Sie **[!UICONTROL **&#x200B; Speichern &#x200B;**]**, um das aktualisierte abgeleitete Feld zu speichern.
 
-   - Wählen Sie **[!UICONTROL ** Abbrechen **]**, um alle Änderungen am abgeleiteten Feld abzubrechen.
+   - Wählen Sie **[!UICONTROL **&#x200B; Abbrechen &#x200B;**]**, um alle Änderungen am abgeleiteten Feld abzubrechen.
 
-   - Wählen Sie **[!UICONTROL ** Speichern unter **]**, um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld, dem `(copy)` hinzugefügt wurde.
+   - Wählen Sie **[!UICONTROL **&#x200B; Speichern unter &#x200B;**]**, um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld, dem `(copy)` hinzugefügt wurde.
 
 
 
@@ -146,11 +157,11 @@ Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder 
 
 1. Wählen Sie eine vorhandene Datenansicht aus. Weitere Informationen finden Sie unter [Datenansichten](../data-views.md).
 
-2. Wählen Sie die Registerkarte **[!UICONTROL ** Komponenten **]** der Datenansicht aus.
+2. Wählen Sie die Registerkarte **[!UICONTROL **&#x200B; Komponenten &#x200B;**]** der Datenansicht aus.
 
-3. Wählen Sie im Bereich [!UICONTROL Verbindung] die Registerkarte **[!UICONTROL ** Schemafelder **]** aus.
+3. Wählen Sie im Bereich [!UICONTROL Verbindung] die Registerkarte **[!UICONTROL **&#x200B; Schemafelder &#x200B;**]** aus.
 
-4. Wählen Sie **[!UICONTROL **„Abgeleitete Felder“ > „Container“ **]**.
+4. Wählen Sie **[!UICONTROL **„Abgeleitete Felder“ > „Container“ &#x200B;**]**.
 
 5. Bewegen Sie den Mauszeiger über das abgeleitete Feld, das Sie löschen möchten, und wählen Sie ![Bearbeiten-Symbol](assets/Smock_Edit_18_N.svg).
 
@@ -158,7 +169,7 @@ Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder 
 
    Sie werden im Dialogfeld [!UICONTROL Komponente löschen] aufgefordert, den Löschvorgang zu bestätigen. Berücksichtigen Sie eventuell vorhandene externe Verweise auf das abgeleitete Feld außerhalb der Datenansicht.
 
-   - Wählen Sie **[!UICONTROL ** Weiter **]**, um das abgeleitete Feld zu löschen.
+   - Wählen Sie **[!UICONTROL **&#x200B; Weiter &#x200B;**]**, um das abgeleitete Feld zu löschen.
 
 Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder Metriken in Ihrer Datenansicht verwendet haben:
 
@@ -170,7 +181,7 @@ Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder 
 
    Sie werden im Dialogfeld [!UICONTROL Komponente löschen] aufgefordert, den Löschvorgang zu bestätigen. Berücksichtigen Sie eventuell vorhandene externe Verweise auf das abgeleitete Feld außerhalb der Datenansicht.
 
-   - Wählen Sie **[!UICONTROL ** Weiter **]**, um das abgeleitete Feld zu löschen.
+   - Wählen Sie **[!UICONTROL **&#x200B; Weiter &#x200B;**]**, um das abgeleitete Feld zu löschen.
 
 >[!NOTE]
 >
@@ -291,7 +302,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 ![Screenshot des Regel-Builders für „Alle Werte in durch Trennzeichen getrennter Liste abrufen“](assets/function-template-get-all-values-in-delimited-list.png)
 
-Das abgeleitete Feld wird als [benutzerdefinierter Container“ verfügbar](/help/data-views/create-dataview.md#containers-1) den Sie in Ihrer Datenansicht auswählen und für die [Analyse von Unterereignissen) in ](/help/components/segments/sub-event.md) Workspace-Projekt verwenden können.
+Das abgeleitete Feld wird als [benutzerdefinierter Container“ verfügbar](/help/data-views/create-dataview.md#containers-1) den Sie in Ihrer Datenansicht auswählen und für die [Analyse von Unterereignissen) in &#x200B;](/help/components/segments/sub-event.md) Workspace-Projekt verwenden können.
 
 +++
 
