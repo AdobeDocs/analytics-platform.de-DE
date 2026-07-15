@@ -4,6 +4,7 @@ description: Erfahren Sie, wie sich in Adobe Experience Platform definierte Date
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
+hold: true
 autotag-review: '2026-05-19T08:59:31.818Z'
 TQID: 'https://experienceleague.adobe.com/SoIHLRSx90B4j8EkHWBVt3rVtt-968TN8ocWU2zuYN4'
 product_v2:
@@ -22,22 +23,27 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 1254207526535e44c848dfeed0052339fbd8d65d
 workflow-type: tm+mt
-source-wordcount: 622
-ht-degree: 99%
+source-wordcount: 745
+ht-degree: 66%
 
 ---
 
-# Beschriftungen und Richtlinien
+# Bezeichnungen, Richtlinien und Marketing-Aktionen
 
 Wenn Sie einen Datensatz in Experience Platform erstellen, können Sie [Label zur Datennutzung](https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/reference) für einige oder alle Elemente im Datensatz erstellen. Sie können diese Beschriftungen und Richtlinien in Customer Journey Analytics anzeigen.
 
-Die folgenden Beschriftungen sind für Customer Journey Analytics von besonderem Interesse:
+Die folgenden Kennzeichnungen und Marketing-Aktionen sind für Customer Journey Analytics von besonderem Interesse:
 
-* Die Beschriftung `C8` – **[!UICONTROL Keine Messung]**. Diese Beschriftung bedeutet, dass Daten nicht für Analysen auf den Websites oder in Anwendungen Ihres Unternehmens verwendet werden können.
 
-* Das Label `C12` – **[!UICONTROL Kein allgemeiner Datenexport]**. Auf diese Weise gekennzeichnete Schemafelder können nicht aus CJA exportiert oder heruntergeladen werden (über Reporting, Export, API usw.)
+| Beschriftung | Marketing-Aktion | Definition |
+|---------|----------|---------|
+| `C2` | [!UICONTROL Export an Dritte] | Die Kennzeichnung und die zugehörige Marketing-Aktion bedeuten, dass Daten nicht an einen Drittanbieter exportiert werden können, wenn die entsprechende DULE-Richtlinie aktiviert ist. |
+| `C3` | [!UICONTROL Kombinieren mit direkt identifizierbaren Daten] | Die Kennzeichnung und die zugehörige Marketing-Aktion bedeuten, dass Daten nicht mit direkt identifizierbaren Informationen kombiniert oder anderweitig verwendet werden können, wenn die entsprechende DULE-Richtlinie aktiviert ist. |
+| `C8` | [!UICONTROL Analytics] | Die Kennzeichnung und die zugehörige Marketing-Aktion bedeuten, dass Daten nicht für Analysen auf den Websites oder in Programmen Ihres Unternehmens verwendet werden können, wenn die entsprechende DULE-Richtlinie aktiviert ist. |
+| `C9` | [!UICONTROL Datenwissenschaft] | Die Kennzeichnung und die zugehörige Marketing-Aktion bedeuten, dass Daten nicht in datenwissenschaftlichen Workflows verwendet werden können, wenn die entsprechende DULE-Richtlinie aktiviert ist. |
+| `C12` | [!UICONTROL Datenexport] | Die Bezeichnung und die zugehörige Marketing-Aktion geben an, dass auf diese Weise gekennzeichnete Schemafelder nicht aus Customer Journey Analytics exportiert oder heruntergeladen werden können (über Reporting, Export, API usw.), wenn die entsprechende DULE-Richtlinie aktiviert ist. |
 
 >[!NOTE]
 >
@@ -45,10 +51,17 @@ Die folgenden Beschriftungen sind für Customer Journey Analytics von besonderem
 
 Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungskennzeichnungen erzwungen werden. Dafür werden Richtlinien verwendet. Sie erstellen Ihre Richtlinien mithilfe der [Experience Platform-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/policies/user-guide) oder über die [Richtlinien-Service-API](https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/api/overview) in Experience Platform.
 
-Unter Experience Platform sind zwei von Adobe definierte Richtlinien verfügbar, die sich auf Customer Journey Analytics auswirken und Berichte und Datenexporte beeinflussen können:
+In Experience Platform sind fünf von Adobe definierte Richtlinien verfügbar, die in Customer Journey Analytics angezeigt werden und sich auf das Reporting und den Datenexport auswirken können:
 
-* Die Richtlinie **[!UICONTROL Nutzungsanalyse und benutzerbasierte Messung beschränken]** mit dem Label `C8` und
-* die Richtlinie **[!UICONTROL Datenexport beschränken]** mit dem Label `C12`.
+
+| Richtlinie | Beschriftung |
+|---------|----------|
+| [!UICONTROL Beschränken des Datenexports von Drittanbietern] | `C2` |
+| [!UICONTROL Direkt identifizierbare Datenkombination einschränken] | `C3` |
+| [!UICONTROL Nutzungsanalysen und benutzerbasierte Messung einschränken] | `C8` |
+| [!UICONTROL Datenwissenschaft beschränken] | `C9` |
+| [!UICONTROL Datenexport einschränken] | `C12` |
+
 
 ## Anzeigen von Daten-Labeln in Datenansichten von Customer Journey Analytics
 
@@ -82,7 +95,7 @@ Klicken Sie auf **[!UICONTROL Anwenden]**, um zu sehen, welche Richtlinien aktiv
 
 ## Wie sich aktivierte Richtlinien auf Datenansichten auswirken
 
-Wenn eine oder mehrere Richtlinien mit C8- oder C12-Labeln aktiviert sind, können Schemakomponenten, auf die bestimmte Daten-Label angewendet wurden, nicht zu Datenansichten hinzugefügt werden.
+Wenn eine oder mehrere Richtlinien mit C1-, C2-, C3-, C8-, C9- oder C12-Kennzeichnungen aktiviert sind, können die Schemakomponenten, auf die bestimmte Datenkennzeichnungen angewendet werden, nicht zu Datenansichten hinzugefügt werden.
 
 Diese Komponenten sind in der Liste [!UICONTROL Schemafelder] in der linken Leiste ausgegraut:
 

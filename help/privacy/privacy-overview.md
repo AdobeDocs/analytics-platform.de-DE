@@ -4,6 +4,7 @@ description: Beschreibt, wie Data Governance in Customer Journey Analytics funkt
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
+hold: true
 autotag-review: '2026-05-19T09:18:17.400Z'
 TQID: 'https://experienceleague.adobe.com/oDdNRwjtEU2vmeDvQ3DcM8w6XKQTBoTaXAIhmgjSoBk'
 product_v2:
@@ -19,10 +20,10 @@ topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 116c169326e98f4e3d649c2fe72dbff44eaa0225
 workflow-type: tm+mt
-source-wordcount: 469
-ht-degree: 100%
+source-wordcount: 560
+ht-degree: 88%
 
 ---
 
@@ -42,6 +43,12 @@ Durch diese Integration können Sie die Compliance einfacher verwalten. Datenver
 
 [Weitere Informationen](/help/data-views/data-governance.md)
 
+## Einverständnisberichte und -filterung
+
+Customer Journey Analytics kann die Mitgliedschaftsdaten für Einverständnisrichtlinien in Ihren Experience Platform-Profildatensätzen verwenden, um Berichte über das Einverständnis der Besuchenden zu erstellen und optional Besuchende ohne Einverständnis auszuschließen, bevor deren Daten aufgenommen werden. Einverständnisberichte stellen Einverständnisrichtlinien als Komponenten in Analysis Workspace zur Verfügung, und die Einverständnisfilterung schließt Besucher, die nicht ihr Einverständnis gegeben haben, zur Aufnahmezeit aus, basierend auf den von Ihnen konfigurierten Marketing-Aktionen.
+
+[Weitere Informationen](/help/connections/consent-reporting-filtering/consent-overview.md)
+
 ## Datenschutzanfragen
 
 Adobe bearbeitet Datenschutzanfragen gemäß den geltenden lokalen und internationalen Gesetzen.
@@ -54,9 +61,7 @@ Customer Journey Analytics wird nicht in den zentralen Service der Datenschutz-G
 
 ## CCPA
 
-Der California Consumer Privacy Act (CCPA) erweitert die Datenschutzrechte und den Verbraucherschutz für Einwohner von Kalifornien, USA. Dieses Gesetz trat am 1. Januar 2020 in Kraft.
-Der CCPA bietet neue Datenschutzrechte, mit denen Verbraucher beispielsweise ihre personenbezogenen Daten einsehen und löschen oder herausfinden können, ob (und an wen) ihre Daten verkauft oder weitergegeben wurden. Zusätzlich können sie dem Verkauf ihrer personenbezogenen Daten widersprechen.
-In Übereinstimmung mit dem CCPA unterstützt Privacy Service Anfragen zur Abmeldung vom Verkauf personenbezogener Daten.
+Der California Consumer Privacy Act (CCPA) erweitert die Datenschutzrechte und den Verbraucherschutz für Einwohner von Kalifornien, USA. Dieses Gesetz trat am 1. Januar 2020 in Kraft.Der CCPA bietet neue Datenschutzrechte, mit denen Verbraucher beispielsweise ihre personenbezogenen Daten einsehen und löschen oder herausfinden können, ob (und an wen) ihre Daten verkauft oder weitergegeben wurden. Zusätzlich können sie dem Verkauf ihrer personenbezogenen Daten widersprechen.In Übereinstimmung mit dem CCPA unterstützt Privacy Service Anfragen zur Abmeldung vom Verkauf personenbezogener Daten.
 
 >[!MORELIKETHIS]
 >

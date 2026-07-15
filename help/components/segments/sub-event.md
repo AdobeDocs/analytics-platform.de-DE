@@ -3,13 +3,14 @@ title: Analyse der Unterereignisse
 description: Erfahren Sie, wie Sie mit der Analyse von Unterereignissen einzelne Produkte oder andere Container innerhalb eines Ereignisses in Customer Journey Analytics filtern können, wodurch Attributions-Anzapfungen in Produktberichten vermieden werden.
 feature: Segmentation
 hold: true
+hide: true
 feature_v2:
   - id: c153fd90-23e1-4614-81d3-3cc7571227f7
 subfeature_v2:
   - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: b4bec7c8e476bc2dbffce42bd52ff535b90dcb86
+source-git-commit: c504a631398d14479c9a2b70d9ef43ac88e35704
 workflow-type: tm+mt
-source-wordcount: 564
+source-wordcount: 565
 ht-degree: 0%
 
 ---
@@ -32,9 +33,9 @@ In der Analyse von Unterereignissen verhält sich die Ausschlusslogik anders als
 
 ## Beispiel
 
-Sie möchten nur den Umsatz aus der Kategorie „Professional Suites“ messen. Ohne Unterereignisanalyse umfasst das Anwenden eines Segments für professionelle Anzüge den Umsatz aus jedem Produkt für jede Bestellung (Ereignis), das mindestens ein Produkt mit der Kategorie „professionelle Anzüge“ enthält. Mit der Analyse von Unterereignissen können Sie den Filter auf die Produktebene beschränken und nur den Umsatz für Produkte der Kategorie Profi-Anzüge zurückgeben.
+Sie möchten nur den Umsatz aus der Kategorie „Profi-Anzüge“ messen. Ohne Unterereignisanalyse umfasst das Anwenden eines Segments für professionelle Anzüge den Umsatz aus jedem Produkt für jede Bestellung (Ereignis), das mindestens ein Produkt mit der Kategorie „professionelle Anzüge“ enthält. Mit der Analyse von Unterereignissen können Sie den Filter auf die Produktebene beschränken und nur den Umsatz für Produkte der Kategorie Profi-Anzüge zurückgeben.
 
-Sie möchten auch den Online-Umsatz aller anderen Kategorien mit Ausnahme der Kategorie „Männer“ messen.
+Sie möchten auch den Online-Umsatz aus allen anderen Kategorien mit Ausnahme der Kategorie „Profi-Anzüge“ messen.
 
 >[!BEGINTABS]
 
@@ -48,7 +49,7 @@ Als Ergebnis werden alle Bestellungen berücksichtigt, die mindestens eine **[!U
 
 >[!TAB Analyse von Unterereignissen]
 
-Im Segmentierungs-Builder oder als Teil eines **[!UICONTROL Schnellsegments]** geben Sie an, **[!UICONTROL &lbrace;4]** Dimension **&#x200B;**&#x200B;[!UICONTROL &#x200B; product_category &#x200B;]&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B; gleich &#x200B;]&#x200B;**&#x200B;**&#x200B;[!UICONTROL &#x200B; Professional Suites &#x200B;]&#x200B;**im**&#x200B;[!UICONTROL &#x200B; products &#x200B;]&#x200B;**-Container einzuschließen.**
+Im Segmentierungs-Builder oder als Teil eines **[!UICONTROL Schnellsegments]** geben Sie an, **[!UICONTROL **&#x200B;**&#x200B;Dimension]&#x200B;**&#x200B;**&#x200B;[!UICONTROL product_category]&#x200B;**&#x200B;**&#x200B;[!UICONTROL gleich]&#x200B;**&#x200B;**&#x200B;[!UICONTROL Professional Suites] **&#x200B; im &#x200B;** [!UICONTROL products]**-Container einzuschließen.
 
 ![Panel, das die Segmentierung auf der Ebene der Unterveranstaltungen für die Produktkategorie Professional Suites anzeigt](./assets/product-category-segmentation-subevents.png)
 
