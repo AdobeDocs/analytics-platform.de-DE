@@ -5,15 +5,10 @@ feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
 TQID: https://experienceleague.adobe.com/RKh01bcmVkoZ2wkHDvBM-oX9rRagVaOqK4fn2A-IpaI
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: df28738e-9c71-4aa8-929e-edde22340cc6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df28738e-9c71-4aa8-929e-edde22340cc6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 7c679fcbf52d2a5832d16bf138bd197f11f4ceb7
 workflow-type: tm+mt
 source-wordcount: 434
@@ -28,7 +23,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="Datenwörterbuch"
->abstract="Wenn diese Option ausgewählt ist, wird die primäre Komponente für alle Benutzenden freigegeben, die Zugriff auf die duplizierten Komponenten haben (sowohl für die Verantwortlichen als auch für alle anderen Benutzenden, für die die Komponenten freigegeben sind). Diese Benutzenden können die primäre Komponente dann für zukünftige Projekte aus der Komponentenliste auswählen. Sie können die Komponente jedoch nicht bearbeiten, selbst wenn sie die Verantwortlichen einer duplizierten Komponente waren, die konsolidiert wurde. <br/>Diese Option ist nur verfügbar, wenn die primäre Komponente ein Segment, eine berechnete Metrik oder ein Datumsbereich ist. Metriken und Dimensionen sind stets für alle Benutzenden verfügbar."
+>abstract="Wenn diese Option ausgewählt ist, wird die primäre Komponente für alle Benutzenden freigegeben, die Zugriff auf die duplizierten Komponenten haben (sowohl für die Verantwortlichen als auch für alle anderen Benutzenden, für die die Komponenten freigegeben sind). Diese Benutzenden können die primäre Komponente dann für zukünftige Projekte aus der Komponentenliste auswählen. Sie können die Komponente jedoch nicht bearbeiten, selbst wenn sie die Verantwortlichen einer duplizierten Komponente waren, die konsolidiert wurde. <br/>Diese Option ist nur verfügbar, wenn die primäre Komponente ein Segment, eine berechnete Metrik oder ein Datumsbereich ist. Metriken und Dimensionen sind stets für alle Benutzenden verfügbar.
 >
 >When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
 
