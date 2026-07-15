@@ -2,16 +2,15 @@
 title: Analyse der Unterereignisse
 description: Erfahren Sie, wie Sie mit der Analyse von Unterereignissen einzelne Produkte oder andere Container innerhalb eines Ereignisses in Customer Journey Analytics filtern können, wodurch Attributions-Anzapfungen in Produktberichten vermieden werden.
 feature: Segmentation
-hold: true
 hide: true
 feature_v2:
   - id: c153fd90-23e1-4614-81d3-3cc7571227f7
 subfeature_v2:
   - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: c504a631398d14479c9a2b70d9ef43ac88e35704
+source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
-source-wordcount: 565
-ht-degree: 0%
+source-wordcount: 630
+ht-degree: 9%
 
 ---
 
@@ -23,12 +22,12 @@ Mit der Analyse von Unterereignissen können Sie Ereignisdaten auf einer Ebene a
 
 - Segmentierung nach einer bestimmten Produktkategorie ohne Einbeziehung aller anderen in derselben Bestellung gekauften Produkte
 - Segmentieren Sie in Inhaltsanalysedaten nach einer bestimmten Asset-Kategorie?
-- Segmentieren in einem bestimmten Medienkanal in Media Analytics-Daten.
+- Segmentierung in einem bestimmten Medienkanal in Media Analytics-Daten.
 
 
-In Customer Journey Analytics definieren Sie Container in einer Datenansicht, für die Sie die Analyse von Unterereignissen verwenden möchten. Ohne Analyse von Unterereignissen gibt die Segmentierung für ein Container-Elementattribut alle Ereignisse zurück, bei denen ein Element innerhalb eines Ereignisses mit dem Container-Elementattribut übereinstimmt. Das Ergebnis ist eine falsche Attribution und überhöhte Umsatzmetriken. Die Unterereignisanalyse berechnet den Filter auf einzelne Elementzeilen innerhalb eines Ereignisses und löst diese Probleme.
+In Customer Journey Analytics definieren Sie Container in einer Datenansicht, für die Sie die Analyse von Unterereignissen verwenden möchten. Ohne Unterereignisanalyse gibt die Segmentierung nach einem Container-Elementattribut alle Ereignisse, Sitzungen, Personen, (globalen) Konten [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, Einkaufsgruppen [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, Opportunitys [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} oder andere [Container](/help/data-views/create-dataview.md#containers-1) zurück, die Sie definiert haben. Das Ergebnis ist eine falsche Attribution und überhöhte Umsatzmetriken. Die Unterereignisanalyse berechnet den Filter auf einzelne Container-Zeilen innerhalb eines Ereignisses und löst diese Probleme.
 
-In der Analyse von Unterereignissen verhält sich die Ausschlusslogik anders als der standardmäßige Ausschluss auf Ereignisebene gegenüber dem Container. Wenn Sie Elementattribute innerhalb des Containers ausschließen, gibt das Segment Ereignisse zurück **die zwar Elemente** Container enthalten, aber nicht Ihren Ausschlusskriterien entsprechen. Das Segment gibt kein Ereignis ohne Elemente zurück.
+In der Analyse von Unterereignissen verhält sich die Ausschlusslogik beim Container anders als der Ausschluss auf Standardereignisebene. Wenn Sie Elementattribute innerhalb des Containers ausschließen, gibt das Segment Ereignisse zurück **die zwar Elemente** Container enthalten, aber nicht Ihren Ausschlusskriterien entsprechen. Das Segment gibt kein Ereignis ohne Elemente zurück.
 
 
 ## Beispiel

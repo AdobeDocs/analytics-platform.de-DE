@@ -4,7 +4,6 @@ title: Zeileneinstellungen
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-hold: true
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -17,10 +16,10 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a63b9948d58c4057db7fa74b36e9d0e0210f946
+source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
-source-wordcount: 1596
-ht-degree: 56%
+source-wordcount: 1602
+ht-degree: 55%
 
 ---
 
@@ -90,9 +89,9 @@ Die folgenden zusätzlichen Optionen im Kontextmenü sind verfügbar, wenn ein o
 | **[!UICONTROL Trend-Auswahl]** | Zum Erstellen einer Trend-Liniendiagramm-Visualisierung für die Auswahl. |
 | **[!UICONTROL Nur ausgewählte Zeilen anzeigen]** | Zum Anzeigen von nur den ausgewählten Zeilen in der Visualisierung. |
 | **[!UICONTROL Alle Zeilen anzeigen]** | Zum Anzeigen aller Zeilen in der Visualisierung. |
-| **[!UICONTROL Ausgewählte Zeile umbenennen]** | Benennen Sie die ausgewählte Zeile um. Geben Sie **[!UICONTROL Dialogfeld]** Ausgewählte Zeile **[!UICONTROL umbenennen]** einen Namen ein. Wählen Sie **[!UICONTROL OK]**, um zu bestätigen, oder **[!UICONTROL Abbrechen]**, um abzubrechen. Nachdem eine Zeile in einer Freiformtabelle umbenannt wurde, wird der Dimensionsname in der Kopfzeile mit **[!UICONTROL (geändert)]** angehängt und ein ![Zahnradsymbol](/help/assets/icons/Gear.svg) ist verfügbar, um umbenannte Zeilen in der Kopfzeile der Dimension zurückzusetzen. Siehe [Inline-Klassifizierungsbeispiel](#inline-classifications-example). |
-| **[!UICONTROL Ausgewählte Zeilen kombinieren]** | Die ausgewählten Zeilen kombinieren. Geben Sie **[!UICONTROL Dialogfeld]** Ausgewählte Zeilen **[!UICONTROL kombinieren]** einen Namen ein. Wählen Sie **[!UICONTROL OK]**, um zu bestätigen, oder **[!UICONTROL Abbrechen]**, um abzubrechen. Sobald Zeilen in einer Freiformtabelle kombiniert sind, wird der Dimensionsname in der Kopfzeile mit **[!UICONTROL (geändert) angehängt]** und ein ![Zahnradsymbol](/help/assets/icons/Gear.svg) ist verfügbar, um umbenannte Zeilen in der Kopfzeile der Dimension zurückzusetzen. Siehe [Inline-Klassifizierungsbeispiel](#inline-classifications-example). |
-| **[!UICONTROL Als abgeleitetes Feld erstellen]** | *Sie müssen Customer Journey Analytics-Produktadministrator sein, um diese Option im Kontextmenü anzuzeigen.*<br/> Verfügbar in jeder ausgewählten Zeile einer Freiformtabelle, die durch das Umbenennen oder Kombinieren von Zeilen geändert wird. Wenn diese Option ausgewählt ist[&#x200B; wird die &#x200B;](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) „Abgeleitetes Feld“ mit den Änderungen geöffnet, die Sie an der bereits vorausgefüllten Freiformtabelle vorgenommen haben. Siehe [Inline-Klassifizierungsbeispiel](#inline-classifications-example). |
+| **[!UICONTROL Ausgewählte Zeile umbenennen]** | *Eingeschränkte Testverfügbarkeit*<br/> Benennen Sie die ausgewählte Zeile um. Geben Sie **[!UICONTROL Dialogfeld]** Ausgewählte Zeile **[!UICONTROL umbenennen]** einen Namen ein. Wählen Sie **[!UICONTROL OK]**, um zu bestätigen, oder **[!UICONTROL Abbrechen]**, um abzubrechen. Nachdem eine Zeile in einer Freiformtabelle umbenannt wurde, wird der Dimensionsname in der Kopfzeile mit **[!UICONTROL (geändert)]** angehängt und ein ![Zahnradsymbol](/help/assets/icons/Gear.svg) ist verfügbar, um umbenannte Zeilen in der Kopfzeile der Dimension zurückzusetzen. Siehe [Inline-Klassifizierungsbeispiel](#inline-classifications-example). |
+| **[!UICONTROL Ausgewählte Zeilen kombinieren]** | *Eingeschränkte Testverfügbarkeit*<br/> Kombinieren Sie die ausgewählten Zeilen. Geben Sie **[!UICONTROL Dialogfeld]** Ausgewählte Zeilen **[!UICONTROL kombinieren]** einen Namen ein. Wählen Sie **[!UICONTROL OK]**, um zu bestätigen, oder **[!UICONTROL Abbrechen]**, um abzubrechen. Sobald Zeilen in einer Freiformtabelle kombiniert sind, wird der Dimensionsname in der Kopfzeile mit **[!UICONTROL (geändert) angehängt]** und ein ![Zahnradsymbol](/help/assets/icons/Gear.svg) ist verfügbar, um umbenannte Zeilen in der Kopfzeile der Dimension zurückzusetzen. Siehe [Inline-Klassifizierungsbeispiel](#inline-classifications-example). |
+| **[!UICONTROL Als abgeleitetes Feld erstellen]** | *Eingeschränkte Testverfügbarkeit *<br/>*Sie müssen ein Customer Journey Analytics-Produktadministrator sein, um diese Option im Kontextmenü anzuzeigen.*<br/> Verfügbar in jeder ausgewählten Zeile einer Freiformtabelle, die durch das Umbenennen oder Kombinieren von Zeilen geändert wird. Wenn diese Option ausgewählt ist[&#x200B; wird die &#x200B;](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) „Abgeleitetes Feld“ mit den Änderungen geöffnet, die Sie an der bereits vorausgefüllten Freiformtabelle vorgenommen haben. Siehe [Inline-Klassifizierungsbeispiel](#inline-classifications-example). |
 | **[!UICONTROL Anmerkung aus Auswahl erstellen]** | Öffnen Sie den [Anmerkungsgenerator](/help/components/annotations/create-annotations.md#annotation-builder), um eine Anmerkung für die Auswahl zu erstellen. |
 | **[!UICONTROL Segment aus Auswahl erstellen]** | Öffnen Sie den [Segment Builder](/help/components/segments/seg-builder.md), um ein Segment aus der Auswahl zu erstellen. |
 | **[!UICONTROL Zielgruppe aus Auswahl erstellen]** | Öffnen Sie den [Audience Builder](/help/components/audiences/publish.md#audience-builder), um eine Audience aus der Auswahl zu erstellen. |
@@ -118,6 +117,8 @@ Sie können die [Anzeigedichte](https://experienceleague.adobe.com/de/docs/analy
 
 
 ## Beispiel für Inline-Klassifizierungen
+
+{{release-limited-testing-section}}
 
 Dieses Beispiel zeigt, wie die Kontextmenüoptionen **[!UICONTROL Ausgewählte Zeile umbenennen]**, **[!UICONTROL Ausgewählte Zeilen kombinieren]** und **[!UICONTROL Als abgeleitetes Feld erstellen]** verwendet werden. und wie die geänderte Freiformtabelle zurückgesetzt wird.
 

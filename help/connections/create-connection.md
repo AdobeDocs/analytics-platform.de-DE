@@ -21,10 +21,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff99ee131e9bae9fc2815fb54e5b5c14577450f7
+source-git-commit: ddbeb022f4850c2f872f612c86fb37a94b43a73d
 workflow-type: tm+mt
-source-wordcount: 10342
-ht-degree: 92%
+source-wordcount: 10413
+ht-degree: 90%
 
 ---
 
@@ -339,7 +339,7 @@ Im Rahmen des Verbindungs-Workflows [fügen Sie einen oder mehrere Datensätze h
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
 >title="Konto-ID"
->abstract="Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
+>abstract="Wählen Sie eine Konto-ID aus den verfügbaren Feldern für Nicht-Identitäts- oder Nicht-Personen-Identitäten aus, die im Datensatzschema in Experience Platform definiert sind. Die enthaltenen Werte werden als eindeutige Kontokennungen auf Zeilenebene verwendet, wenn die zugehörigen Konto-ID-Informationen im Datensatz Person an Konto nicht verfügbar sind."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
@@ -404,7 +404,7 @@ Im Rahmen des Verbindungs-Workflows [fügen Sie einen oder mehrere Datensätze h
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="Personen-ID"
->abstract="Wählen Sie eine Personen-ID aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
+>abstract="Wählen Sie ein Feld vom Typ Identität oder IdentityMap mit großer Abdeckung von Ereignissen aus. Die enthaltenen Werte werden auf die Werte aus dem zuvor konfigurierten Personenkennungs-Namespace erhöht (in der B2B-Stitching-Konfiguration)."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
@@ -732,7 +732,7 @@ Für einen Ereignisdatensatz in einer kontobasierten Verbindung können Sie Folg
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| **[!UICONTROL ID des globalen Kontos]** | Wählen Sie die eine ID eines globalen Kontos (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind. Relevant, wenn Sie Ihrer Verbindung ein globales Konto als Container hinzugefügt haben. <p>Wenn ein Eintrag keinen Wert für die Identität enthält, die Sie als Konto-ID für den Ereignisdatensatz ausgewählt haben, wird der Eintrag übersprungen. |
+| **[!UICONTROL ID des globalen Kontos]** | Relevant, wenn Sie Ihrer Verbindung ein globales Konto als Container hinzugefügt haben.<br/>Wählen Sie eine globale Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitätsfeldern (keine Identität oder Nicht-Person) aus, die im Datensatzschema in Experience Platform definiert sind. Die enthaltenen Werte werden als eindeutige Kontokennungen auf Zeilenebene verwendet, wenn die zugehörigen Konto-ID-Informationen im Datensatz Person an Konto nicht verfügbar sind.  <p>Wenn ein Eintrag keinen Wert für die Identität enthält, die Sie als Konto-ID für den Ereignisdatensatz ausgewählt haben, wird der Eintrag übersprungen. |
 | **[!UICONTROL Konto-ID]** | Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind. Relevant, wenn Sie Ihrer Verbindung kein globales Konto als Container hinzugefügt haben. |
 | **[!UICONTROL Opportunity-ID]** | Wählen Sie eine Opportunity-ID (die eindeutige Kennung für eine Opportunity) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind. |
 | **[!UICONTROL Käufergruppen-ID]** | Wählen Sie eine Käufergruppen-ID (die eindeutige Kennung für eine Käufergruppe) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind. |
