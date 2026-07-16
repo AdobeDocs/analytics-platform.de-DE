@@ -7,23 +7,15 @@ hide: true
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2:
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8f55bd26df5d06a459b275beb9c92669e15b2fd0
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8348295450f9901c74de7a8188d370e0fc612723
 workflow-type: tm+mt
-source-wordcount: 1203
-ht-degree: 20%
+source-wordcount: 1205
+ht-degree: 13%
 
 ---
 
@@ -73,17 +65,17 @@ Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
 >title="Person zu Kontodatensatz"
->abstract="Wählen Sie das Feld im Datensatz aus, das Personen-IDs enthält. Der Namespace dieses Feldes kann sich von dem ausgewählten Personenkennungs-Namespace unterscheiden oder mit diesem identisch sein (B2B-Stitching-Konfiguration). Wenn sich die beiden Namespaces unterscheiden, verknüpfen Sie die Namespaces im Identitätsdiagramm."
+>abstract="Wählen Sie den Lookup-Datensatz aus, der Personen-IDs Konto-IDs zuordnet."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
 >title="Person"
->abstract="Wählen Sie das Feld im Datensatz aus, das die Personen-ID enthält. Dieses Feld muss als Identität gekennzeichnet werden und darf nicht mit dem Feld **[!UICONTROL Konto]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein."
+>abstract="Wählen Sie das Feld im Datensatz aus, das Personen-IDs enthält. Der Namespace dieses Feldes kann sich von dem ausgewählten Namespace für die Personenkennung unterscheiden oder mit diesem identisch sein. Wenn sie sich unterscheiden, müssen die beiden Namespaces im Identitätsdiagramm verknüpft werden."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
 >title="Konto"
->abstract="Wählen Sie das Feld im Datensatz aus, das die eindeutigen Werte der Kontokennung enthält. Die Konto-ID-Informationen werden in den Zeilen aller Ereignis-Datensätze verfügbar gemacht, bei denen die Zuordnung aktiviert ist."
+>abstract="Wählen Sie das Feld im Datensatz aus, das die eindeutigen Werte der Kontokennung enthält. Die Konto-ID-Informationen werden in den Zeilen aller Ereignis-Datensätze verfügbar gemacht, wobei die Zuordnung von Person zu Konto aktiviert ist."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
@@ -135,12 +127,11 @@ Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Aktivieren der Person-zu-Konto-Zuordnung"
->abstract="Wenn aktiviert, verwendet dieser Datensatz die B2B-Kontozuordnung. Wählen Sie eine erforderliche **[!UICONTROL Personen-ID]** aus, um die Konto-ID basierend auf dem Person-zu-Konto-Datensatz zu suchen.<br/>Wenn diese Option deaktiviert ist, verwendet dieser Datensatz die B2B-Kontozuordnung *nicht* und Sie müssen stattdessen eine erforderliche **[!UICONTROL Konto-ID]** auswählen."
-
+>abstract="Wenn aktiviert, verwendet dieser Datensatz die B2B-Person zur Kontozuordnung. Die **[!UICONTROL Personen-ID]**-Werte werden auf die Werte aus dem konfigurierten Personenkennungs-Namespace erhöht und dann verwendet, um die Konto-ID basierend auf dem **[!UICONTROL Person-Konto-Datensatz]** zu suchen (B2B-Stitching-Konfigurationsschnittstelle).<br/>Wenn deaktiviert, verwendet dieser Datensatz keine B2B-Person-Kontozuordnung und Sie müssen stattdessen eine erforderliche **[!UICONTROL Konto-ID]** auswählen."
 
 Nachdem Sie die B2B-Zuordnung auf Verbindungsebene konfiguriert haben, müssen Sie die B2B-Kontozuordnung für jeden Ereignisdatensatz, den Sie zuordnen möchten, einzeln aktivieren.
 
-1. Wählen Sie in den Verbindungseinstellungen **[!UICONTROL Datensätze hinzufügen]** oder öffnen Sie die Einstellungen für einen vorhandenen Ereignisdatensatz.<br/>Siehe [Hinzufügen von &#x200B;](/help/connections/create-connection.md#add-datasets)) oder [Bearbeiten eines &#x200B;](/help/connections/create-connection.md#edit-a-dataset)).
+1. Wählen Sie in den Verbindungseinstellungen **[!UICONTROL Datensätze hinzufügen]** oder öffnen Sie die Einstellungen für einen vorhandenen Ereignisdatensatz.<br/>Siehe [Hinzufügen von ](/help/connections/create-connection.md#add-datasets)) oder [Bearbeiten eines ](/help/connections/create-connection.md#edit-a-dataset)).
 
 1. Aktivieren Sie für den spezifischen Ereignisdatensatz, für den Sie die B2B-Kontozuordnung konfigurieren möchten **[!UICONTROL „Person zu Kontozuordnung aktivieren]**.
 
@@ -176,7 +167,7 @@ Nachdem Sie die B2B-Stitching-Konfiguration konfiguriert und das Hinzufügen ode
 
 >[!IMPORTANT]
 >
->Nachdem eine Verbindung gespeichert wurde, wird die B2B-Stitching-Konfiguration unveränderlich. Um Ihre Einstellungen nach dem Speichern anzuzeigen, wählen Sie **B2B-Stitching-Konfiguration öffnen**. Alle Felder befinden sich in einem schreibgeschützten Zustand. Wenn der Datensatz, der für die Zuordnung [&#x200B; Person zu Konto verwendet wird](#prerequisites) in Experience Platform gelöscht wird, wird diese Verbindung ebenfalls gelöscht.
+>Nachdem eine Verbindung gespeichert wurde, wird die B2B-Stitching-Konfiguration unveränderlich. Um Ihre Einstellungen nach dem Speichern anzuzeigen, wählen Sie **B2B-Stitching-Konfiguration öffnen**. Alle Felder befinden sich in einem schreibgeschützten Zustand. Wenn der Datensatz, der für die Zuordnung [ Person zu Konto verwendet wird](#prerequisites) in Experience Platform gelöscht wird, wird diese Verbindung ebenfalls gelöscht.
 
 ## Zeitplan für die Datenaktualisierung
 
