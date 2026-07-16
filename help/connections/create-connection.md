@@ -21,9 +21,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ddbeb022f4850c2f872f612c86fb37a94b43a73d
+source-git-commit: 3eae7d76014165ec03151b7c2ec87952f357d4a3
 workflow-type: tm+mt
-source-wordcount: 10413
+source-wordcount: 10479
 ht-degree: 90%
 
 ---
@@ -404,12 +404,22 @@ Im Rahmen des Verbindungs-Workflows [fügen Sie einen oder mehrere Datensätze h
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="Personen-ID"
->abstract="Wählen Sie ein Feld vom Typ Identität oder IdentityMap mit großer Abdeckung von Ereignissen aus. Die enthaltenen Werte werden auf die Werte aus dem zuvor konfigurierten Personenkennungs-Namespace erhöht (in der B2B-Stitching-Konfiguration)."
+>abstract="Wählen Sie eine Personen-ID aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
 >title="Konto-ID"
 >abstract="Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2bstitching_personid"
+>title="Personen-ID"
+>abstract="Wählen Sie ein Feld vom Typ Identität oder IdentityMap mit großer Abdeckung von Ereignissen aus. Die enthaltenen Werte werden auf die Werte aus dem zuvor konfigurierten Namespace der Personenkennung erhöht."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2bstitching_accountid"
+>title="Konto-ID"
+>abstract="Wählen Sie optional eine Konto-ID aus den verfügbaren Feldern für Nicht-Identitäts- oder Nicht-Personen-Identitäten aus, die im Datensatzschema definiert sind. Die enthaltenen Werte werden als eindeutige Kontokennung auf Zeilenebene verwendet, wenn die zugehörigen Konto-ID-Informationen im Personenkonto-Datensatz nicht verfügbar sind."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"

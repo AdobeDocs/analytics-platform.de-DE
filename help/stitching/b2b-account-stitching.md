@@ -20,10 +20,10 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8f55bd26df5d06a459b275beb9c92669e15b2fd0
+source-git-commit: 8348295450f9901c74de7a8188d370e0fc612723
 workflow-type: tm+mt
-source-wordcount: 1203
-ht-degree: 20%
+source-wordcount: 1205
+ht-degree: 13%
 
 ---
 
@@ -73,17 +73,17 @@ Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
 >title="Person zu Kontodatensatz"
->abstract="Wählen Sie das Feld im Datensatz aus, das Personen-IDs enthält. Der Namespace dieses Feldes kann sich von dem ausgewählten Personenkennungs-Namespace unterscheiden oder mit diesem identisch sein (B2B-Stitching-Konfiguration). Wenn sich die beiden Namespaces unterscheiden, verknüpfen Sie die Namespaces im Identitätsdiagramm."
+>abstract="Wählen Sie den Lookup-Datensatz aus, der Personen-IDs Konto-IDs zuordnet."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
 >title="Person"
->abstract="Wählen Sie das Feld im Datensatz aus, das die Personen-ID enthält. Dieses Feld muss als Identität gekennzeichnet werden und darf nicht mit dem Feld **[!UICONTROL Konto]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein."
+>abstract="Wählen Sie das Feld im Datensatz aus, das Personen-IDs enthält. Der Namespace dieses Feldes kann sich von dem ausgewählten Namespace für die Personenkennung unterscheiden oder mit diesem identisch sein. Wenn sie sich unterscheiden, müssen die beiden Namespaces im Identitätsdiagramm verknüpft werden."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
 >title="Konto"
->abstract="Wählen Sie das Feld im Datensatz aus, das die eindeutigen Werte der Kontokennung enthält. Die Konto-ID-Informationen werden in den Zeilen aller Ereignis-Datensätze verfügbar gemacht, bei denen die Zuordnung aktiviert ist."
+>abstract="Wählen Sie das Feld im Datensatz aus, das die eindeutigen Werte der Kontokennung enthält. Die Konto-ID-Informationen werden in den Zeilen aller Ereignis-Datensätze verfügbar gemacht, wobei die Zuordnung von Person zu Konto aktiviert ist."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
@@ -135,8 +135,7 @@ Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Aktivieren der Person-zu-Konto-Zuordnung"
->abstract="Wenn aktiviert, verwendet dieser Datensatz die B2B-Kontozuordnung. Wählen Sie eine erforderliche **[!UICONTROL Personen-ID]** aus, um die Konto-ID basierend auf dem Person-zu-Konto-Datensatz zu suchen.<br/>Wenn diese Option deaktiviert ist, verwendet dieser Datensatz die B2B-Kontozuordnung *nicht* und Sie müssen stattdessen eine erforderliche **[!UICONTROL Konto-ID]** auswählen."
-
+>abstract="Wenn aktiviert, verwendet dieser Datensatz die B2B-Person zur Kontozuordnung. Die **[!UICONTROL Personen-ID]**-Werte werden auf die Werte aus dem konfigurierten Personenkennungs-Namespace erhöht und dann verwendet, um die Konto-ID basierend auf dem **[!UICONTROL Person-Konto-Datensatz]** zu suchen (B2B-Stitching-Konfigurationsschnittstelle).<br/>Wenn deaktiviert, verwendet dieser Datensatz keine B2B-Person-Kontozuordnung und Sie müssen stattdessen eine erforderliche **[!UICONTROL Konto-ID]** auswählen."
 
 Nachdem Sie die B2B-Zuordnung auf Verbindungsebene konfiguriert haben, müssen Sie die B2B-Kontozuordnung für jeden Ereignisdatensatz, den Sie zuordnen möchten, einzeln aktivieren.
 
