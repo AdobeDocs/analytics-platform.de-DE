@@ -5,22 +5,14 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hold: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
-source-wordcount: 759
+source-wordcount: 728
 ht-degree: 2%
 
 ---
@@ -32,14 +24,6 @@ Systemadministratoren können die Einverständnisberichterstattung und optional 
 >[!IMPORTANT]
 >
 >Die Einverständnisfilterung schließt Besucherdaten aus, die zum Zeitpunkt der Aufnahme keine Zustimmung erteilt haben. Daten, die durch Filtern ausgeschlossen werden, werden nicht in Customer Journey Analytics gespeichert und können nicht für frühere Datumsangaben wiederhergestellt werden. Überprüfen Sie die Auswahl Ihrer Marketing-Aktionen sorgfältig, bevor Sie die Filterung aktivieren.
-
-## Voraussetzungen
-
-Bevor Sie Einverständnisberichte und -filter konfigurieren, stellen Sie Folgendes sicher:
-
-* Sie verfügen über Systemadministrator-Berechtigungen in Customer Journey Analytics.
-* Die Sandbox, die Sie verwenden möchten, enthält im Feld `consentPoliciesIDMap` einen Profildatensatz mit Daten zur Mitgliedschaft in der Einverständnisrichtlinie.
-* Die Verbindung, die Sie konfigurieren möchten, ist bereits vorhanden. Weitere Informationen finden Sie unter [Erstellen oder Bearbeiten einer Verbindung](/help/connections/create-connection.md).
 
 ## Erstellen einer Konfiguration
 
@@ -58,17 +42,21 @@ So erstellen Sie eine Reporting- und Filterkonfiguration für Einverständnisse:
    | **[!UICONTROL Name]** | Geben Sie einen Namen für die Konfiguration an. |
    | **[!UICONTROL Sandbox]** | Wählen Sie die Experience Platform-Sandbox aus, die den Profildatensatz mit den Mitgliedschaftsdaten Ihrer Einverständnisrichtlinie enthält. <p>Pro Sandbox ist maximal ein Einverständnisrichtlinien-Lookup-Datensatz vorhanden. Mehrere Konfigurationen in derselben Sandbox verwenden denselben Lookup-Datensatz.</p> |
 
-1. Wählen Sie **[!UICONTROL Abschnitt]** Profildatensatz) den Profildatensatz aus, der die Einverständnisrichtlinien-Mitgliedschaftsdaten enthält (das `consentPoliciesIDMap` Feld), zu dem Sie einen Bericht erstellen möchten. Dieser Profildatensatz wird der ausgewählten Verbindung hinzugefügt.
+1. Wählen Sie **[!UICONTROL Abschnitt]** Profildatensatz) den Profildatensatz aus, der die Einverständnisrichtlinien-Mitgliedschaftsdaten enthält (das `consentPoliciesIDMap` Feld), zu dem Sie einen Bericht erstellen möchten. Wenn Sie die Einverständnisberichterstattung aktivieren, wird dieser Profildatensatz zu der von Ihnen ausgewählten Verbindung hinzugefügt, sofern er nicht bereits Teil davon ist.
 
 1. Wählen Sie im **[!UICONTROL Verbindung]** die Option **[!UICONTROL Verbindung auswählen]**, aktivieren Sie das Kontrollkästchen neben einer oder mehreren zu konfigurierenden Verbindungen und klicken Sie dann auf **[!UICONTROL Verbindung verwenden]**.
 
    Einverständnisberichte und -filter werden auf Verbindungsebene angewendet. Alle Datenansichten unter einer konfigurierten Verbindung übernehmen dasselbe Verhalten.
 
+1. Klicken **[!UICONTROL Abschnitt „Datenansichten]** auf **[!UICONTROL Datenansichten auswählen]**.
+
+1. Aktivieren Sie im Dialogfeld Datenansichten das Kontrollkästchen neben einer oder mehreren Datenansichten, die Sie für das Einverständnisbericht verwenden möchten. Diese Datenansichten werden automatisch mit Experience Platform-Einverständnisdaten für das Reporting konfiguriert.
+
+1. Wählen **[!UICONTROL Datenansichten verwenden]** aus.
+
 1. (Optional) Im Abschnitt **[!UICONTROL Filtern]** können Sie die Filterung für die folgenden Marketing-Aktionen aktivieren:
 
    >[!NOTE]
-   >
-   >Lassen Sie beide Umschalter deaktiviert, um die Einverständnisberichterstattung ohne Filterung zu aktivieren.
    >
    >Wenn die Filterung nach einer Marketing-Aktion aktiviert ist, nimmt Customer Journey Analytics die Daten eines Besuchers nur dann auf, wenn der Besucher mit **allen** Einverständnisrichtlinien übereinstimmt, die für diese Marketing-Aktion gelten. Weitere Informationen finden Sie unter [Einverständnisfilter](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering) in [Übersicht über Einverständnisberichte und -filter](/help/connections/consent-reporting-filtering/consent-overview.md).
 
@@ -79,14 +67,13 @@ So erstellen Sie eine Reporting- und Filterkonfiguration für Einverständnisse:
 
 1. Wählen **[!UICONTROL Erstellen]** aus, um die Konfiguration zu erstellen.
 
-   Customer Journey Analytics automatisch:
+   Wenn Sie die Berichterstellung aktiviert haben, wird Customer Journey Analytics automatisch:
 
    * Fügt den ausgewählten Profildatensatz zur Verbindung hinzu.
    * Erstellt einen Einverständnisrichtlinien-Lookup-Datensatz für die Sandbox (sofern noch nicht vorhanden) und synchronisiert Richtliniennamen und Beschreibungen aus Experience Platform.
    * Fügt die Komponenten der Einverständnisrichtlinie (Dimensionen, Metriken und ein abgeleitetes Feld) zu den Datenansichten innerhalb der konfigurierten Verbindung hinzu.
-   * Wendet die **Einverständnis** interne Beschriftung auf die neuen Komponenten an, damit Sie in der Datenansicht nach ihnen filtern können. Weitere Informationen zu internen Kennzeichnungen finden Sie unter [Kennzeichnungen und Richtlinien](/help/data-views/data-governance.md).
 
-1. Sehen Sie sich nach Abschluss [&#x200B; Konfiguration die Komponenten der Einverständnisrichtlinie in der Datenansicht an](#view-consent-policy-components-in-the-data-view) um sicherzustellen, dass sie verfügbar sind.
+1. Sehen Sie sich nach Abschluss [ Konfiguration die Komponenten der Einverständnisrichtlinie in der Datenansicht an](#view-consent-policy-components-in-the-data-view) um sicherzustellen, dass sie verfügbar sind.
 
 ## Anzeigen von Einverständnisrichtlinien-Komponenten in der Datenansicht
 
