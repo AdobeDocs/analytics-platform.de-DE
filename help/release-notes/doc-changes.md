@@ -50,7 +50,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 |---|---|
 | **Juni 2026** | |
-| Neuer GA4-Leitfaden | Hinzugefügt [Übergang von Google Analytics 4 zu Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
+| Neuer GA4-Leitfaden | Hinzugefügt [Übergang von Google Analytics 4 zu Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
 | **Mai 2026** | |
 | JavaScript-Bibliothek für Content Analytics | Dokumentation zur Implementierung von Content Analytics für den Web-Kanal mithilfe der [Content Analytics-JavaScript-Bibliothek](/help/content-analytics/config/tags-agnostic.md) ohne Experience Platform-Datenerfassungs-Tags. |
 | Überlegungen zu Data Mirror | [Dokumentation](/help/data-mirror/considerations.md), in der Faktoren beschrieben werden, die Sie beim Einrichten von [Data Mirror-Datensätzen](/help/data-mirror/data-mirror.md) berücksichtigen sollten. |
