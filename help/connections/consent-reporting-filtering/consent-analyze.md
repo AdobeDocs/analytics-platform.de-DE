@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
+source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
-source-wordcount: 385
+source-wordcount: 388
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 Sie können Daten zu Einverständnisrichtlinien aus Experience Platform-Profildatensätzen in eine Customer Journey Analytics-Verbindung aufnehmen.
 
-Nachdem Sie [Konfiguration für Einverständnisberichte und -filter erstellt haben](/help/connections/consent-reporting-filtering/consent-configure.md) werden die Einverständnisrichtlinien-Daten als neue Komponenten in den Datenansichten unter der konfigurierten Verbindung verfügbar. Sie können diese Komponenten überall in Analysis Workspace verwenden, wenn Sie Zugriff auf eine Datenansicht haben, in der sie vorhanden sind.
+Nachdem Sie [Konfiguration für Einverständnisberichte und -filter erstellt &#x200B;](/help/connections/consent-reporting-filtering/consent-configure.md) das Reporting aktiviert haben, werden Einverständnisrichtlinien-Daten als neue Komponenten in den Datenansichten unter der konfigurierten Verbindung verfügbar. Sie können diese Komponenten überall in Analysis Workspace verwenden, wenn Sie Zugriff auf eine Datenansicht haben, in der sie vorhanden sind.
 
 ## Komponenten der Einverständnisrichtlinie
 

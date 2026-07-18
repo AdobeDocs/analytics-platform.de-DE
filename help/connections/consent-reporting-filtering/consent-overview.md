@@ -19,9 +19,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
+source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
-source-wordcount: 990
+source-wordcount: 1058
 ht-degree: 2%
 
 ---
@@ -29,6 +29,15 @@ ht-degree: 2%
 # Übersicht über das Reporting und die Filterung von Einverständnissen
 
 Einverständnisberichte und -filter verwenden die in Ihren Adobe Experience Platform-Profildatensätzen gespeicherten Einverständnisrichtlinien-Mitgliedschaftsdaten, um Ihnen dabei zu helfen, Berichte über das Einverständnis der Besuchenden zu erstellen und optional nicht einverstandene Besuchende auszuschließen, bevor ihre Daten in Customer Journey Analytics aufgenommen werden.
+
+## Voraussetzungen
+
+Bevor Sie Einverständnisberichte und -filter konfigurieren, stellen Sie Folgendes sicher:
+
+* Ihr Unternehmen hat Adobe Healthcare Shield oder Privacy &amp; Security Shield lizenziert.
+* Sie verfügen über Systemadministrator-Berechtigungen in Customer Journey Analytics.
+* Die Sandbox, die Sie verwenden möchten, enthält im Feld `consentPoliciesIDMap` einen Profildatensatz mit Daten zur Mitgliedschaft in der Einverständnisrichtlinie.
+* Die Verbindung, die Sie konfigurieren möchten, ist bereits vorhanden. Weitere Informationen finden Sie unter [Erstellen oder Bearbeiten einer Verbindung](/help/connections/create-connection.md).
 
 Das folgende Diagramm und die zugehörige Tabelle zeigen eine allgemeine Darstellung davon, wie durch Einverständnisberichte und -filterung Einverständnisrichtliniendaten in Analysis Workspace verfügbar gemacht und Besucherdaten zum Zeitpunkt der Aufnahme gefiltert werden:
 
