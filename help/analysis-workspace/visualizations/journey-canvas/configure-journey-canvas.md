@@ -5,27 +5,15 @@ feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
 TQID: https://experienceleague.adobe.com/pC3wjv6Q7RHRfDfHq75CP2Lqd-HzN-s7iLZ9t4N4ZR0
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: aff2ef09-fc60-4018-9197-e2befd623064
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c6b215f9fe718d0d3e8f81b7f55421c909b69c5a
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: aff2ef09-fc60-4018-9197-e2befd623064id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 782311939794bab0f04da1df3dccdc3a9847449f
 workflow-type: tm+mt
-source-wordcount: 6499
-ht-degree: 91%
+source-wordcount: 6697
+ht-degree: 88%
 
 ---
 
@@ -92,8 +80,44 @@ Weitere Informationen zur Journey-Arbeitsfläche finden Sie unter [Journey-Arbei
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_percentage_value"
->title="Berechnung der Prozentsätze wählen"
+>title="Prozentwert"
 >abstract="Die Prozentwerte, die für die einzelnen Knoten angezeigt werden, basieren auf der primären und der sekundären Metrik, die Sie konfigurieren. Sie können festlegen, ob sich die Prozentwerte auf den Startknoten, den vorherigen Knoten oder auf alle Daten in der Report Suite beziehen sollen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings"
+>title="Pfeil-Einstellungen"
+>abstract="Auswählen, ob Beschriftungen auf der Arbeitsfläche ein- oder ausgeblendet werden sollen. Beschriftungen sind benutzerdefinierte Namen, die in der Journey-Arbeitsfläche erstellt werden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings_ajo"
+>title="Pfeil-Einstellungen"
+>abstract="Wählen Sie aus, ob Beschriftungen und Werte auf der Arbeitsfläche ein- oder ausgeblendet werden sollen. Bei Beschriftungen kann es sich um benutzerdefinierte Namen handeln, die auf der Journey-Arbeitsfläche erstellt wurden, oder um Beschriftungen oder Bedingungen, die in Journey Optimizer erstellt wurden. Werte sind Zahlen und Prozentsätze, die die Personen oder Sitzungen angeben, die auf dem Journey von einem Knoten zum nächsten verschoben wurden. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_show_fallout"
+>title="Fallout anzeigen"
+>abstract="Fallout-Daten zeigen den Prozentsatz und die Anzahl der Personen oder Sitzungen auf jedem Knoten der Journey an, die nie den nächsten Knoten der Journey erreicht haben. Möglicherweise haben sie andere Aktionen auf der Site durchgeführt, aber sie erfüllten nie die Kriterien, die durch den nächsten Knoten in der Journey definiert wurden.<br/>Fallout-Daten zeigen entweder Personen oder Sitzungen an (unabhängig von der ausgewählten primären Metrik) und basieren auf der Einstellung Journey Canvas Container ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_compare"
+>title="Vergleichen mit"
+>abstract="Der Datumsbereich, der zum Vergleich aktueller Journey-Daten mit einem früheren Zeitraum verwendet wird. Wenn Sie einen Vergleichsdatumsbereich auswählen, zeigt jeder Knoten in der Journey die prozentuale Änderung zwischen dem aktuellen Datumsbereich und dem ausgewählten Vergleichsdatumsbereich basierend auf der primären Metrik an. "
 
 <!-- markdownlint-enable MD034 -->
 
