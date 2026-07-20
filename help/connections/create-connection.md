@@ -21,7 +21,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3eae7d76014165ec03151b7c2ec87952f357d4a3
+source-git-commit: 2a7629993e235d66844db036ccce88e57fc20562
 workflow-type: tm+mt
 source-wordcount: 10479
 ht-degree: 90%
@@ -419,7 +419,7 @@ Im Rahmen des Verbindungs-Workflows [fügen Sie einen oder mehrere Datensätze h
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_accountid"
 >title="Konto-ID"
->abstract="Wählen Sie optional eine Konto-ID aus den verfügbaren Feldern für Nicht-Identitäts- oder Nicht-Personen-Identitäten aus, die im Datensatzschema definiert sind. Die enthaltenen Werte werden als eindeutige Kontokennung auf Zeilenebene verwendet, wenn die zugehörigen Konto-ID-Informationen im Personenkonto-Datensatz nicht verfügbar sind."
+>abstract="Wählen Sie optional eine Konto-ID aus den verfügbaren Feldern Nicht-Identität oder Nicht-Personen-Identität aus, die im XDM-Schema definiert sind. Die enthaltenen Werte werden als eindeutige Kontokennung auf Zeilenebene verwendet, wenn die zugehörigen Konto-ID-Informationen im Personenkonto-Datensatz nicht verfügbar sind."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
@@ -582,8 +582,8 @@ Sie können beim Erstellen oder Bearbeiten einer Verbindung einen oder mehrere E
    * Um Namespaces für die einzelnen Spalten in der Tabelle anzuzeigen, aktivieren Sie **[!UICONTROL Spaltennamespace anzeigen]**.
    * Um die Beispieldaten zu durchsuchen, verwenden Sie ![Suche](/help/assets/icons/Search.svg).
    * Um zu konfigurieren, welche Spalten angezeigt werden sollen, wählen Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) aus. <br/>Im Dialogfeld **[!UICONTROL Tabelle anpassen]**:
-      1. Wählen Sie die Spalten aus, die in der Tabelle angezeigt werden sollen.
-      1. Wählen Sie **[!UICONTROL Anwenden]**, um die Auswahl anzuwenden, oder **[!UICONTROL Abbrechen]**, um die Auswahl abzubrechen.
+     1. Wählen Sie die Spalten aus, die in der Tabelle angezeigt werden sollen.
+     1. Wählen Sie **[!UICONTROL Anwenden]**, um die Auswahl anzuwenden, oder **[!UICONTROL Abbrechen]**, um die Auswahl abzubrechen.
    * Um die Daten für Spalten anzuzeigen, die Array- oder Objektdaten enthalten, wählen Sie **[!UICONTROL Werte]** aus.
 
    Der **[!UICONTROL Datensatz-Info]** zeigt Details zum Datensatz an. Wählen Sie den Wert für **[!UICONTROL Schema]** oder **[!UICONTROL Datensatz]**, um die entsprechende Oberfläche in Experience Platform in einer neuen Browser-Registerkarte zu öffnen.
@@ -674,8 +674,8 @@ Um einen Datensatz zu bearbeiten, der bereits für eine Verbindung konfiguriert 
    * Um Namespaces für die einzelnen Spalten in der Tabelle anzuzeigen, aktivieren Sie **[!UICONTROL Spaltennamespace anzeigen]**.
    * Um die Beispieldaten zu durchsuchen, verwenden Sie ![Suche](/help/assets/icons/Search.svg).
    * Um zu konfigurieren, welche Spalten angezeigt werden sollen, wählen Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) aus. <br/>Im Dialogfeld **[!UICONTROL Tabelle anpassen]**:
-      1. Wählen Sie die Spalten aus, die in der Tabelle angezeigt werden sollen.
-      1. Wählen Sie **[!UICONTROL Anwenden]**, um die Auswahl anzuwenden, oder **[!UICONTROL Abbrechen]**, um die Auswahl abzubrechen.
+     1. Wählen Sie die Spalten aus, die in der Tabelle angezeigt werden sollen.
+     1. Wählen Sie **[!UICONTROL Anwenden]**, um die Auswahl anzuwenden, oder **[!UICONTROL Abbrechen]**, um die Auswahl abzubrechen.
    * Um die Daten für Spalten anzuzeigen, die Array- oder Objektdaten enthalten, wählen Sie **[!UICONTROL Werte]** aus.
 
    Der **[!UICONTROL Datensatz-Info]** zeigt Details zum Datensatz an. Wählen Sie den Wert für **[!UICONTROL Schema]** oder **[!UICONTROL Datensatz]**, um die entsprechende Oberfläche in Experience Platform in einer neuen Browser-Registerkarte zu öffnen.
