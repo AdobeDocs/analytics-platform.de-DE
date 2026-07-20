@@ -5,27 +5,20 @@ feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: f51766fdcb891b8cea93ea047b011792dc3c0ae6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
 workflow-type: tm+mt
-source-wordcount: 1628
-ht-degree: 55%
+source-wordcount: 1630
+ht-degree: 53%
 
 ---
 
 # Zeileneinstellungen
 
-Die Zeileneinstellungen variieren je nachdem, welche Komponente Sie in die Tabelle gezogen haben. Um auf die Einstellungen der Tabellenzeilen zuzugreifen![&#x200B; wählen Sie &#x200B;](/help/assets/icons/Setting.svg)Einstellung **[!UICONTROL Einstellungen]** neben einer Dimension, einem Segment, einer Metrik, einem Zeitraum oder einer Aufschlüsselung in jedem dieser Objekte aus.
+Die Zeileneinstellungen variieren je nachdem, welche Komponente Sie in die Tabelle gezogen haben. Um auf die Einstellungen der Tabellenzeilen zuzugreifen![ wählen Sie ](/help/assets/icons/Setting.svg)Einstellung **[!UICONTROL Einstellungen]** neben einer Dimension, einem Segment, einer Metrik, einem Zeitraum oder einer Aufschlüsselung in jedem dieser Objekte aus.
 
 ![Freiformtabelle mit hervorgehobenem Einstellungssymbol für Metriken](assets/row-settings.png)
 
@@ -37,7 +30,7 @@ Die Zeileneinstellungen variieren je nachdem, welche Komponente Sie in die Tabel
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -91,7 +84,7 @@ Die folgenden zusätzlichen Optionen im Kontextmenü sind verfügbar, wenn ein o
 | **[!UICONTROL Alle Zeilen anzeigen]** | Zum Anzeigen aller Zeilen in der Visualisierung. |
 | **[!UICONTROL Ausgewählte Zeile umbenennen]** | Benennen Sie die ausgewählte Zeile um. Geben Sie **[!UICONTROL Dialogfeld]** Ausgewählte Zeile **[!UICONTROL umbenennen]** einen Namen ein. Wählen Sie **[!UICONTROL OK]**, um zu bestätigen, oder **[!UICONTROL Abbrechen]**, um abzubrechen. Nachdem eine Zeile in einer Freiformtabelle umbenannt wurde, wird der Dimensionsname in der Kopfzeile mit **[!UICONTROL (geändert)]** angehängt und ein ![Zahnradsymbol](/help/assets/icons/Gear.svg) ist verfügbar, um geänderte Zeilen in der Kopfzeile der Dimension zurückzusetzen. Siehe [Inline-Klassifizierungen](#inline-classifications). |
 | **[!UICONTROL Ausgewählte Zeilen kombinieren]** | Die ausgewählten Zeilen kombinieren. Geben Sie **[!UICONTROL Dialogfeld]** Ausgewählte Zeilen **[!UICONTROL kombinieren]** einen Namen ein. Wählen Sie **[!UICONTROL OK]**, um zu bestätigen, oder **[!UICONTROL Abbrechen]**, um abzubrechen. Sobald Zeilen in einer Freiformtabelle kombiniert wurden, wird der Dimensionsname in der Kopfzeile mit **[!UICONTROL (geändert) angehängt]** und es steht ein ![Zahnradsymbol](/help/assets/icons/Gear.svg) zur Verfügung, um geänderte Zeilen in der Kopfzeile der Dimension zurückzusetzen. Siehe [Inline-Klassifizierungen](#inline-classifications). |
-| **[!UICONTROL Geänderte Zeilen als abgeleitetes Feld erstellen]** | *Sie müssen Customer Journey Analytics-Produktadministrator sein, um diese Option im Kontextmenü anzuzeigen.*<br/> Verfügbar in jeder ausgewählten Zeile einer Freiformtabelle, die durch das Umbenennen oder Kombinieren von Zeilen geändert wird. Wenn diese Option ausgewählt ist[&#x200B; wird die &#x200B;](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) „Abgeleitetes Feld“ mit den Änderungen geöffnet, die Sie an der bereits vorausgefüllten Freiformtabelle vorgenommen haben. Siehe [Inline-Klassifizierungen](#inline-classifications). |
+| **[!UICONTROL Geänderte Zeilen als abgeleitetes Feld erstellen]** | *Sie müssen Customer Journey Analytics-Produktadministrator sein, um diese Option im Kontextmenü anzuzeigen.*<br/> Verfügbar in jeder ausgewählten Zeile einer Freiformtabelle, die durch das Umbenennen oder Kombinieren von Zeilen geändert wird. Wenn diese Option ausgewählt ist[ wird die ](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) „Abgeleitetes Feld“ mit den Änderungen geöffnet, die Sie an der bereits vorausgefüllten Freiformtabelle vorgenommen haben. Siehe [Inline-Klassifizierungen](#inline-classifications). |
 | **[!UICONTROL Anmerkung aus Auswahl erstellen]** | Öffnen Sie den [Anmerkungsgenerator](/help/components/annotations/create-annotations.md#annotation-builder), um eine Anmerkung für die Auswahl zu erstellen. |
 | **[!UICONTROL Segment aus Auswahl erstellen]** | Öffnen Sie den [Segment Builder](/help/components/segments/seg-builder.md), um ein Segment aus der Auswahl zu erstellen. |
 | **[!UICONTROL Zielgruppe aus Auswahl erstellen]** | Öffnen Sie den [Audience Builder](/help/components/audiences/publish.md#audience-builder), um eine Audience aus der Auswahl zu erstellen. |
@@ -106,17 +99,19 @@ Die folgenden Kontextmenüoptionen sind bei Auswahl der Kopfzeile einer Metriksp
 | **[!UICONTROL Attributionsmodelle ändern]** | Zum Ändern des Attributionsmodells für die Spalte. |
 | **[!UICONTROL Attributionsmodell vergleichen]** | Geben Sie ein neues Attributionsmodell an und vergleichen Sie es mit dem Attributionsmodell für die ausgewählte Spalte. Es wird eine neue Spalte mit den neuen Attributionsmodell-Metriken hinzugefügt. Außerdem wird eine Spalte „Prozentänderung“ zum Vergleich hinzugefügt. |
 | **[!UICONTROL Spaltenbreiten zurücksetzen]** | Zum Zurücksetzen der Spaltenbreiten auf die Standardbreite. |
-| **[!UICONTROL Anmerkung aus Auswahl erstellen]** | Zum Öffnen der **[!UICONTROL Anmerkungsdetails]**, um eine Anmerkung hinzuzufügen. |
-| **[!UICONTROL Segment aus Auswahl erstellen]** | Öffnen Sie den **[!UICONTROL Segment Builder]**, um ein Segment aus der Auswahl zu erstellen. |
-| **[!UICONTROL Zielgruppe aus Auswahl erstellen]** | Öffnen Sie das Dialogfeld **[!UICONTROL Zielgruppe erstellen]**, um eine Zielgruppe aus der Auswahl zu erstellen. |
+| **[!UICONTROL Anmerkung aus Auswahl erstellen]** | Öffnen Sie den [Anmerkungsgenerator](/help/components/annotations/create-annotations.md#annotation-builder), um eine Anmerkung für die Auswahl zu erstellen. |
+| **[!UICONTROL Segment aus Auswahl erstellen]** | Öffnen Sie den [Segment Builder](/help/components/segments/seg-builder.md), um ein Segment aus der Auswahl zu erstellen. |
+| **[!UICONTROL Zielgruppe aus Auswahl erstellen]** | Öffnen Sie den [Audience Builder](/help/components/audiences/publish.md#audience-builder), um eine Audience aus der Auswahl zu erstellen. |
 
 
 ## Ändern der Zeilenhöhe
 
-Sie können die [Anzeigedichte](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) eines Projekts auf **[!UICONTROL Kompakt]**, **[!UICONTROL Komfortabel]** und **[!UICONTROL Erweitert]**.
+Sie können die [Anzeigedichte](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) eines Projekts auf **[!UICONTROL Kompakt]**, **[!UICONTROL Komfortabel]** und **[!UICONTROL Erweitert]**.
 
 
-## Inline-Klassifizierungen
+## Inline-Klassifizierungen {#inline-classifications-example}
+
+{{release-limited-testing-section}}
 
 Inline-Klassifizierungen ermöglichen das Umbenennen oder Kombinieren von Zeilen in einer Freiformtabelle. Und um ein abgeleitetes Feld aus den geänderten Zeilen in einer Tabelle zu erstellen.
 
@@ -126,7 +121,7 @@ Das folgende Beispiel zeigt, wie die Kontextmenüoptionen **[!UICONTROL Ausgewä
 
   1. Wählen Sie **[!UICONTROL Ausgewählte Zeile umbenennen]** aus dem Kontextmenü in der ausgewählten Zeile **[!UICONTROL Kein Wert]** aus.
 
-     ![Wählen Sie die Kontextmenüoption Ausgewählte Zeile umbenennen &#x200B;](assets/context-rename.png)
+     ![Wählen Sie die Kontextmenüoption Ausgewählte Zeile umbenennen ](assets/context-rename.png)
 
   1. Im Dialogfeld **[!UICONTROL Ausgewählte Zeile umbenennen]**:
 
@@ -153,7 +148,7 @@ Das folgende Beispiel zeigt, wie die Kontextmenüoptionen **[!UICONTROL Ausgewä
 
   1. Wählen Sie **[!UICONTROL Geänderte Zeilen als abgeleitetes Feld erstellen]** aus dem Kontextmenü für jede ausgewählte Zeile in der geänderten Tabelle aus.
 
-     ![Wählen Sie die Menüoption Geänderte Zeilen als abgeleitetes Feld erstellen &#x200B;](assets/context-derived.png)
+     ![Wählen Sie die Menüoption Geänderte Zeilen als abgeleitetes Feld erstellen ](assets/context-derived.png)
 
   1. Überprüfen Sie die Definition des abgeleiteten Felds, ändern Sie sie optional und speichern Sie sie basierend auf allen Änderungen in der Tabelle.
 
@@ -162,6 +157,6 @@ Das folgende Beispiel zeigt, wie die Kontextmenüoptionen **[!UICONTROL Ausgewä
 * Setzen Sie die Freiformtabelle auf den Status vor den Änderungen zurück.
 
   1. Klicken Sie ![Zahnrad](/help/assets/icons/Gear.svg) neben **[!UICONTROL _Dimensionsname _(geändert)]**.
-  1. Wählen Sie **[!UICONTROL Geänderte Zeilen zurücksetzen]** aus dem Popup **[!UICONTROL Zeilen umbenannt]** aus.
+  1. Wählen **[!UICONTROL Geänderte Zeilen zurücksetzen]** aus dem **[!UICONTROL Geänderte Zeilen]**-Popup.
 
      ![Freiformtabelle zurücksetzen](assets/popup-reset.png)
