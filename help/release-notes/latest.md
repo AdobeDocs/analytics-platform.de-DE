@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 4dd845eaf5f101e21a8e754ac588cb837398b975
+source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
 workflow-type: tm+mt
-source-wordcount: 666
-ht-degree: 41%
+source-wordcount: 699
+ht-degree: 39%
 
 ---
 
@@ -49,6 +49,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Juli
 | **Content Analytics: Bezahlte Mediendaten** Bezahlte <br/> sind jetzt als dritter Kanal für Content Analytics verfügbar.<p>(Link zur Dokumentation folgt.)</p> | | &#x200B;31. Juli 2026 |
 | **Aktualisierung der**-Benutzeroberfläche<br/> In der Benutzeroberfläche „Verwendung“ beim Verwalten von Verbindungen können Sie jetzt Nutzungsdetails für jedes einzelne Modul anzeigen, z. B. Customer Journey Analytics oder Customer Journey Analytics B2B edition. <p>Darüber hinaus können Sie jetzt die Berichte zur Nutzung für jedes Modul nach Monat aufschlüsseln.</p><p>(Link zur Dokumentation folgt.)</p> | | &#x200B;31. Juli 2026 |
 | **CX Enterprise Coworker: Überprüfen Sie Ihre Daten bei der Migration von Adobe Analytics zu Customer Journey Analytics** <br/>Mit einer neuen Fähigkeit in CX Enterprise Coworker können Sie die Daten aus Ihrer Customer Journey Analytics-Implementierung mit den Daten aus Ihrer bestehenden Adobe Analytics-Implementierung vergleichen. <p>Diese Qualifikation vergleicht jede Dimension, jede Metrik und jeden Trend bei Bedarf automatisch einzeln. Außerdem kann es alle Adobe Analytics Report Suites mit allen Customer Journey Analytics-Datenansichten vergleichen. Die Qualifikation generiert dann KI-gesteuerte Einblicke und Empfehlungen, die Sie implementieren können, um Ihre Migration zu Customer Journey Analytics zu erleichtern.</p><p>(Link zur Dokumentation folgt.)</p> | | Ende Juli 2026 |
+| **Inline-Klassifizierungen**<br/>[&#x200B; Inline-Klassifizierungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications) ermöglichen das Umbenennen oder Kombinieren von Zeilen in einer Freiformtabelle. Und um ein abgeleitetes Feld aus den geänderten Zeilen in einer Tabelle zu erstellen. | &#x200B;20. Juli 2026 | &#x200B;25. Juli 2026 |
 
 ### Fehlerbehebungen in Customer Journey Analytics
 

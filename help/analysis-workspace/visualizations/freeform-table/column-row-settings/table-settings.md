@@ -16,10 +16,10 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
 workflow-type: tm+mt
-source-wordcount: 1602
-ht-degree: 55%
+source-wordcount: 1630
+ht-degree: 53%
 
 ---
 
@@ -89,9 +89,9 @@ Die folgenden zusätzlichen Optionen im Kontextmenü sind verfügbar, wenn ein o
 | **[!UICONTROL Trend-Auswahl]** | Zum Erstellen einer Trend-Liniendiagramm-Visualisierung für die Auswahl. |
 | **[!UICONTROL Nur ausgewählte Zeilen anzeigen]** | Zum Anzeigen von nur den ausgewählten Zeilen in der Visualisierung. |
 | **[!UICONTROL Alle Zeilen anzeigen]** | Zum Anzeigen aller Zeilen in der Visualisierung. |
-| **[!UICONTROL Ausgewählte Zeile umbenennen]** | *Eingeschränkte Testverfügbarkeit*<br/> Benennen Sie die ausgewählte Zeile um. Geben Sie **[!UICONTROL Dialogfeld]** Ausgewählte Zeile **[!UICONTROL umbenennen]** einen Namen ein. Wählen Sie **[!UICONTROL OK]**, um zu bestätigen, oder **[!UICONTROL Abbrechen]**, um abzubrechen. Nachdem eine Zeile in einer Freiformtabelle umbenannt wurde, wird der Dimensionsname in der Kopfzeile mit **[!UICONTROL (geändert)]** angehängt und ein ![Zahnradsymbol](/help/assets/icons/Gear.svg) ist verfügbar, um umbenannte Zeilen in der Kopfzeile der Dimension zurückzusetzen. Siehe [Inline-Klassifizierungsbeispiel](#inline-classifications-example). |
-| **[!UICONTROL Ausgewählte Zeilen kombinieren]** | *Eingeschränkte Testverfügbarkeit*<br/> Kombinieren Sie die ausgewählten Zeilen. Geben Sie **[!UICONTROL Dialogfeld]** Ausgewählte Zeilen **[!UICONTROL kombinieren]** einen Namen ein. Wählen Sie **[!UICONTROL OK]**, um zu bestätigen, oder **[!UICONTROL Abbrechen]**, um abzubrechen. Sobald Zeilen in einer Freiformtabelle kombiniert sind, wird der Dimensionsname in der Kopfzeile mit **[!UICONTROL (geändert) angehängt]** und ein ![Zahnradsymbol](/help/assets/icons/Gear.svg) ist verfügbar, um umbenannte Zeilen in der Kopfzeile der Dimension zurückzusetzen. Siehe [Inline-Klassifizierungsbeispiel](#inline-classifications-example). |
-| **[!UICONTROL Als abgeleitetes Feld erstellen]** | *Eingeschränkte Testverfügbarkeit *<br/>*Sie müssen ein Customer Journey Analytics-Produktadministrator sein, um diese Option im Kontextmenü anzuzeigen.*<br/> Verfügbar in jeder ausgewählten Zeile einer Freiformtabelle, die durch das Umbenennen oder Kombinieren von Zeilen geändert wird. Wenn diese Option ausgewählt ist[&#x200B; wird die &#x200B;](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) „Abgeleitetes Feld“ mit den Änderungen geöffnet, die Sie an der bereits vorausgefüllten Freiformtabelle vorgenommen haben. Siehe [Inline-Klassifizierungsbeispiel](#inline-classifications-example). |
+| **[!UICONTROL Ausgewählte Zeile umbenennen]** | Benennen Sie die ausgewählte Zeile um. Geben Sie **[!UICONTROL Dialogfeld]** Ausgewählte Zeile **[!UICONTROL umbenennen]** einen Namen ein. Wählen Sie **[!UICONTROL OK]**, um zu bestätigen, oder **[!UICONTROL Abbrechen]**, um abzubrechen. Nachdem eine Zeile in einer Freiformtabelle umbenannt wurde, wird der Dimensionsname in der Kopfzeile mit **[!UICONTROL (geändert)]** angehängt und ein ![Zahnradsymbol](/help/assets/icons/Gear.svg) ist verfügbar, um geänderte Zeilen in der Kopfzeile der Dimension zurückzusetzen. Siehe [Inline-Klassifizierungen](#inline-classifications). |
+| **[!UICONTROL Ausgewählte Zeilen kombinieren]** | Die ausgewählten Zeilen kombinieren. Geben Sie **[!UICONTROL Dialogfeld]** Ausgewählte Zeilen **[!UICONTROL kombinieren]** einen Namen ein. Wählen Sie **[!UICONTROL OK]**, um zu bestätigen, oder **[!UICONTROL Abbrechen]**, um abzubrechen. Sobald Zeilen in einer Freiformtabelle kombiniert wurden, wird der Dimensionsname in der Kopfzeile mit **[!UICONTROL (geändert) angehängt]** und es steht ein ![Zahnradsymbol](/help/assets/icons/Gear.svg) zur Verfügung, um geänderte Zeilen in der Kopfzeile der Dimension zurückzusetzen. Siehe [Inline-Klassifizierungen](#inline-classifications). |
+| **[!UICONTROL Geänderte Zeilen als abgeleitetes Feld erstellen]** | *Sie müssen Customer Journey Analytics-Produktadministrator sein, um diese Option im Kontextmenü anzuzeigen.*<br/> Verfügbar in jeder ausgewählten Zeile einer Freiformtabelle, die durch das Umbenennen oder Kombinieren von Zeilen geändert wird. Wenn diese Option ausgewählt ist[&#x200B; wird die &#x200B;](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) „Abgeleitetes Feld“ mit den Änderungen geöffnet, die Sie an der bereits vorausgefüllten Freiformtabelle vorgenommen haben. Siehe [Inline-Klassifizierungen](#inline-classifications). |
 | **[!UICONTROL Anmerkung aus Auswahl erstellen]** | Öffnen Sie den [Anmerkungsgenerator](/help/components/annotations/create-annotations.md#annotation-builder), um eine Anmerkung für die Auswahl zu erstellen. |
 | **[!UICONTROL Segment aus Auswahl erstellen]** | Öffnen Sie den [Segment Builder](/help/components/segments/seg-builder.md), um ein Segment aus der Auswahl zu erstellen. |
 | **[!UICONTROL Zielgruppe aus Auswahl erstellen]** | Öffnen Sie den [Audience Builder](/help/components/audiences/publish.md#audience-builder), um eine Audience aus der Auswahl zu erstellen. |
@@ -106,9 +106,9 @@ Die folgenden Kontextmenüoptionen sind bei Auswahl der Kopfzeile einer Metriksp
 | **[!UICONTROL Attributionsmodelle ändern]** | Zum Ändern des Attributionsmodells für die Spalte. |
 | **[!UICONTROL Attributionsmodell vergleichen]** | Geben Sie ein neues Attributionsmodell an und vergleichen Sie es mit dem Attributionsmodell für die ausgewählte Spalte. Es wird eine neue Spalte mit den neuen Attributionsmodell-Metriken hinzugefügt. Außerdem wird eine Spalte „Prozentänderung“ zum Vergleich hinzugefügt. |
 | **[!UICONTROL Spaltenbreiten zurücksetzen]** | Zum Zurücksetzen der Spaltenbreiten auf die Standardbreite. |
-| **[!UICONTROL Anmerkung aus Auswahl erstellen]** | Zum Öffnen der **[!UICONTROL Anmerkungsdetails]**, um eine Anmerkung hinzuzufügen. |
-| **[!UICONTROL Segment aus Auswahl erstellen]** | Öffnen Sie den **[!UICONTROL Segment Builder]**, um ein Segment aus der Auswahl zu erstellen. |
-| **[!UICONTROL Zielgruppe aus Auswahl erstellen]** | Öffnen Sie das Dialogfeld **[!UICONTROL Zielgruppe erstellen]**, um eine Zielgruppe aus der Auswahl zu erstellen. |
+| **[!UICONTROL Anmerkung aus Auswahl erstellen]** | Öffnen Sie den [Anmerkungsgenerator](/help/components/annotations/create-annotations.md#annotation-builder), um eine Anmerkung für die Auswahl zu erstellen. |
+| **[!UICONTROL Segment aus Auswahl erstellen]** | Öffnen Sie den [Segment Builder](/help/components/segments/seg-builder.md), um ein Segment aus der Auswahl zu erstellen. |
+| **[!UICONTROL Zielgruppe aus Auswahl erstellen]** | Öffnen Sie den [Audience Builder](/help/components/audiences/publish.md#audience-builder), um eine Audience aus der Auswahl zu erstellen. |
 
 
 ## Ändern der Zeilenhöhe
@@ -116,52 +116,54 @@ Die folgenden Kontextmenüoptionen sind bei Auswahl der Kopfzeile einer Metriksp
 Sie können die [Anzeigedichte](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) eines Projekts auf **[!UICONTROL Kompakt]**, **[!UICONTROL Komfortabel]** und **[!UICONTROL Erweitert]**.
 
 
-## Beispiel für Inline-Klassifizierungen
+## Inline-Klassifizierungen {#inline-classifications-example}
 
 {{release-limited-testing-section}}
 
-Dieses Beispiel zeigt, wie die Kontextmenüoptionen **[!UICONTROL Ausgewählte Zeile umbenennen]**, **[!UICONTROL Ausgewählte Zeilen kombinieren]** und **[!UICONTROL Als abgeleitetes Feld erstellen]** verwendet werden. und wie die geänderte Freiformtabelle zurückgesetzt wird.
+Inline-Klassifizierungen ermöglichen das Umbenennen oder Kombinieren von Zeilen in einer Freiformtabelle. Und um ein abgeleitetes Feld aus den geänderten Zeilen in einer Tabelle zu erstellen.
+
+Das folgende Beispiel zeigt, wie die Kontextmenüoptionen **[!UICONTROL Ausgewählte Zeile umbenennen]**, **[!UICONTROL Ausgewählte Zeilen]** und **[!UICONTROL Geänderte Zeilen als abgeleitetes Feld erstellen]** verwendet werden. und wie die geänderte Freiformtabelle zurückgesetzt wird.
 
 * Benennen **[!UICONTROL Kein Wert]** Zeile in **[!UICONTROL Andere]** um.
 
-   1. Wählen Sie **[!UICONTROL Ausgewählte Zeile umbenennen]** aus dem Kontextmenü in der ausgewählten Zeile **[!UICONTROL Kein Wert]** aus.
+  1. Wählen Sie **[!UICONTROL Ausgewählte Zeile umbenennen]** aus dem Kontextmenü in der ausgewählten Zeile **[!UICONTROL Kein Wert]** aus.
 
-      ![Wählen Sie die Kontextmenüoption Ausgewählte Zeile umbenennen &#x200B;](assets/context-rename.png)
+     ![Wählen Sie die Kontextmenüoption Ausgewählte Zeile umbenennen &#x200B;](assets/context-rename.png)
 
-   1. Im Dialogfeld **[!UICONTROL Ausgewählte Zeile umbenennen]**:
+  1. Im Dialogfeld **[!UICONTROL Ausgewählte Zeile umbenennen]**:
 
-      ![Dialogfeld „Ausgewählte Zeile umbenennen](assets/dialog-rename.png)
+     ![Dialogfeld „Ausgewählte Zeile umbenennen](assets/dialog-rename.png)
 
-      1. Enter <code>other</code> für **[!UICONTROL Name]**.
-      1. Klicken Sie **[!UICONTROL OK]**.
+     1. Enter <code>other</code> für **[!UICONTROL Name]**.
+     1. Klicken Sie **[!UICONTROL OK]**.
 
 * Kombinieren Sie **[!UICONTROL Männer]** und **[!UICONTROL Frauen]** Zeilen zu einer **[!UICONTROL Erwachsene]** Zeile.
 
-   1. Wählen Sie **[!UICONTROL Männer]** und **[!UICONTROL Frauen]** Zeile aus.
-   1. Wählen Sie **[!UICONTROL Ausgewählte Zeilen kombinieren]** aus dem Kontextmenü aus einer der ausgewählten Zeilen aus.
+  1. Wählen Sie **[!UICONTROL Männer]** und **[!UICONTROL Frauen]** Zeile aus.
+  1. Wählen Sie **[!UICONTROL Ausgewählte Zeilen kombinieren]** aus dem Kontextmenü aus einer der ausgewählten Zeilen aus.
 
-      ![Menüoption „Ausgewählte Zeilen kombinieren“](assets/context-combine.png)
+     ![Menüoption „Ausgewählte Zeilen kombinieren“](assets/context-combine.png)
 
-   1. Im Dialogfeld **[!UICONTROL Ausgewählte Zeilen kombinieren]**:
+  1. Im Dialogfeld **[!UICONTROL Ausgewählte Zeilen kombinieren]**:
 
-      ![Dialogfeld „Ausgewählte Zeile kombinieren](assets/dialog-combine.png)
+     ![Dialogfeld „Ausgewählte Zeile kombinieren](assets/dialog-combine.png)
 
-      1. Eintreten <code>Erwachsene</code> für **[!UICONTROL Name]**.
-      1. Klicken Sie **[!UICONTROL OK]**.
+     1. Eintreten <code>Erwachsene</code> für **[!UICONTROL Name]**.
+     1. Klicken Sie **[!UICONTROL OK]**.
 
 * Erstellen Sie ein abgeleitetes Feld aus den Änderungen in der Freiformtabelle.
 
-   1. Wählen Sie **[!UICONTROL Als abgeleitetes Feld erstellen]** aus dem Kontextmenü für eine beliebige Zeile in der geänderten Tabelle aus.
+  1. Wählen Sie **[!UICONTROL Geänderte Zeilen als abgeleitetes Feld erstellen]** aus dem Kontextmenü für jede ausgewählte Zeile in der geänderten Tabelle aus.
 
-      ![Wählen Sie die Menüoption Als abgeleitetes Feld erstellen &#x200B;](assets/context-derived.png)
+     ![Wählen Sie die Menüoption Geänderte Zeilen als abgeleitetes Feld erstellen &#x200B;](assets/context-derived.png)
 
-   1. Überprüfen Sie die Definition des abgeleiteten Felds, ändern Sie sie optional und speichern Sie sie basierend auf allen Änderungen in der Tabelle.
+  1. Überprüfen Sie die Definition des abgeleiteten Felds, ändern Sie sie optional und speichern Sie sie basierend auf allen Änderungen in der Tabelle.
 
-      ![Dialogfeld „Abgeleitetes Feld erstellen“](assets/dialog-derived.png)
+     ![Dialogfeld „Abgeleitetes Feld erstellen“](assets/dialog-derived.png)
 
 * Setzen Sie die Freiformtabelle auf den Status vor den Änderungen zurück.
 
-   1. Klicken Sie ![Zahnrad](/help/assets/icons/Gear.svg) neben **[!UICONTROL _Dimensionsname _(geändert)]**.
-   1. Wählen Sie **[!UICONTROL Umbenannte Zeilen zurücksetzen]** aus dem **[!UICONTROL Umbenannte Zeilen]**-Popup.
+  1. Klicken Sie ![Zahnrad](/help/assets/icons/Gear.svg) neben **[!UICONTROL _Dimensionsname _(geändert)]**.
+  1. Wählen **[!UICONTROL Geänderte Zeilen zurücksetzen]** aus dem **[!UICONTROL Geänderte Zeilen]**-Popup.
 
-      ![Freiformtabelle zurücksetzen](assets/popup-reset.png)
+     ![Freiformtabelle zurücksetzen](assets/popup-reset.png)

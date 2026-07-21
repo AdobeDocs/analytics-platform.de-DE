@@ -22,10 +22,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c6b215f9fe718d0d3e8f81b7f55421c909b69c5a
+source-git-commit: 782311939794bab0f04da1df3dccdc3a9847449f
 workflow-type: tm+mt
-source-wordcount: 6499
-ht-degree: 91%
+source-wordcount: 6697
+ht-degree: 88%
 
 ---
 
@@ -92,8 +92,44 @@ Weitere Informationen zur Journey-Arbeitsfläche finden Sie unter [Journey-Arbei
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_percentage_value"
->title="Berechnung der Prozentsätze wählen"
+>title="Prozentwert"
 >abstract="Die Prozentwerte, die für die einzelnen Knoten angezeigt werden, basieren auf der primären und der sekundären Metrik, die Sie konfigurieren. Sie können festlegen, ob sich die Prozentwerte auf den Startknoten, den vorherigen Knoten oder auf alle Daten in der Report Suite beziehen sollen."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings"
+>title="Pfeil-Einstellungen"
+>abstract="Auswählen, ob Beschriftungen auf der Arbeitsfläche ein- oder ausgeblendet werden sollen. Beschriftungen sind benutzerdefinierte Namen, die in der Journey-Arbeitsfläche erstellt werden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings_ajo"
+>title="Pfeil-Einstellungen"
+>abstract="Wählen Sie aus, ob Beschriftungen und Werte auf der Arbeitsfläche ein- oder ausgeblendet werden sollen. Bei Beschriftungen kann es sich um benutzerdefinierte Namen handeln, die auf der Journey-Arbeitsfläche erstellt wurden, oder um Beschriftungen oder Bedingungen, die in Journey Optimizer erstellt wurden. Werte sind Zahlen und Prozentsätze, die die Personen oder Sitzungen angeben, die auf dem Journey von einem Knoten zum nächsten verschoben wurden. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_show_fallout"
+>title="Fallout anzeigen"
+>abstract="Fallout-Daten zeigen den Prozentsatz und die Anzahl der Personen oder Sitzungen auf jedem Knoten der Journey an, die nie den nächsten Knoten der Journey erreicht haben. Möglicherweise haben sie andere Aktionen auf der Site durchgeführt, aber sie erfüllten nie die Kriterien, die durch den nächsten Knoten in der Journey definiert wurden.<br/>Fallout-Daten zeigen entweder Personen oder Sitzungen an (unabhängig von der ausgewählten primären Metrik) und basieren auf der Einstellung Journey Canvas Container ."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_compare"
+>title="Vergleichen mit"
+>abstract="Der Datumsbereich, der zum Vergleich aktueller Journey-Daten mit einem früheren Zeitraum verwendet wird. Wenn Sie einen Vergleichsdatumsbereich auswählen, zeigt jeder Knoten in der Journey die prozentuale Änderung zwischen dem aktuellen Datumsbereich und dem ausgewählten Vergleichsdatumsbereich basierend auf der primären Metrik an. "
 
 <!-- markdownlint-enable MD034 -->
 
