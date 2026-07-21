@@ -22,10 +22,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
 workflow-type: tm+mt
-source-wordcount: 10573
-ht-degree: 98%
+source-wordcount: 10442
+ht-degree: 97%
 
 ---
 
@@ -481,16 +481,16 @@ Um die Vorlage zu verwenden, müssen Sie die Parameter für jede Funktion angebe
 Details zu jeder unterstützten Funktion finden Sie unten unter:
 
 - Spezifikationen:
-   - Eingabedatentyp: Art der unterstützten Daten,
-   - Eingabe: mögliche Werte für die Eingabe,
-   - Enthaltene Operatoren: Für diese Funktion unterstützte Operatoren (falls vorhanden),
-   - Einschränkungen: Einschränkungen, die für diese spezifische Funktion gelten,
-   - Ausgabe
+  - Eingabedatentyp: Art der unterstützten Daten,
+  - Eingabe: mögliche Werte für die Eingabe,
+  - Enthaltene Operatoren: Für diese Funktion unterstützte Operatoren (falls vorhanden),
+  - Einschränkungen: Einschränkungen, die für diese spezifische Funktion gelten,
+  - Ausgabe
 
 - Anwendungsfälle, einschließlich:
-   - Daten vor dem Definieren des abgeleiteten Felds,
-   - wie das abgeleitete Feld definiert wird,
-   - Daten nach der Definition des abgeleiteten Felds.
+  - Daten vor dem Definieren des abgeleiteten Felds,
+  - wie das abgeleitete Feld definiert wird,
+  - Daten nach der Definition des abgeleiteten Felds.
 
 - Einschränkungen (falls zutreffend).
 
@@ -756,7 +756,8 @@ Definiert einen Satz von Werten, die in einem neuen abgeleiteten Feld durch ents
 
 ## Anwendungsfall 1 {#classify-uc1}
 
-Sie verfügen über eine CSV-Datei, die eine Schlüsselspalte für `hotelID` und eine oder mehrere zusätzliche Spalten enthält, die mit der `hotelID` verknüpft sind: `city`, `rooms`, `hotel name`.Sie erfassen [!DNL Hotel ID] in einer Dimension, möchten jedoch eine [!DNL Hotel Name]-Dimension erstellen, die von der `hotelID` in der CSV-Datei abgeleitet wurde.
+Sie haben eine CSV-Datei, die eine Schlüsselspalte für `hotelID` und eine oder mehrere zusätzliche Spalten enthält, die mit dem `hotelID` verknüpft sind: `city`, `rooms`, `hotel name`.
+Sie erfassen [!DNL Hotel ID] in einer Dimension, möchten jedoch eine [!DNL Hotel Name] Dimension erstellen, die aus der `hotelID` in der CSV-Datei abgeleitet wurde.
 
 **Struktur und Inhalt der CSV-Datei**
 
@@ -1014,7 +1015,8 @@ Alternativ können Sie den praktischen Wert „Jetzt“ als dynamischen Datumsbe
 
 Sie möchten die Suchzeit in Minuten verstehen, bevor eine Person innerhalb einer Sitzung eine Bestellung aufgibt.
 
-Sie definieren ein neues abgeleitetes Feld `Time Between Search And Order In Minutes`, das das Ergebnis zweier [[!UICONTROL CASE WHEN]-Funktionen](#case-when) ist, um die Werte für [!UICONTROL Suchzeit] und [!UICONTROL Bestellzeit] zu definieren.Anschließend verwenden Sie diese beiden Werte, um die Differenz mit einer [!UICONTROL DATE MATH]-Funktion zu berechnen, wobei [!UICONTROL Umfang] auf [!UICONTROL Sitzung], die Werte auf [!UICONTROL Suchzeit] und [!UICONTROL Bestellzeit] und die [!UICONTROL Granularität der Ausgabe] auf [!UICONTROL Minute] eingestellt sind. Für beide Werte wählen Sie [!UICONTROL Ersten zurückgeben], um sicherzustellen, dass die erste [!UICONTROL Suchzeit] und [!UICONTROL Bestellzeit] zurückgegeben werden.
+Sie definieren ein neues `Time Between Search And Order In Minutes` abgeleitetes Feld, das das Ergebnis zweier [[!UICONTROL CASE WHEN]-Funktionen ist](#case-when) um [!UICONTROL Suchzeit] und [!UICONTROL Bestellzeit] Werte zu definieren.
+Anschließend verwenden Sie diese beiden Werte, um die Differenz mit einer [!UICONTROL DATE MATH]-Funktion zu berechnen, wobei [!UICONTROL Scope] auf [!UICONTROL Session], Werte auf [!UICONTROL Search Time] und [!UICONTROL Order Time] und [!UICONTROL Output-Granularität] auf [!UICONTROL Minute] gesetzt sind. Für beide Werte wählen Sie [!UICONTROL Erste zurückgeben] um sicherzustellen, dass die erste [!UICONTROL Suchzeit] und [!UICONTROL Bestellzeit] zurückgegeben wird.
 
 ![Screenshot der „Date Math“-Regel 3](assets/datemath-3.png)
 
@@ -1286,7 +1288,8 @@ Sie können schnell eine [!UICONTROL Lookup]-Funktion in den Regel-Builder einf�
 1. Wählen Sie **[!UICONTROL Schemafelder]** aus der Auswahl aus.
 1. Wählen Sie ![Schemafeldsymbol](assets/Smock_Folder_18_N.svg) **[!UICONTROL Datensätze nachschlagen]** aus.
 1. Wählen Sie Ihren Lookup-Datensatz aus und suchen Sie das Feld, das Sie für die Suche verwenden möchten.
-1. Ziehen Sie das Suchfeld per Drag-and-Drop auf eines der verfügbaren Eingabefelder für eine Funktion (z. B. Fall wenn). Wenn gültig, können Sie das Feld in einem blauen Feld mit der Bezeichnung **[!UICONTROL + Hinzufügen]** ablegen und automatisch eine Lookup-Funktion vor der Funktion ablegen, auf die Sie das Suchfeld abgelegt haben. Die eingefügte Lookup-Funktion wird automatisch mit relevanten Werten für alle Felder ausgefüllt.   ![Ziehen des Lookup-Felds](assets/lookup-drag.png)
+1. Ziehen Sie das Suchfeld per Drag-and-Drop auf eines der verfügbaren Eingabefelder für eine Funktion (z. B. Wenn Fall). Wenn gültig, können Sie in einem blauen Feld mit der Bezeichnung **[!UICONTROL + Hinzufügen]** das Feld ablegen und automatisch eine Suchfunktion einfügen, bevor die Funktion, in der Sie das Suchfeld abgelegt haben, verwendet wird. Die eingefügte Lookup-Funktion wird automatisch mit relevanten Werten für alle Felder ausgefüllt.
+   ![Ziehen des Lookup-Felds](assets/lookup-drag.png)
 
 +++
 
@@ -1407,7 +1410,8 @@ Sie definieren ein abgeleitetes `Corrected Annual Revenue`-Feld. Mit der Funktio
 
 So erstellen Sie eine Formel:
 
-1. Beginnen Sie einfach mit der Eingabe in das Formelfeld. Sobald numerische Felder mit Ihrer Eingabe übereinstimmen, werden sie in einem Popup-Menü angezeigt. Alternativ können Sie ein numerisches Feld per Drag-and-Drop aus den verfügbaren Feldern im linken Bereich ziehen.   ![Weitere Informationen zur Mathematik 1](assets/math-more-info-1.png)
+1. Beginnen Sie einfach mit der Eingabe in das Formelfeld und numerische Felder, die mit Ihrer Eingabe übereinstimmen, werden in einem Popup-Menü angezeigt. Alternativ können Sie ein numerisches Feld aus den verfügbaren Feldern im linken Bereich ziehen.
+   ![Weitere Informationen zur Mathematik 1](assets/math-more-info-1.png)
 
 1. Fügen Sie den Operanden (z. B. `*` zum Multiplizieren) und anschließend ein weiteres Feld oder einen statischen Wert hinzu. Sie können Klammern verwenden, um komplexere Formeln zu definieren.
 
@@ -1423,11 +1427,11 @@ Beim Arbeiten mit statischen Zahlen in der Funktion [!UICONTROL MATHEMATIK] sind
 - Sie können den Operator „Potenzieren“ (`ˆ`) nicht für einen statischen Wert verwenden.
 - Wenn Sie mehrere statische Werte in einer Formel verwenden, sollten diese statischen Werte mithilfe von Klammern gruppiert werden, damit die Formel gültig ist. Zum Beispiel:
 
-   - Diese Formel gibt einen Fehler zurück.
-     ![Weitere Informationen zur Mathematik 4](assets/math-more-info-4.png)
+  - Diese Formel gibt einen Fehler zurück.
+    ![Weitere Informationen zur Mathematik 4](assets/math-more-info-4.png)
 
-   - Diese Formel ist gültig.
-     ![Weitere Informationen zur Mathematik 5](assets/math-more-info-5.png)
+  - Diese Formel ist gültig.
+    ![Weitere Informationen zur Mathematik 5](assets/math-more-info-5.png)
 
 Verwenden Sie die mathematische Funktion für Berechnungen auf Trefferebene. Verwenden Sie die Funktion [Zusammenfassen](#summarize) für Berechnungen, die auf dem Umfang „Ereignis“, „Sitzung“ oder „Person“ basieren.
 
@@ -1783,6 +1787,10 @@ Sie erstellen ein abgeleitetes `Second Response`-Feld, um den letzten Wert aus d
 
 {style="table-layout:auto"}
 
+## Benutzerdefinierter Container
+
+Das abgeleitete Feld wird als [benutzerdefinierter Container“ verfügbar](/help/data-views/create-dataview.md#containers-1) den Sie in Ihrer Datenansicht auswählen und für die [Analyse von Unterereignissen) in &#x200B;](/help/components/segments/sub-event.md) Workspace-Projekt verwenden können.
+
 +++
 
 <!-- SUMMARIZE -->
@@ -1996,7 +2004,7 @@ Sie erstellen ein abgeleitetes  `Store Identifier`-Feld. Mit der Funktion [!UICO
 
 | Eingabedatentyp | Eingabe | Enthaltene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Numerisch</li><li>Datum</li><li>Datum-Uhrzeit</li><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Feld] | <p><ul><li>Ganzzahl<ul><li>In Zeichenfolge</li></ul></li><li>Duplikat<ul><li>In Zeichenfolge<ul><li>Anzahl der zu übernehmenden Dezimalstellen einschließen (max. 5?)</li></ul></li><li>Zu Ganzzahl</li></ul></li><li>Byte<ul><li>In Zeichenfolge</li></ul></li><li>Lang<ul><li>In Zeichenfolge</li></ul></li><li>Datum<ul><li>In Zeichenfolge<ul><li>Möglichkeit zur Definition des Ausgabeformats</li></ul></li><li>Beispiele<ul><li>Datum (Beispiel: 7. Januar 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">MM-TT-JJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-TT-JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">TT-MM-JJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">TT-MM-JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJ-MM-TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJJJ-MM-TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/TT/JJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/TT/JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJJJ/MM/TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJ/MM/TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM TT, JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 7. Januar 2025</li></ul></li></ul></li></ul></li></ul></li><li>Datum-Uhrzeit<ul><li>In Zeichenfolge<ul><li>Möglichkeit zur Definition des Ausgabeformats</li></ul></li><li>Beispiele<ul><li data-stringify-indent="0" data-stringify-border="0">Datum-Uhrzeit (Beispiel: 7. Januar 2025 um 1::30pm, 52 Sekunden)<ul><li data-stringify-indent="2" data-stringify-border="0">MM-TT-JJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-TT-JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">TT-MM-JJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">TT-MM-JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJ-MM-TT hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJJJ-MM-TT hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/TT/JJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/TT/JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJJJ/MM/TT hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJ/MM/TT hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM TT, JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. Januar 07, 2025 13:30:52</li></ul></li></ul></li></ul></li><li>Zeichenfolge<ul><li>Zu numerischem Wert<ul><li>Werte, die nicht numerischer Natur sind, geben null zurück.</li><li>Wir müssen die Präzision und das zu verwendende Gebietsschema eingeben. </li></ul></li></ul></li></ul></li></ul></p> | <p>3 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Numerisch</li><li>Datum</li><li>Datum-Uhrzeit</li><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Feld] | <p><ul><li>Ganzzahl<ul><li>In Zeichenfolge</li></ul></li><li>Duplikat<ul><li>In Zeichenfolge<ul><li>Anzahl der zu übernehmenden Dezimalstellen einschließen (max. 5?)</li></ul></li><li>Zu Ganzzahl</li></ul></li><li>Byte<ul><li>In Zeichenfolge</li></ul></li><li>Lang<ul><li>In Zeichenfolge</li></ul></li><li>Datum<ul><li>In Zeichenfolge<ul><li>Möglichkeit zur Definition des Ausgabeformats</li></ul></li><li>Beispiele<ul><li>Datum (Beispiel: 7. Januar 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">MM-TT-JJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-TT-JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">TT-MM-JJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">TT-MM-JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJ-MM-TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJJJ-MM-TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/TT/JJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/TT/JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJJJ/MM/TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJ/MM/TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM TT, JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 7. Januar 2025</li></ul></li></ul></li></ul></li></ul></li><li>Datum-Uhrzeit<ul><li>In Zeichenfolge<ul><li>Möglichkeit zur Definition des Ausgabeformats</li></ul></li><li>Beispiele<ul><li data-stringify-indent="0" data-stringify-border="0">Datum-Uhrzeit (Beispiel: 7. Januar 2025 um 13:30 Uhr, 52 Sekunden)<ul><li data-stringify-indent="2" data-stringify-border="0">MM-TT-JJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-TT-JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">TT-MM-JJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">TT-MM-JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJ-MM-TT hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJJJ-MM-TT hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/TT/JJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/TT/JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJJJ/MM/TT hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJ/MM/TT hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM TT, JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. Januar 07, 2025 13:30:52</li></ul></li></ul></li></ul></li><li>Zeichenfolge<ul><li>Zu numerischem Wert<ul><li>Werte, die nicht numerischer Natur sind, geben null zurück.</li><li>Wir müssen die Präzision und das zu verwendende Gebietsschema eingeben. </li></ul></li></ul></li></ul></li></ul></p> | <p>3 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -2122,7 +2130,7 @@ Sie definieren ein abgeleitetes `Query String CID`-Feld. Mit der Funktion [!UICO
 Die folgenden Einschränkungen gelten generell für die Funktionalität „Abgeleitetes Feld“:
 
 - Beim Definieren von Regeln für ein abgeleitetes Feld können Sie maximal zehn verschiedene Schemafelder (ohne Standardfelder) verwenden.
-   - Von diesen maximal zehn verschiedenen Schemafeldern sind nur maximal drei Lookup-Schema- oder Profilschemafelder zulässig.
+  - Von diesen maximal zehn verschiedenen Schemafeldern sind nur maximal drei Lookup-Schema- oder Profilschemafelder zulässig.
 - Je nach zu lizenzierendem Paket kann eine maximale Anzahl abgeleiteter Felder pro Customer Journey Analytics-Verbindung vorhanden sein. Weitere Informationen finden Sie in der [Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html){target="_blank"}.
 
 

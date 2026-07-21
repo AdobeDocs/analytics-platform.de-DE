@@ -27,9 +27,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
+source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
 workflow-type: tm+mt
-source-wordcount: 699
+source-wordcount: 696
 ht-degree: 39%
 
 ---
@@ -44,7 +44,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Juli
 
 | Funktion und Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | -----------|-----------|-----------|
-| **Analyse** Unterereignissen<br/> ermöglicht die Analyse von Daten auf einer detaillierteren Ebene als auf Ereignisebene. Anstatt nach ganzen Ereignissen zu filtern, können Sie innerhalb eines Ereignisses nach einzelnen Containern segmentieren. <p>Sie können beispielsweise eine Segmentierung für eine bestimmte Produktkategorie durchführen, ohne alle anderen in derselben Bestellung gekauften Produkte einzubeziehen. Sie können auch Objekte oder Arrays, die Teil Ihrer Ereignisdaten sind, als separate Container in einer Datenansicht definieren.</p><p>(Link zur Dokumentation folgt.)</p> | &#x200B;15. Juli 2026 | Ende Juli 2026 |
+| **Analyse** Unterereignisse<br/>[&#x200B; ermöglicht die &#x200B;](/help/components/segments/sub-event.md) Analyse von Daten auf einer detaillierteren Ebene als auf Ereignisebene. Anstatt nach ganzen Ereignissen zu filtern, können Sie innerhalb eines Ereignisses nach einzelnen Containern segmentieren. <p>Sie können beispielsweise eine Segmentierung für eine bestimmte Produktkategorie durchführen, ohne alle anderen in derselben Bestellung gekauften Produkte einzubeziehen. Sie können auch Objekte oder Arrays, die Teil Ihrer Ereignisdaten sind, als separate [benutzerdefinierte Container](/help/data-views/create-dataview.md#custom-containers) in einer Datenansicht definieren. | &#x200B;21. Juli 2026 | Ende Juli 2026 |
 | **B2B edition: Unterstützung für Ad-hoc- und** Datensätze: <br/>Ad-hoc- und relationale Datensätze werden jetzt auch in kontobasierten Verbindungen in Customer Journey Analytics B2B edition unterstützt.<p>(Link zur Dokumentation folgt.)</p> | | &#x200B;20. Juli 2026 |
 | **Content Analytics: Bezahlte Mediendaten** Bezahlte <br/> sind jetzt als dritter Kanal für Content Analytics verfügbar.<p>(Link zur Dokumentation folgt.)</p> | | &#x200B;31. Juli 2026 |
 | **Aktualisierung der**-Benutzeroberfläche<br/> In der Benutzeroberfläche „Verwendung“ beim Verwalten von Verbindungen können Sie jetzt Nutzungsdetails für jedes einzelne Modul anzeigen, z. B. Customer Journey Analytics oder Customer Journey Analytics B2B edition. <p>Darüber hinaus können Sie jetzt die Berichte zur Nutzung für jedes Modul nach Monat aufschlüsseln.</p><p>(Link zur Dokumentation folgt.)</p> | | &#x200B;31. Juli 2026 |
