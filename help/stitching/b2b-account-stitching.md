@@ -20,10 +20,10 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a7629993e235d66844db036ccce88e57fc20562
+source-git-commit: 1dce83d0b5c760830084c1bf4e14f613b998dc10
 workflow-type: tm+mt
-source-wordcount: 1239
-ht-degree: 13%
+source-wordcount: 1245
+ht-degree: 11%
 
 ---
 
@@ -77,12 +77,12 @@ Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
->title="Person"
+>title="Personen-ID"
 >abstract="Wählen Sie das Feld im Datensatz aus, das Personen-IDs enthält. Der Namespace dieses Feldes kann sich von dem ausgewählten Namespace für die Personenkennung unterscheiden oder mit diesem identisch sein. Wenn sie sich unterscheiden, müssen die beiden Namespaces im Identitätsdiagramm verknüpft werden."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
->title="Konto"
+>title="Konto-ID"
 >abstract="Wählen Sie das Feld im Datensatz aus, das die eindeutigen Werte der Kontokennung enthält. Die Konto-ID-Informationen werden in den Zeilen aller Ereignis-Datensätze verfügbar gemacht, wobei die Zuordnung **[!UICONTROL Person zu Konto]** aktiviert ist."
 
 >[!CONTEXTUALHELP]
@@ -116,8 +116,8 @@ Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und
       | Feld | Erforderlich | Beschreibung |
       |---|:---:|---|
       | **[!UICONTROL Person-Konto-Datensatz]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie die Suche (Datensatz oder Datensatz ohne Zeitreihe) aus, die Personen Konten zuordnet. |
-      | **[!UICONTROL Person]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das die Personen-ID enthält. Dieses Feld muss als Identität gekennzeichnet werden und darf nicht mit dem Feld **[!UICONTROL Konto]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein. |
-      | **[!UICONTROL Konto]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das die Konto-ID enthält. Dieses Feld darf nicht mit dem Feld **[!UICONTROL Person]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein. |
+      | **[!UICONTROL Personen-ID]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das die Personen-ID enthält. Dieses Feld muss als Identität markiert werden und darf nicht mit dem Feld **[!UICONTROL Konto-ID]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein. |
+      | **[!UICONTROL Konto-ID]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das die Konto-ID enthält. Dieses Feld darf nicht mit dem Feld **[!UICONTROL Personen-ID]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein. |
       | **Startzeit** | | Wählen Sie ein Zeitstempelfeld aus, das angibt, wann die Person-Konto-Beziehung aktiv wurde. |
 
       >[!NOTE]
