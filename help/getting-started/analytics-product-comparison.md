@@ -4,22 +4,15 @@ description: Kundenattribute von Reporting- und Export-Tools für Journey Analyt
 keywords: Clickstream;Daten-Feed;Datenfeed;Produktvergleich;Analysis Workspace;Report Builder;vollständiger Tabellenexport
 feature: Components
 hold: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: d5ecbbc28bc3892a2114de2c73df3287f22cf1a0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
 workflow-type: tm+mt
-source-wordcount: 345
-ht-degree: 59%
+source-wordcount: 390
+ht-degree: 53%
 
 ---
 
@@ -32,16 +25,15 @@ Auf dieser Seite können Sie die Berichts- und Exportwerkzeuge von Customer Jour
 |---|---|---|---|---|---|---|
 | **Zugriffsmethode** | Browser | Microsoft Excel | Browser | Über Browser einrichten | RESTful-API-Tools | MCP-kompatible Tools |
 | **Datengranularität** | Aggregiert | Aggregiert | Aggregiert | Ereignis | Aggregiert | Aggregiert |
-| **Experience Cloud ID (ECID) verfügbar** | Nein | Nein | Ja | Ja | Nein | Nein |
+| **Experience Cloud ID (ECID) verfügbar** | Nein | Nein | Nein | Ja | Nein | Nein |
 | **Zeitstempel verfügbar** | Nein | Nein | Nein | Ja | Nein | Nein |
 | **Verarbeitungsstufe** | Vollständig verarbeitet | Vollständig verarbeitet | Vollständig verarbeitet | Vollständig verarbeitet | Vollständig verarbeitet | Vollständig verarbeitet |
 | **Enthaltene Bot-Filterdaten** | Nein | Nein | Nein | Nein | Nein | Nein |
-| **Geringer Traffic (Individuelle Werte überschritten) wird angezeigt** <br> [Weitere Informationen](/help/components/dimensions/high-cardinality.md) | Ja | Ja | Nein | Nein | Ja | Ja |
-| **Begrenzung der sichtbaren Zeilen (vor der Paginierung)** | 400 | 50,000 | Unbegrenzt | Unbegrenzt | 50,000 | 50,000 |
-| **Mehrere Datenansichten** | Ja | Ja | Nein | Nein | Ja | Ja |
+| **Begrenzung der sichtbaren Zeilen (vor der Paginierung)** | 400 | 50,000 | Je nach Stufe ein Limit von 3 Millionen, 30 Millionen, 150 Millionen oder 300 Millionen | Je nach Stufe ein Limit von 3 Millionen, 30 Millionen, 150 Millionen oder 300 Millionen | 50,000 | 50,000 |
+| **Mehrere Datenansichten** | Ja, ein Projekt kann Daten aus mehreren Datenansichten enthalten | Ja, ein Projekt kann Daten aus mehreren Datenansichten enthalten | Nein, ein Export kann nur Daten aus einer Datenansicht enthalten | Nein, ein Export kann nur Daten aus einer Datenansicht enthalten | Ja | Ja |
 | **Anzahl der Aufschlüsselungen** | Unbegrenzt | Bis zu 2 | Unbegrenzt | Unbegrenzt | Unbegrenzt, über mehrere Abfragen ausführen | Unbegrenzt |
 | **Segmentierung** <br> [Weitere Informationen](/help/components/segments/seg-overview.md) | Ja | Ja | Ja | Ja, mit [Einschränkungen](/help/components/exports/cja-data-feeds/df-segmentation.md) | Ja | Ja |
-| **Berechnete Metriken** <br> [Weitere Infos](/help/components/calc-metrics/calc-metr-overview.md) | Ja, mit [Attribution](/help/analysis-workspace/attribution/overview.md) | Ja, mit Attribution | Nein | Nein | Ja, mit Attribution | Ja, mit Attribution |
+| **Berechnete Metriken** <br> [Weitere Informationen](/help/components/calc-metrics/calc-metr-overview.md) | Ja | Ja | Ja, mit [Einschränkungen](/help/analysis-workspace/export/export-cloud.md#calculated-metric-functions-support) | Nein | Ja | Ja |
 | **Abgeleitete Felder** <br> [Weitere Informationen](/help/data-views/derived-fields/derived-fields.md) | Ja | Ja | Ja | Ja | Ja | Ja |
 | **Kohortenanalyse** | [Ja](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Nein | Nein | Nein | Nein | Nein |
 | **Attribution** <br> [Weitere Informationen](/help/analysis-workspace/attribution/overview.md) | Ja | Begrenzt | Nein | Nein | Ja | Ja |
