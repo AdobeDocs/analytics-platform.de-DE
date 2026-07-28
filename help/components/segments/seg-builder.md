@@ -17,10 +17,10 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: 859a195e89c44d3951ca79ce7f93f9dd77cd4f5c
 workflow-type: tm+mt
-source-wordcount: 1851
-ht-degree: 79%
+source-wordcount: 1812
+ht-degree: 75%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="Datenvorschau"
->abstract="Vergleicht die Daten dieses Segments mit den Daten der Datenansicht. Der Prozentsatz der Vorschau basiert auf der Gesamtzahl der Daten in der Datenansicht aus den **letzten 90 Tagen**.<br><br/>Wenn die Vorschau nicht geladen wird, wird Ihre Verbindung möglicherweise noch aufgestockt."
+>abstract="Vergleicht Segmentdaten mit Datenansichtsdaten. Der Vorschauprozentsatz entspricht der Gesamtzahl in der Datenansicht aus den **90 Tagen**.<br><br/>Wenn die Vorschau nicht geladen werden kann, wird die Verbindung aufgestockt."
 
 Das Dialogfeld **[!UICONTROL Segment Builder]** wird zum Erstellen neuer oder zum Bearbeiten vorhandener Segmente verwendet. Das Dialogfeld heißt **[!UICONTROL Neues Segment]** oder **[!UICONTROL Segment bearbeiten]** bei Segmenten, die Sie über den [[!UICONTROL Segment-Manager] erstellen oder verwalten](/help/components/segments/seg-manage.md).
 
@@ -78,8 +78,8 @@ Mit dem Definition Builder erstellen Sie Ihre Segmentdefinition. Dabei verwenden
 
 Sie können den Typ und den Umfang Ihrer Definition konfigurieren:
 
-1. Um den Typ Ihrer Definition anzugeben, geben Sie an, ob Sie eine Ein- oder Ausschlussdefinition erstellen möchten. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Optionen]** und aus dem Dropdown-Menü **[!UICONTROL Einbeziehen]** oder **[!UICONTROL Ausschließen]** aus.
-1. Um den Umfang Ihrer Definition anzugeben, wählen Sie aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]** aus, ob Sie den Umfang der Definition **[!UICONTROL Ereignis]**, **[!UICONTROL Sitzung]**, **[!UICONTROL Person]**, **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} oder **&#x200B;**&#x200B;&rbrack;{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Einkaufsgruppe&rbrack;{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}224&rbrace;B2B edition **&#x200B;**&#x200B;&rbrack;{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} **&#x200B;**&#x200B;möchten
+1. Um den Typ Ihrer Definition anzugeben, geben Sie an, ob Sie eine Ein- oder eine Ausschlussdefinition erstellen möchten. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Optionen]** und aus dem Dropdown-Menü **[!UICONTROL Einbeziehen]** oder **[!UICONTROL Ausschließen]** aus.
+1. Wählen Sie den Definitionsbereich aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]** aus: **[!UICONTROL Ereignis]**, **[!UICONTROL Sitzung]**, **[!UICONTROL Person]**, **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Account]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"},**&#x200B;[!UICONTROL &#x200B; Opportunity &#x200B;]&#x200B;**[!BADGE B2B edition]** oder **&#x200B;**&#x200B;&rbrack;{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Einkaufsgruppe&rbrack;{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} B2B edition.
 
 Sie können diese Einstellungen später jederzeit ändern.
 
@@ -130,13 +130,13 @@ Sie können ![Einstellung](/help/assets/icons/Setting.svg) in einem Container f�
 | **[!UICONTROL Container benennen]** | Benennen Sie den Container ausgehend von seiner Standardbeschreibung um. Geben Sie einen Namen in das Textfeld ein. Wenn Sie keine Eingabe vornehmen, wird die Standardbeschreibung verwendet. |
 | **[!UICONTROL Container löschen]** | Löschen Sie den Container aus der Definition. |
 
-Wenn Sie eine Dimension oder Metrik, die Sie als [Container) definiert haben, in &#x200B;](/help/data-views/create-dataview.md#containers-1) Segment Builder- oder Schnellsegmentbereich ziehen, wählt das System automatisch den richtigen Container aus und verwendet nicht den standardmäßigen **[!UICONTROL Ereignis]**-Container. Dadurch wird das Segment für den einzelnen Container und nicht für das gesamte Ereignis gespeichert.
+Durch Ziehen einer als (Container[&#x200B; definierten Dimension oder Metrik &#x200B;](/help/data-views/create-dataview.md#containers-1) Segment Builder wird automatisch der richtige Container anstelle des standardmäßigen (Ereignis **[!UICONTROL -Containers]**. Dadurch wird das Segment für den einzelnen Container und nicht für das gesamte Ereignis gespeichert.
 
 Wenn Sie sowohl Komponenten [Container](/help/data-views/create-dataview.md#containers-1) als auch auf Ereignisebene in eine einzelne Segmentregel ziehen, verwendet das System den **[!UICONTROL Event]**-Container, der den höchsten (am wenigsten granularen) freigegebenen Container darstellt. Wenn sich alle Komponenten, die Teil einer Segmentregel sind, auf derselben Container-Ebene befinden, wird dieser Container verwendet.
 
 ## Datumsbereiche
 
-Sie können Segmente erstellen, die rollierende Datumsbereiche enthalten. So können Sie Fragen zu laufenden Kampagnen oder Ereignissen beantworten. Sie können beispielsweise ein Segment erstellen, das *alle Personen, die in den vergangenen 60 Tagen Online-Käufe getätigt haben*, einschließt.
+Sie können Segmente erstellen, die rollierende Datumsbereiche enthalten. So können Sie Fragen zu laufenden Kampagnen oder Ereignissen beantworten. Sie können beispielsweise ein Segment erstellen, das *alle Personen, die in den letzten 60 Tagen einen Online-Kauf getätigt haben* enthält.
 
 ![Segment mit rollierendem Datumsbereich](assets/filter-rolling-date-range.gif)
 
@@ -152,11 +152,11 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rollierende Da
 
 Sie können ein Segment mithilfe von Segmenten erstellen. Wenn Sie Segmente in einem Segment verwenden, können Sie Ihr Segment optimieren und die Komplexität reduzieren.
 
-Angenommen, Sie möchten eine Segmentierung anhand der Kombination aus Gerätetyp (2) und US-Status (50) vornehmen. Sie können entweder 100 Segmente erstellen, d. h. jeweils eine eindeutige Kombination aus Gerätetyp (Mobiltelefon oder Tablet) und US-Bundesstaat. Um die Tablet-Benutzenden aus Kalifornien abzurufen, würden Sie dann eines der 100 Segmente verwenden:
+Angenommen, Sie möchten eine Segmentierung anhand der Kombination aus Gerätetyp (2) und US-Status (50) vornehmen. Sie können entweder 100 Segmente erstellen, d. h. jeweils eine eindeutige Kombination aus Gerätetyp (Mobiltelefon oder Tablet) und US-Bundesstaat. Um die Tablet-Benutzer in Kalifornien zu erhalten, verwenden Sie eines der 100 Segmente:
 
 ![Einfaches Segment für Kalifornien und Tablet](assets/filter-ca-tablet-single.png)
 
-Oder Sie könnten 52 Segmente definieren: 50 Segmente für die US-Bundesstaaten, eines für Mobiltelefone und eines für Tablet-Computer. Stapeln Sie dann die Segmente, um die gleichen Ergebnisse zu erhalten. Um die kalifornischen Tablet-Benutzer zu erhalten, stapeln Sie zwei Segmente:
+Oder definieren Sie 52 Segmente: 50 Segmente für die US-Bundesstaaten, eines für Mobiltelefone und eines für Tablets. Um dieselben Ergebnisse zu erhalten, stapeln Sie die Segmente. Um die kalifornischen Tablet-Benutzer zu erhalten, stapeln Sie zwei Segmente:
 
 ![Gestapeltes Segment für Kalifornien und Tablet](assets/filter-ca-tablet-stacked.png)
 
@@ -208,10 +208,10 @@ Als Teil einer Segmentdefinition haben Sie die folgende Bedingung angegeben: Sei
 In der folgenden Tabelle wird für jedes Attributionsmodell angegeben, welche eingehenden Ereignisse für diese Bedingung qualifiziert ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) sind.
 
 
-| „Frauen“-Seite – Attribution – <br/>*Attributionsmodell* | Ereignis 1:<br/>Seitenname ist gleich<br/>Frauen | Ereignis 2:<br/>Seitenname ist gleich<br/>Männer | Ereignis 3:<br/>Seitenname ist gleich<br/>Frauen | Ereignis 4:<br/>Seitenname ist gleich<br/>Frauen<br/>(persistiert) | Ereignis 5:<br/>Seitenname ist gleich<br/>Checkout | Ereignis 6:<br/>Seitenname ist gleich<br/>Frauen | Ereignis 7:<br/>Seitenname ist gleich<br/>Startseite |
+| „Frauen“-Seite – Attribution – <br/>*Attributionsmodell* | Ereignis 1:<br/>Seitenname ist gleich<br/>Frauen | Ereignis 2:<br/>Seitenname ist gleich<br/>Männer | Ereignis 3:<br/>Seitenname ist gleich<br/>Frauen | Ereignis 4:<br/>Seitenname ist gleich<br/>Frauen<br/>(persistiert) | Ereignis 5:<br/>Seitenname ist gleich<br/>Checkout | Ereignis 6:<br/>Seitenname ist gleich<br/>Frauen | Ereignis 7:<br/>Seitenname ist <br/> (explizit festgelegt) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
-| Wiederholung (Standard) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) |
-| Instanz | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) |
+| Wiederholung (Standard) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| Instanz | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 | Sich nicht wiederholende Instanz | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![Entfernen](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Entfernen](/help/assets/icons/Remove.svg) |
 
 Ein Beispielbericht zu Ereignissen, die die drei Segmente verwenden, sieht wie folgt aus:
