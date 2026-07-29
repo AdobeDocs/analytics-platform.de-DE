@@ -26,7 +26,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: df1ab1af7757ef012b4c233e6206ee6c6cde6686
+source-git-commit: e686fca2c77a8f9739298ece01ccf0fa2fe87b3b
 workflow-type: tm+mt
 source-wordcount: 2441
 ht-degree: 12%
@@ -250,8 +250,8 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
 | Zeilen pro Bericht | 3 Millionen - 300 Millionen | Vom System erzwungene Leitplanken | Maximale Anzahl an Berichtszeilen pro Bericht. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
-| Aufschlüsselungen nach Tabelle | 5 | Vom System erzwungene Leitplanken | Maximale Anzahl von Aufschlüsselungen pro Tabelle. |
-| Metriken pro Tabelle | 5 | Vom System erzwungene Leitplanken | Maximale Anzahl von Metriken pro Tabelle. |
+| Abmessungen pro Tabelle | 10 | Vom System erzwungene Leitplanken | Maximale Anzahl von Dimensionen pro Tabelle. |
+| Metriken pro Tabelle | 10 | Vom System erzwungene Leitplanken | Maximale Anzahl von Metriken pro Tabelle. |
 | Zeitplanfrequenz | 1 | Vom System erzwungene Leitplanken | Exporte können einmal (1) täglich oder nach einem längeren Zeitplan geplant werden (z. B. alle 2 Tage oder wöchentlich). |
 
 {style="table-layout:auto"}
