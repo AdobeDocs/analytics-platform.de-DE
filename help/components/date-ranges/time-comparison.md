@@ -5,20 +5,14 @@ feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 role: User
 TQID: https://experienceleague.adobe.com/LhPSvchJbDMPV-HmGSA2JaBZxoPQ7UyEKd7GMS-33UU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: a4b5baeec55de64b1fbaf009b9da34c93cf12f24
 workflow-type: tm+mt
-source-wordcount: 770
-ht-degree: 90%
+source-wordcount: 798
+ht-degree: 75%
 
 ---
 
@@ -28,10 +22,10 @@ Mit dem Datumsvergleich in Analysis Workspace können Sie eine beliebige Spalte 
 
 ## Zeiträume vergleichen
 
-Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum geliefert wird. Zum Beispiel die Frage *Wie viel besser oder schlechter geht es Ihnen jetzt im Vergleich zu dieser Zeit im letzten Jahr?* ist grundlegend für das Verständnis Ihres Unternehmens. Der Datumsvergleich enthält automatisch eine Spalte *Differenz*, die die prozentuale Veränderung im Vergleich zu einem bestimmten Zeitraum angibt.
+Für Analysen ist ein Kontext erforderlich, und oft liefert ein vorheriger Zeitraum diese Informationen. Zum Beispiel die Frage *Wie viel besser oder schlechter geht es Ihnen jetzt im Vergleich zu dieser Zeit im letzten Jahr?* ist grundlegend für das Verständnis Ihres Unternehmens. Der Datumsvergleich enthält automatisch eine Spalte *Differenz*, die die prozentuale Veränderung im Vergleich zu einem bestimmten Zeitraum angibt.
 
 1. Erstellen Sie eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) mit beliebigen Dimensionen und Metriken, die Sie mit einem bestimmten Zeitraum vergleichen möchten.
-1. Legen Sie den Zeitraum im Panel oder in der Spalte fest, um den Vergleichszeitrahmen zu bestimmen und um anzugeben, ob es sich um einen rollierenden oder einen festen Zeitvergleich handelt.
+1. Um den Vergleichszeitrahmen zu bestimmen und festzustellen, ob es sich um einen rollierenden oder festen Zeitvergleich handelt, stellen Sie den Zeitraum auf dem Bedienfeld oder in der Spalte ein.
 
    Zum Erstellen eines rollierenden Zeitvergleichs legen Sie für den Datumsbereich des Bedienfelds oder der Spalte einen rollierenden Datumsbereich fest (z. B. **[!UICONTROL Letzte 7 Tage]**, **[!UICONTROL Letzte 30 Tage]** usw.).
 
@@ -65,7 +59,7 @@ Für Analysen wird Kontext benötigt, der oft durch einen vorherigen Zeitraum ge
 
 ## Hinzufügen einer Zeitraumspalte zum Vergleich
 
-Sie können jetzt allen Spalten in einer Tabelle Zeiträume hinzufügen. So können Sie einen Zeitraum hinzufügen, der von dem abweicht, auf den Ihr Kalender eingestellt ist.
+Sie können jeder Spalte in einer Tabelle jetzt einen Zeitraum hinzufügen. Auf diese Weise können Sie einen Zeitraum hinzufügen, der sich von dem unterscheidet, auf den Ihr Kalender festgelegt ist.
 
 1. Klicken Sie mit der rechten Maustaste auf eine Spalte in der Tabelle und wählen Sie **[!UICONTROL Spalte für Zeitraum hinzufügen]** aus
 
@@ -95,7 +89,7 @@ Sie können jetzt allen Spalten in einer Tabelle Zeiträume hinzufügen. So kön
 
 Sie können die Daten in den einzelnen Spalten so ausrichten, dass sie alle in derselben Zeile beginnen.
 
-Sie führen beispielsweise einen Tagesvergleich für die letzte Woche (bis zum 5. Oktober 2024) und die vorherige Woche durch. Standardmäßig beginnt die linke Spalte am 22. September und die rechte Spalte am 29. September.
+Sie führen beispielsweise einen Tagesvergleich für die letzte Woche (bis zum 5. Oktober 2024) und die vorherige Woche durch. Standardmäßig beginnt die linke Spalte mit dem 22. September und die rechte Spalte mit dem 29. September.
 
 ![Nicht abgestimmte Daten](assets/not-align-dates.png)
 
@@ -105,7 +99,8 @@ Sie können unter [Einstellungen](/help/analysis-workspace/visualizations/freefo
 
 Beachten Sie beim Verwenden dieser Option Folgendes:
 
-* Diese Einstellung ist standardmäßig für alle neuen Projekte aktiviert.
+* Das System aktiviert diese Einstellung standardmäßig für alle neuen Projekte.
 
 * Diese Einstellung gilt für die gesamte Tabelle. Wenn Sie diese Einstellung beispielsweise für eine Aufschlüsselung innerhalb der Tabelle ändern, wird die Einstellung auf die gesamte Tabelle angewendet.
 
+* Wenn diese Einstellung aktiviert ist, erscheinen kleine Datumsbeschriftungen in der oberen rechten Ecke aller Spaltenzellen, um der Zelle das entsprechende Datum (und die entsprechende Uhrzeit, falls zutreffend) hinzuzufügen.
