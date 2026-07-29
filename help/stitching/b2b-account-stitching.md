@@ -20,10 +20,10 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1dce83d0b5c760830084c1bf4e14f613b998dc10
+source-git-commit: 593dc8e9eb32e092545b74882ce2a85bcecc3c56
 workflow-type: tm+mt
-source-wordcount: 1245
-ht-degree: 11%
+source-wordcount: 1349
+ht-degree: 9%
 
 ---
 
@@ -68,7 +68,7 @@ Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="Namespace der Personenkennung"
->abstract="Wählen Sie den Identity-Namespace der relevantesten Person für Ihre Berichte aus. Beispiel: E-Mail. Für alle Ereignisdatensätze mit aktivierter **[!UICONTROL Personen-Konto]**-Zuordnung wird die Personen-ID in den Namespace dieser Personenkennung erhöht."
+>abstract="Wählen Sie den Identity-Namespace der relevantesten Person für Ihre Berichte aus. Beispiel: E-Mail. Für alle Ereignisdatensätze mit aktivierter Zuordnung **[!UICONTROL Person zu Konto]** ist die Personen-ID in diesen Namespace der Personenkennung erhöht."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
@@ -89,6 +89,12 @@ Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und
 >id="connection_b2b_stitching_start_time"
 >title="Startzeit"
 >abstract="Wählen Sie ein Zeitstempelfeld aus, das angibt, wann die Person-Konto-Beziehung aktiv wurde."
+
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_mapping_creation_time"
+>title="Erstellungszeit der Zuordnung"
+>abstract="Wählen Sie optional das Feld aus, das das Datum und die Uhrzeit darstellt, zu der die Zuordnung von Person zu Konto erstellt wurde. Nützlich für Szenarien, in denen eine Person im Laufe der Zeit mehrere Konten wechselt."
 
 
 1. Navigieren Sie in Customer Journey Analytics zu **[!UICONTROL Verbindungen]** und [eine neue Verbindung erstellen](/help/connections/create-connection.md#create-a-connection) oder [eine bestehende Verbindung bearbeiten](/help/connections/create-connection.md#edit-a-connection).
@@ -118,7 +124,7 @@ Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und
       | **[!UICONTROL Person-Konto-Datensatz]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie die Suche (Datensatz oder Datensatz ohne Zeitreihe) aus, die Personen Konten zuordnet. |
       | **[!UICONTROL Personen-ID]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das die Personen-ID enthält. Dieses Feld muss als Identität markiert werden und darf nicht mit dem Feld **[!UICONTROL Konto-ID]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein. |
       | **[!UICONTROL Konto-ID]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das die Konto-ID enthält. Dieses Feld darf nicht mit dem Feld **[!UICONTROL Personen-ID]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein. |
-      | **Startzeit** | | Wählen Sie ein Zeitstempelfeld aus, das angibt, wann die Person-Konto-Beziehung aktiv wurde. |
+      | **Erstellungszeit der Zuordnung** | | Wählen Sie optional das Feld aus, das das Datum und die Uhrzeit darstellt, zu der die Zuordnung von Person zu Konto erstellt wurde. Nützlich für Szenarien, in denen eine Person im Laufe der Zeit mehrere Konten wechselt.<br/><br/>**Beispiel** (wenn **update_date**-Feld ausgewählt ist):<table><thead><tr><th>update_date</th><th>Person</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>Für alle Ereignisse mit einem Zeitstempel im Feld **[!UICONTROL update_date]** vor dem 1. Mai 2026 wird a@b.com Apple zugeordnet.</li><li>Für alle Ereignisse mit einem Zeitstempel im Feld **[!UICONTROL update_date]** ab dem 1. Mai 2026 wird a@b.com Adobe zugeordnet.</li><ul> |
 
       >[!NOTE]
       >
@@ -127,7 +133,6 @@ Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und
    1. Wählen Sie **[!UICONTROL Speichern]** aus, um das Dialogfeld **[!UICONTROL B2B-Stitching-Konfiguration]** zu schließen und zu den Verbindungseinstellungen zurückzukehren.
 
    1. Die Anzeige **[!UICONTROL _Nicht gespeicherte Änderungen_]** wird neben der Schaltfläche **B2B-Stitching-Konfiguration öffnen** angezeigt, bis Sie die Verbindung [speichern](#save).
-
 
 ### Aktivieren der B2B-Zuordnung für Ereignis-Datensätze
 
