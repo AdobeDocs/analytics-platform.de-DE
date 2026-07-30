@@ -3,7 +3,8 @@ title: LLM Optimizer-Integration
 description: Integrieren von LLM Optimizer mit Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
-feature_v2: id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+feature_v2:
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
 source-git-commit: 3aa4e0c98e9a3e4163dad992e598638892fc88cd
 workflow-type: tm+mt
 source-wordcount: 2539
@@ -52,7 +53,7 @@ Sie können von der Integration zwischen Customer Journey Analytics und LLM Opti
 
 LLM-Traffic gelangt auf zwei Arten zu Ihrer Site. Customer Journey Analytics misst jede Richtung aus einer anderen Datenquelle.
 
-Der erste Weg ist eine Person, die eine KI-Antwort liest und sich dann zu Ihrer Site durchklickt. Bei diesem Besuch wird dieselbe JavaScript ausgeführt, die auch die restlichen Web-Daten erfasst. Ihre bestehenden Customer Journey Analytics-Web-Daten umfassen daher den Besuch und die Referrer-Domain, von der der Benutzer an Sie gesendet wurde, z. B. chatgpt.com. Customer Journey Analytics kennzeichnet diese Besuche nicht eigenständig als KI-Traffic. Um sie zu identifizieren und zu gruppieren, erstellen Sie ein abgeleitetes Feld für die Verbindung, das mit den KI-verweisenden Domains übereinstimmt, und erstellen Sie dann Segmente und Berichte für dieses Feld. Siehe [Abgeleitete ](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/derived-fields){target="_blank"}. Für diesen Traffic durch Personen ist kein LLM Optimizer-Datensatz erforderlich.
+Der erste Weg ist eine Person, die eine KI-Antwort liest und sich dann zu Ihrer Site durchklickt. Bei diesem Besuch wird dieselbe JavaScript ausgeführt, die auch die restlichen Web-Daten erfasst. Ihre bestehenden Customer Journey Analytics-Web-Daten umfassen daher den Besuch und die Referrer-Domain, von der der Benutzer an Sie gesendet wurde, z. B. chatgpt.com. Customer Journey Analytics kennzeichnet diese Besuche nicht eigenständig als KI-Traffic. Um sie zu identifizieren und zu gruppieren, erstellen Sie ein abgeleitetes Feld für die Verbindung, das mit den KI-verweisenden Domains übereinstimmt, und erstellen Sie dann Segmente und Berichte für dieses Feld. Siehe [Abgeleitete &#x200B;](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/derived-fields){target="_blank"}. Für diesen Traffic durch Personen ist kein LLM Optimizer-Datensatz erforderlich.
 
 Die zweite Möglichkeit ist ein Bot oder Agent, der Ihre Seiten direkt anfordert. Dazu gehören Crawler, die einen KI-Index erstellen, und Live-Abrufe, die auftreten, wenn ein Benutzer eine Eingabeaufforderung an einen KI-Assistenten sendet. Bei diesen Anfragen wird keine JavaScript ausgeführt, sodass die vorhandenen Web-Daten sie nicht aufzeichnen. Der LLM Optimizer-Datensatz erfasst diesen Traffic von der CDN-Ebene. Im Rest dieses Abschnitts wird dieser Datensatz beschrieben.
 
@@ -94,7 +95,7 @@ Die folgenden Dimensionen können als Komponenten in einer Datenansicht verwende
 | CDN-URL | `cdn.url` | Die normalisierte vollständige URL für die Anfrage, die als Join-Schlüssel vorgesehen ist. LLM Optimizer kombiniert den Host und den angeforderten Pfad in einer einzigen URL und normalisiert sie so, dass sie mit dem vollständigen URL-Formular übereinstimmt, das Customer Journey Analytics für Web-Daten speichert. Verwenden Sie diese Dimension, um den LLM Optimizer-Lookup-Datensatz mit einem Ereignis-Datensatz zu verbinden, der ein entsprechendes vollständiges URL-Feld hat. Sie enthält den Host und den Pfad, aber nicht das Schema. |
 | CDN-URL-Pfad | `cdn.path` | Der Pfad der Roh-URL und die vom Agenten angeforderte Abfragezeichenfolge, wie vom CDN bereitgestellt. Enthält weder das Schema noch den Host. Verwenden Sie diese Option, wenn Sie den exakten angeforderten Pfad anstelle des normalisierten Join-Schlüssels benötigen. |
 | CDN-Host | `cdn.host` | Der Hostname, der die Anfrage erhalten hat, z. B. www.example.com. Dieser Host ist auch Teil des CDN-URL-Join-Schlüssels. Ein Datensatz kann mehrere Hosts enthalten, wenn eine Organisation mehrere Subdomains im selben CDN-Konto hat. |
-| CDN-Bot-Typ | `cdn.botType` | Klassifizierung des anfragenden Agenten durch LLM Optimizer. Die Werte umfassen klassische Such-Crawler, KI-Index-Crawler und KI-Live-Fetch-Agenten. Die vollständige Taxonomie finden [ in den ](#bot-agent-categories)Bot-Agentenkategorien“ unten. |
+| CDN-Bot-Typ | `cdn.botType` | Klassifizierung des anfragenden Agenten durch LLM Optimizer. Die Werte umfassen klassische Such-Crawler, KI-Index-Crawler und KI-Live-Fetch-Agenten. Die vollständige Taxonomie finden [&#x200B; in den &#x200B;](#bot-agent-categories)Bot-Agentenkategorien“ unten. |
 | CDN-Benutzeragent | `cdn.userAgent` | Die unformatierte Benutzeragenten-Zeichenfolge aus dem CDN-Protokoll. Nützlich für die Unterscheidung von Untertypen innerhalb einer Bot-Klassifizierung oder für die Validierung der von LLM Optimizer zugewiesenen Klassifizierung. |
 | CDN-HTTP-Status | `cdn.status` | Der HTTP-Antwort-Status-Code. Gibt an, ob der Bot den angeforderten Inhalt erhalten hat. Siehe [Status-Codes](#status-codes) unten für Interpretationsanleitungen, die speziell für KI-Traffic gelten. |
 | CDN-Anbieter | `cdn.cdnProvider` | Welches CDN die Anfrage verarbeitet hat. Werte sind `akamai`, `byocdn-akamai`, `byocdn-fastly` und `byocdn-cloudfront`. Das `byocdn-` Präfix gibt den Protokollerfassungspfad an, nicht einen anderen CDN-Anbieter. Ein Datensatz kann mehrere Werte enthalten, wenn eine Organisation Hosts hinter verschiedenen CDN-Konfigurationen hat. |
