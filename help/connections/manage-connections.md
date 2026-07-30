@@ -24,10 +24,10 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
+source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 5884
-ht-degree: 97%
+source-wordcount: 7300
+ht-degree: 87%
 
 ---
 
@@ -44,9 +44,9 @@ ht-degree: 97%
 >abstract="Deaktiviert die erweiterten Reporting-Funktionen von Customer Journey Analytics mit Journey Optimizer."
 
 
-Nachdem Sie [eine oder mehrere Verbindungen erstellt oder bearbeitet haben](/help/connections/create-connection.md), können Sie sie unter **[!UICONTROL Verbindungen]** verwalten. Die Benutzeroberfläche [!UICONTROL Verbindungen] ermöglicht Ihnen Folgendes:
+Nachdem Sie [eine oder mehrere Verbindungen erstellt oder bearbeitet haben](/help/connections/create-connection.md), können Sie sie unter **[!UICONTROL Verbindungen]** verwalten. Die [!UICONTROL Verbindungen] ermöglicht Ihnen Folgendes:
 
-* alle Verbindungen auf einen Blick anzeigen, einschließlich der oder des Verantwortlichen, der Sandbox und des Zeitpunkts der Verbindungserstellung und -änderung.
+* Zeigen Sie alle Ihre Verbindungen an, einschließlich des Besitzers, der Sandbox und des Zeitpunkts, zu dem die Verbindungen erstellt und geändert wurden.
 * Verbindungen bearbeiten.
 * Eine Verbindung löschen.
 * Eine Datenschicht aus einer Verbindung erstellen.
@@ -62,7 +62,8 @@ Für [!UICONTROL Verbindungen] gibt es zwei Benutzeroberflächen: [[!UICONTROL L
 
 Die Benutzeroberfläche **[!UICONTROL Liste]** ist die Standardbenutzeroberfläche für Verbindungen. Wenn sie nicht ausgewählt ist, wählen Sie die Registerkarte **[!UICONTROL Liste]** aus, um auf die Benutzeroberfläche zuzugreifen.
 
-In der Benutzeroberfläche **[!UICONTROL Liste]** wird eine Tabelle aller verfügbaren Verbindungen angezeigt.△
+Die **[!UICONTROL List]** zeigt eine Tabelle aller verfügbaren Verbindungen an.
+△
 ![Listenansicht](assets/list-view.png)
 
 Die folgenden Spalten oder Symbole sind in der Tabelle verfügbar.
@@ -164,11 +165,11 @@ Weitere Informationen finden Sie unter [Erstellen oder Bearbeiten einer Datenans
 
 ### Journey Optimizer-Verbindungen
 
-Sie können eine Journey Optimizer-Verbindung in Customer Journey Analytics verwenden, um mit der Verbindung folgende weitere Vorteile zu erhalten:
+Sie können eine Journey Optimizer-Verbindung in Customer Journey Analytics verwenden, um den folgenden zusätzlichen Wert für Ihre Verbindung bereitzustellen:
 
 * Detaillierte Analyse der Journey Optimizer-Daten in Customer Journey Analytics durchführen (mithilfe der Schaltfläche **[!UICONTROL In CJA analysieren]** in Journey Optimizer).
 
-  Weitere Informationen finden Sie in der Journey Optimizer-Dokumentation unter [Analysieren in Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template).
+  Weitere Informationen finden Sie unter [Analysieren in Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template).
 
 * Die Journey Optimizer-Verbindung und zugehörige Datenansichten bearbeiten.
 
@@ -177,7 +178,7 @@ Sie können eine Journey Optimizer-Verbindung in Customer Journey Analytics verw
 
 >[!IMPORTANT]
 >
->Wenn Sie eine Journey Optimizer-Verbindung für die Verwendung mit Customer Journey Analytics aktivieren, wie in diesem Abschnitt beschrieben, wird jede Datenzeile innerhalb der Verbindung für Ihre lizenzierten Datenzeilen jeden Monat für Customer Journey Analytics gezählt und in der Benutzeroberfläche für Verbindungsnutzungen angezeigt. Wählen Sie die Option **[!UICONTROL In CJA verwenden]** nur dann für die Verbindung aus, wenn Sie mit der zusätzlichen Verwendung von Datenzeilen in Customer Journey Analytics vertraut sind.
+>Wenn Sie eine Journey Optimizer-Verbindung für Customer Journey Analytics aktivieren, wird jede Zeile für Ihre monatlich lizenzierten Zeilen gezählt und in der Benutzeroberfläche zur Verbindungsnutzung angezeigt. Wählen Sie die Option **[!UICONTROL In CJA verwenden]** nur dann für die Verbindung aus, wenn Sie mit der zusätzlichen Verwendung von Datenzeilen in Customer Journey Analytics vertraut sind.
 >
 >**Wenn Sie zwischen Oktober 2024 und Oktober 2025 die Berechtigung sowohl für Customer Journey Analytics als auch für Journey Optimizer hatten, lesen Sie im folgenden Dokument die weiteren Informationen zu [AJO-fähigen Verbindungen](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**.
 
@@ -498,9 +499,13 @@ Wenn eine Datensatzzeile in der Datensatztabelle ausgewählt ist, werden in eine
 
 In der Benutzeroberfläche [!UICONTROL Nutzung] wird die Verwendung von aufgenommenen und berichtsfähigen Zeilen über alle Verbindungen hinweg angezeigt. Wenn sie nicht ausgewählt ist, wählen Sie die Registerkarte **[!UICONTROL Nutzung]** aus, um auf die Benutzeroberfläche zuzugreifen.
 
-Über diese Benutzeroberfläche können Sie ermitteln, ob Ihre Customer Journey Analytics-Nutzung den vertraglich vereinbarten Bedingungen entspricht. Zusätzlich zur Überwachung können Sie die Benutzeroberfläche „Nutzung“ verwenden, um die Verlängerung Ihrer Customer Journey Analytics-Lizenz zu planen.
+Diese Benutzeroberfläche unterstützt Sie bei der Feststellung, ob Ihre Nutzung von Customer Journey Analytics den vertraglich vereinbarten Bedingungen entspricht. Zusätzlich zur Überwachung können Sie die Benutzeroberfläche „Nutzung“ verwenden, um die Verlängerung Ihrer Customer Journey Analytics-Lizenz zu planen.
 
-Die Benutzeroberfläche „Nutzung“ verwendet die folgenden Metriken:
+Für jedes Modul, für das Sie eine Berechtigung haben, ist ein ausblendbarer Abschnitt mit Nutzungsdetails verfügbar.
+
+### CJA-Nutzung
+
+Die Benutzeroberfläche **[!UICONTROL CJA-Nutzung]** verwendet die folgenden Metriken:
 
 | Metrikname | Beschreibung |
 |---|---|
@@ -517,23 +522,21 @@ Die Benutzeroberfläche „Nutzung“ verwendet die folgenden Metriken:
 >Die Daten werden ab Juli 2024 für die Kern-, historischen und Gesamteinträge erfasst. Wenden Sie sich an die Kundenbetreuung, wenn Sie frühere historische Daten benötigen.
 >
 
-Die Benutzeroberfläche „Nutzung“ besteht aus zwei Panels:
+Die Benutzeroberfläche von **[!UICONTROL CJA Usage]** besteht aus zwei Bereichen:
 
 * Das Panel **[!UICONTROL Schlüsselnutzungsmetriken]** mit folgenden Informationen:
 
-   * Vier zusammenfassende Visualisierungen, die Gesamt- und prozentuale Änderungen gegenüber dem Vormonat anzeigen für:
+  * Vier zusammenfassende Visualisierungen, die Gesamt- und prozentuale Änderungen gegenüber dem Vormonat anzeigen für:
 
-      * **[!UICONTROL Berichtsfähige Zeilen zu Kerndaten]**. Die Gesamtzahl der in den letzten 13 Monaten verfügbaren Zeilen für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an.
-      * **[!UICONTROL Berichtsfähige Zeilen zu historischen Daten]**. Die Gesamtzahl der verfügbaren Zeilen über einen Zeitraum, der älter als 13 Monate ist, für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist.
-      * **[!UICONTROL Kerndatenvolumen]**. Die Gesamtmenge der Daten (in TB), die auf der Festplatte gespeichert und mit einem Zeitstempel für den aktuellen Monat versehen sind, mit einer prozentualen Änderung im Vergleich zum Vormonat.
-      * **[!UICONTROL Durchschnittliche Zeilengröße]**. Der durchschnittliche Speicherplatz, den jede für den aktuellen Monat aufgenommene und gespeicherte Datenzeile verbraucht (in KB), mit einer prozentualen Änderung im Vergleich zum Vormonat.
+    * **[!UICONTROL Berichtsfähige Zeilen zu Kerndaten]**. Die Gesamtzahl der in den letzten 13 Monaten verfügbaren Zeilen für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an.
+    * **[!UICONTROL Zeilen mit erweiterter Datenkapazität]**. Die Gesamtzahl der verfügbaren Zeilen über einen Zeitraum, der älter als 13 Monate ist, für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist.
+    * **[!UICONTROL Monatlich aufgenommene Zeilen]**. Die Zeilen, die während des Abrechnungsmonats aufgenommen wurden, mit einer prozentualen Änderung im Vergleich zum Vormonat
+    * **[!UICONTROL Kerndatenvolumen]**. Die Gesamtmenge der Daten (in TB), die auf der Festplatte gespeichert und mit einem Zeitstempel für den aktuellen Monat versehen sind, mit einer prozentualen Änderung im Vergleich zum Vormonat.
+    * **[!UICONTROL Durchschnittliche Zeilengröße]**. Der durchschnittliche Speicherplatz, der von jeder aufgenommenen Zeile für den aktuellen Monat verbraucht wird (in kB), mit der prozentualen Änderung gegenüber dem Vormonat.
 
-   * Eine gestapelte vertikale Balkenvisualisierung, die die **[!UICONTROL berichtsfähigen Zeilen zu Kerndaten und historischen Daten]** der letzten 13 Monate anzeigt.
+  * Zwei vertikale Balkenvisualisierungen, die die **[!UICONTROL Core-Daten-]** Zeilen und **[!UICONTROL Zeilen mit erweiterter]**) für die letzten 13 Monate anzeigen.
 
-     Wenn Sie den Mauszeiger über einen gestapelten Balken in der Visualisierung bewegen, wird in einem Popup die Anzahl der Zeilen für diesen bestimmten Teil des Balkens angezeigt. Im folgenden Beispiel werden die berichtfähigen Zeilen zu Kerndaten für den aktuellen Monat angezeigt (August 2025: 936 Mio. (936.347.325)).
-
-
-     ![Schlüsselnutzungsmetriken](assets/usage-key-usage-metrics.png)
+    Wenn Sie den Mauszeiger über einen gestapelten Balken in der Visualisierung bewegen, wird in einem Popup die Anzahl der Zeilen für diesen bestimmten Teil des Balkens angezeigt.
 
 * Ein kombiniertes Panel mit den drei folgenden Unter-Panels:
 
@@ -541,9 +544,7 @@ Die Benutzeroberfläche „Nutzung“ besteht aus zwei Panels:
 
   Das Unter-Panel **[!UICONTROL Aufgenommene Zeilen]** misst die Gesamtzahl der Einträge, die dem System jeden Monat hinzugefügt werden, und liefert Erkenntnisse zu Datenwachstum und Aufnahmeraten. Dieses Unter-Panel bietet eine Zusammenfassung der insgesamt aufgenommenen Zeilen dieses Monats und der Änderung gegenüber dem Vormonat.
 
-  ![Aufgenommene Zeilen](assets/usage-ingested-rows.png)
-
-  Sie können den Mauszeiger über Datenpunkte in der Visualisierung bewegen, um ein Popup mit weiteren Details anzuzeigen.
+  Sie können den Mauszeiger über Datenpunkte in den Visualisierungen bewegen, um ein Popup mit weiteren Details anzuzeigen. Sie können einen **[!UICONTROL Zeitbereich]** auswählen, der sowohl für **[!UICONTROL aufgenommene Zeilen]** als auch für **[!UICONTROL meldepflichtige Zeilen]** gilt. Verwenden Sie ![Calendar](/help/assets/icons/Calendar.svg), um den Zeitraum auszuwählen.
 
   +++
 
@@ -551,12 +552,175 @@ Die Benutzeroberfläche „Nutzung“ besteht aus zwei Panels:
 
   Die Visualisierung **[!UICONTROL Berichtsfähige Zeilen]** verfolgt die Anzahl der für die das Reporting verfügbaren Zeilen, indem übersprungene und gelöschte Zeilen von den aufgenommenen Zeilen subtrahiert werden. Dies dient als Schlüsselmetrik für die Abrechnung und die Datennutzung. Dieses Unter-Panel bietet zwei Zusammenfassungen:
 
-   * **[!UICONTROL Letzter Monat insgesamt]**: Eine Zusammenfassung der insgesamt berichtsfähigen Zeilen bis zu diesem Monat.
-   * **[!UICONTROL Dieser Monat]**: Eine Zusammenfassung der insgesamt berichtsfähigen Zeilen dieses Monats und der Änderung gegenüber dem Vormonat.
+  * **[!UICONTROL Summe der berichtspflichtigen Zeilen]**: Eine Zusammenfassung der Gesamtzahl der berichtspflichtigen Zeilen bis zu diesem Monat.
+  * **[!UICONTROL Monatlich meldepflichtiger Monat]**: Eine Zusammenfassung der gesamten meldepflichtigen Zeilen dieses Monats und der Änderung gegenüber dem Vormonat.
 
-  ![Berichtsfähige Zeilen](assets/usage-reportable-rows.png)
+  Sie können den Mauszeiger über Datenpunkte in den Visualisierungen bewegen, um ein Popup mit weiteren Details anzuzeigen. Sie können einen **[!UICONTROL Zeitbereich]** auswählen, der sowohl für **[!UICONTROL aufgenommene Zeilen]** als auch für **[!UICONTROL meldepflichtige Zeilen]** gilt. Verwenden Sie ![Calendar](/help/assets/icons/Calendar.svg), um den Zeitraum auszuwählen.
 
-  Sie können den Mauszeiger über Datenpunkte in den Visualisierungen bewegen, um ein Popup mit weiteren Details anzuzeigen.
+  +++
+
+  +++ Detailaufschlüsselung
+
+  Sie können die Tabelle **[!UICONTROL Detailaufschlüsselung]** verwenden, um detaillierte Metriken nach Verbindung, Datensatz, Sandbox und Tags anzuzeigen. Über Datensätze wird mit IDs anstelle von Namen berichtet, da Datensatznamen während eines Berichtszeitraums geändert werden können. Über unbekannte Datensätze oder Verbindungen wird mithilfe von IDs berichtet.
+
+  Seit Monaten vor September 2024 wurden Daten auf Datensatzebene erfasst. Sie werden der Klarheit halber als [!UICONTROL andere Datensätze] angezeigt. Ab September 2024 werden Daten auf einer granularen Datensatzebene erfasst und [!UICONTROL Andere Datensätze] werden nicht mehr angezeigt.
+
+  * Um die Aufschlüsselung zu ändern, wählen Sie eine Kombination für **[!UICONTROL Anzeigen nach]** und **[!UICONTROL Aufschlüsselung nach]** aus.
+
+    | Optionen **[!UICONTROL Anzeigen nach]** | Optionen **[!UICONTROL Aufschlüsselung nach]** |
+    |---|---|
+    | **[!UICONTROL Verbindung]** | **[!UICONTROL -]** und **[!UICONTROL Datensatz]** |
+    | **[!UICONTROL Datensatz]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Verbindung]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Verbindung]** |
+
+  Sie können einen Monat auswählen, für den Sie die Aufschlüsselung vornehmen möchten. Wählen Sie einen Monat aus **[!UICONTROL Aufschlüsselungsmonat]**.
+
+
+  +++
+
+### Content Analytics-Nutzung
+
+Die Benutzeroberfläche **[!UICONTROL Content Analytics-Nutzung]** verwendet die folgenden Metriken:
+
+| Metrikname | Beschreibung |
+|---|---|
+| **Content Analytics Core Reporting-Zeilen** | Die Gesamtzahl der in den letzten 13 Monaten verfügbaren Content Analytics-spezifischen Zeilen für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an. |
+| **Monatliche Content Analytics-Zeilen** | Verfolgt die Anzahl der für das Reporting verfügbaren Content Analytics-Zeilen. Berichtsfähige Zeilen sind die aufgenommenen Zeilen abzüglich der Zeilen, die bei der Aufnahme übersprungen und gelöscht wurden. Berichtsfähige Zeilen dienen als Schlüsselmetrik für die Rechnungsstellung und Datennutzung. |
+
+>[!NOTE]
+>
+>Die Daten werden ab Juli 2024 für die Kern-, historischen und Gesamteinträge erfasst. Wenden Sie sich an die Kundenbetreuung, wenn Sie frühere historische Daten benötigen.
+>
+
+Die Benutzeroberfläche von **[!UICONTROL Content Analytics Usage]** besteht aus zwei Bereichen:
+
+* Das Panel **[!UICONTROL Schlüsselnutzungsmetriken]** mit folgenden Informationen:
+
+  * Zwei zusammenfassende Visualisierungen, die die gesamten und prozentualen Änderungen vom Vormonat für Folgendes anzeigen:
+
+    * **[!UICONTROL Core Analytics - Berichterstellbare]**. Die Gesamtzahl der in den letzten 13 Monaten verfügbaren Content Analytics-spezifischen Zeilen für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an.
+    * **Monatliche Content Analytics-Zeilen**. Verfolgt die Anzahl der für das Reporting verfügbaren Content Analytics-Zeilen. Berichtsfähige Zeilen sind die aufgenommenen Zeilen abzüglich der Zeilen, die bei der Aufnahme übersprungen und gelöscht wurden. Berichtsfähige Zeilen dienen als Schlüsselmetrik für die Rechnungsstellung und Datennutzung.
+
+  * Eine gestapelte vertikale Balkenvisualisierung, die die **[!UICONTROL Content Analytics Core Reporting-Zeilen]** der letzten 13 Monate anzeigt.
+
+    Wenn Sie den Mauszeiger über einen gestapelten Balken in der Visualisierung bewegen, wird in einem Popup die Anzahl der Zeilen für diesen bestimmten Teil des Balkens angezeigt.
+
+* Ein kombiniertes Bedienfeld, das zwei Unterbedienfelder anzeigt für:
+
+  +++ Monatliche Content Analytics-Zeilen
+
+  Das Unterbedienfeld **[!UICONTROL Monatliche Content Analytics-Zeilen]** misst die Gesamtzahl der monatlichen Content Analytics-Datensätze, die dem System jeden Monat hinzugefügt werden, und liefert insight in das Datenwachstum und die Aufnahmeraten. Dieses Unter-Panel bietet eine Zusammenfassung der insgesamt aufgenommenen Zeilen dieses Monats und der Änderung gegenüber dem Vormonat.
+
+  Sie können den Mauszeiger über Datenpunkte in der Visualisierung bewegen, um ein Popup mit weiteren Details anzuzeigen. Sie können einen **[!UICONTROL Zeitbereich“ auswählen]** den ![&#x200B; mithilfe von &#x200B;](/help/assets/icons/Calendar.svg)Kalender“ auswählen.
+
+  +++
+
+  +++ Detailaufschlüsselung
+
+  Sie können die Tabelle **[!UICONTROL Detailaufschlüsselung]** verwenden, um detaillierte Metriken nach Verbindung, Datensatz, Sandbox und Tags anzuzeigen. Über Datensätze wird mit IDs anstelle von Namen berichtet, da Datensatznamen während eines Berichtszeitraums geändert werden können. Über unbekannte Datensätze oder Verbindungen wird mithilfe von IDs berichtet.
+
+  Seit Monaten vor September 2024 wurden Daten auf Datensatzebene erfasst. Sie werden der Klarheit halber als [!UICONTROL andere Datensätze] angezeigt. Ab September 2024 werden Daten auf einer granularen Datensatzebene erfasst und [!UICONTROL Andere Datensätze] werden nicht mehr angezeigt.
+
+  * Um die Aufschlüsselung zu ändern, wählen Sie eine Kombination für **[!UICONTROL Anzeigen nach]** und **[!UICONTROL Aufschlüsselung nach]** aus.
+
+    | Optionen **[!UICONTROL Anzeigen nach]** | Optionen **[!UICONTROL Aufschlüsselung nach]** |
+    |---|---|
+    | **[!UICONTROL Verbindung]** | **[!UICONTROL -]** und **[!UICONTROL Datensatz]** |
+    | **[!UICONTROL Datensatz]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Verbindung]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Verbindung]** |
+
+  Sie können einen Monat auswählen, für den Sie die Aufschlüsselung vornehmen möchten. Wählen Sie einen Monat aus **[!UICONTROL Aufschlüsselungsmonat]**.
+
+  +++
+
+
+### CJA B2B Edition-Nutzung
+
+Die Benutzeroberfläche **[!UICONTROL Nutzung von CJA B2B edition]** verwendet die folgenden Metriken:
+
+| Metrikname | Beschreibung |
+|---|---|
+| **Core-BPP** | Die Gesamtzahl der berichtspflichtigen Geschäftspersonenprofil-Zeilen, die in den letzten 13 Monaten für den aktuellen Monat verfügbar waren, mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an. |
+| **Historisch meldepflichtige BPP** | Die Gesamtzahl der im Geschäftspersonenprofil berichteten Zeilen, die über einen Zeitraum verfügbar sind, der älter als 13 Monate für den aktuellen Monat ist, mit einer prozentualen Änderung im Vergleich zum Vormonat. Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Zeilen mit einem Ereignis-Zeitstempel an, der älter als Januar 2023 ist. |
+
+>[!NOTE]
+>
+>Die Daten werden ab Juli 2024 für die Kern-, historischen und Gesamteinträge erfasst. Wenden Sie sich an die Kundenbetreuung, wenn Sie frühere historische Daten benötigen.
+>
+
+Die Benutzeroberfläche von **[!UICONTROL CJA B2B edition Usage]** besteht aus einem Bedienfeld, das Unterbedienfelder für Folgendes anzeigt:
+
++++ In: Core Reporting BPP.
+
+Das **[!UICONTROL Core Reporting BPP]**-Unterbedienfeld misst die Gesamtzahl der monatlichen Core Reporting-Business-Person-Profildatensätze, die dem System jeden Monat hinzugefügt werden, und liefert insight in das Datenwachstum und die Aufnahmeraten. Dieses Unter-Panel bietet eine Zusammenfassung der insgesamt aufgenommenen Zeilen dieses Monats und der Änderung gegenüber dem Vormonat.
+
+Sie können den Mauszeiger über Datenpunkte in der Visualisierung bewegen, um ein Popup mit weiteren Details anzuzeigen, die sowohl für **[!UICONTROL Core Reporting BPP]** als auch für **[!UICONTROL Historical Reporting BPP]** gelten. Verwenden Sie ![Calendar](/help/assets/icons/Calendar.svg), um den Zeitraum auszuwählen.
+
++++
+
++++ In: Historical Reporting BPP.
+
+Das Unterbedienfeld **[!UICONTROL Historical Reporting BPP]** misst die Gesamtzahl der monatlichen historischen berichtspflichtigen Profildatensätze für Geschäftsleute, die dem System jeden Monat hinzugefügt werden, und liefert insight in das Datenwachstum und die Aufnahmeraten. Dieses Unter-Panel bietet eine Zusammenfassung der insgesamt aufgenommenen Zeilen dieses Monats und der Änderung gegenüber dem Vormonat.
+
+Sie können den Mauszeiger über Datenpunkte in der Visualisierung bewegen, um ein Popup mit weiteren Details anzuzeigen, die sowohl für **[!UICONTROL Core Reporting BPP]** als auch für **[!UICONTROL Historical Reporting BPP]** gelten. Verwenden Sie ![Calendar](/help/assets/icons/Calendar.svg), um den Zeitraum auszuwählen.
+
++++
+
++++ Detailaufschlüsselung
+
+Sie können die Tabelle **[!UICONTROL Detailaufschlüsselung]** verwenden, um detaillierte Metriken nach Verbindung, Datensatz, Sandbox und Tags anzuzeigen. Über Datensätze wird mit IDs anstelle von Namen berichtet, da Datensatznamen während eines Berichtszeitraums geändert werden können. Über unbekannte Datensätze oder Verbindungen wird mithilfe von IDs berichtet.
+
+Seit Monaten vor September 2024 wurden Daten auf Datensatzebene erfasst. Sie werden der Klarheit halber als [!UICONTROL andere Datensätze] angezeigt. Seit September 2024 werden Daten auf einer granularen Datensatzebene erfasst und [!UICONTROL andere Datensätze] werden nicht mehr angezeigt.
+
+* Um die Aufschlüsselung zu ändern, wählen Sie eine Kombination für **[!UICONTROL Anzeigen nach]** und **[!UICONTROL Aufschlüsselung nach]** aus.
+
+  | Optionen **[!UICONTROL Anzeigen nach]** | Optionen **[!UICONTROL Aufschlüsselung nach]** |
+  |---|---|
+  | **[!UICONTROL Verbindung]** | **[!UICONTROL -]** und **[!UICONTROL Datensatz]** |
+  | **[!UICONTROL Datensatz]** | **[!UICONTROL -]** |
+  | **[!UICONTROL Sandbox]** | **[!UICONTROL Verbindung]** |
+  | **[!UICONTROL Tag]** | **[!UICONTROL Verbindung]** |
+
+Sie können einen Monat auswählen, für den Sie die Aufschlüsselung vornehmen möchten. Wählen Sie einen Monat aus **[!UICONTROL Aufschlüsselungsmonat]**.
+
++++
+
+
+### Nutzung von Streaming-Medien
+
+Die **[!UICONTROL Nutzung von Streaming]** Medien) verwendet die folgenden Metriken:
+
+| Metrikname | Beschreibung |
+|---|---|
+| **Monatliche Medienstarts** | Die Gesamtzahl der in den letzten 13 Monaten verfügbaren monatlichen Medienstarts für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Medienstarts mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an. |
+
+>[!NOTE]
+>
+>Die Daten werden ab Juli 2024 für die Kern-, historischen und Gesamteinträge erfasst. Wenden Sie sich an die Kundenbetreuung, wenn Sie frühere historische Daten benötigen.
+>
+
+
+Die Benutzeroberfläche **[!UICONTROL Nutzung von Streaming]** Medien) besteht aus zwei Bereichen:
+
+* Das Panel **[!UICONTROL Schlüsselnutzungsmetriken]** mit folgenden Informationen:
+
+  * Eine zusammenfassende Visualisierung, die die gesamten und prozentualen Änderungen des Vormonats für &quot;**[!UICONTROL Medienstarts“]**.
+
+    Die Gesamtzahl der in den letzten 13 Monaten verfügbaren monatlichen Medienstarts für den aktuellen Monat, mit einer prozentualen Änderung im Vergleich zum Vormonat.  Beispielsweise zeigt die Zahl am 1. Februar 2024 die Gesamtzahl der verfügbaren Medienstarts mit einem Ereignis-Zeitstempel von Januar 2023 bis Januar 2024 an.
+
+  * Eine gestapelte vertikale Balkenvisualisierung, die die &quot;**[!UICONTROL Medienstarts“]** die letzten 13 Monate anzeigt.
+
+    Wenn Sie den Mauszeiger über einen gestapelten Balken in der Visualisierung bewegen, wird in einem Popup die Anzahl der Zeilen für diesen bestimmten Teil des Balkens angezeigt.
+
+* Ein kombiniertes Bedienfeld, das zwei Unterbedienfelder anzeigt für:
+
+  +++ Monatliche Medienstarts
+
+  Das Unterbedienfeld **[!UICONTROL Monatliche Medienstarts]** misst die Gesamtzahl der monatlichen Medienstarts, die dem System jeden Monat hinzugefügt werden, und liefert insight Informationen zum Datenwachstum und zu den Aufnahmeraten. Dieses Unter-Panel bietet eine Zusammenfassung der insgesamt aufgenommenen Zeilen dieses Monats und der Änderung gegenüber dem Vormonat.
+
+  Sie können den Mauszeiger über Datenpunkte in der Visualisierung bewegen, um ein Popup mit weiteren Details anzuzeigen. Sie können einen **[!UICONTROL Zeitbereich“ auswählen]** den ![&#x200B; mithilfe von &#x200B;](/help/assets/icons/Calendar.svg)Kalender“ auswählen.
 
   +++
 
@@ -566,22 +730,22 @@ Die Benutzeroberfläche „Nutzung“ besteht aus zwei Panels:
 
   Seit Monaten vor September 2024 wurden Daten auf Datensatzebene erfasst. Sie werden der Klarheit halber als [!UICONTROL andere Datensätze] angezeigt. Seit September 2024 werden Daten auf einer granularen Datensatzebene erfasst und [!UICONTROL andere Datensätze] werden nicht mehr angezeigt.
 
-   * Um die Aufschlüsselung zu ändern, wählen Sie eine Kombination für **[!UICONTROL Anzeigen nach]** und **[!UICONTROL Aufschlüsselung nach]** aus.
+  * Um die Aufschlüsselung zu ändern, wählen Sie eine Kombination für **[!UICONTROL Anzeigen nach]** und **[!UICONTROL Aufschlüsselung nach]** aus.
 
-     | Optionen **[!UICONTROL Anzeigen nach]** | Optionen **[!UICONTROL Aufschlüsselung nach]** |
-     |---|---|
-     | **[!UICONTROL Verbindung]** | **[!UICONTROL -]** und **[!UICONTROL Datensatz]** |
-     | **[!UICONTROL Datensatz]** | **[!UICONTROL -]** |
-     | **[!UICONTROL Sandbox]** | **[!UICONTROL Verbindung]** |
-     | **[!UICONTROL Tag]** | **[!UICONTROL Verbindung]** |
+    | Optionen **[!UICONTROL Anzeigen nach]** | Optionen **[!UICONTROL Aufschlüsselung nach]** |
+    |---|---|
+    | **[!UICONTROL Verbindung]** | **[!UICONTROL -]** und **[!UICONTROL Datensatz]** |
+    | **[!UICONTROL Datensatz]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Verbindung]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Verbindung]** |
 
-  ![Detailaufschlüsselung](assets/usage-detail-breakdown.png)
+  Sie können einen Monat auswählen, für den Sie die Aufschlüsselung vornehmen möchten. Wählen Sie einen Monat aus **[!UICONTROL Aufschlüsselungsmonat]**.
 
   +++
 
-  Sie können einen **[!UICONTROL Zeitraum]** in Monaten definieren, über den berichtet werden soll. Verwenden Sie ![Calendar](/help/assets/icons/Calendar.svg), um den Zeitraum auszuwählen.
 
 >[!MORELIKETHIS]
 >
->Tutorial [Anzeigen, Beheben von Problemen und Ändern von Verbindungseinstellungen](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).Verwalten der Nutzung von Customer Journey Analytics&rbrack;(/help/technotes/estimate-usage.md)
+>[Tutorial zum Anzeigen, Beheben und Ändern &#x200B;](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja) Verbindungseinstellungen.
+>[Verwalten der Customer Journey Analytics-Nutzung](/help/technotes/estimate-usage.md)
 >

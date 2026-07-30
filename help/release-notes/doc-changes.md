@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4526480673706e8eb1ec9a3903484edcc1b72a4b
+source-git-commit: 19610ab5059b070bda0066d593f3dd966702a35d
 workflow-type: tm+mt
-source-wordcount: 6963
+source-wordcount: 6973
 ht-degree: 99%
 
 ---
@@ -50,6 +50,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 |---|---|
 | **Juli 2026** | |
+| Benutzeroberfläche | Aktualisierungen der Dokumentation [Nutzungsschnittstelle](/help/connections/manage-connections.md#usage) für Verbindungen. |
 | Analyse der Unterereignisse | Dokumentation für [Analyse von Unterereignissen](/help/components/segments/sub-event.md) und [benutzerdefinierte Container](/help/data-views/create-dataview.md#custom-containers). |
 | Inline-Klassifizierungen | Dokumentation für [Inline-](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |
 | **Juni 2026** | |

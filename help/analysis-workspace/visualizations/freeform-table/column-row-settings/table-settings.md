@@ -16,9 +16,9 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 54e64aeb652d41a39e52b01c0a54edd1ecfd0cdc
+source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 1630
+source-wordcount: 1650
 ht-degree: 53%
 
 ---
@@ -51,7 +51,7 @@ So ändern Sie die Anzahl der angezeigten Zeilen:
 
    ![Freiformtabelle mit dem Dropdown-Menü von für die Anzahl der angezeigten Zeilen. „400 Zeilen“ ist ausgewählt.](assets/change-row-count.gif)
 
-1. Wählen Sie aus dem Dropdown-Menü die Anzahl der Zeilen aus, die die Tabelle anzeigen soll.
+1. Wählen Sie aus dem Dropdown-Menü die Anzahl der Zeilen für die anzuzeigende Tabelle aus.
 
 
 ## Kontextmenü
@@ -118,8 +118,6 @@ Sie können die [Anzeigedichte](https://experienceleague.adobe.com/de/docs/analy
 
 ## Inline-Klassifizierungen {#inline-classifications-example}
 
-{{release-limited-testing-section}}
-
 Inline-Klassifizierungen ermöglichen das Umbenennen oder Kombinieren von Zeilen in einer Freiformtabelle. Und um ein abgeleitetes Feld aus den geänderten Zeilen in einer Tabelle zu erstellen.
 
 Das folgende Beispiel zeigt, wie die Kontextmenüoptionen **[!UICONTROL Ausgewählte Zeile umbenennen]**, **[!UICONTROL Ausgewählte Zeilen]** und **[!UICONTROL Geänderte Zeilen als abgeleitetes Feld erstellen]** verwendet werden. und wie die geänderte Freiformtabelle zurückgesetzt wird.
@@ -139,7 +137,7 @@ Das folgende Beispiel zeigt, wie die Kontextmenüoptionen **[!UICONTROL Ausgewä
 
 * Kombinieren Sie **[!UICONTROL Männer]** und **[!UICONTROL Frauen]** Zeilen zu einer **[!UICONTROL Erwachsene]** Zeile.
 
-  1. Wählen Sie **[!UICONTROL Männer]** und **[!UICONTROL Frauen]** Zeile aus.
+  1. Wählen Sie **[!UICONTROL Männer]** und **[!UICONTROL Frauen]** Zeilen aus.
   1. Wählen Sie **[!UICONTROL Ausgewählte Zeilen kombinieren]** aus dem Kontextmenü aus einer der ausgewählten Zeilen aus.
 
      ![Menüoption „Ausgewählte Zeilen kombinieren“](assets/context-combine.png)
@@ -152,6 +150,11 @@ Das folgende Beispiel zeigt, wie die Kontextmenüoptionen **[!UICONTROL Ausgewä
      1. Klicken Sie **[!UICONTROL OK]**.
 
 * Erstellen Sie ein abgeleitetes Feld aus den Änderungen in der Freiformtabelle.
+
+  >[!NOTE]
+  >
+  >  Ein abgeleitetes Feld kann nur aus Änderungen in der Freiformtabelle erstellt werden, wenn Sie Customer Journey Analytics-Produktadministrator sind.
+
 
   1. Wählen Sie **[!UICONTROL Geänderte Zeilen als abgeleitetes Feld erstellen]** aus dem Kontextmenü für jede ausgewählte Zeile in der geänderten Tabelle aus.
 
