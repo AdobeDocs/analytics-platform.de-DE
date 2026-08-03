@@ -6,22 +6,11 @@ feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 TQID: https://experienceleague.adobe.com/ad4wWxqEZZxsnSTpus7pxFMlwNo3nNUpHeS9VfxrEdw
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 806
@@ -46,7 +35,7 @@ In diesem Abschnitt finden Sie Anwendungsfälle für Datenexporte und erfahren, 
 
 ## Einführung
 
-Einer der einzigartigen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics hängt mit der Verarbeitung von Daten für die Attribution und Sitzungserstellung zusammen. Weitere [&#x200B; finden Sie unter „Vergleich der Datenverarbeitung in Adobe Analytics &#x200B;](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) Customer Journey Analytics&quot;.
+Einer der einzigartigen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics hängt mit der Verarbeitung von Daten für die Attribution und Sitzungserstellung zusammen. Weitere [ finden Sie unter „Vergleich der Datenverarbeitung in Adobe Analytics ](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) Customer Journey Analytics&quot;.
 
 ### Adobe Analytics: Attribution und Sitzungserstellung der Erfassungszeit.
 
@@ -66,10 +55,10 @@ Dies wirkt sich auf den Export von Daten aus Adobe Analytics aus:
 
 In Customer Journey Analytics werden Ereignisse nicht in der richtigen Reihenfolge erfasst, sondern eine Personen-ID anstelle einer Geräte-ID verwendet, sodass Customer Journey Analytics die Attribution und die Sitzungserstellung zum Zeitpunkt der Berichterstellung aktualisieren kann. Diese Art der Datenerfassung bietet Flexibilität, z. B.:
 
-* Beim Stitching können _Daten_ oder wöchentlich wiedergegeben werden, wobei anonyme Ereignisse bekannten Ereignissen zugeordnet werden. Weitere Informationen finden [&#x200B; unter &#x200B;](../../stitching/overview.md).
+* Beim Stitching können _Daten_ oder wöchentlich wiedergegeben werden, wobei anonyme Ereignisse bekannten Ereignissen zugeordnet werden. Weitere Informationen finden [ unter ](../../stitching/overview.md).
 * Sitzungserstellung und beibehaltene Werte ändern sich jedes Mal
-   * neue Daten erfasst werden oder
-   * Das Zusammenfügen fügt Ereignisse zum Verlauf einer Person hinzu.
+  * neue Daten erfasst werden oder
+  * Das Zusammenfügen fügt Ereignisse zum Verlauf einer Person hinzu.
 
 Die Berichtszeitverarbeitung wirkt sich auf den Export von Daten aus Customer Journey Analytics aus. Exporte, die persistente Werte enthalten, stimmen nicht mit Customer Journey Analytics-Berichten überein, und die Werte werden mit der Zeit verschwinden.
 
@@ -77,22 +66,22 @@ Aus Gründen der Metrikkonsistenz wird die Verwendung der neuen Funktionen in Cu
 
 * Neue Datenquellen und Verarbeitungen, die dem Datenexport unterliegen
 
-   * Nicht-digitale Datenquellen einschließen,
-   * benutzerdefinierte Attribution und Sitzungserstellung basierend auf Geschäftsregeln anwenden und
-   * Halten Sie die Journey der Kunden beim Zusammenfügen auf dem neuesten Stand.
+  * Nicht-digitale Datenquellen einschließen,
+  * benutzerdefinierte Attribution und Sitzungserstellung basierend auf Geschäftsregeln anwenden und
+  * Halten Sie die Journey der Kunden beim Zusammenfügen auf dem neuesten Stand.
 
 * Realisierung maßgeschneiderter Anwendungsfälle für den Datenexport
 
-   * Exportieren Sie Daten dorthin, wo Sie sie benötigen, einschließlich Business Intelligence (BI)-Tools und Cloud-Ziele,
-   * die Synchronisierung von Daten mit Analysis Workspace durch die Integration von BI-Tools,
-   * Keine Notwendigkeit, die Verarbeitungslogik in Ihren eigenen Systemen zu replizieren,
-   * Neue Unterstützung für berechnete Metriken, abgeleitete Felder und Segmentierung
+  * Exportieren Sie Daten dorthin, wo Sie sie benötigen, einschließlich Business Intelligence (BI)-Tools und Cloud-Ziele,
+  * die Synchronisierung von Daten mit Analysis Workspace durch die Integration von BI-Tools,
+  * Keine Notwendigkeit, die Verarbeitungslogik in Ihren eigenen Systemen zu replizieren,
+  * Neue Unterstützung für berechnete Metriken, abgeleitete Felder und Segmentierung
 
 * Berücksichtigung von Sicherheit und Data Governance per Design
 
-   * alle Datenexporte nach Benutzer und Ziel überwachen,
-   * Sie legt Grenzen für die Daten fest, die für den Export verfügbar sind.
-   * Warnhinweise für Versandprobleme und Einschränkungen bei terminierten Versandfenstern festlegen.
+  * alle Datenexporte nach Benutzer und Ziel überwachen,
+  * Sie legt Grenzen für die Daten fest, die für den Export verfügbar sind.
+  * Warnhinweise für Versandprobleme und Einschränkungen bei terminierten Versandfenstern festlegen.
 
 
 ## Anwendungsfälle und Funktionen
