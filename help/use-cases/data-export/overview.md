@@ -68,8 +68,8 @@ In Customer Journey Analytics werden Ereignisse nicht in der richtigen Reihenfol
 
 * Beim Stitching können _Daten_ oder wöchentlich wiedergegeben werden, wobei anonyme Ereignisse bekannten Ereignissen zugeordnet werden. Weitere Informationen finden [&#x200B; unter &#x200B;](../../stitching/overview.md).
 * Sitzungserstellung und beibehaltene Werte ändern sich jedes Mal
-   * neue Daten erfasst werden oder
-   * Das Zusammenfügen fügt Ereignisse zum Verlauf einer Person hinzu.
+  * neue Daten erfasst werden oder
+  * Das Zusammenfügen fügt Ereignisse zum Verlauf einer Person hinzu.
 
 Die Berichtszeitverarbeitung wirkt sich auf den Export von Daten aus Customer Journey Analytics aus. Exporte, die persistente Werte enthalten, stimmen nicht mit Customer Journey Analytics-Berichten überein, und die Werte werden mit der Zeit verschwinden.
 
@@ -77,22 +77,22 @@ Aus Gründen der Metrikkonsistenz wird die Verwendung der neuen Funktionen in Cu
 
 * Neue Datenquellen und Verarbeitungen, die dem Datenexport unterliegen
 
-   * Nicht-digitale Datenquellen einschließen,
-   * benutzerdefinierte Attribution und Sitzungserstellung basierend auf Geschäftsregeln anwenden und
-   * Halten Sie die Journey der Kunden beim Zusammenfügen auf dem neuesten Stand.
+  * Nicht-digitale Datenquellen einschließen,
+  * benutzerdefinierte Attribution und Sitzungserstellung basierend auf Geschäftsregeln anwenden und
+  * Halten Sie die Journey der Kunden beim Zusammenfügen auf dem neuesten Stand.
 
 * Realisierung maßgeschneiderter Anwendungsfälle für den Datenexport
 
-   * Exportieren Sie Daten dorthin, wo Sie sie benötigen, einschließlich Business Intelligence (BI)-Tools und Cloud-Ziele,
-   * die Synchronisierung von Daten mit Analysis Workspace durch die Integration von BI-Tools,
-   * Keine Notwendigkeit, die Verarbeitungslogik in Ihren eigenen Systemen zu replizieren,
-   * Neue Unterstützung für berechnete Metriken, abgeleitete Felder und Segmentierung
+  * Exportieren Sie Daten dorthin, wo Sie sie benötigen, einschließlich Business Intelligence (BI)-Tools und Cloud-Ziele,
+  * die Synchronisierung von Daten mit Analysis Workspace durch die Integration von BI-Tools,
+  * Keine Notwendigkeit, die Verarbeitungslogik in Ihren eigenen Systemen zu replizieren,
+  * Neue Unterstützung für berechnete Metriken, abgeleitete Felder und Segmentierung
 
 * Berücksichtigung von Sicherheit und Data Governance per Design
 
-   * alle Datenexporte nach Benutzer und Ziel überwachen,
-   * Sie legt Grenzen für die Daten fest, die für den Export verfügbar sind.
-   * Warnhinweise für Versandprobleme und Einschränkungen bei terminierten Versandfenstern festlegen.
+  * alle Datenexporte nach Benutzer und Ziel überwachen,
+  * Sie legt Grenzen für die Daten fest, die für den Export verfügbar sind.
+  * Warnhinweise für Versandprobleme und Einschränkungen bei terminierten Versandfenstern festlegen.
 
 
 ## Anwendungsfälle und Funktionen

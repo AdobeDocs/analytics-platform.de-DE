@@ -22,7 +22,7 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: 3355
+source-wordcount: 3315
 ht-degree: 10%
 
 ---
@@ -209,11 +209,11 @@ Im Folgenden finden Sie ein Beispiel für die ordnungsgemäße Anwendung der Att
 
   Um dies zu tun, müssen Sie…
 
-   - Verwenden Sie `checkpoint_log` eine Verarbeitungsstatustabelle, um den aktuellen Zeitpunkt im Vergleich zur letzten Aufnahme zu verfolgen. Weitere Informationen finden [&#x200B; in &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/incremental-load) Handbuch.
-   - Deaktivieren Sie das Ablegen von Systemspalten, damit Sie `_acp_system_metadata.ingestTime` verwenden können.
-   - Verwenden Sie eine innere `SELECT`, um die Felder zu erfassen, die Sie verwenden möchten, und beschränken Sie die Ereignisse auf Ihren Lookback-Zeitraum für Sitzungs- und/oder Attributionsberechnungen. Beispiel: 90 Tage.
-   - Verwenden Sie eine `SELECT` der nächsten Ebene, um Ihre Sitzungs- und/oder Attributionsfensterfunktionen und andere Berechnungen anzuwenden.
-   - Verwenden Sie `INSERT INTO` in Ihrer Ausgabetabelle, um den Lookback auf die Ereignisse zu beschränken, die seit der letzten Verarbeitungszeit eingetroffen sind. Hierfür filtern Sie nach der Zeit`_acp_system_metadata.ingestTime ` die zuletzt in Ihrer Verarbeitungsstatustabelle gespeichert wurde.
+  - Verwenden Sie `checkpoint_log` eine Verarbeitungsstatustabelle, um den aktuellen Zeitpunkt im Vergleich zur letzten Aufnahme zu verfolgen. Weitere Informationen finden [&#x200B; in &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/incremental-load) Handbuch.
+  - Deaktivieren Sie das Ablegen von Systemspalten, damit Sie `_acp_system_metadata.ingestTime` verwenden können.
+  - Verwenden Sie eine innere `SELECT`, um die Felder zu erfassen, die Sie verwenden möchten, und beschränken Sie die Ereignisse auf Ihren Lookback-Zeitraum für Sitzungs- und/oder Attributionsberechnungen. Beispiel: 90 Tage.
+  - Verwenden Sie eine `SELECT` der nächsten Ebene, um Ihre Sitzungs- und/oder Attributionsfensterfunktionen und andere Berechnungen anzuwenden.
+  - Verwenden Sie `INSERT INTO` in Ihrer Ausgabetabelle, um den Lookback auf die Ereignisse zu beschränken, die seit der letzten Verarbeitungszeit eingetroffen sind. Hierfür filtern Sie nach der Zeit`_acp_system_metadata.ingestTime ` die zuletzt in Ihrer Verarbeitungsstatustabelle gespeichert wurde.
 
   **Beispiel für Fensterfunktionen des Sitzungsfensters**
 
