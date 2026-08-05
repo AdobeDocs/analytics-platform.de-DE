@@ -28,10 +28,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: feb7b3364e7981c42e3a31f75acfbddfdc463485
+source-git-commit: 64b257112d0d46aa6a6ca22d1f712376e461d5e4
 workflow-type: tm+mt
-source-wordcount: 795
-ht-degree: 35%
+source-wordcount: 971
+ht-degree: 28%
 
 ---
 
@@ -48,6 +48,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Augu
 | **Verbesserungen der Journey**<br> Arbeitsfläche: Die folgenden Verbesserungen der Journey-Arbeitsfläche sind jetzt verfügbar:<ul><li>Vergleichen Sie die Journey mit einem früheren Zeitrahmen. Vergleichen Sie die aktuelle Journey mit der Journey 4 Wochen vorher, 2 Quartale vorher, 1 Jahr vorher oder mit einem benutzerdefinierten Datumsbereich.</li><li>Zeigen Sie für einen ausgewählten Knoten die obersten Dimensionselemente an, die zu einem beliebigen Zeitpunkt im Journey nach dem ausgewählten Knoten stehen. Verwenden Sie dies, wenn der ausgewählte Knoten das Schlüsselereignis in Ihrer Analyse ist und Sie sehen möchten, was die Benutzer zu einem späteren Zeitpunkt tun.<p>Zuvor konnten nur die unmittelbar am häufigsten angezeigten Knoten vor oder nach dem ausgewählten Knoten angezeigt werden. </p></li><li>Ändern Sie die Form und den Stil der Pfeile zwischen den Knoten. Ziehen Sie die Pfeile zwischen Knoten, um die Form (Krümmung) des Pfeils zu ändern, und klicken Sie mit der rechten Maustaste auf einen Pfeil, um seinen Stil in eine der folgenden Optionen zu ändern: Volumenkörper, Gestrichelt, Punkte, Gestrichelt-Punkt oder Animiert.</li></ul><p></p>Weitere Informationen finden Sie unter [Konfigurieren einer Visualisierung „Journey-Arbeitsfläche“](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md). |  | &#x200B;18. August 2026 |
 | **Unterstützung für zusätzliche Datennutzungskennzeichnungen**<br> Customer Journey Analytics unterstützt jetzt die folgenden zusätzlichen Datennutzungskennzeichnungen für Elemente in einem Datensatz:<ul><li>C2 - Datenexport von Drittanbietern einschränken (jetzt verfügbar)</li><li>C3 - Direkt identifizierbare Datenkombination einschränken (jetzt verfügbar)</li><li>C9 - Datenwissenschaft beschränken (Veröffentlichung im August geplant)</li></ul><p>Weitere Informationen finden Sie unter [Bezeichnungen, Richtlinien und Marketing-Aktionen](/help/data-views/data-governance.md).</p> | | August 2026 |
 | **Filterung und Reporting von Einverständnisrichtlinien**<br> Sie können jetzt Berichte dazu erstellen, welche Besucher Ihren Adobe Experience Platform-Einverständnisrichtlinien entsprechen. (Dimensionen und Metriken der Einverständnisrichtlinie werden zu den Datenansichten in Ihrer Verbindung hinzugefügt.)<p>Darüber hinaus können Sie Besuchende, die mit ihrer Zustimmung nicht einverstanden sind, ausschließen, bevor ihre Daten in Customer Journey Analytics aufgenommen werden.</p><p>Weitere Informationen finden Sie unter Übersicht über Einverständnisberichte und -filter.</p> | | August 2026 |
+| **Content Analytics: Bezahlte Mediendaten** Bezahlte <br/> sind jetzt als dritter Kanal für Content Analytics verfügbar.<p>(Link zur Dokumentation folgt.)</p> | | &#x200B;31. August 2026 |
 | **Migrationsplaner: Adobe Analytics zu Customer Journey Analytics**<br> Der Migrationsplaner bietet einen Migrationsassistenten, der einige der komplexesten und zeitaufwendigsten Aufgaben im Zusammenhang mit einem Upgrade von Adobe Analytics auf Customer Journey Analytics automatisiert, einschließlich der Erstellung von XDM-Schemata und der Migration von AppMeasurement oder der Analytics-Erweiterung (Tags) zu Experience Platform Web SDK. <p>(Link zur Dokumentation folgt.)</p> | | Ende August oder September 2026 |
 | **B2B: Person-Konto-Zuordnung**<br> B2B-Kontozuordnung reichert Ihre Ereignisdatensätze mit Kontoinformationen an und ermöglicht eine vollständige Analyse des gesamten Kunden-Journey in Customer Journey Analytics. <p>Wenn Ereignisse keine Konto-ID haben, die Customer Journey Analytics B2B edition für die Aufnahme benötigt, leitet die Kontozuordnung diese Informationen automatisch ab und fügt sie mithilfe des von Ihnen bereitgestellten Personenkonto-Zuordnungsdatensatzes hinzu.</p><p>(Link zur Dokumentation folgt.)</p> | | Ende August oder September 2026 |
 | **Handbuch zu ersten Aufrufen der CJA Report API**<br> Handbuch zu ersten Aufrufen der Adobe Customer Journey Analytics-API enthält Anweisungen und Beispiele zur Konfiguration grundlegender Berichtsanfragen. | | &#x200B;10. August 2026 |
@@ -55,22 +56,22 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Augu
 
 ### Fehlerbehebungen in Customer Journey Analytics
 
-**Analysis Workspace**:
+**Analysis Workspace**: AN-466867, AN-465995, AN-465315, AN-465313, AN-464375, AN-463634, AN-463248, AN-463175, AN-463049, AN-462347, AN-462124, AN-457849, AN-455002, AN-453357, AN-461922, AN-456863, AN-459816, AN-458398, AN-459034, AN-460774, AN-460671, AN-457760, AN-AN-443594, AN-AN-AN, AN-AN-UND-AN
 **Komponenten**:
-**Verbindungen**:
+**Verbindungen**: AN-464934, AN-460768
 **Content Analytics**:
 **Geführte Analyse**:
-**Exporte**:
-**Datenansichten**:
-**Datenaufnahme**:
+**Exporte**: AN-451819, AN-448419, AN-456001
+**Datenansichten**: AN-453201, AN-441965, AN-460967
+**Datenaufnahme**: AN-462123, AN-451836, AN-453790, AN-459000, AN-456057, AN-461271, AN-459016, AN-460935
 **Implementierung**:
-**Report Builder**:
-**Reporting**:
-**Segmentierung**:
-**Geplante Berichte**:
+**Report Builder**: AN-465346, AN-464768, AN-464580, AN-464301, AN-463048, AN-462800, AN-457042, AN-461033, AN-459042, AN-454250, AN-451735, AN-450776, AN-450200, AN-451665
+**Reporting**: AN-463576, AN-462400, AN-456394, AN-455619, AN-459530, AN-454103, AN-452866, AN-461181
+**Segmentierung**: AN-459002, AN-457730, AN-457146
+**Terminierte Berichte**: AN-455009, AN-460037, AN-462093
 **Freigegebene Metriken und Dimensionen**:
-**Zielgruppenanalyse**:
-**Sonstige**:
+**Zielgruppenanalyse**: AN-458292
+**Sonstige**: AN-466935, AN-462116, AN-454493, AN-457666, AN-457557, AN-456742, AN-437975, AN-460959
 
 ## Zurückgestellte Funktionen
 
