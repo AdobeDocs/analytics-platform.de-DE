@@ -19,10 +19,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
+source-git-commit: 55a5bc2160a7dc426b9436116362264ab9f90390
 workflow-type: tm+mt
-source-wordcount: 1058
-ht-degree: 2%
+source-wordcount: 1060
+ht-degree: 3%
 
 ---
 
@@ -81,8 +81,8 @@ Beachten Sie bei der Verwendung der Einverständnisfilterung Folgendes:
 
   | Marketing-Aktion | Beschreibung |
   |---------|----------|
-  | **[!UICONTROL Analytics]** | Standard-Customer Journey Analytics-Reporting in Analysis Workspace. |
-  | **[!UICONTROL Datenwissenschaft]** | Anwendungsfälle für erweiterte Analysen, maschinelles Lernen und Datenwissenschaft. |
+  | **[!UICONTROL Analytics-Daten]** | Standardmäßiges Customer Journey Analytics-Reporting in Analysis Workspace. |
+  | **[!UICONTROL Datenwissenschaftsdaten]** | Anwendungsfälle für erweiterte Analysen, maschinelles Lernen und Datenwissenschaft. |
 
 * Die Daten eines Besuchers werden nur dann aufgenommen, wenn der Besucher den **Einverständnisrichtlinien**. Wenn einem Besucher eine anwendbare Richtlinie fehlt, werden die Daten dieses Besuchers ausgeschlossen.
 
