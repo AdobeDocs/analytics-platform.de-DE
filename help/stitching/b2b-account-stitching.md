@@ -7,29 +7,21 @@ hide: true
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2:
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 593dc8e9eb32e092545b74882ce2a85bcecc3c56
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 6e2c1271de0e1ea82820c108eec08ec815d776f3
 workflow-type: tm+mt
-source-wordcount: 1349
-ht-degree: 9%
+source-wordcount: 1921
+ht-degree: 13%
 
 ---
 
 # B2B-Kontozuordnung
 
-Die B2B-Kontozuordnung reichert Ihre Ereignisdatensätze mit Kontoinformationen an und ermöglicht eine vollständige Analyse auf der gesamten Kunden-Journey in Customer Journey Analytics. Wenn Ereignisse keine Konto-ID haben, die Customer Journey Analytics B2B edition für die Aufnahme benötigt, leitet die Kontozuordnung diese Informationen automatisch ab und fügt sie mithilfe eines von Ihnen bereitgestellten [Person-Konto-](#prerequisites)-Datensatzes hinzu.
+Die B2B-Kontozuordnung reichert Ihre Ereignisdatensätze mit Account-Identitäten an und ermöglicht eine vollständige Analyse auf der gesamten Kunden-Journey in Customer Journey Analytics. Wenn Ereignisse keine Konto-ID haben, die Customer Journey Analytics B2B edition für die Aufnahme benötigt, leitet die Kontozuordnung diese Informationen automatisch ab und fügt sie mithilfe eines von Ihnen bereitgestellten [Person-Konto-](#prerequisites)-Datensatzes hinzu.
 
 Ohne Kontozuordnung wird jedes Ereignis, das keine Konto-ID enthält, während der Aufnahme gelöscht. Die Kontozuordnung löst diese Einschränkung, indem das Konto, das mit der Person bei jedem Ereignis verknüpft ist, nachgeschlagen wird. Dabei wird die Konto-ID sowohl bei der Aufnahme als auch rückwirkend hinzugefügt.
 
@@ -40,7 +32,93 @@ Ohne Kontozuordnung wird jedes Ereignis, das keine Konto-ID enthält, während d
 Die Kontozuordnung führt die folgenden Vorgänge für Ihre Datensätze aus:
 
 * **Identität der Person erhöhen**: Die Personen-ID für jedes Ereignis wird mithilfe des Identitätsdiagramms in den konfigurierten Identity-Namespace erhöht.
-* **Fehlende Kontoinformationen hinzufügen**: Für Ereignisse, die eine Personen-ID enthalten, wird die [Zuordnung von Person zu Konto](#prerequisites) verwendet, um die Kontoinformationen abzuleiten und hinzuzufügen. Sämtliche Kontoinformationen über das Ereignis selbst werden als Fallback-Methode verwendet.
+* **Fehlende Konto-Identitäten hinzufügen**: Bei Ereignissen, die eine Personen-ID enthalten, wird die [Personen-Konto-Zuordnung](#prerequisites) verwendet, um die Konto-Identität abzuleiten und hinzuzufügen. Jede Kontoidentität für das Ereignis selbst wird als Fallback-Methode verwendet.
+
+## Funktionsweise der B2B-Kontozuordnung
+
+Um zu veranschaulichen, wie die B2B-Kontozuordnung funktioniert, wird der unten dargestellte Datensatz als Ausgangspunkt verwendet.
+
+### Basisereignis-Datensatz
+
+In Customer Journey Analytics B2B edition werden Ereignisse ohne Konto-ID in diesem nicht zugeordneten Beispielereignisdatensatz ignoriert und nicht aufgenommen (![DeleteOutline](/help/assets/icons/DeleteOutline.svg)).
+
+| Aktion | Zeitstempel | Dauerhafte ID | Konto-ID | Personen-ID | Ereignistyp |
+|:---:|--|--|---|---|---|
+| ![DataAdd](/help/assets/icons/DataAdd.svg) | 1/3/25 | 1234 | Adobe | matt@adobe.com | Page view |
+| ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  | | |
+| ![DataAdd](/help/assets/icons/DataAdd.svg) | 3/4/25 | 9012 | Allgegenwart | cory@sky.com |  |
+| ![DataAdd](/help/assets/icons/DataAdd.svg) | 3/7/25 | 4321 | Himmel | emily@sky.com | Callcenter |
+| ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 5/5/25 | 6106 | | carmen@adobe.com |  |
+| ![DataAdd](/help/assets/icons/DataAdd.svg) | 6/1/25 | 8989 | Allgegenwart | cassidy@ubiquity.com | |
+| ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 6/2/25 | 1111 |  | | |
+
+Die B2B-Kontozuordnung verhindert, dass Ereignisse ignoriert und nicht mit den folgenden Vorgängen aufgenommen werden:
+
+* [Personenidentitäten ](#elevate-person-identities).
+* [Fügen Sie fehlende Kontoidentitäten hinzu](#add-missing-account-identitiers).
+
+
+### Personenidentitäten erhöhen
+
++++ Details
+
+Um die B2B-Kontozuordnung zu unterstützen, stellen Sie einen Datensatz für die Zuordnung von Person zu Konto bereit. Beispiel:
+
+| CRM-ID | Konto-ID |
+|---|---|
+| 12HSD123 | Adobe |
+| F82JSD32 | Himmel |
+| HG2023M2 | Himmel |
+| B978BBW9 | Allgegenwart |
+| FS453GHI | Adobe |
+
+Dieser Datensatz für die Zuordnung von Person zu Konto wird durch diagrammbasiertes Stitching erhöht. Sie stellen beispielsweise E-Mail als zu verwendenden Namespace bereit. Das Ergebnis ist ein aktualisierter Datensatz für die Zuordnung von Personen zu Konten mit erhöhten Personen-IDs.
+
+| CRM-ID | Erhöhte Personen-ID | Konto-ID |
+|---|---|---|
+| 12HSD123 | matt@adobe.com | Adobe |
+| F82JSD32 | emily@sky.com | Himmel |
+| HG2023M2 | cory@sky.com | Himmel |
+| B978BBW9 | cassidy@ubiquity.com | Allgegenwart |
+| FS453GHI | carmen@adobe.com | Adobe |
+
+Die diagrammbasierte Zuordnung wird auch verwendet, um die Personen-IDs im Erlebnisereignis-Datensatz zu erhöhen. Siehe zum Beispiel den aktualisierten Wert für **emily@adobe.com**.
+
+| Zeitstempel | Dauerhafte ID | Ursprüngliche Konto-ID | Ursprüngliche Personen-ID | Erhöhte Personen-ID |
+|--|--|---|---|---|
+| 1/3/25 | 1234 | Adobe | matt@adobe.com | matt@adobe.com |
+| 1/3/25 | 5678 |  | | **emily@adobe.com** |
+| 3/4/25 | 9012 | Allgegenwart | cory@sky.com | cory@sky.com |
+| 3/7/25 | 4321 | Himmel | emily@sky.com | emily@sky.com |
+| 5/5/25 | 6106 | | carmen@adobe.com | carmen@adobe.com |
+| 6/1/25 | 8989 | Allgegenwart | cassidy@ubiquity.com | cassidy@ubiquity.com |
+| 6/2/25 | 1111 |  | 111 | 111 |
+
+
++++
+
+### Hinzufügen fehlender Kontokennungen
+
++++ Details
+
+Der Personen-Konto-Datensatz wird erneut verwendet, um die Konto-IDs im Erlebnisereignis-Datensatz zu erhöhen. Siehe zum Beispiel den zusätzlichen Wert **Sky** für emily@sky.com und **Adobe** für carmen@adobe.com. Und der aktualisierte Wert **Sky** (von Ubiquity) für cory@sky.com.
+
+| Zeitstempel | Dauerhafte ID | Ursprüngliche Konto-ID | Ursprüngliche Personen-ID | Erhöhte Konto-ID | Erhöhte Personen-ID |
+|---|---|---|---|---|---|
+| 1/3/25 | 1234 | Adobe | matt@adobe.com | Adobe | matt@adobe.com |
+| 1/3/25 | 5678 | | | **Sky** | **emily@sky.com** |
+| 3/4/25 | 9012 | Allgegenwart | cory@sky.com | **Sky** | cory@sky.com |
+| 3/7/25 | 4321 | Himmel | emily@sky.com | Himmel | emily@sky.com |
+| 5/5/25 | 6106 | | carmen@adobe.com | **Adobe** | carmen@adobe.com |
+| 6/1/25 | 8989 | Allgegenwart | cassidy@ubiquity.com | Allgegenwart | cassidy@ubiquity.com |
+| 6/2/25 | 1111 |  | 1111 |  | 1111 |
+
++++
+
+### Ergebnis
+
+Dieses Beispiel zeigt, wie die B2B-Kontozuordnung Ihre Erlebnisereignisdaten mit fehlenden Personenkennungen sowie fehlenden und falschen Kontokennungen aktualisiert, basierend auf dem von Ihnen als Eingabe angegebenen Datensatz für die Zuordnung von Person zu Konto.
+
 
 ## Voraussetzungen
 
@@ -56,7 +134,7 @@ Bereiten Sie in Adobe Experience Platform die folgenden Datensätze vor, bevor S
 
 ## Kontozuordnung aktivieren {#enable-account-stitching}
 
-Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und aktivieren dann die Kontozuordnung für einzelne Ereignisdatensätze innerhalb dieser Verbindung.
+Sie aktivieren und konfigurieren zunächst die B2B-Kontozuordnung auf Verbindungsebene. Wenn die B2B-Kontozuordnung für eine Verbindung konfiguriert ist, können Sie die Kontozuordnung für einzelne Ereignisdatensätze innerhalb dieser Verbindung aktivieren.
 
 ### Konfigurieren von B2B-Zuordnungseinstellungen {#configure-b2b-stitching-settings}
 
@@ -101,6 +179,8 @@ Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und
 
 1. Legen **[!UICONTROL in]** Verbindungseinstellungen“ die **[!UICONTROL Primäre ID]** auf ![Building](/help/assets/icons/Building.svg)**[!UICONTROL Account]** fest.
 
+1. Wählen Sie unbedingt die **[!UICONTROL optionalen Container]** aus, die Sie in Ihrer B2B-Verbindung verwenden möchten. Nachdem Sie eine B2B-Stitching-Konfiguration gespeichert haben, können Sie die Auswahl dieser Container nicht mehr ändern.
+
 1. Wählen Sie **[!UICONTROL B2B-Stitching-Konfiguration öffnen]**.
 
    ![B2B-Kontozuordnungskonfiguration](assets/b2b-account-stitching-configuration.png)
@@ -124,7 +204,7 @@ Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und
       | **[!UICONTROL Person-Konto-Datensatz]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie die Suche (Datensatz oder Datensatz ohne Zeitreihe) aus, die Personen Konten zuordnet. |
       | **[!UICONTROL Personen-ID]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das die Personen-ID enthält. Dieses Feld muss als Identität markiert werden und darf nicht mit dem Feld **[!UICONTROL Konto-ID]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein. |
       | **[!UICONTROL Konto-ID]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das die Konto-ID enthält. Dieses Feld darf nicht mit dem Feld **[!UICONTROL Personen-ID]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein. |
-      | **Erstellungszeit der Zuordnung** | | Wählen Sie optional das Feld aus, das das Datum und die Uhrzeit darstellt, zu der die Zuordnung von Person zu Konto erstellt wurde. Nützlich für Szenarien, in denen eine Person im Laufe der Zeit mehrere Konten wechselt.<br/><br/>**Beispiel** (wenn **update_date**-Feld ausgewählt ist):<table><thead><tr><th>update_date</th><th>Person</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>Für alle Ereignisse mit einem Zeitstempel im Feld **[!UICONTROL update_date]** vor dem 1. Mai 2026 wird a@b.com Apple zugeordnet.</li><li>Für alle Ereignisse mit einem Zeitstempel im Feld **[!UICONTROL update_date]** ab dem 1. Mai 2026 wird a@b.com Adobe zugeordnet.</li><ul> |
+      | **Erstellungszeit der Zuordnung** | | Wählen Sie optional das Feld aus, das das Datum und die Uhrzeit darstellt, zu der die Zuordnung von Person zu Konto erstellt wurde. Nützlich für Szenarien, in denen eine Person im Laufe der Zeit mehrere Konten wechselt.<br/><br/>**Beispiel** (wenn **update_date**-Feld ausgewählt ist):<table><thead><tr><th>update_date</th><th>Person</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>Für alle Ereignisse mit einem Zeitstempel im Feld **[!UICONTROL update_date]** vor dem 1. Mai 2026 wird a@b.com Apple zugeordnet.</li><li>Für alle Ereignisse mit einem Zeitstempel im Feld **[!UICONTROL update_date]** ab dem 1. Mai 2026 wird a@b.com Adobe zugeordnet.</li></ul>Wenn keine Zuordnungszeit angegeben ist, wird das lexikografische erste Konto für die Zuordnung zu verwendet. Derselbe Algorithmus wird auch verwendet, wenn zwei verschiedene Kontonamen exakt denselben **[!UICONTROL update_date]**-Wert haben und eine Erstellungszeit für die Zuordnung angegeben ist. |
 
       >[!NOTE]
       >
@@ -141,11 +221,11 @@ Sie aktivieren und konfigurieren die B2B-Kontozuordnung auf Verbindungsebene und
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Aktivieren der Person-zu-Konto-Zuordnung"
 >abstract="Wenn aktiviert, verwendet dieser Datensatz die B2B-Person zur Kontozuordnung. Die **[!UICONTROL Personen-ID]**-Werte werden auf die Werte aus dem konfigurierten **[!UICONTROL Personen-ID-Namespace]** erhöht und dann verwendet, um die Konto-ID basierend auf dem Personen-zu-Konto-Datensatz zu suchen.<br/>Wenn deaktiviert, verwendet dieser Datensatz keine B2B-Person zur Kontozuordnung und Sie müssen stattdessen eine erforderliche **[!UICONTROL Konto-ID]** auswählen."
->additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="Konfigurieren von B2B-Zuordnungseinstellungen"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="Konfigurieren von B2B-Zuordnungseinstellungen"
 
 Nachdem Sie die B2B-Zuordnung auf Verbindungsebene konfiguriert haben, müssen Sie die B2B-Kontozuordnung für jeden Ereignisdatensatz, den Sie zuordnen möchten, einzeln aktivieren.
 
-1. Wählen Sie in den Verbindungseinstellungen **[!UICONTROL Datensätze hinzufügen]** oder öffnen Sie die Einstellungen für einen vorhandenen Ereignisdatensatz.<br/>Siehe [Hinzufügen von &#x200B;](/help/connections/create-connection.md#add-datasets)) oder [Bearbeiten eines &#x200B;](/help/connections/create-connection.md#edit-a-dataset)).
+1. Wählen Sie in den Verbindungseinstellungen **[!UICONTROL Datensätze hinzufügen]** oder öffnen Sie die Einstellungen für einen vorhandenen Ereignisdatensatz.<br/>Siehe [Hinzufügen von ](/help/connections/create-connection.md#add-datasets)) oder [Bearbeiten eines ](/help/connections/create-connection.md#edit-a-dataset)).
 
 1. Aktivieren Sie für den spezifischen Ereignisdatensatz, für den Sie die B2B-Kontozuordnung konfigurieren möchten **[!UICONTROL „Person zu Kontozuordnung aktivieren]**.
 
@@ -181,11 +261,11 @@ Nachdem Sie die B2B-Stitching-Konfiguration konfiguriert und das Hinzufügen ode
 
 >[!IMPORTANT]
 >
->Nachdem eine Verbindung gespeichert wurde, wird die B2B-Stitching-Konfiguration unveränderlich. Um Ihre Einstellungen nach dem Speichern anzuzeigen, wählen Sie **B2B-Stitching-Konfiguration öffnen**. Alle Felder befinden sich in einem schreibgeschützten Zustand. Wenn der Datensatz, der für die Zuordnung [&#x200B; Person zu Konto verwendet wird](#prerequisites) in Experience Platform gelöscht wird, wird diese Verbindung ebenfalls gelöscht.
+>Nachdem eine Verbindung gespeichert wurde, wird die B2B-Stitching-Konfiguration unveränderlich. Um Ihre Einstellungen nach dem Speichern anzuzeigen, wählen Sie **B2B-Stitching-Konfiguration öffnen**. Alle Felder befinden sich in einem schreibgeschützten Zustand. Wenn der Datensatz, der für die Zuordnung [ Person zu Konto verwendet wird](#prerequisites) in Experience Platform gelöscht wird, wird diese Verbindung ebenfalls gelöscht.
 
 ## Zeitplan für die Datenaktualisierung
 
-Die Kontozuordnung leitet die Identitätszuordnung täglich von Ihrem [Person-Konto-Datensatz](#prerequisites) ab und verwendet diese Informationen, um Datensätze zu aktualisieren, die für die Zuordnung gemäß dem folgenden Zeitplan aktiviert sind:
+Die Kontozuordnung leitet die Identitätszuordnung täglich von Ihrem [Person-Konto-Datensatz](#prerequisites) ab und verwendet diese Informationen, um Datensätze zu aktualisieren, die für die kurz- und langfristige Zuordnung gemäß dem folgenden Zeitplan aktiviert sind:
 
 | Wiederholung | Häufigkeit | Datenfenster |
 |---|---|---|
