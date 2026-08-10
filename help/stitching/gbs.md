@@ -7,31 +7,30 @@ role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
 autotag-review: '2026-05-19T09:24:07.100Z'
 TQID: 'https://experienceleague.adobe.com/f-HOhKLpbM4u4MAzzoUCc0cMvVIu1k3FXg4FShValVE'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d00e9f03-e50b-4162-b143-0c0817c937c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 711e4bd71a4939eec96a6c454242e96b350fe4e2
 workflow-type: tm+mt
-source-wordcount: 1899
-ht-degree: 70%
+source-wordcount: 2017
+ht-degree: 64%
 
 ---
 
 # Diagrammbasierte Zuordnung
 
-Bei der diagrammbasierten Zuordnung geben Sie einen Ereignis-Datensatz, die persistente ID (Cookie) für diesen Datensatz und den Namespace der gewünschten Personen-ID aus dem Identitätsdiagramm an. Diagrammbasierte Zuordnung versucht, die Personen-ID-Informationen für die Customer Journey Analytics-Datenanalyse bei jedem Ereignis verfügbar zu machen. Die persistente ID wird verwendet, um das Identitätsdiagramm vom Experience Platform Identity Service abzufragen und die Personen-ID aus dem angegebenen Namespace abzurufen.
+Bei der diagrammbasierten Zuordnung geben Sie einen Ereignis-Datensatz, die persistente ID (Cookie) für diesen Datensatz und den Namespace der gewünschten Personen-ID aus dem Identitätsdiagramm an. Diagrammbasierte Zuordnung versucht, die Personen-ID-Informationen für die Customer Journey Analytics-Datenanalyse bei jedem Ereignis verfügbar zu machen. Die persistente ID wird verwendet, um das Identitätsdiagramm vom Experience Platform Identity Service abzufragen und die Personen-ID aus dem angegebenen Namespace abzurufen. Hierbei handelt es sich um denselben Identity Service, der von anderen Experience Platform-Programmen wie Real-Time Customer Data Platform verwendet wird (siehe Abbildung unten).
 
-Wenn die Personen-ID-Informationen für ein Ereignis nicht abgerufen werden können, wird stattdessen die persistente ID für dieses (nicht *)* verwendet. Daher enthält in einer [Datenansicht](/help/data-views/data-views.md) die mit einer [Verbindung“ verknüpft ist, &#x200B;](/help/connections/overview.md) den Datensatz enthält, der für das Zusammenfügen aktiviert ist, die Datenansichtskomponente für die Personen-ID entweder den Personen-ID-Wert oder den beständigen ID-Wert auf der Ereignisebene.
+![Identity Service](assets/uis-gbs.png){zoomable="yes"}
+
+>[!NOTE]
+>
+>Der [Identity Service](https://experienceleague.adobe.com/de/docs/experience-platform/identity/home) ist ein zentraler Experience Platform-Service, für den keine zusätzliche Lizenz erforderlich ist. Weitere [ finden Sie unter „Grundlegendes zur Rolle von Identity Service innerhalb ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure) Experience Platform-Infrastruktur“.
+>
+
+Wenn die Personen-ID-Informationen für ein Ereignis nicht abgerufen werden können, wird stattdessen die persistente ID für dieses (nicht *)* verwendet. Daher enthält in einer [Datenansicht](/help/data-views/data-views.md) die mit einer [Verbindung“ verknüpft ist, ](/help/connections/overview.md) den Datensatz enthält, der für das Zusammenfügen aktiviert ist, die Datenansichtskomponente für die Personen-ID entweder den Personen-ID-Wert oder den beständigen ID-Wert auf der Ereignisebene.
 
 
 ![Diagrammbasierte Zuordnung](/help/stitching/assets/gbs.png)
@@ -41,8 +40,8 @@ Wenn die Personen-ID-Informationen für ein Ereignis nicht abgerufen werden kön
 Diagrammbasierte Zuordnung unterstützt die Verwendung der [`identityMap`-Feldergruppe](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#identity) in folgenden Szenarien:
 
 - Verwendung der primären Identität in `identityMap`-Namespaces zur Definition der persistenten ID:
-   - Wenn mehrere primäre Identitäten in verschiedenen Namespaces gefunden werden, werden die Identitäten in den Namespaces lexikografisch sortiert, und die erste Identität wird ausgewählt.
-   - Wenn mehrere primäre Identitäten in einem einzigen Namespace gefunden werden, wird die lexikografisch erste primäre Identität ausgewählt, die verfügbar ist.
+  - Wenn mehrere primäre Identitäten in verschiedenen Namespaces gefunden werden, werden die Identitäten in den Namespaces lexikografisch sortiert, und die erste Identität wird ausgewählt.
+  - Wenn mehrere primäre Identitäten in einem einzigen Namespace gefunden werden, wird die lexikografisch erste primäre Identität ausgewählt, die verfügbar ist.
 
   Im folgenden Beispiel führen die Namespaces und Identitäten zu einer sortierten primären Identitätsliste und schließlich zur ausgewählten Identität.
 
@@ -73,7 +72,7 @@ Diagrammbasierte Zuordnung unterstützt die Verwendung der [`identityMap`-Felder
   </table>
 
 - Verwendung eines `identityMap`-Namespace zum Definieren der persistenten ID:
-   - Wenn in einem `identityMap`-Namespace mehrere Werte für „persistentID“ gefunden werden, wird die lexikografisch erste verfügbare Identität verwendet.
+  - Wenn in einem `identityMap`-Namespace mehrere Werte für „persistentID“ gefunden werden, wird die lexikografisch erste verfügbare Identität verwendet.
 
   Im folgenden Beispiel haben Sie „ECID“ als zu verwendenden Namespace ausgewählt. Diese Auswahl führt zu einer sortierten Identitätsliste und schließlich zur ausgewählten Identität.
 
@@ -111,10 +110,10 @@ Beim Zuordnen werden in einem Datensatz mindestens zwei Datendurchläufe durchge
 - **Live-Zuordnung:** Versucht, bei Eingang jeden Treffer (Ereignis) zuzuordnen, indem die persistente ID verwendet wird, um die Personen-ID für den ausgewählten Namespace durch Abfrage des Identitätsdiagramms nachzuschlagen. Wenn die Personen-ID von der Suche aus verfügbar ist, wird diese Personen-ID sofort zugeordnet.
 
 - **Wiederholte Zuordnung:** *Wiederholt* Daten basierend auf aktualisierten Identitäten aus dem Identitätsdiagramm. In diesem Schritt werden Treffer von zuvor unbekannten Geräten (persistente IDs) zugeordnet, da das Identitätsdiagramm die Identität für einen Namespace aufgelöst hat. Zwei Parameter bestimmen die Wiederholung: **Häufigkeit** und **Lookback-Fenster**. Adobe bietet die folgenden Kombinationen dieser Parameter:
-   - **Täglicher Lookback mit täglicher Häufigkeit:** Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Personen müssen sich jedoch am selben Tag authentifizieren, an dem sie Ihre Website besuchen.
-   - **Wöchentlicher Lookback in wöchentlicher Häufigkeit:** Die Daten werden einmal wöchentlich mit einem wöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als eine Woche alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
-   - **Vierzehntägiger Lookback mit wöchentlicher Häufigkeit:** Die Daten werden einmal wöchentlich mit einem zweiwöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als zwei Wochen alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
-   - **Monatlicher Lookback mit wöchentlicher Häufigkeit:** Daten werden wöchentlich mit einem monatlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als einen Monat alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+  - **Täglicher Lookback mit täglicher Häufigkeit:** Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Personen müssen sich jedoch am selben Tag authentifizieren, an dem sie Ihre Website besuchen.
+  - **Wöchentlicher Lookback in wöchentlicher Häufigkeit:** Die Daten werden einmal wöchentlich mit einem wöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als eine Woche alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+  - **Vierzehntägiger Lookback mit wöchentlicher Häufigkeit:** Die Daten werden einmal wöchentlich mit einem zweiwöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als zwei Wochen alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+  - **Monatlicher Lookback mit wöchentlicher Häufigkeit:** Daten werden wöchentlich mit einem monatlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als einen Monat alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
 
 - **Datenschutz:** Wenn datenschutzbezogene Anfragen empfangen werden, muss zusätzlich zum Entfernen der angeforderten Identität aus dem Quelldatensatz jede Zuordnung dieser Identität zu nicht authentifizierten Ereignissen rückgängig gemacht werden. Außerdem muss die Identität aus dem Identitätsdiagramm entfernt werden, um eine zukünftige diagrammbasierte Zuordnung für diese spezifische Identität zu verhindern.
 
@@ -139,13 +138,13 @@ Bei der Live-Zuordnung wird versucht, jedes Ereignis bei der Erfassung den zu di
 
 | | Zeit | Persistente ID<br/>`ECID` | Namespace<br/>`Email` ![Datenzuordnung](/help/assets/icons/DataMapping.svg) | Resultierende ID (nach der Echtzeit-Zuordnung) |
 |--:|---|---|---|---|
-| 1 | 12.05.2023 11:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) *undefiniert* | `246` |
-| 2 | 12.05.2023 14:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 3 | 12.05.2023 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 4 | 12.05.2023 17:00 | `3579` | `3579` ![Verzweigung1](/help/assets/icons/Branch1.svg) *undefiniert* | `3579` |
-| 5 | 12.05.2023 19:00 | `3579` | `3579` ![Verzweigung1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
-| 6 | 13.05.2023 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 7 | 13.05.2023 16:30 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` |
+| 1 | 2023-05-12 11:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) *undefiniert* | `246` |
+| 2 | 2023-05-12 14:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 2023-05-12 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 4 | 2023-05-12 17:00 | `3579` | `3579` ![Verzweigung1](/help/assets/icons/Branch1.svg) *undefiniert* | `3579` |
+| 5 | 2023-05-12 19:00 | `3579` | `3579` ![Verzweigung1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 6 | 2023-05-13 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 7 | 2023-05-13 16:30 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
@@ -160,32 +159,32 @@ In regelmäßigen Abständen (je nach ausgewähltem Lookback-Fenster) berechnet 
 
 +++ Details
 
-Bei einer wiederholten Zuordnung vom 13.05.2023 16:30 mit einer 24-Stunden-Lookback-Fensterkonfiguration werden einige Ereignisse aus dem Beispiel erneut zugeordnet (angegeben durch ![Wiederholung](/help/assets/icons/Replay.svg)).
+Bei einer Wiederholungszuordnung um 16:30 Uhr 2023-05-13 mit einer 24-Stunden-Konfiguration des Lookback-Fensters werden einige Ereignisse aus der Stichprobe erneut zugeordnet (angegeben durch ![Replay](/help/assets/icons/Replay.svg)).
 
 | | Zeit | Persistente ID<br/>`ECID` | Namespace<br/>`Email` ![Datenzuordnung](/help/assets/icons/DataMapping.svg) | Ergebene ID<br/>(nach der Echtzeit-Zuordnung) | Ergebnis ID<br/>(nach 24 Stunden Wiederholung) |
 |---|---|---|---|---|---|
-| 2 | 12.05.2023 14:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 3 | 12.05.2023 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
-| ![Wiederholung](/help/assets/icons/Replay.svg) 4 | 12.05.2023 17:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
-| ![Wiederholung](/help/assets/icons/Replay.svg) 5 | 12.05.2023 19:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![Wiederholung](/help/assets/icons/Replay.svg) 6 | 13.05.2023 15:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Wiederholung](/help/assets/icons/Replay.svg) 7 | 13.05.2023 16:30 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg)`a.b@yahoo.co.uk`<br/>`246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
+| 2 | 2023-05-12 14:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 2023-05-12 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| ![Wiederholung](/help/assets/icons/Replay.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![Wiederholung](/help/assets/icons/Replay.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![Wiederholung](/help/assets/icons/Replay.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Wiederholung](/help/assets/icons/Replay.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg)`a.b@yahoo.co.uk`<br/>`246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
 
-Mit der wiederholten Zuordnung vom 13.05.2023 16:30 werden bei einer 7-tägigen Lookback-Fensterkonfiguration alle Ereignisse aus der Stichprobe erneut zugeordnet.
+Bei der Wiederholungszuordnung um 16:30 Uhr 2023-05-13 mit einer 7-tägigen Lookback-Fensterkonfiguration werden alle Ereignisse aus der Stichprobe erneut zugeordnet.
 
 
 | | Zeit | Persistente ID<br/>`ECID` | Namespace<br/>`Email` ![Datenzuordnung](/help/assets/icons/DataMapping.svg) | Ergebene ID<br/>(nach der Echtzeit-Zuordnung) | Ergebnis ID<br/>(nach Wiederholung 7 Tage) |
 |---|---|---|---|---|---|
-| ![Wiederholung](/help/assets/icons/Replay.svg) 1 | 12.05.2023 11:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) *undefiniert* | `246` | `a.b@yahoo.co.uk` |
-| ![Wiederholung](/help/assets/icons/Replay.svg) 2 | 12.05.2023 14:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Wiederholung](/help/assets/icons/Replay.svg) 3 | 12.05.2023 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Wiederholung](/help/assets/icons/Replay.svg) 4 | 12.05.2023 17:00 | `3579` | `3579` ![Verzweigung1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
-| ![Wiederholung](/help/assets/icons/Replay.svg) 5 | 12.05.2023 19:00 | `3579` | `3579` ![Verzweigung1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![Wiederholung](/help/assets/icons/Replay.svg) 6 | 13.05.2023 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Wiederholung](/help/assets/icons/Replay.svg) 7 | 13.05.2023 16:30 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
+| ![Wiederholung](/help/assets/icons/Replay.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) *undefiniert* | `246` | `a.b@yahoo.co.uk` |
+| ![Wiederholung](/help/assets/icons/Replay.svg) 2 | 2023-05-12 14:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Wiederholung](/help/assets/icons/Replay.svg) 3 | 2023-05-12 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Wiederholung](/help/assets/icons/Replay.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![Verzweigung1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![Wiederholung](/help/assets/icons/Replay.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![Verzweigung1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![Wiederholung](/help/assets/icons/Replay.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Wiederholung](/help/assets/icons/Replay.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
@@ -197,17 +196,17 @@ Wenn Sie eine Datenschutzanfrage erhalten, wird die daraus resultierende ID in a
 
 +++ Details
 
-Die folgende Tabelle enthält dieselben Daten wie oben, zeigt jedoch die Auswirkungen, die eine Datenschutzanfrage (z. B. 2023-05-13 18:00) für die Beispielereignisse hat.
+Die folgende Tabelle enthält dieselben Daten wie oben, zeigt jedoch die Auswirkungen, die eine Datenschutzanfrage (z. B. 2023-05-13 18:00 Uhr) für die Beispielereignisse hat.
 
 | | Zeit | Persistente ID<br/>`ECID` | Namespace<br/>`Email` ![Datenzuordnung](/help/assets/icons/DataMapping.svg) | Ergebnis-ID (nach Datenschutzanfrage) |
 |--:|---|---|---|---|
-| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 1 | 12.05.2023 11:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
-| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 2 | 12.05.2023 14:00 | `246` | `246`![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
-| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 3 | 12.05.2023 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
-| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 4 | 12.05.2023 17:00 | `3579` | `3579` ![Verzweigung1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` |
-| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 5 | 12.05.2023 19:00 | `3579` | `3579` ![Verzweigung1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` |
-| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 6 | 13.05.2023 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
-| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 7 | 13.05.2023 16:30 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `246` |
+| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 2 | 2023-05-12 14:00 | `246` | `246`![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 3 | 2023-05-12 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![Verzweigung1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` |
+| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![Verzweigung1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` |
+| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Verzweigung1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `246` |
 
 {style="table-layout:auto"}
 
@@ -219,12 +218,12 @@ Die folgenden Voraussetzungen gelten speziell für die diagrammbasierte Zuordnun
 
 - Der Ereignisdatensatz in Adobe Experience Platform, auf den Sie eine Zuordnung anwenden möchten, muss eine Spalte aufweisen, die ein Profil in jeder Zeile identifiziert, die **persistente ID**. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde, oder eine vom Experience Platform Identity Service generierte ECID.
 - Das Identitätsdiagramm von Experience Platform Identity Service muss auf Sandbox-Ebene eingerichtet werden, bevor die diagrammbasierte Zuordnung aktiviert werden kann.
-   - Das Identitätsdiagramm muss über einen Namespace verfügen (z. B. `Email` oder `Phone`), den Sie beim Zusammenfügen zum Auflösen der Personen-ID verwenden möchten.
-   - Das Identitätsdiagramm muss mit Identitätsinformationen aus allen relevanten Datensätzen (vom Typ *Ereignis* oder *Profil* gefüllt werden, die mindestens zwei nützliche Namespaces mit ID-Werten enthalten.
-   - Alle Datensätze, die solche relevanten Identitäten enthalten, müssen [für die Aufnahme von Identitätsdiagrammdaten aktiviert](faq.md#enable-a-dataset-for-the-identity-service). Durch diese Aktivierung wird sichergestellt, dass eingehende Identitäten im Laufe der Zeit aus allen erforderlichen Quellen zum Diagramm hinzugefügt werden.
-   - Wenn Sie bereits seit einiger Zeit das Echtzeit-Kundendatenprofil oder Adobe Journey Optimizer verwenden, sollte das Diagramm bis zu einem gewissen Grad bereits eingerichtet sein.<br/>Wenn auch für den Datensatz, der für diagrammbasiertes Stitching aktiviert ist, eine historische Stitching-Aufstockung erforderlich ist, sollte das Diagramm bereits historische Identitäten für den gesamten Zeitraum enthalten, um die gewünschten Stitching-Ergebnisse zu erhalten.
+  - Das Identitätsdiagramm muss über einen Namespace verfügen (z. B. `Email` oder `Phone`), den Sie beim Zusammenfügen zum Auflösen der Personen-ID verwenden möchten.
+  - Das Identitätsdiagramm muss mit Identitätsinformationen aus allen relevanten Datensätzen (vom Typ *Ereignis* oder *Profil* gefüllt werden, die mindestens zwei nützliche Namespaces mit ID-Werten enthalten.
+  - Alle Datensätze, die solche relevanten Identitäten enthalten, müssen [für die Aufnahme von Identitätsdiagrammdaten aktiviert](faq.md#enable-a-dataset-for-the-identity-service). Durch diese Aktivierung wird sichergestellt, dass eingehende Identitäten im Laufe der Zeit aus allen erforderlichen Quellen zum Diagramm hinzugefügt werden.
+  - Wenn Sie bereits seit einiger Zeit das Echtzeit-Kundendatenprofil oder Adobe Journey Optimizer verwenden, sollte das Diagramm bis zu einem gewissen Grad bereits eingerichtet sein.<br/>Wenn auch für den Datensatz, der für diagrammbasiertes Stitching aktiviert ist, eine historische Stitching-Aufstockung erforderlich ist, sollte das Diagramm bereits historische Identitäten für den gesamten Zeitraum enthalten, um die gewünschten Stitching-Ergebnisse zu erhalten.
 - Wenn Sie die diagrammbasierte Zuordnung verwenden möchten und davon ausgehen, dass der Ereignis-Datensatz zum Identitätsdiagramm beitragen wird, sollten Sie [den Datensatz für den Identity Service aktivieren](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
-- Die persistente ID und Personen-ID können mit &quot;[&quot; verwendet &#x200B;](#identitymap). Oder die persistente ID und Personen-ID können Felder aus dem XDM-Schema sein. In diesem Fall müssen die Felder [als Identität definiert) &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/ui/fields/identity?lang=en) Schema sein.
+- Die persistente ID und Personen-ID können mit &quot;[&quot; verwendet ](#identitymap). Oder die persistente ID und Personen-ID können Felder aus dem XDM-Schema sein. In diesem Fall müssen die Felder [als Identität definiert) ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) Schema sein.
 
 >[!NOTE]
 >
@@ -239,7 +238,7 @@ Die folgenden Einschränkungen gelten speziell für die diagrammbasierte Zuordnu
 - In Szenarien mit gemeinsam genutzten Geräten, in denen der Namespace im Diagramm mehrere Identitäten enthält, wird die lexikografisch erste Identität verwendet. Wenn Namespace-Beschränkungen und -Prioritäten im Rahmen der Veröffentlichung von Diagrammverknüpfungsregeln konfiguriert werden, wird die Identität der letzten authentifizierten Person verwendet. Weitere Informationen finden Sie unter [Gemeinsam verwendete Geräte](/help/use-cases/stitching/shared-devices.md).
 - Es gibt eine feste Grenze von drei Monaten, bis Identitäten im Identitätsdiagramm aufgestockt werden. Falls Sie keine Experience Platform-Anwendung wie Real-time Customer Data Platform zum Ausfüllen des Identitätsdiagramms verwenden, müssen Sie Identitäten zum Aufstocken verwenden.
 - Es gelten die [Leitlinien für den Identity Service](https://experienceleague.adobe.com/de/docs/experience-platform/identity/guardrails). Sehen Sie sich beispielsweise die folgenden [statischen Beschränkungen](https://experienceleague.adobe.com/de/docs/experience-platform/identity/guardrails#static-limits) an:
-   - Maximale Anzahl von Identitäten in einem Diagramm: 50.
-   - Maximale Anzahl von Links zu einer Identität für eine einzelne Batch-Aufnahme: 50.
-   - Maximale Anzahl von Identitäten in einem XDM-Eintrag für die Diagrammaufnahme: 20.
-   - Mindestanzahl von Identitäten in einem XDM-Eintrag für die Diagrammaufnahme: 2.
+  - Maximale Anzahl von Identitäten in einem Diagramm: 50.
+  - Maximale Anzahl von Links zu einer Identität für eine einzelne Batch-Aufnahme: 50.
+  - Maximale Anzahl von Identitäten in einem XDM-Eintrag für die Diagrammaufnahme: 20.
+  - Mindestanzahl von Identitäten in einem XDM-Eintrag für die Diagrammaufnahme: 2.
