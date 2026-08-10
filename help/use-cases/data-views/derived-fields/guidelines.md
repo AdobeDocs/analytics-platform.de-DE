@@ -44,11 +44,11 @@ Dieser Artikel enthält Richtlinien (Best Practices, Leitplanken und allgemeine 
 
 * **Leistung optimieren** Identifizieren Sie Muster, die die Ausführung von Abfragen verlangsamen oder Systembeschränkungen erreichen, um das richtige Tool für den Auftrag auszuwählen:
 
-   * [Abgeleitete Felder](/help/data-views/derived-fields/derived-fields.md)
-   * [Einstellungen für die Datenansicht](/help/data-views/component-settings/overview.md)
-   * [Datenvorbereitung](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/home)
-   * [Berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md)
-   * [Datensätze nachschlagen](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+  * [Abgeleitete Felder](/help/data-views/derived-fields/derived-fields.md)
+  * [Einstellungen für die Datenansicht](/help/data-views/component-settings/overview.md)
+  * [Datenvorbereitung](https://experienceleague.adobe.com/de/docs/experience-platform/data-prep/home)
+  * [Berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md)
+  * [Datensätze nachschlagen](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
 
 * **Verbesserung der**: Erstellen Sie eine abgeleitete Feldlogik, die klar, modular und einfach zu aktualisieren ist.
 * **Korrektheit sicherstellen**: Vermeiden Sie gängige logische Fehler bei der Klassifizierung, Attribution und Datenumwandlung.
@@ -105,8 +105,8 @@ Customer Journey Analytics erzwingt explizite [Funktions- und Operatorbeschränk
 **Muster**
 
 * Sehr große [Wenn](/help/data-views/derived-fields/derived-fields.md#case-when)-Funktionen mit komplexen **[!UICONTROL If]**- und **[!UICONTROL Else If]**-Ketten:
-   * Viele Bedingungen (z. B.: mehr als 20 Operatoren) oder tiefe Verschachtelung (mehr als 3 oder 4 Ebenen verschachtelter Logik [Case](/help/data-views/derived-fields/derived-fields.md#case-when) **[!UICONTROL If]** und **[!UICONTROL Else If]**).
-   * Wiederholte Bedingungen im selben Feld mit unterschiedlichen Werten.
+  * Viele Bedingungen (z. B.: mehr als 20 Operatoren) oder tiefe Verschachtelung (mehr als 3 oder 4 Ebenen verschachtelter Logik [Case](/help/data-views/derived-fields/derived-fields.md#case-when) **[!UICONTROL If]** und **[!UICONTROL Else If]**).
+  * Wiederholte Bedingungen im selben Feld mit unterschiedlichen Werten.
 * Wiederholte Zeichenfolgen-Übereinstimmung mit Konstanten.
 
   +++ Beispiel
@@ -138,26 +138,26 @@ In diesem Abschnitt wird die falsche Verwendung abgeleiteter Felder erläutert. 
 **Muster**
 
 * Ein abgeleitetes Feld repliziert ein Verhalten, das bereits in den Komponenteneinstellungen verfügbar ist:
-   * Groß-/Kleinschreibung, Zuschneiden oder einfaches Filtern (z. B. ohne `unknown`, `undefined` oder `null`) ohne zusätzliche Komplexität.
-   * Einfache Bucketing für Zahlenbereiche.
+  * Groß-/Kleinschreibung, Zuschneiden oder einfaches Filtern (z. B. ohne `unknown`, `undefined` oder `null`) ohne zusätzliche Komplexität.
+  * Einfache Bucketing für Zahlenbereiche.
 
-     +++ Beispiel
+    +++ Beispiel
 
-     ![Falsche Verwendung von einfachen Bucketing](assets/best-practices-wrong-usage.png)
+    ![Falsche Verwendung von einfachen Bucketing](assets/best-practices-wrong-usage.png)
 
-     +++
+    +++
 
-     Verwenden Sie stattdessen [Wert-Bucketing](/help/data-views/component-settings/value-bucketing.md) für eine Dimension in Ihrer Datenansicht.
-   * Persistenz- oder Attributionslogik, codiert mit [Nächste oder Vorherige](/help/data-views/derived-fields/derived-fields.md#next-or-previous) oder manueller Sequenzlogik, bei der die Einstellungen [&#x200B; Datenansicht (Attribution](/help/data-views/component-settings/attribution.md) und [Gültigkeit](/help/data-views/component-settings/persistence.md) ausreichen würden.
-   * Eine abgeleitete Metrik, die einfach eine vorhandene Metrik unter einer Bedingung zählt.
+    Verwenden Sie stattdessen [Wert-Bucketing](/help/data-views/component-settings/value-bucketing.md) für eine Dimension in Ihrer Datenansicht.
+  * Persistenz- oder Attributionslogik, codiert mit [Nächste oder Vorherige](/help/data-views/derived-fields/derived-fields.md#next-or-previous) oder manueller Sequenzlogik, bei der die Einstellungen [&#x200B; Datenansicht (Attribution](/help/data-views/component-settings/attribution.md) und [Gültigkeit](/help/data-views/component-settings/persistence.md) ausreichen würden.
+  * Eine abgeleitete Metrik, die einfach eine vorhandene Metrik unter einer Bedingung zählt.
 
-     +++ Beispiel
+    +++ Beispiel
 
-     ![Falsche Verwendung der bedingten Logik](assets/best-practices-wrong-usage-2.png)
+    ![Falsche Verwendung der bedingten Logik](assets/best-practices-wrong-usage-2.png)
 
-     +++
+    +++
 
-     Dieser Ansatz repliziert, was eine gefilterte Metrik oder [Werte einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) erreichen könnte.
+    Dieser Ansatz repliziert, was eine gefilterte Metrik oder [Werte einschließen/ausschließen](/help/data-views/component-settings/include-exclude-values.md) erreichen könnte.
 
 **Risikodiagnose: Datenqualität, hohe Wartung**
 
@@ -172,8 +172,8 @@ In diesem Abschnitt wird die falsche Verwendung abgeleiteter Felder erläutert. 
 * Attribution und Persistenz: Verwenden Sie die Einstellungen [&#x200B; Datenansicht &#x200B;](/help/data-views/component-settings/persistence.md)Persistenz **[!UICONTROL (Zuordnungsmodell]** und **[!UICONTROL Gültigkeit]**) für Dimensionen, anstatt sie in einem abgeleiteten Feld mit [Weiter oder Zurück](/help/data-views/derived-fields/derived-fields.md#next-or-previous) oder einer anderen sequenziellen Logik zu simulieren.
 * Numerische Bucketing: Das abgeleitete Feld bleibt numerisch und die Datenansicht kann oben eine Dimension mit Buckets erstellen statt Bereichsbeschriftungen in einer Wenn-Kette mit &quot;[&quot; &#x200B;](/help/data-views/derived-fields/derived-fields.md#case-when).
 * Bedingte Logik: Konvertiert eine einfache 0- oder 1-Flag-Logik in:
-   * Die ursprüngliche Metrik mit der Filterlogik Werte einschließen oder ausschließen , wie sie in Analysis Workspace angewendet wird.
-   * Eine gefilterte Metrik mithilfe der Konfiguration der Komponenteneinstellungen für die Datenansicht.
+  * Die ursprüngliche Metrik mit der Filterlogik Werte einschließen oder ausschließen , wie sie in Analysis Workspace angewendet wird.
+  * Eine gefilterte Metrik mithilfe der Konfiguration der Komponenteneinstellungen für die Datenansicht.
 
 ## Fehlklassifizierungen von Metriken und Dimensionen
 
@@ -182,8 +182,8 @@ In diesem Abschnitt wird die falsche Klassifizierung von Metriken und Dimensione
 **Muster**
 
 * Ein abgeleitetes Feld erzeugt eindeutig:
-   * Numerische Ausgaben (Anzahl, Verhältnis oder Arithmetik), aber die Komponente ist als Dimension konfiguriert.
-   * Kategoriale Ausgaben (Bezeichnungen oder Zeichenfolgen), die Komponente ist jedoch als Metrik konfiguriert.
+  * Numerische Ausgaben (Anzahl, Verhältnis oder Arithmetik), aber die Komponente ist als Dimension konfiguriert.
+  * Kategoriale Ausgaben (Bezeichnungen oder Zeichenfolgen), die Komponente ist jedoch als Metrik konfiguriert.
 * Ein abgeleitetes Feld kodiert 0/1-Flags als Zeichenfolgen.
 
 Customer Journey Analytics ermöglicht es, numerische Felder auf Datenansichtsebene zu Dimensionen und Zeichenfolgenfeldern zu Metriken zu zwingen. Eine falsche Ausrichtung kann jedoch zu verwirrenden Berichten führen.
@@ -195,10 +195,10 @@ Customer Journey Analytics ermöglicht es, numerische Felder auf Datenansichtseb
 **Recommendations**
 
 * Wenn die Ausgabe numerisch ist:
-   * Legen Sie in der Datenansicht **[!UICONTROL Komponententyp]** Metrik) fest.
-   * Wenn die Komponente eine Teilmengenmetrik darstellt (z. B. **[!UICONTROL Checkout-Seitenansichten]**), verwenden Sie in der Datenansicht eine gefilterte Metrik anstelle einer abgeleiteten Zeichenfolge plus einer berechneten Metrik.
+  * Legen Sie in der Datenansicht **[!UICONTROL Komponententyp]** Metrik) fest.
+  * Wenn die Komponente eine Teilmengenmetrik darstellt (z. B. **[!UICONTROL Checkout-Seitenansichten]**), verwenden Sie in der Datenansicht eine gefilterte Metrik anstelle einer abgeleiteten Zeichenfolge plus einer berechneten Metrik.
 * Wenn die Ausgabe eine Beschriftung ist:
-   * Legen Sie den Komponententyp auf **[!UICONTROL Dimension]** fest und konfigurieren Sie [Persistenz](/help/data-views/component-settings/persistence.md)-Einstellungen (**[!UICONTROL Zuordnungsmodell]** und **[!UICONTROL Gültigkeit]**) entsprechend.
+  * Legen Sie den Komponententyp auf **[!UICONTROL Dimension]** fest und konfigurieren Sie [Persistenz](/help/data-views/component-settings/persistence.md)-Einstellungen (**[!UICONTROL Zuordnungsmodell]** und **[!UICONTROL Gültigkeit]**) entsprechend.
 
 ## Fallstricke bei der Marketing-Kanal- und Kampagnenlogik
 
@@ -212,9 +212,9 @@ In diesem Abschnitt werden Fallstricke bei der Marketing-Kanal- und Kampagnenlog
 
 * Customer Journey Analytics-Marketing-Kanäle werden oft mithilfe abgeleiteter Felder implementiert.
 
-   * Abgeleitete Felder, die Marketing-Kanal- oder Kampagnen-Bucketing basierend auf URL-Parametern, Referrer, Landingpage und mehr implementieren.
-   * Verdächtige Reihenfolge: Es wird eine allgemeine Sammelregel angezeigt, bevor spezifischere Regeln angewendet werden.
-   * Unvollständige Handhabung aller möglichen Optionen: Keine explizite Verzweigung für **[!UICONTROL Verweisende Domain ist nicht]** oder **[!UICONTROL Abfrageparameter ist nicht festgelegt]**.
+  * Abgeleitete Felder, die Marketing-Kanal- oder Kampagnen-Bucketing basierend auf URL-Parametern, Referrer, Landingpage und mehr implementieren.
+  * Verdächtige Reihenfolge: Es wird eine allgemeine Sammelregel angezeigt, bevor spezifischere Regeln angewendet werden.
+  * Unvollständige Handhabung aller möglichen Optionen: Keine explizite Verzweigung für **[!UICONTROL Verweisende Domain ist nicht]** oder **[!UICONTROL Abfrageparameter ist nicht festgelegt]**.
 
 **Risikodiagnose: Datenqualität**
 
@@ -301,8 +301,8 @@ In diesem Abschnitt wird die Verwendung der Logik eines berechneten Stils in ein
 **Risikodiagnose: Datenqualität**
 
 * Governance- und Design-Frage: Die Arithmetik kann besser platziert werden als:
-   * Eine abgeleitete Feldmetrik (wenn Sie möchten, dass das abgeleitete Feld für alle Benutzer als gesteuerte Standardmetrik dient).
-   * Eine berechnete Metrik in Analysis Workspace (wenn die berechnete Metrik analysespezifisch ist).
+  * Eine abgeleitete Feldmetrik (wenn Sie möchten, dass das abgeleitete Feld für alle Benutzer als gesteuerte Standardmetrik dient).
+  * Eine berechnete Metrik in Analysis Workspace (wenn die berechnete Metrik analysespezifisch ist).
 
 **Recommendations**
 
@@ -340,8 +340,8 @@ In diesem Abschnitt wird beschrieben, wie Kontext auf Sitzungs- und Personeneben
 
 * Ein abgeleitetes Feld setzt implizit eine bestimmte [Container-Ebene](/help/getting-started/cja-b2b-concepts-features.md#containers) voraus (Ereignis, Sitzung oder Person), aber:
 
-   * Das abgeleitete Feld verweist nicht auf Attribute auf Sitzungs- oder Personenebene.
-   * Die Sitzungseinstellungen der Datenansicht stehen im Konflikt mit der beabsichtigten Logik.
+  * Das abgeleitete Feld verweist nicht auf Attribute auf Sitzungs- oder Personenebene.
+  * Die Sitzungseinstellungen der Datenansicht stehen im Konflikt mit der beabsichtigten Logik.
 
 **Risikodiagnose: Datenqualität**
 
