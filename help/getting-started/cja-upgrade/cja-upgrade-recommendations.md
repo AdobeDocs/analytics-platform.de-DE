@@ -170,7 +170,7 @@ Jeder Schritt bietet eine allgemeine Erklärung eines detaillierteren Prozesses.
 
    Verwenden Sie [die Funktionsvorlage Marketing-Kanäle](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"} in abgeleiteten Feldern, um schnell ein abgeleitetes Feld für Marketing-Kanäle zu erstellen.
 
-1. [Vergleichen Sie Daten in Adobe Analytics aus Ihrer alten Implementierung mit Daten aus Ihrer neuen Implementierung in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/data-insights/data-validation-aa-cja) und stellen Sie sicher, dass Sie die Unterschiede und ihre Gründe verstehen.
+1. [Vergleichen Sie Daten in Adobe Analytics aus Ihrer alten Implementierung mit Daten aus Ihrer neuen Implementierung in Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/data-insights/data-validation-aa-cja) und stellen Sie sicher, dass Sie die Unterschiede und ihre Gründe verstehen.
 
 1. Übertragen von historischen Daten aus Adobe Analytics mithilfe des Analytics-Quell-Connectors:
 
