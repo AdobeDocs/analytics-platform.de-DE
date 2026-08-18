@@ -20,9 +20,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 6e2c1271de0e1ea82820c108eec08ec815d776f3
+source-git-commit: a4ff89823bf1e4e4aa6d299b74567ed8cb486d06
 workflow-type: tm+mt
-source-wordcount: 1921
+source-wordcount: 1924
 ht-degree: 13%
 
 ---
@@ -51,7 +51,7 @@ Um zu veranschaulichen, wie die B2B-Kontozuordnung funktioniert, wird der unten 
 In Customer Journey Analytics B2B edition werden Ereignisse ohne Konto-ID in diesem nicht zugeordneten Beispielereignisdatensatz ignoriert und nicht aufgenommen (![DeleteOutline](/help/assets/icons/DeleteOutline.svg)).
 
 | Aktion | Zeitstempel | Dauerhafte ID | Konto-ID | Personen-ID | Ereignistyp |
-|:---:|--|--|---|---|---|
+|:---:|--:|--|---|---|---|
 | ![DataAdd](/help/assets/icons/DataAdd.svg) | 1/3/25 | 1234 | Adobe | matt@adobe.com | Page view |
 | ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  | | |
 | ![DataAdd](/help/assets/icons/DataAdd.svg) | 3/4/25 | 9012 | Allgegenwart | cory@sky.com |  |
@@ -212,7 +212,7 @@ Sie aktivieren und konfigurieren zunächst die B2B-Kontozuordnung auf Verbindung
       | **[!UICONTROL Person-Konto-Datensatz]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie die Suche (Datensatz oder Datensatz ohne Zeitreihe) aus, die Personen Konten zuordnet. |
       | **[!UICONTROL Personen-ID]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das die Personen-ID enthält. Dieses Feld muss als Identität markiert werden und darf nicht mit dem Feld **[!UICONTROL Konto-ID]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein. |
       | **[!UICONTROL Konto-ID]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das die Konto-ID enthält. Dieses Feld darf nicht mit dem Feld **[!UICONTROL Personen-ID]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein. |
-      | **Erstellungszeit der Zuordnung** | | Wählen Sie optional das Feld aus, das das Datum und die Uhrzeit darstellt, zu der die Zuordnung von Person zu Konto erstellt wurde. Nützlich für Szenarien, in denen eine Person im Laufe der Zeit mehrere Konten wechselt.<br/><br/>**Beispiel** (wenn **update_date**-Feld ausgewählt ist):<table><thead><tr><th>update_date</th><th>Person</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>Für alle Ereignisse mit einem Zeitstempel im Feld **[!UICONTROL update_date]** vor dem 1. Mai 2026 wird a@b.com Apple zugeordnet.</li><li>Für alle Ereignisse mit einem Zeitstempel im Feld **[!UICONTROL update_date]** ab dem 1. Mai 2026 wird a@b.com Adobe zugeordnet.</li></ul>Wenn keine Zuordnungszeit angegeben ist, wird das lexikografische erste Konto für die Zuordnung zu verwendet. Derselbe Algorithmus wird auch verwendet, wenn zwei verschiedene Kontonamen exakt denselben **[!UICONTROL update_date]**-Wert haben und eine Erstellungszeit für die Zuordnung angegeben ist. |
+      | **Erstellungszeit der Zuordnung** | | Wählen Sie optional das Feld aus, das das Datum und die Uhrzeit darstellt, zu der die Zuordnung von Person zu Konto erstellt wurde. Nützlich für Szenarien, in denen eine Person im Laufe der Zeit mehrere Konten wechselt.<br/><br/>**Beispiel** (wenn **update_date**-Feld ausgewählt ist):<table><thead><tr><th>update_date</th><th>Person</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>Für alle Ereignisse mit einem Zeitstempel im Feld **[!UICONTROL update_date]** vor dem 1. Mai 2026 wird a@b.com Apple zugeordnet.</li><li>Für alle Ereignisse mit einem Zeitstempel im Feld **[!UICONTROL update_date]** ab dem 1. Mai 2026 wird a@b.com Adobe zugeordnet.</li></ul>Wenn keine Zuordnungszeit angegeben wird, wird das lexikografische erste Konto verwendet. Derselbe Algorithmus wird auch verwendet, wenn zwei verschiedene Kontonamen exakt denselben **[!UICONTROL update_date]**-Wert haben und eine Erstellungszeit für die Zuordnung angegeben ist. |
 
       >[!NOTE]
       >
@@ -278,7 +278,7 @@ Die Kontozuordnung leitet die Identitätszuordnung täglich von Ihrem [Person-Ko
 | Wiederholung | Häufigkeit | Datenfenster |
 |---|---|---|
 | Kurzfristig | Wöchentlich | Letzte 7 Tage |
-| Langfristig | Monatlich | Letzte 3 Monate |
+| Langfristig | Monatlich | Letzte 3 Monate (Prime-Paket)<br/>Letzte 6 Monate (Ultimate-Paket) |
 
 ## Datenschutz und Datenhygiene
 
