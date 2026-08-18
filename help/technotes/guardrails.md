@@ -26,9 +26,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: e686fca2c77a8f9739298ece01ccf0fa2fe87b3b
+source-git-commit: d2016e34b4b73c6eebb05097aa43f823c578c2b6
 workflow-type: tm+mt
-source-wordcount: 2441
+source-wordcount: 2440
 ht-degree: 12%
 
 ---
@@ -109,7 +109,7 @@ Einige der Funktionen und ihr zugehöriger Wert für das Limit hängen vom Custo
 | Häufigkeit der Zielgruppenaktualisierung | 4 | Vom System erzwungene Leitplanken | Die maximale Häufigkeit in Stunden, in [&#x200B; eine &#x200B;](../components/audiences/audiences-overview.md) aktualisiert werden kann. |
 | Lookback-Fenster zur Zielgruppenaktualisierung | 90 | Vom System erzwungene Leitplanken | Maximale Anzahl von Tagen für das Aktualisierungs-Lookback-Fenster |
 | Ablaufdatum der Zielgruppe aktualisieren | 13 | Vom System erzwungene Leitplanken | Die maximale Anzahl von Monaten, die die Zielgruppe ab dem Erstellungsdatum nicht mehr aktualisiert wird. Kunden können dies um weitere 13 Monate verlängern. |
-| Anzahl der aktualisierten Zielgruppen | 75, 150 | Vom System erzwungene Leitplanken | Maximale Anzahl an Zielgruppen, die aktualisiert werden. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
+| Anzahl der aktualisierten Zielgruppen | 75 - 150 | Vom System erzwungene Leitplanken | Maximale Anzahl [Zielgruppen, die für die Aktualisierung konfiguriert sind](/help/components/audiences/publish.md#audience-builder) in geplanten Abständen (einmalige Aktualisierungen werden für dieses Limit nicht angerechnet). Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
 
@@ -301,7 +301,7 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 | Stitching (optionale Funktion; weitere Informationen [Stitching-Übersicht](../stitching/overview.md)) | &lt; 4 Stunden |
 | Adobe Analytics Source Connector-Aufstockung von weniger als 10 Milliarden Ereignissen (maximal 13 Monate historischer Daten) | &lt; 4 Wochen |
 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | ≈ 60 Minuten |
-| Aktualisierungshäufigkeit für Zielgruppen | Einmalige Aktualisierung: Latenz von weniger als 5 Minuten.<br/>Aktualisierung alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht). |
+| Aktualisierungshäufigkeit für Zielgruppen | Alle 4 Stunden, täglich, wöchentlich, monatlich aktualisieren. |
 
 | Echtzeit-Berichterstellungslatenzen | Erwartete Latenz |
 |---|---|

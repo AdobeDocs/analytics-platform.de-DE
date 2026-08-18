@@ -21,10 +21,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+source-git-commit: d2016e34b4b73c6eebb05097aa43f823c578c2b6
 workflow-type: tm+mt
-source-wordcount: 2478
-ht-degree: 98%
+source-wordcount: 2520
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="Häufigkeit der Aktualisierung"
->abstract="Ermitteln Sie, wie oft die Zugehörigkeit zu einer Zielgruppe neu ausgewertet wird.<br/>Einmalige Zielgruppen werden nur einmal ausgewertet."
+>abstract="Die Häufigkeit, mit der die Zugehörigkeit zu einer Zielgruppe neu bewertet wird.<br/>Einmalige Zielgruppen werden nur einmal ausgewertet und werden nicht auf das Aktualisierungslimit angerechnet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -43,8 +43,8 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="components_audiences_audiencelimit"
->title="Zielgruppen-Limit"
->abstract="Die Aktualisierung von Zielgruppen ist abhängig davon, wie oft sie aktualisiert werden, begrenzt."
+>title="Zielgruppenlimit aktualisieren"
+>abstract="Die Anzahl der Zielgruppen in Ihrer Umgebung, die so konfiguriert sind, dass sie automatisch mit geplanter Häufigkeit aktualisiert werden. Die Beschränkungen liegen je nach Customer Journey Analytics-Berechtigung zwischen 75 und 150. Einmalige Aktualisierungen werden nicht auf dieses Limit angerechnet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -117,7 +117,7 @@ Konfigurieren Sie diese Einstellungen, um Ihre Zielgruppe zu definieren oder zu 
 | **[!UICONTROL Name]** | Der Name der Zielgruppe. Beispiel: `Really Interested in Potential Car Buyers` |
 | **[!UICONTROL Tags]** | Alle Tags, die der Zielgruppe aus organisatorischen Gründen zugewiesen werden sollen. Sie können ein oder mehrere bereits vorhandene Tags auswählen oder ein neues eingeben. |
 | **[!UICONTROL Beschreibung]** | Eine Beschreibung der Zielgruppe, um sie von anderen leicht unterscheiden zu können. Beispiel: `Build an audience of really interested potential car buyers` |
-| **[!UICONTROL Häufigkeit der Aktualisierung]** | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<p/>Sie haben die Wahl zwischen: <ul><li>**[!UICONTROL Einmalige]** Zielgruppe: Eine Zielgruppe (Standard), die nicht aktualisiert werden muss. Diese Option könnte beispielsweise bei bestimmten einmaligen Kampagnen nützlich sein.<br/>Sie müssen einen **[!UICONTROL einmaligen Datumsbereich]** angeben. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um einen Datumsbereich einzugeben.</li><li>Sich aktualisierende Zielgruppe: Sie können aus den folgenden Optionen auswählen:<ul><li>**[!UICONTROL Alle 4 Stunden]**: Eine Zielgruppe, die alle 4 Stunden aktualisiert wird.</li><li>**[!UICONTROL Täglich]**: Eine Zielgruppe, die täglich aktualisiert wird</li><li>**[!UICONTROL Wöchentlich]**: Eine Zielgruppe, die wöchentlich aktualisiert wird.</li><li>**[!UICONTROL Monatlich]**: Eine Zielgruppe, die monatlich aktualisiert wird</li></ul></li>Für sich aktualisierende Zielgruppen müssen Sie Folgendes angeben:<ul><li>**[!UICONTROL Lookback-Fenster aktualisieren]**: Definieren Sie die Anzahl der Lookback-Tage ab heute, in denen eine Zielgruppe ausgewertet wird. Sie können aus Optionen auswählen oder eine benutzerdefinierte Zeit definieren. Die Höchstdauer beträgt 90 Tage.</li><li>**[!UICONTROL Ablaufdatum]**: Legen Sie fest, wann die Zielgruppe nicht mehr aktualisiert wird. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um ein Datum auszuwählen. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Ablaufende Zielgruppen werden ähnlich wie ablaufende terminierte Berichte behandelt. Die oder der Admin erhält einen Monat vor Ablauf der Zielgruppe eine E-Mail.</li></ul> Beachten Sie, dass es je nach Ihrer Customer Journey Analytics-Berechtigung ein Limit von 75 bis 150 Zielgruppen-Aktualisierungen gibt.</li></ul> |
+| **[!UICONTROL Häufigkeit der Aktualisierung]** | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<p/><p>Abhängig von Ihrer Customer Journey Analytics-Berechtigung können Sie eine geplante Aktualisierung für eine begrenzte Anzahl von Zielgruppen (zwischen 75 und 150) konfigurieren. </p><p>Sie können aus den folgenden Optionen wählen:</p><ul><li>**[!UICONTROL Einmalige]** Zielgruppe: Eine Zielgruppe (Standard), die nicht aktualisiert werden muss. Diese Option könnte beispielsweise bei bestimmten einmaligen Kampagnen nützlich sein.<br/>Sie müssen einen **[!UICONTROL einmaligen Datumsbereich]** angeben. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um einen Datumsbereich einzugeben.</li><li>Sich aktualisierende Zielgruppe: Sie können aus den folgenden Optionen für die geplante Aktualisierung auswählen:<ul><li>**[!UICONTROL Alle 4 Stunden]**: Eine Zielgruppe, die alle 4 Stunden aktualisiert wird.</li><li>**[!UICONTROL Täglich]**: Eine Zielgruppe, die täglich aktualisiert wird</li><li>**[!UICONTROL Wöchentlich]**: Eine Zielgruppe, die wöchentlich aktualisiert wird.</li><li>**[!UICONTROL Monatlich]**: Eine Zielgruppe, die monatlich aktualisiert wird</li></ul></li>Für sich aktualisierende Zielgruppen müssen Sie Folgendes angeben:<ul><li>**[!UICONTROL Lookback-Fenster aktualisieren]**: Definieren Sie die Anzahl der Lookback-Tage ab heute, in denen eine Zielgruppe ausgewertet wird. Sie können aus Optionen auswählen oder eine benutzerdefinierte Zeit definieren. Die Höchstdauer beträgt 90 Tage.</li><li>**[!UICONTROL Ablaufdatum]**: Legen Sie fest, wann die Zielgruppe nicht mehr aktualisiert wird. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um ein Datum auszuwählen. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Ablaufende Zielgruppen werden ähnlich wie ablaufende terminierte Berichte behandelt. Die oder der Admin erhält einen Monat vor Ablauf der Zielgruppe eine E-Mail.</li></ul></ul> |
 | **[!UICONTROL Filter]** | Filter sind die Hauptauswahloptionen für die Zielgruppe. Ziehen Sie ein oder mehrere Segmente aus dem linken Panel ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** in den Segmentbereich. Sie können mit ![Suchen](/help/assets/icons/Search.svg) [!UICONTROL *Segmente suchen*] nach Segmenten suchen. Sie können bis zu 20 Segmente hinzufügen. Segmente können mit den Operatoren **[!UICONTROL Und]** oder **[!UICONTROL Oder]** verbunden werden.<p>Beim Erstellen einer Zielgruppe aus einer Visualisierung in Analysis Workspace (z. B. einer Freiformtabelle oder Journey-Arbeitsfläche) werden alle auf das Panel oder die Spalte angewendeten Segmente beibehalten. Sie können alle automatisch angewendeten Segmente entfernen.</p> |
 | **[!UICONTROL Datenvorschau]** | Wählen Sie ![Info](/help/assets/icons/Info.svg) aus, um die [Datenvorschau](#data-preview) für den ausgewählten Datumsbereich ein- oder auszublenden. |
 

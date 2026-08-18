@@ -27,9 +27,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: f4e142a3eb5294cedd6d9e6666845dadcfcc415d
+source-git-commit: 89f0a1e54662c59d474b1fba28eb8420612e9243
 workflow-type: tm+mt
-source-wordcount: 21144
+source-wordcount: 21140
 ht-degree: 98%
 
 ---
@@ -263,7 +263,7 @@ So greifen Sie auf alle verfügbaren vorkonfigurierten Vorlagen zu:
 
 Die folgenden Vorlagen sind verfügbar:
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Anleitungsvideo**] | Erfahren Sie mehr über die gängige Terminologie und die Schritte zum Erstellen Ihrer ersten Analyse in Analysis Workspace |
 | [!UICONTROL **Seiten**] | <!--duplicated in Engagement section--> Identifizieren Sie die beliebtesten und unbeliebtesten Seiten. <p>**Dies kann Ihnen helfen**, Ihre Zielgruppe und die Art von Informationen, die sie am meisten interessiert, besser zu verstehen.</p><p>**Basierend auf dem, was Sie erfahren, können Sie** eine Reihe von Schritten ausführen, z. B. Seitenmetadaten anpassen, um die Sichtbarkeit auf seltener angezeigten Seiten zu erhöhen, oder Zeit in die Verbesserung des Inhalts Ihrer am häufigsten angezeigten Seiten investieren.</p><p>Diese Vorlage verwendet die Dimension „Seite“ und die Metrik „Seitenansichten“.</p> |
@@ -411,7 +411,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 Die folgenden Vorlagen sind verfügbar:
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Schlüsselmetriken**] | <!--duplicated in Most popular section--> Zeigen Sie einen Bericht an, der die Metriken „Seitenansichten“, „Besuche“ und „Unique Visitors“ nebeneinander anzeigt. Die Daten werden für einen bestimmten Zeitraum angezeigt und mit früheren Zeiträumen verglichen. <p>**Dies kann Ihnen helfen**, diese wichtigen Metriken zu vergleichen, um ein vollständigeres Bild über die Anzahl der Unique Visitors auf der Site, die Anzahl der Seitenbesuche und die Anzahl der Sitzungen zu erhalten.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die durchschnittliche Anzahl der Seiten bewerten, die jede Person während eines Besuchs auf der Site in einer bestimmten Woche oder in einem bestimmten Monat angesehen hat, und ermitteln, wie sich dies während bestimmter Zeiten des Jahres oder vor/nach der Durchführung von Marketing-Kampagnen verändert hat. </p><p>Diese Vorlage verwendet die Dimension „Tag“, die Metrik „Seitenansichten“, die Metrik „Besuche“ und die Metrik „Unique Visitors“.</p> |
 | [!UICONTROL **Seitenansichten**] | <!--duplicated in Most popular section-->Zeigen Sie die Gesamtanzahl der Seitenansichten an. Die Daten werden für einen bestimmten Zeitraum angezeigt und mit früheren Zeiträumen verglichen. <p>**Dies kann Ihnen helfen**, besser zu verstehen, wie der Traffic auf Ihrer Site im Laufe der Zeit möglicherweise zu- oder abnimmt.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Effektivität einer kürzlich gestarteten Marketing-Kampagne bewerten, indem Sie den Sitetraffic vor und nach dem Start der Kampagne vergleichen. Oder Sie vergleichen den jährlichen Feiertags-Traffic.</p><p>Diese Vorlage verwendet die Dimension „Tag“ und die Metrik „Seitenansichten“.</p> |
@@ -489,7 +489,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 Die folgenden Vorlagen sind verfügbar:
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Produktkonversionstrichter**] | Zeigen Sie die Produktkonversion in einer Trichtervisualisierung mit Warenkörben, Checkouts und Bestellungen an. Sie können auch Konversionsprozentsätze sowie Durchschnittswerte von Umsätzen, Einheiten und Bestellungen anzeigen.<p>**Dies kann Ihnen helfen**, besser zu verstehen, wie Personen den Konversionsvorgang durchlaufen und daraus aussteigen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Ihre Website verbessern und so reibungslosere Checkouts ermöglichen.</p> |
 | **Produkte** | Zeigen Sie an, welche Produkte für Schlüsselmetriken verantwortlich sind, z. B. am häufigsten verkaufte oder angezeigte Produkte. <p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Produkte am erfolgreichsten sind.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Finanzierung für erfolgreiche Produkte erhöhen und für weniger erfolgreiche Produkte verringern.</p><p>Diese Vorlage verwendet die Metrik „Bestellungen“ und die Dimension „Produkt“. |
@@ -624,8 +624,8 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="template--consentpolicyoverview"
->title="Zeigen Sie das Land an, aus dem die Personen stammen, die Ihre Site besuchen."
->abstract="**Dies kann Ihnen helfen**, besser zu verstehen, aus welchen Ländern die meisten Personen stammen, die Ihre Site besuchen.<br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Daten nutzen, um sich auf Marketing-Maßnahmen in diesen Ländern zu konzentrieren, oder sicherstellen, dass Ihr Site-Erlebnis in Ländern mit unterschiedlichen Hauptsprachen optimal ist.<br/>Diese Vorlage verwendet die Dimension „Länder“."
+>title="Zeigen Sie Besucherinnen und Besucher basierend auf den Mitgliedschaftsdaten der Einverständnisrichtlinie aus Adobe Experience Platform an."
+>abstract="**Dies kann Ihnen** Ausgangspunkt für die Berichterstellung über die Mitgliedschaft in der Einverständnisrichtlinie für Besucher helfen. Wenn eine Datenansicht für das Reporting zu Einverständnissen konfiguriert ist, stellt Customer Journey Analytics automatisch eine Vorlage für die Einverständnisrichtlinien-Analyse in Analysis Workspace zur Verfügung. <br/>**Je nachdem, was Sie lernen, können** beliebig viele Dinge tun, z. B. nicht einverständnispflichtige Besucher von Analytics-Berichten ausschließen."
 
 >[!CONTEXTUALHELP]
 >id="template--countrygeoreport"
@@ -675,7 +675,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 Die folgenden Vorlagen sind verfügbar:
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | **[!UICONTROL Zielgruppenübersicht]** | Zeigen Sie an, welche Zielgruppen unter den Personen vertreten sind, die Ihre Site besuchen.<p>**Dies kann Ihnen helfen**, allgemeine Informationen zu den Zielgruppen, dem Ursprung der Zielgruppen (RTCDP, Customer Journey Analytics), Zielgruppenüberschneidungen und vieles mehr besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen für diese bestimmten Zielgruppen zu konzentrieren oder maßgeschneiderte Erlebnisse für Kundinnen und Kunden zu schaffen, die mehrere Zielgruppen umfassen.</p><p>Diese Vorlage verwendet die Dimensionen Zielgruppenname, Zielgruppenherkunft, Name der ausgestiegenen Zielgruppe und Ursprung der ausgestiegenen Zielgruppe.</p><p>Weitere Informationen finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **Erstmalige vs. wiederkehrende Besuchende**] | Zeigen Sie einen Vergleich zwischen erstmaligen und wiederkehrenden Besuchenden an. <p>**Dies kann Ihnen helfen**, die Effektivität Ihrer Site bei der Kundenbindung oder die Rate, mit der Sie neue Kundschaft gewinnen, besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. erstmaligen Besuchenden Anreize für zukünftige Käufe anbieten, um sie zur Rückkehr zu bewegen.</p><!-- This template uses the --> |
@@ -745,7 +745,7 @@ Die folgenden Vorlagen sind verfügbar:
 >[!CONTEXTUALHELP]
 >id="template--searchkeywordrankedreport"
 >title="Zeigen Sie die Suchbegriffe an, die Besuchende zum Erreichen Ihrer Site verwenden, unabhängig davon, ob es sich um gebührenpflichtige oder organische Suchbegriffe handelt."
->abstract="**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, welche zu Sitetraffic führen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. SEO-Lücken zwischen den verwendeten Keywords und den Keywords, die den Sitetraffic fördern, identifizieren und schließen.<br/>Diese Vorlage verwendet die Dimension „Suchbegriff“."
+>abstract="**Dies kann Ihnen helfen**, die Keywords besser zu verstehen, die bei Suchvorgängen verwendet werden, die zu Sitetraffic führen. <br/>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. SEO-Lücken zwischen den verwendeten Keywords und den Keywords, die den Sitetraffic fördern, identifizieren und schließen.<br/>Diese Vorlage verwendet die Dimension „Suchbegriff“."
 
 >[!CONTEXTUALHELP]
 >id="template--searchpaidkeywordrankedreport"
@@ -795,7 +795,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 Die folgenden Vorlagen sind verfügbar:
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Marketing-Kanäle**] > [!UICONTROL **Kanalübersichtsbericht**] | Bei Verwendung der benutzerdefinierten Attribution zeigt diese Vorlage, wie Besuchende auf Ihre Site gelangen.<p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Ihrer Marketing-Kanäle am effektivsten sind.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. intensiver in effektive Marketing-Kanäle investieren und weniger effektive Marketing-Kanäle aufgeben.</p><p>Diese Vorlage verwendet die Dimension „ID(variables/marketingchannel)“ und die Metrik „Umsatz“.</p> |
 | [!UICONTROL **Marketing-Kanäle**] > [!UICONTROL **Erstkontaktkanal**] | Zeigen Sie die ersten Marketing-Kanäle an, zu denen Besuchende während ihres Interaktionszeitraums (standardmäßig 30 Tage) passen. <p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Marketing-Kanäle den anfänglichen Traffic zu Ihrer Site leiten.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Marketing-Maßnahmen auf Bereiche konzentrieren, die am effektivsten sind.</p><p>Diese Vorlage verwendet die Dimension „Erstkontaktkanal“.</p> |
@@ -865,7 +865,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 Die folgenden Vorlagen sind verfügbar:
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Mobile App-Bildschirme**] | Zeigen Sie die Anzahl der Ereignisse, Sitzungen und Personen anzeigen, die mit jedem Bildschirm in der App verknüpft sind.<p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Bildschirme auf Ihrer Site am beliebtesten sind.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Ihre Inhalte auf den beliebtesten Bildschirmen verbessern.</p><p>Diese Vorlage verwendet die Metriken „Ereignisse“, „Sitzungen“, „Personen“ und „Prozentänderung“. Außerdem wird die Dimension „Seitentitel“ verwendet.</p> |
 | **Mobile App-Aktionen** | Zeigen Sie die Aktionen an, die Personen mit Ihrer Mobile App durchführen. <p>**Dies kann Ihnen helfen**, besser zu verstehen, wie Personen Ihre App verwenden und welchen Nutzen sie daraus ziehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Funktionen verbessern oder entwickeln, die die beliebtesten Features ergänzen oder verbessern.</p><p>Diese Vorlage verwendet die Metriken „Ereignisse“, „Sitzungen“, „Personen“ und „Prozentänderung“. |
@@ -901,7 +901,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 Die folgenden Vorlagen sind verfügbar:
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Mobilnetzbetreiber**] | Zeigen Sie das Telekommunikationsunternehmen an, das Mobilfunkverbindungen mit den Mobilgeräten bereitstellt, mit denen Benutzende auf Ihre Site zugreifen.<p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Mobilnetzbetreiber bei Ihrer Benutzerbasis am beliebtesten sind.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Ihre Inhaltsbereitstellung auf Grundlage der Netzwerkfunktionen verschiedener Betreiber anpassen, um ein reibungsloses Anwendererlebnis zu gewährleisten.</p><p>Diese Vorlage verwendet die Dimension „Mobilnetzbetreiber“.</p> |
 | **Geräte** | Zeigen Sie die Marke und das Modell von Mobilgeräten an, mit denen Benutzende auf Ihre Site zugreifen.<p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Mobilgeräte bei Ihrer Benutzerbasis am beliebtesten sind.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. das Rendering Ihrer Site für die gängigsten Mobilgeräte optimieren.</p><p>Diese Vorlage verwendet die Dimension „Mobilgerätename“.</p> |
@@ -965,7 +965,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 Die folgenden Vorlagen sind verfügbar:
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Minute der Stunde**] | Zeigen Sie die Anzahl der Ereignisse, Sitzungen und Personen auf Ihrer Site an, aufgeschlüsselt nach Minuten. Wenn es beispielsweise um einen Bericht mit einem Berichtszeitraum von einem einzelnen Tag geht, wird die erste Minute jeder Stunde dieses Tages in dasselbe Dimensionselement einsortiert.<p>**Dies kann Ihnen helfen**, Trends auf granularer Ebene besser zu überblicken.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ressourcen für Spitzenzeiten bis auf die Minute genau optimieren.</p><p>Diese Vorlage verwendet die Dimension „Minute der Stunde“.</p> |
 | **Stunde des Tages** | Zeigen Sie Ereignisse, Sitzungen und Personen auf Ihrer Site aufgeschlüsselt nach Stunden des Tages an. Wenn es beispielsweise um einen Bericht für den Zeitraum 1. bis 7. Januar geht, wird die erste Stunde jedes Tages in dasselbe Dimensionselement einsortiert.<p>**Dies kann Ihnen helfen**, zu verstehen, zu welchen Tageszeiten Ihre Site am häufigsten bzw. am wenigsten besucht wird.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihrer Site zu Zeiten mit viel Traffic mehr Rechenressourcen zuweisen.</p><p>Diese Vorlage verwendet die Dimension „Stunde des Tages“.</p> |
@@ -1005,7 +1005,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 Die folgenden Vorlagen sind verfügbar:
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Übersicht über mehrere Kanäle**] | Zeigen Sie die Verteilung des Traffics auf mehrere Kanäle an. <p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Kanäle Traffic und Interaktion erfolgreicher fördern als andere. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Ihre Marketing-Maßnahmen auf die Kanäle konzentrieren, die den höchsten ROI erzielen.</p><p>Diese Vorlage verwendet die Metriken „Benutzer“, „Sitzung“ und „Ereignis“.</p> |
 | **Web und App** | Zeigen Sie Web- und Mobil-Traffic zusammen an.<p>**Dies kann Ihnen helfen**, die Verteilung des Web- und Mobil-Traffics auf Ihrer Website besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. mehr Ressourcen für Ihre mobile App bereitstellen, wenn diese ein bestimmtes Besucheraufkommen erreicht.</p><p>Diese Vorlage verwendet die Metriken „Web-Sitzungen“, „App-Sitzungen“ und „Kanalübergreifende Web- und App-Sitzungen“.</p> |
@@ -1042,7 +1042,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 Die folgenden Vorlagen sind verfügbar:
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Callcenter-Dashboard**] | Zeigen Sie Callcenter-Daten an, einschließlich der Gründe für Kundenanrufe und der Häufigkeit von Anrufen. <p>**Dies kann Ihnen helfen**, besser zu verstehen, in welchen Bereichen Ihre Kundschaft Probleme hat und wie Callcenter-Ressourcen verwendet werden.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. Produktprobleme angehen, die zu einem höheren Callcenter-Traffic führen, und so letztendlich die Produktrentabilität verbessern.</p> |
 | **Verkaufsstelle** | Zeigen Sie Transaktionsdaten zum Point of Sale (PoS) an, einschließlich Umsatz, getätigter Bestellungen und verkaufter Einheiten. Diese Vorlage enthält auch Visualisierungen, die Informationen zu Top-Stores, Top-Produkten und Top-Produktkategorien sowie zu Online- und Offline-Verkäufen anzeigen. <p>**Dies kann Ihnen helfen**, besser zu verstehen, was Ihre meistverkauften Produkte sind, sowohl im Geschäft als auch online.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. den leistungsstärksten Produkten und Kanälen mehr Marketing-Ressourcen zuweisen.</p><p>Diese Vorlage verwendet die Metriken „Benutzende“, „Umsatz“ und „Bestellungen“.</p> |
@@ -1081,7 +1081,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 Die folgenden Vorlagen sind verfügbar:
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Journey Optimizer-Kampagnen**] | Zeigen Sie wichtige Metriken für Ihre Journey Optimizer-Kampagnen an, darunter E-Mail-Kampagnen, Experimente, In-App-Nachrichten, SMS usw.<p>**Dies kann Ihnen helfen**, Details wie die Anzahl der Klicks und die Anzahl der zugestellten Nachrichten besser zu verstehen und einen umfassenden Einblick in die Effektivität Ihrer Kampagne und den Grad der Interaktion zu erhalten.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Kampagnen an die Interaktion Ihrer Zielgruppe anpassen.</p> |
 | **Journey Optimizer-Journeys** | Zeigen Sie wichtige Metriken für Ihre Journey Optimizer-Journeys an, darunter E-Mail-Journey, Experimente, In-App-Nachrichten, SMS und mehr.<p>**Dies kann Ihnen helfen**, Details wie die Anzahl der Klicks und die Anzahl der zugestellten Nachrichten besser zu verstehen und einen umfassenden Einblick in die Effektivität Ihrer Journey und den Grad der Interaktion zu erhalten.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Kampagnen an die Interaktion Ihrer Zielgruppe anpassen.</p> |
@@ -1101,7 +1101,7 @@ Die folgenden Vorlagen sind verfügbar:
 >title="Verfolgen Sie den gesamten Lebenszyklus von B2B-Besprechungsanfragen. Überwachen Sie Konversionsraten sowie die Beraterleistung und identifizieren Sie Ihre effektivsten Kanäle für die Lead-Generierung."
 >abstract="**Dies kann Ihnen dabei helfen**, Konversionsraten von Besprechungen zu verfolgen, leistungsstarke Team-Mitglieder zu identifizieren, saisonale Trends im Buchungsverhalten zu verstehen und genau zu bestimmen, welche Seiten die wertvollsten Besprechungsanfragen generieren.<br/>**Basierend auf Ihren Erkenntnissen** können Sie eine Reihe von Schritten ausführen, z. B. Ihren Prozess für Besprechungsanfragen optimieren, Ressourcen auf Seiten mit hoher Konversionsrate umverteilen, zielgerichtete Schulungen für Beraterinnen und Berater mit niedrigeren Buchungsraten entwickeln oder neue Strategien implementieren, um die Anzahl verpasster Besprechungen zu reduzieren."
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Übersicht über Brand Concierge**] | Analysieren Sie die Benutzerinteraktion anhand von Konversationsmustern, Benutzer-Feedback und der Effektivität Ihrer Empfehlungen. <p>**Dies kann Ihnen dabei helfen**, Interaktionsmuster zu identifizieren, die Gesprächsqualität zu bewerten, Trends bei der Kundenzufriedenheit zu verfolgen und die Effektivität von Link-Empfehlungen zu messen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Antworten Ihres AI Agent verfeinern, zielgerichtete Inhalte für häufig auftretende Probleme entwickeln, Empfehlungsalgorithmen verbessern oder spezialisierte Pfade für verschiedene Benutzersegmente erstellen.</p> |
 | **Brand Concierge B2B-Meetings** | Verfolgen Sie den gesamten Lebenszyklus von B2B-Besprechungsanfragen. Überwachen Sie Konversionsraten, bewerten Sie die Buchungs-Performance der Berater und identifizieren Sie Ihre effektivsten Lead-Generierungskanäle. <p>**Auf diese Weise können Sie** Konversionsraten von Meetings verfolgen, leistungsstarke Team-Mitglieder identifizieren, saisonale Trends im Buchungsverhalten verstehen und herausfinden, welche Seiten-URLs die wertvollsten Meeting-Anfragen generieren. </p><p>**Je nachdem, was Sie lernen** können Sie beliebig viele Dinge tun, z. B. Ihren Besprechungsanfrageprozess optimieren, Ressourcen auf URLs mit hoher Konversionsrate verteilen, zielgerichtete Schulungen für Berater mit niedrigeren Buchungsraten entwickeln oder neue Strategien implementieren, um verpasste Meetings zu reduzieren.</p> |
@@ -1131,7 +1131,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 Die folgenden Vorlagen sind verfügbar:
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Überblick über B2B-Konteninteraktion**] | Erfahren Sie, wie aktiv Ihre Konten für Ereignisse, Personen und Opportunitys sind.<p>**Dies kann Ihnen helfen**, besser zu verstehen, ob die Interaktion auf Kontoebene tendenziell steigt oder sinkt, die Aktivitäten zwischen verschiedenen Konten zu vergleichen und zu entscheiden, wo Sie Ihre Bemühungen zur Kundenbindung oder Neukundengewinnung konzentrieren sollten.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. Ihre Aufmerksamkeit wieder auf diejenigen Konten richten, die weniger interagieren, aber aufgrund ihrer Bedeutung mehr Aufmerksamkeit erfordern.</p> |
 | [!UICONTROL **Überblick über B2B-Opportunity-Interaktion**] | Verfolgen Sie die Aktivität auf Opportunity-Ebene und identifizieren Sie Geschäfte, die an Dynamik gewinnen oder verlieren.<p>**Dies kann Ihnen helfen**, den Fortschritt eines Geschäfts genauer vorherzusagen und Ihre Maßnahmen dort zu konzentrieren, wo die Interaktion zunimmt oder stagniert.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. zusätzliche Anstrengungen für Geschäfte unternehmen, die kurz vor dem Abschluss stehen, und untersuchen, warum andere Geschäfte an Dynamik verlieren.</p> |
@@ -1142,7 +1142,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 Die folgenden Vorlagen sind verfügbar:
 
-| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
 | [!UICONTROL **Inkrementelle Mix Modeler-Modelleinblicke**] | Zeigen Sie Erkenntnisse ausgewählter Modelle an, die von Mix Modeler generiert wurden.<p>**Dies kann Ihnen helfen**, die inkrementellen Erkenntnisse aus den in Mix Modeler generierten Modellen besser zu verstehen. <p>**Basierend auf diesen Erkenntnissen** können Sie folgende Schritte ausführen:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul></p> |
 
