@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 hide: true
-source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
+source-git-commit: 30194647c56e7eaa8441b915d16f53ba3ff1bd40
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 8%
+source-wordcount: '102'
+ht-degree: 9%
 
 ---
 
@@ -40,6 +40,6 @@ ht-degree: 8%
 
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_dataview"
->title="Verbindung"
+>title="Datenansicht
 >abstract="Wählen Sie die mit Ihrer Verbindung verknüpfte Datenansicht aus, die Sie für die Konversationseinblicke -Analyse verwenden möchten. Die Metriken und Dimensionen von Conversation Insights werden der von Ihnen ausgewählten Datenansicht hinzugefügt."
 
