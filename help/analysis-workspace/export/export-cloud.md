@@ -6,27 +6,14 @@ feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
 TQID: https://experienceleague.adobe.com/7Bqz2dh9v-BhLey5fWNjnQkgFAXQd3QDnTzz8rd7BFA
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: f62c202f92ffc842a9abe2a91bec5231a606f67c
 workflow-type: tm+mt
-source-wordcount: 3268
+source-wordcount: 3275
 ht-degree: 59%
 
 ---
@@ -167,7 +154,7 @@ So exportieren Sie vollständige Tabellen aus Analysis Workspace:
    | Ziele aller Benutzenden anzeigen | Systemadministratoren können diese Option auswählen, um alle Konten und Standorte anzuzeigen, unabhängig davon, wer sie erstellt hat. |
    | Konto | Wählen Sie das Cloud-Exportkonto aus, an das die Daten gesendet werden sollen. <p>Wenn Sie noch kein Cloud-Konto konfiguriert haben, das Sie verwenden möchten, können Sie auch ein neues Konto konfigurieren:<ol><li>Wählen Sie **[!UICONTROL Dropdown]** Menü „Konto“ die Option **[!UICONTROL Konto hinzufügen]** und geben Sie dann die folgenden Informationen an:<ul><li>**[!UICONTROL Name des Standortkontos]**: Geben Sie einen Namen für das Standortkonto an. Dieser Name wird beim Erstellen eines Speicherorts angezeigt. </li><li>**[!UICONTROL Beschreibung des Standortkontos]**: Geben Sie eine kurze Beschreibung des Kontos ein, um es von anderen Konten desselben Kontotyps zu unterscheiden.</li><li>**Konto für alle Benutzer in Ihrer Organisation verfügbar machen**: Wählen Sie diese Option aus, wenn Sie anderen Benutzern in Ihrer Organisation die Verwendung des Kontos erlauben möchten.</li><li>**[!UICONTROL Kontotyp]**: Wählen Sie den Typ des Cloud-Kontos aus, in das Sie exportieren. Verfügbare Kontotypen sind Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake und AEP Data Landing Zone.</li></ul><li>Um die Konfiguration Ihres Kontos abzuschließen, fahren Sie mit dem unten stehenden Link fort, der dem von Ihnen ausgewählten **[!UICONTROL Kontotyp]** entspricht:<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
    | Standort | Wählen Sie den Speicherort in dem Konto aus, an den die Exportdaten gesendet werden sollen.<p>Wenn Sie noch kein Cloud-Konto konfiguriert haben, das Sie verwenden möchten, können Sie auch ein neues Konto konfigurieren:<ol><li>Wählen Sie **[!UICONTROL Dropdown]** Menü „Speicherort hinzufügen **[!UICONTROL aus und geben Sie]** Informationen an:<ul><li>**[!UICONTROL Name:]** Der Name des Speicherorts.</li><li>**[!UICONTROL Beschreibung]**: Geben Sie eine kurze Beschreibung des Speicherorts an, um ihn von anderen Speicherorten im Konto zu unterscheiden.</li><li>**Standort allen Benutzern in Ihrer Organisation zur Verfügung stellen**: Wählen Sie diese Option aus, wenn Sie anderen Benutzern in Ihrer Organisation die Verwendung des Standorts ermöglichen möchten.</li><li>**[!UICONTROL Standortkonto]**: Wählen Sie das Konto aus, in dem Sie den Speicherort erstellen möchten.</li></ul><li>Um die Konfiguration Ihres Speicherorts abzuschließen, fahren Sie mit dem untenstehenden Link fort, der dem Kontotyp entspricht, den Sie im Feld **[!UICONTROL Standortkonto]** ausgewählt haben:<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone).</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
-   | Benachrichtigungen | Fügen Sie Benutzende und Gruppen hinzu, die benachrichtigt werden sollen, wenn dieser Export fehlschlägt oder demnächst abläuft. Beginnen Sie mit der Eingabe des Namens oder der E-Mail-Adresse eines Benutzers oder beginnen Sie mit der Eingabe des Namens einer Gruppe und wählen Sie sie aus, wenn sie in der Dropdown-Liste angezeigt wird. |
+   | Über Probleme informieren, wenn sie abgeschlossen sind oder ablaufen | Fügen Sie Benutzende und Gruppen hinzu, die benachrichtigt werden sollen, wenn dieser Export fehlschlägt oder demnächst abläuft. Beginnen Sie mit der Eingabe des Namens oder der E-Mail-Adresse eines Benutzers oder beginnen Sie mit der Eingabe des Namens einer Gruppe und wählen Sie sie aus, wenn sie in der Dropdown-Liste angezeigt wird. |
 
    {style="table-layout:auto"}
 
@@ -238,11 +225,11 @@ Die folgenden Funktionen werden nicht unterstützt und automatisch aus vollstän
 
 Die folgenden Komponenten werden nicht unterstützt und Analysis Workspace fordert Sie auf, sie aus Ihrer Tabelle zu entfernen, wenn Sie einen vollständigen Tabellenexport durchführen:
 
-* Berechnete Metriken, die nicht unterstützte Funktionen in der Metrikdefinition verwenden (weitere Informationen finden Sie unter [Nicht unterstützte &#x200B;](#calculated-metric-functions-support) Metrikfunktionen)
-* Komponenten, die von einem Administrator am Export gehindert wurden (weitere Informationen finden Sie im Abschnitt *Segment zu Data Governance* Richtlinien in [Kennzeichnungen und &#x200B;](/help/data-views/data-governance.md))
+* Berechnete Metriken, die nicht unterstützte Funktionen in der Metrikdefinition verwenden (weitere Informationen finden Sie unter [Nicht unterstützte ](#calculated-metric-functions-support) Metrikfunktionen)
+* Komponenten, die von einem Administrator am Export gehindert wurden (weitere Informationen finden Sie im Abschnitt *Segment zu Data Governance* Richtlinien in [Kennzeichnungen und ](/help/data-views/data-governance.md))
 * Jede Dimension, die alle der folgenden Kriterien erfüllt:
   * Er wird aus einem Feld erstellt, das Teil eines [Arrays von Objekten](/help/use-cases/object-arrays.md) ist (ähnlich wie Variablen mit mehreren Werten in Adobe Analytics).
-  * Hat &quot;[&#x200B; aktiviert](/help/data-views/component-settings/persistence.md).
+  * Hat &quot;[ aktiviert](/help/data-views/component-settings/persistence.md).
   * Verwendet keine [Bindungsdimension](/help/use-cases/data-views/binding-dimensions-metrics.md).
 * Mehrere Dimensionen, die aus Feldern stammen, die auf verschiedene [Arrays von Objekten](/help/use-cases/object-arrays.md) verweisen. (Mehrere Dimensionen, die auf dasselbe Array von Objekten verweisen, sind zulässig.)
 * Mehr als 10 Dimensionen und 10 Metriken pro Bericht (bis zu 10 Dimensionen und 10 Metriken werden unterstützt)

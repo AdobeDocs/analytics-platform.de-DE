@@ -4,9 +4,9 @@ keywords: Clickstream;Daten-Feed;Daten-Feed;Data Feed
 title: Vergleich der Funktionen von Daten-Feeds in Customer Journey Analytics und Adobe Analytics
 feature: Components
 hide: true
-source-git-commit: a72ed21bdea40e2441443d7218d9fd7c906adc3e
+source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,9 @@ Die Daten in einem Daten-Feed-Export stimmen nicht immer genau mit den Daten üb
 
 ## Lookback-Datumsbereich (Daten-Feeds) im Vergleich zum Reporting-Datumsbereich (Analysis Workspace)
 
-Der Lookback-Datumsbereich in Daten-Feeds bestimmt, wie weit Customer Journey Analytics zurückblickt, wenn Ereignisse gefunden werden, die für eine Daten-Feed-Bereitstellung qualifiziert sind. In diesem Sinne ähnelt der Lookback-Datumsbereich dem Berichtsdatumsbereich in Analysis Workspace. Es gibt jedoch wesentliche Unterschiede.
+Der Lookback-Datumsbereich in Daten-Feeds bestimmt, wie weit Customer Journey Analytics zurückblickt, wenn Ereignisse gefunden werden, die für eine Daten-Feed-Bereitstellung qualifiziert sind. Weitere Informationen zum Lookback-Datumsbereich, einschließlich Beispiele, finden Sie unter [Grundlegendes zum Lookback-Datumsbereich](/help/components/exports/cja-data-feeds/create-feed.md#understand-the-lookback-date-range).
+
+In diesem Sinne ähnelt der Lookback-Datumsbereich dem Berichtsdatumsbereich in Analysis Workspace. Es gibt jedoch wesentliche Unterschiede.
 
 | Die wichtigsten Unterschiede | Datumsbereich für Berichte (Analysis Workspace) | Lookback-Datumsbereich (Daten-Feeds) |
 |---------|---------|----------|
