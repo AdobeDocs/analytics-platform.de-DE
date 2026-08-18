@@ -7,28 +7,15 @@ role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 autotag-review: '2026-05-19T08:54:42.845Z'
 TQID: 'https://experienceleague.adobe.com/kEqjocKd5pNypjQlF70HeF1bKuoG9Qi-AT6nJiIwuV0'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 6af3e9063dc192814c888e786ca61ff1703aedf5
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c18d9e03-ac7d-4811-9c92-3e92ddc70adeid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
 workflow-type: tm+mt
-source-wordcount: 4177
-ht-degree: 65%
+source-wordcount: 4186
+ht-degree: 64%
 
 ---
 
@@ -84,12 +71,12 @@ Der Assistent für geführte Konfigurationen besteht aus vier Abschnitten ([Deta
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="Details"
->abstract="Geben Sie einen Namen für die Verbindung an. Geben Sie in den Abschnitten zu **[!UICONTROL Datenansicht]**, **[!UICONTROL Erlebniserfassung und -definition]** und **[!UICONTROL Datenerfassung]** weitere Details an, um sicherzustellen, dass die Inhaltsanalyse korrekt konfiguriert werden kann."
+>abstract="Geben Sie einen Namen für die Verbindung an. Geben Sie einen Namen für die Konfiguration an und wählen Sie die Sandbox aus, die die Inhaltsanalysedaten enthält, die Sie analysieren möchten."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Details"
->abstract="In dieser Anleitung werden die Anforderungen für die Konfiguration der Inhaltsanalyse festgelegt. Geben Sie einen Namen für diese Konfiguration an"
+>abstract="In dieser Anleitung werden die Anforderungen für die Konfiguration der Inhaltsanalyse festgelegt. Geben Sie einen Namen für diese Konfiguration ein und wählen Sie die Sandbox aus, die die Inhaltsanalysedaten enthält, die Sie analysieren möchten."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -297,17 +284,17 @@ Konfigurieren der Datenerfassung:
 
 * Verwenden Sie eine vorhandene Eigenschaft für mobile Tags oder erstellen Sie eine neue Eigenschaft für mobile Tags.
 
-   * So verwenden Sie eine vorhandene Mobile-Tags-Eigenschaft:
+  * So verwenden Sie eine vorhandene Mobile-Tags-Eigenschaft:
 
-      1. Wählen Sie **[!UICONTROL Vorhandene auswählen]**.
-      2. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Tags-Eigenschaft]** eine vorhandene Eigenschaft aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken. Sie können keine Tags-Eigenschaft auswählen, die bereits von einer anderen implementierten Content Analytics-Konfiguration verwendet wird.
+    1. Wählen Sie **[!UICONTROL Vorhandene auswählen]**.
+    2. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Tags-Eigenschaft]** eine vorhandene Eigenschaft aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken. Sie können keine Tags-Eigenschaft auswählen, die bereits von einer anderen implementierten Content Analytics-Konfiguration verwendet wird.
 
 
-   * So erstellen Sie eine neue mobile Tags-Eigenschaft:
+  * So erstellen Sie eine neue mobile Tags-Eigenschaft:
 
-      1. Wählen Sie **[!UICONTROL Neu erstellen]** aus.
-      1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
-      1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
+    1. Wählen Sie **[!UICONTROL Neu erstellen]** aus.
+    1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
+    1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
 
 * Geben Sie an, welche Erlebnisspeicherorte bei der Datenerfassung für Content Analytics ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Erlebnisspeicherorte ausschließen.
 
@@ -489,8 +476,8 @@ So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine 
 
 * Schalten Sie **[!UICONTROL Erlebnisse einschließen]** um, um Folgendes zu aktivieren bzw. zu deaktivieren:
 
-   * den Prozess, der Erlebnisattribute aus Content Analytics-Ereignisdaten generiert
-   * die Berichtsvorlage in Customer Journey Analytics
+  * den Prozess, der Erlebnisattribute aus Content Analytics-Ereignisdaten generiert
+  * die Berichtsvorlage in Customer Journey Analytics
 
 * Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus, um die Konfiguration der Datenerfassung für Erlebnisse in Content Analytics weiter zu bearbeiten. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) in der Tags-Eigenschaft weitergeleitet, die mit der aktuellen Konfiguration verknüpft ist.
 
@@ -502,19 +489,19 @@ Konfigurieren der Datenerfassung:
 
 * Verwenden Sie eine vorhandene Web-Tags-Eigenschaft oder erstellen Sie eine neue Web-Tags-Eigenschaft.
 
-   * So verwenden Sie eine vorhandene Web-Tags-Eigenschaft:
+  * So verwenden Sie eine vorhandene Web-Tags-Eigenschaft:
 
-      1. Wählen Sie **[!UICONTROL Vorhandene auswählen]**.
-      2. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Tags-Eigenschaft]** eine vorhandene Eigenschaft aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken. Sie können keine Tags-Eigenschaft auswählen, die bereits von einer anderen implementierten Content Analytics-Konfiguration verwendet wird.
+    1. Wählen Sie **[!UICONTROL Vorhandene auswählen]**.
+    2. Wählen Sie aus dem Dropdown-Menü **[!UICONTROL Tags-Eigenschaft]** eine vorhandene Eigenschaft aus. Sie können mit der Eingabe beginnen, um nach den verfügbaren Optionen zu suchen und diese zu beschränken. Sie können keine Tags-Eigenschaft auswählen, die bereits von einer anderen implementierten Content Analytics-Konfiguration verwendet wird.
 
 
-   * So erstellen Sie eine neue Web-Tags-Eigenschaft:
+  * So erstellen Sie eine neue Web-Tags-Eigenschaft:
 
-      1. Wählen Sie **[!UICONTROL Neu erstellen]** aus.
-      1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
-      1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
+    1. Wählen Sie **[!UICONTROL Neu erstellen]** aus.
+    1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
+    1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
 
-     Verwenden Sie eine neue Tags-Eigenschaft, wenn Sie mithilfe der [Content Analytics-JavaScript-Bibliothek eine Tags-unabhängige Implementierung für den Webkanal erstellen &#x200B;](/help/content-analytics/config/tags-agnostic.md). Die Tags-Eigenschaft wird erstellt, Sie werden die Eigenschaft jedoch nicht in der agnostischen Implementierung verwenden. Für die agnostische Implementierung müssen Sie jedoch den Assistenten für geführte Konfigurationen mindestens einmal ausgeführt haben.
+    Verwenden Sie eine neue Tags-Eigenschaft, wenn Sie mithilfe der [Content Analytics-JavaScript-Bibliothek eine Tags-unabhängige Implementierung für den Webkanal erstellen ](/help/content-analytics/config/tags-agnostic.md). Die Tags-Eigenschaft wird erstellt, Sie werden die Eigenschaft jedoch nicht in der agnostischen Implementierung verwenden. Für die agnostische Implementierung müssen Sie jedoch den Assistenten für geführte Konfigurationen mindestens einmal ausgeführt haben.
 
 * Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Seiten ausschließen.
 
@@ -580,26 +567,26 @@ Wenn Sie eine Konfiguration erstellen oder bearbeiten, haben Sie die folgenden O
 
 * **[!UICONTROL Verwerfen]**: Alle im Rahmen der Konfiguration vorgenommenen Änderungen werden verworfen.
 * **[!UICONTROL Für später speichern]**: Änderungen an einer Konfiguration werden gespeichert. Sie können die Konfiguration zu einem späteren Zeitpunkt erneut aufrufen, um weitere Änderungen vorzunehmen, oder die Konfiguration implementieren. Zum Speichern einer Konfiguration ist lediglich ein Wert für [!UICONTROL Name] erforderlich.
-* **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer Konfiguration werden gespeichert und implementiert. Alle als &quot;![&quot; markierten &#x200B;](/help/assets/icons/Required.svg) müssen über korrekte Werte verfügen. Die Implementierung besteht aus Folgendem:
+* **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer Konfiguration werden gespeichert und implementiert. Alle als &quot;![&quot; markierten ](/help/assets/icons/Required.svg) müssen über korrekte Werte verfügen. Die Implementierung besteht aus Folgendem:
 
-   * **[!UICONTROL Customer Journey Analytics-Konfiguration]**:
-      * Die ausgewählte Datenansicht wird aktualisiert, um Content Analytics-Dimensionen und -Metriken einzuschließen.
-      * Die mit der ausgewählten Datenansicht verknüpfte Verbindung wird geändert, um Ereignis- und Attributdatensätze von Content Analytics einzuschließen.
-      * Eine Content Analytics-Berichtsvorlage wird zu Workspace hinzugefügt.
-
-
-   * **[!UICONTROL Adobe Experience Platform-Konfiguration]**:
-      * Die Erstellung von Schemata zur Modellierung von Content Analytics-Ereignissen, Asset-Attributen und (sofern konfiguriert) Erlebnisattributen.
-      * Die Erstellung von Datensätzen zur Erfassung von Content Analytics-Ereignissen, Asset-Attributen und (sofern konfiguriert) Erlebnisattributen.
-      * Die Erstellung eines Datenflusses, der den Featurisierungs-Service verwendet, um Inhaltsattribute aus Content Analytics-Ereignissen zu generieren und zu aktualisieren.
+  * **[!UICONTROL Customer Journey Analytics-Konfiguration]**:
+    * Die ausgewählte Datenansicht wird aktualisiert, um Content Analytics-Dimensionen und -Metriken einzuschließen.
+    * Die mit der ausgewählten Datenansicht verknüpfte Verbindung wird geändert, um Ereignis- und Attributdatensätze von Content Analytics einzuschließen.
+    * Eine Content Analytics-Berichtsvorlage wird zu Workspace hinzugefügt.
 
 
-   * **[!UICONTROL Konfiguration der Datenerfassung]**:
-      * Die neue oder vorhandene Tags-Eigenschaft ist so konfiguriert, dass sie die Content Analytics-Datenerfassung unterstützt. Diese Konfiguration impliziert die Einbeziehung der Content Analytics-Erweiterung von Adobe für Tags.
-      * Ein Datenstrom wird für Content Analytics-Ereignisse erstellt.
-      * Die Content Analytics-Erweiterung von Adobe ist so konfiguriert, dass Content Analytics-Ereignisse an den Datenstrom für Content Analytics gesendet werden.
-      * Wenn die Web-SDK oder Mobile-SDK nicht für die Tags-Eigenschaft konfiguriert ist, wird eine neue Web-SDK- oder Mobile-SDK-Konfiguration erstellt, um nur Content Analytics-Ereignisse zu senden.
-      * Wenn Web SDK oder Mobile SDK für die Tags-Eigenschaft konfiguriert ist, werden an der vorhandenen Web SDK- oder Mobile SDK-Konfiguration keine Änderungen vorgenommen.
+  * **[!UICONTROL Adobe Experience Platform-Konfiguration]**:
+    * Die Erstellung von Schemata zur Modellierung von Content Analytics-Ereignissen, Asset-Attributen und (sofern konfiguriert) Erlebnisattributen.
+    * Die Erstellung von Datensätzen zur Erfassung von Content Analytics-Ereignissen, Asset-Attributen und (sofern konfiguriert) Erlebnisattributen.
+    * Die Erstellung eines Datenflusses, der den Featurisierungs-Service verwendet, um Inhaltsattribute aus Content Analytics-Ereignissen zu generieren und zu aktualisieren.
+
+
+  * **[!UICONTROL Konfiguration der Datenerfassung]**:
+    * Die neue oder vorhandene Tags-Eigenschaft ist so konfiguriert, dass sie die Content Analytics-Datenerfassung unterstützt. Diese Konfiguration impliziert die Einbeziehung der Content Analytics-Erweiterung von Adobe für Tags.
+    * Ein Datenstrom wird für Content Analytics-Ereignisse erstellt.
+    * Die Content Analytics-Erweiterung von Adobe ist so konfiguriert, dass Content Analytics-Ereignisse an den Datenstrom für Content Analytics gesendet werden.
+    * Wenn die Web-SDK oder Mobile-SDK nicht für die Tags-Eigenschaft konfiguriert ist, wird eine neue Web-SDK- oder Mobile-SDK-Konfiguration erstellt, um nur Content Analytics-Ereignisse zu senden.
+    * Wenn Web SDK oder Mobile SDK für die Tags-Eigenschaft konfiguriert ist, werden an der vorhandenen Web SDK- oder Mobile SDK-Konfiguration keine Änderungen vorgenommen.
 
 
 * **[!UICONTROL Speichern]**: Änderungen an einer implementierten Konfiguration werden gespeichert und die Implementierung wird aktualisiert.
