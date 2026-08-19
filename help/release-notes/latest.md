@@ -4,33 +4,15 @@ description: Anzeigen der neuesten Versionshinweise zu Customer Journey Analytic
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 3d3015ac59eefd5bd5e948996b2880310332a5e1
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: b65a411e35963b97ab159e8c3b61010927ea911d
 workflow-type: tm+mt
-source-wordcount: 989
-ht-degree: 27%
+source-wordcount: 984
+ht-degree: 28%
 
 ---
 
@@ -45,13 +27,13 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Augu
 | Funktion und Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | -----------|-----------|-----------|
 | **Verbesserungen der Journey**<br> Arbeitsfläche: Die folgenden Verbesserungen der Journey-Arbeitsfläche sind jetzt verfügbar:<ul><li>Vergleichen Sie die Journey mit einem früheren Zeitrahmen. Vergleichen Sie die aktuelle Journey mit der Journey 4 Wochen vorher, 2 Quartale vorher, 1 Jahr vorher oder mit einem benutzerdefinierten Datumsbereich.</li><li>Zeigen Sie für einen ausgewählten Knoten die obersten Dimensionselemente an, die zu einem beliebigen Zeitpunkt im Journey nach dem ausgewählten Knoten stehen. Verwenden Sie dies, wenn der ausgewählte Knoten das Schlüsselereignis in Ihrer Analyse ist und Sie sehen möchten, was die Benutzer zu einem späteren Zeitpunkt tun.<p>Zuvor konnten nur die unmittelbar am häufigsten angezeigten Knoten vor oder nach dem ausgewählten Knoten angezeigt werden. </p></li><li>Ändern Sie die Form und den Stil der Pfeile zwischen den Knoten. Ziehen Sie die Pfeile zwischen Knoten, um die Form (Krümmung) des Pfeils zu ändern, und klicken Sie mit der rechten Maustaste auf einen Pfeil, um seinen Stil in eine der folgenden Optionen zu ändern: Volumenkörper, Gestrichelt, Punkte, Gestrichelt-Punkt oder Animiert.</li></ul><p></p>Weitere Informationen finden Sie unter [Konfigurieren einer Visualisierung „Journey-Arbeitsfläche“](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md). |  | &#x200B;18. August 2026 |
-| **Segmente auf den Berichtsdatumsbereich beschränken**<br/> Daten in einem Workspace-Bericht können über den Berichtsdatumsbereich hinaus erweitert werden, wenn ein Segment Datumsbereichskomponenten enthält.<p>Es ist jetzt eine neue Option verfügbar, mit der Sie die Ergebnisse auf den Datumsbereich des Berichts beschränken können, unabhängig von etwaigen im Segment enthaltenen Datumskomponenten. <p>Diese Option ist beim Erstellen oder Ändern eines Segments verfügbar, dessen Container der obersten Ebene Person ist.</p><p>Weitere Informationen finden Sie unter [Segmente erstellen](/help/components/segments/seg-builder.md#components).</p> | &#x200B;26. August 2026 | &#x200B;9. September 2026 |
 | **Unterstützung für zusätzliche Datennutzungskennzeichnungen**<br> Customer Journey Analytics unterstützt jetzt die folgenden zusätzlichen Datennutzungskennzeichnungen für Elemente in einem Datensatz:<ul><li>C2 - Datenexport von Drittanbietern einschränken (jetzt verfügbar)</li><li>C3 - Direkt identifizierbare Datenkombination einschränken (jetzt verfügbar)</li><li>C9 - Datenwissenschaft beschränken (Veröffentlichung im August oder September geplant)</li></ul><p>Weitere Informationen finden Sie unter [Bezeichnungen, Richtlinien und Marketing-Aktionen](/help/data-views/data-governance.md).</p> | | August oder September 2026 |
-| **Filterung und Reporting von Einverständnisrichtlinien**<br> Sie können jetzt Berichte dazu erstellen, welche Besucher Ihren Adobe Experience Platform-Einverständnisrichtlinien entsprechen. (Dimensionen und Metriken der Einverständnisrichtlinie werden zu den Datenansichten in Ihrer Verbindung hinzugefügt.)<p>Darüber hinaus können Sie Besuchende, die mit ihrer Zustimmung nicht einverstanden sind, ausschließen, bevor ihre Daten in Customer Journey Analytics aufgenommen werden.</p><p>Weitere Informationen finden Sie unter Übersicht über Einverständnisberichte und -filter.</p> | | August 2026 |
 | **Content Analytics: Bezahlte Mediendaten** Bezahlte <br/> sind jetzt als dritter Kanal für Content Analytics verfügbar.<p>(Link zur Dokumentation folgt.)</p> | | &#x200B;31. August 2026 |
 | **B2B: Person-Konto-Zuordnung**<br> B2B-Kontozuordnung reichert Ihre Ereignisdatensätze mit Kontoinformationen an und ermöglicht eine vollständige Analyse des gesamten Kunden-Journey in Customer Journey Analytics. <p>Wenn Ereignisse keine Konto-ID haben, die Customer Journey Analytics B2B edition für die Aufnahme benötigt, leitet die Kontozuordnung diese Informationen automatisch ab und fügt sie mithilfe des von Ihnen bereitgestellten Personenkonto-Zuordnungsdatensatzes hinzu.</p><p>(Link zur Dokumentation folgt.)</p> | | Ende August oder September 2026 |
 | **Handbuch zu ersten Aufrufen der CJA Report API**<br> Handbuch zu ersten Aufrufen der Adobe Customer Journey Analytics-API enthält Anweisungen und Beispiele zur Konfiguration grundlegender Berichtsanfragen. | | &#x200B;10. August 2026 |
 | **Datums-Trendanleitung für die CJA-Berichts**<br> API-Datums-Trendanleitung für Adobe Customer Journey Analytics enthält Anweisungen und Beispiele zur Konfiguration grundlegender Berichtsanfragen. | | &#x200B;17. August 2026 |
+| **Segmente auf den Berichtsdatumsbereich beschränken**<br/> Daten in einem Workspace-Bericht können über den Berichtsdatumsbereich hinaus erweitert werden, wenn ein Segment Datumsbereichskomponenten enthält.<p>Es ist jetzt eine neue Option verfügbar, mit der Sie die Ergebnisse auf den Datumsbereich des Berichts beschränken können, unabhängig von etwaigen im Segment enthaltenen Datumskomponenten. <p>Diese Option ist beim Erstellen oder Ändern eines Segments verfügbar, dessen Container der obersten Ebene Person ist.</p><p>Weitere Informationen finden Sie unter [Segmente erstellen](/help/components/segments/seg-builder.md#components).</p> | &#x200B;26. August 2026 | &#x200B;9. September 2026 |
+| **Filterung und Reporting von Einverständnisrichtlinien**<br> Sie können jetzt Berichte dazu erstellen, welche Besucher Ihren Adobe Experience Platform-Einverständnisrichtlinien entsprechen. (Dimensionen und Metriken der Einverständnisrichtlinie werden zu den Datenansichten in Ihrer Verbindung hinzugefügt.)<p>Darüber hinaus können Sie Besuchende, die mit ihrer Zustimmung nicht einverstanden sind, ausschließen, bevor ihre Daten in Customer Journey Analytics aufgenommen werden.</p><p>(Link zur Dokumentation folgt.)<!--For more information, see Consent reporting and filtering overview.--></p> | | September 2026 |
 
 ### Fehlerbehebungen in Customer Journey Analytics
 
