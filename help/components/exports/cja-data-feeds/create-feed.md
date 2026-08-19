@@ -5,22 +5,14 @@ hide: true
 feature: Components
 autotag-review: '2026-05-19T08:45:44.870Z'
 TQID: 'https://experienceleague.adobe.com/QgBD7vCkw4YA568XOLlwTnw8eZVZybXr3DFbM1ZKYDw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: e2e75dda2d61cd707b2a224ec5ac43a492ffa42e
 workflow-type: tm+mt
-source-wordcount: 4036
+source-wordcount: 4066
 ht-degree: 20%
 
 ---
@@ -163,6 +155,26 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
    +++
 
+   +++ Metriken, die nicht in Daten-Feeds enthalten sein können
+
+   Die folgenden Customer Journey Analytics-Standardmetriken können nicht in Daten-Feeds enthalten sein:
+
+   | Metrikname | Anmerkungen | Daten-Feeds |
+   |---|---|---|
+   | Adobe-Besucherprofil | | Nicht verfügbar |
+   | Adobe Opportunities Union | | Nicht verfügbar |
+   | Adobe Opportunities-Profil | | Nicht verfügbar |
+   | Adobe-Kontovereinigung | | Nicht verfügbar |
+   | Adobe-Kontoprofil | | Nicht verfügbar |
+   | Adobe-Einkaufsgruppengewerkschaft | | Nicht verfügbar |
+   | Adobe-Einkaufsgruppenprofil | | Nicht verfügbar |
+   | Adobe Global Accounts Union | | Nicht verfügbar |
+   | Globales Kontoprofil von Adobe | | Nicht verfügbar |
+   | Adobe Persons Union | | Nicht verfügbar |
+   | Adobe Persons Profile | | Nicht verfügbar |
+
+   +++
+
    +++ Dimensionen, die nicht zusammen in Daten-Feeds verwendet werden können
 
    >[!IMPORTANT]
@@ -171,7 +183,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    >
    >Wenn Sie sich dafür entscheiden, entweder die **Benutzeragent**- oder **Mobile ID**-Dimensionen in Ihren Daten-Feed aufzunehmen, können die unten aufgeführten Dimensionen nicht zum Daten-Feed hinzugefügt werden.
    >
-   >Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
+   >Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von ](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
 
    Die folgenden Dimensionen können nicht zusammen mit den Dimensionen **Benutzeragent** oder **Mobile ID** verwendet werden:
 
@@ -318,20 +330,20 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_lookback_date_range"
 >title="Lookback-Datumsbereich"
->abstract="Steuert, wie weit Customer Journey Analytics bei der Verarbeitung der Daten-Feed-Bereitstellung zurückblickt. Diese Einstellung ähnelt dem Datumsbereich für die Berichterstellung in Analysis Workspace, weist jedoch wichtige Unterschiede auf:<ul><li>Ereignisse werden im Daten-Feed eingeschlossen, wenn sie Zeitstempel haben, die in das Häufigkeitsfenster und nicht in den Lookback-Datumsbereich fallen. (In Analysis Workspace werden Ereignisse in einen Bericht aufgenommen, wenn sie Zeitstempel haben, die in den Berichtsdatumsbereich fallen.)</li><li>Ereignisse mit Zeitstempeln, die innerhalb des Lookback-Datumsbereichs (aber außerhalb des Häufigkeitsfensters) liegen, können durch Segmentqualifikation, Sitzungsberechnung, abgeleitete Feldtransformationen und Dimensionspersistenz weiterhin beeinflussen, welche Daten im Feed angezeigt werden.</li><p>Ein längerer Lookback-Datumsbereich führt in der Regel zu genaueren Ereignissen. Ein kürzerer Bereich führt zu einer besseren Versandleistung.</p>"
+>abstract="Steuert, wie weit Customer Journey Analytics bei der Verarbeitung jedes Versands zurückblickt.<p>Das Häufigkeitsfenster (Stunde oder Tag) bestimmt, welche Ereignisse im Daten-Feed enthalten sind, während der **Lookback-Datumsbereich** den erforderlichen historischen Kontext bereitstellt, um diese Ereignisse korrekt zu klassifizieren.</p><p>Segmentqualifikation, Dimensionspersistenz, Sitzungsberechnung und abgeleitete Feldtransformationen können sich auf alle eingeschlossenen Ereignisse auswirken.</p><p>Ein längerer Lookback verbessert die Genauigkeit, ein kürzerer Lookback verbessert die Leistung.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
+Der Lookback-Datumsbereich steuert, wie weit Customer Journey Analytics bei der Verarbeitung jedes Daten-Feed-Versands zurückblickt.
 
-
-Der Lookback-Datumsbereich steuert, wie weit Customer Journey Analytics bei der Verarbeitung des Daten-Feed-Versands zurückblickt. Der Standardwert ist 30 Tage.
+Ereignisse müssen weiterhin Zeitstempel aufweisen, die in das Häufigkeitsfenster (Stunde oder Tag) fallen, damit sie in den Versand einbezogen werden. Die Daten, die in den **Lookback-Datumsbereich** fallen, bieten jedoch den erforderlichen historischen Kontext, um diese Ereignisse korrekt zu klassifizieren.
 
 Beachten Sie beim Konfigurieren dieser Option die folgenden wichtigen Konzepte:
 
 * Ein längerer Lookback-Datumsbereich führt in der Regel zu genaueren Daten; ein kürzerer Bereich führt zu einer besseren Versandleistung.
-* Der Lookback-Datumsbereich in Daten-Feeds ähnelt dem Berichtsdatumsbereich in Analysis Workspace, es gibt jedoch [wesentliche Unterschiede](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). Diese Unterschiede können zu Datendiskrepanzen zwischen Workspace-Berichten und Daten-Feed-Sendungen führen.
-* Der Lookback-Datumsbereich ändert das Häufigkeitsfenster (Stunde oder Tag) nicht, das den Zeitrahmen der Ereignisse definiert, die in die Daten-Feed-Ausgabe aufgenommen werden sollen.
-* Daten, die in den Lookback-Datumsbereich fallen, können die Inhalte des Daten-Feeds (Häufigkeitsfenster) beeinflussen, je nach den Faktoren, die in den folgenden Abschnitten beschrieben werden.
+* Der Lookback-Datumsbereich funktioniert zusammen mit dem Häufigkeitsfenster ähnlich wie der Datumsbereich des Analysis Workspace-Berichts. Es gibt jedoch [wesentliche Unterschiede](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). Diese Unterschiede können zu Datendiskrepanzen zwischen Workspace-Berichten und Daten-Feed-Sendungen führen.
+
+Segmentqualifikation, Sitzungsberechnung, Dimensionspersistenz und abgeleitete Feldtransformationen werden bei der Verarbeitung von Daten im Lookback-Datumsbereich jeweils berücksichtigt:
 
 ### Segmentqualifikation
 
@@ -357,10 +369,6 @@ In diesem Fall werden Benutzer nur dann in den Daten-Feed aufgenommen, wenn sie 
 ### Sitzungsberechnung
 
 Sitzungsgrenzen werden anhand von Daten innerhalb des Lookback-Datumsbereichs berechnet. Vielleicht ist dies wichtiger in Bezug darauf, was die Sitzungs-ID ist? Könnte sich dies auf die Sitzungs-ID auswirken? Dies kann sich auf vieles auswirken, z. B. auf die sitzungsbasierte Persistenz.
-
-### Abgeleitete Feldtransformationen
-
-Alle abgeleiteten Feldfunktionen, die auf Container verweisen, verwenden den Lookback-Datumsbereich in Daten-Feed-Exporten. Welche Datumsfunktionen sind in abgeleiteten Feldern vorhanden? Ich bin mir nicht sicher, wie das zutrifft.
 
 ### Dimension-Persistenz
 
@@ -393,6 +401,9 @@ In diesem Fall wird die ursprüngliche Kampagne nur dann in der Daten-Feed-Ausga
 
 >[!ENDSHADEBOX]
 
+### Abgeleitete Feldtransformationen
+
+Alle abgeleiteten Feldfunktionen, die auf Container verweisen, verwenden den Lookback-Datumsbereich in Daten-Feed-Exporten. Welche Datumsfunktionen sind in abgeleiteten Feldern vorhanden? Ich bin mir nicht sicher, wie das zutrifft.
 
 
 
