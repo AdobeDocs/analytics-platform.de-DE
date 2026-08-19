@@ -19,10 +19,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
+source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
 workflow-type: tm+mt
-source-wordcount: 221
-ht-degree: 21%
+source-wordcount: 230
+ht-degree: 20%
 
 ---
 
@@ -45,6 +45,8 @@ Stellen Sie sicher, dass Sie alle folgenden Anforderungen erfüllen, bevor Sie D
 Um mit der Verwendung von Daten-Feeds in Customer Journey Analytics zu beginnen, sollten Sie zunächst verstehen, wie sich Daten-Feeds in Customer Journey Analytics von Daten-Feeds in Adobe Analytics unterscheiden. Nachdem Sie die Unterschiede verstanden haben, können Sie Adobe Analytics-Daten-Feeds Customer Journey Analytics zuordnen und dann mit der Erstellung eines Daten-Feeds beginnen.
 
 1. [Verstehen Sie die Unterschiede zwischen Daten-Feeds in Customer Journey Analytics und Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md).
+
+1. [Verstehen Sie Datendiskrepanzen zwischen Daten-Feeds und Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md).
 
 1. [Ordnen Sie Adobe Analytics-Daten-Feed-Spalten Customer Journey Analytics zu](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 
