@@ -40,6 +40,6 @@ ht-degree: 9%
 
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_dataview"
->title="Datenansicht
+>title="Datenansicht"
 >abstract="Wählen Sie die mit Ihrer Verbindung verknüpfte Datenansicht aus, die Sie für die Konversationseinblicke -Analyse verwenden möchten. Die Metriken und Dimensionen von Conversation Insights werden der von Ihnen ausgewählten Datenansicht hinzugefügt."
 
