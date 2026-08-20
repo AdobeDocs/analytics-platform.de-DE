@@ -5,26 +5,15 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 TQID: https://experienceleague.adobe.com/BPbSzyh6eg3QC6NcAVgo06GAISzVH2CX35Z-Q32xMbE
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d2016e34b4b73c6eebb05097aa43f823c578c2b6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
 source-wordcount: 2520
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -35,7 +24,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="Häufigkeit der Aktualisierung"
->abstract="Die Häufigkeit, mit der die Zugehörigkeit zu einer Zielgruppe neu bewertet wird.<br/>Einmalige Zielgruppen werden nur einmal ausgewertet und werden nicht auf das Aktualisierungslimit angerechnet."
+>abstract="Die Häufigkeit, mit der die Zugehörigkeit zu einer Zielgruppe erneut ausgewertet wird. <br/>Einmalige Anfragen werden nur einmal ausgewertet. Sie werden nicht auf Ihr Aktualisierungslimit angerechnet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +33,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="components_audiences_audiencelimit"
 >title="Zielgruppenlimit aktualisieren"
->abstract="Die Anzahl der Zielgruppen in Ihrer Umgebung, die so konfiguriert sind, dass sie automatisch mit geplanter Häufigkeit aktualisiert werden. Die Beschränkungen liegen je nach Customer Journey Analytics-Berechtigung zwischen 75 und 150. Einmalige Aktualisierungen werden nicht auf dieses Limit angerechnet."
+>abstract="Die Anzahl der Zielgruppen in Ihrer Umgebung, die so konfiguriert sind, dass sie automatisch mit geplanter Häufigkeit aktualisiert werden. Die Beschränkungen liegen je nach Customer Journey Analytics-Berechtigung zwischen 75 und 150. Einmalige Anfragen werden für dieses Limit nicht angerechnet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -89,7 +78,7 @@ Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md),
    | Erstellungsmethode | Details |
    | --- | --- |
    | Innerhalb der Benutzeroberfläche **[!UICONTROL Veröffentlichte Zielgruppen]** | Wählen **[!UICONTROL Komponenten]** > **[!UICONTROL Veröffentlichte Zielgruppen]** aus dem Customer Journey Analytics-Hauptmenü aus. Die Benutzeroberfläche „Zielgruppen“ wird angezeigt. Wählen Sie **[!UICONTROL Zielgruppe erstellen]** aus. Daraufhin wird der [!UICONTROL Audience Builder] geöffnet. |
-   | Über eine Visualisierung in Analysis Workspace | Viele Visualisierungen in Analysis Workspace ermöglichen es Ihnen, mithilfe des Kontextmenüs eine Zielgruppe zu erstellen. Sie können beispielsweise **[!UICONTROL Zielgruppe erstellen]** aus dem Kontextmenü eines Elements in einer [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) oder eines Knotens in der [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) auswählen.<p>Mit dieser Methode wird das Segment im Zielgruppen-Builder vorab mit der ausgewählten Dimension oder dem ausgewählten Dimensionselement aufgefüllt.</p><p>Mit den folgenden Visualisierungen können Sie mithilfe des Kontextmenüs eine Zielgruppe erstellen:</p><ul><li>[Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Zuordnung &#x200B;](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**Hinweis:** Diese Visualisierung befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar.</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Hinweis:** Zielgruppen können keine berechneten Metriken enthalten. Wenn Sie versuchen, eine Zielgruppe mit einer berechneten Metrik zu erstellen, wird die berechnete Metrik nicht in die Zielgruppendefinition einbezogen.</p> |
+   | Über eine Visualisierung in Analysis Workspace | Viele Visualisierungen in Analysis Workspace ermöglichen es Ihnen, mithilfe des Kontextmenüs eine Zielgruppe zu erstellen. Sie können beispielsweise **[!UICONTROL Zielgruppe erstellen]** aus dem Kontextmenü eines Elements in einer [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) oder eines Knotens in der [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) auswählen.<p>Mit dieser Methode wird das Segment im Zielgruppen-Builder vorab mit der ausgewählten Dimension oder dem ausgewählten Dimensionselement aufgefüllt.</p><p>Mit den folgenden Visualisierungen können Sie mithilfe des Kontextmenüs eine Zielgruppe erstellen:</p><ul><li>[Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Zuordnung ](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**Hinweis:** Diese Visualisierung befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar.</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Hinweis:** Zielgruppen können keine berechneten Metriken enthalten. Wenn Sie versuchen, eine Zielgruppe mit einer berechneten Metrik zu erstellen, wird die berechnete Metrik nicht in die Zielgruppendefinition einbezogen.</p> |
    | Über die Benutzeroberfläche zur Erstellung/Bearbeitung von Segmenten | Aktivieren Sie das Kontrollkästchen **[!UICONTROL Zielgruppe aus diesem Segment erstellen]**. Mit dieser Methode wird das Segment vorab aufgefüllt. Weitere Informationen finden Sie unter [Erstellen von Segmenten](/help/components/segments/seg-create.md). |
 
    {style="table-layout:auto"}
@@ -117,7 +106,7 @@ Konfigurieren Sie diese Einstellungen, um Ihre Zielgruppe zu definieren oder zu 
 | **[!UICONTROL Name]** | Der Name der Zielgruppe. Beispiel: `Really Interested in Potential Car Buyers` |
 | **[!UICONTROL Tags]** | Alle Tags, die der Zielgruppe aus organisatorischen Gründen zugewiesen werden sollen. Sie können ein oder mehrere bereits vorhandene Tags auswählen oder ein neues eingeben. |
 | **[!UICONTROL Beschreibung]** | Eine Beschreibung der Zielgruppe, um sie von anderen leicht unterscheiden zu können. Beispiel: `Build an audience of really interested potential car buyers` |
-| **[!UICONTROL Häufigkeit der Aktualisierung]** | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<p/><p>Abhängig von Ihrer Customer Journey Analytics-Berechtigung können Sie eine geplante Aktualisierung für eine begrenzte Anzahl von Zielgruppen (zwischen 75 und 150) konfigurieren. </p><p>Sie können aus den folgenden Optionen wählen:</p><ul><li>**[!UICONTROL Einmalige]** Zielgruppe: Eine Zielgruppe (Standard), die nicht aktualisiert werden muss. Diese Option könnte beispielsweise bei bestimmten einmaligen Kampagnen nützlich sein.<br/>Sie müssen einen **[!UICONTROL einmaligen Datumsbereich]** angeben. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um einen Datumsbereich einzugeben.</li><li>Sich aktualisierende Zielgruppe: Sie können aus den folgenden Optionen für die geplante Aktualisierung auswählen:<ul><li>**[!UICONTROL Alle 4 Stunden]**: Eine Zielgruppe, die alle 4 Stunden aktualisiert wird.</li><li>**[!UICONTROL Täglich]**: Eine Zielgruppe, die täglich aktualisiert wird</li><li>**[!UICONTROL Wöchentlich]**: Eine Zielgruppe, die wöchentlich aktualisiert wird.</li><li>**[!UICONTROL Monatlich]**: Eine Zielgruppe, die monatlich aktualisiert wird</li></ul></li>Für sich aktualisierende Zielgruppen müssen Sie Folgendes angeben:<ul><li>**[!UICONTROL Lookback-Fenster aktualisieren]**: Definieren Sie die Anzahl der Lookback-Tage ab heute, in denen eine Zielgruppe ausgewertet wird. Sie können aus Optionen auswählen oder eine benutzerdefinierte Zeit definieren. Die Höchstdauer beträgt 90 Tage.</li><li>**[!UICONTROL Ablaufdatum]**: Legen Sie fest, wann die Zielgruppe nicht mehr aktualisiert wird. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um ein Datum auszuwählen. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Ablaufende Zielgruppen werden ähnlich wie ablaufende terminierte Berichte behandelt. Die oder der Admin erhält einen Monat vor Ablauf der Zielgruppe eine E-Mail.</li></ul></ul> |
+| **[!UICONTROL Häufigkeit der Aktualisierung]** | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<p/><p>Abhängig von Ihrer Customer Journey Analytics-Berechtigung können Sie eine geplante Aktualisierung für eine begrenzte Anzahl von Zielgruppen (zwischen 75 und 150) konfigurieren. </p><p>Sie können aus den folgenden Optionen wählen:</p><ul><li>**[!UICONTROL Einmal]**: Eine einmalige Anfrage, die nicht aktualisiert werden muss. Diese Option könnte beispielsweise bei bestimmten einmaligen Kampagnen nützlich sein.<br/>Sie müssen einen **[!UICONTROL einmaligen Datumsbereich]** angeben. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um einen Datumsbereich einzugeben.</li><li>Sich aktualisierende Zielgruppe: Sie können aus den folgenden Optionen für die geplante Aktualisierung auswählen:<ul><li>**[!UICONTROL Alle 4 Stunden]**: Eine Zielgruppe, die alle 4 Stunden aktualisiert wird.</li><li>**[!UICONTROL Täglich]**: Eine Zielgruppe, die täglich aktualisiert wird</li><li>**[!UICONTROL Wöchentlich]**: Eine Zielgruppe, die wöchentlich aktualisiert wird.</li><li>**[!UICONTROL Monatlich]**: Eine Zielgruppe, die monatlich aktualisiert wird</li></ul></li>Für sich aktualisierende Zielgruppen müssen Sie Folgendes angeben:<ul><li>**[!UICONTROL Lookback-Fenster aktualisieren]**: Definieren Sie die Anzahl der Lookback-Tage ab heute, in denen eine Zielgruppe ausgewertet wird. Sie können aus Optionen auswählen oder eine benutzerdefinierte Zeit definieren. Die Höchstdauer beträgt 90 Tage.</li><li>**[!UICONTROL Ablaufdatum]**: Legen Sie fest, wann die Zielgruppe nicht mehr aktualisiert wird. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um ein Datum auszuwählen. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Ablaufende Zielgruppen werden ähnlich wie ablaufende terminierte Berichte behandelt. Die oder der Admin erhält einen Monat vor Ablauf der Zielgruppe eine E-Mail.</li></ul></ul> |
 | **[!UICONTROL Filter]** | Filter sind die Hauptauswahloptionen für die Zielgruppe. Ziehen Sie ein oder mehrere Segmente aus dem linken Panel ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** in den Segmentbereich. Sie können mit ![Suchen](/help/assets/icons/Search.svg) [!UICONTROL *Segmente suchen*] nach Segmenten suchen. Sie können bis zu 20 Segmente hinzufügen. Segmente können mit den Operatoren **[!UICONTROL Und]** oder **[!UICONTROL Oder]** verbunden werden.<p>Beim Erstellen einer Zielgruppe aus einer Visualisierung in Analysis Workspace (z. B. einer Freiformtabelle oder Journey-Arbeitsfläche) werden alle auf das Panel oder die Spalte angewendeten Segmente beibehalten. Sie können alle automatisch angewendeten Segmente entfernen.</p> |
 | **[!UICONTROL Datenvorschau]** | Wählen Sie ![Info](/help/assets/icons/Info.svg) aus, um die [Datenvorschau](#data-preview) für den ausgewählten Datumsbereich ein- oder auszublenden. |
 
