@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
+source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
-source-wordcount: 954
+source-wordcount: 1074
 ht-degree: 2%
 
 ---
@@ -31,6 +31,43 @@ ht-degree: 2%
 
 Daten-Feeds in Customer Journey Analytics und Adobe Analytics ermöglichen den Export von Rohdaten in Drittanbieterplattformen. Wenn Sie zuvor Daten-Feeds in Adobe Analytics verwendet haben, verwenden Sie die folgenden Informationen, um Unterschiede in den verfügbaren Funktionen und Konzepten zu verstehen:
 
+## Funktion nur in Customer Journey Analytics-Daten-Feeds verfügbar
+
+* Abgeleitete Felder
+
+  Abgeleitete Feldkomponenten in Daten-Feeds einschließen.
+
+* Zuordnung
+
+  Ermöglicht eine geräteübergreifende Identitätsauflösung und verknüpft geräteübergreifende Ereignisse mit einer einzelnen Person.
+
+* Strukturierte Datenansicht
+
+  Verwendet strukturierte Daten beim Erstellen von Daten-Feeds in bereitgestellten Dateien. Adobe Analytics-Daten-Feeds verwenden eine Zeichenfolge.
+
+* Komponentenleiste mit Dimensionen und Metriken, die Analysis Workspace entsprechen
+
+  Verwendet Dimensionen und Metriken, die in Ihrer Datenansicht verfügbar sind. In Adobe Analytics wird eine vordefinierte Liste von Feldern und Spalten verwendet.
+
+* Alle Segmente, die auf Ihre Datenansicht angewendet werden, werden automatisch im Daten-Feed übernommen
+
+* Segmente können direkt auf den Daten-Feed angewendet werden (zusätzlich zu allen Segmenten, die bereits auf die Datenansicht angewendet wurden)
+
+* Feeds entsprechen der Zeitzone <!-- how did it work in AA? --> der Datenansicht
+
+* Parquet-Auslieferung
+
+  Gibt eine moderne Parquet-Datei aus, die nativ komplexe verschachtelte und strukturierte Daten unterstützt. Produktlisten werden als strukturierte Arrays/verschachtelte Objekte dargestellt.
+
+* Pfade im Hive-Stil
+
+* Änderungen an Komponenten in der Datenansicht werden an Daten-Feeds weitergegeben
+
+<!-- * Web MCP when it's added -->
+
+
+## Funktionsvergleich
+
 | **Konzepte und Konfigurationsoptionen** | **Customer Journey Analytics** | **Adobe Analytics** |
 |---------|----------|---------|
 | **Dateneingabe**<br/> Der Datentyp, der erfasst und in Daten-Feeds eingeschlossen werden kann. | Unterstützt Cross-Channel-Dateneingabe, einschließlich Web-Daten, Callcenter-Daten, Point-of-Sale-Daten und mehr. | Unterstützt in erster Linie Web- und mobile Dateneingabe. Andere Datentypen (z. B. Callcenter- oder Point-of-Sale-Daten) können über Datenquellen aufgenommen werden, jedoch mit sehr begrenzten Verarbeitungsfunktionen. |
@@ -39,8 +76,6 @@ Daten-Feeds in Customer Journey Analytics und Adobe Analytics ermöglichen den E
 | **Verspätet eintreffende Treffer**<br/> Treffer, deren Zeitstempel zu einem früheren Versand-Häufigkeitsfenster gehören, aber nach Ablauf dieses Fensters eintreffen. <p>Beispielsweise können verspätete Treffer von einer Mobile App stammen, die Ereignisse im Offline-Modus puffert und bei einer erneuten Verbindung sendet.</p> | Mit **Einstellung „Verarbeitungsverzögerung** wird festgelegt, wie lange das System nach dem Schließen des Häufigkeitsfensters wartet, bevor der Export ausgelöst wird. Dadurch wird mehr Zeit für das Eintreffen verzögerter Daten bereitgestellt. | Verspätete Treffer können über **&#x200B;**&#x200B;Konfigurationsoption **Verspätete Treffer** eingeschlossen oder ausgeschlossen werden. <p>Die Einstellung **Lookback** steuert, wie weit das System zurückreicht, um verzögerte Daten einzuschließen.</p> |
 | **Nicht in der ReihenfolgeTreffer**<br/> Treffer, deren Zeitstempel nicht mit der Reihenfolge übereinstimmen, in der sie empfangen wurden. | Da Customer Journey Analytics sowohl Streaming- als auch Batch-Daten akzeptiert, gibt es keine Garantie dafür, dass Ereignisse für eine bestimmte Person in der Zeitstempelreihenfolge eintreffen. Obwohl Customer Journey Analytics nach Zeitstempel pro Person neu anordnet, kann es nur die eingetroffenen Daten exportieren. Dies bedeutet, dass verspätete Treffer nach Treffern mit einem späteren Zeitstempel exportiert werden können.<p>Mit **Einstellung „Verarbeitungsverzögerung** können Sie nicht in der Reihenfolge vorkommende Ereignisse in der Daten-Feed-Ausgabe reduzieren, indem Sie mehr Zeit dafür haben, dass Batch-Daten vor dem Export eingehen. Die Ereignisreihenfolge im Versand ist nicht garantiert.</p><p>**Wichtig**: Der Endverbraucher Ihrer Daten-Feed-Daten muss in der Lage sein, pro Person Zeitstempel zu verarbeiten, die nicht in der Reihenfolge sind, da die Trefferreihenfolge im Daten-Feed-Versand nicht garantiert ist.</p> | Adobe Analytics verlangt, dass die Daten zur Erfassungszeit in der richtigen Reihenfolge pro Besucher eintreffen, aber die Trefferreihenfolge im Daten-Feed-Versand ist nicht garantiert.</p> |
 | **Aufstockungsfenster**<br/> Exportiert historische Daten zwischen zwei früheren Datumsangaben. | Beschränkung auf das rollierende Datenfenster der Verbindung. | Auf das Datenaufbewahrungslimit der Report Suite beschränkt: **25 Monate** Standardmäßig. |
-| **Segmentierung** | Segmente können über das Datenansichtssegment, ein Feed-spezifisches Segment oder beides auf Daten-Feeds angewendet werden. | Segmente können nicht angewendet werden. |
-| **Zuordnung** | Unterstützt. Ermöglicht eine geräteübergreifende Identitätsauflösung und verknüpft geräteübergreifende Ereignisse mit einer einzelnen Person. | Nicht unterstützt. Zusammengefügte Daten können nicht über Adobe Analytics-Daten-Feeds exportiert werden. |
 | **Schema**<br/> Das Daten-Feed-Schema bestimmt, welche Spalten in einen Daten-Feed aufgenommen werden können. | Das Daten-Feed-Schema basiert auf der Konfiguration der Datenansicht.  Die Komponenten, die für die Aufnahme in das Daten-Feed-Schema verfügbar sind, sind eine Teilmenge der in der Datenansichtskonfiguration verfügbaren Komponenten.</p> | Eine vordefinierte statische Liste von über 1.100 Variablen. Viele Spalten werden als **- und** exportiert (z. B. `eVar1` / `post_eVar1`), was einen Großteil der Spaltenanzahl ausmacht. |
 | **Suchen**<br/> Dynamische Suchen ermöglichen es Ihnen, zusätzliche Suchdateien in Ihrem Daten-Feed zu erhalten, die sonst nicht verfügbar sind. | Nicht erforderlich, da sowohl Suchen als auch Klassifizierungen als Dimensionen verfügbar sind, die direkt in der Datenansicht kuratiert wurden. Wenn Sie eine Suche oder Klassifizierung als Dimension in der Datenansicht kuratieren, werden die aufgelösten Werte als reguläre Spalten in der Parquet-Ausgabe inline mit den Ereignisdaten und nicht als separate Referenzdateien angezeigt. | Wird verwendet, um eine Zahl aus einer Daten-Feed-Spalte einem tatsächlichen Wert zuzuordnen. Spezifisch für bestimmte Dinge (Browser, Betriebssystem, Mobilgerät, und sie werden als separate Datei angewendet, die mit dem Daten-Feed geliefert wird). |
 | **Sitzungsdefinition**<br/> <!--(could be included in the data processing section instead)--> | Wird in der Datenansicht definiert. | Wird zur Sammlungszeit definiert. |
