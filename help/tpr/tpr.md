@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: f7bbbaf0b737ab33088c7c585d6415f93deff4c8
+source-git-commit: 1ce48a6e077ee1069c55f3ef8969ed2eced4742e
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1388'
 ht-degree: 4%
 
 ---
 
 # Berichte zur Gesamtpopulation
 
-Das Reporting zur Gesamtpopulation bietet die Möglichkeit, Entitäten zu analysieren und Berichte zu ihnen zu erstellen, die in Profil- und Lookup-Datensätzen definiert sind und über die zeitbasierten Ereignisreihen aus Ereignisdatensätzen hinausgehen. Diese Funktion ermöglicht neue Klassen von Abfragen, Metriken und Zielgruppendefinitionen, die den gesamten Umfang des Kundenstamms eines Unternehmens widerspiegeln.
+Das Reporting zur Gesamtpopulation bietet die Möglichkeit, Entitäten zu analysieren und Berichte zu ihnen zu erstellen, die in Profil- und Lookup-Datensätzen definiert sind, die in einer Customer Journey Analytics-Verbindung vorhanden sind. Diese Analyse und das Reporting gehen über zeitbasierte Ereignisreihen aus Ereignisdatensätzen hinaus. Die Funktion ermöglicht neue Klassen von Abfragen, Metriken und Zielgruppendefinitionen, die den gesamten Umfang des Kundenstamms eines Unternehmens widerspiegeln.
 
 Customer Journey Analytics basiert auf Ereignissen. Jede Metrik, jede Visualisierung, jedes Bedienfeld, jeder Bericht ist mit einem Datums- und Zeitbereich sowie mit Ereignissen, die während dieses Datums- und Zeitbereichs auftreten, verankert. Sie stellen die Lösungen Fragen wie:
 
@@ -84,8 +84,8 @@ Für eine Verbindung zur Unterstützung des Reportings für die Gesamtpopulation
 
 Wenn ein Profildatensatz zu einer Verbindung hinzugefügt wird, füllt Customer Journey Analytics eine standardmäßige freigegebene Lookup-Konfiguration, die auf dem Datensatztyp basiert:
 
-* Für Personenprofil-Datensätze: Der Standardwert ist „match-by-Container“ und [!UICONTROL &#x200B; auf „Person] festgelegt, wobei die Identitätszuordnung als Schlüsselfeld dient. Sie können diese Standardeinstellung bearbeiten. Um beispielsweise einen bestimmten Namespace aus der Identitätszuordnung anstelle des Primärschlüssels auszuwählen. Oder um einen sekundären Namespace für Fälle anzugeben, in denen der erste Namespace nicht ausgefüllt ist (dies ist bei zusammengefügten Datensätzen der Fall).
-* Für Kontoprofildatensätze [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}: Der Standardwert ist „match-by-container[!UICONTROL &#x200B; auf „Account] (oder [!UICONTROL Global Account], wenn globale Konten für die Verbindung aktiviert sind) festgelegt. Das Kontofeld kann eine einzelne Kennung oder eine Identitätszuordnung sein. Wenn das Kontofeld eine Identitätszuordnung ist, wählen Sie den zu verwendenden Namespace aus.
+* Für Personenprofil-Datensätze: Der Standardwert ist „match-by-Container“ und [!UICONTROL  auf „Person] festgelegt, wobei die Identitätszuordnung als Schlüsselfeld dient. Sie können diese Standardeinstellung bearbeiten. Um beispielsweise einen bestimmten Namespace aus der Identitätszuordnung anstelle des Primärschlüssels auszuwählen. Oder um einen sekundären Namespace für Fälle anzugeben, in denen der erste Namespace nicht ausgefüllt ist (dies ist bei zusammengefügten Datensätzen der Fall).
+* Für Kontoprofildatensätze [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}: Der Standardwert ist „match-by-container[!UICONTROL  auf „Account] (oder [!UICONTROL Global Account], wenn globale Konten für die Verbindung aktiviert sind) festgelegt. Das Kontofeld kann eine einzelne Kennung oder eine Identitätszuordnung sein. Wenn das Kontofeld eine Identitätszuordnung ist, wählen Sie den zu verwendenden Namespace aus.
 
 Sie können mehrere freigegebene Suchen für einen einzelnen Profildatensatz konfigurieren, um mehrere Join-Pfade zu Ihren Ereignissen zu unterstützen. Wenn dieselbe Identitätszuordnung als Schlüsselfeld über mehrere gemeinsame Suchen hinweg verwendet wird, müssen die Namespace-Auswahlen konsistent sein.
 
