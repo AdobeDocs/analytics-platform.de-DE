@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: f7bbbaf0b737ab33088c7c585d6415f93deff4c8
+source-git-commit: 1ce48a6e077ee1069c55f3ef8969ed2eced4742e
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1388'
 ht-degree: 4%
 
 ---
 
 # Berichte zur Gesamtpopulation
 
-Das Reporting zur Gesamtpopulation bietet die Möglichkeit, Entitäten zu analysieren und Berichte zu ihnen zu erstellen, die in Profil- und Lookup-Datensätzen definiert sind und über die zeitbasierten Ereignisreihen aus Ereignisdatensätzen hinausgehen. Diese Funktion ermöglicht neue Klassen von Abfragen, Metriken und Zielgruppendefinitionen, die den gesamten Umfang des Kundenstamms eines Unternehmens widerspiegeln.
+Das Reporting zur Gesamtpopulation bietet die Möglichkeit, Entitäten zu analysieren und Berichte zu ihnen zu erstellen, die in Profil- und Lookup-Datensätzen definiert sind, die in einer Customer Journey Analytics-Verbindung vorhanden sind. Diese Analyse und das Reporting gehen über zeitbasierte Ereignisreihen aus Ereignisdatensätzen hinaus. Die Funktion ermöglicht neue Klassen von Abfragen, Metriken und Zielgruppendefinitionen, die den gesamten Umfang des Kundenstamms eines Unternehmens widerspiegeln.
 
 Customer Journey Analytics basiert auf Ereignissen. Jede Metrik, jede Visualisierung, jedes Bedienfeld, jeder Bericht ist mit einem Datums- und Zeitbereich sowie mit Ereignissen, die während dieses Datums- und Zeitbereichs auftreten, verankert. Sie stellen die Lösungen Fragen wie:
 
