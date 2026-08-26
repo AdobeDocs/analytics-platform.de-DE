@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 hide: true
-source-git-commit: a4f7eef26a019f4f8a716f44d49985290b135112
+source-git-commit: 9df4c8cff6c0c044902453e5fb8380fbb5c5ac2d
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '170'
 ht-degree: 5%
 
 ---
@@ -25,6 +25,6 @@ Der Umfang einer Metrikkomponente bestimmt, wie die Komponente in Berichten verw
 | Anwendungsbereich | Beschreibung |
 |---|---|
 | Ereignisbasiert | Der Umfang der Metrikkomponente ist ereignisbasiert. |
-| Auf Profil basierend | Der Umfang der Metrikkomponente ist profilbasiert. Wenn die Komponente in Berichten und in Datumsbereichen verwendet wird, gibt die Metrik die Population aus Ihren Profildaten zurück, unabhängig vom auf das Bedienfeld angewendeten Datumsbereich. Datumsfilter und Datumsbereichsvergleiche wirken sich nicht auf das Reporting dieser Metrik aus. |
+| Auf Profil basierend | Der Umfang der Metrikkomponente ist profilbasiert. Wenn die Komponente in Berichten verwendet wird, gibt die Metrik die Population aus Ihren Profildaten zurück, unabhängig vom auf das Bedienfeld angewendeten Datumsbereich. Datumsfilter und Datumsbereichsvergleiche wirken sich nicht auf das Reporting dieser Metrik aus. |
 | Auf Gesamtwert basierend | Der Umfang der Metrikkomponente ist profil- und ereignisbasiert. Wenn die Komponente in Berichten verwendet wird, gibt die Metrik die Population aus Ihren Profil- und Ereignisdaten zurück, unabhängig vom auf das Bedienfeld angewendeten Datumsbereich. Datumsfilter und Datumsbereichsvergleiche wirken sich nicht auf das Reporting dieser Metrik aus. |
 
