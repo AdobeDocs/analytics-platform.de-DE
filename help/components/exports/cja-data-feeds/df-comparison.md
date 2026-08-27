@@ -7,20 +7,14 @@ hide: true
 exl-id: 32b71016-7c53-409f-9ce4-521a40e2eb96
 autotag-review: '2026-05-19T08:44:26.806Z'
 TQID: 'https://experienceleague.adobe.com/R7c5-VutwSkyghNvwC2gZv2KUEJoa263AN0Tkdg3w4o'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 82ccb1359540e5200641b33c3d4aef7f2447003f
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: 6c07f0bc3dce3155d0605619194fc6a765ac2f3e
 workflow-type: tm+mt
-source-wordcount: 1451
+source-wordcount: 1485
 ht-degree: 1%
 
 ---
@@ -35,15 +29,13 @@ Wenn Sie zuvor Daten-Feeds in Adobe Analytics verwendet haben, verwenden Sie die
 
 ## Nur in Customer Journey Analytics verfügbare Funktionen in Daten-Feeds
 
-Wenn Sie von Adobe Analytics migrieren, sind die folgenden Funktionen in Customer Journey Analytics-Daten-Feeds neu:
+Die folgenden Funktionen sind in Customer Journey Analytics-Daten-Feeds verfügbar, aber nicht in Adobe Analytics-Daten-Feeds:
 
 * **Abgeleitete Felder**: Benutzerdefinierte Komponenten, die aus regelbasierten Transformationen erstellt wurden, die in Ihr Feed-Schema aufgenommen werden können.
 
 * **Zusammenfügen**: Geräteübergreifende Identitätsauflösung, die Ereignisse geräteübergreifend mit einer einzelnen Person verknüpft.
 
-* **Strukturiertes Datenmodell**: Feeds werden mithilfe strukturierter Daten und nicht anhand flacher Zeichenfolgen erstellt und bereitgestellt.
-
-* **Analysis Workspace-Komponentenleiste**: Wählen Sie Dimensionen und Metriken aus, die dieselbe Komponentenleiste wie Analysis Workspace verwenden, anstatt eine statische Liste von Variablennamen zu verwenden.
+* **Strukturiertes Datenmodell**: Feeds werden mithilfe strukturierter Daten und nicht anhand flacher Zeichenfolgen wie „post_product_list“ erstellt und bereitgestellt.
 
 * **Segmentierung**: Segmente, die auf die Datenansicht angewendet werden, werden automatisch übernommen, und zusätzliche Segmente können direkt auf den Feed angewendet werden.
 
@@ -55,6 +47,10 @@ Wenn Sie von Adobe Analytics migrieren, sind die folgenden Funktionen in Custome
 
 * **Übertragung von Komponentenaktualisierungen**: Änderungen an Komponenten in der Datenansicht werden automatisch an den Feed weitergegeben.
 
+* **Lookups**: Dynamische Suchen ermöglichen es Ihnen, zusätzliche Lookup-Dateien in Ihrem Daten-Feed zu empfangen, die sonst nicht verfügbar sind.
+
+* **Für Analysis Workspace-Benutzer vertraute Benutzeroberfläche**: Wählen Sie Dimensionen und Metriken mit derselben Komponentenleiste wie Analysis Workspace aus statt mit einer statischen Liste von Variablennamen.
+
 <!-- * Web MCP when it's added -->
 
 Die nachstehende [Funktionsvergleich](#functionality-comparison) Tabelle behandelt alle diese Funktionen im Detail, zusammen mit den Unterschieden bei den Funktionen, die in beiden Produkten vorhanden sind.
@@ -62,20 +58,22 @@ Die nachstehende [Funktionsvergleich](#functionality-comparison) Tabelle behande
 
 ## Funktionsvergleich
 
+In der folgenden Tabelle werden die wichtigsten Konzepte und Konfigurationsoptionen von Customer Journey Analytics-Daten-Feeds und Adobe Analytics-Daten-Feeds verglichen.
+
 | **Konzepte und Konfigurationsoptionen** | **Customer Journey Analytics** | **Adobe Analytics** |
 |---------|----------|---------|
 | **Dateneingabe**<br/> Der Datentyp, der erfasst und in Daten-Feeds eingeschlossen werden kann. | Unterstützt Cross-Channel-Dateneingabe, einschließlich Web-Daten, Callcenter-Daten, Point-of-Sale-Daten und mehr. | Unterstützt in erster Linie Web- und mobile Dateneingabe. Andere Datentypen (z. B. Callcenter- oder Point-of-Sale-Daten) können über Datenquellen aufgenommen werden, jedoch mit sehr begrenzten Verarbeitungsfunktionen. |
 | **Datenverarbeitung**<br/> Daten werden in verschiedenen Phasen verarbeitet, je nachdem, welches Produkt Sie verwenden. | Die Daten werden zur **verarbeitet** und daher können viele Berichtsfunktionen verwendet werden, um historische Daten zu ändern, wie z. B. Zuordnung, abgeleitete Felder und Segmentierung. | Daten werden zur **Erfassungszeit“ verarbeitet** sodass Berichtsfunktionen wie Verarbeitungsregeln und VISTA-Regeln keine Auswirkungen auf historische Daten haben. |
 | **Zuordnung**<br/> Geräteübergreifende und kanalübergreifende Identitätsauflösung, die Ereignisse mit einer einzelnen Person verknüpft. | Unterstützt. Zusammengefügte Identitäten können in Daten-Feed-Exporte aufgenommen werden, wenn das Zusammenfügen für die Verbindung konfiguriert ist. | Nicht unterstützt. Die Besucheridentität wird zur Erfassungszeit aus Besucher-ID-Cookies bestimmt; es ist keine geräteübergreifende Auflösung nach der Erfassung verfügbar. |
 | **Versandfrequenz**<br/> Bestimmt, wie oft der Daten-Feed gesendet wird und in welchem Zeitfenster der Feed verfügbar ist. | **Täglich** (Mitternacht bis Mitternacht in der Zeitzone der Datenansicht) oder **Stündlich**. | **Täglich** (Mitternacht bis Mitternacht in der Zeitzone der Report Suite) oder **Stündlich**. <p>Feeds von 15 Minuten sind möglich, aber standardmäßig nicht verfügbar.</p> |
-| **Verspätet eintreffende Treffer**<br/> Treffer, deren Zeitstempel zu einem früheren Versand-Häufigkeitsfenster gehören, aber nach Ablauf dieses Fensters eintreffen. <p>Beispielsweise können verspätete Treffer von einer Mobile App stammen, die Ereignisse im Offline-Modus puffert und bei einer erneuten Verbindung sendet.</p> | Mit **Einstellung „Verarbeitungsverzögerung** wird festgelegt, wie lange das System nach dem Schließen des Häufigkeitsfensters wartet, bevor der Export ausgelöst wird. Dadurch wird mehr Zeit für das Eintreffen verzögerter Daten bereitgestellt. | Verspätete Treffer können über **&#x200B;**&#x200B;Konfigurationsoption **Verspätete Treffer** eingeschlossen oder ausgeschlossen werden. <p>Die Einstellung **Lookback** steuert, wie weit das System zurückreicht, um verzögerte Daten einzuschließen.</p> |
-| **Nicht in der ReihenfolgeTreffer**<br/> Treffer, deren Zeitstempel nicht mit der Reihenfolge übereinstimmen, in der sie empfangen wurden. | Da Customer Journey Analytics sowohl Streaming- als auch Batch-Daten akzeptiert, gibt es keine Garantie dafür, dass Ereignisse für eine bestimmte Person in der Zeitstempelreihenfolge eintreffen. Obwohl Customer Journey Analytics nach Zeitstempel pro Person neu anordnet, kann es nur die eingetroffenen Daten exportieren. Dies bedeutet, dass verspätete Treffer nach Treffern mit einem späteren Zeitstempel exportiert werden können.<p>Mit **Einstellung „Verarbeitungsverzögerung** können Sie nicht in der Reihenfolge vorkommende Ereignisse in der Daten-Feed-Ausgabe reduzieren, indem Sie mehr Zeit dafür haben, dass Batch-Daten vor dem Export eingehen. Die Ereignisreihenfolge im Versand ist nicht garantiert.</p><p>**Wichtig**: Der Endverbraucher Ihrer Daten-Feed-Daten muss in der Lage sein, pro Person Zeitstempel zu verarbeiten, die nicht in der Reihenfolge sind, da die Trefferreihenfolge im Daten-Feed-Versand nicht garantiert ist.</p> | Adobe Analytics verlangt, dass die Daten zur Erfassungszeit in der richtigen Reihenfolge pro Besucher eintreffen, aber die Trefferreihenfolge im Daten-Feed-Versand ist nicht garantiert.</p> |
+| **Verspätet eintreffende Treffer**<br/> Treffer, deren Zeitstempel zu einem früheren Versand-Häufigkeitsfenster gehören, aber nach Ablauf dieses Fensters eintreffen. <p>Beispielsweise können verspätete Treffer von einer Mobile App stammen, die Ereignisse im Offline-Modus puffert und bei einer erneuten Verbindung sendet.</p> | Mit **Einstellung „Verarbeitungsverzögerung** wird festgelegt, wie lange das System nach dem Schließen des Häufigkeitsfensters wartet, bevor der Export ausgelöst wird. Dadurch wird mehr Zeit für das Eintreffen verzögerter Daten bereitgestellt. | Verspätete Treffer können über **** Konfigurationsoption **Verspätete Treffer** eingeschlossen oder ausgeschlossen werden. <p>Die Einstellung **Lookback** steuert, wie weit das System zurückreicht, um verzögerte Daten einzuschließen.</p> |
+| **Nicht in der ReihenfolgeTreffer**<br/> Treffer, deren Zeitstempel nicht mit der Reihenfolge übereinstimmen, in der sie empfangen wurden. | Da Customer Journey Analytics sowohl Streaming- als auch Batch-Daten akzeptiert, gibt es keine Garantie dafür, dass Ereignisse für eine bestimmte Person in der Zeitstempelreihenfolge eintreffen. Obwohl Customer Journey Analytics nach Zeitstempel pro Person neu anordnet, kann es nur die eingetroffenen Daten exportieren. Dies bedeutet, dass verspätete Treffer nach Treffern mit einem späteren Zeitstempel exportiert werden können.<p>Mit **Einstellung „Verarbeitungsverzögerung** können Sie nicht in der Reihenfolge vorkommende Ereignisse in der Daten-Feed-Ausgabe reduzieren, indem Sie mehr Zeit dafür haben, dass Batch-Daten vor dem Export eingehen. Die Ereignisreihenfolge im Versand ist nicht garantiert.</p><p>**Wichtig**: Der Endverbraucher Ihrer Daten-Feed-Daten muss in der Lage sein, pro Person Zeitstempel zu verarbeiten, die nicht in der Reihenfolge sind, da die Trefferreihenfolge im Daten-Feed-Versand nicht garantiert ist.</p> | Adobe Analytics verlangt, dass die Daten zur Erfassungszeit in der richtigen Reihenfolge pro Besucher eintreffen, aber die Trefferreihenfolge im Daten-Feed-Versand ist nicht garantiert. |
 | **Aufstockungsfenster**<br/> Exportiert historische Daten zwischen zwei früheren Datumsangaben. | Beschränkung auf das rollierende Datenfenster der Verbindung. | Auf das Datenaufbewahrungslimit der Report Suite beschränkt: **25 Monate** Standardmäßig. |
-| **Schema**<br/> Das Daten-Feed-Schema bestimmt, welche Spalten in einen Daten-Feed aufgenommen werden können. | Das Daten-Feed-Schema basiert auf der Konfiguration der Datenansicht.  Die Komponenten, die für die Aufnahme in das Daten-Feed-Schema verfügbar sind, sind eine Teilmenge der in der Datenansichtskonfiguration verfügbaren Komponenten. | Eine vordefinierte statische Liste von über 1.100 Variablen. Viele Spalten werden als **- und** exportiert (z. B. `eVar1` / `post_eVar1`), was einen Großteil der Spaltenanzahl ausmacht. |
+| **Schema**<br/> Das Daten-Feed-Schema bestimmt, welche Spalten in einen Daten-Feed aufgenommen werden können. | Das Daten-Feed-Schema basiert auf der Konfiguration der Datenansicht.  Die Komponenten, die für die Aufnahme in das Daten-Feed-Schema verfügbar sind, sind eine Teilmenge der in der Datenansichtskonfiguration verfügbaren Komponenten. | Eine vordefinierte statische Liste von über 1.100 Variablen. Viele Spalten werden als **vor- und nachverarbeitete Paare** exportiert (z. B. `eVar1` / `post_eVar1`), was einen Großteil der Spaltenanzahl ausmacht. |
 | **Daten-Feed-Builder**<br/> Die Schnittstelle zum Konfigurieren der in einem Daten-Feed enthaltenen Spalten. | Verwendet eine Komponentenleiste mit denselben benannten Dimensionen und Metriken, die in der Datenansicht verfügbar sind, und stimmt damit mit dem Analysis Workspace-Erlebnis überein. | Verwendet eine flache Liste von rohen Variablennamen (z. B. `eVar1`, `prop5`), die aus einem vordefinierten Satz von über 1.100 Spalten ausgewählt wurden. Komponenten werden jenseits ihrer Variablenkennung weder benannt noch beschrieben. |
 | **Abgeleitete Felder**<br/> benutzerdefinierte Komponenten, die mithilfe regelbasierter Transformationen definiert wurden, die zum Zeitpunkt der Berichterstellung angewendet wurden. | Unterstützt. Abgeleitete Feldkomponenten können zusammen mit Standarddimensionen und Metriken in das Daten-Feed-Schema aufgenommen werden. | Nicht unterstützt. |
 | **Komponentenaktualisierungen**<br/> Ob Änderungen an der Komponentenkonfiguration in der zukünftigen Daten-Feed-Ausgabe berücksichtigt werden. | Änderungen an Komponenten in der Datenansicht (z. B. das Umbenennen oder Entfernen einer Dimension) werden automatisch an zukünftige Daten-Feeds weitergegeben. | Nicht zutreffend. Das Spaltenschema ist vordefiniert und statisch. Es gibt keine zu aktualisierenden Komponenten auf Datenansichtsebene. |
-| **Lookups**<br/> Dynamic Lookups ermöglichen es Ihnen, zusätzliche Lookup-Dateien in Ihrem Daten-Feed zu empfangen, die sonst nicht verfügbar sind. | Nicht erforderlich, da sowohl Suchen als auch Klassifizierungen als Dimensionen verfügbar sind, die direkt in der Datenansicht kuratiert wurden. Wenn Sie eine Suche oder Klassifizierung als Dimension in der Datenansicht kuratieren, werden die aufgelösten Werte als reguläre Spalten in der Parquet-Ausgabe inline mit den Ereignisdaten und nicht als separate Referenzdateien angezeigt. | Wird verwendet, um eine Zahl aus einer Daten-Feed-Spalte einem tatsächlichen Wert zuzuordnen. Spezifisch für bestimmte Dinge (Browser, Betriebssystem, Mobilgerät, und sie werden als separate Datei angewendet, die mit dem Daten-Feed geliefert wird). |
+| **Lookups**<br/> Dynamic Lookups ermöglichen es Ihnen, zusätzliche Lookup-Dateien in Ihrem Daten-Feed zu empfangen, die sonst nicht verfügbar sind. | Nicht erforderlich, da sowohl Suchen als auch Klassifizierungen als Dimensionen verfügbar sind, die direkt in der Datenansicht kuratiert wurden. Wenn Sie eine Suche oder Klassifizierung als Dimension in der Datenansicht kuratieren, werden die aufgelösten Werte als reguläre Spalten in der Parquet-Ausgabe inline mit den Ereignisdaten und nicht als separate Referenzdateien angezeigt. | Wird als separate Lookup-Datei bereitgestellt, die mit dem Feed bereitgestellt wird. Behandelt einen festen Satz von Dimensionen wie Browser, Betriebssystem und Mobilgerät. |
 | **Sitzungsdefinition**<br/> Wie eine Besuchs- oder Sitzungsgrenze definiert wird, die sich darauf auswirkt, wie Ereignisse gruppiert und zugeordnet werden. | Wird in der Datenansicht definiert. | Wird zur Sammlungszeit definiert. |
 | **Segmentierung**<br/> Die Möglichkeit, die Daten-Feed-Ausgabe mithilfe von Segmenten zu filtern. | Segmente, die auf die Datenansicht angewendet werden, werden automatisch vom Daten-Feed übernommen. Zusätzliche Segmente können auch direkt auf einen einzelnen Daten-Feed angewendet werden. | Nicht unterstützt. Daten-Feeds exportieren alle erfassten Daten ohne Segmentfilterung. |
 | **Berechnete Metriken**<br/> Benutzerdefinierte Metriken, die Sie aus vorhandenen Metriken erstellen können. | Nicht verfügbar | Nicht verfügbar |
