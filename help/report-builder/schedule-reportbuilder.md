@@ -16,10 +16,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 563f5d89ee9977a956565f68cb2b75adcfb37c0f
 workflow-type: tm+mt
-source-wordcount: 878
-ht-degree: 14%
+source-wordcount: 934
+ht-degree: 13%
 
 ---
 
@@ -29,8 +29,11 @@ Nachdem Sie Ihre Arbeitsmappe gespeichert und Ihre Analyse abgeschlossen haben, 
 
 Für eine Arbeitsmappe können mehrere Zeitpläne erstellt werden. Sie erstellen beispielsweise zwei Zeitpläne, um einmal wöchentlich eine Arbeitsmappe an Ihr Team und Ihren Vorgesetzten zu senden.
 
-Mit der Zeitplanfunktion können Sie auch einen Passwortschutz für eine Arbeitsmappe einrichten und zuvor geplante Arbeitsmappen bearbeiten.
+Mit der Zeitplanfunktion können Sie auch einen Passwortschutz für eine Arbeitsmappe einrichten und den Zeitplan für zuvor geplante Arbeitsmappen bearbeiten.
 
+>[!NOTE]
+>
+>Ein Zeitplan sendet die Version der Arbeitsmappe, die bei der Erstellung des Zeitplans vorhanden war. Wenn Sie die Arbeitsmappe später ändern und speichern, werden diese Änderungen im vorhandenen Zeitplan nicht übernommen und weiterhin die Originalversion gesendet. Um eine aktualisierte Arbeitsmappe zu verteilen, erstellen Sie einen neuen Zeitplan, nachdem Sie Ihre Änderungen gespeichert haben.
 
 >[!BEGINSHADEBOX]
 
