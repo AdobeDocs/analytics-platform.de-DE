@@ -21,9 +21,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a7629993e235d66844db036ccce88e57fc20562
+source-git-commit: 9c0ddbb48c5cb1c62bded02d1455f2631ab1679f
 workflow-type: tm+mt
-source-wordcount: 10479
+source-wordcount: 10488
 ht-degree: 90%
 
 ---
@@ -413,8 +413,8 @@ Im Rahmen des Verbindungs-Workflows [fügen Sie einen oder mehrere Datensätze h
 
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_personid"
->title="Personen-ID"
->abstract="Wählen Sie ein Feld vom Typ Identität oder IdentityMap mit großer Abdeckung von Ereignissen aus. Die enthaltenen Werte werden auf die Werte aus dem zuvor konfigurierten Namespace der Personenkennung erhöht."
+>title="Persistente Personen-ID"
+>abstract="Wählen Sie ein Feld vom Typ Identität oder IdentityMap aus, das für alle Ereignisse verfügbar ist, z. B. das Feld mit den ECIDs. Diese Kennungen werden aus dem zuvor konfigurierten Namespace der Personenkennung auf die Personen-IDs erhöht."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_accountid"
