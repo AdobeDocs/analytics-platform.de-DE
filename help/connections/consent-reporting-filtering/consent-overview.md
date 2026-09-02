@@ -19,16 +19,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 1060
-ht-degree: 3%
+source-wordcount: 1311
+ht-degree: 1%
 
 ---
 
 # Übersicht über das Reporting und die Filterung von Einverständnissen
 
-Einverständnisberichte und -filter verwenden die in Ihren Adobe Experience Platform-Profildatensätzen gespeicherten Einverständnisrichtlinien-Mitgliedschaftsdaten, um Ihnen dabei zu helfen, Berichte über das Einverständnis der Besuchenden zu erstellen und optional nicht einverstandene Besuchende auszuschließen, bevor ihre Daten in Customer Journey Analytics aufgenommen werden.
+Das Reporting und die Filterung von Einverständnissen verwenden die Mitgliedschaftsdaten zu Einverständnisrichtlinien, die in Ihren Adobe Experience Platform-Profildatensätzen gespeichert sind, um Ihnen bei der Berichterstattung über das Einverständnis der Besucher zu helfen. Darüber hinaus können Sie festlegen, dass Besucher, die mit der Einwilligung nicht einverstanden sind, ausgeschlossen werden, bevor ihre Daten in Customer Journey Analytics aufgenommen werden.
 
 ## Voraussetzungen
 
@@ -55,7 +55,23 @@ Das folgende Diagramm und die zugehörige Tabelle zeigen eine allgemeine Darstel
 
 ## Einverständnis-Reporting vs. Filterung
 
-Einverständnisberichte und -filterung sind zwei separate Funktionen. Sie können die Einverständnisberichterstattung selbst aktivieren oder sowohl das Reporting als auch das Filtern gemeinsam aktivieren.
+Einverständnisberichte und -filterung sind zwei separate Funktionen. **Einverständnisberichte** ermöglichen es Ihnen, mit Analysis Workspace zu berichten, welche Besucher mit den verschiedenen Einverständnisrichtlinien übereinstimmen, die in Ihren Experience Platform-Profildatensätzen konfiguriert sind. **Einverständnisfilter** weist Customer Journey Analytics an, Besucher, die nicht einverstanden sind, zum Zeitpunkt der Aufnahme auszuschließen.
+
+Sie können entweder die Einverständnisberichterstattung oder die Filterung einzeln aktivieren oder beide zusammen verwenden. Die Aktivierung des Einverständnisberichts allein reicht für viele geschäftliche Anwendungsfälle aus.
+
+In den folgenden Informationen werden die Gründe für die Verwendung der einzelnen Konfigurationen beschrieben:
+
+* **Am häufigsten:**
+
+  **Verwenden von Einverständnisdaten für das Reporting (ohne Filterung)**: Diese Konfiguration ist nützlich, wenn Sie die Zugehörigkeit zu einer Einverständnisrichtlinie in Analysis Workspace analysieren möchten und keine Besucherdaten von der Aufnahme ausschließen müssen.
+
+* **Weniger häufig:**
+
+  **Verwenden Sie sowohl Einverständnisdaten für das Reporting als auch für das Filtern von Einverständnisdaten**: Diese Konfiguration ist nützlich, wenn Sie Daten über die Zugehörigkeit zu einer Einverständnisrichtlinie in Analysis Workspace analysieren möchten und wenn Ihr Unternehmen Sie außerdem auffordert, Daten von Besuchern, die nicht einverstanden sind, zum Zeitpunkt der Aufnahme auszuschließen.
+
+* **Gelegentlich:**
+
+  **Filtern von Einverständnisdaten (ohne Reporting)**: Diese Konfiguration ist ungewöhnlich, könnte aber nützlich sein, wenn Ihr Unternehmen verlangt, dass Sie nicht einvernehmliche Besucherdaten zum Zeitpunkt der Aufnahme ausschließen, aber Sie müssen nicht über andere Einverständnisentscheidungen berichten, die nicht Teil der gefilterten Daten sind. Beispielsweise könnten die Compliance-Anforderungen Ihres Unternehmens vorschreiben, dass Sie Daten basierend auf dem Einverständnis filtern, ohne dass Sie den Einverständnisrichtlinien-Lookup-Datensatz erstellen und pflegen müssen, den das Reporting verwendet.
 
 ### Einverständnisberichte
 
@@ -79,10 +95,12 @@ Beachten Sie bei der Verwendung der Einverständnisfilterung Folgendes:
 
   Eine Marketing-Aktion stellt eine Kategorie der Datennutzung dar. Customer Journey Analytics bestimmt, welche Einverständnisrichtlinien für jede Marketing-Aktion gelten, und Sie aktivieren die Filterung für jede Marketing-Aktion unabhängig, wenn Sie [Ihre Konfiguration erstellen](/help/connections/consent-reporting-filtering/consent-configure.md#create-a-configuration).
 
+  Marketing-Aktionen sind an die Datennutzungskennzeichnungen und -richtlinien gebunden, die Sie in Experience Platform konfigurieren. Weitere Informationen finden Sie unter [Bezeichnungen, Richtlinien und Marketing-Aktionen](/help/data-views/data-governance.md).
+
   | Marketing-Aktion | Beschreibung |
-  |---------|----------|
-  | **[!UICONTROL Analytics-Daten]** | Standardmäßiges Customer Journey Analytics-Reporting in Analysis Workspace. |
-  | **[!UICONTROL Datenwissenschaftsdaten]** | Anwendungsfälle für erweiterte Analysen, maschinelles Lernen und Datenwissenschaft. |
+  | --------- | ---------- |
+  | **[!UICONTROL Analytics-Daten]** | Filtern von Daten, die für standardmäßige Customer Journey Analytics-Berichte in Analysis Workspace verwendet werden. |
+  | **[!UICONTROL Datenwissenschaftsdaten]** | Filtern Sie Daten, die für erweiterte Analysen, maschinelles Lernen und datenwissenschaftliche Anwendungsfälle verwendet werden. |
 
 * Die Daten eines Besuchers werden nur dann aufgenommen, wenn der Besucher den **Einverständnisrichtlinien**. Wenn einem Besucher eine anwendbare Richtlinie fehlt, werden die Daten dieses Besuchers ausgeschlossen.
 

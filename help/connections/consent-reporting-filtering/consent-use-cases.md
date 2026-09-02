@@ -17,9 +17,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 585
+source-wordcount: 590
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Erfahren Sie, wie viele Besucher den einzelnen Zustimmungsrichtlinien entspreche
 
 1. Erstellen Sie eine Konfiguration und wählen Sie die Sandbox, den Profildatensatz und die Verbindung aus, die die Mitgliedschaftsdaten Ihrer Einverständnisrichtlinie enthalten.
 
-1. Lassen Sie sowohl **[!UICONTROL Analytics]** als auch **[!UICONTROL Datenwissenschaft]** die Filterung deaktiviert.
+1. Lassen Sie sowohl **[!UICONTROL Analytics-Daten]** als auch **[!UICONTROL Datenwissenschaftsdaten]** die Filterung deaktiviert.
 
 1. Erstellen Sie in Analysis Workspace eine Freiformtabelle mit der Dimension **[!UICONTROL Richtlinienname]** und der Metrik **[!UICONTROL Besucher mit Einverständnis]**, um die Abdeckung pro Richtlinie anzuzeigen.
 
@@ -70,7 +70,7 @@ Stellen Sie sicher, dass Standardberichte nur Besucher enthalten, die der Verwen
 
 1. Erstellen oder bearbeiten Sie eine Konfiguration für die Verbindung, die Ihre Analytics-Berichte unterstützt.
 
-1. Aktivieren Sie den **[!UICONTROL Analytics]**-Umschalter.
+1. Aktivieren Sie **[!UICONTROL Umschalter]** Analytics-Daten“.
 
 1. Bestätigen Sie die Konfiguration. Ab diesem Zeitpunkt nimmt Customer Journey Analytics die Daten eines Besuchers nur noch dann auf, wenn der Besucher allen Einverständnisrichtlinien entspricht, die für die Analytics-Marketing-Aktion gelten.
 
@@ -86,7 +86,7 @@ Wenden Sie verschiedene Einverständnisanforderungen auf standardmäßige Berich
 
 1. Erstellen oder bearbeiten Sie eine Konfiguration für die entsprechende Verbindung.
 
-1. Aktivieren Sie **[!UICONTROL Umschalter]** Analytics“, den Umschalter **[!UICONTROL Datenwissenschaft]** oder beides, je nach den Einverständnisanforderungen für jeden Anwendungsfall.
+1. Aktivieren Sie **[!UICONTROL Umschalter]** Analytics-Daten **[!UICONTROL den Umschalter Data Science-Daten]** oder beides, je nach den Einverständnisanforderungen für den jeweiligen Anwendungsfall.
 
 1. Bestätigen Sie die Konfiguration. Customer Journey Analytics bewertet die Einverständnisrichtlinien, die für jede aktivierte Marketing-Aktion gelten, unabhängig.
 

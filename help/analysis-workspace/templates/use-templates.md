@@ -27,9 +27,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 89f0a1e54662c59d474b1fba28eb8420612e9243
+source-git-commit: e8f86da8d18cfa6a30e4a8330ae5492e9d0aa2f0
 workflow-type: tm+mt
-source-wordcount: 21140
+source-wordcount: 21213
 ht-degree: 98%
 
 ---
@@ -677,6 +677,7 @@ Die folgenden Vorlagen sind verfügbar:
 
 &#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
+| [!UICONTROL **Übersicht über die Einverständnisrichtlinie**] | Zeigen Sie Besucherinnen und Besucher basierend auf den Mitgliedschaftsdaten der Einverständnisrichtlinie aus Adobe Experience Platform an.<p>**Dies kann Ihnen** Ausgangspunkt für die Berichterstellung über die Mitgliedschaft in der Einverständnisrichtlinie für Besucher helfen. Wenn eine Datenansicht für das Reporting zu Einverständnissen konfiguriert ist, stellt Customer Journey Analytics automatisch eine Vorlage für die Einverständnisrichtlinien-Analyse in Analysis Workspace zur Verfügung. <br/>**Je nachdem, was Sie lernen, können** beliebig viele Dinge tun, z. B. nicht einverständnispflichtige Besucher von Analytics-Berichten ausschließen.</p> |
 | **[!UICONTROL Zielgruppenübersicht]** | Zeigen Sie an, welche Zielgruppen unter den Personen vertreten sind, die Ihre Site besuchen.<p>**Dies kann Ihnen helfen**, allgemeine Informationen zu den Zielgruppen, dem Ursprung der Zielgruppen (RTCDP, Customer Journey Analytics), Zielgruppenüberschneidungen und vieles mehr besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Daten verwenden, um sich auf Marketing-Maßnahmen für diese bestimmten Zielgruppen zu konzentrieren oder maßgeschneiderte Erlebnisse für Kundinnen und Kunden zu schaffen, die mehrere Zielgruppen umfassen.</p><p>Diese Vorlage verwendet die Dimensionen Zielgruppenname, Zielgruppenherkunft, Name der ausgestiegenen Zielgruppe und Ursprung der ausgestiegenen Zielgruppe.</p><p>Weitere Informationen finden Sie unter [&#x200B; von Experience Platform-Zielgruppen in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **Erstmalige vs. wiederkehrende Besuchende**] | Zeigen Sie einen Vergleich zwischen erstmaligen und wiederkehrenden Besuchenden an. <p>**Dies kann Ihnen helfen**, die Effektivität Ihrer Site bei der Kundenbindung oder die Rate, mit der Sie neue Kundschaft gewinnen, besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. erstmaligen Besuchenden Anreize für zukünftige Käufe anbieten, um sie zur Rückkehr zu bewegen.</p><!-- This template uses the --> |
 | **Personen-ID** | Zeigen Sie das individuelle Benutzerverhalten über verschiedene Kanäle hinweg an.<p>**Dies kann Ihnen helfen**, die gesamte Customer Journey und alle Interaktionen Touchpoint-übergreifend besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. die Marketing-Maßnahmen genauer auf Benutzervorlieben ausrichten.</p><!-- This template uses the --> |
