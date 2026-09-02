@@ -27,10 +27,10 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e8f86da8d18cfa6a30e4a8330ae5492e9d0aa2f0
+source-git-commit: bac086b2636f835a5dc494b9cd05eb7b560f0bed
 workflow-type: tm+mt
-source-wordcount: 21213
-ht-degree: 98%
+source-wordcount: 21458
+ht-degree: 97%
 
 ---
 
@@ -153,17 +153,17 @@ So greifen Sie auf alle verfügbaren vorkonfigurierten Vorlagen zu:
 
    * **[[!UICONTROL Am beliebtesten]](#most-popular)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL Interaktion]](#engagement)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL Interaktion]](#web-engagement)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL Konversion]](#web-conversion)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL Konversion]](#web-conversion)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL Zielgruppe]](#web-audience)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL Audience]](#web-audience)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL Akquise]](#web-acquisition)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL Akquise]](#web-acquisition)**
 
-   * **[[!UICONTROL Mobile]** > **[!UICONTROL App]](#mobile-mobile-app)**
+   * **[!UICONTROL Mobile]** > **[[!UICONTROL Mobile App]](#mobile-mobile-app)**
 
-   * **[[!UICONTROL Mobile]** > **[!UICONTROL Informationen zu Mobilgeräten]](#mobile-mobile-device-information)**
+   * **[!UICONTROL Mobile]** > **[[!UICONTROL Informationen zu Mobilgeräten]](#mobile-mobile-device-information)**
 
    * **[[!UICONTROL Zeitunterteilung]](#time-parting)**
 
@@ -171,7 +171,13 @@ So greifen Sie auf alle verfügbaren vorkonfigurierten Vorlagen zu:
 
    * **[[!UICONTROL Sonstige Kanäle]](#other-channels)**
 
-   * **[[!UICONTROL AJO]](#ajo)**
+   * **[[!UICONTROL Journey Optimizer]](#ajo-templates)**
+
+   * **[[!UICONTROL Brand Concierge]](#brand-concierge)**
+
+   * **[[!UICONTROL Mix Modeler]](#mix-modeler)**
+
+
 
 ### Am beliebtesten {#most-popular}
 
@@ -409,6 +415,12 @@ Die folgenden Vorlagen sind verfügbar:
 >abstract="**Dies kann Ihnen helfen**, zu verstehen, wie Ihre Inhalte auf granularer Ebene funktionieren. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. Content Analytics verwendet KI, um automatisch Attribute zu generieren und Ihre Inhalte mit ihnen zu taggen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/content-analytics/content-analytics).<br/>**Basierend auf Ihren Erkenntissen können Sie** eine Reihe von Schritten ausführen, z. B. leistungsstarke Assets auf Ihrer Startseite bewerben, Inhalte für bestimmte Segmente personalisieren, sodass sie leistungsstarke Attribute beinhalten, oder mittlerweile veraltete Inhalte austauschen."
 
 
+
+>[!CONTEXTUALHELP]
+>id="template--content-analytics-paid-media"
+>title="Erfahren Sie, welche Paid-Media-Inhalte und -Inhaltsattribute die beste Leistung erzielen."
+>abstract="**Dies kann Ihnen helfen** zu erfahren, wie Ihre Paid-Media-Inhalte auf einer granularen Ebene funktionieren. Sie können die Reichweite, Interaktion, Ausgaben und Effizienz bezahlter Medien in Netzwerken, Konten, Kampagnen, Erlebnissen und Assets überprüfen. Die Metriken und Dimensionen in diesem Bedienfeld bleiben absichtlich im Korn „Asset-Zusammenfassung für bezahlte Medien“. Zusammenfassungsdatensätze nicht mit Ereignisdaten kombinieren.  [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/content-analytics/content-analytics).<br/>**Je nachdem, was Sie lernen** können Sie eine beliebige Anzahl von Dingen tun, z. B. sich darauf konzentrieren, wie Sie Geld für Ihre bezahlten Medienkanäle ausgeben, mehr Geld für Kampagnen mit geringer Leistung ausgeben oder mehr Geld für Kampagnen mit leistungsstarken Assets ausgeben."
+
 Die folgenden Vorlagen sind verfügbar:
 
 &#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
@@ -427,7 +439,8 @@ Die folgenden Vorlagen sind verfügbar:
 | **Einstiegsseiten** | Zeigen Sie die wichtigsten Seiten an, auf die Personen beim ersten Besuch Ihrer Site zugreifen. <p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Seiten den meisten Traffic zu Ihrer Site leiten, oder mehr über die ersten Eindrücke zu erfahren, die Besuchende auf Ihrer Site haben.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. das erste Erlebnis optimieren, das Personen auf der Site haben, oder sicherstellen, dass die Seiten, die Personen beim Eintritt in Ihre Site zuerst sehen, einladend sind und die erforderlichen Links zu anderen Bereichen Ihrer Site bereitstellen.</p><p>Diese Vorlage verwendet die Metrik „Sitzungen“. Außerdem werden die Visualisierungen „Balken“ und „Freiformtabelle“ verwendet.</p> |
 | **Ausstiegsseiten** | Zeigen Sie die wichtigsten Seiten an, auf die Personen unmittelbar vor dem Verlassen Ihrer Site zugreifen.<p>**Dies kann Ihnen helfen**, besser zu verstehen, welche Seiten Personen von der Site wegführen. </p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. gängige Exitpages aktualisieren, um das Erlebnis zu optimieren, das Personen vor dem Verlassen haben, oder Inhalte oder Links aufnehmen, um Personen dazu aufzufordern, auf Ihrer Site zu bleiben.</p><p>Diese Vorlage verwendet die Metrik „Sitzungen“. Außerdem werden die Visualisierungen „Balken“ und „Freiformtabelle“ verwendet.</p> |
 | **Produktnutzungsübersicht** | Sehen Sie sich an, wie Customer Journey Analytics in Ihrer Organisation verwendet wird. <p>**Dies kann Ihnen helfen**, besser zu verstehen, wie viele Personen Customer Journey Analytics wie oft verwenden und welche Nutzungs-Trends im Laufe der Zeit zu beobachten sind. Sie können auch die Anzahl der erstellten Projekte und Details zu diesen Projekten (z. B. welche Komponenten, Visualisierungen und Panels am häufigsten verwendet werden) sowie viele andere Nutzungsstatistiken anzeigen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. nicht verwendete Projekte oder Komponenten löschen oder Benutzerschulungen für beliebte Funktionen bereitstellen.</p> |
-| **Content Analytics** | Erfahren Sie, welche Inhalte und Inhaltsattribute die beste Leistung erbringen.<p>**Dies kann Ihnen helfen**, zu verstehen, wie Ihre Inhalte auf granularer Ebene funktionieren. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. Content Analytics verwendet KI, um automatisch Attribute zu generieren und Ihre Inhalte mit ihnen zu taggen. Weitere Informationen finden Sie unter [Content Analytics](/help/content-analytics/content-analytics.md){target="_blank"}.</p><p>**Basierend auf Ihren Erkenntissen können Sie** eine Reihe von Schritten ausführen, z. B. leistungsstarke Assets auf Ihrer Startseite bewerben, Inhalte für bestimmte Segmente personalisieren, sodass sie leistungsstarke Attribute beinhalten, oder mittlerweile veraltete Inhalte austauschen.</p> |
+| **Content Analytics** | Erfahren Sie, welche Inhalte und Inhaltsattribute die beste Leistung erbringen.<p>**Dies kann Ihnen helfen**, zu verstehen, wie Ihre Inhalte auf granularer Ebene funktionieren. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen. Content Analytics verwendet KI, um automatisch Attribute zu generieren und Ihre Inhalte mit ihnen zu taggen. Weitere Informationen finden Sie unter [Content Analytics](/help/content-analytics/content-analytics.md).</p><p>**Basierend auf Ihren Erkenntissen können Sie** eine Reihe von Schritten ausführen, z. B. leistungsstarke Assets auf Ihrer Startseite bewerben, Inhalte für bestimmte Segmente personalisieren, sodass sie leistungsstarke Attribute beinhalten, oder mittlerweile veraltete Inhalte austauschen.</p> |
+| **Paid Media Content Analytics** | Erfahren Sie, welche Paid-Media-Inhalte und -Inhaltsattribute die beste Leistung erzielen.<p>**Dies kann Ihnen helfen** zu erfahren, wie Ihre Paid-Media-Inhalte auf einer granularen Ebene funktionieren. Sie können die Reichweite, Interaktion, Ausgaben und Effizienz bezahlter Medien in Netzwerken, Konten, Kampagnen, Erlebnissen und Assets überprüfen. Die Metriken und Dimensionen in diesem Bedienfeld bleiben absichtlich im Korn „Asset-Zusammenfassung für bezahlte Medien“. Zusammenfassungsdatensätze nicht mit Ereignisdaten kombinieren. Weitere Informationen finden Sie unter [Content Analytics](/help/content-analytics/content-analytics.md).<p/><p>**Je nachdem, was Sie lernen** können Sie eine beliebige Anzahl von Dingen tun, z. B. sich darauf konzentrieren, wie Sie Geld für Ihre bezahlten Medienkanäle ausgeben, mehr Geld für Kampagnen mit geringer Leistung ausgeben oder mehr Geld für Kampagnen mit leistungsstarken Assets ausgeben.</p> |
 
 ### Web: Konversion {#web-conversion}
 
@@ -1051,7 +1064,7 @@ Die folgenden Vorlagen sind verfügbar:
 | **Umfrage** | Zeigen Sie die Benutzerinteraktion für Ihre Umfragen an. Zeigen Sie die Anzahl der Starts und Abschlüsse, die wichtigsten Fragen und Antworten und die Anzahl der erstmaligen und wiederholten Teilnehmenden an.<p>**Dies kann Ihnen helfen**, die Interaktionsstufen und Erfolgsraten der Umfragen besser zu verstehen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. zukünftige Umfragen anpassen, um die Teilnahme zu erhöhen.</p><p>Diese Vorlage verwendet die Metriken „Benutzende“, „Ereignisse“, „Umfragestarts“, „Umfrageabschlüsse“ und „Abschlussrate der Umfrage“.</p> |
 | **Produktnutzungsübersicht** | Erfahren Sie, wie Ihre Organisation Customer Journey Analytics verwendet.<p>**Dies kann Ihnen helfen**, besser zu verstehen, wie viele Personen in Ihrer Organisation Customer Journey Analytics wie oft verwenden, und den Trend dieser Daten im Laufe der Zeit darzustellen. Sie können auch die Anzahl der erstellten Projekte und Details zu diesen Projekten sehen. Erfahren Sie neben anderen Nutzungsstatistiken, welche Komponenten, Visualisierungen und Panels am häufigsten verwendet werden. [Weitere Informationen](/help/tools/product-usage/usage-overview.md)</p><p>**Basierend auf Ihren Erkenntnissen können Sie** eine Reihe von Schritten ausführen, z. B. nicht verwendete Projekte oder Komponenten löschen oder Benutzerschulungen für beliebte Funktionen bereitstellen.</p> |
 
-### Journey Optimizer {#AJO-templates}
+### Journey Optimizer {#ajo-templates}
 
 <!--CJA only-->
 
@@ -1139,13 +1152,7 @@ Die folgenden Vorlagen sind verfügbar:
 | [!UICONTROL **Aktivität der B2B-Käufergruppe**] | Visualisieren Sie die Aktivitäten der Käufergruppen innerhalb jedes Kundenkontos, um die Marketing-Aktivitäten für Kundenkonten und Käufergruppen zu optimieren.<p>**Dies kann Ihnen helfen**, zu visualisieren, welche Käufergruppen und welche Personen innerhalb dieser Käufergruppen am aktivsten sind, und Lücken in der Gruppenbeteiligung aufzuzeigen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. versuchen, mehr mit Personen in Käufergruppen zu interagieren, die nicht beteiligt zu sein scheinen.</p> |
 
 
-### Vorlagen für Mix Modeler {#mix-modeler-templates}
-
-Die folgenden Vorlagen sind verfügbar:
-
-&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
-| --- | --- |
-| [!UICONTROL **Inkrementelle Mix Modeler-Modelleinblicke**] | Zeigen Sie Erkenntnisse ausgewählter Modelle an, die von Mix Modeler generiert wurden.<p>**Dies kann Ihnen helfen**, die inkrementellen Erkenntnisse aus den in Mix Modeler generierten Modellen besser zu verstehen. <p>**Basierend auf diesen Erkenntnissen** können Sie folgende Schritte ausführen:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul></p> |
+### Mix Modeler {#mix-modeler-templates}
 
 <!-- CJA only -->
 
@@ -1153,3 +1160,13 @@ Die folgenden Vorlagen sind verfügbar:
 >id="template--mixmodeler-incremental-models-insights"
 >title="Zeigen Sie Erkenntnisse ausgewählter Modelle an, die von Mix Modeler generiert wurden."
 >abstract="**Dies kann Ihnen helfen**, die inkrementellen Erkenntnisse aus den in Mix Modeler generierten Modellen besser zu verstehen. <br/>**Basierend auf diesen Erkenntnissen** können Sie folgende Schritte ausführen:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul>"
+
+Die folgenden Vorlagen sind verfügbar:
+
+&#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- |
+| [!UICONTROL **Inkrementelle Mix Modeler-Modelleinblicke**] | Zeigen Sie Erkenntnisse ausgewählter Modelle an, die von Mix Modeler generiert wurden.<p>**Dies kann Ihnen helfen**, die inkrementellen Erkenntnisse aus den in Mix Modeler generierten Modellen besser zu verstehen. <p>**Basierend auf diesen Erkenntnissen** können Sie folgende Schritte ausführen:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul></p> |
+
+
+
+
