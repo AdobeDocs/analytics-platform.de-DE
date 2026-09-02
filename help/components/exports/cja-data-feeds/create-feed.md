@@ -5,22 +5,14 @@ hide: true
 feature: Components
 autotag-review: '2026-05-19T08:45:44.870Z'
 TQID: 'https://experienceleague.adobe.com/QgBD7vCkw4YA568XOLlwTnw8eZVZybXr3DFbM1ZKYDw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: fdd9b5738103166d7c64666f85d0c508c7176fd0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
 workflow-type: tm+mt
-source-wordcount: 4178
+source-wordcount: 4217
 ht-degree: 21%
 
 ---
@@ -77,6 +69,15 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_required_dimensions"
+>title="Erforderliche Dimensionen"
+>abstract="Jeder Daten-Feed muss bestimmte Dimensionen enthalten, die durch eine Beschriftung **Erforderlich** neben dem Dimensionsnamen gekennzeichnet sind. Diese Dimensionen bieten die Mindeststruktur, die für die Analyse auf Ereignisebene erforderlich ist."
+
+<!-- markdownlint-enable MD034 -->
+
 1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen bei [experiencecloud.adobe.com](https://experiencecloud.adobe.com) an.
 
 1. Wählen Sie [!UICONTROL **Customer Journey Analytics**] im App-Umschalter ![App](/help/assets/icons/Apps.svg) oben rechts in der Benutzeroberfläche aus.
@@ -114,13 +115,13 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
    Segmente, die Sie hier anwenden, kommen zu Segmenten hinzu, die möglicherweise bereits in Ihrer Datenansicht angewendet werden.
 
-1. (Optional) Suchen Sie in der linken Leiste mithilfe des Felds **Suche** bestimmte Komponenten oder wählen Sie das Symbol **Sortieren** ![Symbol „Komponenten sortieren“](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), um eine der folgenden Sortieroptionen anzuwenden:
+1. (Optional) Suchen Sie in der linken Leiste mithilfe des Felds **Suche** nach bestimmten Komponenten. Oder wählen Sie das Symbol **Sortieren** (Symbol ![Komponenten sortieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), um eine der folgenden Sortieroptionen anzuwenden:
 
    | Option | Funktion |
-   |---------|----------|
+   | --------- | ---------- |
    | [!UICONTROL **Empfohlen**] | Sortiert Komponenten nach den am Anfang der Liste empfohlenen Komponenten. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrem Unternehmen verwendet werden, werden weiter oben in der Liste angezeigt. |
    | [!UICONTROL **Alphabetisch**] | Sortiert Komponenten alphabetisch. |
-   | [!UICONTROL **Kategorisch**] | Sortiert Komponenten nach Komponententyp (Dimension, Metrik, Segment, Datumsbereich). |
+   | [!UICONTROL **Kategorisch**] | Sortiert Komponenten ähnlich wie [!UICONTROL **Empfohlen**] mit dem Unterschied, dass berechnete Metriken und Standardmetriken separat gruppiert werden, anstatt zusammengemischt zu werden. |
 
 1. Fügen Sie Komponenten zur Daten-Feed-Konfiguration hinzu. In der linken Leiste werden nur Komponenten angezeigt, die für Daten-Feeds gültig sind.
 
@@ -138,11 +139,11 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
    | Name der Dimension | Anmerkungen | Daten-Feeds | Sonstige Berichte |
    |---|---|---|---|
-   | Zeitstempel – UTC | Datum und Uhrzeit des Ereignisses, dargestellt in UTC-Zeitzone. Unterstützt die Granularität von Subsekunden (Mikrosekunden). | Obligatorisch | Nicht verfügbar |
-   | Zeilen-ID | Die eindeutige Kennung für jede Zeile, die im Daten-Feed enthalten ist. | Obligatorisch | Nicht verfügbar |
-   | Sitzungs-ID | Die eindeutige Kennung für jede Sitzung, die im Daten-Feed enthalten ist. | Obligatorisch | Nicht verfügbar |
-   | Personen-ID | Die Personenkennung für die Datenansicht und die Verbindung | Obligatorisch | Optionaler Standard |
-   | Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Konto-ID bei Verwendung des Konto-Containers | Obligatorisch | Optionaler Standard |
+   | Zeitstempel – UTC | Datum und Uhrzeit des Ereignisses, dargestellt in UTC-Zeitzone. Unterstützt die Granularität von Subsekunden (Mikrosekunden). | erforderlich | Nicht verfügbar |
+   | Zeilen-ID | Die eindeutige Kennung für jede Zeile, die im Daten-Feed enthalten ist. | erforderlich | Nicht verfügbar |
+   | Sitzungs-ID | Die eindeutige Kennung für jede Sitzung, die im Daten-Feed enthalten ist. | erforderlich | Nicht verfügbar |
+   | Personen-ID | Die Personenkennung für die Datenansicht und die Verbindung | erforderlich | Optionaler Standard |
+   | Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Konto-ID bei Verwendung des Konto-Containers | erforderlich | Optionaler Standard |
 
    +++
 
@@ -201,7 +202,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    >
    >Wenn Sie sich dafür entscheiden, entweder die **Benutzeragent**- oder **Mobile ID**-Dimensionen in Ihren Daten-Feed aufzunehmen, können die unten aufgeführten Dimensionen nicht zum Daten-Feed hinzugefügt werden.
    >
-   >Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
+   >Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von ](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
 
    Die folgenden Dimensionen können nicht zusammen mit den Dimensionen **Benutzeragent** oder **Mobile ID** verwendet werden:
 
