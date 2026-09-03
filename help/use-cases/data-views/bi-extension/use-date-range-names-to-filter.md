@@ -7,11 +7,17 @@ role: User
 exl-id: a10818ec-a25c-4e4e-a551-14ff501750fa
 autotag-review: '2026-05-19T09:40:38.657Z'
 TQID: 'https://experienceleague.adobe.com/98raijZwviVsIrYb7S5y8BYfOZf4-yKKSANeSRfpmM0'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2: id: f24857a4-4b64-4b25-b237-d43026362144
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 612
@@ -41,7 +47,7 @@ Beachten Sie, dass der in der Freiformtabellen-Visualisierung definierte Datumsb
 
 >[!PREREQUISITES]
 >
->Stellen Sie sicher, [ Sie für das BI-Tool, für das Sie diesen Anwendungsfall ausprobieren möchten, (eine erfolgreiche Verbindung, Datenansichten auflisten ](connect-and-validate.md) eine Datenansicht verwenden) validiert haben.
+>Stellen Sie sicher, [&#x200B; Sie für das BI-Tool, für das Sie diesen Anwendungsfall ausprobieren möchten, (eine erfolgreiche Verbindung, Datenansichten auflisten &#x200B;](connect-and-validate.md) eine Datenansicht verwenden) validiert haben.
 >
 
 >[!BEGINTABS]
@@ -88,7 +94,7 @@ Beachten Sie, dass der in der Freiformtabellen-Visualisierung definierte Datumsb
 1. Im Dialogfeld **[!UICONTROL Filter hinzufügen]**:
    1. Wählen Sie **[!UICONTROL ‣ CC-Datenansicht]**
    1. Wählen Sie aus der Liste der Felder **[!UICONTROL ‣ Datumsbereichsname]** aus.
-1. Geben Sie den Filter **[!UICONTROL Cc-Datenansicht - Datumsbereichsname]** wie **** an und wählen Sie **[!UICONTROL Letztes Jahr 2023]** aus der Werteliste aus.
+1. Geben Sie den Filter **[!UICONTROL Cc-Datenansicht - Datumsbereichsname]** wie **&#x200B;**&#x200B;an und wählen Sie **[!UICONTROL Letztes Jahr 2023]** aus der Werteliste aus.
 1. Im Abschnitt **[!UICONTROL ‣ CC-Datenansicht]** in der linken Leiste:
    1. Wählen **[!UICONTROL daterange month]**, dann **[!UICONTROL month]**.
    1. Wählen Sie **[!UICONTROL Count]** unter **[!UICONTROL MEASURES]** in der linken Leiste (unten) aus.

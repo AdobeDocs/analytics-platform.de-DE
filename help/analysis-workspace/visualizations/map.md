@@ -5,11 +5,24 @@ feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 TQID: https://experienceleague.adobe.com/HFEY-P7m7s0Mukkzw-vWL7I5-WHSncEppX-basxJHGw
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: fa6ac035-8403-478b-9ce1-3fe29d211fca
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 2815
@@ -48,7 +61,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Zuordnungsvisualisierung in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)_ für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Zuordnungsvisualisierung in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)_ für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
@@ -234,7 +247,7 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
      Um die Karte auf ihre ursprüngliche Nordausrichtung zurückzusetzen, wählen Sie das Kompasssymbol ![Kompasssymbol](assets/map-compass-icon.png).
 
-   * **Auswahl-Tool**: Sie können einen Bereich der Zuordnung auswählen, um [ein Segment ](#create-a-segment-from-the-map-visualization), [einen Trend zu ](#create-a-trended-line-chart-from-the-map-visualization) oder [eine Aufschlüsselung hinzuzufügen](#add-a-breakdown-from-the-map-visualization).
+   * **Auswahl-Tool**: Sie können einen Bereich der Zuordnung auswählen, um [ein Segment &#x200B;](#create-a-segment-from-the-map-visualization), [einen Trend zu &#x200B;](#create-a-trended-line-chart-from-the-map-visualization) oder [eine Aufschlüsselung hinzuzufügen](#add-a-breakdown-from-the-map-visualization).
 
      Klicken Sie auf das Auswahlwerkzeug ![Zuordnungsauswahlsymbol](assets/map-selection-icon.png) und ziehen Sie dann die Maus, um den gewünschten Bereich auszuwählen.
 
@@ -259,9 +272,9 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
 So konfigurieren Sie Einstellungen für die Zuordnungsvisualisierung:
 
-1. Öffnen Sie in Analysis Workspace eine vorhandene Kartenvisualisierung oder erstellen [ eine neue](#begin-building-a-map-visualization).
+1. Öffnen Sie in Analysis Workspace eine vorhandene Kartenvisualisierung oder erstellen [&#x200B; eine neue](#begin-building-a-map-visualization).
 
-1. Bewegen Sie den Mauszeiger über die Kartenvisualisierung und wählen Sie dann in der Visualisierungskopfzeile das ![ „Einstellungen](/help/assets/icons/Setting.svg) aus.
+1. Bewegen Sie den Mauszeiger über die Kartenvisualisierung und wählen Sie dann in der Visualisierungskopfzeile das ![&#x200B; „Einstellungen](/help/assets/icons/Setting.svg) aus.
 
    Die folgenden Optionen sind verfügbar:
 

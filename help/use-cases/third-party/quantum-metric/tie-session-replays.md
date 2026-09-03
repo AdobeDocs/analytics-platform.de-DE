@@ -6,11 +6,18 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
 TQID: https://experienceleague.adobe.com/GEH0qD9G2uRs36-yzWjUbfH8VdSezkhUffcDuDQcsfw
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 843
@@ -26,13 +33,13 @@ Durch die Verknüpfung von Quantum Metric-Sitzungswiederholungen mit CJA-Daten k
 
 Bei diesen Schritten wird davon ausgegangen, dass Sie Tags in der Datenerfassung von Adobe Experience Platform verwenden. Wenn Ihr Unternehmen keine Tags verwendet, können Sie diese Datenerfassungsmethoden an eine manuelle Web SDK-Implementierung anpassen.
 
-Weitere Informationen finden [ in der Dokumentation ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Tag-Erweiterung“.
+Weitere Informationen finden [&#x200B; in der Dokumentation &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)Quantum Metric-Tag-Erweiterung“.
 
 ## Schritt 1: Erstellen Sie ein Schemafeld für die Quantum Metric-Sitzungs-ID
 
 Dieser Anwendungsfall erfordert ein dediziertes Schemafeld, an das Daten gesendet werden. Sie können dieses Feld an einer beliebigen Stelle in Ihrem Schema erstellen und nach Belieben benennen. Beispielwerte werden bereitgestellt, wenn Ihr Unternehmen keine Voreinstellung für Name oder Speicherort hat.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
 1. Navigieren Sie **[!UICONTROL Datenerfassung]** > **[!UICONTROL Schemata]**.
 1. Wählen Sie das gewünschte Schema aus der Liste aus.
 1. Wählen Sie das ![Feldsymbol hinzufügen](/help/assets/icons/AddCircle.svg) neben dem gewünschten Objekt aus. Beispiel: neben `Implementation Details`.
@@ -45,7 +52,7 @@ Dieser Anwendungsfall erfordert ein dediziertes Schemafeld, an das Daten gesende
 
 Führen Sie diese Schritte aus, um die Quantum Metric-Sitzungs-ID an die Daten anzuhängen, die Sie an Adobe Experience Platform senden.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
 1. Navigieren Sie **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
 1. Wählen Sie die gewünschte Tag-Eigenschaft aus.
 1. Wählen Sie **[!UICONTROL Datenelemente]** und dann **[!UICONTROL Datenelement hinzufügen]** aus.
@@ -86,7 +93,7 @@ Wenn Ihr XDM-Objekt bereits in einer Konfiguration für die Aktion „Ereignis s
 
 Sobald die oben genannten Änderungen in Ihrer Implementierung veröffentlicht wurden, bearbeiten Sie Ihre bestehende Datenansicht, um die Sitzungs-ID als verfügbare Dimension in Customer Journey Analytics hinzuzufügen.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen **[!UICONTROL Datenansichten]** im oberen Menü aus.
 1. Wählen Sie die gewünschte vorhandene Datenansicht aus.
 1. Suchen Sie das Feld Quantum Metric-Sitzungs-ID auf der linken Seite und ziehen Sie es in den Bereich „Dimensionen“ in der Mitte.
@@ -97,7 +104,7 @@ Sobald die oben genannten Änderungen in Ihrer Implementierung veröffentlicht w
 
 Erstellen Sie eine Freiformtabelle in Workspace und konfigurieren Sie sie so, dass die Sitzungs-ID-Werte direkt mit der Quantum-Metrik verknüpft sind.
 
-1. Melden Sie sich bei &quot;[.adobe.com“ ](https://experience.adobe.com).
+1. Melden Sie sich bei &quot;[.adobe.com“ &#x200B;](https://experience.adobe.com).
 1. Navigieren Sie zu Customer Journey Analytics und wählen Sie **[!UICONTROL Workspace]** im oberen Menü.
 1. Wählen Sie ein vorhandenes Projekt aus oder erstellen Sie ein Projekt.
 1. Erstellen Sie eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
@@ -112,7 +119,7 @@ Erstellen Sie eine Freiformtabelle in Workspace und konfigurieren Sie sie so, da
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
-Jede Sitzungs-ID ist jetzt ein klickbarer Link. Weitere [ zum Hinzufügen von Hyperlinks zu Analysis Workspace-Dimensionselementen finden Sie unter ](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)Erstellen von Hyperlinks in einer Freiformtabelle“.
+Jede Sitzungs-ID ist jetzt ein klickbarer Link. Weitere [&#x200B; zum Hinzufügen von Hyperlinks zu Analysis Workspace-Dimensionselementen finden Sie unter &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)Erstellen von Hyperlinks in einer Freiformtabelle“.
 
 ![Sitzungswiederholung](assets/session-replay.png)
 
@@ -120,4 +127,4 @@ Jede Sitzungs-ID ist jetzt ein klickbarer Link. Weitere [ zum Hinzufügen von Hy
 
 Sobald Sie ein interessantes Segment gefunden haben, das Sie erneut durchsuchen möchten, können Sie es auf das Bedienfeld anwenden, das Ihre Sitzungs-ID-Links enthält. Die Tabelle gibt alle Sitzungen in diesem Segment zurück, und Sie können auf eine beliebige Sitzung klicken, um sie in Quantum Metric weiter zu untersuchen.
 
-Weitere Informationen finden [ unter „Das Enterprise Guide to Session Replay](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) auf Quantum Metric. Sie können sich auch an Ihren Kundenbetreuer von Quantum Metric wenden oder eine Anfrage über das [Quantum Metric Customer Request Portal) ](https://community.quantummetric.com/s/public-support-page).
+Weitere Informationen finden [&#x200B; unter „Das Enterprise Guide to Session Replay](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) auf Quantum Metric. Sie können sich auch an Ihren Kundenbetreuer von Quantum Metric wenden oder eine Anfrage über das [Quantum Metric Customer Request Portal) &#x200B;](https://community.quantummetric.com/s/public-support-page).
