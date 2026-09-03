@@ -61,40 +61,40 @@ Alle freigegebenen Dimensionen und Metriken werden unter den vier Übersichtskar
 ![Vorschau für verfügbare Dimensionen und Metriken](assets/shared-metrics-dimensions.png)
 
 * **Filter**: Wählen Sie das Symbol ![Filter](../../assets/icons/Filter.svg) aus, um verfügbare Filter ein- oder auszublenden. Folgende Filter sind verfügbar:
-   * **[!UICONTROL Komponententyp]**: Nur Dimensionen oder nur Metriken anzeigen.
-   * **[!UICONTROL Datensatz]**: Nur Komponenten anzeigen, bei denen der Datensatz in den Datenansichten enthalten ist, für die eine Komponente freigegeben ist.
-   * **[!UICONTROL Datenansicht]**: Nur Komponenten anzeigen, die für diese Datenansicht freigegeben sind.
-   * **[!UICONTROL Erstellt von]**: Nur Komponenten anzeigen, die von einem bestimmten Benutzer erstellt wurden.
-   * **[!UICONTROL Duplikate]**: Nur Komponenten anzeigen, die dieselbe Komponenten-ID wie eine andere Komponente haben. Diese Filter sind identisch mit dem Überprüfen von Komponenten über die Übersichtskarten.
+  * **[!UICONTROL Komponententyp]**: Nur Dimensionen oder nur Metriken anzeigen.
+  * **[!UICONTROL Datensatz]**: Nur Komponenten anzeigen, bei denen der Datensatz in den Datenansichten enthalten ist, für die eine Komponente freigegeben ist.
+  * **[!UICONTROL Datenansicht]**: Nur Komponenten anzeigen, die für diese Datenansicht freigegeben sind.
+  * **[!UICONTROL Erstellt von]**: Nur Komponenten anzeigen, die von einem bestimmten Benutzer erstellt wurden.
+  * **[!UICONTROL Duplikate]**: Nur Komponenten anzeigen, die dieselbe Komponenten-ID wie eine andere Komponente haben. Diese Filter sind identisch mit dem Überprüfen von Komponenten über die Übersichtskarten.
 * **Suche**: Verwenden Sie das Symbol ![Suchen](../../assets/icons/Search.svg), um nach einer Komponente anhand des Namens zu suchen.
 * **[!UICONTROL Verbindung]**: Ein Dropdown-Menü, das die [Verbindung“ &#x200B;](/help/connections/overview.md). Freigegebene Dimensionen und Metriken sind immer spezifisch für eine einzelne Verbindung.
 * **[!UICONTROL Tabelle anpassen]**: Wählen Sie das Symbol ![Tabelle anpassen](/help/assets/icons/ColumnSetting.svg) aus, um Spalten in der Tabelle ein- oder auszublenden. Verfügbare Optionen sind:
-   * **[!UICONTROL Feldname]**: Der Name der freigegebenen Dimension oder Metrik. Dieses Feld ist immer sichtbar.
-   * **[!UICONTROL Typ]**: Gibt an, ob die Komponente eine Dimension oder eine Metrik ist. Dieses Feld ist immer sichtbar.
-   * **[!UICONTROL Datensatztyp]**: Der Typ des Datensatzes. Die meisten Datensätze sind Ereignis-Datensätze.
-   * **[!UICONTROL Für Datenansicht freigegeben]**: Alle Datenansichten, für die diese Komponente freigegeben ist. Dieses Feld ist immer sichtbar. Wählen Sie den Link aus, um ein modales Fenster zu öffnen, in dem alle Datenansichten aufgelistet werden, in denen diese Komponente verfügbar ist.
-   * **[!UICONTROL Datensätze]**: Alle Datensätze, die in jeder Datenansicht enthalten sind, für die diese Komponente freigegeben ist. Wählen Sie den Link aus, um ein modales Fenster zu öffnen, in dem alle Datensätze für die Komponente aufgelistet werden.
-   * **[!UICONTROL Erstellt von]**: Der Name der Person, die die Komponente erstellt oder in die Oberfläche für freigegebene Metriken und Dimensionen importiert hat.
-   * **[!UICONTROL Schematyp]**: Das Format, in dem Daten gespeichert werden. Beispiele sind `string`, `double` oder `boolean`.
-   * **[!UICONTROL Komponenten-]**: Die Komponenten-ID der Dimension oder Metrik. Alle Komponenten, die in dieser Benutzeroberfläche dieselbe Komponenten-ID aufweisen, müssen überprüft und dedupliziert werden.
-   * **[!UICONTROL Schema]**: Der Schemapfad für die Dimension oder Metrik. Zum Beispiel `web.webPageDetails.URL`.
-   * **[!UICONTROL Beschreibung]**: Die [Beschreibung](/help/data-views/component-settings/overview.md) der Komponente.
-   * **[!UICONTROL Kontextkennzeichnungen]**: Die [Kontextkennzeichnungen](/help/data-views/component-settings/overview.md) für die Komponente.
-   * **[!UICONTROL Werte einschließen/ausschließen]**: Listet die Anzahl der Regeln auf, die unter &quot;[/ausschließen](/help/data-views/component-settings/include-exclude-values.md) angegeben sind.
-   * **[!UICONTROL Datennutzungsbezeichnungen]**: Die [Datennutzungsbezeichnungen](https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview) für das Schemafeld.
-   * **[!UICONTROL Veraltet]**: Gibt an, ob das veraltete Flag gesetzt ist.
-   * **[!UICONTROL Format]**: Das Format, in dem Werte angezeigt werden. Boolesche Werte werden in der Regel als `True | False`, Metriken als `Decimal` usw. angezeigt.
-   * **[!UICONTROL Metrik-Deduplizierung]**: Die [Metrik-Deduplizierung](/help/data-views/component-settings/metric-deduplication.md) der Komponente.
-   * **[!UICONTROL Verhalten]**: Die Einstellungen [Verhalten](/help/data-views/component-settings/behavior.md) der Komponente.
-   * **[!UICONTROL Attribution]**: Die Einstellungen [Attribution](/help/data-views/component-settings/attribution.md) der Komponente.
-   * **[!UICONTROL Option „Kein Wert]**: Die [Optionen für keinen Wert](/help/data-views/component-settings/no-value-options.md).
-   * **[!UICONTROL Wert-Bucketing]**: Die Einstellungen [Wert-Bucketing](/help/data-views/component-settings/value-bucketing.md) der Komponente.
-   * **[!UICONTROL Persistenz]**: Die Einstellungen [Persistenz](/help/data-views/component-settings/persistence.md) der Komponente.
-   * **[!UICONTROL Kleinbuchstaben]**: Gibt an, ob die Komponente basierend auf den Einstellungen (Verhalten[&#x200B; der Komponente &#x200B;](/help/data-views/component-settings/behavior.md) Kleinbuchstaben aktiviert ist.
-   * **[!UICONTROL Teilzeichenfolge]**: Die Einstellungen [Teilzeichenfolge](/help/data-views/component-settings/substring.md) der Komponente.
-   * **[!UICONTROL Zusammenfassungsdatengruppe]**: Die Einstellungen [Zusammenfassungsdatengruppe“ &#x200B;](/help/data-views/component-settings/summary-data-group.md) Komponente.
-   * **[!UICONTROL Erstellungsdatum]**: Das Datum, an dem die Komponente erstellt oder importiert wurde.
-   * **[!UICONTROL Zuletzt geändert]**: Wenn die Komponente nach ihrer Erstellung geändert wurde, das Datum der letzten Änderung.
+  * **[!UICONTROL Feldname]**: Der Name der freigegebenen Dimension oder Metrik. Dieses Feld ist immer sichtbar.
+  * **[!UICONTROL Typ]**: Gibt an, ob die Komponente eine Dimension oder eine Metrik ist. Dieses Feld ist immer sichtbar.
+  * **[!UICONTROL Datensatztyp]**: Der Typ des Datensatzes. Die meisten Datensätze sind Ereignis-Datensätze.
+  * **[!UICONTROL Für Datenansicht freigegeben]**: Alle Datenansichten, für die diese Komponente freigegeben ist. Dieses Feld ist immer sichtbar. Wählen Sie den Link aus, um ein modales Fenster zu öffnen, in dem alle Datenansichten aufgelistet werden, in denen diese Komponente verfügbar ist.
+  * **[!UICONTROL Datensätze]**: Alle Datensätze, die in jeder Datenansicht enthalten sind, für die diese Komponente freigegeben ist. Wählen Sie den Link aus, um ein modales Fenster zu öffnen, in dem alle Datensätze für die Komponente aufgelistet werden.
+  * **[!UICONTROL Erstellt von]**: Der Name der Person, die die Komponente erstellt oder in die Oberfläche für freigegebene Metriken und Dimensionen importiert hat.
+  * **[!UICONTROL Schematyp]**: Das Format, in dem Daten gespeichert werden. Beispiele sind `string`, `double` oder `boolean`.
+  * **[!UICONTROL Komponenten-]**: Die Komponenten-ID der Dimension oder Metrik. Alle Komponenten, die in dieser Benutzeroberfläche dieselbe Komponenten-ID aufweisen, müssen überprüft und dedupliziert werden.
+  * **[!UICONTROL Schema]**: Der Schemapfad für die Dimension oder Metrik. Zum Beispiel `web.webPageDetails.URL`.
+  * **[!UICONTROL Beschreibung]**: Die [Beschreibung](/help/data-views/component-settings/overview.md) der Komponente.
+  * **[!UICONTROL Kontextkennzeichnungen]**: Die [Kontextkennzeichnungen](/help/data-views/component-settings/overview.md) für die Komponente.
+  * **[!UICONTROL Werte einschließen/ausschließen]**: Listet die Anzahl der Regeln auf, die unter &quot;[/ausschließen](/help/data-views/component-settings/include-exclude-values.md) angegeben sind.
+  * **[!UICONTROL Datennutzungsbezeichnungen]**: Die [Datennutzungsbezeichnungen](https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview) für das Schemafeld.
+  * **[!UICONTROL Veraltet]**: Gibt an, ob das veraltete Flag gesetzt ist.
+  * **[!UICONTROL Format]**: Das Format, in dem Werte angezeigt werden. Boolesche Werte werden in der Regel als `True | False`, Metriken als `Decimal` usw. angezeigt.
+  * **[!UICONTROL Metrik-Deduplizierung]**: Die [Metrik-Deduplizierung](/help/data-views/component-settings/metric-deduplication.md) der Komponente.
+  * **[!UICONTROL Verhalten]**: Die Einstellungen [Verhalten](/help/data-views/component-settings/behavior.md) der Komponente.
+  * **[!UICONTROL Attribution]**: Die Einstellungen [Attribution](/help/data-views/component-settings/attribution.md) der Komponente.
+  * **[!UICONTROL Option „Kein Wert]**: Die [Optionen für keinen Wert](/help/data-views/component-settings/no-value-options.md).
+  * **[!UICONTROL Wert-Bucketing]**: Die Einstellungen [Wert-Bucketing](/help/data-views/component-settings/value-bucketing.md) der Komponente.
+  * **[!UICONTROL Persistenz]**: Die Einstellungen [Persistenz](/help/data-views/component-settings/persistence.md) der Komponente.
+  * **[!UICONTROL Kleinbuchstaben]**: Gibt an, ob die Komponente basierend auf den Einstellungen (Verhalten[&#x200B; der Komponente &#x200B;](/help/data-views/component-settings/behavior.md) Kleinbuchstaben aktiviert ist.
+  * **[!UICONTROL Teilzeichenfolge]**: Die Einstellungen [Teilzeichenfolge](/help/data-views/component-settings/substring.md) der Komponente.
+  * **[!UICONTROL Zusammenfassungsdatengruppe]**: Die Einstellungen [Zusammenfassungsdatengruppe“ &#x200B;](/help/data-views/component-settings/summary-data-group.md) Komponente.
+  * **[!UICONTROL Erstellungsdatum]**: Das Datum, an dem die Komponente erstellt oder importiert wurde.
+  * **[!UICONTROL Zuletzt geändert]**: Wenn die Komponente nach ihrer Erstellung geändert wurde, das Datum der letzten Änderung.
 * **[!UICONTROL Vorgangsverlauf]**: Wenn Sie eine große Anzahl von Komponenten importieren oder freigeben, wird automatisch ein Vorgang erstellt. Wählen Sie das Symbol ![Verlauf](/help/assets/icons/History.svg) aus, um ein modales Fenster zu öffnen, das alle Instanzen des Imports von Dimensionen und Metriken aus einzelnen Datenansichten anzeigt. Wenn keine der Import- oder Freigabeaktionen groß genug ist, um einen Auftrag Trigger, wird diese Schaltfläche nicht angezeigt.
 
 ## Bearbeiten von Komponenten oder Freigeben von Komponenten für Datenansichten

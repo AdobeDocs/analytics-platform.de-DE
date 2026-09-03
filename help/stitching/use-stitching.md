@@ -42,11 +42,11 @@ ht-degree: 27%
    - Die Datensatz-ID für den Datensatz, den Sie neu zuweisen möchten.
    - Der Spaltenname (Identitätspfad und Namespace) der persistenten ID für den gewünschten Datensatz (die Kennung, die in jeder Zeile angezeigt wird).
    - Wenn der Datensatz `identityMap` unterstützt:
-      - Geben Sie für das feldbasierte Stitching den Namespace für die persistenten und Personen-IDs an.
-      - Geben Sie für das diagrammbasierte Stitching den Namespace für die persistente ID und den Identity-Namespace an, der für die Abfrage des Identitätsdiagramms verwendet werden soll.
+     - Geben Sie für das feldbasierte Stitching den Namespace für die persistenten und Personen-IDs an.
+     - Geben Sie für das diagrammbasierte Stitching den Namespace für die persistente ID und den Identity-Namespace an, der für die Abfrage des Identitätsdiagramms verwendet werden soll.
    - Wenn der Datensatz `identityMap` nicht unterstützt:
-      - Bei feldbasiertem Stitching der Spaltenname der Personen-ID für den gewünschten Datensatz (die Personenkennung, die auch als Link zwischen Datensätzen im Kontext einer Verbindung dient).
-      - Bei der diagrammbasierten Zuordnung der Identity-Namespace, den Sie für die Abfrage des Identitätsdiagramms verwenden möchten.
+     - Bei feldbasiertem Stitching der Spaltenname der Personen-ID für den gewünschten Datensatz (die Personenkennung, die auch als Link zwischen Datensätzen im Kontext einer Verbindung dient).
+     - Bei der diagrammbasierten Zuordnung der Identity-Namespace, den Sie für die Abfrage des Identitätsdiagramms verwenden möchten.
    - Ihre Voreinstellung für Lookback-Fenster und Wiederholungshäufigkeit. In Ihrem Customer Journey Analytics-Paket finden Sie [Optionen](#options) verfügbar.
    - Sandbox-Name.
 

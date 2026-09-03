@@ -112,9 +112,9 @@ So verwenden Sie Dashboards:
 
    * Die Granularität der Sparklines hängt von der Länge des Datumsbereichs ab:
 
-      * Für einen Tag wird ein stündlicher Trend angezeigt.
-      * Für mehr als einen Tag und weniger als ein Jahr wird ein täglicher Trend angezeigt.
-      * Für ein Jahr oder mehr wird ein wöchentlicher Trend angezeigt.
+     * Für einen Tag wird ein stündlicher Trend angezeigt.
+     * Für mehr als einen Tag und weniger als ein Jahr wird ein täglicher Trend angezeigt.
+     * Für ein Jahr oder mehr wird ein wöchentlicher Trend angezeigt.
 
    * Die Formel für die Änderung des Prozentwerts ist: Gesamtwert der Metrik (aktueller Datumsbereich) – Gesamtwert der Metrik (Vergleichsdatumsbereich) / Gesamtwert der Metrik (Vergleichsdatumsbereich).
 

@@ -108,8 +108,8 @@ Die Vorteile von Kontextkennzeichnungen sind:
 * **Konsistenz**: Alle Personen in Ihrer Organisation, die an einem oder mehreren Projekten arbeiten, die auf einer Datenansicht basieren, die Kontextkennzeichnungen verwendet, erhalten dasselbe Verhalten.
 * **Sichtbarkeit von Funktionen und Vorlagen**: Bestimmte Visualisierungen und Funktionen werden nur angezeigt, wenn die richtige Kontextbeschriftung zugewiesen wird. Zum Beispiel:
 
-   * Eine [Map](/help/analysis-workspace/visualizations/map.md)-Visualisierung wird nur dann richtig angezeigt, wenn Customer Journey Analytics weiß, welche Komponenten den Breiten- und Längengrad darstellen.
-   * Bestimmte [Vorlagen](/help/analysis-workspace/templates/use-templates.md) werden nur angezeigt, wenn die richtigen Kontextbeschriftungen angewendet werden und die zugehörigen Komponenten verfügbar werden.
+  * Eine [Map](/help/analysis-workspace/visualizations/map.md)-Visualisierung wird nur dann richtig angezeigt, wenn Customer Journey Analytics weiß, welche Komponenten den Breiten- und Längengrad darstellen.
+  * Bestimmte [Vorlagen](/help/analysis-workspace/templates/use-templates.md) werden nur angezeigt, wenn die richtigen Kontextbeschriftungen angewendet werden und die zugehörigen Komponenten verfügbar werden.
 
 Kontextkennzeichnungen können in den folgenden Situationen erforderlich sein:
 

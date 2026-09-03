@@ -16,7 +16,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 383
+source-wordcount: 387
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ Sie können den Verlauf und den Status geplanter Arbeitsmappen auf der Registerk
    ![Geplanter Verlauf](assets/scheduled-workbooks-history.png){zoomable="yes"}
 
    Verwenden Sie ![Suche](/help/assets/icons/Search.svg), um in der Liste nach bestimmten Arbeitsmappen zu suchen.
-Mit ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) können Sie festlegen, welche Spalten angezeigt werden sollen.
+   Mit ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) können Sie festlegen, welche Spalten angezeigt werden sollen.
 
    Auf **[!UICONTROL Registerkarte]** Verlauf“ können Sie den Status jeder geplanten Aufgabe überprüfen. In einer separaten Zeile wird die Statusänderung für jede geplante Aufgabe dokumentiert.
 

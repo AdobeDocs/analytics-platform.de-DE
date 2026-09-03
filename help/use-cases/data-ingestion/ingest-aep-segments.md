@@ -497,7 +497,7 @@ You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `pe
 
 * Sie sollten diesen Prozess regelmäßig durchführen, damit die Zielgruppendaten in Customer Journey Analytics ständig aktualisiert werden.
 * Sie können mehrere Zielgruppen in eine Customer Journey Analytics-Verbindung importieren. Dies erhöht zwar die Komplexität des Prozesses, es ist jedoch möglich. Damit dies funktioniert, müssen Sie einige Änderungen am obigen Prozess vornehmen:
-   1. Führen Sie diesen Prozess für jede gewünschte Zielgruppe in Ihrer Zielgruppensammlung innerhalb des Echtzeit-Kundenprofis aus.
-   1. Customer Journey Analytics unterstützt Arrays/Objekt-Arrays in Profildatensätzen. Es [&#x200B; sich, für die `audienceMembershipId` oder `audienceMembershipIdName` ein &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=de)Array von Objekten“ zu verwenden.
-   1. Erstellen Sie in Ihrer Datenansicht eine neue Dimension mithilfe der Teilzeichenfolgenumwandlung des `audienceMembershipId`-Felds, um die Zeichenfolge mit kommagetrennten Werten in ein Array zu konvertieren. HINWEIS: Derzeit besteht für das Array eine Beschränkung von 10 Werten.
-   1. Jetzt können Sie in Customer Journey Analytics Workspace Berichte zu diesem neuen `audienceMembershipIds` erstellen.
+  1. Führen Sie diesen Prozess für jede gewünschte Zielgruppe in Ihrer Zielgruppensammlung innerhalb des Echtzeit-Kundenprofis aus.
+  1. Customer Journey Analytics unterstützt Arrays/Objekt-Arrays in Profildatensätzen. Es [&#x200B; sich, für die `audienceMembershipId` oder `audienceMembershipIdName` ein &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=de)Array von Objekten“ zu verwenden.
+  1. Erstellen Sie in Ihrer Datenansicht eine neue Dimension mithilfe der Teilzeichenfolgenumwandlung des `audienceMembershipId`-Felds, um die Zeichenfolge mit kommagetrennten Werten in ein Array zu konvertieren. HINWEIS: Derzeit besteht für das Array eine Beschränkung von 10 Werten.
+  1. Jetzt können Sie in Customer Journey Analytics Workspace Berichte zu diesem neuen `audienceMembershipIds` erstellen.

@@ -67,7 +67,8 @@ Alle in Adobe Experience Platform aufgenommene Daten müssen einem vordefinierte
 
 ### Einrichten eines Schemas
 
-Angenommen, Sie möchten einige Daten von Profilen tracken, die Ihre Website besuchen, z. B. Seitenname und Identifizierung.Zunächst müssen Sie ein Schema definieren, das diese Daten modelliert.
+Angenommen, Sie möchten einige Daten von Profilen tracken, die Ihre Website besuchen, z. B. Seitenname und Identifizierung.
+Zunächst müssen Sie ein Schema definieren, das diese Daten modelliert.
 
 Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
@@ -376,13 +377,13 @@ Gehen Sie folgendermaßen vor, um eine Regel zu definieren:
 
    - Im Dialog [!UICONTROL Ereigniskonfiguration]:
 
-      - Wählen Sie **[!UICONTROL Core]** in der Liste [!UICONTROL Erweiterung] aus.
+     - Wählen Sie **[!UICONTROL Core]** in der Liste [!UICONTROL Erweiterung] aus.
 
-      - Wählen Sie **[!UICONTROL Fenster geladen]** in der Liste [!UICONTROL Ereignistyp] aus.
+     - Wählen Sie **[!UICONTROL Fenster geladen]** in der Liste [!UICONTROL Ereignistyp] aus.
 
-        ![Regel – Ereigniskonfiguration](./assets/event-windowloaded-pageview.png)
+       ![Regel – Ereigniskonfiguration](./assets/event-windowloaded-pageview.png)
 
-      - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+     - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
 
 
@@ -390,17 +391,17 @@ Gehen Sie folgendermaßen vor, um eine Regel zu definieren:
 
    - Im Dialog [!UICONTROL Aktionskonfiguration]:
 
-      - Wählen Sie **[!UICONTROL Adobe Experience Platform Web SDK]** in der Liste [!UICONTROL Erweiterung] aus.
+     - Wählen Sie **[!UICONTROL Adobe Experience Platform Web SDK]** in der Liste [!UICONTROL Erweiterung] aus.
 
-      - Wählen Sie **[!UICONTROL Ereignis senden]** in der Liste [!UICONTROL Aktionstyp] aus.
+     - Wählen Sie **[!UICONTROL Ereignis senden]** in der Liste [!UICONTROL Aktionstyp] aus.
 
-      - Wählen Sie **[!UICONTROL web.webpagedetails.pageViews]** in der Liste [!UICONTROL Typ] aus.
+     - Wählen Sie **[!UICONTROL web.webpagedetails.pageViews]** in der Liste [!UICONTROL Typ] aus.
 
-      - Wählen Sie das Zylindersymbol neben [!UICONTROL XDM-Daten] und dann **[!UICONTROL XDM – Seitenansicht]** in der Liste der Datenelemente aus
+     - Wählen Sie das Zylindersymbol neben [!UICONTROL XDM-Daten] und dann **[!UICONTROL XDM – Seitenansicht]** in der Liste der Datenelemente aus
 
      ![Regel – Aktionskonfiguration](./assets/action-pageview-xdm.png)
 
-      - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+     - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
    - Ihre Regel sollte wie folgt aussehen:
 
@@ -511,11 +512,11 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
    - Für jeden Datensatz:
 
-      - Wählen Sie eine [!UICONTROL Personen-ID] aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind.
+     - Wählen Sie eine [!UICONTROL Personen-ID] aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind.
 
-      - Wählen Sie die richtige Datenquelle in der Liste [!UICONTROL Datenquellentyp] aus. Wenn Sie **[!UICONTROL Sonstige]** angeben, fügen Sie eine Beschreibung für Ihre Datenquelle hinzu.
+     - Wählen Sie die richtige Datenquelle in der Liste [!UICONTROL Datenquellentyp] aus. Wenn Sie **[!UICONTROL Sonstige]** angeben, fügen Sie eine Beschreibung für Ihre Datenquelle hinzu.
 
-      - Definieren Sie **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Datensatz-Aufstockung vorhandener Daten]** entsprechend Ihren Anforderungen.
+     - Definieren Sie **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Datensatz-Aufstockung vorhandener Daten]** entsprechend Ihren Anforderungen.
 
      ![Konfigurieren von Datensätzen](./assets/cja-connections-3b.png)
 

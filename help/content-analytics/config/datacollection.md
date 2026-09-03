@@ -35,13 +35,13 @@ In diesem Artikel wird ausführlich beschrieben, wie Content Analytics Daten erf
 Im Zusammenhang mit diesem Artikel werden die folgenden Definitionen verwendet:
 
 * **Erfahrung**:
-   * Für den **Web**-Kanal wird ein Erlebnis als Textinhalt auf einer gesamten Web-Seite definiert. Für die Datenerfassung zeichnet Content Analytics die Erlebnis-ID auf, die auf der Seiten-URL basiert. Später wird der Text auf der Seite über den Abrufdienst erfasst.
-   * Für den **mobile**-Kanal wird ein Erlebnis in der Mobile App mithilfe der Content Analytics-Erweiterung für Adobe Experience Platform Mobile SDK definiert und verfolgt.
+  * Für den **Web**-Kanal wird ein Erlebnis als Textinhalt auf einer gesamten Web-Seite definiert. Für die Datenerfassung zeichnet Content Analytics die Erlebnis-ID auf, die auf der Seiten-URL basiert. Später wird der Text auf der Seite über den Abrufdienst erfasst.
+  * Für den **mobile**-Kanal wird ein Erlebnis in der Mobile App mithilfe der Content Analytics-Erweiterung für Adobe Experience Platform Mobile SDK definiert und verfolgt.
 * **Experience ID**:
-   * Für den Web-Kanal ist die Erlebnis-ID eine eindeutige Kombination aus relevanter URL (Basis-URL plus alle Parameter, die den Inhalt auf der Seite steuern) und [Erlebnisversion](manual.md#versioning).
-      * Sie geben im Rahmen der [Konfiguration](configuration.md) an, welche Parameter für eine bestimmte vollständige URL relevant sind.
-      * Sie definieren eine [Versionskennung](manual.md#versioning), damit Sie Änderungen an Ihren Erlebnissen ordnungsgemäß erfassen können.
-   * Für den **mobile**-Kanal ist die Erlebnis-ID der Rückgabewert von unter Verwendung des `registerExperience`-API-Aufrufs.
+  * Für den Web-Kanal ist die Erlebnis-ID eine eindeutige Kombination aus relevanter URL (Basis-URL plus alle Parameter, die den Inhalt auf der Seite steuern) und [Erlebnisversion](manual.md#versioning).
+    * Sie geben im Rahmen der [Konfiguration](configuration.md) an, welche Parameter für eine bestimmte vollständige URL relevant sind.
+    * Sie definieren eine [Versionskennung](manual.md#versioning), damit Sie Änderungen an Ihren Erlebnissen ordnungsgemäß erfassen können.
+  * Für den **mobile**-Kanal ist die Erlebnis-ID der Rückgabewert von unter Verwendung des `registerExperience`-API-Aufrufs.
 * **Asset**: Ein Bild. Content Analytics zeichnet die Asset-URL auf.
 * **Asset-ID**: Die URL des Assets.
 * **Relevante URL**: Die Basis-URL plus alle Parameter, die den Inhalt auf der Seite steuern.
@@ -64,8 +64,8 @@ In diesem Abschnitt werden die Besonderheiten für Web-Content Analytics-Ereigni
 Ein Content Analytics-Ereignis besteht aus:
 
 * Standardfeldern
-   * Zeitstempel
-   * Identität
+  * Zeitstempel
+  * Identität
 * Erlebnisansichten (sofern vorhanden und konfiguriert)
 * Erlebnisklicks (sofern vorhanden und konfiguriert)
 * Asset-Ansichten (sofern vorhanden und konfiguriert)
@@ -107,11 +107,11 @@ Um die Anzahl der von der Seite gesendeten Netzwerkanfragen zu reduzieren, samme
 
 * Web SDK oder Adobe AppMeasurement senden ein Ereignis.
 * Die Sichtbarkeit ändert sich (ausgeblendeter Status). Beispiele:
-   * Die Seite wird entladen.
-   * Die Registerkarte wird gewechselt.
-   * Der Browser wird minimiert.
-   * Der Browser wird geschlossen.
-   * Der Bildschirm wird gesperrt.
+  * Die Seite wird entladen.
+  * Die Registerkarte wird gewechselt.
+  * Der Browser wird minimiert.
+  * Der Browser wird geschlossen.
+  * Der Bildschirm wird gesperrt.
 * Die URL ändert sich, was zu einer Änderung der relevanten URL führt.
 * Aufgezeichnete und versandbereite Asset-Ansichten überschreiten 32.
 

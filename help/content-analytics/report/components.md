@@ -20,10 +20,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+source-git-commit: 3e9a9042bfe707971c4e37d319a23ab9bdc80075
 workflow-type: tm+mt
-source-wordcount: 1023
-ht-degree: 86%
+source-wordcount: 1869
+ht-degree: 56%
 
 ---
 
@@ -38,6 +38,7 @@ Content Analytics fügt die folgenden Komponentenkategorien (Dimensionen, [berec
 * [Asset-Metadaten](#asset-metadata)
 * [Asset-Attribute](#asset-attributes)
 * [Asset-Ereignisse](#asset-events)
+* [Paid Media](#paid-media)
 * [Berechnete Metriken](#calculated-metrics)
 
 In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein von KI/ML generiertes Attribut-/Wert-Paar an.
@@ -47,7 +48,7 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 | Titel | Beschreibung | Typ |
 |---|---|---|
 | ID SOURCE | Für Content Analytics lautet der Wert `ContentAnalytics`. | Dimension |
-| Kanal | Kanal für das Erlebnis. Wert ist entweder `Web` oder `Mobile`. | Dimension |
+| Kanal | Kanal für das Erlebnis. Wert ist entweder `Web`, `Mobile` oder `Paid Media`. | Dimension |
 | Content Experience ID | Eindeutige ID für das Erlebnis. <br>Für **Web**: URL der Webseite. <br/>Für **granulares Web**: Ein Client-seitiger Hash-Wert, der auf der Inhalts-Payload (Texte, Bilder, CTAS) mit dem Präfix `web-` basiert. <br/>Für **mobile**: Ein Client-seitiger Hash-Wert, der auf der Inhalts-Payload (Texte, Bilder, CTAs) mit dem Präfix `mobile-` basiert. | Dimension |
 | Content Experience Source | Für **web**: die URL der Web-Seite.<br/>Für **mobil**: Der Name des Bildschirms, der über die Experience Platform Mobile SDK übergeben wird. | Dimension |
 | Erlebniskanal (veraltet) | Kanal für das Erlebnis. Wert ist entweder `Web` oder `Mobile`. | Dimension |
@@ -156,6 +157,116 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 
 {style="table-layout:fixed"}
 -->
+
+## Paid Media
+
+Diese Komponenten werden einer Datenansicht hinzugefügt, wenn der Kanal **Bezahlte Medien** über einen [Quell-Connector für bezahlte Medien in Adobe Experience Platform aktiviert &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home)z. B. Meta Ads oder Google Ads). Sie ermöglichen Ihnen Berichte zu Paid-Media-Entitäten sowie zu kreativen Inhalten und Ausgaben neben Web- und mobilen Inhalten.
+
+Die oben beschriebenen KI **generierten** Asset-Attribute **und Erlebnisattribute** sind auch für Kreative mit bezahlten Medien verfügbar. Dieselbe Funktion läuft über die Kanäle Web, Mobile und bezahlte Medien.
+
+### Paid Media-Dimensionen
+
+| Titel | Beschreibung | Typ |
+|---|---|---|
+| Anzeigennetzwerk | Die Werbeplattform, von der die Paid-Media-Daten aufgenommen wurden. | Dimension |
+| Kontoname | Name des Werbekontos. | Dimension |
+| Kampagnenname | Name der Paid-Media-Kampagne. | Dimension |
+| Anzeigengruppenname | Name der Anzeigengruppe (Meta-Anzeigensatz/Google-Anzeigengruppe). | Dimension |
+| Anzeigenname | Name der einzelnen Anzeige. | Dimension |
+| Name des Erlebnisses | Name des Anzeigen-Erlebnisses (kreative Komposition). | Dimension |
+| Asset-Name | Name des Kreativ-Assets. | Dimension |
+| Kampagnenstatus | Status der Kampagne. | Dimension |
+| Anzeigengruppenstatus | Status der Anzeigengruppe. | Dimension |
+| Anzeigenstatus | Status der Anzeige. | Dimension |
+| Betriebsstatus | Detaillierter Serving-Status, der angibt, ob die Entität derzeit ausliefert. | Dimension |
+| Kontowährung | Währung des Werbekontos. | Dimension |
+| Zeitzone des Kontos | Zeitzone des Werbekontos. | Dimension |
+| Kontotyp | Typ des Werbekontos. | Dimension |
+| Firmenname des Kontos | Dem Werbekonto zugeordneter Unternehmensname | Dimension |
+| Kampagnentyp | Primärer Kanaltyp der Kampagne. | Dimension |
+| Kampagne – Ziel | Ziel der Kampagne. | Dimension |
+| Bid-Strategie der Kampagne | Gebotsstrategie für die Kampagne. | Dimension |
+| Kampagnen-Budgettyp | Typ der Budgetzuweisung für die Kampagne. | Dimension |
+| Kampagne – Budget pro Tag | Täglicher Budgetbetrag in der Währung des Werbekontos. | Dimension |
+| Kampagnen-Lebensdauerbudget | Lebensdauerbudgetbetrag, in der Anzeigenkontowährung. | Dimension |
+| Startzeit der Kampagne | Wann die Kampagne gestartet wurde. | Dimension |
+| Endzeit der Kampagne | Als die Kampagne endete. | Dimension |
+| Anzeigengruppentyp | Typ der Anzeigengruppe. | Dimension |
+| Anzeigengruppen-Bid-Strategie | Angebotsstrategie für die Anzeigengruppe. | Dimension |
+| Anzeigengruppen-Optimierungsziel | Optimierungsziel für die Anzeigengruppe. | Dimension |
+| Anzeigengruppen-Startzeit | Wann die Anzeigengruppe gestartet wurde. | Dimension |
+| Endzeit der Anzeigengruppe | Als die Anzeigengruppe beendet wurde. | Dimension |
+| Ad-Typ | Typ/Format der Anzeige. | Dimension |
+| Anzeigenprüfungsstatus | Überprüfungs-/Genehmigungsstatus der Anzeige. | Dimension |
+| Creative-Typ hinzufügen | Typ des von der Anzeige verwendeten Kreativinhalts. | Dimension |
+| Anzeigentitel | Überschrift/Titel der kreativen Anzeige. | Dimension |
+| Ad Call to action | Call-to-action der Kreativen Werbung. | Dimension |
+| Ziel-URL hinzufügen | Landing/Destination URL der Anzeige. | Dimension |
+| Anzeige-URL | Auf der Anzeige angezeigte URL anzeigen. | Dimension |
+| Erlebnistyp | Typ/Format des Werbereignisses. | Dimension |
+| URL der Experience Landingpage | Landingpage-URL für das Erlebnis. | Dimension |
+| Experience Call to action | Call-to-action des Erlebnisses | Dimension |
+| Asset – Typ | Typ des Kreativ-Assets (z. B. Bild oder Video). | Dimension |
+| Asset-Breite | Breite des Assets in Pixel. | Dimension |
+| Asset-Höhe | Höhe des Assets in Pixel. | Dimension |
+| Asset-Seitenverhältnis | Seitenverhältnis des Assets. | Dimension |
+| Asset – Ausrichtung | Ausrichtung des Assets. | Dimension |
+| Gerätetyp | Aufschlüsselung des Gerätetyps für die gemeldeten Metriken. | Dimension |
+| Platzierung | Aufschlüsselung der Platzierungen für die gemeldeten Metriken. | Dimension |
+| Plattform | Aufschlüsselung der Plattform für die gemeldeten Metriken. | Dimension |
+| Land | Aufschlüsselung der Länder für die gemeldeten Metriken. | Dimension |
+| Region | Aufschlüsselung der Regionen für die gemeldeten Metriken. | Dimension |
+
+{style="table-layout:fixed"}
+
+### Paid Media-Metriken
+
+| Titel | Beschreibung | Typ |
+|---|---|---|
+| Impressionen | Häufigkeit, mit der die Anzeige angezeigt wurde. | Metrik |
+| Klicks | Anzahl der Klicks auf die Anzeige. | Metrik |
+| Ausgaben | Ausgegebener Betrag in der Währung des Werbekontos. | Metrik |
+| Konversionen | Gesamtzahl der Konversionen. | Metrik |
+| Umrechnungswert | Gesamtwert der Konversionen. | Metrik |
+| Reichweite | Anzahl der eindeutigen Personen, die die Anzeige gesehen haben. | Metrik |
+| Interaktionen | Anzahl der Interaktionen mit der Anzeige. | Metrik |
+| Videoansichten | Anzahl der Videoansichten. | Metrik |
+| Videovervollständigung | Anzahl der bis zum Abschluss angesehenen Videos. | Metrik |
+| Videowiedergaben | Anzahl der Videowiedergaben. | Metrik |
+| Käufe | Anzahl der Kaufkonversionen. | Metrik |
+| Zum Warenkorb hinzufügen | Anzahl der Add-to-Cart-Konversionen. | Metrik |
+| Leads | Anzahl der Lead-Konversionen. | Metrik |
+| Registrierungen | Anzahl der Registrierungs-Konvertierungen. | Metrik |
+| Downloads | Anzahl der Download-Konversionen. | Metrik |
+| Abonnements | Anzahl der Abonnementkonvertierungen. | Metrik |
+| Landingpage-Ansichten | Anzahl der Landingpage-Ansichten. | Metrik |
+| Nach-Klick-Konversionen | Konversionen, die einem Klick zugeordnet wurden. | Metrik |
+| Konvertierungen nach der Ansicht | Konversionen, die einer Ansicht zugeordnet wurden. | Metrik |
+| Gesamtauftragswert | Gesamtwert der Bestellungen. | Metrik |
+| Link-Klicks | Anzahl der Link-Klicks. | Metrik |
+| Ausgehende Klicks | Anzahl der ausgehenden Klicks. | Metrik |
+| Mobile-App-Installationen | Anzahl der App-Installationen. | Metrik |
+| Lead-Übermittlungen | Anzahl der Lead-Formularübermittlungen. | Metrik |
+
+{style="table-layout:fixed"}
+
+### Berechnete Metriken für bezahlte Medien
+
+| Titel | Beschreibung | Typ |
+|---|---|---|
+| Clickthrough-Rate | Klicks geteilt durch Impressionen. | Berechnete Metrik |
+| Kosten pro Klick | Ausgaben geteilt durch Klicks. | Berechnete Metrik |
+| Kosten pro Meile | Kosten pro Tausend Impressionen. | Berechnete Metrik |
+| Kosten pro Umrechnung | Ausgaben geteilt durch Konversionen. | Berechnete Metrik |
+| Rendite auf Werbeausgaben | Umrechnungswert geteilt durch Ausgaben. | Berechnete Metrik |
+| Häufigkeit | Impressionen geteilt nach Reichweite. | Berechnete Metrik |
+| Interaktionsrate | Interaktionen geteilt durch Impressionen. | Berechnete Metrik |
+| Video-Abschlussrate | Videovervollständigung dividiert durch Videowiedergaben. | Berechnete Metrik |
+| Konversionsrate | Konversionen geteilt durch Klicks. | Berechnete Metrik |
+| Durchschnittlicher Bestellwert | Gesamtauftragswert geteilt durch Käufe. | Berechnete Metrik |
+
+{style="table-layout:fixed"}
+
 
 ## Berechnete Metriken
 

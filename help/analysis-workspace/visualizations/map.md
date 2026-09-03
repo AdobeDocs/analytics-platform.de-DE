@@ -225,21 +225,21 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
    * **Einzoomen**: Sie können die Karte vergrößern, um bestimmte Bereiche auf eine der folgenden Arten zu vergrößern:
 
-      * Doppelklicken Sie mit der Maus auf die Karte.
+     * Doppelklicken Sie mit der Maus auf die Karte.
 
-      * Verwenden Sie das Mausrad oder eine ähnliche Aktion auf Ihrem Trackpad.
+     * Verwenden Sie das Mausrad oder eine ähnliche Aktion auf Ihrem Trackpad.
 
-      * Wählen Sie das Pluszeichen ![Zoom-Symbol](assets/map-zoomin-icon.png) in der Kartenvisualisierung aus.
+     * Wählen Sie das Pluszeichen ![Zoom-Symbol](assets/map-zoomin-icon.png) in der Kartenvisualisierung aus.
 
      Die Karte zoomt entsprechend. Die erforderliche Dimension (Land > Bundesland > Stadt) wird basierend auf der Zoomstufe automatisch aktualisiert.
 
    * **Verkleinern**: Sie können die Karte verkleinern, um größere Bereiche auf eine der folgenden Arten anzuzeigen:
 
-      * Halten Sie die Umschalttaste gedrückt und doppelklicken Sie mit der Maus auf die Karte.
+     * Halten Sie die Umschalttaste gedrückt und doppelklicken Sie mit der Maus auf die Karte.
 
-      * Verwenden Sie das Mausrad oder eine ähnliche Aktion auf Ihrem Trackpad.
+     * Verwenden Sie das Mausrad oder eine ähnliche Aktion auf Ihrem Trackpad.
 
-      * Wählen Sie das Minussymbol ![Zoom-out-Symbol](assets/map-zoomout-icon.png) in der Kartenvisualisierung aus.
+     * Wählen Sie das Minussymbol ![Zoom-out-Symbol](assets/map-zoomout-icon.png) in der Kartenvisualisierung aus.
 
      Die Karte zoomt entsprechend. Die erforderliche Dimension (Land > Bundesland > Stadt) wird basierend auf der Zoomstufe automatisch aktualisiert.
 
@@ -255,13 +255,13 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
    * **Vergleiche von Zeiträumen über Zeiträume anzeigen (z. B. von Jahr zu Jahr)**:
 
-      * Negative Zahlen anzeigen.
+     * Negative Zahlen anzeigen.
 
-        Wenn Sie beispielsweise eine Metrik im Jahresvergleich darstellen, kann die Karte -33 % über New York anzeigen.
+       Wenn Sie beispielsweise eine Metrik im Jahresvergleich darstellen, kann die Karte -33 % über New York anzeigen.
 
-      * Mit Metriken des Typs *Prozent* werden die Prozentanzeigen mit Durchschnitten gebündelt.
+     * Mit Metriken des Typs *Prozent* werden die Prozentanzeigen mit Durchschnitten gebündelt.
 
-      * Ein grünes und rotes Farbschema zeigt positiv und negativ an.
+     * Ein grünes und rotes Farbschema zeigt positiv und negativ an.
 
    * **Zusätzliche Visualisierungseinstellungen**: Wählen Sie das Einstellungssymbol ![Einstellung](/help/assets/icons/Setting.svg) in der Visualisierungskopfzeile aus, um zusätzliche Einstellungen für die Kartenvisualisierung anzuzeigen. Weitere Informationen finden Sie unter [Konfigurieren von Visualisierungseinstellungen](#configure-visualization-settings).
 

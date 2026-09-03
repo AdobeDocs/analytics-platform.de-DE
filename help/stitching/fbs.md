@@ -21,7 +21,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 1902
+source-wordcount: 1938
 ht-degree: 82%
 
 ---
@@ -42,8 +42,8 @@ Sie können das feldbasierte Stitching verwenden, wenn Sie Customer Journey Anal
 Die feldbasierte Zuordnung unterstützt die Verwendung der [`identityMap`-Feldergruppe](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#identity) in folgenden Szenarien:
 
 - Verwendung der primären Identität in `identityMap`-Namespaces zur Definition der persistenten ID:
-   - Wenn mehrere primäre Identitäten in verschiedenen Namespaces gefunden werden, werden die Identitäten in den Namespaces lexikografisch sortiert, und die erste Identität wird ausgewählt.
-   - Wenn mehrere primäre Identitäten in einem einzigen Namespace gefunden werden, wird die lexikografisch erste primäre Identität ausgewählt, die verfügbar ist.
+  - Wenn mehrere primäre Identitäten in verschiedenen Namespaces gefunden werden, werden die Identitäten in den Namespaces lexikografisch sortiert, und die erste Identität wird ausgewählt.
+  - Wenn mehrere primäre Identitäten in einem einzigen Namespace gefunden werden, wird die lexikografisch erste primäre Identität ausgewählt, die verfügbar ist.
 
   Im folgenden Beispiel führen die Namespaces und Identitäten zu einer sortierten primären Identitätsliste und schließlich zur ausgewählten Identität.
 
@@ -75,8 +75,8 @@ Die feldbasierte Zuordnung unterstützt die Verwendung der [`identityMap`-Felder
 
 
 - Verwendung des `identityMap`-Namespace zum Definieren der persistenten ID, der Personen-ID oder beider:
-   - Wenn in einem `identityMap`-Namespace mehrere Werte für eine persistente ID oder Personen-ID gefunden werden, wird der lexikografisch erste verfügbare Wert verwendet.
-   - Namespaces für persistente ID und Personen-ID müssen sich gegenseitig ausschließen.
+  - Wenn in einem `identityMap`-Namespace mehrere Werte für eine persistente ID oder Personen-ID gefunden werden, wird der lexikografisch erste verfügbare Wert verwendet.
+  - Namespaces für persistente ID und Personen-ID müssen sich gegenseitig ausschließen.
 
   Im folgenden Beispiel haben Sie „ECID“ als zu verwendenden Namespace ausgewählt. Diese Auswahl führt zu einer sortierten Identitätsliste und schließlich zur ausgewählten Identität.
 
@@ -113,10 +113,10 @@ Beim Zuordnen werden in einem Datensatz mindestens zwei Datendurchläufe durchge
 - **Live-Zuordnung:**: Versucht, bei Eingang jeden Treffer (Ereignis) zuzuordnen. Treffer von Geräten, die *neu* im Datensatz sind (sich noch nie authentifiziert haben), werden in der Regel nicht auf dieser Ebene zugeordnet. Treffer von bereits erkannten Geräten werden sofort zugeordnet.
 
 - **Wiederholte Zuordnung:** *Wiederholt* Daten basierend auf eindeutigen Kennungen (Personen-IDs). In diesem Schritt werden Treffer von zuvor unbekannten Geräten (persistente IDs) zugeordnet (zu Personen-IDs). Zwei Parameter bestimmen die Wiederholung: **Häufigkeit** und **Lookback-Fenster**. Adobe bietet die folgenden Kombinationen dieser Parameter:
-   - **Täglicher Lookback mit täglicher Häufigkeit:** Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Personen müssen sich jedoch am selben Tag authentifizieren, an dem sie Ihre Website besuchen.
-   - **Wöchentlicher Lookback in wöchentlicher Häufigkeit:** Die Daten werden einmal wöchentlich mit einem wöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als eine Woche alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
-   - **Vierzehntägiger Lookback mit wöchentlicher Häufigkeit:** Die Daten werden einmal wöchentlich mit einem zweiwöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als zwei Wochen alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
-   - **Monatlicher Lookback mit wöchentlicher Häufigkeit:** Daten werden wöchentlich mit einem monatlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als einen Monat alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+  - **Täglicher Lookback mit täglicher Häufigkeit:** Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Personen müssen sich jedoch am selben Tag authentifizieren, an dem sie Ihre Website besuchen.
+  - **Wöchentlicher Lookback in wöchentlicher Häufigkeit:** Die Daten werden einmal wöchentlich mit einem wöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als eine Woche alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+  - **Vierzehntägiger Lookback mit wöchentlicher Häufigkeit:** Die Daten werden einmal wöchentlich mit einem zweiwöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als zwei Wochen alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+  - **Monatlicher Lookback mit wöchentlicher Häufigkeit:** Daten werden wöchentlich mit einem monatlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als einen Monat alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
 
 - **Datenschutz**: Wenn datenschutzbezogene Anfragen empfangen werden, muss neben dem Entfernen der angeforderten Identität auch jede Zuordnung dieser Identität zu nicht authentifizierten Ereignissen rückgängig gemacht werden.
 
@@ -140,18 +140,18 @@ Betrachten Sie das folgende Beispiel, bei dem Bob verschiedene Ereignisse als Te
 
 | Ereignis | Zeitstempel | Persistente ID (Cookie-ID) | Personen-ID | Resultierende ID (nach der Echtzeit-Zuordnung) |
 |---|---|---|---|---|
-| 1 | 12.05.2023 12:01 | `246` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | - | **`246`** |
-| 2 | 12.05.2023 12:02 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` |
-| 3 | 12.05.2023 12:03 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) |
-| 4 | 12.05.2023 12:04 | `246` | - | **`Bob`** |
-| 5 | 12.05.2023 12:05 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
-| 6 | 12.05.2023 12:06 | `246` | - | **`Bob`** |
-| 7 | 12.05.2023 12:07 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` |
-| 8 | 12.05.2023 12:03 | `3579` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | - | **`3579`** |
-| 9 | 12.05.2023 12:09 | `3579` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | - | **`3579`** |
-| 10 | 12.05.2023 12:02 | `81911` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | - | **`81911`** |
-| 11 | 12.05.2023 12:05 | `81911` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) |
-| 12 | 12.05.2023 12:12 | `81911` | - | **`Bob`** |
+| 1 | 2023-05-12 12:01 | `246` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | – | **`246`** |
+| 2 | 2023-05-12 12:02 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` |
+| 3 | 2023-05-12 12:03 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) |
+| 4 | 2023-05-12 12:04 | `246` | – | **`Bob`** |
+| 5 | 2023-05-12 12:05 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 6 | 2023-05-12 12:06 | `246` | – | **`Bob`** |
+| 7 | 2023-05-12 12:07 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` |
+| 8 | 2023-05-12 12:03 | `3579` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | – | **`3579`** |
+| 9 | 2023-05-12 12:09 | `3579` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | – | **`3579`** |
+| 10 | 2023-05-12 12:02 | `81911` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | – | **`81911`** |
+| 11 | 2023-05-12 12:05 | `81911` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) |
+| 12 | 2023-05-12 12:12 | `81911` | – | **`Bob`** |
 | | | **3 Geräte** | | **4 Personen:**<br/>`246`, `Bob`, `3579`, `81911` |
 
 Sowohl nicht authentifizierte als auch authentifizierte Ereignisse auf neuen Geräten werden (vorübergehend) als separate Personen gezählt. Nicht authentifizierte Ereignisse auf erkannten Geräten werden live zugeordnet.
@@ -174,18 +174,18 @@ Die folgende Tabelle stellt dieselben Daten wie oben dar, zeigt jedoch unterschi
 
 | Ereignis | Zeitstempel | Persistente ID (Cookie-ID) | Personen-ID | Resultierende ID (nach der Echtzeit-Zuordnung) | Resultierende ID (nach der Wiederholung) |
 |---|---|---|---|---|---|
-| 1 | 12.05.2023 12:01 | `246` | - | `246` | **`Bob`** |
-| 2 | 12.05.2023 12:02 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Pfeil nach oben](/help/assets/icons/ArrowUp.svg) |
-| 3 | 12.05.2023 12:03 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` | Bob |
-| 4 | 12.05.2023 12:04 | `246` | - | **`Bob`** | `Bob` |
-| 5 | 12.05.2023 12:05 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) | `Bob` |
-| 6 | 12.05.2023 12:06 | `246` | - | **`Bob`** | `Bob` |
-| 7 | 12.05.2023 12:07 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` |
-| 8 | 12.05.2023 12:03 | `3579` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** |
-| 9 | 12.05.2023 12:09 | `3579` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** |
-| 10 | 12.05.2023 12:02 | `81911` | - | `81911` | **`Bob`** |
-| 11 | 12.05.2023 12:05 | `81911` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) | `Bob` ![Pfeil nach oben](/help/assets/icons/ArrowUp.svg) |
-| 12 | 12.05.2023 12:12 | `81911` | - | **`Bob`** | `Bob` |
+| 1 | 2023-05-12 12:01 | `246` | – | `246` | **`Bob`** |
+| 2 | 2023-05-12 12:02 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Pfeil nach oben](/help/assets/icons/ArrowUp.svg) |
+| 3 | 2023-05-12 12:03 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` | Bob |
+| 4 | 2023-05-12 12:04 | `246` | – | **`Bob`** | `Bob` |
+| 5 | 2023-05-12 12:05 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) | `Bob` |
+| 6 | 2023-05-12 12:06 | `246` | – | **`Bob`** | `Bob` |
+| 7 | 2023-05-12 12:07 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` |
+| 8 | 2023-05-12 12:03 | `3579` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | – | **`3579`** | **`3579`** |
+| 9 | 2023-05-12 12:09 | `3579` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | – | **`3579`** | **`3579`** |
+| 10 | 2023-05-12 12:02 | `81911` | – | `81911` | **`Bob`** |
+| 11 | 2023-05-12 12:05 | `81911` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) | `Bob` ![Pfeil nach oben](/help/assets/icons/ArrowUp.svg) |
+| 12 | 2023-05-12 12:12 | `81911` | – | **`Bob`** | `Bob` |
 | | | **3 Geräte** | | **4 Personen:**<br/>`246`, `Bob`, `3579`, `81911` | **2 Personen:**:<br/>`Bob`, `3579` |
 
 {style="table-layout:auto"}
@@ -206,18 +206,18 @@ Die folgende Tabelle stellt dieselben Daten wie oben dar, zeigt jedoch die Auswi
 
 | Ereignis | Zeitstempel | Persistente ID (Cookie-ID) | Personen-ID | Resultierende ID (nach der Echtzeit-Zuordnung) | Resultierende ID (nach der Wiederholung) | Personen-ID | Ergebnis-ID (nach Datenschutzanfrage) |
 |---|---|---|---|---|---|---|---|
-| 1 | 12.05.2023 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
-| 2 | 12.05.2023 12:02 | `246` | Bob ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Pfeil nach oben](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `246` |
-| 3 | 12.05.2023 12:03 | `246` | Bob ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) | `Bob` | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `246` |
-| 4 | 12.05.2023 12:04 | `246` | - | **`Bob`** | `Bob` | - | `246` |
-| 5 | 12.05.2023 12:05 | `246` | Bob ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) | `Bob` | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `246` |
-| 6 | 12.05.2023 12:06 | `246` | - | **`Bob`** | `Bob` | - | `246` |
-| 7 | 12.05.2023 12:07 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `246` |
-| 8 | 12.05.2023 12:03 | `3579` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** | - | `3579` |
-| 9 | 12.05.2023 12:09 | `3579` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** | - | `3579` |
-| 10 | 12.05.2023 12:02 | `81911` | - | `81911` | **`Bob`** | - | `81911` |
-| 11 | 12.05.2023 12:05 | `81911` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) | `Bob` ![Pfeil nach oben](/help/assets/icons/ArrowUp.svg) | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `81911` |
-| 12 | 12.05.2023 12:12 | `81911` | - | **`Bob`** | `Bob` | - | `81911` |
+| 1 | 2023-05-12 12:01 | `246` | – | `246` | **`Bob`** | – | `246` |
+| 2 | 2023-05-12 12:02 | `246` | Bob ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Pfeil nach oben](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 3 | 2023-05-12 12:03 | `246` | Bob ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) | `Bob` | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 4 | 2023-05-12 12:04 | `246` | – | **`Bob`** | `Bob` | – | `246` |
+| 5 | 2023-05-12 12:05 | `246` | Bob ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) | `Bob` | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 6 | 2023-05-12 12:06 | `246` | – | **`Bob`** | `Bob` | – | `246` |
+| 7 | 2023-05-12 12:07 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 8 | 2023-05-12 12:03 | `3579` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | – | **`3579`** | **`3579`** | – | `3579` |
+| 9 | 2023-05-12 12:09 | `3579` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | – | **`3579`** | **`3579`** | – | `3579` |
+| 10 | 2023-05-12 12:02 | `81911` | – | `81911` | **`Bob`** | – | `81911` |
+| 11 | 2023-05-12 12:05 | `81911` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) | `Bob` ![Pfeil nach oben](/help/assets/icons/ArrowUp.svg) | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `81911` |
+| 12 | 2023-05-12 12:12 | `81911` | – | **`Bob`** | `Bob` | – | `81911` |
 | | | **3 Geräte** | | **4 Personen:**<br/>246, `Bob`, `3579`, `81911` | **2 Personen:**<br/>Bob, `3579` |  | **3 Personen:**<br/>`246`, `3579`, `81911` |
 
 +++ 
@@ -228,8 +228,8 @@ Die folgenden Voraussetzungen gelten speziell für feldbasierte Zuordnung:
 
 - Der Ereignisdatensatz in Adobe Experience Platform, auf den Sie eine Zuordnung anwenden möchten, muss zwei Spalten aufweisen, die die Identifizierung von Profilen erleichtern:
 
-   - Eine **persistente ID**, eine Kennung, die in jeder Zeile vorhanden ist. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde, oder eine vom Adobe Experience Platform Identity Service generierte ECID.
-   - Eine **Personen-ID**, eine Kennung, die nur in einigen Zeilen vorhanden ist. Beispielsweise ein gehashter Benutzername oder eine gehashte E-Mail-Adresse, wenn sich ein Profil authentifiziert. Sie können praktisch jede gewünschte Kennung verwenden. Beim Zuordnen wird davon ausgegangen, dass dieses Feld die tatsächlichen Informationen der Personen-ID enthält. Um die besten Ergebnisse beim Zuordnen zu erzielen, sollte eine Personen-ID mindestens einmal für jede persistente ID innerhalb der Ereignisse des Datensatzes gesendet werden. Wenn Sie diesen Datensatz in eine Customer Journey Analytics-Verbindung einbeziehen möchten, sollten die anderen Datensätze auch eine ähnliche gemeinsame Kennung haben.
+  - Eine **persistente ID**, eine Kennung, die in jeder Zeile vorhanden ist. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde, oder eine vom Adobe Experience Platform Identity Service generierte ECID.
+  - Eine **Personen-ID**, eine Kennung, die nur in einigen Zeilen vorhanden ist. Beispielsweise ein gehashter Benutzername oder eine gehashte E-Mail-Adresse, wenn sich ein Profil authentifiziert. Sie können praktisch jede gewünschte Kennung verwenden. Beim Zuordnen wird davon ausgegangen, dass dieses Feld die tatsächlichen Informationen der Personen-ID enthält. Um die besten Ergebnisse beim Zuordnen zu erzielen, sollte eine Personen-ID mindestens einmal für jede persistente ID innerhalb der Ereignisse des Datensatzes gesendet werden. Wenn Sie diesen Datensatz in eine Customer Journey Analytics-Verbindung einbeziehen möchten, sollten die anderen Datensätze auch eine ähnliche gemeinsame Kennung haben.
 
 <!--
 - Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.

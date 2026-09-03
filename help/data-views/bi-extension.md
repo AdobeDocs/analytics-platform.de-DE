@@ -24,7 +24,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 3756
+source-wordcount: 3763
 ht-degree: 82%
 
 ---
@@ -347,11 +347,11 @@ Die folgenden zusätzlichen Standardwerte und Einschränkungen gelten für die V
 * Die BI-Erweiterung erfordert eine Zeilenbegrenzung für die Abfrageergebnisse. Der Standardwert ist 50. Sie können diesen jedoch in SQL mit `LIMIT n` überschreiben, wobei `n` 1 - 50000 ist.
 * Die BI-Erweiterung erfordert einen Datumsbereich, um die für Berechnungen verwendeten Zeilen zu begrenzen. Der Standardwert ist die letzten 30 Tage. Sie können diesen jedoch in Ihrer SQL-`WHERE`-Klausel überschreiben, indem Sie die speziellen Spalten [`timestamp`](#timestamp) oder [`daterange`](#date-range) verwenden.
 * Die BI-Erweiterung erfordert Aggregatabfragen. Sie können kein SQL wie `SELECT * FROM ...` verwenden, um die rohen, zugrunde liegenden Zeilen abzurufen. Ihre Aggregatabfragen sollten auf allgemeiner Ebene Folgendes verwenden:
-   * Gesamtsummen mit `SUM` und/oder `COUNT` auswählen.<br/> Beispiel: `SELECT SUM(metric1), COUNT(*) FROM ...`
-   * Auswählen von Metriken, die nach einer Dimension aufgeschlüsselt sind. <br/>Zum Beispiel `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
-   * Auswählen unterschiedlicher Metrikwerte.<br/>Zum Beispiel `SELECT DISTINCT dimension1 FROM ...`
+  * Gesamtsummen mit `SUM` und/oder `COUNT` auswählen.<br/> Beispiel: `SELECT SUM(metric1), COUNT(*) FROM ...`
+  * Auswählen von Metriken, die nach einer Dimension aufgeschlüsselt sind. <br/>Zum Beispiel `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+  * Auswählen unterschiedlicher Metrikwerte.<br/>Zum Beispiel `SELECT DISTINCT dimension1 FROM ...`
 
-     Weitere Informationen finden Sie unter [Unterstütztes SQL](#supported-sql).
+    Weitere Informationen finden Sie unter [Unterstütztes SQL](#supported-sql).
 
 
 ### Unterstützte SQL

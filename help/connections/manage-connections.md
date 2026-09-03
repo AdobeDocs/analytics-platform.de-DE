@@ -26,7 +26,7 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 7300
+source-wordcount: 7319
 ht-degree: 87%
 
 ---
@@ -62,7 +62,7 @@ Für [!UICONTROL Verbindungen] gibt es zwei Benutzeroberflächen: [[!UICONTROL L
 
 Die Benutzeroberfläche **[!UICONTROL Liste]** ist die Standardbenutzeroberfläche für Verbindungen. Wenn sie nicht ausgewählt ist, wählen Sie die Registerkarte **[!UICONTROL Liste]** aus, um auf die Benutzeroberfläche zuzugreifen.
 
-Die **[!UICONTROL List]** zeigt eine Tabelle aller verfügbaren Verbindungen an.
+In der Benutzeroberfläche **[!UICONTROL Liste]** wird eine Tabelle aller verfügbaren Verbindungen angezeigt.
 △
 ![Listenansicht](assets/list-view.png)
 
@@ -746,6 +746,6 @@ Die Benutzeroberfläche **[!UICONTROL Nutzung von Streaming]** Medien) besteht a
 
 >[!MORELIKETHIS]
 >
->[Tutorial zum Anzeigen, Beheben und Ändern &#x200B;](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja) Verbindungseinstellungen.
->[Verwalten der Customer Journey Analytics-Nutzung](/help/technotes/estimate-usage.md)
+>Tutorial [Anzeigen, Beheben von Problemen und Ändern von Verbindungseinstellungen](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).
+>[Verwalten der Nutzung von Customer Journey Analytics](/help/technotes/estimate-usage.md)
 >

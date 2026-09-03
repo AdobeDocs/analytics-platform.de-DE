@@ -46,9 +46,9 @@ Zu den Anwendungsfällen für diese Analyse gehören:
 * **Stufenweise Rollouts**: Da bei der Analyse nach der ersten Verwendung der Funktion und nicht nach einem festen Datum gesucht wird, ist sie bei Rollouts Ihrer Funktionen über einen längeren Zeitraum nützlich.
 * **Analyse einer neuen Produktversion**: Wenn Sie eine neue Version Ihres Produktes einführen, können Sie die Leistung der Schlüsselindikatoren vor und nach der erstmaligen Bereitstellung dieser neuen Version für die Benutzenden vergleichen. Wählen Sie als Ereignis der erstmaligen Verwendung „Beliebiges Ereignis“ aus und filtern Sie es auf Ihre Eigenschaft „Versionsnummer“.
 * **Vorhandene Funktionsverbesserungen**: Wenn Sie eine vorhandene Funktion in Ihrem Produkt verbessern, können Sie die Leistung von Schlüsselindikatoren vor und nach der erstmaligen Bereitstellung dieser neuen Verbesserungen für die Benutzenden vergleichen. Sie können diese Analyse je nach Instrumentierung der Funktionen auf eine oder mehrere Arten durchführen.
-   * Auswählen eines Ereignisses, das die Verbesserung als Ereignis der ersten Verwendung darstellt
-   * Auswählen des Startdatums für das Rollout der Änderungen
-   * Segmentieren der Analyse auf die Personengruppe, die den Verbesserungen ausgesetzt ist
+  * Auswählen eines Ereignisses, das die Verbesserung als Ereignis der ersten Verwendung darstellt
+  * Auswählen des Startdatums für das Rollout der Änderungen
+  * Segmentieren der Analyse auf die Personengruppe, die den Verbesserungen ausgesetzt ist
 * **Kampagneneffektivität**: Wenn sich Benutzende über eine bestimmte Kampagne durchklicken, können Sie die Leistung der Schlüsselindikatoren vor und nach der Benutzerinteraktion mit dieser Kampagne vergleichen.
 
 ## Benutzeroberfläche
@@ -63,8 +63,8 @@ Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 * **[!UICONTROL Schlüsselindikatoren]**: Die Ereignisse, die pro Person gemessen werden sollen. Jeder ausgewählte Schlüsselindikator wird als farbige Linie dargestellt. Der Tabelle wird eine Zeile hinzugefügt, die das Ereignis darstellt. Sie können bis zu drei Ereignisse einbeziehen.
 * **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die ausgewählten Ereignisse angewendet werden soll. Zu den Optionen gehören [!UICONTROL Ereignisse pro nutzender Person], [!UICONTROL Ereignisse], [!UICONTROL Sitzungen] und [!UICONTROL Benutzende].
 * **[!UICONTROL Faktoren]**: Diese Analyse beruht auf zwei Faktoren:
-   * **[!UICONTROL Datum]**: Wie weit zurück Sie mit der Suche nach dem Ereignis der ersten Anwendung beginnen möchten.
-   * **[!UICONTROL Ereignis]**: Das Ereignis, nach dessen erster Verwendung Sie suchen möchten, um die Analyse darauf zu zentrieren.
+  * **[!UICONTROL Datum]**: Wie weit zurück Sie mit der Suche nach dem Ereignis der ersten Anwendung beginnen möchten.
+  * **[!UICONTROL Ereignis]**: Das Ereignis, nach dessen erster Verwendung Sie suchen möchten, um die Analyse darauf zu zentrieren.
 * **[!UICONTROL Segmente]**: Das Segment, das Sie messen möchten. Bei der Filterung Ihrer Daten fokussiert das ausgewählte Segment nur die Personen, die Ihren Segmentkriterien entsprechen. Für diese Analyse wird ein einzelnes Segment unterstützt.
 
 ### Diagrammeinstellungen

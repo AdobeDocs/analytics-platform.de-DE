@@ -62,7 +62,7 @@ Das Prognoseergebnis für jeden angegebenen Zeitpunkt umfasst ein Prognoseinterv
 Der Service geht in Bezug auf Benutzerdaten von keiner Annahme aus. Beispielsweise geht der Service nicht davon aus, dass die Daten nicht negativ sind. Dies bedeutet, dass die Prognosen und/oder deren Grenzen negativ sein können, wenn die Daten einen starken Abwärtstrend aufweisen, obwohl alle beobachteten Datenpunkte nicht negativ sind.
 
 
-## Verweise
+## Referenzen
 
 1. Taylor, Sean J. und Benjamin Letham: *Forecasting at scale.* In: The American Statistician 72.1 (2018), S. 37-45.
 1. Triebe, Oskar u. a.: *Neuralprophet: Erklärbare Vorhersagen in großem Maßstab.* arXiv-Vorabdruck arXiv:2111.15397(2021).

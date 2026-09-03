@@ -54,7 +54,7 @@ Die folgenden Filterabschnitte sind verfügbar:
 
 {{dataviewfiltersection}}
 
-### Inhaberin oder Inhaber
+### Verantwortlicher
 
 {{ownerfiltersection}}
 

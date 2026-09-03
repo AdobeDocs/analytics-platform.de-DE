@@ -82,20 +82,20 @@ Das folgende Ereignis ist ein JSON-Objekt, das einen Kauf einer Waschmaschine un
 Beim Erstellen einer Datenansicht sind die folgenden Dimensionen und Metriken verfügbar (je nach Schema):
 
 * **Dimensionen:**
-   * ID
-   * Produkt: SKU
-   * Produkt: Name
-   * Produkt: Bestell-ID
-   * Produkt: Garantie: Gültigkeit
-   * Produkt: Garantie: Länge
-   * Produkt: Garantie: Name
-   * Produkt: Garantie: Typ
+  * ID
+  * Produkt: SKU
+  * Produkt: Name
+  * Produkt: Bestell-ID
+  * Produkt: Garantie: Gültigkeit
+  * Produkt: Garantie: Länge
+  * Produkt: Garantie: Name
+  * Produkt: Garantie: Typ
 * **Metriken:**
-   * Produkt: Bestellungen
-   * Produkt: Einheiten
-   * Produkt: Umsatz
-   * Produkt: Garantie
-   * Produkt: Garantie: Umsatz
+  * Produkt: Bestellungen
+  * Produkt: Einheiten
+  * Produkt: Umsatz
+  * Produkt: Garantie
+  * Produkt: Garantie: Umsatz
 
 ### Beispiele für dasselbe Ereignis (Reporting-Verhalten)
 

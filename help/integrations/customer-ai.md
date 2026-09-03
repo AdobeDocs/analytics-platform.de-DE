@@ -42,20 +42,20 @@ Customer AI nutzt bei der Tendenzauswertung individuelle Verhaltensdaten und Pro
 Kunden-KI kann so weit in Customer Journey Analytics integriert werden, dass für Kunden-AI-aktivierte Datensätze in Datenansichten und Berichten in Customer Journey Analytics genutzt werden können. Sie haben folgende Möglichkeiten:
 
 * **Tendenz-Scores für ein Segment von Benutzenden im Zeitverlauf nachverfolgen**.
-   * Anwendungsfall: Ermitteln der Wahrscheinlichkeit, dass Kundinnen und Kunden in einem bestimmten Segment konvertieren.
-   * Beispiel: Eine Marketing-Fachkraft einer Hotelkette möchte die Wahrscheinlichkeit ermitteln, mit der ein Hotelkunde oder eine Hotelkundin ein Ticket für den Konzertsaal des Hotels kauft.
+  * Anwendungsfall: Ermitteln der Wahrscheinlichkeit, dass Kundinnen und Kunden in einem bestimmten Segment konvertieren.
+  * Beispiel: Eine Marketing-Fachkraft einer Hotelkette möchte die Wahrscheinlichkeit ermitteln, mit der ein Hotelkunde oder eine Hotelkundin ein Ticket für den Konzertsaal des Hotels kauft.
 * **Analysieren, Sie welche Erfolgsereignisse oder Attribute mit Tendenz-Scores verknüpft sind**. &#x200B;
-   * Anwendungsfall: Ermitteln der Attribute oder Erfolgsereignisse, die mit Tendenz-Scores verknüpft sind.
-   * Beispiel: Eine Marketing-Fachkraft einer Hotelkette möchte ermitteln, wie der Kauf von Tickets für den Konzertsaal eines Hotels mit Tendenz-Scores verbunden ist.
+  * Anwendungsfall: Ermitteln der Attribute oder Erfolgsereignisse, die mit Tendenz-Scores verknüpft sind.
+  * Beispiel: Eine Marketing-Fachkraft einer Hotelkette möchte ermitteln, wie der Kauf von Tickets für den Konzertsaal eines Hotels mit Tendenz-Scores verbunden ist.
 * **Verfolgen des Eintrittsflusses für die Kundentendenz über verschiedene Scoring-Durchgänge hinweg**.
-   * Anwendungsfall: Identifizieren von Personen, deren Konsumneigung anfangs niedrig war und im Laufe der Zeit stieg.
-   * Beispiel: Eine Marketing-Fachkraft einer Hotelkette möchte ermitteln, welche Hotelkundinnen oder -kunden ursprünglich als Personen mit geringer Tendenz zum Kauf eines Show-Tickets identifiziert wurden, aber im Laufe der Zeit zu Personen mit hoher Tendenz zum Kauf eines Show-Tickets wurden.
+  * Anwendungsfall: Identifizieren von Personen, deren Konsumneigung anfangs niedrig war und im Laufe der Zeit stieg.
+  * Beispiel: Eine Marketing-Fachkraft einer Hotelkette möchte ermitteln, welche Hotelkundinnen oder -kunden ursprünglich als Personen mit geringer Tendenz zum Kauf eines Show-Tickets identifiziert wurden, aber im Laufe der Zeit zu Personen mit hoher Tendenz zum Kauf eines Show-Tickets wurden.
 * **Betrachten der Verteilung der Tendenz**.
-   * Anwendungsfall: Erkennen der Verteilung der Tendenz-Scores, um Segmente präziser zu definieren.
-   * Beispiel: Ein Einzelhändler oder eine Einzelhändlerin möchte eine bestimmte Promotion mit einem Rabatt von 50 € für ein Produkt durchführen. Sie möchten vielleicht nur eine sehr begrenzte Promotion durchführen, aufgrund des Budgets usw. Sie analysieren die Daten und entscheiden, nur die oberen 80 % ihrer Kunden anzusprechen.
+  * Anwendungsfall: Erkennen der Verteilung der Tendenz-Scores, um Segmente präziser zu definieren.
+  * Beispiel: Ein Einzelhändler oder eine Einzelhändlerin möchte eine bestimmte Promotion mit einem Rabatt von 50 € für ein Produkt durchführen. Sie möchten vielleicht nur eine sehr begrenzte Promotion durchführen, aufgrund des Budgets usw. Sie analysieren die Daten und entscheiden, nur die oberen 80 % ihrer Kunden anzusprechen.
 * **Betrachten der Konsumtendenz, um im Laufe der Zeit eine Maßnahme für eine bestimmte Kohorte zu ergreifen**.
-   * Anwendungsfall: Nachverfolgen einer bestimmten Kohorte im Zeitverlauf.
-   * Beispiel: Eine Marketing-Fachkraft einer Hotelkette möchte die Bronze-Ebene gegenüber der Silber-Ebene, oder die Silber-Ebene gegenüber der Gold-Ebene im Laufe der Zeit nachverfolgen. Danach kann sie die Tendenz jeder Kohorte für das Buchen im Hotel im Zeitverlauf betrachten.
+  * Anwendungsfall: Nachverfolgen einer bestimmten Kohorte im Zeitverlauf.
+  * Beispiel: Eine Marketing-Fachkraft einer Hotelkette möchte die Bronze-Ebene gegenüber der Silber-Ebene, oder die Silber-Ebene gegenüber der Gold-Ebene im Laufe der Zeit nachverfolgen. Danach kann sie die Tendenz jeder Kohorte für das Buchen im Hotel im Zeitverlauf betrachten.
 
 Gehen Sie wie folgt vor, um Kunden-KI-Daten tatsächlich mit Customer Journey Analytics zu integrieren:
 

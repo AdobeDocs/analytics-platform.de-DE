@@ -24,8 +24,8 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
 workflow-type: tm+mt
-source-wordcount: 1215
-ht-degree: 51%
+source-wordcount: 1365
+ht-degree: 48%
 
 ---
 
@@ -122,44 +122,44 @@ Sie können die Aufschlüsselung **[!UICONTROL Inhaltskanal]** verwenden, um das
 
 Die vier Bedienfelder sind:
 
-* **Welche Inhalte erzielen die besten Ergebnisse?**
+* **Welche Inhalte schneiden am besten ab?**
 In diesem Bedienfeld wird ermittelt, welche Erlebnisse und Assets die Interaktion und Konversion fördern. Erlebnisse sind vollständige Web-Seiten, die zu einem bestimmten Zeitpunkt erfasst werden, oder eine Kombination aus Text, Assets und Aktionsaufrufen, die in einer Mobile App definiert sind.
 
-   * **Erlebnisse**
+  * **Erlebnisse**
 
-     >[!NOTE]
-     >
-     >Diese Visualisierungen werden nur dann in Ihrer Vorlage angezeigt, wenn Sie das System so konfiguriert haben[&#x200B; dass Erlebnisse in &#x200B;](/help/content-analytics/config/guided.md#experience-capture-and-definition) Content Analytics-Konfiguration aufgenommen werden.
-     > 
+    >[!NOTE]
+    >
+    >Diese Visualisierungen werden nur dann in Ihrer Vorlage angezeigt, wenn Sie das System so konfiguriert haben[&#x200B; dass Erlebnisse in &#x200B;](/help/content-analytics/config/guided.md#experience-capture-and-definition) Content Analytics-Konfiguration aufgenommen werden.
+    > 
 
-      * **Experience CTR**: eine Visualisierung [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) die Experience CTR anzeigt.
-      * **Erlebnisse mit den meisten Konversionen**: Eine Visualisierung vom Typ [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md), die die besten Konversionserlebnisse basierend auf der ausgewählten Konversionsmetrik zeigt.
-      * **Erlebnisse mit Top**: Eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) für die Erlebnisse mit der besten Leistung.
+    * **Experience CTR**: eine Visualisierung [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) die Experience CTR anzeigt.
+    * **Erlebnisse mit den meisten Konversionen**: Eine Visualisierung vom Typ [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md), die die besten Konversionserlebnisse basierend auf der ausgewählten Konversionsmetrik zeigt.
+    * **Erlebnisse mit Top**: Eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) für die Erlebnisse mit der besten Leistung.
 
-   * **Assets**
+  * **Assets**
 
-      * **Asset-CTR**
-Eine Visualisierung [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) die den Asset-CTR anzeigt.
-      * **Am häufigsten konvertierte Assets**
-Eine [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) Visualisierung, die basierend auf der ausgewählten Konversionsmetrik die am häufigsten konvertierten Assets anzeigt.
-      * **Assets mit der besten Leistung**
-Eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) für die Assets mit der besten Performance.
-Assets - Ansichten im Vergleich zur Konversion.
-Eine [Streudiagramm](/help/analysis-workspace/visualizations/scatterplot.md)-Visualisierung, die ein Streudiagramm der Asset-Ansichten im Vergleich zu den Asset-Konversionen zeigt.
+    * **Asset-CTR**
+      Eine Visualisierung [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) die den Asset-CTR anzeigt.
+    * **Am häufigsten konvertierte Assets**
+      Eine [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) Visualisierung, die basierend auf der ausgewählten Konversionsmetrik die am häufigsten konvertierten Assets anzeigt.
+    * **Assets mit der besten Performance**
+      Eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) für die Assets mit der besten Performance.
+      Assets - Ansichten im Vergleich zur Konversion.
+      Eine [Streudiagramm](/help/analysis-workspace/visualizations/scatterplot.md)-Visualisierung, die ein Streudiagramm der Asset-Ansichten im Vergleich zu den Asset-Konversionen zeigt.
 
 * **Welche Asset-Attribute tragen zu Konversionen bei?**
 Content Analytics verwendet KI und GenAI, um jedem Asset automatisch Metadaten und Attribute wie Themen, Szenen und Vordergrundfarben zuzuweisen.
 
-   * **Top-Konvertierung von Asset-Attributen**
-Ein [horizontaler Balken](/help/analysis-workspace/visualizations/horizontal-bar.md) der die wichtigsten konvertierenden Asset-Attribute basierend auf der ausgewählten Konversionsmetrik anzeigt.
-   * **Konvertieren der Asset-Attribute nach oben im Vergleich zu vorherigen 30 Tagen**
-Eine [horizontale Balken](/help/analysis-workspace/visualizations/horizontal-bar.md) Visualisierung, die die wichtigsten konvertierenden Asset-Attribute basierend auf der ausgewählten Konversionsmetrik im Vergleich zu den vorherigen 30 Tagen anzeigt.
-   * **Top-Konvertierung von Asset-Attributdaten**
-Eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die die wichtigsten konvertierenden Attribute basierend auf der ausgewählten Konversionsmetrik anzeigt. Wählen Sie eine Zeile in der Tabelle aus, um die Visualisierung „Attribut-Trend“ zu aktualisieren.
-   * **Attributtrend**
-Eine [-](/help/analysis-workspace/visualizations/line.md)-Visualisierung, die den Attributtrend für das ausgewählte am häufigsten konvertierende Asset-Attribut anzeigt.
-   * **Asset-Vordergrundfarbe**
-Ein Beispiel [Freiformtabelle), &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die Leistung von Elementen aus einer einzelnen Asset-Attributkategorie vergleicht: Vordergrundfarben. Sie können dieses Asset-Attribut durch andere Dimensionen der Asset-Attributkategorie ersetzen.
+  * **Top-Konvertierung von Asset-Attributen**
+    Ein [horizontaler Balken](/help/analysis-workspace/visualizations/horizontal-bar.md) der die wichtigsten konvertierenden Asset-Attribute basierend auf der ausgewählten Konversionsmetrik anzeigt.
+  * **Konvertieren der Asset-Attribute nach oben im Vergleich zu vorherigen 30 Tagen**
+    Eine [horizontale Balken](/help/analysis-workspace/visualizations/horizontal-bar.md) Visualisierung, die die wichtigsten konvertierenden Asset-Attribute basierend auf der ausgewählten Konversionsmetrik im Vergleich zu den vorherigen 30 Tagen anzeigt.
+  * **Top-Konvertierung von Asset-Attributdaten**
+    Eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die die wichtigsten konvertierenden Attribute basierend auf der ausgewählten Konversionsmetrik anzeigt. Wählen Sie eine Zeile in der Tabelle aus, um die Visualisierung „Attribut-Trend“ zu aktualisieren.
+  * **Attributtrend**
+    Eine [-](/help/analysis-workspace/visualizations/line.md)-Visualisierung, die den Attributtrend für das ausgewählte am häufigsten konvertierende Asset-Attribut anzeigt.
+  * **Asset-Vordergrundfarbe**
+    Ein Beispiel [Freiformtabelle), &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die Leistung von Elementen aus einer einzelnen Asset-Attributkategorie vergleicht: Vordergrundfarben. Sie können dieses Asset-Attribut durch andere Dimensionen der Asset-Attributkategorie ersetzen.
 
 * **Welche Erlebnisattribute tragen zu Konversionen bei?**
 
@@ -172,28 +172,28 @@ Ein Beispiel [Freiformtabelle), &#x200B;](/help/analysis-workspace/visualization
 
   Das Panel besteht aus den folgenden Visualisierungen:
 
-   * **Die besten Erlebnisattribute konvertieren**
-Eine [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) Visualisierung, die die wichtigsten konvertierenden Erlebnisattribute basierend auf der ausgewählten Konversionsmetrik anzeigt.
-Die besten Konvertierungserlebnisattribute im Vergleich zu den vorherigen 30 Tagen
-Eine [horizontale Balken](/help/analysis-workspace/visualizations/horizontal-bar.md) Visualisierung, die die wichtigsten Konvertierungserlebnisattribute im Vergleich zu den letzten 30 Tagen zeigt, basierend auf der ausgewählten Konversionsmetrik.
-   * **Top-Konvertierung von Erlebnisattributdaten**
-Eine [Freiformtabelle), &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die wichtigsten Konvertierungserlebnisse basierend auf der ausgewählten Konversionsmetrik anzeigt. Wählen Sie eine Zeile in der Tabelle aus, um die Visualisierung „Linie“ zu aktualisieren.
-   * **line**
-Eine [-](/help/analysis-workspace/visualizations/line.md)-Visualisierung, die den Trend für das ausgewählte am häufigsten konvertierte Erlebnisattribut anzeigt.
-   * **Erlebnis-Keywords**
-Eine [Freiformtabelle“, &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die wichtigsten Erlebnisschlüsselwörter basierend auf der ausgewählten Konversionsmetrik anzeigt.
+  * **Die besten Erlebnisattribute konvertieren**
+    Eine [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) Visualisierung, die die wichtigsten konvertierenden Erlebnisattribute basierend auf der ausgewählten Konversionsmetrik anzeigt.
+    Die besten Konvertierungserlebnisattribute im Vergleich zu den vorherigen 30 Tagen
+    Eine [horizontale Balken](/help/analysis-workspace/visualizations/horizontal-bar.md) Visualisierung, die die wichtigsten Konvertierungserlebnisattribute im Vergleich zu den letzten 30 Tagen zeigt, basierend auf der ausgewählten Konversionsmetrik.
+  * **Top-Konvertierung von Erlebnisattributdaten**
+    Eine [Freiformtabelle), &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die wichtigsten Konvertierungserlebnisse basierend auf der ausgewählten Konversionsmetrik anzeigt. Wählen Sie eine Zeile in der Tabelle aus, um die Visualisierung „Linie“ zu aktualisieren.
+  * **line**
+    Eine [-](/help/analysis-workspace/visualizations/line.md)-Visualisierung, die den Trend für das ausgewählte am häufigsten konvertierte Erlebnisattribut anzeigt.
+  * **Erlebnis-Keywords**
+    Eine [Freiformtabelle“, &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die wichtigsten Erlebnisschlüsselwörter basierend auf der ausgewählten Konversionsmetrik anzeigt.
 
 * **Wo werden Assets auf meiner Site angezeigt?**
 In dieser Freiformtabelle wird angegeben, wo die am häufigsten angezeigten Assets angezeigt werden. Verwenden Sie diese Analyse, um leistungsstarke Seiten zu identifizieren und die Asset-Platzierung zu optimieren.
 
-   * **Wo werden die am häufigsten angezeigten Assets angezeigt?**
-Sie können jedes Asset nach Dimensionen aufschlüsseln, damit Sie besser verstehen können, wo dieses Bild angezeigt wird.
+  * **Wo werden die am häufigsten angesehenen Assets angezeigt?**
+    Sie können jedes Asset nach Dimensionen aufschlüsseln, damit Sie besser verstehen können, wo dieses Bild angezeigt wird.
 
-     Im Beispiel [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) wird **[!UICONTROL Asset-Wahrnehmungs-ID]** anstelle von [!UICONTROL Element-ID] verwendet. Manchmal kann exakt dasselbe Bild mit einer anderen Bild-URL auf Ihrer Site dupliziert werden. Mit dem Attribut [!UICONTROL Asset-Wahrnehmungs-ID] können diese Duplikate unter einer einzigen ID gruppiert werden.
+    Im Beispiel [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (einschließlich [Miniaturen](#thumbnails) und [Vorschauen](#previews)) wird **[!UICONTROL Asset-Wahrnehmungs-ID]** anstelle von [!UICONTROL Element-ID] verwendet. Manchmal kann exakt dasselbe Bild mit einer anderen Bild-URL auf Ihrer Site dupliziert werden. Mit dem Attribut [!UICONTROL Asset-Wahrnehmungs-ID] können diese Duplikate unter einer einzigen ID gruppiert werden.
 
-     Da sich Assets auf einer Seite ändern können, unterteilt das System jedes Asset nach **[!UICONTROL Erlebnis-ID]**, um die Version der Seite zu identifizieren, auf der das Asset erschienen ist. Sie können die [!UICONTROL Erlebnis-ID] durch andere Dimensionen ersetzen, anhand derer Sie die Position eines Assets auf Ihrer Site ermitteln können. Beispiel: [!UICONTROL Seitenname], [!UICONTROL Seiten-URL] oder [!UICONTROL Site-Bereich].
+    Da sich Assets auf einer Seite ändern können, unterteilt das System jedes Asset nach **[!UICONTROL Erlebnis-ID]**, um die Version der Seite zu identifizieren, auf der das Asset erschienen ist. Sie können die [!UICONTROL Erlebnis-ID] durch andere Dimensionen ersetzen, anhand derer Sie die Position eines Assets auf Ihrer Site ermitteln können. Beispiel: [!UICONTROL Seitenname], [!UICONTROL Seiten-URL] oder [!UICONTROL Site-Bereich].
 
-     Sie können [!UICONTROL Asset-Wahrnehmungs-ID] auch durch [!UICONTROL Element-ID] ersetzen, um einen Eintrag mit Informationen dazu zu erhalten, wo bestimmte Bild-URLs referenziert werden.
+    Sie können [!UICONTROL Asset-Wahrnehmungs-ID] auch durch [!UICONTROL Element-ID] ersetzen, um einen Eintrag mit Informationen dazu zu erhalten, wo bestimmte Bild-URLs referenziert werden.
 
 
 >[!MORELIKETHIS]

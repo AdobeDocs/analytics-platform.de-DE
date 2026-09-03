@@ -102,7 +102,8 @@ So geben Sie eine bestimmte Projektrolle für Benutzende oder Gruppen in Ihrer O
 
    Oder
 
-   Wenn Sie nur ein einzelnes Projekt freigeben möchten, können Sie das freizugebende Projekt öffnen und dann **[!UICONTROL Freigeben]** > **[!UICONTROL Für Arbeitsbereich-Benutzende freigeben]** auswählen.Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projekt zuerst zu speichern.
+   Wenn Sie nur ein einzelnes Projekt freigeben möchten, können Sie das freizugebende Projekt öffnen und dann **[!UICONTROL Freigeben]** > **[!UICONTROL Für Arbeitsbereich-Benutzende freigeben]** auswählen.
+   Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projekt zuerst zu speichern.
 
    Das Dialogfeld „Freigeben“ wird angezeigt. Die Abschnitte [!UICONTROL **Über Link freigeben**] und [!UICONTROL **Einstellungen**] des Dialogfelds sind nur sichtbar, wenn ein einzelnes Projekt freigegeben wird.
 
@@ -208,9 +209,9 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
      Customer Journey Analytics-Admins können diese Voreinstellung für das Unternehmen konfigurieren, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md) beschrieben. Je nachdem, wie die Admins diese Option konfiguriert haben, können die folgenden Szenarien auftreten:
 
-      * Wenn diese Option nicht angezeigt wird, haben Ihre Customer Journey Analytics-Admins diese Funktion nicht aktiviert.
+     * Wenn diese Option nicht angezeigt wird, haben Ihre Customer Journey Analytics-Admins diese Funktion nicht aktiviert.
 
-      * Wenn diese Option aktiviert ist und Sie sie nicht deaktivieren können, bedeutet die Option Gesperrt , dass Ihr Customer Journey Analytics-Administrator für alle, die auf Analysis Workspace-Projekte zugreifen, eine CX Enterprise-Authentifizierung erfordert. Dies ist immer der Fall für Organisationen, die Healthcare Shield lizenzieren.
+     * Wenn diese Option aktiviert ist und Sie sie nicht deaktivieren können, bedeutet die Option Gesperrt , dass Ihr Customer Journey Analytics-Administrator für alle, die auf Analysis Workspace-Projekte zugreifen, eine CX Enterprise-Authentifizierung erfordert. Dies ist immer der Fall für Organisationen, die Healthcare Shield lizenzieren.
 
 1. Wählen Sie neben dem Feld **[!UICONTROL Für jeden freigeben (keine Anmeldung erforderlich)]** das Symbol ![Link](/help/assets/icons/Link.svg) aus, um den Link in die Zwischenablage Ihres Systems zu kopieren.
 

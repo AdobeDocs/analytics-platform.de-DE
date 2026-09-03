@@ -45,4 +45,5 @@ Einige Begriffe in Customer Journey Analytics weichen von der bisherigen Verwend
 
 ## Glossar zu Adobe Experience Platform
 
-In Adobe Experience Platform werden die Daten und Inhalte im gesamten Unternehmen standardisiert. Damit werden Echtzeitprofile für Verbraucher und Datenwissenschaft ermöglicht und Content Velocity beschleunigt, um die Personalisierung von Erlebnissen während der gesamten Customer Journey voranzutreiben.Weitere Informationen finden Sie im [Glossar zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html?lang=de).
+In Adobe Experience Platform werden die Daten und Inhalte im gesamten Unternehmen standardisiert. Damit werden Echtzeitprofile für Verbraucher und Datenwissenschaft ermöglicht und Content Velocity beschleunigt, um die Personalisierung von Erlebnissen während der gesamten Customer Journey voranzutreiben.
+Weitere Informationen finden Sie im [Glossar zu Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html?lang=de).

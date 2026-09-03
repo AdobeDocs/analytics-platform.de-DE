@@ -35,11 +35,11 @@ Je nach Customer Journey Analytics-Paket können Sie auch Warnhinweise verwenden
 * Warnhinweise per E-Mail oder SMS mit Links zu automatisch erstellten Projekten in Analysis Workspace verschicken.
 * Erstellen *gestapelten* Warnhinweisen, die mehrere Metriken in einem Warnhinweis erfassen.
 * Erstellen von Warnhinweisen basierend auf:
-   * Anomalien in Metriken, die vorhanden sind, über oder unter den erwarteten Schwellenwerten liegen.
+  * Anomalien in Metriken, die vorhanden sind, über oder unter den erwarteten Schwellenwerten liegen.
 
-     [Anomalieerkennung](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) erstellt anhand historischer Daten einen erwarteten Wert plus eine obere und untere Grenze. Wenn der tatsächliche Metrikwert über die Obergrenze oder unter die Untergrenze, die als Schwellenwert definiert ist, fällt, wird dieses Ereignis als Anomalie auf der Konfidenzschwelle des Schwellenwerts betrachtet und führt zum Trigger des Warnhinweises. Ein höherer Schwellenwert (z. B.: 99 % oder 99,9 %) bedeutet eine breitere Bandbreite, was zu weniger Warnungen führt, die durch extremere Anomalien verursacht werden. Ein niedrigerer Schwellenwert (z. B.: 90 %) bedeutet eine engere Bandbreite, was zu mehr Warnungen führt, die durch weniger extreme Anomalien verursacht werden.
-   * Änderungen an Metriken um einen bestimmten Prozentsatz.
-   * Metriken, die über, unter oder gleich einem bestimmten Wert sind. (nur für Adobe Analytics-Kunden mit einem Select-, Prime- oder Ultimate-Paket verfügbar)
+    [Anomalieerkennung](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) erstellt anhand historischer Daten einen erwarteten Wert plus eine obere und untere Grenze. Wenn der tatsächliche Metrikwert über die Obergrenze oder unter die Untergrenze, die als Schwellenwert definiert ist, fällt, wird dieses Ereignis als Anomalie auf der Konfidenzschwelle des Schwellenwerts betrachtet und führt zum Trigger des Warnhinweises. Ein höherer Schwellenwert (z. B.: 99 % oder 99,9 %) bedeutet eine breitere Bandbreite, was zu weniger Warnungen führt, die durch extremere Anomalien verursacht werden. Ein niedrigerer Schwellenwert (z. B.: 90 %) bedeutet eine engere Bandbreite, was zu mehr Warnungen führt, die durch weniger extreme Anomalien verursacht werden.
+  * Änderungen an Metriken um einen bestimmten Prozentsatz.
+  * Metriken, die über, unter oder gleich einem bestimmten Wert sind. (nur für Adobe Analytics-Kunden mit einem Select-, Prime- oder Ultimate-Paket verfügbar)
 
 Dieses [Video-Tutorial](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/data-science/intelligent-alerts) bietet einen grundlegenden Überblick über Warnhinweise.
 

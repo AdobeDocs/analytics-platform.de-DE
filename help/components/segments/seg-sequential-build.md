@@ -20,7 +20,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 2491
+source-wordcount: 2496
 ht-degree: 4%
 
 ---
@@ -47,8 +47,8 @@ Ein sequenzielles Segment verfügt über einige [grundlegende Funktionen](#basic
 
 * Welche Daten [einschließen](#include) als Teil der Gesamtsequenz für die Segmentdefinition. Oder für eine Sequenz, die als Teil eines Containers definiert ist. Standardmäßig werden alle übereinstimmenden Daten berücksichtigt. Diese Daten werden durch ![UserGroup](/help/assets/icons/UserGroup.svg) [!UICONTROL Include everyone] identifiziert.
 
-   * Wählen Sie ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** aus, um nur Daten vor der Sequenz zu berücksichtigen.
-   * Wählen Sie ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** aus, um nur Daten nach der Sequenz zu berücksichtigen.
+  * Wählen Sie ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** aus, um nur Daten vor der Sequenz zu berücksichtigen.
+  * Wählen Sie ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** aus, um nur Daten nach der Sequenz zu berücksichtigen.
 
 * Welche Daten [&#x200B; als Teil &#x200B;](#exclude) sequenziellen Segmentdefinition ausgeschlossen werden sollen.
 
@@ -129,7 +129,7 @@ Personen identifizieren, die erst nach zwei Wochen eine Seite und dann eine ande
 
 ![Sequenz nach](assets/sequence-after.png)
 
-Wenn am 1. Juni 2024 um 00::01 eine Seitenansicht für die Startseite erfolgt, stimmt eine Seitenansicht für die Seite Women | Shoes überein, solange diese Seitenansicht nach dem 15. Juni 2024 00::01 erfolgt.
+Wenn eine Seitenansicht für die Startseite am 1. Juni 2024 um 00:01 Uhr erfolgt, stimmt eine Seitenansicht für die Seite Women | Shoes überein, solange diese Seitenansicht nach dem 15. Juni 2024 um 00:01 Uhr erfolgt.
 
 ##### [!UICONTROL Within]-Operator
 
@@ -137,7 +137,7 @@ Personen identifizieren, die innerhalb von fünf Minuten eine Seite und dann ein
 
 ![Sequenz innerhalb von](assets/sequence-within.png)
 
-Wenn eine Seitenansicht für die Startseite am 1. Juni 2024 um 12 :01 stattfindet, stimmt eine Seitenansicht für die Seite Women | Shoes überein, solange diese Seitenansicht vor dem 15. Juni 2024 um 12 :16 stattfindet.
+Wenn eine Seitenansicht für die Startseite am 1. Juni 2024 um 12:01 Uhr erfolgt, stimmt eine Seitenansicht für die Seite Women | Shoes überein, solange diese Seitenansicht vor dem 15. Juni 2024 um 12:16 Uhr erfolgt.
 
 ##### [!UICONTROL After] but [!UICONTROL Within]-Operator
 
@@ -145,7 +145,7 @@ Personen identifizieren, die eine Seite besucht und nach zwei Wochen, aber inner
 
 ![Sequenz nach, aber innerhalb von](assets/sequence-afterbutwithin.png)
 
-Personen, die am 1. Juni 2024 die Startseite besuchen und die nach dem 15. Juni 2019 00:01, aber vor dem 1. Juli 2019 zur Seite „Women | Shoes“ zurückkehren, qualifizieren sich für das Segment.
+Personen, die am 1. Juni 2024 die Startseite besuchen und die nach dem 15. Juni 2019 um 00:01 Uhr, aber vor dem 1. Juli 2019 zur Seite „Women | Shoes“ zurückkehren, qualifizieren sich für das Segment.
 
 
 ### Einschränkungen [!UICONTROL Ereignis], [!UICONTROL Sitzung] und [!UICONTROL Dimension]

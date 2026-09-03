@@ -27,7 +27,7 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 455
+source-wordcount: 466
 ht-degree: 3%
 
 ---
@@ -74,6 +74,6 @@ Experience Platform Data Mirror für Customer Journey Analytics ist für ausgew�
 
 >[!MORELIKETHIS]
 >
->[Data Mirror-Schnellstartanleitung: Spiegeln und Verwenden von relationalen Daten](relational.md)
+>[Schnellstartanleitung zu Data Mirror: Relationale Daten spiegeln und verwenden](relational.md)
 >[Data Mirror (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-mirror/overview)
 >[Relationale Schemata (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/relational)

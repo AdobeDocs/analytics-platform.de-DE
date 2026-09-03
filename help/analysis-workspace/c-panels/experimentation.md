@@ -188,7 +188,7 @@ Berechnete Metriken, die eine der folgenden Metriken oder Konstanten enthalten, 
 * Basismetriken, die untereinander aufgeteilt oder miteinander multipliziert werden (z. B. `Revenue`/`Orders`)
 * Konstanten, die zu einer Basismetrik hinzugefügt oder von ihr subtrahiert werden (z. B. `Revenue+50`)
 * Eine der folgenden Basismetriken:
-   * Personen
+  * Personen
 
 Beim Erstellen der berechneten Metrik haben berechnete Metriken, die nicht mit dem Panel Experimentieren kompatibel sind, den Wert: [!UICONTROL **Überall in Customer Journey Analytics (außer beim Experimentieren)**] im Feld [!UICONTROL **Produktkompatibilität**]. Informationen zum Erstellen einer berechneten Metrik finden Sie unter [Erstellen von Metriken](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 

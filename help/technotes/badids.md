@@ -41,8 +41,8 @@ Dieser Artikel bietet Kontext zu ungültigen IDs und beschreibt, wie Sie mithilf
 In Customer Journey Analytics ist eine ungültige ID ein Bezeichner, da sie Teil aller in einer Verbindung definierten Daten ist:
 
 * mit einem bestimmten ID-Wert, der stammt
-   * aus einem Personen-ID-Feld (nicht zugeordnete Datensätze) **oder**
-   * von einer persistenten ID oder einem Personen-ID-Feld (Zusammenfügen von -aktivierten Datensätzen) aus,
+  * aus einem Personen-ID-Feld (nicht zugeordnete Datensätze) **oder**
+  * von einer persistenten ID oder einem Personen-ID-Feld (Zusammenfügen von -aktivierten Datensätzen) aus,
 
   **und**
 * ist auf mehr als eine Million (1.000.000) Ereignisse in den Verbindungsdaten (gezählt für alle Datensätze innerhalb der Verbindung) innerhalb eines Monats.

@@ -41,15 +41,15 @@ So wenden Sie mithilfe von Segmenten Filter auf einzelne Metriken an:
 
 * Alternativ:
 
-   1. Wählen Sie ![MehrKlein](/help/assets/icons/MoreSmall.svg) für eine bestimmte Metrik im Bereich **[!UICONTROL Tabelle]** aus und wählen Sie dann **[!UICONTROL Filtermetrik]**.
+  1. Wählen Sie ![MehrKlein](/help/assets/icons/MoreSmall.svg) für eine bestimmte Metrik im Bereich **[!UICONTROL Tabelle]** aus und wählen Sie dann **[!UICONTROL Filtermetrik]**.
 
-      ![Registerkarte „Segmente“ mit Metriken.](./assets/filter-metric.png){zoomable="yes"}
+     ![Registerkarte „Segmente“ mit Metriken.](./assets/filter-metric.png){zoomable="yes"}
 
-   1. Wählen Sie ein oder mehrere Segmente aus **[!UICONTROL Dropdown-Menü]** Segmente“ aus. Die Segmente werden der Liste **[!UICONTROL Segmente angewendet“]**.
+  1. Wählen Sie ein oder mehrere Segmente aus **[!UICONTROL Dropdown-Menü]** Segmente“ aus. Die Segmente werden der Liste **[!UICONTROL Segmente angewendet“]**.
 
-      ![Segmente angewendet](assets/segments-applied.png)
-   1. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Segment aus der Liste **[!UICONTROL Segment angewendet]** zu entfernen. Oder wählen Sie **[!UICONTROL Alle löschen]** aus, um alle Segmente aus der Liste **[!UICONTROL Segment angewendet]** zu entfernen.
-   1. Wählen Sie **[!UICONTROL Anwenden]** aus.
+     ![Segmente angewendet](assets/segments-applied.png)
+  1. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Segment aus der Liste **[!UICONTROL Segment angewendet]** zu entfernen. Oder wählen Sie **[!UICONTROL Alle löschen]** aus, um alle Segmente aus der Liste **[!UICONTROL Segment angewendet]** zu entfernen.
+  1. Wählen Sie **[!UICONTROL Anwenden]** aus.
 
 Um angewendete Filter anzuzeigen, bewegen Sie den Mauszeiger über eine Metrik im Tabellenbereich oder wählen Sie sie aus. Metriken mit angewendeten Segmenten zeigen ein Segmentsymbol an.
 

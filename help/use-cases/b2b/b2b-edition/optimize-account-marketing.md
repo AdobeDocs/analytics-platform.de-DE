@@ -36,8 +36,8 @@ Für dieses Verständnis möchten Sie Folgendes analysieren und untersuchen:
 
 * Marketing-Auswirkungen:
 
-   * Über Kampagnen, Kanäle und Inhalte hinweg.
-   * Beim Kauf von Gruppen innerhalb von Konten,
+  * Über Kampagnen, Kanäle und Inhalte hinweg.
+  * Beim Kauf von Gruppen innerhalb von Konten,
 
 * Fortschritt der Vertriebspipeline.
 * Upsell- und Crosssell-Möglichkeiten.

@@ -50,9 +50,9 @@ Arbeitsbereich-Projekte in Customer Journey Analytics basieren auf Datenansichte
 Mit Datenansichten können Sie die Schemaelement-Einstellungen spontan ändern, ohne dass das Schema in Adobe Experience Platform geändert oder Ihre Customer Journey Analytics-Umgebung erneut implementiert werden muss.
 
 * Sie können eine Komponente von einer Metrik in eine Dimension ändern und umgekehrt. Sie können Metriken aus Zeichenfolgenfeldern oder Dimensionen aus numerischen Feldern erstellen. Diese Funktionalität erleichtert Ihnen das Leben, da Sie nicht für jede gewünschte Metrik ein numerisches Feld in Ihrem XDM-Schema erstellen müssen. Stattdessen können Sie sie spontan im Dialog „Dateiansichten“ erstellen. Im Folgenden finden Sie einige Beispiele:
-   * **Erstellen Sie eine oder mehrere Metriken und/oder Dimensionen aus einem einzigen Schemafeld**. Es ist eine Eins-zu-viele-Beziehung. Sie können beispielsweise eine oder mehrere Umsatzmetriken und/oder eine oder mehrere Umsatzdimensionen aus einem einzigen Schemafeld erstellen.
-   * **Verwenden Sie ein Zeichenfolgenfeld als Metrik**: Wenn Sie ein Schema in Experience Platform mit einem Datensatz füllen, wissen Sie möglicherweise nicht schon gleich zu Beginn, welche Schema-Elemente Sie benötigen. Beispielsweise war Ihnen vielleicht noch nicht bewusst, dass Sie eine Metrik für *Fehler auf einer Seite* benötigen. Daher haben Sie kein numerisches Schema-Element für diesen Zweck erstellt. Durch Verwendung eines Zeichenfolgen-Elements als Metrik können Sie jetzt mithilfe der Einstellungen für Datenansichten festlegen, dass jede Zeichenfolge, die das Wort `error` enthält, als Metrik verwendet werden kann.
-   * **Verwenden Sie ein numerisches Feld als Dimension**. Wenn Sie beispielsweise die Umsatzmetrik aus der Umsatzdimension abrufen möchten, zeigt die Umsatzdimension jeden Wert als Dimensionselement und die Anzahl der Instanzen für jedes Dimensionselement als Metrik an.
+  * **Erstellen Sie eine oder mehrere Metriken und/oder Dimensionen aus einem einzigen Schemafeld**. Es ist eine Eins-zu-viele-Beziehung. Sie können beispielsweise eine oder mehrere Umsatzmetriken und/oder eine oder mehrere Umsatzdimensionen aus einem einzigen Schemafeld erstellen.
+  * **Verwenden Sie ein Zeichenfolgenfeld als Metrik**: Wenn Sie ein Schema in Experience Platform mit einem Datensatz füllen, wissen Sie möglicherweise nicht schon gleich zu Beginn, welche Schema-Elemente Sie benötigen. Beispielsweise war Ihnen vielleicht noch nicht bewusst, dass Sie eine Metrik für *Fehler auf einer Seite* benötigen. Daher haben Sie kein numerisches Schema-Element für diesen Zweck erstellt. Durch Verwendung eines Zeichenfolgen-Elements als Metrik können Sie jetzt mithilfe der Einstellungen für Datenansichten festlegen, dass jede Zeichenfolge, die das Wort `error` enthält, als Metrik verwendet werden kann.
+  * **Verwenden Sie ein numerisches Feld als Dimension**. Wenn Sie beispielsweise die Umsatzmetrik aus der Umsatzdimension abrufen möchten, zeigt die Umsatzdimension jeden Wert als Dimensionselement und die Anzahl der Instanzen für jedes Dimensionselement als Metrik an.
 
 * Sie können mehrere Metriken mit verschiedenen Attributionsmodellen oder unterschiedlichen Lookback-Fenstern aus demselben Schemafeld erstellen.
 
@@ -62,9 +62,9 @@ Mit Datenansichten können Sie die Schemaelement-Einstellungen spontan ändern, 
 
 * Sie können weitere schemabezogene Informationen zu Komponenten anzeigen, z. B.:
 
-   * von welchem Datensatztyp („Ereignis“, „Profil“, „Lookup“, „Zusammenfassung“) die Komponente stammt
-   * welcher Schematyp (Zeichenfolge, Ganzzahl usw.) es stammt aus und
-   * wie der Schemapfad (das XDM-Feld, auf dem sie basiert) lautet
+  * von welchem Datensatztyp („Ereignis“, „Profil“, „Lookup“, „Zusammenfassung“) die Komponente stammt
+  * welcher Schematyp (Zeichenfolge, Ganzzahl usw.) es stammt aus und
+  * wie der Schemapfad (das XDM-Feld, auf dem sie basiert) lautet
 
 * Sie können eine Komponente taggen, um die Suche nach ihr in Workspace zu erleichtern.
 

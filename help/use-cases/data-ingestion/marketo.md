@@ -29,8 +29,8 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: e430f26e2b6357a288adb4389a266f26acab68c4
 workflow-type: tm+mt
-source-wordcount: 1448
-ht-degree: 8%
+source-wordcount: 1476
+ht-degree: 9%
 
 ---
 
@@ -120,7 +120,7 @@ Eine [Datenansicht](/help/data-views/data-views.md) ist ein für Customer Journe
 
 Ein möglicher Anwendungsfall ist: Wie viele Web-Seitenbesuche durch Leads hatten Sie im April/Juni 2020?
 
-1. Öffnen Sie [Analytics Workspace](/help/analysis-workspace/home.md) und erstellen Sie ein neues Projekt.
+1. Öffnen Sie [Analysis Workspace](/help/analysis-workspace/home.md) und erstellen Sie ein neues Projekt.
 Kunden mit B2B/B2P CDP können eine B2C-Analyse in Customer Journey Analytics durchführen. B2B-Objekte sind noch nicht verfügbar.
 
 1. Erstellen Sie [Segment](/help/components/segments/seg-create.md) für Web-Seitenansichten wie folgt: Ereignistyp = web.webpagedetails.pageViews :

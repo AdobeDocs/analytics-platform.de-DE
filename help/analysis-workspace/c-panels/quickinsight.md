@@ -139,13 +139,13 @@ Weitere nützliche Hinweise werden im [!UICONTROL Quick Insights Builder] angeze
 
   ![Quick Insights Builder-Ergebnis](assets/qibuilder-result.png)
 
-   * Unter **[!UICONTROL Analysieren]** > **[!UICONTROL Aufschlüsselung nach]**: Sie können bis zu drei Aufschlüsselungsebenen für Dimensionen verwenden, um einen Drilldown zu den Daten durchzuführen, die Sie benötigen. Siehe ➊, ➋ und ➌.
+  * Unter **[!UICONTROL Analysieren]** > **[!UICONTROL Aufschlüsselung nach]**: Sie können bis zu drei Aufschlüsselungsebenen für Dimensionen verwenden, um einen Drilldown zu den Daten durchzuführen, die Sie benötigen. Siehe ➊, ➋ und ➌.
 
-   * Weitere Metriken **[!UICONTROL nach]** hinzufügen: Sie können bis zu zwei weitere Metriken hinzufügen. Siehe ➍ und ➎.
+  * Weitere Metriken **[!UICONTROL nach]** hinzufügen: Sie können bis zu zwei weitere Metriken hinzufügen. Siehe ➍ und ➎.
 
-   * **[!UICONTROL Segment nach]**: Sie können bis zu 2 weitere Segmente hinzufügen. Sie können beispielsweise „Buchungen“ als Segment hinzufügen und dieses Segment mit den von Ihnen verglichenen Segmenten für Personen, die häufig fliegen, und Personen, die zum ersten Mal fliegen, kombinieren. Siehe ➏, ➐ und ➑.
+  * **[!UICONTROL Segment nach]**: Sie können bis zu 2 weitere Segmente hinzufügen. Sie können beispielsweise „Buchungen“ als Segment hinzufügen und dieses Segment mit den von Ihnen verglichenen Segmenten für Personen, die häufig fliegen, und Personen, die zum ersten Mal fliegen, kombinieren. Siehe ➏, ➐ und ➑.
 
-   * Am: Sie können den Datumsbereich festlegen. Siehe ➒.
+  * Am: Sie können den Datumsbereich festlegen. Siehe ➒.
 
 ## Bekannte Einschränkungen
 

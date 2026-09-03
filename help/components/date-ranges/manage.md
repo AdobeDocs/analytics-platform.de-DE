@@ -105,7 +105,8 @@ Sie können einen Datumsbereich auf zwei Arten bearbeiten:
 
 * Wählen Sie in [[!UICONTROL &#x200B; Liste &#x200B;]Datumsbereiche](#date-ranges-list) den Titel des Datumsbereichs aus.
 
-Verwenden Sie den [Generator für Datumsbereiche](/help/components/date-ranges/create.md#date-range-builder), um den Datumsbereich zu bearbeiten.Verwenden Sie den [Datumsbereichsmanager](/help/components/date-ranges/manage.md) zum Freigeben, Umbenennen oder Löschen von Datumsbereichen.
+Verwenden Sie den [Generator für Datumsbereiche](/help/components/date-ranges/create.md#date-range-builder), um den Datumsbereich zu bearbeiten.
+Verwenden Sie den [Datumsbereichsmanager](/help/components/date-ranges/manage.md) zum Freigeben, Umbenennen oder Löschen von Datumsbereichen.
 
 
 <!--

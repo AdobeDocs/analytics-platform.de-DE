@@ -23,7 +23,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 2809
+source-wordcount: 2812
 ht-degree: 41%
 
 ---
@@ -148,12 +148,12 @@ Alternativ können Sie eine **[!UICONTROL Voreinstellung]** aus dem Dropdown-Men
 
      Sie können den Text in Klammern auswählen (z. B. **[!UICONTROL Fester Start - täglich rollierend]**), um das Bedienfeld zu erweitern und Details für **[!UICONTROL Start]** und **[!UICONTROL Ende]** anzugeben.
 
-      1. Wählen Sie **[!UICONTROL Anfang von]**, **[!UICONTROL Ende von]** oder **[!UICONTROL Festgelegter Tag]** aus.
-      1. Wenn Sie **[!UICONTROL Anfang von]** oder **[!UICONTROL Ende von]** ausgewählt haben, können Sie einen vollständigen Ausdruck erstellen. Beispiel: **[!UICONTROL Ende von]** **[!UICONTROL Aktuelles Jahr]** **[!UICONTROL plus]** `1` **[!UICONTROL Tag]**. Wählen Sie den entsprechenden Wert für jeden einzelnen Teil des Ausdrucks aus.
-         * Wählen Sie einen Wert für den aktuellen Zeitraum aus, Beispiel: **[!UICONTROL aktuelles Jahr]**.
-         * Wählen Sie einen Wert für die zusätzliche Berechnung aus, z. B. **[!UICONTROL plus]**.
-         * Wenn Sie eine zusätzliche Berechnung angegeben haben, geben Sie einen Wert an. Zum Beispiel `1`.
-         * Wenn Sie eine zusätzliche Berechnung angegeben haben, wählen Sie den Zeitraum aus, der für die Berechnung verwendet werden soll, Beispiel: **[!UICONTROL Tag]**.
+     1. Wählen Sie **[!UICONTROL Anfang von]**, **[!UICONTROL Ende von]** oder **[!UICONTROL Festgelegter Tag]** aus.
+     1. Wenn Sie **[!UICONTROL Anfang von]** oder **[!UICONTROL Ende von]** ausgewählt haben, können Sie einen vollständigen Ausdruck erstellen. Beispiel: **[!UICONTROL Ende von]** **[!UICONTROL Aktuelles Jahr]** **[!UICONTROL plus]** `1` **[!UICONTROL Tag]**. Wählen Sie den entsprechenden Wert für jeden einzelnen Teil des Ausdrucks aus.
+        * Wählen Sie einen Wert für den aktuellen Zeitraum aus, Beispiel: **[!UICONTROL aktuelles Jahr]**.
+        * Wählen Sie einen Wert für die zusätzliche Berechnung aus, z. B. **[!UICONTROL plus]**.
+        * Wenn Sie eine zusätzliche Berechnung angegeben haben, geben Sie einen Wert an. Zum Beispiel `1`.
+        * Wenn Sie eine zusätzliche Berechnung angegeben haben, wählen Sie den Zeitraum aus, der für die Berechnung verwendet werden soll, Beispiel: **[!UICONTROL Tag]**.
 
      Wählen Sie **[!UICONTROL Details ausblenden]** aus, um die Details für die Berechnung rollierender Termine auszublenden.
 
@@ -184,14 +184,14 @@ So fügen Sie (Schnellsegmente) oder Aufschlüsselungen hinzu oder ersetzen sie:
    ![Hinzufügen oder Ersetzen in Ablagebereich](assets/add-or-replace-to-drop-zone.png)
 
    * Ziehen Sie die Auswahl in den Arbeitsbereich, um die folgenden Komponenten zu erstellen:
-      * [Segment](#segment) für alle Segmentkomponenten, die Sie ❷.
-      * [Schnellsegment](#quick-segment) für alle Nicht-Segmentkomponenten (Datumsbereiche, Metriken, Dimensionen, Dimensionselemente), die Sie ❸.
+     * [Segment](#segment) für alle Segmentkomponenten, die Sie ❷.
+     * [Schnellsegment](#quick-segment) für alle Nicht-Segmentkomponenten (Datumsbereiche, Metriken, Dimensionen, Dimensionselemente), die Sie ❸.
    * Ziehen Sie die Auswahl **während Sie halten** ⇧ (Umschalt), um die folgenden Komponenten zu erstellen:
-      * Statisches Segment [Dropdown-Menü](#drop-down-menu) mit Elementen, nach denen nach den ausgewählten Segmenten gefiltert werden soll, die Sie ❹.
-      * Statisches Segment [Dropdown-Menü](#drop-down-menu) mit Elementen, nach denen nach den ausgewählten Datumsbereichen gefiltert werden soll, die Sie ❺.
-      * Statisches Segment [Dropdown-Menü](#drop-down-menu) mit Elementen, nach denen nach den ausgewählten Metriken gefiltert werden soll, die Sie ❻.
-      * Statisches Segment [Dropdown-Menü](#drop-down-menu) oder Aufschlüsselung [Dropdown-Menü](#drop-down-menu) *mit Elementen, nach denen für die ausgewählte Dimension (Elemente* gefiltert werden soll, die Sie ❼.
-      * Dynamisches Segment [Dropdown-Menü](#drop-down-menu) oder Aufschlüsselung [Dropdown-](#drop-down-menu)) mit Elementen, nach denen für die ausgewählten Dimensionen, die Sie ❽ ablegen, gefiltert oder aufgeschlüsselt werden soll.
+     * Statisches Segment [Dropdown-Menü](#drop-down-menu) mit Elementen, nach denen nach den ausgewählten Segmenten gefiltert werden soll, die Sie ❹.
+     * Statisches Segment [Dropdown-Menü](#drop-down-menu) mit Elementen, nach denen nach den ausgewählten Datumsbereichen gefiltert werden soll, die Sie ❺.
+     * Statisches Segment [Dropdown-Menü](#drop-down-menu) mit Elementen, nach denen nach den ausgewählten Metriken gefiltert werden soll, die Sie ❻.
+     * Statisches Segment [Dropdown-Menü](#drop-down-menu) oder Aufschlüsselung [Dropdown-Menü](#drop-down-menu) *mit Elementen, nach denen für die ausgewählte Dimension (Elemente* gefiltert werden soll, die Sie ❼.
+     * Dynamisches Segment [Dropdown-Menü](#drop-down-menu) oder Aufschlüsselung [Dropdown-](#drop-down-menu)) mit Elementen, nach denen für die ausgewählten Dimensionen, die Sie ❽ ablegen, gefiltert oder aufgeschlüsselt werden soll.
 
 
 ### Segment
@@ -241,7 +241,7 @@ Für jede *Dimension*-Komponente, die Sie ablegen **während Sie** halten⇧ wir
 * Wählen Sie ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) und wählen Sie ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** | **[!UICONTROL Filtert die Daten im]** aus dem Kontextmenü für die ❾.
 
 
-#### Aufschlüsseln eines Bedienfelds
+#### Aufschlüsseln eines Panels
 
 Für jede *Dimension*-Komponente, die Sie ablegen **während Sie** halten⇧ wird ein Dropdown-Menü für Segmente erstellt. Sie können dieses Dropdown-Menü so konfigurieren, dass das Bedienfeld auf der Grundlage der Elemente aufgeschlüsselt wird, die für die abgelegten Dimensionselemente ([statisches](#static) Aufschlüsselungs-Dropdown-Menü) oder die Dimensionskomponente ([dynamisches](#dynamic) Aufschlüsselungs-Dropdown-Menü) verfügbar sind. So konfigurieren Sie das Dropdown-Menü explizit so, dass ein Bedienfeld mithilfe von Aufschlüsselungen aufgeschlüsselt wird:
 

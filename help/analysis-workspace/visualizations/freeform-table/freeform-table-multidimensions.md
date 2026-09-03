@@ -21,13 +21,13 @@ role_v2:
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 837
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
 # Mehrere Dimensionsspalten in eine Freiformtabelle einschließen
 
-Sie können bis zu 5 Dimensionsspalten in eine Freiformtabelle einbeziehen, sodass Sie mehrere Dimensionselemente nebeneinander anzeigen können. Jede Reihe von Dimensionselementen verhält sich wie ein einzelnes verkettetes Dimensionselement.
+Sie können bis zu 5 Dimensionsspalten in eine Freiformtabelle einbeziehen, sodass Sie mehrere Dimensionselemente nebeneinander anzeigen können. Jede Zeile von Dimensionselementen verhält sich wie ein einzelnes verkettetes Dimensionselement.
 
 Sie können Filter, Sortierung, Aufschlüsselungen und mehr auf Freiformtabellen mit mehreren Dimensionsspalten anwenden, um eine tiefere und benutzerspezifischere Analyse zu erstellen.
 

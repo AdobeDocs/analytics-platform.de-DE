@@ -26,8 +26,8 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 726
-ht-degree: 16%
+source-wordcount: 743
+ht-degree: 18%
 
 ---
 
@@ -43,11 +43,11 @@ Wenn zwei Personen dasselbe Gerät verwenden und beide einen authentifizierten K
 
 | Ereignis | Zeitstempel | Seitenname | Geräte-ID | E-Mail |
 |--:|---|---|---|---|
-| 1 | 12.05.2023 12:01 | Startseite | `1234` | |
-| 2 | 12.05.2023 12:02 | Produktseite | `1234` | |
-| 3 | 12.05.2023 12:03 | Auftragserfolg | `1234` | `ryan@a.com` |
-| 4 | 12.05.2023 12:07 | Produktseite | `1234` | |
-| 5 | 12.05.2023 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` |
+| 1 | 2023-05-12 12:01 | Startseite | `1234` | |
+| 2 | 2023-05-12 12:02 | Produktseite | `1234` | |
+| 3 | 2023-05-12 12:03 | Auftragserfolg | `1234` | `ryan@a.com` |
+| 4 | 2023-05-12 12:07 | Produktseite | `1234` | |
+| 5 | 2023-05-12 12:08 | Auftragserfolg | `1234` | `cassidy@a.com` |
 
 Wie Sie aus dieser Tabelle sehen können, beginnt sich nach der Authentifizierung bei den Ereignissen 3 und 5 eine Verknüpfung zwischen einer Geräte-ID und einer Personen-ID zu bilden. Um die Auswirkungen von Marketing-Maßnahmen auf der Personenebene zu verstehen, müssen diese nicht authentifizierten Ereignisse der richtigen Person zugeordnet werden.
 

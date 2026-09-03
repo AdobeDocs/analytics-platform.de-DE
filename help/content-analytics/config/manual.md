@@ -21,8 +21,8 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
-source-wordcount: 720
-ht-degree: 62%
+source-wordcount: 721
+ht-degree: 66%
 
 ---
 
@@ -50,13 +50,13 @@ So stoppen Sie die Datenerfassung für eine implementierte Content Analytics-Kon
 
 * Für **web**:
 
-   1. Entfernen Sie den [eingebetteten Code](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/environments/environments) im `<head>`-Element der Seiten in Ihrer Entwicklungs-, Staging- oder Produktionsumgebung, die Content Analytics unterliegt.
-   1. Löschen Sie die zugehörige Web-Tags-Eigenschaft für Ihre Content Analytics-Konfiguration.
+  1. Entfernen Sie den [eingebetteten Code](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/environments/environments) im `<head>`-Element der Seiten in Ihrer Entwicklungs-, Staging- oder Produktionsumgebung, die Content Analytics unterliegt.
+  1. Löschen Sie die zugehörige Web-Tags-Eigenschaft für Ihre Content Analytics-Konfiguration.
 
 * Für **mobile**:
 
-   1. Entfernen Sie die [Content Analytics](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)Erweiterung aus Ihrer App.
-   1. Löschen Sie die zugehörige Eigenschaft für mobile Tags für Ihre Content Analytics-Konfiguration.
+  1. Entfernen Sie die [Content Analytics](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/)Erweiterung aus Ihrer App.
+  1. Löschen Sie die zugehörige Eigenschaft für mobile Tags für Ihre Content Analytics-Konfiguration.
 
 Folgen Sie [Publishing-Ablauf](https://experienceleague.adobe.com/de/docs/experience-platform/tags/publish/overview){target="_blank"} um die Änderungen anzuwenden.
 

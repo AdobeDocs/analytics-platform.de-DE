@@ -20,7 +20,7 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 65ddb8af8bf2fdb45eaaef0ad5d824314c35087e
 workflow-type: tm+mt
-source-wordcount: 1963
+source-wordcount: 2013
 ht-degree: 11%
 
 ---
@@ -80,7 +80,7 @@ Ersetzen Sie diese Beispielobjekte durch Objekte, die für Ihre spezifische Umge
    1. Im **[!UICONTROL Navigator]** werden die Datenansichten abgerufen. Dieser Abruf kann einige Zeit dauern. Nach dem Abrufen sehen Sie Folgendes in Power BI Desktop.
       ![Power BI-Desktop-Ladedaten](../assets/powerbi-navigator-load.png)
       1. Wählen **[!UICONTROL public.cc_data_view]** aus der Liste im linken Bereich aus.
-      1. Sie haben zwei Möglichkeiten:
+      1. Sie haben nun zwei Möglichkeiten:
          1. Wählen Sie **[!UICONTROL Laden]** aus, um fortzufahren und die Einrichtung abzuschließen.
          1. Wählen Sie **[!UICONTROL Daten transformieren]** aus. Es wird ein Dialogfeld angezeigt, in dem Sie im Rahmen der Konfiguration optional Umwandlungen anwenden können.
             ![Power BI Desktop Transform-Daten](../assets/powerbi-transform-data.png)

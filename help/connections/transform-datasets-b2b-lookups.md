@@ -61,8 +61,8 @@ So aktivieren Sie die Umwandlung für einen B2B-Lookup-Datensatz:
 
 * Überprüfen Sie für jeden Datensatz die empfohlenen Werte für **[!UICONTROL Schlüssel]** und **[!UICONTROL Übereinstimmungsschlüssel]**. Wenn Sie die Werte von den vorgeschlagenen Werten ändern, wird eine Warnung angezeigt, die Sie auffordert, fortzufahren. Sie müssen Folgendes sicherstellen:
 
-   * Der für „Schlüssel **ausgewählte Wert** auf dem Datentyp Personen-ID .
-   * Der Wert, den Sie für **Übereinstimmungsschlüssel** auswählen, wird als primäres Identitätsfeld für den Ereignis-Datensatz definiert.
+  * Der für „Schlüssel **ausgewählte Wert** auf dem Datentyp Personen-ID .
+  * Der Wert, den Sie für **Übereinstimmungsschlüssel** auswählen, wird als primäres Identitätsfeld für den Ereignis-Datensatz definiert.
 
 * Wählen Sie die Optionen für den Import neuer Daten und die Aufstockung des Datensatzes aus.
 

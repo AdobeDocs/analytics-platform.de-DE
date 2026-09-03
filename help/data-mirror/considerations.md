@@ -46,16 +46,16 @@ Wenn Sie eine neue Spalte hinzufügen möchten, gibt es zwei Optionen, je nachde
 
 * Rückwirkende Aufstockung:
 
-   * Entfernt den aktuellen Datensatz.
-   * Konfigurieren Sie den Connector erneut mit der aktualisierten Spalte.
+  * Entfernt den aktuellen Datensatz.
+  * Konfigurieren Sie den Connector erneut mit der aktualisierten Spalte.
 
   Dadurch wird sichergestellt, dass die Daten effizienter und schneller aufgestockt werden.
 
 * Keine rückwirkende Aufstockung:
 
-   * Fügen Sie die Spalte in der Quelltabelle hinzu.
-   * Fügen Sie die Spalte im Zieldatensatzschema hinzu.
-   * Aktualisieren Sie die Zuordnung, um das neue Feld (Spalte) aus der Quelltabelle in den Zieldatensatz einzuschließen.
+  * Fügen Sie die Spalte in der Quelltabelle hinzu.
+  * Fügen Sie die Spalte im Zieldatensatzschema hinzu.
+  * Aktualisieren Sie die Zuordnung, um das neue Feld (Spalte) aus der Quelltabelle in den Zieldatensatz einzuschließen.
 
 Diese Strategie:
 

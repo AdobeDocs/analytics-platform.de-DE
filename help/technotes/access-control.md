@@ -43,7 +43,7 @@ topic_v2:
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1661
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -124,16 +124,16 @@ Neben dem Hinzufügen als Produktadmin zum **Customer Journey Analytics-Produktp
 
   Für Benutzende, die die BI-Erweiterung verwenden möchten, muss ein Produktadmin
 
-   * sicherstellen, dass die Experience Platform-Berechtigungen für die Person eine Rolle enthalten, die über die Ressource „Abfrage-Service“ mit den Optionen „Verwalten von Abfragen“ und „Verwalten der Abfrage-Service-Integration“ verfügt. Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Verwalten von Berechtigungen für ein Produktprofil](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/permissions).
+  * sicherstellen, dass die Experience Platform-Berechtigungen für die Person eine Rolle enthalten, die über die Ressource „Abfrage-Service“ mit den Optionen „Verwalten von Abfragen“ und „Verwalten der Abfrage-Service-Integration“ verfügt. Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Verwalten von Berechtigungen für ein Produktprofil](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/ui/permissions).
 
-     | Kategorie | Berechtigung | Beschreibung |
-     |---|---|---|
-     | [!UICONTROL Abfrage-Service] | [!UICONTROL Verwalten von Abfragen] | Zugriff auf das Lesen, Erstellen, Bearbeiten und Löschen strukturierter SQL-Abfragen für Platform-Daten. |
-     | [!UICONTROL Abfrage-Service] | [!UICONTROL Verwalten der Integration des Abfrage-Service] | Zugriff auf das Erstellen, Aktualisieren und Löschen nicht ablaufender Anmeldedaten für den Zugriff auf den Abfrage-Service. |
+    | Kategorie | Berechtigung | Beschreibung |
+    |---|---|---|
+    | [!UICONTROL Abfrage-Service] | [!UICONTROL Verwalten von Abfragen] | Zugriff auf das Lesen, Erstellen, Bearbeiten und Löschen strukturierter SQL-Abfragen für Platform-Daten. |
+    | [!UICONTROL Abfrage-Service] | [!UICONTROL Verwalten der Integration des Abfrage-Service] | Zugriff auf das Erstellen, Aktualisieren und Löschen nicht ablaufender Anmeldedaten für den Zugriff auf den Abfrage-Service. |
 
-   * sicherstellen, dass die Person über die richtigen Customer Journey Analytics-Berechtigungen verfügt:
-      * Berechtigung zum Zugriff auf die relevanten Datenansichten. Siehe [!UICONTROL Datenansichten] unter [Zugriff auf Benutzerebene](#user-level-access).
-      * Berechtigung zum Zugriff auf die Customer Journey Analytics-BI-Erweiterung. Siehe [!UICONTROL Datenansichts-Tools] unter [Zugriff auf Benutzerebene](#user-level-access).
+  * sicherstellen, dass die Person über die richtigen Customer Journey Analytics-Berechtigungen verfügt:
+    * Berechtigung zum Zugriff auf die relevanten Datenansichten. Siehe [!UICONTROL Datenansichten] unter [Zugriff auf Benutzerebene](#user-level-access).
+    * Berechtigung zum Zugriff auf die Customer Journey Analytics-BI-Erweiterung. Siehe [!UICONTROL Datenansichts-Tools] unter [Zugriff auf Benutzerebene](#user-level-access).
 
 ### Produktprofil-Admin-Rolle
 

@@ -65,7 +65,8 @@ Die Elemente in den Klammern &lt;> stellen Positionen dar, an denen tatsächlich
 
 Innerhalb der identityMap:
 
-* Wenn ECID vorhanden ist, wird sie als primäre Identität für das Ereignis markiert. Beachten Sie, dass in diesem Fall AAID gemäß der obigen Diskussion auf ECID basieren kann.Andernfalls wird AAID als primäre Identität für das Ereignis markiert.
+* Wenn ECID vorhanden ist, wird sie als primäre Identität für das Ereignis markiert. Beachten Sie, dass in diesem Fall AAID gemäß der obigen Diskussion auf ECID basieren kann.
+Andernfalls wird AAID als primäre Identität für das Ereignis markiert.
 * AACUSTOMID wird nie als primäre ID für das Ereignis markiert. Wenn jedoch AACUSTOMID vorhanden ist, basiert AAID gemäß der obigen Diskussion auf AACUSTOMID.
 
 Wenn die Identität oder die Identitäten nach `identityMap` kopiert werden, wird auch `endUserIDs._experience.mcid.namespace.code` für dasselbe Ereignis festgelegt:

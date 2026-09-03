@@ -58,7 +58,7 @@ Die Verbindung hat den Namen **[!UICONTROL AJO-fähige Verbindung *Sandbox-*)]**
 
 | Datensatzname | Schema | Datensatztyp | Datenquellentyp | Personen-ID | Schlüssel | Übereinstimmender Schlüssel | Neue Daten importieren | Daten aufstocken |
 |---|---|---|---|---|---|---|---|---|
-| [!UICONTROL AJO-Entitäts-Datensatz] | [!UICONTROL Schema des AJO-Entitätseintrags] | [!UICONTROL Suche] | [!UICONTROL Sonstige] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
+| [!UICONTROL AJO-Entitäts-Datensatz] | [!UICONTROL Schema des AJO-Entitätseintrags] | [!UICONTROL Suche] | [!UICONTROL Sonstige] | – | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 | [!UICONTROL Journey-Schrittereignisse] | [!UICONTROL Journey-Schrittereignisschema für Journey-Orchestrierung] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL &#x200B; IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 | [!UICONTROL Ereignisdatensatz zu Erfahrungen beim AJO-E-Mail-Tracking] | [!UICONTROL Erlebnisereignisschema beim AJO-E-Mail-Tracking] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
 | [!UICONTROL Ereignisdatensatz mit Feedback zu AJO-Nachrichten] | [!UICONTROL Ereignisschema mit Feedback zu AJO-Nachrichten] | [!UICONTROL Ereignis] | [!UICONTROL Sonstige] | [!UICONTROL IdentityMap(\&lt;primary\>)] | – | – | ![Status „Grün“](assets/../../connections/assets/status-green.svg) Ein | ![Status „Grau“](assets/../../connections/assets/status-gray.svg) Aus |
@@ -115,10 +115,10 @@ Die Datenansicht hat den Namen **AJO-Datenansicht aktivieren (*Sandbox-Name*)**.
 
 
 * Auf der Registerkarte **Komponenten**:
-   * Alle Metriken und Dimensionen, an deren Namen [!UICONTROL (AJO)] angehängt wird, werden im Rahmen dieser automatischen Konfiguration automatisch hinzugefügt.
-   * Einige der automatisch hinzugefügten Metriken oder Dimensionen basieren auf abgeleiteten Feldern. Diese abgeleiteten Felder werden speziell für diese Integration erstellt. Beispielsweise basiert die Metrik [!UICONTROL Landingpage-Klicks (AJO)] auf dem abgeleiteten Feld [!UICONTROL Landingpage-Klicks].
-   * Einige der Metriken oder Dimensionen verfügen über eine zusätzliche Konfiguration. Beispiel: Auf [!UICONTROL Beschwerden wegen Spam (AJO)] wurden die Einstellungen [!UICONTROL Format] und [!UICONTROL Werte einschließen/ausschließen] angewendet.
-   * Alle automatisch hinzugefügten Metriken und Dimensionen haben ein Kontext-Label mit dem Namen `:`*`name_of_metric_or_dimension`*. Beispiel: Die Metrik [!UICONTROL Landingpage-Klicks (AJO)] hat das Kontext-Label `:Landing page clicks (AJO)`.
+  * Alle Metriken und Dimensionen, an deren Namen [!UICONTROL (AJO)] angehängt wird, werden im Rahmen dieser automatischen Konfiguration automatisch hinzugefügt.
+  * Einige der automatisch hinzugefügten Metriken oder Dimensionen basieren auf abgeleiteten Feldern. Diese abgeleiteten Felder werden speziell für diese Integration erstellt. Beispielsweise basiert die Metrik [!UICONTROL Landingpage-Klicks (AJO)] auf dem abgeleiteten Feld [!UICONTROL Landingpage-Klicks].
+  * Einige der Metriken oder Dimensionen verfügen über eine zusätzliche Konfiguration. Beispiel: Auf [!UICONTROL Beschwerden wegen Spam (AJO)] wurden die Einstellungen [!UICONTROL Format] und [!UICONTROL Werte einschließen/ausschließen] angewendet.
+  * Alle automatisch hinzugefügten Metriken und Dimensionen haben ein Kontext-Label mit dem Namen `:`*`name_of_metric_or_dimension`*. Beispiel: Die Metrik [!UICONTROL Landingpage-Klicks (AJO)] hat das Kontext-Label `:Landing page clicks (AJO)`.
 
 * Auf die Registerkarte **[!UICONTROL Einstellungen]** werden keine spezifischen Konfigurationswerte angewendet.
 

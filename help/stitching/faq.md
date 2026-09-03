@@ -22,7 +22,7 @@ topic_v2:
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 19cf20236196ab9c2518bf299a36d32f65210227
 workflow-type: tm+mt
-source-wordcount: 2373
+source-wordcount: 2383
 ht-degree: 71%
 
 ---
@@ -230,16 +230,16 @@ Seien Sie vorsichtig bezüglich „Personen-Kollaps“, der auftritt, wenn die Z
 
 | Ereignis | Zeitstempel | Persistente ID (Cookie-ID) | Transiente ID | resultierende ID (nach der Wiederholung) |
 |---|---|---|---|---|
-| 1 | 12.05.2023 12:01 | 123 | – | **Cory** |
-| 2 | 12.05.2023 12:02 | 123 | Cory | **Cory** |
-| 3 | 12.05.2023 12:03 | 456 | Nicht definiert | **Nicht definiert** |
-| 4 | 12.05.2023 12:04 | 456 | – | **Nicht definiert** |
-| 5 | 12.05.2023 12:05 | 789 | Nicht definiert | **Nicht definiert** |
-| 6 | 12.05.2023 12:06 | 012 | Nicht definiert | **Nicht definiert** |
-| 7 | 12.05.2023 12:07 | 012 | – | **Nicht definiert** |
-| 8 | 12.05.2023 12:03 | 789 | Nicht definiert | **Nicht definiert** |
-| 9 | 12.05.2023 12:09 | 456 | – | **Nicht definiert** |
-| 10 | 12.05.2023 12:02 | 123 | – | **Cory** |
+| 1 | 2023-05-12 12:01 | 123 | – | **Cory** |
+| 2 | 2023-05-12 12:02 | 123 | Cory | **Cory** |
+| 3 | 2023-05-12 12:03 | 456 | Nicht definiert | **Nicht definiert** |
+| 4 | 2023-05-12 12:04 | 456 | – | **Nicht definiert** |
+| 5 | 2023-05-12 12:05 | 789 | Nicht definiert | **Nicht definiert** |
+| 6 | 2023-05-12 12:06 | 012 | Nicht definiert | **Nicht definiert** |
+| 7 | 2023-05-12 12:07 | 012 | – | **Nicht definiert** |
+| 8 | 2023-05-12 12:03 | 789 | Nicht definiert | **Nicht definiert** |
+| 9 | 2023-05-12 12:09 | 456 | – | **Nicht definiert** |
+| 10 | 2023-05-12 12:02 | 123 | – | **Cory** |
 | | | **4 Geräte** | **2 Personen:**<br/>Ereignisse 1, 4, 7, 9, 10 ignoriert | **2 Personen:**<br/>Cory, nicht authentifiziert (auf eine Person reduziert) |
 
 +++

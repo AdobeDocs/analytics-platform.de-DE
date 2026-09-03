@@ -23,7 +23,7 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 239
+source-wordcount: 242
 ht-degree: 12%
 
 ---
@@ -42,7 +42,7 @@ Um Echtzeitberichte zu verwenden, aktivieren Sie den Umschalter **[!UICONTROL Ec
 * [Attribution](/help/analysis-workspace/c-panels/attribution.md)
 * [Nächstes oder vorheriges Objekt](/help/analysis-workspace/c-panels/next-previous.md)
 
-Es wird eine Meldung mit dem Zeitstempel der letzten Aktualisierung der Daten angezeigt. Beispiel: [!UICONTROL &#x200B; *Letzte Aktualisierung um 19:550 Uhr*].
+Es wird eine Meldung mit dem Zeitstempel der letzten Aktualisierung der Daten angezeigt. Beispiel: [!UICONTROL &#x200B; *Letzte Aktualisierung um 19:55*].
 
 Wählen Sie aus dem Dropdown-Menü den Echtzeitzeitraum aus, über den Sie einen Bericht erstellen möchten. Verfügbare Optionen sind:
 
@@ -54,7 +54,7 @@ Wählen Sie aus dem Dropdown-Menü den Echtzeitzeitraum aus, über den Sie einen
 
 Alle Visualisierungen im Bedienfeld werden jetzt jede Minute für maximal 30 Minuten aktualisiert, während die Browser-Registerkarte mit dem Bedienfeld „Echtzeit-Aktualisierung aktiviert“ aktiv ist.
 
-Unten finden Sie ein Beispiel für einen Schnappschuss eines **[!UICONTROL Echtzeitberichts]** der die **[!UICONTROL Gesamtumsatz/Stunde]** Balkenvisualisierung und **[!UICONTROL Gesamtumsatz/Stunde]** Freiformtabelle aktualisiert, wenn die Zeit von **[!UICONTROL *06:26pm*]** bis **[!UICONTROL *06:27 PM *]**.
+Unten finden Sie ein Beispiel für einen Schnappschuss eines **[!UICONTROL Echtzeitberichts]** der die **[!UICONTROL Gesamtumsatz/Stunde]** Balkenvisualisierung und **[!UICONTROL Gesamtumsatz/Stunde]** Freiformtabelle aktualisiert, wenn die Zeit von **[!UICONTROL *18:26 *]**&#x200B;bis&#x200B;**[!UICONTROL * 18:27 Uhr *]**.
 
 ![Echtzeit-Aktualisierung](assets/real-time-refresh.gif)
 

@@ -123,7 +123,7 @@ Um neue Folien hinzuzufügen, bewegen Sie den Mauszeiger über eine Folie oder k
    * Tippen Sie auf das Duplizieren-Symbol, um die vorhandene Folie zu duplizieren.
 1. Wenn Sie eine leere Folie erstellen, ziehen Sie Komponenten per Drag-and-Drop aus der linken Leiste oder wählen Sie ein Layout aus, um die Folie automatisch mit den Daten aus der Kachel aufzufüllen.
    ![Erstellen einer Daten-Story](assets/data-story2.png)
-Um eine Folie zu löschen, tippen Sie auf das Papierkorbsymbol.
+   Um eine Folie zu löschen, tippen Sie auf das Papierkorbsymbol.
 
 ### Anpassen einer Daten-Story {#customize-data-story}
 
@@ -135,7 +135,7 @@ Mit Daten-Storys können Sie alles anpassen, sodass Sie Informationen, die Sie w
 1. Ändern Sie den Titel, den Diagrammtyp und andere Kacheloptionen.
 1. Ziehen Sie eine Komponente auf die Kachel.
    ![Erstellen einer Daten-Story](assets/data-story3.png)
-Wenn Sie eine Komponente, z. B. eine Visualisierung, per Drag-and-Drop auf eine Kachel ziehen, wird die Komponente auf alle Daten-Story-Folien angewendet.
+   Wenn Sie eine Komponente, z. B. eine Visualisierung, per Drag-and-Drop auf eine Kachel ziehen, wird die Komponente auf alle Daten-Story-Folien angewendet.
 1. Für eine reine Titeländerung halten Sie die Umschalttaste gedrückt, um die Änderung anzuwenden.
    ![Erstellen einer Daten-Story](assets/data-story4.png)
 

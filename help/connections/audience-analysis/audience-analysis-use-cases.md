@@ -41,17 +41,17 @@ Die erste Version von Audience Analysis schafft die notwendigen Grundlagen für 
 
 * **Daten zur Zielgruppenzugehörigkeit sind nur für den Vortag („gestern„) korrekt**: Die Daten zur Zielgruppenzugehörigkeit enthalten immer den neuesten Profil-Schnappschuss-Datensatz, der vom einheitlichen Profil-Service generiert wurde. Dieser Profildatensatz ist eine tägliche Momentaufnahme und ist nur für den Vortag („gestern„) korrekt, wobei er jede Nacht automatisch neu generiert und neu verarbeitet wird. Zielgruppendimensionen sind für Berichte und Aufschlüsselungen verfügbar, nicht zur Rekonstruktion historischer Zielgruppenzustände.
 
-   * Beispiel: Unabhängig vom ausgewählten Berichtszeitfenster respektiert die berichtspflichtige Zielgruppe von CJA immer den Status der Zielgruppenzugehörigkeit, der in der letzten erfassten Profilschnappschuss („gestern„) vorhanden ist.
+  * Beispiel: Unabhängig vom ausgewählten Berichtszeitfenster respektiert die berichtspflichtige Zielgruppe von CJA immer den Status der Zielgruppenzugehörigkeit, der in der letzten erfassten Profilschnappschuss („gestern„) vorhanden ist.
 
-      * Die Ausweitung des Reporting-Zeitfensters auf beispielsweise „letzte 30 Tage“ umfasst mehr Ereignisse und vermittelt den Eindruck, dass sich die Zielgruppengröße ändert. Die Profilzusammensetzung der Zielgruppe entspricht jedoch immer dem Schnappschuss von „gestern“, unabhängig vom ausgewählten Zeitfenster.
+    * Die Ausweitung des Reporting-Zeitfensters auf beispielsweise „letzte 30 Tage“ umfasst mehr Ereignisse und vermittelt den Eindruck, dass sich die Zielgruppengröße ändert. Die Profilzusammensetzung der Zielgruppe entspricht jedoch immer dem Schnappschuss von „gestern“, unabhängig vom ausgewählten Zeitfenster.
 
 * **Dimensionen müssen ein entsprechendes Ereignis aufweisen, um einbezogen zu werden**: Zielgruppenanalysedimensionen können nur analysiert werden, wenn entsprechende Ereignisse in CJA vorhanden sind. Wenn ein Verhalten, ein Kanal oder ein Lebenszyklusmoment nicht als Ereignis in der CJA-Verbindung dargestellt wird, kann es nicht analysiert werden.
 
-   * Beispiel: Eine Zielgruppe, die verwendet wird, um Personen mit einer Anzeige anzusprechen, würde erheblich mehr Personen in die RTCDP-Zielgruppe aufnehmen als in die CJA-Zielgruppe. Dies liegt daran, dass die CJA-Zielgruppe auf Personen beschränkt ist, die während des Berichtszeitraums ein Ereignis in CJA hatten.
+  * Beispiel: Eine Zielgruppe, die verwendet wird, um Personen mit einer Anzeige anzusprechen, würde erheblich mehr Personen in die RTCDP-Zielgruppe aufnehmen als in die CJA-Zielgruppe. Dies liegt daran, dass die CJA-Zielgruppe auf Personen beschränkt ist, die während des Berichtszeitraums ein Ereignis in CJA hatten.
 
 * **Die Identitätsauflösung basiert ausschließlich auf einem einzelnen Namespace**: Die Identitätsauflösung hängt vollständig vom ausgewählten Identity-Namespace als Teil der Zielgruppenanalyse-Konfiguration ab. Die Analyse ist auf diesen Identity-Namespace beschränkt, wobei Ereignisse, die außerhalb dieses Namespace liegen, nicht für das Reporting zur Zielgruppenanalyse verfügbar sind.
 
-   * Beispiel: Für einen zugeordneten Ereignisdatensatz, der CRM und ECID kombiniert und die Zielgruppenanalysekonfiguration die CRM-ID verwendet, werden nur Zeilen, die eine CRM-ID enthalten, als Teil der berichtspflichtigen Zielgruppe in CJA erkannt. Daher kann die resultierende Zielgruppengröße kleiner sein als erwartet.
+  * Beispiel: Für einen zugeordneten Ereignisdatensatz, der CRM und ECID kombiniert und die Zielgruppenanalysekonfiguration die CRM-ID verwendet, werden nur Zeilen, die eine CRM-ID enthalten, als Teil der berichtspflichtigen Zielgruppe in CJA erkannt. Daher kann die resultierende Zielgruppengröße kleiner sein als erwartet.
 
 ## Beispielhafte Anwendungsfälle
 
@@ -145,9 +145,9 @@ Erfahren Sie mehr über das Verhalten von Kunden, die kürzlich eine wichtige Zi
 
    * Filtern Sie nach Profilen, die Audience X gestern verlassen haben, und betrachten Sie dann Folgendes:
 
-      * Ihr Verhalten, das zum Austritt führt (letzte Sitzungen, Fehler, Preis-/Angebotsrisiko, Kanalmix).
+     * Ihr Verhalten, das zum Austritt führt (letzte Sitzungen, Fehler, Preis-/Angebotsrisiko, Kanalmix).
 
-      * Ihr Verhalten nach dem Ausstieg (wechselten sie ihre Produkte, nahmen sie herab und wurden inaktiv).
+     * Ihr Verhalten nach dem Ausstieg (wechselten sie ihre Produkte, nahmen sie herab und wurden inaktiv).
 
    * Schlüsseln Sie die verlassene Kohorte nach Region, Gerät, Beschäftigungsdauer und Wertestufe auf, um wirkungsvolle Taschen zu finden.
 

@@ -77,8 +77,8 @@ Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 Die Analyse [!UICONTROL Interaktion] bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
 * **[!UICONTROL Mediane]**: Legen Sie fest, wo die Mittellinien angezeigt werden und wie die grafisch dargestellten Punkte mit diesen Medianen in Beziehung stehen.
-   * **[!UICONTROL Standard]**: Zeigen Sie den absoluten Wert von Nutzung und Interaktion an.
-   * **[!UICONTROL Normalisiert]**: Zeigen Sie die relativen Änderungen aus jedem Median an.
+  * **[!UICONTROL Standard]**: Zeigen Sie den absoluten Wert von Nutzung und Interaktion an.
+  * **[!UICONTROL Normalisiert]**: Zeigen Sie die relativen Änderungen aus jedem Median an.
 * **[!UICONTROL Überlagerung der Top-Ereignisse]**: Sehen Sie sich an, wie sich Ihre Ereignisse im Vergleich zu den 20 wichtigsten Ereignissen verhalten, basierend auf der Aktualität und Relevanz von Unternehmen und Benutzenden (derselbe Algorithmus wird auf die Ereignisauswahl in der Abfrageleiste angewendet).
 
 ### Zeitvergleich

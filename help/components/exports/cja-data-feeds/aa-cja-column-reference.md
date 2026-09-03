@@ -30,7 +30,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
 workflow-type: tm+mt
-source-wordcount: 3920
+source-wordcount: 3921
 ht-degree: 48%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 48%
 
 {{release-limited-testing}}
 
-Eine 1::1-Zuordnung zwischen Daten-Feed-Spalten von Adobe Analytics und Customer Journey Analytics ist nicht möglich. Die beiden Produkte unterscheiden sich grundlegend, und die Implementierung der einzelnen Organisationen kann erheblich variieren.
+Eine echte 1:1-Zuordnung zwischen Adobe Analytics- und Customer Journey Analytics-Daten-Feed-Spalten ist nicht möglich. Die beiden Produkte unterscheiden sich grundlegend, und die Implementierung der einzelnen Organisationen kann erheblich variieren.
 
 Diese Referenz hilft Dateningenieuren, Adobe Analytics-Daten-Feed-Spalten zu bewerten und die nächstgelegenen Customer Journey Analytics-Entsprechungen für ihre Workflows zu identifizieren.
 
@@ -446,12 +446,12 @@ Einige Metriken verwenden möglicherweise die Ereignis-Serialisierung, wodurch A
 * Wenn Ihre Metrik nach Besuch in Adobe Analytics dedupliziert wird, können Sie in den Komponenteneinstellungen dieser Metrik den Deduplizierungsbereich auf Sitzung festlegen.
 * Wenn Ihre Metrik nach Ereignis-ID in Adobe Analytics dedupliziert wird, enthält das XDM-Objekt für diese Metrik wahrscheinlich sowohl ein `value`- als auch ein `id`. Wenn Ihr Schema die Feldergruppe [[!UICONTROL Commerce-Details]](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/event/commerce-details) verwendet, befinden sich diese Metriken wahrscheinlich in diesen XDM-Feldern, für die Sie in den Komponenteneinstellungen der **das Feld** Deduplizierungs-ID) festlegen können:
 
-   * **Checkouts**: `xdm.commerce.checkouts.id`
-   * **Hinzufügungen zum Warenkorb**: `xdm.commerce.productListAdds.id`
-   * **Öffnung des Warenkorbs**: `xdm.commerce.productListOpens.id`
-   * **Entnahmen aus dem Warenkorb**: `xdm.commerce.productListRemovals.id`
-   * **Warenkorbansichten**: `xdm.commerce.productListViews.id`
-   * **Produktansichten**: `xdm.commerce.productViews.id`
+  * **Checkouts**: `xdm.commerce.checkouts.id`
+  * **Hinzufügungen zum Warenkorb**: `xdm.commerce.productListAdds.id`
+  * **Öffnung des Warenkorbs**: `xdm.commerce.productListOpens.id`
+  * **Entnahmen aus dem Warenkorb**: `xdm.commerce.productListRemovals.id`
+  * **Warenkorbansichten**: `xdm.commerce.productListViews.id`
+  * **Produktansichten**: `xdm.commerce.productViews.id`
 
 Wenn Sie die Metrik Bestellungen deduplizieren möchten, lesen Sie den Abschnitt `duplicate_purchase`.
 

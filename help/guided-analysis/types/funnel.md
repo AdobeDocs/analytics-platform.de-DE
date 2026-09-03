@@ -62,10 +62,10 @@ Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
 * **[!UICONTROL Ansicht]**: Wechseln Sie zwischen dieser Analyse und [Konversions-Trends](conversion-trends.md).
 * **[!UICONTROL Schritte]**: Die Ereignis-Touchpoints, die Sie verfolgen möchten. Jeder Balken im Diagramm stellt einen Schritt dar. Sie können bis zu zehn Schritte einschließen.
-   * [!UICONTROL Vergleichen]: Jeder Schritt bietet eine Option, um mehrere Ereignisse in einem Trichter-Schritt zu vergleichen und einen verzweigten Trichter zu erstellen. Mit dieser Funktion können Sie die Reibung von zwei Journeys nebeneinander vergleichen, ohne zwei separate Analysen zu erstellen. Dies ist nützlich, wenn es Schrittoptionen gibt oder ein A/B-Experiment im Trichter ausgeführt wird. In den Customer Journey Analytics-Tutorials finden Sie unter [Trichter](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) ein Video, in dem das Vergleichen von Trichtern erläutert wird.
+  * [!UICONTROL Vergleichen]: Jeder Schritt bietet eine Option, um mehrere Ereignisse in einem Trichter-Schritt zu vergleichen und einen verzweigten Trichter zu erstellen. Mit dieser Funktion können Sie die Reibung von zwei Journeys nebeneinander vergleichen, ohne zwei separate Analysen zu erstellen. Dies ist nützlich, wenn es Schrittoptionen gibt oder ein A/B-Experiment im Trichter ausgeführt wird. In den Customer Journey Analytics-Tutorials finden Sie unter [Trichter](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) ein Video, in dem das Vergleichen von Trichtern erläutert wird.
 * **[!UICONTROL Zählt als]**: Der Umfang, den Sie auf den Trichter anwenden möchten. Die Optionen umfassen [!UICONTROL Sitzungen] und [!UICONTROL Benutzende].
-   * [!UICONTROL Sitzungen]: Alle Schritte müssen innerhalb derselben Sitzung stattfinden, damit sie gezählt werden.
-   * [!UICONTROL Benutzende]: Alle Schritte müssen innerhalb des ausgewählten Reporting-Fensters erfolgen, damit sie gezählt werden.
+  * [!UICONTROL Sitzungen]: Alle Schritte müssen innerhalb derselben Sitzung stattfinden, damit sie gezählt werden.
+  * [!UICONTROL Benutzende]: Alle Schritte müssen innerhalb des ausgewählten Reporting-Fensters erfolgen, damit sie gezählt werden.
 * **[!UICONTROL Segmente]**: Die Segmente, über die Sie den Trichter vergleichen möchten. Jedes ausgewählte Segment teilt jeden Schritt in mehrere Balken auf. Jede Farbe stellt ein anderes Segment dar. Sie können bis zu drei Segmente einschließen.
 
 ### Diagrammeinstellungen

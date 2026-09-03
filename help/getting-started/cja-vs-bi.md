@@ -84,9 +84,9 @@ In diese Visualisierungskomponenten integriert sind intelligente Funktionen wie:
 
 * **Erweiterte Analysefunktionen**, die sich speziell auf Erkenntnisse zur Customer Journey konzentrieren, wie [Flussdiagramme](/help/analysis-workspace/visualizations/c-flow/flow.md), [Attributionsbedienfeld](/help/analysis-workspace/c-panels/attribution.md), [Fallout-Diagramme](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und [Dimensionsaufschlüsselungen](/help/components/dimensions/t-breakdown-fa.md). Beispiele für sofort einsatzbereite Visualisierungen sind:
 
-   * [Kundenbindungsanalyse über Kohorten-/Latenztabellen](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), bei der Sie Metriken/Dimensionen einfach per Drag-und-Drop in einen Builder ziehen und in weniger als 30 Sekunden fertig sind,
+  * [Kundenbindungsanalyse über Kohorten-/Latenztabellen](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), bei der Sie Metriken/Dimensionen einfach per Drag-und-Drop in einen Builder ziehen und in weniger als 30 Sekunden fertig sind,
 
-   * [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)/[Fluss](/help/analysis-workspace/visualizations/c-flow/create-flow.md)-Visualisierungen. Einrichtung in weniger als einer Minute.
+  * [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)/[Fluss](/help/analysis-workspace/visualizations/c-flow/create-flow.md)-Visualisierungen. Einrichtung in weniger als einer Minute.
 
 * **Segmentierungsfunktion in jedem Schritt Ihrer progressiven Exploration**: wann immer Sie dies für sinnvoll halten, können Sie Ihre Zielgruppe wieder in Experience Platform veröffentlichen und von dort an einem der unterstützten Ziele veröffentlichen.
 
@@ -94,9 +94,9 @@ In diese Visualisierungskomponenten integriert sind intelligente Funktionen wie:
 
 * **Kuratierung und Demokratisierung**: Mit den in Customer Journey Analytics erstellten Dashboards ist Folgendes möglich:
 
-   * Für andere Personen in der Organisation zur fortlaufenden Untersuchung [kuratiert](/help/analysis-workspace/curate-share/curate.md),
-   * mit [Report Builder](/help/report-builder/rb-overview.md) (einem speziellen Plug-in) nach Excel exportiert,
-   * in verschiedenen Formaten, einschließlich [PDF](/help/analysis-workspace/export/download-send.md), [CSV](/help/analysis-workspace/export/download-send.md) und über eine [dedizierte Mobile App](/help/mobile-app/home.md), an diejenigen [freigegeben](/help/analysis-workspace/curate-share/share-projects.md), die an den endgültigen Berichten und/oder Visualisierungen interessiert sind.
+  * Für andere Personen in der Organisation zur fortlaufenden Untersuchung [kuratiert](/help/analysis-workspace/curate-share/curate.md),
+  * mit [Report Builder](/help/report-builder/rb-overview.md) (einem speziellen Plug-in) nach Excel exportiert,
+  * in verschiedenen Formaten, einschließlich [PDF](/help/analysis-workspace/export/download-send.md), [CSV](/help/analysis-workspace/export/download-send.md) und über eine [dedizierte Mobile App](/help/mobile-app/home.md), an diejenigen [freigegeben](/help/analysis-workspace/curate-share/share-projects.md), die an den endgültigen Berichten und/oder Visualisierungen interessiert sind.
 
 Ein Vergleich der Visualisierungsfunktionen von Customer Journey Analytics mit den Möglichkeiten von BI-Tools ist aufgrund der Vielfalt der verfügbaren Visualisierungen schwierig. Einige BI-Tools verfügen über fortschrittlichere Visualisierungen, aber Customer Journey Analytics konzentriert sich auf interaktive und interoperable Visualisierungen von Customer Journeys, die es Ihnen ermöglichen, die Daten innerhalb von Sekunden aufzuschlüsseln, ohne dass Sie für jede zusätzliche Abfrage „bezahlen“ müssen.
 

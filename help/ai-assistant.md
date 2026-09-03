@@ -71,15 +71,15 @@ Die folgenden Parameter regeln den Zugriff auf den KI-Assistenten:
 * **Zugriff auf vertraglicher Grundlage**: Wenn Sie den KI-Assistenten nicht verwenden können, wenden Sie sich an die bzw. den Admin Ihrer Organisation oder die Adobe-Kundenbetreuung. Bevor Ihre Organisation den KI-Assistenten nutzen kann, müssen Sie bestimmten rechtlichen Bedingungen im Zusammenhang mit generativer KI zustimmen.
 
 * **Berechtigungen**: In der [!UICONTROL Adobe Admin Console] bestimmt die [!UICONTROL Reporting-Tools-Berechtigung] **[!UICONTROL KI-Assistent: Produktkenntnisse]** den Zugriff auf dieses Tool. Sie als [Produktprofil-Admin](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) müssen diese Schritte in der [!UICONTROL Admin Console] ausführen:
-   1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
-   1. Wählen Sie den Titel des Produktprofils aus, für das Zugriff auf [!UICONTROL KI-Assistent: Produktkenntnisse] gewährt werden soll.
-   1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
-   1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
-   1. Wählen Sie ![Hinzufügen](/help/assets/icons/AddCircle.svg) aus, um **KI-Assistent: Produktkenntnisse** zu **[!UICONTROL Eingeschlossene Berechtigungseinträge]** hinzuzufügen.
+  1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
+  1. Wählen Sie den Titel des Produktprofils aus, für das Zugriff auf [!UICONTROL KI-Assistent: Produktkenntnisse] gewährt werden soll.
+  1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
+  1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
+  1. Wählen Sie ![Hinzufügen](/help/assets/icons/AddCircle.svg) aus, um **KI-Assistent: Produktkenntnisse** zu **[!UICONTROL Eingeschlossene Berechtigungseinträge]** hinzuzufügen.
 
-      ![Hinzufügen einer Berechtigung](assets/ai-assistant-permissions.png)
+     ![Hinzufügen einer Berechtigung](assets/ai-assistant-permissions.png)
 
-   1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Berechtigungen zu speichern.
+  1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Berechtigungen zu speichern.
 
 Weitere Informationen finden Sie unter [Zugriffssteuerung](/help/technotes/access-control.md#access-control).
 

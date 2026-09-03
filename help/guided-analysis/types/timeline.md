@@ -23,7 +23,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 582
+source-wordcount: 583
 ht-degree: 100%
 
 ---
@@ -76,9 +76,9 @@ Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 Die [!UICONTROL Timeline-Analyse] bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
 * **[!UICONTROL Anzeigen als]**: Zeigt die gewünschten Eigenschaftswerte an.
-   * [!UICONTROL Alle anzeigen]: Zeigt alle Eigenschaftswerte in einer Sitzung an.
-   * [!UICONTROL Markieren]: Hebt Eigenschaftswerte in einer Sitzung, die mit den Abfragefiltern übereinstimmen, visuell hervor.
-   * [!UICONTROL Nur Ansicht]: Zeigt nur Eigenschaftswerte in einer Sitzung an, die mit den Abfragefiltern übereinstimmen.
+  * [!UICONTROL Alle anzeigen]: Zeigt alle Eigenschaftswerte in einer Sitzung an.
+  * [!UICONTROL Markieren]: Hebt Eigenschaftswerte in einer Sitzung, die mit den Abfragefiltern übereinstimmen, visuell hervor.
+  * [!UICONTROL Nur Ansicht]: Zeigt nur Eigenschaftswerte in einer Sitzung an, die mit den Abfragefiltern übereinstimmen.
 
 ### Datumsbereich
 

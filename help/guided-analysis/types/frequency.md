@@ -75,9 +75,9 @@ Diese Einstellungen bestimmen, wie das Ereignis in Gruppen (Buckets) kategorisie
 
 * **[!UICONTROL Auto-Buckets]**: Lassen Sie die optimale Bucket-Größe anhand der Datenverteilung automatisch ermitteln.
 * **[!UICONTROL Benutzerdefinierte Buckets]**: Passen Sie an, wie die Daten in Buckets gruppiert werden.
-   * [!UICONTROL Von]: Der erste Bucket. Liegt die Häufigkeit unter diesem Wert, wird sie für Berichte nicht berücksichtigt.
-   * [!UICONTROL Bis]: Liegt die Häufigkeit über diesem Wert, wird sie in den letzten Bucket eingruppiert.
-   * [!UICONTROL Größe]: Das Bucket-Intervall.
+  * [!UICONTROL Von]: Der erste Bucket. Liegt die Häufigkeit unter diesem Wert, wird sie für Berichte nicht berücksichtigt.
+  * [!UICONTROL Bis]: Liegt die Häufigkeit über diesem Wert, wird sie in den letzten Bucket eingruppiert.
+  * [!UICONTROL Größe]: Das Bucket-Intervall.
 
 ### Zeitvergleich
 

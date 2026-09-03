@@ -39,26 +39,26 @@ In diesem Artikel wird beschrieben, wie Sie eine Reihe von Anwendungsfällen (15
 Die folgenden Anwendungsfälle sind dokumentiert:
 
 * **Verbinden**
-   * [Verbinden und Auflisten von Datenansichten](bi-extension/connect-and-validate.md)
+  * [Verbinden und Auflisten von Datenansichten](bi-extension/connect-and-validate.md)
 
 * **Berichte und Analysen**
-   * [Täglicher Trend](bi-extension/daily-trend.md)
-   * [Stündlicher Trend](bi-extension/hourly-trend.md)
-   * [Monatlicher Trend](bi-extension/monthly-trend.md)
-   * [Rangfolge einzelner Dimensionen](bi-extension/single-dimension-ranked.md)
-   * [Rangfolge mehrerer Dimensionen](bi-extension/multiple-dimension-ranked.md)
-   * [Unterschiedliche Dimensionswerte zählen](bi-extension/count-distinct-dimension-values.md)
-   * [Verwenden von Datumsbereichsnamen zum Filtern](bi-extension/use-date-range-names-to-filter.md)
-   * [Segmentnamen zur Segmentierung verwenden](bi-extension/use-segment-names-to-segment.md)
-   * [Segmentieren von Dimensionswerten](bi-extension/use-dimension-values-to-segment.md)
-   * [Sortieren](bi-extension/sort.md)
-   * [Beschränkungen](bi-extension/limits.md)
+  * [Täglicher Trend](bi-extension/daily-trend.md)
+  * [Stündlicher Trend](bi-extension/hourly-trend.md)
+  * [Monatlicher Trend](bi-extension/monthly-trend.md)
+  * [Rangfolge einzelner Dimensionen](bi-extension/single-dimension-ranked.md)
+  * [Rangfolge mehrerer Dimensionen](bi-extension/multiple-dimension-ranked.md)
+  * [Unterschiedliche Dimensionswerte zählen](bi-extension/count-distinct-dimension-values.md)
+  * [Verwenden von Datumsbereichsnamen zum Filtern](bi-extension/use-date-range-names-to-filter.md)
+  * [Segmentnamen zur Segmentierung verwenden](bi-extension/use-segment-names-to-segment.md)
+  * [Segmentieren von Dimensionswerten](bi-extension/use-dimension-values-to-segment.md)
+  * [Sortieren](bi-extension/sort.md)
+  * [Beschränkungen](bi-extension/limits.md)
 
 * **verstehen**
 
-   * [Transformationen](bi-extension/transformations.md)
-   * [Visualisierungen](bi-extension/visualizations.md)
-   * [Einschränkungen](bi-extension/caveats.md)
+  * [Transformationen](bi-extension/transformations.md)
+  * [Visualisierungen](bi-extension/visualizations.md)
+  * [Einschränkungen](bi-extension/caveats.md)
 
 Der Anwendungsfall **connect** konzentriert sich auf die Verbindung von BI-Tools mithilfe der Customer Journey Analytics BI-Erweiterung.
 

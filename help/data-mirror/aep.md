@@ -22,8 +22,8 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 571
-ht-degree: 6%
+source-wordcount: 605
+ht-degree: 5%
 
 ---
 
@@ -47,9 +47,9 @@ Sie müssen ein &quot;[&#x200B; Schema“ erstellen](https://experienceleague.ad
 * Definieren der Felder in Ihrem Schema und ihrer Attribute
 * Konfigurieren Sie die erforderlichen Attribute für Felder in einem relationalen Schema:
 
-   * **Primärer Schlüssel**.
-   * **Versionsdeskriptor** muss als sequenzielle Zahl (ganzzahliger Feldtyp) oder als DateTime-Feldtyp konfiguriert werden. Wenn Sie einen DateTime-Feldtyp verwenden, definiert der Versionsdeskriptor den Zeitstempel einer Änderung der Daten, z. B. um einen zuletzt geänderten Zeitstempel zu enthalten.
-   * **Zeitstempeldeskriptor** (für Zeitreihendaten), der den unveränderlichen Zeitstempel zum Zeitpunkt der Erfassung eines Ereignisses definiert. Der Zeitstempeldeskriptor ist für ein datensatzbasiertes relationales Schema nicht erforderlich.
+  * **Primärer Schlüssel**.
+  * **Versionsdeskriptor** muss als sequenzielle Zahl (ganzzahliger Feldtyp) oder als DateTime-Feldtyp konfiguriert werden. Wenn Sie einen DateTime-Feldtyp verwenden, definiert der Versionsdeskriptor den Zeitstempel einer Änderung der Daten, z. B. um einen zuletzt geänderten Zeitstempel zu enthalten.
+  * **Zeitstempeldeskriptor** (für Zeitreihendaten), der den unveränderlichen Zeitstempel zum Zeitpunkt der Erfassung eines Ereignisses definiert. Der Zeitstempeldeskriptor ist für ein datensatzbasiertes relationales Schema nicht erforderlich.
 
 
 
@@ -104,6 +104,6 @@ Nachdem Sie die Einrichtung des Quell-Connectors abgeschlossen haben, wird ein D
 
 >[!MORELIKETHIS]
 >
->[Data Mirror-Schnellstartanleitung: Spiegeln und Verwenden von relationalen Daten](relational.md)
+>[Schnellstartanleitung zu Data Mirror: Relationale Daten spiegeln und verwenden](relational.md)
 >[Data Mirror (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/data-mirror/overview)
 >[Relationale Schemata (Dokumentation zu Experience Platform)](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/relational)

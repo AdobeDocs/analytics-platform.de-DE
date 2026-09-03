@@ -130,7 +130,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Identifizierungsobjekt](./assets/identification-field-mobile.png)
 
-   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile mithilfe Ihrer Mobile App mithilfe der Experience Cloud ID und der E-Mail-Adresse identifizieren. Daneben stehen auch noch viele weitere Attribute zum Tracken der Personenidentifizierung zur Verfügung (z. B. Kunden-ID, Treueprogramm-ID).
+   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile mithilfe Ihrer Mobile App mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Daneben stehen auch noch viele weitere Attribute zum Tracken der Personenidentifizierung zur Verfügung (z. B. Kunden-ID, Treueprogramm-ID).
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
@@ -357,27 +357,27 @@ Gehen Sie folgendermaßen vor, um eine Regel zu definieren:
 
    - Im Dialog [!UICONTROL Ereigniskonfiguration]:
 
-      - Wählen Sie **[!UICONTROL Mobile Core]** aus der Liste [!UICONTROL Erweiterung] aus.
+     - Wählen Sie **[!UICONTROL Mobile Core]** aus der Liste [!UICONTROL Erweiterung] aus.
 
-      - Wählen **[!UICONTROL Vordergrund]** in der Liste [!UICONTROL Ereignistyp] aus.
+     - Wählen **[!UICONTROL Vordergrund]** in der Liste [!UICONTROL Ereignistyp] aus.
 
-      - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+     - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
    - Klicken Sie ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben [!UICONTROL Mobile Core - Vordergrund].
 
-      - Wählen Sie **[!UICONTROL Mobile Core]** aus der Liste [!UICONTROL Erweiterung] aus.
+     - Wählen Sie **[!UICONTROL Mobile Core]** aus der Liste [!UICONTROL Erweiterung] aus.
 
-      - Wählen Sie **[!UICONTROL Hintergrund]** in der Liste [!UICONTROL Ereignistyp] aus.
+     - Wählen Sie **[!UICONTROL Hintergrund]** in der Liste [!UICONTROL Ereignistyp] aus.
 
-      - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+     - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
    - Klicken Sie ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Hinzufügen unter [!UICONTROL AKTIONEN]. Im Dialog [!UICONTROL Aktionskonfiguration]:
 
-      - Wählen Sie **[!UICONTROL Adobe Experience Platform Edge Network]** in der Liste [!UICONTROL Erweiterung] aus.
+     - Wählen Sie **[!UICONTROL Adobe Experience Platform Edge Network]** in der Liste [!UICONTROL Erweiterung] aus.
 
-      - Wählen **[!UICONTROL Ereignis an Edge Network weiterleiten]** aus der Liste [!UICONTROL Aktionstyp] aus.
+     - Wählen **[!UICONTROL Ereignis an Edge Network weiterleiten]** aus der Liste [!UICONTROL Aktionstyp] aus.
 
-      - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+     - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
    - Ihre Regel sollte wie folgt aussehen:
 
@@ -448,7 +448,7 @@ Sie können den Code jetzt in Ihrer Mobile App bereitstellen. Nach der Bereitste
 
 Validieren Sie Ihre Implementierung, korrigieren Sie sie bei Bedarf und stellen Sie sie mithilfe der Publishing-Workflow-Funktion von Tags in Ihrer Staging- und Produktionsumgebung bereit.
 
-Im [Tutorial zur Implementierung von Adobe Experience Cloud in Mobile Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de) finden Sie wesentlich detailliertere Informationen.
+Im [Tutorial zur Implementierung von Adobe Experience Cloud in &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de) Apps“ finden Sie wesentlich detailliertere Informationen.
 
 ## Einrichten einer Verbindung
 
@@ -484,11 +484,11 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
    - Für jeden Datensatz:
 
-      - Wählen Sie eine [!UICONTROL Personen-ID] aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind.
+     - Wählen Sie eine [!UICONTROL Personen-ID] aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind.
 
-      - Wählen Sie die richtige Datenquelle in der Liste [!UICONTROL Datenquellentyp] aus. Wenn Sie **[!UICONTROL Sonstige]** angeben, fügen Sie eine Beschreibung für Ihre Datenquelle hinzu.
+     - Wählen Sie die richtige Datenquelle in der Liste [!UICONTROL Datenquellentyp] aus. Wenn Sie **[!UICONTROL Sonstige]** angeben, fügen Sie eine Beschreibung für Ihre Datenquelle hinzu.
 
-      - Definieren Sie **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Datensatz-Aufstockung vorhandener Daten]** entsprechend Ihren Anforderungen.
+     - Definieren Sie **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Datensatz-Aufstockung vorhandener Daten]** entsprechend Ihren Anforderungen.
 
      ![Konfigurieren von Datensätzen](./assets/cja-connections-ajopushid.png)
 

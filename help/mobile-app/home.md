@@ -38,11 +38,11 @@ Weitere Informationen über [!UICONTROL Dashboards] in Customer Journey Analytic
 
 * [Kuratorressourcen](/help/mobile-app/curator.md): Unterstützt Kuratoren bei der Konfiguration von Scorecards für ausführende Benutzer in [!UICONTROL Dashboards]. Kuratoren können organisatorische Administratoren oder Personen in anderen Rollen sein, die für die Einrichtung von Scorecards zuständig sind:
 
-   * [Erstellen Sie Scorecards.](/help/mobile-app/create-scorecard.md)
-   * [Unterstützen Sie Führungskräfte bei der Einrichtung und Verwendung der Anwendung.](/help/mobile-app/set-up-execs.md)
-   * Eine Übersicht zur Kuratierung finden Sie im Video [Adobe Analytics Dashboards – Scorecard Builder](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-scorecard-builder.html?lang=de).
+  * [Erstellen Sie Scorecards.](/help/mobile-app/create-scorecard.md)
+  * [Unterstützen Sie Führungskräfte bei der Einrichtung und Verwendung der Anwendung.](/help/mobile-app/set-up-execs.md)
+  * Eine Übersicht zur Kuratierung finden Sie im Video [Adobe Analytics Dashboards – Scorecard Builder](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-scorecard-builder.html?lang=de).
 
 
 * [Schnellstarthandbuch für Führungskräfte](/help/mobile-app/executive.md): Dieses Handbuch soll Führungskräften helfen, die Scorecards in [!UICONTROL Dashboards] zu lesen und zu interpretieren. Das Programm ermöglicht es Führungskräften, eine umfassende Darstellung wichtiger Zusammenfassungsdaten schnell und einfach auf ihren eigenen Mobilgeräten anzuzeigen.
 
-   * Ein Video mit diesen Informationen finden Sie unter [Adobe Analytics-Dashboards – In-App-Erlebnis](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-in-app-experience.html?lang=de).
+  * Ein Video mit diesen Informationen finden Sie unter [Adobe Analytics-Dashboards – In-App-Erlebnis](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/additional-tools/analytics-dashboards/adobe-analytics-dashboards-in-app-experience.html?lang=de).
