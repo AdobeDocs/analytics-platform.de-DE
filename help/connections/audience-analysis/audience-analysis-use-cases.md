@@ -8,20 +8,11 @@ hide: true
 exl-id: f465e71-f1b5-4f38-a1db-645550856849
 autotag-review: '2026-05-19T06:52:01.796Z'
 TQID: 'https://experienceleague.adobe.com/6kLQ-wzYZDWnzi-FcZsUxr7derTgtmu053nKTBQLhvw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1517
@@ -41,17 +32,17 @@ Die erste Version von Audience Analysis schafft die notwendigen Grundlagen für 
 
 * **Daten zur Zielgruppenzugehörigkeit sind nur für den Vortag („gestern„) korrekt**: Die Daten zur Zielgruppenzugehörigkeit enthalten immer den neuesten Profil-Schnappschuss-Datensatz, der vom einheitlichen Profil-Service generiert wurde. Dieser Profildatensatz ist eine tägliche Momentaufnahme und ist nur für den Vortag („gestern„) korrekt, wobei er jede Nacht automatisch neu generiert und neu verarbeitet wird. Zielgruppendimensionen sind für Berichte und Aufschlüsselungen verfügbar, nicht zur Rekonstruktion historischer Zielgruppenzustände.
 
-   * Beispiel: Unabhängig vom ausgewählten Berichtszeitfenster respektiert die berichtspflichtige Zielgruppe von CJA immer den Status der Zielgruppenzugehörigkeit, der in der letzten erfassten Profilschnappschuss („gestern„) vorhanden ist.
+  * Beispiel: Unabhängig vom ausgewählten Berichtszeitfenster respektiert die berichtspflichtige Zielgruppe von CJA immer den Status der Zielgruppenzugehörigkeit, der in der letzten erfassten Profilschnappschuss („gestern„) vorhanden ist.
 
-      * Die Ausweitung des Reporting-Zeitfensters auf beispielsweise „letzte 30 Tage“ umfasst mehr Ereignisse und vermittelt den Eindruck, dass sich die Zielgruppengröße ändert. Die Profilzusammensetzung der Zielgruppe entspricht jedoch immer dem Schnappschuss von „gestern“, unabhängig vom ausgewählten Zeitfenster.
+    * Die Ausweitung des Reporting-Zeitfensters auf beispielsweise „letzte 30 Tage“ umfasst mehr Ereignisse und vermittelt den Eindruck, dass sich die Zielgruppengröße ändert. Die Profilzusammensetzung der Zielgruppe entspricht jedoch immer dem Schnappschuss von „gestern“, unabhängig vom ausgewählten Zeitfenster.
 
 * **Dimensionen müssen ein entsprechendes Ereignis aufweisen, um einbezogen zu werden**: Zielgruppenanalysedimensionen können nur analysiert werden, wenn entsprechende Ereignisse in CJA vorhanden sind. Wenn ein Verhalten, ein Kanal oder ein Lebenszyklusmoment nicht als Ereignis in der CJA-Verbindung dargestellt wird, kann es nicht analysiert werden.
 
-   * Beispiel: Eine Zielgruppe, die verwendet wird, um Personen mit einer Anzeige anzusprechen, würde erheblich mehr Personen in die RTCDP-Zielgruppe aufnehmen als in die CJA-Zielgruppe. Dies liegt daran, dass die CJA-Zielgruppe auf Personen beschränkt ist, die während des Berichtszeitraums ein Ereignis in CJA hatten.
+  * Beispiel: Eine Zielgruppe, die verwendet wird, um Personen mit einer Anzeige anzusprechen, würde erheblich mehr Personen in die RTCDP-Zielgruppe aufnehmen als in die CJA-Zielgruppe. Dies liegt daran, dass die CJA-Zielgruppe auf Personen beschränkt ist, die während des Berichtszeitraums ein Ereignis in CJA hatten.
 
 * **Die Identitätsauflösung basiert ausschließlich auf einem einzelnen Namespace**: Die Identitätsauflösung hängt vollständig vom ausgewählten Identity-Namespace als Teil der Zielgruppenanalyse-Konfiguration ab. Die Analyse ist auf diesen Identity-Namespace beschränkt, wobei Ereignisse, die außerhalb dieses Namespace liegen, nicht für das Reporting zur Zielgruppenanalyse verfügbar sind.
 
-   * Beispiel: Für einen zugeordneten Ereignisdatensatz, der CRM und ECID kombiniert und die Zielgruppenanalysekonfiguration die CRM-ID verwendet, werden nur Zeilen, die eine CRM-ID enthalten, als Teil der berichtspflichtigen Zielgruppe in CJA erkannt. Daher kann die resultierende Zielgruppengröße kleiner sein als erwartet.
+  * Beispiel: Für einen zugeordneten Ereignisdatensatz, der CRM und ECID kombiniert und die Zielgruppenanalysekonfiguration die CRM-ID verwendet, werden nur Zeilen, die eine CRM-ID enthalten, als Teil der berichtspflichtigen Zielgruppe in CJA erkannt. Daher kann die resultierende Zielgruppengröße kleiner sein als erwartet.
 
 ## Beispielhafte Anwendungsfälle
 
@@ -145,9 +136,9 @@ Erfahren Sie mehr über das Verhalten von Kunden, die kürzlich eine wichtige Zi
 
    * Filtern Sie nach Profilen, die Audience X gestern verlassen haben, und betrachten Sie dann Folgendes:
 
-      * Ihr Verhalten, das zum Austritt führt (letzte Sitzungen, Fehler, Preis-/Angebotsrisiko, Kanalmix).
+     * Ihr Verhalten, das zum Austritt führt (letzte Sitzungen, Fehler, Preis-/Angebotsrisiko, Kanalmix).
 
-      * Ihr Verhalten nach dem Ausstieg (wechselten sie ihre Produkte, nahmen sie herab und wurden inaktiv).
+     * Ihr Verhalten nach dem Ausstieg (wechselten sie ihre Produkte, nahmen sie herab und wurden inaktiv).
 
    * Schlüsseln Sie die verlassene Kohorte nach Region, Gerät, Beschäftigungsdauer und Wertestufe auf, um wirkungsvolle Taschen zu finden.
 

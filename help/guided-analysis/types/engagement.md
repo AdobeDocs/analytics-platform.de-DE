@@ -6,16 +6,10 @@ keywords: Produktanalysen
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 TQID: https://experienceleague.adobe.com/sqRGQu7Vg5jdCGXT-NWIeExSrBeMVK5hXg0VvD2LtIM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
 source-wordcount: 758
@@ -44,7 +38,7 @@ Funktionen, die oben in dieser Visualisierung dargestellt werden, zeigen, dass s
 * Funktionen unten links in der Matrix sind Ihre Funktion mit **geringer Wirkung**. Sie werden nicht weithin oder häufig verwendet.
 * Funktionen rechts unten in der Matrix sind Ihre **einmaligen** Funktionen. Sie werden weithin, aber nicht häufig verwendet.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447476/?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3429489/?quality=12&learn=on)
 
 ## Anwendungsfälle
 
@@ -77,8 +71,8 @@ Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 Die Analyse [!UICONTROL Interaktion] bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
 * **[!UICONTROL Mediane]**: Legen Sie fest, wo die Mittellinien angezeigt werden und wie die grafisch dargestellten Punkte mit diesen Medianen in Beziehung stehen.
-   * **[!UICONTROL Standard]**: Zeigen Sie den absoluten Wert von Nutzung und Interaktion an.
-   * **[!UICONTROL Normalisiert]**: Zeigen Sie die relativen Änderungen aus jedem Median an.
+  * **[!UICONTROL Standard]**: Zeigen Sie den absoluten Wert von Nutzung und Interaktion an.
+  * **[!UICONTROL Normalisiert]**: Zeigen Sie die relativen Änderungen aus jedem Median an.
 * **[!UICONTROL Überlagerung der Top-Ereignisse]**: Sehen Sie sich an, wie sich Ihre Ereignisse im Vergleich zu den 20 wichtigsten Ereignissen verhalten, basierend auf der Aktualität und Relevanz von Unternehmen und Benutzenden (derselbe Algorithmus wird auf die Ereignisauswahl in der Abfrageleiste angewendet).
 
 ### Zeitvergleich

@@ -7,15 +7,10 @@ role: User
 badgePremium: label="B2B Edition"
 exl-id: 509c68e1-a8cc-48ac-9e9d-50c703356dbc
 TQID: https://experienceleague.adobe.com/D9wQSwri3qu8x1g-ivno3PCt6MPKGm4lIXIxjh6WWVQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 414
@@ -34,7 +29,7 @@ Customer Journey Analytics B2B edition kann Sie dabei unterstützen, produktbezo
 
 Sie möchten Kunden mit geringer Produktnutzung, geringer Markeninteraktion und anderen Schlüsselfaktoren identifizieren, die auf ein hohes Abwanderungspotenzial hinweisen. Mit dieser frühzeitigen Erkennung können Sie Strategien zur Kontoaktivierung entwickeln.
 
-Die [Aktives &#x200B;](/help/guided-analysis/types/active-growth.md)&quot; geführte Analyse kann Ihnen dabei helfen, Folgendes zu bestimmen:
+Die [Aktives ](/help/guided-analysis/types/active-growth.md)&quot; geführte Analyse kann Ihnen dabei helfen, Folgendes zu bestimmen:
 
 * Gewinnen Sie Einblicke in das Wachstum und die Akquise von Accounts, Opportunities und Benutzern über einen bestimmten Zeitraum.
 * Erkennen von inaktiven Konten ohne aktuelle Interaktion. So können Sie eine Strategie für Erneuerung oder Upsell bestimmen.
@@ -44,7 +39,7 @@ Die [Aktives &#x200B;](/help/guided-analysis/types/active-growth.md)&quot; gefü
 
 Sie möchten das aktive Nettowachstum für Ihre neuen, wiederholten, wiederkehrenden und inaktiven Konten sehen.
 
-1. [Erstellen und Konfigurieren einer &#x200B;](/help/guided-analysis/types/active-growth.md) Wachstumsanalyse.
+1. [Erstellen und Konfigurieren einer ](/help/guided-analysis/types/active-growth.md) Wachstumsanalyse.
 1. Wählen Sie **[!UICONTROL Konten]** als **[!UICONTROL gezählt als]** aus.
 1. Wählen Sie die bevorzugte **[!UICONTROL Diagrammeinstellungen]** aus. Beispiel: ![GraphBarVerticalStacked](/help/assets/icons/GraphBarVerticalStacked.svg) **[!UICONTROL Stacked bar]**.
 1. Wählen Sie die bevorzugten ![Kalender](/help/assets/icons/Calendar.svg) **[!UICONTROL Intervall]** und **[!UICONTROL Datumsbereich]**.
@@ -68,6 +63,6 @@ Sie möchten eine mobile Scorecard erstellen, die Details zu Konten, Opportunity
 
    ![B2B-Anwendungsfall - Produktnutzen steigern - Einblicke demokratisieren - Mobile Scorecard](assets/b2b-uc-build-product-value-mobile-scorecard.png)
 
-1. Verwenden Sie **[!UICONTROL Vorschau]**, um eine Vorschau des Dashboards anzuzeigen. Das Dashboard ist jetzt über die Adobe Analytics Dashboard-App verfügbar, die über die [App Store](https://apps.apple.com/us/app/adobe-analytics-dashboards/id1509062264) oder [Google Play verfügbar &#x200B;](https://play.google.com/store/apps/details?id=com.adobe.analyticsdashboards).
+1. Verwenden Sie **[!UICONTROL Vorschau]**, um eine Vorschau des Dashboards anzuzeigen. Das Dashboard ist jetzt über die Adobe Analytics Dashboard-App verfügbar, die über die [App Store](https://apps.apple.com/us/app/adobe-analytics-dashboards/id1509062264) oder [Google Play verfügbar ](https://play.google.com/store/apps/details?id=com.adobe.analyticsdashboards).
 
    ![B2B-Anwendungsfall - Produktnutzen aufbauen - Einblicke demokratisieren - Mobile Scorecard-Vorschau](assets/b2b-uc-build-product-value-mobile-scorecard-preview.png)

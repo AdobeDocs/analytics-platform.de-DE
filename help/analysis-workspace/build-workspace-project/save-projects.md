@@ -5,14 +5,10 @@ feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
 TQID: https://experienceleague.adobe.com/21Rc7-uX7Ie2qj5FHzjb89CTmvi79Ne-FR92okGF5uo
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 860
@@ -46,15 +42,15 @@ Um ein Projekt manuell zu speichern, wählen Sie, während das Projekt geöffnet
 
   ![Projekt speichern](assets/save-project.png)
 
-   1. Geben Sie Folgendes an:
+  1. Geben Sie Folgendes an:
 
-      * **[!UICONTROL Name]** (erforderlich): Name Ihres Projekts.
-      * **[!UICONTROL Beschreibung]**: Eine Beschreibung Ihres Projekts.
-      * **[!UICONTROL Tags]**: Suchen Sie im Feld [!UICONTROL *Tags suchen*] nach Tags oder fügen Sie neue Tags mit **[!UICONTROL ENTER]** hinzu.
-      * **[!UICONTROL Ordner]**: Wählen Sie einen Ordner aus [!UICONTROL *Dropdown-Menü*] Ordner auswählen“ aus. Wenn Sie keinen Ordner angeben, wird das Projekt im aktuellen Ordner gespeichert, aus dem Sie ein neues Projekt erstellt haben.
-      * **[!UICONTROL Versionshinweise]**. Fügen Sie Versionshinweise im Textbereich *Hinweise hinzufügen* hinzu.
+     * **[!UICONTROL Name]** (erforderlich): Name Ihres Projekts.
+     * **[!UICONTROL Beschreibung]**: Eine Beschreibung Ihres Projekts.
+     * **[!UICONTROL Tags]**: Suchen Sie im Feld [!UICONTROL *Tags suchen*] nach Tags oder fügen Sie neue Tags mit **[!UICONTROL ENTER]** hinzu.
+     * **[!UICONTROL Ordner]**: Wählen Sie einen Ordner aus [!UICONTROL *Dropdown-Menü*] Ordner auswählen“ aus. Wenn Sie keinen Ordner angeben, wird das Projekt im aktuellen Ordner gespeichert, aus dem Sie ein neues Projekt erstellt haben.
+     * **[!UICONTROL Versionshinweise]**. Fügen Sie Versionshinweise im Textbereich *Hinweise hinzufügen* hinzu.
 
-   1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Projekt zu speichern.
+  1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Projekt zu speichern.
 
   Beim Speichern des Projekts wird eine Version des Projekts für 90 Tage gespeichert.
 
@@ -62,8 +58,8 @@ Um ein Projekt manuell zu speichern, wählen Sie, während das Projekt geöffnet
 
   ![Freigegebens Projekt speichern](assets/save-project-shared.png)
 
-   * Wählen Sie **[!UICONTROL Speichern]** aus, um das Projekt zu speichern.
-   * Wählen Sie **[!UICONTROL Speichern unter]**, um das Projekt als doppeltes Projektduplikat mit einem neuen Namen zu speichern.
+  * Wählen Sie **[!UICONTROL Speichern]** aus, um das Projekt zu speichern.
+  * Wählen Sie **[!UICONTROL Speichern unter]**, um das Projekt als doppeltes Projektduplikat mit einem neuen Namen zu speichern.
 
 
 * **[!UICONTROL Mit Hinweisen speichern]**
@@ -72,8 +68,8 @@ Um ein Projekt manuell zu speichern, wählen Sie, während das Projekt geöffnet
 
   Wenn Sie Ihr Projekt speichern, fügen Sie Notizen zu den Änderungen im Projekt hinzu. Im Dialogfeld „Versionshinweise speichern“:
 
-   1. Geben Sie Ihre **[!UICONTROL Versionshinweise]** im Textbereich **[!UICONTROL Hinweise hinzufügen]** ein.
-   1. Wählen Sie **[!UICONTROL Speichern]** aus.
+  1. Geben Sie Ihre **[!UICONTROL Versionshinweise]** im Textbereich **[!UICONTROL Hinweise hinzufügen]** ein.
+  1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
   Notizen werden mit der Projektversion gespeichert und sind beim [Öffnen einer früheren Version](open-projects.md#open-previous-version) des Projekts verfügbar. Eine mit Hinweisen gespeicherte Version wird automatisch für ein Jahr gespeichert.
 
@@ -83,22 +79,22 @@ Um ein Projekt manuell zu speichern, wählen Sie, während das Projekt geöffnet
 
   Erstellen Sie ein Duplikat Ihres Projekts mit einem neuen Namen. Das Dialogfeld „Speichern unter“ wird angezeigt.
 
-   1. Geben Sie Folgendes an:
+  1. Geben Sie Folgendes an:
 
-      * **[!UICONTROL Name]** (erforderlich): Name Ihres Projekts.
-      * **[!UICONTROL Beschreibung]**: Eine Beschreibung Ihres Projekts.
-      * **[!UICONTROL Tags]**: Suchen Sie im Feld [!UICONTROL *Tags suchen*] nach Tags oder fügen Sie neue Tags mit **[!UICONTROL ENTER]** hinzu.
-      * **[!UICONTROL Ordner]**: Wählen Sie einen Ordner aus [!UICONTROL *Dropdown-Menü*] Ordner auswählen“ aus. Wenn Sie keinen Ordner angeben, wird das Projekt im aktuellen Ordner gespeichert, aus dem Sie ein neues Projekt erstellt haben.
-      * **[!UICONTROL Versionshinweise]**. Fügen Sie Versionshinweise im Textbereich *Hinweise hinzufügen* hinzu.
+     * **[!UICONTROL Name]** (erforderlich): Name Ihres Projekts.
+     * **[!UICONTROL Beschreibung]**: Eine Beschreibung Ihres Projekts.
+     * **[!UICONTROL Tags]**: Suchen Sie im Feld [!UICONTROL *Tags suchen*] nach Tags oder fügen Sie neue Tags mit **[!UICONTROL ENTER]** hinzu.
+     * **[!UICONTROL Ordner]**: Wählen Sie einen Ordner aus [!UICONTROL *Dropdown-Menü*] Ordner auswählen“ aus. Wenn Sie keinen Ordner angeben, wird das Projekt im aktuellen Ordner gespeichert, aus dem Sie ein neues Projekt erstellt haben.
+     * **[!UICONTROL Versionshinweise]**. Fügen Sie Versionshinweise im Textbereich *Hinweise hinzufügen* hinzu.
 
-   1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Projekt zu speichern.
+  1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Projekt zu speichern.
 
   Sie können das Projekt in einem anderen Ordner speichern. Das ursprüngliche Projekt bleibt davon unberührt.
 
 
 <!-- 
 Cannot find this option in CJA 
-| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=de) that becomes available to your organization under **[!UICONTROL Project > New]** |
+| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) that becomes available to your organization under **[!UICONTROL Project > New]** |
 -->
 
 ## Automatisches Speichern

@@ -6,20 +6,11 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 role: User
 TQID: https://experienceleague.adobe.com/-AW7cK4fHNV58e539KKcqBx-pRpIpIRWcrS7CA9ZUYc
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
 source-wordcount: 685
@@ -40,7 +31,7 @@ ht-degree: 100%
 
 Die ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Trichteranalyse ]**bietet eine visuelle Darstellung einer wichtigen Benutzer-Journey in Ihrem Produkt. Die horizontale Achse stellt jeden Schritt dar, den eine Person ausführen muss. Die vertikale Achse stellt den Prozentsatz der Benutzenden oder Sitzungen bei jedem Schritt dar. Alle Schritte müssen in einer bestimmten Reihenfolge ausgeführt werden, können jedoch jederzeit innerhalb des Reporting-Fensters erfolgen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431279/?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?quality=12&learn=on)
 
 ## Anwendungsfälle
 
@@ -62,10 +53,10 @@ Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
 * **[!UICONTROL Ansicht]**: Wechseln Sie zwischen dieser Analyse und [Konversions-Trends](conversion-trends.md).
 * **[!UICONTROL Schritte]**: Die Ereignis-Touchpoints, die Sie verfolgen möchten. Jeder Balken im Diagramm stellt einen Schritt dar. Sie können bis zu zehn Schritte einschließen.
-   * [!UICONTROL Vergleichen]: Jeder Schritt bietet eine Option, um mehrere Ereignisse in einem Trichter-Schritt zu vergleichen und einen verzweigten Trichter zu erstellen. Mit dieser Funktion können Sie die Reibung von zwei Journeys nebeneinander vergleichen, ohne zwei separate Analysen zu erstellen. Dies ist nützlich, wenn es Schrittoptionen gibt oder ein A/B-Experiment im Trichter ausgeführt wird. In den Customer Journey Analytics-Tutorials finden Sie unter [Trichter](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) ein Video, in dem das Vergleichen von Trichtern erläutert wird.
+  * [!UICONTROL Vergleichen]: Jeder Schritt bietet eine Option, um mehrere Ereignisse in einem Trichter-Schritt zu vergleichen und einen verzweigten Trichter zu erstellen. Mit dieser Funktion können Sie die Reibung von zwei Journeys nebeneinander vergleichen, ohne zwei separate Analysen zu erstellen. Dies ist nützlich, wenn es Schrittoptionen gibt oder ein A/B-Experiment im Trichter ausgeführt wird. In den Customer Journey Analytics-Tutorials finden Sie unter [Trichter](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) ein Video, in dem das Vergleichen von Trichtern erläutert wird.
 * **[!UICONTROL Zählt als]**: Der Umfang, den Sie auf den Trichter anwenden möchten. Die Optionen umfassen [!UICONTROL Sitzungen] und [!UICONTROL Benutzende].
-   * [!UICONTROL Sitzungen]: Alle Schritte müssen innerhalb derselben Sitzung stattfinden, damit sie gezählt werden.
-   * [!UICONTROL Benutzende]: Alle Schritte müssen innerhalb des ausgewählten Reporting-Fensters erfolgen, damit sie gezählt werden.
+  * [!UICONTROL Sitzungen]: Alle Schritte müssen innerhalb derselben Sitzung stattfinden, damit sie gezählt werden.
+  * [!UICONTROL Benutzende]: Alle Schritte müssen innerhalb des ausgewählten Reporting-Fensters erfolgen, damit sie gezählt werden.
 * **[!UICONTROL Segmente]**: Die Segmente, über die Sie den Trichter vergleichen möchten. Jedes ausgewählte Segment teilt jeden Schritt in mehrere Balken auf. Jede Farbe stellt ein anderes Segment dar. Sie können bis zu drei Segmente einschließen.
 
 ### Diagrammeinstellungen

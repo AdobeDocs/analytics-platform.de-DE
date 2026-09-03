@@ -6,24 +6,14 @@ keywords: Produktanalysen
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
 TQID: https://experienceleague.adobe.com/17wzuDrTYs5VGC85jXh3eacQKO0-590t0K-XfggT6D4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 582
+source-wordcount: 583
 ht-degree: 100%
 
 ---
@@ -50,7 +40,7 @@ Die ![Timeline](/help/assets/icons/Timeline.svg)**[!UICONTROL Zeitleistenanalyse
 >* **Admins**: *Die Eigenschaft PersonID ist für diese Analyse erforderlich. Bitte fügen Sie die Personen-ID zur Datenansicht hinzu.*
 >* **Benutzende ohne Administratorrechte**: *Die Eigenschaft PersonID ist für diese Analyse erforderlich. Bitte arbeiten Sie mit Ihren Customer Journey Analytics-Admins zusammen, um die Personen-ID zur Datenansicht hinzuzufügen.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3435776/?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427810/?quality=12&learn=on)
 
 ## Anwendungsfälle
 
@@ -76,9 +66,9 @@ Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 Die [!UICONTROL Timeline-Analyse] bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
 * **[!UICONTROL Anzeigen als]**: Zeigt die gewünschten Eigenschaftswerte an.
-   * [!UICONTROL Alle anzeigen]: Zeigt alle Eigenschaftswerte in einer Sitzung an.
-   * [!UICONTROL Markieren]: Hebt Eigenschaftswerte in einer Sitzung, die mit den Abfragefiltern übereinstimmen, visuell hervor.
-   * [!UICONTROL Nur Ansicht]: Zeigt nur Eigenschaftswerte in einer Sitzung an, die mit den Abfragefiltern übereinstimmen.
+  * [!UICONTROL Alle anzeigen]: Zeigt alle Eigenschaftswerte in einer Sitzung an.
+  * [!UICONTROL Markieren]: Hebt Eigenschaftswerte in einer Sitzung, die mit den Abfragefiltern übereinstimmen, visuell hervor.
+  * [!UICONTROL Nur Ansicht]: Zeigt nur Eigenschaftswerte in einer Sitzung an, die mit den Abfragefiltern übereinstimmen.
 
 ### Datumsbereich
 

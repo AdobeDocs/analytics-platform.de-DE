@@ -6,24 +6,11 @@ solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 TQID: https://experienceleague.adobe.com/BPrXvtXRO3WdxhjucGLGuoWL1AIvwcoUVhqIPX3NEek
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b743a5d9-dc51-41ed-8b2f-86a1f8de430fid: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
 source-wordcount: 2592
@@ -47,7 +34,7 @@ Die Verwendung von Data Insights Agent zur Beantwortung datenorientierter Fragen
 
 | Funktion | Enthalten | Nicht enthalten |
 | --- | --- | --- |
-| **Visualisierungstypen** | <ul><li>Linie</li><li>Mehrliniendiagramm</li><li>Freiformtabelle</li><li>Balken</li><li>Ringdiagramm</li><li>Zusammenfassungszahl</li></ul> | <ul><li>Fluss</li><li>Fallout</li><li>Kohortentabelle</li><li>Bereich, Bereich gestapelt</li><li>Balken gestapelt</li><li>Horizontales Säulendiagramm</li><li>Combo</li><li>Histogramm</li><li>Horizontalbalken, Horizontalbalken gestapelt</li><li>Zusammenfassung der Schlüsselmetriken</li><li>Streuung</li><li>Zusammenfassungsänderung</li><li>Text</li><li>Treemap</li><li>Venn</li><li>Geführte Analyse: Aktives Wachstum, Konversions-Trends, Interaktion, Wirkung der ersten Verwendung, Häufigkeit, Trichter, Nettowachstum, Auswirkungen der Version, Bindung, Timeline, Trends</li></ul> |
+| **Visualisierungstypen** | <ul><li>Linie</li><li>Mehrliniendiagramm</li><li>Freiformtabelle</li><li>Balken</li><li>Ringdiagramm</li><li>Zusammenfassungszahl</li></ul> | <ul><li>Fluss</li><li>Fallout</li><li>Kohortentabelle</li><li>Bereich, Bereich gestapelt</li><li>Balken gestapelt</li><li>Bullet</li><li>Kombination</li><li>Histogramm</li><li>Horizontalbalken, Horizontalbalken gestapelt</li><li>Zusammenfassung einer Schlüsselmetrik</li><li>Streuung</li><li>Zusammenfassende Änderung</li><li>Text</li><li>Baumkarte</li><li>Venn</li><li>Geführte Analyse: Aktives Wachstum, Konversions-Trends, Interaktion, Wirkung der ersten Verwendung, Häufigkeit, Trichter, Nettowachstum, Auswirkungen der Version, Bindung, Timeline, Trends</li></ul> |
 | **Workspace-Aktionen und Funktionen des Agents** | <ul><li>Erstellen und Aktualisieren von Visualisierungen<p>Erstellt eine Freiformtabelle und eine dazugehörige Visualisierung (z. B. Linie, Balken, Ringdiagramm usw.).</p><p>Beispiel: *Wie hoch ist der Gewinn für alle SKUs von Februar bis Mai?*</p></li><li>Stellen von Folgefragen<p>Antworten Sie auf einen Prompt im Kontext aller vorherigen Prompts. Zum Beispiel:</p> <ul><li>Prompt 1: *Trendereignisse aus März.*</li><li>Prompt 2: *Zeig mir stattdessen die Daten von März bis April*</li></ul> </li><li>Erkennung eines nicht enthaltenen Prompts<p>Wenn Sie einen nicht enthaltenen Prompt übermitteln, z. B. *Dieses Projekt exportieren*, teilt Data Insights Agent Ihnen mit, dass die Frage außerhalb des Umfangs liegt.</p></li></ul> | <ul><li>Freigeben</li><li>Exportieren</li><li>Herunterladen</li><li>Verwalten von Benutzervoreinstellungen</li><li>Verwalten der Datenansicht</li><li>Analytics Dashboards-App</li><li>Attribution</li><li>Inline-Zusammenfassung oder -Antwort<p>Data Insights Agent kann in der Chat-Leiste nicht mit einer zusammenfassenden Antwort auf einen Prompt antworten. Beispiele für Prompts außerhalb des Umfangs sind: *Fasse mir die Erkenntnisse meines letzten Prompts zusammen* und *Fasse die Highlights aus der Linienvisualisierung zusammen.*</p></li></ul> |
 | **Klärende Fragen** | Wenn Sie eine Frage stellen, die nicht ausreichend Kontext für eine Antwort von Data Insights Agent bietet oder zu generisch ist, antwortet Data Insights Agent mit einer klärenden Frage oder empfohlenen Optionen. <p>Die folgenden klärenden Fragen sind Beispiele für komponentenbezogene Fragen:</p><ul><li>Metrik: *Welche „Umsatz“-Metrik meinten Sie?*</li><li>Dimension: *Auf welche der folgenden „Regionen“ möchten Sie sich konzentrieren?*</li><li>Segment: *Welches „Konto“-Segment sollte angewendet werden?*</li><li>Datumsbereich: *Meinten Sie mit „letztem Monat“ den letzten vollen Monat oder die letzten 30 Tage?*</li></ul><p>Die folgende klärende Frage ist ein Beispiel für eine Frage im Zusammenhang mit Dimensionselementen:</p> <ul><li>Welchen „Store-Namen“ meinten Sie? (Beispiel: Store #5274, Store #2949 usw.)</li></ul> | Klärende Fragen sind auf Komponenten und Dimensionselemente beschränkt. Data Insights Agent kann Elemente wie Datenansichten, Visualisierungen, Datengranularität, Vergleiche und den Umfang nicht weiter klären. Wenn keine klärenden Fragen verwendet werden können, antwortet der Agent standardmäßig mit dem, wonach Sie am wahrscheinlichsten fragen. Wenn er eine unerwartete Visualisierung oder Datengranularität zurückgibt, können Sie eine Folgefrage stellen oder die Visualisierung und die Daten anpassen. |
 | **Datenverifizierbarkeit und -korrektheit** | Die Verifizierbarkeit und Korrektheit von Daten kann über die generierte Freiformtabelle und Datenvisualisierung bestätigt werden. <p>Wenn Sie Data Insights Agent beispielsweise nach *Trend-Bestellungen im letzten Monat* fragen, können Sie bestätigen, dass im neu generierten Panel, in der Datenvisualisierung und in der Freiformtabelle die richtige Metrik („Bestellungen“) und der richtige Datumsbereich („letzter Monat“) ausgewählt wurden.</p> | Data Insights Agent informiert Sie nicht darüber, welche Komponenten oder Visualisierungen hinzugefügt wurden. |
@@ -74,22 +61,22 @@ Die folgenden Parameter regeln den Zugriff auf Data Insights Agent in Customer J
 * **Berechtigungen**: Die erforderlichen Berechtigungen müssen in der [!UICONTROL Adobe Admin Console] gewährt werden, bevor Benutzerinnen und Benutzer auf den Data Insights Agent zugreifen können.
 
   Um Berechtigungen zu erteilen, muss [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) in der [!UICONTROL Admin Console die folgenden Schritte ausführen]:
-   1. Wählen Sie in der **[!UICONTROL Admin Console]** die Registerkarte **[!UICONTROL Produkte]** aus, um die Seite **[!UICONTROL Alle Produkte und Services]** anzuzeigen.
-   1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus.
-   1. Wählen Sie auf der Registerkarte **[!UICONTROL Produktprofile]** den Titel des Produktprofils aus, dem Zugriff auf [!UICONTROL KI-Assistent: Produktkenntnisse] gewährt werden soll.
-   1. Wählen Sie im entsprechenden Produktprofil die Registerkarte **[!UICONTROL Berechtigungen]** aus.
+  1. Wählen Sie in der **[!UICONTROL Admin Console]** die Registerkarte **[!UICONTROL Produkte]** aus, um die Seite **[!UICONTROL Alle Produkte und Services]** anzuzeigen.
+  1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** aus.
+  1. Wählen Sie auf der Registerkarte **[!UICONTROL Produktprofile]** den Titel des Produktprofils aus, dem Zugriff auf [!UICONTROL KI-Assistent: Produktkenntnisse] gewährt werden soll.
+  1. Wählen Sie im entsprechenden Produktprofil die Registerkarte **[!UICONTROL Berechtigungen]** aus.
 
-      ![Registerkarte „Berechtigungen“ in der Admin Console](assets/ai-assistant-permissions-tab.png)
+     ![Registerkarte „Berechtigungen“ in der Admin Console](assets/ai-assistant-permissions-tab.png)
 
-   1. Wählen Sie in der Zeile **[!UICONTROL Reporting-Tools]** der bereitgestellten Tabelle das Bearbeitungssymbol ![Bearbeiten](/help/assets/icons/Edit.svg) aus.
-   1. Scrollen Sie zu oder suchen Sie nach **[!UICONTROL KI-Assistent: Produktkenntnisse]** und wählen Sie dann das Plussymbol ![Hinzufügen](/help/assets/icons/AddCircle.svg) neben dieser Berechtigung aus.
-   1. Scrollen Sie zu **[!UICONTROL Data Insights Agent]** oder suchen Sie danach und wählen Sie dann das Plussymbol ![Hinzufügen](/help/assets/icons/AddCircle.svg) neben dieser Berechtigung aus.
+  1. Wählen Sie in der Zeile **[!UICONTROL Reporting-Tools]** der bereitgestellten Tabelle das Bearbeitungssymbol ![Bearbeiten](/help/assets/icons/Edit.svg) aus.
+  1. Scrollen Sie zu oder suchen Sie nach **[!UICONTROL KI-Assistent: Produktkenntnisse]** und wählen Sie dann das Plussymbol ![Hinzufügen](/help/assets/icons/AddCircle.svg) neben dieser Berechtigung aus.
+  1. Scrollen Sie zu **[!UICONTROL Data Insights Agent]** oder suchen Sie danach und wählen Sie dann das Plussymbol ![Hinzufügen](/help/assets/icons/AddCircle.svg) neben dieser Berechtigung aus.
 
-      Die Berechtigung **[!UICONTROL KI-Assistent: Produktkenntnisse]** und die Berechtigung **[!UICONTROL Data Insights Agent]** werden der Spalte **[!UICONTROL Eingeschlossene Berechtigungsobjekte]** hinzugefügt.
+     Die Berechtigung **[!UICONTROL KI-Assistent: Produktkenntnisse]** und die Berechtigung **[!UICONTROL Data Insights Agent]** werden der Spalte **[!UICONTROL Eingeschlossene Berechtigungsobjekte]** hinzugefügt.
 
-      ![Hinzufügen einer Berechtigung](assets/ai-assistant-permissions.png)
+     ![Hinzufügen einer Berechtigung](assets/ai-assistant-permissions.png)
 
-   1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Berechtigungen zu speichern.
+  1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Berechtigungen zu speichern.
 
   Weitere Informationen zur Zugriffssteuerung finden Sie unter [Zugriffssteuerung](/help/technotes/access-control.md#access-control).
 
@@ -104,21 +91,21 @@ Die folgenden Parameter regeln den Zugriff auf Data Insights Agent in Customer J
 
   So aktivieren Sie Datenansichten für Data Insights Agent:
 
-   1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]** aus.
+  1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]** aus.
 
-   1. Wählen Sie eine oder mehrere Datenansichten aus, die für Data Insights Agent aktiviert werden sollen, und wählen Sie dann **[!UICONTROL Für Data Insights Agent aktivieren]**.
+  1. Wählen Sie eine oder mehrere Datenansichten aus, die für Data Insights Agent aktiviert werden sollen, und wählen Sie dann **[!UICONTROL Für Data Insights Agent aktivieren]**.
 
-      ![Aktivieren von Datenansichten für Data Insights Agent](assets/data-view-enable-dia.png)
+     ![Aktivieren von Datenansichten für Data Insights Agent](assets/data-view-enable-dia.png)
 
-      Weitere Informationen zur Aktivierung von Datenansichten für Data Insights Agent finden Sie unter [KI-Einstellungen für eine Datenansicht](/help/data-views/create-dataview.md#ai-settings).
+     Weitere Informationen zur Aktivierung von Datenansichten für Data Insights Agent finden Sie unter [KI-Einstellungen für eine Datenansicht](/help/data-views/create-dataview.md#ai-settings).
 
   So zeigen Sie die Anzahl der Datenansichten an, die für Data Insights Agent in Ihrer IMS-Organisation aktiviert sind:
 
-   1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]** aus.
+  1. Wählen Sie in Customer Journey Analytics **[!UICONTROL Daten-Management]** > **[!UICONTROL Datenansichten]** aus.
 
-   1. Wählen Sie das Info-Symbol oben in der Spalte **[!UICONTROL Data Insights Agent]** aus.
+  1. Wählen Sie das Info-Symbol oben in der Spalte **[!UICONTROL Data Insights Agent]** aus.
 
-      ![Info-Symbol für Data Insights Agent](assets/data-insights-agent-tooltip.png)
+     ![Info-Symbol für Data Insights Agent](assets/data-insights-agent-tooltip.png)
 
 
 ## Zugreifen auf den Data Insights Agent im KI-Assistenten
@@ -197,7 +184,7 @@ Adobe Experience Platform Agent Orchestrator ermöglicht den Zugriff auf die Fun
 
 Agent Orchestrator interpretiert Ihre Anfrage, bestimmt, welche spezialisierten Agents benötigt werden, und orchestriert sie, um die richtige Antwort bereitzustellen. Außerdem wird der Kontext über Multi-Turn-Interaktionen hinweg verfolgt, sodass Sie auf natürliche Weise auf früheren Abfragen aufbauen können.
 
-Weitere Informationen finden Sie unter [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/de/products/experience-platform/agent-orchestrator.html).
+Weitere Informationen finden Sie unter [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/products/experience-platform/agent-orchestrator.html).
 
 ## Beispielhafte Prompts zur Datenvisualisierung
 
@@ -240,7 +227,7 @@ Diese Beispiele sollen Ihnen dabei helfen, sich damit vertraut zu machen, wie be
 | --- | --- |
 | Visualisierung „Zusammenfassungszahl“ | <ul><li>Gesamt</li></ul> |
 | Vergleichen von Komponenten | <ul><li>Vergleichen</li><li>vs.</li><li>Kontrast</li><li>Woche-zu-Woche</li><li>Monat-zu-Monat</li><li>Quartal-zu-Quartal</li><li>Jahr-zu-Jahr</li></ul> |
-| Ringvisualisierung | <ul><li>Verhältnis</li><li>Anteil von</li><li>Verteilung</li><li>Prozentsatz</li><li>Beitrag</li><li>Teil</li><li>Teile</li></ul> |
+| Ringvisualisierung | <ul><li>Verhältnis</li><li>Anteil von</li><li>Verteilung</li><li>Prozent</li><li>Beitrag</li><li>Teil</li><li>Teile</li></ul> |
 | Linienvisualisierung | <ul><li>Trend</li><li>[Metrik] in [Zeitraum]</li></ul> |
 | Balkenvisualisierung | <ul><li>[Metrik] nach [Dimension]</li></ul> |
 

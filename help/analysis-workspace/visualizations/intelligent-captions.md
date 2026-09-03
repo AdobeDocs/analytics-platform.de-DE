@@ -6,18 +6,11 @@ exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
 autotag-review: '2026-05-19T08:31:54.599Z'
 TQID: 'https://experienceleague.adobe.com/k-0eP4wFf0vl3zYmUDUOv1V9xI6utt7AOjJqCo2mAB4'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: ddf59f64-0e46-4986-a525-056acc143c70
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 802
@@ -152,14 +145,14 @@ Die folgenden Parameter regeln den Zugriff auf intelligente Beschriftungen:
 * **Zugriff auf vertraglicher Grundlage**: Wenn Sie keine intelligenten Beschriftungen verwenden können, wenden Sie sich an die bzw. den Admin Ihrer Organisation oder die Adobe-Kundenbetreuung (Admin). Damit Sie intelligente Beschriftungen in Ihrer Organisation verwenden können, müssen Sie bestimmten rechtlichen Bedingungen im Zusammenhang mit generativer KI zustimmen.
 
 * **Berechtigungen**: In der [!UICONTROL Adobe Admin Console] bestimmt die [!UICONTROL Reporting-Tools-Berechtigung] **[!UICONTROL Intelligente Beschriftungen]** den Zugriff. Sie als [Produktprofil-Admin](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) müssen diese Schritte in der [!UICONTROL Admin Console] ausführen:
-   1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
-   1. Wählen Sie den Titel des Produktprofils aus, für das Zugriff auf die Funktion „Intelligente Beschriftungen“ gewährt werden soll.
-   1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
-   1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
-   1. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) aus, um **Intelligente Beschriftungen** zu **[!UICONTROL Eingeschlossene Berechtigungseinträge]** hinzuzufügen.
+  1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
+  1. Wählen Sie den Titel des Produktprofils aus, für das Zugriff auf die Funktion „Intelligente Beschriftungen“ gewährt werden soll.
+  1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
+  1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
+  1. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) aus, um **Intelligente Beschriftungen** zu **[!UICONTROL Eingeschlossene Berechtigungseinträge]** hinzuzufügen.
 
-      ![Hinzufügen einer Berechtigung](./assets/intelligent-captions-permissions.png)
+     ![Hinzufügen einer Berechtigung](./assets/intelligent-captions-permissions.png)
 
-   1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Berechtigungen zu speichern.
+  1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Berechtigungen zu speichern.
 
 Weitere Informationen finden Sie unter [Zugriffssteuerung](/help/technotes/access-control.md#access-control).

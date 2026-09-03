@@ -4,24 +4,14 @@ title: Erstellen von Metriken
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 TQID: https://experienceleague.adobe.com/ilqzP7cMRQqi7-zoylBlfYGv-mgRqbC-66utGrNVFdY
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 1693
+source-wordcount: 1699
 ht-degree: 92%
 
 ---
@@ -84,8 +74,8 @@ Das Dialogfeld **[!UICONTROL Generator für berechnete Metriken]** wird zum Erst
    Die **[!UICONTROL Produktkompatibilität]** gibt an, ob die berechnete Metrik bei Experimenten und beim vollständigen Tabellenexport verwendet werden kann. Mögliche Werte sind:
    * **[!UICONTROL Überall in Customer Journey Analytics]**: Die berechnete Metrik kann überall in Customer Journey Analytics verwendet werden.
    * **[!UICONTROL Nicht kompatibel in:]**
-      * **[!UICONTROL Experimentieren]**: Die berechnete Metrik kann in ganz Customer Journey Analytics verwendet werden, mit Ausnahme des Bedienfelds „Experimentieren“.
-      * **[!UICONTROL Vollständiger Tabellenexport]**: Die berechnete Metrik kann in ganz Customer Journey Analytics verwendet werden, es sei denn, sie exportiert vollständige Tabellen aus Workspace. Nicht alle Funktionen werden beim Exportieren vollständiger Tabellen unterstützt. Wenn Sie beim Exportieren vollständiger Tabellen die berechnete Metrik einbeziehen möchten, verwenden Sie eine unterstützte Funktion. Weitere Informationen finden Sie unter [Nicht unterstützte Funktionen für berechnete Metriken](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions) in [Exportieren von vollständigen Tabellen in die Cloud](/help/analysis-workspace/export/export-cloud.md).
+     * **[!UICONTROL Experimentieren]**: Die berechnete Metrik kann in ganz Customer Journey Analytics verwendet werden, mit Ausnahme des Bedienfelds „Experimentieren“.
+     * **[!UICONTROL Vollständiger Tabellenexport]**: Die berechnete Metrik kann in ganz Customer Journey Analytics verwendet werden, es sei denn, sie exportiert vollständige Tabellen aus Workspace. Nicht alle Funktionen werden beim Exportieren vollständiger Tabellen unterstützt. Wenn Sie beim Exportieren vollständiger Tabellen die berechnete Metrik einbeziehen möchten, verwenden Sie eine unterstützte Funktion. Weitere Informationen finden Sie unter [Nicht unterstützte Funktionen für berechnete Metriken](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions) in [Exportieren von vollständigen Tabellen in die Cloud](/help/analysis-workspace/export/export-cloud.md).
 
 1. Wählen Sie Folgendes aus:
    * **[!UICONTROL Speichern]**: Speichert die berechnete Metrik.
@@ -155,22 +145,22 @@ Sie verwenden das Konzept eines Segment-Containers, um eine [segmentierte Metrik
 
 * So fügen Sie einen Segment-Container aus einer Dimension hinzu:
 
-   1. Ziehen Sie eine Komponente des Typs ![Dimensionen](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensionen]** aus dem Panel „Komponenten“ auf **[!UICONTROL Platzieren Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen mittels Drag-and-Drop hier]**. Sie können die ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
-   1. Definieren Sie im Popup **[!UICONTROL Segment aus Dimension erstellen]** die Bedingung für das Segment. Wählen Sie in der Liste der Operatoren einen Wert aus oder geben Sie einen Wert ein, z. B. **[!UICONTROL Monat]** **[!UICONTROL gleich]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
-   1. Wählen Sie **[!UICONTROL Fertig]** aus. Ein Segment-Container wird der **[!UICONTROL Definition]** hinzugefügt.
+  1. Ziehen Sie eine Komponente des Typs ![Dimensionen](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensionen]** aus dem Panel „Komponenten“ auf **[!UICONTROL Platzieren Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen mittels Drag-and-Drop hier]**. Sie können die ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
+  1. Definieren Sie im Popup **[!UICONTROL Segment aus Dimension erstellen]** die Bedingung für das Segment. Wählen Sie in der Liste der Operatoren einen Wert aus oder geben Sie einen Wert ein, z. B. **[!UICONTROL Monat]** **[!UICONTROL gleich]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+  1. Wählen Sie **[!UICONTROL Fertig]** aus. Ein Segment-Container wird der **[!UICONTROL Definition]** hinzugefügt.
 
 
 * Um einen Segment-Container aus einem Segment hinzuzufügen, können Sie wie folgt vorgehen:
 
-   * Ziehen Sie eine Komponente des Typs ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmente]** aus dem Panel „Komponenten“ auf **[!UICONTROL Platzieren Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen mittels Drag-and-Drop hier]**. Sie können die ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Segmenten zu suchen.
-Der **[!UICONTROL Definition]** wird automatisch ein Segment-Container mit dem Namen des Segments hinzugefügt.
+  * Ziehen Sie eine Komponente des Typs ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmente]** aus dem Panel „Komponenten“ auf **[!UICONTROL Platzieren Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen mittels Drag-and-Drop hier]**. Sie können die ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Segmenten zu suchen.
+    Der **[!UICONTROL Definition]** wird automatisch ein Segment-Container mit dem Namen des Segments hinzugefügt.
 
-   * Ziehen Sie eine Komponente des Typs ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** aus dem Panel „Komponenten“ in einen generischen Container. Der Container wird in einen Segment-Container geändert.
+  * Ziehen Sie eine Komponente des Typs ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** aus dem Panel „Komponenten“ in einen generischen Container. Der Container wird in einen Segment-Container geändert.
 
-   * Wählen Sie ![Hinzufügen](/help/assets/icons/AddCircle.svg) **[!UICONTROL Hinzufügen]** in einem Container aus:
+  * Wählen Sie ![Hinzufügen](/help/assets/icons/AddCircle.svg) **[!UICONTROL Hinzufügen]** in einem Container aus:
 
-      1. Wählen Sie **[!UICONTROL Segment]** aus. Der **[!UICONTROL Definition]** wird ein Segment-Container hinzugefügt.
-      1. Wählen Sie im neuen Segment-Container ein Segment aus dem Dropdown-Menü [!UICONTROL *Auswählen…*] aus.
+    1. Wählen Sie **[!UICONTROL Segment]** aus. Der **[!UICONTROL Definition]** wird ein Segment-Container hinzugefügt.
+    1. Wählen Sie im neuen Segment-Container ein Segment aus dem Dropdown-Menü [!UICONTROL *Auswählen…*] aus.
 
   >[!TIP]
   >
@@ -190,13 +180,13 @@ Um einen Funktions-Container hinzuzufügen, können Sie wie folgt vorgehen:
 
 * Verwenden Sie die Drag-and-Drop-Funktion:
 
-   1. Ziehen Sie eine Komponente des Typs ![Funktion](/help/assets/icons/Effect.svg) **[!UICONTROL Funktionen]** aus dem Panel „Komponenten“ auf **[!UICONTROL Platzieren Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen mittels Drag-and-Drop hier]**. Sie können ![Search](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Funktionen zu suchen.
-   1. Der **[!UICONTROL Definition]** wird automatisch ein Funktions-Container mit dem Namen der Funktion hinzugefügt.
+  1. Ziehen Sie eine Komponente des Typs ![Funktion](/help/assets/icons/Effect.svg) **[!UICONTROL Funktionen]** aus dem Panel „Komponenten“ auf **[!UICONTROL Platzieren Sie Metriken, Dimensionen, Dimensionselemente, Segmente und/oder Funktionen mittels Drag-and-Drop hier]**. Sie können ![Search](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Funktionen zu suchen.
+  1. Der **[!UICONTROL Definition]** wird automatisch ein Funktions-Container mit dem Namen der Funktion hinzugefügt.
 
 * Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Hinzufügen]** in einem Container aus:
 
-   1. Wählen Sie **[!UICONTROL Funktion]**.
-   1. Wählen Sie im Container eine Funktion aus dem Dropdown-Menü [!UICONTROL *Auswählen…*] aus.
+  1. Wählen Sie **[!UICONTROL Funktion]**.
+  1. Wählen Sie im Container eine Funktion aus dem Dropdown-Menü [!UICONTROL *Auswählen…*] aus.
 
 Der Funktions-Container ist nach der Funktionskomponente benannt. Beispiel: ![Function](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT (metric)]**. Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup mit weiteren Details zur Funktion anzuzeigen. Wählen Sie **[!UICONTROL Weitere Informationen]** aus, um weitere Informationen zur Funktion zu erhalten.
 
