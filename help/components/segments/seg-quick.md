@@ -34,7 +34,7 @@ Schnellsegmente ermöglichen es Ihnen, Daten innerhalb eines Workspace-Projekts 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schnellsegmente in Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/filters/create-a-quick-filter){target="_blank"} finden Sie ein Demovideo.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schnellsegmente in Analysis Workspace](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/components/filters/create-a-quick-filter){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

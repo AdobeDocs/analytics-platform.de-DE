@@ -62,7 +62,7 @@ Dies ist das erwartete Verhalten, wenn Attributionsmodelle auf Aufschlüsselunge
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension in Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/dimensions/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension in Analysis Workspace](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/dimensions/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -80,7 +80,7 @@ Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Aufschlüsselu
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen von Dimensionen und &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/dimensions/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace){target="_blank"}) für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen von Dimensionen und &#x200B;](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/dimensions/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace){target="_blank"}) für ein Demovideo.
 
 {{videoaa}}
 
@@ -89,7 +89,7 @@ Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hinzufügen vo
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit Dimensionen in einer Freiformtabelle](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/working-with-dimensions-in-a-freeform-table){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit Dimensionen in einer Freiformtabelle](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/working-with-dimensions-in-a-freeform-table){target="_blank"} für ein Demovideo.
 
 {{videoaa}}
 

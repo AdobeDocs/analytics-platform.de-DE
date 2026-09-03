@@ -57,7 +57,7 @@ Das Lineardiagramm enthält einen einzigen primären Messwert (z. B. aktueller U
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung Bullet-Diagramm](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bullet-graph-visualizations){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung Bullet-Diagramm](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bullet-graph-visualizations){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

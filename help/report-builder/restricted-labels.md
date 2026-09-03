@@ -51,7 +51,7 @@ In Customer Journey Analytics werden zwei von Adobe definierte Richtlinien angez
 
 Komponenten, die diesen Richtlinien unterliegen, sind ausgegraut und haben ein ![InfoOutline](/help/assets/icons/InfoOutline.svg)-Symbol. Wenn Sie den Mauszeiger über das Infosymbol bewegen, wird ein Hinweis angezeigt, der Folgendes angibt: **[!UICONTROL Auf dieses Feld wurden Richtlinien angewendet, die die Verwendung dieser Daten verbieten]**.
 
-Weitere Informationen finden Sie unter [Kennzeichnungen und Richtlinien](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance).
+Weitere Informationen finden Sie unter [Kennzeichnungen und Richtlinien](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/data-governance).
 
 
 ![Der Hinweis zu verbotenen Datennutzungen.](assets/restricted-label.png){zoomable="yes"}

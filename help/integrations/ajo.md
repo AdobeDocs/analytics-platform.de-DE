@@ -79,7 +79,7 @@ Wenn das Add-on Transaktionsnachrichten mit hohem Durchsatz aktiviert ist, werde
 * **[!UICONTROL Rollierendes 7-Tage-P95-Latenz-]**: Zeigt die P95-Latenz als einen einzelnen Wert an, einschließlich der prozentualen Änderung gegenüber der Vorwoche.
 * **[!UICONTROL Rollierendes 7-Tage-P95-Durchsatz-Widget]**: Zeigt den P95-Durchsatz als einen einzelnen Wert an, einschließlich der prozentualen Änderung gegenüber der Vorwoche.
 
-Weitere Informationen zu diesen Datensätzen und zum Transaktionsnachrichten-Add-on mit hohem Durchsatz finden Sie unter [Aktivieren des Hochdurchsatzmodus für API-ausgelöste Kampagnen](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) in der Dokumentation zu Adobe Journey Optimizer.
+Weitere Informationen zu diesen Datensätzen und zum Transaktionsnachrichten-Add-on mit hohem Durchsatz finden Sie unter [Aktivieren des Hochdurchsatzmodus für API-ausgelöste Kampagnen](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) in der Dokumentation zu Adobe Journey Optimizer.
 
 ### Datenansicht
 

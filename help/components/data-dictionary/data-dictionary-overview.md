@@ -41,7 +41,7 @@ Analytics-Administratorinnen und -Administratoren sind dafür verantwortlich, In
 
 >[!BEGINSHADEBOX]
 
-Unter ![Video-Symbol](/help/assets/icons/VideoCheckedOut.svg) [Datenwörterbuch für Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/data-dictionary/use-data-dictionary){target="_blank"} finden Sie ein Demovideo.
+Unter ![Video-Symbol](/help/assets/icons/VideoCheckedOut.svg) [Datenwörterbuch für Analysis Workspace](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/components/data-dictionary/use-data-dictionary){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 

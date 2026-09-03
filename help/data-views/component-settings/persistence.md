@@ -120,7 +120,7 @@ Siehe [Verwenden von Bindungsdimensionen und Metriken in Customer Journey Analyt
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimensionen](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindungsdimensionen](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

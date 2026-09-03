@@ -58,7 +58,7 @@ Report Builder für Customer Journey Analytics ist ein Microsoft Excel-Add-in. D
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder for Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/report-builder-for-customer-journey-analytics){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder for Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/report-builder-for-customer-journey-analytics){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

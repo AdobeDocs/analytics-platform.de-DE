@@ -73,7 +73,7 @@ Die Wiedergabedauer kann Ihnen dabei helfen, Folgendes zu verstehen:
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bedienfeld „Verbrachte Zeit bei der Medienwiedergabe“](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bedienfeld „Verbrachte Zeit bei der Medienwiedergabe“](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
