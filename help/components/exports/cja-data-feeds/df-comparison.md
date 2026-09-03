@@ -18,10 +18,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 6c07f0bc3dce3155d0605619194fc6a765ac2f3e
+source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
 workflow-type: tm+mt
-source-wordcount: 1485
-ht-degree: 1%
+source-wordcount: 1629
+ht-degree: 0%
 
 ---
 
@@ -31,31 +31,33 @@ ht-degree: 1%
 
 Daten-Feeds in Customer Journey Analytics und Adobe Analytics ermöglichen den Export von Rohdaten in Drittanbieterplattformen.
 
-Wenn Sie zuvor Daten-Feeds in Adobe Analytics verwendet haben, verwenden Sie die folgenden Informationen, um Unterschiede in den verfügbaren Funktionen und Konzepten zu verstehen:
+Wenn Sie zuvor Daten-Feeds in Adobe Analytics verwendet haben, verwenden Sie die folgenden Informationen, um Unterschiede in den verfügbaren Funktionen und Konzepten zu verstehen.
+
+Einen Vergleich der Daten-Feeds mit anderen Customer Journey Analytics-Exportmethoden, z. B. dem vollständigen Tabellenexport, finden Sie unter [Analytics-Produktvergleich](/help/getting-started/analytics-product-comparison.md).
 
 ## Nur in Customer Journey Analytics verfügbare Funktionen in Daten-Feeds
 
 Die folgenden Funktionen sind in Customer Journey Analytics-Daten-Feeds verfügbar, aber nicht in Adobe Analytics-Daten-Feeds:
 
-* **Abgeleitete Felder**: Benutzerdefinierte Komponenten, die aus regelbasierten Transformationen erstellt wurden, die in Ihr Feed-Schema aufgenommen werden können.
+* **Abgeleitete Felder**: Benutzerdefinierte Komponenten, die aus regelbasierten Transformationen erstellt wurden, die in Ihr Daten-Feed-Schema aufgenommen werden können. <!-- add benefit -->
 
 * **Zusammenfügen**: Geräteübergreifende Identitätsauflösung, die Ereignisse geräteübergreifend mit einer einzelnen Person verknüpft.
 
-* **Strukturiertes Datenmodell**: Feeds werden mithilfe strukturierter Daten und nicht anhand flacher Zeichenfolgen wie „post_product_list“ erstellt und bereitgestellt.
+* **Strukturiertes Datenmodell**: Feeds werden mithilfe strukturierter Daten und nicht anhand flacher Zeichenfolgen wie „post_product_list“ erstellt und bereitgestellt. spiegelt die vorhandene Struktur aus dem XDM-Schema und der Datenansicht wider.
+
+* **Parquet-Ausgabe**: Dateien werden im Parquet-Format bereitgestellt, das nativ komplexe verschachtelte und strukturierte Daten unterstützt. Das bedeutet, dass der Zugriff auf Daten in einer Datenbank mithilfe von branchenüblichen Verfahren einfacher ist.
 
 * **Segmentierung**: Segmente, die auf die Datenansicht angewendet werden, werden automatisch übernommen, und zusätzliche Segmente können direkt auf den Feed angewendet werden.
 
-* **Zeitzone der Datenansicht**: Die Fenster der Feed-Bereitstellung werden an die Zeitzone der Datenansicht angepasst.
-
-* **Parquet-Ausgabe**: Dateien werden im Parquet-Format bereitgestellt und unterstützen nativ komplexe verschachtelte und strukturierte Daten.
-
 * **Partitionspfade im Hive-Stil**: Ausgabedateien verwenden hive-artige Pfade für effiziente Abfragen in Data-Lake-Umgebungen.
 
-* **Übertragung von Komponentenaktualisierungen**: Änderungen an Komponenten in der Datenansicht werden automatisch an den Feed weitergegeben.
+* **Komponentenaktualisierungen gelten rückwirkend**: Änderungen an Komponenten in der Datenansicht werden historisch in Aufstockungen widergespiegelt.
 
-* **Lookups**: Dynamische Suchen ermöglichen es Ihnen, zusätzliche Lookup-Dateien in Ihrem Daten-Feed zu empfangen, die sonst nicht verfügbar sind.
+* **Suchen**: Klassifizierungen sind nicht in Adobe Analytics-Daten-Feeds enthalten. In Customer Journey Analytics sind alle Suchen direkt in die Daten eingebettet.
 
-* **Für Analysis Workspace-Benutzer vertraute Benutzeroberfläche**: Wählen Sie Dimensionen und Metriken mit derselben Komponentenleiste wie Analysis Workspace aus statt mit einer statischen Liste von Variablennamen.
+* **Benutzeroberfläche, die Analysis Workspace-Benutzern vertraut ist**: Komponenten stammen direkt aus der Datenansicht und sind auch in Analysis Workspace verfügbar. Sie können Dimensionen und Metriken über dieselbe Komponentenleiste wie Analysis Workspace auswählen, anstatt über eine statische Liste von Variablennamen.
+
+* **Weitere Persistenzmodelle verfügbar**: Es gibt fünf verschiedene Persistenzmodelle, die in Customer Journey Analytics-Daten-Feeds verwendet werden können.
 
 <!-- * Web MCP when it's added -->
 
@@ -78,15 +80,17 @@ In der folgenden Tabelle werden die wichtigsten Konzepte und Konfigurationsoptio
 | **Schema**<br/> Das Daten-Feed-Schema bestimmt, welche Spalten in einen Daten-Feed aufgenommen werden können. | Das Daten-Feed-Schema basiert auf der Konfiguration der Datenansicht.  Die Komponenten, die für die Aufnahme in das Daten-Feed-Schema verfügbar sind, sind eine Teilmenge der in der Datenansichtskonfiguration verfügbaren Komponenten. | Eine vordefinierte statische Liste von über 1.100 Variablen. Viele Spalten werden als **vor- und nachverarbeitete Paare** exportiert (z. B. `eVar1` / `post_eVar1`), was einen Großteil der Spaltenanzahl ausmacht. |
 | **Daten-Feed-Builder**<br/> Die Schnittstelle zum Konfigurieren der in einem Daten-Feed enthaltenen Spalten. | Verwendet eine Komponentenleiste mit denselben benannten Dimensionen und Metriken, die in der Datenansicht verfügbar sind, und stimmt damit mit dem Analysis Workspace-Erlebnis überein. | Verwendet eine flache Liste von rohen Variablennamen (z. B. `eVar1`, `prop5`), die aus einem vordefinierten Satz von über 1.100 Spalten ausgewählt wurden. Komponenten werden jenseits ihrer Variablenkennung weder benannt noch beschrieben. |
 | **Abgeleitete Felder**<br/> benutzerdefinierte Komponenten, die mithilfe regelbasierter Transformationen definiert wurden, die zum Zeitpunkt der Berichterstellung angewendet wurden. | Unterstützt. Abgeleitete Feldkomponenten können zusammen mit Standarddimensionen und Metriken in das Daten-Feed-Schema aufgenommen werden. | Nicht unterstützt. |
-| **Komponentenaktualisierungen**<br/> Ob Änderungen an der Komponentenkonfiguration in der zukünftigen Daten-Feed-Ausgabe berücksichtigt werden. | Änderungen an Komponenten in der Datenansicht (z. B. das Umbenennen oder Entfernen einer Dimension) werden automatisch an zukünftige Daten-Feeds weitergegeben. | Nicht zutreffend. Das Spaltenschema ist vordefiniert und statisch. Es gibt keine zu aktualisierenden Komponenten auf Datenansichtsebene. |
-| **Lookups**<br/> Dynamic Lookups ermöglichen es Ihnen, zusätzliche Lookup-Dateien in Ihrem Daten-Feed zu empfangen, die sonst nicht verfügbar sind. | Nicht erforderlich, da sowohl Suchen als auch Klassifizierungen als Dimensionen verfügbar sind, die direkt in der Datenansicht kuratiert wurden. Wenn Sie eine Suche oder Klassifizierung als Dimension in der Datenansicht kuratieren, werden die aufgelösten Werte als reguläre Spalten in der Parquet-Ausgabe inline mit den Ereignisdaten und nicht als separate Referenzdateien angezeigt. | Wird als separate Lookup-Datei bereitgestellt, die mit dem Feed bereitgestellt wird. Behandelt einen festen Satz von Dimensionen wie Browser, Betriebssystem und Mobilgerät. |
+| **Komponentenaktualisierungen**<br/> Ob Änderungen an der Komponentenkonfiguration in vergangene und künftige Daten-Feed-Ausgaben übernommen werden. | Änderungen an Komponenten in der Datenansicht (z. B. das Umbenennen oder Entfernen einer Dimension) werden an zukünftige Daten-Feeds weitergegeben und auch in Aufstockungen übernommen. | Änderungen an Komponenten in der Report Suite gelten nur für Daten, die in der Zukunft erfasst werden. |
+| **Lookups**<br/> Lookup-Datensätze in Customer Journey Analytics entsprechen den Klassifizierungen in Adobe Analytics. | Alle Suchen werden direkt in die Daten eingebettet. | Klassifizierungen sind nicht in den Daten-Feeds von Adobe Analytics enthalten. |
 | **Sitzungsdefinition**<br/> Wie eine Besuchs- oder Sitzungsgrenze definiert wird, die sich darauf auswirkt, wie Ereignisse gruppiert und zugeordnet werden. | Wird in der Datenansicht definiert. | Wird zur Sammlungszeit definiert. |
-| **Segmentierung**<br/> Die Möglichkeit, die Daten-Feed-Ausgabe mithilfe von Segmenten zu filtern. | Segmente, die auf die Datenansicht angewendet werden, werden automatisch vom Daten-Feed übernommen. Zusätzliche Segmente können auch direkt auf einen einzelnen Daten-Feed angewendet werden. | Nicht unterstützt. Daten-Feeds exportieren alle erfassten Daten ohne Segmentfilterung. |
-| **Berechnete Metriken**<br/> Benutzerdefinierte Metriken, die Sie aus vorhandenen Metriken erstellen können. | Nicht verfügbar | Nicht verfügbar |
+| **Segmentierung**<br/> Die Möglichkeit, die Daten-Feed-Ausgabe mithilfe von Segmenten zu filtern. | Segmente, die auf die Datenansicht angewendet werden, werden automatisch vom Daten-Feed übernommen. Zusätzliche Segmente können auch direkt auf einen einzelnen Daten-Feed angewendet werden. Weitere Informationen finden Sie unter [Segmentierung in Daten-Feeds](/help/components/exports/cja-data-feeds/df-segmentation.md). | Nicht unterstützt. Daten-Feeds exportieren alle erfassten Daten ohne Segmentfilterung. |
+| **Berechnete Metriken**<br/> Benutzerdefinierte Metriken, die Sie aus vorhandenen Metriken erstellen können. | Nicht unterstützt | Nicht unterstützt |
 | **Persistenzmodell:**<br/> oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen bleiben. | Flexibel. Persistenzeinstellungen aus der Datenansicht (Zuordnung und Gültigkeit) werden zum Zeitpunkt der Berichterstellung angewendet, wenn der Feed generiert wird. Unterstützt alle in einer Datenansicht verfügbaren Zuordnungseinstellungen: **Original**, **Zuletzt**, **Alle**, **Erster bekannter** und **Letzter bekannter**. | Es werden nur **Attributionsmodelle „Zuletzt verwendet (Letztkontakt** und **Ausgangswert (Erstkontakt)** dargestellt. Die lineare Zuordnung wird wie beim letzten Kontakt gehandhabt. |
-| **Ausgabedateiformat**<br/> Das Format, das für Daten-Feed-Ausgabedateien verwendet wird, die an Ihr Cloud-Ziel gesendet werden. | Parquet<p>unterstützt nativ komplexe verschachtelte und strukturierte Daten. Produktlisten werden als strukturierte Arrays/verschachtelte Objekte dargestellt. </p><p>Erfordert ein Parquet-orientiertes Tool zum Lesen, z. B. BigQuery, Snowflake oder Apache Spark.</p> | TSV<p>Flache, für Menschen lesbare Zeilen. unterstützt nicht nativ strukturierte Daten. Komplexe Felder wie Produktlisten müssen als proprietäre, durch Trennzeichen getrennte Zeichenfolgen codiert werden, was eine benutzerdefinierte Parsing-Logik erfordert.</p> |
+| **Ausgabedateiformat**<br/> Das Format, das für Daten-Feed-Ausgabedateien verwendet wird, die an Ihr Cloud-Ziel gesendet werden. | Parquet<p>unterstützt nativ komplexe verschachtelte und strukturierte Daten. Felder wie `post_product_list` werden als strukturierte Arrays/verschachtelte Objekte dargestellt. </p><p>Erfordert ein Parquet-orientiertes Tool zum Lesen, z. B. BigQuery, Snowflake oder Apache Spark.</p><p>Die Schemastruktur ist in die Ausgabedatei eingebettet.</p> | TSV<p>Flache, für Menschen lesbare Zeilen. unterstützt nicht nativ strukturierte Daten. Komplexe Felder wie Produktlisten müssen als proprietäre, durch Trennzeichen getrennte Zeichenfolgen codiert werden, was eine benutzerdefinierte Parsing-Logik erfordert.</p> |
 | **Pfade für Ausgabedateien**<br/> Die Ordnerstruktur, die für bereitgestellte Ausgabedateien verwendet wird. | Verwendet **hive-artige Partitionspfade** (z. B. `year=2024/month=01/day=15/`), was ein effizientes Partitionsbereinigen bei der Abfrage von Daten in Data-Lake-Umgebungen wie Databricks oder Apache Spark ermöglicht. | Verwendet eine flache Verzeichnisstruktur. Hive-artige Pfade werden nicht unterstützt. |
 | **Versandziele**<br/> Die Cloud-Speicherorte, an die Daten-Feed-Ausgabedateien gesendet werden können. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. <p>unterstützt auch **SFTP**.</p> |
+| **Ähnlichkeit mit Analysis Workspace**<br/> Ob der Daten-Feed-Builder dieselben Komponenten und dieselbe Terminologie wie Analysis Workspace verwendet. | Die linke Leiste in Daten-Feeds ähnelt der linken Leiste von Workspace, und Komponenten, die in Daten-Feeds verfügbar sind, sind auch in Workspace verfügbar. | Eine statische Liste von Variablennamen, die nicht unbedingt mit dem übereinstimmen, was Sie in Analysis Workspace sehen. |
+| **Verfügbarkeit des Persistenzmodells**<br/> Die Persistenzmodelle, die für Dimensionen in einem Daten-Feed verfügbar sind. | Für Daten-Feeds sind fünf Persistenzmodelle verfügbar: Original, Zuletzt verwendet, Alle, Erster bekannter, Letzter bekannter | Für Daten-Feeds sind zwei Persistenzmodelle verfügbar: Erstkontakt und Letztkontakt |
 
 {style="table-layout:auto"}
 

@@ -24,7 +24,7 @@ topic_v2:
 source-git-commit: 9c0ddbb48c5cb1c62bded02d1455f2631ab1679f
 workflow-type: tm+mt
 source-wordcount: 10488
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -339,7 +339,7 @@ Im Rahmen des Verbindungs-Workflows [fügen Sie einen oder mehrere Datensätze h
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
 >title="Konto-ID"
->abstract="Wählen Sie eine Konto-ID aus den verfügbaren Feldern für Nicht-Identitäts- oder Nicht-Personen-Identitäten aus, die im Datensatzschema in Experience Platform definiert sind. Die enthaltenen Werte werden als eindeutige Kontokennungen auf Zeilenebene verwendet, wenn die zugehörigen Konto-ID-Informationen im Datensatz Person an Konto nicht verfügbar sind."
+>abstract="Wählen Sie eine Konto-ID aus den verfügbaren Nicht-Identitäts- und Nicht-Personen-Identitätsfeldern aus, die im Datensatzschema in Experience Platform definiert sind. Die enthaltenen Werte werden als eindeutige Kontokennungen auf Zeilenebene verwendet, wenn die zugehörigen Konto-ID-Informationen im Datensatz „Person zu Konto“ nicht verfügbar sind."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
@@ -419,7 +419,7 @@ Im Rahmen des Verbindungs-Workflows [fügen Sie einen oder mehrere Datensätze h
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_accountid"
 >title="Konto-ID"
->abstract="Wählen Sie optional eine Konto-ID aus den verfügbaren Feldern Nicht-Identität oder Nicht-Personen-Identität aus, die im XDM-Schema definiert sind. Die enthaltenen Werte werden als eindeutige Kontokennung auf Zeilenebene verwendet, wenn die zugehörigen Konto-ID-Informationen im Personenkonto-Datensatz nicht verfügbar sind."
+>abstract="Wählen Sie optional eine Konto-ID aus den verfügbaren Feldern Nicht-Identität oder Nicht-Personen-Identität aus, die im XDM-Schema definiert sind. Die enthaltenen Werte werden als eindeutige Kontokennung auf Zeilenebene verwendet, wenn die zugehörigen Konto-ID-Informationen im Personen-zu-Konto-Datensatz nicht verfügbar sind."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
@@ -742,7 +742,7 @@ Für einen Ereignisdatensatz in einer kontobasierten Verbindung können Sie Folg
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| **[!UICONTROL ID des globalen Kontos]** | Relevant, wenn Sie Ihrer Verbindung ein globales Konto als Container hinzugefügt haben.<br/>Wählen Sie eine globale Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitätsfeldern (keine Identität oder Nicht-Person) aus, die im Datensatzschema in Experience Platform definiert sind. Die enthaltenen Werte werden als eindeutige Kontokennungen auf Zeilenebene verwendet, wenn die zugehörigen Konto-ID-Informationen im Datensatz Person an Konto nicht verfügbar sind.  <p>Wenn ein Eintrag keinen Wert für die Identität enthält, die Sie als Konto-ID für den Ereignisdatensatz ausgewählt haben, wird der Eintrag übersprungen. |
+| **[!UICONTROL ID des globalen Kontos]** | Relevant, wenn Sie Ihrer Verbindung ein globales Konto als Container hinzugefügt haben.<br/>Wählen Sie eine globale Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitätsfeldern (keine Identität oder Nicht-Person) aus, die im Datensatzschema in Experience Platform definiert sind. Die enthaltenen Werte werden als eindeutige Kontokennungen auf Zeilenebene verwendet, wenn die zugehörigen Konto-ID-Informationen im Datensatz „Person zu Konto“ nicht verfügbar sind.  <p>Wenn ein Eintrag keinen Wert für die Identität enthält, die Sie als Konto-ID für den Ereignisdatensatz ausgewählt haben, wird der Eintrag übersprungen. |
 | **[!UICONTROL Konto-ID]** | Wählen Sie eine Konto-ID (die eindeutige Kennung für ein Konto) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind. Relevant, wenn Sie Ihrer Verbindung kein globales Konto als Container hinzugefügt haben. |
 | **[!UICONTROL Opportunity-ID]** | Wählen Sie eine Opportunity-ID (die eindeutige Kennung für eine Opportunity) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind. |
 | **[!UICONTROL Käufergruppen-ID]** | Wählen Sie eine Käufergruppen-ID (die eindeutige Kennung für eine Käufergruppe) aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind. |

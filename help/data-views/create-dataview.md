@@ -27,7 +27,7 @@ topic_v2:
 source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
 source-wordcount: 3152
-ht-degree: 74%
+ht-degree: 77%
 
 ---
 
@@ -67,7 +67,7 @@ So konfigurieren Sie eine neue oder vorhandene Datenansicht:
 >[!CONTEXTUALHELP]
 >id="dataview_externalid"
 >title="Externe ID"
->abstract="Das Ändern der externen ID wirkt sich darauf aus, wie der Name der Datenansicht in externen Quellen (z. B. Business Intelligence-Tools) angezeigt wird."
+>abstract="Eine Änderung der externen ID wirkt sich auf die Darstellung des Namens der Datenansicht in externen Quellen aus, z. B. Business Intelligence-Tools."
 
 
 Stellt übergreifende Einstellungen für die Datenansicht bereit.
@@ -87,7 +87,7 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 >[!CONTEXTUALHELP]
 >id="dataview_dataviewsinadobejourneyoptimizer"
 >title="Datenansichten in Journey Optimizer"
->abstract="Customer Journey Analytics erfordert eine Verbindung und eine Datenansicht, die mit Adobe Journey Optimizer kompatibel sind. Das System erstellt standardmäßig eine Verbindung und eine Datenansicht. Alternativ können Sie diese Option aktivieren, um dies als Standarddatenansicht für die Adobe Journey Optimizer-Berichterstellung festzulegen, wodurch die erforderlichen Komponenten zur Datenansicht und zu Datensätzen zur Verbindung hinzugefügt werden."
+>abstract="Customer Journey Analytics muss eine Verbindung und Datenansicht verwenden, die mit Adobe Journey Optimizer kompatibel sind. Das System erstellt standardmäßig eine Verbindung und eine Datenansicht. Alternativ können Sie diese Option aktivieren, um dies als Standarddatenansicht für das Adobe Journey Optimizer-Reporting festzulegen, wodurch die erforderlichen Komponenten zur Datenansicht und die erforderlichen Datensätze zur Verbindung hinzugefügt werden."
 >additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/integrations/ajo#connection" text="Welche Komponenten und Datensätze hinzugefügt werden."
 
 
@@ -292,7 +292,7 @@ Sie können ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_policies"
 >title="Richtlinien"
->abstract="Implementieren Sie Datennutzungsrichtlinien, um die Datenkonformität zu unterstützen. Diese Richtlinien beschreiben zulässige oder eingeschränkte Marketing-Aktionen für Daten in Experience Platform. Die Richtlinienfilter wenden die aktivierte Richtlinie auf die Datenansicht an."
+>abstract="Implementieren Sie Datennutzungsrichtlinien, um die Daten-Compliance zu unterstützen. Diese Richtlinien beschreiben zulässige oder eingeschränkte Marketing-Aktionen für Daten in Experience Platform. Die Richtlinienfilter wenden die aktivierte Richtlinie auf die Datenansicht an."
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Überblick"
 
 
@@ -312,10 +312,10 @@ Der Abschnitt **[!UICONTROL Enthaltene Komponenten]** enthält die Liste der **[
 
   Im Dialogfeld **[!UICONTROL Felder filtern nach]** können Sie nach folgenden Kategorien filtern:
 
-   * **[!UICONTROL Datentyp]** – Sie können einen oder mehrere der folgenden Datentypen auswählen: [!UICONTROL String], [!UICONTROL Integer], [!UICONTROL Short], [!UICONTROL Boolean], [!UICONTROL Double], [!UICONTROL Byte], [!UICONTROL Long], [!UICONTROL Date] oder [!UICONTROL Date-Time].
-   * **[!UICONTROL Datensätze]** – Wählen Sie einen oder mehrere Datensätze aus.
-   * **[!UICONTROL Data Governance]**: Wählen Sie eine oder mehrere Kennzeichnungen aus den Unterkategorien [!UICONTROL Benutzerdefinierte Kennzeichnungen], [!UICONTROL Vertragskennzeichnungen], [!UICONTROL Identitätskennzeichnungen], [!UICONTROL Sensitivitätskennzeichnungen], [!UICONTROL Partner-Ökosystem] oder [!UICONTROL Richtlinien] aus.
-   * **[!UICONTROL Sonstige]** – Wählen Sie eine oder mehrere der Optionen [!UICONTROL Enthält Daten], [!UICONTROL Ist Identität] oder [!UICONTROL Ist nicht veraltet] aus.
+  * **[!UICONTROL Datentyp]** – Sie können einen oder mehrere der folgenden Datentypen auswählen: [!UICONTROL String], [!UICONTROL Integer], [!UICONTROL Short], [!UICONTROL Boolean], [!UICONTROL Double], [!UICONTROL Byte], [!UICONTROL Long], [!UICONTROL Date] oder [!UICONTROL Date-Time].
+  * **[!UICONTROL Datensätze]** – Wählen Sie einen oder mehrere Datensätze aus.
+  * **[!UICONTROL Data Governance]**: Wählen Sie eine oder mehrere Kennzeichnungen aus den Unterkategorien [!UICONTROL Benutzerdefinierte Kennzeichnungen], [!UICONTROL Vertragskennzeichnungen], [!UICONTROL Identitätskennzeichnungen], [!UICONTROL Sensitivitätskennzeichnungen], [!UICONTROL Partner-Ökosystem] oder [!UICONTROL Richtlinien] aus.
+  * **[!UICONTROL Sonstige]** – Wählen Sie eine oder mehrere der Optionen [!UICONTROL Enthält Daten], [!UICONTROL Ist Identität] oder [!UICONTROL Ist nicht veraltet] aus.
 
   Wählen Sie **[!UICONTROL Übernehmen]** aus, um die Filter anzuwenden.
 

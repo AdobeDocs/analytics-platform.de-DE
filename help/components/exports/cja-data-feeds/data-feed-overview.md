@@ -19,10 +19,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
+source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
 workflow-type: tm+mt
-source-wordcount: 230
-ht-degree: 20%
+source-wordcount: 252
+ht-degree: 18%
 
 ---
 
@@ -31,6 +31,8 @@ ht-degree: 20%
 {{release-limited-testing}}
 
 Daten-Feeds sind eine leistungsstarke Methode, um Rohdaten aus Customer Journey Analytics zu erhalten. Sie können diese Rohdaten nach Ermessen Ihres Unternehmens auf anderen Plattformen außerhalb von Adobe verwenden. Die Daten werden in stündlichen Stapeln am Ende jeder Stunde oder in täglichen Stapeln am Ende jedes Tages bereitgestellt.
+
+Einen Vergleich der Daten-Feeds mit anderen Customer Journey Analytics-Exportmethoden, z. B. dem vollständigen Tabellenexport, finden Sie unter [Analytics-Produktvergleich](/help/getting-started/analytics-product-comparison.md).
 
 ## Voraussetzungen
 
