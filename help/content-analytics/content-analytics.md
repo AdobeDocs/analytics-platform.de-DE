@@ -4,30 +4,14 @@ description: Erfahren Sie mehr über den Wert und die Terminologie von Content A
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
-hold: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 TQID: https://experienceleague.adobe.com/x5FpRmZ-Wv6pPxYBEAyDzRqUSUpmwHFwbi55FwVKT5A
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 8490c4128ac906ba9421b91f9b9da433b91d084d
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: 1019
 ht-degree: 43%
@@ -49,7 +33,7 @@ Content Analytics bietet zunehmend Mehrwert:
 
 1. **Inhaltsnutzung**: Mit Content Analytics erhalten Sie Erkenntnisse dazu, welche Assets Impressions erhalten und wo Assets Impressions erhalten. Diese Einblicke helfen Ihnen zu erkennen, ob Assets in Ihren Web- und Mobile-Eigenschaften nicht oder übermäßig verwendet werden.
 1. **Interaktionen mit Inhalten**: Content Analytics kann Erkenntnisse zu Interaktionen bieten, z. B. die durchschnittliche Clickthrough-Rate für Assets mit bestimmten Attributen. Diese Einblicke helfen Ihnen, festzustellen, ob bestimmte Arten von Erlebnissen weiterhin effektiv sind.
-1. Content-Journey: Darüber hinaus können Sie in Kombination mit allen anderen in Experience Platform verfügbaren Daten zusätzliche Einblicke in Ihre Content-Journey erhalten, z. B. ob bestimmte Inhalte zusätzlich zur Interaktion zu Konversionen führen. Zum Beispiel, ob bestimmte Inhalte zusätzlich zur Interaktion zu Konversionen führen. Und mit diesem Wissen können Sie den ROI für verschiedene Inhaltstypen bestimmen.
+1. Inhalt **Journey**: Darüber hinaus können Sie in Kombination mit allen anderen in Experience Platform verfügbaren Daten zusätzliche Einblicke in Ihre Inhalts-Journey erhalten. So können Sie beispielsweise prüfen, ob bestimmte Inhalte zusätzlich zur Interaktion zu Konversionen führen. Zum Beispiel, ob bestimmte Inhalte zusätzlich zur Interaktion zu Konversionen führen. Und mit diesem Wissen können Sie den ROI für verschiedene Inhaltstypen bestimmen.
 1. **Inhaltspersonalisierung**: Mit der Content Analytics können Sie letztendlich anhand Ihrer Erkenntnisse handeln und diese Erkenntnisse verwenden, um zu bestimmen, wie Sie Geld für Inhalte ausgeben. Sollte ich beispielsweise bestimmte Inhaltstypen an bestimmte Zielgruppen senden? Welche Inhalte bieten mir Möglichkeiten zur gezielten Personalisierung?
 
 ## Terminologie
@@ -72,14 +56,14 @@ Content Analytics verwendet Web- und mobile Bildansichtsdaten und Paid-Media-Dat
 ![Content Analytics – Funktionsweise](assets/aca-overview-new-paid-media.gif)
 
 
-1. Wenn ein(e) Benutzende(r) eine Website oder [&#x200B; App besucht (für Content Analytics konfiguriert](config/configuration.md) zeichnet der Experience Platform Web- oder mobile SDK Impressionen und Interaktionen mit dem Inhalt auf.
+1. Wenn ein(e) Benutzende(r) eine Website oder [ App besucht (für Content Analytics konfiguriert](config/configuration.md) zeichnet der Experience Platform Web- oder mobile SDK Impressionen und Interaktionen mit dem Inhalt auf.
 Paid-Media-Daten werden täglich in Datensätzen von Quell-Connectoren erfasst (z. B. in Google und Meta). Content Analytics überwacht die [konfigurierten Paid-Media-Datensätze](config/configuration.md) auf neue, nicht funktionsbezogene Assets und Erlebnisse und verwendet Anzeigendatensatz-Metadaten, um Experience HTML zu erstellen. Dieses HTML-Erlebnis wird mit den Asset-Details als Paid-Media-Erlebnis kombiniert.
 
 1. Der Identity and Feature Service verarbeitet diese Interaktionen (aus dem Web und über Mobilgeräte) und Erlebnisse (aus bezahlten Medien). Dieser Prozess besteht aus einem Abrufdienst, der die öffentlich zugänglichen Versionen der konfigurierten URLs, die die Interaktionen definieren, und die HTML, die das Erlebnis definiert, erneut aufruft. Für alle abgerufenen URLs und HTML identifiziert der Identity Service die Erlebnisse und Assets eindeutig. Der Feature Service wendet KI-/ML-Services an, um Erlebnis- und Asset-Metadaten und -Attribute zu ermitteln.
 
 1. Die Ergebnisse der Identitäts- und Feature-Services [Komponenten, Attribute und Identitäten](/help/content-analytics/report/components.md) werden verwendet, um die relevanten spezifischen Content Analytics-Datensätze in Experience Platform zu aktualisieren.
 
-1. Sie können die Content Analytics-Daten zusammen mit Verhaltensdaten und anderen Lookup-Daten in einer Customer Journey Analytics-Einrichtung ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) und [Workspace](/help/analysis-workspace/home.md)) verwenden. Dieses Setup bildet die Grundlage für die einzigartigen Einblicke auf Makroebene in Ihren Inhalt. <br/>Mit der [Content Analytics-Vorlage können Sie Ihre Content Analytics-Berichte und -Analysen schnell &#x200B;](/help/content-analytics/report/report.md#template).
+1. Sie können die Content Analytics-Daten zusammen mit Verhaltensdaten und anderen Lookup-Daten in einer Customer Journey Analytics-Einrichtung ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) und [Workspace](/help/analysis-workspace/home.md)) verwenden. Dieses Setup bildet die Grundlage für die einzigartigen Einblicke auf Makroebene in Ihren Inhalt. <br/>Mit der [Content Analytics-Vorlage können Sie Ihre Content Analytics-Berichte und -Analysen schnell ](/help/content-analytics/report/report.md#template).
 
 
 >[!NOTE]
@@ -104,6 +88,6 @@ Paid-Media-Daten werden täglich in Datensätzen von Quell-Connectoren erfasst (
 >
 >[Content Analytics-Berichte](report/report.md)
 >[Konfigurieren von Content Analytics](config/configuration.md)
->[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722?profile.language=de)
+>[Berechnen von Bounces und Bounce-Raten in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722)
 >
 

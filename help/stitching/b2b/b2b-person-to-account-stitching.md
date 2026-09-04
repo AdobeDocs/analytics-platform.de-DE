@@ -6,20 +6,12 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2:
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1ef12bfccbecc74a0b437c9c582fe0f6c1c1e9e5
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: 2116
 ht-degree: 15%
@@ -28,7 +20,7 @@ ht-degree: 15%
 
 # B2B-Person mit Kontenzuordnung
 
-Die B2B-Personen-Konto-Zuordnung reichert Ihre Ereignisdatensätze mit Account-Identitäten an und ermöglicht eine vollständige Analyse auf der gesamten Kunden-Journey in Customer Journey Analytics. Wenn Ereignisse keine Konto-ID haben, die Customer Journey Analytics B2B edition für die Aufnahme benötigt, leitet die Personen-Konto-Zuordnung diese Informationen automatisch ab und fügt sie mithilfe eines von [&#x200B; bereitgestellten Datensatzes für die Zuordnung von Person zu Konto &#x200B;](#prerequisites).
+Die B2B-Personen-Konto-Zuordnung reichert Ihre Ereignisdatensätze mit Account-Identitäten an und ermöglicht eine vollständige Analyse auf der gesamten Kunden-Journey in Customer Journey Analytics. Wenn Ereignisse keine Konto-ID haben, die Customer Journey Analytics B2B edition für die Aufnahme benötigt, leitet die Personen-Konto-Zuordnung diese Informationen automatisch ab und fügt sie mithilfe eines von [ bereitgestellten Datensatzes für die Zuordnung von Person zu Konto ](#prerequisites).
 
 Ohne Personen-Konto-Zuordnung wird jedes Ereignis, das keine Konto-ID enthält, während der Aufnahme gelöscht. Die Zuordnung von Person zu Konto löst diese Einschränkung, indem das mit der Person verknüpfte Konto bei jedem Ereignis nachgeschlagen und die Konto-ID sowohl bei der Aufnahme als auch rückwirkend hinzugefügt wird.
 
@@ -61,7 +53,7 @@ In Customer Journey Analytics B2B edition werden Ereignisse ohne Konto-ID in die
 
 Die Zuordnung von B2B-Personen zu Konten verhindert, dass Ereignisse ignoriert und nicht aufgenommen werden, indem die folgenden Vorgänge verwendet werden:
 
-* [Personenidentitäten &#x200B;](#elevate-person-identities).
+* [Personenidentitäten ](#elevate-person-identities).
 * [Fügen Sie fehlende Kontoidentitäten hinzu](#add-missing-account-identitiers).
 
 
@@ -91,7 +83,7 @@ Dieser Datensatz für die Zuordnung von Person zu Konto wird durch diagrammbasie
 
 Die diagrammbasierte Zuordnung wird auch verwendet, um die Personen-IDs im Erlebnisereignis-Datensatz zu erhöhen. Siehe zum Beispiel den aktualisierten Wert für **emily@adobe.com**.
 
-Die diagrammbasierte Zuordnung wird auch verwendet, um die Personen-IDs im Erlebnisereignis-Datensatz zu erhöhen. Sie konfigurieren beispielsweise das Feld „Persistent ID“ (ECID), das als persistente Personen-ID verwendet werden soll, wenn Sie [Stitching für den Datensatz aktivieren](#enable-b2b-stitching-on-event-datasets). Basierend auf `5678` als ECID-Wert und `emily@adobe.com` als E-Mail-Wert, wird `emily@adobe.com` für das zugehörige Ereignis als erhöhte Personen-ID festgelegt.
+Die diagrammbasierte Zuordnung wird auch verwendet, um die Personen-IDs im Erlebnisereignis-Datensatz zu erhöhen. Sie konfigurieren beispielsweise das Feld „Persistent ID“ (ECID), das als persistente Personen-ID verwendet werden soll, wenn Sie [Stitching für den Datensatz aktivieren](#enable-b2b-person-to-account-stitching-on-event-datasets). Basierend auf `5678` als ECID-Wert und `emily@adobe.com` als E-Mail-Wert, wird `emily@adobe.com` für das zugehörige Ereignis als erhöhte Personen-ID festgelegt.
 
 | Zeitstempel | Dauerhafte ID | Ursprüngliche Konto-ID | Ursprüngliche Personen-ID | Erhöhte Personen-ID |
 |--|--|---|---|---|
@@ -230,11 +222,11 @@ Sie aktivieren und konfigurieren das B2B-Stitching zunächst auf Verbindungseben
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Aktivieren der Person-zu-Konto-Zuordnung"
 >abstract="Wenn aktiviert, verwendet dieser Datensatz die B2B-Zuordnung von Person zu Konto. Die **[!UICONTROL Persistent Person ID]**-Werte werden auf die Werte aus dem konfigurierten **[!UICONTROL Personen-ID-Namespace]** erhöht und dann verwendet, um die Konto-ID basierend auf dem Personen-Konto-Datensatz zu suchen.<br/>Wenn deaktiviert, verwendet dieser Datensatz keine B2B-Person zur Kontozuordnung und Sie müssen stattdessen eine erforderliche **[!UICONTROL Konto-ID]** auswählen."
->additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Konfigurieren der Einstellungen für die B2B-Person-Kontozuordnung"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Konfigurieren der Einstellungen für die B2B-Person-Kontozuordnung"
 
 Nachdem Sie die B2B-Zuordnung auf Verbindungsebene konfiguriert haben, müssen Sie B2B-Personen die Zuordnung für jeden Ereignisdatensatz, den Sie zuordnen möchten, einzeln aktivieren.
 
-1. Wählen Sie in den Verbindungseinstellungen **[!UICONTROL Datensätze hinzufügen]** oder öffnen Sie die Einstellungen für einen vorhandenen Ereignisdatensatz.<br/>Siehe [Hinzufügen von &#x200B;](/help/connections/create-connection.md#add-datasets)) oder [Bearbeiten eines &#x200B;](/help/connections/create-connection.md#edit-a-dataset)).
+1. Wählen Sie in den Verbindungseinstellungen **[!UICONTROL Datensätze hinzufügen]** oder öffnen Sie die Einstellungen für einen vorhandenen Ereignisdatensatz.<br/>Siehe [Hinzufügen von ](/help/connections/create-connection.md#add-datasets)) oder [Bearbeiten eines ](/help/connections/create-connection.md#edit-a-dataset)).
 
 1. Schalten Sie für den spezifischen Ereignisdatensatz, für den Sie die B2B-Person für die Kontozuordnung konfigurieren möchten, die Option **[!UICONTROL Person zu Kontozuordnung aktivieren]** ein.
 
