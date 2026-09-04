@@ -25,10 +25,10 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 4186
-ht-degree: 64%
+source-wordcount: 4806
+ht-degree: 54%
 
 ---
 
@@ -77,7 +77,7 @@ So bearbeiten Sie eine vorhandene Konfiguration:
 
 ## Assistent für geführte Konfigurationen
 
-Der Assistent für geführte Konfigurationen besteht aus vier Abschnitten ([Details](#details), [Verbindung](#connection), [Datenansicht](#data-view) und [Kanäle](#channels)), in denen Sie aufgefordert werden, die zum ordnungsgemäßen Einrichten und Konfigurieren von Content Analytics erforderlichen Details anzugeben. Schließen Sie jeden Abschnitt ab, bevor Sie zum nächsten Abschnitt wechseln, da einige Einstellungen in einem Abschnitt möglicherweise von den Konfigurationswerten in früheren Abschnitten abhängen.
+Der Assistent für geführte Konfigurationen umfasst vier Abschnitte: [Details](#details), [Verbindung](#connection), [Datenansicht](#data-view) und [Kanäle](#channels). In jedem Abschnitt werden Sie aufgefordert, die für die Konfiguration von Content Analytics erforderlichen Details anzugeben. Schließen Sie jeden Abschnitt ab, bevor Sie mit dem nächsten fortfahren, da einige Einstellungen von den Konfigurationswerten in früheren Abschnitten abhängen.
 
 ### Details {#onboarding-details}
 
@@ -89,7 +89,7 @@ Der Assistent für geführte Konfigurationen besteht aus vier Abschnitten ([Deta
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Details"
->abstract="In dieser Anleitung werden die Anforderungen für die Konfiguration der Inhaltsanalyse festgelegt. Geben Sie einen Namen für diese Konfiguration ein und wählen Sie die Sandbox aus, die die Inhaltsanalysedaten enthält, die Sie analysieren möchten."
+>abstract="In diesem Handbuch werden die Anforderungen für die Konfiguration von Content Analytics festgelegt. Geben Sie einen Namen für diese Konfiguration an und wählen Sie die Sandbox aus, die die Inhaltsanalysedaten enthält, die Sie analysieren möchten."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -99,7 +99,7 @@ Der Assistent für geführte Konfigurationen besteht aus vier Abschnitten ([Deta
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
 >title="Verbindung"
->abstract="Wählen Sie eine vorhandene Verbindung aus Customer Journey Analytics aus, mit der Ihre Content Analytics-Daten zusammengeführt werden sollen."
+>abstract="Wählen Sie eine bestehende Verbindung aus Customer Journey Analytics aus, mit der Ihre Content Analytics-Daten zusammengeführt werden sollen."
 
 Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content Analytics configuration`. Der Name ist zum Speichern oder Implementieren einer Konfiguration erforderlich.
 
@@ -238,14 +238,16 @@ Die folgenden Aktionen sind im Dialogfeld **[!UICONTROL Datenansicht]** verfügb
 
 ### Kanäle
 
-Im Abschnitt **[!UICONTROL Kanäle]** wählen Sie die Kanäle aus, die Sie für Content Analytics aktivieren möchten. Sie können zwischen **[!UICONTROL Mobil]** und **[!UICONTROL Web]** wählen.
+Im Abschnitt **[!UICONTROL Kanäle]** wählen Sie die Kanäle aus, die Sie für Content Analytics aktivieren möchten. Sie können zwischen **[!UICONTROL Mobile]**, **[!UICONTROL Web]** und **[!UICONTROL Paid Media]** wählen.
 
 * Um einen Kanal auszuwählen, den Sie noch nicht konfiguriert haben, klicken Sie auf **[!UICONTROL Aktivieren]**.
 * Um einen Kanal auszuwählen, der bereits konfiguriert ist, für den Sie jedoch die Konfiguration ändern möchten, wählen Sie **[!UICONTROL Konfiguration bearbeiten]**.
 
-Anschließend können Sie den Kanal detaillierter konfigurieren. Diese Konfiguration unterscheidet sich, je nachdem, ob Sie eine Konfiguration für den Kanal [Mobil](#mobile) oder [Web](#web) aktivieren und konfigurieren oder bearbeiten.
+Anschließend können Sie den Kanal detaillierter konfigurieren. Diese Konfiguration unterscheidet sich, je nachdem, ob Sie eine Konfiguration für den Kanal [Mobile](#mobile), [Web](#web) oder [Paid Media) aktivieren &#x200B;](#paid-media).
 
-#### Mobile {#mobile}
+#### Mobile
+
++++ Details
 
 <!-- For updated ACA -->
 
@@ -281,7 +283,7 @@ Anschließend können Sie den Kanal detaillierter konfigurieren. Diese Konfigura
 
 Für den mobilen Kanal können Sie [Erlebniserfassung und -definition](#experience-capture-and-definition), [Datenerfassung](#data-collection) und [Überschreibungen](#header-overrides) konfigurieren.
 
-##### Erlebniserfassung und -definition {#mobile-experience-capture-and-definition}
+### Erlebniserfassung und -definition {#mobile-experience-capture-and-definition}
 
 In diesem Abschnitt können Sie auswählen, ob Erlebnisse in die Mobile-Daten einbezogen werden sollen, die Sie mit Content Analytics erfassen.  Für den Mobile-Kanal haben Sie sich mit der Adobe Experience Platform SDK für Content Analytics als Erlebnis registriert.
 
@@ -289,7 +291,7 @@ Standardmäßig ist **[!UICONTROL Erlebnisse einschließen]** deaktiviert.
 
 Erwägen Sie nur, Erlebnisse einzubeziehen, wenn Sie Ihre Mobile App so instrumentiert haben, dass Erlebnisse registriert und Erlebnisansichten und -klicks verfolgt werden.
 
-##### Datenerfassung {#mobile-data-collection}
+### Datenerfassung {#mobile-data-collection}
 
 Mit den Datenerfassungseinstellungen können Sie festlegen, welche Daten (Erlebnisspeicherorte, Asset-Speicherorte, Asset-URLs) Sie für Content Analytics erfassen möchten. Stellen Sie sicher, dass Sie im Rahmen dieser Datenerfassung keine personenbezogenen Daten erfassen.
 
@@ -322,7 +324,7 @@ Konfigurieren der Datenerfassung:
   Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL auszuschließende Asset-URLs]** an. <br/>Zum Beispiel: `^(?!.*(logo\.jpg)).*$`, um alle Asset-URLs auszuschließen, die auf JPEG-Logo-Bilder in Content Analytics verweisen.
 
 
-##### Überschreibungen des Headers {#mobile-header-overrides}
+### Überschreibungen des Headers {#mobile-header-overrides}
 
 <!-- needs modification for mobile channel -->
 
@@ -334,12 +336,15 @@ Optional können Sie im Abschnitt **[!UICONTROL Überschreibungen der Kopfzeile]
 1. Geben Sie den **[!UICONTROL Header-Namen]** ein. Zum Beispiel `x-asset-service`.
 1. Geben Sie den **[!UICONTROL Header-Wert]** ein. Was auch immer Sie angeben, ist geheim und in der Benutzeroberfläche nicht sichtbar (es sei denn, Sie geben explizit den Wert ![Sichtbarkeit](/help/assets/icons/Visibility.svg) während der Eingabe an).
 
-##### Speichern {#mobile-save}
+### Speichern {#mobile-save}
 
 Nachdem Sie den Mobile-Kanal konfiguriert haben, klicken Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern. Wählen Sie **[!UICONTROL Abbrechen]**, um die Konfiguration abzubrechen.
 
++++
 
 #### Web {#web}
+
++++ Details
 
 Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-capture-and-definition-1), [Datenerfassung](#data-collection-1) und [Überschreibungen](#header-overrides-1).
 
@@ -444,7 +449,7 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >abstract="Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Assets ausschließen."
 
 
-##### Erlebniserfassung und -definition {#web-experience-capture-and-definition}
+### Erlebniserfassung und -definition {#web-experience-capture-and-definition}
 
 In diesem Abschnitt können Sie auswählen, ob Erlebnisse in die Web-Daten einbezogen werden sollen, die Sie mit Content Analytics erfassen.  Ein Erlebnis besteht aus dem gesamten Text auf einer Web-Seite, der anhand der URL des ersten Benutzerbesuchs reproduzierbar ist.
 
@@ -459,9 +464,7 @@ Ziehen Sie das Einschließen von Erlebnissen nur in Betracht, wenn Folgendes zut
 >
 >Implementieren Sie die [Content Analytics-Versionierung](manual.md#versioning), um Änderungen zu erfassen, die Sie an den Erlebnissen (Seiten) vornehmen, die Content Analytics unterliegen.
 
-
-
-###### Neue Konfiguration {#new-experiences-configuration}
+#### Neue Konfiguration {#new-experiences-configuration}
 
 So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguration ein:
 
@@ -475,13 +478,13 @@ So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguratio
 
 1. Wählen Sie **[!UICONTROL Regex hinzufügen]**, um eine Kombination aus einem regulären Domain-Ausdruck und Abfrageparametern hinzuzufügen.
 1. Geben Sie an, wie Inhalte auf Ihrer Website gerendert werden, indem Sie Kombinationen aus einem **[!UICONTROL regulären Domain-]**) und **[!UICONTROL Abfrageparametern]** definieren, die sich auf den Seiteninhalt auswirken.
-   1. Geben Sie einen **[!UICONTROL regulären Domain-Ausdruck]** ein, z. B. `/^(?!.*\b(store|help|admin)\b)/`. Stellen Sie sicher, dass Sie reguläre Ausdrücke mit dem Escape-Zeichen `/` versehen. Der reguläre Ausdruck der Domain gibt an, für welche URLs diese Parameter gelten. Beispielsweise können Sie über mehrere Sites verfügen, bei denen für jede Site der Inhalt durch andere Parameter gesteuert wird. Wenn die Abfrageparameter für alle Ihre Seiten gelten, können Sie `.*` verwenden, um alle Seiten anzugeben.
+   1. Geben Sie einen **[!UICONTROL regulären Domain-Ausdruck]** ein, z. B. `/^(?!.*\b(store|help|admin)\b)/`. Stellen Sie sicher, dass Sie reguläre Ausdrücke mit dem Escape-Zeichen `/` versehen. Der reguläre Ausdruck der Domain gibt an, für welche URLs diese Parameter gelten. Sie haben beispielsweise mehrere Sites, und unterschiedliche Parameter steuern den Inhalt für jede Site. Wenn die Abfrageparameter für alle Ihre Seiten gelten, können Sie `.*` verwenden, um alle Seiten anzugeben.
    1. Geben Sie eine kommagetrennte Liste von **[!UICONTROL Abfrageparametern]** an, z. B. `outdoors, patio, kitchen`.
 1. Wählen Sie **[!UICONTROL Entfernen]** aus, wenn Sie eine Kombination aus regulärem Domain-Ausdruck und Abfrageparametern entfernen möchten.
 1. Wählen Sie **[!UICONTROL Regulären Ausdruck hinzufügen]** aus, wenn Sie eine weitere Kombination aus einem regulären Ausdruck und Abfrageparametern hinzufügen möchten.
 
 
-###### Implementierte Konfiguration {#implemented-experiences-configuration}
+#### Implementierte Konfiguration {#implemented-experiences-configuration}
 
 So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine implementierte Konfiguration ein:
 
@@ -494,7 +497,7 @@ So bearbeiten Sie vorhandene Erlebnisse oder schließen neue Erlebnisse in eine 
 
 * Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus, um die Konfiguration der Datenerfassung für Erlebnisse in Content Analytics weiter zu bearbeiten. Sie werden zur [Adobe Content Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) in der Tags-Eigenschaft weitergeleitet, die mit der aktuellen Konfiguration verknüpft ist.
 
-##### Datenerfassung {#web-data-collection}
+### Datenerfassung {#web-data-collection}
 
 Mit den Datenerfassungseinstellungen können Sie festlegen, welche Daten (Seiten, Assets) Sie für Content Analytics erfassen möchten. Sammeln Sie im Rahmen dieser Datenerfassung keine personenbezogenen Daten.
 
@@ -514,7 +517,7 @@ Konfigurieren der Datenerfassung:
     1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
     1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
 
-    Verwenden Sie eine neue Tags-Eigenschaft, wenn Sie mithilfe der [Content Analytics-JavaScript-Bibliothek eine Tags-unabhängige Implementierung für den Webkanal erstellen &#x200B;](/help/content-analytics/config/tags-agnostic.md). Die Tags-Eigenschaft wird erstellt, Sie werden die Eigenschaft jedoch nicht in der agnostischen Implementierung verwenden. Für die agnostische Implementierung müssen Sie jedoch den Assistenten für geführte Konfigurationen mindestens einmal ausgeführt haben.
+    Verwenden Sie eine neue Tags-Eigenschaft, wenn Sie mithilfe der [Content Analytics JavaScript-Bibliothek eine Tags-unabhängige Implementierung für den Webkanal erstellen &#x200B;](/help/content-analytics/config/tags-agnostic.md). Die Tags-Eigenschaft wird erstellt, Sie verwenden die Eigenschaft jedoch nicht in der agnostischen Implementierung. Für die agnostische Implementierung müssen Sie jedoch den Assistenten für geführte Konfigurationen mindestens einmal ausgeführt haben.
 
 * Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Seiten ausschließen.
 
@@ -525,7 +528,7 @@ Konfigurieren der Datenerfassung:
   Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL Ein-/Auszuschließendes Asset]** an. <br/>Beispiel: `^(?!.*(logo\.jpg)).*$`, um alle Logo-Bilder im JPEG-Format aus Content Analytics auszuschließen.
 
 
-##### Überschreibungen des Headers {#web-header-overrides}
+### Überschreibungen des Headers {#web-header-overrides}
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_boldheader"
@@ -548,22 +551,162 @@ Optional können Sie im Abschnitt **[!UICONTROL Überschreibungen der Kopfzeile]
 1. Geben Sie den **[!UICONTROL Header-Wert]** ein. Was auch immer Sie angeben, ist geheim und in der Benutzeroberfläche nicht sichtbar (es sei denn, Sie geben explizit den Wert ![Sichtbarkeit](/help/assets/icons/Visibility.svg) während der Eingabe an).
 
 
+
+
+### Speichern {#web-save}
+
+Nachdem Sie die Details für den Webkanal angegeben haben, klicken Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern. Wählen Sie **[!UICONTROL Abbrechen]**, um die Konfiguration abzubrechen.
+
++++
+
+#### Bezahlte Medien {#paid-media}
+
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
 >title="Keine Quell-Connectoren"
 >abstract="Paid Media erfordern Experience Platform-Quell-Connectoren für Ihre Werbe-Publisher. In dieser Sandbox sind keine Google Ads- oder Meta-Anzeigen-Connectoren verfügbar. Konfigurieren Sie mindestens einen dieser Connectoren unter **[!UICONTROL Experience Platform]** > **[!UICONTROL Quellen]** und kehren Sie zu diesem Schritt zurück, um die Konfiguration von Paid Media für Content Analytics fortzusetzen."
 >additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads-Quelle"
 
-##### Speichern {#web-save}
++++ Details
 
-Nachdem Sie die Details für den Webkanal angegeben haben, klicken Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern. Wählen Sie **[!UICONTROL Abbrechen]**, um die Konfiguration abzubrechen.
+>[!NOTE]
+>
+>Der Paid-Media-Kanal ist nicht für Customer Journey Analytics- und Experience Platform-Bereitstellungen auf AWS verfügbar.
 
+
+Für den Paid-Media-Kanal werden alle unterstützten [Anzeigenplattformen](#paidmedia-adplatforms) die in der konfigurierten Sandbox verbunden sind, automatisch in Content Analytics aufgenommen.
+
+### Werbeplattformen {#paidmedia-adplatforms}
+
+Bezahlte Medien erfordern die Konfiguration von Experience Platform-Quell-Connectoren für Ihre Anzeigenverlage.
+
+Falls **[!UICONTROL Kein unterstützter Quell-Connector gefunden]** angezeigt wird, haben Sie in Ihrer konfigurierten Sandbox keinen Quell-Connector für die verfügbare Anzeigenplattform konfiguriert.
+
+![Keine Quell-Connectoren konfiguriert](/help/content-analytics/assets/aca-paid-media-no-source-connectors.png)
+
+Um Quell-Connectoren für Ihre Werbeplattformen zu konfigurieren, wählen Sie **[!UICONTROL Zu AEP-Quellen wechseln]** aus. Sie werden zur **[!UICONTROL Quellen]** in Experience Platform weitergeleitet.
+
+Unten finden Sie Beispiele zum Konfigurieren des Quell-Connectors für Google Ads und Meta Ads.
+
+>[!BEGINTABS]
+
+>[!TAB Google Ads]
+
+1. Wählen Sie in Experience Platform **[!UICONTROL Quellen]** auf der Karte {**[!UICONTROL }Google Ads]** die Option Setup **aus, um den Einrichtungsassistenten zu starten.**
+
+   >[!WARNING]
+   >
+   >Verwenden Sie **[!UICONTROL Setup]** nicht auf der Karte **Google Ads (Beta**.
+
+
+1. Wählen Sie im ➊ **[!UICONTROL Authentifizierung]** des Assistenten die Option **[!UICONTROL Neues Konto]** und geben Sie einen **[!UICONTROL Kontonamen]**.
+
+   ![Authentifizierungsschritt des Google Ads-Quell-Connectors 1](../assets/paid-media-google-authentication-1.png)
+
+1. Wählen **[!UICONTROL Dialogfeld „Mit Google]**&quot; ein Konto aus, das das Google Ads Manager-Konto und das Google Ads-Konto enthält.
+
+   ![Authentifizierungsschritt 2 des Google Ads-Quell-Connectors](../assets/paid-media-google-authentication-2.png)
+
+1. Überprüfen Sie Ihre Anmeldeinformationen mithilfe eines Passschlüssels oder eines anderen Authentifizierungsmechanismus.
+
+   ![Authentifizierung beim Google Ads-Quell-Connector - Schritt 3](../assets/paid-media-google-authentication-3.png)
+
+1. Wählen **[!UICONTROL Weiter]** im Dialogfeld aus **[!UICONTROL Adobe Experience Platform möchte Zugriff auf Ihr Google-Konto]**.
+
+   ![Authentifizierung beim Google Ads-Quell-Connector - Schritt 4](../assets/paid-media-google-authentication-4.png)
+
+1. Nach erfolgreicher Authentifizierung wird ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg)**[!UICONTROL Connected]** im Schritt ➊&#x200B;**[!UICONTROL Authentifizierung]** des Assistenten angezeigt.
+
+   ![Authentifizierung beim Google Ads-Quell-Connector - Schritt 5](../assets/paid-media-google-authentication-5.png)
+
+   Wählen Sie **[!UICONTROL Weiter]** aus.
+
+1. Geben Sie ➋ Schritt **[!UICONTROL Datenflussdetails]** des Assistenten einen Namen **[!UICONTROL Datenfluss]** ein. Sie können auch Optionen zum Abonnieren von Warnhinweisen aktivieren.
+
+   ![Datenflussdetails des Google Ads-Quell-Connectors](../assets/paid-media-google-dataflow-1.png)
+
+   Wählen Sie **[!UICONTROL Weiter]** aus.
+
+1. Überprüfen Sie ➌ Schritt **[!UICONTROL Überprüfen]** des Assistenten die Details zum Quell-Connector.
+
+   ![Überprüfung des Google Ads-Quell-Connectors](../assets/paid-media-google-review-1.png)
+
+   Wählen Sie **[!UICONTROL Beenden]** aus.
+
+1. Schließlich sehen Sie die Details eines erfolgreich konfigurierten Google-Quell-Connectors.
+
+   ![Quell-Connector für Google Ads endgültig](../assets/paid-media-google-final.png)
+
+
+>[!TAB Meta-Anzeigen]
+
+1. Wählen Sie in Experience Platform **[!UICONTROL Quellen]** auf der Karte {**[!UICONTROL }Meta Ads]** die Option Setup **aus, um den Einrichtungsassistenten zu starten.**
+
+1. Wählen Sie im ➊ **[!UICONTROL Authentifizierung]** des Assistenten die Option **[!UICONTROL Neues Konto]** und geben Sie einen **[!UICONTROL Kontonamen]**.
+
+   ![Authentifizierungsschritt des Meta Ads-Quell-Connectors 1](../assets/paid-media-meta-authentication-1.png)
+
+1. Melden Sie sich bei Ihrem Facebook-Konto an, für das Sie Ads Manager konfiguriert haben. Wenn Sie bereits angemeldet sind, wird ein Dialogfeld angezeigt, das als angemeldeter Benutzer fortgesetzt wird.
+
+   ![Authentifizierungsschritt 2 des Meta Ads-Quell-Connectors](../assets/paid-media-meta-authentication-2.png)
+
+1. Nach erfolgreicher Authentifizierung wird ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg)**[!UICONTROL Connected]** im Schritt ➊&#x200B;**[!UICONTROL Authentifizierung]** des Assistenten angezeigt.
+
+   ![Authentifizierung beim Meta Ads-Quell-Connector - Schritt 3](../assets/paid-media-meta-authentication-3.png)
+
+   Wählen Sie **[!UICONTROL Weiter]** aus.
+
+1. Wählen Sie im ➋ **[!UICONTROL Konten auswählen]** des Assistenten die Konten aus, die Sie konfigurieren möchten.
+
+   ![Meta Ads-Quell-Connector, um Konten auszuwählen](paid-media-meta-select-account.png)
+
+   Wählen Sie **[!UICONTROL Weiter]** aus.
+
+1. Geben Sie ➌ Schritt **[!UICONTROL Datenflussdetails]** des Assistenten einen Namen **[!UICONTROL Datenfluss]** ein. Sie können auch Optionen zum Abonnieren von Warnhinweisen aktivieren.
+
+   ![Datenfluss des Meta Ads-Quell-Connectors](../assets/paid-media-meta-dataflow-1.png)
+
+   Wählen Sie **[!UICONTROL Weiter]** aus.
+
+1. Überprüfen Sie ➍ Schritt **[!UICONTROL Überprüfen]** des Assistenten die Details zum Quell-Connector.
+
+   ![Überprüfung des Meta Ads-Quell-Connectors](../assets/paid-media-meta-review-1.png)
+
+1. Schließlich sehen Sie die Details eines erfolgreich konfigurierten Google-Quell-Connectors.
+
+   ![Quell-Connector für Meta Ads endgültig](../assets/paid-media-meta-final.png)
+
+>[!ENDTABS]
+
+Weitere Informationen zu den unterstützten Quell-Connectoren für [&#128279;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home) Paid-Media-Kanal finden Sie unter Übersicht über Source-Connectoren .
+
+Nachdem Sie Quell-Connectoren in Experience Platform konfiguriert haben, wählen Sie ![Aktualisieren](/help/assets/icons/Refresh.svg) **[!UICONTROL Aktualisieren]** aus, um die Liste der Quell-Connectoren zu aktualisieren.
+
+Sie sehen die Liste der verfügbaren Anzeigenplattformen und welche davon ![StatusGreen](/help/assets/icons/StatusGreen.svg) **Connected** und welche ![StatusGray](/help/assets/icons/StatusGray.svg) **Not configuring**.
+
+![Google-Connector konfiguriert](/help/content-analytics/assets/aca-paid-media-google-source-connectors.png)
+
+
+### Datenverhalten {#paidmedia-databehavior}
+
+Wenn Sie auf **[!UICONTROL Speichern]** klicken, wird Content Analytics automatisch:
+
+* Aktualisiert die Customer Journey Analytics-Verbindung, um Paid-Media-Datensätze von allen verbundenen Quell-Connectoren in dieser Sandbox einzuschließen.
+* Aktiviert Paid-Media-Dimensionen und -Metriken in allen ausgewählten Datenansichten.
+* Verwendet Paid-Media-Kanäle als filterbare Dimension in Workspace-Berichten.
+
+### Speichern {#paidmedia-save}
+
+Wählen Sie **[!UICONTROL Speichern]** aus, um die Konfiguration **[!UICONTROL Paid Media]** zu speichern.
+
+
++++
 
 ### Zusammenfassung {#summary}
 
 Nachdem Sie alle erforderlichen Details angegeben haben, werden die Informationen zu den erstellten oder geänderten Artefakten in einer Zusammenfassung aufgeführt.
 
-* Beim Implementieren einer neuen Konfiguration wird Ihnen die Zusammenfassung **[!UICONTROL Sie sind fast bereit, _Konfigurationsname_ für Content Analytics zu implementieren]** angezeigt.
+* Wenn Sie **[!UICONTROL neue Konfiguration implementieren, wird eine Zusammenfassung _Sie können_ Konfigurationsnamen für]** implementieren angezeigt.
 
 * Für vorhandene implementierte Konfigurationen wird die Zusammenfassung **[!UICONTROL Sie haben _Konfigurationsname_ für Content Analytics implementiert]** angezeigt.
 
@@ -579,7 +722,7 @@ Nachdem Sie alle erforderlichen Details angegeben haben, werden die Informatione
 Wenn Sie eine Konfiguration erstellen oder bearbeiten, haben Sie die folgenden Optionen:
 
 * **[!UICONTROL Verwerfen]**: Alle im Rahmen der Konfiguration vorgenommenen Änderungen werden verworfen.
-* **[!UICONTROL Für später speichern]**: Änderungen an einer Konfiguration werden gespeichert. Sie können die Konfiguration zu einem späteren Zeitpunkt erneut aufrufen, um weitere Änderungen vorzunehmen, oder die Konfiguration implementieren. Zum Speichern einer Konfiguration ist lediglich ein Wert für [!UICONTROL Name] erforderlich.
+* **[!UICONTROL Für später speichern]**: Änderungen an einer Konfiguration werden gespeichert. Um weitere Änderungen vorzunehmen oder die Konfiguration zu implementieren, besuchen Sie sie zu einem späteren Zeitpunkt erneut. Zum Speichern einer Konfiguration ist lediglich ein Wert für [!UICONTROL Name] erforderlich.
 * **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer Konfiguration werden gespeichert und implementiert. Alle als &quot;![&quot; markierten &#x200B;](/help/assets/icons/Required.svg) müssen über korrekte Werte verfügen. Die Implementierung besteht aus Folgendem:
 
   * **[!UICONTROL Customer Journey Analytics-Konfiguration]**:

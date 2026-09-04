@@ -22,10 +22,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 1365
-ht-degree: 48%
+source-wordcount: 1643
+ht-degree: 41%
 
 ---
 
@@ -53,7 +53,7 @@ Basierend auf den Content Analytics-spezifischen Dimensionen, die Sie in Ihrem P
 
 Standardmäßig werden Miniaturansichten in einer [Freiformtabelle“ &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). So konfigurieren Sie die Anzeige von Miniaturen für eine Content Analytics-Dimension:
 
-* Bewegen Sie den Mauszeiger über eine Kopfzeile für eine Content Analytics-Dimension, z. B. **[!UICONTROL Asset-IDs]** oder **[!UICONTROL Erlebnis-IDs]**.
+* Bewegen Sie den Mauszeiger über eine Kopfzeile für eine Content Analytics-Dimension. z. B. **[!UICONTROL Asset-IDs]** oder **[!UICONTROL Erlebnis-IDs]**.
 * Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) aus.
 * Aktivieren oder deaktivieren Sie im Popup **[!UICONTROL Zeileneinstellungen]** unter **[!UICONTROL Einstellungen]** die Option **[!UICONTROL Miniaturansichten anzeigen]**.
 
@@ -99,7 +99,11 @@ Es werden die folgenden Details angezeigt.
 | **[!UICONTROL Erlebnisattribute]**: Die [Attribute](/help/content-analytics/report/components.md#experience-attributes) des Erlebnisses. | **[!UICONTROL Asset-Attribute]**: Die [Attribute](/help/content-analytics/report/components.md#asset-attributes) des Assets. |
 
 
-## Vorlage
+## Vorlagen
+
+Content Analytics bietet zwei Projektvorlagen in Workspace, mit denen Sie schnell ein Projekt erstellen können.
+
+### Content Analytics-Vorlage
 
 Eine Content Analytics [Vorlage](/help/analysis-workspace/templates/use-templates.md) ist verfügbar, die Ihnen dabei hilft zu erfahren, welche Inhalte und Inhaltsattribute am besten funktionieren. Die Vorlage ist Teil des Anwendungsfalls [Web-Kanal und Interaktion](/help/analysis-workspace/templates/use-templates.md#web-engagement) und beschreibt, wie Ihre Inhalte auf granularer Ebene abschneiden. Sie können die Leistung einzelner Assets oder bestimmter Attribute überprüfen.
 
@@ -108,7 +112,7 @@ Basierend auf Ihren Erkenntnissen können Sie eine Reihe von Schritten ausführe
 So verwenden Sie die Vorlage:
 
 1. Wählen Sie im Hauptmenü die Option **[!UICONTROL Arbeitsbereich]** aus.
-1. Stellen Sie sicher, dass Sie eine Datenansicht ausgewählt haben, die bereits für Content Analytics konfiguriert ist.
+1. Stellen Sie sicher, dass Sie eine Datenansicht ausgewählt haben, die für Content Analytics konfiguriert ist.
 1. Suchen Sie nach oder verwenden Sie Segmente (**[!UICONTROL Web]** für **[!UICONTROL Kanal]** und **[!UICONTROL Interaktion]** für **[!UICONTROL Anwendungsfall]**) und wählen Sie die Vorlage **[!UICONTROL Content Analytics]** aus.
 1. Wählen Sie **[!UICONTROL Vorlage verwenden]** aus.
 1. Wählen Sie im Dialogfeld **[!UICONTROL Vorlage einrichten]** eine Metrik aus dem Dialogfeld **[!UICONTROL Konversionsmetrik auswählen]** aus, z. B. **[!UICONTROL Asset – CTR]**.
@@ -168,7 +172,7 @@ Content Analytics verwendet KI und GenAI, um jedem Asset automatisch Metadaten u
   >Dieses Panel wird nur angezeigt, wenn Sie in Ihre Content Analytics-Konfiguration [Erlebnisse eingeschlossen](/help/content-analytics/config/guided.md#experience-capture-and-definition) haben.
   > 
 
-  Während sich Asset-Attribute auf die visuellen Qualitäten von Bildern konzentrieren, liegt der Fokus bei Erlebnisattributen auf dem Seitentext. Mit den folgenden Visualisierungen können Sie untersuchen, welche Erlebnisattribute zur Konversion beitragen. Diese Attribute werden auch automatisch mithilfe von KI- und GenKI-Modellen zugewiesen.
+  Während sich Asset-Attribute auf die visuellen Qualitäten von Bildern konzentrieren, liegt der Fokus bei Erlebnisattributen auf dem Text Ihrer Seite. Mit den folgenden Visualisierungen können Sie untersuchen, welche Erlebnisattribute zur Konversion beitragen. Diese Attribute werden auch automatisch mithilfe von KI- und GenKI-Modellen zugewiesen.
 
   Das Panel besteht aus den folgenden Visualisierungen:
 
@@ -195,6 +199,21 @@ In dieser Freiformtabelle wird angegeben, wo die am häufigsten angezeigten Asse
 
     Sie können [!UICONTROL Asset-Wahrnehmungs-ID] auch durch [!UICONTROL Element-ID] ersetzen, um einen Eintrag mit Informationen dazu zu erhalten, wo bestimmte Bild-URLs referenziert werden.
 
+
+### Paid Media Content Analytics-Vorlage
+
+Eine Paid-Media-Content Analytics [Vorlage](/help/analysis-workspace/templates/use-templates.md) ist verfügbar, die Ihnen dabei hilft zu erfahren, welche Paid-Media-Inhalte und -Inhaltsattribute sich am besten eignen. Die Vorlage ist Teil des Anwendungsfalls [Web-Kanal und Interaktion](/help/analysis-workspace/templates/use-templates.md#web-engagement) und hilft Ihnen zu verstehen, wie Ihre Paid-Media-Inhalte auf einer granularen Ebene funktionieren. Sie können die Reichweite, Interaktion, Ausgaben und Effizienz bezahlter Medien in Netzwerken, Konten, Kampagnen, Erlebnissen und Assets überprüfen. Die Metriken und Dimensionen in diesem Bedienfeld bleiben absichtlich im Korn „Asset-Zusammenfassung für bezahlte Medien“. Kombinieren Sie keine Zusammenfassungsdatensätze der Bedienfelder in dieser Vorlage mit Ereignisdaten.
+
+Je nachdem, was Sie lernen, können Sie eine beliebige Anzahl von Dingen tun, z. B. sich wieder darauf konzentrieren, wie Sie Geld für Ihre bezahlten Medienkanäle ausgeben, mehr Geld für Kampagnen mit schlechten Leistungen ausgeben oder mehr Geld für Kampagnen mit hohen Leistungen ausgeben.
+
+So verwenden Sie die Vorlage:
+
+1. Wählen Sie im Hauptmenü die Option **[!UICONTROL Arbeitsbereich]** aus.
+1. Stellen Sie sicher, dass Sie eine Datenansicht ausgewählt haben, die für Content Analytics konfiguriert ist.
+1. Suchen oder verwenden Sie Segmente (**[!UICONTROL Web]** für **[!UICONTROL Kanal]** und **[!UICONTROL Interaktion]** für **[!UICONTROL Anwendungsfall]**, um die Vorlage **[!UICONTROL Paid Media Content Analytics]** zu finden und auszuwählen.
+1. Wählen Sie **[!UICONTROL Vorlage verwenden]** aus.
+
+Ein **[!UICONTROL Content Analytics - Paid Media Summary Data]**-Projekt wird in [Analysis Workspace](/help/analysis-workspace/home.md) geöffnet. Das Projekt besteht aus dem **[!UICONTROL Paid Media Performance]** [panel](/help/analysis-workspace/c-panels/panels.md) mit [Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) und [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). Verwenden Sie das Bedienfeld, um die Reichweite, Interaktion, Ausgaben und Effizienz bezahlter Medien in Netzwerken, Konten, Kampagnen, Erlebnissen und Assets zu überprüfen. Die Metriken und Dimensionen im Bedienfeld bleiben absichtlich im Korn „Asset-Zusammenfassung für bezahlte Medien“. Zusammenfassende Datensätze dürfen nicht mit Ereignisdaten kombiniert werden.
 
 >[!MORELIKETHIS]
 >

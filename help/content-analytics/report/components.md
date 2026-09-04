@@ -20,7 +20,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 3e9a9042bfe707971c4e37d319a23ab9bdc80075
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: 1869
 ht-degree: 56%
@@ -38,8 +38,8 @@ Content Analytics fügt die folgenden Komponentenkategorien (Dimensionen, [berec
 * [Asset-Metadaten](#asset-metadata)
 * [Asset-Attribute](#asset-attributes)
 * [Asset-Ereignisse](#asset-events)
-* [Paid Media](#paid-media)
 * [Berechnete Metriken](#calculated-metrics)
+* [Paid Media](#paid-media)
 
 In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein von KI/ML generiertes Attribut-/Wert-Paar an.
 
@@ -158,11 +158,23 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 {style="table-layout:fixed"}
 -->
 
+
+## Berechnete Metriken
+
+| Titel | Beschreibung | Typ |
+|---|---|---|
+| Asset – Clickthrough-Rate | Asset-Klicks/Asset-Ansichten | Berechnete Metrik |
+| Klickrate der Erlebnisse | Erlebnis-Klicks/Erlebnis-Ansichten | Berechnete Metrik |
+
+{style="table-layout:fixed"}
+
+
+
 ## Paid Media
 
 Diese Komponenten werden einer Datenansicht hinzugefügt, wenn der Kanal **Bezahlte Medien** über einen [Quell-Connector für bezahlte Medien in Adobe Experience Platform aktiviert &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home)z. B. Meta Ads oder Google Ads). Sie ermöglichen Ihnen Berichte zu Paid-Media-Entitäten sowie zu kreativen Inhalten und Ausgaben neben Web- und mobilen Inhalten.
 
-Die oben beschriebenen KI **generierten** Asset-Attribute **und Erlebnisattribute** sind auch für Kreative mit bezahlten Medien verfügbar. Dieselbe Funktion läuft über die Kanäle Web, Mobile und bezahlte Medien.
+Die oben beschriebenen KI-generierten [Asset](#asset-attributes)Attribute und [Erlebnisattribute](#experience-attributes) sind auch für Kreative mit bezahlten Medien verfügbar. Die gleiche Funktion ist über die Kanäle Web, Mobile und Paid Media verfügbar.
 
 ### Paid Media-Dimensionen
 
@@ -266,14 +278,3 @@ Die oben beschriebenen KI **generierten** Asset-Attribute **und Erlebnisattribut
 | Durchschnittlicher Bestellwert | Gesamtauftragswert geteilt durch Käufe. | Berechnete Metrik |
 
 {style="table-layout:fixed"}
-
-
-## Berechnete Metriken
-
-| Titel | Beschreibung | Typ |
-|---|---|---|
-| Asset – Clickthrough-Rate | Asset-Klicks/Asset-Ansichten | Berechnete Metrik |
-| Klickrate der Erlebnisse | Erlebnis-Klicks/Erlebnis-Ansichten | Berechnete Metrik |
-
-{style="table-layout:fixed"}
-

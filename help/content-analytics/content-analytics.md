@@ -26,10 +26,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 906
-ht-degree: 55%
+source-wordcount: 1019
+ht-degree: 43%
 
 ---
 
@@ -48,7 +48,7 @@ Content Analytics bietet zunehmend Mehrwert:
 
 1. **Inhaltsnutzung**: Mit Content Analytics erhalten Sie Erkenntnisse dazu, welche Assets Impressions erhalten und wo Assets Impressions erhalten. Diese Einblicke helfen Ihnen zu erkennen, ob Assets in Ihren Web- und Mobile-Eigenschaften nicht oder übermäßig verwendet werden.
 1. **Interaktionen mit Inhalten**: Content Analytics kann Erkenntnisse zu Interaktionen bieten, z. B. die durchschnittliche Clickthrough-Rate für Assets mit bestimmten Attributen. Diese Einblicke helfen Ihnen, festzustellen, ob bestimmte Arten von Erlebnissen weiterhin effektiv sind.
-1. Content-Journey: Darüber hinaus können Sie in Kombination mit allen anderen in Experience Platform verfügbaren Daten zusätzliche Einblicke in Ihre Content-Journey erhalten, z. B. ob bestimmte Inhalte zusätzlich zur Interaktion zu Konversionen führen. Zum Beispiel, ob bestimmte Inhalte zusätzlich zur Interaktion zu Konversionen führen. Und mit diesem Wissen können Sie den ROI für verschiedene Inhaltstypen bestimmen.
+1. Inhalt **Journey**: Darüber hinaus können Sie in Kombination mit allen anderen in Experience Platform verfügbaren Daten zusätzliche Einblicke in Ihre Inhalts-Journey erhalten. So können Sie beispielsweise prüfen, ob bestimmte Inhalte zusätzlich zur Interaktion zu Konversionen führen. Zum Beispiel, ob bestimmte Inhalte zusätzlich zur Interaktion zu Konversionen führen. Und mit diesem Wissen können Sie den ROI für verschiedene Inhaltstypen bestimmen.
 1. **Inhaltspersonalisierung**: Mit der Content Analytics können Sie letztendlich anhand Ihrer Erkenntnisse handeln und diese Erkenntnisse verwenden, um zu bestimmen, wie Sie Geld für Inhalte ausgeben. Sollte ich beispielsweise bestimmte Inhaltstypen an bestimmte Zielgruppen senden? Welche Inhalte bieten mir Möglichkeiten zur gezielten Personalisierung?
 
 ## Terminologie
@@ -63,13 +63,21 @@ Content Analytics verwendet die folgenden Schlüsselbegriffe:
 
 ## Funktionsweise
 
-Content Analytics verwendet Web- und mobile Bildansichtsdaten aus Experience Platform-Ereignisdatensätzen [Erfassen von Inhaltsereignisdaten](config/datacollection.md). Für diese Inhaltserlebnisereignisse müssen die Daten mit Experience Platform Edge Network erfasst werden (Web SDK, Mobile SDK, Server-API). Verhaltensdaten können mit dem Web SDK, Mobile SDK oder dem Analytics Source Connector erfasst werden.
+Content Analytics verwendet Web- und mobile Bildansichtsdaten und Paid-Media-Daten aus Experience Platform-Ereignisdatensätzen, um [Inhaltsereignisdaten zu erfassen](config/datacollection.md). Für diese Inhaltserlebnisereignisse müssen die Daten mit Experience Platform Edge Network (Web SDK, Mobile SDK, Server API) oder über Experience Platform-Quell-Connectoren erfasst werden.
 
-![Content Analytics – Funktionsweise](assets/aca-overview-new.gif)
+* Verhaltensdaten können mit dem Web SDK, Mobile SDK oder dem Analytics Source Connector erfasst werden.
+* Für bezahlte Medien werden Erlebnisdaten aus den Paid-Media-Ereignisdatenquellen rekonstruiert, die in Experience Platform über verfügbare Paid-Media-Quell-Connectoren erfasst werden.
 
-1. Wenn ein(e) Benutzende(r) eine Website oder [&#x200B; App besucht (für Content Analytics konfiguriert](config/configuration.md) zeichnet das Experience Platform Web oder Mobile SDK Impressionen und Interaktionen mit Inhalten auf.
-1. Der Identity and Feature Service verarbeitet diese Interaktionen. Dieser Prozess umfasst einen Abrufdienst, der die öffentlich zugänglichen Versionen der konfigurierten URLs, die die Interaktionen definieren, erneut aufruft. Bei allen abgerufenen URLs bewirkt der Identity Service eine eindeutige Identifizierung der Erlebnisse und Assets. Der Feature Service wendet KI-/ML-Services an, um Erlebnis- und Asset-Metadaten und -Attribute zu ermitteln.
-1. Die Ergebnisse dieser Services ([Komponenten, Attribute und Identitäten](/help/content-analytics/report/components.md)) werden verwendet, um die relevanten spezifischen Content Analytics-Datensätze in Experience Platform zu aktualisieren.
+![Content Analytics – Funktionsweise](assets/aca-overview-new-paid-media.gif)
+
+
+1. Wenn ein(e) Benutzende(r) eine Website oder [&#x200B; App besucht (für Content Analytics konfiguriert](config/configuration.md) zeichnet der Experience Platform Web- oder mobile SDK Impressionen und Interaktionen mit dem Inhalt auf.
+Paid-Media-Daten werden täglich in Datensätzen von Quell-Connectoren erfasst (z. B. in Google und Meta). Content Analytics überwacht die [konfigurierten Paid-Media-Datensätze](config/configuration.md) auf neue, nicht funktionsbezogene Assets und Erlebnisse und verwendet Anzeigendatensatz-Metadaten, um Experience HTML zu erstellen. Dieses HTML-Erlebnis wird mit den Asset-Details als Paid-Media-Erlebnis kombiniert.
+
+1. Der Identity and Feature Service verarbeitet diese Interaktionen (aus dem Web und über Mobilgeräte) und Erlebnisse (aus bezahlten Medien). Dieser Prozess besteht aus einem Abrufdienst, der die öffentlich zugänglichen Versionen der konfigurierten URLs, die die Interaktionen definieren, und die HTML, die das Erlebnis definiert, erneut aufruft. Für alle abgerufenen URLs und HTML identifiziert der Identity Service die Erlebnisse und Assets eindeutig. Der Feature Service wendet KI-/ML-Services an, um Erlebnis- und Asset-Metadaten und -Attribute zu ermitteln.
+
+1. Die Ergebnisse der Identitäts- und Feature-Services [Komponenten, Attribute und Identitäten](/help/content-analytics/report/components.md) werden verwendet, um die relevanten spezifischen Content Analytics-Datensätze in Experience Platform zu aktualisieren.
+
 1. Sie können die Content Analytics-Daten zusammen mit Verhaltensdaten und anderen Lookup-Daten in einer Customer Journey Analytics-Einrichtung ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) und [Workspace](/help/analysis-workspace/home.md)) verwenden. Dieses Setup bildet die Grundlage für die einzigartigen Einblicke auf Makroebene in Ihren Inhalt. <br/>Mit der [Content Analytics-Vorlage können Sie Ihre Content Analytics-Berichte und -Analysen schnell &#x200B;](/help/content-analytics/report/report.md#template).
 
 
