@@ -3,74 +3,59 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics
 description: Anzeigen der neuesten Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
+hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 278d35000551d8a2a149683bfe073a5085b593bd
 workflow-type: tm+mt
-source-wordcount: 991
-ht-degree: 27%
+source-wordcount: 1144
+ht-degree: 23%
 
 ---
 
-# Aktuelle Customer Journey Analytics-Versionshinweise (August 2026)
+# Aktuelle Versionshinweise zu Customer Journey Analytics (September 2026)
 
-**Letzte Aktualisierung**: 5. August 2026
+**Letzte Aktualisierung**: 8. September 2026
 
-Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom August 2026. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
+Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom September 2026. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
 ## Neue oder aktualisierte Funktionen
 
 | Funktion und Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | -----------|-----------|-----------|
-| **Verbesserungen der Journey**<br> Arbeitsfläche: Die folgenden Verbesserungen der Journey-Arbeitsfläche sind jetzt verfügbar:<ul><li>Vergleichen Sie die Journey mit einem früheren Zeitrahmen. Vergleichen Sie die aktuelle Journey mit der Journey 4 Wochen vorher, 2 Quartale vorher, 1 Jahr vorher oder mit einem benutzerdefinierten Datumsbereich.</li><li>Zeigen Sie für einen ausgewählten Knoten die obersten Dimensionselemente an, die zu einem beliebigen Zeitpunkt im Journey nach dem ausgewählten Knoten stehen. Verwenden Sie dies, wenn der ausgewählte Knoten das Schlüsselereignis in Ihrer Analyse ist und Sie sehen möchten, was die Benutzer zu einem späteren Zeitpunkt tun.<p>Zuvor konnten nur die unmittelbar am häufigsten angezeigten Knoten vor oder nach dem ausgewählten Knoten angezeigt werden. </p></li><li>Ändern Sie die Form und den Stil der Pfeile zwischen den Knoten. Ziehen Sie die Pfeile zwischen Knoten, um die Form (Krümmung) des Pfeils zu ändern, und klicken Sie mit der rechten Maustaste auf einen Pfeil, um seinen Stil in eine der folgenden Optionen zu ändern: Volumenkörper, Gestrichelt, Punkte, Gestrichelt-Punkt oder Animiert.</li></ul><p></p>Weitere Informationen finden Sie unter [Konfigurieren einer Visualisierung „Journey-Arbeitsfläche“](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md). |  | &#x200B;18. August 2026 |
-| **Unterstützung für zusätzliche Datennutzungskennzeichnungen**<br> Customer Journey Analytics unterstützt jetzt die folgenden zusätzlichen Datennutzungskennzeichnungen für Elemente in einem Datensatz:<ul><li>C2 - Datenexport von Drittanbietern einschränken (jetzt verfügbar)</li><li>C3 - Direkt identifizierbare Datenkombination einschränken (jetzt verfügbar)</li><li>C9 - Datenwissenschaft beschränken (Veröffentlichung im August oder September geplant)</li></ul><p>Weitere Informationen finden Sie unter [Bezeichnungen, Richtlinien und Marketing-Aktionen](/help/data-views/data-governance.md).</p> | | August oder September 2026 |
-| **Content Analytics: Bezahlte Mediendaten** Bezahlte <br/> sind jetzt als dritter Kanal für Content Analytics verfügbar. Siehe Aktualisierungen für [Übersicht](/help/content-analytics/content-analytics.md), [Kanalkonfiguration](/help/content-analytics/config/guided.md#channels), [Komponenten](/help/content-analytics/report/components.md) und [Berichte](/help/content-analytics/report/report.md). | | &#x200B;4. September 2026 |
-| **B2B: Personen-Konto-Zuordnung**<br> B2B-Konto-Zuordnung bereichert Ihre Ereignisdatensätze mit Kontoinformationen und ermöglicht eine vollständige Analyse des gesamten Kunden-Journey in Customer Journey Analytics. <p>Wenn Ereignisse keine Konto-ID haben, die Customer Journey Analytics B2B edition für die Aufnahme benötigt, leitet die Kontozuordnung diese Informationen automatisch ab und fügt sie mithilfe des von Ihnen bereitgestellten Personenkonto-Zuordnungsdatensatzes hinzu.</p><p>Weitere Informationen finden Sie unter [B2B-Person-Konto-Zuordnung](/help/stitching/b2b/b2b-person-to-account-stitching.md).</p> | | &#x200B;31. August 2026 |
-| **Handbuch zu ersten Aufrufen der CJA Report API**<br> Handbuch zu ersten Aufrufen der Adobe Customer Journey Analytics-API enthält Anweisungen und Beispiele zur Konfiguration grundlegender Berichtsanfragen. | | &#x200B;10. August 2026 |
-| **Datums-Trendanleitung für die CJA-Berichts**<br> API-Datums-Trendanleitung für Adobe Customer Journey Analytics enthält Anweisungen und Beispiele zur Konfiguration grundlegender Berichtsanfragen. | | &#x200B;17. August 2026 |
+| **Customer Journey Analytics MCP-Server-Plug**<br/> In: Verwenden Sie neue Customer Journey Analytics MCP-Server-Plug-ins für ChatGPT und Claude, um schnell auf Ihre Daten zuzugreifen. <p>Weitere Informationen finden Sie im [Handbuch zum ChatGPT](https://developer.adobe.com/analytics-mcp/docs/guides/chatgpt)Plug-in und im [Claude-Connector-](https://developer.adobe.com/analytics-mcp/docs/guides/claude).</p> | &#x200B;1. September 2026 | &#x200B;1. September 2026 |
+| **Unterstützung für zusätzliche Datennutzungskennzeichnungen**<br> Customer Journey Analytics unterstützt jetzt die folgenden zusätzlichen Datennutzungskennzeichnungen für Elemente in einem Datensatz:<ul><li>C2 - Datenexport von Drittanbietern einschränken (jetzt verfügbar)</li><li>C3 - Direkt identifizierbare Datenkombination einschränken (jetzt verfügbar)</li><li>C9 - Datenwissenschaft beschränken (Veröffentlichung im August oder September geplant)</li></ul><p>Weitere Informationen finden Sie unter [Bezeichnungen, Richtlinien und Marketing-Aktionen](/help/data-views/data-governance.md).</p> | | &#x200B;3. September 2026 |
 | **Segmente auf den Berichtsdatumsbereich beschränken**<br/> Daten in einem Workspace-Bericht können über den Berichtsdatumsbereich hinaus erweitert werden, wenn ein Segment Datumsbereichskomponenten enthält.<p>Es ist jetzt eine neue Option verfügbar, mit der Sie die Ergebnisse auf den Datumsbereich des Berichts beschränken können, unabhängig von etwaigen im Segment enthaltenen Datumskomponenten. <p>Diese Option ist beim Erstellen oder Ändern eines Segments verfügbar, dessen Container der obersten Ebene Person ist.</p><p>Weitere Informationen finden Sie unter [Segmente erstellen](/help/components/segments/seg-builder.md#components).</p> | &#x200B;26. August 2026 | &#x200B;9. September 2026 |
 | **Filterung und Reporting von Einverständnisrichtlinien**<br> Sie können jetzt Berichte dazu erstellen, welche Besucher Ihren Adobe Experience Platform-Einverständnisrichtlinien entsprechen. (Dimensionen und Metriken der Einverständnisrichtlinie werden zu den Datenansichten in Ihrer Verbindung hinzugefügt.)<p>Darüber hinaus können Sie Besuchende, die mit ihrer Zustimmung nicht einverstanden sind, ausschließen, bevor ihre Daten in Customer Journey Analytics aufgenommen werden.</p><p>(Link zur Dokumentation folgt.)<!--For more information, see Consent reporting and filtering overview.--></p> | | September 2026 |
+| **Segmente auf den Berichtsdatumsbereich beschränken**<br/> Daten in einem Workspace-Bericht können über den Berichtsdatumsbereich hinaus erweitert werden, wenn ein Segment Datumsbereichskomponenten enthält.<p>Es ist jetzt eine neue Option verfügbar, mit der Sie die Ergebnisse auf den Datumsbereich des Berichts beschränken können, unabhängig von etwaigen im Segment enthaltenen Datumskomponenten. <p>Diese Option ist beim Erstellen oder Ändern eines Segments verfügbar, dessen Container der obersten Ebene Person ist.</p><p>Weitere Informationen finden Sie unter [Segmente erstellen](/help/components/segments/seg-builder.md#components).</p> | &#x200B;26. August 2026 | &#x200B;9. September 2026 |
+| **Analysieren von LLM-Kundenerlebnissen in Analysis Workspace mit Conversation Insights**<br/> Customer Journey Analytics bringt jetzt unstrukturierte Chat-Daten in Analysis Workspace ein, sodass Sie Berichte über LLM-gestützte Browser- und Kauferlebnisse in Ihren Properties erstellen können.<p>Mit dieser Funktion können Sie:</p><ul><li>Sammeln Sie Eingabeaufforderungen, Antworten und Agentenmetadaten von Gesprächsagenten (entweder den benutzerdefinierten Agenten Ihres Unternehmens oder Adobe Brand Concierge) über Web SDK.</li><li>Analysieren Sie Absicht, Tonfall und Sentiment, damit Sie verstehen können, was Kunden fragen, wie Ihr Agent reagiert und wie Ihre Kunden über ihre Interaktionen denken.</li><li>Analysieren Sie im benötigten Umfang anhand Ihres vorhandenen Schemas, Ihrer Datensätze und Datenansichten und nutzen Sie dann die Gelegenheit, Einblicke in Analysis Workspace zu gewinnen.</li><li>Verknüpfen Sie Konversationen mit Ergebnissen, indem Sie Agenteninteraktionen mit Ihren allgemeinen Journey-Kunden verknüpfen, damit Sie echte Auswirkungen auf Konversion, Interaktion und mehr messen können.</li></ul><p>Zuvor waren LLM-gestützte Erlebnisse schwer zu messen und es war nahezu unmöglich, eine Verbindung zu den Journey-Systemen Ihrer bestehenden Kunden herzustellen.</p><p>(Link zur Dokumentation folgt.)</p> | | &#x200B;22. September 2026 |
+| **Berichte zur Gesamtpopulation**<br/> Sie können jetzt in Profil- und Lookup-Datensätzen definierte Entitäten analysieren und Berichte dazu erstellen, die in einer Customer Journey Analytics-Verbindung vorhanden sind. Diese Analyse und das Reporting gehen über zeitbasierte Ereignisreihen aus Ereignisdatensätzen hinaus. <p>Diese Funktion ermöglicht neue Klassen von Abfragen, Metriken und Zielgruppendefinitionen, die den gesamten Umfang des Kundenstamms eines Unternehmens widerspiegeln.</p><p>(Link zur Dokumentation folgt.)</p> | | &#x200B;22. September 2026 |
+| **Stündliche Warnhinweise**<br/> Sie können jetzt die Zeitgranularität eines Warnhinweises auf Stündlich festlegen.<p>Stündliche Warnhinweise sind für Daten vorgesehen, die innerhalb einer bestimmten Stunde eintreffen. Wenn die Daten eine Latenz von mehr als einer Stunde aufweisen, wird durch eine längere Granularität sichergestellt, dass der Warnhinweis vollständige Daten auswertet. Wenden Sie sich an einen Dateningenieur, wenn Sie sich nicht sicher sind, wie lange die Daten bis zur Ankunft benötigen.</p> | | September 2026 |
+| **Die Bereitstellung der Warnhinweise erfolgt gemäß der konfigurierten**<br/>. Warnhinweise werden jetzt am Ende des von Ihnen festgelegten Verzögerungsfensters bereitgestellt, unabhängig davon, ob die Daten für den angegebenen Ereignisbereich vollständig sind oder noch empfangen werden. Daten, die nach Ablauf des Zeitfensters eingehen, werden nicht in den Warnhinweis einbezogen.<p>Zuvor enthielten Warnhinweise eine Hintergrundverarbeitungsprüfung, die auf verspätete Daten wartete, selbst wenn dies bedeutete, dass Warnhinweise nach dem konfigurierten Verzögerungsfenster gesendet wurden.</p> | | September 2026 |
+| **Adobe Brand Visibility-Integration**<br/> Verbinden Sie Adobe Brand Visibility mit den Customer Journey Analytics-Daten Ihres Unternehmens, damit Sie messen können, wie sich die KI-gesteuerte Erkennung in echte Website-Interaktion und Geschäftsergebnisse niederschlägt.<p>(Link zur Dokumentation folgt.)</p> | | September 2026 |
 
 ### Fehlerbehebungen in Customer Journey Analytics
 
-**Analysis Workspace**: AN-466867, AN-465995, AN-465315, AN-465313, AN-464375, AN-463634, AN-463248, AN-463175, AN-463049, AN-462347, AN-462124, AN-457849, AN-455002, AN-453357, AN-461922, AN-456863, AN-459816, AN-458398, AN-459034, AN-460774, AN-460671, AN-457760, AN-AN-443594, AN-AN-AN, AN-AN-UND-AN
+**Analysis Workspace**: AN-487374, AN-487119, AN-468907, AN-468810, AN-468363, AN-468096, AN-467414, AN-466986, AN-466982, AN-465073, AN-463571, AN-462373
 **Komponenten**:
-**Verbindungen**: AN-464934, AN-460768
+**Verbindungen**: AN-451458
 **Content Analytics**:
-**Geführte Analyse**:
-**Exporte**: AN-451819, AN-448419, AN-456001
-**Datenansichten**: AN-453201, AN-441965, AN-460967
-**Datenaufnahme**: AN-462123, AN-451836, AN-453790, AN-459000, AN-456057, AN-461271, AN-459016, AN-460935
+**Geführte Analyse**: AN-485600
+**Exporte**: AN-489161, AN-467131, AN-464746
+**Datenansichten**: AN-478732, AN-468836, AN-467851
+**Datenaufnahme**: AN-489829, AN-489722, AN-469451, AN-467436, AN-467049, AN-466087, AN-465049, AN-463524, AN-457433
 **Implementierung**:
-**Report Builder**: AN-465346, AN-464768, AN-464580, AN-464301, AN-463048, AN-462800, AN-457042, AN-461033, AN-459042, AN-454250, AN-451735, AN-450776, AN-450200, AN-451665
-**Reporting**: AN-463576, AN-462400, AN-456394, AN-455619, AN-459530, AN-454103, AN-452866, AN-461181
-**Segmentierung**: AN-459002, AN-457730, AN-457146
-**Terminierte Berichte**: AN-455009, AN-460037, AN-462093
+**Report Builder**: AN-487486, AN-478944, AN-470036, AN-468589, AN-468436, AN-456747, AN-456700, AN-442695
+**Reporting**: AN-479145, AN-469095, AN-468070, AN-467786, AN-456684
+**Segmentierung**: AN-486561
+**Geplante Berichte**:
 **Freigegebene Metriken und Dimensionen**:
-**Zielgruppenanalyse**: AN-458292
-**Sonstige**: AN-466935, AN-462116, AN-454493, AN-457666, AN-457557, AN-456742, AN-437975, AN-460959
+**Zielgruppenanalyse**: AN-468237, AN-462553
+**Sonstige**:
 
 ## Zurückgestellte Funktionen
 
