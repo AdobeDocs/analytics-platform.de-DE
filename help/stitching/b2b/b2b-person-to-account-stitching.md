@@ -19,9 +19,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ae08f7a010c6c8cdb262bd96e51c2b677a4cb70a
+source-git-commit: 4ab8bb6c0f68ae49128a2fe2a1eb9e87ccfa52a1
 workflow-type: tm+mt
-source-wordcount: 2230
+source-wordcount: 2268
 ht-degree: 16%
 
 ---
@@ -69,7 +69,7 @@ Die Zuordnung von B2B-Personen zu Konten verhindert, dass Ereignisse ignoriert u
 
 +++ Details
 
-Um die Zuordnung von B2B-Personen zu Konten zu unterstützen, geben Sie bei der [Konfiguration der B2B-Zusammenfügungseinstellungen](#configure-b2b-person-to-account-stitching-settings) einen Namespace für die Hauptpersonenkennung (z. B. E-Mail) und einen Datensatz für die Zuordnung von Personen zu Konten an.
+Um die Zuordnung von B2B-Personen zu Konten zu unterstützen, geben Sie bei der [Konfiguration der B2B-Zusammenfügungseinstellungen](#configure-b2b-stitching-settings) einen Namespace für die Hauptpersonenkennung (z. B. E-Mail) und einen Datensatz für die Zuordnung von Personen zu Konten an.
 Der Namespace der Personen-ID aus dem Datensatz „Person zu Konto“ kann mit dem Haupt-Namespace (E-Mail) identisch sein oder sich unterscheiden. Im folgenden Beispiel wird sie als CRM-ID festgelegt (die im Identitätsdiagramm mit der E-Mail verknüpft werden muss).
 
 | CRM-ID | Konto-ID |
@@ -93,7 +93,7 @@ In unserem Beispiel, bei dem Identitätsdiagramm-Links zwischen CRM-ID- und E-Ma
 | B978BBW9 | cassidy@ubiquity.com | Allgegenwart |
 | FS453GHI | carmen@adobe.com | Adobe |
 
-Die diagrammbasierte Zuordnung wird auch verwendet, um die Personen-IDs im Erlebnisereignis-Datensatz zu erhöhen. Sie konfigurieren beispielsweise das Feld „Persistent ID“ (ECID), das als persistente Personen-ID verwendet werden soll, wenn Sie [Stitching für den Datensatz aktivieren](#enable-b2b-person-to-account-stitching-on-event-datasets). Basierend auf der Zuordnung von Person zu Konto `emily@adobe.com` Datensatz wird im zugehörigen Ereignis als erhöhte Personen-ID festgelegt.
+Die diagrammbasierte Zuordnung wird auch verwendet, um die Personen-IDs im Erlebnisereignis-Datensatz zu erhöhen. Sie konfigurieren beispielsweise das Feld „Persistent ID“ (ECID), das als persistente Personen-ID verwendet werden soll, wenn Sie [Stitching für den Datensatz aktivieren](#enable-b2b-person-to-account-stitching-on-event-datasets). Angenommen, `5678` (persistente ID) mit `emily@adobe.com` (Personen-ID) im Identitätsdiagramm verknüpft ist, wird `emily@adobe.com` für das zugehörige Ereignis als erhöhte Personen-ID festgelegt.
 
 | Zeitstempel | Dauerhafte ID | Ursprüngliche Konto-ID | Ursprüngliche Personen-ID | Erhöhte Personen-ID |
 |--|--|---|---|---|
@@ -112,7 +112,7 @@ Die diagrammbasierte Zuordnung wird auch verwendet, um die Personen-IDs im Erleb
 
 +++ Details
 
-Der Datensatz „Person zu Konto“ wird erneut verwendet, um die Konto-IDs im Erlebnisereignis-Datensatz zu erhöhen. Siehe zum Beispiel den zusätzlichen Wert **Sky** für emily@sky.com und **Adobe** für carmen@adobe.com und emily@adobe.com. Und der aktualisierte Wert **Sky** (von Ubiquity) für cory@sky.com.
+Der Datensatz „Person zu Konto“ wird verwendet, um die Konto-IDs im Erlebnisereignis-Datensatz zu erhöhen. Siehe zum Beispiel den hinzugefügten Wert **Adobe** für carmen@adobe.com und emily@adobe.com. Und der aktualisierte Wert **Sky** (von Ubiquity) für cory@sky.com.
 
 | Zeitstempel | Dauerhafte ID | Ursprüngliche Konto-ID | Ursprüngliche Personen-ID | Erhöhte Konto-ID | Erhöhte Personen-ID |
 |---|---|---|---|---|---|
@@ -128,7 +128,7 @@ Der Datensatz „Person zu Konto“ wird erneut verwendet, um die Konto-IDs im E
 
 ### Ergebnis
 
-Dieses Beispiel zeigt, wie die B2B-Personen-Konto-Zuordnung Ihre Erlebnisereignisdaten mit fehlenden Personenkennungen oder fehlenden und falschen Kontokennungen aktualisiert, basierend auf dem von Ihnen als Eingabe angegebenen Datensatz für die Zuordnung von Person zu Konto.
+Dieses Beispiel zeigt, wie die B2B-Personen-Konto-Zuordnung Ihre Erlebnisereignisdaten mit fehlenden Personenkennungen und fehlenden oder falschen Kontokennungen aktualisiert, basierend auf Identitätsdiagrammdaten und dem von Ihnen als Eingabe angegebenen Datensatz für die Zuordnung von Person zu Konto.
 
 
 ## Voraussetzungen
@@ -246,8 +246,8 @@ Nachdem Sie die B2B-Zuordnung auf Verbindungsebene konfiguriert haben, müssen S
 
 Wenn **[!UICONTROL Zuordnung von Person zu Konto aktivieren]** **aktiviert**, haben Sie die B2B-Person so konfiguriert, dass die Zuordnung für den Datensatz berücksichtigt wird.
 
-* Die Konfiguration einer Personen-ID ist erforderlich. Diese Personen-ID wird verwendet, um die Konto-ID basierend auf dem Datensatz [Person zu Konto“ &#x200B;](#prerequisites).
-* Die Konfiguration einer Konto-ID ist optional.
+* Die Konfiguration einer persistenten Personen-ID ist erforderlich. Diese persistente Personen-ID wird aus dem zuvor konfigurierten Personen-ID-Namespace zur Personen-ID hochgestuft und dann zum Nachschlagen der Konto-ID basierend auf dem Datensatz [Person zu Konto“ &#x200B;](#prerequisites).
+* Die Konfiguration einer Konto-ID ist optional. Diese Konfiguration wird als Fallback-Methode verwendet, wenn die zugehörigen Konto-ID-Informationen im Datensatz Person an Konto nicht verfügbar sind.
 
 ![B2B-Person mit Konto-Zuordnung zum Ereignis-Datensatz in](../assets/b2b-event-dataset-stitching-on.png)
 
