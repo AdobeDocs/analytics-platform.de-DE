@@ -19,9 +19,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4ab8bb6c0f68ae49128a2fe2a1eb9e87ccfa52a1
+source-git-commit: ac22a504d6182897438b3724d57c837ab2995f1b
 workflow-type: tm+mt
-source-wordcount: 2268
+source-wordcount: 2270
 ht-degree: 16%
 
 ---
@@ -213,8 +213,8 @@ Sie aktivieren und konfigurieren das B2B-Stitching zunächst auf Verbindungseben
       | Feld | Erforderlich | Beschreibung |
       |---|:---:|---|
       | **[!UICONTROL Person-Konto-Datensatz]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie die Suche (Datensatz oder Datensatz ohne Zeitreihe) aus, die Personen Konten zuordnet. |
-      | **[!UICONTROL Personen-ID]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das Personen-IDs enthält. Der Namespace dieses Feldes kann sich vom ausgewählten Namespace der Personenkennung unterscheiden oder mit diesem identisch sein. Wenn sie sich unterscheiden, müssen die beiden Namespaces im Identitätsdiagramm verknüpft werden.  Dieses Feld muss als Identität markiert werden und darf nicht mit dem Feld **[!UICONTROL Konto-ID]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein. |
-      | **[!UICONTROL Konto-ID]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das die eindeutigen Werte der Kontokennung enthält. Die Konto-ID-Informationen werden in den Zeilen aller Ereignisdatensätze verfügbar gemacht, wobei die Zuordnung von Person zu Konto aktiviert ist. Dieses Feld darf nicht mit dem Feld **[!UICONTROL Personen-ID]** oder dem Feld **[!UICONTROL Startzeit]** identisch sein. |
+      | **[!UICONTROL Personen-ID]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das Personen-IDs enthält. Der Namespace dieses Feldes kann sich vom ausgewählten Namespace der Personenkennung unterscheiden oder mit diesem identisch sein. Wenn sie sich unterscheiden, müssen die beiden Namespaces im Identitätsdiagramm verknüpft werden.  Dieses Feld muss als Identität markiert werden und darf nicht mit dem Feld **[!UICONTROL Konto-ID]** oder dem Feld **[!UICONTROL Erstellungszeit der Zuordnung]** identisch sein. |
+      | **[!UICONTROL Konto-ID]** | ![Erforderlich](/help/assets/icons/Required.svg) | Wählen Sie das Feld im Datensatz aus, das die eindeutigen Werte der Kontokennung enthält. Die Konto-ID-Informationen werden in den Zeilen aller Ereignisdatensätze verfügbar gemacht, wobei die Zuordnung von Person zu Konto aktiviert ist. Dieses Feld darf nicht mit dem Feld **[!UICONTROL Personen-ID]** oder dem Feld **[!UICONTROL Erstellungszeit der Zuordnung]** identisch sein. |
       | **Erstellungszeit der Zuordnung** | | Wählen Sie optional das Feld aus, das das Datum und die Uhrzeit darstellt, zu der die Zuordnung von Person zu Konto erstellt wurde. Nützlich für Szenarien, in denen eine Person im Laufe der Zeit mehrere Konten wechselt.<br/><br/>**Beispiel** (wenn **update_date**-Feld ausgewählt ist):<table><thead><tr><th>update_date</th><th>Person</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>Für alle Ereignisse mit einem Zeitstempel im Feld **[!UICONTROL update_date]** vor dem 1. Mai 2026 wird a@b.com Apple zugeordnet.</li><li>Für alle Ereignisse mit einem Zeitstempel im Feld **[!UICONTROL update_date]** ab dem 1. Mai 2026 wird a@b.com Adobe zugeordnet.</li></ul>Wenn keine Zuordnungszeit angegeben wird, wird das lexikografische erste Konto verwendet. Derselbe Algorithmus wird auch verwendet, wenn zwei verschiedene Kontonamen exakt denselben **[!UICONTROL update_date]**-Wert haben und eine Erstellungszeit für die Zuordnung angegeben ist. |
 
       >[!NOTE]
