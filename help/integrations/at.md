@@ -5,31 +5,23 @@ feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
 TQID: https://experienceleague.adobe.com/7Q8q-e58PrmANht9DpOXuNFImYC48ELhrXPRhBG6gYQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 34593a4407e6334e9abab6034accd84fc5a70d33
 workflow-type: tm+mt
-source-wordcount: 410
-ht-degree: 44%
+source-wordcount: 452
+ht-degree: 40%
 
 ---
 
 # Reporting zu Zielgruppen
 
-Mit dem Target-Reporting in Customer Journey Analytics können Sie Adobe Target-Aktivitäten direkt in Customer Journey Analytics messen und Berichte dazu erstellen. Diese Funktionalität ist vergleichbar mit der, die in Adobe Analytics (AA) über Analytics for Target (A4T) ausgeführt wird, jedoch mit der Konnektivität zu Adobe Experience Platform (AEP).
+Mit dem Target-Reporting in Customer Journey Analytics können Sie Adobe Target-Aktivitäten direkt in Customer Journey Analytics messen und Berichte dazu erstellen. Diese Funktionalität ist vergleichbar mit der, die in Adobe Analytics (AA) über Analytics for Target (A4T) ausgeführt wird, jedoch mit der Konnektivität zu Adobe Experience Platform (AEP). Nachdem Sie eine Target-Aktivität erstellt haben, die Customer Journey Analytics als Berichtsquelle verwendet, wird ein Lookup-Datensatz mit dem Namen Adobe Target Classification Events in der entsprechenden Sandbox erstellt. Dieser Lookup-Datensatz bereichert Ihre Berichte, indem er Target-Aktivitäts-IDs mit ihren benutzerfreundlichen Attributen (wie Aktivitätsname und Erlebnisname) klassifiziert.
 
-Durch das Hinzufügen des Suchdatensatzes der Target-Klassifizierung (der standardmäßig in Experience Platform verfügbar ist) zu einer Customer Journey Analytics-Verbindung können Benutzende nun die Reporting-Tools von Target, die Attribution der Zielreihenfolge und andere Funktionen optimal nutzen. Wenn nur einige kleinere Vorbereitungen und Anpassungen in der Customer Journey Analytics-Datenansicht vorgenommen wurden, können diese Aktivitäten für alle Benutzenden, die Target-Daten direkt an CJA senden möchten, sofort verfügbar gemacht werden.
+Durch das Hinzufügen dieses Lookup-Datensatzes zu einer Customer Journey Analytics-Verbindung können Benutzende jetzt die Reporting-Tools von Target, die Attribution der Zielreihenfolge und andere Funktionen ordnungsgemäß nutzen. Wenn nur einige kleinere Vorbereitungen und Anpassungen in der Customer Journey Analytics-Datenansicht vorgenommen wurden, können diese Aktivitäten für alle Benutzenden, die Target-Daten direkt an Customer Journey Analytics senden möchten, sofort verfügbar gemacht werden.
 
 ## Primäre Vorteile
 
@@ -41,7 +33,7 @@ Durch das Hinzufügen des Suchdatensatzes der Target-Klassifizierung (der standa
 
 Ihre Target-Aktivität muss [Customer Journey Analytics als Berichtsquelle verwenden](https://experienceleague.adobe.com/de/docs/target/using/integrate/cja/target-reporting-in-cja).
 
-Nachdem der Zielklassifizierungsereignis-Datensatz zu einer Verbindung hinzugefügt wurde, müssen einige kleinere Anpassungen in der Datenansicht vorgenommen werden, sobald diese Komponenten als Dimensionen hinzugefügt wurden, darunter:
+Nachdem der Suchdatensatz &quot;Adobe Target Classification Events“ zu einer Verbindung hinzugefügt wurde, müssen Sie einige kleinere Anpassungen in der Datenansicht vornehmen, nachdem diese Komponenten als Dimensionen hinzugefügt wurden, darunter:
 
 * Festlegen der Persistenz, sodass sie der Art des Trackings in Target ähnelt (wenden Sie sich an einen Target-Berater oder an den Kunden, um sicherzustellen, dass die Einstellungen korrekt sind).
 
