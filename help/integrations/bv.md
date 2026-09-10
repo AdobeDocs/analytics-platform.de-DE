@@ -178,4 +178,4 @@ Dieser Datensatz erfasst nur Traffic von Bots aus CDN-Zugriffsprotokollen. Sie e
 
 ## Ausgehende Integration
 
-Weitere Informationen zur ausgehenden Integration finden Sie unter [Customer Journey Analytics-Integration](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} in der Dokumentation zur Sichtbarkeit von Adobe-Marken.
+Weitere Informationen zur ausgehenden Integration finden Sie unter [Customer Journey Analytics-Integration](https://experienceleague.adobe.com/de/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} in der Dokumentation zur Sichtbarkeit von Adobe-Marken.
