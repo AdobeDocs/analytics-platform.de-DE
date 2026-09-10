@@ -1,10 +1,10 @@
 ---
 user-guide-title: Handbuch zu Customer Journey Analytics
-user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
+user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Adobe Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 6b14b7df4c897c42c963fb93c48e7331b0264589
+source-git-commit: 2983f972813a84a141109c5d14c81394802f226c
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1490'
 ht-degree: 90%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 90%
     + {hide-from-toc}[Verlaufsdaten aufbewahren](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
     + [Empfohlener Upgrade-Prozess](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
     + [Vorbereiten Ihrer Organisation](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md)
-    + Planen und Erstellen eines Schemas {#schema}
+    + Entwerfen und Erstellen eines Schemas {#schema}
       + [Planen Ihres Schemas](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Erstellen Ihres Schemas](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
       + [Verwenden Ihres vorhandenen Schemas](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
@@ -64,10 +64,10 @@ ht-degree: 90%
     + Implementieren des Web SDK mit Tags {#create-tags}
       + [Erstellen eines Tags für die Eigenschaft](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
       + [Hinzufügen der Web SDK-Erweiterung zum Tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
-      + [Implementieren des Loader-Tags für die Web-SDK-Erweiterung](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
-      + [Hinzufügen von XDM-Datenerfassungslogik zum Tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
+      + [Implementieren des Loader-Tags für die Web SDK-Erweiterung](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
+      + [Hinzufügen der XDM-Datenerfassungslogik zum Tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
     + [Manuelles Implementieren des Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
-    + [Implementieren des Web SDK mit dem API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
+    + [Implementieren des Web SDK mit API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
     + [Erstellen einer Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
     + [Erstellen einer Datenansicht](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
     + [Erstellen eines abgeleiteten Marketing-Kanal-Felds](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
@@ -75,7 +75,7 @@ ht-degree: 90%
     + [Einrichten einer Streaming-Mediensammlung](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
     + Beibehalten historischer Daten mit dem Analytics-Quell-Connector {#historical-data-source-connector}
       + [Erstellen eines XDM-Schemas für den Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
-      + [Erstellen des Analytics-Quell-Connectors und Zuordnen von Feldern](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+      + [Erstellen des Analytics-Quell.Connectors und Zuordnen von Feldern](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
       + [Hinzufügen des Analytics-Quell-Connector-Datensatzes zur Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
     + [Bestimmen des Deaktivierungszeitpunkts für Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
     + [Deaktivieren von Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
@@ -85,7 +85,7 @@ ht-degree: 90%
       + [Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)
     + Andere Upgrade-Szenarien {#other-upgrade-scenarios}
       + [Wechsel vom Analytics-Quell-Connector zum Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
-      + [Upgrade von einer anderen Lösung als Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
+      + [Aktualisieren von einer Nicht-Adobe-Analytics-Lösung](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
     + Zusätzliche Informationen {#additional-information}
       + [Informationen zur Analytics-Implementierung](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [Unterstützung von Adobe Analytics-Funktionen beim Upgrade](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
@@ -101,10 +101,10 @@ ht-degree: 90%
     + [Vergleichen der Terminologie](../getting-started/aa-vs-cja/terminology.md)
     + [Vergleichen der Datenverarbeitung](../getting-started/aa-vs-cja/data-processing-comparisons.md)
     + [Umgebungen](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
-    + [Analysenverarbeitung und Datenvorbereitung](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
+    + [Analytics-Verarbeitung im Vergleich zu Datenvorbereitung](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
     + [Analytics-IDs](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
   + [Weiterentwicklung von Adobe Analytics](../getting-started/aa-to-cja.md)
-  + [Benutzerhandbuch für Adobe Analytics-Benutzende](../getting-started/aa-to-cja-user.md)
+  + [Benutzerhandbuch für Benutzende von Adobe Analytics](../getting-started/aa-to-cja-user.md)
   + Wechsel von Google Analytics 4 {#ga-to-cja}
     + [Überblick](/help/getting-started/ga-to-cja/home.md)
     + [Datenmodell](/help/getting-started/ga-to-cja/data-model.md)
@@ -113,7 +113,7 @@ ht-degree: 90%
 
 + Datenaufnahme {#cja-data-ingestion}
   + [Überblick](../data-ingestion/data-ingestion.md)
-  + Schnellstartanleitungen zur Aufnahme und Verwendung von Daten{#ingest-use-guides}
+  + Aufnehmen und Verwenden von Schnellstartanleitungen{#ingest-use-guides}
     + [Adobe Analytics](../data-ingestion/analytics.md)
     + Experience Platform Edge Network {#edge-network}
       + [Web SDK](../data-ingestion/aepwebsdk.md)
@@ -127,7 +127,7 @@ ht-degree: 90%
 + Datenspiegelung {#cja-data-mirror}
   + [Überblick](/help/data-mirror/data-mirror.md)
   + Konfigurieren {#configure}
-    + [Native Data-Warehouse-Lösungen](/help/data-mirror/datawarehouse.md)
+    + [Native Data Warehouse-Lösungen](/help/data-mirror/datawarehouse.md)
     + [Experience Platform](/help/data-mirror/aep.md)
     + [Customer Journey Analytics](/help/data-mirror/cja.md)
   + [Schnellstartanleitung](/help/data-mirror/relational.md)
@@ -322,8 +322,8 @@ ht-degree: 90%
   + [Kuratoraufgaben](../mobile-app/curator.md)
   + [Erstellen mobiler Scorecards](../mobile-app/create-scorecard.md)
   + [Verwalten mobiler Scorecards](../mobile-app/manage-scorecard.md)
-  + [Einrichten von Führungskräften für die Verwendung von Dashboards](../mobile-app/set-up-execs.md)
-  + [Schnellstarthandbuch für ausführende Benutzer](../mobile-app/executive.md)
+  + [Einrichten von ausführenden Benutzenden für die Verwendung von Dashboards](../mobile-app/set-up-execs.md)
+  + [Schnellstarthandbuch für ausführende Benutzende](../mobile-app/executive.md)
 
 + Geführte Analyse {#guided-analysis}
   + [Überblick](../guided-analysis/overview.md)
@@ -433,6 +433,7 @@ ht-degree: 90%
       + {hide-from-toc}[Spalten zuordnen](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[Erstellen eines Daten-Feeds](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc}[Segmentierung in Daten-Feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
+      + {hide-from-toc}[Verwenden abgeleiteter Felder in Daten-Feeds](/help/components/exports/cja-data-feeds/df-derived-fields.md)
   + Datenwörterbuch {#data-dictionary}
     + [Überblick](../components/data-dictionary/data-dictionary-overview.md)
     + [Komponenteninformationen im Datenwörterbuch anzeigen](../components/data-dictionary/view-data-dictionary.md)
@@ -516,12 +517,12 @@ ht-degree: 90%
     + [BI-Erweiterung](../use-cases/data-export/bi-extension.md)
     + [Exportieren von Datensätzen](../use-cases/data-export/export-datasets.md)
     + [Exportieren einer vollständigen Tabelle](../use-cases/data-export/export-full-table.md)
-    + [Abfrage-Service- und Export-Datensätze](../use-cases/data-export/queryservice-export-datasets.md)
+    + [Verwenden des Abfrage-Service und Exportieren von Datensätzen](../use-cases/data-export/queryservice-export-datasets.md)
   + Datenaufnahme {#data-ingestion}
     + [Aufnehmen und Verwenden von Marketo Engage-Daten](../use-cases/data-ingestion/marketo.md)
     + [Aufnehmen und Verwenden von Experience Platform-Zielgruppen](../use-cases/data-ingestion/ingest-aep-segments.md)
   + Datenansichten {#data-views}
-    + [Anwendungsfälle von Datenansichten](/help/use-cases/data-views/data-views-usecases.md)
+    + [Anwendungsfälle für Datenansichten](/help/use-cases/data-views/data-views-usecases.md)
     + [Verwenden von Bindungsdimensionen und Metriken](/help/use-cases/data-views/binding-dimensions-metrics.md)
     + [Verwenden von Zusammenfassungsdaten](/help/use-cases/data-views/summary-data.md)
     + BI-Erweiterung {#bi-extension}
@@ -544,7 +545,7 @@ ht-degree: 90%
 
     + Abgeleitete Felder {#derived-fields}
       + [Richtlinien für abgeleitete Felder](/help/use-cases/data-views/derived-fields/guidelines.md)
-      + [Bericht zu LLM- und KI-generiertem Traffic](/help/use-cases/data-views/derived-fields/ai-traffic.md)
+      + [Berichte über LLM- und KI-generierten Traffic](/help/use-cases/data-views/derived-fields/ai-traffic.md)
       + [Bericht zu Zielen](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md)
   + Produktanalyse {#product-analysis}
     + [Produktanalyse](/help/use-cases/product-analysis.md)
@@ -555,7 +556,7 @@ ht-degree: 90%
     + Google Analytics {#ga}
       + [Migrieren von Daten aus Google Analytics](/help/use-cases/third-party/ga/overview.md)
       + [Aufnehmen von historischen Daten aus Google Analytics](/help/use-cases/third-party/ga/backfill.md)
-      + [Konfigurieren des Streaming-Vorgangs von Google Analytics-Daten](/help/use-cases/third-party/ga/streaming.md)
+      + [Konfigurieren von Streaming von Google Analytics-Daten](/help/use-cases/third-party/ga/streaming.md)
       + [Bericht zu Google Analytics-Daten](/help/use-cases/third-party/ga/report.md)
     + Quantum Metric {#qm}
       + [Überblick](/help/use-cases/third-party/quantum-metric/qm-overview.md)
