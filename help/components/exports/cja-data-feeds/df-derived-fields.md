@@ -14,7 +14,7 @@ ht-degree: 2%
 
 {{release-limited-testing}}
 
-Mit (abgeleiteten Feldern) können Sie [ Daten-Feed-Daten ](/help/data-views/derived-fields/derived-fields.md).
+Mit (abgeleiteten Feldern) können Sie [&#x200B; Daten-Feed-Daten &#x200B;](/help/data-views/derived-fields/derived-fields.md).
 
 Viele abgeleitete Feldfunktionen führen Umwandlungen durch, die Sie auch mithilfe von SQL anwenden können, z. B. das Ersetzen von Werten, das Kombinieren von Feldern oder das Konvertieren des Datentyps eines Felds, sodass die gewählte Methode manchmal bevorzugt wird.
 
