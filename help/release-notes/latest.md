@@ -4,32 +4,14 @@ description: Anzeigen der neuesten Versionshinweise zu Customer Journey Analytic
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8fb541eac63595c7d02561a1ca1768ab373c1ea4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 04accc9ba060da60916cf4c3bc66710f57f50cda
 workflow-type: tm+mt
-source-wordcount: 1261
+source-wordcount: 1263
 ht-degree: 20%
 
 ---
@@ -53,7 +35,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Sept
 | **Stündliche Warnhinweise**<br/> Sie können jetzt die Zeitgranularität eines Warnhinweises auf Stündlich festlegen.<p>Stündliche Warnhinweise sind für Daten vorgesehen, die innerhalb einer bestimmten Stunde eintreffen. Wenn die Daten eine Latenz von mehr als einer Stunde aufweisen, wird durch eine längere Granularität sichergestellt, dass der Warnhinweis vollständige Daten auswertet. Wenden Sie sich an einen Dateningenieur, wenn Sie sich nicht sicher sind, wie lange die Daten bis zur Ankunft benötigen.</p>p>(Link zur Dokumentation folgt.)</p> | | September 2026 |
 | **Die Bereitstellung der Warnhinweise erfolgt gemäß der konfigurierten**<br/>. Warnhinweise werden jetzt am Ende des von Ihnen festgelegten Verzögerungsfensters bereitgestellt, unabhängig davon, ob die Daten für den angegebenen Ereignisbereich vollständig sind oder noch empfangen werden. Daten, die nach Ablauf des Zeitfensters eingehen, werden nicht in den Warnhinweis einbezogen.<p>Zuvor enthielten Warnhinweise eine Hintergrundverarbeitungsprüfung, die auf verspätete Daten wartete, selbst wenn dies bedeutete, dass Warnhinweise nach dem konfigurierten Verzögerungsfenster gesendet wurden.</p>p>(Link zur Dokumentation folgt.)</p> | | September 2026 |
 | **Adobe Brand Visibility-Integration**<br/> Verbinden Sie Adobe Brand Visibility mit den Customer Journey Analytics-Daten Ihres Unternehmens, damit Sie messen können, wie sich die KI-gesteuerte Erkennung in echte Website-Interaktion und Geschäftsergebnisse niederschlägt.<p>(Link zur Dokumentation folgt.)</p> | | September 2026 |
-| **Zusätzliche Kenntnisse in CX Enterprise Coworker**<br> Neue Fähigkeiten kommen zu Coworker, einschließlich:<ul><li><strong>Implementierungshandbücher</strong>: Wandeln Sie eine kurze Discovery-Konversation in einen personalisierten, abhängigkeitsbewussten Implementierungsplan um, mit einsatzbereiten Exporten in CSV, Jira, Workfront und Markdown.</li><li><strong>Intelligent Implementation Checklist</strong>: Wandeln Sie Ihre Discovery-Konversation in ein gesteuertes, verfolgbares Implementierungsprojekt in Coworker Projects um: eine geordnete Checkliste mit Schritten, die Sie zuweisen, überwachen und validieren können.</li><li><strong>Datenvalidierung</strong>: Überprüfen Sie Ihre Datenfelder und Datensätze direkt in Coworker, um zu bestätigen, dass Sie aus vertrauenswürdigen, genauen Daten arbeiten (aktualisiert von Adobe Agent Orchestrator v1).</li><li><strong>Validierung von Streaming-</strong>: Überprüfen Sie Ihre Streaming-Mediendaten in Coworker, um sicherzustellen, dass sie korrekt und berichterstattungsbereit sind.</li></ul><p>(Links zur Dokumentation folgen.)</p> | | &#x200B;30. September 2026 |
+| **Upgrade- und Implementierungsfähigkeiten in CX Enterprise Coworker**<br> Neue Fähigkeiten kommen zu den Mitarbeitern. Diese Kenntnisse erleichtern nahtlosere und einfachere Upgrades und Implementierungen für Customer Journey Analytics:<ul><li>**Implementierungshandbücher -**: Erstellen einer maßgeschneiderten Liste von Upgrade- oder Implementierungsschritten und -empfehlungen. Die Upgrade- und Implementierungshandbücher können dann mithilfe eines vordefinierten Playbooks in ein Co-Worker-Projekt umgewandelt werden.</li><li>**Intelligente Upgrade- und Implementierungs-Checklisten-Fähigkeiten**: Verwenden Sie das Coworker-Projekt, um den Implementierungsfortschritt anhand der maßgeschneiderten Upgrade- oder Implementierungs-Checkliste zu verwalten und zu verfolgen, den Projektstatus zu verwalten, über Teams hinweg zusammenzuarbeiten, Aufgaben zuzuweisen und bei Bedarf Genehmigungs-Gates einzuführen.</li><li>**Datenvalidierungsfähigkeiten**: Überprüfen Sie, ob Ihre Implementierung korrekt konfiguriert und mit Best Practices abgestimmt ist.</li></ul><p>(Links zur Dokumentation folgen.)</p> | | &#x200B;30. September 2026 |
 
 ### Fehlerbehebungen in Customer Journey Analytics
 

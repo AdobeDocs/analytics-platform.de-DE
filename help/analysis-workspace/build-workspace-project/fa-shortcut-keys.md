@@ -6,21 +6,15 @@ title: Hotkeys
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
 TQID: https://experienceleague.adobe.com/YWKW578JfolnUul64XLty6ehTVlsdsdTRAgHQG3wzbY
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 18b3b42cafd437749041bc1d408e60e77b42e1fc
 workflow-type: tm+mt
-source-wordcount: 418
-ht-degree: 89%
+source-wordcount: 488
+ht-degree: 78%
 
 ---
 
@@ -30,11 +24,11 @@ In Analysis Workspace stehen Tastaturbefehle (Tastaturkürzel) für eine nahtlos
 
 Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verwendet werden:
 
-- **⇧** für die **[!UICONTROL **&#x200B; Umschalttaste &#x200B;**]**
-- **⌘** für die **[!UICONTROL **&#x200B; Befehlstaste &#x200B;**]**.
-- **⌃** für die **[!UICONTROL **&#x200B; Strg-Taste &#x200B;**]**.
-- **⌥** für die **[!UICONTROL **&#x200B; Wahltaste &#x200B;**]**.
-- **⎇** für die **[!UICONTROL **&#x200B; Alt-Taste &#x200B;**]**.
+- **⇧** für die **[!UICONTROL ** Umschalttaste **]**
+- **⌘** für die **[!UICONTROL ** Befehlstaste **]**.
+- **⌃** für die **[!UICONTROL ** Strg-Taste **]**.
+- **⌥** für die **[!UICONTROL ** Wahltaste **]**.
+- **⎇** für die **[!UICONTROL ** Alt-Taste **]**.
 
 ## Navigationsaktionen
 
@@ -86,6 +80,17 @@ Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verw
 | --- | --- | --- |
 | Bereich nach oben verschieben | **[!UICONTROL *Befehl + Opt + Up *]** | **[!UICONTROL *Alt+Strg+Nach oben *]** |
 | Bereich nach unten verschieben | **[!UICONTROL *Befehl + Opt + Down *]** | **[!UICONTROL *Alt + Strg + Nach unten *]** |
+
+## Größe des Bedienfelds für Visualisierungsaktionen ändern
+
+| Aktion | Mac-Tastaturbefehl | Windows-Tastaturbefehl |
+| --- | --- | --- |
+| Größer ändern | **[!UICONTROL *Befehlstaste + Wahltaste + Umschalttaste + Rechts *]** | **[!UICONTROL *Strg+Alt+Umsch+Rechts *]** |
+| Engere Größe ändern | **[!UICONTROL *Befehl + Wahl + Umsch + Links *]** | **[!UICONTROL *Strg+Alt+Umsch+Links *]** |
+| Größe ändern höher | **[!UICONTROL *Befehlstaste + Wahltaste + Umschalttaste + Nach unten *]** | **[!UICONTROL *Strg+Alt+Umsch+Nach-unten *]** |
+| Kürzere Größe ändern | **[!UICONTROL *Befehlstaste + Wahltaste + Umschalttaste + Nach oben *]** | **[!UICONTROL *Strg+Alt+Umsch+Nach oben *]** |
+
+Die Breite wird in Schritten einer Rasterspalte und die Höhe in Schritten einer Rasterzelle geändert (etwa 25 Pixel).
 
 ## Demokratisierungaktionen
 
