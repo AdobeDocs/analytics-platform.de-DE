@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e2ec268ef4a2d84d51089e7b59b3df5b0ad6f48d
+source-git-commit: 18b3b42cafd437749041bc1d408e60e77b42e1fc
 workflow-type: tm+mt
-source-wordcount: 7019
+source-wordcount: 7045
 ht-degree: 98%
 
 ---
@@ -49,6 +49,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 |---|---|
+| **September 2026** | |
+| Neue Tastenkombinationen zum Ändern der Größe | Mit den neuen Tastaturbefehlen in Analysis Workspace können Sie jetzt [Größe eines Bedienfelds oder einer Visualisierung ändern](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#resize-panel-or-visualization) breiter, schmaler, höher oder kürzer. |
 | **August 2026** | |
 | Es wurden Informationen zum Aktualisieren von Zielgruppen klargestellt | Beim [Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md#audience-builder) wurde klargestellt, dass die Anzahl der Zielgruppen, die aktualisiert werden können, von Ihrer Customer Journey Analytics-Berechtigung abhängt und zwischen 75 und 150 liegt. |
 | **Juli 2026** | |
