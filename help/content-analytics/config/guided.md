@@ -9,29 +9,40 @@ autotag-review: '2026-05-19T08:54:42.845Z'
 TQID: 'https://experienceleague.adobe.com/kEqjocKd5pNypjQlF70HeF1bKuoG9Qi-AT6nJiIwuV0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
+    internal-label: Mobile experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 4806
-ht-degree: 54%
-
+source-wordcount: '4806'
+ht-degree: 55%
 ---
-
 
 # Geführte Content Analytics-Konfiguration
 
@@ -84,7 +95,7 @@ Der Assistent für geführte Konfigurationen umfasst vier Abschnitte: [Details](
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="Details"
->abstract="Geben Sie einen Namen für die Verbindung an. Geben Sie einen Namen für die Konfiguration an und wählen Sie die Sandbox aus, die die Inhaltsanalysedaten enthält, die Sie analysieren möchten."
+>abstract="Geben Sie einen Namen für die Verbindung an. Geben Sie einen Namen für die Konfiguration an und wählen Sie die Sandbox mit den Inhaltsanalysedaten aus, die Sie analysieren möchten."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
@@ -243,7 +254,7 @@ Im Abschnitt **[!UICONTROL Kanäle]** wählen Sie die Kanäle aus, die Sie für 
 * Um einen Kanal auszuwählen, den Sie noch nicht konfiguriert haben, klicken Sie auf **[!UICONTROL Aktivieren]**.
 * Um einen Kanal auszuwählen, der bereits konfiguriert ist, für den Sie jedoch die Konfiguration ändern möchten, wählen Sie **[!UICONTROL Konfiguration bearbeiten]**.
 
-Anschließend können Sie den Kanal detaillierter konfigurieren. Diese Konfiguration unterscheidet sich, je nachdem, ob Sie eine Konfiguration für den Kanal [Mobile](#mobile), [Web](#web) oder [Paid Media) aktivieren &#x200B;](#paid-media).
+Anschließend können Sie den Kanal detaillierter konfigurieren. Diese Konfiguration unterscheidet sich, je nachdem, ob Sie eine Konfiguration für den Kanal [Mobile](#mobile), [Web](#web) oder [Paid Media) aktivieren ](#paid-media).
 
 #### Mobile
 
@@ -517,7 +528,7 @@ Konfigurieren der Datenerfassung:
     1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
     1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
 
-    Verwenden Sie eine neue Tags-Eigenschaft, wenn Sie mithilfe der [Content Analytics JavaScript-Bibliothek eine Tags-unabhängige Implementierung für den Webkanal erstellen &#x200B;](/help/content-analytics/config/tags-agnostic.md). Die Tags-Eigenschaft wird erstellt, Sie verwenden die Eigenschaft jedoch nicht in der agnostischen Implementierung. Für die agnostische Implementierung müssen Sie jedoch den Assistenten für geführte Konfigurationen mindestens einmal ausgeführt haben.
+    Verwenden Sie eine neue Tags-Eigenschaft, wenn Sie mithilfe der [Content Analytics JavaScript-Bibliothek eine Tags-unabhängige Implementierung für den Webkanal erstellen ](/help/content-analytics/config/tags-agnostic.md). Die Tags-Eigenschaft wird erstellt, Sie verwenden die Eigenschaft jedoch nicht in der agnostischen Implementierung. Für die agnostische Implementierung müssen Sie jedoch den Assistenten für geführte Konfigurationen mindestens einmal ausgeführt haben.
 
 * Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Seiten ausschließen.
 
@@ -559,7 +570,7 @@ Nachdem Sie die Details für den Webkanal angegeben haben, klicken Sie auf **[!U
 
 +++
 
-#### Bezahlte Medien {#paid-media}
+#### Paid Media {#paid-media}
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
@@ -592,7 +603,7 @@ Unten finden Sie Beispiele zum Konfigurieren des Quell-Connectors für Google Ad
 
 >[!TAB Google Ads]
 
-1. Wählen Sie in Experience Platform **[!UICONTROL Quellen]** auf der Karte {**[!UICONTROL }Google Ads]** die Option Setup **aus, um den Einrichtungsassistenten zu starten.**
+1. Wählen Sie in Experience Platform **[!UICONTROL Quellen]** auf der Karte {**[!UICONTROL }Google Ads]** die Option Setup ]**aus, um den Einrichtungsassistenten zu starten.**[!UICONTROL 
 
    >[!WARNING]
    >
@@ -615,7 +626,7 @@ Unten finden Sie Beispiele zum Konfigurieren des Quell-Connectors für Google Ad
 
    ![Authentifizierung beim Google Ads-Quell-Connector - Schritt 4](../assets/paid-media-google-authentication-4.png)
 
-1. Nach erfolgreicher Authentifizierung wird ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg)**[!UICONTROL Connected]** im Schritt ➊&#x200B;**[!UICONTROL Authentifizierung]** des Assistenten angezeigt.
+1. Nach erfolgreicher Authentifizierung wird ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg)**[!UICONTROL Connected]** im Schritt ➊**[!UICONTROL Authentifizierung]** des Assistenten angezeigt.
 
    ![Authentifizierung beim Google Ads-Quell-Connector - Schritt 5](../assets/paid-media-google-authentication-5.png)
 
@@ -640,7 +651,7 @@ Unten finden Sie Beispiele zum Konfigurieren des Quell-Connectors für Google Ad
 
 >[!TAB Meta-Anzeigen]
 
-1. Wählen Sie in Experience Platform **[!UICONTROL Quellen]** auf der Karte {**[!UICONTROL }Meta Ads]** die Option Setup **aus, um den Einrichtungsassistenten zu starten.**
+1. Wählen Sie in Experience Platform **[!UICONTROL Quellen]** auf der Karte {**[!UICONTROL }Meta Ads]** die Option Setup ]**aus, um den Einrichtungsassistenten zu starten.**[!UICONTROL 
 
 1. Wählen Sie im ➊ **[!UICONTROL Authentifizierung]** des Assistenten die Option **[!UICONTROL Neues Konto]** und geben Sie einen **[!UICONTROL Kontonamen]**.
 
@@ -650,7 +661,7 @@ Unten finden Sie Beispiele zum Konfigurieren des Quell-Connectors für Google Ad
 
    ![Authentifizierungsschritt 2 des Meta Ads-Quell-Connectors](../assets/paid-media-meta-authentication-2.png)
 
-1. Nach erfolgreicher Authentifizierung wird ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg)**[!UICONTROL Connected]** im Schritt ➊&#x200B;**[!UICONTROL Authentifizierung]** des Assistenten angezeigt.
+1. Nach erfolgreicher Authentifizierung wird ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg)**[!UICONTROL Connected]** im Schritt ➊**[!UICONTROL Authentifizierung]** des Assistenten angezeigt.
 
    ![Authentifizierung beim Meta Ads-Quell-Connector - Schritt 3](../assets/paid-media-meta-authentication-3.png)
 
@@ -678,7 +689,7 @@ Unten finden Sie Beispiele zum Konfigurieren des Quell-Connectors für Google Ad
 
 >[!ENDTABS]
 
-Weitere Informationen zu den unterstützten Quell-Connectoren für [&#128279;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home) Paid-Media-Kanal finden Sie unter Übersicht über Source-Connectoren .
+Weitere Informationen zu den unterstützten Quell-Connectoren für ](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home) Paid-Media-Kanal finden Sie unter [Übersicht über Source-Connectoren .
 
 Nachdem Sie Quell-Connectoren in Experience Platform konfiguriert haben, wählen Sie ![Aktualisieren](/help/assets/icons/Refresh.svg) **[!UICONTROL Aktualisieren]** aus, um die Liste der Quell-Connectoren zu aktualisieren.
 
@@ -691,7 +702,7 @@ Sie sehen die Liste der verfügbaren Anzeigenplattformen und welche davon ![Stat
 
 Wenn Sie auf **[!UICONTROL Speichern]** klicken, wird Content Analytics automatisch:
 
-* Aktualisiert die Customer Journey Analytics-Verbindung, um Paid-Media-Datensätze von allen verbundenen Quell-Connectoren in dieser Sandbox einzuschließen.
+* Aktualisiert die Customer Journey Analytics-Verbindung, um Paid-Media-Datensätze aus allen verbundenen Quell-Connectoren in diese Sandbox aufzunehmen.
 * Aktiviert Paid-Media-Dimensionen und -Metriken in allen ausgewählten Datenansichten.
 * Verwendet Paid-Media-Kanäle als filterbare Dimension in Workspace-Berichten.
 
@@ -723,7 +734,7 @@ Wenn Sie eine Konfiguration erstellen oder bearbeiten, haben Sie die folgenden O
 
 * **[!UICONTROL Verwerfen]**: Alle im Rahmen der Konfiguration vorgenommenen Änderungen werden verworfen.
 * **[!UICONTROL Für später speichern]**: Änderungen an einer Konfiguration werden gespeichert. Um weitere Änderungen vorzunehmen oder die Konfiguration zu implementieren, besuchen Sie sie zu einem späteren Zeitpunkt erneut. Zum Speichern einer Konfiguration ist lediglich ein Wert für [!UICONTROL Name] erforderlich.
-* **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer Konfiguration werden gespeichert und implementiert. Alle als &quot;![&quot; markierten &#x200B;](/help/assets/icons/Required.svg) müssen über korrekte Werte verfügen. Die Implementierung besteht aus Folgendem:
+* **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer Konfiguration werden gespeichert und implementiert. Alle als &quot;![&quot; markierten ](/help/assets/icons/Required.svg) müssen über korrekte Werte verfügen. Die Implementierung besteht aus Folgendem:
 
   * **[!UICONTROL Customer Journey Analytics-Konfiguration]**:
     * Die ausgewählte Datenansicht wird aktualisiert, um Content Analytics-Dimensionen und -Metriken einzuschließen.

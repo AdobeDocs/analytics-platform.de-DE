@@ -7,28 +7,38 @@ exl-id: 53984934-6fba-4f15-aeeb-d91039260553
 TQID: https://experienceleague.adobe.com/pC3wjv6Q7RHRfDfHq75CP2Lqd-HzN-s7iLZ9t4N4ZR0
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection, Anomaly detection (CJA)
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 source-git-commit: 397c62d5090deede87a7ce31129b6afe6c9351ee
 workflow-type: tm+mt
-source-wordcount: 7316
-ht-degree: 79%
-
+source-wordcount: '7316'
+ht-degree: 83%
 ---
-
 # Konfigurieren einer Journey-Arbeitsflächenvisualisierung
 
 Die Journey-Arbeitsflächenvisualisierung hilft Ihnen, die Journey zu analysieren und tiefgreifende Erkenntnisse zu gewinnen, die Sie Ihren Benutzenden sowie Kundinnen und Kunden bereitstellen können.
@@ -101,8 +111,8 @@ Weitere Informationen zur Journey-Arbeitsfläche finden Sie unter [Journey-Arbei
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_arrow_settings"
->title="Pfeil-Einstellungen"
->abstract="Auswählen, ob Beschriftungen auf der Arbeitsfläche ein- oder ausgeblendet werden sollen. Beschriftungen sind benutzerdefinierte Namen, die in der Journey-Arbeitsfläche erstellt werden."
+>title="Pfeileinstellungen"
+>abstract="Wählen Sie aus, ob Labels auf der Arbeitsfläche ein- oder ausgeblendet werden sollen. Labels sind benutzerdefinierte Namen, die in der Journey-Arbeitsfläche erstellt werden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -110,8 +120,8 @@ Weitere Informationen zur Journey-Arbeitsfläche finden Sie unter [Journey-Arbei
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_arrow_settings_ajo"
->title="Pfeil-Einstellungen"
->abstract="Wählen Sie aus, ob Beschriftungen und Werte auf der Arbeitsfläche ein- oder ausgeblendet werden sollen. Bei Beschriftungen kann es sich um benutzerdefinierte Namen handeln, die auf der Journey-Arbeitsfläche erstellt wurden, oder um Beschriftungen oder Bedingungen, die in Journey Optimizer erstellt wurden. Werte sind Zahlen und Prozentsätze, die die Personen oder Sitzungen angeben, die auf dem Journey von einem Knoten zum nächsten verschoben wurden. "
+>title="Pfeileinstellungen"
+>abstract="Wählen Sie aus, ob Labels und Werte auf der Arbeitsfläche ein- oder ausgeblendet werden sollen. Bei Labels kann es sich um benutzerdefinierte Namen handeln, die auf der Journey-Arbeitsfläche erstellt wurden, oder um Labels oder Bedingungen, die in Journey Optimizer erstellt wurden. Werte sind Zahlen und Prozentsätze, die die Personen oder Sitzungen angeben, die sich in der Journey von einem Knoten zum nächsten bewegt haben. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -119,8 +129,8 @@ Weitere Informationen zur Journey-Arbeitsfläche finden Sie unter [Journey-Arbei
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_show_fallout"
->title="Fallout anzeigen"
->abstract="Fallout-Daten zeigen den Prozentsatz und die Anzahl der Personen oder Sitzungen auf jedem Knoten der Journey an, die nie den nächsten Knoten der Journey erreicht haben. Möglicherweise haben sie andere Aktionen auf der Site durchgeführt, aber sie erfüllten nie die Kriterien, die durch den nächsten Knoten in der Journey definiert wurden.<br/>Fallout-Daten zeigen entweder Personen oder Sitzungen an (unabhängig von der ausgewählten primären Metrik) und basieren auf der Einstellung Journey Canvas Container ."
+>title="Anzeigen von Fallout"
+>abstract="Fallout-Daten zeigen den Prozentsatz und die Anzahl der Personen oder Sitzungen an jedem Knoten der Journey an, die nie beim nächsten Knoten der Journey angekommen sind. Sie haben möglicherweise andere Aktionen auf der Site durchgeführt, erfüllten jedoch nie die Kriterien des nächsten Knotens in der Journey.<br/>Fallout-Daten zeigen entweder Personen oder Sitzungen an (unabhängig von der ausgewählten primären Metrik) und basieren auf der Container-Einstellung der Journey-Arbeitsfläche."
 
 <!-- markdownlint-enable MD034 -->
 

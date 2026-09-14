@@ -1,5 +1,5 @@
 ---
-description: Erfahren Sie, wie Segment Builder eine Arbeitsfläche bereitstellt, um basierend auf Container-Hierarchielogik, Regeln und Operatoren Metriken, Dimensionen, Segmente und Ereignisse per Drag-and-Drop zu segmentieren. Lernen Sie, wie Sie einfache oder komplexe Segmente erstellen und speichern, mit deren Hilfe Besucherattribute und Aktionen bei Besuchen und Seitentreffern identifiziert werden.
+description: Erfahren Sie, wie Segment Builder eine Arbeitsfläche bereitstellt, um basierend auf Container-Hierarchielogik, Regeln und Operatoren Metriken, Dimensionen, Segmente und Ereignisse per Drag-and-Drop zu segmentieren. Lernen Sie, wie Sie einfache oder komplexe Segmente aufbauen und speichern, mit deren Hilfe Besucherattribute und Aktionen über Besuche und Seitenaufrufe hinweg identifiziert werden.
 title: Erstellen von Segmenten
 feature: Filters, Segments
 role: User
@@ -7,23 +7,29 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 TQID: https://experienceleague.adobe.com/MFqcgWkCqZbtbI58nF8boBZU3YzfcuAAsJxXbjBcT5E
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 source-git-commit: e65b2ec10593c19ab056ecf72716a9267cfc0528
 workflow-type: tm+mt
-source-wordcount: 1932
-ht-degree: 71%
-
+source-wordcount: '1932'
+ht-degree: 73%
 ---
-
 # Erstellen von Segmenten {#build-segments}
 
 >[!CONTEXTUALHELP]
@@ -34,7 +40,7 @@ ht-degree: 71%
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="Datenvorschau"
->abstract="Vergleicht Segmentdaten mit Datenansichtsdaten. Der Vorschauprozentsatz entspricht der Gesamtzahl in der Datenansicht aus den **90 Tagen**.<br><br/>Wenn die Vorschau nicht geladen werden kann, wird die Verbindung aufgestockt."
+>abstract="Vergleicht Segmentdaten mit Datenansichtsdaten. Der Vorschauprozentsatz spiegelt die Gesamtzahl der Daten in der Datenansicht der **letzten 90 Tage** wider.<br><br/>Wenn die Vorschau nicht geladen werden kann, wird die Verbindung gerade aufgestockt."
 
 Das Dialogfeld **[!UICONTROL Segment Builder]** wird zum Erstellen neuer oder zum Bearbeiten vorhandener Segmente verwendet. Das Dialogfeld heißt **[!UICONTROL Neues Segment]** oder **[!UICONTROL Segment bearbeiten]** bei Segmenten, die Sie über den [[!UICONTROL Segment-Manager] erstellen oder verwalten](/help/components/segments/seg-manage.md).
 
@@ -64,7 +70,7 @@ Das Dialogfeld **[!UICONTROL Segment Builder]** wird zum Erstellen neuer oder zu
    {style="table-layout:auto"}
 
 1. Um zu überprüfen, ob Ihre Segmentdefinition korrekt ist, verwenden Sie die ständig aktualisierte Vorschau der Ergebnisse des Segments oben rechts.
-1. Um eine Zielgruppe aus dem Segment zu erstellen und die Zielgruppe für Experience Platform freizugeben, wählen Sie **[!UICONTROL Zielgruppe aus Segment erstellen]** aus. Weitere Informationen finden Sie unter [&#x200B; Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md).
+1. Um eine Zielgruppe aus dem Segment zu erstellen und die Zielgruppe für Experience Platform freizugeben, wählen Sie **[!UICONTROL Zielgruppe aus Segment erstellen]** aus. Weitere Informationen finden Sie unter [ Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md).
 1. Wählen Sie Folgendes aus:
    * **[!UICONTROL Speichern]**: Speichert das Segment.
    * **[!UICONTROL Speichern unter]**: Speichert eine Kopie des Segments.
@@ -79,7 +85,7 @@ Mit dem Definition Builder erstellen Sie Ihre Segmentdefinition. Dabei verwenden
 Sie können den Typ und den Umfang Ihrer Definition konfigurieren:
 
 1. Um den Typ Ihrer Definition anzugeben, geben Sie an, ob Sie eine Ein- oder eine Ausschlussdefinition erstellen möchten. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Optionen]** und aus dem Dropdown-Menü **[!UICONTROL Einbeziehen]** oder **[!UICONTROL Ausschließen]** aus.
-1. Wählen Sie den Definitionsbereich aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]** aus: **[!UICONTROL Ereignis]**, **[!UICONTROL Sitzung]**, **[!UICONTROL Person]**, **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Account]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"},**&#x200B;[!UICONTROL &#x200B; Opportunity &#x200B;]&#x200B;**[!BADGE B2B edition]** oder **&#x200B;**&#x200B;&rbrack;{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Einkaufsgruppe&rbrack;{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} B2B edition.
+1. Wählen Sie den Definitionsbereich aus dem Dropdown-Menü **[!UICONTROL Einschließen]** oder **[!UICONTROL Ausschließen]** aus: **[!UICONTROL Ereignis]**, **[!UICONTROL Sitzung]**, **[!UICONTROL Person]**, **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Account]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"},**[!UICONTROL  Opportunity ]**[!BADGE B2B edition]** oder **** ]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Einkaufsgruppe]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} [!BADGE B2B edition.[!BADGE 
 
 Sie können diese Einstellungen später jederzeit ändern.
 
@@ -93,7 +99,7 @@ So fügen Sie eine Komponente hinzu:
 
 1. Ziehen Sie eine Komponente aus dem Panel „Komponenten“ auf **[!UICONTROL Platzieren Sie Metriken, Segmente und/oder Dimensionen mittels Drag-and-Drop hier]**.
    * Sie können die ![Suche](/help/assets/icons/Search.svg) in der Komponentenleiste verwenden, um nach bestimmten Komponenten zu suchen.
-   * Sie können ![Filter](/help/assets/icons/Filter.svg) in der Komponentenleiste verwenden, um nach ![Häkchen](/help/assets/icons/Checkmark.svg)Genehmigt **, ![Stern](/help/assets/icons/Star.svg)Favoriten**, ![](/help/assets/icons2/DataDimension.svg) **&#x200B;**&#x200B;![&#x200B; &#x200B;](/help/assets/icons/Event.svg) Dimensionen **,**&#x200B;[!UICONTROL &#x200B; Metriken &#x200B;]&#x200B;**, ![](/help/assets/icons/Segmentation.svg)**&#x200B;**![&#x200B; &#x200B;](/help/assets/icons/Calendar.svg)**&#x200B;**![&#x200B; &#x200B;](/help/assets/icons/Layer.svg)**&#x200B;[!UICONTROL * *] **&#x200B; Segmentierung &#x200B;**, undDatumsbereicheContainerzu filtern (z. B. Sie können auch nach (![) &#x200B;](/help/assets/icons/Label.svg) filtern.
+   * Sie können ![Filter](/help/assets/icons/Filter.svg) in der Komponentenleiste verwenden, um nach ![Häkchen](/help/assets/icons/Checkmark.svg)Genehmigt ]**, ![Stern](/help/assets/icons/Star.svg)Favoriten]**, ![](/help/assets/icons2/DataDimension.svg) **** ![ ](/help/assets/icons/Event.svg) Dimensionen **[!UICONTROL ,**[!UICONTROL  Metriken ]**, ![](/help/assets/icons/Segmentation.svg)****![ ](/help/assets/icons/Calendar.svg)****![ ](/help/assets/icons/Layer.svg)**[!UICONTROL * *]** Segmentierung **[!UICONTROL , undDatumsbereicheContainerzu filtern (z. B. Sie können auch nach (![) ](/help/assets/icons/Label.svg) filtern.
 
 1. Geben Sie Details für die Komponente an. Wählen Sie beispielsweise einen Wert über **[!UICONTROL Wert auswählen]** aus. Oder geben Sie einen Wert ein. Wie Sie einen oder mehrere Werte und welche Werte Sie angeben können, hängt von der Komponente und dem Operator ab.
 
@@ -105,7 +111,7 @@ So fügen Sie eine Komponente hinzu:
 
    Diese Option wird nur angezeigt, wenn [!UICONTROL **Person**] als Umfang (Container) Ihrer Definition im **[!UICONTROL -Menü]** Einschließen oder **[!UICONTROL Ausschließen]** ausgewählt ist.
 
-   **HINWEIS**: Diese Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Veröffentlichungen von Funktionen für Customer Journey Analytics](/help/release-notes/releases.md).
+   **HINWEIS**: Diese Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Dieser Hinweis wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Veröffentlichungen von Funktionen für Customer Journey Analytics](/help/release-notes/releases.md).
 
 1. (Optional) Ändern Sie den Standardoperator.
 
@@ -132,7 +138,7 @@ Sie können mehrere Komponenten in einem oder mehreren Containern gruppieren und
 * Um dem Container eine weitere Komponente hinzuzufügen, ziehen Sie eine Komponente per Drag-and-Drop aus dem Panel „Komponente“ in den Container. Verwenden Sie die blaue Linie zum Einfügen als Orientierung.
 * Um eine weitere Komponente außerhalb des Containers hinzuzufügen, ziehen Sie eine Komponente per Drag-and-Drop aus dem Panel „Komponente“ außerhalb des Containers, aber innerhalb des Containers für die Hauptdefinition. Verwenden Sie die blaue Linie zum Einfügen als Orientierung.
 * Um die Logik zwischen Komponenten in einem Container, zwischen Containern oder zwischen einem Container und einer Komponente zu ändern, wählen Sie die entsprechende Option **[!UICONTROL Und]**, **[!UICONTROL Oder]**, **[!UICONTROL Dann]**. Wenn Sie Dann auswählen, wandeln Sie das Segment in ein sequenzielles Segment um. Weitere Informationen finden Sie unter [Erstellen eines sequenziellen Segments](seg-sequential-build.md).
-* Um die Container-Ebene zu wechseln, wählen Sie ![Globales &#x200B;](/help/assets/icons/Globe.svg) **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Konto](/help/assets/icons/Account.svg)**[!UICONTROL Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Opportunity **(/help/assets/icons/Opportunity.svg)]**, B2B edition, ![GRUPPE](/help/assets/icons/BuyingGroup.svg){type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}**&#x200B;** &rbrack;{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ![&#x200B; &#x200B;](/help/assets/icons/WebPage.svg) **&#x200B;**&#x200B;![&#x200B; &#x200B;](/help/assets/icons/Visit.svg) **&#x200B;**&#x200B;![&#x200B; &#x200B;](/help/assets/icons/User.svg) **&#x200B;**&#x200B;![&#x200B; &#x200B;](/help/assets/icons/Layer.svg) **&#x200B;**, Wenn Sie ![Ebene](/help/assets/icons/Layer.svg) **[!UICONTROL Objekt]** auswählen, wählen Sie den [benutzerdefinierten Container](/help/data-views/create-dataview.md#containers-1) aus. Zum Beispiel „Produkte“ oder „Content Assets&quot;.
+* Um die Container-Ebene zu wechseln, wählen Sie ![Globales ](/help/assets/icons/Globe.svg) **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Konto](/help/assets/icons/Account.svg)**[!UICONTROL Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Opportunity **(/help/assets/icons/Opportunity.svg)]**, [!BADGE B2B edition, ![GRUPPE](/help/assets/icons/BuyingGroup.svg)]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}**** ]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ![ ](/help/assets/icons/WebPage.svg) **** ![ ](/help/assets/icons/Visit.svg) **** ![ ](/help/assets/icons/User.svg) **** ![ ](/help/assets/icons/Layer.svg) ****, [!BADGE Wenn Sie ![Ebene](/help/assets/icons/Layer.svg) **[!UICONTROL Objekt]** auswählen, wählen Sie den [benutzerdefinierten Container](/help/data-views/create-dataview.md#containers-1) aus. Zum Beispiel „Produkte“ oder „Content Assets&quot;.
 
 Sie können ![Einstellung](/help/assets/icons/Setting.svg) in einem Container für die folgenden Aktionen verwenden:
 
@@ -141,30 +147,30 @@ Sie können ![Einstellung](/help/assets/icons/Setting.svg) in einem Container f�
 | **[!UICONTROL Behälter hinzufügen]** | Fügen Sie dem Container einen verschachtelten Container hinzu. |
 | **[!UICONTROL Ausschließen]** | Schließen Sie das Ergebnis aus dem Container in der Segmentdefinition aus. Ein dünner roter Balken auf der linken Seite kennzeichnet einen Container „Ausschließen.“ |
 | **[!UICONTROL Einschließlich]** | Beziehen Sie das Ergebnis aus dem Container in die Segmentdefinition ein. Die Standardeinstellung lautet „Einbeziehen“. Ein dünner grauer Balken auf der linken Seite kennzeichnet einen Container „Einbeziehen“. |
-| **[!UICONTROL Container benennen]** | Benennen Sie den Container ausgehend von seiner Standardbeschreibung um. Geben Sie einen Namen in das Textfeld ein. Wenn Sie keine Eingabe vornehmen, wird die Standardbeschreibung verwendet. |
+| **[!UICONTROL Container benennen]** | Benennen Sie den Container ausgehend von seiner Standardbeschreibung um. Geben Sie einen Namen in das Feld ein. Wenn Sie keine Eingabe vornehmen, wird die Standardbeschreibung verwendet. |
 | **[!UICONTROL Container löschen]** | Löschen Sie den Container aus der Definition. |
 
-Durch Ziehen einer als (Container[&#x200B; definierten Dimension oder Metrik &#x200B;](/help/data-views/create-dataview.md#containers-1) Segment Builder wird automatisch der richtige Container anstelle des standardmäßigen (Ereignis **[!UICONTROL -Containers]**. Dadurch wird das Segment für den einzelnen Container und nicht für das gesamte Ereignis gespeichert.
+Durch Ziehen einer als (Container[ definierten Dimension oder Metrik ](/help/data-views/create-dataview.md#containers-1) Segment Builder wird automatisch der richtige Container anstelle des standardmäßigen (Ereignis **[!UICONTROL -Containers]**. Dadurch wird das Segment für den einzelnen Container und nicht für das gesamte Ereignis gespeichert.
 
 Wenn Sie sowohl Komponenten [Container](/help/data-views/create-dataview.md#containers-1) als auch auf Ereignisebene in eine einzelne Segmentregel ziehen, verwendet das System den **[!UICONTROL Event]**-Container, der den höchsten (am wenigsten granularen) freigegebenen Container darstellt. Wenn sich alle Komponenten, die Teil einer Segmentregel sind, auf derselben Container-Ebene befinden, wird dieser Container verwendet.
 
 ## Datumsbereiche
 
-Sie können Segmente erstellen, die rollierende Datumsbereiche enthalten. So können Sie Fragen zu laufenden Kampagnen oder Ereignissen beantworten. Sie können beispielsweise ein Segment erstellen, das *alle Personen, die in den letzten 60 Tagen einen Online-Kauf getätigt haben* enthält.
+Sie können Segmente aufbauen, die rollierende Datumsbereiche enthalten. So können Sie Fragen zu laufenden Kampagnen oder Ereignissen beantworten. Sie können beispielsweise ein Segment erstellen, das *alle Personen, die in den letzten 60 Tagen einen Online-Kauf getätigt haben* enthält.
 
 ![Segment mit rollierendem Datumsbereich](assets/filter-rolling-date-range.gif)
 
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rollierende Datumsbereiche in Segmenten](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/components/segmentation/rolling-date-ranges-in-segments){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rollierende Datumsbereiche in Segmenten](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/rolling-date-ranges-in-segments){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
 
 ## Stapeln von Segmenten {#stack}
 
-Sie können ein Segment mithilfe von Segmenten erstellen. Wenn Sie Segmente in einem Segment verwenden, können Sie Ihr Segment optimieren und die Komplexität reduzieren.
+Sie können ein Segment mithilfe von Segmenten aufbauen. Wenn Sie Segmente in einem Segment verwenden, können Sie Ihr Segment optimieren und die Komplexität reduzieren.
 
 Angenommen, Sie möchten eine Segmentierung anhand der Kombination aus Gerätetyp (2) und US-Status (50) vornehmen. Sie können entweder 100 Segmente erstellen, d. h. jeweils eine eindeutige Kombination aus Gerätetyp (Mobiltelefon oder Tablet) und US-Bundesstaat. Um die Tablet-Benutzer in Kalifornien zu erhalten, verwenden Sie eines der 100 Segmente:
 
@@ -192,7 +198,7 @@ Oder definieren Sie 52 Segmente: 50 Segmente für die US-Bundesstaaten, eines f�
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_nonrepeatinginstance"
 >title="Sich nicht wiederholende Instanz"
->abstract="Umfasst einzigartige (sich nicht wiederholende) Instanzen für die Dimension."
+>abstract="Umfasst eindeutige (sich nicht wiederholende) Instanzen für die Dimension."
 
 
 
@@ -214,9 +220,9 @@ Wählen Sie in der Dimensionskomponente das Symbol ![Setting](/help/assets/icons
 
 Als Teil einer Segmentdefinition haben Sie die folgende Bedingung angegeben: Seitenname ist gleich Frauen. Dies ist ähnlich wie im obigen Beispiel. Sie wiederholen diese Segmentdefinition mit den beiden anderen Attributionsmodellen. Sie haben also drei Segmente mit jeweils einem eigenen Attributionsmodell:
 
-* „Frauen“-Seite – Attribution – Wiederholung (Standard)
-* „Frauen“-Seite – Attribution – Instanz
-* „Frauen“-Seite – Attribution – Sich nicht wiederholende Instanz
+* Frauen-Seite – Attribution – Wiederholung (Standard)
+* Frauen-Seite – Attribution – Instanz
+* Frauen-Seite – Attribution – nicht wiederholende Instanz
 
 
 In der folgenden Tabelle wird für jedes Attributionsmodell angegeben, welche eingehenden Ereignisse für diese Bedingung qualifiziert ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) sind.
