@@ -1,35 +1,34 @@
 ---
-title: Konfigurieren der Konfiguration für Conversation Insights
+title: Erstellen oder Bearbeiten einer Conversation Insights-Konfiguration
 description: Erfahren Sie, wie Sie Conversation Insights-Konfigurationen konfigurieren.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '638'
 ht-degree: 8%
 ---
-# Konfigurieren von Conversation Insights-Konfigurationen
+# Erstellen oder Bearbeiten von Konfigurationen
 
 
 Conversation Insights ermöglicht es Ihnen, Konversationen (aus großen Sprachmodellen (LLM) oder Menschen) in großem Maßstab zu analysieren und diesen Konversationen den Kontext innerhalb der gesamten Kunden-Journey zu geben. Mithilfe von Conversation Insights sind Sie in der Lage, die Auswirkungen von Repräsentanten auf tatsächliche Benutzerergebnisse zu verstehen.
 
-
-## Erstellen oder Bearbeiten einer Konfiguration
+Über die Konfigurationsoberfläche für Conversation Insights können Sie schnell eine Konfiguration und die zugehörigen Artefakte (Verbindung, Datenansichten usw.) erstellen oder bearbeiten.
 
 Wenn Sie eine Conversation Insights-Konfiguration erstellen oder bearbeiten, geben Sie die Sandbox und die Ereignis-Datensätze an, die Eingabeaufforderungen, Antworten und Feedback-Daten enthalten. Sie können auch die Customer Journey Analytics-Verbindung auswählen, der Sie diese Datensätze hinzufügen möchten. Und die Datenansicht, der Sie die Metriken und Dimensionen von Conversation Insights hinzufügen möchten.
 
 Nur Systemadministratoren können Conversation Insights-Konfigurationen erstellen oder bearbeiten.
 
-Sie können Konfigurationen über die Benutzeroberfläche „Conversation Insights[Konfigurationen“ erstellen oder &#x200B;](./conversation-insights-manage.md).
+Sie können Konfigurationen über die Benutzeroberfläche „Conversation Insights[Konfigurationen“ erstellen oder ](./conversation-insights-manage.md).
 
-### Fehlenden kombinierten Datensatz wiederherstellen
+## Fehlenden kombinierten Datensatz wiederherstellen
 
 Wenn Sie eine Konfiguration bearbeiten und der für die Konfiguration generierte gemischte Datensatz nicht mehr vorhanden ist, wählen Sie **[!UICONTROL Wiederherstellen]** aus, um den gemischten Datensatz neu zu generieren.
 
 
-### Konfigurationsschritte
+## Konfigurationsschritte
 
 Für jede Konfiguration:
 
