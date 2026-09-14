@@ -22,7 +22,7 @@ Wenn Sie eine Conversation Insights-Konfiguration erstellen oder bearbeiten, geb
 
 Nur Systemadministratoren können Conversation Insights-Konfigurationen erstellen oder bearbeiten.
 
-Sie können Konfigurationen über die Benutzeroberfläche „Conversation Insights[Konfigurationen“ erstellen oder ](./conversation-insights-manage.md).
+Sie können Konfigurationen über die Benutzeroberfläche „Conversation Insights[Konfigurationen“ erstellen oder &#x200B;](./conversation-insights-manage.md).
 
 ### Fehlenden kombinierten Datensatz wiederherstellen
 

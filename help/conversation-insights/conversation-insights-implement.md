@@ -19,7 +19,7 @@ Dieser Artikel dokumentiert die erforderlichen Implementierungsschritte.
 >[!PREREQUISITES]
 >
 >Sie müssen über eine Experience Platform-Umgebung (Organisation und Sandbox) verfügen, um die Daten zu erfassen.
-Ihre Adobe-Organisation muss für die Feldergruppen „Experimenteller Agent“ und „Konversation“ aktiviert sein.
+>Ihre Adobe-Organisation muss für die Feldergruppen „Experimenteller Agent“ und „Konversation“ aktiviert sein.
 
 ## Schema und Datensätze
 
