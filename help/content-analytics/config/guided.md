@@ -254,7 +254,7 @@ Im Abschnitt **[!UICONTROL Kanäle]** wählen Sie die Kanäle aus, die Sie für 
 * Um einen Kanal auszuwählen, den Sie noch nicht konfiguriert haben, klicken Sie auf **[!UICONTROL Aktivieren]**.
 * Um einen Kanal auszuwählen, der bereits konfiguriert ist, für den Sie jedoch die Konfiguration ändern möchten, wählen Sie **[!UICONTROL Konfiguration bearbeiten]**.
 
-Anschließend können Sie den Kanal detaillierter konfigurieren. Diese Konfiguration unterscheidet sich, je nachdem, ob Sie eine Konfiguration für den Kanal [Mobile](#mobile), [Web](#web) oder [Paid Media) aktivieren ](#paid-media).
+Anschließend können Sie den Kanal detaillierter konfigurieren. Diese Konfiguration unterscheidet sich, je nachdem, ob Sie eine Konfiguration für den Kanal [Mobile](#mobile), [Web](#web) oder [Paid Media) aktivieren &#x200B;](#paid-media).
 
 #### Mobile
 
@@ -528,7 +528,7 @@ Konfigurieren der Datenerfassung:
     1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
     1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
 
-    Verwenden Sie eine neue Tags-Eigenschaft, wenn Sie mithilfe der [Content Analytics JavaScript-Bibliothek eine Tags-unabhängige Implementierung für den Webkanal erstellen ](/help/content-analytics/config/tags-agnostic.md). Die Tags-Eigenschaft wird erstellt, Sie verwenden die Eigenschaft jedoch nicht in der agnostischen Implementierung. Für die agnostische Implementierung müssen Sie jedoch den Assistenten für geführte Konfigurationen mindestens einmal ausgeführt haben.
+    Verwenden Sie eine neue Tags-Eigenschaft, wenn Sie mithilfe der [Content Analytics JavaScript-Bibliothek eine Tags-unabhängige Implementierung für den Webkanal erstellen &#x200B;](/help/content-analytics/config/tags-agnostic.md). Die Tags-Eigenschaft wird erstellt, Sie verwenden die Eigenschaft jedoch nicht in der agnostischen Implementierung. Für die agnostische Implementierung müssen Sie jedoch den Assistenten für geführte Konfigurationen mindestens einmal ausgeführt haben.
 
 * Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Seiten ausschließen.
 
@@ -603,7 +603,7 @@ Unten finden Sie Beispiele zum Konfigurieren des Quell-Connectors für Google Ad
 
 >[!TAB Google Ads]
 
-1. Wählen Sie in Experience Platform **[!UICONTROL Quellen]** auf der Karte {**[!UICONTROL }Google Ads]** die Option Setup ]**aus, um den Einrichtungsassistenten zu starten.**[!UICONTROL 
+1. Wählen Sie in Experience Platform **[!UICONTROL Quellen]** auf der Karte {**[!UICONTROL }Google Ads]** die Option Setup **aus, um den Einrichtungsassistenten zu starten.**
 
    >[!WARNING]
    >
@@ -626,7 +626,7 @@ Unten finden Sie Beispiele zum Konfigurieren des Quell-Connectors für Google Ad
 
    ![Authentifizierung beim Google Ads-Quell-Connector - Schritt 4](../assets/paid-media-google-authentication-4.png)
 
-1. Nach erfolgreicher Authentifizierung wird ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg)**[!UICONTROL Connected]** im Schritt ➊**[!UICONTROL Authentifizierung]** des Assistenten angezeigt.
+1. Nach erfolgreicher Authentifizierung wird ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg)**[!UICONTROL Connected]** im Schritt ➊&#x200B;**[!UICONTROL Authentifizierung]** des Assistenten angezeigt.
 
    ![Authentifizierung beim Google Ads-Quell-Connector - Schritt 5](../assets/paid-media-google-authentication-5.png)
 
@@ -651,7 +651,7 @@ Unten finden Sie Beispiele zum Konfigurieren des Quell-Connectors für Google Ad
 
 >[!TAB Meta-Anzeigen]
 
-1. Wählen Sie in Experience Platform **[!UICONTROL Quellen]** auf der Karte {**[!UICONTROL }Meta Ads]** die Option Setup ]**aus, um den Einrichtungsassistenten zu starten.**[!UICONTROL 
+1. Wählen Sie in Experience Platform **[!UICONTROL Quellen]** auf der Karte {**[!UICONTROL }Meta Ads]** die Option Setup **aus, um den Einrichtungsassistenten zu starten.**
 
 1. Wählen Sie im ➊ **[!UICONTROL Authentifizierung]** des Assistenten die Option **[!UICONTROL Neues Konto]** und geben Sie einen **[!UICONTROL Kontonamen]**.
 
@@ -661,7 +661,7 @@ Unten finden Sie Beispiele zum Konfigurieren des Quell-Connectors für Google Ad
 
    ![Authentifizierungsschritt 2 des Meta Ads-Quell-Connectors](../assets/paid-media-meta-authentication-2.png)
 
-1. Nach erfolgreicher Authentifizierung wird ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg)**[!UICONTROL Connected]** im Schritt ➊**[!UICONTROL Authentifizierung]** des Assistenten angezeigt.
+1. Nach erfolgreicher Authentifizierung wird ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg)**[!UICONTROL Connected]** im Schritt ➊&#x200B;**[!UICONTROL Authentifizierung]** des Assistenten angezeigt.
 
    ![Authentifizierung beim Meta Ads-Quell-Connector - Schritt 3](../assets/paid-media-meta-authentication-3.png)
 
@@ -689,7 +689,7 @@ Unten finden Sie Beispiele zum Konfigurieren des Quell-Connectors für Google Ad
 
 >[!ENDTABS]
 
-Weitere Informationen zu den unterstützten Quell-Connectoren für ](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home) Paid-Media-Kanal finden Sie unter [Übersicht über Source-Connectoren .
+Weitere Informationen zu den unterstützten Quell-Connectoren für [&#128279;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home) Paid-Media-Kanal finden Sie unter Übersicht über Source-Connectoren .
 
 Nachdem Sie Quell-Connectoren in Experience Platform konfiguriert haben, wählen Sie ![Aktualisieren](/help/assets/icons/Refresh.svg) **[!UICONTROL Aktualisieren]** aus, um die Liste der Quell-Connectoren zu aktualisieren.
 
@@ -734,7 +734,7 @@ Wenn Sie eine Konfiguration erstellen oder bearbeiten, haben Sie die folgenden O
 
 * **[!UICONTROL Verwerfen]**: Alle im Rahmen der Konfiguration vorgenommenen Änderungen werden verworfen.
 * **[!UICONTROL Für später speichern]**: Änderungen an einer Konfiguration werden gespeichert. Um weitere Änderungen vorzunehmen oder die Konfiguration zu implementieren, besuchen Sie sie zu einem späteren Zeitpunkt erneut. Zum Speichern einer Konfiguration ist lediglich ein Wert für [!UICONTROL Name] erforderlich.
-* **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer Konfiguration werden gespeichert und implementiert. Alle als &quot;![&quot; markierten ](/help/assets/icons/Required.svg) müssen über korrekte Werte verfügen. Die Implementierung besteht aus Folgendem:
+* **[!UICONTROL Implementieren]**: Einstellungen für oder Änderungen an einer Konfiguration werden gespeichert und implementiert. Alle als &quot;![&quot; markierten &#x200B;](/help/assets/icons/Required.svg) müssen über korrekte Werte verfügen. Die Implementierung besteht aus Folgendem:
 
   * **[!UICONTROL Customer Journey Analytics-Konfiguration]**:
     * Die ausgewählte Datenansicht wird aktualisiert, um Content Analytics-Dimensionen und -Metriken einzuschließen.
