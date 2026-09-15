@@ -7,32 +7,38 @@ role: Admin
 hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
   - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 1326
-ht-degree: 11%
-
+source-wordcount: '1326'
+ht-degree: 28%
 ---
-
-# Konfigurieren von Einverständnisberichten und -filtern {#configure-consent-reporting}
+# Konfigurieren von Einverständnis-Reporting und -filterung {#configure-consent-reporting}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-consent-merge-policy"
 >title="Zusammenführungsrichtlinie"
->abstract="Zusammenführungsrichtlinien kombinieren Profildaten aus mehreren Datensätzen zu einheitlichen Kundenprofilen, die für die Erstellung von Zielgruppen verwendet werden. Wählen Sie die Zusammenführungsrichtlinie aus, die dem Profildatensatz entspricht, der die Einverständnisrichtlinien-Mitgliedschaftsdaten enthält (das `consentPoliciesIDMap` Feld), über die Sie einen Bericht erstellen möchten. Sie können sich auch an Ihr Daten-Team wenden, um zu erfahren, welche Zielgruppen den jeweiligen Zusammenführungsrichtlinien zugeordnet sind."
+>abstract="Zusammenführungsrichtlinien kombinieren Profildaten aus mehreren Datensätzen zu einheitlichen Kundenprofilen, die für die Erstellung von Zielgruppen verwendet werden. Wählen Sie die Zusammenführungsrichtlinie für den Profildatensatz aus, der die im Bericht zu berücksichtigenden Daten über die Zustimmung zur Einverständnisrichtlinie enthält (Feld `consentPoliciesIDMap`). Sie können sich auch an Ihr Daten-Team wenden, um zu erfahren, welche Zielgruppen den jeweiligen Zusammenführungsrichtlinien zugeordnet sind."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -41,7 +47,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-sandbox"
 >title="Sandbox"
->abstract="Wählen Sie die Sandbox aus, die die korrekten Experience Platform-Profildatensätze enthält. Diese Datensätze müssen die Einverständnisdaten enthalten, zu denen Sie in Analysis Workspace einen Bericht erstellen möchten."
+>abstract="Wählen Sie die Sandbox aus, die die korrekten Experience Platform-Profildatensätze enthält. Diese Datensätze müssen die Einverständnisdaten enthalten, zu denen Sie in Analysis Workspace Berichte erstellen möchten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +56,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-person-id"
 >title="Personen-ID"
->abstract="Wählen Sie ein Feld aus dem modellbasierten Schema aus, das die Personen-ID darstellt. Die Auswahl ist auf die Liste der Felder im Schema beschränkt, die als „Identität“ markiert sind und keinen Identity-Namespace haben."
+>abstract="Wählen Sie ein Feld aus dem modellbasierten Schema aus, das die Personen-ID darstellt. Die Auswahl ist auf die Liste der Felder im Schema beschränkt, die als „Identität“ markiert sind und einen Identity-Namespace aufweisen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -58,8 +64,8 @@ ht-degree: 11%
 
 >[!CONTEXTUALHELP]
 >id="cja-consent-identity-namespace"
->title="Primären Identity-Namespace verwenden"
->abstract="Aktivieren Sie diese Option, wenn Customer Journey Analytics die Identität in der Identitätszuordnung finden soll, die mit dem Attribut primary=true gekennzeichnet ist, und diese Identität als Personen-ID für diese Zeile verwendet. Diese Identität ist der Primärschlüssel, der in Experience Platform für die Partitionierung verwendet wird. <br/>Wenn Sie diese Option deaktiviert lassen, wählen Sie im Feld „Identity-Namespace“ weiter unten einen Namespace aus. Customer Journey Analytics durchsucht die Identitätszuordnung jeder Zeile nach diesem Namespace-Schlüssel und verwendet die unter diesem Namespace aufgeführte Identität als Personen-ID für die jeweilige Zeile."
+>title="Verwenden eines primären Identity-Namespace"
+>abstract="Aktivieren Sie diese Option, wenn Customer Journey Analytics die in der Identitätszuordnung mit dem Attribut „primary=true“ markierte Identität finden und diese als Personen-ID für die jeweilige Zeile verwenden soll. Diese Identität ist der Primärschlüssel, der in Experience Platform für die Partitionierung verwendet wird. <br/>Wenn Sie diese Option deaktiviert lassen, wählen Sie im Feld „Identity-Namespace“ weiter unten einen Namespace aus. Customer Journey Analytics durchsucht die Identitätszuordnung jeder Zeile nach diesem Namespace-Schlüssel und verwendet die unter diesem Namespace aufgeführte Identität als Personen-ID für die jeweilige Zeile."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -67,8 +73,8 @@ ht-degree: 11%
 
 >[!CONTEXTUALHELP]
 >id="cja-consent-enable-reporting"
->title="Reporting aktivieren"
->abstract="Aktivieren Sie diese Option, um mit Analysis Workspace Berichte zu den in Ihrer Verbindung verfügbaren Einverständnisdaten zu erstellen. Dimensionen und Metriken der Einverständnisrichtlinie werden zu den von Ihnen ausgewählten Datenansichten hinzugefügt."
+>title="Aktivieren von Reporting"
+>abstract="Aktivieren Sie diese Option, um mit Analysis Workspace Berichte zu den in Ihrer Verbindung verfügbaren Einverständnisdaten zu erstellen. Dimensionen und Metriken zur Einverständnisrichtlinie werden zu den von Ihnen ausgewählten Datenansichten hinzugefügt."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -76,8 +82,8 @@ ht-degree: 11%
 
 >[!CONTEXTUALHELP]
 >id="cja-consent-enable-filtering"
->title="Filter aktivieren"
->abstract="Aktivieren Sie diese Option, um Besucherdaten, die nicht mit dem Einverständnis des Benutzers übereinstimmen, von der Aufnahme in Customer Journey Analytics auszuschließen. Wenn diese Option aktiviert ist, werden die Daten eines Besuchers nur dann aufgenommen, wenn der Besucher allen unten aktivierten Einverständnisrichtlinien entspricht. <br>Diese Option richtet sich an Organisationen, die nicht einverständnispflichtige Besucherdaten zum Zeitpunkt der Aufnahme ausschließen müssen."
+>title="Aktivieren von Filterung"
+>abstract="Aktivieren Sie diese Option, um Daten zu Besuchenden, die kein Einverständnis geben, von der Aufnahme in Customer Journey Analytics auszuschließen. Wenn diese Option aktiviert ist, werden die Daten einer Besucherin bzw. eines Besuchers nur dann aufgenommen, wenn die Besucherin bzw. der Besucher allen unten aktivierten Einverständnisrichtlinien zustimmt. <br>Diese Option richtet sich an Organisationen, die Daten zu Besuchenden, die kein Einverständnis geben, zum Zeitpunkt der Aufnahme ausschließen müssen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -112,7 +118,7 @@ So erstellen Sie eine Reporting- und Filterkonfiguration für Einverständnisse:
 
    Einverständnisberichte und -filter werden auf Verbindungsebene angewendet. Alle Datenansichten unter einer konfigurierten Verbindung übernehmen dasselbe Verhalten.
 
-1. Wählen **[!UICONTROL im Feld]** Personen-ID“ ein Feld aus dem modellbasierten Schema aus, das die Personen-ID darstellt. Die Auswahl ist auf die Liste der Felder im Schema beschränkt, die als „Identität“ markiert sind und keinen Identity-Namespace haben.
+1. Wählen **[!UICONTROL im Feld]** Personen-ID“ ein Feld aus dem modellbasierten Schema aus, das die Personen-ID darstellt. Die Auswahl ist auf die Liste der Felder im Schema beschränkt, die als „Identität“ markiert sind und einen Identity-Namespace aufweisen.
 
 1. Wählen Sie aus, ob das Reporting für die Einverständnisdaten aktiviert werden soll.
 

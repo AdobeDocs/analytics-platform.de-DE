@@ -1,33 +1,42 @@
 ---
 title: Erstellen und Veröffentlichen von Zielgruppen
-description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
+description: Erfahren Sie, wie Sie Zielgruppen aus Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 TQID: https://experienceleague.adobe.com/BPbSzyh6eg3QC6NcAVgo06GAISzVH2CX35Z-Q32xMbE
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
-source-wordcount: 2520
-ht-degree: 93%
-
+source-wordcount: '2520'
+ht-degree: 96%
 ---
-
 # Erstellen und Veröffentlichen von Zielgruppen {#create-and-publish-audiences}
 
 <!-- markdownlint-disable MD034 -->
@@ -35,7 +44,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="Häufigkeit der Aktualisierung"
->abstract="Die Häufigkeit, mit der die Zugehörigkeit zu einer Zielgruppe erneut ausgewertet wird. <br/>Einmalige Anfragen werden nur einmal ausgewertet. Sie werden nicht auf Ihr Aktualisierungslimit angerechnet."
+>abstract="Die Häufigkeit, mit der die Zugehörigkeit zu einer Zielgruppe erneut ausgewertet wird.<br/>Einmalige Anfragen werden nur einmal ausgewertet und nicht auf Ihr Aktualisierungs-Limit angerechnet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -43,8 +52,8 @@ ht-degree: 93%
 
 >[!CONTEXTUALHELP]
 >id="components_audiences_audiencelimit"
->title="Zielgruppenlimit aktualisieren"
->abstract="Die Anzahl der Zielgruppen in Ihrer Umgebung, die so konfiguriert sind, dass sie automatisch mit geplanter Häufigkeit aktualisiert werden. Die Beschränkungen liegen je nach Customer Journey Analytics-Berechtigung zwischen 75 und 150. Einmalige Anfragen werden für dieses Limit nicht angerechnet."
+>title="Aktualisieren des Zielgruppen-Limits"
+>abstract="Die Anzahl der Zielgruppen in Ihrer Umgebung, die so konfiguriert sind, dass sie automatisch mit geplanter Häufigkeit aktualisiert werden. Die Limits liegen je nach Customer Journey Analytics-Berechtigung zwischen 75 und 150. Einmalige Anfragen werden nicht auf dieses Limit angerechnet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -101,7 +110,7 @@ Lesen Sie diesen [Überblick](/help/components/audiences/audiences-overview.md),
 1. Wählen Sie **[!UICONTROL [!UICONTROL Beispiel-IDs anzeigen]]** aus, um Beispiel-IDs in dieser Zielgruppe anzuzeigen. Im Dialogfeld **[!UICONTROL Beispiel-IDs]** können Sie über ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Beispiel-IDs suchen*] nach Beispiel-IDs suchen.
 
 1. Überprüfen Sie Ihre Zielgruppenkonfiguration und wählen Sie **[!UICONTROL Veröffentlichen]** aus.
-Sie erhalten eine Nachricht mit der Bestätigung, dass die Zielgruppe veröffentlicht wird. Es dauert nur ein bis zwei Minuten, bis die Veröffentlichung dieser Zielgruppe in Experience Platform angezeigt wird.
+Sie erhalten eine Nachricht mit der Bestätigung, dass die Zielgruppe veröffentlicht wurde. Es dauert nur ein bis zwei Minuten, bis diese Zielgruppe in Experience Platform angezeigt wird.
 
 1. Wählen Sie in derselben Nachricht die Option **[!UICONTROL Zielgruppe in AEP anzeigen]** aus. Dadurch gelangen Sie zur [Segment-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/experience-platform/segmentation/ui/overview) in Adobe Experience Platform. Weitere Informationen finden Sie unten.
 
@@ -117,7 +126,7 @@ Konfigurieren Sie diese Einstellungen, um Ihre Zielgruppe zu definieren oder zu 
 | **[!UICONTROL Name]** | Der Name der Zielgruppe. Beispiel: `Really Interested in Potential Car Buyers` |
 | **[!UICONTROL Tags]** | Alle Tags, die der Zielgruppe aus organisatorischen Gründen zugewiesen werden sollen. Sie können ein oder mehrere bereits vorhandene Tags auswählen oder ein neues eingeben. |
 | **[!UICONTROL Beschreibung]** | Eine Beschreibung der Zielgruppe, um sie von anderen leicht unterscheiden zu können. Beispiel: `Build an audience of really interested potential car buyers` |
-| **[!UICONTROL Häufigkeit der Aktualisierung]** | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<p/><p>Abhängig von Ihrer Customer Journey Analytics-Berechtigung können Sie eine geplante Aktualisierung für eine begrenzte Anzahl von Zielgruppen (zwischen 75 und 150) konfigurieren. </p><p>Sie können aus den folgenden Optionen wählen:</p><ul><li>**[!UICONTROL Einmal]**: Eine einmalige Anfrage, die nicht aktualisiert werden muss. Diese Option könnte beispielsweise bei bestimmten einmaligen Kampagnen nützlich sein.<br/>Sie müssen einen **[!UICONTROL einmaligen Datumsbereich]** angeben. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um einen Datumsbereich einzugeben.</li><li>Sich aktualisierende Zielgruppe: Sie können aus den folgenden Optionen für die geplante Aktualisierung auswählen:<ul><li>**[!UICONTROL Alle 4 Stunden]**: Eine Zielgruppe, die alle 4 Stunden aktualisiert wird.</li><li>**[!UICONTROL Täglich]**: Eine Zielgruppe, die täglich aktualisiert wird</li><li>**[!UICONTROL Wöchentlich]**: Eine Zielgruppe, die wöchentlich aktualisiert wird.</li><li>**[!UICONTROL Monatlich]**: Eine Zielgruppe, die monatlich aktualisiert wird</li></ul></li>Für sich aktualisierende Zielgruppen müssen Sie Folgendes angeben:<ul><li>**[!UICONTROL Lookback-Fenster aktualisieren]**: Definieren Sie die Anzahl der Lookback-Tage ab heute, in denen eine Zielgruppe ausgewertet wird. Sie können aus Optionen auswählen oder eine benutzerdefinierte Zeit definieren. Die Höchstdauer beträgt 90 Tage.</li><li>**[!UICONTROL Ablaufdatum]**: Legen Sie fest, wann die Zielgruppe nicht mehr aktualisiert wird. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um ein Datum auszuwählen. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Ablaufende Zielgruppen werden ähnlich wie ablaufende terminierte Berichte behandelt. Die oder der Admin erhält einen Monat vor Ablauf der Zielgruppe eine E-Mail.</li></ul></ul> |
+| **[!UICONTROL Häufigkeit der Aktualisierung]** | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<p/><p>Abhängig von Ihrer Customer Journey Analytics-Berechtigung können Sie eine geplante Aktualisierung für eine begrenzte Anzahl von Zielgruppen (zwischen 75 und 150) konfigurieren. </p><p>Sie können aus den folgenden Optionen wählen:</p><ul><li>**[!UICONTROL Einmal]**: Eine einmalige Anfrage, die nicht aktualisiert werden muss. Diese Option könnte beispielsweise bei bestimmten einmaligen Kampagnen nützlich sein.<br/>Sie müssen einen **[!UICONTROL einmaligen Datumsbereich]** angeben. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um einen Datumsbereich einzugeben.</li><li>Sich aktualisierende Zielgruppe: Sie können aus den folgenden Optionen für die geplante Aktualisierung auswählen:<ul><li>**[!UICONTROL Alle 4 Stunden]**: Eine Zielgruppe, die alle 4 Stunden aktualisiert wird.</li><li>**[!UICONTROL Täglich]**: Eine Zielgruppe, die täglich aktualisiert wird</li><li>**[!UICONTROL Wöchentlich]**: Eine Zielgruppe, die wöchentlich aktualisiert wird.</li><li>**[!UICONTROL Monatlich]**: Eine Zielgruppe, die monatlich aktualisiert wird</li></ul></li>Für aktualisierte Zielgruppen müssen Sie Folgendes angeben:<ul><li>**[!UICONTROL Lookback-Fenster aktualisieren]**: Definieren Sie die Anzahl der Lookback-Tage ab heute, die bei der Auswertung einer Zielgruppe berücksichtigt werden. Sie können aus Optionen auswählen oder eine benutzerdefinierte Zeit definieren. Die Höchstdauer beträgt 90 Tage.</li><li>**[!UICONTROL Ablaufdatum]**: Legen Sie fest, wann die Zielgruppe nicht mehr aktualisiert wird. Sie können den ![Kalender](/help/assets/icons/Calendar.svg) verwenden, um ein Datum auszuwählen. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Ablaufende Zielgruppen werden ähnlich wie geplante Berichte mit Ablaufdatum behandelt. Die bzw. der Admin erhält einen Monat vor Ablauf der Zielgruppe eine E-Mail.</li></ul></ul> |
 | **[!UICONTROL Filter]** | Filter sind die Hauptauswahloptionen für die Zielgruppe. Ziehen Sie ein oder mehrere Segmente aus dem linken Panel ![Segmentierung](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** in den Segmentbereich. Sie können mit ![Suchen](/help/assets/icons/Search.svg) [!UICONTROL *Segmente suchen*] nach Segmenten suchen. Sie können bis zu 20 Segmente hinzufügen. Segmente können mit den Operatoren **[!UICONTROL Und]** oder **[!UICONTROL Oder]** verbunden werden.<p>Beim Erstellen einer Zielgruppe aus einer Visualisierung in Analysis Workspace (z. B. einer Freiformtabelle oder Journey-Arbeitsfläche) werden alle auf das Panel oder die Spalte angewendeten Segmente beibehalten. Sie können alle automatisch angewendeten Segmente entfernen.</p> |
 | **[!UICONTROL Datenvorschau]** | Wählen Sie ![Info](/help/assets/icons/Info.svg) aus, um die [Datenvorschau](#data-preview) für den ausgewählten Datumsbereich ein- oder auszublenden. |
 
@@ -127,7 +136,7 @@ Das Panel „Datenvorschau“ enthält die folgenden Informationen.
 
 | Element | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Personen insgesamt]** | Die Gesamtzahl der Personen in dieser Zielgruppe. Die maximale Größe beträgt 20 Millionen Personen. Wenn Ihre Zielgruppe mehr als 20 Millionen Personen umfasst, müssen Sie die Zielgruppengröße verringern, damit Sie sie veröffentlichen können. |
+| **[!UICONTROL Personen insgesamt]** | Eine zusammenfassende Zahl der Gesamtzahl der Personen in dieser Zielgruppe. Die maximale Größe beträgt 20 Millionen Personen. Wenn Ihre Zielgruppe mehr als 20 Millionen Personen umfasst, müssen Sie die Zielgruppengröße verringern, damit Sie sie veröffentlichen können. |
 | **[!UICONTROL Zielgruppen-Limit]** | Eine Visualisierung, die zeigt, wie weit diese Zielgruppe vom Limit von 20 Millionen entfernt ist. |
 | **[!UICONTROL Geschätzte Zielgruppenrendite]** | Sie können diesen Wert verwenden, um Personen in dieser Zielgruppe erneut anzusprechen, die zu Ihrer Site, Ihrer App oder einem anderen Kanal zurückkehren.<p>Sie können den Zeitraum (**[!UICONTROL Nächste 7 Tage]**, **[!UICONTROL Nächste 2 Wochen]**, **[!UICONTROL Nächster Monat]**) für die geschätzte Anzahl der Kundinnen und Kunden auswählen, die möglicherweise zurückkehren. |
 | **[!UICONTROL Voraussichtliche Rückkehr]** | Mit dieser Zahl erhalten Sie eine geschätzte Anzahl an zurückkehrenden Kunden über den von Ihnen ausgewählten Zeitraum. Diese Zahl wird anhand der historischen Abwanderungsrate für diese Zielgruppe prognostiziert. |
@@ -160,8 +169,8 @@ An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgr
 | Nicht gezeigt | Adobe Analytics zu Analytics-Quell-Connector (A4T) | Bis zu 30 Minuten |
 | 1 | Datenaufnahme in den Data Lake (vom Analytics-Quell-Connector oder von anderen Quellen) | Bis zu 90 Minuten |
 | 2 | Datenaufnahme aus dem Data Lake von Experience Platform in Customer Journey Analytics | Bis zu 90 Minuten |
-| 3 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | Einige Sekunden |
-| 4 | Aktualisierungshäufigkeit für Zielgruppen | <ul><li>Einmalige Aktualisierung (Latenz von weniger als 5 Minuten)</li><li>Aktualisierung alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht) |
+| 3 | Zielgruppenveröffentlichung an Echtzeit-Kundenprofile, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | Einige Sekunden |
+| 4 | Aktualisierungshäufigkeit für Zielgruppen | <ul><li>Einmalige Aktualisierung (Latenz von weniger als 5 Minuten)</li><li>Aktualisierung alle 4 Stunden, täglich, wöchentlich monatlich (die Latenz steht in direktem Zusammenhang mit der Aktualisierungsrate). |
 | 5 | Erstellung eines Ziels in Adobe Experience Platform: Aktivierung des neuen Segments | 1–2 Stunden |
 
 {style="table-layout:auto"}
@@ -190,7 +199,7 @@ So zeigen Sie Customer Journey Analytics-Zielgruppen in Platform an:
 
 Weitere Informationen zum Verwenden von Zielgruppen in Platform finden Sie unter [Zielgruppen](https://experienceleague.adobe.com/de/docs/experience-platform/segmentation/ui/segment-builder) im [Handbuch zur Benutzeroberfläche von Segment Builder](https://experienceleague.adobe.com/de/docs/experience-platform/segmentation/ui/segment-builder) in der Dokumentation zu Experience Platform.
 
-### Wissenswertes zu Diskrepanzen bei der Zielgruppenanzahl
+### Grundlegendes zu Diskrepanzen bei der Zielgruppengröße
 
 Bei der Anzahl der Zielgruppen können Diskrepanzen zwischen Customer Journey Analytics und Real-Time Customer Data Platform auftreten.
 
@@ -207,7 +216,7 @@ Die Methode, mit der die Anzahl der Zielgruppenzugehörigkeiten berechnet wird, 
 
 #### Veröffentlichungsintervall und -rate
 
-Zielgruppen werden mit einer Rate von 1.500 Einträgen pro Sekunde (Records per Second, RPS) in Real-Time Customer Data Platform veröffentlicht. Die vollständige Veröffentlichung einer Zielgruppe von 20 Millionen Mitgliedern dauert beispielsweise ungefähr 3,7 Stunden (20 Millionen / 1500 RPS / 3600 Sekunden pro Stunde). Während dieser Zeit sind Unterschiede bei der Zielgruppenzugehörigkeit zwischen den beiden Apps wahrscheinlich.
+Zielgruppen werden mit einer Rate von 1.500 Einträgen pro Sekunde (Records per Second, RPS) in der Real-Time Customer Data Platform veröffentlicht. Die vollständige Veröffentlichung einer Zielgruppe von 20 Millionen Mitgliedern dauert beispielsweise ungefähr 3,7 Stunden (20 Millionen / 1500 RPS / 3600 Sekunden pro Stunde). Während dieser Zeit sind Unterschiede bei der Zielgruppenzugehörigkeit zwischen den beiden Apps wahrscheinlich.
 
 #### Profilfragmentierung
 
@@ -249,7 +258,7 @@ Ja.
 
 +++**Sendet Customer Journey Analytics die Zielgruppendaten als Pipeline-Ereignisse oder als Flatfile, die auch an den Data Lake gesendet wird?**
 
-Die Daten werden von Customer Journey Analytics über die Pipeline in Real-Time Customer Data Platform übertragen. Diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
+Customer Journey Analytics streamt die Daten über die Pipeline in Real-Time Customer Data Platform, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
 
 +++
 
@@ -267,7 +276,7 @@ Siehe oben. Pro Customer Journey Analytics-Person wird nur eine Identität gesen
 
 +++**Verarbeitet Real-Time Customer Data Platform auch die Customer Journey Analytics-Nachrichten? Kann Customer Journey Analytics einem Profilidentitätsdiagramm durch Zielgruppenfreigabe Identitäten hinzufügen?**
 
-Nein. Pro Person wird nur eine Identität gesendet, sodass Real-Time Customer Data Platform keine Diagrammränder nutzen kann.
+Nein. Pro Person wird nur eine Identität gesendet, sodass Real-Time Customer Data Platform keine Graphkanten verarbeiten kann.
 
 +++
 

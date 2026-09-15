@@ -9,22 +9,26 @@ autotag-review: '2026-05-19T08:44:26.806Z'
 TQID: 'https://experienceleague.adobe.com/R7c5-VutwSkyghNvwC2gZv2KUEJoa263AN0Tkdg3w4o'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
+    internal-label: Customer journeys
+source-git-commit: 555aef15933d87e5bbb3e3ec8b15d99a96ac25fe
 workflow-type: tm+mt
-source-wordcount: 1629
+source-wordcount: '1699'
 ht-degree: 0%
-
 ---
-
 # Vergleichen von Daten-Feeds in Customer Journey Analytics und Adobe Analytics
 
 {{release-limited-testing}}
@@ -40,6 +44,8 @@ Einen Vergleich der Daten-Feeds mit anderen Customer Journey Analytics-Exportmet
 Die folgenden Funktionen sind in Customer Journey Analytics-Daten-Feeds verfügbar, aber nicht in Adobe Analytics-Daten-Feeds:
 
 * **Abgeleitete Felder**: Benutzerdefinierte Komponenten, die aus regelbasierten Transformationen erstellt wurden, die in Ihr Daten-Feed-Schema aufgenommen werden können. <!-- add benefit -->
+
+* **Komponenteneinstellungen**: Einstellungen für die Datenansichtskomponente wie Persistenz, Metrik-Deduplizierung und Wert-Bucketing können den Wert einer Komponente direkt in Ihrer Daten-Feed-Ausgabe umwandeln, ohne dass SQL erforderlich ist.
 
 * **Zusammenfügen**: Geräteübergreifende Identitätsauflösung, die Ereignisse geräteübergreifend mit einer einzelnen Person verknüpft.
 
@@ -80,6 +86,7 @@ In der folgenden Tabelle werden die wichtigsten Konzepte und Konfigurationsoptio
 | **Schema**<br/> Das Daten-Feed-Schema bestimmt, welche Spalten in einen Daten-Feed aufgenommen werden können. | Das Daten-Feed-Schema basiert auf der Konfiguration der Datenansicht.  Die Komponenten, die für die Aufnahme in das Daten-Feed-Schema verfügbar sind, sind eine Teilmenge der in der Datenansichtskonfiguration verfügbaren Komponenten. | Eine vordefinierte statische Liste von über 1.100 Variablen. Viele Spalten werden als **vor- und nachverarbeitete Paare** exportiert (z. B. `eVar1` / `post_eVar1`), was einen Großteil der Spaltenanzahl ausmacht. |
 | **Daten-Feed-Builder**<br/> Die Schnittstelle zum Konfigurieren der in einem Daten-Feed enthaltenen Spalten. | Verwendet eine Komponentenleiste mit denselben benannten Dimensionen und Metriken, die in der Datenansicht verfügbar sind, und stimmt damit mit dem Analysis Workspace-Erlebnis überein. | Verwendet eine flache Liste von rohen Variablennamen (z. B. `eVar1`, `prop5`), die aus einem vordefinierten Satz von über 1.100 Spalten ausgewählt wurden. Komponenten werden jenseits ihrer Variablenkennung weder benannt noch beschrieben. |
 | **Abgeleitete Felder**<br/> benutzerdefinierte Komponenten, die mithilfe regelbasierter Transformationen definiert wurden, die zum Zeitpunkt der Berichterstellung angewendet wurden. | Unterstützt. Abgeleitete Feldkomponenten können zusammen mit Standarddimensionen und Metriken in das Daten-Feed-Schema aufgenommen werden. | Nicht unterstützt. |
+| **Komponenteneinstellungen**<br/> Komponenteneinstellungen für die Datenansicht wie Persistenz, Metrik-Deduplizierung und Wert-Bucketing, die den Wert einer Komponente zur Berichtszeit transformieren. | Wird für die meisten Einstellungen unterstützt. Diese Einstellungen gelten für die Daten-Feed-Ausgabe auf die gleiche Weise wie für Analysis Workspace. | Nicht unterstützt. |
 | **Komponentenaktualisierungen**<br/> Ob Änderungen an der Komponentenkonfiguration in vergangene und künftige Daten-Feed-Ausgaben übernommen werden. | Änderungen an Komponenten in der Datenansicht (z. B. das Umbenennen oder Entfernen einer Dimension) werden an zukünftige Daten-Feeds weitergegeben und auch in Aufstockungen übernommen. | Änderungen an Komponenten in der Report Suite gelten nur für Daten, die in der Zukunft erfasst werden. |
 | **Lookups**<br/> Lookup-Datensätze in Customer Journey Analytics entsprechen den Klassifizierungen in Adobe Analytics. | Alle Suchen werden direkt in die Daten eingebettet. | Klassifizierungen sind nicht in den Daten-Feeds von Adobe Analytics enthalten. |
 | **Sitzungsdefinition**<br/> Wie eine Besuchs- oder Sitzungsgrenze definiert wird, die sich darauf auswirkt, wie Ereignisse gruppiert und zugeordnet werden. | Wird in der Datenansicht definiert. | Wird zur Sammlungszeit definiert. |

@@ -8,17 +8,15 @@ hide: true
 source-git-commit: 9df4c8cff6c0c044902453e5fb8380fbb5c5ac2d
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 5%
-
+ht-degree: 19%
 ---
 
-
-# Scope-Komponenteneinstellungen {#scope-component-settings}
+# Einstellungen zum Umfang von Komponenten {#scope-component-settings}
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_scope"
 >title="Anwendungsbereich"
->abstract="Legen Sie fest, welchen Umfang eine Komponente hat, wenn sie in Berichten verwendet wird. Sie können zwischen ereignisbasiert, profilbasiert oder gesamtbasiert wählen."
+>abstract="Legen Sie fest, in welchem Umfang eine Komponente in Berichten verwendet wird. Sie können zwischen ereignisbasiert, profilbasiert oder gesamtbasiert auswählen."
 
 Der Umfang einer Metrikkomponente bestimmt, wie die Komponente in Berichten verwendet wird.
 

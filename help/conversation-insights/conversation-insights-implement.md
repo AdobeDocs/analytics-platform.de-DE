@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 7%
@@ -18,8 +18,9 @@ Dieser Artikel dokumentiert die erforderlichen Implementierungsschritte.
 
 >[!PREREQUISITES]
 >
->Sie müssen über eine Experience Platform-Umgebung (Organisation und Sandbox) verfügen, um die Daten zu erfassen.
->Ihre Adobe-Organisation muss für die Feldergruppen „Experimenteller Agent“ und „Konversation“ aktiviert sein.
+>* Sie müssen über eine Experience Platform-Umgebung (Organisation und Sandbox) verfügen, um die Daten zu erfassen.
+>* Ihre Adobe-Organisation muss für die Feldergruppen „Experimenteller Agent“ und „Konversation“ aktiviert sein.
+>
 
 ## Schema und Datensätze
 
@@ -304,6 +305,10 @@ Ein Signal weist die folgenden Felder auf.
 | `metadata[]` | Optionale, vom Produzenten definierte Schlüssel/Wert-Metadaten. |
 
 
+Der Signalextraktions-Service füllt das `signals` für den Signaldatensatz.
+
+Der vorherige `signals[].attributes.{subjects,intents,tones,sentiment}`-Container wird nicht mehr unterstützt.
+
 #### Konversation
 
 Unten finden Sie die vollständigen Details eines Konversationsobjekts.
@@ -356,9 +361,6 @@ Unten finden Sie die vollständigen Details eines Konversationsobjekts.
 +++
 
 
-Der Signalextraktions-Service füllt das `signals` für den Signaldatensatz.
-
-Der vorherige `signals[].attributes.{subjects,intents,tones,sentiment}`-Container wird nicht mehr unterstützt.
 
 
 ### Zusätzliche Feldergruppen
