@@ -4,27 +4,33 @@ description: Erfahren Sie, wie Sie Dimensionen, Metriken und Vorlagen von Einver
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin, User
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+    internal-label: Governance
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: 388
-ht-degree: 2%
-
+source-wordcount: '388'
+ht-degree: 7%
 ---
-
 # Analysieren von Einverständnisrichtliniendaten
+
+{{release-limited-testing}}
 
 Sie können Daten zu Einverständnisrichtlinien aus Experience Platform-Profildatensätzen in eine Customer Journey Analytics-Verbindung aufnehmen.
 
@@ -68,6 +74,6 @@ So berichten Sie über die Zugehörigkeit zu einer Einverständnisrichtlinie:
 
 ## Verwenden der Vorlage für die Einverständnisrichtlinien-Analyse
 
-Wenn eine Datenansicht für das Reporting zu Einverständnissen konfiguriert ist, stellt Customer Journey Analytics automatisch eine Vorlage für die Einverständnisrichtlinien-Analyse in Analysis Workspace zur Verfügung. Diese Vorlage bietet einen Ausgangspunkt für Berichte zur Mitgliedschaft in der Einverständnisrichtlinie für Besucher.
+Wenn eine Datenansicht für das Einverständnis-Reporting konfiguriert ist, stellt Customer Journey Analytics automatisch eine Vorlage für die Analyse von Einverständnisrichtlinien in Analysis Workspace zur Verfügung. Diese Vorlage bietet einen Ausgangspunkt für Berichte zur Mitgliedschaft in der Einverständnisrichtlinie für Besucher.
 
 Informationen zum Zugriff auf Vorlagen finden Sie unter [Zugriff auf Vorlagen und deren Ausführung](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template).

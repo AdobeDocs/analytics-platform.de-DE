@@ -4,29 +4,37 @@ description: Erfahren Sie, wie Sie Berichte über die Zugehörigkeit zu einer Be
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
   - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
+    internal-label: Privacy
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: 1311
-ht-degree: 1%
-
+source-wordcount: '1311'
+ht-degree: 2%
 ---
-
 # Übersicht über das Reporting und die Filterung von Einverständnissen
+
+{{release-limited-testing}}
 
 Das Reporting und die Filterung von Einverständnissen verwenden die Mitgliedschaftsdaten zu Einverständnisrichtlinien, die in Ihren Adobe Experience Platform-Profildatensätzen gespeichert sind, um Ihnen bei der Berichterstattung über das Einverständnis der Besucher zu helfen. Darüber hinaus können Sie festlegen, dass Besucher, die mit der Einwilligung nicht einverstanden sind, ausgeschlossen werden, bevor ihre Daten in Customer Journey Analytics aufgenommen werden.
 
@@ -104,7 +112,7 @@ Beachten Sie bei der Verwendung der Einverständnisfilterung Folgendes:
 
 * Die Daten eines Besuchers werden nur dann aufgenommen, wenn der Besucher den **Einverständnisrichtlinien**. Wenn einem Besucher eine anwendbare Richtlinie fehlt, werden die Daten dieses Besuchers ausgeschlossen.
 
-## Konfigurieren von Einverständnisberichten und -filtern
+## Konfigurieren von Einverständnis-Reporting und -filterung
 
 Wenn Sie das Reporting und die Filterung von Einverständnissen konfigurieren, wählen Sie die Sandbox und den Profildatensatz aus, die Ihre Einverständnisrichtlinien-Mitgliedschaftsdaten enthalten, wählen Sie die zu konfigurierende Verbindung bzw. die zu konfigurierenden Verbindungen aus und wählen Sie aus, ob die Daten für jede Marketing-Aktion gefiltert werden sollen. Customer Journey Analytics erstellt dann automatisch den Einverständnisrichtlinien-Lookup-Datensatz und die Einverständnisrichtlinien-Komponenten.
 
@@ -130,7 +138,7 @@ Die folgenden Customer Journey Analytics-Rollen und Experience Platform-Berechti
 |---------|----------|----------|
 | [Erstellen von Reporting- und Filterkonfigurationen für Einverständnisse](/help/connections/consent-reporting-filtering/consent-configure.md) | Systemadministrator | <ul><li>Datensätze: lesen, schreiben</li><li>Schemata: Lesen, Schreiben</li></ul> <p>Für den Profildatensatz, der die Daten zur Einverständnisrichtlinien-Mitgliedschaft enthält, ist Lesezugriff erforderlich. Schreibzugriff ist erforderlich, da ein Einverständnisrichtlinien-Lookup-Datensatz erstellt und synchronisiert wird.</p> |
 | Anzeigen von Einverständnisrichtlinien-Komponenten in der Datenansicht | Produktprofil-Administrator für das Produktprofil, dem die Datenansicht zugewiesen ist <p>Weitere Informationen finden Sie unter [Zugriffssteuerung](/help/technotes/access-control.md).</p> | k. A. |
-| Verwenden von Einverständnisrichtlinien-Komponenten in Analysis Workspace | Zugriff auf eine Datenansicht, in der die Komponenten der Einverständnisrichtlinie hinzugefügt wurden | k. A. |
+| [Verwenden von Einverständnisrichtlinien-Komponenten in Analysis Workspace](/help/connections/consent-reporting-filtering/consent-analyze.md#use-consent-policy-components-in-analysis-workspace) | Zugriff auf eine Datenansicht, in der die Komponenten der Einverständnisrichtlinie hinzugefügt wurden | k. A. |
 
 ## Anwendungsfälle für Einverständnisberichte und -filterung
 
