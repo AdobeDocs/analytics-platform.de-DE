@@ -5,13 +5,11 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
-source-git-commit: db34e721f156b3eb0aab20b2dca57e194c83d6fb
+source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2338'
 ht-degree: 5%
-
 ---
-
 # Migrieren von Tags zu XDM {#upgrade-migration-planner}
 
 {{upgrade-note-step}}
@@ -88,7 +86,8 @@ Eine Migration durchläuft drei Phasen: [!UICONTROL **Audit**], [!UICONTROL **Ma
 
 1. Wählen Sie im Migrationsplaner auf der Registerkarte [!UICONTROL **Migrationen**] die Option [!UICONTROL **Neu**] aus.
 
-   ![Das Dialogfeld „Neue Migration“, in dem Sie einen Migrationstyp auswählen und einen Migrationsnamen eingeben.](assets/migration-planner-new-migration.png)
+   <!-- Confirm the exact image: ![The migration overview page with the Audit, Mapping, and Implementation stage cards.](assets/migration-planner-overview.png) -->
+
 
 1. Geben Sie die folgenden Informationen an:
 
@@ -107,7 +106,7 @@ Eine Migration durchläuft drei Phasen: [!UICONTROL **Audit**], [!UICONTROL **Ma
 
 1. Wählen Sie den Snapshot der Tag-Bibliothek aus, den Sie migrieren möchten, und klicken Sie dann auf [!UICONTROL **Weiter**].
 
-   Der Snapshot bestimmt, auf welcher Version Ihrer Tag-Bibliothek die Migration basiert. Jeder Schnappschuss zeigt seine Umgebung an ([!UICONTROL **Entwicklung**], [!UICONTROL **Staging**] oder [!UICONTROL **&#x200B;**]).
+   Der Snapshot bestimmt, auf welcher Version Ihrer Tag-Bibliothek die Migration basiert. Jeder Schnappschuss zeigt seine Umgebung an ([!UICONTROL **Entwicklung**], [!UICONTROL **Staging**] oder [!UICONTROL ****]).
 
 1. Wählen Sie den Zuordnungssatz aus, um zu bestimmen, wie Analytics-Variablen XDM-Schemafeldern zugeordnet werden sollen.
 
@@ -123,7 +122,7 @@ Eine Migration durchläuft drei Phasen: [!UICONTROL **Audit**], [!UICONTROL **Ma
 
 1. Wählen Sie [!UICONTROL **Migration erstellen**] aus.
 
-1. Fahren Sie mit dem folgenden Abschnitt fort: [&#x200B; und Bereitstellen einer Migration](#validate-and-deploy-a-migration).
+1. Fahren Sie mit dem folgenden Abschnitt fort: [ und Bereitstellen einer Migration](#validate-and-deploy-a-migration).
 
 ## Validieren und Bereitstellen einer Migration
 
@@ -135,13 +134,13 @@ Nachdem Sie eine Migration erstellt haben, öffnen Sie sie, um ihre drei Phasen 
 
    Auf der Seite Migrationsübersicht werden die drei abzuschließenden Phasen zusammen mit einer Zusammenfassung Ihrer Migration und der zugehörigen Artefakte angezeigt.
 
-   ![Die Übersichtsseite zur Migration mit den Karten für Audit, Zuordnung und Implementierungsphase.](assets/migration-planner-overview.png)
+   <!-- Confirm the exact image: ![The migration overview page with the Audit, Mapping, and Implementation stage cards.](assets/migration-planner-overview.png) -->
 
 1. Schließen Sie die [!UICONTROL **Audit**]-Phase ab:
 
    1. Wählen Sie auf der Auditkarte ([!UICONTROL **Tag Extension Audit**] oder [!UICONTROL **JavaScript Audit**], je nach Ihrem Migrationstyp) die Option [!UICONTROL **Audit starten**] aus, um die in der Migration enthaltenen Regeln und Datenelemente zu überprüfen.
 
-      ![Die Audit-Seite, auf der Sie Regeln und Datenelemente auswählen und alle Ergebnisse auflösen.](assets/migration-planner-audit.png)
+      <!-- Confirm the exact image: ![The audit page, where you select rules and data elements and resolve any findings.](assets/migration-planner-audit.png) -->
 
    1. Wählen Sie auf [!UICONTROL **Registerkarten**] und [!UICONTROL **Datenelemente**] die Elemente aus, die in die Migration eingeschlossen werden sollen.
 
