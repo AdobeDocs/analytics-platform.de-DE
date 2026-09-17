@@ -33,7 +33,7 @@ ht-degree: 25%
 ---
 # BI-Erweiterung
 
-In diesem Artikel wird beschrieben, wie die [!DNL Customer Journey Analytics BI extension] zur Implementierung des folgenden [Anwendungsfalls für den Datenexport“ verwendet ](overview.md) kann:
+In diesem Artikel wird beschrieben, wie die [!DNL Customer Journey Analytics BI extension] zur Implementierung des folgenden [Anwendungsfalls für den Datenexport“ verwendet &#x200B;](overview.md) kann:
 
 * Data Lake, Data Warehouse oder BI-Tools
 
@@ -47,6 +47,6 @@ Durch das Exportieren von Daten mit dem [!DNL Customer Journey Analytics BI exte
 
 Der [!DNL Customer Journey Analytics BI extension] ermöglicht SQL-Zugriff auf [Datenansichten](/help/data-views/data-views.md), die Sie in Customer Journey Analytics definiert haben. Ihre Dateningenieure und Analysten sind mit Power BI, Tableau oder anderen Business Intelligence- und Visualisierungs-Tools (auch als BI-Tools bezeichnet) besser vertraut. Sie können jetzt Berichte und Dashboards basierend auf denselben Datenansichten erstellen, die Benutzerinnen und Benutzer von Customer Journey Analytics beim Erstellen ihrer Analysis Workspace-Projekte verwenden.
 
-Die BI-Erweiterung gibt aggregierte Daten zurück, keine Zeilen auf Ereignisebene. Standardmäßig gibt jede Abfrage 50 Zeilen für einen 30-tägigen Datumsbereich zurück, Sie können jedoch die Zeilenbegrenzung auf maximal 50.000 Zeilen überschreiben und den Datumsbereich auf Ihren eigenen benutzerdefinierten Bereich beschränken. Weitere Informationen finden [ unter ](../../data-views/bi-extension.md#defaults-and-limitations) und Einschränkungen .
+Die BI-Erweiterung gibt aggregierte Daten zurück, keine Zeilen auf Ereignisebene. Standardmäßig gibt jede Abfrage 50 Zeilen für einen 30-tägigen Datumsbereich zurück, Sie können jedoch die Zeilenbegrenzung auf maximal 50.000 Zeilen überschreiben und den Datumsbereich auf Ihren eigenen benutzerdefinierten Bereich beschränken. Weitere Informationen finden [&#x200B; unter &#x200B;](../../data-views/bi-extension.md#defaults-and-limitations) und Einschränkungen .
 
 Weitere Informationen finden Sie in der ausführlichen Dokumentation zur [BI-Erweiterung](../../data-views/bi-extension.md).

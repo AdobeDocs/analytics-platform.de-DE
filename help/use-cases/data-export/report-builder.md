@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Report Builder
 
-In diesem Artikel wird beschrieben, wie [!DNL Report Builder] zur Implementierung des folgenden [Anwendungsfalls für den Datenexport“ verwendet ](overview.md) können:
+In diesem Artikel wird beschrieben, wie [!DNL Report Builder] zur Implementierung des folgenden [Anwendungsfalls für den Datenexport“ verwendet &#x200B;](overview.md) können:
 
 * Ad-hoc- und wiederkehrende Berichte
 
@@ -22,8 +22,8 @@ In diesem Artikel wird beschrieben, wie [!DNL Report Builder] zur Implementierun
 
 ## Weitere Informationen
 
-Jeder Datenblock in [!DNL Report Builder] gibt bis zu 50.000 Zeilen zurück. Um weitere Zeilen abzurufen, verwenden Sie die Optionen **[!UICONTROL Seite]** und **[!UICONTROL Zeilen]**, um Daten in sequenziellen Seiten über das Limit von 50.000 Zeilen hinaus abzurufen. Weitere Informationen finden [ unter ](/help/report-builder/filter-dimensions.md)Filterdimensionen“.
+Jeder Datenblock in [!DNL Report Builder] gibt bis zu 50.000 Zeilen zurück. Um weitere Zeilen abzurufen, verwenden Sie die Optionen **[!UICONTROL Seite]** und **[!UICONTROL Zeilen]**, um Daten in sequenziellen Seiten über das Limit von 50.000 Zeilen hinaus abzurufen. Weitere Informationen finden [&#x200B; unter &#x200B;](/help/report-builder/filter-dimensions.md)Filterdimensionen“.
 
-Sie können eine Arbeitsmappe für den Versand per E-Mail planen oder in ein Cloud-Ziel wie Amazon S3, Google Cloud Platform oder Azure exportieren. Weitere Informationen finden [ unter „Erstellen von Zeitplänen für Arbeitsmappen durch ](/help/report-builder/schedule-reportbuilder.md) von E-Mails“ und [Erstellen von Zeitplänen für Arbeitsmappen durch Exportieren ](/help/report-builder/report-builder-export.md) Cloud-Ziele“.
+Sie können eine Arbeitsmappe für den Versand per E-Mail planen oder in ein Cloud-Ziel wie Amazon S3, Google Cloud Platform oder Azure exportieren. Weitere Informationen finden [&#x200B; unter „Erstellen von Zeitplänen für Arbeitsmappen durch &#x200B;](/help/report-builder/schedule-reportbuilder.md) von E-Mails“ und [Erstellen von Zeitplänen für Arbeitsmappen durch Exportieren &#x200B;](/help/report-builder/report-builder-export.md) Cloud-Ziele“.
 
 Eine Einführung in das Einrichten und Verwenden von [!DNL Report Builder] finden Sie unter [Übersicht über Report Builder](/help/report-builder/rb-overview.md).
