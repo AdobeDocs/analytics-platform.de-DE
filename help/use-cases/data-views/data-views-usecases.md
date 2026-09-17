@@ -8,44 +8,53 @@ role: User
 TQID: https://experienceleague.adobe.com/qEgO-lqYk8ipVP99IBazrKAb7Jer-AN96-PY-f1KdPQ
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: 7a7ad0d310603850395e35edce7fa66c8c2ff329
 workflow-type: tm+mt
-source-wordcount: 1443
-ht-degree: 26%
-
+source-wordcount: '1487'
+ht-degree: 25%
 ---
-
 # Anwendungsfälle von Datenansichten
 
 Diese Anwendungsfälle veranschaulichen die Flexibilität und Leistungsfähigkeit von Datenansichten in Customer Journey Analytics.
 
 ## Verwenden von Metriken für Bindungsdimensionen
 
-Weitere Informationen finden Sie [&#x200B; Anwendungsbeispiel &#x200B;](binding-dimensions-metrics.md)Verwenden von Bindungsdimensionsmetriken“.
+Weitere Informationen finden Sie [ Anwendungsbeispiel ](binding-dimensions-metrics.md)Verwenden von Bindungsdimensionsmetriken“.
 
 ## Verwenden von Zusammenfassungsdaten
 
-Weitere Details finden Sie [&#x200B; Anwendungsbeispiel &#x200B;](summary-data.md)Nutzungsübersichtsdaten“.
+Weitere Details finden Sie [ Anwendungsbeispiel ](summary-data.md)Nutzungsübersichtsdaten“.
 
 ## Anwendungsfälle für BI-Erweiterungen
 
 In den [BI-Erweiterungsanwendungsfällen](bi-extension-usecases.md) finden Sie Informationen zum Ausführen einer Reihe von Anwendungsfällen mit der Customer Journey Analytics BI-Erweiterung.
 
+
+## Umgang mit „Kein Wert“
+
+Im Artikel [Umgang mit „Kein Wert](./no-value.md) finden Sie Details zum Umgang mit verschiedenen **[!UICONTROL Kein Wert]**-Anwendungsszenarien.
+
+
 ## Erstellen einer Metrik aus einem Zeichenfolgen-Schemafeld {#string}
 
 Wenn Sie beispielsweise eine Datenansicht erstellen, können Sie eine Metrik [!UICONTROL Bestellungen] aus einem Schemafeld [!UICONTROL Seitentitel] erstellen, das eine Zeichenfolge ist.
-
-
 
 1. Ziehen Sie auf **[!UICONTROL Registerkarte]** den **[!UICONTROL Seitentitel]** in den Abschnitt **[!UICONTROL Metriken]** unter [!UICONTROL Enthaltene Komponenten].
 1. Markieren Sie die Metrik, die Sie gerade eingezogen haben, und benennen Sie sie in der **[!UICONTROL Komponenteneinstellungen]** in `Orders` um
@@ -73,7 +82,7 @@ Zuvor wurden in Customer Journey Analytics Ganzzahlen automatisch als Metriken b
 
 ## Verwenden numerischer Dimensionen als Metriken in Flussdiagrammen {#numeric}
 
-Sie können eine numerische Dimension verwenden, um Metriken in Ihre [!UICONTROL &#x200B; Flow]-Visualisierung zu übertragen.
+Sie können eine numerische Dimension verwenden, um Metriken in Ihre [!UICONTROL  Flow]-Visualisierung zu übertragen.
 
 1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/create-dataview) der Datenansichten das Schemafeld [!UICONTROL Marketing-Kanäle] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
 2. In Arbeitsbereich-Berichten zeigt dieser Fluss [!UICONTROL Marketing-Kanäle], die in [!UICONTROL Bestellungen] fließen:
@@ -89,7 +98,7 @@ Verwenden Sie beispielsweise die Ein-/Ausschlussfunktion in Datenansichten, um s
 1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/create-dataview) der Datenansichten das Schema **[!UICONTROL Umsatz]** in den Bereich **[!UICONTROL Metriken]** unter [!UICONTROL Eingeschlossene Komponenten].
 1. Wählen Sie die Metrik aus und konfigurieren Sie rechts Folgendes:
 a. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL Währung]** aus.
-b. Wählen **[!UICONTROL unter]** die Option **[!UICONTROL USD]** aus.
+b. Wählen **[!UICONTROL unter &quot;]**&quot; die Option **[!UICONTROL USD]**.
 c. Aktivieren Sie unter **[!UICONTROL Werte einschließen/ausschließen]** das Kontrollkästchen neben **[!UICONTROL Ein-/Ausschlusswerte festlegen]**.
 d. Wählen **[!UICONTROL unter]** die Option **[!UICONTROL Wenn alle Kriterien erfüllt sind]** aus.
 E. Wählen **[!UICONTROL unter]** die Option **[!UICONTROL ist größer oder gleich]** aus.
@@ -125,11 +134,11 @@ Sie können feststellen, ob eine Sitzung tatsächlich die erste Sitzung für ein
 
 Eine Dimension und zwei Metriken ermöglichen diese Berichte:
 
-* [Sitzungstyp](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-reference) - Diese Dimension hat zwei Werte: [!UICONTROL Neu] und [!UICONTROL Wiederkehrend]. Der [!UICONTROL Neu] Zeileneintrag enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) in einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bereich „Nicht zutreffend“ für diese Dimension.
+* [Sitzungstyp](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Diese Dimension hat zwei Werte: [!UICONTROL Neu] und [!UICONTROL Wiederkehrend]. Der [!UICONTROL Neu] Zeileneintrag enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) in einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bereich „Nicht zutreffend“ für diese Dimension.
 
-* [Erstmalige &#x200B;](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-reference). Die Metrik Erstmalige Sitzungen ist definiert als die erste Sitzung einer Person innerhalb des Reporting-Fensters.
+* [Erstmalige ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference). Die Metrik Erstmalige Sitzungen ist definiert als die erste Sitzung einer Person innerhalb des Reporting-Fensters.
 
-* [Wiederkehrende Sitzungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-reference) Die Metrik „Wiederkehrende Sitzungen“ bezeichnet die Anzahl der Sitzungen, bei denen es sich nicht um die Erstsitzung einer Person gehandelt hat.—>
+* [Wiederkehrende Sitzungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) Die Metrik „Wiederkehrende Sitzungen“ bezeichnet die Anzahl der Sitzungen, bei denen es sich nicht um die Erstsitzung einer Person gehandelt hat.—>
 
 So greifen Sie auf die Komponenten zu:
 
@@ -154,7 +163,7 @@ Daten nach dem 1. Januar 1900 (mit Ausnahme des 1. Januar 1970) und Datums-/Uhrz
 
 ### Anwendungsfälle mit Datum und Datum/Uhrzeit
 
-* Datum: Ein Reiseunternehmen erfasst in seinen Daten das Abreisedatum für Reisen als Feld. Das Unternehmen möchte einen Bericht, der den [!UICONTROL Wochentag“ für alle &#x200B;] vergleicht, um zu verstehen, welche am beliebtesten sind. Und das Unternehmen möchte dasselbe für den „Monat [!UICONTROL &#x200B; Jahres“ &#x200B;].
+* Datum: Ein Reiseunternehmen erfasst in seinen Daten das Abreisedatum für Reisen als Feld. Das Unternehmen möchte einen Bericht, der den [!UICONTROL Wochentag“ für alle ] vergleicht, um zu verstehen, welche am beliebtesten sind. Und das Unternehmen möchte dasselbe für den „Monat [!UICONTROL  Jahres“ ].
 
 * Datum-Uhrzeit: Ein Einzelhandelsunternehmen erfasst die Uhrzeit für jeden seiner Einkäufe am Verkaufsort (POS) im Geschäft. Das Unternehmen möchte wissen, zu welchen Zeiten in einem bestimmten Monat am meisten eingekauft wird, und zwar nach [!UICONTROL Tageszeit].
 
