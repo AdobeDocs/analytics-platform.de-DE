@@ -202,4 +202,4 @@ Nicht jeder **[!UICONTROL Kein Wert]**-Eintrag signalisiert ein Problem. Um **[!
 
 >[!MORELIKETHIS]
 >
->[Das vollständige Playbook für die Handhabung von **[!UICONTROL Kein Wert]** in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769)
+>[Das vollständige Playbook für die Handhabung von **[!UICONTROL Kein Wert]** in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=de)
