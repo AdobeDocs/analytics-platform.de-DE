@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
 workflow-type: tm+mt
 source-wordcount: '4217'
-ht-degree: 30%
+ht-degree: 31%
 ---
 # Erstellen eines Daten-Feeds
 
@@ -88,7 +88,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_required_dimensions"
 >title="Erforderliche Dimensionen"
->abstract="Jeder Daten-Feed muss bestimmte Dimensionen enthalten, die durch eine Beschriftung **Erforderlich** neben dem Dimensionsnamen gekennzeichnet sind. Diese Dimensionen bieten die Mindeststruktur, die für die Analyse auf Ereignisebene erforderlich ist."
+>abstract="Jeder Daten-Feed muss bestimmte Dimensionen enthalten, die durch ein Label **Erforderlich** neben dem Dimensionsnamen gekennzeichnet sind. Diese Dimensionen stellen die Mindeststruktur bereit, die für Analysen auf Ereignisebene erforderlich ist."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -216,7 +216,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    >
    >Wenn Sie sich dafür entscheiden, entweder die **Benutzeragent**- oder **Mobile ID**-Dimensionen in Ihren Daten-Feed aufzunehmen, können die unten aufgeführten Dimensionen nicht zum Daten-Feed hinzugefügt werden.
    >
-   >Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
+   >Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von ](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
 
    Die folgenden Dimensionen können nicht zusammen mit den Dimensionen **Benutzeragent** oder **Mobile ID** verwendet werden:
 
