@@ -106,7 +106,7 @@ Eine Migration durchläuft drei Phasen: [!UICONTROL **Audit**], [!UICONTROL **Ma
 
 1. Wählen Sie den Snapshot der Tag-Bibliothek aus, den Sie migrieren möchten, und klicken Sie dann auf [!UICONTROL **Weiter**].
 
-   Der Snapshot bestimmt, auf welcher Version Ihrer Tag-Bibliothek die Migration basiert. Jeder Schnappschuss zeigt seine Umgebung an ([!UICONTROL **Entwicklung**], [!UICONTROL **Staging**] oder [!UICONTROL ****]).
+   Der Snapshot bestimmt, auf welcher Version Ihrer Tag-Bibliothek die Migration basiert. Jeder Schnappschuss zeigt seine Umgebung an ([!UICONTROL **Entwicklung**], [!UICONTROL **Staging**] oder [!UICONTROL **&#x200B;**]).
 
 1. Wählen Sie den Zuordnungssatz aus, um zu bestimmen, wie Analytics-Variablen XDM-Schemafeldern zugeordnet werden sollen.
 
@@ -122,7 +122,7 @@ Eine Migration durchläuft drei Phasen: [!UICONTROL **Audit**], [!UICONTROL **Ma
 
 1. Wählen Sie [!UICONTROL **Migration erstellen**] aus.
 
-1. Fahren Sie mit dem folgenden Abschnitt fort: [ und Bereitstellen einer Migration](#validate-and-deploy-a-migration).
+1. Fahren Sie mit dem folgenden Abschnitt fort: [&#x200B; und Bereitstellen einer Migration](#validate-and-deploy-a-migration).
 
 ## Validieren und Bereitstellen einer Migration
 
