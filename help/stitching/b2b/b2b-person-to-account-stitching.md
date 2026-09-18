@@ -30,7 +30,7 @@ topic_v2:
 source-git-commit: 76379e1cd9a42f2b2651a66768c195776eabecff
 workflow-type: tm+mt
 source-wordcount: '2292'
-ht-degree: 21%
+ht-degree: 25%
 ---
 # B2B-Person mit Kontenzuordnung
 
@@ -153,12 +153,12 @@ Bevor Sie die Zuordnung von B2B-Personen zu Konten aktivieren, bereiten Sie die 
 
 Sie aktivieren und konfigurieren das B2B-Stitching zunächst auf Verbindungsebene. Wenn die B2B-Zuordnung für eine Verbindung konfiguriert ist, können Sie die Personen-Account-Zuordnung für einzelne Ereignis-Datensätze innerhalb dieser Verbindung aktivieren.
 
-### Konfigurieren der Einstellungen für die B2B-Person-Kontozuordnung {#configure-b2b-stitching-settings}
+### Konfigurieren von Einstellungen für die B2B-Personen-Konto-Zuordnung {#configure-b2b-stitching-settings}
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_open_configuration"
->title="B2B-Stitching konfigurieren"
->abstract="Wählen Sie **[!UICONTROL B2B-Stitching-Konfiguration öffnen]** um die B2B-Person für die Kontozuordnung zu konfigurieren. Wenn die Verbindung noch nicht gespeichert wurde, wird die Konfiguration mit **[!UICONTROL _Nicht gespeicherte Änderungen_]** gekennzeichnet."
+>title="Konfigurieren der B2B-Zuordnung"
+>abstract="Wählen Sie **[!UICONTROL B2B-Zuordnungskonfiguration öffnen]** aus, um die B2B-Personen-Konto-Zuordnung zu konfigurieren. Wenn die Verbindung noch nicht gespeichert wurde, wird die Konfiguration mit **[!UICONTROL _Nicht gespeicherte Änderungen_]** gekennzeichnet."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
@@ -167,7 +167,7 @@ Sie aktivieren und konfigurieren das B2B-Stitching zunächst auf Verbindungseben
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
->title="Person zu Kontodatensatz"
+>title="Personen-Konto-Datensatz"
 >abstract="Wählen Sie den Lookup-Datensatz aus, der Personen-IDs Konto-IDs zuordnet."
 
 >[!CONTEXTUALHELP]
@@ -183,7 +183,7 @@ Sie aktivieren und konfigurieren das B2B-Stitching zunächst auf Verbindungseben
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
 >title="Startzeit"
->abstract="Wählen Sie ein Zeitstempelfeld aus, das angibt, wann die Beziehung zwischen Person und Konto aktiv wurde."
+>abstract="Wählen Sie ein Zeitstempelfeld aus, das angibt, wann die Personen-Konto-Beziehung aktiv wurde."
 
 
 >[!CONTEXTUALHELP]
@@ -231,14 +231,14 @@ Sie aktivieren und konfigurieren das B2B-Stitching zunächst auf Verbindungseben
 
    1. Die Anzeige **[!UICONTROL _Nicht gespeicherte Änderungen_]** wird neben der Schaltfläche **B2B-Stitching-Konfiguration öffnen** angezeigt, bis Sie die Verbindung [speichern](#save).
 
-### B2B-Person für die Kontozuordnung in Ereignis-Datensätzen aktivieren
+### Aktivieren der B2B-Personen-Konto-Zuordnung für Ereignisdatensätze
 
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
->title="Aktivieren der Person-zu-Konto-Zuordnung"
->abstract="Wenn aktiviert, verwendet dieser Datensatz die B2B-Zuordnung von Person zu Konto. Die **[!UICONTROL Persistent Person ID]**-Werte werden auf die Werte aus dem konfigurierten **[!UICONTROL Personen-ID-Namespace]** erhöht und dann verwendet, um die Konto-ID basierend auf dem Datensatz „Person zu Konto“ zu suchen.<br/>Wenn diese Option deaktiviert ist, verwendet dieser Datensatz die B2B-Person-zu-Konto-Zuordnung nicht und Sie müssen stattdessen eine erforderliche **[!UICONTROL Konto-ID]** auswählen."
->additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Konfigurieren der Einstellungen für die B2B-Person-Kontozuordnung"
+>title="Aktivieren der Personen-Konto-Zuordnung"
+>abstract="Wenn aktiviert, verwendet dieser Datensatz die B2B-Zuordnung von Person zu Konto. Die Werte für **[!UICONTROL Persistente Personen-ID]** werden zu den für **[!UICONTROL Namespace der Personenkennung]** konfigurierten erhöht und dann für die Suche nach der Konto-ID basierend auf dem Personen-Konto-Datensatz verwendet.<br/>Wenn diese Option deaktiviert ist, verwendet dieser Datensatz die B2B-Personen-Konto-Zuordnung nicht und Sie müssen stattdessen eine erforderliche **[!UICONTROL Konto-ID]** auswählen."
+>additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Konfigurieren von Einstellungen für die B2B-Personen-Konto-Zuordnung"
 
 Nachdem Sie die B2B-Zuordnung auf Verbindungsebene konfiguriert haben, müssen Sie B2B-Personen die Zuordnung für jeden Ereignisdatensatz, den Sie zuordnen möchten, einzeln aktivieren.
 

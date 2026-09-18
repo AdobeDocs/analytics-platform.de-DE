@@ -8,7 +8,7 @@ hide: true
 source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
 workflow-type: tm+mt
 source-wordcount: '2338'
-ht-degree: 5%
+ht-degree: 16%
 ---
 # Migrieren von Tags zu XDM {#upgrade-migration-planner}
 
@@ -19,7 +19,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="migration_intro"
 >title="Migrationsübersicht"
->abstract="Migrieren Sie beim Upgrade auf Customer Journey Analytics eine Tags-Implementierung in die Adobe Experience Platform Web SDK.<br/>Fahren Sie mit einer bestehenden Migration fort oder beginnen Sie eine neue."
+>abstract="Migrieren Sie beim Upgrade auf Customer Journey Analytics eine Tags-Implementierung in das Adobe Experience Platform Web SDK.<br/>Fahren Sie mit einer bestehenden Migration fort oder starten Sie eine neue."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -246,7 +246,7 @@ Jedes Artefakt zeigt seinen Status an, z [!UICONTROL **B. &quot;**]&quot; oder [
 >[!CONTEXTUALHELP]
 >id="migration_mapping_sets"
 >title="Zuordnungssätze"
->abstract="Zuordnungssätze bestimmen, wie Analytics-Variablen XDM-Feldern zugeordnet werden.<br/>Erstellen Sie einen neuen Zuordnungssatz oder wählen Sie einen vorhandenen aus, um dieselben Zuordnungen auf mehrere Migrationen anzuwenden. Sie können auch in anderen Migrationsaufgaben auf Zuordnungssätze verweisen."
+>abstract="Zuordnungssätze bestimmen, wie Analytics-Variablen XDM-Feldern zugeordnet werden.<br/>Erstellen Sie einen neuen Zuordnungssatz oder wählen Sie einen vorhandenen aus, um dieselben Zuordnungen auf verschiedene Migrationen anzuwenden. Außerdem können Sie in anderen Migrationsaufgaben auf Zuordnungssätze verweisen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -254,14 +254,14 @@ Zuordnungssätze bestimmen, wie Analytics-Variablen XDM-Schemafeldern zugeordnet
 
 Sie können einen neuen Zuordnungssatz erstellen [während des Migrationsprozesses](#migrate-an-analytics-implementation-to-the-web-sdk). Sie können auch einen eigenständigen Zuordnungssatz erstellen, der mit einer zukünftigen Migration oder mit anderen Migrationsaufgaben verwendet werden kann.
 
-### Erstellen eines eigenständigen Zuordnungssatzes {#xdm-mapping}
+### Erstellen eigenständiger Zuordnungssätze {#xdm-mapping}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="migration_mapping_schema"
->title="Schema auswählen"
->abstract="Zuordnungssätze bestimmen, wie Analytics-Variablen XDM-Feldern zugeordnet werden.<br/>Erstellen Sie einen neuen Zuordnungssatz oder wählen Sie einen vorhandenen aus, um dieselben Zuordnungen auf mehrere Migrationen anzuwenden. Sie können auch in anderen Migrationsaufgaben auf Zuordnungssätze verweisen."
+>title="Auswählen eines Schemas"
+>abstract="Zuordnungssätze bestimmen, wie Analytics-Variablen XDM-Feldern zugeordnet werden.<br/>Erstellen Sie einen neuen Zuordnungssatz oder wählen Sie einen vorhandenen aus, um dieselben Zuordnungen auf verschiedene Migrationen anzuwenden. Außerdem können Sie in anderen Migrationsaufgaben auf Zuordnungssätze verweisen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -269,8 +269,8 @@ Sie können einen neuen Zuordnungssatz erstellen [während des Migrationsprozess
 
 >[!CONTEXTUALHELP]
 >id="migration_mapping_field_group"
->title="Voreinstellung für Feldergruppe"
->abstract="Wählen Sie Standardfeldgruppen aus, um veröffentlichte Adobe-Feldgruppen nach Möglichkeit zu verwenden. Dies erhöht die größtmögliche Konsistenz und greift auf benutzerdefinierte Mandantenfelder zurück, wenn keine Standardfelder verfügbar sind.<br/>Wählen Sie nach Möglichkeit benutzerdefinierte Feldergruppen aus, um benutzerdefinierte Felder mit Mandanten-Namespace zu verwenden. Dies fördert ein Höchstmaß an Flexibilität."
+>title="Voreinstellung für Feldergruppen"
+>abstract="Wählen Sie Standardfeldgruppen aus, um nach Möglichkeit veröffentlichte Adobe-Feldgruppen zu verwenden. Dies fördert größtmögliche Konsistenz und greift auf benutzerdefinierte Mandantenfelder zurück, wenn keine Standardfelder verfügbar sind.<br/>Wählen Sie benutzerdefinierte Feldergruppen aus, um nach Möglichkeit benutzerdefinierte Felder mit Mandanten-Namespace zu verwenden. Dies fördert ein Höchstmaß an Flexibilität."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -279,7 +279,7 @@ Sie können einen neuen Zuordnungssatz erstellen [während des Migrationsprozess
 >[!CONTEXTUALHELP]
 >id="migration_mapping_lookback"
 >title="Lookback-Zeitraum"
->abstract="Steuert, wie weit man zurückschauen soll, wenn man bestimmt, welche Variablen aktiv Daten empfangen. Variablen, die Daten innerhalb des Lookback-Zeitraums enthalten, werden in das Schema aufgenommen."
+>abstract="Steuert, wie weit man zurückschaut, wenn man ermittelt, welche Variablen aktiv Daten empfangen. Variablen, die Daten innerhalb des Lookback-Zeitraums enthalten, werden in das Schema aufgenommen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -303,7 +303,7 @@ Sie können einen neuen Zuordnungssatz erstellen [während des Migrationsprozess
 
 1. Wählen Sie [!UICONTROL **Dropdown-Menü**] Feldergruppenvoreinstellung“ aus, wie Sie benutzerdefinierte Variablen in Feldergruppen organisieren möchten:
 
-   * [!UICONTROL **Standard zuerst**]: Verwenden Sie nach Möglichkeit veröffentlichte Adobe-Feldergruppen. Dies erhöht die größtmögliche Konsistenz und greift auf benutzerdefinierte Mandantenfelder zurück, wenn keine Standardfelder verfügbar sind.
+   * [!UICONTROL **Standard zuerst**]: Verwenden Sie nach Möglichkeit veröffentlichte Adobe-Feldergruppen. Dies fördert größtmögliche Konsistenz und greift auf benutzerdefinierte Mandantenfelder zurück, wenn keine Standardfelder verfügbar sind.
 
    * [!UICONTROL **Benutzerdefiniert zuerst**]: Verwenden Sie nach Möglichkeit benutzerdefinierte Felder vom Typ „Mandanten-Namespace“. Dies fördert ein Höchstmaß an Flexibilität.
 

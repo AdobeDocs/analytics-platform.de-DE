@@ -41,7 +41,7 @@ topic_v2:
 source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: '4806'
-ht-degree: 55%
+ht-degree: 56%
 ---
 
 # Geführte Content Analytics-Konfiguration
@@ -100,7 +100,7 @@ Der Assistent für geführte Konfigurationen umfasst vier Abschnitte: [Details](
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Details"
->abstract="In diesem Handbuch werden die Anforderungen für die Konfiguration von Content Analytics festgelegt. Geben Sie einen Namen für diese Konfiguration an und wählen Sie die Sandbox aus, die die Inhaltsanalysedaten enthält, die Sie analysieren möchten."
+>abstract="In dieser Anleitung werden die Anforderungen für die Konfiguration der Inhaltsanalyse festgelegt. Geben Sie einen Namen für diese Konfiguration an und wählen Sie die Sandbox mit den Inhaltsanalysedaten aus, die Sie analysieren möchten."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -110,7 +110,7 @@ Der Assistent für geführte Konfigurationen umfasst vier Abschnitte: [Details](
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
 >title="Verbindung"
->abstract="Wählen Sie eine bestehende Verbindung aus Customer Journey Analytics aus, mit der Ihre Content Analytics-Daten zusammengeführt werden sollen."
+>abstract="Wählen Sie eine vorhandene Verbindung aus Customer Journey Analytics aus, mit der Ihre Content Analytics-Daten zusammengeführt werden sollen."
 
 Jede Konfiguration erfordert einen eindeutigen Namen. Beispiel: `Example Content Analytics configuration`. Der Name ist zum Speichern oder Implementieren einer Konfiguration erforderlich.
 

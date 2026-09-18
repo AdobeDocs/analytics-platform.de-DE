@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
 workflow-type: tm+mt
 source-wordcount: '4217'
-ht-degree: 30%
+ht-degree: 31%
 ---
 # Erstellen eines Daten-Feeds
 
@@ -88,7 +88,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_required_dimensions"
 >title="Erforderliche Dimensionen"
->abstract="Jeder Daten-Feed muss bestimmte Dimensionen enthalten, die durch eine Beschriftung **Erforderlich** neben dem Dimensionsnamen gekennzeichnet sind. Diese Dimensionen bieten die Mindeststruktur, die für die Analyse auf Ereignisebene erforderlich ist."
+>abstract="Jeder Daten-Feed muss bestimmte Dimensionen enthalten, die durch ein Label **Erforderlich** neben dem Dimensionsnamen gekennzeichnet sind. Diese Dimensionen stellen die Mindeststruktur bereit, die für Analysen auf Ereignisebene erforderlich ist."
 
 <!-- markdownlint-enable MD034 -->
 
