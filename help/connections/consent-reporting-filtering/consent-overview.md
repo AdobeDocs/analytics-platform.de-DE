@@ -27,14 +27,12 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 2%
 ---
 # Übersicht über das Reporting und die Filterung von Einverständnissen
-
-{{release-limited-testing}}
 
 Das Reporting und die Filterung von Einverständnissen verwenden die Mitgliedschaftsdaten zu Einverständnisrichtlinien, die in Ihren Adobe Experience Platform-Profildatensätzen gespeichert sind, um Ihnen bei der Berichterstattung über das Einverständnis der Besucher zu helfen. Darüber hinaus können Sie festlegen, dass Besucher, die mit der Einwilligung nicht einverstanden sind, ausgeschlossen werden, bevor ihre Daten in Customer Journey Analytics aufgenommen werden.
 

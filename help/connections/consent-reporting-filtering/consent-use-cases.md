@@ -23,14 +23,12 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 0%
 ---
 # Anwendungsfälle für Einverständnisberichte und -filterung
-
-{{release-limited-testing}}
 
 Mithilfe des Einverständnisberichts und der -filterung können Sie Berichte zur Mitgliedschaft in Einverständnisrichtlinien erstellen und Besucher, die nicht ihr Einverständnis gegeben haben, optional ausschließen, bevor ihre Daten in Customer Journey Analytics eingehen. Übersichtsinformationen finden Sie unter [Übersicht über Einverständnisberichte und -filter](/help/connections/consent-reporting-filtering/consent-overview.md).
 

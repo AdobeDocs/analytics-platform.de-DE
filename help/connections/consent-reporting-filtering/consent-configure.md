@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 28%
@@ -85,8 +85,6 @@ ht-degree: 28%
 >abstract="Aktivieren Sie diese Option, um Daten zu Besuchenden, die kein Einverständnis geben, von der Aufnahme in Customer Journey Analytics auszuschließen. Wenn diese Option aktiviert ist, werden die Daten einer Besucherin bzw. eines Besuchers nur dann aufgenommen, wenn die Besucherin bzw. der Besucher allen unten aktivierten Einverständnisrichtlinien zustimmt. <br>Diese Option richtet sich an Organisationen, die Daten zu Besuchenden, die kein Einverständnis geben, zum Zeitpunkt der Aufnahme ausschließen müssen."
 
 <!-- markdownlint-enable MD034 -->
-
-{{release-limited-testing}}
 
 Systemadministratoren können die Einverständnisberichterstattung und optional die Einverständnisfilterung für eine oder mehrere Verbindungen aktivieren. Übersichtsinformationen finden Sie unter [Übersicht über Einverständnisberichte und -filter](/help/connections/consent-reporting-filtering/consent-overview.md).
 
@@ -166,7 +164,7 @@ So erstellen Sie eine Reporting- und Filterkonfiguration für Einverständnisse:
    * Erstellt einen Einverständnisrichtlinien-Lookup-Datensatz für die Sandbox (sofern noch nicht vorhanden) und synchronisiert Richtliniennamen und Beschreibungen aus Experience Platform.
    * Fügt die Komponenten der Einverständnisrichtlinie (Dimensionen, Metriken und ein abgeleitetes Feld) zu den Datenansichten innerhalb der konfigurierten Verbindung hinzu.
 
-1. Sehen Sie sich nach Abschluss [&#x200B; Konfiguration die Komponenten der Einverständnisrichtlinie in der Datenansicht an](#view-consent-policy-components-in-the-data-view) um sicherzustellen, dass sie verfügbar sind.
+1. Sehen Sie sich nach Abschluss [ Konfiguration die Komponenten der Einverständnisrichtlinie in der Datenansicht an](#view-consent-policy-components-in-the-data-view) um sicherzustellen, dass sie verfügbar sind.
 
 ## Anzeigen von Einverständnisrichtlinien-Komponenten in der Datenansicht
 
