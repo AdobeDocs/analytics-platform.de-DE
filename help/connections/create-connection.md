@@ -5,6 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
+hold: true
 TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -31,7 +32,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 9c0ddbb48c5cb1c62bded02d1455f2631ab1679f
+source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
 workflow-type: tm+mt
 source-wordcount: '10488'
 ht-degree: 91%
@@ -538,8 +539,9 @@ Alternativ können die oben aufgeführten Datensatztypen auf einem Ad-hoc- oder 
 | Typ des Datensatzes | Beschreibung | Zeitstempel | Schema | Personen-ID |
 |---|---|---|---|---|
 | **[!UICONTROL Ad hoc]** | Ad-hoc-Daten basierend auf einem [Ad-hoc-Schema](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/api/ad-hoc) mit Feldern, die sich in einem Namespace befinden und nur von einem einzigen Datensatz verwendet werden. | Hängt vom Datensatztyp ab, den Sie für den Ad-hoc-Datensatz auswählen. | Jedes Ad-hoc-Schema, das auf einer Klasse basiert, die auf dem *Ad-hoc-Verhalten* basiert | Hängt vom Datensatztyp ab, den Sie für den Ad-hoc-Datensatz auswählen. |
-| **[!UICONTROL Modell]** | Relationale Daten basierend auf einem relationalen Schema. | Hängt vom Datensatztyp ab, den Sie für den relationalen Datensatz auswählen. | Ein beliebiges relationales Schema. | Hängt vom Datensatztyp ab, den Sie für den relationalen Datensatz auswählen. |
+| **[!UICONTROL relationale]** | Relationale Daten basierend auf einem relationalen Schema. | Hängt vom Datensatztyp ab, den Sie für den relationalen Datensatz auswählen. | Ein beliebiges relationales Schema. | Hängt vom Datensatztyp ab, den Sie für den relationalen Datensatz auswählen. |
 
+{{relational-dataset-important}}
 
 ### Hinzufügen von Datensätzen
 
@@ -721,6 +723,8 @@ Wenn Sie Datensätze hinzufügen oder einen vorhandenen Datensatz bearbeiten, ko
 
 Alle Datensätze und Datensatztypen verfügen über [allgemeine Einstellungen und Details](#general-dataset-settings-and-details) z. B. ob neue Daten importiert und Aufstockungen angefordert werden sollen oder nicht.
 
+
+
 #### Ereignisdatensatz
 
 Die spezifischen Einstellungen für einen Ereignisdatensatz hängen vom Verbindungstyp ab.
@@ -861,6 +865,8 @@ Die spezifischen Einstellungen für einen Ad-hoc-Datensatz sind:
 >
 >Relationale Datensätze werden hauptsächlich zur Unterstützung der bevorstehenden Experience Platform Data Mirror for Customer Journey Analytics-Funktionen verwendet.
 >
+
+{{relational-dataset-important}}
 
 Die spezifischen Einstellungen für einen relationalen Datensatz sind:
 
