@@ -125,4 +125,4 @@ Die folgenden Überlegungen gelten für Systemschlüssel und -felder:
 
 ## Batch-Größe der gespiegelten Daten
 
-Für jeden gespiegelten Datensatz, der als Teil einer Verbindung konfiguriert ist, müssen Sie sicherstellen, dass jeder Batch, der Daten für den gespiegelten Datensatz aufnimmt, 100 GB nicht überschreitet. Weitere Informationen finden [ in den Leitplanken ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"} Batch-Aufnahme .
+Für jeden gespiegelten Datensatz, der als Teil einer Verbindung konfiguriert ist, müssen Sie sicherstellen, dass jeder Batch, der Daten für den gespiegelten Datensatz aufnimmt, 100 GB nicht überschreitet. Weitere Informationen finden [&#x200B; in den Leitplanken &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"} Batch-Aufnahme .
