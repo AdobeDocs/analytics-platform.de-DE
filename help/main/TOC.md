@@ -2,7 +2,7 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Adobe Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 0b2548c1caa15fe7e50c000178e691ea9743ff19
+source-git-commit: ed1569087178fe1941d13f481914db6982ed18a1
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 90%
@@ -145,11 +145,11 @@ ht-degree: 90%
     + [Analysieren](/help/connections/audience-analysis/analyze-audiences.md)
     + [Anwendungsfälle](/help/connections/audience-analysis/audience-analysis-use-cases.md)
   + Einverständnisberichte und -filterung {#consent-reporting-filtering}
-    + {hide-from-toc}[Überblick](/help/connections/consent-reporting-filtering/consent-overview.md)
-    + {hide-from-toc}[Konfigurieren](/help/connections/consent-reporting-filtering/consent-configure.md)
-    + {hide-from-toc}[Verwalten](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + {hide-from-toc}[Analysieren](/help/connections/consent-reporting-filtering/consent-analyze.md)
-    + {hide-from-toc}[Anwendungsbeispiele](/help/connections/consent-reporting-filtering/consent-use-cases.md)
+    + [Überblick](/help/connections/consent-reporting-filtering/consent-overview.md)
+    + [Konfigurieren](/help/connections/consent-reporting-filtering/consent-configure.md)
+    + [Verwalten](/help/connections/consent-reporting-filtering/consent-manage.md)
+    + [Analysieren](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + [Anwendungsfälle](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Datenansichten {#cja-dataviews}
   + [Überblick über Datenansichten](../data-views/data-views.md)
   + [Erstellen oder Bearbeiten einer Datenansicht](../data-views/create-dataview.md)
