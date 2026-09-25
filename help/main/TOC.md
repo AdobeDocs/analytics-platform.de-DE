@@ -2,9 +2,9 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Adobe Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: ed1569087178fe1941d13f481914db6982ed18a1
+source-git-commit: 137eef954a6300405aa2c045ff29008e1daa72ce
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1496'
 ht-degree: 90%
 ---
 # Handbuch zu Adobe Customer Journey Analytics {#using}
@@ -428,14 +428,14 @@ ht-degree: 90%
     + [Verwalten von Exportprotokollen](/help/components/exports/manage-export-logs.md)
     + [Fehlerbehebung bei Exporten](/help/components/exports/troubleshoot-exports.md)
     + Daten-Feeds {#cja-data-feeds}
-      + {hide-from-toc}[Daten-Feed - Übersicht](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+      + {hide-from-toc}[Überblick](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc}[Vergleichen von Adobe Analytics-Daten-Feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
       + {hide-from-toc}[Vergleichen von Workspace und Daten-Feeds](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
       + {hide-from-toc}[Vorbereiten der Spaltenzuordnung](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[Spalten zuordnen](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
-      + {hide-from-toc}[Erstellen eines Daten-Feeds](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc}[Erstellen von Daten-Feeds](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc}[Segmentierung in Daten-Feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
-      + {hide-from-toc}[Verwenden abgeleiteter Felder in Daten-Feeds](/help/components/exports/cja-data-feeds/df-derived-fields.md)
+      + {hide-from-toc}[Anwenden von Datenumwandlungen](/help/components/exports/cja-data-feeds/df-data-transformations.md)
   + Datenwörterbuch {#data-dictionary}
     + [Überblick](../components/data-dictionary/data-dictionary-overview.md)
     + [Komponenteninformationen im Datenwörterbuch anzeigen](../components/data-dictionary/view-data-dictionary.md)

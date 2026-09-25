@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
+source-git-commit: 2391b13373992de30834f846da2fb7b71f5279ee
 workflow-type: tm+mt
-source-wordcount: '4217'
+source-wordcount: '4250'
 ht-degree: 31%
 ---
 # Erstellen eines Daten-Feeds
@@ -299,6 +299,10 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    +++
 
 1. (Optional) Ordnen Sie Komponenten auf der Arbeitsfläche neu an, indem Sie sie ziehen. Die von Ihnen definierte Reihenfolge wird als Spaltenreihenfolge in der exportierten Daten-Feed-Datei beibehalten.
+
+1. (Optional) Ändern Sie die Spaltengröße auf der Arbeitsfläche, indem Sie den Spaltenrahmen ziehen.
+
+   Spaltenbreiten werden in einem Cookie gespeichert und bleiben erhalten, wenn Sie das nächste Mal im selben Browser zu diesem Daten-Feed zurückkehren.
 
 1. (Optional) Ändern Sie die Komponenten-ID, die in der Daten-Feed-Ausgabe angezeigt wird.
 
