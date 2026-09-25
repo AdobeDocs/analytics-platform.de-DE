@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
+source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
 workflow-type: tm+mt
-source-wordcount: '5542'
-ht-degree: 97%
+source-wordcount: '5602'
+ht-degree: 96%
 ---
 # Snippets
 
@@ -329,7 +329,10 @@ Sie können nicht gleichzeitig sowohl Informationen für Benutzeragent als auch 
 
 ## Wichtige Nachricht zu relationalen Datensätzen {#relational-dataset-important}
 
+Ein relationaler Datensatz basiert auf einem relationalen Schematyp. Die in diesem relationalen Schema definierten Beziehungsdeskriptoren **gelten nicht** für die allgemeine Definition und Konfiguration einer Customer Journey Analytics-Verbindung oder speziell für die Datensatzeinstellungen für einen relationalen Datensatz.
+
+Darüber hinaus werden in Customer Journey Analytics Felder aus standardmäßigen XDM-Schemata **nicht automatisch zusammengeführt** mit ähnlichen benannten Feldern aus relationalen Schemata.
 >[!IMPORTANT]
 >
->Ein relationaler Datensatz basiert auf einem relationalen Schematyp. Die in diesem relationalen Schema definierten Beziehungsdeskriptoren sind nicht relevant und gelten nicht für die Definition und Konfiguration einer Customer Journey Analytics-Verbindung im Allgemeinen oder die Datensatzeinstellungen für einen relationalen Datensatz im Speziellen. <br/><br>Für die Berichterstellung und Analyse in Customer Journey Analytics müssen Sie in [Datensatzeinstellungen](/help/connections/create-connection.md#relational-dataset) explizit konfigurieren, wie Daten aus einem relationalen Datensatz basierend auf einer gemeinsamen Personen-ID oder Konto-ID mit anderen Datensätzen verbunden werden.
+>Für die Berichterstellung und Analyse in Customer Journey Analytics müssen Sie in [Datensatzeinstellungen](/help/connections/create-connection.md#relational-dataset) explizit konfigurieren, wie Daten aus einem relationalen Datensatz basierend auf einer gemeinsamen Personen-ID oder Konto-ID mit anderen Datensätzen verbunden werden. <br/><br/>Erwägen Sie die Verwendung der Funktion [Felder zusammenführen](/help/data-views/derived-fields/derived-fields.md#merge-fields) um ähnliche benannte Felder (nicht Teil eines Objekt-Arrays) in XDM-Schemata und relationalen Schemata zusammenzuführen. Für Felder in einem Objekt-Array gibt es derzeit keine Lösung zum Zusammenführen von Feldern zwischen XDM und relationalen Schemas.
 >

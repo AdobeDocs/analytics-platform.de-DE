@@ -4,7 +4,6 @@ description: Machen Sie sich mit weiteren Überlegungen vertraut, die Sie bei de
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hold: true
 autotag-review: '2026-05-19T06:55:09.938Z'
 TQID: 'https://experienceleague.adobe.com/uZjXZUKUMeXLxxpTRrkCZrPsGhxseSxOtJ9X0ZjG5wU'
 product_v2:
@@ -28,14 +27,18 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
+source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 1%
 ---
 # Überlegungen zu Experience Platform Data Mirror
 
 In diesem Artikel werden Faktoren beschrieben, die Sie beim Einrichten von Data Mirror-Datensätzen berücksichtigen sollten.
+
+## Einschränkungen
+
+{{relational-dataset-important}}
 
 ## Neue Spalte in Quelltabelle
 
@@ -95,7 +98,7 @@ Der Unterschied zwischen primärer Identität und primärem Schlüssel führt zu
 
 ## Governance-Unterschiede
 
-In XDM [Schemata](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition) und zugrunde liegenden Konzepten wie [Feldergruppen](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#field-group) propagiert ein definiertes [Feld](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#field) innerhalb einer Feldergruppe seine Kennzeichnungen über alle Datensätze hinweg, in denen die Feldergruppe verwendet wird. Beispiel: Ein E-Mail-Feld, das in einer `identities` Feldergruppe `emailID` wird, ist für alle Datensätze, in denen die `identities` verwendet wird, gleich beschriftet.
+In XDM [Schemata](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition) und zugrunde liegenden Konzepten wie [Feldergruppen](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group) propagiert ein definiertes [Feld](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field) innerhalb einer Feldergruppe seine Kennzeichnungen über alle Datensätze hinweg, in denen die Feldergruppe verwendet wird. Beispiel: Ein E-Mail-Feld, das in einer `identities` Feldergruppe `emailID` wird, ist für alle Datensätze, in denen die `identities` verwendet wird, gleich beschriftet.
 
 In einem relationalen Schema ist ein Spaltenname unabhängig. Eine Spalte mit dem Namen `email` in Tabelle `customers` ist unabhängig von einer Spalte mit dem Namen `email` in einer `prospects` und unterscheidet sich von dieser Spalte. Dieses Verhalten bedeutet, dass Kennzeichnungen (wie DULE-Nutzungskennzeichnungen, Richtlinien) einzeln auf die Felder in den gespiegelten Datensätzen angewendet werden müssen. Auf der Grundlage des obigen Beispiels müssen Sie Kennzeichnungen sowohl auf das `email` Feld im `customers` Datensatz als auch auf das `email` Feld im `prospects` Datensatz anwenden.
 
@@ -103,10 +106,6 @@ Der Unterschied bei der Governance hat folgende Auswirkungen:
 
 * Mehr manuelle Governance und Konfiguration arbeiten für Sie als Kunde.
 * Möglicherweise benötigen Sie eine explizite Anleitung, sodass Sie nicht davon ausgehen, dass eine einmalige Kennzeichnung über Feldergruppen für eine ordnungsgemäße Governance ausreicht.
-
-## Datensatzeinstellungen
-
-{{relational-dataset-important}}
 
 ## Zuordnung
 
@@ -120,9 +119,9 @@ Relationale Schemata haben hinsichtlich des Zusammenfügens die folgenden Einsch
 
 Die folgenden Überlegungen gelten für Systemschlüssel und -felder:
 
-* Primärschlüssel, Versionsdeskriptor und Zeitstempeldeskriptor müssen Felder auf Stammebene im relationalen XDM-Schema sein. Verwenden Sie [Feldzuordnung](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) während der Aufnahme, um diese Anforderung zu unterstützen.
-* Sie können die entsprechenden Quellfelder während der [Zuordnungsphase](https://experienceleague.adobe.com/de/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) auslassen.
+* Primärschlüssel, Versionsdeskriptor und Zeitstempeldeskriptor müssen Felder auf Stammebene im relationalen XDM-Schema sein. Verwenden Sie [Feldzuordnung](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) während der Aufnahme, um diese Anforderung zu unterstützen.
+* Sie können die entsprechenden Quellfelder während der [Zuordnungsphase](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) auslassen.
 
 ## Batch-Größe der gespiegelten Daten
 
-Für jeden gespiegelten Datensatz, der als Teil einer Verbindung konfiguriert ist, müssen Sie sicherstellen, dass jeder Batch, der Daten für den gespiegelten Datensatz aufnimmt, 100 GB nicht überschreitet. Weitere Informationen finden [&#x200B; in den Leitplanken &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"} Batch-Aufnahme .
+Für jeden gespiegelten Datensatz, der als Teil einer Verbindung konfiguriert ist, müssen Sie sicherstellen, dass jeder Batch, der Daten für den gespiegelten Datensatz aufnimmt, 100 GB nicht überschreitet. Weitere Informationen finden [ in den Leitplanken ](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"} Batch-Aufnahme .
