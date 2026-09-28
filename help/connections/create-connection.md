@@ -31,10 +31,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
+source-git-commit: 84ab190e018bc6beb9183aba038516b21289e49f
 workflow-type: tm+mt
-source-wordcount: '10488'
-ht-degree: 91%
+source-wordcount: '10597'
+ht-degree: 90%
 ---
 # Erstellen oder Bearbeiten einer Verbindung {#create-or-edit-a-connection}
 
@@ -844,13 +844,13 @@ Die spezifischen Einstellungen für einen Zusammenfassungsdatensatz sind:
 
 >[!NOTE]
 >
->Obwohl es möglich ist, einen Ad-hoc-Datensatz zu konfigurieren und auszuwählen, sollten Sie aus Leistungsgründen die Verwendung von Ad-hoc-Datensätzen für Zeitreihendaten (Ereignis-, Zusammenfassungsdaten) vermeiden. Relationale oder generische XDM-basierte Datensätze eignen sich viel besser für Zeitreihendaten als Ad-hoc-Datensätze.
+>Obwohl es möglich ist, zu konfigurieren und auszuwählen, sollten Sie aus Leistungsgründen vermeiden, einen Ad-hoc-Datensatz für Zeitreihendaten (Ereignis-, Zusammenfassungsdaten) zu verwenden. Relationale oder generische XDM-basierte Datensätze eignen sich viel besser für Zeitreihendaten als Ad-hoc-Datensätze.
 
 Die spezifischen Einstellungen für einen Ad-hoc-Datensatz sind:
 
 | Einstellung | Ausgewählter Datensatztyp | Beschreibung |
 |---|---|---|
-| **[!UICONTROL Typ des Datensatzes]** | -/- | Der Datentyp im Ad-hoc-Datensatz. Mögliche Werte sind: **[!UICONTROL Ereignis]**, **[!UICONTROL Profil]**, **[!UICONTROL Lookup]** und **[!UICONTROL Zusammenfassung]**. |
+| **[!UICONTROL Typ des Datensatzes]** | -/- | Der Datentyp im Ad-hoc-Datensatz. Mögliche Werte sind: **[!UICONTROL Ereignis]**, **[!UICONTROL Profil]** (für [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} nicht verfügbar), **[!UICONTROL Suche]** und **[!UICONTROL Zusammenfassung]**. Wenn Sie Ad-hoc-Profildaten für eine kontobasierte Verbindung verwenden möchten, wählen Sie **&#x200B;**&#x200B;als **[!UICONTROL Datensatztyp]** aus und verwenden Sie **[!UICONTROL Schlüssel]** und **[!UICONTROL Übereinstimmender Schlüssel]**, um Kontodaten einzubringen. |
 | **[!UICONTROL Personen-ID]** | Ereignis, Profil | Wählen Sie ein Feld aus dem Ad-hoc- oder relationalen Schema aus, das die Personen-ID darstellt. Dieses Feld kann ein beliebiges Feld im Datensatz sein. Wählen Sie aus **[!UICONTROL Identity-Namespace]** Feldern oder aus **[!UICONTROL Nicht-Identitätsfeldern]**. <br/>Sie können unter **[!UICONTROL Identity-Namespace]** nur dann eine ID auswählen, wenn mindestens ein Feld im Ad-hoc-Schema als Identität gekennzeichnet ist und einen Identity-Namespace hat. |
 | **[!UICONTROL Identity-Namespace]** | Ereignis | Wählen Sie einen Identity-Namespace aus, falls Sie eine Personen-ID aus **[!UICONTROL Nicht-Identitätsfeldern]** ausgewählt haben. |
 | **[!UICONTROL Zeitstempel]** | Ereignis, Zusammenfassung | Wählen Sie ein Feld aus dem Ad-hoc-Schema aus, das das Zeitstempelfeld darstellt. Dieses Feld kann eines der verfügbaren Felder vom Typ `DateTime` sein. |
@@ -871,7 +871,7 @@ Die spezifischen Einstellungen für einen relationalen Datensatz sind:
 
 | Einstellung | Ausgewählter Datensatztyp | Beschreibung |
 |---|---|---|
-| **[!UICONTROL Typ des Datensatzes]** | -/- | Der Datentyp im relationalen Datensatz.<br/>Wenn der Datensatz Zeitreihendaten enthält, sind die möglichen Werte **[!UICONTROL Ereignis]** und **[!UICONTROL Zusammenfassung]**. <br/>Wenn der Datensatz Eintragsdaten enthält, lauten die möglichen Werte **[!UICONTROL Profil]** und **[!UICONTROL Lookup]**. |
+| **[!UICONTROL Typ des Datensatzes]** | -/- | Der Datentyp im relationalen Datensatz.<br/>Wenn der Datensatz Zeitreihendaten enthält, sind die möglichen Werte **[!UICONTROL Ereignis]** und **[!UICONTROL Zusammenfassung]**. <br/>Wenn der Datensatz Datensatzdaten enthält, lauten die möglichen Werte: **[!UICONTROL Profil]** (für [!BADGE B2B edition nicht verfügbar]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} und **[!UICONTROL Suche]**. Wenn Sie relationale Profildaten für eine kontobasierte Verbindung verwenden möchten, wählen Sie **&#x200B;**&#x200B;als **[!UICONTROL Datensatztyp]** aus und verwenden Sie **[!UICONTROL Schlüssel]** und **[!UICONTROL Übereinstimmender Schlüssel]**, um Kontodaten einzubringen. |
 | **[!UICONTROL Personen-ID]** | Ereignis, Profil | Wählen Sie ein Feld aus dem relationalen Schema aus, das die Personen-ID darstellt. Die Auswahl ist auf die Liste der Felder im relationalen Schema beschränkt, die als Identität markiert sind und keinen Identity-Namespace haben. |
 | **[!UICONTROL Zeitstempel]** | Ereignis, Zusammenfassung | Das Feld, das als Zeitstempeldeskriptor im Schema definiert ist. Dieses Feld wird automatisch ausgefüllt. |
 | **[!UICONTROL Schlüssel]** | Lookup | Der für einen Lookup-Datensatz zu verwendende Schlüssel.<br/>Wenn ein Eintrag keinen Wert für den Schlüssel enthält, den Sie für den Lookup-Datensatz ausgewählt haben, wird der Eintrag übersprungen. |
