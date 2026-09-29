@@ -2,13 +2,26 @@
 title: Implementieren von Conversation Insights
 description: Erfahren Sie, wie Sie Ihr Agentenprogramm oder Ihren Service für Konversationseinblicke instrumentieren.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '2257'
-ht-degree: 7%
+source-wordcount: '2322'
+ht-degree: 6%
 ---
 # Implementieren von Conversation Insights
 
@@ -19,19 +32,19 @@ Dieser Artikel dokumentiert die erforderlichen Implementierungsschritte.
 >[!PREREQUISITES]
 >
 >* Sie müssen über eine Experience Platform-Umgebung (Organisation und Sandbox) verfügen, um die Daten zu erfassen.
->* Ihre Adobe-Organisation muss für die Feldergruppen „Experimenteller Agent“ und „Konversation“ aktiviert sein.
+>* Ihre Adobe-Organisation muss für die Feldergruppen „Agent“ und „Konversation“ aktiviert sein.
 >
 
 ## Schema und Datensätze
 
-Konfigurieren Sie Datensätze für die primären Konversationsereignisse: Aufforderung, Antwort, Feedback. Diese Datensätze können auf demselben Schema (z. B. einem generischen Conversation Insights-Schema) oder auf einzelnen Schemata basieren.
-Sie können separate Datensätze für Eingabeaufforderungen, Antworten und Feedback definieren oder Daten zu Datensätzen kombinieren. Verwenden Sie beispielsweise einen Datensatz für Eingabeaufforderungen und Antworten und einen anderen Datensatz für Feedback. Oder verwenden Sie einen einzigen Datensatz für alle Konversationsereignisse.
+Konfigurieren Sie Datensätze für die primären Konversationsereignisse: Aufforderung, Antwort, Feedback. Die Eingabeaufforderungen-, Antwort- und Feedback-Datensätze müssen das XDM-Erlebnisereignis-Basisschema mit der [Konversationsereignis-Feldergruppe](#conversation-event-field-group) erweitern und können optional die [Agenteninformations-Feldergruppe](#agentic-information-field-group) und andere [zusätzliche Feldergruppen](#additional-field-groups) enthalten.
 
-Das für die Eingabeaufforderung, Antwort und Feedback-Datensätze verwendete Schema muss das XDM-Erlebnisereignis-Basisschema um die erforderlichen Feldergruppen erweitern. und kann das XDM-Erlebnisereignis-Basisschema um zusätzliche Feldergruppen erweitern.
+Sie können separate Datensätze für Eingabeaufforderungen, Antworten und Feedback definieren oder Daten zu Datensätzen kombinieren. Verwenden Sie beispielsweise einen Datensatz für Eingabeaufforderungen und Antworten und einen anderen Datensatz für Feedback. Oder verwenden Sie einen einzigen Datensatz für alle Konversationsereignisse.
+Verwenden Sie dasselbe zugrunde liegende Schema für die Datensätze.
 
 ### Agent-Informationsfeldgruppe
 
-Die Feldergruppe **[!UICONTROL Agenteninformationen]** ist eine erforderliche Feldergruppe und verwendet das `agenticExperience`.
+Die Feldergruppe **[!UICONTROL Agenteninformationen]** ist eine optionale Feldergruppe und verwendet das `agenticExperience`. Erwägen Sie die Verwendung dieser Feldergruppe, wenn Sie agentische Informationen verfolgen möchten.
 
 +++ Details
 
@@ -203,7 +216,7 @@ Das Konversationsobjekt erfasst Daten für:
 
 #### Konversation
 
-Eine eindeutige `conversationID` identifiziert eine Konversation. Beispiel: `conversationID = "conv-001"`. Das Schema unterstützt auch `conversationName`. Ein für Menschen lesbarer Name, der den Gesamtkontext der Konversation beschreibt, z. B.: `France Geography Q&A`.
+Eine eindeutige `conversationID` identifiziert eine Konversation. Beispiel: `conversationID = "conv-001"`. Das Schema unterstützt auch `conversationName`. Ein für Menschen lesbarer Name, der den Gesamtkontext der Konversation beschreibt, z. B.: `France Geography Q&A`. Der Name der Konversation wird automatisch generiert, Sie können den generierten Namen jedoch aktualisieren. Der Name der Konversation wird auch mit `signals[].name` ausgefüllt.
 
 Die `conversationID` ermöglicht es, alle verwandten Turns-Ereignisse in demselben Konversationserlebnis zu gruppieren.
 
@@ -216,7 +229,7 @@ Ein Zug ist ein Interaktionszyklus innerhalb eines Gesprächs.
 `conversationID = "conv-001"`
 `turnID = "turn-001"`
 
-Dieselben `conversationID` und `turnID` werden verwendet, um die Eingabeaufforderung, die Antwort und das Feedback zu korrelieren, die mit diesem Zug verbunden sind. Diese Korrelation funktioniert über Datensätze hinweg, die separat bereitgestellt werden oder in verschiedenen Datensätzen enden.
+Dieselben `conversationID` und `turnID` werden verwendet, um die Eingabeaufforderung, die Antwort und das Feedback zu korrelieren, die mit diesem Zug verbunden sind. Diese Korrelation funktioniert über Datensätze hinweg, die separat bereitgestellt werden oder in verschiedenen Datensätzen enden. Eine `turnId` muss nur innerhalb derselben Konversation eindeutig sein, kann jedoch in allen Konversationen wiederverwendet werden. Sie können beispielsweise beide `turn-001` als `turnID` in Gesprächen mit `conversationID` `conv-001` und `conv-002` haben.
 
 
 #### Eingabeaufforderung
@@ -231,7 +244,7 @@ Wichtige Eingabeaufforderungsfelder sind:
 |---|---|
 | `prompt.source` | Wer oder was die Eingabeaufforderung hervorgebracht hat, in der Regel Endbenutzer. |
 | `prompt.raw[]` | Ein oder mehrere Raw-Inhaltssegmente. |
-| `prompt.raw[].text` | Der eigentliche Eingabeaufforderungstext oder -inhalt. |
+| `prompt.raw[].text` | Der tatsächliche Aufforderungstext oder Link zum Inhalt (z. B. ein Screenshot). |
 | `prompt.raw[].purpose` | Der Zweck des Inhalts, z. B. Benutzereingabe oder Link. |
 
 Eine Eingabeaufforderung kann mehrere Rohsegmente enthalten. Beispiel: Ein Benutzer gibt Text ein und fügt eine URL hinzu.
@@ -257,6 +270,8 @@ Wichtige Antwortfelder sind:
 | `response.raw[].purpose` | Der Zweck des Inhaltssegments. |
 
 Zu den dokumentierten Quelltypen gehören:
+
+<!-- randy buck to provide additional details -->
 
 | Quelle | Bedeutung |
 |---|----|
@@ -287,7 +302,9 @@ Wenn das Feedback für eine bestimmte Drehung gilt, bewahren Sie die entsprechen
 
 #### Signal
 
-Ein Signal ist eine strukturierte analytische Beobachtung über Konversationsinhalte. Der Signalextraktionsdienst extrahiert Signale.
+Ein Signal ist eine strukturierte analytische Beobachtung über Konversationsinhalte. Der Signal-Service stellt vorkonfigurierte Signale bereit. Es ist keine Aktion erforderlich, um Signale bereitzustellen. Sie können jedoch Signale als Teil der Integration hinzufügen.
+
+<!-- randy buck to provide additional details -->
 
 Ein Signal weist die folgenden Felder auf.
 
@@ -360,9 +377,6 @@ Unten finden Sie die vollständigen Details eines Konversationsobjekts.
 
 +++
 
-
-
-
 ### Zusätzliche Feldergruppen
 
 Sie können dem Schema, das Sie für Eingabeaufforderungen, Antworten und Feedback-Datensätze verwenden, optionale Feldergruppen hinzufügen. Beispiel:
@@ -382,9 +396,9 @@ Für jedes Konversationsereignis müssen Sie einen der folgenden Werte für `eve
 
 | Wert | Erklärung |
 |---|---|
-| `conversation turn` | Vollständige Konversation mit Eingabeaufforderung und Antwort |
-| `conversation recommendation` | Konversationsbasierte Empfehlung |
-| `conversation feedback` | Nur-Feedback-Ereignis |
+| `conversation.turn` | Vollständige Konversation mit Eingabeaufforderung und Antwort |
+| `conversation.recommendation` | Konversationsbasierte Empfehlung |
+| `conversation.feedback` | Nur-Feedback-Ereignis |
 
 
 ### Typ der Quelle
@@ -401,6 +415,8 @@ Sie müssen einen der folgenden Werte für `source` für jedes `prompt`, `respon
 ### Art des Zwecks (Rohtext)
 
 Sie müssen einen der folgenden Werte für das `purpose`-Attribut für ein beliebiges Element des `raw`-Objekts in einem `prompt`-, `response`- oder `feedback` festlegen.
+
+<!-- randy buck to provide details -->
 
 | Wert | Beschreibung |
 |---|---|

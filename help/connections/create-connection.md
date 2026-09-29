@@ -5,7 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
+TQID: 'https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -21,6 +21,8 @@ subfeature_v2:
     internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -31,10 +33,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 84ab190e018bc6beb9183aba038516b21289e49f
+source-git-commit: 6acb1ca076e28e8da4bbc1920837cea9216777e1
 workflow-type: tm+mt
-source-wordcount: '10597'
-ht-degree: 90%
+source-wordcount: '10738'
+ht-degree: 89%
 ---
 # Erstellen oder Bearbeiten einer Verbindung {#create-or-edit-a-connection}
 
@@ -724,7 +726,29 @@ Alle Datensätze und Datensatztypen verfügen über [allgemeine Einstellungen un
 
 
 
-#### Ereignisdatensatz
+#### Ereignisdatensatz {#event-dataset-settings}
+
+<!-- RIdM: Lengthy contextual help due to not yey allowed public facing docs. Modify when public facing docs are allowed. -->
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter"
+>title="Zeilenfilter aktivieren"
+>abstract="Zeilenfilter bestimmen, welche Ereignisse in Customer Journey Analytics aufgenommen werden. Es werden nur Ereignisse aufgenommen, die Ihren Einschlussregeln entsprechen. Alle anderen Ereignisse werden dauerhaft ausgeschlossen und stehen nicht für Berichte, Segmentierungen oder Analysen in Customer Journey Analytics zur Verfügung.<ul><li>Sie können bis zu 10 Filter erstellen.</li><li> Änderungen an Filtern gelten nur für neue Daten, die nach der Änderung aufgenommen werden, und wirken sich nicht rückwirkend auf zuvor aufgenommene Daten oder den Trigger einer historischen Aufstockung aus.</li></ul>"
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_field"
+>title="Feld"
+>abstract="Wählen Sie ein Feld aus dem Ereignis-Datensatz aus, das für die Bedingung verwendet werden soll. Sie können jedes Feld beliebigen Typs verwenden."
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_operator"
+>title="Bedingung"
+>abstract="Einen Benutzer auswählen. Der Operator wird verwendet, um das ausgewählte Feld anhand der Werte zu überprüfen."
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_values"
+>title="Werte"
+>abstract="Einen oder mehrere Werte eingeben. Der genaue Zeichenfolgenwert wird verwendet. Werte durch Kommas trennen. Jeder kommagetrennte Wert wird als eigenständig betrachtet und ist in der Bedingung enthalten."
 
 Die spezifischen Einstellungen für einen Ereignisdatensatz hängen vom Verbindungstyp ab.
 

@@ -2,10 +2,23 @@
 title: Konfiguration von Conversation Insights verwalten
 description: Erfahren Sie, wie Sie Conversation Insights-Konfigurationen verwalten.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 6%
@@ -71,7 +84,7 @@ So bearbeiten Sie eine vorhandene Conversation Insights-Konfiguration:
    * Aktivieren Sie das Kontrollkästchen neben der Konfiguration, die Sie bearbeiten möchten, und wählen Sie dann ![&#x200B; blaue Aktionsleiste &#x200B;](/help/assets/icons/Edit.svg)Bearbeiten **[!UICONTROL Bearbeiten]** aus.
    * Wählen Sie ![Mehr](/help/assets/icons/More.svg) für die Konfiguration aus, die Sie bearbeiten möchten. Wählen Sie im Kontextmenü die Option ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus.
 
-1. Verwenden Sie das [**[!UICONTROL Konfiguration / _Name der Konfiguration_]**](./conversation-insights-configure.md), um Konversationseinblicke zu konfigurieren.
+1. Verwenden Sie das [**[!UICONTROL Konfiguration / _Name der Konfiguration_]**](./conversation-insights-configure.md), um Konversationseinblicke zu verwalten.
 
 ## Löschen einer Konfiguration
 
