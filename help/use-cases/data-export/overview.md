@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
-TQID: https://experienceleague.adobe.com/ad4wWxqEZZxsnSTpus7pxFMlwNo3nNUpHeS9VfxrEdw
+TQID: 'https://experienceleague.adobe.com/ad4wWxqEZZxsnSTpus7pxFMlwNo3nNUpHeS9VfxrEdw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -14,9 +14,13 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
     internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -33,10 +37,10 @@ topic_v2:
     internal-label: Data collection
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 06d3fa4838d48567f1b9804992aa0f718937916d
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 1%
+ht-degree: 4%
 ---
 # Anwendungsfälle für den Datenexport {#data-export-use-cases}
 
@@ -47,7 +51,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
 >title="Verwenden von Exportfunktionen ähnlich den Daten-Feeds"
->abstract="Während in Customer Journey Analytics noch kein exakter Ersatz für Daten-Feeds verfügbar ist, sind ähnliche Funktionen über den vollständigen Tabellenexport, den Platform-Datensatzexport, die BI-Tool-Integration und die Reporting-API verfügbar."
+>abstract="Obwohl in Customer Journey Analytics noch kein konkreter Ersatz für Daten-Feeds verfügbar ist, sind ähnliche Funktionen über den vollständigen Tabellenexport, den Platform-Datensatzexport, die BI-Tool-Integration und die Reporting-API verfügbar."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,7 +59,7 @@ In diesem Abschnitt finden Sie Anwendungsfälle für Datenexporte und erfahren, 
 
 ## Einführung
 
-Einer der einzigartigen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics hängt mit der Verarbeitung von Daten für die Attribution und Sitzungserstellung zusammen. Weitere [&#x200B; finden Sie unter „Vergleich der Datenverarbeitung in Adobe Analytics &#x200B;](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) Customer Journey Analytics&quot;.
+Einer der einzigartigen Unterschiede zwischen Adobe Analytics und Customer Journey Analytics hängt mit der Verarbeitung von Daten für die Attribution und Sitzungserstellung zusammen. Weitere [ finden Sie unter „Vergleich der Datenverarbeitung in Adobe Analytics ](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) Customer Journey Analytics&quot;.
 
 ### Adobe Analytics: Attribution und Sitzungserstellung der Erfassungszeit.
 
@@ -75,7 +79,7 @@ Dies wirkt sich auf den Export von Daten aus Adobe Analytics aus:
 
 In Customer Journey Analytics werden Ereignisse nicht in der richtigen Reihenfolge erfasst, sondern eine Personen-ID anstelle einer Geräte-ID verwendet, sodass Customer Journey Analytics die Attribution und die Sitzungserstellung zum Zeitpunkt der Berichterstellung aktualisieren kann. Diese Art der Datenerfassung bietet Flexibilität, z. B.:
 
-* Beim Stitching können _Daten_ oder wöchentlich wiedergegeben werden, wobei anonyme Ereignisse bekannten Ereignissen zugeordnet werden. Weitere Informationen finden [&#x200B; unter &#x200B;](../../stitching/overview.md).
+* Beim Stitching können _Daten_ oder wöchentlich wiedergegeben werden, wobei anonyme Ereignisse bekannten Ereignissen zugeordnet werden. Weitere Informationen finden [ unter ](../../stitching/overview.md).
 * Sitzungserstellung und beibehaltene Werte ändern sich jedes Mal
   * neue Daten erfasst werden oder
   * Das Zusammenfügen fügt Ereignisse zum Verlauf einer Person hinzu.
