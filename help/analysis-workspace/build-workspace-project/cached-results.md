@@ -89,12 +89,12 @@ Im Workspace-Projekt, in dem Sie zwischengespeicherte Ergebnisse für ein schnel
 
 Wenn ein Projekt so konfiguriert ist, dass zwischengespeicherte Ergebnisse verwendet werden, wird oben im Projekt ein Zeitstempel angezeigt, der anzeigt, wann die Ergebnisse zwischengespeichert wurden:
 
-* **[!UICONTROL Anzeigen von Daten ]Datum [_Uhrzeit_]**: Alle Bedienfelder im Projekt zeigen zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit an.
-* **[!UICONTROL Anzeigen einiger Daten ]Datum [_Uhrzeit_]**: Einige Bedienfelder zeigen zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit an, während andere kürzlich aktualisiert wurden.
+* **[!UICONTROL Anzeigen von Daten &#x200B;]Datum [_Uhrzeit_]**: Alle Bedienfelder im Projekt zeigen zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit an.
+* **[!UICONTROL Anzeigen einiger Daten &#x200B;]Datum [_Uhrzeit_]**: Einige Bedienfelder zeigen zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit an, während andere kürzlich aktualisiert wurden.
 
 In Bedienfeldern wird außerdem ein Zeitstempel angezeigt, der angibt, wann die Ergebnisse zwischengespeichert wurden:
 
-* **[!UICONTROL Anzeige von Daten ]Datum [_Uhrzeit_]**: Das Bedienfeld zeigt zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit an.
+* **[!UICONTROL Anzeige von Daten &#x200B;]Datum [_Uhrzeit_]**: Das Bedienfeld zeigt zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit an.
 
 ## Ergebnisse für zwischengespeicherte Projekte manuell aktualisieren
 
