@@ -2,17 +2,32 @@
 title: Konversation - Einblicke - Übersicht
 description: Erfahren Sie mehr über den Wert und die Terminologie von Conversation Insights und lernen Sie, wie Conversation Insights funktioniert.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1114'
 ht-degree: 1%
 ---
 # Conversation Insights
 
-Mit Conversation Insights können Sie Konversationen aus den Agentenerlebnissen analysieren, die Sie Ihren Kunden anbieten. Diese Agentenerlebnisse können auf großen Sprachmodellen (LLM) oder auf menschlichen Konversationen basieren. Conversation Insights analysiert die Konversationen in großem Maßstab und bietet Kontext für diese Konversationen innerhalb der vollständigen Kunden-Journey. Mithilfe von Conversation Insights sind Sie in der Lage, die Auswirkungen von Agenten auf tatsächliche Benutzerergebnisse zu verstehen.
+Mit Conversation Insights können Sie Konversationen aus den Agentenerlebnissen analysieren, die Sie Ihren Kunden anbieten. Diese Agentenerlebnisse können auf großen Sprachmodellen (LLM) oder auf menschlichen Konversationen basieren. Beispielsweise ein Chatbot, der mit einem Kunden oder einem Callcenter interagiert.
+
+Conversation Insights analysiert die Konversationen in großem Maßstab und bietet Kontext für diese Konversationen innerhalb der vollständigen Kunden-Journey. Mithilfe von Conversation Insights sind Sie in der Lage, die Auswirkungen von Agenten auf tatsächliche Benutzerergebnisse zu verstehen.
 
 Conversation Insights behandelt Probleme, die auftreten können. z. B.:
 
@@ -29,12 +44,12 @@ Mit Conversation Insights können Sie Folgendes verstehen:
 * Was Benutzende von Agenten anfragen.
 * Auswirkungen der Konversationen auf Ihre KPIs.
 
-Sie können feststellen, wie Ihre Agenten die Richtlinien einhalten, wie genau die Agenten die Markenrichtlinien einhalten und ob die Kosten für die Ausführung von Agenten durch das Ergebnis gerechtfertigt sind.
+Sie können feststellen, wie Ihre Agenten die Richtlinien einhalten, wie genau die Agenten die Markenrichtlinien einhalten und ob die Ergebnisse die Kosten für die Ausführung von Agenten rechtfertigen.
 
 
 ## Konzepte
 
-Auf einer hohen Ebene in Conversation Insights [&#x200B; eine &#x200B;](#conversation) von korrelierten [Wendungen](#turn). Jeder Zug kann unabhängig über Ereignisse [Eingabeaufforderung](#prompt), [Antwort](#response) und [Feedback](#feedback) verfügen. [Signale](#signal) sind strukturierte Beobachtungen, die aus der Konversation abgeleitet werden, während der gemischte Datensatz die Quellereignisse und Signale für das Reporting zusammenführt.
+Auf einer hohen Ebene in Conversation Insights [ eine ](#conversation) von korrelierten [Wendungen](#turn). Jeder Zug kann unabhängig über Ereignisse [Eingabeaufforderung](#prompt), [Antwort](#response) und [Feedback](#feedback) verfügen. [Signale](#signal) sind strukturierte Beobachtungen, die aus der Konversation abgeleitet werden, während der gemischte Datensatz die Quellereignisse und Signale für das Reporting zusammenführt.
 
 Conversation Insights analysiert Interaktionen von Agenten auf zwei Ebenen:
 
@@ -119,7 +134,7 @@ Das Feedback kann Folgendes enthalten:
 
 Feedback muss nicht unbedingt gleichzeitig mit der Eingabeaufforderung oder der Antwort verfügbar sein. Sie können das Feedback zu einem späteren Zeitpunkt über die Agentenanwendung oder den Service senden, nachdem der Benutzer die Antwort ausgewertet hat.
 
-Weitere Informationen zur Implementierung finden Sie im [Feedback](./conversation-insights-implement.md#feedback)-Objekt in der Dokumentation [Implementieren von &#x200B;](./conversation-insights-implement.md) .
+Weitere Informationen zur Implementierung finden Sie im [Feedback](./conversation-insights-implement.md#feedback)-Objekt in der Dokumentation [Implementieren von ](./conversation-insights-implement.md) .
 
 ### Signal
 
@@ -136,7 +151,7 @@ Um die Agentenanwendung oder den Service zu identifizieren, sind für jedes Conv
 
 Wenn Ihr Agent-Erlebnisprogramm den Aufruf von Fähigkeiten unterstützt, die während der Verarbeitung aufgerufene Funktionen darstellen, können Sie diese Fähigkeitsaufrufe als Teil der Feldergruppe für Agenteninformationen hinzufügen.
 
-Weitere Informationen zur Implementierung finden Sie in der [Agenteninformationen](./conversation-insights-implement.md#agentic-information-field-group) in der Dokumentation [Implementieren von &#x200B;](./conversation-insights-implement.md)&quot;.
+Weitere Informationen zur Implementierung finden Sie in der [Agenteninformationen](./conversation-insights-implement.md#agentic-information-field-group) in der Dokumentation [Implementieren von ](./conversation-insights-implement.md)&quot;.
 
 ## Funktionsweise
 
@@ -146,14 +161,14 @@ Conversation Insights basiert auf drei Kernfunktionen:
 * **Signalextraktion und Konversationsmischung**: Wandelt die unstrukturierten Eingabeaufforderungen und Antworten (auch als „Turns“ bezeichnet) in berichtbare Datenpunkte um, z. B. Intent und Sentiment. Damit Anwender in großem Umfang Berichte zu diesen Datenpunkten erstellen können.
 * **Reporting**: Um die Effektivität und den ROI eines Agenten zu ermitteln, analysieren Sie Konversationen im großen Maßstab im Kontext des Kunden-Journey.
 
-Der Gesamtprozess der Datenerfassung, Signalextraktion und Konversationsmischung ist unten dargestellt.
+Im Folgenden wird der Gesamtprozess der Datenerfassung, Signalextraktion und Konversationsmischung beschrieben.
 
 ![Konversation Insights Wie es funktioniert Illustration](assets/conversation-insights.png){zoomable="yes"}
 
 | | Beschreibung |
 |---|---|
-| 1 | Sie instrumentieren Ihr Agentprogramm oder Ihren Service, um Ereignisse zu erstellen, die Eingabeaufforderungen ![CommentText](/help/assets/icons2/CommentText.svg), Antworten ![CommentReply](/help/assets/icons2/CommentReply.svg) und Feedback-![&#x200B; (Feedback](/help/assets/icons2/Feedback.svg)-Datensätze enthalten.<br/>Weitere Informationen zum Instrumentieren der Agentenanwendung oder des Services finden Sie in der [Implementierungsdokumentation](./conversation-insights-implement.md). |
-| 2 | Der Signalextraktions-Service extrahiert Signale aus den Eingabeaufforderungen ![CommentText](/help/assets/icons2/CommentText.svg), Antworten ![CommentReply](/help/assets/icons2/CommentReply.svg) und Feedback-Datensätzen ![Feedback](/help/assets/icons2/Feedback.svg) als Signalereignisse ![OnAir](/help/assets/icons/OnAir.svg) und speichert diese Signalereignisse in einem neuen Datensatz.<br>Dieser Schritt wird als Teil der Definition einer „Conversation [&quot;-Konfiguration &#x200B;](./conversation-insights-configure.md). |
-| 3 | Der Conversation Blender-Service blendet die Ereignisse aus den ![CommentText](/help/assets/icons2/CommentText.svg), Antworten ![CommentReply](/help/assets/icons2/CommentReply.svg), Feedback ![Feedback](/help/assets/icons2/Feedback.svg) und Signalen ![OnAir](/help/assets/icons/OnAir.svg)-Ereignisdatensätzen zusammen und gibt die blended ![Merge](/help/assets/icons/Merge.svg)events in einen neuen Datensatz aus.<br>Dieser Schritt wird als Teil der Definition einer „Conversation [&quot;-Konfiguration &#x200B;](./conversation-insights-configure.md). |
-| 4 | Der gemischte ![Zusammenführen](/help/assets/icons/Merge.svg)-Datensatz wird Teil der Verbindung und die Komponenten, die in dem Schema definiert sind, das für den gemischten Datensatz verwendet wird, werden Teil der Datenansicht.<br>Dieser Schritt wird als Teil der Definition einer „Conversation [&quot;-Konfiguration &#x200B;](./conversation-insights-configure.md). |
+| 1 | Sie instrumentieren Ihr Agentprogramm oder Ihren Service, um Ereignisse zu erstellen, die Eingabeaufforderungen ![CommentText](/help/assets/icons2/CommentText.svg), Antworten ![CommentReply](/help/assets/icons2/CommentReply.svg) und Feedback-![ (Feedback](/help/assets/icons2/Feedback.svg)-Datensätze enthalten.<br/>Weitere Informationen zum Instrumentieren der Agentenanwendung oder des Services finden Sie in der [Implementierungsdokumentation](./conversation-insights-implement.md). |
+| 2 | Der Signalextraktions-Service extrahiert Signale aus den Eingabeaufforderungen ![CommentText](/help/assets/icons2/CommentText.svg), Antworten ![CommentReply](/help/assets/icons2/CommentReply.svg) und Feedback-Datensätzen ![Feedback](/help/assets/icons2/Feedback.svg) als Signalereignisse ![OnAir](/help/assets/icons/OnAir.svg) und speichert diese Signalereignisse in einem neuen Datensatz.<br>Dieser Schritt wird als Teil der Definition einer „Conversation [&quot;-Konfiguration ](./conversation-insights-configure.md). |
+| 3 | Der Conversation Blender-Service blendet die Ereignisse aus den ![CommentText](/help/assets/icons2/CommentText.svg), Antworten ![CommentReply](/help/assets/icons2/CommentReply.svg), Feedback ![Feedback](/help/assets/icons2/Feedback.svg) und Signalen ![OnAir](/help/assets/icons/OnAir.svg)-Ereignisdatensätzen zusammen und gibt die blended ![Merge](/help/assets/icons/Merge.svg)events in einen neuen Datensatz aus.<br>Dieser Schritt wird als Teil der Definition einer „Conversation [&quot;-Konfiguration ](./conversation-insights-configure.md). |
+| 4 | Der gemischte ![Zusammenführen](/help/assets/icons/Merge.svg)-Datensatz wird Teil der Verbindung und die Komponenten, die in dem Schema definiert sind, das für den gemischten Datensatz verwendet wird, werden Teil der Datenansicht.<br>Dieser Schritt wird als Teil der Definition einer „Conversation [&quot;-Konfiguration ](./conversation-insights-configure.md). |
 

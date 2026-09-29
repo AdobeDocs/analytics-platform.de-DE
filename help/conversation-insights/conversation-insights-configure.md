@@ -2,18 +2,31 @@
 title: Erstellen oder Bearbeiten einer Conversation Insights-Konfiguration
 description: Erfahren Sie, wie Sie Conversation Insights-Konfigurationen konfigurieren.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 8%
+source-wordcount: '654'
+ht-degree: 7%
 ---
 # Erstellen oder Bearbeiten von Konfigurationen
 
-
-Conversation Insights ermöglicht es Ihnen, Konversationen (aus großen Sprachmodellen (LLM) oder Menschen) in großem Maßstab zu analysieren und diesen Konversationen den Kontext innerhalb der gesamten Kunden-Journey zu geben. Mithilfe von Conversation Insights sind Sie in der Lage, die Auswirkungen von Repräsentanten auf tatsächliche Benutzerergebnisse zu verstehen.
+Mit Conversation Insights können Sie Konversationen aus den Agentenerlebnissen analysieren, die Sie Ihren Kunden anbieten. Diese Agentenerlebnisse können auf großen Sprachmodellen (LLM) oder auf menschlichen Konversationen basieren. Beispielsweise ein Chatbot, der mit einem Kunden oder einem Callcenter interagiert.
+Mithilfe von Conversation Insights sind Sie in der Lage, die Auswirkungen von Repräsentanten auf tatsächliche Benutzerergebnisse zu verstehen.
 
 Über die Konfigurationsoberfläche für Conversation Insights können Sie schnell eine Konfiguration und die zugehörigen Artefakte (Verbindung, Datenansichten usw.) erstellen oder bearbeiten.
 
@@ -21,7 +34,7 @@ Wenn Sie eine Conversation Insights-Konfiguration erstellen oder bearbeiten, geb
 
 Nur Systemadministratoren können Conversation Insights-Konfigurationen erstellen oder bearbeiten.
 
-Sie können Konfigurationen über die Benutzeroberfläche „Conversation Insights[Konfigurationen“ erstellen oder &#x200B;](./conversation-insights-manage.md).
+Sie können Konfigurationen über die Benutzeroberfläche „Conversation Insights[Konfigurationen“ erstellen oder ](./conversation-insights-manage.md).
 
 ## Fehlenden kombinierten Datensatz wiederherstellen
 
@@ -88,7 +101,7 @@ Für jede Konfiguration:
 
    * Wählen Sie **[!UICONTROL Verwerfen]** für eine neue Konfiguration aus, die nicht erstellt wird.
 
-   * Wählen Sie **[!UICONTROL Für später speichern]** für eine neue Konfiguration aus, die Sie speichern möchten, für die Sie jedoch kein Artefakt erstellen möchten (z. B. Aktualisierungen an Datenansichten). Sie können die Konfiguration also später erneut überprüfen und die tatsächliche Erstellung der Konfiguration abschließen.
+   * Wählen Sie **[!UICONTROL Für später speichern]** für eine neue Konfiguration aus, die Sie speichern möchten, für die Sie jedoch kein Artefakt erstellen möchten (z. B. Aktualisierungen an Datenansichten). Sie können die Konfiguration später erneut aufrufen und die tatsächliche Erstellung der Konfiguration abschließen.
 
    * Wählen **[!UICONTROL Erstellen]** aus, um die neue Konfiguration zu erstellen.
 
