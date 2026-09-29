@@ -17,9 +17,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 6bcbf10e6bff660f57f598f6cf75b43eb75c7db3
+source-git-commit: 80ce27bcff09a23e38054e05329a2a261c8f6562
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '939'
 ht-degree: 0%
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="project_cached_results"
 >title="Verwenden zwischengespeicherter Ergebnisse für schnelleres Laden"
->abstract="Wenn diese Option aktiviert ist, werden Ergebnisse für 12 Stunden schneller geladen, nachdem ein Projekt zum ersten Mal von einer Benutzerin oder einem Benutzer geöffnet oder nach einem Zeitplan bereitgestellt wurde. Jeder, der das Projekt in dieser Zeit öffnet, sieht dieselben Ergebnisse, auch wenn weiterhin Daten im Hintergrund fließen. Um die neuesten Ergebnisse zu laden, aktualisieren Sie einzelne Bedienfelder oder das gesamte Projekt."
+>abstract="Wenn diese Option aktiviert ist, werden Ergebnisse sofort 12 Stunden lang geladen, nachdem ein Projekt zum ersten Mal von einer Benutzerin oder einem Benutzer geöffnet oder nach einem Zeitplan bereitgestellt wurde. Jeder, der das Projekt in dieser Zeit öffnet, sieht dieselben Ergebnisse, auch wenn weiterhin Daten im Hintergrund fließen. Um die neuesten Ergebnisse zu laden, aktualisieren Sie einzelne Bedienfelder oder das gesamte Projekt."
 
 Sie können Analysis Workspace-Projekte so konfigurieren, dass zwischengespeicherte Ergebnisse für ein 12-Stunden-Fenster angezeigt werden, sodass die Ergebnisse für alle Personen sofort geladen werden können, die das Projekt nach dem ersten Laden öffnen.
 
@@ -48,13 +48,11 @@ Bei der ersten Ausführung des Projekts führt Analysis Workspace die Abfrage wi
 
 Nach 12 Stunden laufen die zwischengespeicherten Ergebnisse ab. Die nächste Abfrage für das Projekt, unabhängig davon, ob ein Benutzer sie öffnet oder ein geplanter Versand ausgeführt wird, wird mit normaler Geschwindigkeit geladen und startet ein neues 12-Stunden-Fenster.
 
-### Wer kann zwischengespeicherte Ergebnisse sehen?
-
-Zwischengespeicherte Ergebnisse werden für alle freigegeben, die Zugriff auf das Projekt und die im Projekt verwendeten Datenansichten haben.
-
 ### Welche Ergebnisse zwischengespeichert werden
 
-Analysis Workspace speichert jede ausgeführte Abfrage zwischen, jedoch nicht jede mögliche Version eines Projekts. Wenn jemand die Abfrage ändert, z. B. indem er ein Element aus einem Dropdown-Menü des Bedienfelds auswählt oder ein Segment anwendet, führt Analysis Workspace eine neue Abfrage aus. Die neue Abfrage wird beim ersten Mal mit normaler Geschwindigkeit geladen. Danach werden die Ergebnisse ebenfalls zwischengespeichert.
+Analysis Workspace speichert jede ausgeführte Abfrage zwischen, jedoch nicht jede mögliche Version eines Projekts.
+
+Wenn jemand die Abfrage in einem Projekt ändert, z. B. indem er ein Element aus einem Dropdown-Menü des Bedienfelds auswählt oder ein Segment anwendet, führt Analysis Workspace eine neue Abfrage aus. Die neue Abfrage wird beim ersten Mal mit normaler Geschwindigkeit geladen. Danach werden die Ergebnisse ebenfalls zwischengespeichert, sodass Benutzer, die dieselbe Abfrage ausführen, die Ergebnisse sofort sehen.
 
 Durch das Caching einer neuen Abfrage werden bereits zwischengespeicherte Ergebnisse nicht überschrieben oder ungültig gemacht. Die ursprüngliche Projektansicht wird zusammen mit anderen Varianten, die ausgeführt wurden, zwischengespeichert.
 
@@ -67,34 +65,52 @@ Angenommen, ein Projekt zur Leistung der globalen Kampagne umfasst Segmente für
 | Zeit | Aktion | Belastungsgeschwindigkeit |
 | --- | --- | --- |
 | 6:00 Uhr | Geplante Projektbereitstellung | Normal (Ergebnisse werden für die zukünftige Verwendung zwischengespeichert) |
-| 07:06 | Benutzer A öffnet das Projekt | Schnell |
+| 07:06 | Benutzer A öffnet das Projekt | Sofort |
 | 07:06 | Benutzer A wendet das Amerikas-Segment an | Normal (Ergebnisse werden für die zukünftige Verwendung zwischengespeichert) |
-| 08:01 | Benutzer B öffnet das Projekt | Schnell |
-| 08:01 | Benutzer B wendet das Amerikas-Segment an | Schnell |
+| 08:01 | Benutzer B öffnet das Projekt | Sofort |
+| 08:01 | Benutzer B wendet das Amerikas-Segment an | Sofort |
 | 08:01 | Benutzer B wendet das EMEA-Segment an | Normal (Ergebnisse werden für die zukünftige Verwendung zwischengespeichert) |
 
 >[!ENDSHADEBOX]
+
+### Wer zwischengespeicherte Ergebnisse sieht
+
+Zwischengespeicherte Ergebnisse werden standardmäßig für alle Benutzer angezeigt, die:
+
+* Hat Zugriff auf das Projekt
+
+* Hat Zugriff auf die im Projekt verwendeten Datenansichten
+
+* Verwendet dieselben Abfrageparameter im Projekt, die zuvor zwischengespeichert wurden (z. B. verwendet das angezeigte Projekt dieselben Segmente oder Dropdown-Auswahlfelder wie ein zuvor zwischengespeichertes Projekt)
+
+Wenn Sie zwischengespeicherte Ergebnisse anzeigen, können Sie die neuesten Daten anzeigen, indem Sie [die Ergebnisse manuell aktualisieren](#manually-refresh-results-on-cached-projects).
 
 ## Aktivieren zwischengespeicherter Ergebnisse für ein Projekt
 
 Jeder, der Projekteinstellungen aktualisieren kann, kann zwischengespeicherte Ergebnisse aktivieren. Dazu gehören der Projektbesitzer und alle anderen, die die Rolle **[!UICONTROL Original bearbeiten]** für das Projekt besitzen. Weitere Informationen zu Projektrollen finden Sie unter [Freigeben einer bestimmten Projektrolle](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).
 
-Im Workspace-Projekt, in dem Sie zwischengespeicherte Ergebnisse für ein schnelleres Laden aktivieren möchten:
+Im Workspace-Projekt, in dem Sie zwischengespeicherte Ergebnisse für das nahezu sofortige Laden aktivieren möchten:
 
 1. Navigieren Sie **[!UICONTROL Projekte]** > **[!UICONTROL Projektinformationen und -einstellungen]**.
 1. Wählen Sie **[!UICONTROL Zwischengespeicherte Ergebnisse für schnelleres Laden verwenden]**.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-## Anzeigen von Daten-Zeitstempeln für zwischengespeicherte Projekte
+## Anzeigen, wenn zwischengespeicherte Ergebnisse in einem Projekt angezeigt werden
 
-Wenn ein Projekt so konfiguriert ist, dass zwischengespeicherte Ergebnisse verwendet werden, wird oben im Projekt ein Zeitstempel angezeigt, der anzeigt, wann die Ergebnisse zwischengespeichert wurden:
+Ein Zeitstempel wird oben im Projekt angezeigt, wenn zwischengespeicherte Ergebnisse angezeigt werden. Der Zeitstempel gibt an, ob alle Ergebnisse zwischengespeichert werden oder nur einige Ergebnisse:
 
-* **[!UICONTROL Anzeigen von Daten &#x200B;]Datum [_Uhrzeit_]**: Alle Bedienfelder im Projekt zeigen zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit an.
-* **[!UICONTROL Anzeigen einiger Daten &#x200B;]Datum [_Uhrzeit_]**: Einige Bedienfelder zeigen zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit an, während andere kürzlich aktualisiert wurden.
+* **[!UICONTROL Anzeige der Ergebnisse ab] [_Datum und Uhrzeit_]**: Alle Bedienfelder im Projekt zeigen zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit.
+* **[!UICONTROL Anzeige einiger Ergebnisse ab] [_Datum und Uhrzeit_]**: Einige Bedienfelder zeigen zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit an, während andere kürzlich aktualisiert wurden.
+
+![Zeitstempel eines zwischengespeicherten Projekts](assets/project-cache-timestamp.png)
 
 In Bedienfeldern wird außerdem ein Zeitstempel angezeigt, der angibt, wann die Ergebnisse zwischengespeichert wurden:
 
-* **[!UICONTROL Anzeige von Daten &#x200B;]Datum [_Uhrzeit_]**: Das Bedienfeld zeigt zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit an.
+* **[!UICONTROL Anzeige der Ergebnisse ab] [_Datum und Uhrzeit_]**: Das Bedienfeld zeigt zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit an.
+
+  >[!NOTE]
+  >
+  >Diese Option ist während der Alpha-Phase der Veröffentlichung nicht verfügbar.
 
 ## Ergebnisse für zwischengespeicherte Projekte manuell aktualisieren
 
@@ -106,7 +122,7 @@ In dem Workspace-Projekt, in dem Sie die neuesten Daten anzeigen möchten, könn
 
 So laden Sie die neuesten Ergebnisse für alle Bereiche und starten ein neues 12-Stunden-Fenster:
 
-1. Wählen **[!UICONTROL oben]** Projekt neben dem Zeitstempel des Projekts die Option „Aktualisieren“ aus.
+1. Wählen Sie **[!UICONTROL Symbol]** Aktualisieren![Aktualisieren](/help/assets/icons/Refresh.svg) oben im Projekt neben dem Zeitstempel des Projekts aus.
 
 ### Ergebnisse für ein einzelnes Bedienfeld aktualisieren
 
@@ -116,5 +132,5 @@ So laden Sie die neuesten Ergebnisse für alle Bereiche und starten ein neues 12
 
 So laden Sie die neuesten Ergebnisse nur für einen einzelnen Bereich:
 
-1. Wählen **[!UICONTROL Aktualisieren]** neben dem Zeitstempel eines Bedienfelds aus.
+1. Wählen Sie **[!UICONTROL Symbol]** Aktualisieren![Aktualisieren](/help/assets/icons/Refresh.svg) oben im Projekt neben dem Zeitstempel eines Bedienfelds aus.
 
