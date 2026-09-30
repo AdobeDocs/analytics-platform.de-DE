@@ -123,7 +123,7 @@ Customer Journey Analytics berichtet nicht direkt über Experience Platform-Date
 
 Verwenden Sie den folgenden Prozess, um eine Verbindung zu erstellen oder zu aktualisieren:
 
-1. Erstellen oder [ Sie in Customer Journey Analytics eine bestehende Verbindung](/help/connections/create-connection.md).
+1. Erstellen oder [&#x200B; Sie in Customer Journey Analytics eine bestehende Verbindung](/help/connections/create-connection.md).
 1. Stellen Sie sicher, dass Sie die Sandbox auswählen, die die Paid-Media-Datensätze enthält.
 1. Fügen Sie den Datensatz mit Zusammenfassungsmetriken als Zusammenfassungsdaten hinzu.
 1. Fügen Sie jeden Lookup-Datensatz als Lookup-Datensatz hinzu und verbinden Sie den Datensatz mit den Zusammenfassungsdaten durch die entsprechenden Entitätskennungen für Konto, Kampagne, Anzeigengruppe, Anzeige, Asset und Erlebnis.
@@ -138,7 +138,7 @@ Paid-Media-Daten sind aggregierte Daten und basieren nicht auf der Identitätszu
 Nachdem die Verbindung fertig ist, müssen Sie eine oder mehrere Datenansichten für die Verbindung erstellen oder bearbeiten:
 
 
-1. Erstellen [ bearbeiten Sie in Customer Journey Analytics eine oder mehrere Datenansichten](/help/data-views/create-dataview.md):
+1. Erstellen [&#x200B; bearbeiten Sie in Customer Journey Analytics eine oder mehrere Datenansichten](/help/data-views/create-dataview.md):
 1. Standardeinstellungen wie Zeitzone und Währung definieren.
 1. Fügen Sie die Komponenten hinzu, die Sie für die gebührenpflichtige Medienanalyse benötigen.
 
