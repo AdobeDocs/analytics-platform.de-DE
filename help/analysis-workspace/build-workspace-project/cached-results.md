@@ -17,9 +17,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7afd51cbdbfc21c8512d0e11be87a6ab8245e366
+source-git-commit: 32dfb7790f57293ea297bdcb8319c3d3b187a2ae
 workflow-type: tm+mt
-source-wordcount: '1330'
+source-wordcount: '1336'
 ht-degree: 0%
 ---
 
@@ -56,7 +56,7 @@ Nach 12 Stunden laufen die zwischengespeicherten Ergebnisse ab. Beim nächsten L
 
 Analysis Workspace speichert die Ergebnisse des Projekts in der ursprünglich konfigurierten Form zwischen, einschließlich der ausgewählten Datenansichten, angewendeten Segmente, Datumsbereiche, Dropdown-Auswahlfelder für Bedienfelder usw. Jeder, der das Projekt öffnet, sieht diese zwischengespeicherten Ergebnisse.
 
-Wenn jemand die Projektkonfiguration ändert, werden die Ergebnisse aktualisiert und [eine neue Projektvariante wird zwischengespeichert](#project-variations-are-cached-as-the-project-is-modified).
+Wenn jemand die Projektkonfiguration ändert, während er das zwischengespeicherte Projekt anzeigt, werden die Ergebnisse normal geladen (nicht sofort), und [eine neue Projektvariante wird zwischengespeichert](#project-variations-are-cached-as-the-project-is-modified).
 
 #### Projektvarianten werden zwischengespeichert, wenn das Projekt geändert wird
 
@@ -80,19 +80,21 @@ Angenommen, ein Projekt zur Leistung der globalen Kampagne umfasst Segmente für
 | --- | --- | --- |
 | 6:00 Uhr | Geplante Projektbereitstellung | Normal (Ergebnisse werden für die zukünftige Verwendung zwischengespeichert) |
 | 07:06 | Benutzer A öffnet das Projekt | Sofort |
-| 07:06 | Benutzer A wendet das Amerikas-Segment an | Normal (Ergebnisse werden für die zukünftige Verwendung zwischengespeichert) |
+| 07:07 | Benutzer A wendet das Amerikas-Segment an | Normal (Ergebnisse werden für die zukünftige Verwendung zwischengespeichert) |
 | 08:01 | Benutzer B öffnet das Projekt | Sofort |
-| 08:01 | Benutzer B wendet das Amerikas-Segment an | Sofort |
-| 08:01 | Benutzer B wendet das EMEA-Segment an | Normal (Ergebnisse werden für die zukünftige Verwendung zwischengespeichert) |
+| 08:05 | Benutzer B wendet das Amerikas-Segment an | Sofort |
+| 08:12 | Benutzer B wendet das EMEA-Segment an | Normal (Ergebnisse werden für die zukünftige Verwendung zwischengespeichert) |
 
 >[!ENDSHADEBOX]
 
-### Änderungen, die zwischengespeicherte Ergebnisse automatisch aktualisieren
+### Änderungen, die dazu führen, dass zwischengespeicherte Ergebnisse beim nächsten Laden des Projekts aktualisiert werden
 
 Die folgenden Änderungen an der zugrunde liegenden Konfiguration eines Projekts führen dazu, dass Analysis Workspace die Ergebnisse aktualisiert, wenn das Projekt das nächste Mal geöffnet wird, auch wenn das 12-Stunden-Fenster noch nicht abgelaufen ist:
 
-* Änderungen an einer Komponente in der Datenansicht, z. B. das Bearbeiten einer Dimension oder der [&#x200B; (Komponenteneinstellungen](/help/data-views/component-settings/overview.md)
-* Änderungen an einem [&#x200B; Feld](/help/data-views/derived-fields/derived-fields.md)
+* Änderungen an einer Komponente in der Datenansicht, z. B. das Bearbeiten einer Dimension oder der [ (Komponenteneinstellungen](/help/data-views/component-settings/overview.md)
+
+* Änderungen an einem [ Feld](/help/data-views/derived-fields/derived-fields.md)
+
 * Änderungen an einer im Projekt verwendeten Segmentdefinition
 
 Die Ergebnisse werden mit normaler Geschwindigkeit geladen und dann zwischengespeichert, wodurch ein neues 12-Stunden-Fenster gestartet wird.
@@ -139,10 +141,12 @@ Jeder, der Projekteinstellungen aktualisieren kann, kann zwischengespeicherte Er
 >
 >Zwischengespeicherte Ergebnisse eignen sich möglicherweise nicht gut, wenn Sie aktuelle Daten, verspätet eintreffende Daten oder aktualisierte Suchwerte sofort anzeigen müssen. Bevor Sie diese Einstellung aktivieren, überprüfen Sie [Wann können zwischengespeicherte Ergebnisse für ein Projekt deaktiviert bleiben](#when-to-leave-cached-results-disabled-on-a-project).
 
-Im Workspace-Projekt, in dem Sie zwischengespeicherte Ergebnisse für das nahezu sofortige Laden aktivieren möchten:
+Im Workspace-Projekt, in dem Sie zwischengespeicherte Ergebnisse für ein schnelleres Laden aktivieren möchten:
 
 1. Navigieren Sie **[!UICONTROL Projekte]** > **[!UICONTROL Projektinformationen und -einstellungen]**.
+
 1. Wählen Sie **[!UICONTROL Zwischengespeicherte Ergebnisse für schnelleres Laden verwenden]**.
+
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
 ## Anzeigen, wenn zwischengespeicherte Ergebnisse in einem Projekt angezeigt werden
@@ -150,6 +154,7 @@ Im Workspace-Projekt, in dem Sie zwischengespeicherte Ergebnisse für das nahezu
 Ein Zeitstempel wird oben im Projekt angezeigt, wenn zwischengespeicherte Ergebnisse angezeigt werden. Der Zeitstempel gibt an, ob alle Ergebnisse zwischengespeichert werden oder nur einige Ergebnisse:
 
 * **[!UICONTROL Anzeige der Ergebnisse ab] [_Datum und Uhrzeit_]**: Alle Bedienfelder im Projekt zeigen zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit.
+
 * **[!UICONTROL Anzeige einiger Ergebnisse ab] [_Datum und Uhrzeit_]**: Einige Bedienfelder zeigen zwischengespeicherte Ergebnisse aus dem angezeigten Datum und der angezeigten Uhrzeit an, während andere kürzlich aktualisiert wurden.
 
 ![Zeitstempel eines zwischengespeicherten Projekts](assets/project-cache-timestamp.png)
@@ -184,5 +189,5 @@ So laden Sie die neuesten Ergebnisse für alle Bereiche und starten ein neues 12
 
 So laden Sie die neuesten Ergebnisse nur für einen einzelnen Bereich:
 
-1. Wählen Sie **[!UICONTROL Symbol]** Aktualisieren![Aktualisieren](/help/assets/icons/Refresh.svg) oben im Projekt neben dem Zeitstempel eines Bedienfelds aus.
+1. Wählen Sie das Symbol **[!UICONTROL Aktualisieren]** ![Aktualisieren](/help/assets/icons/Refresh.svg) neben dem Zeitstempel eines Bedienfelds aus.
 
