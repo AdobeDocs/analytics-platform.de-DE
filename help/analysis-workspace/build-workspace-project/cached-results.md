@@ -91,8 +91,8 @@ Angenommen, ein Projekt zur Leistung der globalen Kampagne umfasst Segmente für
 
 Die folgenden Änderungen an der zugrunde liegenden Konfiguration eines Projekts führen dazu, dass Analysis Workspace die Ergebnisse aktualisiert, wenn das Projekt das nächste Mal geöffnet wird, auch wenn das 12-Stunden-Fenster noch nicht abgelaufen ist:
 
-* Änderungen an einer Komponente in der Datenansicht, z. B. das Bearbeiten einer Dimension oder der [ (Komponenteneinstellungen](/help/data-views/component-settings/overview.md)
-* Änderungen an einem [ Feld](/help/data-views/derived-fields/derived-fields.md)
+* Änderungen an einer Komponente in der Datenansicht, z. B. das Bearbeiten einer Dimension oder der [&#x200B; (Komponenteneinstellungen](/help/data-views/component-settings/overview.md)
+* Änderungen an einem [&#x200B; Feld](/help/data-views/derived-fields/derived-fields.md)
 * Änderungen an einer im Projekt verwendeten Segmentdefinition
 
 Die Ergebnisse werden mit normaler Geschwindigkeit geladen und dann zwischengespeichert, wodurch ein neues 12-Stunden-Fenster gestartet wird.
