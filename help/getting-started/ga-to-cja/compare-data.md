@@ -7,19 +7,26 @@ feature: Basics
 exl-id: 7e4b9a2f-1c5d-4b8a-e3f9-6d2c8b7a4051
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 2125f1a16ffed79f77757120c5679dd4defa1638
+    internal-label: Reporting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1300
+source-wordcount: '1300'
 ht-degree: 0%
-
 ---
-
 
 # Warum sich GA4- und Customer Journey Analytics-Daten unterscheiden
 
@@ -99,7 +106,7 @@ GA4 wendet ein Attributionsmodell für Berichte an, das auf der Eigenschaftseben
 Customer Journey Analytics wendet die Attribution auch zum Zeitpunkt der Berichterstellung an, jedoch mit granularerer Steuerung. Es gibt zwei Stellen, an denen dies konfiguriert werden kann:
 
 * **Einstellungen für die Datenansicht**: Ein [Attributionsmodell](/help/data-views/component-settings/attribution.md) kann für jede Metrikkomponente in der Datenansicht festgelegt werden, wodurch der Standard für diese Metrik für alle Berichte festgelegt wird. Standardmäßig wird kein Attributionsmodell angewendet. Sie können eine Datenansicht so konfigurieren, dass sie mehrere Kopien derselben Metrik enthält, wobei jede Kopie ein anderes standardmäßiges Attributionsmodell verwendet.
-* **Überschreibung auf Komponentenebene**: Nachdem Sie eine Metrik in eine [!UICONTROL Freiformtabelle“ gezogen &#x200B;], klicken Sie mit der rechten Maustaste auf die Spaltenüberschrift und wählen Sie **[!UICONTROL Nicht-Standard-Attributionsmodell verwenden]** aus, um sie für diese Instanz zu überschreiben. Sie können dieselbe Metrik auch mehrmals in die Tabelle ziehen, wobei jeweils ein anderes Attributionsmodell für einen direkten Seitenvergleich verwendet wird.
+* **Überschreibung auf Komponentenebene**: Nachdem Sie eine Metrik in eine [!UICONTROL Freiformtabelle“ gezogen ], klicken Sie mit der rechten Maustaste auf die Spaltenüberschrift und wählen Sie **[!UICONTROL Nicht-Standard-Attributionsmodell verwenden]** aus, um sie für diese Instanz zu überschreiben. Sie können dieselbe Metrik auch mehrmals in die Tabelle ziehen, wobei jeweils ein anderes Attributionsmodell für einen direkten Seitenvergleich verwendet wird.
 
 Da GA4 standardmäßig auf die datengesteuerte Attribution festgelegt ist und Customer Journey Analytics kein Modell anwendet, außer Sie konfigurieren eines, unterscheiden sich die Konversions- und Kanalmetriken wahrscheinlich, bis Sie sie anpassen. Das Festlegen von GA4 auf ein Modell mit dem letzten Klick und das Konfigurieren eines passenden Letztkontaktmodells in Customer Journey Analytics ist die zuverlässigste Methode, um eine ähnliche Baseline festzulegen. Jede Modelländerung in Customer Journey Analytics gilt rückwirkend für alle historischen Daten ohne erneute Verarbeitung.
 

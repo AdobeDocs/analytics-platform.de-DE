@@ -5,27 +5,39 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: Produktanalysen
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-TQID: https://experienceleague.adobe.com/6cjieHRKJPeLix2qWLjI8GT5uZtdCRSbJmX7JCF2dtI
+TQID: 'https://experienceleague.adobe.com/6cjieHRKJPeLix2qWLjI8GT5uZtdCRSbJmX7JCF2dtI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1268
+source-wordcount: '1268'
 ht-degree: 96%
-
 ---
-
 # Analyse der Kundentreue {#retention}
 
 <!-- markdownlint-disable MD034 -->
@@ -42,18 +54,18 @@ Die ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Analyse der Kun
 * Startereignis: Das Ereignis, mit dem Benutzende für die Aufnahme in Ihre Analyse qualifiziert werden.
 * Rückkehrereignis: Ein oder mehrere Ereignisse, mit denen eine Benutzerin bzw. ein Benutzer interagieren muss, um in Ihrer Analyse als wiederkehrende Benutzerin bzw. wiederkehrender Benutzer gezählt zu werden.
 
-Bei dieser Analyse stellt die X-Achse des Diagramms die Zeit seit dem ersten Startereignis einer Benutzerin oder eines Benutzers dar und die Y-Achse stellt den Prozentsatz der Benutzenden dar, die mit einem oder mehreren Rückkehrereignisse interagieren. Sie können sowohl die Bindung als auch die Abwanderung über verschiedene Zeiträume hinweg anzeigen. Die angezeigten Zeiträume können zudem über die Abfrageeinstellungen angepasst werden. Eine Tabelle unterhalb des Diagramms enthält aggregierte Daten mit der Option, einzelne Kohorten anzuzeigen, bei denen es sich um eine Gruppe von Personen handelt, deren Startereignis dasselbe Datum hat.
+Bei dieser Analyse stellt die X-Achse des Diagramms die Zeit seit dem ersten Startereignis einer Benutzerin bzw. eines Benutzers dar und die Y-Achse stellt den Prozentsatz der Benutzerinnen und Benutzer dar, die mit einem oder mehreren Rückkehrereignissen interagieren. Sie können sowohl die Bindung als auch die Abwanderung über verschiedene Zeiträume hinweg anzeigen. Die angezeigten Zeiträume können zudem über die Abfrageeinstellungen angepasst werden. Eine Tabelle unterhalb des Diagramms enthält aggregierte Daten mit der Option, einzelne Kohorten anzuzeigen, bei denen es sich um eine Gruppe von Personen handelt, deren Start-Ereignis dasselbe Datum hat.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435787/?captions=ger&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?quality=12&learn=on)
 
 ## Anwendungsfälle
 
 Zu den Anwendungsfällen für diese Analyse gehören:
 
 * **Kohortenanalyse**: Gruppieren Sie Benutzende basierend auf von ihnen durchgeführten Aktionen wie Anmeldungen oder Käufe in Kohorten. Sie können vergleichen, wie gut diese Gruppen beibehalten werden, und festlegen, wie das Benutzererlebnis jeder Gruppe verbessert werden soll.
-* **Markttauglichkeit des Produkts**: Messen Sie die regelmäßige Nutzung Ihres Produkts und visualisieren Sie sie als Bindungskurven. Eine höhere Bindung bedeutet eine höhere Markttauglichkeit des Produkts und dort, wo Ihre Kurve abflacht, wird die Dauer bis zum Erreichen der Tauglichkeit angezeigt. Sehen Sie sich diese Analyse auf einer allgemeinen Ebene an oder schlüsseln Sie sie nach den einzelnen Produktfunktionen auf, um tiefere Einblicke zu erhalten.
+* **Markttauglichkeit des Produkts**: Messen Sie die regelmäßige Nutzung Ihres Produkts und visualisieren Sie sie als Bindungskurven. Eine höhere Bindung bedeutet eine bessere Produktmarkttauglichkeit und der Punkt, an dem Ihre Kurve abflacht, zeigt an, wie lange es dauert, bis dieses Tauglichkeit erreicht ist. Zeigen Sie diese Analyse auf einer allgemeinen Ebene an oder nehmen Sie eine Aufschlüsselung nach einzelnen Produktfunktionen vor, um umfassendere Erkenntnisse zu erhalten.
 * **Abonnementdienstanalyse**: Wenn Ihr Produkt ein Abonnement oder ein anderes Modell für wiederkehrenden Umsatz verwendet, können Sie den Prozentsatz der Benutzenden sehen, die Ihr Produkt optimal nutzen. Sie können bestimmte Qualitäten und Verhaltensweisen dieser Benutzenden identifizieren.
-* **Benutzerinteraktion**: Bewerten Sie, wie bestimmte Benutzertypen mit Ihrem Produkt interagieren, und vergleichen Sie nebeneinander, wie oft sie zurückkehren. Ein bestimmtes Segment mit einer geringeren Bindung als andere kann Ihnen Einblicke in die Verbesserung potenzieller unterdurchschnittlicher Erlebnisse bieten, die es möglicherweise aufweist.
+* **Benutzerinteraktion**: Bewerten Sie, wie bestimmte Benutzertypen mit Ihrem Produkt interagieren, und vergleichen Sie nebeneinander, wie oft sie zurückkehren. Ein bestimmtes Segment mit einer geringeren Bindung als andere kann Ihnen Erkenntnisse zur Verbesserung potenzieller unterdurchschnittlicher Erlebnisse liefern, die es möglicherweise aufweist.
 
 ## Benutzeroberfläche
 
@@ -63,13 +75,13 @@ Einen Überblick über die Benutzeroberfläche für die geführte Analyse erhalt
 
 Mit der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **[!UICONTROL Startereignis]**: Die Ereigniskriterien, mit denen eine Benutzerin oder ein Benutzer interagieren muss, um sich für die Aufnahme in Ihre Analyse zu qualifizieren. Benutzende, die mit dem Startereignis interagieren, werden in der Spalte „Benutzende“ der Tabelle gezählt. Dieses Ereignis dient als Nenner für die angezeigten Bindungsraten. Es wird ein Ereignis unterstützt und bei Bedarf können Eigenschaftsfilter angewendet werden. Das Start- und das Rückkehrereignis sind standardmäßig verknüpft. Das bedeutet, dass eine Benutzerin bzw. ein Benutzer das ausgewählte Ereignis nur einmal ausführen muss, um in die Kohorte aufgenommen zu werden. Sie bzw. er muss es anschließend erneut ausführen, um als wiederkehrende Benutzerin bzw. wiederkehrender Benutzer gezählt zu werden. Unter dem Menü „Mehr“ können Sie die Verknüpfung zwischen Start- und Rückkehrereignis aufheben, wenn sich die Rückkehraktion von der Einschlussaktion unterscheiden soll.
+* **[!UICONTROL Startereignis]**: Die Ereigniskriterien, mit denen eine Benutzerin oder ein Benutzer interagieren muss, um sich für die Aufnahme in Ihre Analyse zu qualifizieren. Benutzende, die mit dem Startereignis interagieren, werden in der Spalte „Benutzende“ der Tabelle gezählt. Dieses Ereignis dient als Nenner für die angezeigten Bindungsraten. Es wird ein Ereignis unterstützt und bei Bedarf können Eigenschaftsfilter angewendet werden. Das Startereignis und das Rückkehrereignis sind standardmäßig verknüpft. Das bedeutet, dass eine Benutzerin bzw. ein Benutzer das ausgewählte Ereignis nur einmal ausführen muss, um in die Kohorte aufgenommen zu werden, und es anschließend erneut ausführen muss, um als wiederkehrende Benutzerin bzw. wiederkehrender Benutzer gezählt zu werden. Unter dem Menü „Mehr“ können Sie die Verknüpfung zwischen Startereignis und Rückkehrereignis aufheben, wenn sich die Rückkehraktion von der Einschlussaktion unterscheiden soll.
 * **[!UICONTROL Rückkehrereignisse]**: Die Ereigniskriterien, mit denen eine Benutzerin bzw. ein Benutzer interagieren muss, um als wiederkehrende Benutzerin bzw. wiederkehrender Benutzer in den Dauer-Buckets gezählt zu werden. Sie können bis zu drei Rückkehrereignisse auswählen, um die Bindung übergreifend zu vergleichen.
 * **[!UICONTROL Zählt als]**: Die Zählmethode, die auf die gehaltenen Benutzenden angewendet werden soll. Zu den Optionen zählen:
   * **[!UICONTROL Metrik]**: Zeigt die Anzahl der [!UICONTROL Benutzenden] oder den [!UICONTROL Prozentualer Anteil der Benutzenden], die gehalten wurden. Der Nenner für den prozentualen Anteil der Benutzenden, die gehalten wurden, sind die eingeschlossenen Benutzenden für die Kohorte. Sie sind für alle Dauer-Buckets gleich.
   * **[!UICONTROL Wiederkehrend]**: Hiermit können Sie steuern, wie wiederkehrende Benutzende gezählt werden. Zu den Optionen zählen:
     * **[!UICONTROL Am oder nach]**: Wird oft als „ungebundene“ Bindung bezeichnet. Diese Option zählt eine Benutzerin oder einen Benutzer, wenn sie bzw. er am oder nach der angegebenen Dauer zurückkehrt. Zum Beispiel an Tag 7 oder jederzeit nach Tag 7. Mit dieser Option lässt sich zeigen, wie Benutzende weiterhin interagieren. Sie erzeugt dadurch eine glattere Bindungskurve.
-    * **[!UICONTROL Genau am]**: Wird oft als „gebundene“ Bindung bezeichnet. Diese Option zählt eine Benutzerin oder einen Benutzer, wenn sie bzw. er genau zur angegebenen Dauer zurückkehrt. Zum Beispiel genau an Tag 7. Mit dieser Option lässt sich zeigen, wie Benutzende innerhalb bestimmter Zeitrahmen zurückkehren. Sie erzeugt eine Bindungskurve mit mehr Wellenformen. Hinweis: Die Kohortenanalyse in Analysis Workspace verwendet die Zählung „Genau am“ als Grundlage für ihre Analyse.
+    * **[!UICONTROL Genau am]**: Wird oft als „gebundene“ Bindung bezeichnet. Diese Option zählt eine Benutzerin oder einen Benutzer, wenn sie bzw. er genau zur angegebenen Dauer zurückkehrt. Zum Beispiel genau an Tag 7. Mit dieser Option lässt sich zeigen, wie Benutzende innerhalb bestimmter Zeitrahmen zurückkehren. Dadurch entsteht eine Bindungskurve mit stärkeren Schwankungen. Hinweis: Die Kohortenanalyse in Analysis Workspace verwendet die Zählung „Genau am“ als Grundlage für ihre Analyse.
   * **[!UICONTROL Jede]**: Der Zeitraum, in dem sich jeder Duration-Bucket befinden soll. Zu den Optionen zählen:
     * **[!UICONTROL Tag/Woche/Monat]**: Die verfügbaren Optionen hängen vom ausgewählten Datumsbereich ab. Diese Optionen sind identisch mit der Einstellung **[!UICONTROL Intervall]** bei Auswahl des Datumsbereichs und aktualisiert diese Einstellung automatisch.
     * **[!UICONTROL Benutzerdefinierter Zeitraum]**: Diese Option ist nur für die Einstellung „Bei jedem“ verfügbar. Damit können Sie Benutzende über einen größeren Zeitraum hinweg zählen, z. B. Tag 7 bis 10 anstelle von nur Tag 7.

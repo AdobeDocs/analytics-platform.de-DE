@@ -7,23 +7,32 @@ feature: Basics
 exl-id: a5f9e2c7-3b1d-4a8e-b6f0-2c9d7e4a5180
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 2125f1a16ffed79f77757120c5679dd4defa1638
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 692
-ht-degree: 0%
-
+source-wordcount: '704'
+ht-degree: 2%
 ---
-
 
 # Zuordnung des GA4-Datenmodells zu Customer Journey Analytics
 
@@ -79,12 +88,12 @@ GA4 erfasst automatisch eine Reihe von Ereignissen über seine SDK. In der folge
 
 In GA4 haben benutzerdefinierte Ereignisse einen Namen und bis zu 25 Parameter. In Customer Journey Analytics werden benutzerdefinierte Ereignisse benutzerdefinierten XDM-Schemafeldern zugeordnet, die während der Implementierung definiert wurden:
 
-* Der **Ereignisname** wird zu einem Feldwert in einem XDM-Feld (normalerweise [`xdm.eventType`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/experienceevent)).
-* Jeder **Parameter** wird zu einem separaten XDM-Schemafeld. Jedes XDM-Feld kann beim [Konfigurieren einer Datenansicht“ entweder als Dimension oder Metrik &#x200B;](/help/data-views/component-settings/overview.md) werden.
+* Der **Ereignisname** wird zu einem Feldwert in einem XDM-Feld (normalerweise [`xdm.eventType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/experienceevent)).
+* Jeder **Parameter** wird zu einem separaten XDM-Schemafeld. Jedes XDM-Feld kann beim [Konfigurieren einer Datenansicht“ entweder als Dimension oder Metrik ](/help/data-views/component-settings/overview.md) werden.
 
 >[!NOTE]
 >
->Die spezifischen XDM-Feldpfade für die benutzerdefinierten Ereignisse Ihres Unternehmens werden während der Implementierung von Web SDK festgelegt. Arbeiten Sie mit Ihrem Implementierungs-Team zusammen, um Ihre spezifische Feldzuordnung zu verstehen, bevor Sie Berichte erstellen. Weitere Informationen [&#x200B; Sie unter &#x200B;](../cja-upgrade/cja-upgrade-schema-architect.md) Ihres Schemas erstellen .
+>Die spezifischen XDM-Feldpfade für die benutzerdefinierten Ereignisse Ihres Unternehmens werden während der Implementierung von Web SDK festgelegt. Arbeiten Sie mit Ihrem Implementierungs-Team zusammen, um Ihre spezifische Feldzuordnung zu verstehen, bevor Sie Berichte erstellen. Weitere Informationen [ Sie unter ](../cja-upgrade/cja-upgrade-schema-architect.md) Ihres Schemas erstellen .
 
 ## Benutzereigenschaften
 

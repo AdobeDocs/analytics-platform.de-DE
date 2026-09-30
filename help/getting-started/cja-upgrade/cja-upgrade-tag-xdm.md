@@ -9,23 +9,30 @@ autotag-review: '2026-05-19T08:20:10.493Z'
 TQID: 'https://experienceleague.adobe.com/CZMnHpY8nofEV8fbpLSe7TUZCR7nOd8xKWoMkCzfH0I'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1377
+source-wordcount: '1377'
 ht-degree: 95%
-
 ---
-
 # Hinzufügen von XDM-Datenerfassungslogik zum Tag {#upgrade-tag-xdm}
 
 <!-- markdownlint-disable MD034 -->
@@ -195,27 +202,27 @@ Gehen Sie folgendermaßen vor, um eine Regel zu definieren:
 
    * **[!UICONTROL Ereignisse]**: Wählen Sie **[!UICONTROL + Hinzufügen]** aus. Geben Sie dann im Dialogfeld **[!UICONTROL Ereigniskonfiguration]** die folgenden Informationen an. Wenn Sie fertig sind, wählen Sie **[!UICONTROL Änderungen speichern]** aus.
 
-      * **[!UICONTROL Erweiterung]**: Wählen Sie **[!UICONTROL Core]** aus der Liste aus.
+     * **[!UICONTROL Erweiterung]**: Wählen Sie **[!UICONTROL Core]** aus der Liste aus.
 
-      * **[!UICONTROL Ereignistyp]**: Wählen Sie **[!UICONTROL Fenster geladen]** aus der Liste aus.
+     * **[!UICONTROL Ereignistyp]**: Wählen Sie **[!UICONTROL Fenster geladen]** aus der Liste aus.
 
-        ![Regel – Ereigniskonfiguration](assets/event-windowloaded-pageview.png)
+       ![Regel – Ereigniskonfiguration](assets/event-windowloaded-pageview.png)
 
    * **[!UICONTROL Aktionen]**: Wählen Sie **[!UICONTROL + Hinzufügen]** aus. Geben Sie dann im Dialogfeld [!UICONTROL Aktionskonfiguration] die folgenden Informationen an. Wenn Sie fertig sind, wählen Sie **[!UICONTROL Änderungen speichern]** aus.
 
-      * **[!UICONTROL Erweiterung]**: Wählen Sie **[!UICONTROL Adobe Experience Platform Web SDK]** aus der Liste aus.
+     * **[!UICONTROL Erweiterung]**: Wählen Sie **[!UICONTROL Adobe Experience Platform Web SDK]** aus der Liste aus.
 
-      * **[!UICONTROL Aktionstyp]**: Wählen Sie **[!UICONTROL Ereignis senden]** aus der Liste aus.
+     * **[!UICONTROL Aktionstyp]**: Wählen Sie **[!UICONTROL Ereignis senden]** aus der Liste aus.
 
-      * **[!UICONTROL Typ]**: Wählen Sie die Option für **[!UICONTROL Web-Webpagedetails-Seitenansichten]** aus der Liste aus.
+     * **[!UICONTROL Typ]**: Wählen Sie die Option für **[!UICONTROL Web-Webpagedetails-Seitenansichten]** aus der Liste aus.
 
-      * **[!UICONTROL XDM-Daten]**: Wählen Sie das Zylindersymbol und dann **[!UICONTROL XDM – Seitenansicht]** aus der Liste der Datenelemente aus.
+     * **[!UICONTROL XDM-Daten]**: Wählen Sie das Zylindersymbol und dann **[!UICONTROL XDM – Seitenansicht]** aus der Liste der Datenelemente aus.
 
-        ![Regel – Aktionskonfiguration](assets/action-pageview-xdm.png)
+       ![Regel – Aktionskonfiguration](assets/action-pageview-xdm.png)
 
-        Ihre Regel sollte wie folgt aussehen:
+       Ihre Regel sollte wie folgt aussehen:
 
-        ![Regel erstellen](assets/rule-pageview.png)
+       ![Regel erstellen](assets/rule-pageview.png)
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 

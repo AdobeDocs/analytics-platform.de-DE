@@ -9,29 +9,39 @@ autotag-review: '2026-05-19T09:33:58.249Z'
 TQID: 'https://experienceleague.adobe.com/FJOAnB2Dumw9txeabYMfrIqE1uihee-TcA8ZFcAbU2Y'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e8abc408-b05c-427f-9e37-f8b033a6b3c3
+    internal-label: Schema
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+    internal-label: Data ingestion
   - id: cf731116-8803-4027-85aa-9c0a126e8321
+    internal-label: Dataset configuration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 518
+source-wordcount: '518'
 ht-degree: 59%
-
 ---
-
 # Verwenden von Objekt-Arrays
 
-Manche Plattformschemas können Objekt-Arrays enthalten. Adobe Customer Journey Analytics unterstützt die Aufnahme und das Reporting von Objekt-Arrays innerhalb von Ereignis-, Lookup- und Profildaten. Eines der häufigsten Beispiele ist ein Warenkorb, der mehrere Produkte enthält. Jedes Produkt hat einen Namen, eine Produktnummer, eine Kategorie, einen Preis, eine Menge und andere Dimensionen, die Sie verfolgen möchten. Alle diese Faktoren haben unterschiedliche Anforderungen, müssen jedoch alle in denselben Hit passen.
+Einige Plattform-Schemata können Objekt-Arrays enthalten. Adobe Customer Journey Analytics unterstützt die Aufnahme und das Reporting von Objekt-Arrays innerhalb von Ereignis-, Lookup- und Profildaten. Eines der häufigsten Beispiele ist ein Warenkorb, der mehrere Produkte enthält. Jedes Produkt hat einen Namen, eine SKU, eine Kategorie, einen Preis, eine Anzahl und andere Dimensionen, die Sie verfolgen möchten. Alle diese Faktoren haben unterschiedliche Anforderungen, müssen jedoch alle in denselben Treffer passen.
 
-In früheren Versionen von Adobe Analytics wurde dies durch die `products`-Variable erreicht. Dabei handelte es sich um eine verkettete Zeichenfolge, in der die Bestandteile eines Produkts durch Semikolons (`;`) getrennt waren, während die Produkte durch Kommas (`,`) getrennte waren. Dies war die einzige Variable mit eingeschränkter Unterstützung von „Objekt-Arrays“. Variablen mit mehreren Werten, wie z. B. Listenvariablen, konnten das Äquivalent zu Arrays unterstützen, sie konnten aber keine „Objekt-Arrays“ unterstützen. Customer Journey Analytics erweitert dieses Konzept durch die Unterstützung beliebig tiefer Hierarchien innerhalb einer einzigen Datenzeile, eine Funktion, die in keiner vorherigen Version von Adobe Analytics verfügbar ist.
+In früheren Versionen von Adobe Analytics wurde dies durch die `products`-Variable erreicht. Dabei handelte es sich um eine verkettete Zeichenfolge, in der die Bestandteile eines Produkts durch Semikolons (`;`) getrennt waren, während die Produkte durch Kommas (`,`) getrennte waren. Dies war die einzige Variable mit eingeschränkter Unterstützung von „Objek-Arrays“. Variablen mit mehreren Werten, wie z. B. Listenvariablen, konnten das Äquivalent zu Arrays unterstützen, sie konnten jedoch keine Objekt-Arrays unterstützen. Customer Journey Analytics erweitert dieses Konzept durch die Unterstützung beliebig tiefer Hierarchien innerhalb einer einzigen Datenzeile, eine Funktion, die in keiner vorherigen Version von Adobe Analytics verfügbar ist.
 
 ## Beispiel für dasselbe Ereignis
 
@@ -79,7 +89,7 @@ Das folgende Ereignis ist ein JSON-Objekt, das einen Kauf einer Waschmaschine un
 }
 ```
 
-Beim Erstellen einer Datenansicht sind die folgenden Dimensionen und Metriken verfügbar (je nach Schema):
+Beim Erstellen einer Datenansicht sind die folgenden Dimensionen und die folgende Metrik verfügbar (je nach Schema):
 
 * **Dimensionen:**
   * ID
@@ -151,7 +161,7 @@ Customer Journey Analytics untersucht selektiv die Dimension und Metriken des Ob
 +}
 ```
 
-Wenn Sie nur über Garantieumsätze berichten möchten, sieht Ihr Projekt in etwa wie folgt aus:
+Wenn Sie nur über Garantieumsatz berichten möchten, sieht Ihr Bericht in etwa wie folgt aus:
 
 | `product : warranty : coverage` | `product : warranty : revenue` |
 | --- | --- |
@@ -213,7 +223,7 @@ Da Sie jede Dimension mit einer beliebigen Metrik kombinieren können, zeigt die
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-Eine Produktbestellung existiert ohne einen verknüpften Garantienamen. Daher wird das Dimensionselement „Nicht spezifiziert“ zugeschrieben. Dasselbe gilt auch für die Bestellung der Produktgarantie:
+Eine Produktbestellung existiert ohne einen verknüpften Garantienamen, daher wird das Dimensionselement „Nicht angegeben“ zugeordnet. Dasselbe gilt auch für die Bestellung der Produktgarantie:
 
 ```diff
 {
@@ -257,7 +267,7 @@ Eine Produktbestellung existiert ohne einen verknüpften Garantienamen. Daher wi
 +}
 ```
 
-Achten Sie auf die Bestellungen, die keinen mit ihnen verbundenen Namen haben. Dies sind die Bestellungen, die dem Dimensionselement „Nicht spezifiziert“ zugeordnet werden.
+Achten Sie auf die Bestellungen, die keinem Namen zugeordnet sind. Dies sind die Bestellungen, die der Dimension „Nicht angegeben“ zugeordnet werden.
 
 ### Kombinieren von Metriken
 
@@ -285,5 +295,5 @@ Durch Anwendung dieser berechneten Metrik werden die gewünschten Ergebnisse ang
 
 ## Einschränkungen
 
-Einschränkungen gelten für Arrays in Daten, die von Customer Journey Analytics verwendet und als Teil eines Schemas in Experience Platform modelliert werden. Siehe [Datenmodellbeschränkungen](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails#data-model-limits) und [Datengrößenbeschränkungen](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails#data-size-limits) in den [Standardleitplanken für Echtzeit-Kundenprofildaten und -segmentierung](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails).
+Einschränkungen gelten für Arrays in Daten, die von Customer Journey Analytics verwendet und als Teil eines Schemas in Experience Platform modelliert werden. Siehe [Datenmodellbeschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) und [Datengrößenbeschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) in den [Standardleitplanken für Echtzeit-Kundenprofildaten und -segmentierung](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails).
 

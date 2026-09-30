@@ -4,22 +4,26 @@ title: Prognosen anzeigen
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
-TQID: https://experienceleague.adobe.com/fihJQOI-CyvGccQsB0VxvwR-iV0OkJSMENaiciYrgFc
+TQID: 'https://experienceleague.adobe.com/fihJQOI-CyvGccQsB0VxvwR-iV0OkJSMENaiciYrgFc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: d13dba12-733d-4914-8d92-d643658bbe5d
+    internal-label: Forecasting
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 372
+source-wordcount: '372'
 ht-degree: 5%
-
 ---
-
 # Anzeigen von Prognosen
 
 Sie können Prognosen in einer Freiformtabelle oder in einem Liniendiagramm anzeigen.
@@ -56,8 +60,8 @@ Die Prognosen werden im Liniendiagramm wie folgt angezeigt:
 
 * Die aktuellen Werte für die Metriken im Liniendiagramm werden durch einen vertikalen Balken angezeigt. Wenn Sie den Mauszeiger über diese vertikale Linie bewegen, wird ein Popup mit dem letzten aktuellen Datum angezeigt.
 * Prognostizierte Werte für eine oder mehrere Metriken werden direkt über den vertikalen Balken mit gepunkteten Linien angezeigt. Sie können den Mauszeiger über einen beliebigen Datenpunkt für eine Metrik bewegen. Dadurch wird ein Popup angezeigt mit:
-   * Datum der Prognose
-   * Prognostizierter Wert für die Metrik
-   * Obere Grenze des prognostizierten Werts für die Metrik
-   * Untergrenze des prognostizierten Werts für die Metrik
+  * Datum der Prognose
+  * Prognostizierter Wert für die Metrik
+  * Obere Grenze des prognostizierten Werts für die Metrik
+  * Untergrenze des prognostizierten Werts für die Metrik
 * Der schattierte Bereich zeigt das Konfidenzband der Prognose an.

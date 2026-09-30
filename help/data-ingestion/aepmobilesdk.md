@@ -5,34 +5,51 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-TQID: https://experienceleague.adobe.com/rbgqDkQLPbw-EfhMyUL-eVXZZ1cxMXiQmvU7Si2WCZ8
+TQID: 'https://experienceleague.adobe.com/rbgqDkQLPbw-EfhMyUL-eVXZZ1cxMXiQmvU7Si2WCZ8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df28738e-9c71-4aa8-929e-edde22340cc6
+    internal-label: Data Dictionary
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Customer profiles
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 3536
+source-wordcount: '3536'
 ht-degree: 63%
-
 ---
-
 # Aufnehmen von Daten über die Mobile SDK
 
 In dieser Kurzanleitung wird erläutert, wie Sie mit Adobe Experience Platform Mobile SDK und Edge Network Tracking-Daten von Mobile Apps direkt in Adobe Experience Platform aufnehmen können. Verwenden Sie diese Daten dann in Customer Journey Analytics.
@@ -106,7 +123,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
-   1. Wählen Sie [!UICONTROL &#x200B; Dialogfeld Feldergruppen hinzufügen &#x200B;] Feldergruppe **[!UICONTROL AEP Mobile SDK ExperienceEvent]** aus der Liste aus.
+   1. Wählen Sie [!UICONTROL  Dialogfeld Feldergruppen hinzufügen ] Feldergruppe **[!UICONTROL AEP Mobile SDK ExperienceEvent]** aus der Liste aus.
 
       ![AEP Mobile Lifecycle Details-Feldergruppe](./assets/select-aepmobilesdk-experienceevent.png)
 
@@ -295,11 +312,11 @@ So erstellen und konfigurieren Sie die Adobe Experience Platform Mobile SDK-Erwe
 
    ![Erweiterungskonfiguration für AEP Mobile SDK](./assets/aepmobilesdk-extension-datastream.png)
 
-1. Geben Sie Ihre **[!UICONTROL Edge Network-Domain]** unter &quot;[!UICONTROL -Konfiguration“ &#x200B;]. Verwenden Sie in der Regel `<organizationName>.data.adobedc.net`.
+1. Geben Sie Ihre **[!UICONTROL Edge Network-Domain]** unter &quot;[!UICONTROL -Konfiguration“ ]. Verwenden Sie in der Regel `<organizationName>.data.adobedc.net`.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Weitere [&#x200B; finden Sie unter „Konfigurieren der Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/edge-network)Edge Network-Erweiterung“.
+Weitere [ finden Sie unter „Konfigurieren der Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/edge-network)Edge Network-Erweiterung“.
 
 Sie sollten auch die folgenden zusätzlichen Erweiterungen über den Katalog einrichten:
 
@@ -307,7 +324,7 @@ Sie sollten auch die folgenden zusätzlichen Erweiterungen über den Katalog ein
 - AEP Assurance.
 - Einverständnis
 
-Weitere [&#x200B; zu Erweiterungen und ihrer Konfiguration finden Sie &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=de) Tutorial zum Konfigurieren einer Tag-Eigenschaft im Mobile-App-Tutorial für Experience Platform.
+Weitere [ zu Erweiterungen und ihrer Konfiguration finden Sie ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=de) Tutorial zum Konfigurieren einer Tag-Eigenschaft im Mobile-App-Tutorial für Experience Platform.
 
 #### **Datenelemente**
 
@@ -432,7 +449,7 @@ So erhalten Sie Code-Anweisungen, in denen die Einrichtung Ihrer Mobile App und 
 
 2. Wählen Sie in der Liste der Umgebungen die richtige Install (![)-](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) aus.
 
-   Wählen Sie [!UICONTROL &#x200B; Dialogfeld „Mobile-]&quot; die entsprechende Plattform ([!UICONTROL iOS], [!UICONTROL Android]). Verwenden Sie dann die Schaltfläche ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) neben jedem der relevanten Code-Snippets, die Sie zum Einrichten und Initialisieren Ihrer Mobile App verwenden möchten:
+   Wählen Sie [!UICONTROL  Dialogfeld „Mobile-]&quot; die entsprechende Plattform ([!UICONTROL iOS], [!UICONTROL Android]). Verwenden Sie dann die Schaltfläche ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) neben jedem der relevanten Code-Snippets, die Sie zum Einrichten und Initialisieren Ihrer Mobile App verwenden möchten:
 
    ![Umgebung](./assets/environment-mobile.png)
 
@@ -448,7 +465,7 @@ Sie können den Code jetzt in Ihrer Mobile App bereitstellen. Nach der Bereitste
 
 Validieren Sie Ihre Implementierung, korrigieren Sie sie bei Bedarf und stellen Sie sie mithilfe der Publishing-Workflow-Funktion von Tags in Ihrer Staging- und Produktionsumgebung bereit.
 
-Im [Tutorial zur Implementierung von Adobe Experience Cloud in &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de) Apps“ finden Sie wesentlich detailliertere Informationen.
+Im [Tutorial zur Implementierung von Adobe Experience Cloud in ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de) Apps“ finden Sie wesentlich detailliertere Informationen.
 
 ## Einrichten einer Verbindung
 
@@ -532,7 +549,7 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
    Behalten Sie die Einstellungen bei und wählen Sie **[!UICONTROL Speichern und beenden]**.
 
-Weitere [&#x200B; dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
+Weitere [ dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
 
 
 ## Einrichten eines Projekts

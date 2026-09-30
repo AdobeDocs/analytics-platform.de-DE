@@ -15,9 +15,13 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: b3197353-f189-4932-8378-3f3bc40e6071
     internal-label: Data management
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: f24857a4-4b64-4b25-b237-d43026362144
     internal-label: BI extension
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -26,14 +30,14 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 06d3fa4838d48567f1b9804992aa0f718937916d
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 25%
 ---
 # BI-Erweiterung
 
-In diesem Artikel wird beschrieben, wie die [!DNL Customer Journey Analytics BI extension] zur Implementierung des folgenden [Anwendungsfalls für den Datenexport“ verwendet &#x200B;](overview.md) kann:
+In diesem Artikel wird beschrieben, wie die [!DNL Customer Journey Analytics BI extension] zur Implementierung des folgenden [Anwendungsfalls für den Datenexport“ verwendet ](overview.md) kann:
 
 * Data Lake, Data Warehouse oder BI-Tools
 
@@ -47,6 +51,6 @@ Durch das Exportieren von Daten mit dem [!DNL Customer Journey Analytics BI exte
 
 Der [!DNL Customer Journey Analytics BI extension] ermöglicht SQL-Zugriff auf [Datenansichten](/help/data-views/data-views.md), die Sie in Customer Journey Analytics definiert haben. Ihre Dateningenieure und Analysten sind mit Power BI, Tableau oder anderen Business Intelligence- und Visualisierungs-Tools (auch als BI-Tools bezeichnet) besser vertraut. Sie können jetzt Berichte und Dashboards basierend auf denselben Datenansichten erstellen, die Benutzerinnen und Benutzer von Customer Journey Analytics beim Erstellen ihrer Analysis Workspace-Projekte verwenden.
 
-Die BI-Erweiterung gibt aggregierte Daten zurück, keine Zeilen auf Ereignisebene. Standardmäßig gibt jede Abfrage 50 Zeilen für einen 30-tägigen Datumsbereich zurück, Sie können jedoch die Zeilenbegrenzung auf maximal 50.000 Zeilen überschreiben und den Datumsbereich auf Ihren eigenen benutzerdefinierten Bereich beschränken. Weitere Informationen finden [&#x200B; unter &#x200B;](../../data-views/bi-extension.md#defaults-and-limitations) und Einschränkungen .
+Die BI-Erweiterung gibt aggregierte Daten zurück, keine Zeilen auf Ereignisebene. Standardmäßig gibt jede Abfrage 50 Zeilen für einen 30-tägigen Datumsbereich zurück, Sie können jedoch die Zeilenbegrenzung auf maximal 50.000 Zeilen überschreiben und den Datumsbereich auf Ihren eigenen benutzerdefinierten Bereich beschränken. Weitere Informationen finden [ unter ](../../data-views/bi-extension.md#defaults-and-limitations) und Einschränkungen .
 
 Weitere Informationen finden Sie in der ausführlichen Dokumentation zur [BI-Erweiterung](../../data-views/bi-extension.md).

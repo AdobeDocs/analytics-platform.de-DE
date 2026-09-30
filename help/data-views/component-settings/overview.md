@@ -1,35 +1,49 @@
 ---
 title: Komponenteneinstellungen
-description: Anzeigen der wichtigsten Einstellungen für eine Datenansichtskomponente
+description: Zeigen Sie die wichtigsten Einstellungen für eine Datenansichtskomponente an.
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-TQID: https://experienceleague.adobe.com/Ozf-XAsirDMkZLIQCX4SLGD7SvKinu3O4fwJ4ifgSvQ
+TQID: 'https://experienceleague.adobe.com/Ozf-XAsirDMkZLIQCX4SLGD7SvKinu3O4fwJ4ifgSvQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: dcc1be6e0c0e0dab19b4067232e48dc175011ed1
+    internal-label: Governance
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 4127
+source-wordcount: '4127'
 ht-degree: 48%
-
 ---
-
 # Komponenteneinstellungen {#component-settings}
 
 <!-- markdownlint-disable MD034 -->
@@ -37,7 +51,7 @@ ht-degree: 48%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Komponenteneinstellungen"
->abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen einer Komponente an und konfigurieren Sie sie. Aktivieren Sie dieses Kontrollkästchen, um diese Komponente in Berichten für Benutzende ohne Administratorrechte auszublenden. Admins können weiterhin auf die Komponente zugreifen, indem sie in einem Workspace-Projekt auf **[!UICONTROL Alle Komponenten anzeigen]** klicken."
+>abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen einer Komponente an und konfigurieren Sie sie. Aktivieren Sie dieses Kontrollkästchen, um diese Komponente im Reporting für Benutzende ohne Administratorrechte auszublenden. Admins können weiterhin auf die Komponente zugreifen, indem sie in einem Workspace-Projekt auf **[!UICONTROL Alle Komponenten anzeigen]** klicken."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -66,7 +80,7 @@ Die folgenden Informationen beschreiben die Einstellungen, die eine Datenansicht
 | [!UICONTROL Typ des Datensatzes] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Datensatztyp (Ereignis, Suche oder Profil) die Komponente stammt. |
 | [!UICONTROL Datensatz] | Ein nicht bearbeitbares Feld, das anzeigt, aus welchem Datensatz die Komponente stammt. Dieses Feld kann mehrere Datensätze enthalten. |
 | [!UICONTROL Typ des Schemas] | Ein nicht bearbeitbares Feld, das den Datentyp der Komponente anzeigt. Sie können zwar einen beliebigen unterstützten Schemafeldtyp in Platform verwenden, jedoch werden in Customer Journey Analytics nicht alle Feldtypen unterstützt. Die folgenden Datentypen werden unterstützt: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` und `Boolean`. In Such-Datensätzen ist derzeit nur der Schemadatentyp `String` erlaubt. |
-| [!UICONTROL Komponenten-ID] | Erforderlich. Die [Customer Journey Analytics-API](https://www.adobe.io/cja-apis/docs) verwendet dieses Feld, um auf die Komponente zu verweisen. Jede Komponente in einer Datenansicht muss eindeutig sein. Adobe generiert automatisch eine ID für jede Komponente. Sie können jedoch auf das Bearbeitungssymbol klicken und die Komponenten-ID ändern. Durch das Ändern der Komponenten-ID werden alle vorhandenen Workspace-Projekte, die diese Komponente enthalten, beschädigt. Während jede Komponente eine eindeutige ID in einer Datenansicht benötigt, können Sie dieselbe Komponenten-ID in anderen Datenansichten verwenden. Wenn Sie dieselbe Komponenten-ID in anderen Datenansichten verwenden, können Sie Workspace-Projekte über Datenansichten hinweg kompatibel machen. <br/>Bei profil- und suchbasierten Komponenten verfügt die Komponenten-ID über ein ID-Präfix, das auf der Datensatz-ID basiert (z. B.: `642b28fcc1f0ee1c074265a0.person.name.firstName`). Wenn Sie eine profil- oder suchbasierte Komponente wie `person.name.firstName` in Ihrem Workspace-Projekt wiederverwenden und diese Komponente in verschiedenen Datenansichten konfigurieren möchten, stellen Sie sicher, dass Sie die Komponenten-ID in Ihren Datenansichten eindeutig umbenennen (z. B.: `myUniqueID.person.name.firstName`). |
+| [!UICONTROL Komponenten-ID] | Erforderlich. Die [Customer Journey Analytics-API](https://www.adobe.io/cja-apis/docs) verwendet dieses Feld, um auf die Komponente zu verweisen. Jede Komponente in einer Datenansicht muss eindeutig sein. Adobe generiert automatisch eine ID für jede Komponente. Sie können jedoch auf das Bearbeitungssymbol klicken und die Komponenten-ID ändern. Durch das Ändern der Komponenten-ID funktionieren alle vorhandenen Workspace-Projekte, die diese Komponente enthalten, nicht mehr ordnungsgemäß. Während jede Komponente eine eindeutige ID in einer Datenansicht benötigt, können Sie dieselbe Komponenten-ID in anderen Datenansichten verwenden. Wenn Sie dieselbe Komponenten-ID in anderen Datenansichten verwenden, können Sie Workspace-Projekte über Datenansichten hinweg kompatibel machen. <br/>Bei profil- und suchbasierten Komponenten verfügt die Komponenten-ID über ein ID-Präfix, das auf der Datensatz-ID basiert (z. B.: `642b28fcc1f0ee1c074265a0.person.name.firstName`). Wenn Sie eine profil- oder suchbasierte Komponente wie `person.name.firstName` in Ihrem Workspace-Projekt wiederverwenden und diese Komponente in verschiedenen Datenansichten konfigurieren möchten, stellen Sie sicher, dass Sie die Komponenten-ID in Ihren Datenansichten eindeutig umbenennen (z. B.: `myUniqueID.person.name.firstName`). |
 | [!UICONTROL Path] | Erforderlich. Ein nicht bearbeitbares Feld, das den Schema-Pfad anzeigt, von dem die Komponente stammt. |
 | [!UICONTROL Beschriftungen zur Datennutzung] | Alle Datennutzungsbeschriftungen, die dieser Komponente in Adobe Experience Platform zugewiesen sind. [Weitere Informationen](/help/data-views/data-governance.md). |
 | [!UICONTROL Komponente in Reports verbergen] | Ermöglicht das Kuratieren der Komponente aus der Datenansicht für Benutzer ohne Administratorrechte. Administratoren können weiterhin darauf zugreifen, indem sie in einem Analysis Workspace-Projekt auf [!UICONTROL Alle Komponenten anzeigen] klicken. |
@@ -77,7 +91,7 @@ Die folgenden Informationen beschreiben die Einstellungen, die eine Datenansicht
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen zum Komponententyp](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen zum Komponententyp](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -113,7 +127,7 @@ Die Vorteile von Kontextkennzeichnungen sind:
 
 Kontextkennzeichnungen können in den folgenden Situationen erforderlich sein:
 
-* Um einen Komponentensatz zu definieren, können Sie ihn in Analysis Workspace-Projekten im Experimentier[Reporting über das &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)Experimentier-Bedienfeld“ verwenden.
+* Um einen Komponentensatz zu definieren, können Sie ihn in Analysis Workspace-Projekten im Experimentier[Reporting über das ](/help/analysis-workspace/c-panels/experimentation.md)Experimentier-Bedienfeld“ verwenden.
 
   Weitere Informationen finden Sie unter [Integrieren mit Journey Optimizer](/help/integrations/ajo.md#data-view) und [Zielgruppenberichte](/help/integrations/at.md).
 
@@ -165,7 +179,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Name | Beschreibung |
 |------|-------------|
 | Experimentierexperiment | Ein Experiment ist eine Reihe von Varianten eines Erlebnisses, die Endbenutzern präsentiert wurden, um zu bestimmen, welche am besten dauerhaft beibehalten werden sollte. |
-| Experimentiervariante | Die Variante ist eine von zwei oder mehr Änderungen im Erlebnis eines Endbenutzers, die verglichen werden, um die bessere Alternative zu ermitteln. |
+| Experimentiervariante | Die Variante ist eine von zwei oder mehr Änderungen im Benutzererlebnis, die verglichen werden, um die bessere Alternative zu ermitteln. |
 
 +++
 
@@ -173,19 +187,19 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 
 | Name | Beschreibung |
 |------|-------------|
-| [Inhalts-ID](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/content) | Die eindeutige Kennung für den wiedergegebenen Inhalt. Aktiviert die **[!UICONTROL Content-ID]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
-| [Besuchszeit für Inhalt](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/content-time-spent) | Mit der Anzeige von Inhalten verbrachte Zeit, ohne Anzeigen. Die erweiterte Einstellung **[!UICONTROL Besuchszeit für Inhalt]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) wird unterstützt. |
-| [Folge](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/episode) | Episode Nummer innerhalb einer Serie. Aktiviert das Filtern nach Episode im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Inhalts-ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content) | Die eindeutige Kennung für den wiedergegebenen Inhalt. Aktiviert die **[!UICONTROL Content-ID]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Besuchszeit für Inhalt](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/content-time-spent) | Mit der Anzeige von Inhalten verbrachte Zeit, ohne Anzeigen. Die erweiterte Einstellung **[!UICONTROL Besuchszeit für Inhalt]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) wird unterstützt. |
+| [Folge](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/episode) | Episode Nummer innerhalb einer Serie. Aktiviert das Filtern nach Episode im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
 | Ereignistyp | Der Medienereignistyp, z. B. `media.play` oder `media.ping`. Erforderlich, damit Customer Journey Analytics die abgeleitete Metrik [Gleichzeitige Medienbetrachter](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) berechnet. |
-| [Besuchszeit für Medien](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/media-time-spent) | Gesamtzeit, einschließlich Inhalt, Anzeigen, Pufferung und Pausen. Wirkt sich auf [&#x200B; Bedienfeld „Mit Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) und die erweiterte Einstellung **[!UICONTROL Mit Medienwiedergabe verbrachte Zeit]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) aus. |
-| [Staffel](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/season) | Staffelnummer innerhalb einer Serie. Aktiviert die Filterung nach Saison im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Besuchszeit für Medien](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/media-time-spent) | Gesamtzeit, einschließlich Inhalt, Anzeigen, Pufferung und Pausen. Wirkt sich auf [ Bedienfeld „Mit Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) und die erweiterte Einstellung **[!UICONTROL Mit Medienwiedergabe verbrachte Zeit]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) aus. |
+| [Staffel](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/season) | Staffelnummer innerhalb einer Serie. Aktiviert die Filterung nach Saison im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
 | Sekunden seit dem letzten Aufruf | Zeit in Sekunden seit dem letzten Heartbeat-Ping. Erforderlich, damit Customer Journey Analytics die abgeleitete Metrik [Gleichzeitige Medienbetrachter](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) berechnet, die angibt, wann eine Sitzung noch aktiv ist. |
-| [Anzeigen](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/show) | Der Name des Programms oder der Serie. Aktiviert das Filtern nach Anzeige im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
-| [Zeit bis zum Start](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/time-to-start) | Zeit zwischen Inhaltsauswahl und Beginn der Wiedergabe. In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
-| [Gesamtdauer des Puffers](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | Gesamtdauer der Pufferung während einer Sitzung. In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
-| [Pausierung insgesamt](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/total-pause-duration) | Gesamtbesuchszeit für Pausen während einer Sitzung In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
-| [Videolänge](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/content-length) | Inhaltsdauer in Sekunden. Erforderlich für den Modus **[!UICONTROL Bestimmter Inhalt]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
-| [Videoname](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/content-name) | Der Anzeigename des Inhalts. Aktiviert die **[!UICONTROL Videoname]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Anzeigen](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/show) | Der Name des Programms oder der Serie. Aktiviert das Filtern nach Anzeige im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Zeit bis zum Start](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/time-to-start) | Zeit zwischen Inhaltsauswahl und Beginn der Wiedergabe. In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
+| [Gesamtdauer des Puffers](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | Gesamtdauer der Pufferung während einer Sitzung. In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
+| [Pausierung insgesamt](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-pause-duration) | Gesamtbesuchszeit für Pausen während einer Sitzung In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
+| [Videolänge](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-length) | Inhaltsdauer in Sekunden. Erforderlich für den Modus **[!UICONTROL Bestimmter Inhalt]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Videoname](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-name) | Der Anzeigename des Inhalts. Aktiviert die **[!UICONTROL Videoname]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
 
 +++
 
@@ -256,7 +270,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Erstkontakt-Kanal | Erstkontakt-Kanal. |
 | Erstkontakt-Kanaldetail | Detail des Erstkontaktkanals. |
 | Letztkontakt-Kanal | Letztkontakt-Kanal. |
-| Letztkontakt-Kanaldetail | Detail des Letztkontaktkanals. |
+| Detail zum Letztkontaktkanal | Detail des Letztkontaktkanals. |
 | Marketing-Kanal | Marketing-Kanal. |
 
 +++
@@ -270,7 +284,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Abstürze auf Mobilgeräten | Mobile stürzt ab. |
 | Mobilgerätename | Mobilgerätname. |
 | Mobilgerätetyp | Mobilgerätetyp. |
-| Name der mobilen In-App-Nachricht | Name der Mobile-App-Nachricht. |
+| Name der Mobile-In-App-Nachricht | Name der Mobile-App-Nachricht. |
 | Installationen auf Mobilgeräten | Mobile Installationen. |
 | Startvorgänge auf Mobilgeräten | Mobile-Launches. |
 | Mobilgerätehersteller | Mobilgerätehersteller. |
@@ -291,9 +305,9 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Suchmaschine | Suchmaschine. |
 | Suchmaschinen-Keyword | Suchmaschinenschlüsselwort. |
 | Suchmaschine - kostenlos | Suchmaschine natürlich. |
-| Kostenloses Keyword für Suchmaschine | Natürliches Keyword für Suchmaschinen. |
+| Organisches Suchmaschinen-Keyword | Natürliches Keyword für Suchmaschinen. |
 | Suchmaschine – kostenpflichtig | Suchmaschine bezahlt. |
-| Kostenpflichtiges Keyword für Suchmaschine. | Paid-Keyword für Suchmaschinen. |
+| Bezahltes Suchmaschinen-Keyword | Paid-Keyword für Suchmaschinen. |
 
 +++
 
@@ -364,7 +378,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Asset – Link-URL | Asset-Link-URL. |
 | Asset-Name | Asset-Name. |
 | Asset – Personenkategorien | Asset-Personenkategorien. |
-| Asset – Wahrnehmungs-ID | Eindeutige Kennung von Assets, die von der Wahrnehmung her identisch sind. |
+| Asset – Wahrnehmungs-ID | Eindeutige Kennung von Assets, die wahrnehmungsbedingt identisch sind. |
 | Asset – Fotografie-Stile | Asset-Fotografiestile. |
 | Asset – Szenen | Asset-Szenen. |
 | Asset-Quelle | Asset-Source. |
@@ -372,7 +386,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Asset – Typ | Asset-Typ |
 | Asset – Ansichten | Asset-Ansichten. |
 | Asset – Verteilung der visuellen Aufmerksamkeit | Verbreitung der visuellen Aufmerksamkeit für Assets. |
-| Asset – Dichte der visuellen Inhalte | Dichte des visuellen Inhalts des Assets. |
+| Dichte des visuellen Asset-Inhalts | Dichte des visuellen Inhalts des Assets. |
 | Erlebnis – Attribute | Erlebnisattribute. |
 | Erlebniskanal | Erlebniskanal. |
 | Erlebnis – Klicks | Erlebnis-Klicks. |
@@ -403,12 +417,12 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Aktionsfehler (AJO) | Anzahl an Fehlern, die durch Journey-Aktionen erzeugt wurden. |
 | Fehler bei Aktionsausführung | Fehlerbedingung, die Journey Runtime daran hinderte, die Aktion auszuführen. |
 | Aktions-Label (AJO) | Der kundenseitig generierte Anzeigename des Elements, mit dem die Endbenutzerin bzw. der Endbenutzer interagiert hat. |
-| Alternative Ausstiege (AJO) | Die Anzahl der Ausstiege, die nicht aufgetreten sind, da ein Profil einen Endknoten erreicht hat oder aufgrund eines Fehlers fehlgeschlagen ist. |
+| Alternative Ausstiege (AJO) | Die Anzahl der Ausstiege, die nicht darauf zurückzuführen sind, dass ein Profil einen Endknoten erreicht hat oder aufgrund eines Fehlers fehlgeschlagen ist. |
 | App-Installationen (AJO) | Anzahl der App-Installationen. |
 | App-Launches (AJO) | Anzahl der Starts einer Mobile App. |
 | Batch-ID (AJO) | GUID, die beim Aufruf jeder neuen Batch-Instanz für eine geplante Journey- oder Kampagnenaktion erstellt wird. Beispiel: Wenn eine geplante Journey- oder Kampagnenaktion um 8.00 Uhr und 10.00 Uhr ausgeführt wird, gibt es zwei separate batchInstanceIDs. |
 | Zeitstempel der Batch-Instanz (AJO) | Der Zeitstempel der Batch-Instanz. |
-| Bounces für ausgehende Kanäle (veraltet) | Die Gesamtzahl der Nachrichten, die über ausgehende Kanäle hinweg zurückgesendet werden. |
+| Bounces für Outbound-Kanäle (veraltet) | Die Gesamtzahl der Nachrichten, die über ausgehende Kanäle hinweg zurückgesendet werden. |
 | Name der Kampagnenaktion (AJO) | Der Name der Kampagnenaktion. |
 | Kampagnen-ID (AJO) | Die ID der Kampagne. |
 | Kampagnenname (AJO) | Der Name der Kampagne. |
@@ -417,26 +431,26 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Klicks (AJO) | Gesamtzahl der Klicks über alle Kanäle hinweg. |
 | Ablehnungen der Einverständnisrichtlinie (AJO) | Anzahl der Journey-Aktionen, die aufgrund einer oder mehrerer Einverständnisrichtlinien abgelehnt werden. |
 | Inhaltsentscheidungsfehler (AJO) | Von Inhaltsentscheidungsknoten der Journey generierte Fehlermeldungen. |
-| Inhaltsentscheidungsfehler (AJO) | Anzahl der Fehler, die von Inhaltsentscheidungsknoten der Journey generiert wurden. |
+| Inhaltsentscheidungsfehler (AJO) | Anzahl der Fehler, die von Inhaltsentscheidungsknoten einer Journey generiert wurden. |
 | Name des Inhaltsentscheidungsknotens (AJO) | Der Name des Inhaltsentscheidungsknotens der Journey. |
 | Korrelations-ID | Korrelations-ID. |
 | Anzahl der Angebote (AJO) | Die Anzahl der im Vorschlag enthaltenen Angebotselemente. |
 | Bindungsschlüssel für Entscheidungselement | Eine zusammengesetzte Kennung, die die Element-ID mit der Experience Decisioning-Anfrage-ID kombiniert und so die Datenpersistenz über Interaktionen hinweg ermöglicht. |
 | Entscheidungsanbieter (AJO) | Der Anbieter, der gebeten wurde, die Entscheidung zu treffen. Diese Dimension wird verwendet, wenn mehrere Services Entscheidungen für dieselbe Platzierung oder Aktivität treffen können. |
 | Entscheidungsanbieter (persistiert) (AJO) | Der Entscheidungsanbieter mit aktivierter Persistenzbindung. |
-| Entscheidungsrichtlinien-ID (AJO) | Die ID der Entscheidungsrichtlinie, die bei der Entscheidung verwendet wird, wenn es darum geht, welche Elemente in diesen Vorschlag aufgenommen werden sollen. |
+| Entscheidungsrichtlinien-ID (AJO) | Die ID der Richtlinie, die bei der Entscheidung verwendet wird, welche Elemente in diesen Vorschlag aufgenommen werden sollen. |
 | Deduplizierungsmetrik (AJO) | Dedup-Metrik. |
 | Zugestellt (veraltet) | Gesamtzahl der zugestellten Nachrichten. |
 | Anzeigen (AJO) | Diese Anzahl zeigt AJO-Nachrichten an. Diese Anzahl umfasst E-Mail-Öffnungen, Web-Anzeigen und In-App-Anzeigen. Mobile Plattformen melden keine Anzeigen von SMS- und Push-Nachrichten, daher werden sie nicht gezählt. |
-| Verworfen (AJO) | Zählt jedes Mal, wenn die In-App-Nachricht vom Adobe SDK geschlossen wird, unabhängig davon, welche Aktion die Endbenutzerin bzw. der Endbenutzer zum Schließen auswählt. |
+| Verworfen (AJO) | Zählt jedes Mal, wenn die In-App-Nachricht vom Adobe SDK geschlossen wird, unabhängig davon, welche Aktion die Benutzerin bzw. der Benutzer zum Schließen auswählt. |
 | Probelauf-ID (AJO) | Eindeutige Kennung für Probelauf. |
 | E-Mail-Bot-Öffnungen (AJO) | Gesamtzahl der von Bots ausgeführten E-Mail-Öffnungen. |
 | E-Mail-Öffnungen (AJO) | Gesamtzahl der Öffnungen von E-Mails. |
 | E-Mail-Empfänger-Domain (AJO) | Domain der E-Mail-Adresse. |
 | E-Mail-Betreff | E-Mail-Betreff, nicht personalisiert. |
-| Ereignis-ID | Eine eindeutige Kennung für das Zeitreihenereignis: |
-| Ausstiegskriteriums-ID (AJO) | Die ID des Ausstiegskriteriums, anhand derer bestimmt wird, ob die Journey beendet werden soll. |
-| Name des Ausstiegskriteriums (AJO) | Name der Ausstiegskriterien. |
+| Ereignis-ID | Eine eindeutige Kennung für das Zeitreihenereignis. |
+| ID des Ausstiegskriteriums (AJO) | Die ID des Ausstiegskriteriums, anhand derer bestimmt wird, ob die Journey beendet werden soll. |
+| Name des Ausstiegskriteriums (AJO) | Name des Ausstiegskriteriums. |
 | Experiment-ID (AJO) | Die ID des Experiments. |
 | Experimentname (AJO) | Der Name des Experiments. |
 | Anzahl der Fallback-Angebote (AJO) | Die Anzahl der Fallback-Angebote. |
@@ -446,7 +460,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Eingehende Impressionen (AJO) | Gesamtzahl der Impressionen in allen eingehenden Kanälen. |
 | Eingehende Sendungen (AJO) | Gesamtzahl der gesendeten Nachrichten über eingehende Kanäle |
 | Eingehend ausgelöst (AJO) | Der Vorschlag wurde für die Anzeige in Adobe SDK ausgewählt. Andere Faktoren können die tatsächliche Anzeige verhindern. |
-| Ist für Sendezeit optimiert (AJO) | Ist die Nachrichtenausführung für SendTime optimiert? |
+| Sendezeit ist optimiert (AJO) | Ist die Nachrichtenausführung für SendTime optimiert? |
 | Ist Test-Journey | Ist das Ereignis Teil einer Test-Journey-Ausführung? |
 | Ist Testnachricht (AJO) | Wird die Nachricht als Testausführung gesendet? |
 | Element-ID (persistiert) (AJO) | Die ID des Elements mit aktivierter Persistenzbindung. |
@@ -455,7 +469,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Elementname (persistiert) (AJO) | Der Name des Elements mit aktivierter Persistenzbindung. |
 | Journey-Aktionsfehler (AJO) | Von Journey-Aktionen generierte Fehlermeldungen. |
 | Knotenname der Journey-Aktion | Der Knotenname der Journey-Aktion. |
-| Journey-Eintritte | True, wenn das Schrittereignis ein Journey-Eintrittsereignis für ein Profil war. |
+| Journey-Eintritte | Wahr, wenn das Schrittereignis ein Journey-Eintrittsereignis für ein Profil war. |
 | Journey-Ende (AJO) | Das Ende der Journey. |
 | Knotenname des Journey-Ereignisses | Dieser Wert wird immer dann festgelegt, wenn in einer Journey ein Segment oder ein externes Ereignis auftritt. |
 | Grund für den Journey-Ausschluss | Grund für den Ausschluss der Journey-Instanz. |
@@ -467,18 +481,18 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Name der Journey | Der Name der Journey. |
 | Name und Version der Journey | Der Name und die Version der Journey. |
 | Journey-Version-ID | Die Versions-ID der Journey. |
-| Journey-Ausstiege | True, wenn der aktuelle Schritt zum Beenden einer Instanz der Journey geführt hat. Dies ist der letzte Schritt in einer Journey, die für ein bestimmtes Profil erfolgreich ausgeführt wurde. |
+| Journey-Ausstiege | Wahr, wenn der aktuelle Schritt zum Beenden einer Instanz der Journey geführt hat. Dies ist der letzte Schritt in einer Journey, die für ein bestimmtes Profil erfolgreich ausgeführt wurde. |
 | Landingpage-Konversionen (AJO) | Gesamtanzahl der Konversionen auf der Landingpage. |
 | Landingpage-ID (AJO) | Eindeutige Kennung für die Landingpage. |
 | Landingpage-Quelle (AJO) | Die Quelle der Landingpage. |
-| Ansichten der Landingpage (AJO) | Gesamtzahl der Ansichten auf der Landingpage. |
+| Landingpage-Ansichten (AJO) | Gesamtzahl der Ansichten auf der Landingpage. |
 | Landingpage-Klicks (AJO) | Gesamtanzahl an Klicks auf die Landingpage. |
 | Link-URL (AJO) | Die von den Benutzenden angeklickte URL. |
 | Grund für den Nachrichten-Bounce (AJO) | Der Grund für den Nachrichten-Bounce. |
-| Grund für Fehlschlagen der Nachricht (AJO) | Der Grund für den Nachrichtenfehler. |
+| Grund für Nachrichtenfehler (AJO) | Der Grund für den Fehler in der Nachricht. |
 | Grund des Nachrichtenausschlusses (AJO) | Grund des Ausschlusses. |
 | Kategorie fehlgeschlagener Nachrichten (AJO) | Fehlerkategorie . |
-| Grund für Fehlschlagen der Nachricht (AJO) | Grund des Fehlschlagens. |
+| Grund für das Fehlschlagen der Nachricht (AJO) | Grund des Fehlschlagens. |
 | Typ des Nachrichtenfehlers (AJO) | Fehlertyp. |
 | Nachrichten-ID (AJO) | Die Nachrichten-ID, mit der diese Daten verknüpft werden sollen. |
 | Nachrichtensprache (AJO) | Die Sprache der Nachricht. |
@@ -487,7 +501,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Nachrichtenstatus (AJO) | Nachrichtenstatus (z. B. gesendet, gebounct, Fehler usw.) |
 | Nachrichtentyp (AJO) | Ob es sich bei der Nachricht um eine Marketing- oder Transaktionsnachricht handelt. |
 | Status des Nachrichten-Feedbacks (veraltet) | Feedback-Status. |
-| Knoteneintritte | True, wenn das Schrittereignis ein Knoteneintrittsereignis für ein Profil war. |
+| Knoteneintritte | Wahr, wenn das Schrittereignis ein Knoteneintrittsereignis für ein Profil war. |
 | Knoten-ID | Die Knoten-ID des Journey-Knotens. |
 | Knotenname | Der Knotenname des Journey-Knotens. |
 | Knotentyp | Der Knotentyp des Journey-Knotens. |
@@ -508,13 +522,13 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Push-Plattform (AJO) | Push-Anbieter-Service, z. B. APNS oder FCM. |
 | Push-Titel | Push-Titel, nicht personalisiert. |
 | Ranking-Strategie-ID (AJO) | Die Ranking-Strategie-ID. |
-| Name der zurückgewiesenen Einverständnisrichtlinie | Name der entsprechenden zurückgewiesenen Einverständnisrichtlinie. |
+| Name der abgelehnten Einverständnisrichtlinie | Name der entsprechenden abgelehnten Einverständnisrichtlinie. |
 | Wiederholungsanzahl (AJO) | Anzahl der erneuten Zustellversuche für eine Nachricht, bevor ein Erfolg oder ein Fehler aufgetreten ist. |
 | Regelname | Name der Regel, die die Ablehnung des Journey-Eintritts verursacht hat. |
 | Auswahltyp (AJO) | Dies ist die Art der Auswahl, die verwendet wird, wenn ein Element als Teil einer Entscheidung abgeleitet wird. |
 | Sendungen (veraltet) | Gesamtzahl der über alle Kanäle gesendeten Nachrichten. |
 | Eingehende SMS-Nachricht (AJO) | Eingehende SMS-Antwort, z. B. STOP, START, ABONNEMENT usw. |
-| Eingehende SMS-Nachrichten (AJO) | Eingehende SMS-Antwort, z. B. Anhalten, Starten, Abonnieren usw. |
+| Eingehende SMS-Nachrichten (AJO) | Eingehende SMS-Antwort, z. B. „stop“, „start“, „subscribe“ usw. |
 | SMS-Nachrichtentyp (AJO) | SMS-Provider, z. B. inbound, inboundReply oder send. |
 | SMS-Anbieter (AJO) | SMS-Anbieter wie Sinch oder Twilio. |
 | Spam-Beschwerde (AJO) | Gesamtzahl der Spam-Beschwerden. |
@@ -535,7 +549,7 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 | Abwandlungsname (AJO) | Der Name der Abwandlung für das Experiment. |
 | Unique Visitors im Experiment (AJO) | Die Unique Visitors im Experiment |
 | Abmeldungen (AJO) | Gesamtzahl der Abmeldungen. |
-| URL-Titel (AJO) | Benutzerfreundliches Label für URL. |
+| URL-Titel (AJO) | Benutzerfreundliches Label für die URL. |
 | URL-ID (AJO) | Eindeutige Kennung der URL, auf die die Benutzerin oder der Benutzer geklickt hat. |
 
 +++

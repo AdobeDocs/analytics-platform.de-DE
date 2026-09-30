@@ -4,13 +4,22 @@ keywords: Clickstream;Daten-Feed;Daten-Feed;Data Feed
 title: Vergleich der Funktionen von Daten-Feeds in Customer Journey Analytics und Adobe Analytics
 feature: Components
 hide: true
-source-git-commit: 7fe885e928c495a2518038645ec841229d1f1852
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
-
 ---
-
 # Datendiskrepanzen zwischen Daten-Feeds und Analysis Workspace verstehen
 
 {{release-limited-testing}}
@@ -25,7 +34,7 @@ In diesem Sinne ähnelt der Lookback-Datumsbereich dem Berichtsdatumsbereich in 
 
 | Die wichtigsten Unterschiede | Datumsbereich für Berichte (Analysis Workspace) | Lookback-Datumsbereich (Daten-Feeds) |
 |---------|---------|----------|
-| **Datengrenze**<br/> Ob Daten in einem Bericht oder Feed enthalten sind | Flexibel<p>Ereignisse, die außerhalb des Datumsbereichs des Berichts liegen, können weiterhin in einen Workspace-Bericht aufgenommen werden, wenn die Ereignisse durch einen der folgenden Faktoren beeinflusst werden:</p><ul><li>**Dimension-Persistenz**: Kann bei Verwendung von „Sitzung“, „Benutzerdefinierte Zeit“ oder „Metrik-[&quot; über den Datumsbereich des Berichts &#x200B;](/help/data-views/component-settings/persistence.md#expiration-settings). Entspricht dem Datumsbereich für die Berichterstellung bei Verwendung des Fensters „Person [&quot; (Ablauf](/help/data-views/component-settings/persistence.md#expiration-settings). Daten werden aggregiert.</li><li>**Segmentqualifikation**: Segmente können standardmäßig über den Datumsbereich des Berichts hinaus erweitert werden.<p>Benutzer können das Segment beim Erstellen auf den Datumsbereich des Berichts beschränken.<!--add link to new docs--></p></li><li>**Sitzungsberechnung**: Sitzungen können über den Datumsbereich des Berichts hinausgehen. </li><li>**Abgeleitete Feldtransformationen**</li></ul> | Fest<p>Ereignisse, die außerhalb des Lookback-Datumsbereichs liegen, werden nie in einen Daten-Feed eingeschlossen, unabhängig davon, ob sie durch die folgenden Faktoren beeinflusst werden:</p></p><ul><li>**Dimension-Persistenz**: Die Persistenz kann unabhängig von den ([) Einstellungen nicht über den Lookback](/help/data-views/component-settings/persistence.md#expiration-settings)Datumsbereich hinaus beibehalten werden. Daten werden nicht aggregiert.</li><li>**Segmentqualifikation**: Immer auf den Datumsbereich des Lookback beschränkt.</li><li>**Sitzungsberechnung**: Immer auf den Lookback-Datumsbereich beschränkt.</li><li>**Abgeleitete Feldtransformationen**: Alle abgeleiteten Feldfunktionen, die auf Container verweisen, verwenden den Lookback-Datumsbereich in Daten-Feed-Exporten.</li></ul><p>Weitere Informationen zum Konfigurieren des Lookback-Datumsbereichs finden Sie unter [Erstellen eines Daten-Feeds](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-a-data-feed).</p> |
+| **Datengrenze**<br/> Ob Daten in einem Bericht oder Feed enthalten sind | Flexibel<p>Ereignisse, die außerhalb des Datumsbereichs des Berichts liegen, können weiterhin in einen Workspace-Bericht aufgenommen werden, wenn die Ereignisse durch einen der folgenden Faktoren beeinflusst werden:</p><ul><li>**Dimension-Persistenz**: Kann bei Verwendung von „Sitzung“, „Benutzerdefinierte Zeit“ oder „Metrik-[&quot; über den Datumsbereich des Berichts ](/help/data-views/component-settings/persistence.md#expiration-settings). Entspricht dem Datumsbereich für die Berichterstellung bei Verwendung des Fensters „Person [&quot; (Ablauf](/help/data-views/component-settings/persistence.md#expiration-settings). Daten werden aggregiert.</li><li>**Segmentqualifikation**: Segmente können standardmäßig über den Datumsbereich des Berichts hinaus erweitert werden.<p>Benutzer können das Segment beim Erstellen auf den Datumsbereich des Berichts beschränken.<!--add link to new docs--></p></li><li>**Sitzungsberechnung**: Sitzungen können über den Datumsbereich des Berichts hinausgehen. </li><li>**Abgeleitete Feldtransformationen**</li></ul> | Fest<p>Ereignisse, die außerhalb des Lookback-Datumsbereichs liegen, werden nie in einen Daten-Feed eingeschlossen, unabhängig davon, ob sie durch die folgenden Faktoren beeinflusst werden:</p></p><ul><li>**Dimension-Persistenz**: Die Persistenz kann unabhängig von den ([) Einstellungen nicht über den Lookback](/help/data-views/component-settings/persistence.md#expiration-settings)Datumsbereich hinaus beibehalten werden. Daten werden nicht aggregiert.</li><li>**Segmentqualifikation**: Immer auf den Datumsbereich des Lookback beschränkt.</li><li>**Sitzungsberechnung**: Immer auf den Lookback-Datumsbereich beschränkt.</li><li>**Abgeleitete Feldtransformationen**: Alle abgeleiteten Feldfunktionen, die auf Container verweisen, verwenden den Lookback-Datumsbereich in Daten-Feed-Exporten.</li></ul><p>Weitere Informationen zum Konfigurieren des Lookback-Datumsbereichs finden Sie unter [Erstellen eines Daten-Feeds](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-a-data-feed).</p> |
 | **Reporting-Fenster**<br/> Der Zeitrahmen, über den berichtet werden soll | Wie das Reporting-Fenster (der Zeitrahmen, über den Sie einen Bericht erstellen möchten). | Nicht identisch mit dem Zeitrahmen, über den Sie einen Bericht erstellen möchten. <p>Der Zeitrahmen für den Bericht ist das Häufigkeitsfenster, das eine einzelne Stunde oder ein einzelner Tag sein kann.</p> |
 
 >[!BEGINSHADEBOX]

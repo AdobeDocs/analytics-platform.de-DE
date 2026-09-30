@@ -5,7 +5,19 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
-source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '2338'
 ht-degree: 16%
@@ -106,7 +118,7 @@ Eine Migration durchläuft drei Phasen: [!UICONTROL **Audit**], [!UICONTROL **Ma
 
 1. Wählen Sie den Snapshot der Tag-Bibliothek aus, den Sie migrieren möchten, und klicken Sie dann auf [!UICONTROL **Weiter**].
 
-   Der Snapshot bestimmt, auf welcher Version Ihrer Tag-Bibliothek die Migration basiert. Jeder Schnappschuss zeigt seine Umgebung an ([!UICONTROL **Entwicklung**], [!UICONTROL **Staging**] oder [!UICONTROL **&#x200B;**]).
+   Der Snapshot bestimmt, auf welcher Version Ihrer Tag-Bibliothek die Migration basiert. Jeder Schnappschuss zeigt seine Umgebung an ([!UICONTROL **Entwicklung**], [!UICONTROL **Staging**] oder [!UICONTROL ****]).
 
 1. Wählen Sie den Zuordnungssatz aus, um zu bestimmen, wie Analytics-Variablen XDM-Schemafeldern zugeordnet werden sollen.
 
@@ -122,7 +134,7 @@ Eine Migration durchläuft drei Phasen: [!UICONTROL **Audit**], [!UICONTROL **Ma
 
 1. Wählen Sie [!UICONTROL **Migration erstellen**] aus.
 
-1. Fahren Sie mit dem folgenden Abschnitt fort: [&#x200B; und Bereitstellen einer Migration](#validate-and-deploy-a-migration).
+1. Fahren Sie mit dem folgenden Abschnitt fort: [ und Bereitstellen einer Migration](#validate-and-deploy-a-migration).
 
 ## Validieren und Bereitstellen einer Migration
 

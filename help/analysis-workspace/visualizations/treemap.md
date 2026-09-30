@@ -8,21 +8,26 @@ autotag-review: '2026-05-19T08:27:33.715Z'
 TQID: 'https://experienceleague.adobe.com/ImY8koSZ7h0HC1uM5oj5IMSn5jXNAMw8vRzfpO7o0Nk'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 204
+source-wordcount: '204'
 ht-degree: 72%
-
 ---
-
 # Baumkarte {#treemap}
 
 <!-- markdownlint-disable MD034 -->
@@ -37,14 +42,14 @@ ht-degree: 72%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Treemap-Visualisierung in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Treemap](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/treemap)_ für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** Version dieses Artikels._
+_In diesem Artikel wird die Treemap-Visualisierung in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Treemap](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/treemap)_ für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
 
 Verwenden Sie die ![GraphTree](/help/assets/icons/GraphTree.svg) Visualisierung **[!UICONTROL Baumkarte]**, um hierarchische (baumstrukturierte) Daten als Satz verschachtelter Rechtecke anzuzeigen.
 
-Jeder Zweig des Baums erhält ein Rechteck, das kleinere Rechtecke enthält, die für untergeordnete Zweige stehen.
+Jede Verzweigung des Baums erhält ein Rechteck, das kleinere Rechtecke enthält, die für untergeordnete Verzweigungen stehen.
 
 ![Beispiel einer Baumkarte mit Kacheln kleinerer Rechtecke, die Unterzweige darstellen.](assets/treemap.png)
 
@@ -53,7 +58,7 @@ Mit einer Baumkarte können Sie Muster sehen, die auf andere Weise schwer zu erk
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung „Baumkarte“](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-treemap-visualizations){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisierung „Baumkarte“](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-treemap-visualizations){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 

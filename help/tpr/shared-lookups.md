@@ -5,13 +5,23 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: e1c7ffa9a2ac58717ee0050d4e7019b6f3f94518
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: '2431'
+source-wordcount: '2474'
 ht-degree: 13%
-
 ---
-
 # Freigegebene Suchen
 
 In Customer Journey Analytics werden Ihre Ereignisdaten durch einen Lookup-Datensatz mit zusätzlichem Kontext angereichert. Beispiel: ein Produktkatalog-Datensatz, der Ihren Kaufereignissen Produktnamen, Kategorien und Preise hinzufügt. Oder ein Kampagnen-Metadaten-Datensatz, der Kampagnendetails zu Ihren Marketing-Ereignissen hinzufügt.
@@ -56,7 +66,7 @@ Der Container Übereinstimmung nach handhabt die häufigsten Fälle, ohne dass S
 
 ### Übereinstimmung nach Feld
 
-Alternativ können Sie Profildatensätze anhand des Felds abgleichen. Diese Übereinstimmung führt zu direkten Suchen für jedes Ereignis in den Ereignisdaten, basierend auf einer bestimmten Identität. Bei Verwendung des Felds „Übereinstimmung nach“ können Ergebnisse doppelte Daten enthalten, was zu verwirrenden Ergebnissen führen kann, insbesondere bei Verwendung mit Metriken. Eine ausführlichere Erläuterung finden [&#x200B; unter &#x200B;](#example).
+Alternativ können Sie Profildatensätze anhand des Felds abgleichen. Diese Übereinstimmung führt zu direkten Suchen für jedes Ereignis in den Ereignisdaten, basierend auf einer bestimmten Identität. Bei Verwendung des Felds „Übereinstimmung nach“ können Ergebnisse doppelte Daten enthalten, was zu verwirrenden Ergebnissen führen kann, insbesondere bei Verwendung mit Metriken. Eine ausführlichere Erläuterung finden [ unter ](#example).
 
 ### Identitätszuordnungen als Schlüsselfelder
 
@@ -144,7 +154,7 @@ Die Beispieldaten für jeden Datensatz:
 
 >[!ENDTABS]
 
-Wenn diese Verbindung erstellt wird[&#x200B; werden &#x200B;](/help/getting-started/cja-b2b-concepts-features.md#containers)Container“ automatisch als Teil der Kernfunktionalität von Customer Journey Analytics erstellt.
+Wenn diese Verbindung erstellt wird[ werden ](/help/getting-started/cja-b2b-concepts-features.md#containers)Container“ automatisch als Teil der Kernfunktionalität von Customer Journey Analytics erstellt.
 
 Das folgende Diagramm zeigt die Entitätsbeziehungen für diese Verbindung.
 
