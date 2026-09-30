@@ -1,39 +1,45 @@
 ---
 description: Erfahren Sie, wie sich Warnhinweise in Customer Journey Analytics von Adobe Analytics unterscheiden
-title: Funktionsvergleich von Warnhinweisen Customer Journey Analytics und Adobe Analytics
+title: Funktionsvergleich von Warnhinweisen zwischen Customer Journey Analytics und Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
 exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
 TQID: https://experienceleague.adobe.com/NEm3Mu7q6RDKbCyG-PJzOFPrjJF4Y-unHgyBXyKd1HM
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+    internal-label: Alerts
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: 4f3c4a214bb9676ced6fe3c9627c969413013790
 workflow-type: tm+mt
-source-wordcount: 495
-ht-degree: 25%
-
+source-wordcount: '477'
+ht-degree: 23%
 ---
-
-# Vergleich der Funktionen von Warnhinweisen
+# Funktionsvergleich von Warnhinweisen zwischen Customer Journey Analytics und Adobe Analytics
 
 Die Verwendung von Warnhinweisen in Customer Journey Analytics ist nahezu identisch mit der Verwendung von Warnhinweisen in Adobe Analytics. Es gibt jedoch wichtige Unterschiede. In den folgenden Abschnitten werden die wichtigsten Unterschiede beschrieben.
 
-## Stündliche Warnhinweise sind nicht verfügbar
+## Stündliche Warnhinweise können für bestimmte Datentypen nicht sinnvoll sein
 
-Stündliche Warnhinweise sind **nicht** in Customer Journey Analytics verfügbar, während stündliche Warnhinweise in Adobe Analytics verfügbar sind. In Customer Journey Analytics können tägliche, wöchentliche oder monatliche Warnhinweise konfiguriert werden.
+Da Sie verschiedene Datentypen in Adobe Experience Platform aufnehmen können, sind nicht alle Daten, die in einem Warnhinweis enthalten sein können, für einen stündlichen Warnhinweis geeignet. Bestimmte Datentypen können innerhalb einer Stunde nicht zuverlässig erfasst und verfügbar sein.
 
-Sie haben verschiedene Möglichkeiten, Daten in Adobe Experience Platform aufzunehmen. Daher können die Vollständigkeit und Verfügbarkeit von Daten innerhalb einer Stunde nicht zuverlässig erreicht werden.  Die Flexibilität bei der Datenerfassung bedeutet, dass stündliche Warnhinweise aufgrund des hohen Potenzials für unvollständige Daten unpraktisch sind. Weitere Informationen finden Sie unter [Datenaufnahmezeiten variieren](#data-ingestion-times-vary-in-customer-journey-analytics).
+Weitere Informationen finden Sie unter [Datenaufnahmezeiten variieren](#data-ingestion-times-vary).
 
 ## Die Datenerfassungszeiten variieren
 
@@ -59,8 +65,8 @@ Weitere Informationen zum Anpassen der Verzögerung und die dabei zu berücksich
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
-## Warnhinweis erstellen
+## Weniger Möglichkeiten zum Erstellen von Warnhinweisen
 
-In Analysis Workspace in Adobe Analytics können Sie [Warnhinweise aus Analysis Workspace auf verschiedene Arten erstellen](https://experienceleague.adobe.com/de/docs/analytics/components/alerts/alert-builder). In Customer Journey Analytics können Sie [Warnhinweis erstellen](alert-builder.md) in Analysis Workspace nur aus einer Auswahl in einer Freiformtabelle erstellen.
+In Analysis Workspace in Adobe Analytics können Sie [Warnhinweise aus Analysis Workspace auf verschiedene Arten erstellen](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder). In Customer Journey Analytics können Sie [Warnhinweis erstellen](alert-builder.md) in Analysis Workspace nur aus einer Auswahl in einer Freiformtabelle erstellen.
 
 Sowohl Adobe Analytics als auch Customer Journey Analytics unterstützen die Erstellung von Warnhinweisen über den [Warnhinweis-Manager](alert-manager.md)
