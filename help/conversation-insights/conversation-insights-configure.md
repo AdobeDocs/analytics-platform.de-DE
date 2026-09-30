@@ -18,15 +18,15 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 7%
+source-wordcount: '824'
+ht-degree: 20%
 ---
 # Erstellen oder Bearbeiten von Konfigurationen
 
 Mit Conversation Insights können Sie Konversationen aus den Agentenerlebnissen analysieren, die Sie Ihren Kunden anbieten. Diese Agentenerlebnisse können auf großen Sprachmodellen (LLM) oder auf menschlichen Konversationen basieren. Beispielsweise ein Chatbot, der mit einem Kunden oder einem Callcenter interagiert.
-Mithilfe von Conversation Insights sind Sie in der Lage, die Auswirkungen von Repräsentanten auf tatsächliche Benutzerergebnisse zu verstehen.
+Mithilfe von Conversation Insights sind Sie in der Lage, die Auswirkungen von Agenten auf tatsächliche Benutzerergebnisse zu verstehen.
 
 Über die Konfigurationsoberfläche für Conversation Insights können Sie schnell eine Konfiguration und die zugehörigen Artefakte (Verbindung, Datenansichten usw.) erstellen oder bearbeiten.
 
@@ -114,7 +114,47 @@ Für jede Konfiguration:
 
 ## Verifizierung der Datenansicht
 
-(Beschreiben Sie die Metriken und Dimensionen, die Sie in den entsprechenden Datensätzen sehen.)
+Die Datenansichten, die Sie in [Konfigurationsschritte](#configuration-steps) konfiguriert haben, haben **[!UICONTROL Konversationserkenntnisse]** als Wert für **[!UICONTROL Integrationen]** in [Datenansichten](/help/data-views/manage-dataviews.md).
+
+Für jede der konfigurierten Datenansichten:
+
+* **Container**: Die [Registerkarte Container](/help/data-views/create-dataview.md#containers) enthält einen neuen **[!UICONTROL Container-Namen]**: **[!UICONTROL Konversation]** mit **[!UICONTROL Anzeigename]**: **[!UICONTROL Container]** als zusätzlichen **&#x200B;**&#x200B;System **[!UICONTROL Container-Typ]**.
+* **Komponenten**: Es werden zusätzliche Ordner mit Schemafeldern angezeigt. Beispiel: agentExperience und Konversation. Darüber hinaus werden die folgenden Komponenten automatisch hinzugefügt:
+
+  | Metrik | Datentyp des Schemas | Pfad des Schemas |
+  |---|---|---|
+  | Kunden-Feedback | Zeichenfolge | eventType |
+  | Positive Sentiments | Zeichenfolge | Abgeleitete Felder |
+  | Empfehlungen | Zeichenfolge | eventType |
+  | Wendungen | Zeichenfolge | eventType |
+
+  | Dimensionen | Datentyp des Schemas | Pfad des Schemas |
+  |---|---|---|
+  | Agent-ID | Zeichenfolge | `agenticExperience.agents.agentID` |
+  | Agentenname | Zeichenfolge | `agenticExperience.agents.name` |
+  | Concierge-Name | Zeichenfolge | `agenticExperience.name` |
+  | Concierge-Version | Zeichenfolge | `agenticExperience.version` |
+  | Konversations-ID | Zeichenfolge | `conversation.conversationID` |
+  | Konversationsname | Zeichenfolge | `conversation.conversationName` |
+  | Name des Konversationssignals | Zeichenfolge | `conversation.signals.name` |
+  | Boolescher Wert für Konversationszusammenfassung | Boolesch | `conversation.signals.values.booleanValue` |
+  | Konfidenz der Konversationszusammenfassung | Double | `conversation.signals.values.confidence` |
+  | Metadatenschlüssel für Konversationszusammenfassung | Zeichenfolge | `conversation.signals.values.metadata.key` |
+  | Zahlenwert für Konversationszusammenfassung | Double | `conversation.signals.values.numberValue` |
+  | Qualifizierer der Konversationszusammenfassung | Zeichenfolge | `conversation.signals.values.qualifiers` |
+  | Signale für Ton der Konversation | Zeichenfolge | `conversation.signals.attributes.tones.values` |
+  | Umgebung | Zeichenfolge | `agenticExperience.environment` |
+  | Feedback-Klassifizierung | Zeichenfolge | Abgeleitete Felder |
+  | Klassifizierung der Feedback-Bewertung | Zeichenfolge | `conversation.feedback.rating.classification` |
+  | Zweck des Feedback-Abschnitts | Zeichenfolge | `conversation.feedback.raw.purpose` |
+  | Feedback-Quelle | Zeichenfolge | `conversation.feedback.source` |
+  | Wortgruppe | Zeichenfolge | `conversation.signals.attributes.subjects.values.phrase` |
+  | Rohtext der Antwort | Zeichenfolge | `conversation.response.raw.text` |
+  | Antwortquelle | Zeichenfolge | `conversation.response.source` |
+  | Sentiment-Klassifizierung | Zeichenfolge | Abgeleitete Felder |
+  | Skill-Name | Zeichenfolge | `agenticExperience.agents.skills.name` |
+  | Skill-Version | Zeichenfolge | `agenticExperience.agents.skills.version` |
+  | Wert | String | `agenticExperience.agents.skills.parameters.value` |
 
 
 <!--

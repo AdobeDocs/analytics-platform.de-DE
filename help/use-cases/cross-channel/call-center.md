@@ -5,26 +5,35 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-TQID: https://experienceleague.adobe.com/FTWdLEx5SD4GMgi4XJKQ20-RVsg1oRFZtEMjPXkVuYQ
+TQID: 'https://experienceleague.adobe.com/FTWdLEx5SD4GMgi4XJKQ20-RVsg1oRFZtEMjPXkVuYQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1160
+source-wordcount: '1160'
 ht-degree: 88%
-
 ---
-
 # Callcenter- und Web-Daten importieren
 
 Customer Journey Analytics bietet die wertvolle Möglichkeit, Datensätze aus verschiedenen Quellen in einem einzigen Arbeitsbereich-Projekt zu kombinieren. Verwenden Sie diesen Leitfaden, um zu verstehen, wie Ihr Unternehmen Website-Daten mit Callcenter-Daten kombinieren kann. Sie können beispielsweise verstehen, welche Aktionen ein Kunde durchführt, welche Inhalte er anzeigt und nach welchen Begriffen er sucht, bevor er sich an den Support wendet. Anschließend können Sie die Inhalte und Self-Service-Tools ermitteln, die verbessert werden sollen, damit Kunden Probleme besser selbst lösen können, ohne anrufen zu müssen.
@@ -35,14 +44,14 @@ Customer Journey Analytics bietet die wertvolle Möglichkeit, Datensätze aus ve
 * Zugang zu Adobe Experience Platform und Customer Journey Analytics
 * Wenn Ihr Datensatz Protokolle aus einem Interactive Voice Response-System enthält, empfiehlt Adobe, die Daten vor dem Import in die Platform so zu verarbeiten, dass diese nur Aufforderungs-Interaktionen enthalten.
 * Wenn Ihr Datensatz Anrufprotokolle enthält, empfiehlt Adobe, die folgenden Spalten einzubeziehen:
-   * Datum/Uhrzeit des Anrufbeginns
-   * Grund für den Anruf
-   * Callcenter-ID
-   * Callcenter-Mitarbeiter-ID
-   * Dauer des Anrufs
-   * Ergebnisse des Anrufs
-   * Kosten des Anrufs (falls verfügbar)
-   * Weitere Anruf-Metadaten, die Ihre Organisation einbeziehen kann
+  * Datum/Uhrzeit des Anrufbeginns
+  * Grund für den Anruf
+  * Callcenter-ID
+  * Callcenter-Mitarbeiter-ID
+  * Dauer des Anrufs
+  * Ergebnisse des Anrufs
+  * Kosten des Anrufs (falls verfügbar)
+  * Weitere Anruf-Metadaten, die Ihre Organisation einbeziehen kann
 
 ## Web- und Callcenter-Daten in die Platform importieren
 

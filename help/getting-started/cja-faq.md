@@ -5,33 +5,49 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-TQID: https://experienceleague.adobe.com/HdeLAq13nYEHMV5ns75gTgux9KKRE0on5TiMRw6ZHoo
+TQID: 'https://experienceleague.adobe.com/HdeLAq13nYEHMV5ns75gTgux9KKRE0on5TiMRw6ZHoo'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
+    internal-label: FAQ
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
+    internal-label: Personalization
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2320
+source-wordcount: '2323'
 ht-degree: 95%
-
 ---
-
 # Häufig gestellte Fragen
 
 Adobe Customer Journey Analytics ist das Analyseprodukt der nächsten Generation. Dieser Artikel gibt Antworten auf häufig gestellte Fragen zu Customer Journey Analytics. Weitere Informationen finden Sie unter [Customer Journey Analytics-Funktionsunterstützung](/help/getting-started/aa-vs-cja/cja-aa.md).
@@ -206,7 +222,7 @@ Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connecto
 
 ## &#x200B;8. [!UICONTROL Adobe Analytics]-Komponenten
 
-+++**Kann ich [!UICONTROL Audiences] von [!DNL Customer Journey Analytics] für Experience Platform Real-Time CDP oder andere CX Enterprise-Anwendungen freigeben/veröffentlichen?**
++++**Kann ich [!UICONTROL Zielgruppen“ von [!DNL Customer Journey Analytics] für Experience Platform Real-Time CDP oder &#x200B;] andere CX Enterprise-Programme freigeben/veröffentlichen?**
 
 Sie können in Customer Journey Analytics identifizierte [Zielgruppen erstellen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/audiences/publish) und im Echtzeit-Kundenprofil in Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden.
 
@@ -267,7 +283,7 @@ Weitere Informationen über die [Implikationen beim Löschen von Datensätzen un
 
 ## &#x200B;12. Regionale Datenerfassung
 
-Adobe CX Enterprise verwendet regionale Datenerfassung (Regional Data Collection, RDC), damit die Interaktionen zwischen Ihren Besucherinnen und Besuchern sowie Adobe- und Nicht-Adobe-Lösungen so nah wie möglich bei Ihren Besucherinnen und Besuchern stattfinden. Sobald Daten regional in einem Datenerfassungszentrum (DCC, auch als Edge-Site bezeichnet, Teil des Platform Edge-Netzwerks) erfasst wurden, werden sie über eine sichere Verbindung zu den relevanten Lösungen weitergeleitet, die auf der Konfiguration Ihres Datenstroms und/oder der Ereignisweiterleitung basieren.
+Adobe CX Enterprise verwendet die regionale Datenerfassung (Regional Data Collection, RDC), damit die Interaktionen zwischen Ihren Besucherinnen und Besuchern sowie Adobe- und Nicht-Adobe-Lösungen so nah wie möglich bei Ihren Besucherinnen und Besuchern stattfinden. Sobald Daten regional in einem Datenerfassungszentrum (DCC, auch als Edge-Site bezeichnet, Teil des Platform Edge-Netzwerks) erfasst wurden, werden sie über eine sichere Verbindung zu den relevanten Lösungen weitergeleitet, die auf der Konfiguration Ihres Datenstroms und/oder der Ereignisweiterleitung basieren.
 
 ![Datenfluss mithilfe von Edge-Netzwerken](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=de)
 

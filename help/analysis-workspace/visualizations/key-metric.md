@@ -8,21 +8,26 @@ autotag-review: '2026-05-19T08:31:00.048Z'
 TQID: 'https://experienceleague.adobe.com/y3VfcvJp8lCmBLHy4-zPEb6Y7dzjfcDPjSMlKGPNR-A'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 960
+source-wordcount: '969'
 ht-degree: 90%
-
 ---
-
 # Zusammenfassung einer Schlüsselmetrik {#key-metric-summary}
 
 >[!CONTEXTUALHELP]
@@ -151,7 +156,7 @@ Im Rahmen der Visualisierungseinstellungen sind spezifische Einstellungen für d
 | **[!UICONTROL Vergleichsprozentsatz und Trendlinie anzeigen]** | Vergleichsdaten ein- oder ausblenden. Wenn diese Option ausgeblendet ist, werden sowohl das Vergleichs-Liniendiagramm als auch die Zusammenfassungsänderung der Objekte ausgeblendet. |
 | **[!UICONTROL Gesamtanzahl anzeigen]** | Zusammenfassungsnummer anzeigen oder ausblenden |
 | **[!UICONTROL Rohdifferenz anzeigen]** | Rohdifferenz zwischen dem Gesamtwert der Metrik im primären Datumsbereich und im sekundären Datumsbereich anzeigen oder ausblenden |
-| **[!UICONTROL Wert kürzen]** | Wählen Sie **[!UICONTROL Wert abkürzen]**, um den Zahlenwert intelligent zu kürzen. Wenn diese Option ausgewählt ist, geben Sie eine Zahl ein, um den Umfang der Abkürzung zu definieren. Beispiel:<br/><table><tr><td>**Originalwert**</td><td>**Abkürzung**</td><td>**Ergebnis**</td></tr><tr><td>$12,011,141.25</td><td>Nicht ausgewählt</td><td align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>Ausgewählt, auf 1 gesetzt</td><td align="right">12 Mio. USD</td></tr><tr><td>$12,011,141.25</td><td>Ausgewählt, auf 2 gesetzt</td><td align="right">12,0 Mio. USD</td></tr><tr><td>$12,011,141.25</td><td>Ausgewählt, auf 2 gesetzt</td><td align="right">12,01 Mio. USD</td></tr><tr><td>$12,011,141.25</td><td>Ausgewählt, auf 3 gesetzt</td><td align="right">12,01 Mio. USD</td></tr></table> |
+| **[!UICONTROL Wert kürzen]** | Wählen Sie **[!UICONTROL Wert abkürzen]**, um den Zahlenwert intelligent zu kürzen. Wenn diese Option ausgewählt ist, geben Sie eine Zahl ein, um den Umfang der Abkürzung zu definieren. Beispiel:<br/><table><tr><td>**Originalwert**</td><td>**Abkürzung**</td><td>**Ergebnis**</td></tr><tr><td>12.011.141,25 USD</td><td>Nicht ausgewählt</td><td align="right">12.011.141,25 USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf 1 gesetzt</td><td align="right">12 Mio. USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf 2 gesetzt</td><td align="right">12,0 Mio. USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf 2 gesetzt</td><td align="right">12,01 Mio. USD</td></tr><tr><td>12.011.141,25 USD</td><td>Ausgewählt, auf 3 gesetzt</td><td align="right">12,01 Mio. USD</td></tr></table> |
 
 ## Visualisierung bearbeiten
 

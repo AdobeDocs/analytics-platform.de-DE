@@ -5,28 +5,39 @@ solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
+TQID: 'https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2355
+source-wordcount: '2375'
 ht-degree: 15%
-
 ---
-
 # Relationale Daten spiegeln und verwenden
 
 In dieser Kurzanleitung wird erläutert, wie Sie [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) verwenden können, um relationale Daten aus einer Data Warehouse-nativen Lösung in Adobe Experience Platform zu spiegeln. Und dann benutzen wir diese Daten in Customer Journey Analytics.
@@ -135,7 +146,7 @@ Die Daten in der Tabelle in Ihrer Data Warehouse-nativen Lösung sind für Exper
 
 Um Daten in Experience Platform zu spiegeln, müssen Sie zunächst das Schema für die Daten definieren. Alle Daten, die Sie in Experience Platform spiegeln möchten und Experience Platform Data Mirror für Customer Journey Analytics verwenden, müssen einem relationalen Schema entsprechen.
 
-Definieren Sie ein Schema, das diese Daten modelliert. Gehen Sie folgendermaßen vor, um das Schema einzurichten:
+Definieren Sie ein Schema, das diese Daten modelliert. So legen Sie Ihr Schema fest:
 
 1. Wählen Sie in der Adobe Experience Platform-Benutzeroberfläche in der linken Leiste die Option **[!UICONTROL Schemata]** unter **[!UICONTROL Daten-Management]**.
 
@@ -227,15 +238,15 @@ Wählen **[!UICONTROL im Schritt]** Authentifizierung“ Folgendes aus:
 
 * **[!UICONTROL Vorhandenes Konto]** wenn Sie bereits ein Konto für Google BigQuery eingerichtet haben. Fahren Sie mit dem Schritt [Daten auswählen](#select-data) fort.
 * **[!UICONTROL Neues Konto]** wenn Sie eine Verbindung zu Google BigQuery herstellen müssen.
-   1. Geben Sie einen **[!UICONTROL Kontonamen]** und (optional) **[!UICONTROL Beschreibung]** an.
-   1. Wählen Sie Ihren **[!UICONTROL Authentifizierungstyp]** aus: **[!UICONTROL Standardauthentifizierung]** oder **[!UICONTROL Service-]**. Geben Sie je nach Auswahl die erforderlichen Eingaben ein.
-   1. Wählen Sie **[!UICONTROL Mit Quelle verbinden]**
+  1. Geben Sie einen **[!UICONTROL Kontonamen]** und (optional) **[!UICONTROL Beschreibung]** an.
+  1. Wählen Sie Ihren **[!UICONTROL Authentifizierungstyp]** aus: **[!UICONTROL Standardauthentifizierung]** oder **[!UICONTROL Service-]**. Geben Sie je nach Auswahl die erforderlichen Eingaben ein.
+  1. Wählen Sie **[!UICONTROL Mit Quelle verbinden]**
 
-      ![Google BigQuery - Authentifizierung](assets/googlebg-authentication.png)
+     ![Google BigQuery - Authentifizierung](assets/googlebg-authentication.png)
 
-      Ihre Verbindung wurde verifiziert. Ein ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Verbunden]** zeigt eine erfolgreiche Verbindung an.
+     Ihre Verbindung wurde verifiziert. Ein ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Verbunden]** zeigt eine erfolgreiche Verbindung an.
 
-   1. Klicken Sie auf **[!UICONTROL Weiter]**.
+  1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
   In der Experience Platform-Dokumentation finden Sie Einzelheiten zur Verbindung und Authentifizierung bei der Verwendung des [Azure Databricks](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/databricks) oder [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake)-Connectors.
 
@@ -345,7 +356,7 @@ In der Benutzeroberfläche von Customer Journey Analytics:
 Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen. Beispielsweise [Auswählen und Kombinieren &#x200B;](/help/connections/combined-dataset.md) Datensätzen[&#x200B; Überprüfen des Status der Datensätze einer Verbindung und des Status &#x200B;](/help/connections/manage-connections.md) Datenaufnahme).
 
 
-## Einrichten einer Datenansicht
+## Festlegen einer Datenansicht
 
 Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 

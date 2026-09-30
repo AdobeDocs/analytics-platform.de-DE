@@ -4,27 +4,35 @@ title: Bedienfeld Quick Insights
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-TQID: https://experienceleague.adobe.com/G2HFW3lyH16Hh9IGbBgX85eyO0O9i56-dJeK-LqBPJw
+TQID: 'https://experienceleague.adobe.com/G2HFW3lyH16Hh9IGbBgX85eyO0O9i56-dJeK-LqBPJw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1166
+source-wordcount: '1166'
 ht-degree: 84%
-
 ---
-
 # Bedienfeld „Quick Insights“ {#quick-insights-panel}
 
 <!-- markdownlint-disable MD034 -->
@@ -32,7 +40,7 @@ ht-degree: 84%
 >[!CONTEXTUALHELP]
 >id="workspace_quickinsights_button"
 >title="Quick Insights"
->abstract="Erstellen Sie ein Bedienfeld, um im Handumdrehen eine Freiformtabelle und eine entsprechende Visualisierung zu erstellen, um Erkenntnisse schneller zu analysieren und bereitzustellen."
+>abstract="Erstellen Sie ein Panel, um im Handumdrehen eine Freiformtabelle und eine entsprechende Visualisierung aufzubauen, damit Sie Erkenntnisse schneller analysieren und aufdecken können."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,20 +71,20 @@ Um Ihnen bei diesen Fragen zu helfen[!UICONTROL &#x200B; nutzt „Quick Insights
 * Ordnungsgemäßes Erstellen einer Datentabelle und einer zugehörigen Visualisierung in [!UICONTROL Analysis Workspace].
 * Vertrautmachen mit der Terminologie und dem Vokabular für grundlegende Komponenten und Bestandteile von [!UICONTROL Analysis Workspace].
 * Ausführen einfacher Aufschlüsselungen von Dimensionen, Hinzufügen mehrerer Metriken oder Vergleichen von Segmenten in einer [!UICONTROL Freiformtabelle].
-* Ändern oder Ausprobieren verschiedener Visualisierungstypen, um das Suchwerkzeug für Ihre Analyse schnell und intuitiv zu finden.
+* Ändern Sie verschiedene Visualisierungstypen oder probieren Sie sie aus, um das passende Tool für Ihre Analyse schnell und intuitiv zu finden.
 
 ## Grundlegende Terminologie
 
-Im Folgenden finden Sie einige grundlegende Begriffe, mit denen Sie vertraut sein müssen. Jede Datentabelle besteht aus zwei oder mehr Bausteinen (Komponenten), die Sie für Ihre Daten verwenden.
+Im Folgenden finden Sie einige grundlegende Begriffe, mit denen Sie vertraut sein müssen. Jede Datentabelle besteht aus zwei oder mehr Bausteinen (Komponenten), mit denen Sie Ihre Daten-Story erzählen.
 
 | Baustein (Komponente) | Definition |
 |---|---|
-| **[!UICONTROL Dimension]** | Dimensionen sind Beschreibungen oder Eigenschaften metrischer Daten, die in einem Projekt angezeigt, aufgeschlüsselt und verglichen werden können. Es handelt sich um nicht-numerische Werte und Daten, die in Dimensionselemente aufgeschlüsselt werden. Zum Beispiel ist *Browser* oder *Seite* eine Dimension. |
+| **[!UICONTROL Dimension]** | Dimensionen sind Beschreibungen oder Eigenschaften von Metrikdaten, die in einem Projekt angezeigt, aufgeschlüsselt und verglichen werden können. Es handelt sich um nicht-numerische Werte und Datumswerte, die in Dimensionselemente aufgeschlüsselt werden. Zum Beispiel ist *Browser* oder *Seite* eine Dimension. |
 | **[!UICONTROL Dimensionselement]** | Dimensionselemente sind individuelle Werte für eine Dimension. Dimensionselemente für die Dimension „Browser“ wären zum Beispiel *Chrome*, *Firefox*, *Edge* oder andere. |
 | [!UICONTROL Metrik] | Metriken sind quantitative Informationen über Aktivitäten von Personen wie Ansichten, Clickthroughs, Neuladungen, durchschnittliche Besuchszeit, Einheiten, Bestellungen, Umsatz usw. |
 | **[!UICONTROL Visualisierung]** | Workspace bietet [eine Reihe von Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), um visuelle Darstellungen Ihrer Daten zu erstellen. Zum Beispiel Balkendiagramme, Ringdiagramme, Histogramme, Liniendiagramme, Karten, Streudiagramme und andere. |
 | **[!UICONTROL Dimensionsaufschlüsselung]** | Mit einer Dimensionsaufschlüsselung können Sie eine Dimension nach anderen Dimensionen aufschlüsseln. Sie können beispielsweise die US-Bundesstaaten nach Mobilgeräten aufschlüsseln, um die Besuche durch Mobilgeräte pro Bundesstaat zu erhalten. Oder Sie können Mobilgeräte nach Mobilgerätetypen, Regionen, internen Kampagnen und mehr aufschlüsseln. |
-| **[!UICONTROL Segment]** | Mit Segmenten können Personenteilmengen anhand von Merkmalen oder Website-Interaktionen identifiziert werden. Sie können beispielsweise Segmente [!UICONTROL Personen] basierend auf erstellen. <li>Attribute: Browser-Typ, Gerät, Anzahl der Besuche, Land, Geschlecht; oder</li><li>Interaktionen: Kampagnen, Keyword-Suche, Suchmaschine; oder</li><li>Ausstiege und Eintritte: Personen aus Facebook, einer definierten Landingpage, einer Referrer Domain; oder</li><li> Benutzerdefinierte Variablen: Formularfeld, definierte Kategorien, Kunden-ID. |
+| **[!UICONTROL Segment]** | Mit Segmenten können Personenteilmengen anhand von Merkmalen oder Website-Interaktionen identifiziert werden. Sie können beispielsweise Segmente [!UICONTROL Personen] basierend auf erstellen. <li>Attribute: Browser, Gerät, Anzahl der Besuche, Land, Geschlecht oder</li><li>Interaktionen: Kampagnen, Keyword-Suche, Suchmaschine; oder</li><li>Ausstiege und Eintritte: Personen aus Facebook, einer definierten Landingpage, einer Referrer Domain; oder</li><li> Benutzerdefinierte Variablen: Formularfeld, definierte Kategorien, Kunden-ID. |
 
 ## Verwenden
 
@@ -93,7 +101,7 @@ So verwenden Sie ein Bedienfeld **[!UICONTROL Quick Insights]**:
 
 ### Panel-Eingabe
 
-Wählen Sie die gewünschten Bausteine aus:
+Wählen Sie die Bausteine aus:
 
 * **[!UICONTROL Analysieren]**: Zum Festlegen einer Dimension (orange)
 * **[!UICONTROL Nach]**: Zum Festlegen einer Metrik (grün)
@@ -106,8 +114,8 @@ Sie müssen mindestens eine Dimension und eine Metrik auswählen, damit die Visu
 
 Sie haben drei Möglichkeiten, um die Bausteine festzulegen:
 
-* Ziehen Sie Komponenten aus dem linken Bedienfeld und legen Sie sie ab.
-* Beginnen Sie mit der Eingabe in eines der Bausteinfelder. Wenn eine Eingabe gefunden wird, wird das Bausteinfeld automatisch mit möglichen Werten aufgefüllt.
+* Ziehen Sie Komponenten per Drag-and-Drop aus dem linken Panel und legen Sie sie dort ab.
+* Beginnen Sie mit der Eingabe in eines der Felder für Bausteine. Wenn eine Eingabe gefunden wird, wird das Bausteinfeld automatisch mit möglichen Werten aufgefüllt.
 * Geben Sie ein Dropdown-Menü für Bausteine an (z. B. Land in **[!UICONTROL Analysieren]**) und **[!UICONTROL Suchen]** die Liste möglicher Werte (mit ![ChevronRight](/help/assets/icons/ChevronRight.svg)) für den gewünschten Wert (z. B. **[!UICONTROL Länder-Code]**).
 
 Wählen Sie **[!UICONTROL Löschen]** aus, um alle Eingabefelder zu löschen.
@@ -121,7 +129,7 @@ Wählen Sie **[!UICONTROL Löschen]** aus, um alle Eingabefelder zu löschen.
 
    * Eine Freiformtabelle mit der Dimension (Länder-Code) und Metrik (Sitzungen), segmentiert nach Web-Sitzungen für die letzten 12 Monate.
 
-   * Eine begleitende Visualisierung, in diesem Fall ein [Balkendiagramm](/help/analysis-workspace/visualizations/bar.md). Die erstellte Visualisierung basiert auf dem Datentyp, den Sie der Tabelle hinzugefügt haben. Für zeitbasierte Daten (z. B. [!UICONTROL Sitzungen] pro Tag/Monat) wird standardmäßig ein [!UICONTROL Liniendiagramm] verwendet. Für alle nicht zeitbasierten Daten (z. B. [!UICONTROL Sitzungen] pro [!UICONTROL Gerät]) wird standardmäßig ein [!UICONTROL Balkendiagramm] verwendet. Sie können den Visualisierungstyp ändern, indem Sie auf den Dropdown-Pfeil neben dem Visualisierungstyp klicken.
+   * Eine begleitende Visualisierung, in diesem Fall ein [Balkendiagramm](/help/analysis-workspace/visualizations/bar.md). Die erstellte Visualisierung basiert auf den Daten, die Sie der Tabelle hinzugefügt haben. Für zeitbasierte Daten (z. B. [!UICONTROL Sitzungen] pro Tag/Monat) wird standardmäßig ein [!UICONTROL Liniendiagramm] verwendet. Für alle nicht zeitbasierten Daten (z. B. [!UICONTROL Sitzungen] pro [!UICONTROL Gerät]) wird standardmäßig ein [!UICONTROL Balkendiagramm] verwendet. Sie können den Visualisierungstyp ändern, indem Sie auf den Dropdown-Pfeil neben dem Visualisierungstyp klicken.
 
 1. Versuchen Sie, weitere Verfeinerungen hinzuzufügen, wie nachfolgend unter [Weitere Tipps](#more-tips) beschrieben.
 
@@ -145,7 +153,7 @@ Weitere nützliche Hinweise werden im [!UICONTROL Quick Insights Builder] angeze
 
   * **[!UICONTROL Segment nach]**: Sie können bis zu 2 weitere Segmente hinzufügen. Sie können beispielsweise „Buchungen“ als Segment hinzufügen und dieses Segment mit den von Ihnen verglichenen Segmenten für Personen, die häufig fliegen, und Personen, die zum ersten Mal fliegen, kombinieren. Siehe ➏, ➐ und ➑.
 
-  * Am: Sie können den Datumsbereich festlegen. Siehe ➒.
+  * Ein: Sie können den Datumsbereich angeben. Siehe ➒.
 
 ## Bekannte Einschränkungen
 

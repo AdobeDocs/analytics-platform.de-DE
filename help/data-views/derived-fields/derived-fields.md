@@ -5,30 +5,43 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
+TQID: 'https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+    internal-label: Derived fields
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
+    internal-label: Email marketing
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 10442
-ht-degree: 97%
-
+source-wordcount: '10602'
+ht-degree: 98%
 ---
-
 # Abgeleitete Felder {#derived-fields}
 
 >[!CONTEXTUALHELP]
@@ -756,8 +769,8 @@ Definiert einen Satz von Werten, die in einem neuen abgeleiteten Feld durch ents
 
 ## Anwendungsfall 1 {#classify-uc1}
 
-Sie haben eine CSV-Datei, die eine Schlüsselspalte für `hotelID` und eine oder mehrere zusätzliche Spalten enthält, die mit dem `hotelID` verknüpft sind: `city`, `rooms`, `hotel name`.
-Sie erfassen [!DNL Hotel ID] in einer Dimension, möchten jedoch eine [!DNL Hotel Name] Dimension erstellen, die aus der `hotelID` in der CSV-Datei abgeleitet wurde.
+Sie verfügen über eine CSV-Datei, die eine Schlüsselspalte für `hotelID` und eine oder mehrere zusätzliche Spalten enthält, die mit der `hotelID` verknüpft sind: `city`, `rooms`, `hotel name`.
+Sie erfassen [!DNL Hotel ID] in einer Dimension, möchten jedoch eine [!DNL Hotel Name]-Dimension erstellen, die von der `hotelID` in der CSV-Datei abgeleitet wurde.
 
 **Struktur und Inhalt der CSV-Datei**
 
@@ -1015,8 +1028,8 @@ Alternativ können Sie den praktischen Wert „Jetzt“ als dynamischen Datumsbe
 
 Sie möchten die Suchzeit in Minuten verstehen, bevor eine Person innerhalb einer Sitzung eine Bestellung aufgibt.
 
-Sie definieren ein neues `Time Between Search And Order In Minutes` abgeleitetes Feld, das das Ergebnis zweier [[!UICONTROL CASE WHEN]-Funktionen ist](#case-when) um [!UICONTROL Suchzeit] und [!UICONTROL Bestellzeit] Werte zu definieren.
-Anschließend verwenden Sie diese beiden Werte, um die Differenz mit einer [!UICONTROL DATE MATH]-Funktion zu berechnen, wobei [!UICONTROL Scope] auf [!UICONTROL Session], Werte auf [!UICONTROL Search Time] und [!UICONTROL Order Time] und [!UICONTROL Output-Granularität] auf [!UICONTROL Minute] gesetzt sind. Für beide Werte wählen Sie [!UICONTROL Erste zurückgeben] um sicherzustellen, dass die erste [!UICONTROL Suchzeit] und [!UICONTROL Bestellzeit] zurückgegeben wird.
+Sie definieren ein neues abgeleitetes Feld `Time Between Search And Order In Minutes`, das das Ergebnis zweier [[!UICONTROL CASE WHEN]-Funktionen](#case-when) ist, um die Werte für [!UICONTROL Suchzeit] und [!UICONTROL Bestellzeit] zu definieren.
+Anschließend verwenden Sie diese beiden Werte, um die Differenz mit einer [!UICONTROL DATE MATH]-Funktion zu berechnen, wobei [!UICONTROL Umfang] auf [!UICONTROL Sitzung], die Werte auf [!UICONTROL Suchzeit] und [!UICONTROL Bestellzeit] und die [!UICONTROL Granularität der Ausgabe] auf [!UICONTROL Minute] eingestellt sind. Für beide Werte wählen Sie [!UICONTROL Ersten zurückgeben], um sicherzustellen, dass die erste [!UICONTROL Suchzeit] und [!UICONTROL Bestellzeit] zurückgegeben werden.
 
 ![Screenshot der „Date Math“-Regel 3](assets/datemath-3.png)
 
@@ -1288,7 +1301,7 @@ Sie können schnell eine [!UICONTROL Lookup]-Funktion in den Regel-Builder einf�
 1. Wählen Sie **[!UICONTROL Schemafelder]** aus der Auswahl aus.
 1. Wählen Sie ![Schemafeldsymbol](assets/Smock_Folder_18_N.svg) **[!UICONTROL Datensätze nachschlagen]** aus.
 1. Wählen Sie Ihren Lookup-Datensatz aus und suchen Sie das Feld, das Sie für die Suche verwenden möchten.
-1. Ziehen Sie das Suchfeld per Drag-and-Drop auf eines der verfügbaren Eingabefelder für eine Funktion (z. B. Wenn Fall). Wenn gültig, können Sie in einem blauen Feld mit der Bezeichnung **[!UICONTROL + Hinzufügen]** das Feld ablegen und automatisch eine Suchfunktion einfügen, bevor die Funktion, in der Sie das Suchfeld abgelegt haben, verwendet wird. Die eingefügte Lookup-Funktion wird automatisch mit relevanten Werten für alle Felder ausgefüllt.
+1. Ziehen Sie das Suchfeld per Drag-and-Drop auf eines der verfügbaren Eingabefelder für eine Funktion (z. B. Fall wenn). Wenn gültig, können Sie das Feld in einem blauen Feld mit der Bezeichnung **[!UICONTROL + Hinzufügen]** ablegen und automatisch eine Lookup-Funktion vor der Funktion ablegen, auf die Sie das Suchfeld abgelegt haben. Die eingefügte Lookup-Funktion wird automatisch mit relevanten Werten für alle Felder ausgefüllt.
    ![Ziehen des Lookup-Felds](assets/lookup-drag.png)
 
 +++
@@ -1410,7 +1423,7 @@ Sie definieren ein abgeleitetes `Corrected Annual Revenue`-Feld. Mit der Funktio
 
 So erstellen Sie eine Formel:
 
-1. Beginnen Sie einfach mit der Eingabe in das Formelfeld und numerische Felder, die mit Ihrer Eingabe übereinstimmen, werden in einem Popup-Menü angezeigt. Alternativ können Sie ein numerisches Feld aus den verfügbaren Feldern im linken Bereich ziehen.
+1. Beginnen Sie einfach mit der Eingabe in das Formelfeld. Sobald numerische Felder mit Ihrer Eingabe übereinstimmen, werden sie in einem Popup-Menü angezeigt. Alternativ können Sie ein numerisches Feld per Drag-and-Drop aus den verfügbaren Feldern im linken Bereich ziehen.
    ![Weitere Informationen zur Mathematik 1](assets/math-more-info-1.png)
 
 1. Fügen Sie den Operanden (z. B. `*` zum Multiplizieren) und anschließend ein weiteres Feld oder einen statischen Wert hinzu. Sie können Klammern verwenden, um komplexere Formeln zu definieren.

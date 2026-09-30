@@ -5,32 +5,47 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-TQID: https://experienceleague.adobe.com/aInqrIT7Z22NV6kkdJkydpPNEEP46Xbc4CQZxXzzcNk
+TQID: 'https://experienceleague.adobe.com/aInqrIT7Z22NV6kkdJkydpPNEEP46Xbc4CQZxXzzcNk'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Customer profiles
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2447
+source-wordcount: '2447'
 ht-degree: 62%
-
 ---
-
 # Aufnehmen von Daten über die Edge Network Server-API
 
 In dieser Kurzanleitung wird erläutert, wie Sie Tracking-Daten von Geräten wie IoT-Geräten, Set-Top-Boxen, Spielekonsolen und Desktop-Programmen mithilfe der Adobe Experience Platform Edge Network-Server-API und Edge Network direkt in Adobe Experience Platform aufnehmen können. Verwenden Sie diese Daten dann in Customer Journey Analytics.
@@ -102,7 +117,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       ![Hinzufügen der Feldergruppe](./assets/add-field-group-button.png)
 
-      Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
+      Feldgruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
    1. Wählen [!UICONTROL &#x200B; Dialogfeld Feldergruppen hinzufügen &#x200B;] die Feldergruppe **[!UICONTROL Blindlicht]** aus der Liste aus. Diese Feldergruppe wird erstellt, um den Benutzerfortschritt beim Spielen eines fiktiven Spiels mit dem Titel Blinding Light auf einer Konsole zu verfolgen.
 
@@ -128,7 +143,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Identifizierungsobjekt](./assets/identification-field-gaming.png)
 
-   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile, die Ihr Spiel spielen, mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren, die sie für die Anmeldung bei ihrer Spielkonsole verwenden. Es stehen viele weitere Attribute zur Verfügung, um die Identifizierung Ihrer Person zu verfolgen.
+   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile, die Ihr Spiel spielen, mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren, mit der sie sich bei ihrer Spielekonsole anmelden. Es stehen viele weitere Attribute zur Verfügung, um die Identifizierung Ihrer Person zu verfolgen.
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
@@ -325,11 +340,11 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
    - Für jeden Datensatz:
 
-      - Wählen Sie eine [!UICONTROL Personen-ID] aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind.
+     - Wählen Sie eine [!UICONTROL Personen-ID] aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind.
 
-      - Wählen Sie die richtige Datenquelle in der Liste [!UICONTROL Datenquellentyp] aus. Wenn Sie **[!UICONTROL Sonstige]** angeben, fügen Sie eine Beschreibung für Ihre Datenquelle hinzu.
+     - Wählen Sie die richtige Datenquelle in der Liste [!UICONTROL Datenquellentyp] aus. Wenn Sie **[!UICONTROL Sonstige]** angeben, fügen Sie eine Beschreibung für Ihre Datenquelle hinzu.
 
-      - Definieren Sie **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Datensatz-Aufstockung vorhandener Daten]** entsprechend Ihren Anforderungen.
+     - Definieren Sie **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Datensatz-Aufstockung vorhandener Daten]** entsprechend Ihren Anforderungen.
 
    - Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
 

@@ -18,9 +18,33 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
 workflow-type: tm+mt
-source-wordcount: '12'
+source-wordcount: '132'
 ht-degree: 0%
 ---
 # Analysieren von Konversationserkenntnissen
+
+## Einfache Analyse
+
+Um Konversationseinblicke zu analysieren, erstellen oder bearbeiten Sie ein Projekt in Analysis Workspace und verwenden Sie eine der konfigurierten Datenansichten als Datenansicht für eines oder mehrere der Bedienfelder in Ihrem Projekt.
+
++++ Beispielprojekt
+
+![Einfaches Beispielprojekt für Conversation Insights](assets/conversation-insights-analyze-sample-project-basic.png)
+
++++
+
+## Unterhaltungen skaliert und kontextbezogen analysieren
+
+So analysieren Sie Konversationen in großem Maßstab und stellen den Kontext für diese Konversationen auf der vollständigen Kunden-Journey bereit:
+
+* Kombinieren Sie Ihre Conversation Insights-Ereignisse mit anderen Ereignisdatensätzen und zusätzlichen Profil- und Lookup-Datensätzen. Fügen Sie diese Datensätze zu der Verbindung hinzu, die Sie für die Konfiguration Conversation Insights ausgewählt haben.
+* Fügen Sie zusätzliche Komponenten (Metriken und Dimensionen) zu den Datenansichten hinzu, die Sie für die Konfiguration Conversation Insights ausgewählt haben.
+* ...
+
++++ Beispielprojekt
+
+Noch festzulegen.
+
++++ 

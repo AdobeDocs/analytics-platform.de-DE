@@ -5,24 +5,31 @@ title: Erstellen von freigebbaren Links
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-TQID: https://experienceleague.adobe.com/JAaRhcC3q49W00TRNo5yQ3HQU9dHrSJ7j5Uhll0fT3U
+TQID: 'https://experienceleague.adobe.com/JAaRhcC3q49W00TRNo5yQ3HQU9dHrSJ7j5Uhll0fT3U'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 357
+source-wordcount: '357'
 ht-degree: 42%
-
 ---
-
 # Erstellen von freigebbaren Links
 
 Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder einem bestimmten Teil eines Projekts absurufen. Bei einigen Link-Typen muss sich der Empfänger vor dem Zugriff auf das Projekt bei Customer Journey Analytics anmelden, bei anderen nicht.
@@ -41,7 +48,7 @@ Weitere Informationen finden Sie unter [Für alle freigeben](/help/analysis-work
 
 ## Abrufen eines Bedienfelds oder Visualisierungs-Links {#panel-link}
 
-Sie können auch einen Link zu einem bestimmten Teil eines Projekts freigeben, z. B. einem Bedienfeld oder einer individuellen Visualisierung. Dies wird manchmal auch als Intra-Linking bezeichnet. Dies kann nützlich sein, um die Aufmerksamkeit Ihrer Benutzerinnen und Benutzer auf wichtige Erkenntnisse im Projekt zu lenken.
+Sie können auch einen Link zu einem bestimmten Teil eines Projekts freigeben, z. B. zu einem Panel oder einer einzelnen Visualisierung. Dies wird manchmal auch als Intra-Linking bezeichnet. Dies kann nützlich sein, um die Aufmerksamkeit Ihrer Benutzerinnen und Benutzer auf wichtige Erkenntnisse im Projekt zu lenken.
 
 * Wählen Sie im Kontextmenü einer Bereichskopfzeile die Option **[!UICONTROL Bereichslink abrufen]**
 * Wählen Sie im Kontextmenü einer Visualisierungskopfzeile die Option **[!UICONTROL Visualisierungslink abrufen]**
@@ -56,5 +63,5 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Link innerhalb
 
 ## Verwenden von Links in einem Inhaltsverzeichnis {#TOC}
 
-Ein Tipp für die Nutzung der verschiedenen Link-Optionen besteht darin, [&#x200B; Workspace-Projekt immer &#x200B;](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) Inhaltsverzeichnis anzufügen. Im Inhaltsverzeichnis können Sie Links zu anderen relevanten Projekten, spezifischen Bedienfeldern und spezifischen Visualisierungen erstellen. Dies erleichtert dem Empfänger des Projekts die Navigation.
+Ein Tipp für die Nutzung der verschiedenen Link-Optionen besteht darin, [&#x200B; Workspace-Projekt immer &#x200B;](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) Inhaltsverzeichnis anzufügen. Im Inhaltsverzeichnis können Sie andere relevante Projekte, bestimmte Panels und bestimmte Visualisierungen verknüpfen. Dies erleichtert dem Empfänger des Projekts die Navigation.
 

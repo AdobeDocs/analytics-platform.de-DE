@@ -4,30 +4,40 @@ title: Übersicht über das Echtzeit-Reporting
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-TQID: https://experienceleague.adobe.com/Nvg6DVqDq-IwyPJgyDH2nOmNG41-aCRAYohlj7tjrj4
+TQID: 'https://experienceleague.adobe.com/Nvg6DVqDq-IwyPJgyDH2nOmNG41-aCRAYohlj7tjrj4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: d1779026-aeed-458e-a1c7-839d4acac922
+    internal-label: Real-time reporting
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 855
+source-wordcount: '855'
 ht-degree: 6%
-
 ---
-
 # Übersicht über die Echtzeitberichterstellung
 
-Echtzeitberichte in Customer Journey Analytics zeigen Daten und Visualisierungen in einem oder mehreren Bedienfeldern in Analysis Workspace in Echtzeit an und aktualisieren diese.
+Echtzeit-Reporting in Customer Journey Analytics zeigt Daten und Visualisierungen in einem oder mehreren Panels in Analysis Workspace in Echtzeit an und aktualisiert sie.
 
 {{ultimate-package}}
 
@@ -43,16 +53,16 @@ Dieser Abschnitt bietet einen Überblick über typische wertvolle und weniger we
 * Die wertvollsten Anwendungsfälle für Echtzeit-Reporting sind große Verkäufe, Promotions oder Produkteinführungen.
 Im Rahmen dieses Launches sollten Sie Folgendes wissen:
 
-   * Wie hoch sind die Umsätze im Vergleich zu Ihrem letzten Verkauf?
-   * Wie sieht dieser Produktstart im Vergleich zum letzten Produktstart aus?
-   * Funktionieren Ihre Promotions für diesen wichtigen Tag oder Event tatsächlich?
+  * Wie hoch sind die Umsätze im Vergleich zu Ihrem letzten Verkauf?
+  * Wie sieht dieser Produktstart im Vergleich zum letzten Produktstart aus?
+  * Funktionieren Ihre Promotions für diesen wichtigen Tag oder Event tatsächlich?
 
 * Relevante, aber weniger wertvolle Anwendungsfälle für das Echtzeit-Reporting sind Validierungs-Anwendungsfälle.
 Sie möchten beispielsweise Folgendes überprüfen:
 
-   * Funktioniert die Kampagnen-Journey, die Sie kürzlich gestartet haben?
-   * Wenn Ihre neue Produktseite aktiviert wurde, erfassen Sie dann Kundendaten von der Seite?
-   * Geht Ihr Live-Medienereignis in Ordnung?
+  * Funktioniert die Kampagnen-Journey, die Sie kürzlich gestartet haben?
+  * Wenn Ihre neue Produktseite aktiviert wurde, erfassen Sie dann Kundendaten von der Seite?
+  * Geht Ihr Live-Medienereignis in Ordnung?
 
 Erwägen Sie keine Echtzeitberichte für Anwendungsfälle zur Betriebsüberwachung. Zum Beispiel, um die Frage zu beantworten, ob eine Site ordnungsgemäß funktioniert. Da der Umschalter [Echtzeit-Aktualisierung](use-real-time.md) nach 30 Minuten automatisch deaktiviert wird und der Echtzeitbericht nicht mehr aktualisiert wird, sollten Sie für diese Anwendungsfälle keinen Echtzeitbericht als zuverlässige Quelle verwenden.
 
@@ -88,5 +98,5 @@ Beachten Sie die folgenden Einschränkungen für das Echtzeit-Reporting:
 * Zuordnung und Echtzeitberichte können nicht kombiniert werden. Beim Echtzeit-Reporting geht es um Daten auf Ereignis- und Sitzungsebene, und es ist weniger relevant für personenbasierte Daten.
 * Es sind keine von Heartbeat erfassten Medienmetriken verfügbar, mit Ausnahme von Medienstart- und Medienschlussmetriken. Sie können also weiterhin Echtzeitberichte verwenden, um einen Medienanwendungsfall zu ermöglichen.
 * Wenn Sie die [Download- oder Exportoptionen](/help/analysis-workspace/export/download-send.md) verwenden, um ein Projekt herunterzuladen oder Daten aus einer Freiformtabelle zu exportieren, beachten Sie Folgendes:
-   * Ein heruntergeladenes CSV-Projekt oder eine exportierte CSV-Datei enthält die zum Zeitpunkt des Herunterladens oder Exports verfügbaren Echtzeitdaten.
-   * Ein heruntergeladenes PDF-Projekt enthält Nicht-Echtzeitdaten, ähnlich den Daten, die angezeigt werden, wenn die Echtzeit-Aktualisierung deaktiviert ist.
+  * Ein heruntergeladenes CSV-Projekt oder eine exportierte CSV-Datei enthält die zum Zeitpunkt des Herunterladens oder Exports verfügbaren Echtzeitdaten.
+  * Ein heruntergeladenes PDF-Projekt enthält Nicht-Echtzeitdaten, ähnlich den Daten, die angezeigt werden, wenn die Echtzeit-Aktualisierung deaktiviert ist.

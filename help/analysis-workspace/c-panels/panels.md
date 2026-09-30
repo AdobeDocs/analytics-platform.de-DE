@@ -4,33 +4,44 @@ title: Übersicht über Bedienfelder in Analysis Workspace
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-TQID: https://experienceleague.adobe.com/4UiJUXEOGW3paTCi293AADuY1VYiu2egk0A4Oyv5uD8
+TQID: 'https://experienceleague.adobe.com/4UiJUXEOGW3paTCi293AADuY1VYiu2egk0A4Oyv5uD8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2812
+source-wordcount: '2812'
 ht-degree: 41%
-
 ---
-
 # Überblick über Panels {#panels-overview}
 
-Ein [!UICONTROL Panel] ist eine Sammlung von Tabellen und Visualisierungen. Sie können über das Symbol oben links in Arbeitsbereich oder über ein [leeres Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) auf Bedienfelder zugreifen. Bedienfelder sind hilfreich, wenn Sie Ihre Projekte nach Zeiträumen, Datenansichten oder Anwendungsfällen für Analysen organisieren möchten.
+Ein [!UICONTROL Panel] ist eine Sammlung von Tabellen und Visualisierungen. Sie können über das Symbol oben links in Arbeitsbereich oder über ein [leeres Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) auf Bedienfelder zugreifen. Panels sind hilfreich, wenn Sie Ihre Projekte nach Zeiträumen, Datenansichten oder Analyseanwendungsfällen organisieren möchten.
 
 ## Bedienfeldtypen
 
@@ -39,14 +50,14 @@ Die folgenden Bedienfeldtypen sind in Analysis Workspace für [!UICONTROL Custom
 | Name des Bedienfelds | Beschreibung |
 | --- | --- |
 | [Leeres Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) | Wählen Sie zum Beginnen Ihrer Analyse aus den verfügbaren Bedienfeldern und Visualisierungen. |
-| [Attribution](attribution.md) | Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen unter Verwendung verschiedener Dimensionen und Konversionskennzahlen. |
+| [Attribution](attribution.md) | Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen mit beliebigen Dimensionen und Konversionsmetriken. |
 | [Experimentieren](experimentation.md) | Vergleichen Sie verschiedene Benutzererfahrungen, Marketing- oder Messaging-Variationen, um zu bestimmen, welche am besten geeignet ist, um ein bestimmtes Ergebnis zu erzielen. |
-| [Freiform](freeform-panel.md) | Führen Sie unbegrenzt Vergleiche und Aufschlüsselungen durch und fügen Sie dann Visualisierungen hinzu, um eine ausführliche Story mit den Daten zu erzählen. |
-| [Medien-Zielgruppendurchschnitt pro Minute](average-minute-audience-panel.md) | Analysieren Sie den Zielgruppendurchschnitt pro Minute für einen bestimmten Inhalt oder für einen benutzerdefinierten Zeitraum. |
+| [Freiform](freeform-panel.md) | Führen Sie unbegrenzt Vergleiche und Aufschlüsselungen durch und fügen Sie dann Visualisierungen hinzu, um eine aussagekräftige Daten-Story zu erzählen. |
+| [Medien-Zielgruppendurchschnitt pro Minute](average-minute-audience-panel.md) | Analysieren Sie die durchschnittliche Minutenreichweite der Zielgruppe für einen bestimmten Inhalt oder für einen benutzerdefinierten Zeitraum. |
 | [Gleichzeitige Medienbetrachtende](media-concurrent-viewers.md) | Analysieren Sie gleichzeitige Betrachtende über einen längeren Zeitraum. Sie erhalten Details zum maximalen gleichzeitigen Zugriff und die Möglichkeit, aufzuschlüsseln und zu vergleichen. |
 | [Verbrachte Zeit bei der Medienwiedergabe](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analysieren Sie die Wiedergabedauer, um zu verstehen, wo Spitzenzeiten mit gleichzeitigen Ansichten auftreten oder wo es zu Abbrüchen kommt. |
 | [Nächstes oder vorheriges Objekt](next-previous.md) | Zeigen Sie die nächsten oder vorherigen Seiten an, zu denen Personen navigieren. |
-| [Quick Insights](quickinsight.md) | Erstellen Sie im Nu eine Freiformtabelle und eine entsprechende Visualisierung, um Erkenntnisse schneller zu analysieren und bereitzustellen. |
+| [Quick Insights](quickinsight.md) | Erstellen Sie im Handumdrehen eine Freiformtabelle und eine entsprechende Visualisierung, um Erkenntnisse schneller zu gewinnen. |
 
 
 Die Bedienfelder [!UICONTROL Quick Insights], [!UICONTROL Leer] und [!UICONTROL Freiform] eignen sich hervorragend als Ausgangspunkt für Ihre Analyse. [!UICONTROL Attribution] bietet sich hingegen für erweiterte Analysen an. Unten auf der Arbeitsfläche ist das Symbol ![Hinzufügen](/help/assets/icons/AddCircle.svg) verfügbar, durch das Sie jederzeit leere Bedienfelder hinzufügen können.
@@ -56,7 +67,7 @@ Das standardmäßige Startbedienfeld ist das Bedienfeld [!UICONTROL Freiform]. S
 
 ## Erstellen eines Bedienfelds
 
-So erstellen Sie ein Bedienfeld:
+So erstellen Sie ein Panel:
 
 * Ziehen Sie ein Bedienfeld aus dem linken Bedienfeld **[!UICONTROL Bedienfelder]** auf Ihre Arbeitsfläche.
 * Wählen Sie ein Bedienfeld aus dem Bedienfeld [Leer](blank-panel.md) aus.
@@ -125,7 +136,7 @@ Wenn Sie ein neues Panel erstellen, basiert die Standarddatenansicht auf der Dat
 
 ## Kalender
 
-Der Panel-Kalender steuert den Reporting-Datumsbereich für Tabellen und Visualisierungen innerhalb eines Panels.
+Der Kalender eines Panels steuert den Reporting-Datumsbereich für Tabellen und Visualisierungen innerhalb eines Panels.
 
 >[!NOTE]
 >
@@ -150,10 +161,10 @@ Alternativ können Sie eine **[!UICONTROL Voreinstellung]** aus dem Dropdown-Men
 
      1. Wählen Sie **[!UICONTROL Anfang von]**, **[!UICONTROL Ende von]** oder **[!UICONTROL Festgelegter Tag]** aus.
      1. Wenn Sie **[!UICONTROL Anfang von]** oder **[!UICONTROL Ende von]** ausgewählt haben, können Sie einen vollständigen Ausdruck erstellen. Beispiel: **[!UICONTROL Ende von]** **[!UICONTROL Aktuelles Jahr]** **[!UICONTROL plus]** `1` **[!UICONTROL Tag]**. Wählen Sie den entsprechenden Wert für jeden einzelnen Teil des Ausdrucks aus.
-        * Wählen Sie einen Wert für den aktuellen Zeitraum aus, Beispiel: **[!UICONTROL aktuelles Jahr]**.
+        * Wählen Sie einen Wert für „aktuell“ aus. Beispiel: **[!UICONTROL aktuelles Jahr]**.
         * Wählen Sie einen Wert für die zusätzliche Berechnung aus, z. B. **[!UICONTROL plus]**.
         * Wenn Sie eine zusätzliche Berechnung angegeben haben, geben Sie einen Wert an. Zum Beispiel `1`.
-        * Wenn Sie eine zusätzliche Berechnung angegeben haben, wählen Sie den Zeitraum aus, der für die Berechnung verwendet werden soll, Beispiel: **[!UICONTROL Tag]**.
+        * Wenn Sie eine zusätzliche Berechnung angegeben haben, wählen Sie den Zeitraum aus, der für die Berechnung verwendet werden soll. Beispiel: **[!UICONTROL Tag]**.
 
      Wählen Sie **[!UICONTROL Details ausblenden]** aus, um die Details für die Berechnung rollierender Termine auszublenden.
 
@@ -308,7 +319,7 @@ Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dynamische Dro
 
 ## Kontextmenü
 
-Weitere Funktionen für ein Panel sind über ein Kontextmenü (Rechtsklick) auf der Panel-Überschrift verfügbar.
+Weitere Funktionen für ein Panel sind über ein Kontextmenü (per Rechtsklick) auf der Panel-Kopfzeile verfügbar.
 
 ![Die Rechtsklick-Optionen für eine Panel-Überschrift.](assets/right-click-menu.png)
 
@@ -318,15 +329,15 @@ Die folgenden Optionen sind verfügbar:
 | --- | --- |
 | **[!UICONTROL Kopiertes Panel einfügen]** | Ermöglicht es Ihnen, ein kopiertes Panel an einer anderen Stelle innerhalb des Projekts oder in ein ganz anderes Projekt einzufügen. |
 | **[!UICONTROL Kopierte Visualisierung einfügen]** | Fügen Sie eine kopierte Visualisierung an einer anderen Stelle innerhalb des Panels oder des Projekts oder in ein ganz anderes Projekt ein. |
-| **[!UICONTROL Datenansicht auf alle Panels anwenden]** | Wenden Sie die Datenansicht für dieses Panel auf alle anderen Panels im Projekt an. |
+| **[!UICONTROL Datenansicht auf alle Panels anwenden]** | Wenden Sie die Datenansicht dieses Panels auf alle anderen Panels im Projekt an. |
 | **[!UICONTROL Panel kopieren]** | Kopieren Sie ein Panel, sodass Sie es an einer anderen Stelle innerhalb des Projekts oder in ein anderes Projekt einfügen können. |
 | **[!UICONTROL Panel duplizieren]** | Fertigt ein exaktes Duplikat des aktuellen Panels an, das Sie dann bearbeiten können. |
-| **[!UICONTROL Alle Bedienfelder reduzieren]** | Ermöglicht es Ihnen, alle Projektbedienfelder zu reduzieren. |
-| **[!UICONTROL Alle Bedienfelder erweitern]** | Ermöglicht es Ihnen, alle Projektbedienfelder zu erweitern. |
-| **[!UICONTROL Alle Visualisierungen im Bedienfeld reduzieren]** | Ermöglicht es Ihnen, alle Visualisierungen im aktuellen Bedienfeld zu reduzieren. |
-| **[!UICONTROL Alle Visualisierungen im Bedienfeld erweitern]** | Ermöglicht es Ihnen, alle Visualisierungen im aktuellen Bedienfeld zu erweitern. |
-| **[!UICONTROL Beschreibung bearbeiten]** | Hiermit können Sie einen Text zur Beschreibung des Bedienfelds hinzufügen (oder bearbeiten). |
-| **[!UICONTROL Bereichslink abrufen]** | Ermöglicht es Ihnen, Personen zu einem bestimmten Bedienfeld innerhalb eines Projekts zu leiten. Wenn der Link ausgewählt wird, muss sich die empfangende Person anmelden, bevor sie genau zu dem Bedienfeld weitergeleitet wird, zu dem eine Verknüpfung besteht. |
+| **[!UICONTROL Alle Bedienfelder reduzieren]** | Reduzieren Sie alle Projekt-Panels. |
+| **[!UICONTROL Alle Bedienfelder erweitern]** | Erweitern Sie alle Projekt-Panels. |
+| **[!UICONTROL Alle Visualisierungen im Bedienfeld reduzieren]** | Reduzieren Sie alle Visualisierungen im aktuellen Panel. |
+| **[!UICONTROL Alle Visualisierungen im Bedienfeld erweitern]** | Erweitern Sie alle Visualisierungen im aktuellen Panel. |
+| **[!UICONTROL Beschreibung bearbeiten]** | Fügen Sie eine Textbeschreibung für das Panel hinzu oder bearbeiten Sie sie. |
+| **[!UICONTROL Bereichslink abrufen]** | Leiten Sie eine Person zu einem bestimmten Panel innerhalb eines Projekts. Wenn der Link ausgewählt wird, muss sich die empfangende Person anmelden, bevor sie genau zu dem Bedienfeld weitergeleitet wird, zu dem eine Verknüpfung besteht. |
 
 ## Konfiguration
 

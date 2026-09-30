@@ -2,17 +2,25 @@
 title: Analyse der Unterereignisse
 description: Erfahren Sie, wie Sie mit der Analyse von Unterereignissen einzelne Produkte oder andere Container innerhalb eines Ereignisses in Customer Journey Analytics filtern können, wodurch Attributions-Anzapfungen in Produktberichten vermieden werden.
 feature: Segmentation
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: 8a5568b3b6136bc3f8b507f551fbb6d169e4b88a
+    internal-label: Segment Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 680
+source-wordcount: '680'
 ht-degree: 8%
-
 ---
-
 # Analyse der Unterereignisse
 
 Mit der Analyse von Unterereignissen können Sie Ereignisdaten auf einer Ebene analysieren, die detaillierter ist als die Ereignisebene. Anstatt nach ganzen Ereignissen zu filtern, können Sie innerhalb von Ereignissen nach einzelnen Containern segmentieren. Beispiel:
