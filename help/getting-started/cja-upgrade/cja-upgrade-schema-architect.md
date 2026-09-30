@@ -144,7 +144,7 @@ Einige Unternehmen müssen beim Upgrade auf Customer Journey Analytics weiterhin
 
 1. **Verwenden von XDM-Feldpfaden, die Adobe Analytics erkennt und automatisch zuordnet:** Wenn Sie erkannte XDM-Felder über die Edge Network an Adobe Analytics senden, werden sie [&#x200B; automatisch &#x200B;](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/xdm-var-mapping).
 1. **Verwenden benutzerdefinierter XDM-Felder für organisationsspezifische Konzepte:** Alle XDM-Felder, die nicht automatisch einer Analytics-Variablen zugeordnet sind, werden als [Kontextdatenvariablen](https://experienceleague.adobe.com/de/docs/analytics/implementation/vars/page-vars/contextdata) in Adobe Analytics weitergeleitet.
-1. **Verwenden Sie Adobe Analytics-Verarbeitungsregeln, um diese Kontextdatenvariablen Props/eVars zuzuordnen:** [Verarbeitungsregeln](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) ermöglichen es Ihnen letztendlich, jedes benutzerdefinierte XDM-Feld einer beliebigen eVar oder Eigenschaft zuzuordnen. Dieses Konzept unterstützt die Paritätsberichterstattung in Adobe Analytics, wobei Ihr Schema sauber und auf Customer Journey Analytics zentriert bleibt.
+1. **Verwenden Sie Adobe Analytics-Verarbeitungsregeln, um diese Kontextdatenvariablen Props/eVars zuzuordnen:** [Verarbeitungsregeln](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) ermöglichen es Ihnen letztendlich, jedes benutzerdefinierte XDM-Feld einer beliebigen eVar oder Eigenschaft zuzuordnen. Dieses Konzept unterstützt die Paritätsberichterstattung in Adobe Analytics, wobei Ihr Schema sauber und auf Customer Journey Analytics zentriert bleibt.
 
 ## Identifizieren von Stakeholdern und Definieren der Eigentümerschaft
 
@@ -162,7 +162,7 @@ Definieren Sie einen eindeutigen Verantwortlichen für Schemaänderungen. Ein st
 Das Schema-Design sollte die Datenschutz- und Governance-Erwartungen gemäß den Datenschutzrichtlinien Ihres Unternehmens widerspiegeln. Beachten Sie beim Entwickeln Ihres Schemas die folgenden Punkte:
 
 * Nur das erfassen, was Sie zur Unterstützung definierter Anwendungsfälle benötigen.
-* Stellen Sie sicher, dass die Anforderungen an Einverständnis und Datennutzung in Ihrer Sammlungsstrategie berücksichtigt werden. Weitere [&#x200B; finden Sie unter „Verwenden der Web-SDK zur Verarbeitung &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk) Kundeneinverständnisdaten .
+* Stellen Sie sicher, dass die Anforderungen an Einverständnis und Datennutzung in Ihrer Sammlungsstrategie berücksichtigt werden. Weitere [&#x200B; finden Sie unter „Verwenden der Web-SDK zur Verarbeitung &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/landing/governance-privacy-security/consent/sdk) Kundeneinverständnisdaten .
 * Beachten Sie, wie sensible Felder in den Governance-Tools von Adobe Experience Platform gekennzeichnet und gesteuert werden. Weitere Informationen finden Sie unter [Adobe Customer Journey Analytics &#x200B;](/help/privacy/privacy-overview.md) Data Governance.
 
 ## Nächste Schritte
