@@ -80,7 +80,7 @@ In der Experience Platform-Benutzeroberfläche:
 
 ### Erstellen eines profilaktivierten Datensatzes
 
-Sie müssen einen Datensatz basierend auf dem kernbasierten Schema **[!UICONTROL XDM Individual Profile]** erstellen. Sie können dieses auf dem Kern basierende individuelle XDM-Profil nicht als Schema auswählen, wenn Sie einen Datensatz in der Experience Platform-Benutzeroberfläche erstellen. Verwenden Sie stattdessen die [Catalog Service-API, um einen Datensatz ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/create#create-a-dataset) Grundlage des `_xdm.context.profile__union`-Schemas zu erstellen.
+Sie müssen einen Datensatz basierend auf dem kernbasierten Schema **[!UICONTROL XDM Individual Profile]** erstellen. Sie können dieses auf dem Kern basierende individuelle XDM-Profil nicht als Schema auswählen, wenn Sie einen Datensatz in der Experience Platform-Benutzeroberfläche erstellen. Verwenden Sie stattdessen die [Catalog Service-API, um einen Datensatz &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/create#create-a-dataset) Grundlage des `_xdm.context.profile__union`-Schemas zu erstellen.
 
 +++ Erstellen einer Datensatzanfrage
 
@@ -194,7 +194,7 @@ Dabei wird
 
 +++
 
-Verwenden Sie die [Segmentierungs-Service-API, um den Status des Exportvorgangs zu ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#get).
+Verwenden Sie die [Segmentierungs-Service-API, um den Status des Exportvorgangs zu &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#get).
 
 +++ Abrufen einer bestimmten Exportvorgangsanfrage
 
@@ -354,7 +354,7 @@ In der Experience Platform-Benutzeroberfläche:
 
 1. Wählen Sie **[!UICONTROL Daten-Management]** > ![Schema](/help/assets/icons2/Schema.svg) **[!UICONTROL Schemas]** aus.
 1. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Schema erstellen]**. Wählen **[!UICONTROL Standard]** aus dem Dropdown-Menü aus.
-1. Wählen Sie **[!UICONTROL Dialogfeld**[!UICONTROL  Schema erstellen ]**die Option „Manuell]** aus und verwenden Sie **[!UICONTROL Auswählen]**, um fortzufahren.
+1. Wählen Sie **[!UICONTROL Dialogfeld**&#x200B;[!UICONTROL &#x200B; Schema erstellen &#x200B;]&#x200B;**die Option „Manuell]** aus und verwenden Sie **[!UICONTROL Auswählen]**, um fortzufahren.
 1. Gehen Sie im **[!UICONTROL Schema erstellen]** im Schritt **[!UICONTROL Klasse auswählen]** folgendermaßen vor:
    1. Wählen Sie **[!UICONTROL Individuelles Profil]** aus.
    1. Klicken Sie auf **[!UICONTROL Weiter]**.
@@ -363,7 +363,7 @@ In der Experience Platform-Benutzeroberfläche:
    1. (Optional) Geben Sie eine &quot;**[!UICONTROL &quot;]**.
    1. Wählen Sie **[!UICONTROL Beenden]** aus.
 1. Richten Sie Ihr Schema so ein, dass es eine benutzerdefinierte Feldergruppe (mit dem Namen **[!UICONTROL Zielgruppenmitgliedschaft]**) enthält, die zwei Felder mit dem Namen **[!UICONTROL audienceMembershipId]** und **[!UICONTROL audienceMembershipName]** enthält.
-1. Stellen Sie sicher **[!UICONTROL dass das Feld]** personID) eine **[!UICONTROL Identität]** **[!UICONTROL Primäre Identität]** ist und **[!UICONTROL email]** als I**[!UICONTROL identity-Namespace]** hat.
+1. Stellen Sie sicher **[!UICONTROL dass das Feld]** personID) eine **[!UICONTROL Identität]** **[!UICONTROL Primäre Identität]** ist und **[!UICONTROL email]** als I&#x200B;**[!UICONTROL identity-Namespace]** hat.
 
    ![Segment für den Export](assets/segment-for-export.png)
 
@@ -508,6 +508,6 @@ You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `pe
 * Sie sollten diesen Prozess regelmäßig durchführen, damit die Zielgruppendaten in Customer Journey Analytics ständig aktualisiert werden.
 * Sie können mehrere Zielgruppen in eine Customer Journey Analytics-Verbindung importieren. Dies erhöht zwar die Komplexität des Prozesses, es ist jedoch möglich. Damit dies funktioniert, müssen Sie einige Änderungen am obigen Prozess vornehmen:
   1. Führen Sie diesen Prozess für jede gewünschte Zielgruppe in Ihrer Zielgruppensammlung innerhalb des Echtzeit-Kundenprofis aus.
-  1. Customer Journey Analytics unterstützt Arrays/Objekt-Arrays in Profildatensätzen. Es [ sich, für die `audienceMembershipId` oder `audienceMembershipIdName` ein ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=de)Array von Objekten“ zu verwenden.
+  1. Customer Journey Analytics unterstützt Arrays/Objekt-Arrays in Profildatensätzen. Es [&#x200B; sich, für die `audienceMembershipId` oder `audienceMembershipIdName` ein &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=de)Array von Objekten“ zu verwenden.
   1. Erstellen Sie in Ihrer Datenansicht eine neue Dimension mithilfe der Teilzeichenfolgenumwandlung des `audienceMembershipId`-Felds, um die Zeichenfolge mit kommagetrennten Werten in ein Array zu konvertieren. HINWEIS: Derzeit besteht für das Array eine Beschränkung von 10 Werten.
   1. Jetzt können Sie in Customer Journey Analytics Workspace Berichte zu diesem neuen `audienceMembershipIds` erstellen.

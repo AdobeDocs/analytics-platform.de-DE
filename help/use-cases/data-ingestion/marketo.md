@@ -77,7 +77,7 @@ Wenn Sie Marketo-Aktivitätsdaten in Customer Journey Analytics aufnehmen möcht
 
 Marketo-Daten enthalten nativ keine ECID, das ECID-Feld kann jedoch als benutzerdefiniertes Feld hinzugefügt werden, das mit der `munchkin.js`-Bibliothek erfasst wird. Durch diese Hinzufügung wird eine gemeinsame Kennung zwischen Marketo und vorhandenen Customer Journey Analytics-Web-Daten erstellt.
 
-Um Marketo- und Customer Journey Analytics-Daten zu verknüpfen[ verwenden Sie das ](/help/stitching/gbs.md)-basierte Stitching für die entsprechenden Datensätze. Je nach Implementierung können Sie mehrere verfügbare IDs verwenden:
+Um Marketo- und Customer Journey Analytics-Daten zu verknüpfen[&#x200B; verwenden Sie das &#x200B;](/help/stitching/gbs.md)-basierte Stitching für die entsprechenden Datensätze. Je nach Implementierung können Sie mehrere verfügbare IDs verwenden:
 
 * ECID, bereitgestellt vom Experience Platform Identity Service
 * E-Mail
