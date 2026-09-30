@@ -8,21 +8,24 @@ autotag-review: '2026-05-19T09:35:22.411Z'
 TQID: 'https://experienceleague.adobe.com/La2B-Yvc3-OHQsgmr5EPILZQBcm6zKCAAcKPLZ3PbIQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases, Use cases (CJA)
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: 6db1cfff1578b11a62710382aed783e56996342d
 workflow-type: tm+mt
-source-wordcount: 1390
+source-wordcount: '1390'
 ht-degree: 55%
-
 ---
-
 # Kombinieren von Report Suites mit verschiedenen Schemata
 
 Der [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) bringt Report Suite-Daten aus Adobe Analytics in die Adobe Experience Platform zur Verwendung durch Adobe Experience Platform-Programme wie Real-time Customer Data Platform und Customer Journey Analytics (Customer Journey Analytics). Jede Report Suite, die in Adobe Experience Platform importiert wird, wird als Datenfluss der individuellen Quellverbindung konfiguriert, und jeder Datenfluss gelangt als Datensatz in den Data Lake von Adobe Experience Platform. Der Analytics-Quell-Connector erstellt einen Datensatz pro Report Suite.

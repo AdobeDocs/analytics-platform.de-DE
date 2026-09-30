@@ -9,21 +9,25 @@ role: User
 TQID: https://experienceleague.adobe.com/GTRg4PodKPvehRu0CwAq8QTMUmoOtY2qIU1kHzmwHRI
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 6db1cfff1578b11a62710382aed783e56996342d
 workflow-type: tm+mt
-source-wordcount: 615
+source-wordcount: '615'
 ht-degree: 57%
-
 ---
-
 # Dimensionen aufschlüsseln
 
 Sie können Ihre Daten in Analysis Workspace für Ihre spezifischen Anforderungen unbegrenzt aufschlüsseln. Erstellen Sie Abfragen mithilfe relevanter Metriken, Dimensionen, Segmente, Zeitachsen und anderer Aufschlüsselungswerte für die Analyse.
@@ -38,13 +42,13 @@ Sie können Metriken nach Dimensionselementen oder Zielgruppensegmenten über au
 
 >[!NOTE]
 >
->Die Anzahl der in der Tabelle angezeigten Aufschlüsselungen ist auf 400 beschränkt. Dieses Limit erhöht sich beim Exportieren von Aufschlüsselungen.
+>Die Anzahl der Aufschlüsselungen, die in der Tabelle angezeigt werden, ist auf 400 beschränkt. Dieses Limit erhöht sich beim Exportieren von Aufschlüsselungen.
 
 ## Aufschlüsselung nach Position
 
 Standardmäßig sind Aufschlüsselungen an statische Zeilenelemente gebunden. Angenommen, Sie schlüsseln die drei oberen Elemente der Dimension „Seite“ (Startseite, Suchergebnisse, Checkout) nach Marketing-Kanälen auf. Dann verlassen Sie das Projekt und kehren zwei Wochen später zurück. Beim erneuten Öffnen des Projekts haben sich die drei oberen Seiten geändert, und jetzt sind Startseite, Suchergebnisse und Checkout stattdessen die oberen Seiten vier bis sechs. Standardmäßig werden Ihre Aufschlüsselungen der Marketing-Kanäle weiterhin unter „Startseite“, „Suchergebnisse“ und „Checkout“ angezeigt, auch wenn sie sich jetzt in den Zeilen 4–6 befinden.
 
-Im Gegensatz dazu werden **Aufschlüsselung nach Position** immer die drei obersten Elemente aufgeschlüsselt, unabhängig davon, was diese Elemente sind. Wenn Sie auf das Beispiel zurückgreifen, werden die Aufschlüsselungen des Marketing-Kanals beim erneuten Öffnen des Projekts an die drei obersten Seiten der Tabelle gebunden. Und nicht an „Startseite“, „Suchergebnisse“ und „Checkout“, die sich jetzt in den Zeilen 4–6 befinden. Siehe [Zeileneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) wie Sie diese Einstellung konfigurieren.
+Im Gegensatz dazu werden **Aufschlüsselung nach Position** immer die drei obersten Elemente aufgeschlüsselt, unabhängig davon, was diese Elemente sind. Wie im Beispiel beschrieben, werden beim erneuten Öffnen des Projekts die Aufschlüsselungen des Marketing-Kanals an die drei Top-Seiten in der Tabelle gebunden. Und nicht an „Startseite“, „Suchergebnisse“ und „Checkout“, die sich jetzt in den Zeilen 4–6 befinden. Siehe [Zeileneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) wie Sie diese Einstellung konfigurieren.
 
 ## Attributionsmodelle auf Aufschlüsselungen anwenden
 
@@ -58,7 +62,7 @@ Dies ist das erwartete Verhalten, wenn Attributionsmodelle auf Aufschlüsselunge
 
 * Wenn Sie eine Aufschlüsselung hinzufügen, nachdem eine Attribution angewendet wurde, wird für die hinzugefügte Aufschlüsselung der Standardwert verwendet (wenn diese Dimension einen Standardwert hat). Andernfalls wird die Aufschlüsselung aus der übergeordneten Spalte verwendet. Einige Dimensionen haben eine Standardzuordnung. Beispielsweise verwenden Zeitdimensionen und Referrer „Same Touch“. Die Dimension „Produkt“ verwendet „Last Touch“. Andere Dimensionen haben keinen Standardwert und verwenden die Zuordnung der übergeordneten Spalte.
 
-* Wenn im Spaltenbaum bereits Zuordnungen vorhanden sind, wirkt sich eine Änderung der Zuordnung nur auf diejenige aus, die Sie gerade bearbeiten.
+* Wenn im Spaltenbaum bereits Attributionen vorhanden sind, wirkt sich eine Änderung der Attribution nur auf diejenige aus, die Sie gerade bearbeiten.
 
 >[!BEGINSHADEBOX]
 
