@@ -186,5 +186,5 @@ Validieren Sie die Implementierung anhand der folgenden Checkliste.
 
 >[!MORELIKETHIS]
 >
->[Quell-Connector für Meta Ads](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
+>[Quell-Connector für Meta Ads](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/advertising/meta-ads)
 >
