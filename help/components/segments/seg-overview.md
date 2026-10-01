@@ -7,25 +7,32 @@ role: User
 TQID: https://experienceleague.adobe.com/omsyiimc8b3EsGvJYb0V-jHqOxUp-8S7fFQ8dXUGUxs
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 1494
+source-wordcount: '1496'
 ht-degree: 99%
-
 ---
-
 # Überblick über die Segmentierung
 
 Mit Customer Journey Analytics können Sie leistungsstarke, zielgerichtete Zielgruppensegmente für Ihre Berichte erstellen, verwalten, freigeben und anwenden. Mit Segmenten können Sie Teilmengen von Personen, Sitzungen oder Ereignissen anhand von Merkmalen oder Interaktionen identifizieren. Segmente sind als kodifizierte Zielgruppenerkenntnisse konzipiert, die Sie für Ihre speziellen Anforderungen erstellen und dann überprüfen, bearbeiten und für andere Team-Mitglieder freigeben können.
@@ -34,7 +41,7 @@ Segmente können auf Folgendem basieren:
 
 - Attributen (Browser-Typ, Gerät, Anzahl der Besuche, Land, Geschlecht),
 - Interaktionen (Kampagnen, Keyword-Suche, Suchmaschine),
-- Ausstiegen und Eintritten (Personen aus Facebook, einer definierten Landingpage, Referrer Domain, Geofence-Ereignis),
+- Ausstiege und Eintritte (Personen aus Facebook, einer definierten Landingpage, Referrer-Domain, Geofence-Ereignis),
 - benutzerdefinierten Variablen (Formularfeld, definierten Kategorien, Kunden-ID),
 - und anderen Kriterien.
 
@@ -44,12 +51,12 @@ Segmente verwalten Sie wiederum über den [Segment-Manager](seg-manage.md).
 
 ## Planen von Segmenten
 
-Insbesondere für Admins verbessert die ordnungsgemäße Planung von Segmenten die Wahrscheinlichkeit, dass die Segmente verwendet werden. Beachten Sie beim Plan von Segmenten Folgendes:
+Insbesondere für Admins verbessert die ordnungsgemäße Planung von Segmenten die Wahrscheinlichkeit, dass die Segmente verwendet werden. Beachten Sie bei der Planung von Segmenten Folgendes:
 
 - **Zielgruppe**: Wer wird Ihre Segmente verwenden? Achten Sie darauf, eine gute Segmentbeschreibung anzugeben, damit die Zielgruppe Folgendes versteht:
-   - Wofür ist dieses Segment nützlich?
+  - Wofür ist dieses Segment nützlich?
 
-   - Wann sollte ich dieses Segment verwenden?
+  - Wann sollte ich dieses Segment verwenden?
 
 - **Umfang**: Welcher [Segment-Container](#segment-containers) repräsentiert die gewünschten Daten am besten? Benutzen Sie den kleinstmöglichen Container.
 
@@ -78,7 +85,7 @@ Mit regulären Segmenten können Sie Daten (Personen, Sitzungen, Ereignisse) anh
 >
 >Sie müssen über das **Select**-Paket verfügen, um kanalübergreifende sequenzielle Segmente zu erstellen. Wenden Sie sich an Ihre Admins, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
 
-Mit sequenziellen Segmenten können Sie Daten (Personen, Sitzungen, Ereignisse) anhand der Navigation (Seitenansichten auf Ihrer Site, Interaktionen mit Szenen in Ihrer App oder Verwendung eines Menüs in einer Set-Top-Box) identifizieren. Durch sequenzielle Segmente können Sie beispielsweise erkennen, was einer Person gefällt und was sie meidet. Sie verwenden den logischen Operator „Dann“, um ein sequenzielles Segment zu definieren. Weitere Informationen finden Sie unter [Sequenzielle Segmente](seg-sequential-build.md).
+Mit sequenziellen Segmenten können Sie Daten (Personen, Sitzungen, Ereignisse) anhand der Navigation identifizieren (Seitenansichten auf Ihrer Website, Interaktionen mit Szenen in Ihrer mobilen App oder Verwendung eines Menüs in einer Set-Top-Box). Durch sequenzielle Segmente können Sie beispielsweise erkennen, was einer Person gefällt und was sie meidet. Sie verwenden den logischen Operator „Dann“, um ein sequenzielles Segment zu definieren. Weitere Informationen finden Sie unter [Sequenzielle Segmente](seg-sequential-build.md).
 
 
 <!--
@@ -97,18 +104,18 @@ Segmente basieren auf einer Hierarchie auf Personen-, Sitzungs- und Ereigniseben
 <table style="table-layout: fixed; border: none;" width="100%">
 
 <tr>
-<td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg"/> Person</td>
+<td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="/help/assets/icons/User.svg"/> Person</td>
 </tr>
 
 <tr>
 <td style="background-color: #E5E4E2;" width="200"></td>
-<td style="background-color: #D3D3D3;" colspan="2" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Visit_18_N.svg"/> Sitzung</td>
+<td style="background-color: #D3D3D3;" colspan="2" width="200" height="100"><img src="/help/assets/icons/Visit.svg"/> Sitzung</td>
 </tr>
 
 <tr>
 <td style="background-color: #E5E4E2;" width="200" height="100"></td>
 <td style="background-color: #D3D3D3;" width="200" height="100"></td>
-<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Ereignis</td>
+<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="/help/assets/icons/Events.svg"/> Ereignis</td>
 </tr>
 </table>
 
@@ -121,7 +128,7 @@ Segmente basieren auf einer Hierarchie auf Personen-, Sitzungs- und Ereigniseben
 > - Der Container **Ereignis** wird in Adobe Analytics als Container vom Typ **Treffer** bezeichnet.
 >
 
-Ein Segment legt Bedingungen fest, um Personen, Sitzungen oder Ereignisse basierend auf Bedingungen zu segmentieren. Bedingungen zum Segmentieren von Personen basieren beispielsweise auf Personenmerkmalen und Navigationseigenschaften. Um die Daten weiter aufzuschlüsseln, können Sie bestimmte Sitzungen, Seitenansichtsereignisse, Tipp-Gesten auf Bildschirmen, Menüoptionen in einer Set-top-Box usw. segmentieren. Sie können auch nach Attributen segmentieren, die Sie aus einem CRM- oder Treuesystem aufgenommen haben. Der [Segment Builder](/help/components/segments/seg-builder.md) bietet eine einfache Benutzeroberfläche zum Erstellen dieser Teilmengen und zum Anwenden von Bedingungen in verschachtelten hierarchische Personen-, Sitzungs- oder Ereignis-Containern.
+Ein Segment legt Kriterien fest, um Personen, Sitzungen oder Ereignisse zu segmentieren. Bedingungen zum Segmentieren von Personen basieren beispielsweise auf Personenmerkmalen und Navigationseigenschaften. Um die Daten weiter aufzuschlüsseln, können Sie bestimmte Sitzungen, Seitenansichtsereignisse, Tipp-Gesten auf Bildschirmen, Menüoptionen in einer Set-top-Box usw. segmentieren. Sie können auch nach Attributen segmentieren, die Sie aus einem CRM- oder Treuesystem importiert haben. Der [Segment Builder](/help/components/segments/seg-builder.md) bietet eine einfache Benutzeroberfläche zum Erstellen dieser Teilmengen und zum Anwenden von Bedingungen in verschachtelten hierarchische Personen-, Sitzungs- oder Ereignis-Containern.
 
 Die im [Segment Builder](/help/components/segments/seg-builder.md) verwendete Container-Architektur definiert „Person“ als den äußersten Container. Dieser Container enthält übergreifende Daten, die für die Person über Sitzungen und Ereignisse wie Seitenansichten, Bildschirme für Apps oder Menübildschirme in einer Set-top-Box hinweg spezifisch sind. Mit dem verschachtelten Container „Sitzung“ können Sie Regeln festlegen, um die Personendaten auf der Grundlage von Sitzungen aufzuschlüsseln. Mit dem verschachtelten Container „Ereignis“ können Sie Informationen zu Personen auf Grundlage einzelner Interaktionen aufschlüsseln. Jeder Container ermöglicht Berichte über den Verlauf einer Person, nach Sitzung aufgeschlüsselte Interaktionen oder aufgeschlüsselte einzelne Ereignisse.
 
@@ -131,28 +138,28 @@ Der Container „Person“ enthält sämtliche Sitzungen und Ereignisse für Per
 
 - Allen Personen, die die Seite mit dem Namen `Checkout` besucht haben
 - Allen Sitzungen für diese Personen
-- Allen Ereignisdaten für diese Personen
+- Alle Ereignisdaten für diese Personen.
 
-Da es sich um den am breitesten definierten Container handelt, liefern Berichte, die auf der Ebene des Besucher-Containers erstellt werden, Ereignisse und Sitzungen über alle Personen hinweg, die sich für das Segment qualifizieren. Der Personen-Container ändert sich auf der Grundlage der definierten Datumsbereiche am wahrscheinlichsten.
+Da es sich um den am breitesten definierten Container handelt, liefern Berichte, die auf der Ebene des Containers „Person“ erstellt werden, Ereignisse und Sitzungen für alle Personen, die sich für das Segment qualifizieren. Der Personen-Container ändert sich auf der Grundlage der definierten Datumsbereiche am wahrscheinlichsten.
 Personen-Container können Werte enthalten, die auf dem Gesamtverlauf einer Person basieren:
 
-- Tage bis Erstkauf
-- Ursprüngliche Einstiegsseite oder Startbildschirm der App
+- Tage bis zum ersten Kauf.
+- Ursprüngliche Einstiegsseite oder Startseite der mobilen App.
 - Ursprüngliche Referrer Domains
 
 ### Sitzungs-Container
 
-Mit dem Container „Sitzung“ können Seiteninteraktionen oder Interkationen mit der App, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden. Der Container „Besuch“ ist der am häufigsten verwendete Container, da er das Verhalten für die gesamte Sssitzung erfasst, sobald die Regel erfüllt ist. Mit dem Container „Sitzung“ können Sie außerdem definieren, welche Sitzungen beim Erstellen und Anwenden eines Segments ein- oder ausgeschlossen werden sollen.  Wenn Sie ein Segment mit einer einfachen Bedingung wie `Page Name equals Checkout` definieren, wird der Container „Sitzung“ zu aufgelöst:
+Mit dem Container „Sitzung“ können Seiteninteraktionen oder Interaktionen mit der mobilen App, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden. Der Container „Sitzung“ ist der am häufigsten verwendete Container, da er das Verhalten für die gesamte Sitzung erfasst, sobald die Regel erfüllt ist. Mit dem Container „Sitzung“ können Sie außerdem definieren, welche Sitzungen beim Erstellen und Anwenden eines Segments ein- oder ausgeschlossen werden sollen.  Wenn Sie ein Segment mit einer einfachen Bedingung wie `Page Name equals Checkout` definieren, wird der Container „Sitzung“ zu aufgelöst:
 
 - Allen Sitzungen, in denen eine Seite mit dem Namen `Checkout` besucht wird
-- Allen Ereignisdaten für diese Sitzungen
+- Alle Ereignisdaten für diese Sitzungen.
 
 Der Container „Sitzung“ kann Ihnen bei der Beantwortung der folgenden Fragen helfen:
 
 - Wie viele Sitzungen umfassten sowohl Web- als auch Callcenter-Datenquellen?
 - Welche Seiten haben zu einer erfolgreichen Konversion in einem Verkauf beigetragen?
 
-Sitzungs-Container enthalten Werte, die auf den Ereignissen pro Sitzung basieren:
+Container „Sitzung“ enthalten Werte, die auf den Ereignissen pro Sitzung basieren:
 
 - Sitzungstyp
 - Einstiegsseite
@@ -164,7 +171,7 @@ Mit Datenansichten in Customer Journey Analytics können Sie festlegen, wie lang
 
 ### Ereignis-Container
 
-Der Ereignis-Container definiert, welche Seiten-, App- oder anderen Ereignisse in einem Segment eingeschlossen oder davon ausgeschlossen werden sollen. Er ist der engste verfügbare Container. Damit können Sie bestimmte Klicks, Seitenansichten und Tippvorgänge auf eine Schaltfläche in einer App identifizieren, wenn eine Bedingung erfüllt ist. Mit dem Ereignis-Container können Sie einen einzelnen Trackingcode anzeigen oder das Verhalten innerhalb eines bestimmten Bereichs Ihrer App isolieren. Sie können auch einen bestimmten Wert erkennen, wenn eine Aktion stattfindet, z. B. den Marketing-Kanal, wenn etwas bestellt wurde. Wenn Sie ein Segment mit einer einfachen Bedingung wie `Page Name equals Checkout` definieren, wird der Ereignis-Container zu Folgendem aufgelöst:
+Der Ereignis-Container definiert, welche Seiten-, App- oder anderen Ereignisse in einem Segment eingeschlossen oder davon ausgeschlossen werden sollen. Er ist der engste verfügbare Container. Damit können Sie bestimmte Klicks, Seitenansichten und Tippvorgänge auf eine Schaltfläche in einer App identifizieren, wenn eine Bedingung erfüllt ist. Mit dem Ereignis-Container können Sie einen einzelnen Trackingcode anzeigen oder das Verhalten innerhalb eines bestimmten Bereichs Ihrer App isolieren. Sie können auch einen bestimmten Wert ermitteln, wenn eine Aktion stattfindet, z. B. den Marketing-Kanal, über den eine Bestellung aufgegeben wurde. Wenn Sie ein Segment mit einer einfachen Bedingung wie `Page Name equals Checkout` definieren, wird der Ereignis-Container zu Folgendem aufgelöst:
 
 - Allen Seitenansichtsereignissen, bei denen der Seitenname `Checkout` entspricht
 
@@ -186,7 +193,7 @@ Wenn Sie Zugriff auf die [Customer Journey Analytics B2B Edition](/help/getting-
 
 ### Container „Logische Gruppe“
 
-„Logische Gruppe“ ermöglicht es Ihnen, Bedingungen in einem einzigen sequenziellen Segment-Checkpoint zu gruppieren. Als Teil der Sequenz wird die Logik, die in dem Container [!UICONTROL Logische Gruppe] definiert ist, nach einem vorherigen sequenziellen Checkpoint und vor einem nachfolgenden sequenziellen Checkpoint ausgewertet. Weitere Informationen finden Sie unter [Logische Gruppe](seg-sequential-build.md#logic-group).
+Die logische Gruppe ermöglicht es Ihnen, Bedingungen in einem einzigen sequenziellen Segment-Checkpoint zu gruppieren. Als Teil der Sequenz wird die Logik, die in dem Container [!UICONTROL Logische Gruppe] definiert ist, nach einem vorherigen sequenziellen Checkpoint und vor einem nachfolgenden sequenziellen Checkpoint ausgewertet. Weitere Informationen finden Sie unter [Logische Gruppe](seg-sequential-build.md#logic-group).
 
 ### Verschachteln von Containern
 

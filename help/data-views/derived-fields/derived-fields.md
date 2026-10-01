@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '10602'
+source-wordcount: '10578'
 ht-degree: 98%
 ---
 # Abgeleitete Felder {#derived-fields}
@@ -877,10 +877,10 @@ Sie definieren ein abgeleitetes `Page Name (updated)`-Feld. Mit der Funktion [!U
 
 Die folgende zusätzliche Funktion ist in der Oberfläche „Regel klassifizieren“ verfügbar:
 
-- Um alle Tabellenwerte schnell zu löschen, wählen Sie ![Löschen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL Alle Tabellenwerte löschen]** aus.
-- Um eine CSV-Datei mit den Originalwerten für „Wenn die Werte gleich sind“ und neuen Werten für „Werte ersetzen durch“ hochzuladen, wählen Sie ![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL CSV hochladen]**.
-- Um eine Vorlage zum Erstellen einer CSV-Datei mit Originalwerten und neuen Werten zum Hochladen herunterzuladen, wählen Sie ![Herunterladen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL CSV-Vorlage herunterladen]** aus.
-- Um eine CSV-Datei mit allen Originalwerten und neuen Werten hochzuladen, die in der Oberfläche für Regeln angegeben sind, wählen Sie ![Download](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL CSV-Werte herunterladen]** aus.
+- Um alle Tabellenwerte schnell zu löschen, wählen Sie ![Löschen](/help/assets/icons/Erase.svg) **[!UICONTROL Alle Tabellenwerte löschen]** aus.
+- Um eine CSV-Datei mit den Originalwerten für „Wenn die Werte gleich sind“ und neuen Werten für „Werte ersetzen durch“ hochzuladen, wählen Sie ![CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL CSV hochladen]**.
+- Um eine Vorlage zum Erstellen einer CSV-Datei mit Originalwerten und neuen Werten zum Hochladen herunterzuladen, wählen Sie ![Herunterladen](/help/assets/icons/Download.svg) **[!UICONTROL CSV-Vorlage herunterladen]** aus.
+- Um eine CSV-Datei mit allen Originalwerten und neuen Werten hochzuladen, die in der Oberfläche für Regeln angegeben sind, wählen Sie ![Download](/help/assets/icons/Download.svg) **[!UICONTROL CSV-Werte herunterladen]** aus.
 
 
 +++

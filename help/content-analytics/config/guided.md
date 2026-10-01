@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '4806'
+source-wordcount: '4800'
 ht-degree: 56%
 ---
 
@@ -382,7 +382,7 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_include_experiences"
 >title="Erlebniserfassung und -definition"
->abstract="Wenn diese Option aktiviert ist, werden Erlebnisdaten erfasst und Erlebnisattribute generiert. Außerdem sind Erlebnisberichte verfügbar. <br><br/>Verwenden Sie ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Bearbeiten]**, um die Datenerfassungskonfiguration für Erlebnisse in der Tags-Eigenschaft zu ändern, die mit der aktuellen Konfiguration verknüpft ist."
+>abstract="Wenn diese Option aktiviert ist, werden Erlebnisdaten erfasst und Erlebnisattribute generiert. Außerdem sind Erlebnisberichte verfügbar. <br><br/>Verwenden Sie ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]**, um die Datenerfassungskonfiguration für Erlebnisse in der Tags-Eigenschaft zu ändern, die mit der aktuellen Konfiguration verknüpft ist."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"

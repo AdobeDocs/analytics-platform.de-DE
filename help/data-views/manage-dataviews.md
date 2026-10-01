@@ -9,24 +9,30 @@ autotag-review: '2026-05-19T10:45:24.919Z'
 TQID: 'https://experienceleague.adobe.com/fPYOLKGTjiZDeSWLRhvkywKht8Yoq4k54EOcazJw74M'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data management
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 933
-ht-degree: 12%
-
+source-wordcount: '915'
+ht-degree: 10%
 ---
-
 # Datenansichten verwalten
 
 
@@ -43,8 +49,8 @@ Die folgenden Spalten und Symbole sind in der Tabelle verfügbar:
 | Spalte oder Symbol | Beschreibung |
 | --- | --- |
 | **[!UICONTROL Name]** | Der Name der Datenansicht. |
-| ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Um Informationen zur Datenansicht anzuzeigen, wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) neben dem Namen der Datenansicht aus<br/>. In einem Popup-Fenster werden Details zur Datenansicht angezeigt. |
-| ![Mehr](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Wählen Sie ![Mehr](/help/assets/icons/More.svg) aus, um ein Kontextmenü zu öffnen. Sie können Folgendes auswählen<br/>![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]**, um [&#x200B; Datenansicht &#x200B;](#edit-data-views) bearbeiten.<br/>![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]**, um [eine Datenansicht zu kopieren](#copy-data-views).<br/>![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** um [Löschen](#delete-data-views) eine Datenansicht.<br/>![DateiCSV](/help/assets/icons/FileCSV.svg)**[!UICONTROL Exportieren in CSV]** zu [Exportieren der Datenansicht in eine CSV-Datei](#export-data-views-to-csv).<br/>![&#128279;](/help/assets/icons/AddCircle.svg)ProjektHinzufügen **[[!UICONTROL Erstellen eines neuen Workspace-Projekts]](#create-project-from-data-views) für die Datenansicht.<br/>**&#x200B;**<br/>![&#x200B; &#x200B;](/help/assets/icons/RemoveCircle.svg)**&#x200B;**&#x200B;Hinzufügen![](/help/assets/icons/ProjectAdd.svg)Für Data Insights Agentaktivieren, um eine Datenansicht für die Data Insights Agent zu aktivieren.&rbrack;** EntfernenCircleCircle&lbrack;DeaktivierenDeaktivieren Sie eine Datenansicht für die Data Insights Agent. |
+| ![Information](/help/assets/icons/InfoOutline.svg) | Um Informationen zur Datenansicht anzuzeigen, wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) neben dem Namen der Datenansicht aus<br/>. In einem Popup-Fenster werden Details zur Datenansicht angezeigt. |
+| ![Mehr](/help/assets/icons/More.svg) | Wählen Sie ![Mehr](/help/assets/icons/More.svg) aus, um ein Kontextmenü zu öffnen. Sie können Folgendes auswählen<br/>![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]**, um [&#x200B; Datenansicht &#x200B;](#edit-data-views) bearbeiten.<br/>![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]**, um [eine Datenansicht zu kopieren](#copy-data-views).<br/>![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** um [Löschen](#delete-data-views) eine Datenansicht.<br/>![DateiCSV](/help/assets/icons/FileCSV.svg)**[!UICONTROL Exportieren in CSV]** zu [Exportieren der Datenansicht in eine CSV-Datei](#export-data-views-to-csv).<br/>![&#128279;](/help/assets/icons/AddCircle.svg)ProjektHinzufügen **[[!UICONTROL Erstellen eines neuen Workspace-Projekts]](#create-project-from-data-views) für die Datenansicht.<br/>**&#x200B;**<br/>![&#x200B; &#x200B;](/help/assets/icons/RemoveCircle.svg)**&#x200B;**&#x200B;Hinzufügen![](/help/assets/icons/ProjectAdd.svg)Für Data Insights Agentaktivieren, um eine Datenansicht für die Data Insights Agent zu aktivieren.&rbrack;** EntfernenCircleCircle&lbrack;DeaktivierenDeaktivieren Sie eine Datenansicht für die Data Insights Agent. |
 | **[!UICONTROL Verbindung]** | Der Name der Verbindung, die der Datenansicht zugeordnet ist. |
 | **[!UICONTROL Sandbox]** | Der Name der Sandbox, die der Datenansicht zugeordnet ist. |
 | **[!UICONTROL Inhabende]** | Der Inhaber der Datenansicht. |
@@ -59,7 +65,7 @@ Um zu konfigurieren, welche Spalten in der Tabelle angezeigt werden sollen, wäh
 
 ## Datenansichten suchen
 
-Sie können mit dem Feld ![&#x200B; schnell nach einer &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) suchen.
+Sie können mit dem Feld ![&#x200B; schnell nach einer &#x200B;](/help/assets/icons/Search.svg) suchen.
 
 ## Datenansichten filtern
 

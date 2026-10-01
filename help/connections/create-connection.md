@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 6acb1ca076e28e8da4bbc1920837cea9216777e1
+source-git-commit: 91497f695a693fd15135dc5173e8a35537616e72
 workflow-type: tm+mt
-source-wordcount: '10738'
+source-wordcount: '10677'
 ht-degree: 89%
 ---
 # Erstellen oder Bearbeiten einer Verbindung {#create-or-edit-a-connection}
@@ -560,7 +560,7 @@ Sie können beim Erstellen oder Bearbeiten einer Verbindung einen oder mehrere E
 
    | Spalte | Beschreibung |
    |---|---|
-   | **[!UICONTROL Datensatz]** | Der Name des Datensatzes. Wählen Sie den Namen aus, um zum Datensatz in Experience Platform weitergeleitet zu werden. Wählen Sie ![Informationen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus, um ein Popup-Fenster mit weiteren Details zum Datensatz anzuzeigen. Sie können **[!UICONTROL In Platform bearbeiten]** auswählen, um den Datensatz direkt in Experience Platform zu bearbeiten. |
+   | **[!UICONTROL Datensatz]** | Der Name des Datensatzes. Wählen Sie den Namen aus, um zum Datensatz in Experience Platform weitergeleitet zu werden. Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup mit weiteren Details für den Datensatz anzuzeigen. Sie können **[!UICONTROL In Platform bearbeiten]** auswählen, um den Datensatz direkt in Experience Platform zu bearbeiten. |
    | **[!UICONTROL Typ des Datensatzes]** | Der Typ des Datensatzes: [Ereignis](#event-dataset), [Profil](#profile-dataset), [Suche](#lookup-dataset), [Zusammenfassung](#summary-dataset), [Ad hoc](#ad-hoc-dataset) oder [Relational](#relational-dataset). |
    | **[!UICONTROL Anzahl der Einträge]** | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
    | **[!UICONTROL Schema]** | Das Schema für den Datensatz. Wählen Sie den Namen aus, um zum Schema in Experience Platform weitergeleitet zu werden. |
@@ -568,10 +568,10 @@ Sie können beim Erstellen oder Bearbeiten einer Verbindung einen oder mehrere E
    | **[!UICONTROL Datensatz-ID]** | Die ID des Datensatzes. |
    | **[!UICONTROL Zuletzt aktualisiert]** | Der Zeitstempel für die letzte Aktualisierung des Datensatzes. |
 
-   * Um die für die Liste der Datensätze angezeigten Spalten zu ändern, wählen Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) aus und wählen Sie die Spalten aus, die im Dialogfeld [!UICONTROL Tabelle anpassen] angezeigt werden sollen.
-   * Um nach einem bestimmten Datensatz zu suchen, verwenden Sie das ![Suchfeld](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
-   * Um die ausgewählten Datensätze ein- oder auszublenden, wählen Sie ![Auswählen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg), **[!UICONTROL Ausgewählte ausblenden]** oder **[!UICONTROL Ausgewählte anzeigen]** aus.
-   * Um einen Datensatz aus der Liste der ausgewählten Datensätze zu entfernen, verwenden Sie ![Schließen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Um alle ausgewählten Datensätze zu entfernen, wählen Sie **[!UICONTROL Alle löschen]**.
+   * Um die für die Liste der Datensätze angezeigten Spalten zu ändern, wählen Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) aus und wählen Sie die Spalten aus, die im Dialogfeld [!UICONTROL Tabelle anpassen] angezeigt werden sollen.
+   * Um nach einem bestimmten Datensatz zu suchen, verwenden Sie das ![Suchfeld](/help/assets/icons/Search.svg).
+   * Um zwischen dem Anzeigen oder Ausblenden der ausgewählten Datensätze umzuschalten, wählen Sie ![SelectBoxAll](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL Hide selected]** oder **[!UICONTROL Show selected]** aus.
+   * Um einen Datensatz aus der Liste der ausgewählten Datensätze zu entfernen, verwenden Sie ![Schließen](/help/assets/icons2/Close.svg). Um alle ausgewählten Datensätze zu entfernen, wählen Sie **[!UICONTROL Alle löschen]**.
    * Um Details zu einem Datensatz anzuzeigen, wählen Sie ![Info-Symbol](/help/assets/icons/InfoOutline.svg) aus.
 
 
@@ -623,7 +623,7 @@ Sie können beim Erstellen oder Bearbeiten einer Verbindung einen oder mehrere E
 
    | Spalte | Beschreibung |
    |---|---|
-   | **[!UICONTROL Datensatz]** | Der Name des Datensatzes. Wählen Sie den Namen aus, um zum Datensatz in Experience Platform weitergeleitet zu werden. Wählen Sie ![Informationen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus, um ein Popup-Fenster mit weiteren Details zum Datensatz anzuzeigen. Sie können **[!UICONTROL In Platform bearbeiten]** auswählen, um den Datensatz direkt in Experience Platform zu bearbeiten. |
+   | **[!UICONTROL Datensatz]** | Der Name des Datensatzes. Wählen Sie den Namen aus, um zum Datensatz in Experience Platform weitergeleitet zu werden. Wählen Sie ![Informationen](/help/assets/icons/InfoOutline.svg) aus, um ein Popup-Fenster mit weiteren Details zum Datensatz anzuzeigen. Sie können **[!UICONTROL In Platform bearbeiten]** auswählen, um den Datensatz direkt in Experience Platform zu bearbeiten. |
    | **[!UICONTROL Typ des Datensatzes]** | Der Typ des Datensatzes: [Ereignis](#event-dataset), [Profil](#profile-dataset), [Suche](#lookup-dataset), [Zusammenfassung](#summary-dataset), [Ad hoc](#ad-hoc-dataset) oder [Relational](#relational-dataset). |
    | **[!UICONTROL Anzahl der Einträge]** | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
    | **[!UICONTROL Schema]** | Das Schema für den Datensatz. Wählen Sie den Namen aus, um zum Schema in Experience Platform weitergeleitet zu werden. |
@@ -631,10 +631,10 @@ Sie können beim Erstellen oder Bearbeiten einer Verbindung einen oder mehrere E
    | **[!UICONTROL Datensatz-ID]** | Die ID des Datensatzes. |
    | **[!UICONTROL Zuletzt aktualisiert]** | Der Zeitstempel für die letzte Aktualisierung des Datensatzes. |
 
-   * Um die für die Liste der Datensätze angezeigten Spalten zu ändern, wählen Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) aus und wählen Sie die Spalten aus, die im Dialogfeld [!UICONTROL Tabelle anpassen] angezeigt werden sollen.
-   * Um nach einem bestimmten Datensatz zu suchen, verwenden Sie das ![Suchfeld](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
-   * Um die ausgewählten Datensätze ein- oder auszublenden, wählen Sie ![Auswählen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg), **[!UICONTROL Ausgewählte ausblenden]** oder **[!UICONTROL Ausgewählte anzeigen]** aus.
-   * Um einen Datensatz aus der Liste der ausgewählten Datensätze zu entfernen, verwenden Sie ![Schließen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Um alle ausgewählten Datensätze zu entfernen, wählen Sie **[!UICONTROL Alle löschen]**.
+   * Um die für die Liste der Datensätze angezeigten Spalten zu ändern, wählen Sie ![Spalteneinstellungen](/help/assets/icons/ColumnSetting.svg) aus und wählen Sie die Spalten aus, die im Dialogfeld [!UICONTROL Tabelle anpassen] angezeigt werden sollen.
+   * Um nach einem bestimmten Datensatz zu suchen, verwenden Sie das ![Suchfeld](/help/assets/icons/Search.svg).
+   * Um die ausgewählten Datensätze ein- oder auszublenden, wählen Sie ![Auswählen](/help/assets/icons/SelectBoxAll.svg), **[!UICONTROL Ausgewählte ausblenden]** oder **[!UICONTROL Ausgewählte anzeigen]** aus.
+   * Um einen Datensatz aus der Liste der ausgewählten Datensätze zu entfernen, verwenden Sie ![Schließen](/help/assets/icons/Close.svg). Um alle ausgewählten Datensätze zu entfernen, wählen Sie **[!UICONTROL Alle löschen]**.
    * Um Details zu einem Datensatz anzuzeigen, wählen Sie ![Info-Symbol](/help/assets/icons/InfoOutline.svg) aus.
 
 

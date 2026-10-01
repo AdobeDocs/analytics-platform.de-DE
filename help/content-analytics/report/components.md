@@ -8,25 +8,32 @@ exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
 TQID: https://experienceleague.adobe.com/grwbNht938ivCsnzlFBzP8Ga8h1udmQLcZngxY6s0-4
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+    internal-label: Metadata
+source-git-commit: fec14c8ed1f94e16423682a165198dbda760f78d
 workflow-type: tm+mt
-source-wordcount: 1869
-ht-degree: 56%
-
+source-wordcount: '1943'
+ht-degree: 58%
 ---
-
 
 # Content Analytics-Komponenten
 
@@ -172,58 +179,63 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 
 ## Paid Media
 
-Diese Komponenten werden einer Datenansicht hinzugefügt, wenn der Kanal **Bezahlte Medien** über einen [Quell-Connector für bezahlte Medien in Adobe Experience Platform aktiviert &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home)z. B. Meta Ads oder Google Ads). Sie ermöglichen Ihnen Berichte zu Paid-Media-Entitäten sowie zu kreativen Inhalten und Ausgaben neben Web- und mobilen Inhalten.
+Diese Komponenten werden einer Datenansicht hinzugefügt, wenn der Kanal **Bezahlte Medien** über einen [Quell-Connector für bezahlte Adobe Experience Platform-Medien aktiviert &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home). Sie ermöglichen Ihnen Berichte zu Paid-Media-Kampagnen, Kreativen und Ausgaben neben Ihren Web- und mobilen Inhalten. Verfügbarkeit und ausgefüllte Werte hängen vom Werbenetzwerk und der Berichtsgröße ab.
 
 Die oben beschriebenen KI-generierten [Asset](#asset-attributes)Attribute und [Erlebnisattribute](#experience-attributes) sind auch für Kreative mit bezahlten Medien verfügbar. Die gleiche Funktion ist über die Kanäle Web, Mobile und Paid Media verfügbar.
 
 ### Paid Media-Dimensionen
 
+Die folgenden Dimensionen enthalten Namen, Status und andere Details für Werbekonten, Kampagnen, Anzeigengruppen, Anzeigen, Erlebnisse und Assets.
+
 | Titel | Beschreibung | Typ |
 |---|---|---|
 | Anzeigennetzwerk | Die Werbeplattform, von der die Paid-Media-Daten aufgenommen wurden. | Dimension |
+| Konto-GUID | Eindeutige Kennung für das Werbekonto. | Dimension |
+| Kampagnen-GUID | Eindeutige Kennung für die Paid-Media-Kampagne. | Dimension |
+| AdGroup-GUID | Eindeutige Kennung für die Anzeigengruppe. | Dimension |
+| Anzeigen-GUID | Eindeutige Kennung für die einzelne Anzeige. | Dimension |
 | Kontoname | Name des Werbekontos. | Dimension |
 | Kampagnenname | Name der Paid-Media-Kampagne. | Dimension |
-| Anzeigengruppenname | Name der Anzeigengruppe (Meta-Anzeigensatz/Google-Anzeigengruppe). | Dimension |
+| AdGroup – Name | Name der Anzeigengruppe oder des Anzeigensatzes. | Dimension |
 | Anzeigenname | Name der einzelnen Anzeige. | Dimension |
 | Name des Erlebnisses | Name des Anzeigen-Erlebnisses (kreative Komposition). | Dimension |
-| Asset-Name | Name des Kreativ-Assets. | Dimension |
+| Asset-Name (Paid Media) | Name des Kreativ-Assets. | Dimension |
 | Kampagnenstatus | Status der Kampagne. | Dimension |
 | Anzeigengruppenstatus | Status der Anzeigengruppe. | Dimension |
 | Anzeigenstatus | Status der Anzeige. | Dimension |
-| Betriebsstatus | Detaillierter Serving-Status, der angibt, ob die Entität derzeit ausliefert. | Dimension |
 | Kontowährung | Währung des Werbekontos. | Dimension |
-| Zeitzone des Kontos | Zeitzone des Werbekontos. | Dimension |
+| Konto – Zeitzone | Zeitzone des Werbekontos. | Dimension |
 | Kontotyp | Typ des Werbekontos. | Dimension |
-| Firmenname des Kontos | Dem Werbekonto zugeordneter Unternehmensname | Dimension |
+| Konto – Unternehmensname | Dem Werbekonto zugeordneter Unternehmensname | Dimension |
 | Kampagnentyp | Primärer Kanaltyp der Kampagne. | Dimension |
 | Kampagne – Ziel | Ziel der Kampagne. | Dimension |
-| Bid-Strategie der Kampagne | Gebotsstrategie für die Kampagne. | Dimension |
-| Kampagnen-Budgettyp | Typ der Budgetzuweisung für die Kampagne. | Dimension |
+| Kampagne – Bid-Strategie | Gebotsstrategie für die Kampagne. | Dimension |
+| Kampagne – Budget-Typ | Typ der Budgetzuweisung für die Kampagne. | Dimension |
 | Kampagne – Budget pro Tag | Täglicher Budgetbetrag in der Währung des Werbekontos. | Dimension |
-| Kampagnen-Lebensdauerbudget | Lebensdauerbudgetbetrag, in der Anzeigenkontowährung. | Dimension |
-| Startzeit der Kampagne | Wann die Kampagne gestartet wurde. | Dimension |
+| Kampagne – Budget über Lebensdauer | Lebensdauerbudgetbetrag, in der Anzeigenkontowährung. | Dimension |
+| Kampagne – Startzeit | Wann die Kampagne gestartet wurde. | Dimension |
 | Endzeit der Kampagne | Als die Kampagne endete. | Dimension |
-| Anzeigengruppentyp | Typ der Anzeigengruppe. | Dimension |
-| Anzeigengruppen-Bid-Strategie | Angebotsstrategie für die Anzeigengruppe. | Dimension |
-| Anzeigengruppen-Optimierungsziel | Optimierungsziel für die Anzeigengruppe. | Dimension |
-| Anzeigengruppen-Startzeit | Wann die Anzeigengruppe gestartet wurde. | Dimension |
-| Endzeit der Anzeigengruppe | Als die Anzeigengruppe beendet wurde. | Dimension |
+| Anzeigengruppe – Typ | Typ der Anzeigengruppe. | Dimension |
+| Anzeigengruppe – Bid-Strategie-Typ | Angebotsstrategie für die Anzeigengruppe. | Dimension |
+| Anzeigengruppe – Optimierungsziel | Optimierungsziel für die Anzeigengruppe. | Dimension |
+| Anzeigengruppe – Startzeit | Wann die Anzeigengruppe gestartet wurde. | Dimension |
+| Anzeigengruppe – Endzeit | Als die Anzeigengruppe beendet wurde. | Dimension |
 | Ad-Typ | Typ/Format der Anzeige. | Dimension |
-| Anzeigenprüfungsstatus | Überprüfungs-/Genehmigungsstatus der Anzeige. | Dimension |
-| Creative-Typ hinzufügen | Typ des von der Anzeige verwendeten Kreativinhalts. | Dimension |
+| Anzeige – Versandstatus | Versandstatus der Anzeige. | Dimension |
+| Anzeige – Überprüfungsstatus | Überprüfungs-/Genehmigungsstatus der Anzeige. | Dimension |
+| Kreativinhalt der Anzeige – Typ | Typ des von der Anzeige verwendeten Kreativinhalts. | Dimension |
 | Anzeigentitel | Überschrift/Titel der kreativen Anzeige. | Dimension |
-| Ad Call to action | Call-to-action der Kreativen Werbung. | Dimension |
+| Anzeigen-CTA | Call-to-action der Kreativen Werbung. | Dimension |
 | Ziel-URL hinzufügen | Landing/Destination URL der Anzeige. | Dimension |
 | Anzeige-URL | Auf der Anzeige angezeigte URL anzeigen. | Dimension |
 | Erlebnistyp | Typ/Format des Werbereignisses. | Dimension |
-| URL der Experience Landingpage | Landingpage-URL für das Erlebnis. | Dimension |
-| Experience Call to action | Call-to-action des Erlebnisses | Dimension |
+| Erlebnis – Landingpage-URL | Landingpage-URL für das Erlebnis. | Dimension |
+| Erlebnis-CTA | Call-to-action des Erlebnisses | Dimension |
 | Asset – Typ | Typ des Kreativ-Assets (z. B. Bild oder Video). | Dimension |
 | Asset-Breite | Breite des Assets in Pixel. | Dimension |
 | Asset-Höhe | Höhe des Assets in Pixel. | Dimension |
-| Asset-Seitenverhältnis | Seitenverhältnis des Assets. | Dimension |
+| Asset – Seitenverhältnis | Seitenverhältnis des Assets. | Dimension |
 | Asset – Ausrichtung | Ausrichtung des Assets. | Dimension |
-| Gerätetyp | Aufschlüsselung des Gerätetyps für die gemeldeten Metriken. | Dimension |
 | Platzierung | Aufschlüsselung der Platzierungen für die gemeldeten Metriken. | Dimension |
 | Plattform | Aufschlüsselung der Plattform für die gemeldeten Metriken. | Dimension |
 | Land | Aufschlüsselung der Länder für die gemeldeten Metriken. | Dimension |
@@ -237,10 +249,10 @@ Die oben beschriebenen KI-generierten [Asset](#asset-attributes)Attribute und [E
 |---|---|---|
 | Impressionen | Häufigkeit, mit der die Anzeige angezeigt wurde. | Metrik |
 | Klicks | Anzahl der Klicks auf die Anzeige. | Metrik |
-| Ausgaben | Ausgegebener Betrag in der Währung des Werbekontos. | Metrik |
+| Ausgaben | Von der Werbeplattform gemeldeter Betrag. | Metrik |
 | Konversionen | Gesamtzahl der Konversionen. | Metrik |
 | Umrechnungswert | Gesamtwert der Konversionen. | Metrik |
-| Reichweite | Anzahl der eindeutigen Personen, die die Anzeige gesehen haben. | Metrik |
+| Reichweite | Von der Werbeplattform gemeldete Reichweite der Zielgruppe. Personen werden nicht dedupliziert, wenn die Reichweite über mehrere Berichtszeilen hinweg aggregiert wird. | Metrik |
 | Interaktionen | Anzahl der Interaktionen mit der Anzeige. | Metrik |
 | Videoansichten | Anzahl der Videoansichten. | Metrik |
 | Videovervollständigung | Anzahl der bis zum Abschluss angesehenen Videos. | Metrik |
@@ -263,6 +275,8 @@ Die oben beschriebenen KI-generierten [Asset](#asset-attributes)Attribute und [E
 {style="table-layout:fixed"}
 
 ### Berechnete Metriken für bezahlte Medien
+
+Diese berechneten Metriken berechnen Verhältnisse aus den aggregierten Basismetriken für die Berichtskörnung, anstatt einzelne Raten zu summieren.
 
 | Titel | Beschreibung | Typ |
 |---|---|---|

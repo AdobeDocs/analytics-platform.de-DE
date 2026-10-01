@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3512'
 ht-degree: 63%
 ---
 # Aufnehmen von Daten über die Mobile SDK
@@ -380,7 +380,7 @@ Gehen Sie folgendermaßen vor, um eine Regel zu definieren:
 
      - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
-   - Klicken Sie ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) neben [!UICONTROL Mobile Core - Vordergrund].
+   - Klicken Sie ![Plus](/help/assets/icons/AddCircle.svg) neben [!UICONTROL Mobile Core - Vordergrund].
 
      - Wählen Sie **[!UICONTROL Mobile Core]** aus der Liste [!UICONTROL Erweiterung] aus.
 
@@ -388,7 +388,7 @@ Gehen Sie folgendermaßen vor, um eine Regel zu definieren:
 
      - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
 
-   - Klicken Sie ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Hinzufügen unter [!UICONTROL AKTIONEN]. Im Dialog [!UICONTROL Aktionskonfiguration]:
+   - Klicken Sie ![Plus](/help/assets/icons/AddCircle.svg) Hinzufügen unter [!UICONTROL AKTIONEN]. Im Dialog [!UICONTROL Aktionskonfiguration]:
 
      - Wählen Sie **[!UICONTROL Adobe Experience Platform Edge Network]** in der Liste [!UICONTROL Erweiterung] aus.
 
@@ -447,9 +447,9 @@ So erhalten Sie Code-Anweisungen, in denen die Einrichtung Ihrer Mobile App und 
 
 1. Wählen Sie **[!UICONTROL Umgebungen]** in der linken Leiste aus.
 
-2. Wählen Sie in der Liste der Umgebungen die richtige Install (![)-](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) aus.
+2. Wählen Sie in der Liste der Umgebungen die richtige Install (![)-](/help/assets/icons/Box.svg) aus.
 
-   Wählen Sie [!UICONTROL &#x200B; Dialogfeld „Mobile-]&quot; die entsprechende Plattform ([!UICONTROL iOS], [!UICONTROL Android]). Verwenden Sie dann die Schaltfläche ![Kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) neben jedem der relevanten Code-Snippets, die Sie zum Einrichten und Initialisieren Ihrer Mobile App verwenden möchten:
+   Wählen Sie [!UICONTROL &#x200B; Dialogfeld „Mobile-]&quot; die entsprechende Plattform ([!UICONTROL iOS], [!UICONTROL Android]). Verwenden Sie dann die Schaltfläche ![Kopieren](/help/assets/icons/Copy.svg) neben jedem der relevanten Code-Snippets, die Sie zum Einrichten und Initialisieren Ihrer Mobile App verwenden möchten:
 
    ![Umgebung](./assets/environment-mobile.png)
 

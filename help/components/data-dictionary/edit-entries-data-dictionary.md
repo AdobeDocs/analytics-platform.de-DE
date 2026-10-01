@@ -7,27 +7,36 @@ exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
 TQID: https://experienceleague.adobe.com/MPtF2ZOWbjayiJtMoTS705nWS-W9OdTmNOp3Wagi6io
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df28738e-9c71-4aa8-929e-edde22340cc6
+    internal-label: Data Dictionary
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Experimentation
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 1301
-ht-degree: 64%
-
+source-wordcount: '1247'
+ht-degree: 63%
 ---
-
 # Bearbeiten von Komponenteneinträgen
 
 Customer Journey Analytics-Admins können Komponenteneinträge im Datenwörterbuch für eine bestimmte Datenansicht bearbeiten. Alle vorgenommenen Änderungen sind für alle Benutzer der Datenansicht sichtbar.
@@ -48,19 +57,19 @@ Bearbeiten einer Komponente im Datenwörterbuch:
 
    Der Komponententyp kann sowohl durch Farbe als auch durch ein Symbol identifiziert werden.
 
-   * **Dimensionen** ![Dimension-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) sind orange
+   * **Dimensionen** ![Dimension-Symbol](/help/assets/icons/Data.svg) sind orange
 
-   * **Segmente** ![Segmentsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) sind blau
+   * **Segmente** ![Segmentsymbol](/help/assets/icons/Segmentation.svg) sind blau
 
-   * **Datumsbereiche** ![Datumsbereichssymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) sind violett
+   * **Datumsbereiche** ![Datumsbereichssymbol](/help/assets/icons/Calendar.svg) sind violett
 
-   * **Metriken** ![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün
+   * **Metriken** ![Metriksymbol](/help/assets/icons/Event.svg) sind grün
 
    * **Adobe-Symbol** ![Adobe-Symbol](assets/default-calc-metric-icon.png) Zeigt entweder eine Vorlage für berechnete Metriken oder eine Segmentvorlage an
 
-   * **Taschenrechnersymbol** ![Taschenrechnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) zeigt eine berechnete Metrik an, die von einer Analytics-Administratorin bzw. einem -Administrator in Ihrer Organisation erstellt wurde
+   * **Taschenrechnersymbol** ![Taschenrechnersymbol](/help/assets/icons/Calculator.svg) zeigt eine berechnete Metrik an, die von einer Analytics-Administratorin bzw. einem -Administrator in Ihrer Organisation erstellt wurde
 
-1. (Optional) Wählen Sie das Symbol **Filter** ![Datenwörterbuchfilter-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) und wählen Sie dann eine der folgenden Filteroptionen, um die Liste der Komponenten zu filtern:
+1. (Optional) Wählen Sie das Symbol **Filter** ![Datenwörterbuchfilter-Symbol](/help/assets/icons/Filter.svg) und wählen Sie dann eine der folgenden Filteroptionen, um die Liste der Komponenten zu filtern:
 
    | Option | Funktion |
    |---------|----------|
@@ -79,7 +88,7 @@ Bearbeiten einer Komponente im Datenwörterbuch:
 
    {style="table-layout:auto"}
 
-1. (Optional) Wählen Sie das Symbol **Sortieren** Symbol ![Komponenten sortieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) und wählen Sie dann eine der folgenden Segmentoptionen, um die Liste der Komponenten zu sortieren:
+1. (Optional) Wählen Sie das Symbol **Sortieren** Symbol ![Komponenten sortieren](/help/assets/icons/SortOrderDown.svg) und wählen Sie dann eine der folgenden Segmentoptionen, um die Liste der Komponenten zu sortieren:
 
    | Option | Funktion |
    |---------|----------|
@@ -91,24 +100,24 @@ Bearbeiten einer Komponente im Datenwörterbuch:
 
 1. Wählen Sie aus der Komponentenliste die Komponente aus, die Sie bearbeiten möchten.
 
-1. Wählen Sie das Symbol **Bearbeiten** ![Datenwörterbuch bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) neben dem Komponentennamen.
+1. Wählen Sie das Symbol **Bearbeiten** ![Datenwörterbuch bearbeiten](/help/assets/icons/Edit.svg) neben dem Komponentennamen.
 
 1. Bearbeiten Sie eine der folgenden Informationen zur Komponente:
 
    | Option | Funktion |
    |---------|----------|
-   | **[!UICONTROL Genehmigt]** | <p>Zeigt an, dass die Komponente vom Admins geprüft und genehmigt wurde.</p><p>Admins wird eine Option zum **[!UICONTROL Nicht genehmigen“]**. Bei Auswahl dieser Option wird die Komponente für Benutzer als „Nicht genehmigt“ markiert.</p> |
-   | **[!UICONTROL Nicht genehmigt]** | <p>Zeigt an, dass die Komponente noch nicht von Admins geprüft und genehmigt wurde.</p><p>Admins wird eine Option zum **[!UICONTROL Genehmigen]** angezeigt. Bei Auswahl dieser Option wird die Komponente gegenüber Benutzenden als „Genehmigt“ gekennzeichnet.</p> |
+   | **[!UICONTROL Genehmigt]** | <p>Zeigt an, dass die Komponente von der bzw. dem Admin geprüft und genehmigt wurde.</p><p>Admins wird eine Option zum **[!UICONTROL Nicht genehmigen“]**. Bei Auswahl dieser Option wird die Komponente für Benutzer als „Nicht genehmigt“ markiert.</p> |
+   | **[!UICONTROL Nicht genehmigt]** | <p>Zeigt an, dass die Komponente noch nicht von der bzw. dem Admin geprüft und genehmigt wurde.</p><p>Admins wird eine Option zum **[!UICONTROL Genehmigen]** angezeigt. Bei Auswahl dieser Option wird die Komponente gegenüber Benutzenden als „Genehmigt“ gekennzeichnet.</p> |
    | **[!UICONTROL Beschreibung]** | Beschreibt die beabsichtigte Funktion der Komponente. (Diese Informationen werden vom Analytics-Admins hinzugefügt, wie unter [Komponentenbeschreibungen hinzufügen](/help/components/add-component-descriptions.md) beschrieben.) |
-   | **[!UICONTROL Häufig verwendet mit]** | <p>Zeigt Komponenten an, die am häufigsten mit der Komponente verwendet werden, die Sie anzeigen.</p><p>Es werden bis zu 5 Komponenten für die 5 primären Komponententypen angezeigt: Metrik, Berechnete Metrik, Dimension, Segment und Datumsbereich.</p><p>Diese Liste basiert auf Daten aus den letzten 90 Tagen. Es werden nur Komponenten angezeigt, auf die Sie Zugriff haben.</p><p>Admins können die Komponenten, die Benutzende in diesem Abschnitt sehen, kuratieren, indem sie die gewünschten Komponenten in den Dropdown-Feldern **[!UICONTROL Immer einschließen]** und **[!UICONTROL Immer ausschließen]** auswählen. Bevor Sie die Komponenten kuratieren, die Benutzenden angezeigt werden, wenden Sie zunächst das Segment **Alle anzeigen** an, um sicherzustellen, dass Sie alle Komponenten sehen, die nicht für Sie freigegeben sind und möglicherweise von einem anderen Administrator hinzugefügt wurden.<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p> |
+   | **[!UICONTROL Häufig verwendet mit]** | <p>Zeigt Komponenten an, die am häufigsten mit der Komponente verwendet werden, die Sie anzeigen.</p><p>Es werden bis zu 5 Komponenten für die 5 primären Komponententypen angezeigt: Metrik, Berechnete Metrik, Dimension, Segment und Datumsbereich.</p><p>Diese Liste basiert auf Daten aus den letzten 90 Tagen. Es werden nur Komponenten angezeigt, auf die Sie zur Ansicht Zugriff haben.</p><p>Admins können die Komponenten, die Benutzende in diesem Abschnitt sehen, kuratieren, indem sie die gewünschten Komponenten in den Dropdown-Feldern **[!UICONTROL Immer einschließen]** und **[!UICONTROL Immer ausschließen]** auswählen. Bevor Sie die Komponenten kuratieren, die Benutzenden angezeigt werden, wenden Sie zunächst das Segment **Alle anzeigen** an, um sicherzustellen, dass Sie alle Komponenten sehen, die nicht für Sie freigegeben sind und möglicherweise von einem anderen Administrator hinzugefügt wurden.<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p> |
    | **[!UICONTROL Ähnlich wie]** | <p>Zeigt Komponenten mit ähnlichen Namen wie die angezeigte Komponente an.</p><p>Es werden bis zu 5 Komponenten für die 5 primären Komponententypen angezeigt: Metrik, Berechnete Metrik, Dimension, Segment und Datumsbereich.</p><p>Es werden nur Komponenten angezeigt, auf die Sie Zugriff haben.</p><p>Hier werden alle doppelten Komponenten in Ihrer Datenansicht angezeigt. Analytics-Admins sollten alle doppelten Komponenten identifizieren und entfernen, wie unter [Überwachen des Zustands des Datenwörterbuchs](/help/components/data-dictionary/monitor-data-dictionary-health.md) beschrieben.</p><p>Adminis können die Komponenten, die Benutzende in diesem Abschnitt sehen, kuratieren, indem sie die gewünschten Komponenten in den Dropdown-Feldern **[!UICONTROL Immer einschließen]** und **[!UICONTROL Immer ausschließen]** auswählen. Bevor Sie die Komponenten kuratieren, die Benutzenden angezeigt werden, wenden Sie zunächst das Segment **Alle anzeigen** an, um sicherzustellen, dass Sie alle Komponenten sehen, die nicht für Sie freigegeben sind und möglicherweise von einem anderen Administrator hinzugefügt wurden.<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p><p>**HINWEIS:** Derzeit enthält der Abschnitt **Ähnlich wie** nur von Ihnen erstellte Komponenten und nicht die von Adobe bereitgestellten Komponenten. Von Adobe bereitgestellte Komponenten werden in einer zukünftigen Version hinzugefügt.</p> |
    | **[!UICONTROL Produktkompatibilität]** | Gibt an, wo in Customer Journey Analytics diese berechnete Metrik verwendet werden kann. <p>Die möglichen Werte sind:</p><ul><li>**[!UICONTROL Überall in Customer Journey Analytics]**: Die berechnete Metrik kann in ganz Customer Journey Analytics verwendet werden, einschließlich Analysis Workspace, Report Builder usw.</li><li>**[!UICONTROL Überall in Customer Journey Analytics (außer beim Experimentieren)]**: Die berechnete Metrik kann überall in Customer Journey Analytics verwendet werden, mit Ausnahme des Panels „Experimentieren“.</li> <p>Informationen zu den Kriterien, die bestimmen, ob eine berechnete Metrik beim Experimentieren verwendet werden kann, finden Sie unter [Verwenden berechneter Metriken im Bedienfeld &#x200B;](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel)Experimentieren[&#x200B; im Bedienfeld Experimentieren](/help/analysis-workspace/c-panels/experimentation.md).</p></ul> |
-   | **[!UICONTROL Tags]** | Zeigt alle Tags an, die auf die Komponente angewendet werden. Benutzende mit Adminrechten können bei der Bearbeitung der Komponente Tags hinzufügen. |
-   | **[!UICONTROL Typ der Komponente]** | Listet den Komponententyp auf, ob es sich um eine Dimension, eine Metrik, ein Segment oder einen Datumsbereich handelt. |
+   | **[!UICONTROL Tags]** | Zeigt alle Tags an, die auf die Komponente angewendet werden. Benutzende mit Administratorzugriff können bei der Bearbeitung der Komponente Tags hinzufügen. |
+   | **[!UICONTROL Typ der Komponente]** | Listet den Typ der Komponente auf, also ob es sich um eine Dimension, eine Metrik, ein Segment oder einen Datumsbereich handelt. |
    | **[!UICONTROL Erstellt von]** | Zeigt den Namen der Person an, die die Komponente erstellt hat. |
    | **[!UICONTROL Vorschau]** | Zeigt eine Vorschau davon an, wie die Komponente im Analysis Workspace aussieht. |
-   | **[!UICONTROL Datum der letzten Änderung]** | Zeigt den Tag an, an dem die Komponente zuletzt geändert wurde. Dieser Abschnitt wird beim Anzeigen von Segmenten, Metriken, berechneten Metriken und Datumsbereichen angezeigt. |
+   | **[!UICONTROL Datum der letzten Änderung]** | Zeigt das Datum an, an dem die Komponente zuletzt geändert wurde. Dieser Abschnitt wird beim Anzeigen von Segmenten, Metriken, berechneten Metriken und Datumsbereichen angezeigt. |
 
    {style="table-layout:auto"}
 
-1. Klicken Sie auf das Symbol **Speichern** ![Datenwörterbuch speichern](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SaveFloppy_18_N.svg), um Ihre Änderungen zu speichern.
+1. Klicken Sie auf das Symbol **Speichern** ![Datenwörterbuch speichern](/help/assets/icons/SaveFloppy.svg), um Ihre Änderungen zu speichern.

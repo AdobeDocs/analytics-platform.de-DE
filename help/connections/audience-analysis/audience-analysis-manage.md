@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 5%
+source-wordcount: '296'
+ht-degree: 2%
 ---
 # Verwalten von Zielgruppenanalysekonfigurationen{#manage-audience-analysis}
 
@@ -65,9 +65,9 @@ So zeigen Sie Ihre vorhandenen Zielgruppenanalysekonfigurationen an:
 
    * **[!UICONTROL Status]**: Der Status der Konfiguration. Mögliche Status sind „Abgeschlossen“, „In Bearbeitung“ oder „Fehlgeschlagen“. <!--true?-->
 
-   Sie können alle Spalten ausblenden, indem Sie auf das Spaltensymbol ![Spaltensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) klicken, die Auswahl der Spalten, die Sie ausblenden möchten, aufheben und dann auf **[!UICONTROL Anwenden]** klicken.
+   Sie können alle Spalten ausblenden, indem Sie auf das Spaltensymbol ![Spaltensymbol](/help/assets/icons2/ColumnSettings.svg) klicken, die Auswahl der Spalten, die Sie ausblenden möchten, aufheben und dann auf **[!UICONTROL Anwenden]** klicken.
 
-1. (Optional) Um die Liste der Konfigurationen zu filtern, wählen **das Symbol** Filtern![Zielgruppenanalyse-Filter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) und filtern Sie dann nach einem der folgenden Kriterien:
+1. (Optional) Um die Liste der Konfigurationen zu filtern, wählen **das Symbol** Filtern![Zielgruppenanalyse-Filter](/help/assets/icons/Filter.svg) und filtern Sie dann nach einem der folgenden Kriterien:
 
    * **[!UICONTROL Verbindung]**
 

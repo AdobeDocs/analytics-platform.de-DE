@@ -7,26 +7,34 @@ exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 TQID: https://experienceleague.adobe.com/xTwvC1oPjibPO1fMs1ig4CTqonTwEq20gY-FxlWgHSM
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates, Templates (CJA)
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 1888
+source-wordcount: '1882'
 ht-degree: 100%
-
 ---
-
 # Erstellen und Verwalten von Vorlagen
 
 Admins können Vorlagen erstellen und sie zur Verwendung für andere Benutzende in deren Anmeldeunternehmen speichern.
@@ -130,7 +138,7 @@ Admins können Unternehmensvorlagen umbenennen, taggen und genehmigen.
 
    Eine Liste der Unternehmensvorlagen wird angezeigt. Alle regulären Projekte werden nicht angezeigt, es sei denn, sie sind angeheftet.
 
-   Unternehmensvorlagen sind am Symbol ![Vorlagensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg) erkennbar, das dem Vorlagennamen vorangestellt ist.
+   Unternehmensvorlagen sind am Symbol ![Vorlagensymbol](/help/assets/icons/FileTemplate.svg) erkennbar, das dem Vorlagennamen vorangestellt ist.
 
    ![Anzeigen der Filter „Unternehmensvorlagen“](assets/company-templates-filter.png)
 
@@ -166,23 +174,23 @@ So fügen Sie fehlende Komponenten zu einer Vorlage hinzu:
 
    * **Bei Anzeige der Vorlagen in einer Spaltenansicht** ![Spaltenansichtssymbol](assets/column-view-icon.png):
 
-      1. Navigieren Sie zu der Vorlage, die noch nicht für die Verwendung mit Ihrer Datenansicht bereit ist, und wählen Sie dann das Infosymbol neben dem Vorlagennamen aus.
+     1. Navigieren Sie zu der Vorlage, die noch nicht für die Verwendung mit Ihrer Datenansicht bereit ist, und wählen Sie dann das Infosymbol neben dem Vorlagennamen aus.
 
-         ![Informationen zu Unternehmensvorlagen](assets/company-template-info.png)
+        ![Informationen zu Unternehmensvorlagen](assets/company-template-info.png)
 
-      1. Wählen Sie **[!UICONTROL Vorschau]** aus.
+     1. Wählen Sie **[!UICONTROL Vorschau]** aus.
 
-         ![Seite mit Vorlagenvorschau](assets/template-preview.png)
+        ![Seite mit Vorlagenvorschau](assets/template-preview.png)
 
    * **Bei Anzeige der Vorlagen in einer Kartenansicht** ![Kartenansichtssymbol](assets/card-view-icon.png):
 
-      1. Suchen Sie eine Vorlage, die noch nicht für die Verwendung mit Ihrer Datenansicht bereit ist.
+     1. Suchen Sie eine Vorlage, die noch nicht für die Verwendung mit Ihrer Datenansicht bereit ist.
 
-         ![Kartenansicht der Unternehmensvorlage](assets/company-template-cards.png)
+        ![Kartenansicht der Unternehmensvorlage](assets/company-template-cards.png)
 
-      1. Bewegen Sie den Mauszeiger über die Vorlage und wählen Sie dann **[!UICONTROL Vorschau]** aus.
+     1. Bewegen Sie den Mauszeiger über die Vorlage und wählen Sie dann **[!UICONTROL Vorschau]** aus.
 
-         ![Seite mit Vorlagenvorschau](assets/template-preview.png)
+        ![Seite mit Vorlagenvorschau](assets/template-preview.png)
 
 1. Im Abschnitt **[!UICONTROL Fehlende Komponenten]** wird eine Liste der Komponenten angezeigt, die in der Datenansicht fehlen. Wählen Sie **[!UICONTROL Diese Komponenten zur Datenansicht hinzufügen]**.
 

@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1926'
 ht-degree: 82%
 ---
 # Feldbasierte Zuordnung
@@ -151,7 +151,7 @@ Betrachten Sie das folgende Beispiel, bei dem Bob verschiedene Ereignisse als Te
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` |
 | 3 | 2023-05-12 12:03 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) |
 | 4 | 2023-05-12 12:04 | `246` | – | **`Bob`** |
-| 5 | 2023-05-12 12:05 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 5 | 2023-05-12 12:05 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) |
 | 6 | 2023-05-12 12:06 | `246` | – | **`Bob`** |
 | 7 | 2023-05-12 12:07 | `246` | `Bob` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` |
 | 8 | 2023-05-12 12:03 | `3579` ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | – | **`3579`** |
@@ -214,7 +214,7 @@ Die folgende Tabelle stellt dieselben Daten wie oben dar, zeigt jedoch die Auswi
 | Ereignis | Zeitstempel | Persistente ID (Cookie-ID) | Personen-ID | Resultierende ID (nach der Echtzeit-Zuordnung) | Resultierende ID (nach der Wiederholung) | Personen-ID | Ergebnis-ID (nach Datenschutzanfrage) |
 |---|---|---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | – | `246` | **`Bob`** | – | `246` |
-| 2 | 2023-05-12 12:02 | `246` | Bob ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Pfeil nach oben](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 2 | 2023-05-12 12:02 | `246` | Bob ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Pfeil nach oben](/help/assets/icons/ArrowUp.svg) | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 3 | 2023-05-12 12:03 | `246` | Bob ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) | `Bob` | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 4 | 2023-05-12 12:04 | `246` | – | **`Bob`** | `Bob` | – | `246` |
 | 5 | 2023-05-12 12:05 | `246` | Bob ![Pfeil nach rechts](/help/assets/icons/ArrowRight.svg) | `Bob` ![Pfeil nach unten](/help/assets/icons/ArrowDown.svg) | `Bob` | ![Löschsymbol](/help/assets/icons/RemoveCircle.svg) | `246` |
