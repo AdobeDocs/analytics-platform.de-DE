@@ -38,7 +38,7 @@ Freigegebene Metriken und Dimensionen bieten einen zentralen Speicherort zum Ver
 Freigegebene Dimensionen und Metriken ermöglichen zwar die Verwendung gemeinsamer Komponenten in vielen Datenansichten, sie können jedoch nicht verbindungsübergreifend freigegeben werden.
 
 ## Berechtigungen
-* [Produktadministratoren](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role) benötigen außerdem die **Verwalten von Datennutzungsrichtlinien** und **Anzeigen von Datennutzungsrichtlinien** Berechtigungen für alle Sandboxes in [Experience Platform-Berechtigungen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions).
+* [Produktadministratoren](https://experienceleague.adobe.com/de/docs/analytics-platform/using/technotes/access-control#product-administrator-role) benötigen außerdem die **Verwalten von Datennutzungsrichtlinien** und **Anzeigen von Datennutzungsrichtlinien** Berechtigungen für alle Sandboxes in [Experience Platform-Berechtigungen](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home#permissions).
 
 ## Workflow
 
