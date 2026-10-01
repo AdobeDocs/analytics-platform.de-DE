@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hold: true
 role: Admin
-source-git-commit: 7cd3764ebbab83530ebb42f2041aee4bd390d168
+source-git-commit: 42b73f2843244a02fd51301d8d99282ae5f309cd
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1710'
 ht-degree: 0%
 ---
 
@@ -28,8 +28,8 @@ Paid-Media-Daten werden über Experience Platform-Quell-Connectoren erfasst. Sie
 Stellen Sie sicher, dass Sie in Experience Platform über folgenden Zugriff verfügen:
 
 * Berechtigung zum Anzeigen und Verwalten von Quellen.
-* Eine Sandbox zum Arbeiten.
 * Berechtigung zum Erstellen von Schemata, Datensätzen und Datenflüssen.
+* Eine Sandbox für die Arbeit ausgewählt. Sie müssen die Sandbox auswählen, bevor Sie mit den Einrichtungsschritten fortfahren.
 
 Wenn Sie [!DNL Meta Ads] als Quelle verwenden, stellen Sie sicher, dass auch die folgenden Voraussetzungen erfüllt sind:
 
@@ -75,23 +75,33 @@ Der Datensatz mit Zusammenfassungsmetriken kann die folgenden Metrikgruppen enth
 * **Social Engagement**: Likes, Kommentare und Follows.
 * **Attribution und Pfad**: Details zum Attributionsmodell, Konfidenz, Gewichtungen, Pfadmetriken und Kanalbeitrag.
 * **Qualität und Betrug**: Qualitätsbewertungen, Betrugsindikatoren, ungültige Traffic-Raten und Metriken zur Markensicherheit.
-* **Dimensionsaufschlüsselungen**: Kanal, Werbenetzwerk, Gerätetyp, Altersgruppe, Geschlecht, Land, Stadt, Sprache, Wochentag, Zielgruppenkategorie, kreatives Format und Aufschlüsselungstyp.
+* **Dimensionsaufschlüsselungen**: Daten können je nach Quellplattform nach Kanal, Anzeigennetzwerk, Gerätetyp, Altersgruppe, Geschlecht, Land, Stadt, Sprache, Wochentag, Zielgruppenkategorie, kreativem Format und anderen Dimensionen aufgeschlüsselt werden.
 
 ### Standarddatensätze
 
-Wenn Sie eine Paid-Media-Quelle verbinden, stellt Adobe zwölf standardmäßige Paid-Media-Datensätze bereit, die auf den globalen Paid-Media-Schemaklassen und Feldergruppen basieren. Zu diesen Datensätzen gehören die sechs Lookup-Datensätze, der Zusammenfassungsmetriken-Datensatz und unterstützende Datensätze. Alle 12 Datensätze müssen vorhanden sein, damit die Paid-Media-Daten nachgelagert korrekt aufgelöst werden.
+Wenn Sie eine Paid-Media-Quelle verbinden, stellt Adobe zwölf standardmäßige Paid-Media-Datensätze bereit, die auf den globalen Paid-Media-Schemaklassen und Feldergruppen basieren. Diese Datensätze enthalten sechs zusammenfassende Metrikdatensätze, die sechs Lookup-Datensätze und unterstützende Datensätze. Alle 12 Zusammenfassungs- und Lookup-Datensätze müssen vorhanden sein, damit die Paid-Media-Daten nachgelagert korrekt aufgelöst werden.
 
-* Paid Media-Kampagnensuche
-* Paid Media Asset Lookup
-* Paid Media Experience Lookup
-* Paid Media-Anzeigensuche
-* Paid Media AdGroup Lookup
+Erforderliche Datensätze:
+
+* Zusammenfassung des Paid Media-Kontos
+* Kampagnenübersicht für bezahlte Medien
+* Paid Media-Anzeigengruppe - Zusammenfassung
+* Paid Media-Anzeigenzusammenfassung
+* Paid Media-Erlebnis - Zusammenfassung
+* Übersicht über bezahlte Medien-Assets
 * Paid Media-Konto-Suche
+* Paid Media-Kampagnensuche
+* Paid Media-Anzeigengruppen-Suche
+* Paid Media-Anzeigensuche
+* Paid Media Experience Lookup
+* Paid Media Asset Lookup
+
+Unterstützende Datensätze, z. B.:
+
 * Bezahlte Medien und demografische Suche
 * Zusammenfassung der Paid Media-Erlebnisplatzierung
 * Paid Media und geografische Zusammenfassung
 * Paid Media-Anzeigenzusammenfassung (Zusammenfassungsmetriken)
-* Übersicht über bezahlte Medien-Assets
 * Zusammenfassung der Paid Media Asset-Demografie
 
 ## Paid-Media-Daten in Adobe Experience Platform aufnehmen
@@ -100,10 +110,12 @@ Verwenden Sie den folgenden Prozess, um eine Quelle zu verbinden und Paid-Media-
 
 1. Vergewissern Sie sich, dass Sie über die erforderlichen Experience Platform-Quellberechtigungen und Ad-Platform-Zugriff verfügen.
 1. Navigieren Sie in Experience Platform zu **[!UICONTROL Quellen]** > **[!UICONTROL Katalog]** > **[!UICONTROL Advertising]**.
-1. Wählen Sie den gewünschten Connector aus, z. B. **[!DNL Meta Ads]**, und klicken Sie dann auf **[!UICONTROL Einrichten]**.
+1. 
+   1. Stellen Sie sicher, dass Sie sich in der Sandbox befinden, die die Paid-Media-Datensätze enthält.
+1. Wählen Sie den Connector aus, den Sie verwenden möchten, z. B. **[!DNL Meta Ads]**. Wählen Sie **[!UICONTROL Einrichten]** aus, um eine neue Verbindung zu erstellen, oder wählen Sie **[!UICONTROL Daten hinzufügen]** aus, um einer vorhandenen Verbindung weitere Daten hinzuzufügen.
 1. Authentifizieren Sie sich bei [!DNL OAuth 2.0], indem Sie sich mit einem Benutzer anmelden, der über den erforderlichen Zugriff auf Advertiser-Ebene verfügt.
 1. Wählen Sie die Werbekonten, Entitäten und insight-Daten aus, die Sie aufnehmen möchten.
-1. Bestätigen Sie die Zielgruppen-Zuordnungen zum globalen Paid-Media-Schema und stellen Sie sicher, dass die Lookup-Datensätze und der Zusammenfassungsmetriken-Datensatz korrekt bereitgestellt wurden.
+1. Überprüfen Sie, ob die Such-Datensätze und Zusammenfassungsmetriken-Datensätze korrekt bereitgestellt wurden.
 1. Geben Sie Datenflusseinstellungen ein, bestätigen Sie die Zieldatensätze und konfigurieren Sie den Aufnahmezeitplan.
 1. Speichern Sie den Datenfluss und überwachen Sie die Ausführungen unter **[!UICONTROL Quellen]** > **[!UICONTROL Datenflüsse]**.
 1. Überprüfen Sie, ob die standardmäßigen Paid-Media-Datensätze vorhanden sind und Daten enthalten.
@@ -112,7 +124,7 @@ Validieren Sie die aufgenommenen Daten, bevor Sie zu Customer Journey Analytics 
 
 * Bestätigen Sie, dass die `GUID` der Entität und die nativen ID-Werte über die Zusammenfassungsmetriken und Lookup-Datensätze hinweg konsistent ausgefüllt werden.
 * Vergewissern Sie sich, dass jede Zeile mit Zusammenfassungsmetriken einen Zeitstempel enthält.
-* Vergewissern Sie sich, dass wichtige Reporting-Felder wie Kampagne, Kanal und Netzwerk, Impressionen, Klicks, Ausgaben, Region und Gerätetyp Werte enthalten.
+* Bestätigen Sie, dass wichtige Berichtsfelder wie Dimensionen (z. B.: `channel`, `adNetwork`) und Metriken (z. B.: `impressions`, `clicks`, `spend`) Werte enthalten. Beachten Sie, dass einige Felder wie `region` möglicherweise nicht von allen Quellplattformen ausgefüllt werden.
 * Vergewissern Sie sich, dass die Währungs- und Zeitzonenwerte in den relevanten Konten konsistent sind.
 
 ## Übertragen von Paid-Media-Daten in Customer Journey Analytics
@@ -123,10 +135,10 @@ Customer Journey Analytics berichtet nicht direkt über Experience Platform-Date
 
 Verwenden Sie den folgenden Prozess, um eine Verbindung zu erstellen oder zu aktualisieren:
 
-1. Erstellen oder [&#x200B; Sie in Customer Journey Analytics eine bestehende Verbindung](/help/connections/create-connection.md).
-1. Stellen Sie sicher, dass Sie die Sandbox auswählen, die die Paid-Media-Datensätze enthält.
-1. Fügen Sie den Datensatz mit Zusammenfassungsmetriken als Zusammenfassungsdaten hinzu.
-1. Fügen Sie jeden Lookup-Datensatz als Lookup-Datensatz hinzu und verbinden Sie den Datensatz mit den Zusammenfassungsdaten durch die entsprechenden Entitätskennungen für Konto, Kampagne, Anzeigengruppe, Anzeige, Asset und Erlebnis.
+1. Erstellen oder [ Sie in Customer Journey Analytics eine bestehende Verbindung](/help/connections/create-connection.md).
+1. Stellen Sie sicher, dass Sie die Sandbox auswählen, die die Paid-Media-Datensätze als Teil der Verbindungskonfiguration enthält.
+1. Fügen Sie die Zusammenfassungsmetriken-Datensätze als Zusammenfassungsdaten hinzu. Wenn mehrere Zusammenfassungsmetrik -Datensätze verfügbar sind, verwenden Sie [Suche](/help/connections/create-connection.md#add-datasets), um nach den `Paid Media` Klassen zu filtern und die richtigen Datensätze zu identifizieren.
+1. Fügen Sie jeden Suchdatensatz als Suchdatensatz hinzu. Verbinden Sie den Lookup-Datensatz mit den Zusammenfassungsdaten, indem Sie die entsprechenden Entitäts-GUID-Kennungen (die von Adobe generierten globalen Schlüssel) für Konto, Kampagne, Anzeigengruppe, Anzeige, Asset und Erlebnis verwenden. Einige Quellplattformen unterstützen möglicherweise auch Joins auf nativen ID-Werten.
 1. Optional können Sie Clickstream-Ereignisdaten hinzufügen, wenn Sie aggregierte Paid-Media-Daten mit freigegebenen Metadaten wie IDs, Trackingcodes oder `UTM` verknüpfen möchten.
 1. Überprüfen Sie [Datensatzspezifische Einstellungen](/help/connections/create-connection.md#dataset-settings) für jeden Datensatz.
 1. Speichern Sie die Verbindung und bestätigen Sie, dass die Verbindung beginnt, Daten aufzustocken.
@@ -138,7 +150,7 @@ Paid-Media-Daten sind aggregierte Daten und basieren nicht auf der Identitätszu
 Nachdem die Verbindung fertig ist, müssen Sie eine oder mehrere Datenansichten für die Verbindung erstellen oder bearbeiten:
 
 
-1. Erstellen [&#x200B; bearbeiten Sie in Customer Journey Analytics eine oder mehrere Datenansichten](/help/data-views/create-dataview.md):
+1. Erstellen [ bearbeiten Sie in Customer Journey Analytics eine oder mehrere Datenansichten](/help/data-views/create-dataview.md):
 1. Standardeinstellungen wie Zeitzone und Währung definieren.
 1. Fügen Sie die Komponenten hinzu, die Sie für die gebührenpflichtige Medienanalyse benötigen.
 
@@ -174,5 +186,5 @@ Validieren Sie die Implementierung anhand der folgenden Checkliste.
 
 >[!MORELIKETHIS]
 >
->[Quell-Connector für Meta Ads](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/advertising/meta-ads)
+>[Quell-Connector für Meta Ads](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
 >
