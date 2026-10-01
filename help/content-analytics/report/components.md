@@ -179,7 +179,7 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 
 ## Paid Media
 
-Diese Komponenten werden einer Datenansicht hinzugefügt, wenn der Kanal **Bezahlte Medien** über einen [Quell-Connector für bezahlte Adobe Experience Platform-Medien aktiviert ](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home). Sie ermöglichen Ihnen Berichte zu Paid-Media-Kampagnen, Kreativen und Ausgaben neben Ihren Web- und mobilen Inhalten. Verfügbarkeit und ausgefüllte Werte hängen vom Werbenetzwerk und der Berichtsgröße ab.
+Diese Komponenten werden einer Datenansicht hinzugefügt, wenn der Kanal **Bezahlte Medien** über einen [Quell-Connector für bezahlte Adobe Experience Platform-Medien aktiviert &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home). Sie ermöglichen Ihnen Berichte zu Paid-Media-Kampagnen, Kreativen und Ausgaben neben Ihren Web- und mobilen Inhalten. Verfügbarkeit und ausgefüllte Werte hängen vom Werbenetzwerk und der Berichtsgröße ab.
 
 Die oben beschriebenen KI-generierten [Asset](#asset-attributes)Attribute und [Erlebnisattribute](#experience-attributes) sind auch für Kreative mit bezahlten Medien verfügbar. Die gleiche Funktion ist über die Kanäle Web, Mobile und Paid Media verfügbar.
 
