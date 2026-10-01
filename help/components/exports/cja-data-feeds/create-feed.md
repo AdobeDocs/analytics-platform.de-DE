@@ -216,7 +216,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    >
    >Wenn Sie sich dafür entscheiden, entweder die **Benutzeragent**- oder **Mobile ID**-Dimensionen in Ihren Daten-Feed aufzunehmen, können die unten aufgeführten Dimensionen nicht zum Daten-Feed hinzugefügt werden.
    >
-   >Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von ](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
+   >Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
 
    Die folgenden Dimensionen können nicht zusammen mit den Dimensionen **Benutzeragent** oder **Mobile ID** verwendet werden:
 

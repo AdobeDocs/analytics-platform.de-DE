@@ -37,7 +37,7 @@ ht-degree: 82%
 
 Bei der feldbasierten Zuordnung geben Sie einen Ereignis-Datensatz sowie die persistente ID (Cookie) und Personen-ID für diesen Datensatz an. Bei der feldbasierten Zuordnung wird versucht, die Personen-ID-Informationen für die Customer Journey Analytics-Datenanalyse bei allen anonymen Ereignissen mit einer bestimmten persistenten ID verfügbar zu machen.  Diese Informationen werden aus den Zeilen abgerufen, die eine Personen-ID für diese bestimmte persistente ID haben.
 
-Wenn die Personen-ID-Informationen für ein Ereignis nicht abgerufen werden können, wird stattdessen die persistente ID für dieses (nicht *)* verwendet. Daher enthält in einer [Datenansicht](/help/data-views/data-views.md) die mit einer [Verbindung“ verknüpft ist, ](/help/connections/overview.md) den Datensatz enthält, der für das Zusammenfügen aktiviert ist, die Personen-ID-Komponente entweder den Personen-ID-Wert oder den beständigen ID-Wert auf der Ereignisebene.
+Wenn die Personen-ID-Informationen für ein Ereignis nicht abgerufen werden können, wird stattdessen die persistente ID für dieses (nicht *)* verwendet. Daher enthält in einer [Datenansicht](/help/data-views/data-views.md) die mit einer [Verbindung“ verknüpft ist, &#x200B;](/help/connections/overview.md) den Datensatz enthält, der für das Zusammenfügen aktiviert ist, die Personen-ID-Komponente entweder den Personen-ID-Wert oder den beständigen ID-Wert auf der Ereignisebene.
 
 Sie können das feldbasierte Stitching verwenden, wenn Sie Customer Journey Analytics als eigenständige Lösung verwenden (ohne Zugriff auf den Experience Platform Identity Service und das zugehörige Identitätsdiagramm). Oder wenn Sie das verfügbare Identitätsdiagramm nicht verwenden möchten.
 
