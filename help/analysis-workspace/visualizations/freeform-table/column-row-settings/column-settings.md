@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Customer engagement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '945'
 ht-degree: 74%
 ---
 # Spalteneinstellungen
@@ -39,14 +39,14 @@ Mithilfe der [!UICONTROL Spalteneinstellungen] können Sie die Spaltenformatieru
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
 
-Um auf [!UICONTROL Spalteneinstellungen] zuzugreifen, wählen Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Spaltenüberschrift aus.
+Um auf [!UICONTROL Spalteneinstellungen] zuzugreifen, wählen Sie ![Spalteneinstellungen](/help/assets/icons2/Settings.svg) in der Spaltenüberschrift aus.
 
 ![Spalteneinstellungen](assets/column-settings.png)
 
@@ -105,7 +105,7 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 
 
 
-Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert &#x200B;](/help/data-views/component-settings/attribution.md).
+Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert ](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >

@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1672'
 ht-degree: 100%
 ---
 # Erstellen und Konfigurieren einer Verbindung für Customer Journey Analytics {#upgrade-create-connection}
@@ -106,7 +106,7 @@ Sie können beim Erstellen einer Verbindung einen Experience Platform-Datensatz 
 
    | Spalte | Beschreibung |
    |---|---|
-   | Datensatz | Der Name des Datensatzes. Wählen Sie den Namen aus, um zum Datensatz in Experience Platform weitergeleitet zu werden. Wählen Sie ![Informationen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) aus, um ein Popup-Fenster mit weiteren Details zum Datensatz anzuzeigen. Sie können **[!UICONTROL In Platform bearbeiten]** auswählen, um den Datensatz direkt in Experience Platform zu bearbeiten. |
+   | Datensatz | Der Name des Datensatzes. Wählen Sie den Namen aus, um zum Datensatz in Experience Platform weitergeleitet zu werden. Wählen Sie ![Informationen](/help/assets/icons/InfoOutline.svg) aus, um ein Popup-Fenster mit weiteren Details zum Datensatz anzuzeigen. Sie können **[!UICONTROL In Platform bearbeiten]** auswählen, um den Datensatz direkt in Experience Platform zu bearbeiten. |
    | Datensatztyp | Der Typ des Datensatzes: „Ereignis“, „Profil“, „Suche“ oder „Lookup“. |
    | Anzahl der Einträge | Die Gesamtzahl der Einträge im Vormonat für den Datensatz in Experience Platform. |
    | Schema | Das Schema für den Datensatz. Wählen Sie den Namen aus, um zum Schema in Experience Platform weitergeleitet zu werden. |
@@ -116,10 +116,10 @@ Sie können beim Erstellen einer Verbindung einen Experience Platform-Datensatz 
 
 
 1. Wählen Sie einen oder mehrere Datensätze und anschließend die Option **[!UICONTROL Weiter]** aus. Mindestens ein Ereignisdatensatz muss Teil der Verbindung sein.
-   * Um die für die Liste der Datensätze angezeigten Spalten zu ändern, wählen Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) aus und wählen Sie die Spalten aus, die im Dialogfeld [!UICONTROL Tabelle anpassen] angezeigt werden sollen.
-   * Um nach einem bestimmten Datensatz zu suchen, verwenden Sie das ![Suchfeld](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
-   * Um die ausgewählten Datensätze ein- oder auszublenden, wählen Sie ![Auswählen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg), **[!UICONTROL Ausgewählte ausblenden]** oder **[!UICONTROL Ausgewählte anzeigen]** aus.
-   * Um einen Datensatz aus der Liste der ausgewählten Datensätze zu entfernen, verwenden Sie ![Schließen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Um alle ausgewählten Datensätze zu entfernen, wählen Sie **[!UICONTROL Alle löschen]**.
+   * Um die für die Liste der Datensätze angezeigten Spalten zu ändern, wählen Sie ![Spalteneinstellungen](/help/assets/icons/ColumnSetting.svg) aus und wählen Sie die Spalten aus, die im Dialogfeld [!UICONTROL Tabelle anpassen] angezeigt werden sollen.
+   * Um nach einem bestimmten Datensatz zu suchen, verwenden Sie das ![Suchfeld](/help/assets/icons/Search.svg).
+   * Um die ausgewählten Datensätze ein- oder auszublenden, wählen Sie ![Auswählen](/help/assets/icons/SelectBoxAll.svg), **[!UICONTROL Ausgewählte ausblenden]** oder **[!UICONTROL Ausgewählte anzeigen]** aus.
+   * Um einen Datensatz aus der Liste der ausgewählten Datensätze zu entfernen, verwenden Sie ![Schließen](/help/assets/icons/Close.svg). Um alle ausgewählten Datensätze zu entfernen, wählen Sie **[!UICONTROL Alle löschen]**.
 
 
 
@@ -137,7 +137,7 @@ Sie können beim Erstellen einer Verbindung einen Experience Platform-Datensatz 
    | **[!UICONTROL Zeitzone]** | Nur für Zusammenfassungsdaten verfügbar. Wählen Sie die entsprechende Zeitzone für die Zeitreihen-Zusammenfassungsdaten aus. |
    | **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. <br/>Hierzu gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
    | **[!UICONTROL Importieren neuer Daten]** | Aktivieren Sie diese Option, wenn eine fortlaufende Verbindung hergestellt werden soll. Mit einer fortlaufenden Verbindung sind neue Daten-Batches, die den Datensätzen hinzugefügt werden, automatisch in Workspace verfügbar. |
-   | **[!UICONTROL Aufstockung des Datensatzes]** | Aktivieren Sie **[!UICONTROL Aufstockung aller vorhandenen Daten]**, um sicherzustellen, dass alle vorhandenen Daten aufgestockt werden.<br/><br/>Wählen Sie **[!UICONTROL Aufstockung anfordern]** aus, um eine Aufstockung mit historischen Daten für einen bestimmten Zeitraum durchzuführen. Sie können bis zu 10 Aufstockungszeiträume für Datensätze definieren.<ol><li>Definieren Sie den Zeitraum durch Eingabe von Start- und Enddaten oder Auswahl von Datumsangaben mithilfe des ![Kalenders](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Wählen Sie **[!UICONTROL Aufstockung in Warteschlange stellen]** aus, um die Aufstockung der Liste hinzuzufügen, oder **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.</li></ol>Wählen Sie für jeden Eintrag ![Bearbeiten](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) aus, um den Zeitraum zu bearbeiten, oder ![Löschen](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg), um den Eintrag zu löschen.<br/><br/>Bei Aufstockungen:<ul><li>Sie können jeden Datensatz einzeln aufstocken.</li><li>Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die geringste Latenz aufweisen.</li><li>Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Menge historischer Daten beeinflusst die Latenz.</li><li>Der Analytics-Quell-Connector importiert Daten aus bis zu 13 Monaten (unabhängig von ihrer Größe) für Produktions-Sandboxes. Die Aufstockung in Nicht-Produktions-Sandboxes ist dagegen auf 3 Monate beschränkt.</li></ul> |
+   | **[!UICONTROL Aufstockung des Datensatzes]** | Aktivieren Sie **[!UICONTROL Aufstockung aller vorhandenen Daten]**, um sicherzustellen, dass alle vorhandenen Daten aufgestockt werden.<br/><br/>Wählen Sie **[!UICONTROL Aufstockung anfordern]** aus, um eine Aufstockung mit historischen Daten für einen bestimmten Zeitraum durchzuführen. Sie können bis zu 10 Aufstockungszeiträume für Datensätze definieren.<ol><li>Definieren Sie den Zeitraum durch Eingabe von Start- und Enddaten oder Auswahl von Datumsangaben mithilfe des ![Kalenders](/help/assets/icons/Calendar.svg).</li><li>Wählen Sie **[!UICONTROL Aufstockung in Warteschlange stellen]** aus, um die Aufstockung der Liste hinzuzufügen, oder **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.</li></ol>Wählen Sie für jeden Eintrag ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um den Zeitraum zu bearbeiten, oder ![Löschen](/help/assets/icons/Close.svg), um den Eintrag zu löschen.<br/><br/>Bei Aufstockungen:<ul><li>Sie können jeden Datensatz einzeln aufstocken.</li><li>Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die geringste Latenz aufweisen.</li><li>Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Menge historischer Daten beeinflusst die Latenz.</li><li>Der Analytics-Quell-Connector importiert Daten aus bis zu 13 Monaten (unabhängig von ihrer Größe) für Produktions-Sandboxes. Die Aufstockung in Nicht-Produktions-Sandboxes ist dagegen auf 3 Monate beschränkt.</li></ul> |
    | **[!UICONTROL Datensatz transformieren]** | Für bestimmte B2B-Lookup-Datensätze können Sie die Umwandlung eines Datensatzes für geeignete personenbasierte B2B-Reporting-Szenarien aktivieren. |
    | **[!UICONTROL Aufstockungsstatus]** | Mögliche Statusindikatoren sind:<ul><li>Erfolgreich</li><li>X Aufstockung(en) werden verarbeitet</li><li>Aus</li></ul> |
    | **[!UICONTROL Datensatz-ID]** | Diese ID wird automatisch generiert. |

@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '3152'
+source-wordcount: '3122'
 ht-degree: 77%
 ---
 # Erstellen oder Bearbeiten einer Datenansicht
@@ -53,7 +53,7 @@ Das Erstellen einer Datenansicht beinhaltet entweder das Erstellen von Metriken 
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen oder Bearbeiten einer Datenansicht](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen oder Bearbeiten einer Datenansicht](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -112,14 +112,14 @@ Dieser Abschnitt ist nur für Admins sichtbar, denen Journey Optimizer bereitges
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!UICONTROL **Als Standard-Datenansicht in Adobe Journey Optimizer festlegen**] | Diese Konfigurationsoption standardisiert die Berichterstellung zwischen Journey Optimizer und Customer Journey Analytics. Sie können auch eine erweiterte Analyse Ihrer Adobe Journey Optimizer-Daten in Customer Journey Analytics durchführen (indem Sie in Journey Optimizer ![Öffnen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **In CJA analysieren**] auswählen).<p>Für die Durchführung dieser Art von Analyse benötigt Journey Optimizer Zugriff auf eine Customer Journey Analytics-Datenansicht.<p>Aktivieren Sie diese Option, um diese Datenansicht als Standardansicht für die Journey Optimizer-Berichterstellung für Ihre Sandbox zu verwenden.</p><p>Diese Konfigurationsoption führt Folgendes automatisch durch:</p><ul><li>Konfiguration alle rerforderlichen Journey Optimizer-Datensätze in der zugehörigen Verbindung in Customer Journey Analytics für die Verwendung mit Journey Optimizer.</li><li>Erstellung eines Satzes von Journey Optimizer-Metriken und -Dimensionen in der Datenansicht (einschließlich abgeleiteter Felder und berechneter Metriken). Kontextbezeichnungen werden für alle diese Metriken und Dimensionen automatisch festgelegt.</li><li>Aktiviert automatisch die Option **[!UICONTROL In CJA verwenden]** in der Verbindung, die mit dieser Datenansicht verknüpft ist. (Weitere Informationen zu dieser Option finden Sie unter [Verwenden einer Journey Optimizer-Verbindung in Customer Journey Analytics](/help/connections/manage-connections.md).)<p>Wenn Sie diese Einstellung nach der Aktivierung manuell deaktivieren, werden die Verbindung und alle zugehörigen Datenansichten auf ihren Standardstatus zurückgesetzt. Dies kann zu Datenänderungen in Ihren Berichten führen.</p></li></ul><p><p>Beachten Sie beim Aktivieren dieser Option Folgendes: <ul><li>Sie können die Standarddatenansicht zu einem späteren Zeitpunkt ändern. Hierdurch können sich jedoch Ihre Journey Optimizer-Berichtsdaten ändern. Wenn Sie diese Option deaktivieren, nachdem sie aktiviert war, werden Sie aufgefordert, eine neue Standarddatenansicht auszuwählen.</li><li>Wenn Sie bereits manuelle Anpassungen an den Datensätzen, Dimensionen oder Metriken in der Customer Journey Analytics-Datenansicht vorgenommen haben, bleiben Ihre manuellen Anpassungen beim Aktivieren dieser Konfigurationsoption erhalten. Diese Option ermöglicht zusätzliche Anpassungen, die die Berichterstellung zwischen Journey Optimizer und Customer Journey Analytics weiter standardisieren. Sie können manuelle Anpassungen auch nach dem Aktivieren dieser Option vornehmen.</li><li>Wenn diese Option ausgewählt ist, kann die mit der Datenansicht verknüpfte Verbindung nicht gelöscht werden.</li></ul>Weitere Informationen finden Sie unter [Integrieren von Adobe Journey Optimizer mit Adobe Customer Journey Analytics](/help/integrations/ajo.md). |
+| [!UICONTROL **Als Standard-Datenansicht in Adobe Journey Optimizer festlegen**] | Diese Konfigurationsoption standardisiert die Berichterstellung zwischen Journey Optimizer und Customer Journey Analytics. Sie können auch eine erweiterte Analyse Ihrer Adobe Journey Optimizer-Daten in Customer Journey Analytics durchführen (indem Sie in Journey Optimizer ![Öffnen](/help/assets/icons/OpenInLight.svg) [!UICONTROL **In CJA analysieren**] auswählen).<p>Für die Durchführung dieser Art von Analyse benötigt Journey Optimizer Zugriff auf eine Customer Journey Analytics-Datenansicht.<p>Aktivieren Sie diese Option, um diese Datenansicht als Standardansicht für die Journey Optimizer-Berichterstellung für Ihre Sandbox zu verwenden.</p><p>Diese Konfigurationsoption führt Folgendes automatisch durch:</p><ul><li>Konfiguration alle rerforderlichen Journey Optimizer-Datensätze in der zugehörigen Verbindung in Customer Journey Analytics für die Verwendung mit Journey Optimizer.</li><li>Erstellung eines Satzes von Journey Optimizer-Metriken und -Dimensionen in der Datenansicht (einschließlich abgeleiteter Felder und berechneter Metriken). Kontextbezeichnungen werden für alle diese Metriken und Dimensionen automatisch festgelegt.</li><li>Aktiviert automatisch die Option **[!UICONTROL In CJA verwenden]** in der Verbindung, die mit dieser Datenansicht verknüpft ist. (Weitere Informationen zu dieser Option finden Sie unter [Verwenden einer Journey Optimizer-Verbindung in Customer Journey Analytics](/help/connections/manage-connections.md).)<p>Wenn Sie diese Einstellung nach der Aktivierung manuell deaktivieren, werden die Verbindung und alle zugehörigen Datenansichten auf ihren Standardstatus zurückgesetzt. Dies kann zu Datenänderungen in Ihren Berichten führen.</p></li></ul><p><p>Beachten Sie beim Aktivieren dieser Option Folgendes: <ul><li>Sie können die Standarddatenansicht zu einem späteren Zeitpunkt ändern. Hierdurch können sich jedoch Ihre Journey Optimizer-Berichtsdaten ändern. Wenn Sie diese Option deaktivieren, nachdem sie aktiviert war, werden Sie aufgefordert, eine neue Standarddatenansicht auszuwählen.</li><li>Wenn Sie bereits manuelle Anpassungen an den Datensätzen, Dimensionen oder Metriken in der Customer Journey Analytics-Datenansicht vorgenommen haben, bleiben Ihre manuellen Anpassungen beim Aktivieren dieser Konfigurationsoption erhalten. Diese Option ermöglicht zusätzliche Anpassungen, die die Berichterstellung zwischen Journey Optimizer und Customer Journey Analytics weiter standardisieren. Sie können manuelle Anpassungen auch nach dem Aktivieren dieser Option vornehmen.</li><li>Wenn diese Option ausgewählt ist, kann die mit der Datenansicht verknüpfte Verbindung nicht gelöscht werden.</li></ul>Weitere Informationen finden Sie unter [Integrieren von Adobe Journey Optimizer mit Adobe Customer Journey Analytics](/help/integrations/ajo.md). |
 
 {style="table-layout:auto"}
 
 
 ### KI-Einstellungen
 
-Wählen Sie **[!UICONTROL Für Data Insights Agent aktivieren]** aus, um die Datenansicht für die [Data Insights Agent zu &#x200B;](/help/data-analysis-ai.md). Der Data Insights Agent ist ein generativer KI-Konversationsagent, auf den über den KI-Assistenten in Customer Journey Analytics zugegriffen werden kann. So können Sie Daten schnell mit Text-Prompts analysieren. Der Agent erstellt relevante Visualisierungen in Analysis Workspace mithilfe von Komponenten aus Ihrer Datenansicht und unter Verwendung Ihrer tatsächlichen Daten.
+Wählen Sie **[!UICONTROL Für Data Insights Agent aktivieren]** aus, um die Datenansicht für die [Data Insights Agent zu ](/help/data-analysis-ai.md). Der Data Insights Agent ist ein generativer KI-Konversationsagent, auf den über den KI-Assistenten in Customer Journey Analytics zugegriffen werden kann. So können Sie Daten schnell mit Text-Prompts analysieren. Der Agent erstellt relevante Visualisierungen in Analysis Workspace mithilfe von Komponenten aus Ihrer Datenansicht und unter Verwendung Ihrer tatsächlichen Daten.
 
 
 ### Kalender
@@ -161,13 +161,13 @@ Gibt den Namen der Container für die Datenansicht an. Container-Namen werden h�
 
 | Container-Name | Anzeigename (Standard) | Beschreibung |
 | --- | --- | --- |
-| globalAccount | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Global-Konto &#x200B;]** | Der Container [!UICONTROL Globales Konto] enthält sämtliche Sitzungen und Ereignisse für globale Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| globalAccount | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Global-Konto ]** | Der Container [!UICONTROL Globales Konto] enthält sämtliche Sitzungen und Ereignisse für globale Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
 | Person | **[!UICONTROL Person]** | Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Personen innerhalb des angegebenen Zeitrahmens. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Besucher“ oder „Benutzer“), können Sie den Container hier umbenennen. |
 | Sitzung | **[!UICONTROL Sitzung]** | Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in „Besuch“ oder einen anderen von Ihrem Unternehmen bevorzugten Begriff umbenennen. |
-| Opportunity | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity &#x200B;]** | Der Container [!UICONTROL Opportunity] enthält sämtliche Sitzungen und Ereignisse für Opportunitys innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
-| Einkaufsgruppe | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Buying-Gruppe &#x200B;]** | Der Container [!UICONTROL Käufergruppe] enthält sämtliche Sitzungen und Ereignisse für Käufergruppen innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| Opportunity | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity ]** | Der Container [!UICONTROL Opportunity] enthält sämtliche Sitzungen und Ereignisse für Opportunitys innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| Einkaufsgruppe | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Buying-Gruppe ]** | Der Container [!UICONTROL Käufergruppe] enthält sämtliche Sitzungen und Ereignisse für Käufergruppen innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
 | event | **[!UICONTROL Ereignis]** | Der Container [!UICONTROL Ereignis] definiert einzelne Ereignisse in einem Datensatz. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Treffer“ oder „Seitenansichten“), können Sie den Container hier umbenennen. |
-| account | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account &#x200B;]** | Der Container [!UICONTROL Konto] enthält sämtliche Sitzungen und Ereignisse für Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
+| account | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account ]** | Der Container [!UICONTROL Konto] enthält sämtliche Sitzungen und Ereignisse für Konten innerhalb des angegebenen Zeitrahmens. Falls Ihre Organisation einen anderen Begriff verwendet, können Sie den Container hier umbenennen. |
 
 So benennen Sie System-Container um:
 
@@ -178,10 +178,10 @@ So benennen Sie System-Container um:
 
 ### Benutzerdefinierte Container
 
-Sie fügen Ihrer Datenansicht benutzerdefinierte Container hinzu, damit Sie diese Container für die [&#x200B; von Unterereignissen &#x200B;](/help/components/segments/sub-event.md) können. Benutzerdefinierte Container können wie folgt definiert werden:
+Sie fügen Ihrer Datenansicht benutzerdefinierte Container hinzu, damit Sie diese Container für die [ von Unterereignissen ](/help/components/segments/sub-event.md) können. Benutzerdefinierte Container können wie folgt definiert werden:
 
 * Objekte oder Arrays, die in den Datensätzen verfügbar sind, die Teil der Verbindung sind. Zum Beispiel **[!UICONTROL productListItems]**, **[!UICONTROL content_assets]** oder **[!UICONTROL placeContext.activePOIs]**.
-* abgeleitete Felder, die mithilfe der Funktion [Aufspaltung“ ein &#x200B;](/help/data-views/derived-fields/derived-fields.md#split) zurückgeben
+* abgeleitete Felder, die mithilfe der Funktion [Aufspaltung“ ein ](/help/data-views/derived-fields/derived-fields.md#split) zurückgeben
 * Datenansichtskomponenten, die so konfiguriert sind, dass sie ein Array unter Verwendung der Komponenteneinstellungen [Teilzeichenfolge](/help/data-views/component-settings/substring.md) mit der Option [Trennzeichen](/help/data-views/component-settings/substring.md#delimiter) zurückgeben.
 
 Hinzufügen eines benutzerdefinierten Containers:
@@ -204,7 +204,7 @@ So bearbeiten Sie einen benutzerdefinierten Container:
 So löschen Sie einen benutzerdefinierten Container:
 
 1. Wählen Sie ![Mehr](/help/assets/icons/More.svg) für den benutzerdefinierten Container in der Spalte Anzeigename aus.
-1. Wählen Sie ![&#x200B; Kontextmenü &#x200B;](/help/assets/icons/Delete.svg)Löschen **[!UICONTROL Löschen]** aus.
+1. Wählen Sie ![ Kontextmenü ](/help/assets/icons/Delete.svg)Löschen **[!UICONTROL Löschen]** aus.
 
    >[!NOTE]
    >
@@ -231,11 +231,11 @@ Als Nächstes können Sie die Komponenten einer Datenansicht festlegen, d. h., 
 
    ![Registerkarte „Komponenten“](assets/dataview-components.png)
 
-   Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze enthält, und unten ihre [!UICONTROL Schemafelder].  Alle Datenansichten enthalten Standardkomponenten wie Ereignisse, Personen, Sitzungsmetriken und Zeitdimensionen.<ul><li>Wenn Sie [benutzerdefinierte Container](#containers-1) definieren, werden Metriken automatisch als ![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _benutzerdefinierter Container-Name _Vorfälle]**&#x200B;hinzugefügt.</li><li>Das System wendet standardmäßig den Filter **[!UICONTROL wird nicht]**) an, sodass nur nicht veraltete Schemafelder angezeigt werden.</li></ul>
+   Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze enthält, und unten ihre [!UICONTROL Schemafelder].  Alle Datenansichten enthalten Standardkomponenten wie Ereignisse, Personen, Sitzungsmetriken und Zeitdimensionen.<ul><li>Wenn Sie [benutzerdefinierte Container](#containers-1) definieren, werden Metriken automatisch als ![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _benutzerdefinierter Container-Name _Vorfälle]**hinzugefügt.</li><li>Das System wendet standardmäßig den Filter **[!UICONTROL wird nicht]**) an, sodass nur nicht veraltete Schemafelder angezeigt werden.</li></ul>
 
-1. Suchen Sie nach einem Schemafeld mit ![Suchsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Suchschemafeldern]** oder suchen Sie ein Feld, indem Sie in eine der Datensatzsammlungen wechseln, z. B. ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL Ereignisdatensätze]** oder ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL Lookup-Datensätze]**. Für Ereignis-Datensätze sind separate Sammlungen für ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL XDM-]** und ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL Adhoc- und relationale Felder]** verfügbar.<br/>Alternativ können Sie ein abgeleitetes Feld mit ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)**Abgeleitetes Feld erstellen**. Weitere Informationen finden Sie unter [Abgeleitete Felder](./derived-fields/derived-fields.md).
+1. Suchen Sie nach einem Schemafeld mit ![Suchsymbol](/help/assets/icons/Search.svg) **[!UICONTROL Suchschemafeldern]** oder suchen Sie ein Feld, indem Sie in eine der Datensatzsammlungen wechseln, z. B. ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL Ereignisdatensätze]** oder ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL Lookup-Datensätze]**. Für Ereignis-Datensätze sind separate Sammlungen für ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL XDM-]** und ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL Adhoc- und relationale Felder]** verfügbar.<br/>Alternativ können Sie ein abgeleitetes Feld mit ![Datensymbol](/help/assets/icons/Data.svg)**Abgeleitetes Feld erstellen**. Weitere Informationen finden Sie unter [Abgeleitete Felder](./derived-fields/derived-fields.md).
 
-1. Wenn Sie Ihr spezifisches Schemafeld gefunden oder Ihr abgeleitetes Feld definiert haben, ziehen Sie dieses Feld, z. B. ![Griffsymbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Seitenname]**, aus der linken Leiste in den Abschnitt **[!UICONTROL Metriken]** oder **[!UICONTROL Dimensionen]** unter **[!UICONTROL Eingeschlossene Komponenten]**.
+1. Wenn Sie Ihr spezifisches Schemafeld gefunden oder Ihr abgeleitetes Feld definiert haben, ziehen Sie dieses Feld, z. B. ![Griffsymbol](/help/assets/icons/DragHandle.svg) **[!UICONTROL Seitenname]**, aus der linken Leiste in den Abschnitt **[!UICONTROL Metriken]** oder **[!UICONTROL Dimensionen]** unter **[!UICONTROL Eingeschlossene Komponenten]**.
 Sie können dasselbe Schema mehrmals in die Bereiche „Dimensionen“ oder „Metriken“ ziehen und dieselbe Dimension bzw. Metrik auf unterschiedliche Weise konfigurieren. Erstellen Sie beispielsweise im Feld pageName `Product Pages` und `Error pages` Sie Dimensionen mithilfe verschiedener [Komponenteneinstellungen](component-settings/overview.md) auf der rechten Seite.
 Wenn Sie einen Ordner mit Schemafeldern aus der linken Leiste ziehen, werden die Felder in diesem Ordner automatisch in die passenden Abschnitte einsortiert. Zeichenfolgenfelder landen im Abschnitt [!UICONTROL Dimensionen] und numerische Schematypen landen im Abschnitt [!UICONTROL Metriken]. Sie können auch auf **[!UICONTROL Alle hinzufügen]** klicken. Dann werden alle Schemafelder in ihren jeweiligen Abschnitt eingefügt.
 
@@ -262,13 +262,13 @@ Das Duplizieren von Metriken oder Dimensionen und das anschließende Ändern spe
 
 ### Filtern von Schemafeldern oder Datensätzen
 
-Sie können ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) Schemafelder in der linken Leiste nach [!UICONTROL Datentyp], [!UICONTROL Datensätzen], [!UICONTROL Data Governance] und [!UICONTROL anderen] Kriterien ([!UICONTROL Enthält Daten], [!UICONTROL Ist Identität] und [!UICONTROL Ist nicht veraltet]) filtern:
+Sie können ![Filtersymbol](/help/assets/icons/Filter.svg) Schemafelder in der linken Leiste nach [!UICONTROL Datentyp], [!UICONTROL Datensätzen], [!UICONTROL Data Governance] und [!UICONTROL anderen] Kriterien ([!UICONTROL Enthält Daten], [!UICONTROL Ist Identität] und [!UICONTROL Ist nicht veraltet]) filtern:
 
 ![Filtern von Feldern](assets/dataview-components-filter.png)
 
 >[!TIP]
 >
->Wenn die Komponenten nicht ordnungsgemäß in Ihre Datenansicht geladen werden und eine Fehlermeldung angezeigt wird, finden Sie unter [&#x200B; von Berechtigungen &#x200B;](../troubleshooting/lack-of-permissions.md) eine Lösung.
+>Wenn die Komponenten nicht ordnungsgemäß in Ihre Datenansicht geladen werden und eine Fehlermeldung angezeigt wird, finden Sie unter [ von Berechtigungen ](../troubleshooting/lack-of-permissions.md) eine Lösung.
 
 
 ### Eingeschlossene Komponenten {#included-components}

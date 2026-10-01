@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 2391b13373992de30834f846da2fb7b71f5279ee
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '4250'
-ht-degree: 31%
+source-wordcount: '4244'
+ht-degree: 30%
 ---
 # Erstellen eines Daten-Feeds
 
@@ -129,7 +129,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
    Segmente, die Sie hier anwenden, kommen zu Segmenten hinzu, die möglicherweise bereits in Ihrer Datenansicht angewendet werden.
 
-1. (Optional) Suchen Sie in der linken Leiste mithilfe des Felds **Suche** nach bestimmten Komponenten. Oder wählen Sie das Symbol **Sortieren** (Symbol ![Komponenten sortieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), um eine der folgenden Sortieroptionen anzuwenden:
+1. (Optional) Suchen Sie in der linken Leiste mithilfe des Felds **Suche** nach bestimmten Komponenten. Oder wählen Sie das Symbol **Sortieren** (Symbol ![Komponenten sortieren](/help/assets/icons/SortOrderDown.svg), um eine der folgenden Sortieroptionen anzuwenden:
 
    | Option | Funktion |
    | --------- | ---------- |
@@ -216,7 +216,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    >
    >Wenn Sie sich dafür entscheiden, entweder die **Benutzeragent**- oder **Mobile ID**-Dimensionen in Ihren Daten-Feed aufzunehmen, können die unten aufgeführten Dimensionen nicht zum Daten-Feed hinzugefügt werden.
    >
-   >Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
+   >Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von ](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
 
    Die folgenden Dimensionen können nicht zusammen mit den Dimensionen **Benutzeragent** oder **Mobile ID** verwendet werden:
 

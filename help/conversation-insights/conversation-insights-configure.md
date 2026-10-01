@@ -18,10 +18,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 20%
+source-wordcount: '810'
+ht-degree: 16%
 ---
 # Erstellen oder Bearbeiten von Konfigurationen
 
@@ -34,7 +34,7 @@ Wenn Sie eine Conversation Insights-Konfiguration erstellen oder bearbeiten, geb
 
 Nur Systemadministratoren können Conversation Insights-Konfigurationen erstellen oder bearbeiten.
 
-Sie können Konfigurationen über die Benutzeroberfläche „Conversation Insights[Konfigurationen“ erstellen oder &#x200B;](./conversation-insights-manage.md).
+Sie können Konfigurationen über die Benutzeroberfläche „Conversation Insights[Konfigurationen“ erstellen oder ](./conversation-insights-manage.md).
 
 ## Fehlenden kombinierten Datensatz wiederherstellen
 
@@ -80,7 +80,7 @@ Für jede Konfiguration:
    1. Wählen **[!UICONTROL Verbindung verwenden]**.
 
    * Um in der Liste der auszuwählenden Verbindungen zu suchen, verwenden Sie das Feld ![Suche](/help/assets/icons/Search.svg).
-   * Um zu definieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) aus. Wählen **[!UICONTROL Dialogfeld „Tabelle anpassen]** die anzuzeigenden Spalten aus. Wählen Sie dann **[!UICONTROL Übernehmen]** aus.
+   * Um zu konfigurieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) aus. Wählen **[!UICONTROL Dialogfeld „Tabelle anpassen]** die anzuzeigenden Spalten aus. Wählen Sie dann **[!UICONTROL Übernehmen]** aus.
 
 1. Wenn **[!UICONTROL Datenansichten bereits konfiguriert]**, wählen Sie **[!UICONTROL Datenansichten auswählen]** aus, um Datenansichten auszuwählen.
 
@@ -95,7 +95,7 @@ Für jede Konfiguration:
    1. Wählen **[!UICONTROL Verwenden von Datenansichten]** aus, um die Datenansichten zu verwenden. Wählen Sie zum Abbrechen die Option „Abbrechen“ aus.
 
    * Um in der Liste der auszuwählenden Datenansichten zu suchen, verwenden Sie das Feld ![Suche](/help/assets/icons/Search.svg).
-   * Um zu definieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) aus. Wählen **[!UICONTROL Dialogfeld „Tabelle anpassen]** die anzuzeigenden Spalten aus. Wählen Sie dann **[!UICONTROL Übernehmen]** aus.
+   * Um zu konfigurieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) aus. Wählen **[!UICONTROL Dialogfeld „Tabelle anpassen]** die anzuzeigenden Spalten aus. Wählen Sie dann **[!UICONTROL Übernehmen]** aus.
 
 1. So beenden Sie die Konfiguration:
 
@@ -118,7 +118,7 @@ Die Datenansichten, die Sie in [Konfigurationsschritte](#configuration-steps) ko
 
 Für jede der konfigurierten Datenansichten:
 
-* **Container**: Die [Registerkarte Container](/help/data-views/create-dataview.md#containers) enthält einen neuen **[!UICONTROL Container-Namen]**: **[!UICONTROL Konversation]** mit **[!UICONTROL Anzeigename]**: **[!UICONTROL Container]** als zusätzlichen **&#x200B;**&#x200B;System **[!UICONTROL Container-Typ]**.
+* **Container**: Die [Registerkarte Container](/help/data-views/create-dataview.md#containers) enthält einen neuen **[!UICONTROL Container-Namen]**: **[!UICONTROL Konversation]** mit **[!UICONTROL Anzeigename]**: **[!UICONTROL Container]** als zusätzlichen **** System **[!UICONTROL Container-Typ]**.
 * **Komponenten**: Es werden zusätzliche Ordner mit Schemafeldern angezeigt. Beispiel: agentExperience und Konversation. Darüber hinaus werden die folgenden Komponenten automatisch hinzugefügt:
 
   | Metrik | Datentyp des Schemas | Pfad des Schemas |

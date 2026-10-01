@@ -21,10 +21,10 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 5%
+source-wordcount: '437'
+ht-degree: 2%
 ---
 # Konfigurieren von Einverständnisberichten und -filtern
 
@@ -56,9 +56,9 @@ So zeigen Sie Ihre vorhandenen Konfigurationen an:
 
    * **[!UICONTROL Status]**: Der Status der Konfiguration.
 
-   Sie können alle Spalten ausblenden, indem Sie auf das Spaltensymbol ![Spaltensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) klicken, die Auswahl der Spalten, die Sie ausblenden möchten, aufheben und dann auf **[!UICONTROL Anwenden]** klicken.
+   Sie können alle Spalten ausblenden, indem Sie auf das Spaltensymbol ![Spaltensymbol](/help/assets/icons2/ColumnSettings.svg) klicken, die Auswahl der Spalten, die Sie ausblenden möchten, aufheben und dann auf **[!UICONTROL Anwenden]** klicken.
 
-1. (Optional) Um die Liste der Konfigurationen zu filtern, wählen Sie **Filter** ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) und filtern Sie dann nach einem der folgenden Kriterien:
+1. (Optional) Um die Liste der Konfigurationen zu filtern, wählen Sie **Filter** ![Filtersymbol](/help/assets/icons/Filter.svg) und filtern Sie dann nach einem der folgenden Kriterien:
 
    * **[!UICONTROL Verbindung]**
 

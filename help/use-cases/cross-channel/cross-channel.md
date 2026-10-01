@@ -9,26 +9,34 @@ autotag-review: '2026-05-19T09:37:23.903Z'
 TQID: 'https://experienceleague.adobe.com/zguhaVwn2XtF0vSGqYAgjiL2IwUq-DMH-WUd0uQRnPc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases, Use cases (CJA)
   - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Insights
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 638
+source-wordcount: '614'
 ht-degree: 100%
-
 ---
-
 # Kanalübergreifende Analyse {#cross-channel}
 
 <!-- markdownlint-disable MD034 -->
@@ -49,11 +57,11 @@ Die kanalübergreifende Analyse verschafft Ihnen einen zentralen Überblick übe
 1. [Erstellen Sie Schemata](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) für aufzunehmende Daten.
 1. [Erstellen Sie Datensätze](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=de) für aufzunehmende Daten.
 1. [Aufnehmen von Daten in Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=de):
-   1. Ereignisbasierte Daten ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) von einer Website oder Mobile App über das Edge Network oder den Analytics-Quell-Connector.
-   2. Profildaten ![profile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (z. B. aus einem CRM-System, einer Callcenter-Anwendung oder einem Treueprogramm).
-   3. Lookup-Daten ![lookup](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (z. B. Produktname, Kategorie aus einem Produktinformationssystem).
+   1. Ereignisbasierte Daten ![event](/help/assets/icons/Events.svg) von einer Website oder Mobile App über das Edge Network oder den Analytics-Quell-Connector.
+   2. Profildaten ![profile](/help/assets/icons/User.svg) (z. B. aus einem CRM-System, einer Callcenter-Anwendung oder einem Treueprogramm).
+   3. Lookup-Daten ![lookup](/help/assets/icons/Search.svg) (z. B. Produktname, Kategorie aus einem Produktinformationssystem).
 
-1. Verwenden Sie eine gemeinsame Namespace-ID für alle Datensätze. Verwenden Sie die [Zuordnung](../../stitching/overview.md), um einen beliebigen ereignisbasierten Datensatz ![data refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) in Bezug auf die Bereitstellung der gemeinsamen ID in jeder Zeile zu erhöhen. Beachten Sie, dass Customer Journey Analytics derzeit für die Zuordnung weder das Experience Platform-Profil noch die Identitäts-Services verwendet.
+1. Verwenden Sie eine gemeinsame Namespace-ID für alle Datensätze. Verwenden Sie die [Zuordnung](../../stitching/overview.md), um einen beliebigen ereignisbasierten Datensatz ![data refresh](/help/assets/icons/DataRefresh.svg) in Bezug auf die Bereitstellung der gemeinsamen ID in jeder Zeile zu erhöhen. Beachten Sie, dass Customer Journey Analytics derzeit für die Zuordnung weder das Experience Platform-Profil noch die Identitäts-Services verwendet.
 1. Führen Sie eine benutzerdefinierte Datenvorbereitung durch, um sicherzustellen, dass ein gemeinsamer Schlüssel aus Zeitreihendaten in Customer Journey Analytics aufgenommen werden kann.
 1. Weisen Sie Suchdaten eine primäre ID zu, die mit einem Feld in den Ereignisdaten verknüpft werden kann. Zählt bei der Lizenzierung als Zeilen.
 1. Legen Sie dieselbe primäre ID für Profildaten als primäre ID der Ereignisdaten fest.

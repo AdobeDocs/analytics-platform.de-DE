@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 5%
+source-wordcount: '360'
+ht-degree: 2%
 ---
 # Anzeigen von Prognosen
 
@@ -32,7 +32,7 @@ Sie können Prognosen in einer Freiformtabelle oder in einem Liniendiagramm anze
 
 Sie können Prognosen in einer Zeitreihen-Freiformtabelle anzeigen. Wenn [!UICONTROL Prognose anzeigen] für die Freiformtabelle in [Benutzereinstellungen](../user-preferences.md) aktiviert ist, wird automatisch eine Prognose für die erste Metrikspalte angezeigt, die der Tabelle hinzugefügt wurde. Für jede zusätzliche Spalte:
 
-1. Wählen Sie das Symbol für die Spalteneinstellungen ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Spaltenüberschrift aus und stellen Sie sicher, dass **[!UICONTROL Prognose anzeigen]** in der Optionsliste ausgewählt ist. Weitere Informationen finden Sie unter [Spalteneinstellungen](../visualizations/freeform-table/column-row-settings/column-settings.md).
+1. Wählen Sie das Symbol für die Spalteneinstellungen ![Spalteneinstellungen](/help/assets/icons2/Settings.svg) in der Spaltenüberschrift aus und stellen Sie sicher, dass **[!UICONTROL Prognose anzeigen]** in der Optionsliste ausgewählt ist. Weitere Informationen finden Sie unter [Spalteneinstellungen](../visualizations/freeform-table/column-row-settings/column-settings.md).
 
 1. Klicken Sie außerhalb des Menüs **[!UICONTROL Spalteneinstellungen]**, um die Einstellung zu speichern und die aktualisierte Tabelle anzuzeigen.
 
@@ -48,7 +48,7 @@ Die Prognosen sind in der Tabelle wie folgt dargestellt:
 
 Ein Liniendiagramm ist die einzige Visualisierung, mit der Sie Prognosen anzeigen können.
 
-1. Wählen Sie das Einstellungssymbol ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in der Visualisierungskopfzeile aus und stellen Sie sicher, dass **[!UICONTROL Prognose anzeigen]** in der Optionsliste ausgewählt ist.
+1. Wählen Sie das Einstellungssymbol ![Spalteneinstellungen](/help/assets/icons2/Settings.svg) in der Visualisierungskopfzeile aus und stellen Sie sicher, dass **[!UICONTROL Prognose anzeigen]** in der Optionsliste ausgewählt ist.
 
 1. (Optional) Damit die Prognosen das Diagramm ordnungsgemäß skalieren können, wählen Sie **[!UICONTROL Prognose auf Y-Achse skalieren lassen]** aus. Diese Option ist standardmäßig nicht aktiviert, da dadurch unter Umständen ein Diagramm weniger gut lesbar wird.
 
