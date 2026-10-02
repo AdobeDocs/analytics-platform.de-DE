@@ -4,6 +4,7 @@ description: Aktivieren des Zusammenfügens für Ereignis-Datensätze in Custome
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
+hold: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: 'https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw'
 product_v2:
@@ -24,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 59d79c72fd52b3eb409c2554bef9daf7094b0287
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 20%
+source-wordcount: '1952'
+ht-degree: 18%
 ---
 # Aktivieren der Zuordnung
 
@@ -41,16 +42,16 @@ Sie müssen die Voraussetzungen für die von Ihnen angegebene Stitching-Methode 
 
 ## Vorflugkontrollen
 
-Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen für die Daten im Ereignis-Datensatz durchführen, bevor Sie die Identitätszuordnung aktivieren:
+Wenn Sie die Voraussetzungen erfüllen, führen Sie einige Preflight-Prüfungen für die Daten im Ereignis-Datensatz durch, bevor Sie die Identitätszuordnung aktivieren:
 
-* Wenn Sie Felder vom Typ [Experience-Datenmodell (XDM) für &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home) persistente ID oder Personen-ID verwenden, stellen Sie sicher, dass Identitäten im Schema für den Ereignis-Datensatz ordnungsgemäß markiert sind. [Siehe Übersicht über Identity-Namespaces](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/namespaces).
+* Wenn Sie [Experience-Datenmodell (XDM)-Schema](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/home) Felder für persistente ID oder Personen-ID verwenden, stellen Sie sicher, dass Identitäten im Schema für den Ereignis-Datensatz ordnungsgemäß markiert sind. [Siehe Übersicht über Identity-Namespaces](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/namespaces).
 * Identitätsabdeckung sowohl für persistente ID als auch für Personen-ID überprüfen:
 
   * **[!UICONTROL Persistent ID]**
 
     Abfragen von Daten von sieben Tagen, wenn Ihr persistentes ID-Feld nicht null ist, geteilt durch eine Abfrage von sieben Tagen mit Daten für alle Ereignisse in Ihrem Datensatz. Dieser Prozentsatz sollte über 95 % liegen.
 
-    Beispiel einer Abfrage, die Sie zur Überprüfung verwenden können:
+    Beispiel einer zu überprüfenden Abfrage:
 
     ```sql
     SELECT
@@ -74,10 +75,10 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 
   * **[!UICONTROL Personen-ID]**
-    * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Sie können einen Test ausführen, indem Sie zum [Experience Platform Identity Graph Viewer wechseln &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} das Diagramm nach einigen Beispielwerten für persistente IDs abfragen. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
+    * Stellen Sie bei diagrammbasiertem Stitching sicher, dass das Identitätsdiagramm Fragmente enthält, die ID-Werte aus dem ausgewählten persistenten ID-Namespace und dem Personen-ID-Namespace verknüpfen. Wechseln Sie zum [Experience Platform-Identitätsdiagramm-Viewer](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} und fragen Sie das Diagramm nach einigen beständigen Beispielwerten für IDs ab. Überprüfen Sie, ob diese persistenten ID-Werte mit Personen-ID-Werten im Diagramm verknüpft sind.
     * Fragen Sie für das feldbasierte Stitching 7 Tage Daten ab, bei denen das Feld für Ihre Personen-ID nicht null ist, und teilen Sie dies durch eine Abfrage von 7 Tagen Daten für alle Ereignisse in Ihrem Datensatz. Dieser Prozentsatz sollte idealerweise über 5 % liegen.
 
-      Beispiel einer Abfrage, die Sie zur Überprüfung verwenden können:
+      Beispiel einer zu überprüfenden Abfrage:
 
       ```sql
       SELECT
@@ -103,7 +104,7 @@ Wenn Sie die Voraussetzungen erfüllen, sollten Sie einige Preflight-Prüfungen 
 
 ## Aktivieren der Identitätszuordnung {#enable-identity-stitching}
 
-Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [&#128279;](/help/connections/create-connection.md#edit-a-dataset) personenbasierten Verbindung hinzufügen oder  bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
+Sie können die Identitätszuordnung aktivieren[ wenn Sie ](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in ](/help/connections/create-connection.md#edit-a-dataset) personenbasierten Verbindung hinzufügen oder [ bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
 
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
@@ -146,7 +147,7 @@ Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/hel
 
 ### Datensatzeinstellungen
 
-Um das Zusammenfügen zu aktivieren, klicken Sie im Abschnitt **[!UICONTROL Datensatzeinstellungen]** des Dialogfelds **[!UICONTROL Datensätze hinzufügen]** oder **[!UICONTROL Datensatz bearbeiten]** auf.
+Um das Zusammenfügen zu aktivieren, verwenden Sie den Abschnitt **[!UICONTROL Datensatzeinstellungen]** des Dialogfelds **[!UICONTROL Datensätze hinzufügen]** oder **[!UICONTROL Datensatz bearbeiten]**.
 
 ![Optionen für die Identitätszuordnung beim Aktivieren der Funktion](assets/identity-stitching-ui.png)
 
@@ -226,14 +227,14 @@ Zusätzlich zur standardmäßigen Benutzeroberfläche **[!UICONTROL Datensatzvor
 In Customer Journey Analytics ist eine ungültige ID ein Bezeichner:
 
 * mit einem bestimmten ID-Wert, der entweder aus einem persistenten ID- oder einem Personen-ID-Feld in zusammenfügbaren Datensätzen stammt, **und**
-* ist auf mehr als eine Million (1.000.000) Ereignisse in den Verbindungsdaten innerhalb eines Monats zurückzuführen.
+* wird monatlich für mehr als eine Million (1.000.000) Ereignisse in den Verbindungsdaten angezeigt.
 
 Wenn ein ID-Wert als ungültige ID markiert wird, werden alle zukünftigen Ereignisse, die diesen ID-Wert enthalten, aus den Verbindungsdaten verworfen und nicht im Bericht angezeigt.
 
 Beispiele für Anwendungsfälle mit ungültigen IDs:
 
 * Das Feld Personen-ID enthält benutzerdefinierte Werte oder Platzhalterwerte (z. B. `undefined`). Solche Werte können sich auch auf [Zuordnung und Qualität der Berichtsdaten](/help/stitching/faq.md#undefined-person-id-values) auswirken.
-* Wenn sich in einer feldbasierten Stitching-Konfiguration mehrere Personen ein Gerät teilen und die Gesamtzahl der Transitionen zwischen Benutzerinnen und Benutzern 50.000 überschreitet. In diesem Szenario stoppt der Zuordnungsprozess die Verwendung der Personen-ID-Informationen für dieses Gerät und verwendet stattdessen nur persistente ID-Informationen. Folglich werden alle Datensatzereignisse von diesem Gerät an Verbindungsdaten mit der persistenten ID-Identität gesendet, was mit hoher Wahrscheinlichkeit zu einer Situation mit schlechten IDs führt.
+* Wenn sich in einer feldbasierten Stitching-Konfiguration mehrere Personen ein Gerät teilen und die Gesamtzahl der Transitionen zwischen Benutzerinnen und Benutzern 50.000 überschreitet. In diesem Szenario stoppt der Zuordnungsprozess die Verwendung der Personen-ID-Informationen für dieses Gerät und verwendet stattdessen nur persistente ID-Informationen. Daher werden alle Datensatzereignisse von diesem Gerät an Verbindungsdaten mit der persistenten ID-Identität gesendet, was wahrscheinlich eine Situation mit ungültigen IDs verursacht.
 
 
 >[!NOTE]
@@ -243,11 +244,21 @@ Beispiele für Anwendungsfälle mit ungültigen IDs:
 
 ### Speichern
 
-Nachdem Sie eine Verbindung gespeichert haben, wird der Zuordnungsprozess für aktivierte Datensätze gestartet, sobald die Aufnahme von Daten für diese Datensätze beginnt.
+Sobald Sie eine Verbindung gespeichert haben, beginnt der Zuordnungsprozess für aktivierte Datensätze, sobald die Aufnahme von Daten für diese Datensätze beginnt.
+
+Nachdem Sie eine Verbindung gespeichert haben, wird der Prozess zum Aktivieren der Zuordnung für die konfigurierten Datensätze ausgelöst. Nach der Einrichtung des Stitching-Services verarbeitet der Stitching-Service alle Live-Streaming-Daten und beginnt mit der Aufstockung der Ereignisdatensätze in Experience Platform und nimmt sie anschließend in die Customer Journey Analytics-Verbindung auf.
+
+Jeder Teil des Prozesses führt zu bestimmten Verzögerungen. Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs) für eine gültige anfängliche Verbindungseinrichtung, die gespeichert wird und einen Datensatz mit aktivierter Zuordnung enthält:
+
+* Live-Daten werden in Customer Journey Analytics nach einigen Stunden angezeigt (weniger als 17 Stunden). Die Live-Daten beginnen mit Ereignis-Zeitstempelwerten, die mit dem tatsächlichen Zeitpunkt übereinstimmen, zu dem die Zuordnungsaktivierung abgeschlossen wurde. Aktivieren Sie die **[!UICONTROL Alle neuen Daten importieren]** für den Datensatz. Dadurch wird sichergestellt, dass Live-Daten eingehen.
+
+  Alle neuen Daten, die in den Quellereignis-Datensatz in Experience Platform aufgenommen werden, werden innerhalb von vier Stunden in Customer Journey Analytics angezeigt.
+
+* Aufstockte Daten (falls ursprünglich angefordert) werden etwa zur gleichen Zeit wie Live-Daten in Customer Journey Analytics angezeigt, ihre Verarbeitung dauert jedoch je nach Volumen Tage oder Wochen (weniger als 4 Wochen). Die aufgestockten Daten beginnen mit den ältesten Zeitstempelwerten des Ereignisses.
 
 >[!CAUTION]
 >
->Bei Datensätzen, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, wird der Aufstockungsstatus sofort und fälschlicherweise als ![Status grün](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _Aufstockungen abgeschlossen]**&#x200B;für die Anzahl der abgeschlossenen Aufstockungen gemeldet. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
+>Für Datensätze, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, kann der Aufstockungsstatus aufgrund einer bekannten Einschränkung derzeit nicht gemeldet werden. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
 >
 
 
@@ -264,5 +275,5 @@ Das in der Verbindungsschnittstelle aktivierte Stitching kann ohne Probleme mit 
 
 Sie haben beispielsweise Web-basierte zugeordnete Datensätze im Data Lake aufgrund früherer oder aktueller Zuordnungsanfragen. Sie können zugeordnete Daten aus einem Callcenter-Datensatz über die Schnittstelle Verbindungen hinzufügen, um diese Daten mit den Web-basierten Daten zu kombinieren.
 
-Schließlich migriert Adobe Ihre anforderungsbasierten zugeordneten Datensätze zum neuen Zuordnungssatz im -Erlebnis.
+Schließlich migriert Adobe Ihre anforderungsbasierten zugeordneten Datensätze zum neuen Stitching im -Erlebnis.
 
