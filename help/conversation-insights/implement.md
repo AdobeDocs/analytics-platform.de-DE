@@ -4,21 +4,35 @@ description: Erfahren Sie, wie Sie Ihr Agentenprogramm oder Ihren Service für K
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
+autotag-review: '2026-10-02T07:03:13.165Z'
+TQID: 'https://experienceleague.adobe.com/tjjZwA5Ayvtz35ffQAkcCwhCzBUB6X4puMjFsiJ0HUY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-    internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
+  - id: d7a261eb-f9ac-4dd6-bd60-1637efcd3d36
+    internal-label: Conversation Insights
+role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+source-git-commit: ebc2d1d9992150683fb642862e0ea29b7f70ddb0
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2563'
 ht-degree: 5%
 ---
 # Implementieren von Conversation Insights
@@ -275,7 +289,7 @@ Die Feldergruppe **[!UICONTROL Agenteninformationen]** ist eine optionale Felder
 | `agents[].name` | string | `"Chatbot Assistant"` | Agent-Name |
 | `agents[].version` | string | `"2.1.3"` | Agent-Version |
 | `agents[].score` | number | `0.92` | Agent-Konfidenzwert in den zurückgegebenen Werten |
-| `agents[].skills[]` | array | Siehe Skill-Objekt unten | **Veraltet** - Verwenden Sie stattdessen das `skills[]`-Array der obersten Ebene unten, das die vollständige Liste der Aufrufe zu Kenntnissen besitzt und jedes über `agentID` mit seinem Agenten verknüpft |
+| `agents[].skills[]` | array | Siehe Skill-Objekt unten | **Veraltet**. Verwenden Sie stattdessen das `skills[]`-Array der obersten Ebene unten, das die vollständige Liste der Qualifikationsaufrufe besitzt und jedes über `agentID` mit seinem Agenten verknüpft |
 | `agents[].skills[].name` | string | `"Intent Recognition"` | Qualifikationsname (veraltetes Array) |
 | `agents[].skills[].version` | string | `"1.0.0"` | SKILL version (veraltetes Array) |
 | `agents[].skills[].score` | number | `0.95` | SKILL Confidence Score (0-1) (veraltetes Array) |
@@ -429,11 +443,7 @@ Sie können dem Schema, das Sie für Eingabeaufforderungen, Antworten und Feedba
 * **Web-**) Feldergruppe. Um Details der Web-Seite zu erfassen, in die die Konversation eingebettet wurde.
 * **Commerce-**: Feldergruppe. So erfassen Sie die Produktdetails des empfohlenen Produkts, das im Rahmen des Gesprächs erwähnt wird.
 
-
-
-Der Kunde ist für die Erstellung der Quell-Konversationsereignisse verantwortlich. Adobe Platform führt anschließend eine Signalextraktion und Datenmischung durch. Der Kunde muss die Signalextraktions- oder Mischdienste nicht implementieren.
-
-In diesem Dokument werden die Eingabeanforderungen für das MVP für Konversationserkenntnisse und die aktuelle Aktualisierung des Agentenschemas behandelt. Sie enthält keine Funktionen von Conversation Insights 1.0 oder Anforderungen für spätere Versionen.
+Der Kunde ist für die Erstellung der Quell-Konversationsereignisse verantwortlich. Adobe führt eine Signalextraktion und Datenmischung durch. Der Kunde muss die Signalextraktions- oder Mischdienste nicht implementieren.
 
 ### Ereignistyp
 
