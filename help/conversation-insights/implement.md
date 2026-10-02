@@ -16,9 +16,9 @@ feature_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
+source-git-commit: 7bd10643bc54f5923f590f849d05890bffd77a2e
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2563'
 ht-degree: 5%
 ---
 # Implementieren von Conversation Insights
@@ -275,7 +275,7 @@ Die Feldergruppe **[!UICONTROL Agenteninformationen]** ist eine optionale Felder
 | `agents[].name` | string | `"Chatbot Assistant"` | Agent-Name |
 | `agents[].version` | string | `"2.1.3"` | Agent-Version |
 | `agents[].score` | number | `0.92` | Agent-Konfidenzwert in den zurückgegebenen Werten |
-| `agents[].skills[]` | array | Siehe Skill-Objekt unten | **Veraltet** - Verwenden Sie stattdessen das `skills[]`-Array der obersten Ebene unten, das die vollständige Liste der Aufrufe zu Kenntnissen besitzt und jedes über `agentID` mit seinem Agenten verknüpft |
+| `agents[].skills[]` | array | Siehe Skill-Objekt unten | **Veraltet**. Verwenden Sie stattdessen das `skills[]`-Array der obersten Ebene unten, das die vollständige Liste der Qualifikationsaufrufe besitzt und jedes über `agentID` mit seinem Agenten verknüpft |
 | `agents[].skills[].name` | string | `"Intent Recognition"` | Qualifikationsname (veraltetes Array) |
 | `agents[].skills[].version` | string | `"1.0.0"` | SKILL version (veraltetes Array) |
 | `agents[].skills[].score` | number | `0.95` | SKILL Confidence Score (0-1) (veraltetes Array) |
@@ -429,11 +429,7 @@ Sie können dem Schema, das Sie für Eingabeaufforderungen, Antworten und Feedba
 * **Web-**) Feldergruppe. Um Details der Web-Seite zu erfassen, in die die Konversation eingebettet wurde.
 * **Commerce-**: Feldergruppe. So erfassen Sie die Produktdetails des empfohlenen Produkts, das im Rahmen des Gesprächs erwähnt wird.
 
-
-
-Der Kunde ist für die Erstellung der Quell-Konversationsereignisse verantwortlich. Adobe Platform führt anschließend eine Signalextraktion und Datenmischung durch. Der Kunde muss die Signalextraktions- oder Mischdienste nicht implementieren.
-
-In diesem Dokument werden die Eingabeanforderungen für das MVP für Konversationserkenntnisse und die aktuelle Aktualisierung des Agentenschemas behandelt. Sie enthält keine Funktionen von Conversation Insights 1.0 oder Anforderungen für spätere Versionen.
+Der Kunde ist für die Erstellung der Quell-Konversationsereignisse verantwortlich. Adobe führt eine Signalextraktion und Datenmischung durch. Der Kunde muss die Signalextraktions- oder Mischdienste nicht implementieren.
 
 ### Ereignistyp
 
