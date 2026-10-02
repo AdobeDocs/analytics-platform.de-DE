@@ -4,7 +4,6 @@ description: Erfahren Sie, wie Sie Ihr Agentenprogramm oder Ihren Service für K
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,12 +12,11 @@ feature_v2:
     internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
-role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 99e0e43c34f77b6e42f8d3c4fdf5d2773569b3e7
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '2592'
 ht-degree: 5%
@@ -39,7 +37,7 @@ Dieser Artikel dokumentiert die erforderlichen Implementierungsschritte.
 
 Konfigurieren Sie Datensätze für die primären Konversationsereignisse: Aufforderung, Antwort, Feedback. Die Eingabeaufforderungen-, Antwort- und Feedback-Datensätze müssen das XDM-Erlebnisereignis-Basisschema mit der [Konversationsereignis-Feldergruppe](#conversation-event-field-group) erweitern und können optional die [Agenteninformations-Feldergruppe](#agentic-information-field-group) und andere [zusätzliche Feldergruppen](#additional-field-groups) enthalten.
 
-Sie können separate Datensätze für Eingabeaufforderungen, Antworten und Feedback definieren oder Daten zu Datensätzen kombinieren. Verwenden Sie beispielsweise einen Datensatz für Eingabeaufforderungen und Antworten und einen anderen Datensatz für Feedback. Oder verwenden Sie einen separaten Datensatz für jeden Konversationsereignistyp, wie in [Funktionsweise](/help/conversation-insights/conversation-insights-overview.md#how-it-works) dargestellt.
+Sie können separate Datensätze für Eingabeaufforderungen, Antworten und Feedback definieren oder Daten zu Datensätzen kombinieren. Verwenden Sie beispielsweise einen Datensatz für Eingabeaufforderungen und Antworten und einen anderen Datensatz für Feedback. Oder verwenden Sie einen separaten Datensatz für jeden Konversationsereignistyp, wie in [Funktionsweise](/help/conversation-insights/overview.md#how-it-works) dargestellt.
 
 Verwenden Sie zur Veranschaulichung Folgendes:
 
@@ -625,7 +623,6 @@ Unten finden Sie ein Beispiel für die Verwendung der Feldergruppe „Konversati
 ## Datenerfassung
 
 Verwenden Sie die folgende Datenerfassungsstrategie für Konversationseinblicke.
-
 
 ### Ereignistypen
 

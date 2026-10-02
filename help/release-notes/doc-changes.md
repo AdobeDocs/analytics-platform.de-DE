@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2c0efe27451163d9fe4fe0f60bab11151a8ac6f1
+source-git-commit: 17af5df91a28b3a6e44528f88661b6dcc86d6cae
 workflow-type: tm+mt
-source-wordcount: '7162'
+source-wordcount: '7170'
 ht-degree: 96%
 ---
 
@@ -69,6 +69,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 |---|---|
+| **Oktober 2026** | |
+| Conversation Insights | [Dokumentation](/help/conversation-insights/overview.md) für Konversationseinblicke. |
 | **September 2026** | |
 | Journey-Leinwandvergleich bei Pfeilen und Fallout | Die Einstellung &quot;[!UICONTROL Vergleichen mit]&quot; in [Konfigurieren einer Journey-Arbeitsflächen-Visualisierung](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) wurde aktualisiert, um anzuzeigen, dass die prozentuale Änderung zwischen Datumsbereichen jetzt auf jedem Knoten, Pfeil und Fallout im Journey angezeigt wird. |
 | Integrierte Blog-Beiträge | Folgende Blog-Beiträge wurden eingefügt:<ul><li>[Das vollständige Playbook für die Verarbeitung von „Kein Wert“ in Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=de#M598)</li><li>[Detaillierte Einblicke in die Anwendungsfälle von Adobe Experience Platform und Customer Journey Analytics Data Egress](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?profile.language=de)</li></ul>in unserem [Datenexport](/help/use-cases/data-export/overview.md) Anwendungsfällen und einem neuen [Kein Wert](/help/use-cases/data-views/no-value.md) Anwendungsfallartikel. |

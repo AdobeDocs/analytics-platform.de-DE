@@ -4,7 +4,6 @@ description: Erfahren Sie, wie Sie Konversationseinblicke analysieren können.
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -18,11 +17,12 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
 ---
+
 # Analysieren von Konversationserkenntnissen
 
 ## Einfache Analyse
@@ -41,7 +41,7 @@ So analysieren Sie Konversationen in großem Maßstab und stellen den Kontext f�
 
 * Kombinieren Sie Ihre Conversation Insights-Ereignisse mit anderen Ereignisdatensätzen und zusätzlichen Profil- und Lookup-Datensätzen. Fügen Sie diese Datensätze zu der Verbindung hinzu, die Sie für die Konfiguration Conversation Insights ausgewählt haben.
 * Fügen Sie zusätzliche Komponenten (Metriken und Dimensionen) zu den Datenansichten hinzu, die Sie für die Konfiguration Conversation Insights ausgewählt haben.
-* ...
+
 
 +++ Beispielprojekt
 

@@ -4,7 +4,6 @@ description: Erfahren Sie mehr über den Wert und die Terminologie von Conversat
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -18,12 +17,14 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: e550b7005c12bc5e2fb92bea44767bae0d7db3dc
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1117'
 ht-degree: 1%
 ---
 # Conversation Insights
+
+{{release-limited-testing}}
 
 Mit Conversation Insights können Sie Konversationen aus den Agentenerlebnissen analysieren, die Sie Ihren Kunden anbieten. Diese Agentenerlebnisse können auf großen Sprachmodellen (LLM) oder auf menschlichen Konversationen basieren. Beispielsweise ein Chatbot, der mit einem Kunden oder einem Callcenter interagiert.
 
@@ -69,7 +70,7 @@ Eine Konversation ist die Container- oder Gruppierungsebene. Dieser Container is
 * Wie hat sich Sentiment in einem Gespräch verändert?
 * Welche Gespräche führten schließlich zu einer Konversion?
 
-Weitere Informationen zur Implementierung finden Sie im [Konversation](./conversation-insights-implement.md#conversation)-Objekt in der Dokumentation [Konversationseinblicke implementieren](./conversation-insights-implement.md).
+Weitere Informationen zur Implementierung finden Sie im [Konversation](./implement.md#conversation)-Objekt in der Dokumentation [Konversationseinblicke implementieren](./implement.md).
 
 ### abbiegen
 
@@ -83,7 +84,7 @@ Eine typische Wendung besteht aus
 
 Der Zug ist das primäre Analyseobjekt für Berichtszwecke. Der Conversation Blender-Service kombiniert die verfügbaren Eingabeaufforderungen, Antwort-, Feedback- und Signalinformationen in Turn-Level-Aufzeichnungen.
 
-Weitere Informationen zur Implementierung finden Sie im [Turn](./conversation-insights-implement.md#turn)-Objekt in der Dokumentation [Implementieren von Konversationserkenntnissen](./conversation-insights-implement.md) .
+Weitere Informationen zur Implementierung finden Sie im [Turn](./implement.md#turn)-Objekt in der Dokumentation [Implementieren von Konversationserkenntnissen](./implement.md) .
 
 ### Eingabeaufforderung
 
@@ -103,7 +104,7 @@ Die Eingabeaufforderung ist die primäre Eingabe, aus der Conversation Insights 
 * Die Sentiment des Benutzers
 * Andere unterstützte Signale
 
-Weitere Informationen zur Implementierung finden Sie im [Eingabeaufforderung](./conversation-insights-implement.md#prompt)-Objekt in der Dokumentation [Implementieren von Konversationseinblicken](./conversation-insights-implement.md).
+Weitere Informationen zur Implementierung finden Sie im [Eingabeaufforderung](./implement.md#prompt)-Objekt in der Dokumentation [Implementieren von Konversationseinblicken](./implement.md).
 
 ### Antwort
 
@@ -119,7 +120,7 @@ Eine Antwort enthält oft verschiedene Inhaltstypen. Beispiel:
 
 Diese Unterscheidung ist nützlich, da die Analyse die Hauptantwort von unterstützenden Links, Zitaten, Anzeigen oder anderen Antwortkomponenten trennen muss.
 
-Weitere Informationen zur Implementierung finden Sie im [Antwort](./conversation-insights-implement.md#response)-Objekt in der Dokumentation [Implementieren von Konversationseinblicken](./conversation-insights-implement.md).
+Weitere Informationen zur Implementierung finden Sie im [Antwort](./implement.md#response)-Objekt in der Dokumentation [Implementieren von Konversationseinblicken](./implement.md).
 
 ### Feedback
 
@@ -134,13 +135,13 @@ Das Feedback kann Folgendes enthalten:
 
 Feedback muss nicht unbedingt gleichzeitig mit der Eingabeaufforderung oder der Antwort verfügbar sein. Sie können das Feedback zu einem späteren Zeitpunkt über die Agentenanwendung oder den Service senden, nachdem der Benutzer die Antwort ausgewertet hat.
 
-Weitere Informationen zur Implementierung finden Sie im [Feedback](./conversation-insights-implement.md#feedback)-Objekt in der Dokumentation [Implementieren von &#x200B;](./conversation-insights-implement.md) .
+Weitere Informationen zur Implementierung finden Sie im [Feedback](./implement.md#feedback)-Objekt in der Dokumentation [Implementieren von &#x200B;](./implement.md) .
 
 ### Signal
 
 Ein Signal ist eine strukturierte analytische Beobachtung über Konversationsinhalte. Der Signalextraktionsdienst extrahiert Signale.
 
-Weitere Informationen zur Implementierung finden Sie im [Signal](./conversation-insights-implement.md#signal)-Objekt in der Dokumentation [Implementieren von Konversationserkenntnissen](./conversation-insights-implement.md) .
+Weitere Informationen zur Implementierung finden Sie im [Signal](./implement.md#signal)-Objekt in der Dokumentation [Implementieren von Konversationserkenntnissen](./implement.md) .
 
 
 ### Agent
@@ -151,7 +152,8 @@ Um die Agentenanwendung oder den Service zu identifizieren, sind für jedes Conv
 
 Wenn Ihr Agent-Erlebnisprogramm den Aufruf von Fähigkeiten unterstützt, die während der Verarbeitung aufgerufene Funktionen darstellen, können Sie diese Fähigkeitsaufrufe als Teil der Feldergruppe für Agenteninformationen hinzufügen.
 
-Weitere Informationen zur Implementierung finden Sie in der [Agenteninformationen](./conversation-insights-implement.md#agentic-information-field-group) in der Dokumentation [Implementieren von &#x200B;](./conversation-insights-implement.md)&quot;.
+Weitere Informationen zur Implementierung finden Sie in der [Agenteninformationen](./implement.md#agentic-information-field-group) in der Dokumentation [Implementieren von &#x200B;](./implement.md)&quot;.
+
 
 ## Funktionsweise
 
@@ -167,8 +169,8 @@ Im Folgenden wird der Gesamtprozess der Datenerfassung, Signalextraktion und Kon
 
 | | Beschreibung |
 |---|---|
-| 1 | Sie instrumentieren Ihr Agentprogramm oder Ihren Service, um Ereignisse zu erstellen, die Eingabeaufforderungen ![CommentText](/help/assets/icons2/CommentText.svg), Antworten ![CommentReply](/help/assets/icons2/CommentReply.svg) und Feedback-![&#x200B; (Feedback](/help/assets/icons2/Feedback.svg)-Datensätze enthalten.<br/>Weitere Informationen zum Instrumentieren der Agentenanwendung oder des Services finden Sie in der [Implementierungsdokumentation](./conversation-insights-implement.md). |
-| 2 | Der Signalextraktions-Service extrahiert Signale aus den Eingabeaufforderungen ![CommentText](/help/assets/icons2/CommentText.svg), Antworten ![CommentReply](/help/assets/icons2/CommentReply.svg) und Feedback-Datensätzen ![Feedback](/help/assets/icons2/Feedback.svg) als Signalereignisse ![OnAir](/help/assets/icons/OnAir.svg) und speichert diese Signalereignisse in einem neuen Datensatz.<br>Dieser Schritt wird als Teil der Definition einer „Conversation [&quot;-Konfiguration &#x200B;](./conversation-insights-configure.md). |
-| 3 | Der Conversation Blender-Service blendet die Ereignisse aus den ![CommentText](/help/assets/icons2/CommentText.svg), Antworten ![CommentReply](/help/assets/icons2/CommentReply.svg), Feedback ![Feedback](/help/assets/icons2/Feedback.svg) und Signalen ![OnAir](/help/assets/icons/OnAir.svg)-Ereignisdatensätzen zusammen und gibt die blended ![Merge](/help/assets/icons/Merge.svg)events in einen neuen Datensatz aus.<br>Dieser Schritt wird als Teil der Definition einer „Conversation [&quot;-Konfiguration &#x200B;](./conversation-insights-configure.md). |
-| 4 | Der gemischte ![Zusammenführen](/help/assets/icons/Merge.svg)-Datensatz wird Teil der Verbindung und die Komponenten, die in dem Schema definiert sind, das für den gemischten Datensatz verwendet wird, werden Teil der Datenansicht.<br>Dieser Schritt wird als Teil der Definition einer „Conversation [&quot;-Konfiguration &#x200B;](./conversation-insights-configure.md). |
+| 1 | Sie instrumentieren Ihr Agentprogramm oder Ihren Service, um Ereignisse zu erstellen, die Eingabeaufforderungen ![CommentText](/help/assets/icons2/CommentText.svg), Antworten ![CommentReply](/help/assets/icons2/CommentReply.svg) und Feedback-![&#x200B; (Feedback](/help/assets/icons2/Feedback.svg)-Datensätze enthalten.<br/>Weitere Informationen zum Instrumentieren der Agentenanwendung oder des Services finden Sie in der [Implementierungsdokumentation](./implement.md). |
+| 2 | Der Signalextraktions-Service extrahiert Signale aus den Eingabeaufforderungen ![CommentText](/help/assets/icons2/CommentText.svg), Antworten ![CommentReply](/help/assets/icons2/CommentReply.svg) und Feedback-Datensätzen ![Feedback](/help/assets/icons2/Feedback.svg) als Signalereignisse ![OnAir](/help/assets/icons/OnAir.svg) und speichert diese Signalereignisse in einem neuen Datensatz.<br>Dieser Schritt wird als Teil der Definition einer „Conversation [&quot;-Konfiguration &#x200B;](./configure.md). |
+| 3 | Der Conversation Blender-Service blendet die Ereignisse aus den ![CommentText](/help/assets/icons2/CommentText.svg), Antworten ![CommentReply](/help/assets/icons2/CommentReply.svg), Feedback ![Feedback](/help/assets/icons2/Feedback.svg) und Signalen ![OnAir](/help/assets/icons/OnAir.svg)-Ereignisdatensätzen zusammen und gibt die blended ![Merge](/help/assets/icons/Merge.svg)events in einen neuen Datensatz aus.<br>Dieser Schritt wird als Teil der Definition einer „Conversation [&quot;-Konfiguration &#x200B;](./configure.md). |
+| 4 | Der gemischte ![Zusammenführen](/help/assets/icons/Merge.svg)-Datensatz wird Teil der Verbindung und die Komponenten, die in dem Schema definiert sind, das für den gemischten Datensatz verwendet wird, werden Teil der Datenansicht.<br>Dieser Schritt wird als Teil der Definition einer „Conversation [&quot;-Konfiguration &#x200B;](./configure.md). |
 

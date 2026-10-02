@@ -4,7 +4,6 @@ description: Erfahren Sie, wie Sie Conversation Insights-Konfigurationen verwalt
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,23 +12,23 @@ feature_v2:
     internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
-role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 6%
 ---
 # Konfigurationen verwalten
 
-Nachdem Sie [Conversation Insights-Konfigurationen erstellt haben](/help/conversation-insights/conversation-insights-configure.md) können Sie diese Konfigurationen anzeigen, bearbeiten oder löschen.
+Nachdem Sie [Conversation Insights-Konfigurationen erstellt haben](/help/conversation-insights/configure.md) können Sie diese Konfigurationen anzeigen, bearbeiten oder löschen.
 
 Nur Systemadministratoren können Conversation Insights-Konfigurationen verwalten.
 
-Weitere Informationen zu Conversation Insights finden Sie unter [Conversation Insights - Übersicht](/help/conversation-insights/conversation-insights-overview.md).
+Weitere Informationen zu Conversation Insights finden Sie unter [Conversation Insights - Übersicht](/help/conversation-insights/overview.md).
+
 
 ## Anzeigen und Filtern vorhandener Konfigurationen
 
@@ -72,7 +71,7 @@ So zeigen Sie Ihre vorhandenen Conversation Insights-Konfigurationen an:
 So erstellen Sie eine neue Konfiguration für Conversation Insights:
 
 1. Wählen Sie **[!UICONTROL Konfiguration erstellen]** aus.
-1. Verwenden Sie das Dialogfeld [**[!UICONTROL Konfiguration erstellen]**](./conversation-insights-configure.md), um Konversationseinblicke zu konfigurieren.
+1. Verwenden Sie das Dialogfeld [**[!UICONTROL Konfiguration erstellen]**](./configure.md), um Konversationseinblicke zu konfigurieren.
 
 ## Bearbeiten einer Konfiguration
 
@@ -84,7 +83,7 @@ So bearbeiten Sie eine vorhandene Conversation Insights-Konfiguration:
    * Aktivieren Sie das Kontrollkästchen neben der Konfiguration, die Sie bearbeiten möchten, und wählen Sie dann ![&#x200B; blaue Aktionsleiste &#x200B;](/help/assets/icons/Edit.svg)Bearbeiten **[!UICONTROL Bearbeiten]** aus.
    * Wählen Sie ![Mehr](/help/assets/icons/More.svg) für die Konfiguration aus, die Sie bearbeiten möchten. Wählen Sie im Kontextmenü die Option ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus.
 
-1. Verwenden Sie das [**[!UICONTROL Konfiguration / _Name der Konfiguration_]**](./conversation-insights-configure.md), um Konversationseinblicke zu verwalten.
+1. Verwenden Sie das [**[!UICONTROL Konfiguration / _Name der Konfiguration_]**](./configure.md), um Konversationseinblicke zu verwalten.
 
 ## Löschen einer Konfiguration
 

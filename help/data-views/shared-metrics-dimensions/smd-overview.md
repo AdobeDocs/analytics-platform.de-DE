@@ -5,36 +5,47 @@ exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
 TQID: https://experienceleague.adobe.com/5sjpTMocv3547Xqg4VD6C5Gp-cRzNmyHTI5iE6P-JGA
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Governance
+source-git-commit: d16771a675504a6330a59478f15bf6112ae444d6
 workflow-type: tm+mt
-source-wordcount: 1292
+source-wordcount: '1337'
 ht-degree: 3%
-
 ---
-
 # Übersicht über freigegebene Metriken und Dimensionen
 
-Freigegebene Metriken und Dimensionen bieten einen zentralen Speicherort zum Verwalten von Dimensionen und Metriken, die in einer beliebigen Anzahl von Datenansichten verwendet werden können. Diese Komponenten sind besonders für Organisationen nützlich, die mehrere Datenansichten nutzen, insbesondere wenn diese Datenansichten gemeinsame Komponenteneinstellungen aufweisen. Änderungen an freigegebenen Metriken und Dimensionen werden sofort auf alle Datenansichten angewendet, für die sie freigegeben sind. Beim Bearbeiten einer einzelnen Datenansicht können freigegebene Dimensionen und Metriken durch ein Symbol ![Freigegebene Komponente](/help/assets/icons/CCLibrary.svg) neben dem Komponentennamen identifiziert werden.
+Freigegebene Metriken und Dimensionen bieten einen zentralen Speicherort zum Verwalten von Dimensionen und Metriken, die in einer beliebigen Anzahl von Datenansichten verwendet werden können. Diese Komponenten sind besonders für Organisationen nützlich, die mehrere Datenansichten nutzen, insbesondere wenn diese Datenansichten gemeinsame Komponenteneinstellungen aufweisen. Änderungen an freigegebenen Metriken und Dimensionen werden sofort auf alle Datenansichten angewendet, für die sie freigegeben sind. Beim Bearbeiten einer einzelnen Datenansicht können Sie freigegebene Dimensionen und Metriken durch ein Symbol ![Freigegebene Komponente](/help/assets/icons/CCLibrary.svg) neben dem Komponentennamen identifizieren.
 
 Freigegebene Dimensionen und Metriken ermöglichen zwar die Verwendung gemeinsamer Komponenten in vielen Datenansichten, sie können jedoch nicht verbindungsübergreifend freigegeben werden.
+
+## Berechtigungen
+
+* [Produktadministratoren](https://experienceleague.adobe.com/de/docs/analytics-platform/using/technotes/access-control#product-administrator-role) benötigen außerdem die **Verwalten von Datennutzungsrichtlinien** und **Anzeigen von Datennutzungsrichtlinien** Berechtigungen für alle Sandboxes in [Experience Platform-Berechtigungen](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home#permissions).
 
 ## Workflow
 
 Die meisten Unternehmen verwenden den folgenden übergeordneten Workflow, um Dimensionen und Metriken im Zeitverlauf zu deduplizieren und zu verwalten:
 
-1. Importieren Sie Komponenten aus jeder Datenansicht, die über mehrere Datenansichten hinweg freigegeben werden können. Wenn dieselbe Dimension oder Metrik in mehreren Datenansichten vorhanden ist, empfiehlt Adobe, alle Instanzen dieser Komponente zu importieren. Diese Best Practice importiert zwar Duplikate, diese werden jedoch so importiert, dass sie dedupliziert werden können und ihre jeweiligen Verweise auf Workspace-Projekte beibehalten werden.
+1. Importieren Sie Komponenten aus jeder Datenansicht, die über mehrere Datenansichten hinweg freigegeben sind. Wenn dieselbe Dimension oder Metrik in mehreren Datenansichten vorhanden ist, empfiehlt Adobe, alle Instanzen dieser Komponente zu importieren. Diese Best Practice importiert zwar Duplikate, diese werden jedoch so importiert, dass sie dedupliziert werden können und ihre jeweiligen Verweise auf Workspace-Projekte beibehalten werden.
 1. Überprüfen Sie alle Komponenten, die dieselbe Komponenten-ID, aber unterschiedliche Komponenteneinstellungen verwenden. Wählen Sie für jede Gruppe doppelter Komponenten die gewünschten Komponenteneinstellungen aus, die auf alle anderen Komponenten mit dieser Komponenten-ID angewendet werden sollen.
 1. Überprüfen Sie alle Komponenten, die dieselbe Komponenten-ID verwenden und dieselben Komponenteneinstellungen haben. Diese Dimensionen oder Metriken können einfach und sicher zusammengeführt werden.
 
