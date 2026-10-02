@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 59d79c72fd52b3eb409c2554bef9daf7094b0287
+source-git-commit: 8800f7c1659785931edb7d9f7139f037a086511c
 workflow-type: tm+mt
-source-wordcount: '1952'
-ht-degree: 18%
+source-wordcount: '1929'
+ht-degree: 19%
 ---
 # Aktivieren der Zuordnung
 
@@ -104,7 +104,7 @@ Wenn Sie die Voraussetzungen erfüllen, führen Sie einige Preflight-Prüfungen 
 
 ## Aktivieren der Identitätszuordnung {#enable-identity-stitching}
 
-Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [&#128279;](/help/connections/create-connection.md#edit-a-dataset) personenbasierten Verbindung hinzufügen oder  bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
+Sie können die Identitätszuordnung aktivieren[ wenn Sie ](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in ](/help/connections/create-connection.md#edit-a-dataset) personenbasierten Verbindung hinzufügen oder [ bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
 
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
@@ -244,13 +244,17 @@ Beispiele für Anwendungsfälle mit ungültigen IDs:
 
 ### Speichern
 
-Sobald Sie eine Verbindung gespeichert haben, beginnt der Zuordnungsprozess für aktivierte Datensätze, sobald die Aufnahme von Daten für diese Datensätze beginnt.
 
-Nachdem Sie eine Verbindung gespeichert haben, wird der Prozess zum Aktivieren der Zuordnung für die konfigurierten Datensätze ausgelöst. Nach der Einrichtung des Stitching-Services verarbeitet der Stitching-Service alle Live-Streaming-Daten und beginnt mit der Aufstockung der Ereignisdatensätze in Experience Platform und nimmt sie anschließend in die Customer Journey Analytics-Verbindung auf.
 
-Jeder Teil des Prozesses führt zu bestimmten Verzögerungen. Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs) für eine gültige anfängliche Verbindungseinrichtung, die gespeichert wird und einen Datensatz mit aktivierter Zuordnung enthält:
+Nachdem Sie eine Verbindung gespeichert haben, wird der Prozess zum Aktivieren der Zuordnung für die konfigurierten Datensätze ausgelöst. Nach der Einrichtung des Stitching-Services verarbeitet der Stitching-Service alle Live-Streaming-Daten, beginnt mit der Aufstockung der Ereignisdatensätze in Experience Platform und nimmt anschließend die Daten in die Customer Journey Analytics-Verbindung auf.
 
-* Live-Daten werden in Customer Journey Analytics nach einigen Stunden angezeigt (weniger als 17 Stunden). Die Live-Daten beginnen mit Ereignis-Zeitstempelwerten, die mit dem tatsächlichen Zeitpunkt übereinstimmen, zu dem die Zuordnungsaktivierung abgeschlossen wurde. Aktivieren Sie die **[!UICONTROL Alle neuen Daten importieren]** für den Datensatz. Dadurch wird sichergestellt, dass Live-Daten eingehen.
+Jeder Teil des Prozesses führt zu bestimmten Verzögerungen. Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs).
+
+Für ein gültiges anfängliches Verbindungssetup, das gespeichert wird und einen Datensatz mit aktiviertem Stitching enthält:
+
+* Live-Daten werden in Customer Journey Analytics nach einigen Stunden angezeigt (weniger als 17 Stunden). Die Live-Daten beginnen mit Ereignis-Zeitstempelwerten, die mit dem tatsächlichen Zeitpunkt übereinstimmen, zu dem die Zuordnungsaktivierung abgeschlossen wurde.
+
+  Um sicherzustellen, dass Live-Daten eingehen, aktivieren Sie die Option **[!UICONTROL Alle neuen Daten importieren]** für den Datensatz.
 
   Alle neuen Daten, die in den Quellereignis-Datensatz in Experience Platform aufgenommen werden, werden innerhalb von vier Stunden in Customer Journey Analytics angezeigt.
 
