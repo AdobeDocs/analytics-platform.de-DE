@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 91497f695a693fd15135dc5173e8a35537616e72
+source-git-commit: cc31e50f01da63eaf1e7b6eb8465d187485b7816
 workflow-type: tm+mt
 source-wordcount: '10677'
 ht-degree: 89%
@@ -732,7 +732,7 @@ Alle Datensätze und Datensatztypen verfügen über [allgemeine Einstellungen un
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter"
->title="Zeilenfilter aktivieren"
+>title="Zeilenfilterung aktivieren"
 >abstract="Zeilenfilter bestimmen, welche Ereignisse in Customer Journey Analytics aufgenommen werden. Es werden nur Ereignisse aufgenommen, die Ihren Einschlussregeln entsprechen. Alle anderen Ereignisse werden dauerhaft ausgeschlossen und stehen nicht für Berichte, Segmentierungen oder Analysen in Customer Journey Analytics zur Verfügung.<ul><li>Sie können bis zu 10 Filter erstellen.</li><li> Änderungen an Filtern gelten nur für neue Daten, die nach der Änderung aufgenommen werden, und wirken sich nicht rückwirkend auf zuvor aufgenommene Daten oder den Trigger einer historischen Aufstockung aus.</li></ul>"
 
 >[!CONTEXTUALHELP]
