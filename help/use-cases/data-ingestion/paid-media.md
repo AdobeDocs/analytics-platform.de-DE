@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hold: true
 role: Admin
-source-git-commit: 42b73f2843244a02fd51301d8d99282ae5f309cd
+source-git-commit: 4bb99471d256fe29dc54980a5da37cf2385b679f
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1704'
 ht-degree: 0%
 ---
 
@@ -43,7 +43,7 @@ Die Authentifizierung beim Connector verwendet [!DNL OAuth 2.0]. Während des Se
 
 ## Paid-Media-Datenmodell
 
-Paid-Media-Daten verwenden ein Sternschema. Ein [Zusammenfassungsmetrik-Datensatz](#summary-metrics-dataset) dient als Faktentabelle, und sechs Lookup-Datensätze stellen die zugehörigen Dimensionen bereit. Die Lookup-Datensätze werden mit dem Zusammenfassungsmetriken-Datensatz nach Entitäts-`GUID` und nativen ID-Werten für Konten, Kampagnen, Anzeigengruppen, Anzeigen, Assets und Erlebnisse verbunden.
+[Zusammenfassungsmetrik-Datensätze](#summary-metrics-datasets) dienen als Faktentabellen, und Lookup-Datensätze liefern die zugehörigen Dimensionen. Die Lookup-Datensätze werden mit den Zusammenfassungsmetriken-Datensätzen nach Entitäts-`GUID` und nativen ID-Werten für Konten, Kampagnen, Anzeigengruppen, Anzeigen, Assets und Erlebnisse verbunden.
 
 Die Lookup-Datensätze verwenden zwei gemeinsame Bausteine:
 
@@ -61,11 +61,11 @@ In der folgenden Tabelle sind die sechs Lookup-Datensätze zusammengefasst.
 | Asset-Suche | Asset-Eigenschaften wie Dimensionen, Dateidetails, Bildeigenschaften, Medien-URLs, Nutzungsmetadaten, Videometadaten, Beschreibung, Untertyp, Titel und Typ |
 | Erlebnissuche | Kreative Gruppierungen auf Erlebnisebene wie Erlebnis-ID, Assets, Titel, Beschreibung und call to action |
 
-### Datensatz für Zusammenfassungsmetriken
+### Zusammenfassungsmetrik-Datensätze
 
-Der Datensatz mit Zusammenfassungsmetriken für bezahlte Medien ist der zentrale Zusammenfassungsdatensatz. Jede Zeile stellt normalerweise eine Entität für einen Tag dar und enthält einen Zeitstempel, eine Kennung, einen Ereignistyp, Entitäts-IDs und denormalisierte Namen für das Reporting.
+Die Datensätze der Zusammenfassungsmetriken für bezahlte Medien sind die zentralen Zusammenfassungsdatensätze. Jede Zeile in einem zusammenfassenden Datensatz stellt normalerweise eine Entität für einen Tag dar und enthält einen Zeitstempel, eine Kennung, einen Ereignistyp, Entitäts-IDs und denormalisierte Namen für das Reporting.
 
-Der Datensatz mit Zusammenfassungsmetriken kann die folgenden Metrikgruppen enthalten:
+Jeder zusammenfassende Metrikdatensatz kann die folgenden Metrikgruppen enthalten:
 
 * **Kernleistung**: Impressionen, Klicks, Clickthrough-Rate, Interaktionen, Interaktionsrate, Konversionen, Konversionsrate, Konversionswert, Leads, Link-Klicks, Downloads und App-Installationen oder -Öffnungen.
 * **Kosten und Budget**: tägliche Ausgaben, zugewiesenes und verbleibendes Budget, Geschwindigkeit, Überschreitung oder Unterschreitung, Durchschnittskostenmetriken und Gebotsbeträge.
@@ -79,9 +79,9 @@ Der Datensatz mit Zusammenfassungsmetriken kann die folgenden Metrikgruppen enth
 
 ### Standarddatensätze
 
-Wenn Sie eine Paid-Media-Quelle verbinden, stellt Adobe zwölf standardmäßige Paid-Media-Datensätze bereit, die auf den globalen Paid-Media-Schemaklassen und Feldergruppen basieren. Diese Datensätze enthalten sechs zusammenfassende Metrikdatensätze, die sechs Lookup-Datensätze und unterstützende Datensätze. Alle 12 Zusammenfassungs- und Lookup-Datensätze müssen vorhanden sein, damit die Paid-Media-Daten nachgelagert korrekt aufgelöst werden.
+Wenn Sie eine Paid-Media-Quelle verbinden, stellt Adobe zwölf standardmäßige Paid-Media-Datensätze bereit, die auf den globalen Paid-Media-Schemaklassen und Feldergruppen basieren. Diese Datensätze enthalten sechs Zusammenfassungsmetriken, sechs Lookup-Datensätze und unterstützende Datensätze. Alle 12 Zusammenfassungs- und Lookup-Datensätze müssen vorhanden sein, damit die Paid-Media-Daten nachgelagert korrekt aufgelöst werden.
 
-Erforderliche Datensätze:
+#### Erforderliche Datensätze
 
 * Zusammenfassung des Paid Media-Kontos
 * Kampagnenübersicht für bezahlte Medien
@@ -96,7 +96,9 @@ Erforderliche Datensätze:
 * Paid Media Experience Lookup
 * Paid Media Asset Lookup
 
-Unterstützende Datensätze, z. B.:
+#### Unterstützende Datensätze
+
+Beispiel
 
 * Bezahlte Medien und demografische Suche
 * Zusammenfassung der Paid Media-Erlebnisplatzierung
@@ -110,8 +112,7 @@ Verwenden Sie den folgenden Prozess, um eine Quelle zu verbinden und Paid-Media-
 
 1. Vergewissern Sie sich, dass Sie über die erforderlichen Experience Platform-Quellberechtigungen und Ad-Platform-Zugriff verfügen.
 1. Navigieren Sie in Experience Platform zu **[!UICONTROL Quellen]** > **[!UICONTROL Katalog]** > **[!UICONTROL Advertising]**.
-1. &#x200B;
-   1. Stellen Sie sicher, dass Sie sich in der Sandbox befinden, die die Paid-Media-Datensätze enthält.
+1. Stellen Sie sicher, dass Sie sich in der Sandbox befinden, die die Paid-Media-Datensätze enthält.
 1. Wählen Sie den Connector aus, den Sie verwenden möchten, z. B. **[!DNL Meta Ads]**. Wählen Sie **[!UICONTROL Einrichten]** aus, um eine neue Verbindung zu erstellen, oder wählen Sie **[!UICONTROL Daten hinzufügen]** aus, um einer vorhandenen Verbindung weitere Daten hinzuzufügen.
 1. Authentifizieren Sie sich bei [!DNL OAuth 2.0], indem Sie sich mit einem Benutzer anmelden, der über den erforderlichen Zugriff auf Advertiser-Ebene verfügt.
 1. Wählen Sie die Werbekonten, Entitäten und insight-Daten aus, die Sie aufnehmen möchten.
