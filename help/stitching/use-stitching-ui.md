@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 8800f7c1659785931edb7d9f7139f037a086511c
+source-git-commit: 1ee7e0b046f370c956b083e494522cfbc892e092
 workflow-type: tm+mt
-source-wordcount: '1929'
-ht-degree: 19%
+source-wordcount: '1979'
+ht-degree: 18%
 ---
 # Aktivieren der Zuordnung
 
@@ -104,7 +104,7 @@ Wenn Sie die Voraussetzungen erfüllen, führen Sie einige Preflight-Prüfungen 
 
 ## Aktivieren der Identitätszuordnung {#enable-identity-stitching}
 
-Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [&#128279;](/help/connections/create-connection.md#edit-a-dataset) personenbasierten Verbindung hinzufügen oder  bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
+Sie können die Identitätszuordnung aktivieren[ wenn Sie ](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in ](/help/connections/create-connection.md#edit-a-dataset) personenbasierten Verbindung hinzufügen oder [ bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
 
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
@@ -238,15 +238,13 @@ Beispiele für Anwendungsfälle mit ungültigen IDs:
 
 
 >[!NOTE]
->Die **[!UICONTROL Zuordnungsmetriken]** einschließlich **[!UICONTROL ungültiger IDs]** werden auf Grundlage eines begrenzten Satzes von Daten berechnet. Informationen zum Identifizieren fehlerhafter IDs für einen Datensatz, den Sie zum Zusammenfügen verwenden möchten, finden Sie in der Technote [Fehlerhafte IDs](/help/technotes/badids.md).
+>Die **[!UICONTROL Zuordnungsmetriken]** einschließlich **[!UICONTROL ungültiger IDs]** werden auf Grundlage eines begrenzten Satzes von Daten berechnet. Informationen zum Ermitteln des Vorhandenseins ungültiger IDs für einen Datensatz, den Sie für die Zuordnung verwenden möchten, finden Sie in der [Technote zu ungültigen IDs](/help/technotes/badids.md).
 >
 
 
 ### Speichern
 
-
-
-Nachdem Sie eine Verbindung gespeichert haben, wird der Prozess zum Aktivieren der Zuordnung für die konfigurierten Datensätze ausgelöst. Nach der Einrichtung des Stitching-Services verarbeitet der Stitching-Service alle Live-Streaming-Daten, beginnt mit der Aufstockung der Ereignisdatensätze in Experience Platform und nimmt anschließend die Daten in die Customer Journey Analytics-Verbindung auf.
+Nachdem Sie eine Verbindung gespeichert haben, wird der Prozess zum Aktivieren der Zuordnung für die konfigurierten Datensätze ausgelöst. Sobald der Zusammenfügungs-Service eingerichtet ist, verarbeitet der Service die Live-Streaming-Daten und die angeforderte Aufstockung aus den Ereignisdatensätzen in Experience Platform. Anschließend werden Daten in die Customer Journey Analytics-Verbindung aufgenommen.
 
 Jeder Teil des Prozesses führt zu bestimmten Verzögerungen. Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs).
 
@@ -256,15 +254,16 @@ Für ein gültiges anfängliches Verbindungssetup, das gespeichert wird und eine
 
   Um sicherzustellen, dass Live-Daten eingehen, aktivieren Sie die Option **[!UICONTROL Alle neuen Daten importieren]** für den Datensatz.
 
-  Alle neuen Daten, die in den Quellereignis-Datensatz in Experience Platform aufgenommen werden, werden innerhalb von vier Stunden in Customer Journey Analytics angezeigt.
+  Neue Daten, die in den Experience Platform-Quellereignis-Datensatz aufgenommen werden, werden innerhalb von vier Stunden in Customer Journey Analytics angezeigt.
 
-* Aufstockte Daten (falls ursprünglich angefordert) werden etwa zur gleichen Zeit wie Live-Daten in Customer Journey Analytics angezeigt, ihre Verarbeitung dauert jedoch je nach Volumen Tage oder Wochen (weniger als 4 Wochen). Die aufgestockten Daten beginnen mit den ältesten Zeitstempelwerten des Ereignisses.
+* Aufstockte Daten (falls ursprünglich angefordert) werden etwa zur gleichen Zeit wie Live-Daten in Customer Journey Analytics angezeigt, deren vollständige Verarbeitung jedoch je nach Volumen Tage dauern kann. Die aufgestockten Daten beginnen mit den ältesten Zeitstempelwerten des Ereignisses.
 
->[!CAUTION]
->
->Für Datensätze, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, kann der Aufstockungsstatus aufgrund einer bekannten Einschränkung derzeit nicht gemeldet werden. Verwenden Sie andere Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden.
->
+  >[!CAUTION]
+  >
+  >Für Datensätze, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, kann der Aufstockungsstatus aufgrund einer bekannten Einschränkung derzeit nicht gemeldet werden.
+  >
 
+  Verwenden Sie alternative Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden. Verwenden Sie beispielsweise die [Benutzeroberfläche des Experience Platform-](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview), um die Ereignisanzahl für den relevanten Zeitraum aus dem Datensatz zu extrahieren. Vergleichen Sie diese Ereignisse mit der Ereignismetrik in [Customer Journey Analytics-Berichten](/help/analysis-workspace/home.md) für denselben Zeitrahmen. Wenn diese Zahlen übereinstimmen, wird die Aufstockung abgeschlossen.
 
 ## Einschränkungen
 
