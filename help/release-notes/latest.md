@@ -1,7 +1,6 @@
 ---
 title: Aktuelle Versionshinweise zu Customer Journey Analytics
 description: Sehen Sie sich die neuesten Customer Journey Analytics-Versionshinweise an, einschließlich neuer Funktionen, behobener Probleme und verschobener Versionen für den aktuellen Zeitraum.
-hold: true
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w'
@@ -50,51 +49,52 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 4f62a406436915d581ab30f26b82544388957782
+source-git-commit: 0a83f4d08806b4d9b97265989f9d687011b232c3
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 29%
+source-wordcount: '855'
+ht-degree: 28%
 ---
-# Aktuelle Versionshinweise zu Customer Journey Analytics (September 2026)
+# Aktuelle Customer Journey Analytics-Versionshinweise (Oktober 2026)
 
-**Letzte Aktualisierung**: 9. September 2026
+**Letzte Aktualisierung**: 7. Oktober 2026
 
-Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom September 2026. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
+Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Oktober 2026. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
 ## Neue oder aktualisierte Funktionen
 
 | Funktion und Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | -----------|-----------|-----------|
-| **Analysieren von LLM-Kundenerlebnissen in Analysis Workspace mit Conversation Insights**<br/> Customer Journey Analytics bringt jetzt unstrukturierte Chat-Daten in Analysis Workspace ein, sodass Sie Berichte über LLM-gestützte Browser- und Kauferlebnisse in Ihren Properties erstellen können.<p>Mit dieser Funktion können Sie:</p><ul><li>Sammeln Sie Eingabeaufforderungen, Antworten und Agentenmetadaten von Gesprächsagenten (entweder den benutzerdefinierten Agenten Ihres Unternehmens oder Adobe Brand Concierge) über Web SDK.</li><li>Analysieren Sie Absicht, Tonfall und Sentiment, damit Sie verstehen können, was Kunden fragen, wie Ihr Agent reagiert und wie Ihre Kunden über ihre Interaktionen denken.</li><li>Analysieren Sie im benötigten Umfang anhand Ihres vorhandenen Schemas, Ihrer Datensätze und Datenansichten und nutzen Sie dann die Gelegenheit, Einblicke in Analysis Workspace zu gewinnen.</li><li>Verknüpfen Sie Konversationen mit Ergebnissen, indem Sie Agenteninteraktionen mit Ihren allgemeinen Journey-Kunden verknüpfen, damit Sie echte Auswirkungen auf Konversion, Interaktion und mehr messen können.</li></ul><p>Zuvor waren LLM-gestützte Erlebnisse schwer zu messen und es war nahezu unmöglich, eine Verbindung zu den Journey-Systemen Ihrer bestehenden Kunden herzustellen.</p><p>Weitere Informationen finden Sie unter [Konversationseinblicke](/help/conversation-insights/overview.md)</p> | | &#x200B;8. Oktober 2026<p>(Ursprünglich für den 22. September 2026 geplant)</p> |
+| **Schreibgeschützte Berechtigung für den Customer Journey Analytics MCP-Server**<br/> Administratoren können Benutzenden jetzt schreibgeschützten Zugriff auf den Customer Journey Analytics MCP-Server gewähren. Das neue [!UICONTROL MCP Read Only]-Berechtigungselement bietet Benutzern Zugriff auf alle schreibgeschützten Tools, ohne dass sie Projekte, Segmente oder berechnete Metriken erstellen können.<p>Das vorhandene [!UICONTROL MCP-]-Berechtigungselement wird in &quot;[!UICONTROL -Vollzugriff“ ]. Benutzende mit dieser Berechtigung behalten Zugriff auf alle Tools, einschließlich Tools zum Erstellen, Ändern oder Löschen von Komponenten.</p><p>Weitere Informationen finden Sie unter [Customer Journey Analytics MCP-Server](https://developer.adobe.com/analytics-mcp/docs/cja/).</p> | | &#x200B;6. Oktober 2026 |
+| **Analysieren von LLM-Kundenerlebnissen in Analysis Workspace mit Conversation Insights**<br/> Customer Journey Analytics bringt jetzt unstrukturierte Chat-Daten in Analysis Workspace ein, sodass Sie Berichte über LLM-gestützte Browser- und Kauferlebnisse in Ihren Properties erstellen können.<p>Mit dieser Funktion können Sie:</p><ul><li>Sammeln Sie Eingabeaufforderungen, Antworten und Agentenmetadaten von Gesprächsagenten (entweder den benutzerdefinierten Agenten Ihres Unternehmens oder Adobe Brand Concierge) über Web SDK.</li><li>Analysieren Sie Absicht, Tonfall und Sentiment, damit Sie verstehen können, was Kunden fragen, wie Ihr Agent reagiert und wie Ihre Kunden über ihre Interaktionen denken.</li><li>Analysieren Sie im benötigten Umfang anhand Ihres vorhandenen Schemas, Ihrer Datensätze und Datenansichten und nutzen Sie dann die Gelegenheit, Einblicke in Analysis Workspace zu gewinnen.</li><li>Verknüpfen Sie Konversationen mit Ergebnissen, indem Sie Agenteninteraktionen mit Ihren allgemeinen Journey-Kunden verknüpfen, damit Sie echte Auswirkungen auf Konversion, Interaktion und mehr messen können.</li></ul><p>Zuvor waren LLM-gestützte Erlebnisse schwer zu messen und es war nahezu unmöglich, eine Verbindung zu den Journey-Systemen Ihrer bestehenden Kunden herzustellen.</p><p>Weitere Informationen finden Sie unter [Konversationseinblicke](/help/conversation-insights/overview.md).</p> | | &#x200B;8. Oktober 2026<p>(Ursprünglich für den 22. September 2026 geplant)</p> |
 | **Komponentenbeschreibungen automatisch generieren** <br/>Sie können jetzt automatisch Beschreibungen für Dimensionen, Metriken, berechnete Metriken, Segmente und Datumsbereiche generieren. Auf diese Weise können Workspace-Benutzende verstehen, welche Komponenten verwendet werden sollen, insbesondere in Organisationen mit großen Komponentenbibliotheken. <p>Sie können für eine einzelne Komponente eine Beschreibung oder für viele Komponenten gleichzeitig Beschreibungen erstellen.</p> <p>(Link zur Dokumentation folgt.)<!--For more information, see [Automatically generate descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).--></p> | | &#x200B;28. Oktober 2026 |
-| **Adobe Brand Visibility-Integration**<br/> Verbinden Sie Adobe Brand Visibility mit den Adobe Analytics-Daten Ihres Unternehmens, damit Sie messen können, wie sich die KI-gesteuerte Erkennung in echte Website-Interaktion und Geschäftsergebnisse niederschlägt.<p>(Link zur Dokumentation folgt.)</p> | | Oktober 2026</p> |
+| **Adobe Brand Visibility-Integration**<br/> Verbinden Sie Adobe Brand Visibility mit den Customer Journey Analytics-Daten Ihres Unternehmens, damit Sie messen können, wie sich die KI-gesteuerte Erkennung in echte Website-Interaktion und Geschäftsergebnisse niederschlägt.<p>(Link zur Dokumentation folgt.)</p> | | Oktober 2026 |
 
 
 ### Fehlerbehebungen in Customer Journey Analytics
 
-**Analysis Workspace**: AN-487374, AN-487119, AN-468907, AN-468810, AN-468363, AN-468096, AN-467414, AN-466986, AN-466982, AN-465073, AN-463571, AN-462373, AN-492801, AN-488821, AN-488452, AN-486517, AN-478930, AN-468325
-**Komponenten**:
-**Verbindungen**: AN-451458, AN-365942
+**Analysis Workspace**: AN-495340, AN-494789, AN-493307, AN-468900
+**Komponenten**: AN-492523
+**Verbindungen**: AN-492236
 **Content Analytics**:
-**Geführte Analyse**: AN-485600
-**EXPORTE**: AN-489161, AN-467131, AN-464746, AN-469034, AN-447252, AN-437803, AN-394444
-**Datenansichten**: AN-478732, AN-468836, AN-467851, AN-487651, AN-423592
-**Datenaufnahme**: AN-489829, AN-489722, AN-469451, AN-467436, AN-467049, AN-466087, AN-465049, AN-463524, AN-457433, AN-490288, AN-487500, AN-390916, AN-342311
+**Geführte Analyse**: AN-495592
+**EXPORTE**: AN-495077, AN-494337, AN-486563, AN-469919, AN-462560, AN-462372
+**Datenansichten**: AN-492093, AN-467770, AN-455367, AN-444467
+**Datenaufnahme**: AN-496439, AN-495339, AN-493456, AN-491984, AN-490515, AN-490479, AN-470065
 **Implementierung**:
-**Report Builder**: AN-487486, AN-478944, AN-470036, AN-468589, AN-468436, AN-456747, AN-456700, AN-442695, AN-492330, AN-490564, AN-468293, AN-460921
-**Reporting**: AN-479145, AN-469095, AN-468070, AN-467786, AN-456684, AN-465257, AN-422685, AN-406114, AN-356706, AN-322733
-**Segmentierung**: AN-486561, AN-278260
-**Terminierte Berichte**: AN-479157
-**Freigegebene Metriken und Dimensionen**:
-**Zielgruppenanalyse**: AN-468237, AN-462553
-**Sonstige**: AN-469601, AN-462817, AN-362308, AN-349757, AN-326432, AN-326345, AN-324341, AN-309317
+**Report Builder**: AN-496602, AN-494224, AN-493737, AN-493508, AN-493505, AN-492806, AN-468981, AN-454376
+**Reporting**: AN-495661, AN-493562, AN-487058, AN-478768
+**Segmentierung**:
+**Terminierte Berichte**: AN-491103, AN-468049
+**Freigegebene Metriken und Dimensionen**: AN-493722
+**Zielgruppenanalyse**: AN-469101
+**Sonstige**: AN-493865
 
 ## Zurückgestellte Funktionen
 
 | Funktion und Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | -----------|-----------|-----------|
 | **Berichte zur Gesamtpopulation**<br/> Sie können jetzt in Profil- und Lookup-Datensätzen definierte Entitäten analysieren und Berichte dazu erstellen, die in einer Customer Journey Analytics-Verbindung vorhanden sind. Diese Analyse und das Reporting gehen über zeitbasierte Ereignisreihen aus Ereignisdatensätzen hinaus. <p>Diese Funktion ermöglicht neue Klassen von Abfragen, Metriken und Zielgruppendefinitionen, die den gesamten Umfang des Kundenstamms eines Unternehmens widerspiegeln.</p><p>(Link zur Dokumentation folgt.)</p> | | TBD<p>(Ursprünglich für den 22. September 2026 geplant)</p> |
-| **Streaming-Mediendienste: Unterstützung von Zeitplandaten** <br/>Sie können jetzt Zeitplandaten von früheren Live-Inhalten von Streaming-Medien hochladen, um Zuschauerzahlen einfacher und genauer zu verfolgen.<p>Im Folgenden finden Sie Beispiele für Live-Inhalte, die beim Hochladen von Zeitplandaten unterstützt werden:</p><ul><li>FAST-Plattformen (Free Ad Supported TV)</li><li>Lokale Datenströme</li><li>Live-Sportübertragungen</li></ul><p>Durch das Hochladen von Zeitplandaten können Sie die Zuschauerzahlen für einzelne Programme verfolgen, die in dem von Ihnen in der Upload-Datei angegebenen Zeitraum gelaufen sind. Sie können sogar Zuschauerzahlen für bestimmte Themen oder Programmsegmente erfassen.</p><p>Diese Funktionen sind unabhängig davon verfügbar, wie Sie die Erfassung von Streaming-Medien implementiert haben.</p><p>Zuvor war es bei der Analyse von Live-Inhalten schwierig, eine bestimmte Sitzung genau mit bestimmten Programmen zu verknüpfen, und es war nicht möglich, eine bestimmte Sitzung mit einzelnen Themen oder Programmsegmenten zu verknüpfen.</p><p>Weitere Informationen finden Sie unter [Hochladen von Zeitplandaten zur Verfolgung von Live-Inhalten](https://experienceleague.adobe.com/de/docs/media-analytics/using/media-use-cases/track-schedule-data).</p> | &#x200B;29. Oktober 2025 | TBD<p>(Ursprünglich für den 29. Oktober 2025 geplant)</p> |
+| **Streaming-Mediendienste: Unterstützung von Zeitplandaten** <br/>Sie können jetzt Zeitplandaten von früheren Live-Inhalten von Streaming-Medien hochladen, um Zuschauerzahlen einfacher und genauer zu verfolgen.<p>Im Folgenden finden Sie Beispiele für Live-Inhalte, die beim Hochladen von Zeitplandaten unterstützt werden:</p><ul><li>FAST-Plattformen (Free Ad-Supported TV)</li><li>Lokale Datenströme</li><li>Live-Sportübertragungen</li></ul><p>Durch das Hochladen von Zeitplandaten können Sie die Zuschauerzahlen für einzelne Programme verfolgen, die in dem von Ihnen in der Upload-Datei angegebenen Zeitraum gelaufen sind. Sie können sogar Zuschauerzahlen für bestimmte Themen oder Programmsegmente erfassen.</p><p>Diese Funktionen sind unabhängig davon verfügbar, wie Sie die Erfassung von Streaming-Medien implementiert haben.</p><p>Zuvor war es bei der Analyse von Live-Inhalten schwierig, eine bestimmte Sitzung genau mit bestimmten Programmen zu verknüpfen, und es war nicht möglich, eine bestimmte Sitzung mit einzelnen Themen oder Programmsegmenten zu verknüpfen.</p><p>Weitere Informationen finden Sie unter [Hochladen von Zeitplandaten zur Verfolgung von Live-Inhalten](https://experienceleague.adobe.com/de/docs/media-analytics/using/media-use-cases/track-schedule-data).</p> | &#x200B;29. Oktober 2025 | TBD<p>(Ursprünglich für den 29. Oktober 2025 geplant)</p> |
 
 >[!MORELIKETHIS]
 >
