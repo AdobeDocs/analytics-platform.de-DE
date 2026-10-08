@@ -3,11 +3,12 @@ title: Automatische Konfiguration für bezahlte Medien in Content Analytics
 description: Erfahren Sie mehr über die automatische Konfiguration von Datensätzen, Verbindungen, Datenansichten und mehr.
 solution: Customer Journey Analytics
 feature: Content Analytics
+hold: true
 role: Admin
-source-git-commit: 2727dce145b996192ac873dd43d5106b011ff736
+source-git-commit: 684fef6a5e007d6dabe6518d7c7ec93a41dc6cdd
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 4%
+source-wordcount: '2179'
+ht-degree: 3%
 ---
 # Automatische Konfiguration für bezahlte Medien
 
@@ -34,7 +35,7 @@ Welche Zusammenfassungsdatensätze erstellt werden, wird durch das spezifische A
 * Name des Zusammenfassungsdatensatzes, Ereignistyp und Komponenten-Suffix
 * Entität
 * Aufschlüsselung
-* Welche Datensätze werden für ![&#x200B; folgenden Netzwerke ausgefüllt &#x200B;](/help/assets/icons2/Checkmark.svg)Häkchen):
+* Welche Datensätze werden für ![ folgenden Netzwerke ausgefüllt ](/help/assets/icons2/Checkmark.svg)Häkchen):
   * ![MetaSolid](/help/assets/icons2/MetaSolid.svg) Meta
   * ![GoogleAdsMulti](/help/assets/icons2/GoogleAdsMulti.svg) Google
   * ![PinterestMulti](/help/assets/icons2/PinterestMulti.svg) Pinterest
@@ -142,3 +143,45 @@ Verwenden Sie zur Untersuchung zusätzliche Aufschlüsselungen für Geografie un
 | Kosten pro Klick | Anzeigenzusammenfassung |
 
 
+### Paid-Media-Daten mit Erlebnisereignisdaten korrelieren
+
+Kombinieren Sie die Paid-Media-Leistung mit Verhaltensdaten auf der Site, um zu verstehen, wie Kampagnen und Anzeigen mit Website-Interaktion, Konversionen und Umsatz verbunden sind. Vergleichen Sie beispielsweise Klicks auf das Werbenetzwerk und Ausgaben mit Bestellungen, die Besuchen aus derselben Kampagne zugeordnet wurden.
+
+Schließen Sie zum Konfigurieren dieser Berichte die Paid-Media-Zusammenfassungsdatensätze und Ihren Vor-Ort-Ereignisdatensatz in dieselbe Customer Journey Analytics-Verbindung ein. Erfassen Sie stabile Kampagnen-, Anzeigen- oder unterstützte Asset-Kennungen aus Landingpage-URL-Parametern oder vorhandenen Ereignisfeldern. Verwenden Sie nach Bedarf abgeleitete Felder, um diese Werte zu analysieren und den entsprechenden Paid-Media-IDs zuzuordnen, wobei der erforderliche Netzwerk- und Kontenkontext beibehalten wird. Bezeichner als Zeichenfolgen beibehalten. Konfigurieren Sie eine Zusammenfassungsdatengruppe in der Datenansicht, um die übereinstimmenden Ereignis- und Zusammenfassungsdimensionen zu verknüpfen. Durch die Aktivierung des Kanals für bezahlte Medien wird dieses implementierungsspezifische URL-Tracking und -Mapping nicht automatisch konfiguriert.
+
+
+| Tracking-Option | Zu beachten |
+|---|---|
+| Meta Ads | Konfigurieren Sie Ziel-URL-Parameter mithilfe dynamischer Kennungen wie `campaign.id`, `adset.id` und `ad.id`, sofern unterstützt. Erfassen Sie die aufgelösten Werte auf Ihrer Website. Durch Aktivierung des Connectors werden diese Parameter nicht automatisch zu Ihren Werbe-URLs hinzugefügt. |
+| Google Ads | |
+| Einzelne Assets | Für das Reporting auf Asset-Ebene zu nachgelagerten Ergebnissen ist eine erfasste Kennung erforderlich, die dem spezifischen Asset zugeordnet wird, das mit dem Klick verbunden ist. Ein benutzerdefinierter URL-Parameter kann dies unterstützen, wenn das Anzeigenformat ein Asset-spezifisches Tracking zulässt. Eine Anzeigenkennung allein kann nicht mehrere Assets innerhalb einer Anzeige unterscheiden, und ein statischer Asset-Parameter, der auf eine gesamte Multi-Asset-Anzeige angewendet wird, identifiziert nicht, welches Asset mit dem Klick verknüpft war. |
+
+Verwenden Sie in Analysis Workspace **[!UICONTROL Anzeigenzusammenfassung]** Metriken für Kampagnen- oder Anzeigenvergleiche und **[!UICONTROL Asset-Zusammenfassung]** Metriken für unterstützte Asset-Vergleiche. Wenden Sie ein Attributionsmodell und ein Lookback-Fenster auf die Konversionsmetriken auf der Site an, die Ihre Berichtsfrage widerspiegeln.
+
+Beachten Sie Folgendes:
+
+* Bezahlte Mediendaten sind aggregierte Zusammenfassungsdaten ohne Personen-ID. Das Verhalten auf der Site besteht aus Ereignisdaten.
+* Das Gruppieren übereinstimmender Dimensionen unterstützt Berichte über diese Quellen hinweg, stimmt jedoch nicht mit individuellen Anzeigennetzwerkkonversionen auf Website-Konversionen überein oder führt Stitching auf Personenebene durch.
+* Der Vergleich zeigt einen Zusammenhang, keinen kausalen Anstieg.
+* Die Ergebnisse können aufgrund von Konversionsdefinitionen, Attributionsfenstern, View-Through- oder modellierten Konversionen, Einverständnis und Berichtsdaten oder Zeitzonen unterschiedlich sein.
+* Validieren der Quelle von Besuchen mit Kampagnen-Tags, insbesondere wenn Tracking-Parameter kanalübergreifend wiederverwendet werden.
+
+
+### Beispiel für den Vergleich der Kampagnenleistung mit Bestellungen vor Ort
+
+Eine Landingpage-URL kann mehrere Tracking-Parameter enthalten. In diesem Beispiel verwenden wir die Kampagnen-ID in `utm_id`, um die Kampagnenausgaben mit den Bestellungen von Websites zu vergleichen.
+
+https://www.example.com/offer?utm_source=facebook&utm_medium=paid_social&utm_campaign=autumn_offer&utm_id=120218706543980215
+
+Der für diesen Vergleich verwendete Parameter: `utm_id=120218706543980215`. Die anderen Parameter beschreiben die Quelle, das Medium und die Kampagnentitel, werden jedoch nicht als übereinstimmendes Feld verwendet, das in diesem Beispiel verwendet wird.
+
+Wenn die URL in Website-Ereignisdaten erfasst wird und sowohl der Website-Ereignisdatensatz als auch die Paid-Media-Datensätze Teil derselben Customer Journey Analytics-Verbindung sind:
+
+1. Identifizieren Sie die Kampagne. Verwenden Sie ein abgeleitetes Feld, um `utm_id` aus der URL zu lesen und ihren Wert der entsprechenden Kampagnenkennung in den Paid-Media-Daten zuzuordnen.
+1. Gruppieren Sie die übereinstimmenden Dimensionen. Fügen Sie in der Datenansicht die Dimension Website-Kampagne zur `Summary Data Group` der Dimension Bezahlte Kampagne hinzu, wobei alle vorhandenen Elemente erhalten bleiben.
+1. Ausgaben und Bestellungen vergleichen. Verwenden Sie in Analysis Workspace die Dimension Gruppierte Kampagne als Zeilen einer Freiformtabelle. Hinzufügen `Ad Summary` Ausgaben- und Website-`Orders` als Spalten. Legen Sie das Attributionsmodell und das Lookback-Fenster für `Orders` fest.
+
+
+Die Tabelle zeigt die Ausgaben für Werbenetzwerke sowie die Bestellungen von Websites, die jeder Kampagne zugeordnet wurden. Zwei Kampagnen mit ähnlichen Anzeigenausgaben können eine unterschiedliche Anzahl von nachgelagerten Website-Aktionen aufweisen. Verwenden Sie diesen Vergleich, um Kampagnen und Landingpage-Erlebnisse für weitere Untersuchungen oder Tests zu identifizieren, anstatt die Leistung nur anhand von Werbemetriken zu bewerten.
+
+Im Beispiel wird eine Kampagnen-ID verwendet, aber derselbe Ansatz kann Anzeigengruppen-, Anzeigen- oder Asset-Kennungen verwenden, wenn übereinstimmende Werte erfasst werden können. Mit Content Analytics-Attributen wie **[!UICONTROL Asset-Vordergrundfarben]** können Sie kreative Eigenschaften mit der Paid-Media-Leistung vergleichen. Wenn Asset-spezifische Tracking- und übereinstimmende Attributdimensionen für beide Quellen konfiguriert sind, können Sie diesen Vergleich auf zugewiesene Website-Bestellungen erweitern und die Ergebnisse für kreative Tests verwenden.
