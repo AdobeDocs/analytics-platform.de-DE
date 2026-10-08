@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 50673e8c536614e16f10e639b32a01ffd8456086
+source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
 workflow-type: tm+mt
-source-wordcount: '5192'
-ht-degree: 20%
+source-wordcount: '3881'
+ht-degree: 12%
 ---
 # Erstellen eines Daten-Feeds
 
@@ -64,26 +64,6 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 >abstract="Geben Sie eine oder mehrere E-Mail-Adressen an, an die bei Abschluss oder Ablauf des Daten-Feeds bzw. bei Auftreten von Problemen eine Benachrichtigung gesendet werden soll. Trennen Sie mehrere E-Mail-Adressen durch ein Komma."
 
 <!-- markdownlint-enable MD034 -->
-
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_user_agent"
->title=""
->abstract="Benutzer-Agent-Daten und Gerätesuchdaten können nicht in derselben Daten-Feed-Konfiguration vorhanden sein."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_required_dimensions"
->title="Erforderliche Dimensionen"
->abstract="Jeder Daten-Feed muss bestimmte Dimensionen enthalten, die durch ein Label **Erforderlich** neben dem Dimensionsnamen gekennzeichnet sind. Diese Dimensionen stellen die Mindeststruktur bereit, die für Analysen auf Ereignisebene erforderlich ist."
-
-<!-- markdownlint-enable MD034 -->
-
 
 <!-- markdownlint-disable MD034 -->
 
@@ -149,156 +129,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
    <!--add screenshot-->
 
-   +++ Dimensionen, die immer in Daten-Feeds enthalten sind
-
-   Die folgenden Dimensionen sind standardmäßig in jedem Daten-Feed enthalten und können nicht entfernt werden:
-
-   | Name der Dimension | Anmerkungen | Daten-Feeds | Sonstige Berichte |
-   |---|---|---|---|
-   | Zeitstempel – UTC | Datum und Uhrzeit des Ereignisses, dargestellt in UTC-Zeitzone. Unterstützt die Granularität von Subsekunden (Mikrosekunden). | erforderlich | Nicht verfügbar |
-   | Zeilen-ID | Die eindeutige Kennung für jede Zeile, die im Daten-Feed enthalten ist. | erforderlich | Nicht verfügbar |
-   | Sitzungs-ID | Die eindeutige Kennung für jede Sitzung, die im Daten-Feed enthalten ist. | erforderlich | Nicht verfügbar |
-   | Personen-ID | Die Personenkennung für die Datenansicht und die Verbindung | erforderlich | Optionaler Standard |
-   | Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Konto-ID bei Verwendung des Konto-Containers | erforderlich | Optionaler Standard |
-
-   +++
-
-   +++ Dimensionen, die nicht in Daten-Feeds enthalten sein können
-
-   Customer Journey Analytics-Standarddimensionen können nicht in Daten-Feeds enthalten sein. In der folgenden Tabelle sind diese Dimensionen aufgeführt:
-
-   | Name der Dimension | Anmerkungen | Daten-Feeds |
-   |---|---|---|
-   | 5 Minuten | Intervall von fünf Minuten, in dem Ereignisse aufgetreten sind (abgerundet) | Nicht verfügbar |
-   | 15 Minuten | Intervall von 15 Minuten, in dem Ereignisse aufgetreten sind (abgerundet) | Nicht verfügbar |
-   | 30 Minuten | Intervall von 30 Minuten, in dem Ereignisse aufgetreten sind (abgerundet) | Nicht verfügbar |
-   | Tag | Tag, an dem ein Ereignis aufgetreten ist | Nicht verfügbar |
-   | Wochentag | Wochentag, an dem ein Ereignis aufgetreten ist | Nicht verfügbar |
-   | Tag des Monats | Tag des Monats, an dem ein Ereignis aufgetreten ist | Nicht verfügbar |
-   | Stunde | Stunde, in der ein Ereignis aufgetreten ist (abgerundet) | Nicht verfügbar |
-   | Stunde des Tages | Uhrzeit, zu der ein Ereignis aufgetreten ist (abgerundet) | Nicht verfügbar |
-   | Minute | Minute, in der ein Ereignis aufgetreten ist (abgerundet) | Nicht verfügbar |
-   | Minute der Stunde | Minute der Stunde, in der ein Ereignis aufgetreten ist (abgerundet) | Nicht verfügbar |
-   | Monat | Monat, in dem ein Ereignis aufgetreten ist | Nicht verfügbar |
-   | Monat des Jahres | Monat des Jahres, in dem ein Ereignis aufgetreten ist | Nicht verfügbar |
-   | Quartal | Quartal, in dem ein Ereignis aufgetreten ist | Nicht verfügbar |
-   | Quartal des Jahres | Quartal des Jahres, in dem ein Ereignis aufgetreten ist | Nicht verfügbar |
-   | Second | Zweites Ereignis eingetreten (abgerundet) | Nicht verfügbar |
-   | Woche | Woche, in der ein Ereignis aufgetreten ist | Nicht verfügbar |
-   | Woche des Jahres | Woche des Jahres, in dem ein Ereignis aufgetreten ist | Nicht verfügbar |
-   | Jahr | Jahr, in dem ein Ereignis aufgetreten ist | Nicht verfügbar |
-
-   +++
-
-   +++ Metriken, die nicht in Daten-Feeds enthalten sein können
-
-   Die folgenden Customer Journey Analytics-Standardmetriken können nicht in Daten-Feeds enthalten sein:
-
-   | Metrikname | Anmerkungen | Daten-Feeds |
-   |---|---|---|
-   | Adobe-Besucherprofil | | Nicht verfügbar |
-   | Adobe Opportunities Union | | Nicht verfügbar |
-   | Adobe Opportunities-Profil | | Nicht verfügbar |
-   | Adobe-Kontovereinigung | | Nicht verfügbar |
-   | Adobe-Kontoprofil | | Nicht verfügbar |
-   | Adobe-Einkaufsgruppengewerkschaft | | Nicht verfügbar |
-   | Adobe-Einkaufsgruppenprofil | | Nicht verfügbar |
-   | Adobe Global Accounts Union | | Nicht verfügbar |
-   | Globales Kontoprofil von Adobe | | Nicht verfügbar |
-   | Adobe Persons Union | | Nicht verfügbar |
-   | Adobe Persons Profile | | Nicht verfügbar |
-
-   +++
-
-   +++ Dimensionen, die nicht zusammen in Daten-Feeds verwendet werden können
-
-   >[!IMPORTANT]
-   >
-   >Bestimmte Dimensionen können nicht zusammen in Experience Platform-Datensätzen verwendet werden und können daher nicht in denselben Daten-Feed aufgenommen werden.
-   >
-   >Wenn Sie sich dafür entscheiden, entweder die **Benutzeragent**- oder **Mobile ID**-Dimensionen in Ihren Daten-Feed aufzunehmen, können die unten aufgeführten Dimensionen nicht zum Daten-Feed hinzugefügt werden.
-   >
-   >Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
-
-   Die folgenden Dimensionen können nicht zusammen mit den Dimensionen **Benutzeragent** oder **Mobile ID** verwendet werden:
-
-   * Browser-Typ
-   * Browser
-   * Mobilgerätehersteller
-   * Mobilgerätetyp
-   * Mobilgerät - Audio-Unterstützung
-   * Mobil-DRM
-   * Mobil Java VM
-   * Mobile Informationsdienste
-   * Mobilgerät - Bildunterstützung
-   * Mobilgerät - Farbtiefe
-   * Mobile Netzprotokolle
-   * Mobilgerätenummer
-   * Maximale mobile E-Mail-Länge
-   * Mobilgerät – Mail-Design
-   * Mobile Push To Talk
-   * Mobilgerät – Bildschirmbreite
-   * Maximale mobile Browser-URL-Länge
-   * Mobile-Betriebssystem (veraltet)
-   * Mobilgerät – Bildschirmhöhe
-   * Mobilgerät - Video-Unterstützung
-   * Mobilgerät - Cookie-Unterstützung
-   * Maximale mobile Lesezeichenlänge
-   * Mobilgerät – Bildschirmgröße
-   * Mobilgerätename
-   * Betriebssystemtypen
-   * Betriebssysteme
-
-   +++
-
-   +++ Metriken, die in Daten-Feeds ersetzt werden müssen
-
-   Die folgenden Customer Journey Analytics-Metriken müssen ersetzt werden:
-
-   | Metrikname | Anmerkungen | Daten-Feeds |
-   |---|---|---|
-   | Konten [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Basiert auf der in der Verbindung angegebenen Konto-ID | Nicht verfügbar. Anzahl der eindeutigen Konten-ID verwenden. |
-   | Einkaufsgruppe [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Kaufen von Gruppen basierend auf der Käufergruppen-ID in der Verbindung | Nicht verfügbar. Anzahl der unterschiedlichen Einkaufsgruppen-IDs verwenden. |
-   | Ereignisse | Anzahl der Zeilen aus allen Ereignisdatensätzen in einer Verbindung | Nicht verfügbar. Anzahl der eindeutigen Zeilen-ID verwenden. |
-   | Globale Konten [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Basierend auf globaler Konto-ID in der Verbindung | Nicht verfügbar. Anzahl der eindeutigen globalen Konten-ID verwenden. |
-   | Opportunities [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Opportunities basierend auf der Opportunity-ID in der Verbindung | Nicht verfügbar. Anzahl der eindeutigen Opportunity-ID verwenden. |
-   | Personen | Basiert auf der in einer Verbindung angegebenen Personen-ID | Nicht verfügbar. Anzahl der eindeutigen Personen-ID verwenden. |
-   | Konversationen | Anzahl der Unterhaltungen | Nicht verfügbar. Anzahl der verschiedenen Konversations-IDs verwenden. |
-   | Sitzungsenden | Anzahl der Ereignisse, die das letzte Ereignis einer Sitzung waren | Nicht verfügbar |
-   | Sitzungsstarts | Anzahl der Ereignisse, die das erste Ereignis einer Sitzung waren | Nicht verfügbar |
-   | Sitzungen | Basiert auf den Sitzungseinstellungen der Datenansicht | Nicht verfügbar. Anzahl der eindeutigen Sitzungs-ID verwenden. |
-   | Verbrachte Zeit (Sekunden) | Addiert die Zeit zwischen zwei verschiedenen Dimensionswerten | Nicht verfügbar |
-
-   +++
-
-   +++ Optionale Standardkomponenten
-
-   | Name der Komponente | Typ | Anmerkungen | Daten-Feeds |
-   |---|---|---|---|
-   | Vormittag/Nachmittag | Zeitunterteilungsdimension | Vormittag oder Nachmittag | Nicht verfügbar |
-   | Batch-ID | Dimension | Kennung für einen Experience Platform-Batch | Verfügbar |
-   | Datensatz-ID | Dimension | Kennung für einen Experience Platform-Datensatz | Verfügbar |
-   | Tag des Monats | Zeitunterteilungsdimension | 1-31 | Nicht verfügbar |
-   | Wochentag | Zeitunterteilungsdimension | Montag bis Sonntag | Nicht verfügbar |
-   | Tag des Jahres | Zeitunterteilungsdimension | 1-366 | Nicht verfügbar |
-   | Ereignistiefe | Dimension | Numerischer Folgewert (1, 2, 3 usw.) Jeder Ereignisinteraktion innerhalb einer Sitzung zugewiesen<p>Wird zu Beginn jeder neuen Sitzung zurückgesetzt</p> | Verfügbar |
-   | Stunde des Tages | Zeitunterteilungsdimension | 0-23 | Nicht verfügbar |
-   | Monat des Jahres | Zeitunterteilungsdimension | Januar-Dezember | Nicht verfügbar |
-   | Erstmalige Sitzungen | Metrik | Die erste definierte Sitzung einer Person im Reporting-Fenster | Nicht verfügbar |
-   | Rückkehrende Sitzungen | Metrik | Sitzungen, die nicht die Erstsitzung einer Person waren | Nicht verfügbar |
-   | Personen-ID-Namespace | Dimension | Typ der ID, aus der die Personen-ID besteht (z. B. E-Mail- oder Cookie-ID) | Verfügbar |
-   | Globale Konto-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Globale Konto-ID bei Verwendung des Containers für globale Konten | Verfügbar |
-   | Opportunity-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Opportunity-ID bei Verwendung des Opportunity-Containers | Verfügbar |
-   | Einkaufsgruppen-ID [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Einkaufsgruppen-ID bei Verwendung des Einkaufsgruppen-Containers | Verfügbar |
-   | Quartal des Jahres | Zeitunterteilungsdimension | Q1, Q2, Q3, Q4 | Nicht verfügbar |
-   | Sitzung wiederholen | Metrik | Sitzungen, die nicht die allererste Sitzung einer Person waren | Nicht verfügbar |
-   | Sitzungstyp | Dimension | Zwei Werte: Erstmalig oder Wiederkehrend | Nicht verfügbar |
-   | Aufgewendete Zeit pro Ereignis | Dimension | Sammelt die Metrik Aufgewendete Zeit in Ereignis-Buckets | Nicht verfügbar |
-   | Aufgewendete Zeit pro Sitzung | Dimension | Fasst die Metrik Aufgewendete Zeit in Sitzungs-Buckets zusammen | Nicht verfügbar |
-   | Aufgewendete Zeit pro Person | Dimension | Fasst die Metrik Aufgewendete Zeit in Behältern des Typs Person zusammen | Nicht verfügbar |
-   | Wochenende/Wochentag | Zeitunterteilungsdimension | Wochenende oder Wochentag | Nicht verfügbar |
-
-   +++
+   Einige Komponenten sind erforderlich, werden nicht unterstützt oder weisen Einschränkungen in Daten-Feeds auf. Weitere Informationen finden Sie [Komponentenverfügbarkeit in Daten-Feeds](/help/components/exports/cja-data-feeds/df-components.md).
 
 1. (Optional) Ordnen Sie Komponenten auf der Arbeitsfläche neu an, indem Sie sie ziehen. Die von Ihnen definierte Reihenfolge wird als Spaltenreihenfolge in der exportierten Daten-Feed-Datei beibehalten.
 
@@ -334,7 +165,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    | [!UICONTROL **Enddatum**]<br/> Nur für Aufstockungs-Feeds verfügbar | Das Datum, an dem der Daten-Feed endet. Das Enddatum darf nicht in der Zukunft liegen. Das Datum basiert auf der Zeitzone der Datenansicht. |
    | [!UICONTROL **Häufigkeit**]<br/> Nur für Live-Feeds verfügbar | Legen Sie fest, wie oft der Daten-Feed gesendet werden soll. Ereignisse mit Zeitstempeln, die in das Häufigkeitsfenster fallen, werden in den Daten-Feed-Versand aufgenommen. Die Felder [!UICONTROL **Lookback**] Datumsbereich und [!UICONTROL **Verarbeitungsverzögerung**] können sich auch darauf auswirken, welche Ereignisse für die von Ihnen gewählte Versandfrequenz in die Daten aufgenommen werden.<p>Wählen Sie diese Option aus, um Daten aus einer Stunde oder aus Daten aus einem Tag aufzunehmen.</p><ul><li>**Täglich**: Feeds enthalten Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht.</li><li>**Stündlich**: Feeds enthalten Daten für eine einzige Stunde.</li></ul> |
    | [!UICONTROL **Granularität**]<br/> Nur für Aufstockungs-Feeds verfügbar | Das Zeitintervall, das zum Aufteilen historischer Daten in Blöcke verwendet wird. Jeder Chunk enthält Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht. <p>Die Granularität bestimmt, wie die Daten gruppiert werden, und nicht, wie oft sie bereitgestellt werden. Aufstockungsdaten werden so schnell wie möglich bereitgestellt, nicht einmal pro Tag.</p><p>Dieses Feld ist immer auf &quot;[!UICONTROL **&quot; festgelegt**] kann nicht geändert werden.</p> |
-   | [!UICONTROL **Lookback-Datumsbereich**] | Steuert, wie weit Customer Journey Analytics bei der Verarbeitung der Daten-Feed-Bereitstellung zurückblickt. Der Standardwert ist 30 Tage.<p>Das Häufigkeitsfenster (Stunde oder Tag) bestimmt, welche Ereignisse im Daten-Feed enthalten sind, während der **Lookback-Datumsbereich** den erforderlichen historischen Kontext bereitstellt, um diese Ereignisse korrekt zu klassifizieren.</p><p>Segmentqualifikation, Dimensionspersistenz, Sitzungsberechnung und Transformationen abgeleiteter Felder können sich auf alle eingeschlossenen Ereignisse auswirken.</p> <p>Bevor Sie diese Option konfigurieren, lesen Sie die Details und Beispiele im folgenden Abschnitt [Grundlegendes zum Lookback-Datumsbereich](#understand-the-lookback-date-range).</p> |
+   | [!UICONTROL **Lookback-Datumsbereich**] | Steuert, wie weit Customer Journey Analytics bei der Verarbeitung der Daten-Feed-Bereitstellung zurückblickt. Der Standardwert ist 30 Tage.<p>Das Häufigkeitsfenster (Stunde oder Tag) bestimmt, welche Ereignisse im Daten-Feed enthalten sind, während der **Lookback-Datumsbereich** den erforderlichen historischen Kontext bereitstellt, um diese Ereignisse korrekt zu klassifizieren.</p><p>Segmentqualifikation, Dimensionspersistenz, Sitzungsberechnung und Transformationen abgeleiteter Felder können sich auf alle eingeschlossenen Ereignisse auswirken.</p> <p>Bevor Sie diese Option konfigurieren, lesen Sie die Details und Beispiele im folgenden Abschnitt [Grundlegendes zum Lookback-Datumsbereich](#data-feed-lookback-date-range).</p> |
    | [!UICONTROL **Verarbeitungsverzögerung**] | Wählen Sie die Zeitspanne aus, die Customer Journey Analytics wartet, bevor eine Daten-Feed-Datei verarbeitet wird. Alle spät eintreffenden Ereignisse, die während der Verarbeitungsverzögerung eintreten, sind im Daten-Feed enthalten. <p>Die minimale Verarbeitungsverzögerung beträgt 2 Stunden, aber einige Datentypen erfordern eine längere Verzögerung. Die ausgewählte Verzögerung hängt von den Datentypen in Ihrer Verbindung ab, z. B. Streaming-, Batch-, zugeordnete, Lookup- oder Profildaten.</p><p>Wählen Sie eine Verzögerung aus, die lang genug ist, damit die langsamsten Daten in Ihrer Verbindung die Verarbeitung abschließen. Wenn die Verzögerung zu kurz ist, werden Daten, die noch verarbeitet werden, nicht in die Daten-Feed-Datei aufgenommen.</p><p>Bevor Sie diese Option konfigurieren, lesen Sie die Details und Beispiele im folgenden Abschnitt [Grundlegendes zur Verarbeitungsverzögerung](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Komprimierungsformat**] | Wählen Sie das Komprimierungsformat für die Parquet-Ausgabedateien aus, die an Ihr Cloud-Ziel gesendet werden. Wählen Sie aus den folgenden Formaten:<ul><li>[!UICONTROL **Snappy**]: Schnelle Komprimierung und Dekomprimierung bei moderaten Dateigrößen. Wird von modernen Datenplattformen wie BigQuery, Snowflake und Apache Spark weithin unterstützt.</li><li>[!UICONTROL **GZip**]: Grob kompatibel, auch mit Tools, die Snappy nicht nativ unterstützen. Empfohlen, wenn Ihre nachgelagerte Pipeline einen weithin anerkannten Komprimierungsstandard erfordert.</li><li>[!UICONTROL **Z Standard (Zstd)**]: Hohe Komprimierungseffizienz mit schneller Dekomprimierung. Geeignet, wenn die Minimierung der Dateigröße eine Priorität ist und Ihre Tools Zstd unterstützen.</li></ul> |
 

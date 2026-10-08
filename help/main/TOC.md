@@ -2,9 +2,9 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Adobe Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 684fef6a5e007d6dabe6518d7c7ec93a41dc6cdd
+source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1515'
 ht-degree: 89%
 ---
 # Handbuch zu Adobe Customer Journey Analytics {#using}
@@ -435,6 +435,7 @@ ht-degree: 89%
       + {hide-from-toc}[Vorbereiten der Spaltenzuordnung](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[Spalten zuordnen](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[Erstellen von Daten-Feeds](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc}[Komponentenverfügbarkeit](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc}[Segmentierung in Daten-Feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[Anwenden von Datenumwandlungen](/help/components/exports/cja-data-feeds/df-data-transformations.md)
       + {hide-from-toc}[Unterereignisse in Daten-Feeds](/help/components/exports/cja-data-feeds/df-sub-event.md)
