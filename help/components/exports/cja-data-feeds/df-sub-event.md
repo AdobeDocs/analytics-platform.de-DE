@@ -14,70 +14,127 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: a4fdb1f8d49b42b6de21881e0c8392995124c1ea
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 1%
+source-wordcount: '1191'
+ht-degree: 2%
 ---
 # Unterereignisse in Daten-Feeds
 
 {{release-limited-testing}}
 
-Im XDM-Schema ist alles, was ein Array ist (Zeichenfolge oder Objekt), ein Unterereignis. Unterereignisse in Customer Journey Analytics werden in Daten-Feed-Exporten mit ihrer Hierarchie dargestellt.
-
-In Adobe Analytics werden Unterereignisse als einzelne Spalte dargestellt.
+[Unterereignisse](/help/components/segments/sub-event.md) in Customer Journey Analytics ermöglichen die Analyse von Ereignisdaten auf einer Ebene, die detaillierter ist als die Ereignisebene.
 
 Verwenden Sie die folgenden Informationen, um zu verstehen, wie Sie mit Unterereignissen in Ihren Customer Journey Analytics-Daten-Feeds arbeiten.
 
-## Unterereignisse im XDM-Schema, in Workspace und in Daten-Feeds
+## Grundlegendes zu Unterereignissen
 
-Sie definieren Unterereignisse im XDM-Schema entweder als Zeichenfolgen-Arrays oder Objekt-Arrays.
+### Unterereignisse im XDM-Schema
 
-Diese Unterereignisse werden unterschiedlich dargestellt, je nachdem, ob Sie sie in Analysis Workspace oder in Daten-Feeds anzeigen.
+Im XDM-Schema ist jedes Element eines Arrays (ein Zeichenfolgen-Array oder ein Objekt-Array) ein Unterereignis.
 
-| Standort | Darstellung von Unterereignissen |
-| --- | --- |
-| **Analysis Workspace** | Einzelne Objekte in einem Array von Objekten können als einzelne Komponenten unabhängig von der sichtbaren Hierarchie ausgewählt werden. |
-| **Daten-Feeds** | Objekte in einem Array von Objekten werden als Gruppe dargestellt, wobei ihre Hierarchie intakt ist. |
+Um ein Ereignis mit Unterereignissen innerhalb des XDM-Schemas in Adobe Experience Platform anzuzeigen, wählen Sie [!UICONTROL **Schemas**] aus und erweitern Sie dann ein Ereignis, das Unterereignisse enthält.
+
+Im folgenden Beispiel ist `Product list items` ein Objekt-Array, das verschiedene Unterereignisse enthält.
+
+![XDM-Schema, das ein Objekt-Array und Unterereignisse enthält](assets/df-sub-event-schema.png)
+
+### Beispiel für Unterereignisse: Produkte in einem Kaufereignis
+
+Ein Kunde kauft zwei Produkte in einer Bestellung: einen Akku-Bohrer und zwei Akku-Bohrer. Ihre Implementierung sendet ein einzelnes Kaufereignis, das beide Produkte im `productListItems` Objekt-Array enthält:
+
+```json
+{
+  "eventType": "commerce.purchases",
+  "timestamp": "2026-09-16T14:32:07.512Z",
+  "commerce": {
+    "purchases": { "value": 1 }
+  },
+  "productListItems": [
+    { "SKU": "CD-2000", "name": "Cordless Drill", "quantity": 1, "priceTotal": 129.99 },
+    { "SKU": "BP-2000", "name": "Drill Battery Pack", "quantity": 2, "priceTotal": 39.98 }
+  ]
+}
+```
+
+Dieses Ereignis enthält zwei Unterereignisse, eines für jedes Objekt im `productListItems`-Array. Die folgende Tabelle zeigt, welche Felder zum Ereignis und welche zu den Unterereignissen gehören.
+
+| Ebene | Felder | Beschreibung der Felder |
+| --- | --- | --- |
+| **Ereignis** | `eventType`, `timestamp`, `commerce.purchases.value` | Der Kauf insgesamt. Jedes Feld hat einen Wert für das Ereignis. Die Metrik **Bestellungen** zählt `1` für dieses Ereignis, unabhängig davon, wie viele Produkte es enthält. |
+| **Unter-Ereignis** | `SKU`, `name`, `quantity`, `priceTotal` in jedem `productListItems` | Ein einzelnes Produkt im Kauf. Jedes Feld hat einen -Wert pro Produkt. Beispielsweise ist `quantity` für den Akku-Bohrer und `2` für den Akku-Bohrer `1`. |
+
+{style="table-layout:auto"}
+
+>[!NOTE]
+>
+>Unterereignisse enthalten nur die Daten, die mit dem Ereignis gesendet werden. Customer Journey Analytics rekonstruiert den Inhalt des Warenkorbs nicht aus früheren Ereignissen, z. B. Hinzufügungen zum Warenkorb oder Checkouts. Damit Produkte als Unterereignisse eines Kaufereignisses angezeigt werden, muss sie Ihre Implementierung in `productListItems` dieses Kaufereignisses einschließen.
 
 ## Hinzufügen von Unterereignisdaten zu einem Daten-Feed
 
-Wenn Sie beim Erstellen eines Daten-Feeds versuchen, eine Spalte hinzuzufügen, die ein Unterereignis ist, wird ein Dialogfeld angezeigt, in dem Sie alle Peer-Unterereignisse hinzufügen können. Alle diese Ereignisse werden in einer einzigen Spalte der Daten-Feed-Ausgabe angezeigt.
+Wenn Sie versuchen, beim Erstellen eines Daten-Feeds eine Spalte hinzuzufügen, die ein Unterereignis ist, wird ein Dialogfeld angezeigt, in dem Sie aufgefordert werden, eines der Peer-Unterereignisse hinzuzufügen. In der Daten-Feed-Ausgabe werden alle diese Ereignisse in einer Spalte angezeigt.
 
 ## Anzeigen von Unterereignisdaten in der Daten-Feed-Ausgabe
 
-Daten von Unterereignissen (z. B. mehrere Produkte in einem einzigen Ereignis) werden in Customer Journey Analytics-Daten-Feeds anders angezeigt als in Adobe Analytics-Daten-Feeds. In der folgenden Tabelle wird verglichen, wie jedes Produkt Unterereignisdaten darstellt.
+### Unterschiede bei Unterereignissen zwischen Analysis Workspace und Daten-Feeds
+
+Unterereignisse werden in Analysis Workspace und Daten-Feeds in Customer Journey Analytics unterschiedlich dargestellt.
+
+| Standort | Darstellung von Unterereignissen |
+| --- | --- |
+| **Analysis Workspace (in Customer Journey Analytics)** | Kann als einzelne Komponenten getrennt von einer sichtbaren Hierarchie ausgewählt werden. |
+| **Daten-Feeds (in Customer Journey Analytics)** | Wird als Gruppe mit intakter Hierarchie dargestellt. |
+
+### Unterschiede bei Unterereignissen zwischen Adobe Analytics und Customer Journey Analytics
+
+Daten von Unterereignissen (z. B. mehrere Produktdetails in einem einzigen Kaufereignis) werden in Customer Journey Analytics-Daten-Feeds anders angezeigt als in Adobe Analytics-Daten-Feeds. In der folgenden Tabelle wird verglichen, wie jedes Produkt Unterereignisdaten darstellt.
 
 | Produkt | So werden Unterereignisdaten in Daten-Feeds angezeigt | Beispiel: Produktliste |
 | --- | --- | --- |
-| **Adobe Analytics** | In eine durch Trennzeichen getrennte Zeichenfolge in einer einzigen Spalte reduziert. | Eine Produktliste enthält mehrere Produkte, die in einer einzigen Zeichenfolge gruppiert sind:<p>`;LG Washing Machine 2000;1;1600,;LG Dryer 2000;1;500` <!--screenshot of what this looks like: product lists, list vars. --></p> |
-| **Customer Journey Analytics** | Unterereignisse behalten die in Ihrem XDM-Schema definierte Hierarchie bei. Sie bleiben zusammen mit ihrem übergeordneten Ereignis und den gleichrangigen Unterereignissen in derselben Spalte gruppiert. | Eine Produktliste behält ihre Hierarchie bei, die im XDM-Schema als Array definiert ist:<p>`[{"name":"LG Washing Machine 2000","units":1,"revenue":1600},{"name":"LG Dryer 2000","units":1,"revenue":500}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Adobe Analytics** | In eine durch Trennzeichen getrennte Zeichenfolge in einer einzigen Spalte reduziert. | Eine Produktliste enthält mehrere Produkte, die in einer einzigen Zeichenfolge gruppiert sind:<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | Unterereignisse behalten die in Ihrem XDM-Schema definierte Hierarchie bei. Obwohl sie in derselben Spalte gruppiert sind, zeigen sie ihre relationale Hierarchie zum übergeordneten Ereignis und zu den gleichrangigen Unterereignissen an. | Eine Produktliste behält ihre Hierarchie bei, die im XDM-Schema als Array definiert ist:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+
+{style="table-layout:auto"}
+
+### Unterschiede zu Adobe Analytics
+
+### Unterschiede bei der Ausgabe zwischen Daten-Feeds von Adobe Analytics und Customer Journey Analytics
+
+Daten von Unterereignissen (z. B. mehrere Produktdetails in einem einzigen Kaufereignis) werden in Customer Journey Analytics-Daten-Feeds anders angezeigt als in Adobe Analytics-Daten-Feeds. In der folgenden Tabelle wird verglichen, wie jedes Produkt Unterereignisdaten darstellt.
+
+| Produkt | So werden Unterereignisdaten in Daten-Feeds angezeigt | Beispiel: Produktliste |
+| --- | --- | --- |
+| **Adobe Analytics** | In eine durch Trennzeichen getrennte Zeichenfolge in einer einzigen Spalte reduziert. | Eine Produktliste enthält mehrere Produkte, die in einer einzigen Zeichenfolge gruppiert sind:<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | Unterereignisse behalten die in Ihrem XDM-Schema definierte Hierarchie bei. Obwohl sie in derselben Spalte gruppiert sind, zeigen sie ihre relationale Hierarchie zum übergeordneten Ereignis und zu den gleichrangigen Unterereignissen an. | Eine Produktliste behält ihre Hierarchie bei, die im XDM-Schema als Array definiert ist:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+
+{style="table-layout:auto"}
+
+## Unterschiede zwischen Unterereignissen zwischen der Ausgabe von Analysis Workspace- und Daten-Feeds
+
+Unterereignisse werden in Analysis Workspace und Daten-Feeds in Customer Journey Analytics unterschiedlich dargestellt.
+
+| Standort | Darstellung von Unterereignissen |
+| --- | --- |
+| **Analysis Workspace** | Kann als einzelne Komponenten getrennt von einer sichtbaren Hierarchie ausgewählt werden. |
+| **Daten-Feeds** | Wird als Gruppe mit intakter Hierarchie dargestellt. |
+
+
+## Anzeigen von Unterereignisdaten in der Daten-Feed-Ausgabe
+
+Daten von Unterereignissen (z. B. mehrere Produktdetails in einem einzigen Kaufereignis) werden in Customer Journey Analytics-Daten-Feeds anders angezeigt als in Adobe Analytics-Daten-Feeds. In der folgenden Tabelle wird verglichen, wie jedes Produkt Unterereignisdaten darstellt.
+
+| Produkt | So werden Unterereignisdaten in Daten-Feeds angezeigt | Beispiel: Produktliste |
+| --- | --- | --- |
+| **Adobe Analytics** | In eine durch Trennzeichen getrennte Zeichenfolge in einer einzigen Spalte reduziert. | Eine Produktliste enthält mehrere Produkte, die in einer einzigen Zeichenfolge gruppiert sind:<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | Unterereignisse behalten die in Ihrem XDM-Schema definierte Hierarchie bei. Obwohl sie in derselben Spalte gruppiert sind, zeigen sie ihre relationale Hierarchie zum übergeordneten Ereignis und zu den gleichrangigen Unterereignissen an. | Eine Produktliste behält ihre Hierarchie bei, die im XDM-Schema als Array definiert ist:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
 
 {style="table-layout:auto"}
 
 ## Abfragen von Unterereignisdaten in der Daten-Feed-Ausgabe
 
-Da Unterereignisdaten [in Customer Journey Analytics-Daten-Feeds anders angezeigt werden](#customer-journey-analytics-vs-adobe-analytics) unterscheiden sich die Abfragen, die Sie dafür verwenden, von denen, die Sie für Adobe Analytics-Daten-Feeds verwenden.
+Da Unterereignisdaten [in Customer Journey Analytics-Daten-Feeds anders angezeigt werden](#view-sub-event-data-in-data-feed-output) unterscheiden sich die Abfragen, die Sie dafür verwenden, von denen, die Sie für Adobe Analytics-Daten-Feeds verwenden.
 
 Die folgenden Beispiele zeigen, wie Sie Ereignisse finden, die ein bestimmtes Produkt enthalten. Die Beispiele verwenden die Google BigQuery-Syntax. Andere Data Warehouses, wie Snowflake und Databricks, unterstützen denselben Ansatz mit geringfügigen Syntaxunterschieden.
-
-+++ Abfragen von Produktdaten in Adobe Analytics-Daten-Feeds
-
-In Adobe Analytics-Daten-Feeds wird ein Ereignis mit zwei gemeinsam gekauften Produkten als einzelne, durch Trennzeichen getrennte Zeichenfolge in der `product_list` angezeigt:
-
-```text
-Power Tools;Cordless Drill;1;129.99;event1=1;eVar10=DrillBundle,Power Tools;Drill Battery Pack;2;39.98;event1=1;eVar10=DrillBundle
-```
-
-Um Ereignisse zu finden, die einen Akku-Bohrer enthalten, analysieren Sie diese Zeichenfolge mit einem regulären Ausdruck:
-
-```sql
-SELECT hitid_high, hitid_low, post_evar10
-FROM aa_hit_data
-WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
-```
-
-+++
 
 +++ Abfragen von Produktdaten in Customer Journey Analytics-Daten-Feeds
 
@@ -128,6 +185,24 @@ WHERE item.product = 'Cordless Drill';
 Ein Ereignis mit mehr als einem übereinstimmenden Produkt wird als mehrere Zeilen angezeigt, und die Spalten des Ereignisses, wie `row_id`, wiederholen sich in jeder Zeile. Verwenden Sie diesen Ansatz nur, wenn Sie Details auf Produktebene benötigen. Um Ereignisse in den Ergebnissen zu zählen, verwenden Sie `COUNT(DISTINCT row_id)` anstelle von Zeilen zu zählen.
 
 Dieser Ansatz gilt für alle Array-Felder in Ihrem XDM-Schema, nicht nur für Produkte.
+
++++
+
++++ Abfragen von Produktdaten in Adobe Analytics-Daten-Feeds
+
+In Adobe Analytics-Daten-Feeds wird ein Ereignis mit zwei gemeinsam gekauften Produkten als einzelne, durch Trennzeichen getrennte Zeichenfolge in der `product_list` angezeigt:
+
+```text
+Power Tools;Cordless Drill;1;129.99;event1=1;eVar10=DrillBundle,Power Tools;Drill Battery Pack;2;39.98;event1=1;eVar10=DrillBundle
+```
+
+Um Ereignisse zu finden, die einen Akku-Bohrer enthalten, analysieren Sie diese Zeichenfolge mit einem regulären Ausdruck:
+
+```sql
+SELECT hitid_high, hitid_low, post_evar10
+FROM aa_hit_data
+WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
+```
 
 +++
 
