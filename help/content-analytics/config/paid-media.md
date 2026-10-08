@@ -4,12 +4,11 @@ description: Erfahren Sie mehr über die automatische Konfiguration von Datensä
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-source-git-commit: f83d40d33e90ba73f26129ab416f063f361edca7
+source-git-commit: 2727dce145b996192ac873dd43d5106b011ff736
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 4%
 ---
-
 # Automatische Konfiguration für bezahlte Medien
 
 Wenn Sie den Paid-Media-Kanal in Content Analytics aktivieren und die Konfiguration speichern, aktualisiert Adobe die ausgewählten Verbindungs- und Datenansichten mit der Berichtskonfiguration für die Paid-Media-Datensätze. Sie müssen die Standarddimensionen, Metriken, Lookup-Logik oder Zusammenfassungsdatengruppen nicht selbst neu erstellen.
@@ -35,7 +34,7 @@ Welche Zusammenfassungsdatensätze erstellt werden, wird durch das spezifische A
 * Name des Zusammenfassungsdatensatzes, Ereignistyp und Komponenten-Suffix
 * Entität
 * Aufschlüsselung
-* Welche Datensätze werden für ![&#x200B; folgenden Netzwerke ausgefüllt &#x200B;](/help/assets/icons2/Checkmark.svg)Häkchen):
+* Welche Datensätze werden für ![ folgenden Netzwerke ausgefüllt ](/help/assets/icons2/Checkmark.svg)Häkchen):
   * ![MetaSolid](/help/assets/icons2/MetaSolid.svg) Meta
   * ![GoogleAdsMulti](/help/assets/icons2/GoogleAdsMulti.svg) Google
   * ![PinterestMulti](/help/assets/icons2/PinterestMulti.svg) Pinterest
@@ -65,7 +64,6 @@ Diese Tabelle beschreibt die Datensatzabdeckung und ist keine Garantie dafür, d
 Separate Lookup-Datensätze beschreiben Konto, Kampagne, Anzeigengruppe, Anzeige, Erlebnis und Asset. Sie stellen Namen und Metadaten mithilfe von Entitäts-GUIDs bereit. Es gibt keine Eins-zu-eins-Paarung zwischen den Zusammenfassungsdatensätzen und den sechs Lookup-Datensätzen.
 
 Durch die Gruppierung von Zusammenfassungsdaten werden äquivalente Dimensionen zusammengeführt. Die Gruppierung ergibt nicht die sechs Leistungsmetriken insgesamt.
-
 
 ## Komponenten
 
