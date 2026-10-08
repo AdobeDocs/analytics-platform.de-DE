@@ -34,7 +34,7 @@ Welche Zusammenfassungsdatensätze erstellt werden, wird durch das spezifische A
 * Name des Zusammenfassungsdatensatzes, Ereignistyp und Komponenten-Suffix
 * Entität
 * Aufschlüsselung
-* Welche Datensätze werden für ![ folgenden Netzwerke ausgefüllt ](/help/assets/icons2/Checkmark.svg)Häkchen):
+* Welche Datensätze werden für ![&#x200B; folgenden Netzwerke ausgefüllt &#x200B;](/help/assets/icons2/Checkmark.svg)Häkchen):
   * ![MetaSolid](/help/assets/icons2/MetaSolid.svg) Meta
   * ![GoogleAdsMulti](/help/assets/icons2/GoogleAdsMulti.svg) Google
   * ![PinterestMulti](/help/assets/icons2/PinterestMulti.svg) Pinterest
