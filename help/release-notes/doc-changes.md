@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 17af5df91a28b3a6e44528f88661b6dcc86d6cae
+source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
 workflow-type: tm+mt
-source-wordcount: '7170'
+source-wordcount: '7183'
 ht-degree: 96%
 ---
 
@@ -71,19 +71,21 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 |---|---|
 | **Oktober 2026** | |
 | Conversation Insights | [Dokumentation](/help/conversation-insights/overview.md) für Konversationseinblicke. |
+| Oktober 2026 | |
+| Brand Visibility | Die Dokumentation für die Integration der eingehenden [Markensichtbarkeit-](/help/integrations/bv/bv.md#inbound-integration) wurde mit weiteren Details aktualisiert. |
 | **September 2026** | |
 | Journey-Leinwandvergleich bei Pfeilen und Fallout | Die Einstellung &quot;[!UICONTROL Vergleichen mit]&quot; in [Konfigurieren einer Journey-Arbeitsflächen-Visualisierung](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) wurde aktualisiert, um anzuzeigen, dass die prozentuale Änderung zwischen Datumsbereichen jetzt auf jedem Knoten, Pfeil und Fallout im Journey angezeigt wird. |
-| Integrierte Blog-Beiträge | Folgende Blog-Beiträge wurden eingefügt:<ul><li>[Das vollständige Playbook für die Verarbeitung von „Kein Wert“ in Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=de#M598)</li><li>[Detaillierte Einblicke in die Anwendungsfälle von Adobe Experience Platform und Customer Journey Analytics Data Egress](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?profile.language=de)</li></ul>in unserem [Datenexport](/help/use-cases/data-export/overview.md) Anwendungsfällen und einem neuen [Kein Wert](/help/use-cases/data-views/no-value.md) Anwendungsfallartikel. |
+| Integrierte Blog-Beiträge | Folgende Blog-Beiträge wurden eingefügt:<ul><li>[Das vollständige Playbook für die Verarbeitung von „Kein Wert“ in Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769#M598)</li><li>[Detaillierte Einblicke in die Anwendungsfälle von Adobe Experience Platform und Customer Journey Analytics Data Egress](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725)</li></ul>in unserem [Datenexport](/help/use-cases/data-export/overview.md) Anwendungsfällen und einem neuen [Kein Wert](/help/use-cases/data-views/no-value.md) Anwendungsfallartikel. |
 | Neue Tastenkombinationen zum Ändern der Größe | Mit den neuen Tastaturbefehlen in Analysis Workspace können Sie jetzt [Größe eines Bedienfelds oder einer Visualisierung ändern](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#resize-panel-or-visualization) breiter, schmaler, höher oder kürzer. |
 | **August 2026** | |
 | Es wurden Informationen zum Aktualisieren von Zielgruppen klargestellt | Beim [Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md#audience-builder) wurde klargestellt, dass die Anzahl der Zielgruppen, die aktualisiert werden können, von Ihrer Customer Journey Analytics-Berechtigung abhängt und zwischen 75 und 150 liegt. |
 | **Juli 2026** | |
-| Eingehende Markensichtbarkeit-Integration | Dokumentation für die Integration der eingehenden [Markensichtbarkeit](/help/integrations/bv.md#inbound-integration). |
+| Brand Visibility | Dokumentation für die Integration der eingehenden [Markensichtbarkeit](/help/integrations/bv/bv.md#inbound-integration). |
 | Benutzeroberfläche | Aktualisierungen der Dokumentation [Nutzungsschnittstelle](/help/connections/manage-connections.md#usage) für Verbindungen. |
 | Analyse der Unterereignisse | Dokumentation für [Analyse von Unterereignissen](/help/components/segments/sub-event.md) und [benutzerdefinierte Container](/help/data-views/create-dataview.md#custom-containers). |
 | Inline-Klassifizierungen | Dokumentation für [Inline-](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |
 | **Juni 2026** | |
-| Neuer GA4-Leitfaden | Hinzugefügt [Übergang von Google Analytics 4 zu Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
+| Neuer GA4-Leitfaden | Hinzugefügt [Übergang von Google Analytics 4 zu Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
 | **Mai 2026** | |
 | JavaScript-Bibliothek für Content Analytics | Dokumentation zur Implementierung von Content Analytics für den Web-Kanal mithilfe der [Content Analytics-JavaScript-Bibliothek](/help/content-analytics/config/tags-agnostic.md) ohne Experience Platform-Datenerfassungs-Tags. |
 | Überlegungen zu Data Mirror | [Dokumentation](/help/data-mirror/considerations.md), in der Faktoren beschrieben werden, die Sie beim Einrichten von [Data Mirror-Datensätzen](/help/data-mirror/data-mirror.md) berücksichtigen sollten. |
@@ -394,7 +396,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | September 2021 | [Unterstützung der Sommerzeit beim Reporting](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#calendar) |
 | September 2021 | [Kundenkalender](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#calendar) – Dokumentation |
 | September 2021 | [Boolesche Felder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=de) – Dokumentation |
-| September 2021 | Aufschlüsselnung der Komponenteneinstellungen in Datenansichten in einzelne Dateien:<ul><li>[[!UICONTROL Komponenteneinstellungen] - Übersicht](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL &#x200B; Attribution] – Komponenteneinstellungen](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL Verhalten] – Komponenteneinstellungen](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL Format] – Komponenteneinstellungen](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL Einschließen/ausschließen] – Komponenteneinstellungen](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL Metrik-Deduplizierung] – Komponenteneinstellungen](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL Kein Wert] – Komponenteneinstellungen](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL Persistenz] – Komponenteneinstellungen](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL Wert-Bucketing] – Komponenteneinstellungen](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
+| September 2021 | Aufschlüsselnung der Komponenteneinstellungen in Datenansichten in einzelne Dateien:<ul><li>[[!UICONTROL Komponenteneinstellungen] - Übersicht](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL  Attribution] – Komponenteneinstellungen](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL Verhalten] – Komponenteneinstellungen](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL Format] – Komponenteneinstellungen](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL Einschließen/ausschließen] – Komponenteneinstellungen](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL Metrik-Deduplizierung] – Komponenteneinstellungen](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL Kein Wert] – Komponenteneinstellungen](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL Persistenz] – Komponenteneinstellungen](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL Wert-Bucketing] – Komponenteneinstellungen](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | September 2021 | Neuer Abschnitt über die [Auswirkungen der Zusammenführung von Report Suites](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#?lang=de6.-considerations-when-merging-report-suites-in-cja) in Customer Journey Analytics. |
 | **August 2021** | |
 | August 2021 | Neuer Abschnitt zum Erlebnis mit erweiterten [Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de) in Customer Journey Analytics. |
