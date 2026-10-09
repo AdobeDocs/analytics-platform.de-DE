@@ -265,7 +265,7 @@ Für ein gültiges anfängliches Verbindungssetup, das gespeichert wird und eine
   >Für Datensätze, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, kann der Aufstockungsstatus aufgrund einer bekannten Einschränkung derzeit nicht gemeldet werden.
   >
 
-  Verwenden Sie alternative Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden. Verwenden Sie beispielsweise die [Benutzeroberfläche des Experience Platform-](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview), um die Ereignisanzahl für den relevanten Zeitraum aus dem Datensatz zu extrahieren. Vergleichen Sie diese Ereignisse mit dem Metrikwert **[!UICONTROL Ereignisse]** in [Customer Journey Analytics-Berichten](/help/analysis-workspace/home.md) für denselben Zeitrahmen. Wenn diese Zahlen übereinstimmen, wird die Aufstockung abgeschlossen.
+  Verwenden Sie alternative Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden. Verwenden Sie beispielsweise die [Benutzeroberfläche des Experience Platform-](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/overview), um die Ereignisanzahl für den relevanten Zeitraum aus dem Datensatz zu extrahieren. Vergleichen Sie diese Ereignisse mit dem Metrikwert **[!UICONTROL Ereignisse]** in [Customer Journey Analytics-Berichten](/help/analysis-workspace/home.md) für denselben Zeitrahmen. Wenn diese Zahlen übereinstimmen, wird die Aufstockung abgeschlossen.
 
 ## Einschränkungen
 
