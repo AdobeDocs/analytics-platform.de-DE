@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hold: true
 role: Admin
-source-git-commit: 4bb99471d256fe29dc54980a5da37cf2385b679f
+source-git-commit: 29a21d57b6b50d873a4464d1a705c1b4855dd3ea
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1198'
 ht-degree: 0%
 ---
 
@@ -29,7 +29,7 @@ Stellen Sie sicher, dass Sie in Experience Platform über folgenden Zugriff verf
 
 * Berechtigung zum Anzeigen und Verwalten von Quellen.
 * Berechtigung zum Erstellen von Schemata, Datensätzen und Datenflüssen.
-* Eine Sandbox für die Arbeit ausgewählt. Sie müssen die Sandbox auswählen, bevor Sie mit den Einrichtungsschritten fortfahren.
+* Eine Sandbox für die Arbeit ausgewählt. Wählen Sie die Sandbox aus, bevor Sie mit den Einrichtungsschritten fortfahren.
 
 Wenn Sie [!DNL Meta Ads] als Quelle verwenden, stellen Sie sicher, dass auch die folgenden Voraussetzungen erfüllt sind:
 
@@ -41,72 +41,13 @@ Wenn Sie [!DNL Meta Ads] als Quelle verwenden, stellen Sie sicher, dass auch die
 
 Die Authentifizierung beim Connector verwendet [!DNL OAuth 2.0]. Während des Setups melden Sie sich an und gewähren Zugriff auf den Connector. Da Zugriffs-Token ablaufen, sollten Sie darauf vorbereitet sein, die Verbindung erneut zu autorisieren, wenn die Gewährung widerrufen wird.
 
-## Paid-Media-Datenmodell
+## Datenmodell
 
-[Zusammenfassungsmetrik-Datensätze](#summary-metrics-datasets) dienen als Faktentabellen, und Lookup-Datensätze liefern die zugehörigen Dimensionen. Die Lookup-Datensätze werden mit den Zusammenfassungsmetriken-Datensätzen nach Entitäts-`GUID` und nativen ID-Werten für Konten, Kampagnen, Anzeigengruppen, Anzeigen, Assets und Erlebnisse verbunden.
+In der automatischen Konfiguration für bezahlte Medien [&#128279;](/help/content-analytics/config/paid-media.md) wird das Datenmodell für bezahlte Medien detailliert erläutert. Diese automatische Konfiguration erstellt und konfiguriert die erforderlichen Datensätze und Komponenten im Allgemeinen und für die spezifische Analyse von Inhalten.
 
-Die Lookup-Datensätze verwenden zwei gemeinsame Bausteine:
+Informationen zum Paid-Media-Datenmodell finden Sie in dieser Dokumentation . Verwenden Sie ihn, um zu entscheiden, welche Datensätze in Customer Journey Analytics verwendet werden sollen. Die konfigurierten Quell-Connectoren generieren diese Datensätze.
 
-* **Objekt-IDs**: Speichert Konto-, Anzeigen-, Anzeigengruppen-, Asset-, Kampagnen- und Erlebnisobjekte. Jedes Objekt enthält einen von Adobe generierten globalen Schlüssel und eine plattformnative ID.
-* **Paid Media Core-Metadaten**: Speichert allgemeine beschreibende Felder wie Name, Status, Ziel, Optimierungsziel, Gebotsstrategie, Budgettyp, Budgetwerte, Währung, Zeitzone, Serving-Status, Daten, Werbenetzwerk, Kanal, Hierarchiepfad, Netzwerk und Portfolio-IDs.
-
-In der folgenden Tabelle sind die sechs Lookup-Datensätze zusammengefasst.
-
-| Lookup-Datensatz | Wichtige Inhalte |
-|---|---|
-| Konto-Suche | Metadaten auf Kontoebene wie Name, Währung, Zeitzone, Status, Ausgabenlimit und Erstellungsdaten |
-| Kampagnensuche | Kampagneneinstellungen für Budget, Planung, Targeting, Konversionsverfolgung, Attribution, Platzierungen, hochgestufte Objekte, Ziel und Katalog- oder Store-IDs |
-| Anzeigengruppen-Suche | Anzeigengruppen-Metadaten wie Kampagnenverknüpfung, Status, Budget, Optimierungsziele und Zielgruppenbestimmung |
-| Anzeigensuche | Kreative Details zur Anzeige wie Assets, Varianten, Dimensionen, Tracking-URLs, call to action, Textkörper, Titel, Ziel-URL, Versandstatus und Prüfungsstatus |
-| Asset-Suche | Asset-Eigenschaften wie Dimensionen, Dateidetails, Bildeigenschaften, Medien-URLs, Nutzungsmetadaten, Videometadaten, Beschreibung, Untertyp, Titel und Typ |
-| Erlebnissuche | Kreative Gruppierungen auf Erlebnisebene wie Erlebnis-ID, Assets, Titel, Beschreibung und call to action |
-
-### Zusammenfassungsmetrik-Datensätze
-
-Die Datensätze der Zusammenfassungsmetriken für bezahlte Medien sind die zentralen Zusammenfassungsdatensätze. Jede Zeile in einem zusammenfassenden Datensatz stellt normalerweise eine Entität für einen Tag dar und enthält einen Zeitstempel, eine Kennung, einen Ereignistyp, Entitäts-IDs und denormalisierte Namen für das Reporting.
-
-Jeder zusammenfassende Metrikdatensatz kann die folgenden Metrikgruppen enthalten:
-
-* **Kernleistung**: Impressionen, Klicks, Clickthrough-Rate, Interaktionen, Interaktionsrate, Konversionen, Konversionsrate, Konversionswert, Leads, Link-Klicks, Downloads und App-Installationen oder -Öffnungen.
-* **Kosten und Budget**: tägliche Ausgaben, zugewiesenes und verbleibendes Budget, Geschwindigkeit, Überschreitung oder Unterschreitung, Durchschnittskostenmetriken und Gebotsbeträge.
-* **Video**: Videoansichten, Meilensteine mit der Ansichtsrate und durchschnittliche Anzeigedauer.
-* **Impression share**: Impressionsanteil, Top-Impressionsanteil und Metriken zum Anteil verlorener Impressionen.
-* **Konversionsdetails**: Konversionstypen, Aktionen zum Hinzufügen zum Warenkorb, Checkouts, Aufrufe, Weganfragen, Lead-Formular-Aktivität und andere konversionsbezogene Ereignisse.
-* **Social Engagement**: Likes, Kommentare und Follows.
-* **Attribution und Pfad**: Details zum Attributionsmodell, Konfidenz, Gewichtungen, Pfadmetriken und Kanalbeitrag.
-* **Qualität und Betrug**: Qualitätsbewertungen, Betrugsindikatoren, ungültige Traffic-Raten und Metriken zur Markensicherheit.
-* **Dimensionsaufschlüsselungen**: Daten können je nach Quellplattform nach Kanal, Anzeigennetzwerk, Gerätetyp, Altersgruppe, Geschlecht, Land, Stadt, Sprache, Wochentag, Zielgruppenkategorie, kreativem Format und anderen Dimensionen aufgeschlüsselt werden.
-
-### Standarddatensätze
-
-Wenn Sie eine Paid-Media-Quelle verbinden, stellt Adobe zwölf standardmäßige Paid-Media-Datensätze bereit, die auf den globalen Paid-Media-Schemaklassen und Feldergruppen basieren. Diese Datensätze enthalten sechs Zusammenfassungsmetriken, sechs Lookup-Datensätze und unterstützende Datensätze. Alle 12 Zusammenfassungs- und Lookup-Datensätze müssen vorhanden sein, damit die Paid-Media-Daten nachgelagert korrekt aufgelöst werden.
-
-#### Erforderliche Datensätze
-
-* Zusammenfassung des Paid Media-Kontos
-* Kampagnenübersicht für bezahlte Medien
-* Paid Media-Anzeigengruppe - Zusammenfassung
-* Paid Media-Anzeigenzusammenfassung
-* Paid Media-Erlebnis - Zusammenfassung
-* Übersicht über bezahlte Medien-Assets
-* Paid Media-Konto-Suche
-* Paid Media-Kampagnensuche
-* Paid Media-Anzeigengruppen-Suche
-* Paid Media-Anzeigensuche
-* Paid Media Experience Lookup
-* Paid Media Asset Lookup
-
-#### Unterstützende Datensätze
-
-Beispiel
-
-* Bezahlte Medien und demografische Suche
-* Zusammenfassung der Paid Media-Erlebnisplatzierung
-* Paid Media und geografische Zusammenfassung
-* Paid Media-Anzeigenzusammenfassung (Zusammenfassungsmetriken)
-* Zusammenfassung der Paid Media Asset-Demografie
-
-## Paid-Media-Daten in Adobe Experience Platform aufnehmen
+## Paid-Media-Daten aufnehmen
 
 Verwenden Sie den folgenden Prozess, um eine Quelle zu verbinden und Paid-Media-Daten in Experience Platform aufzunehmen:
 
@@ -125,10 +66,10 @@ Validieren Sie die aufgenommenen Daten, bevor Sie zu Customer Journey Analytics 
 
 * Bestätigen Sie, dass die `GUID` der Entität und die nativen ID-Werte über die Zusammenfassungsmetriken und Lookup-Datensätze hinweg konsistent ausgefüllt werden.
 * Vergewissern Sie sich, dass jede Zeile mit Zusammenfassungsmetriken einen Zeitstempel enthält.
-* Bestätigen Sie, dass wichtige Berichtsfelder wie Dimensionen (z. B.: `channel`, `adNetwork`) und Metriken (z. B.: `impressions`, `clicks`, `spend`) Werte enthalten. Beachten Sie, dass einige Felder wie `region` möglicherweise nicht von allen Quellplattformen ausgefüllt werden.
+* Bestätigen Sie, dass wichtige Berichtsfelder wie Dimensionen (z. B.: `channel`, `adNetwork`) und Metriken (z. B.: `impressions`, `clicks`, `spend`) Werte enthalten. Beachten Sie, dass nicht alle Quellplattformen einige Felder wie `region` ausfüllen.
 * Vergewissern Sie sich, dass die Währungs- und Zeitzonenwerte in den relevanten Konten konsistent sind.
 
-## Übertragen von Paid-Media-Daten in Customer Journey Analytics
+## Paid-Media-Daten verwenden
 
 Customer Journey Analytics berichtet nicht direkt über Experience Platform-Datensätze. Stattdessen stellen Sie die Datensätze über eine Verbindung bereit und erstellen dann eine Datenansicht, die die Dimensionen, Metriken und Logik definiert, die im Reporting verwendet werden.
 
@@ -139,7 +80,7 @@ Verwenden Sie den folgenden Prozess, um eine Verbindung zu erstellen oder zu akt
 1. Erstellen oder [&#x200B; Sie in Customer Journey Analytics eine bestehende Verbindung](/help/connections/create-connection.md).
 1. Stellen Sie sicher, dass Sie die Sandbox auswählen, die die Paid-Media-Datensätze als Teil der Verbindungskonfiguration enthält.
 1. Fügen Sie die Zusammenfassungsmetriken-Datensätze als Zusammenfassungsdaten hinzu. Wenn mehrere Zusammenfassungsmetrik -Datensätze verfügbar sind, verwenden Sie [Suche](/help/connections/create-connection.md#add-datasets), um nach den `Paid Media` Klassen zu filtern und die richtigen Datensätze zu identifizieren.
-1. Fügen Sie jeden Suchdatensatz als Suchdatensatz hinzu. Verbinden Sie den Lookup-Datensatz mit den Zusammenfassungsdaten, indem Sie die entsprechenden Entitäts-GUID-Kennungen (die von Adobe generierten globalen Schlüssel) für Konto, Kampagne, Anzeigengruppe, Anzeige, Asset und Erlebnis verwenden. Einige Quellplattformen unterstützen möglicherweise auch Joins auf nativen ID-Werten.
+1. Fügen Sie jeden Suchdatensatz als Suchdatensatz hinzu. Verbinden Sie den Lookup-Datensatz mit den Zusammenfassungsdaten, indem Sie die entsprechenden Entitäts-GUID-Kennungen (die von Adobe generierten globalen Schlüssel) für Konto, Kampagne, Anzeigengruppe, Anzeige, Asset und Erlebnis verwenden. Einige Quellplattformen unterstützen auch Joins auf nativen ID-Werten.
 1. Optional können Sie Clickstream-Ereignisdaten hinzufügen, wenn Sie aggregierte Paid-Media-Daten mit freigegebenen Metadaten wie IDs, Trackingcodes oder `UTM` verknüpfen möchten.
 1. Überprüfen Sie [Datensatzspezifische Einstellungen](/help/connections/create-connection.md#dataset-settings) für jeden Datensatz.
 1. Speichern Sie die Verbindung und bestätigen Sie, dass die Verbindung beginnt, Daten aufzustocken.
@@ -163,6 +104,10 @@ Fügen Sie Komponenten wie die folgenden hinzu:
 * **Zusammenfassungsgruppierung**: [Kombinieren Sie verwandte Werte aus mehreren Datensätzen zu einer einzigen Reporting-Dimension](/help/data-views/component-settings/summary-data-group.md) z. B. einer einheitlichen Dimension für gebührenpflichtige Kanäle.
 * **Berechnete Metriken**: Definieren wiederverwendbarer Effizienzmetriken wie CPC, CPM, CPA, CTR und Konversionsrate.
 
+### Erstellen eines Projekts
+
+Um über die Paid-Media-Daten zu berichten und sie zu analysieren, erstellen Sie ein Projekt in Analysis Workspace.
+
 ## Überprüfen
 
 Validieren Sie die Implementierung anhand der folgenden Checkliste.
@@ -171,7 +116,7 @@ Validieren Sie die Implementierung anhand der folgenden Checkliste.
 
 * Vergewissern Sie sich, dass Quellberechtigungen und der Zugriff auf die Anzeigenplattform vorhanden sind.
 * Überprüfen Sie, ob der Connector authentifiziert ist und der Datenfluss planmäßig ausgeführt wird.
-* Vergewissern Sie sich, dass alle zwölf Standarddatensätze vorhanden und ausgefüllt sind.
+* Vergewissern Sie sich, dass alle Paid-Media-Datensätze vorhanden und ausgefüllt sind.
 * Vergewissern Sie sich, dass die Schemas die globalen Paid-Media-Klassen und -Feldergruppen verwenden.
 * Vergewissern Sie sich, dass die Felder „Join-Schlüssel“, „Zeitstempel“ und „Schlüssel-Reporting“ ausgefüllt sind.
 
@@ -188,4 +133,4 @@ Validieren Sie die Implementierung anhand der folgenden Checkliste.
 >[!MORELIKETHIS]
 >
 >[Quell-Connector für Meta Ads](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/advertising/meta-ads)
->
+>[Automatische Konfiguration für bezahlte Content Analytics-Medien](/help/content-analytics/config/paid-media.md)
