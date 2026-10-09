@@ -1,6 +1,6 @@
 ---
-title: Markensichtbarkeit-Integration
-description: Integrieren von Markensichtbarkeit mit Customer Journey Analytics
+title: Datensatzreferenz für eingehende Markensichtbarkeit-Integration
+description: Erfahren Sie mehr über alle Details der Datensätze, die für die Integration von Markensichtbarkeit mit Customer Journey Analytics verwendet werden
 feature: Experience Platform Integration
 role: User
 product_v2:
@@ -15,9 +15,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
 workflow-type: tm+mt
-source-wordcount: '2572'
+source-wordcount: '2555'
 ht-degree: 3%
 ---
 
@@ -90,11 +90,11 @@ Markensichtbarkeit stellt diesen Schlüssel für Sie in der Dimension **CDN URL*
 
 Markensichtbarkeit liest Server-seitig CDN-Zugriffsprotokolle und extrahiert Datensätze, bei denen es sich bei der anfragenden Partei um einen Bot oder einen automatisierten Agenten handelt. Da die Daten von der CDN-Ebene stammen, erfasst Markensichtbarkeit Anfragen von Bots, die kein JavaScript-Tag auslösen. Standard-Web-Analyse-Tools übersehen diesen Traffic vollständig.
 
-Der Datensatz verwendet die **CDN Requests Summary** Feldergruppe. Jedes Feld befindet sich unter einem `cdn` Objekt, sodass die Feldnamen in den Tabellen unten die Form `cdn.<name>` haben, z. B. `cdn.url` und `cdn.botType`.
+Der Datensatz verwendet die **CDN Requests Summary** Feldergruppe. Da sich jedes Feld unter einem `cdn` befindet, haben die Feldnamen in den Tabellen unten die Form <code>cdn._name_</code>, beispielsweise `cdn.url` und `cdn.botType`.
 
 Jeder Datensatz beschreibt eine Kombination aus Host, URL-Pfad, Bot-Typ, CDN-Provider, Status-Code, Referrer, weitergeleitetem Host und Zeit bis zum ersten Byte für eine Stunde. Wenn dieselbe Kombination mehrmals pro Stunde angezeigt wird, kombiniert Customer Journey Analytics diese Datensätze zu einer Zeile und erhöht die Anzahl der Anfragen. Verwenden Sie die Metrik **CDN Request Count** zur Messung des Volumens. Zeilenanzahl nicht verwenden.
 
-### Dimensionen
+## Dimensionen
 
 Die folgenden Dimensionen können als Komponenten in einer Datenansicht verwendet werden, sobald Sie eine Verbindung eingerichtet haben, die einen Markensichtbarkeit-Datensatz enthält. Die Spalte **Feld** zeigt das Quellfeld in der Feldergruppe „CDN-Anfragen - Zusammenfassung“ an.
 
@@ -165,7 +165,7 @@ HTTP-Status-Codes in diesem Datensatz geben an, ob der KI-Agent den angeforderte
 | 429 | Zu viele Anfragen | Der Bot wurde durch die CDN-Rate eingeschränkt. Anhaltende 429-Fehler bei Live-Fetch-Agententypen bedeuten, dass Benutzende, die KI-Assistenten Fragen zu Ihren Inhalten stellen, unvollständige oder fehlende Antworten erhalten. |
 | 504 | Gateway-Zeitüberschreitung | Das CDN hörte auf, auf eine Antwort des Ursprungs zu warten. Der Inhalt hat die KI nicht erreicht. Wenn für eine Seite eine Zeitüberschreitung auftritt, kann die KI nicht auf ihren Inhalt zugreifen und ihn nicht in eine Antwort einschließen. Ein hohes Volumen von 504 bei Live-Fetch-Agententypen stellt ein Risiko für die direkte KI-Sichtbarkeit dar. |
 
-### Metrik
+## Metrik
 
 Die folgenden Metriken können als Komponenten in einer Datenansicht verwendet werden, sobald Sie eine Verbindung eingerichtet haben, die einen Markensichtbarkeit-Datensatz enthält. Die Spalte **Feld** zeigt das Quellfeld in der Feldergruppe „CDN-Anfragen - Zusammenfassung“ an.
 
@@ -176,16 +176,12 @@ Die folgenden Metriken können als Komponenten in einer Datenansicht verwendet w
 | CDN-Fehlerrate | Abgeleitet von CDN-Fehleranzahl | Die Fehleranzahl als Prozentsatz der gesamten Anfragen. |
 | Durchschn. CDN-Zeit bis zum ersten Byte | `cdn.timeToFirstByte` | Die durchschnittliche Zeit in Millisekunden ab dem Zeitpunkt, zu dem das CDN eine Anfrage empfangen hat, bis zum ersten Byte der Antwort. CDN-zwischengespeicherte Antworten dauern in der Regel weniger als 50 ms. Die von der Quelle gesendeten Antworten betragen normalerweise 300 ms bis 700 ms. KI-Live-Fetch-Agenten weisen häufig deutlich höhere Werte auf, die mit einer Zeitüberschreitung oder sehr langsamen Ursprungsreaktionen korrespondieren. Hohe Durchschnittswerte für Live-Fetch-Agententypen sind es wert, als Risiko für die KI-Sichtbarkeit untersucht zu werden. |
 
-### Datensatzgrenzen
+## Grenzen
 
 Dieser Datensatz erfasst nur Traffic von Bots aus CDN-Zugriffsprotokollen. Sie enthält nicht Folgendes:
 
 * **Benutzersitzungen, Konversionen oder Interaktionsdaten.** Ein Benutzer, der auf eine KI-Antwort klickt, führt die JavaScript auf Ihrer Seite aus, sodass der Besuch in Ihren vorhandenen Web-Daten erfolgt und nicht in diesem Datensatz. Sie können beide Datensätze in Customer Journey Analytics importieren und sie für dieselbe URL und denselben Host vergleichen.
-* **Beliebige Personenkennung wie ECID.** Aus diesem Datensatz kann kein Join auf Personenebene erstellt werden. Der Join wird auf URL- und Host-Ebene ausgeführt.
+* **Beliebige Personenkennung wie ECID.** Aus diesem Datensatz kann kein Join auf Personenebene durchgeführt werden. Der Join wird auf URL- und Host-Ebene ausgeführt.
 * **Granularität der Subsekundenzeit.** Der Zeitstempel ist stündlich. Sie können den Traffic nicht innerhalb einer Stunde in Minuten oder Sekunden unterteilen.
 * **Seiteninhalt oder gerenderte HTML.** Dieser Datensatz zeichnet die Tatsache des Abrufs und dessen Ergebnis auf, nicht das, was die KI von der Seite gelesen hat.
 * **Konversionsdaten.** Dieser Datensatz sagt Ihnen nicht, ob eine KI-Antwort eine Person veranlasst hat, Ihre Site zu besuchen oder zu konvertieren. Es enthält aggregierte CDN-Zusammenfassungsdaten, keine personenbasierten Ereignisdaten, sodass keine Anfrage mit einer einzelnen Person oder Sitzung verknüpft wird.
-
-## Ausgehende Integration
-
-Weitere Informationen zur ausgehenden Integration finden Sie unter [Customer Journey Analytics-Integration](https://experienceleague.adobe.com/de/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} in der Dokumentation zur Sichtbarkeit von Adobe-Marken.

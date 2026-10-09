@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 17af5df91a28b3a6e44528f88661b6dcc86d6cae
+source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
 workflow-type: tm+mt
-source-wordcount: '7170'
+source-wordcount: '7183'
 ht-degree: 96%
 ---
 
@@ -71,6 +71,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 |---|---|
 | **Oktober 2026** | |
 | Conversation Insights | [Dokumentation](/help/conversation-insights/overview.md) für Konversationseinblicke. |
+| Oktober 2026 | |
+| Brand Visibility | Die Dokumentation für die Integration der eingehenden [Markensichtbarkeit-](/help/integrations/bv/bv.md#inbound-integration) wurde mit weiteren Details aktualisiert. |
 | **September 2026** | |
 | Journey-Leinwandvergleich bei Pfeilen und Fallout | Die Einstellung &quot;[!UICONTROL Vergleichen mit]&quot; in [Konfigurieren einer Journey-Arbeitsflächen-Visualisierung](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) wurde aktualisiert, um anzuzeigen, dass die prozentuale Änderung zwischen Datumsbereichen jetzt auf jedem Knoten, Pfeil und Fallout im Journey angezeigt wird. |
 | Integrierte Blog-Beiträge | Folgende Blog-Beiträge wurden eingefügt:<ul><li>[Das vollständige Playbook für die Verarbeitung von „Kein Wert“ in Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=de#M598)</li><li>[Detaillierte Einblicke in die Anwendungsfälle von Adobe Experience Platform und Customer Journey Analytics Data Egress](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?profile.language=de)</li></ul>in unserem [Datenexport](/help/use-cases/data-export/overview.md) Anwendungsfällen und einem neuen [Kein Wert](/help/use-cases/data-views/no-value.md) Anwendungsfallartikel. |
@@ -78,7 +80,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | **August 2026** | |
 | Es wurden Informationen zum Aktualisieren von Zielgruppen klargestellt | Beim [Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md#audience-builder) wurde klargestellt, dass die Anzahl der Zielgruppen, die aktualisiert werden können, von Ihrer Customer Journey Analytics-Berechtigung abhängt und zwischen 75 und 150 liegt. |
 | **Juli 2026** | |
-| Eingehende Markensichtbarkeit-Integration | Dokumentation für die Integration der eingehenden [Markensichtbarkeit](/help/integrations/bv.md#inbound-integration). |
+| Brand Visibility | Dokumentation für die Integration der eingehenden [Markensichtbarkeit](/help/integrations/bv/bv.md#inbound-integration). |
 | Benutzeroberfläche | Aktualisierungen der Dokumentation [Nutzungsschnittstelle](/help/connections/manage-connections.md#usage) für Verbindungen. |
 | Analyse der Unterereignisse | Dokumentation für [Analyse von Unterereignissen](/help/components/segments/sub-event.md) und [benutzerdefinierte Container](/help/data-views/create-dataview.md#custom-containers). |
 | Inline-Klassifizierungen | Dokumentation für [Inline-](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |
