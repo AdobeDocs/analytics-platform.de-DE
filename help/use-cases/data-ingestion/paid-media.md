@@ -132,5 +132,5 @@ Validieren Sie die Implementierung anhand der folgenden Checkliste.
 
 >[!MORELIKETHIS]
 >
->[Quell-Connector für Meta Ads](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
+>[Quell-Connector für Meta Ads](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/advertising/meta-ads)
 >[Automatische Konfiguration für bezahlte Content Analytics-Medien](/help/content-analytics/config/paid-media.md)
