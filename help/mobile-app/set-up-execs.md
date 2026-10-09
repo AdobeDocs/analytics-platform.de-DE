@@ -5,49 +5,57 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-TQID: https://experienceleague.adobe.com/78Bp5YSZg7Qs-qBnCfIoS6mjxda7CAglDG19Qq07Fw4
+TQID: 'https://experienceleague.adobe.com/78Bp5YSZg7Qs-qBnCfIoS6mjxda7CAglDG19Qq07Fw4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b21c7889-c659-4a99-a779-de1bae57e47e
+    internal-label: Scorecards
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+    internal-label: Troubleshooting
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 720
+source-wordcount: '720'
 ht-degree: 65%
-
 ---
-
 # Einrichten von Führungskräften für die Verwendung von Dashboards
 
 In einigen Fällen benötigen die ausführenden Benutzer möglicherweise zusätzliche Hilfe, um auf die App zuzugreifen und sie zu verwenden. Dieser Abschnitt enthält Informationen, die Kuratoren bei der Bereitstellung dieser Hilfe unterstützen.
 
-## Sicherstellen, dass Mobile-App-Benutzer Zugriff auf Adobe Analytics haben
+## Sicherstellen, dass App-Benutzende Zugriff auf Adobe Analytics haben
 
-1. Einrichten neuer Benutzer in der [CX Enterprise Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=de).
+1. Richten Sie neue Benutzende in der [CX Enterprise Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=de) ein.
 
 1. Um Scorecards freigeben zu können, müssen Sie App-Benutzern Berechtigungen für den Zugriff auf Scorecard-Komponenten wie Analysis Workspace, die Datenansichten, auf denen Scorecards basieren, sowie Segmente, Metriken und Dimensionen gewähren.
 
-## Systemanforderungen von Mobile-App-Benutzern
+## Systemanforderungen für App-Benutzende
 
-Damit ausführende Benutzer Zugriff auf Ihre Scorecards in der Mobile App haben, müssen folgende Voraussetzungen gegeben sein:
+Damit ausführende Benutzende Zugriff auf Ihre Scorecards in der App haben, müssen folgende Voraussetzungen gegeben sein:
 
 * Auf ihren Geräten muss mindestens iOS-Version 10 oder Android-Version 4.4 (KitKat) installiert sein.
 * Sie verfügen über eine gültige Anmeldung bei Customer Journey Analytics.
 * Sie haben die mobilen Scorecards für Ihre Benutzer korrekt erstellt und freigegeben.
 * Ihre Benutzer müssen Zugriff auf die Komponenten haben, die die Scorecard enthält. Sie können bei der Freigabe Ihrer Scorecards eine Option auswählen, um **[!UICONTROL eingebettete Komponenten freizugeben]**.
 
-## Ausführenden Benutzern helfen, die Mobile App herunterzuladen und zu installieren
+## Helfen Sie ausführenden Benutzenden, die App herunterzuladen und zu installieren
 
 >[!NOTE]
 >
@@ -73,9 +81,9 @@ Nach dem Herunterladen und der Installation können sich ausführende Benutzer m
 
 1. Fordern Sie die ausführenden Benutzer auf, sich bei der Mobile App anzumelden.
 
-   Der Bildschirm **[!UICONTROL Unternehmen auswählen]** wird angezeigt. Auf diesem Bildschirm werden die Unternehmensanmeldungen angezeigt, die der ausführende Benutzer verwenden kann.
+   Der Bildschirm **[!UICONTROL Unternehmen auswählen]** wird angezeigt. Auf diesem Bildschirm werden die Anmeldeunternehmen angezeigt, zu denen die bzw. der ausführende Benutzer gehört.
 
-1. Fordern Sie sie auf, den Namen des Anmeldeunternehmens oder die CX Enterprise-Organisation anzutippen, der bzw. die für die von Ihnen freigegebene Scorecard gilt.
+1. Fordern Sie sie auf, den Namen des Anmeldeunternehmens oder die CX Enterprise-Organisation für die von Ihnen freigegebene Scorecard anzutippen.
 
    Die Scorecard-Liste zeigt alle Scorecards an, die für den ausführenden Benutzer mit dieser Unternehmensanmeldung freigegeben wurden.
 
@@ -88,7 +96,7 @@ Nach dem Herunterladen und der Installation können sich ausführende Benutzer m
 
 ### Scorecard-Benutzeroberfläche erläutern
 
-Erklären Sie dem ausführenden Benutzer, wie die Kacheln in den von Ihnen freigegebenen Scorecards dargestellt werden.
+Erklären Sie der bzw. dem ausführenden Benutzenden, wie die Kacheln in den von Ihnen freigegebenen Scorecards dargestellt werden.
 
 ![Erläuterung der Kacheln, einschließlich Datumsbereich, Segment sowie ausgewählter Metriken und Dimensionen](assets/newexplain.png)
 
@@ -124,11 +132,11 @@ Um die Voreinstellungen zu ändern, tippen Sie auf die Option **[!UICONTROL Vore
 
 ## Fehlerbehebung
 
-Wenn sich der ausführende Benutzer anmeldet und eine Meldung angezeigt wird, dass nichts freigegeben wurde, kann das folgende Gründe haben:
+Wenn sich die bzw. der ausführende Benutzende anmeldet und eine Meldung angezeigt wird, dass nichts freigegeben wurde:
 
 ![Nichts freigegeben](assets/nothing.png)
 
 * Der ausführende Benutzer hat möglicherweise die falsche Customer Journey Analytics-Sandbox ausgewählt oder
-* eventuell wurde die Scorecard nicht für den ausführenden Benutzer freigegeben.
+* Die Scorecard wurde möglicherweise nicht für die bzw. den ausführende Benutzende freigegeben.
 
 Vergewissern Sie sich, dass sich der ausführende Benutzer bei der richtigen Customer Journey Analytics-Sandbox anmelden kann und dass die Scorecard freigegeben wurde.

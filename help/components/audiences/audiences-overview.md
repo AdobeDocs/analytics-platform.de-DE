@@ -4,30 +4,39 @@ description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichun
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-TQID: https://experienceleague.adobe.com/x64-Q7kfdcy4pAPrOb-TfliMFMNSTafJILEaxR3qbrs
+TQID: 'https://experienceleague.adobe.com/x64-Q7kfdcy4pAPrOb-TfliMFMNSTafJILEaxR3qbrs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 553
+source-wordcount: '564'
 ht-degree: 80%
-
 ---
-
 # Überblick über die Zielgruppenveröffentlichung
 
 >[!NOTE]
@@ -37,7 +46,7 @@ ht-degree: 80%
 >* **Zielgruppenanalyse**: Ermöglicht die Aufnahme von Zielgruppenzugehörigkeitsdaten aus Experience Platform-Profildatensätzen in eine Customer Journey Analytics-Verbindung. Weitere Informationen zur Zielgruppenanalyse finden Sie unter [Übersicht über die Zielgruppenanalyse](/help/connections/audience-analysis/audience-analysis-overview.md).
 >* **Zielgruppenveröffentlichung**: Ermöglicht das Erstellen und Veröffentlichen von in Customer Journey Analytics gefundenen Zielgruppen in Adobe Experience Platform zum Kunden-Targeting und zur Personalisierung.
 
-Sie können in Customer Journey Analytics verfügbare Zielgruppen erstellen und im [Echtzeit-Kundenprofil) &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden. (Weitere Informationen zur Aufnahme von Daten zur Zielgruppenzugehörigkeit aus Experience Platform-Profildatensätzen in eine Customer Journey Analytics-Verbindung finden Sie unter [Übersicht über die Zielgruppenanalyse](/help/connections/audience-analysis/audience-analysis-overview.md).)
+Sie können in Customer Journey Analytics verfügbare Zielgruppen erstellen und im [Echtzeit-Kundenprofil) ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden. (Weitere Informationen zur Aufnahme von Daten zur Zielgruppenzugehörigkeit aus Experience Platform-Profildatensätzen in eine Customer Journey Analytics-Verbindung finden Sie unter [Übersicht über die Zielgruppenanalyse](/help/connections/audience-analysis/audience-analysis-overview.md).)
 
 Das Veröffentlichen von Zielgruppen bietet die Möglichkeit, die in Customer Journey Analytics vorhandenen Einblicke zu aktivieren und entsprechende Maßnahmen zu ergreifen. Zu diesen Maßnahmen zählen:
 

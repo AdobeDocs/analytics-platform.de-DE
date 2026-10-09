@@ -5,33 +5,40 @@ solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
 role: User
-TQID: https://experienceleague.adobe.com/GTQ6Q0saYtBvHM4Iva-lL3ifA9ERbONI9JQkOyaqSRA
+TQID: 'https://experienceleague.adobe.com/GTQ6Q0saYtBvHM4Iva-lL3ifA9ERbONI9JQkOyaqSRA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+    internal-label: Annotations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 320
+source-wordcount: '320'
 ht-degree: 86%
-
 ---
-
 # Anmerkungen – Überblick
 
 Mit Anmerkungen können Sie kontextbezogene Datennuancen und Erkenntnisse auf effektive Weise an andere Stakeholderinnen und Stakeholder in Ihrer Organisation übermitteln. Durch Anmerkungen können Sie Kalenderereignisse an bestimmte Dimensionen und Metriken binden. Sie können etwa zu einem Datum oder Datumsbereich Anmerkungen zu bekannten Datenproblemen, Feiertagen, Kampagnenstarts usw. machen, Anschließend können Sie Ereignisse grafisch anzeigen und sehen, ob sich Kampagnen oder andere Ereignisse auf den Traffic Ihrer Site, die Nutzung mobiler Apps, den Umsatz oder andere Metriken ausgewirkt haben.
 
-Angenommen, Sie geben Projekte für Ihre Organisation frei. Wenn es einen merklichen Rückgang bei der Angebotsannahme gegeben hat, können Sie eine Anmerkung **Schlechte Angebote** erstellen und diese auf Ihre gesamte Datenansicht anwenden. Wenn Ihre Benutzenden Datensätze betrachten, die dieses Datum enthalten, sehen sie die Anmerkung in ihren Projekten gemeinsam mit ihren Daten.
+Angenommen, Sie geben Projekte für Ihre Organisation frei. Wenn es einen merklichen Rückgang bei der Angebotsannahme gegeben hat, können Sie eine Anmerkung **Schlechte Angebote** erstellen und diese auf Ihre gesamte Datenansicht anwenden. Wenn Ihre Benutzenden Datensätze anzeigen, die dieses Datum enthalten, sehen sie die Anmerkung in ihren Projekten gemeinsam mit ihren Daten.
 
 ![Liniendiagramm mit hervorgehobener Anmerkung.](assets/annotation-example.png)
 

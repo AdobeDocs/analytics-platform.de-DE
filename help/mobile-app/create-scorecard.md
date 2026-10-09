@@ -5,31 +5,41 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-TQID: https://experienceleague.adobe.com/7K973UjBfK9BFYOQUia-JDb5yc4uZWMOzqHXXRR1nwc
+TQID: 'https://experienceleague.adobe.com/7K973UjBfK9BFYOQUia-JDb5yc4uZWMOzqHXXRR1nwc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b21c7889-c659-4a99-a779-de1bae57e47e
+    internal-label: Scorecards
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 2770
+source-wordcount: '2770'
 ht-degree: 95%
-
 ---
-
 # Erstellen einer mobilen Scorecard {#create-a-mobile-scorecard}
 
 <!-- markdownlint-disable MD034 -->
@@ -47,7 +57,7 @@ Die folgenden Informationen liefern Kuratierenden von Customer Journey Analytics
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen von mobilen Scorecards](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Erstellen von mobilen Scorecards](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -62,7 +72,7 @@ Eine Analytics-Scorecard stellt wie nachfolgend gezeigt wichtige Datenvisualisie
 
 Wenn Sie diese Scorecard kuratieren, können Sie mit dem Scorecard Builder festlegen, welche Kacheln auf der Scorecard für die Führungskraft angezeigt werden. Sie können auch konfigurieren, wie die detaillierten Ansichten bzw. Aufschlüsselungen angepasst werden können, nachdem auf die Kacheln getippt wird. So sieht die Scorecard Builder-Benutzeroberfläche aus:
 
-![Scorecard Builder mit dem Fenster Neue mobile Scorecard. &#x200B;](assets/scorecard_builder.png)
+![Scorecard Builder mit dem Fenster Neue mobile Scorecard. ](assets/scorecard_builder.png)
 
 Gehen Sie zur Erstellung der Scorecard wie folgt vor:
 
@@ -97,7 +107,7 @@ So implementieren Sie die Scorecard-Vorlage:
 
 1. Um Ihrer Scorecard eine neue Kachel hinzuzufügen, ziehen Sie eine Metrik aus dem linken Panel und legen Sie sie im Bereich **[!UICONTROL Metriken hierhin ziehen und ablegen]** ab. Sie können auch eine Metrik zwischen zwei Kacheln einfügen, indem Sie einen ähnlichen Workflow verwenden.
 
-   ![Fenster Neue mobile Scorecard mit einem Pfeil, der auf eine Metrik (Neue KPI) zeigt, die auf der Scorecard abgelegt wurde. &#x200B;](assets/build_list.png)
+   ![Fenster Neue mobile Scorecard mit einem Pfeil, der auf eine Metrik (Neue KPI) zeigt, die auf der Scorecard abgelegt wurde. ](assets/build_list.png)
 
 
 1. Von jeder Kachel aus können Sie auf eine Detailansicht zugreifen, die zusätzliche Informationen über die Metrik anzeigt, wie z. B. die obersten Elemente in einer Liste verwandter Dimensionen.
@@ -275,7 +285,7 @@ Sehen Sie sich das Video an, um mehr über das Erstellen von Daten-Storys in Mob
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Daten-Storys für ein Projekt mit mobilen Scorecards](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Daten-Storys für ein Projekt mit mobilen Scorecards](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -296,7 +306,7 @@ Um neue Folien hinzuzufügen, bewegen Sie den Mauszeiger über eine Folie oder k
    * Tippen Sie auf das Duplizieren-Symbol, um die vorhandene Folie zu duplizieren.
 1. Wenn Sie eine leere Folie erstellen, ziehen Sie Komponenten per Drag-and-Drop aus der linken Leiste oder wählen Sie ein Layout aus, um die Folie automatisch mit den Daten aus der Kachel aufzufüllen.
    ![Erstellen einer Daten-Story](assets/data-story2.png)
-Um eine Folie zu löschen, tippen Sie auf das Papierkorbsymbol.
+   Um eine Folie zu löschen, tippen Sie auf das Papierkorbsymbol.
 
 ### Anpassen einer Daten-Story {#customize-data-story}
 
@@ -308,7 +318,7 @@ Mit Daten-Storys können Sie alles anpassen, sodass Sie Informationen, die Sie w
 1. Ändern Sie den Titel, den Diagrammtyp und andere Kacheloptionen.
 1. Ziehen Sie eine Komponente auf die Kachel.
    ![Erstellen einer Daten-Story](assets/data-story3.png)
-Wenn Sie eine Komponente, z. B. eine Visualisierung, per Drag-and-Drop auf eine Kachel ziehen, wird die Komponente auf alle Daten-Story-Folien angewendet.
+   Wenn Sie eine Komponente, z. B. eine Visualisierung, per Drag-and-Drop auf eine Kachel ziehen, wird die Komponente auf alle Daten-Story-Folien angewendet.
 1. Für eine reine Titeländerung halten Sie die Umschalttaste gedrückt, um die Änderung anzuwenden.
    ![Erstellen einer Daten-Story](assets/data-story4.png)
 
