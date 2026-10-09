@@ -103,7 +103,7 @@ Wenn Sie die Voraussetzungen erfüllen, führen Sie einige Preflight-Prüfungen 
 
 ## Aktivieren der Identitätszuordnung {#enable-identity-stitching}
 
-Sie können die Identitätszuordnung aktivieren[ wenn Sie ](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in ](/help/connections/create-connection.md#edit-a-dataset) personenbasierten Verbindung hinzufügen oder [ bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
+Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [&#128279;](/help/connections/create-connection.md#edit-a-dataset) personenbasierten Verbindung hinzufügen oder  bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
 
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
@@ -260,7 +260,7 @@ Für ein gültiges anfängliches Verbindungssetup, das gespeichert wird und eine
 
   >[!CAUTION]
   >
-  >Für Datensätze, die in [ Verbindungsschnittstelle für das ](#enable-stitching) aktiviert sind, kann der Aufstockungsstatus aufgrund einer bekannten Einschränkung nicht gemeldet werden.
+  >Für Datensätze, die in [&#x200B; Verbindungsschnittstelle für das &#x200B;](#enable-stitching) aktiviert sind, kann der Aufstockungsstatus aufgrund einer bekannten Einschränkung nicht gemeldet werden.
   >
 
   Verwenden Sie alternative Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden. Verwenden Sie beispielsweise die [Benutzeroberfläche des Experience Platform-](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview), um die Ereignisanzahl für den relevanten Zeitraum aus dem Datensatz zu extrahieren. Vergleichen Sie diese Ereignisse mit dem Metrikwert **[!UICONTROL Ereignisse]** in [Customer Journey Analytics-Berichten](/help/analysis-workspace/home.md) für denselben Zeitrahmen. Wenn diese Zahlen übereinstimmen, wird die Aufstockung abgeschlossen.
