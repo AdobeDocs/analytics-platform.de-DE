@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
+source-git-commit: adc7e85339e89c181375c0d3ea5c228d473239a7
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 44%
+source-wordcount: '1419'
+ht-degree: 43%
 ---
 # Komponentenverfügbarkeit in Daten-Feeds
 
@@ -28,7 +28,7 @@ ht-degree: 44%
 
 Nicht alle Customer Journey Analytics-Komponenten können in Daten-Feeds verwendet werden. Einige Dimensionen sind in jedem Daten-Feed enthalten, einige Komponenten können nicht einbezogen werden und einige Metriken müssen durch einen Ersatz ersetzt werden.
 
-Verwenden Sie die folgenden Informationen, um zu verstehen, welche Komponenten Sie beim [Erstellen eines Daten-Feeds) &#x200B;](/help/components/exports/cja-data-feeds/create-feed.md) können.
+Verwenden Sie die folgenden Informationen, um zu verstehen, welche Komponenten Sie beim [Erstellen eines Daten-Feeds) ](/help/components/exports/cja-data-feeds/create-feed.md) können.
 
 ## Erforderliche Dimensionen {#required-dimensions}
 
@@ -98,6 +98,8 @@ Die folgenden Customer Journey Analytics-Standardmetriken können nicht in Daten
 
 <!-- markdownlint-disable MD034 -->
 
+<!-- pretty sure this isn't being used -->
+
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
 >title=""
@@ -111,12 +113,18 @@ Die folgenden Customer Journey Analytics-Standardmetriken können nicht in Daten
 >
 >Wenn Sie sich dafür entscheiden, entweder die **Benutzeragent**- oder **Mobile ID**-Dimensionen in Ihren Daten-Feed aufzunehmen, können die unten aufgeführten Dimensionen nicht zum Daten-Feed hinzugefügt werden.
 >
->Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
+>Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von ](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
 
 Die folgenden Dimensionen können nicht zusammen mit den Dimensionen **Benutzeragent** oder **Mobile ID** verwendet werden:
 
+>[!NOTE]
+>
+>Die folgende Liste verwendet standardmäßige Dimensionsnamen. Dimensionen, die in Ihrer Datenansicht umbenannt werden, werden in Daten-Feeds mit ihren benutzerdefinierten Namen angezeigt.
+
+
 * Browser-Typ
 * Browser
+* Browser-ID
 * Mobilgerätehersteller
 * Mobilgerätetyp
 * Mobilgerät - Audio-Unterstützung
@@ -141,6 +149,7 @@ Die folgenden Dimensionen können nicht zusammen mit den Dimensionen **Benutzera
 * Mobilgerätename
 * Betriebssystemtypen
 * Betriebssysteme
+* Betriebssystem-ID
 
 ## Metriken, die einen Ersatz erfordern {#substitute-metrics}
 

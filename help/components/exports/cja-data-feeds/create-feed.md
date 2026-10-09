@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
+source-git-commit: 93107a7cf46e5d71bcb5c588eb7395fd1b88d150
 workflow-type: tm+mt
-source-wordcount: '3881'
+source-wordcount: '3924'
 ht-degree: 12%
 ---
 # Erstellen eines Daten-Feeds
@@ -125,11 +125,11 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    * **Plus-Schaltfläche**: Wählen Sie in der linken Leiste das Symbol Plus ![Hinzufügen](/help/assets/icons/Add.svg) neben einer beliebigen Komponente aus, um sie zur Arbeitsfläche hinzuzufügen.
    * **[!UICONTROL Alle anzeigen]**: Wählen Sie **[!UICONTROL Alle anzeigen]** unten in der Komponentenliste aus, um ein Dialogfeld mit allen verfügbaren Komponenten zu öffnen. Aktivieren Sie das Kontrollkästchen neben jeder Komponente, die Sie hinzufügen möchten, und klicken Sie dann auf **[!UICONTROL Auswahl hinzufügen]**. Wenn ein Suchbegriff oder Filter-Tag in der linken Leiste aktiv ist, wird auch eine **[!UICONTROL Alle hinzufügen]**-Schaltfläche angezeigt, über die Sie alle gefilterten Ergebnisse gleichzeitig hinzufügen können.
 
-   Wenn Sie eine Komponente hinzufügen, die zu einem XDM-Array-Feld gehört (z. B. einem Adobe Journey Optimizer-Vorschlagsfeld), wird sie auf der Arbeitsfläche als ausblendbare verschachtelte Gruppe und nicht als flaches Element angezeigt. Die Gruppe spiegelt die zugrunde liegende Datenstruktur wider und gibt sie als verschachteltes Array in der exportierten Datei aus.
+   Beachten Sie beim Hinzufügen von Feldern Folgendes:
 
-   <!--add screenshot-->
+   * Einige Komponenten sind erforderlich, werden nicht unterstützt oder weisen Einschränkungen in Daten-Feeds auf. Weitere Informationen finden Sie [Komponentenverfügbarkeit in Daten-Feeds](/help/components/exports/cja-data-feeds/df-components.md).
 
-   Einige Komponenten sind erforderlich, werden nicht unterstützt oder weisen Einschränkungen in Daten-Feeds auf. Weitere Informationen finden Sie [Komponentenverfügbarkeit in Daten-Feeds](/help/components/exports/cja-data-feeds/df-components.md).
+   * Wenn Sie eine Komponente hinzufügen, die zu einem XDM-Array-Feld (z. B. einem Adobe Journey Optimizer-Vorschlagsfeld) oder einem Zuordnungsfeld gehört, werden Sie in einem Dialogfeld aufgefordert, beliebige andere Komponenten aus demselben Untercontainer hinzuzufügen. In der Daten-Feed-Ausgabe werden alle diese Komponenten in einer Spalte angezeigt. Weitere Informationen finden Sie unter [Komponenten von Unter-Containern in Daten-Feeds](/help/components/exports/cja-data-feeds/df-sub-event.md)
 
 1. (Optional) Ordnen Sie Komponenten auf der Arbeitsfläche neu an, indem Sie sie ziehen. Die von Ihnen definierte Reihenfolge wird als Spaltenreihenfolge in der exportierten Daten-Feed-Datei beibehalten.
 
@@ -342,9 +342,11 @@ Die Ankunftszeiten variieren je nach Art der Daten, die Sie erfassen. Wählen Si
 
 #### Phase 2: Daten werden aus dem Data Lake in Customer Journey Analytics aufgenommen
 
-Dies kann bis zu 90 Minuten dauern (siehe [Latenzen](/help/technotes/guardrails.md#latencies)).
+Die Datenaufnahmezeiten variieren je nachdem, ob für den Datensatz die Zuordnung aktiviert ist.
 
-* **Zusammengefügte Datensätze**: Beim Zusammenfügen können bis zu 4 Stunden hinzugefügt werden (siehe [Latenzen](/help/technotes/guardrails.md#latencies)). Wenn für die Verbindung das Stitching aktiviert ist, setzen Sie die Verzögerung auf mindestens 6 Stunden und möglicherweise 8 Stunden. Daten, die durch eine Zusammenfügungs-Wiederholung aktualisiert werden, sind im Allgemeinen nicht in den Daten-Feed-Dateien enthalten, die bereits verarbeitet wurden.
+* **Nicht zugeordnete Datensätze**: Dies kann bis zu 90 Minuten dauern (siehe [Latenzen](/help/technotes/guardrails.md#latencies)).
+
+* **Zusammengefügte Datensätze**: Beim Zusammenfügen können zusätzlich zu den 90 Minuten, die für nicht zusammengefügte Datensätze erforderlich sind, bis zu 4 Stunden hinzugefügt werden (siehe [Latenzen](/help/technotes/guardrails.md#latencies)). Wenn für die Verbindung das Stitching aktiviert ist, setzen Sie die Verzögerung auf mindestens 6 Stunden und möglicherweise 8 Stunden. Daten, die durch eine Zusammenfügungs-Wiederholung aktualisiert werden, sind im Allgemeinen nicht in den Daten-Feed-Dateien enthalten, die bereits verarbeitet wurden.
 
   Wenn das Zusammenfügen aktiviert ist, erhöht sich die minimale Verarbeitungsverzögerung von 2 auf 6 Stunden, um die zusammengefügten Daten zu berücksichtigen.
 
