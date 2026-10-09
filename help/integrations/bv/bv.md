@@ -94,4 +94,4 @@ Weitere Informationen finden Sie unter:
 
 ## Ausgehende Integration
 
-Informationen zur ausgehenden Integration finden Sie unter [Customer Journey Analytics-Integration](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} in der Dokumentation zu Adobe Brand Visibility.
+Informationen zur ausgehenden Integration finden Sie unter [Customer Journey Analytics-Integration](https://experienceleague.adobe.com/de/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} in der Dokumentation zu Adobe Brand Visibility.
