@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 hold: true
 role: Admin
-source-git-commit: e9274ad7899537837723e2eb9cd842c5449530ff
+source-git-commit: 29a21d57b6b50d873a4464d1a705c1b4855dd3ea
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2502'
 ht-degree: 2%
 ---
 # Automatische Konfiguration für bezahlte Medien
@@ -35,7 +35,7 @@ Das spezifische Anzeigennetzwerk bestimmt, welche Zusammenfassungsdatensätze er
 * Name des Zusammenfassungsdatensatzes, Ereignistyp und Komponenten-Suffix
 * Entität
 * Aufschlüsselung
-* Welche Datensätze werden für ![&#x200B; folgenden Netzwerke ausgefüllt &#x200B;](/help/assets/icons2/Checkmark.svg)Häkchen):
+* Welche Datensätze werden für ![ folgenden Netzwerke ausgefüllt ](/help/assets/icons2/Checkmark.svg)Häkchen):
   * ![MetaSolid](/help/assets/icons2/MetaSolid.svg) Meta
   * ![GoogleAdsMulti](/help/assets/icons2/GoogleAdsMulti.svg) Google
   * ![PinterestMulti](/help/assets/icons2/PinterestMulti.svg) Pinterest
@@ -59,12 +59,28 @@ Das spezifische Anzeigennetzwerk bestimmt, welche Zusammenfassungsdatensätze er
 | `paidmedia_asset_summary` <br/>`ad.asset.summary`<br/>`\| Asset Summary` | Asset<br/>none | ![Häkchen](/help/assets/icons2/Checkmark.svg) | ![Häkchen](/help/assets/icons2/Checkmark.svg) | | | ![Häkchen](/help/assets/icons2/Checkmark.svg) | Tägliche Leistung auf Asset<br/>Ebene im Anzeigen-/Kampagnenkontext <br/> demografischer oder geografischer Aufschlüsselung. |
 | `paidmedia_assets_demographics` <br/> `ad.asset.demographics`<br/>`\| Asset Demo` | Asset<br/>Alter, Geschlecht | ![Häkchen](/help/assets/icons2/Checkmark.svg) | | | | | Tägliche Leistung auf Asset<br/>Ebene im Anzeigenkontext/im Kampagnenkontext, <br/> nach Alter und Geschlecht aufgeschlüsselt. |
 
-
 Diese Tabelle beschreibt die Datensatzabdeckung, keine Garantie dafür, dass jedes Metrik- oder Metadatenfeld von einem bestimmten Netzwerk ausgefüllt wird. Überprüfen Sie die für Ihre Analyse erforderlichen Felder. Ein nicht verfügbares Feld oder eine nicht unterstützte Aufschlüsselung ist nicht dasselbe wie ein gemessener Nullwert für ein Feld.
+
+Durch die Gruppierung von Zusammenfassungsdaten werden äquivalente Dimensionen zusammengeführt. Die Gruppierung ergibt nicht die sechs Leistungsmetriken insgesamt.
+
+## Datensätze nachschlagen
 
 Separate Lookup-Datensätze beschreiben Konto, Kampagne, Anzeigengruppe, Anzeige, Erlebnis und Asset. Sie stellen Namen und Metadaten mithilfe von Entitäts-GUIDs bereit. Es gibt keine Eins-zu-eins-Paarung zwischen den Zusammenfassungsdatensätzen und den sechs Lookup-Datensätzen.
 
-Durch die Gruppierung von Zusammenfassungsdaten werden äquivalente Dimensionen zusammengeführt. Die Gruppierung ergibt nicht die sechs Leistungsmetriken insgesamt.
+Die Lookup-Datensätze verwenden zwei gemeinsame Bausteine:
+
+* **Objekt-IDs**: Speichert Konto-, Anzeigen-, Anzeigengruppen-, Asset-, Kampagnen- und Erlebnisobjekte. Jedes Objekt enthält einen von Adobe generierten globalen Schlüssel und eine plattformnative ID.
+* **Paid Media Core-Metadaten**: Speichert allgemeine beschreibende Felder wie Name, Status, Ziel, Optimierungsziel, Gebotsstrategie, Budgettyp, Budgetwerte, Währung, Zeitzone, Serving-Status, Daten, Werbenetzwerk, Kanal, Hierarchiepfad, Netzwerk und Portfolio-IDs.
+
+| Lookup-Datensatz | Wichtige Inhalte |
+|---|---|
+| Konto-Suche | Metadaten auf Kontoebene wie Name, Währung, Zeitzone, Status, Ausgabenlimit und Erstellungsdaten |
+| Kampagnensuche | Kampagneneinstellungen für Budget, Planung, Targeting, Konversionsverfolgung, Attribution, Platzierungen, hochgestufte Objekte, Ziel und Katalog- oder Store-IDs |
+| Anzeigengruppen-Suche | Anzeigengruppen-Metadaten wie Kampagnenverknüpfung, Status, Budget, Optimierungsziele und Zielgruppenbestimmung |
+| Anzeigensuche | Kreative Details zur Anzeige wie Assets, Varianten, Dimensionen, Tracking-URLs, call to action, Textkörper, Titel, Ziel-URL, Versandstatus und Prüfungsstatus |
+| Asset-Suche | Asset-Eigenschaften wie Dimensionen, Dateidetails, Bildeigenschaften, Medien-URLs, Nutzungsmetadaten, Videometadaten, Beschreibung, Untertyp, Titel und Typ |
+| Erlebnissuche | Kreative Gruppierungen auf Erlebnisebene wie Erlebnis-ID, Assets, Titel, Beschreibung und call to action |
+
 
 ## Komponenten
 
@@ -194,7 +210,7 @@ Im Beispiel wird eine Kampagnen-ID verwendet, aber derselbe Ansatz kann Anzeigen
 
 Wenn Sie Berichte und Analysen zur Asset-Leistung in Bezug auf Ihre Paid-Media-Investitionen erstellen möchten, sollten Sie einen bestimmten Asset-UTM-Parameter in Ihrer Paid-Media-Konfiguration für das Werbenetzwerk hinzufügen. Fügen Sie beispielsweise neben dynamischen Standardparametern wie s`ite_source_name`, `campaign.id`, `adset.id` oder `placement` statische benutzerdefinierte Parameter wie `aca_asset_id=999999` hinzu.
 
-Dieser benutzerdefinierte Parameter wird zur Landingpage-URL hinzugefügt. Beispiel: https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&aca_id_2=8888888&utm_medium=paid&utm_source=fb&utm_id=120241705099830539&utm_term=120241705099840539&utm_campaign=120241705099830539
+Dieser benutzerdefinierte Parameter wird zur Landingpage-URL hinzugefügt. Beispiel: https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&amp;aca_id_2=8888888&amp;utm_medium=paid&amp;utm_source=fb&amp;utm_id=120241705099830539&amp;utm_term=120241705099840539&amp;utm_campaign=120241705099830539
 
 Sie haben jetzt eine Beziehung zwischen einem Asset auf einer Seite und Ihren Paid-Media-Daten. Verwenden Sie diese Beziehung in Analysis Workspace, um zu sehen, wie Content Analytics-Asset **[!UICONTROL Metadaten (z. B. „Asset-Vordergrundfarben]**) zum Erfolg von Paid-Media-Kampagnen beitragen.
 
