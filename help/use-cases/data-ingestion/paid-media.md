@@ -43,7 +43,7 @@ Die Authentifizierung beim Connector verwendet [!DNL OAuth 2.0]. Während des Se
 
 ## Datenmodell
 
-In der automatischen Konfiguration für bezahlte Medien [](/help/content-analytics/config/paid-media.md) wird das Datenmodell für bezahlte Medien detailliert erläutert. Diese automatische Konfiguration erstellt und konfiguriert die erforderlichen Datensätze und Komponenten im Allgemeinen und für die spezifische Analyse von Inhalten.
+In der automatischen Konfiguration für bezahlte Medien [&#128279;](/help/content-analytics/config/paid-media.md) wird das Datenmodell für bezahlte Medien detailliert erläutert. Diese automatische Konfiguration erstellt und konfiguriert die erforderlichen Datensätze und Komponenten im Allgemeinen und für die spezifische Analyse von Inhalten.
 
 Informationen zum Paid-Media-Datenmodell finden Sie in dieser Dokumentation . Verwenden Sie ihn, um zu entscheiden, welche Datensätze in Customer Journey Analytics verwendet werden sollen. Die konfigurierten Quell-Connectoren generieren diese Datensätze.
 
@@ -77,7 +77,7 @@ Customer Journey Analytics berichtet nicht direkt über Experience Platform-Date
 
 Verwenden Sie den folgenden Prozess, um eine Verbindung zu erstellen oder zu aktualisieren:
 
-1. Erstellen oder [ Sie in Customer Journey Analytics eine bestehende Verbindung](/help/connections/create-connection.md).
+1. Erstellen oder [&#x200B; Sie in Customer Journey Analytics eine bestehende Verbindung](/help/connections/create-connection.md).
 1. Stellen Sie sicher, dass Sie die Sandbox auswählen, die die Paid-Media-Datensätze als Teil der Verbindungskonfiguration enthält.
 1. Fügen Sie die Zusammenfassungsmetriken-Datensätze als Zusammenfassungsdaten hinzu. Wenn mehrere Zusammenfassungsmetrik -Datensätze verfügbar sind, verwenden Sie [Suche](/help/connections/create-connection.md#add-datasets), um nach den `Paid Media` Klassen zu filtern und die richtigen Datensätze zu identifizieren.
 1. Fügen Sie jeden Suchdatensatz als Suchdatensatz hinzu. Verbinden Sie den Lookup-Datensatz mit den Zusammenfassungsdaten, indem Sie die entsprechenden Entitäts-GUID-Kennungen (die von Adobe generierten globalen Schlüssel) für Konto, Kampagne, Anzeigengruppe, Anzeige, Asset und Erlebnis verwenden. Einige Quellplattformen unterstützen auch Joins auf nativen ID-Werten.
@@ -92,7 +92,7 @@ Paid-Media-Daten sind aggregierte Daten und basieren nicht auf der Identitätszu
 Nachdem die Verbindung fertig ist, müssen Sie eine oder mehrere Datenansichten für die Verbindung erstellen oder bearbeiten:
 
 
-1. Erstellen [ bearbeiten Sie in Customer Journey Analytics eine oder mehrere Datenansichten](/help/data-views/create-dataview.md):
+1. Erstellen [&#x200B; bearbeiten Sie in Customer Journey Analytics eine oder mehrere Datenansichten](/help/data-views/create-dataview.md):
 1. Standardeinstellungen wie Zeitzone und Währung definieren.
 1. Fügen Sie die Komponenten hinzu, die Sie für die gebührenpflichtige Medienanalyse benötigen.
 
