@@ -1,6 +1,6 @@
 ---
-title: Upgrade von Adobe Analytics auf Customer Journey Analytics
-description: Erfahren Sie mehr über die empfohlenen Schritte für das Upgrade von Adobe Analytics auf Customer Journey Analytics.
+title: Vorbereiten der Organisation für das Upgrade auf Customer Journey Analytics
+description: Erfahren Sie, wie Sie Ihr Unternehmen auf ein Upgrade von Adobe Analytics auf Customer Journey Analytics vorbereiten.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Behavioral data
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 15%
+source-wordcount: '1189'
+ht-degree: 14%
 ---
 # Vorbereiten der Organisation für das Upgrade auf Customer Journey Analytics
 
@@ -173,7 +173,7 @@ Identifizieren Sie Champions in Ihrem gesamten Unternehmen. Diese Champions soll
 
   * [Tutorials zu Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/overview)
 
-  * [Was ist Customer Journey Analytics?](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
+  * [Was ist Customer Journey Analytics?](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
 
   * [Einführung in Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
 

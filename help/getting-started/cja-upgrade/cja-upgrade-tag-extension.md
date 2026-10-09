@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Tag-Eigenschaft und Hinzufügen der Web-SDK-Erweiterung
-description: Erfahren Sie, wie Sie eine Tag-Eigenschaft erstellen und die Web-SDK-Erweiterung hinzufügen
+title: Hinzufügen der Web SDK-Erweiterung zum Tag
+description: Erfahren Sie, wie Sie beim Upgrade von Adobe Analytics auf Customer Journey Analytics die Web-SDK-Erweiterung zu Ihrer Tag-Eigenschaft hinzufügen.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 92%
+source-wordcount: '322'
+ht-degree: 85%
 ---
 # Hinzufügen der Web SDK-Erweiterung zum Tag {#upgrade-tag-extension}
 

@@ -1,6 +1,6 @@
 ---
-title: Alternative Methoden beim Upgrade auf Customer Journey Analytics
-description: Erfahren Sie mehr über die alternativen Methoden beim Upgrade auf Customer Journey Analytics
+title: 'Alternative zum Upgrade: Verwenden der AppMeasurement-Datenerfassung mit dem Experience Platform-Web-SDK und Customer Journey Analytics'
+description: Erfahren Sie, wie Sie Ihre bestehende Datenerfassungslogik der AppMeasurement- oder Analytics-Erweiterung mit der Web-SDK verwenden können, um Daten an Customer Journey Analytics zu senden.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 58%
+source-wordcount: '1471'
+ht-degree: 55%
 ---
 # Alternative zum Upgrade: Verwenden der AppMeasurement-Datenerfassung mit dem Experience Platform-Web-SDK und Customer Journey Analytics {#data-collection-appmeasurement}
 
@@ -59,7 +59,7 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic-step"
 >title="Ändern Sie Ihre AppMeasurement-Logik so, dass sie auf die Web-SDK verweist."
->abstract="Dieser Schritt wird angezeigt, weil Sie sich entschieden haben, ein Schnellverfahren zur Implementierung zu nutzen. Kopieren Sie die AppMeasurement-Logik oder ändern Sie sie, um das Datenobjekt anstelle des s-Objekts zu füllen. Ändern Sie beispielsweise die Zuweisung von „s.eVar1“ zu „data.__adobe.analytics.eVar1“ und wiederholen Sie diesen Vorgang für alle Analytics-Variablen."
+>abstract="Dieser Schritt wird angezeigt, weil Sie ausgewählt haben, eine Implementierungsverknüpfung zu verwenden. Kopieren Sie die AppMeasurement-Logik oder ändern Sie sie, um das Datenobjekt anstelle des s-Objekts zu füllen. Ändern Sie beispielsweise die Zuweisung von „s.eVar1“ zu „data.__adobe.analytics.eVar1“ und wiederholen Sie diesen Vorgang für alle Analytics-Variablen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -71,7 +71,7 @@ Sie können die Datenerfassungslogik Ihrer AppMeasurement- oder Analytics-Erweit
 
 ## Vor- und Nachteile
 
-Diese Methode schließt sich gegenseitig aus bei [Senden der gesamten Datenschicht an Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md), da beide Methoden dieselbe Aufgabe erfüllen. (Diese Methode ist besser als das Senden der gesamten Datenschicht an Adobe. Sie wird verfeinert, da Props und eVars alle über data.__ adobe.analytics._variable-name_.)
+Diese Methode schließt sich gegenseitig aus bei [Senden der gesamten Datenschicht an Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md), da beide Methoden dieselbe Aufgabe erfüllen. (Diese Methode ist besser als das Senden der gesamten Datenschicht an Adobe. Sie wird verfeinert, da Props und eVars alle über data.__ adobe.analytics._variable-name_.)
 
 Beachten Sie die folgenden Vor- und Nachteile der Verwendung dieser Upgrade-Alternative:
 
@@ -101,7 +101,7 @@ Die grundlegenden Schritte für die Migration einer Adobe Analytics-Implementier
 
    1. Senden Sie alle Variablen im AppMeasurement-Format über das Datenobjekt.
 
-      Weitere Informationen finden Sie unter [Zuordnung von Datenobjektvariablen zu Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping).
+      Wenn Sie diese Daten auch an Adobe Analytics senden, ordnet Edge Network diese Datenobjektfelder automatisch Adobe Analytics-Variablen zu. Eine Liste der unterstützten Felder finden Sie unter [Datenobjekt-Feldzuordnung zu Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping). Customer Journey Analytics verwendet diese Zuordnungen nicht. Sie ordnen die Datenobjektfelder in einem späteren Schritt Ihrem XDM-Schema für Customer Journey Analytics zu.
 
    1. Wählen Sie Ihr Schema.
 
@@ -127,7 +127,7 @@ Die grundlegenden Schritte für die Migration einer Adobe Analytics-Implementier
 
    1. Verwenden Sie die Datenstrom-Zuordnung , um alle Felder im Datenobjekt Ihrem XDM-Schema zuzuordnen.
 
-      Weitere Informationen finden Sie unter [Zuordnung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep) in der Experience Platform-Dokumentation.
+      Customer Journey Analytics kann nur die Datenobjektfelder verwenden, die Sie Ihrem Schema zuordnen. Weitere Informationen finden Sie unter [Zuordnung](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) in der Experience Platform-Dokumentation.
 
 {{upgrade-final-step}}.
 

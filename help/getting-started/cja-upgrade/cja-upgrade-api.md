@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Tag-Eigenschaft und Hinzufügen der Web-SDK-Erweiterung
-description: Erfahren Sie, wie Sie eine Tag-Eigenschaft erstellen und die Web-SDK-Erweiterung hinzufügen
+title: Installieren von Platform Web SDK mit dem NPM-Paket
+description: Erfahren Sie, wie Sie Web SDK mithilfe des NPM-Pakets installieren, wenn Sie von Adobe Analytics auf Customer Journey Analytics aktualisieren.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -28,12 +28,12 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 73%
+source-wordcount: '146'
+ht-degree: 47%
 ---
-# Installieren des Platform Web SDK mit dem Edge Network-API {#upgrade-manual}
+# Installieren von Platform Web SDK mit dem NPM-Paket {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -48,7 +48,7 @@ ht-degree: 73%
 
 Sie können das Platform Web SDK installieren, indem Sie das NPM-Paket installieren, um den Build-Prozess für das Adobe Experience Platform Web SDK-JavaScript zu steuern.
 
-1. Befolgen Sie die Informationen im Abschnitt [Option 3: Verwenden des NPM-Pakets](https://experienceleague.adobe.com/de/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) in [Installieren von Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/edge/fundamentals/installing-the-sdk) im Web SDK-Handbuch.
+1. Befolgen Sie die Informationen im Abschnitt [Option 3: Verwenden des NPM-Pakets](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) in [Installieren von Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/edge/fundamentals/installing-the-sdk) im Web SDK-Handbuch.
 
 {{upgrade-final-step}}
 
