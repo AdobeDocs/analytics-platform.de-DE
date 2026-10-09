@@ -25,9 +25,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1ee7e0b046f370c956b083e494522cfbc892e092
+source-git-commit: e387cf97c6190e4bda66b891e02e8cf8ac05b1f2
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1990'
 ht-degree: 18%
 ---
 # Aktivieren der Zuordnung
@@ -104,7 +104,7 @@ Wenn Sie die Voraussetzungen erfüllen, führen Sie einige Preflight-Prüfungen 
 
 ## Aktivieren der Identitätszuordnung {#enable-identity-stitching}
 
-Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [&#128279;](/help/connections/create-connection.md#edit-a-dataset) personenbasierten Verbindung hinzufügen oder  bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
+Sie können die Identitätszuordnung aktivieren[ wenn Sie ](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in ](/help/connections/create-connection.md#edit-a-dataset) personenbasierten Verbindung hinzufügen oder [ bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
 
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
@@ -238,7 +238,7 @@ Beispiele für Anwendungsfälle mit ungültigen IDs:
 
 
 >[!NOTE]
->Die **[!UICONTROL Zuordnungsmetriken]** einschließlich **[!UICONTROL ungültiger IDs]** werden auf Grundlage eines begrenzten Satzes von Daten berechnet. Informationen zum Ermitteln des Vorhandenseins ungültiger IDs für einen Datensatz, den Sie für die Zuordnung verwenden möchten, finden Sie in der [Technote zu ungültigen IDs](/help/technotes/badids.md).
+>Die **[!UICONTROL Zuordnungsmetriken]** einschließlich **[!UICONTROL ungültiger IDs]** werden auf Grundlage eines begrenzten Satzes von Daten berechnet. Informationen zum Identifizieren fehlerhafter IDs für einen Datensatz, den Sie zum Zusammenfügen verwenden möchten, finden Sie in der Technote [Fehlerhafte IDs](/help/technotes/badids.md).
 >
 
 
@@ -250,7 +250,7 @@ Jeder Teil des Prozesses führt zu bestimmten Verzögerungen. Die folgenden Vera
 
 Für ein gültiges anfängliches Verbindungssetup, das gespeichert wird und einen Datensatz mit aktiviertem Stitching enthält:
 
-* Live-Daten werden in Customer Journey Analytics nach einigen Stunden angezeigt (weniger als 17 Stunden). Die Live-Daten beginnen mit Ereignis-Zeitstempelwerten, die mit dem tatsächlichen Zeitpunkt übereinstimmen, zu dem die Zuordnungsaktivierung abgeschlossen wurde.
+* Live-Daten werden zunächst nach einigen Stunden in Customer Journey Analytics angezeigt (weniger als 14 Stunden). Neue Live-Daten sind innerhalb weniger Stunden verfügbar. Die Live-Daten beginnen mit Ereignis-Zeitstempelwerten, die mit dem tatsächlichen Zeitpunkt übereinstimmen, zu dem die Zuordnungsaktivierung abgeschlossen wurde.
 
   Um sicherzustellen, dass Live-Daten eingehen, aktivieren Sie die Option **[!UICONTROL Alle neuen Daten importieren]** für den Datensatz.
 
@@ -258,12 +258,14 @@ Für ein gültiges anfängliches Verbindungssetup, das gespeichert wird und eine
 
 * Aufstockte Daten (falls ursprünglich angefordert) werden etwa zur gleichen Zeit wie Live-Daten in Customer Journey Analytics angezeigt, deren vollständige Verarbeitung jedoch je nach Volumen Tage dauern kann. Die aufgestockten Daten beginnen mit den ältesten Zeitstempelwerten des Ereignisses.
 
+   
+
   >[!CAUTION]
   >
   >Für Datensätze, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, kann der Aufstockungsstatus aufgrund einer bekannten Einschränkung derzeit nicht gemeldet werden.
   >
 
-  Verwenden Sie alternative Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden. Verwenden Sie beispielsweise die [Benutzeroberfläche des Experience Platform-](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/overview), um die Ereignisanzahl für den relevanten Zeitraum aus dem Datensatz zu extrahieren. Vergleichen Sie diese Ereignisse mit der Ereignismetrik in [Customer Journey Analytics-Berichten](/help/analysis-workspace/home.md) für denselben Zeitrahmen. Wenn diese Zahlen übereinstimmen, wird die Aufstockung abgeschlossen.
+  Verwenden Sie alternative Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden. Verwenden Sie beispielsweise die [Benutzeroberfläche des Experience Platform-](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview), um die Ereignisanzahl für den relevanten Zeitraum aus dem Datensatz zu extrahieren. Vergleichen Sie diese Ereignisse mit dem Metrikwert **[!UICONTROL Ereignisse]** in [Customer Journey Analytics-Berichten](/help/analysis-workspace/home.md) für denselben Zeitrahmen. Wenn diese Zahlen übereinstimmen, wird die Aufstockung abgeschlossen.
 
 ## Einschränkungen
 
