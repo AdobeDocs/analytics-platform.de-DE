@@ -35,7 +35,7 @@ Das spezifische Anzeigennetzwerk bestimmt, welche Zusammenfassungsdatensätze er
 * Name des Zusammenfassungsdatensatzes, Ereignistyp und Komponenten-Suffix
 * Entität
 * Aufschlüsselung
-* Welche Datensätze werden für ![ folgenden Netzwerke ausgefüllt ](/help/assets/icons2/Checkmark.svg)Häkchen):
+* Welche Datensätze werden für ![&#x200B; folgenden Netzwerke ausgefüllt &#x200B;](/help/assets/icons2/Checkmark.svg)Häkchen):
   * ![MetaSolid](/help/assets/icons2/MetaSolid.svg) Meta
   * ![GoogleAdsMulti](/help/assets/icons2/GoogleAdsMulti.svg) Google
   * ![PinterestMulti](/help/assets/icons2/PinterestMulti.svg) Pinterest
@@ -194,7 +194,7 @@ Im Beispiel wird eine Kampagnen-ID verwendet, aber derselbe Ansatz kann Anzeigen
 
 Wenn Sie Berichte und Analysen zur Asset-Leistung in Bezug auf Ihre Paid-Media-Investitionen erstellen möchten, sollten Sie einen bestimmten Asset-UTM-Parameter in Ihrer Paid-Media-Konfiguration für das Werbenetzwerk hinzufügen. Fügen Sie beispielsweise neben dynamischen Standardparametern wie s`ite_source_name`, `campaign.id`, `adset.id` oder `placement` statische benutzerdefinierte Parameter wie `aca_asset_id=999999` hinzu.
 
-Dieser benutzerdefinierte Parameter wird zur Landingpage-URL hinzugefügt. Beispiel: https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&amp;aca_id_2=8888888&amp;utm_medium=paid&amp;utm_source=fb&amp;utm_id=120241705099830539&amp;utm_term=120241705099840539&amp;utm_campaign=120241705099830539
+Dieser benutzerdefinierte Parameter wird zur Landingpage-URL hinzugefügt. Beispiel: https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&aca_id_2=8888888&utm_medium=paid&utm_source=fb&utm_id=120241705099830539&utm_term=120241705099840539&utm_campaign=120241705099830539
 
 Sie haben jetzt eine Beziehung zwischen einem Asset auf einer Seite und Ihren Paid-Media-Daten. Verwenden Sie diese Beziehung in Analysis Workspace, um zu sehen, wie Content Analytics-Asset **[!UICONTROL Metadaten (z. B. „Asset-Vordergrundfarben]**) zum Erfolg von Paid-Media-Kampagnen beitragen.
 
