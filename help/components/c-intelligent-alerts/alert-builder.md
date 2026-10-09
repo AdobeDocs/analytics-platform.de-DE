@@ -39,7 +39,7 @@ topic_v2:
 source-git-commit: 4f3c4a214bb9676ced6fe3c9627c969413013790
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 58%
+ht-degree: 61%
 ---
 # Erstellen von Warnhinweisen {#create-alerts}
 
@@ -57,7 +57,7 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="components_alerts_delay"
 >title="Verzögerung"
->abstract="Warnt den Trigger zum Zeitpunkt der Auswahl von Granularität nach dieser Verzögerung. Daten aus Ihren Verbindungen können mit verschiedenen Latenzen zwischen 1 und 24 Stunden eintreffen. Die standardmäßigen Trigger für die Verzögerung sind 9 Stunden nach jedem Warnfenster."
+>abstract="Trigger für Warnhinweise basierend auf der Zeitgranularität, die Sie nach dieser Verzögerung auswählen. Daten aus Ihren Verbindungen können mit verschiedenen Latenzen zwischen 1 und 24 Stunden eintreffen. Die Standardverzögerung wird 9 Stunden nach jedem Warnhinweisfenster ausgelöst."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -20,7 +20,7 @@ role_v2:
 source-git-commit: 32dfb7790f57293ea297bdcb8319c3d3b187a2ae
 workflow-type: tm+mt
 source-wordcount: '1336'
-ht-degree: 0%
+ht-degree: 5%
 ---
 
 # Verwenden zwischengespeicherter Ergebnisse in Workspace-Projekten
@@ -28,7 +28,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="project_cached_results"
 >title="Verwenden zwischengespeicherter Ergebnisse für schnelleres Laden"
->abstract="Wenn diese Option aktiviert ist, werden Ergebnisse sofort 12 Stunden lang geladen, nachdem ein Projekt zum ersten Mal von einer Benutzerin oder einem Benutzer geöffnet oder nach einem Zeitplan bereitgestellt wurde. Jeder, der das Projekt in dieser Zeit öffnet, sieht dieselben Ergebnisse, auch wenn weiterhin Daten im Hintergrund fließen. Um die neuesten Ergebnisse zu laden, aktualisieren Sie einzelne Bedienfelder oder das gesamte Projekt."
+>abstract="Wenn aktiviert, werden Ergebnisse 12 Stunden lang sofort geladen, nachdem das Projekt das erste Mal von einer Person geöffnet oder nach einem Zeitplan bereitgestellt wurde. Allen, die das Projekt in diesem Zeitraum öffnen, werden dieselben Ergebnisse angezeigt, obwohl im Hintergrund weiterhin Daten fließen. Zum Laden der neuesten Ergebnisse müssen Sie einzelne Panels oder das gesamte Projekt aktualisieren."
 
 {{release-limited-testing}}
 

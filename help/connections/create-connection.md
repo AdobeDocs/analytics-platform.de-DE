@@ -36,7 +36,7 @@ topic_v2:
 source-git-commit: cc31e50f01da63eaf1e7b6eb8465d187485b7816
 workflow-type: tm+mt
 source-wordcount: '10677'
-ht-degree: 89%
+ht-degree: 90%
 ---
 # Erstellen oder Bearbeiten einer Verbindung {#create-or-edit-a-connection}
 
@@ -732,23 +732,23 @@ Alle Datensätze und Datensatztypen verfügen über [allgemeine Einstellungen un
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter"
->title="Zeilenfilterung aktivieren"
->abstract="Zeilenfilter bestimmen, welche Ereignisse in Customer Journey Analytics aufgenommen werden. Es werden nur Ereignisse aufgenommen, die Ihren Einschlussregeln entsprechen. Alle anderen Ereignisse werden dauerhaft ausgeschlossen und stehen nicht für Berichte, Segmentierungen oder Analysen in Customer Journey Analytics zur Verfügung.<ul><li>Sie können bis zu 10 Filter erstellen.</li><li> Änderungen an Filtern gelten nur für neue Daten, die nach der Änderung aufgenommen werden, und wirken sich nicht rückwirkend auf zuvor aufgenommene Daten oder den Trigger einer historischen Aufstockung aus.</li></ul>"
+>title="Aktivieren von Zeilenfilterung"
+>abstract="Zeilenfilter bestimmen, welche Ereignisse in Customer Journey Analytics aufgenommen werden. Es werden nur Ereignisse aufgenommen, die Ihren Einschlussregeln entsprechen. Alle anderen Ereignisse werden dauerhaft ausgeschlossen und stehen nicht für Reporting, Segmentierung oder Analyse in Customer Journey Analytics zur Verfügung.<ul><li>Sie können bis zu 10 Filter erstellen.</li><li> Änderungen an Filtern gelten nur für neue Daten, die nach der Änderung aufgenommen werden, und wirken sich nicht rückwirkend auf zuvor aufgenommene Daten aus oder lösen eine historische Aufstockung aus.</li></ul>"
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter_field"
 >title="Feld"
->abstract="Wählen Sie ein Feld aus dem Ereignis-Datensatz aus, das für die Bedingung verwendet werden soll. Sie können jedes Feld beliebigen Typs verwenden."
+>abstract="Wählen Sie ein Feld aus dem Ereignisdatensatz aus, das für die Bedingung verwendet werden soll. Sie können ein Feld eines beliebigen Typs verwenden."
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter_operator"
 >title="Bedingung"
->abstract="Einen Benutzer auswählen. Der Operator wird verwendet, um das ausgewählte Feld anhand der Werte zu überprüfen."
+>abstract="Wählen Sie einen Operator aus. Der Operator wird verwendet, um das ausgewählte Feld anhand der Werte zu überprüfen."
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter_values"
 >title="Werte"
->abstract="Einen oder mehrere Werte eingeben. Der genaue Zeichenfolgenwert wird verwendet. Werte durch Kommas trennen. Jeder kommagetrennte Wert wird als eigenständig betrachtet und ist in der Bedingung enthalten."
+>abstract="Geben Sie einen oder mehr Werte ein. Der genaue Zeichenfolgenwert wird verwendet. Trennen Sie die Werte durch Kommas. Jeder kommagetrennte Wert wird als eigenständig betrachtet und in die Bedingung eingeschlossen."
 
 Die spezifischen Einstellungen für einen Ereignisdatensatz hängen vom Verbindungstyp ab.
 
