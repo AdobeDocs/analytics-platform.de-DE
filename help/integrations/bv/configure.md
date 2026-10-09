@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 # Einrichten und Konfigurieren der eingehenden Integration
 
-In diesem Artikel werden die [Voraussetzungen](#prerequisites), [Zuständigkeiten](#responsibilities), [Schritte zur ](#verification), [Fehlerbehebung ](#troubleshoot) und [Abschlusskriterien](#completion-criteria) für das Einrichten und Konfigurieren der eingehenden Markensichtbarkeit-Integration mit Customer Journey Analytics beschrieben.
+In diesem Artikel werden die [Voraussetzungen](#prerequisites), [Zuständigkeiten](#responsibilities), [Schritte zur &#x200B;](#verification), [Fehlerbehebung &#x200B;](#troubleshoot) und [Abschlusskriterien](#completion-criteria) für das Einrichten und Konfigurieren der eingehenden Markensichtbarkeit-Integration mit Customer Journey Analytics beschrieben.
 
 ## Voraussetzungen
 
