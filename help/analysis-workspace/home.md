@@ -169,7 +169,7 @@ Durch Synchronisieren von Visualisierungen können Sie kontrollieren, welche Dat
 
 So verwenden Sie Analysis Workspace:
 
-1. Melden Sie sich mit Ihren Adobe ID](https://experience.adobe.com)Anmeldeinformationen bei [Adobe CX Enterprise an.
+1. Melden Sie sich mit Ihren Adobe ID[&#128279;](https://experience.adobe.com)Anmeldeinformationen bei Adobe CX Enterprise an.
 1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** im App-Umschalter ![App](/help/assets/icons/Apps.svg) oben rechts in der Benutzeroberfläche aus.
 1. Standardmäßig wird die Seite **[!UICONTROL Projekte]** von Analysis Workspace angezeigt. Wenn ein bestimmtes Projekt für Sie ausgewählt wurde oder Sie kürzlich daran gearbeitet haben, wird dieses Projekt standardmäßig angezeigt.
 

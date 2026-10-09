@@ -48,13 +48,13 @@ Der Algorithmus testet die Eignung jeder dieser Kombinationen, indem er die Komb
 Nach der Modellauswahl passt der Algorithmus die Ergebnisse dann an Feiertagen und der Saisonabhängigkeit von einem Jahr zum anderen an. Für Feiertage prüft der Algorithmus, ob einer der folgenden Feiertage im Datumsbereich des Berichts vorhanden ist:
 
 * Gedenktag
-* 4. Juli
+* &#x200B;4. Juli
 * Erntedankfest
 * Black Friday
 * Cyber Monday
 * &#x200B;24. bis 26. Dezember
-* 1. Januar
-* 31. Dezember
+* &#x200B;1. Januar
+* &#x200B;31. Dezember
 
 Diese Feiertage wurden anhand einer umfangreichen statistischen Analyse über viele Kundendatenpunkte hinweg ausgewählt, um die Feiertage zu ermitteln, die für die Trends der meisten Kundinnen und Kunden am wichtigsten sind. Während die Liste sicherlich nicht für alle Kunden oder Geschäftszyklen vollständig ist, verbessert die Anwendung von Feiertagen die Leistung des Algorithmus insgesamt für fast alle Datensätze von Kunden erheblich.
 
