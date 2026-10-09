@@ -4,7 +4,6 @@ description: Aktivieren des Zusammenfügens für Ereignis-Datensätze in Custome
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-hold: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: 'https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw'
 product_v2:
@@ -25,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: e387cf97c6190e4bda66b891e02e8cf8ac05b1f2
+source-git-commit: 49795b40eab1fcd1bfd472ccb756587adf9877b8
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '1989'
 ht-degree: 18%
 ---
 # Aktivieren der Zuordnung
@@ -104,7 +103,7 @@ Wenn Sie die Voraussetzungen erfüllen, führen Sie einige Preflight-Prüfungen 
 
 ## Aktivieren der Identitätszuordnung {#enable-identity-stitching}
 
-Sie können die Identitätszuordnung aktivieren[&#x200B; wenn Sie &#x200B;](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in [&#128279;](/help/connections/create-connection.md#edit-a-dataset) personenbasierten Verbindung hinzufügen oder  bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
+Sie können die Identitätszuordnung aktivieren[ wenn Sie ](/help/connections/create-connection.md#add-datasets) Ereignis-Datensatz in ](/help/connections/create-connection.md#edit-a-dataset) personenbasierten Verbindung hinzufügen oder [ bearbeiten. Identitätszuordnung ist für kontobasierte Verbindungen nicht verfügbar.
 
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
@@ -258,14 +257,14 @@ Für ein gültiges anfängliches Verbindungssetup, das gespeichert wird und eine
 
 * Aufstockte Daten (falls ursprünglich angefordert) werden etwa zur gleichen Zeit wie Live-Daten in Customer Journey Analytics angezeigt, deren vollständige Verarbeitung jedoch je nach Volumen Tage dauern kann. Die aufgestockten Daten beginnen mit den ältesten Zeitstempelwerten des Ereignisses.
 
-   
 
   >[!CAUTION]
   >
-  >Für Datensätze, die für das Zusammenfügen in der Verbindungsschnittstelle aktiviert sind, kann der Aufstockungsstatus aufgrund einer bekannten Einschränkung derzeit nicht gemeldet werden.
+  >Für Datensätze, die in [ Verbindungsschnittstelle für das ](#enable-stitching) aktiviert sind, kann der Aufstockungsstatus aufgrund einer bekannten Einschränkung nicht gemeldet werden.
   >
 
-  Verwenden Sie alternative Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden. Verwenden Sie beispielsweise die [Benutzeroberfläche des Experience Platform-](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/overview), um die Ereignisanzahl für den relevanten Zeitraum aus dem Datensatz zu extrahieren. Vergleichen Sie diese Ereignisse mit dem Metrikwert **[!UICONTROL Ereignisse]** in [Customer Journey Analytics-Berichten](/help/analysis-workspace/home.md) für denselben Zeitrahmen. Wenn diese Zahlen übereinstimmen, wird die Aufstockung abgeschlossen.
+  Verwenden Sie alternative Möglichkeiten, um zu überprüfen, ob Daten aus dem zusammengefügten Datensatz aufgestockt werden. Verwenden Sie beispielsweise die [Benutzeroberfläche des Experience Platform-](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview), um die Ereignisanzahl für den relevanten Zeitraum aus dem Datensatz zu extrahieren. Vergleichen Sie diese Ereignisse mit dem Metrikwert **[!UICONTROL Ereignisse]** in [Customer Journey Analytics-Berichten](/help/analysis-workspace/home.md) für denselben Zeitrahmen. Wenn diese Zahlen übereinstimmen, wird die Aufstockung abgeschlossen.
+
 
 ## Einschränkungen
 
