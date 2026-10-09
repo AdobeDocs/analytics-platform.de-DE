@@ -115,7 +115,7 @@ So fügen Sie den automatisch erstellten Datensatz zu derselben Verbindung hinzu
 
 1. Wählen Sie im Abschnitt **[!UICONTROL Aufstockung des Datensatzes]** die Option **[!UICONTROL Aufstockung anfordern]** aus.
 
-1. Definieren Sie den Zeitraum, den die Aufstockung der Verbindung in Customer Journey Analytics einschließen soll, indem Sie das Start- und Enddatum eingeben oder das Kalendersymbol (![) ](/help/assets/icons/Calendar.svg).
+1. Definieren Sie den Zeitraum, den die Aufstockung der Verbindung in Customer Journey Analytics einschließen soll, indem Sie das Start- und Enddatum eingeben oder das Kalendersymbol (![) &#x200B;](/help/assets/icons/Calendar.svg).
 
    Seien Sie explizit beim Angeben der Daten, die Sie für die Aufstockung amfragen. Abhängig von verschiedenen Faktoren können Sie einen der folgenden Schritte ausführen:
 
