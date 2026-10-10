@@ -101,7 +101,7 @@ Die grundlegenden Schritte für die Migration einer Adobe Analytics-Implementier
 
    1. Senden Sie alle Variablen im AppMeasurement-Format über das Datenobjekt.
 
-      Wenn Sie diese Daten auch an Adobe Analytics senden, ordnet Edge Network diese Datenobjektfelder automatisch Adobe Analytics-Variablen zu. Eine Liste der unterstützten Felder finden Sie unter [Datenobjekt-Feldzuordnung zu Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping). Customer Journey Analytics verwendet diese Zuordnungen nicht. Sie ordnen die Datenobjektfelder in einem späteren Schritt Ihrem XDM-Schema für Customer Journey Analytics zu.
+      Wenn Sie diese Daten auch an Adobe Analytics senden, ordnet Edge Network diese Datenobjektfelder automatisch Adobe Analytics-Variablen zu. Eine Liste der unterstützten Felder finden Sie unter [Datenobjekt-Feldzuordnung zu Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping). Customer Journey Analytics verwendet diese Zuordnungen nicht. Sie ordnen die Datenobjektfelder in einem späteren Schritt Ihrem XDM-Schema für Customer Journey Analytics zu.
 
    1. Wählen Sie Ihr Schema.
 
@@ -127,7 +127,7 @@ Die grundlegenden Schritte für die Migration einer Adobe Analytics-Implementier
 
    1. Verwenden Sie die Datenstrom-Zuordnung , um alle Felder im Datenobjekt Ihrem XDM-Schema zuzuordnen.
 
-      Customer Journey Analytics kann nur die Datenobjektfelder verwenden, die Sie Ihrem Schema zuordnen. Weitere Informationen finden Sie unter [Zuordnung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep) in der Experience Platform-Dokumentation.
+      Customer Journey Analytics kann nur die Datenobjektfelder verwenden, die Sie Ihrem Schema zuordnen. Weitere Informationen finden Sie unter [Zuordnung](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) in der Experience Platform-Dokumentation.
 
 {{upgrade-final-step}}.
 
