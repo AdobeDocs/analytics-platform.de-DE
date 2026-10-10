@@ -2,9 +2,9 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Adobe Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
+source-git-commit: f5e2a6604ee1bf2b5a5a393b402da24b66d9b81d
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1517'
 ht-degree: 89%
 ---
 # Handbuch zu Adobe Customer Journey Analytics {#using}
@@ -65,7 +65,7 @@ ht-degree: 89%
       + [Implementieren des Loader-Tags für die Web SDK-Erweiterung](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [Hinzufügen der XDM-Datenerfassungslogik zum Tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
     + [Manuelles Implementieren des Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
-    + [Implementieren des Web SDK mit API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
+    + [Implementieren von Web SDK mit dem NPM-Paket](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
     + [Erstellen einer Verbindung](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
     + [Erstellen einer Datenansicht](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
     + [Erstellen eines abgeleiteten Marketing-Kanal-Felds](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
@@ -438,7 +438,7 @@ ht-degree: 89%
       + {hide-from-toc}[Komponentenverfügbarkeit](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc}[Segmentierung in Daten-Feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[Anwenden von Datenumwandlungen](/help/components/exports/cja-data-feeds/df-data-transformations.md)
-      + {hide-from-toc}[Unterereignisse in Daten-Feeds](/help/components/exports/cja-data-feeds/df-sub-event.md)
+      + {hide-from-toc}[Untercontainer-Komponenten](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + Datenwörterbuch {#data-dictionary}
     + [Überblick](../components/data-dictionary/data-dictionary-overview.md)
     + [Komponenteninformationen im Datenwörterbuch anzeigen](../components/data-dictionary/view-data-dictionary.md)

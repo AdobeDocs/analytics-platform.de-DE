@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
+source-git-commit: adc7e85339e89c181375c0d3ea5c228d473239a7
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 44%
+source-wordcount: '1419'
+ht-degree: 43%
 ---
 # Komponentenverfügbarkeit in Daten-Feeds
 
@@ -98,6 +98,8 @@ Die folgenden Customer Journey Analytics-Standardmetriken können nicht in Daten
 
 <!-- markdownlint-disable MD034 -->
 
+<!-- pretty sure this isn't being used -->
+
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
 >title=""
@@ -115,8 +117,14 @@ Die folgenden Customer Journey Analytics-Standardmetriken können nicht in Daten
 
 Die folgenden Dimensionen können nicht zusammen mit den Dimensionen **Benutzeragent** oder **Mobile ID** verwendet werden:
 
+>[!NOTE]
+>
+>Die folgende Liste verwendet standardmäßige Dimensionsnamen. Dimensionen, die in Ihrer Datenansicht umbenannt werden, werden in Daten-Feeds mit ihren benutzerdefinierten Namen angezeigt.
+
+
 * Browser-Typ
 * Browser
+* Browser-ID
 * Mobilgerätehersteller
 * Mobilgerätetyp
 * Mobilgerät - Audio-Unterstützung
@@ -141,6 +149,7 @@ Die folgenden Dimensionen können nicht zusammen mit den Dimensionen **Benutzera
 * Mobilgerätename
 * Betriebssystemtypen
 * Betriebssysteme
+* Betriebssystem-ID
 
 ## Metriken, die einen Ersatz erfordern {#substitute-metrics}
 

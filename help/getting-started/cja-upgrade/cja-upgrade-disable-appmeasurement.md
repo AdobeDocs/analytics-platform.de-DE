@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen des Analytics-Quell-Connector-Datensatzes zur Verbindung
-description: Erfahren Sie, wie Sie den Datensatz des Analytics-Quell-Connectors zur Verbindung hinzufügen
+title: Deaktivieren von Adobe Analytics
+description: Erfahren Sie, wie Sie die Adobe Analytics-Datenerfassung nach dem Upgrade auf Customer Journey Analytics deaktivieren.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 100%
+source-wordcount: '145'
+ht-degree: 85%
 ---
 # Deaktivieren von Adobe Analytics {#disable-appmeasurement}
 
@@ -54,7 +54,7 @@ Lesen Sie vor dem Deaktivieren von Adobe Analytics die Informationen unter [Best
 
 * **Tags:** Deaktivieren der Adobe Analytics-Erweiterung
 
-* **AppMeasurment:** Ersetzen der AppMeasurement.js library s=newobject
+* **AppMeasurement:** Ersetzen Sie die Bibliothek &quot;AppMeasurement.js“ s=newObject
 
 >[!NOTE]
 >

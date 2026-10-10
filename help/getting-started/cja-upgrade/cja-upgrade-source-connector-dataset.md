@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 92%
+source-wordcount: '898'
+ht-degree: 89%
 ---
 # Hinzufügen des Analytics-Quell-Connector-Datensatzes zur Verbindung {#upgrade-source-connector-dataset}
 
@@ -115,7 +115,7 @@ So fügen Sie den automatisch erstellten Datensatz zu derselben Verbindung hinzu
 
 1. Wählen Sie im Abschnitt **[!UICONTROL Aufstockung des Datensatzes]** die Option **[!UICONTROL Aufstockung anfordern]** aus.
 
-1. Definieren Sie den Zeitraum, den die Aufstockung der Verbindung in Customer Journey Analytics einschließen soll, indem Sie das Start- und Enddatum eingeben oder das Kalendersymbol ![Calendar](/help/assets/icons/Calendar.svg) auswählen.
+1. Definieren Sie den Zeitraum, den die Aufstockung der Verbindung in Customer Journey Analytics einschließen soll, indem Sie das Start- und Enddatum eingeben oder das Kalendersymbol (![) &#x200B;](/help/assets/icons/Calendar.svg).
 
    Seien Sie explizit beim Angeben der Daten, die Sie für die Aufstockung amfragen. Abhängig von verschiedenen Faktoren können Sie einen der folgenden Schritte ausführen:
 

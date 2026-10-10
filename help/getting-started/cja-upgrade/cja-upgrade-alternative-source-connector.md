@@ -1,6 +1,6 @@
 ---
-title: Verwenden Sie den Analytics-Quell-Connector ausschließlich für das Upgrade auf Customer Journey Analytics
-description: Erfahren Sie, wie Sie den Analytics-Quell-Connector erstellen und Felder zuordnen
+title: 'Alternative zum Upgrade: Ausschließliches Verwenden des Analytics-Quell-Connectors zum Upgrade auf Customer Journey Analytics'
+description: Verstehen Sie die Vor- und Nachteile der Verwendung des Analytics-Quell-Connectors als einzigen Implementierungspfad für Customer Journey Analytics, ein Ansatz, der von Adobe nicht empfohlen wird.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 94%
+source-wordcount: '437'
+ht-degree: 88%
 ---
 # Alternative zum Upgrade: Ausschließliches Verwenden des Analytics-Quell-Connectors zum Upgrade auf Customer Journey Analytics {#use-source-connector-exclusively}
 

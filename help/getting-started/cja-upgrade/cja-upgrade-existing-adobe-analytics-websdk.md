@@ -40,10 +40,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 63%
+source-wordcount: '1117'
+ht-degree: 59%
 ---
 # Konfigurieren der vorhandenen Adobe Analytics Web-SDK-Implementierung zum Senden von Daten an Platform {#existing-websdk-implementation}
 
@@ -75,7 +75,7 @@ Beachten Sie die folgenden Vor- und Nachteile bei der Konfiguration Ihrer besteh
 
 1. Senden von Daten von Edge Network an Platform. Senden Sie alle Variablen im AppMeasurement-Format über das Datenobjekt.
 
-   Weitere Informationen finden Sie unter [Zuordnung von Datenobjektvariablen zu Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping).
+   Die Edge Network ordnet diese Datenobjektfelder automatisch Adobe Analytics-Variablen zu, wodurch die Adobe Analytics-Berichte während des Upgrades intakt bleiben. Eine Liste der unterstützten Felder finden Sie unter [Datenobjekt-Feldzuordnung zu Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping). Customer Journey Analytics verwendet diese Zuordnungen nicht. Sie ordnen die Datenobjektfelder in einem späteren Schritt Ihrem XDM-Schema für Customer Journey Analytics zu.
 
 1. Wählen Sie Ihr Schema.
 
@@ -101,6 +101,6 @@ Beachten Sie die folgenden Vor- und Nachteile bei der Konfiguration Ihrer besteh
 
 1. Verwenden Sie die Datenstrom-Zuordnung , um alle Felder im Datenobjekt Ihrem XDM-Schema zuzuordnen.
 
-   Weitere Informationen finden Sie unter [Zuordnung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep) in der Experience Platform-Dokumentation.
+   Customer Journey Analytics kann nur die Datenobjektfelder verwenden, die Sie Ihrem Schema zuordnen. Weitere Informationen finden Sie unter [Zuordnung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep) in der Experience Platform-Dokumentation.
 
 {{upgrade-final-step}}

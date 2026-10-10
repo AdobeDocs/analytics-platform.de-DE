@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Privacy
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
     internal-label: Taxonomy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1571'
 ht-degree: 11%
 ---
 # Planen eines Schemas für Customer Journey Analytics {#upgrade-schema-architect}
@@ -74,7 +74,7 @@ Die Datenpipeline für Customer Journey Analytics enthält separate Bereiche fü
 
 ## Vergleichen von Schemas mit der Datenerfassung in Adobe Analytics
 
-Das Experience-Datenmodell, das Customer Journey Analytics verwendet, bietet deutlich mehr Flexibilität als die meisten anderen Analytics-Lösungen (einschließlich Adobe Analytics). Durch die Einrichtung eines soliden Schemas erhält Ihr Unternehmen die Möglichkeit, Einschränkungen zu vermeiden, die in anderen Analytics-Produkten vorhanden sind.
+Im Gegensatz zu Adobe Analytics ordnet Customer Journey Analytics eingehende Daten nicht automatisch vordefinierten Variablen zu. Ihr Schema definiert die Felder, und die Datenansichten bestimmen, wie sie gemeldet werden. Das Experience-Datenmodell, das Customer Journey Analytics verwendet, bietet deutlich mehr Flexibilität als die meisten anderen Analytics-Lösungen (einschließlich Adobe Analytics). Durch die Einrichtung eines soliden Schemas erhält Ihr Unternehmen die Möglichkeit, Einschränkungen zu vermeiden, die in anderen Analytics-Produkten vorhanden sind.
 
 | Allgemeine Adobe Analytics-Gewohnheit | Besserer Ansatz in XDM und Customer Journey Analytics |
 |---|---|

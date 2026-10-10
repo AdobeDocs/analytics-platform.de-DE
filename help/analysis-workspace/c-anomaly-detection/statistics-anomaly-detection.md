@@ -4,29 +4,32 @@ title: In der Anomalieerkennung verwendete statistische Verfahren
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
 role: User
-TQID: https://experienceleague.adobe.com/hYbiTS7DEatmCon2w0Y6QvGOAYZChPeW5nb6TCQE5AE
+TQID: 'https://experienceleague.adobe.com/hYbiTS7DEatmCon2w0Y6QvGOAYZChPeW5nb6TCQE5AE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 830
+source-wordcount: '830'
 ht-degree: 32%
-
 ---
-
 # Statistische Verfahren
 
 Die Anomalieerkennung in Analysis Workspace setzt eine Reihe statistischer Verfahren ein, um festzustellen, ob eine Beobachtung als anormal anzusehen ist oder nicht.
 
-Je nach der im Bericht verwendeten Datumsgranularität werden 3 verschiedene statistische Verfahren eingesetzt – für stündliche, tägliche, wöchentliche/monatliche Anomalieerkennung. Die statistischen Verfahren werden nachfolgend beschrieben.
+Je nach der im Bericht verwendeten Granularität des Datums werden 3 verschiedene statistische Verfahren eingesetzt – speziell für stündliche, tägliche sowie wöchentliche/monatliche Anomalieerkennung. Die statistischen Verfahren werden nachfolgend beschrieben.
 
 ## Anomalieerkennung für Granularität „Täglich“
 
@@ -53,12 +56,12 @@ Nach der Modellauswahl passt der Algorithmus die Ergebnisse dann an Feiertagen u
 * &#x200B;1. Januar
 * &#x200B;31. Dezember
 
-Diese Feiertage wurden anhand umfangreicher statistischer Analysen einer großen Anzahl von Datenpunkten ausgewählt, um die Feiertage zu ermitteln, die den größten Einfluss in den meisten Kunden-Trends gezeigt haben. Während die Liste sicherlich nicht für alle Kunden oder Geschäftszyklen vollständig ist, verbessert die Anwendung von Feiertagen die Leistung des Algorithmus insgesamt für fast alle Datensätze von Kunden erheblich.
+Diese Feiertage wurden anhand einer umfangreichen statistischen Analyse über viele Kundendatenpunkte hinweg ausgewählt, um die Feiertage zu ermitteln, die für die Trends der meisten Kundinnen und Kunden am wichtigsten sind. Während die Liste sicherlich nicht für alle Kunden oder Geschäftszyklen vollständig ist, verbessert die Anwendung von Feiertagen die Leistung des Algorithmus insgesamt für fast alle Datensätze von Kunden erheblich.
 
-Nach Auswahl des Modells und der Identifizierung der im Berichtszeitraum befindlichen Feiertage fährt der Algorithmus wie folgt fort:
+Nachdem das Modell ausgewählt und die Feiertage im Datumsbereich des Berichts identifiziert wurden, fährt der Algorithmus wie folgt fort:
 
 1. Konstruiert den Referenzzeitraum der Anomalie. Dieser Anomalie-Referenzzeitraum umfasst bis zu 35 Tage vor dem Berichtsdatumsbereich und einen entsprechenden Datumsbereich 1 Jahr davor. Falls erforderlich, Schalttage berücksichtigen und alle anwendbaren Feiertage berücksichtigen, die an einem anderen Kalendertag im Vorjahr aufgetreten sein könnten.
-1. Er testet, ob im aktuellen Zeitraum (außer dem Vorjahr) Feiertage vorhanden sind, die laut den aktuellsten Daten eine Anomalität darstellen.
+1. Testen Sie, ob Feiertage im aktuellen Zeitraum (ohne das Vorjahr) auf Grundlage der aktuellsten Daten als anomal einzustufen sind.
 1. Wenn der Feiertag im aktuellen Datumsbereich als anormal betrachtet wird, passt der Algorithmus den erwarteten Wert und das Konfidenzintervall des aktuellen Feiertags an die Werte des Feiertags aus dem vergangenen Jahr an (unter Betrachtung von zwei Tagen vorher und nachher). Die Korrektur für den aktuellen Feiertag basiert auf dem niedrigsten absoluten Mittelwert des Fehlers in Prozent von:
 
    1. Additive Wirkungen

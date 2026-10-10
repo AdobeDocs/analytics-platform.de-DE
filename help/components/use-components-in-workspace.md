@@ -4,30 +4,39 @@ title: Verwenden von Komponenten in einem Projekt
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-TQID: https://experienceleague.adobe.com/kXVC79sHZMIdUELOC6KjtT7tJdh9pVySu-jApef-8lk
+TQID: 'https://experienceleague.adobe.com/kXVC79sHZMIdUELOC6KjtT7tJdh9pVySu-jApef-8lk'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df28738e-9c71-4aa8-929e-edde22340cc6
+    internal-label: Data Dictionary
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 954
+source-wordcount: '982'
 ht-degree: 92%
-
 ---
-
 # Verwenden von Komponenten in einem Projekt
 
 Komponenten bilden die eigentlichen Daten eines jeden Projekts in Analysis Workspace. Komponenten bestehen aus Dimensionen, Metriken, Segmenten und Datumsbereichen. Sie können Komponenten zu einem Projekt hinzufügen, indem Sie sie in Visualisierungen oder Panels ziehen.
@@ -48,7 +57,7 @@ Weitere Informationen zu den Typen von Komponenten, die Sie hinzufügen können,
 
 1. Scrollen Sie zu oder suchen Sie nach der Komponente, die hinzugefügt werden soll, und ziehen Sie sie anschließend in ein Panel oder eine Visualisierung innerhalb Ihres Projekts.
 
-1. Sie können eine Komponente auch in den Segment-Ablegebereich in der Kopfzeile eines Panels ziehen. Dieser Drag-and-Drop-Vorgang definiert die Komponente als Segment und wendet das Segment auf alle Inhalte im Panel an.
+1. Sie können eine Komponente auch in den Segment-Ablegebereich in der Kopfzeile eines Panels ziehen. Dieser Drag-and-Drop-Vorgang definiert die Komponente als Segment und wendet das Segment auf den gesamten Inhalt im Panel an.
 Informationen zum Verwenden des Segment-Ablegebereichs in einem Panel, um das Panel zu segmentieren, finden Sie im [Überblick über Panels](/help/analysis-workspace/c-panels/panels.md) unter [Ablegebereich](/help/analysis-workspace/c-panels/panels.md#drop-zone).
 
 1. Weitere Informationen finden Sie in den folgenden Abschnitten:
@@ -63,11 +72,11 @@ Informationen zum Verwenden des Segment-Ablegebereichs in einem Panel, um das Pa
 
 ### Hinzufügen von Dimensionen zu einem Projekt
 
-[Dimensionen](/help/components/dimensions/overview.md) sind Variablen in Customer Journey Analytics, die normalerweise Zeichenfolgenwerte enthalten. Im Gegensatz dazu enthalten [Metriken](/help/components/calc-metrics/calc-metr-overview.md) numerische Werte, die mit einer Dimension verknüpft sind. Ein Basisbericht zeigt Zeilen mit Zeichenfolgenwerten (Dimension) gegen eine Spalte mit numerischen Werten (Metrik) an.
+[Dimensionen](/help/components/dimensions/overview.md) sind Variablen in Customer Journey Analytics, die normalerweise Zeichenfolgenwerte enthalten. Im Gegensatz dazu enthalten [Metriken](/help/components/calc-metrics/calc-metr-overview.md) numerische Werte, die mit einer Dimension verknüpft sind. Ein einfacher Bericht zeigt Zeilen mit Zeichenfolgenwerten (Dimension) gegenüber einer Spalte mit numerischen Werten (Metrik) an.
 
 1. Fügen Sie zunächst eine Dimension zu Ihrem Projekt in Analysis Workspace hinzu, wie unter [Hinzufügen von Komponenten zu einem Projekt](#add-components-to-a-project) beschrieben.
 
-1. Wählen Sie eine der folgenden Methoden, um Dimensionen hinzuzufügen, und bestimmen Sie den Datentyp, der analysiert werden soll:
+1. Wählen Sie eine der folgenden Methoden, um Dimensionen hinzuzufügen, und bestimmen Sie die Art der Daten, die Sie analysieren möchten:
 
    ![Hinzufügen einer Dimension](/help/components/assets/add-dimension.gif)
 
@@ -127,7 +136,7 @@ Wenn Sie Komponenten wie [berechnete Metriken](/help/components/calc-metrics/cm-
 
 [Datumsbereiche](/help/components/date-ranges/overview.md) bestimmen den Reporting-Zeitrahmen in Analysis Workspace und können auf ein oder mehrere Panels innerhalb eines Projekts sowie auf einige Visualisierungen (wie die Freiformtabelle) angewendet werden.
 
-Jedes Panel enthält standardmäßig einen Datumsbereich. Es gibt mehrere Möglichkeiten, einen Datumsbereich für ein Panel zu aktualisieren. Eine Möglichkeit zum Aktualisieren eines Datumsbereichs für ein Panel in Analysis Workspace besteht darin, eine Datumsbereichskomponente aus dem linken Panel zu ziehen:
+Jedes Panel enthält standardmäßig einen Datumsbereich. Es gibt mehrere Möglichkeiten, einen Datumsbereich für ein Panel zu aktualisieren. Eine Möglichkeit zum Aktualisieren eines Datumsbereichs für ein Panel in Analysis Workspace besteht darin, eine Datumsbereichkomponente aus dem linken Panel zu ziehen:
 
 1. Fügen Sie optional Panels zu Ihrem Projekt in Analysis Workspace hinzu, wie unter [Hinzufügen von Komponenten zu einem Projekt](#add-components-to-a-project) beschrieben.
 

@@ -1,6 +1,6 @@
 ---
-title: Erstellen eines Schemas für Customer Journey Analytics
-description: Erfahren Sie mehr über den empfohlenen Pfad für das Upgrade von Adobe Analytics auf Customer Journey Analytics
+title: Validieren, dass Daten in Customer Journey Analytics fließen
+description: Erfahren Sie, wie Sie überprüfen können, ob die Daten nach dem Upgrade von Adobe Analytics an Customer Journey Analytics fließen.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 100%
+source-wordcount: '143'
+ht-degree: 88%
 ---
 # Validieren, dass Daten in Customer Journey Analytics fließen {#validate-data}
 
