@@ -2,7 +2,7 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Adobe Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: f5e2a6604ee1bf2b5a5a393b402da24b66d9b81d
+source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
 workflow-type: tm+mt
 source-wordcount: '1517'
 ht-degree: 89%
@@ -438,7 +438,7 @@ ht-degree: 89%
       + {hide-from-toc}[Komponentenverfügbarkeit](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc}[Segmentierung in Daten-Feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[Anwenden von Datenumwandlungen](/help/components/exports/cja-data-feeds/df-data-transformations.md)
-      + {hide-from-toc}[Untercontainer-Komponenten](/help/components/exports/cja-data-feeds/df-sub-event.md)
+      + {hide-from-toc}[Komponenten für Unterereignisse](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + Datenwörterbuch {#data-dictionary}
     + [Überblick](../components/data-dictionary/data-dictionary-overview.md)
     + [Komponenteninformationen im Datenwörterbuch anzeigen](../components/data-dictionary/view-data-dictionary.md)
