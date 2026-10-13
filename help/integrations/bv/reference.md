@@ -29,7 +29,7 @@ KI ist zu einem primären Erkennungskanal geworden. Agenten für große Sprachmo
 
 >[!PREREQUISITES]
 >
->Sie benötigen ein kostenpflichtiges Markensichtbarkeit-Angebot. Anschließend [ Sie die Adobe Brand Visibility](./configure.md)Quelle in Ihrer Experience Platform-Sandbox konfigurieren und aktivieren.
+>Sie benötigen ein kostenpflichtiges Markensichtbarkeit-Angebot. Anschließend [&#x200B; Sie die Adobe Brand Visibility](./configure.md)Quelle in Ihrer Experience Platform-Sandbox konfigurieren und aktivieren.
 >
 
 
@@ -57,7 +57,7 @@ Die folgenden Dimensionen können als Komponenten in einer Datenansicht verwende
 | CDN-URL | `cdn.url` | Die normalisierte vollständige URL für die Anfrage, die als Join-Schlüssel vorgesehen ist. Markensichtbarkeit kombiniert den Host und den angeforderten Pfad in einer einzigen URL und normalisiert sie so, dass sie mit dem vollständigen URL-Formular übereinstimmt, das Customer Journey Analytics für Web-Daten speichert. Verwenden Sie diese Dimension, um den Markensichtbarkeit-Lookup-Datensatz mit einem Ereignis-Datensatz zu verbinden, der ein entsprechendes vollständiges URL-Feld hat. Sie enthält den Host und den Pfad, aber nicht das Schema. |
 | CDN-URL-Pfad | `cdn.path` | Der Pfad der Roh-URL und die vom Agenten angeforderte Abfragezeichenfolge, wie vom CDN bereitgestellt. Enthält weder das Schema noch den Host. Verwenden Sie diese Option, wenn Sie den exakten angeforderten Pfad anstelle des normalisierten Join-Schlüssels benötigen. |
 | CDN-Host | `cdn.host` | Der Hostname, der die Anfrage erhalten hat, z. B. www.example.com. Dieser Host ist auch Teil des CDN-URL-Join-Schlüssels. Ein Datensatz kann mehrere Hosts enthalten, wenn eine Organisation mehrere Subdomains im selben CDN-Konto hat. |
-| CDN-Bot-Typ | `cdn.botType` | Markensichtbarkeit-Klassifizierung des anfragenden Agenten. Die Werte umfassen klassische Such-Crawler, KI-Index-Crawler und KI-Live-Fetch-Agenten. Die vollständige Taxonomie finden [ in den ](#bot-agent-categories)Bot-Agentenkategorien“ unten. |
+| CDN-Bot-Typ | `cdn.botType` | Markensichtbarkeit-Klassifizierung des anfragenden Agenten. Die Werte umfassen klassische Such-Crawler, KI-Index-Crawler und KI-Live-Fetch-Agenten. Die vollständige Taxonomie finden [&#x200B; in den &#x200B;](#bot-agent-categories)Bot-Agentenkategorien“ unten. |
 | CDN-Benutzeragent | `cdn.userAgent` | Die unformatierte Benutzeragenten-Zeichenfolge aus dem CDN-Protokoll. Nützlich für die Unterscheidung von Untertypen innerhalb einer Bot-Klassifizierung oder für die Validierung der Klassifizierung, die durch Markensichtbarkeit zugewiesen wird. |
 | CDN-HTTP-Status | `cdn.status` | Der HTTP-Antwort-Status-Code. Gibt an, ob der Bot den angeforderten Inhalt erhalten hat. Siehe [Status-Codes](#status-codes) unten für Interpretationsanleitungen, die speziell für KI-Traffic gelten. |
 | CDN-Anbieter | `cdn.cdnProvider` | Welches CDN die Anfrage verarbeitet hat. Werte sind `akamai`, `byocdn-akamai`, `byocdn-fastly` und `byocdn-cloudfront`. Das `byocdn-` Präfix gibt den Protokollerfassungspfad an, nicht einen anderen CDN-Anbieter. Ein Datensatz kann mehrere Werte enthalten, wenn eine Organisation Hosts hinter verschiedenen CDN-Konfigurationen hat. |

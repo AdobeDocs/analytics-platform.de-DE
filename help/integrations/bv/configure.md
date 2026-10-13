@@ -124,7 +124,7 @@ steht Benutzern erst dann über eine Datenansicht zur Verfügung, wenn die entsp
 So aktivieren Sie die Quelle:
 
 1. Wählen Sie in Experience Platform die Sandbox aus, in der der Datensatz gespeichert werden soll. Eine Site kann nur einmal zugewiesen werden. Stellen Sie daher sicher, dass diese Sandbox die gewünschte ist.
-1. Gehen Sie zu **[!UICONTROL Quellen]**, dann **[!UICONTROL Katalog]**, dann zu Adobe-Anwendungen. Wählen Sie auf der Karte **** die Option **[!UICONTROL Einrichten]** beim ersten Mal aus. Danach zeigt die Karte **[!UICONTROL Daten hinzufügen]** an.
+1. Gehen Sie zu **[!UICONTROL Quellen]**, dann **[!UICONTROL Katalog]**, dann zu Adobe-Anwendungen. Wählen Sie auf der Karte **&#x200B;**&#x200B;die Option **[!UICONTROL Einrichten]** beim ersten Mal aus. Danach zeigt die Karte **[!UICONTROL Daten hinzufügen]** an.
 
    ![Markensichtbarkeit aus Quellen auswählen](assets/aep-sources-select-bv.png)
 
