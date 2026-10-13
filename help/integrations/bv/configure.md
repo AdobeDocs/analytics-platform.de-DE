@@ -40,7 +40,7 @@ Bestätigen Sie beide Teile der Übergabe:
 1. Markensichtbarkeit empfängt und erkennt die Protokolle für die jeweilige Website. Die Site kann dann in der Adobe Brand Visibility-Quelle in Experience Platform ausgewählt werden.
 
 Die BYOCDN-Protokollweiterleitung stellt die Server-seitigen CDN-Anfragedaten bereit, die für die automatisierte Analyse von Agenten-Traffic verwendet werden. Die Daten hängen nicht von JavaScript-Tags ab, die in einem Browser ausgeführt werden. Die erforderlichen
-CDN-Protokoll-Feed stellt sicher, dass der nachgelagerte Zusammenfassungsdatensatz die vorgesehenen Markensichtbarkeit-agenten-Traffic-Daten enthält. Weitere Informationen finden Sie [BYOCDN](https://experienceleague.adobe.com/en/docs/brand-visibility/using/log-forwarding/log-forwarding-overview)Protokollweiterleitungsreferenz).
+CDN-Protokoll-Feed stellt sicher, dass der nachgelagerte Zusammenfassungsdatensatz die vorgesehenen Markensichtbarkeit-agenten-Traffic-Daten enthält. Weitere Informationen finden Sie [BYOCDN](https://experienceleague.adobe.com/de/docs/brand-visibility/using/log-forwarding/log-forwarding-overview)Protokollweiterleitungsreferenz).
 
 ### Erforderliche Informationen
 
