@@ -15,9 +15,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: fb3ebdba335ce2dde30d37b8aff4e8f201dc5d9f
+source-git-commit: e3958dfbad19f5fdd78b2755817d21afad8f8e84
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '844'
 ht-degree: 3%
 ---
 
@@ -29,12 +29,14 @@ KI ist zu einem primären Erkennungskanal geworden. Agenten für große Sprachmo
 
 >[!NOTE]
 >
->Sie müssen über ein gebührenpflichtiges Markensichtbarkeit-Angebot verfügen, das über den verwalteten Connector bereitgestellt und mit Ihrer Experience Platform-Konfiguration verbunden ist.
+>Sie benötigen ein kostenpflichtiges Markensichtbarkeit-Angebot. Anschließend [&#x200B; Sie die Adobe Brand Visibility](./configure.md)Quelle in Ihrer Experience Platform-Sandbox konfigurieren und aktivieren.
+>
 
 
 >[!IMPORTANT]
 >
 >Im Rahmen dieser Integration findet in den Vereinigten Staaten eine zeitweilige Verarbeitung von Markensichtbarkeit-Daten statt. Die Daten werden letztendlich in der von Ihnen festgelegten Region gespeichert, wie in Ihrem Customer Journey Analytics-Vertrag konfiguriert.
+>
 
 
 ## Anwendungsfälle
@@ -68,7 +70,7 @@ Die zweite Möglichkeit ist ein Bot oder Agent, der Ihre Seiten direkt anfordert
 
 ### Integrieren des Datensatzes
 
-Der verwaltete Markensichtbarkeit-Connector stellt die Daten als Zusammenfassungsdatensatz für Experience Platform bereit. Um ihn in Customer Journey Analytics zu messen, führen Sie selbst zwei Einrichtungsschritte aus:
+Sie aktivieren die Adobe Brand Visibility-Quelle in Experience Platform. Die Quelle stellt die Daten als Zusammenfassungsdatensatz in Ihrer Sandbox bereit. Um die Daten in Customer Journey Analytics zu messen, führen Sie anschließend zwei weitere Einrichtungsschritte selbst durch:
 
 1. Erstellen Sie eine Verbindung, die den Markensichtbarkeit-Datensatz enthält.
 2. Erstellen Sie eine Datenansicht für diese Verbindung. Die Datenansicht stellt die folgenden Dimensionen und Metriken in Analysis Workspace zur Verfügung.
