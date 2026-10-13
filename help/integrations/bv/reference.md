@@ -15,21 +15,22 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
+source-git-commit: e3958dfbad19f5fdd78b2755817d21afad8f8e84
 workflow-type: tm+mt
-source-wordcount: '2555'
-ht-degree: 3%
+source-wordcount: '1894'
+ht-degree: 2%
 ---
 
-# Adobe Brand Visibility-Integration
+# Datensatzreferenz
 
-[Adobe Brand Visibility](https://experienceleague.adobe.com/de/docs/llm-optimizer/using/home){target="_blank"} ist eine generative KI-First-Anwendung für die Optimierung von generativen Modulen, die Marken dabei hilft, ihre Sichtbarkeit, Genauigkeit und ihren Einfluss in KI-gestützten Suchumgebungen zu verbessern. Markensichtbarkeit bietet Einblicke in das Markenpräsenz in KI-generierte Antworten, bietet präskriptive Inhaltsempfehlungen und automatisiert Optimierungskorrekturen.
+[Adobe Brand Visibility](https://experienceleague.adobe.com/de/docs/brand-visibility/using/home){target="_blank"} ist eine generative KI-First-Anwendung für die Optimierung von generativen Modulen, die Marken dabei hilft, ihre Sichtbarkeit, Genauigkeit und ihren Einfluss in KI-gestützten Suchumgebungen zu verbessern. Markensichtbarkeit bietet Einblicke in das Markenpräsenz in KI-generierte Antworten, bietet präskriptive Inhaltsempfehlungen und automatisiert Optimierungskorrekturen.
 
 KI ist zu einem primären Erkennungskanal geworden. Agenten für große Sprachmodelle (LLM) wie ChatGPT, Claude, Copilot und Perplexity crawlen Markeninhalte.
 
 >[!PREREQUISITES]
 >
->Sie müssen über ein gebührenpflichtiges Markensichtbarkeit-Angebot verfügen, das über den verwalteten Connector bereitgestellt und mit Ihrer Experience Platform-Konfiguration verbunden ist.
+>Sie benötigen ein kostenpflichtiges Markensichtbarkeit-Angebot. Anschließend [ Sie die Adobe Brand Visibility](./configure.md)Quelle in Ihrer Experience Platform-Sandbox konfigurieren und aktivieren.
+>
 
 
 >[!IMPORTANT]
@@ -37,56 +38,9 @@ KI ist zu einem primären Erkennungskanal geworden. Agenten für große Sprachmo
 >Im Rahmen dieser Integration findet in den Vereinigten Staaten eine zeitweilige Verarbeitung von Markensichtbarkeit-Daten statt. Die Daten werden letztendlich in der von Ihnen festgelegten Region gespeichert, wie in Ihrem Customer Journey Analytics-Vertrag konfiguriert.
 
 
-## Anwendungsfälle
+## Über den Datensatz
 
-Die Integration zwischen Customer Journey Analytics und Markensichtbarkeit bietet zwei Möglichkeiten:
-
-* **Eingehende Integration**: Verwenden Sie Markensichtbarkeit-Daten in Customer Journey Analytics, um den LLM-gesteuerten Traffic (Bot-Crawler, RAG-Anfragen, Agentenaktivität) neben vorhandenen Web-, Mobile- und anderen Datentypen zu messen. Sie können zum Beispiel:
-
-  * Messen Sie den LLM-gesteuerten Traffic anhand der Agentenquelle neben herkömmlichen Kanälen.
-
-  * Identifizieren Sie Inhalte, die stark von LLMs genutzt werden, aber bei der menschlichen Konversion unterdurchschnittlich abschneiden.
-
-  * Erkennen, wo LLM-Agent-Anforderungen über kritische Pfade hinweg fehlschlagen.
-
-  * Vergleichen Sie die LLM-Bot-Nachfrage für eine Seite mit den Konversionen und dem Umsatz dieser Seite in Ihren Web-Daten, abgeglichen auf der URL- und Host-Ebene.
-
-* **Ausgehende Integration**: Senden Sie Customer Journey Analytics-Leistungsdaten an Markensichtbarkeit, damit Sie die KI-Sichtbarkeit für die LLM-Quellen optimieren können, die Ihnen wertvollen Traffic senden, z. B. ChatGPT oder Perplexity. Sie können zum Beispiel:
-
-  * Erfahren Sie, welche LLM-Quellen menschliche Besucher senden, die anschließend konvertieren oder Umsatz generieren. Customer Journey Analytics misst dies anhand des referenzierten Web-Traffics und nicht anhand des Bot-Datensatzes.
-  * Ordnen Sie die LLM-Quellen nach dem nachgelagerten Wert der von ihnen gesendeten menschlichen Besucher. Konzentrieren Sie dann Ihre Arbeit mit der KI-Sichtbarkeit auf die Quellen, die die besten Ergebnisse erzielen.
-
-
-## Eingehende Integration
-
-LLM-Traffic gelangt auf zwei Arten zu Ihrer Site. Customer Journey Analytics misst jede Richtung aus einer anderen Datenquelle.
-
-Der erste Weg ist eine Person, die eine KI-Antwort liest und sich dann zu Ihrer Site durchklickt. Bei diesem Besuch wird dieselbe JavaScript ausgeführt, die auch die restlichen Web-Daten erfasst. Ihre bestehenden Customer Journey Analytics-Web-Daten umfassen daher den Besuch und die Referrer-Domain, von der der Benutzer an Sie gesendet wurde, z. B. chatgpt.com. Customer Journey Analytics kennzeichnet diese Besuche nicht eigenständig als KI-Traffic. Um sie zu identifizieren und zu gruppieren, erstellen Sie ein abgeleitetes Feld für die Verbindung, das mit den KI-verweisenden Domains übereinstimmt, und erstellen Sie dann Segmente und Berichte für dieses Feld. Siehe [Abgeleitete &#x200B;](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/derived-fields){target="_blank"}. Sie benötigen den Markensichtbarkeit-Datensatz für diesen Traffic an Personen nicht.
-
-Die zweite Möglichkeit ist ein Bot oder Agent, der Ihre Seiten direkt anfordert. Dazu gehören Crawler, die einen KI-Index erstellen, und Live-Abrufe, die auftreten, wenn ein Benutzer eine Eingabeaufforderung an einen KI-Assistenten sendet. Bei diesen Anfragen wird keine JavaScript ausgeführt, sodass die vorhandenen Web-Daten sie nicht aufzeichnen. Der Markensichtbarkeit-Datensatz erfasst diesen Traffic von der CDN-Ebene. Im Rest dieses Abschnitts wird dieser Datensatz beschrieben.
-
-### Integrieren des Datensatzes in Customer Journey Analytics
-
-Der verwaltete Markensichtbarkeit-Connector stellt die Daten als Zusammenfassungsdatensatz für Experience Platform bereit. Um ihn in Customer Journey Analytics zu messen, führen Sie selbst zwei Einrichtungsschritte aus:
-
-1. Erstellen Sie eine Verbindung, die den Markensichtbarkeit-Datensatz enthält. Siehe [Erstellen oder Bearbeiten einer Verbindung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-connections/create-connection){target="_blank"}.
-2. Erstellen Sie eine Datenansicht für diese Verbindung. Die Datenansicht stellt die folgenden Dimensionen und Metriken in Analysis Workspace zur Verfügung. Siehe [Erstellen oder Bearbeiten einer Datenansicht](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}.
-
-Der Datensatz:
-
-* Verwendet [Zusammenfassungsdatensätze](/help/data-views/summary-data.md) die auf der Klasse XDM Summary Metrics basieren.
-* Sammelt Daten nach URL und Host, Uhrzeit und Anfrageeigenschaften wie Bot-Typ, CDN-Anbieter und Status.
-
->[!NOTE]
->
->Der Markensichtbarkeit-Datensatz enthält aggregierte Daten. Sie enthält keine personenbezogenen Daten wie Benutzerkennung, Eingabeaufforderungen oder Antworten.
->
-
-Da es sich um einen Zusammenfassungsdatensatz handelt, können Sie ihn als Lookup-Datensatz behandeln und ihn mit einem Ereignis-Datensatz auf einem Full-URL-Schlüssel verbinden.
-
-Markensichtbarkeit stellt diesen Schlüssel für Sie in der Dimension **CDN URL** bereit. Er kombiniert den Host und den angeforderten Pfad zu einer einzigen normalisierten vollständigen URL, ähnlich wie Customer Journey Analytics Web-Daten speichert. Ob der Join erfolgreich ist, hängt von Ihrer eigenen Datenerfassung ab. Ihr Ereignis-Datensatz benötigt ein entsprechendes vollständiges URL-Feld oder ein Feld, das Sie analysieren und normalisieren können, sodass es mit der von Markensichtbarkeit bereitgestellten URL übereinstimmt. Wenn beide Seiten dieselbe vollständige URL erhalten, stimmt der Markensichtbarkeit-Eintrag mit der entsprechenden Seite in Ihren Web-Daten überein.
-
-### Über den Datensatz
+Siehe [Übersicht](./bv.md) für weitere Informationen zu den Anwendungsfällen für die Integration eingehender und ausgehender Daten von Markensichtbarkeit mit Customer Journey Analytics.
 
 Markensichtbarkeit liest Server-seitig CDN-Zugriffsprotokolle und extrahiert Datensätze, bei denen es sich bei der anfragenden Partei um einen Bot oder einen automatisierten Agenten handelt. Da die Daten von der CDN-Ebene stammen, erfasst Markensichtbarkeit Anfragen von Bots, die kein JavaScript-Tag auslösen. Standard-Web-Analyse-Tools übersehen diesen Traffic vollständig.
 
@@ -103,7 +57,7 @@ Die folgenden Dimensionen können als Komponenten in einer Datenansicht verwende
 | CDN-URL | `cdn.url` | Die normalisierte vollständige URL für die Anfrage, die als Join-Schlüssel vorgesehen ist. Markensichtbarkeit kombiniert den Host und den angeforderten Pfad in einer einzigen URL und normalisiert sie so, dass sie mit dem vollständigen URL-Formular übereinstimmt, das Customer Journey Analytics für Web-Daten speichert. Verwenden Sie diese Dimension, um den Markensichtbarkeit-Lookup-Datensatz mit einem Ereignis-Datensatz zu verbinden, der ein entsprechendes vollständiges URL-Feld hat. Sie enthält den Host und den Pfad, aber nicht das Schema. |
 | CDN-URL-Pfad | `cdn.path` | Der Pfad der Roh-URL und die vom Agenten angeforderte Abfragezeichenfolge, wie vom CDN bereitgestellt. Enthält weder das Schema noch den Host. Verwenden Sie diese Option, wenn Sie den exakten angeforderten Pfad anstelle des normalisierten Join-Schlüssels benötigen. |
 | CDN-Host | `cdn.host` | Der Hostname, der die Anfrage erhalten hat, z. B. www.example.com. Dieser Host ist auch Teil des CDN-URL-Join-Schlüssels. Ein Datensatz kann mehrere Hosts enthalten, wenn eine Organisation mehrere Subdomains im selben CDN-Konto hat. |
-| CDN-Bot-Typ | `cdn.botType` | Markensichtbarkeit-Klassifizierung des anfragenden Agenten. Die Werte umfassen klassische Such-Crawler, KI-Index-Crawler und KI-Live-Fetch-Agenten. Die vollständige Taxonomie finden [&#x200B; in den &#x200B;](#bot-agent-categories)Bot-Agentenkategorien“ unten. |
+| CDN-Bot-Typ | `cdn.botType` | Markensichtbarkeit-Klassifizierung des anfragenden Agenten. Die Werte umfassen klassische Such-Crawler, KI-Index-Crawler und KI-Live-Fetch-Agenten. Die vollständige Taxonomie finden [ in den ](#bot-agent-categories)Bot-Agentenkategorien“ unten. |
 | CDN-Benutzeragent | `cdn.userAgent` | Die unformatierte Benutzeragenten-Zeichenfolge aus dem CDN-Protokoll. Nützlich für die Unterscheidung von Untertypen innerhalb einer Bot-Klassifizierung oder für die Validierung der Klassifizierung, die durch Markensichtbarkeit zugewiesen wird. |
 | CDN-HTTP-Status | `cdn.status` | Der HTTP-Antwort-Status-Code. Gibt an, ob der Bot den angeforderten Inhalt erhalten hat. Siehe [Status-Codes](#status-codes) unten für Interpretationsanleitungen, die speziell für KI-Traffic gelten. |
 | CDN-Anbieter | `cdn.cdnProvider` | Welches CDN die Anfrage verarbeitet hat. Werte sind `akamai`, `byocdn-akamai`, `byocdn-fastly` und `byocdn-cloudfront`. Das `byocdn-` Präfix gibt den Protokollerfassungspfad an, nicht einen anderen CDN-Anbieter. Ein Datensatz kann mehrere Werte enthalten, wenn eine Organisation Hosts hinter verschiedenen CDN-Konfigurationen hat. |

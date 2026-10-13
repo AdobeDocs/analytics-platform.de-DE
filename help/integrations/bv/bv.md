@@ -15,9 +15,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: fb3ebdba335ce2dde30d37b8aff4e8f201dc5d9f
+source-git-commit: e3958dfbad19f5fdd78b2755817d21afad8f8e84
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '844'
 ht-degree: 3%
 ---
 
@@ -29,12 +29,14 @@ KI ist zu einem primären Erkennungskanal geworden. Agenten für große Sprachmo
 
 >[!NOTE]
 >
->Sie müssen über ein gebührenpflichtiges Markensichtbarkeit-Angebot verfügen, das über den verwalteten Connector bereitgestellt und mit Ihrer Experience Platform-Konfiguration verbunden ist.
+>Sie benötigen ein kostenpflichtiges Markensichtbarkeit-Angebot. Anschließend [ Sie die Adobe Brand Visibility](./configure.md)Quelle in Ihrer Experience Platform-Sandbox konfigurieren und aktivieren.
+>
 
 
 >[!IMPORTANT]
 >
 >Im Rahmen dieser Integration findet in den Vereinigten Staaten eine zeitweilige Verarbeitung von Markensichtbarkeit-Daten statt. Die Daten werden letztendlich in der von Ihnen festgelegten Region gespeichert, wie in Ihrem Customer Journey Analytics-Vertrag konfiguriert.
+>
 
 
 ## Anwendungsfälle
@@ -61,14 +63,14 @@ Die Integration zwischen Customer Journey Analytics und Markensichtbarkeit biete
 
 LLM-Traffic gelangt auf zwei Arten zu Ihrer Site. Customer Journey Analytics misst jede Richtung aus einer anderen Datenquelle.
 
-Der erste Weg ist eine Person, die eine KI-Antwort liest und sich dann zu Ihrer Site durchklickt. Bei diesem Besuch wird dieselbe JavaScript ausgeführt, die auch die restlichen Web-Daten erfasst. Ihre bestehenden Customer Journey Analytics-Web-Daten umfassen daher den Besuch und die Referrer-Domain, von der der Benutzer an Sie gesendet wurde, z. B. chatgpt.com. Customer Journey Analytics kennzeichnet diese Besuche nicht eigenständig als KI-Traffic. Um sie zu identifizieren und zu gruppieren, erstellen Sie ein abgeleitetes Feld für die Verbindung, das mit den KI-verweisenden Domains übereinstimmt, und erstellen Sie dann Segmente und Berichte für dieses Feld. Siehe [Abgeleitete &#x200B;](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/derived-fields){target="_blank"}. Sie benötigen den Markensichtbarkeit-Datensatz für diesen Traffic an Personen nicht.
+Der erste Weg ist eine Person, die eine KI-Antwort liest und sich dann zu Ihrer Site durchklickt. Bei diesem Besuch wird dieselbe JavaScript ausgeführt, die auch die restlichen Web-Daten erfasst. Ihre bestehenden Customer Journey Analytics-Web-Daten umfassen daher den Besuch und die Referrer-Domain, von der der Benutzer an Sie gesendet wurde, z. B. chatgpt.com. Customer Journey Analytics kennzeichnet diese Besuche nicht eigenständig als KI-Traffic. Um sie zu identifizieren und zu gruppieren, erstellen Sie ein abgeleitetes Feld für die Verbindung, das mit den KI-verweisenden Domains übereinstimmt, und erstellen Sie dann Segmente und Berichte für dieses Feld. Siehe [Abgeleitete ](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/derived-fields){target="_blank"}. Sie benötigen den Markensichtbarkeit-Datensatz für diesen Traffic an Personen nicht.
 
 Die zweite Möglichkeit ist ein Bot oder Agent, der Ihre Seiten direkt anfordert. Dazu gehören Crawler, die einen KI-Index erstellen, und Live-Abrufe, die auftreten, wenn ein Benutzer eine Eingabeaufforderung an einen KI-Assistenten sendet. Bei diesen Anfragen wird keine JavaScript ausgeführt, sodass die vorhandenen Web-Daten sie nicht aufzeichnen. Der Markensichtbarkeit-Datensatz erfasst diesen Traffic von der CDN-Ebene. Im Rest dieses Abschnitts wird dieser Datensatz beschrieben.
 
 
 ### Integrieren des Datensatzes
 
-Der verwaltete Markensichtbarkeit-Connector stellt die Daten als Zusammenfassungsdatensatz für Experience Platform bereit. Um ihn in Customer Journey Analytics zu messen, führen Sie selbst zwei Einrichtungsschritte aus:
+Sie aktivieren die Adobe Brand Visibility-Quelle in Experience Platform. Die Quelle stellt die Daten als Zusammenfassungsdatensatz in Ihrer Sandbox bereit. Um die Daten in Customer Journey Analytics zu messen, führen Sie anschließend zwei weitere Einrichtungsschritte selbst durch:
 
 1. Erstellen Sie eine Verbindung, die den Markensichtbarkeit-Datensatz enthält.
 2. Erstellen Sie eine Datenansicht für diese Verbindung. Die Datenansicht stellt die folgenden Dimensionen und Metriken in Analysis Workspace zur Verfügung.
@@ -94,4 +96,4 @@ Weitere Informationen finden Sie unter:
 
 ## Ausgehende Integration
 
-Informationen zur ausgehenden Integration finden Sie unter [Customer Journey Analytics-Integration](https://experienceleague.adobe.com/de/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} in der Dokumentation zu Adobe Brand Visibility.
+Informationen zur ausgehenden Integration finden Sie unter [Customer Journey Analytics-Integration](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} in der Dokumentation zu Adobe Brand Visibility.
