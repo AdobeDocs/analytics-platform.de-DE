@@ -48,7 +48,7 @@ Das produktinterne Erlebnis für Kollegen ist in einem Chat-Panel auf der rechte
 
 ### Wählen Sie zwischen Coworker in Workspace und der Coworker-Anwendung
 
-Das produktinterne Erlebnis für Mitarbeiter verfügt über viele Funktionen wie das [CX Enterprise Coworker-Programm](https://experienceleague.adobe.com/en/docs/cx-enterprise-coworker/content/chat/analytics-chat) einschließlich der Fähigkeiten, auf die Sie Zugriff haben. Es gibt jedoch wichtige Unterschiede, die bestimmen, wann Sie eine verwenden können:
+Das produktinterne Erlebnis für Mitarbeiter verfügt über viele Funktionen wie das [CX Enterprise Coworker-Programm](https://experienceleague.adobe.com/de/docs/cx-enterprise-coworker/content/chat/analytics-chat) einschließlich der Fähigkeiten, auf die Sie Zugriff haben. Es gibt jedoch wichtige Unterschiede, die bestimmen, wann Sie eine verwenden können:
 
 | | Produktinternes Erlebnis für Mitarbeiter | Partneranwendung |
 | --- | --- | --- |
