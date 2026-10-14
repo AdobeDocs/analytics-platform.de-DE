@@ -1,6 +1,6 @@
 ---
-title: Untercontainer-Komponenten aus Arrays und Zuordnungen in Daten-Feeds
-description: Erfahren Sie, wie Customer Journey Analytics-Daten-Feeds Untercontainer-Komponenten aus Array- und Zuordnungsfeldern exportieren und wie Sie sie in Ihrem Data Warehouse abfragen.
+title: Komponenten von Unterereignissen aus Arrays und Zuordnungen in Daten-Feeds
+description: Erfahren Sie, wie Customer Journey Analytics-Daten-Feeds Unterereigniskomponenten aus Array- und Zuordnungsfeldern exportieren und wie Sie sie in Ihrem Data Warehouse abfragen.
 hide: true
 feature: Components
 product_v2:
@@ -14,52 +14,52 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 93107a7cf46e5d71bcb5c588eb7395fd1b88d150
+source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 1%
 ---
-# Komponenten von Unter-Containern in Daten-Feeds
+# Komponenten von Unterereignissen in Daten-Feeds
 
 {{release-limited-testing}}
 
-Unter-Container-Komponenten sind Dimensionen und Metriken, die auf Feldern innerhalb eines Arrays oder einer Zuordnung in Ihrem XDM-Schema basieren. Sie ermöglichen Ihnen die Analyse von Daten auf einer detaillierteren Ebene als auf Ereignisebene, z. B. die einzelnen Produkte bei einem Kauf. Informationen zur Verwendung dieser Daten in Segmenten finden Sie [Unter-Ereignisse](/help/components/segments/sub-event.md).
+Komponenten für Unterereignisse sind Dimensionen und Metriken, die auf Feldern innerhalb eines Arrays oder einer Zuordnung in Ihrem XDM-Schema basieren. Sie ermöglichen Ihnen die Analyse von Daten auf einer detaillierteren Ebene als auf Ereignisebene, z. B. die einzelnen Produkte bei einem Kauf. Informationen zur Verwendung dieser Daten in Segmenten finden Sie [Unter-Ereignisse](/help/components/segments/sub-event.md).
 
-Verwenden Sie die folgenden Informationen, um zu verstehen, wie Untercontainer-Komponenten aus Array- und Zuordnungsfeldern in Ihren Customer Journey Analytics-Daten-Feeds angezeigt werden.
+Verwenden Sie die folgenden Informationen, um zu verstehen, wie Unterereigniskomponenten aus Array- und Zuordnungsfeldern in Ihren Customer Journey Analytics-Daten-Feeds angezeigt werden.
 
-## Grundlagen zu Komponenten von Unter-Containern
+## Komponenten von Unterereignissen verstehen
 
-### Untergeordnete Container-Komponenten im XDM-Schema
+### Komponenten von Unterereignissen im XDM-Schema
 
-Im XDM-Schema ist jedes Element eines Arrays (ein Zeichenfolgen-Array oder ein Objekt-Array) ein Unter-Container. Jeder Eintrag in einem Zuordnungsfeld ist auch ein Untercontainer, wie unter [Zuordnungsfelder in Daten-Feeds](#map-fields-in-data-feeds) beschrieben. Dimensionen und Metriken, die auf den Feldern in einem Unter-Container basieren, sind Komponenten von Unter-Containern.
+Im XDM-Schema ist jedes Element eines Arrays (ein Zeichenfolgen-Array oder ein Objekt-Array) ein Unterereignis. Jeder Eintrag in einem Zuordnungsfeld ist auch ein Unterereignis, wie unter [Zuordnungsfelder in Daten-Feeds](#use-map-fields-in-data-feeds) beschrieben. Dimensionen und Metriken, die auf den Feldern innerhalb eines Unterereignisses basieren, sind Komponenten von Unterereignissen.
 
-Um Untercontainer innerhalb des XDM-Schemas in Adobe Experience Platform anzuzeigen, wählen Sie [!UICONTROL **Schemas**] aus und erweitern Sie dann ein Ereignis, das Untercontainer enthält.
+Um Unterereignisse innerhalb des XDM-Schemas in Adobe Experience Platform anzuzeigen, wählen Sie [!UICONTROL **Schemata**] aus und erweitern Sie dann ein Ereignis, das Unterereignisse enthält.
 
-Im folgenden Beispiel ist `Product list items` ein Objekt-Array, das verschiedene Untercontainer-Komponenten enthält.
+Im folgenden Beispiel ist `Product list items` ein Objekt-Array, das verschiedene Komponenten für Unterereignisse enthält.
 
-![XDM-Schema, das ein Objekt-Array und Untercontainer-Komponenten enthält](assets/df-sub-event-schema.png)
+![XDM-Schema, das ein Objekt-Array und Komponenten von Unterereignissen enthält](assets/df-sub-event-schema.png)
 
-### Unterschiede zwischen Unter-Containern zwischen Analysis Workspace und Daten-Feeds
+### Unterschiede bei Unterereignissen zwischen Analysis Workspace und Daten-Feeds
 
-Komponenten von Unter-Containern werden in Analysis Workspace anders dargestellt als Daten-Feeds in Customer Journey Analytics.
+Komponenten von Unterereignissen werden in Analysis Workspace anders als Daten-Feeds in Customer Journey Analytics dargestellt.
 
-| Standort | Darstellung der Untercontainer-Komponenten |
+| Standort | Darstellung der Komponenten von Unterereignissen |
 | --- | --- |
 | **Analysis Workspace (in Customer Journey Analytics)** | Kann als einzelne Komponenten getrennt von einer sichtbaren Hierarchie ausgewählt werden. |
 | **Daten-Feeds (in Customer Journey Analytics)** | Wird als Gruppe mit intakter Hierarchie dargestellt. |
 
-### Unterschiede zwischen Untercontainern in Adobe Analytics und Customer Journey Analytics
+### Unterschiede bei Unterereignissen zwischen Adobe Analytics und Customer Journey Analytics
 
-Daten von Unter-Containern (z. B. mehrere Produktdetails in einem einzigen Kaufereignis) werden in Customer Journey Analytics-Daten-Feeds anders angezeigt als in Adobe Analytics-Daten-Feeds. In der folgenden Tabelle wird verglichen, wie jedes Produkt Unter-Container-Daten darstellt.
+Daten von Unterereignissen (z. B. mehrere Produktdetails in einem einzigen Kaufereignis) werden in Customer Journey Analytics-Daten-Feeds anders angezeigt als in Adobe Analytics-Daten-Feeds. In der folgenden Tabelle wird verglichen, wie jedes Produkt Unterereignisdaten darstellt.
 
-| Produkt | So werden Untercontainer-Daten in Daten-Feeds angezeigt | Beispiel: Produktliste |
+| Produkt | So werden Unterereignisdaten in Daten-Feeds angezeigt | Beispiel: Produktliste |
 | --- | --- | --- |
 | **Adobe Analytics** | In eine durch Trennzeichen getrennte Zeichenfolge in einer einzigen Spalte reduziert. | Eine Produktliste enthält mehrere Produkte, die in einer einzigen Zeichenfolge gruppiert sind:<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
-| **Customer Journey Analytics** | Komponenten von Unter-Containern behalten die in Ihrem XDM-Schema definierte Hierarchie bei. Obwohl sie in derselben Spalte gruppiert sind, zeigen sie ihre relationale Hierarchie zum übergeordneten Ereignis und den gleichrangigen Untercontainern an. | Eine Produktliste behält ihre Hierarchie bei, die im XDM-Schema als Array definiert ist:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | Komponenten für Unterereignisse behalten die in Ihrem XDM-Schema definierte Hierarchie bei. Obwohl sie in derselben Spalte gruppiert sind, zeigen sie ihre relationale Hierarchie zum übergeordneten Ereignis und zu den gleichrangigen Unterereignissen an. | Eine Produktliste behält ihre Hierarchie bei, die im XDM-Schema als Array definiert ist:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
 
 {style="table-layout:auto"}
 
-### Beispiel für Unter-Container: Produkte in einem Kaufereignis
+### Beispiel für Unterereignisse: Produkte in einem Kaufereignis
 
 Ein Kunde kauft zwei Produkte in einer Bestellung: einen Akku-Bohrer und zwei Akku-Bohrer. Ihre Implementierung sendet ein einzelnes Kaufereignis, das beide Produkte im `productListItems` Objekt-Array enthält:
 
@@ -77,38 +77,38 @@ Ein Kunde kauft zwei Produkte in einer Bestellung: einen Akku-Bohrer und zwei Ak
 }
 ```
 
-Dieses Ereignis enthält zwei Untercontainer, einen für jedes Objekt im `productListItems`-Array. Die folgende Tabelle zeigt, welche Felder zum Ereignis und welche zu dessen Unter-Containern gehören.
+Dieses Ereignis enthält zwei Unterereignisse, eines für jedes Objekt im `productListItems`-Array. Die folgende Tabelle zeigt, welche Felder zum Ereignis und welche zu den Unterereignissen gehören.
 
 | Ebene | Felder | Beschreibung der Felder |
 | --- | --- | --- |
 | **Ereignis** | `eventType`, `timestamp`, `commerce.purchases.value` | Der Kauf insgesamt. Jedes Feld hat einen Wert für das Ereignis. Die Metrik **Bestellungen** zählt `1` für dieses Ereignis, unabhängig davon, wie viele Produkte es enthält. |
-| **Unter-Container** | `SKU`, `name`, `quantity`, `priceTotal` in jedem `productListItems` | Ein einzelnes Produkt im Kauf. Jedes Feld hat einen -Wert pro Produkt. Beispielsweise ist `quantity` für den Akku-Bohrer und `2` für den Akku-Bohrer `1`. |
+| **Unter-Ereignis** | `SKU`, `name`, `quantity`, `priceTotal` in jedem `productListItems` | Ein einzelnes Produkt im Kauf. Jedes Feld hat einen -Wert pro Produkt. Beispielsweise ist `quantity` für den Akku-Bohrer und `2` für den Akku-Bohrer `1`. |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->Untercontainer enthalten nur die Daten, die mit dem Ereignis gesendet werden. Customer Journey Analytics rekonstruiert den Inhalt des Warenkorbs nicht aus früheren Ereignissen, z. B. Hinzufügungen zum Warenkorb oder Checkouts. Damit Produkte als Untercontainer eines Kaufereignisses angezeigt werden, muss Ihre Implementierung sie in `productListItems` dieses Kaufereignisses einschließen.
+>Unterereignisse enthalten nur die Daten, die mit dem Ereignis gesendet werden. Customer Journey Analytics rekonstruiert den Inhalt des Warenkorbs nicht aus früheren Ereignissen, z. B. Hinzufügungen zum Warenkorb oder Checkouts. Damit Produkte als Unterereignisse eines Kaufereignisses angezeigt werden, muss sie Ihre Implementierung in `productListItems` dieses Kaufereignisses einschließen.
 
-## Hinzufügen von Unter-Container-Komponenten zu einem Daten-Feed
+## Hinzufügen von Unterereigniskomponenten zu einem Daten-Feed
 
-Wenn Sie eine Unter-Container-Komponente zu einem Daten-Feed hinzufügen, werden Sie in einem Dialogfeld aufgefordert, die anderen Komponenten aus demselben Unter-Container hinzuzufügen.
+Wenn Sie eine Unterereigniskomponente zu einem Daten-Feed hinzufügen, werden Sie in einem Dialogfeld aufgefordert, die anderen Komponenten aus demselben Unterereignis hinzuzufügen.
 
-![Dialogfeld, das Sie auffordert, zugehörige Unter-Container-Komponenten hinzuzufügen](assets/data-feeds-add-subevent.png)
+![Dialogfeld, das Sie auffordert, verwandte Unterereigniskomponenten hinzuzufügen](assets/data-feeds-add-subevent.png)
 
-Felder aus demselben Untercontainer werden auf der Arbeitsfläche als ausblendbare verschachtelte Gruppe und nicht als flaches Element angezeigt.
+Felder desselben Unterereignisses werden auf der Arbeitsfläche als ausblendbare verschachtelte Gruppe und nicht als flaches Element angezeigt.
 
-![Untercontainer-Gruppe](assets/data-feeds-subevent-added.png)
+![Gruppe der Unterereignisse](assets/data-feeds-subevent-added.png)
 
 Diese Gruppe spiegelt die zugrunde liegende Datenstruktur wider.
 
 In der Daten-Feed-Ausgabe werden alle diese Komponenten als verschachteltes Array in einer einzigen Spalte angezeigt.
 
-Informationen zum Hinzufügen von Komponenten, einschließlich Unter-Container-Komponenten, zu einem Daten-Feed finden Sie unter [Erstellen eines Daten-Feeds](/help/components/exports/cja-data-feeds/create-feed.md).
+Informationen zum Hinzufügen von Komponenten, einschließlich Unterereigniskomponenten, zu einem Daten-Feed finden Sie unter [Erstellen eines Daten-Feeds](/help/components/exports/cja-data-feeds/create-feed.md).
 
-## Abfrage von Unter-Container-Daten in der Daten-Feed-Ausgabe
+## Abfragen von Unterereignisdaten in der Daten-Feed-Ausgabe
 
-Da Untercontainer-Daten [in Customer Journey Analytics-Daten-Feeds anders angezeigt werden](#sub-container-differences-between-adobe-analytics-and-customer-journey-analytics) unterscheiden sich die Abfragen, die Sie dafür verwenden, von denen, die Sie für Adobe Analytics-Daten-Feeds verwenden.
+Da Unterereignisdaten [in Customer Journey Analytics-Daten-Feeds anders angezeigt werden](#sub-event-differences-between-adobe-analytics-and-customer-journey-analytics) unterscheiden sich die Abfragen, die Sie dafür verwenden, von denen, die Sie für Adobe Analytics-Daten-Feeds verwenden.
 
 Die folgenden Beispiele zeigen, wie Sie Ereignisse finden, die ein bestimmtes Produkt enthalten. Die Beispiele verwenden die Google BigQuery-Syntax. Andere Data Warehouses, wie Snowflake und Databricks, unterstützen denselben Ansatz mit geringfügigen Syntaxunterschieden.
 
@@ -184,7 +184,7 @@ WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
 
 ## Verwenden von Zuordnungsfeldern in Daten-Feeds
 
-Zuordnen von Feldern in Schlüssel-Wert-Paaren Ihres XDM-Schemas. Daten-Feeds exportieren jede Zuordnung als Array von Objekten auf die gleiche Weise wie andere [Unter-Container-Daten](#query-sub-container-data-in-data-feed-output). Jedes -Objekt enthält den Zuordnungsschlüssel und dessen Wert als separate Felder.
+Zuordnen von Feldern in Schlüssel-Wert-Paaren Ihres XDM-Schemas. Daten-Feeds exportieren jede Zuordnung als Array von Objekten auf die gleiche Weise wie andere [Unterereignisdaten](#query-sub-event-data-in-data-feed-output). Jedes -Objekt enthält den Zuordnungsschlüssel und dessen Wert als separate Felder.
 
 Feldnamen in der Ausgabe stammen von den Komponenten-IDs, die Sie für den Daten-Feed konfigurieren, und nicht von festen Namen wie `key` oder `value`. Die Beispiele in diesem Abschnitt verwenden Beispiel-Komponenten-IDs.
 

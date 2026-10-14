@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 93107a7cf46e5d71bcb5c588eb7395fd1b88d150
+source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
 workflow-type: tm+mt
 source-wordcount: '3924'
 ht-degree: 12%
@@ -129,7 +129,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
    * Einige Komponenten sind erforderlich, werden nicht unterstützt oder weisen Einschränkungen in Daten-Feeds auf. Weitere Informationen finden Sie [Komponentenverfügbarkeit in Daten-Feeds](/help/components/exports/cja-data-feeds/df-components.md).
 
-   * Wenn Sie eine Komponente hinzufügen, die zu einem XDM-Array-Feld (z. B. einem Adobe Journey Optimizer-Vorschlagsfeld) oder einem Zuordnungsfeld gehört, werden Sie in einem Dialogfeld aufgefordert, beliebige andere Komponenten aus demselben Untercontainer hinzuzufügen. In der Daten-Feed-Ausgabe werden alle diese Komponenten in einer Spalte angezeigt. Weitere Informationen finden Sie unter [Komponenten von Unter-Containern in Daten-Feeds](/help/components/exports/cja-data-feeds/df-sub-event.md)
+   * Wenn Sie eine Komponente hinzufügen, die zu einem XDM-Array-Feld (z. B. einem Adobe Journey Optimizer-Vorschlagsfeld) oder einem Zuordnungsfeld gehört, werden Sie in einem Dialogfeld aufgefordert, beliebige andere Komponenten aus demselben Unterereignis hinzuzufügen. In der Daten-Feed-Ausgabe werden alle diese Komponenten in einer Spalte angezeigt. Weitere Informationen finden Sie unter [Komponenten von Unterereignissen in Daten-Feeds](/help/components/exports/cja-data-feeds/df-sub-event.md)
 
 1. (Optional) Ordnen Sie Komponenten auf der Arbeitsfläche neu an, indem Sie sie ziehen. Die von Ihnen definierte Reihenfolge wird als Spaltenreihenfolge in der exportierten Daten-Feed-Datei beibehalten.
 
