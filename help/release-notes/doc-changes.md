@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
+source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
 workflow-type: tm+mt
-source-wordcount: '7183'
-ht-degree: 96%
+source-wordcount: '7222'
+ht-degree: 95%
 ---
 
 # Customer Journey Analytics – Aktualisierungen der Dokumentation
@@ -70,8 +70,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 |---|---|
 | **Oktober 2026** | |
+| Bezahlter Content Analytics-Medienkanal | Umfassende [Dokumentation](/help/content-analytics/config/paid-media.md) zur automatischen Konfiguration von Datensätzen und Datenansichtskomponenten, die aus der Verwendung eines Paid-Media-Quell-Connectors (wie Google Ads oder Meta Ads) und der Konfiguration und Aktivierung des Paid-Media-Kanals von Content Analytics resultieren. |
 | Conversation Insights | [Dokumentation](/help/conversation-insights/overview.md) für Konversationseinblicke. |
-| Oktober 2026 | |
 | Brand Visibility | Die Dokumentation für die Integration der eingehenden [Markensichtbarkeit-](/help/integrations/bv/bv.md#inbound-integration) wurde mit weiteren Details aktualisiert. |
 | **September 2026** | |
 | Journey-Leinwandvergleich bei Pfeilen und Fallout | Die Einstellung &quot;[!UICONTROL Vergleichen mit]&quot; in [Konfigurieren einer Journey-Arbeitsflächen-Visualisierung](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) wurde aktualisiert, um anzuzeigen, dass die prozentuale Änderung zwischen Datumsbereichen jetzt auf jedem Knoten, Pfeil und Fallout im Journey angezeigt wird. |

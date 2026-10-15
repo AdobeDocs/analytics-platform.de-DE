@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 1af0b3565fe054a5073f574d53b82f561df1abda
+source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
 workflow-type: tm+mt
-source-wordcount: '4800'
-ht-degree: 56%
+source-wordcount: '4844'
+ht-degree: 55%
 ---
 
 # Geführte Content Analytics-Konfiguration
@@ -705,6 +705,11 @@ Wenn Sie auf **[!UICONTROL Speichern]** klicken, wird Content Analytics automati
 * Aktualisiert die Customer Journey Analytics-Verbindung, um Paid-Media-Datensätze aus allen verbundenen Quell-Connectoren in diese Sandbox aufzunehmen.
 * Aktiviert Paid-Media-Dimensionen und -Metriken in allen ausgewählten Datenansichten.
 * Verwendet Paid-Media-Kanäle als filterbare Dimension in Workspace-Berichten.
+
+Siehe [Automatische Konfiguration bezahlter Medien](./paid-media.md) für Details zu:
+
+* Die automatische Konfiguration von Paid-Media-Datensätzen, die aus der ersten Verwendung eines Paid-Media-Quell-Connectors resultieren.
+* Die Datenansichtskomponenten, die bei der Konfiguration und Aktivierung des Paid-Media-Kanals in Content Analytics erstellt wurden.
 
 ### Speichern {#paidmedia-save}
 
