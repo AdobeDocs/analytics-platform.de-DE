@@ -2,11 +2,12 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Adobe Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
+source-git-commit: 65d4115d4c292cff7e074d37a91563d369072ba5
 workflow-type: tm+mt
-source-wordcount: '1520'
+source-wordcount: '1526'
 ht-degree: 88%
 ---
+
 # Handbuch zu Adobe Customer Journey Analytics {#using}
 
 + [Handbuch zu Adobe Customer Journey Analytics](../getting-started/cja-landing.md)
@@ -242,6 +243,9 @@ ht-degree: 88%
       + [Überblick](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
       + [Konfigurieren](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
       + [Fehlerbehebung](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+    + {hide-from-toc}[Konversationsüberprüfung](../analysis-workspace/visualizations/conversation-insights/conversation-review.md)
+    + {hide-from-toc}[Konversationszusammenfassungen](../analysis-workspace/visualizations/conversation-insights/conversation-summaries.md)
+    + {hide-from-toc}[Trendthemen](../analysis-workspace/visualizations/conversation-insights/trending-topics.md)
     + [Bereich (gestapelt)](../analysis-workspace/visualizations/area.md)
     + [Balken (gestapelt)](../analysis-workspace/visualizations/bar.md)
     + [Bullet](../analysis-workspace/visualizations/bullet-graph.md)
