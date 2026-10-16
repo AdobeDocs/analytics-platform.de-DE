@@ -141,7 +141,7 @@ Wenn Sie einen Mitarbeiter bitten, im Projekt etwas zu erstellen oder zu bearbei
    | _Machen Sie die hinzugefügte Aufschlüsselung rückgängig_ | Macht die angegebene Änderung rückgängig. |
    | _Löschen der alten Bedienfelder_ | Listet die Bereiche auf, die gelöscht werden sollen, und wartet auf Ihre Bestätigung, bevor sie gelöscht werden. |
 
-1. Überprüfen Sie die Änderungen, die ein Mitarbeiter am Projekt vorgenommen hat. Weitere Informationen finden Sie unter [Überprüfen der Ergebnisse von ](#verify-coworker-results).
+1. Überprüfen Sie die Änderungen, die ein Mitarbeiter am Projekt vorgenommen hat. Weitere Informationen finden Sie unter [Überprüfen der Ergebnisse von &#x200B;](#verify-coworker-results).
 
 ### Fragen zu einem Projekt stellen
 
@@ -164,7 +164,7 @@ Wenn Sie Fragen zu einem Projekt stellen, antwortet der Mitarbeiter im Chat-Bedi
    | _Wie färbe ich Zellen basierend auf ihren Werten?_ | Erklärt die Schritte im Chatbedienfeld. |
    | _Erläuterung der Metrik „Absprungrate“_ | Erklärt die Komponente im Chatbedienfeld. Die Erklärung kommt nicht aus dem [Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md). Die Unterstützung für Datenwörterbuchdefinitionen ist für eine künftige Version geplant. |
 
-1. Überprüfen Sie die Antwort von Coworker. Weitere Informationen finden Sie unter [Überprüfen der Ergebnisse von ](#verify-coworker-results).
+1. Überprüfen Sie die Antwort von Coworker. Weitere Informationen finden Sie unter [Überprüfen der Ergebnisse von &#x200B;](#verify-coworker-results).
 
 ## Überprüfen der Ergebnisse der Mitarbeiter
 
