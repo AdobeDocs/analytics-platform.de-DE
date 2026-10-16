@@ -4,12 +4,11 @@ title: Trend-Themen
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: 137dba69c8827f3b67d5656760d7715437c58b73
+source-git-commit: 65d4115d4c292cff7e074d37a91563d369072ba5
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 5%
 ---
-
 # Trend-Themen
 
 >[!CONTEXTUALHELP]
@@ -30,7 +29,7 @@ Sie können nach bestimmten Themen suchen und die Anzahl und den Prozentsatz fü
 
 So erstellen und konfigurieren Sie eine Visualisierung von Trend-Themen:
 
-1. Fügen Sie ![&#x200B; Visualisierung &#x200B;](/help/assets/icons/Feed.svg)Feed **[!UICONTROL Trendthemen]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Fügen Sie ![ Visualisierung ](/help/assets/icons/Feed.svg)Feed **[!UICONTROL Trendthemen]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. In den **[!UICONTROL Trending Topics]** Visualisierungskonfiguration:
 
