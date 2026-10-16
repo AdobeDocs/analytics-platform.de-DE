@@ -137,9 +137,9 @@ Neben dem Hinzufügen als Produktadmin zum **Customer Journey Analytics-Produktp
   | [!UICONTROL Data Governance] | [!UICONTROL Anzeigen von Datennutzungsrichtlinien] | Schreibgeschützter Zugriff auf Datennutzungsrichtlinien Ihres Unternehmens. |
   | [!UICONTROL Data Governance] | [!UICONTROL Verwalten von Datennutzungsrichtlinien] | Zugriff zum Lesen, Erstellen, Bearbeiten und Löschen von Datennutzungsrichtlinien. |
 
-  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Sandboxes und Berechtigungen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Sandboxes und Berechtigungen](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home#sandboxes-and-permissions).
 
-* Wenn Journey Optimizer in Customer Journey Analytics integriert ist, wo Journey Optimizer-Verbindungen vorhanden sind, müssen [Journey](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability)Berechtigungen auch hinzugefügt werden, um auf -Verbindungen zuzugreifen:
+* Wenn Journey Optimizer in Customer Journey Analytics integriert ist, wo Journey Optimizer-Verbindungen vorhanden sind, müssen [Journey](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability)Berechtigungen auch hinzugefügt werden, um auf -Verbindungen zuzugreifen:
 
   | Kategorie | Berechtigung | Beschreibung |
   |---|---|---|
@@ -150,14 +150,14 @@ Neben dem Hinzufügen als Produktadmin zum **Customer Journey Analytics-Produktp
 
 * Exportieren von Datensätzen zu [Zielen](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/ui/activate/export-datasets)
 
-  Um diese Aufgabe auszuführen, müssen Benutzende Teil einer **Experience Platform-Rolle sein** die die folgenden [Zielberechtigungen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home#access-controls) bereitstellt:
+  Um diese Aufgabe auszuführen, müssen Benutzende Teil einer **Experience Platform-Rolle sein** die die folgenden [Zielberechtigungen](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/home#access-controls) bereitstellt:
 
   | Kategorie | Berechtigung | Beschreibung |
   |---|---|---|
   | [!UICONTROL Ziele] | [!UICONTROL Verwalten von Zielen] | Zugriff zum Lesen, Erstellen und Löschen von Zielverbindungen und Zielkonten. |
   | [!UICONTROL Ziele] | [!UICONTROL Aktivieren von Zielen] | Ermöglicht Benutzerinnen und Benutzern das Aktivieren von Segmenten für vorhandene Ziele. Aktiviert den Zuordnungsschritt im Aktivierungs-Workflow. Diese Berechtigung erfordert, dass Benutzenden, die Daten für Ziele aktivieren, auch die Berechtigung „Anzeigen von Zielen“ gewährt wird. |
 
-  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Sandboxes und Berechtigungen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Sandboxes und Berechtigungen](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home#sandboxes-and-permissions).
 
 
 * Verwenden der [BI-Erweiterung](../data-views/bi-extension.md)
