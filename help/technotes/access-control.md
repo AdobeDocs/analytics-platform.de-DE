@@ -70,10 +70,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2a01268e537fb7982f698ccf9c14b831edf8437f
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '1764'
-ht-degree: 75%
+ht-degree: 74%
 ---
 # Zugriffssteuerung
 
@@ -137,9 +137,9 @@ Neben dem Hinzufügen als Produktadmin zum **Customer Journey Analytics-Produktp
   | [!UICONTROL Data Governance] | [!UICONTROL Anzeigen von Datennutzungsrichtlinien] | Schreibgeschützter Zugriff auf Datennutzungsrichtlinien Ihres Unternehmens. |
   | [!UICONTROL Data Governance] | [!UICONTROL Verwalten von Datennutzungsrichtlinien] | Zugriff zum Lesen, Erstellen, Bearbeiten und Löschen von Datennutzungsrichtlinien. |
 
-  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Sandboxes und Berechtigungen](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Sandboxes und Berechtigungen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
 
-* Wenn Journey Optimizer in Customer Journey Analytics integriert ist, wo Journey Optimizer-Verbindungen vorhanden sind, müssen [Journey](https://experienceleague.adobe.com/de/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability)Berechtigungen auch hinzugefügt werden, um auf -Verbindungen zuzugreifen:
+* Wenn Journey Optimizer in Customer Journey Analytics integriert ist, wo Journey Optimizer-Verbindungen vorhanden sind, müssen [Journey](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability)Berechtigungen auch hinzugefügt werden, um auf -Verbindungen zuzugreifen:
 
   | Kategorie | Berechtigung | Beschreibung |
   |---|---|---|
@@ -150,14 +150,14 @@ Neben dem Hinzufügen als Produktadmin zum **Customer Journey Analytics-Produktp
 
 * Exportieren von Datensätzen zu [Zielen](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/ui/activate/export-datasets)
 
-  Um diese Aufgabe auszuführen, müssen Benutzende Teil einer **Experience Platform-Rolle sein** die die folgenden [Zielberechtigungen](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/home#access-controls) bereitstellt:
+  Um diese Aufgabe auszuführen, müssen Benutzende Teil einer **Experience Platform-Rolle sein** die die folgenden [Zielberechtigungen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home#access-controls) bereitstellt:
 
   | Kategorie | Berechtigung | Beschreibung |
   |---|---|---|
   | [!UICONTROL Ziele] | [!UICONTROL Verwalten von Zielen] | Zugriff zum Lesen, Erstellen und Löschen von Zielverbindungen und Zielkonten. |
   | [!UICONTROL Ziele] | [!UICONTROL Aktivieren von Zielen] | Ermöglicht Benutzerinnen und Benutzern das Aktivieren von Segmenten für vorhandene Ziele. Aktiviert den Zuordnungsschritt im Aktivierungs-Workflow. Diese Berechtigung erfordert, dass Benutzenden, die Daten für Ziele aktivieren, auch die Berechtigung „Anzeigen von Zielen“ gewährt wird. |
 
-  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Sandboxes und Berechtigungen](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+  Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Sandboxes und Berechtigungen](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
 
 
 * Verwenden der [BI-Erweiterung](../data-views/bi-extension.md)
@@ -191,6 +191,8 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 
 ![Admin Console-Berechtigungen](assets/permissions.png)
 
+<!-- FOLLOW-UP (waiting on PM): The AI Assistant: Product Knowledge and Data Insights Agent permissions haven't been updated in the product yet. When the PM confirms the Coworker permission name and category, update both rows below. Links to the retired AI Assistant and Data Insights Agent pages were removed. -->
+
 | Kategorie | Berechtigung | Beschreibung |
 | --- | --- | ---|
 | [!UICONTROL Datenansichten] | *Name der Datenansicht* | Wenn **[!UICONTROL Auto-Include]** auf **[!UICONTROL Ein]** umgeschaltet wird, können Benutzende, die Teil dieses Produktprofils sind, alle vorhandenen und neu erstellten Datenansichten anzeigen. Wenn diese Einstellung auf **[!UICONTROL Aus]** gesetzt ist, können bestimmte Datenansichten ausgewählt werden, auf die Benutzende Zugriff haben. |
@@ -205,8 +207,8 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zugriff auf Auditprotokolle] | Erzwingt die Berechtigungsprüfung für die [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) und die Benutzeroberfläche für Audit-Protokolle. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Freigeben von Projekt-Links für alle] | Ermöglicht Benutzenden das [Freigeben von Projekten für alle](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/curate-share/share-projects). |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Prognose] | Ermöglicht Benutzenden den Zugriff auf die [Prognose](../analysis-workspace/c-forecast/forecasting.md)-Funktion in Analysis Workspace |
-| [!UICONTROL Reporting-Tools] | [!UICONTROL KI-Assistent: Produktkenntnisse] | Ermöglicht Benutzenden den Zugriff auf den [KI-Assistenten](../ai-assistant.md) für Produktkenntnisse. |
-| [!UICONTROL Reporting-Tools] | [!UICONTROL Data Insights Agent] | Ermöglicht Benutzenden den Zugriff auf die [Data Insights Agent](../data-analysis-ai.md) für KI-gesteuerte Dateneinblicke. |
+| [!UICONTROL Reporting-Tools] | [!UICONTROL KI-Assistent: Produktkenntnisse] | Ermöglicht Benutzenden den Zugriff auf den KI-Assistenten, um Produktkenntnisse zu erhalten. |
+| [!UICONTROL Reporting-Tools] | [!UICONTROL Data Insights Agent] | Ermöglicht Benutzenden den Zugriff auf die Data Insights Agent für KI-gesteuerte Dateneinblicke. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Intelligente Untertitel] | Ermöglicht Benutzenden den Zugriff auf [intelligente Beschriftungen](/help/analysis-workspace/visualizations/intelligent-captions.md). |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL MCP-Zugriff] | Ermöglicht Benutzenden den Zugriff auf den [Customer Journey Analytics MCP-Server](https://developer.adobe.com/analytics-mcp/docs/cja/). |
 | [!UICONTROL Tools für die Datenansicht] | [!UICONTROL Vollständiger Tabellenexport] | Ermöglicht Benutzenden das [Exportieren von vollständigen Tabellen in die Cloud](/help/analysis-workspace/export/export-cloud.md). |

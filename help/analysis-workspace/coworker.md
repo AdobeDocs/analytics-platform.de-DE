@@ -23,9 +23,9 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 8b1f9d95fb38c0fcb1a7f3d9b41bf3cfb9355ed9
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1945'
 ht-degree: 0%
 ---
 # Verwenden des produktinternen Erlebnisses für Kollegen
@@ -42,13 +42,15 @@ Das produktinterne Erlebnis für Kollegen ist in einem Chat-Panel auf der rechte
 
   Wenn Sie in Workspace nicht auf einen Mitarbeiter zugreifen können, wenden Sie sich an Ihren Administrator. Weitere Informationen finden Sie unter [IMS-Organisationsvoreinstellungen](/help/analysis-workspace/user-preferences.md#ims-organization-preferences). <!-- need to update this section with the new toggle -->
 
-<!-- **[PLACEHOLDER: Permissions and product profile requirements. Include the Admin Console steps to grant access, if applicable.]** -->
+<!-- FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME. -->
+
+* **Berechtigungen**: In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung  Reporting-Tools **[!UICONTROL Coworker]** den Zugriff auf einen Coworker. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Berechtigung zu Ihrem Produktprofil hinzufügen. Weitere Informationen finden Sie unter [Zugriffssteuerung](/help/technotes/access-control.md#access-control).
 
 * **Datenansichtszugriff**: Der -Mitarbeiter verwendet Ihre bestehenden Analysis Workspace- und Datenansichtsberechtigungen. Es kann nicht auf Daten oder Komponenten zugreifen, auf die Sie noch keinen Zugriff haben.
 
 ### Wählen Sie zwischen Coworker in Workspace und der Coworker-Anwendung
 
-Das produktinterne Erlebnis für Mitarbeiter verfügt über viele Funktionen wie das [CX Enterprise Coworker-Programm](https://experienceleague.adobe.com/de/docs/cx-enterprise-coworker/content/chat/analytics-chat) einschließlich der Fähigkeiten, auf die Sie Zugriff haben. Es gibt jedoch wichtige Unterschiede, die bestimmen, wann Sie eine verwenden können:
+Das produktinterne Erlebnis für Mitarbeiter verfügt über viele Funktionen wie das [CX Enterprise Coworker-Programm](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-chat) einschließlich der Fähigkeiten, auf die Sie Zugriff haben. Es gibt jedoch wichtige Unterschiede, die bestimmen, wann Sie eine verwenden können:
 
 | | Produktinternes Erlebnis für Mitarbeiter | Partneranwendung |
 | --- | --- | --- |
@@ -112,7 +114,7 @@ Wenn Sie einen Mitarbeiter bitten, im Projekt etwas zu erstellen oder zu bearbei
 
 1. Öffnen Sie in Customer Journey Analytics ein vorhandenes Workspace-Projekt oder erstellen Sie ein neues Projekt.
 
-1. **[PLACEHOLDER: Öffnen des Bedienfelds „Mitarbeiter“, z. B. Name und Position des Symbols. Fügen Sie einen Screenshot hinzu.]**
+1. Wählen Sie das **Mitarbeiter**-Symbol ![Mitarbeiter fragen](/help/assets/icons/coworker.svg) in der oberen rechten Ecke der Kopfzeile aus, um das Bedienfeld für den Mitarbeiter-Chat zu öffnen.
 
 1. Beschreiben Sie im Chat-Panel, was Sie von einem Kollegen erwarten.
 
@@ -139,7 +141,7 @@ Wenn Sie einen Mitarbeiter bitten, im Projekt etwas zu erstellen oder zu bearbei
    | _Machen Sie die hinzugefügte Aufschlüsselung rückgängig_ | Macht die angegebene Änderung rückgängig. |
    | _Löschen der alten Bedienfelder_ | Listet die Bereiche auf, die gelöscht werden sollen, und wartet auf Ihre Bestätigung, bevor sie gelöscht werden. |
 
-1. Überprüfen Sie die Änderungen, die ein Mitarbeiter am Projekt vorgenommen hat. Weitere Informationen finden Sie unter [Überprüfen der Ergebnisse von &#x200B;](#verify-coworker-results).
+1. Überprüfen Sie die Änderungen, die ein Mitarbeiter am Projekt vorgenommen hat. Weitere Informationen finden Sie unter [Überprüfen der Ergebnisse von ](#verify-coworker-results).
 
 ### Fragen zu einem Projekt stellen
 
@@ -147,7 +149,7 @@ Wenn Sie Fragen zu einem Projekt stellen, antwortet der Mitarbeiter im Chat-Bedi
 
 1. Öffnen Sie in Customer Journey Analytics ein vorhandenes Workspace-Projekt oder erstellen Sie ein neues Projekt.
 
-1. **[PLACEHOLDER: Öffnen des Bedienfelds „Mitarbeiter“, z. B. Name und Position des Symbols. Fügen Sie einen Screenshot hinzu.]**
+1. Wählen Sie das **Mitarbeiter**-Symbol ![Mitarbeiter fragen](/help/assets/icons/coworker.svg) in der oberen rechten Ecke der Kopfzeile aus, um das Bedienfeld für den Mitarbeiter-Chat zu öffnen.
 
 1. Beschreiben Sie im Chat-Panel, was Sie von einem Kollegen erwarten.
 
@@ -162,7 +164,7 @@ Wenn Sie Fragen zu einem Projekt stellen, antwortet der Mitarbeiter im Chat-Bedi
    | _Wie färbe ich Zellen basierend auf ihren Werten?_ | Erklärt die Schritte im Chatbedienfeld. |
    | _Erläuterung der Metrik „Absprungrate“_ | Erklärt die Komponente im Chatbedienfeld. Die Erklärung kommt nicht aus dem [Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md). Die Unterstützung für Datenwörterbuchdefinitionen ist für eine künftige Version geplant. |
 
-1. Überprüfen Sie die Antwort von Coworker. Weitere Informationen finden Sie unter [Überprüfen der Ergebnisse von &#x200B;](#verify-coworker-results).
+1. Überprüfen Sie die Antwort von Coworker. Weitere Informationen finden Sie unter [Überprüfen der Ergebnisse von ](#verify-coworker-results).
 
 ## Überprüfen der Ergebnisse der Mitarbeiter
 

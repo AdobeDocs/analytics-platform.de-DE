@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '3372'
+source-wordcount: '3367'
 ht-degree: 93%
 ---
 # Upgrade von Adobe Analytics auf Customer Journey Analytics
@@ -187,7 +187,7 @@ Jeder Schritt bietet eine allgemeine Erklärung eines detaillierteren Prozesses.
 
    Verwenden Sie [die Funktionsvorlage Marketing-Kanäle](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"} in abgeleiteten Feldern, um schnell ein abgeleitetes Feld für Marketing-Kanäle zu erstellen.
 
-1. [Vergleichen Sie Daten in Adobe Analytics aus Ihrer alten Implementierung mit Daten aus Ihrer neuen Implementierung in Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/use-cases/data-insights/data-validation-aa-cja) und stellen Sie sicher, dass Sie die Unterschiede und ihre Gründe verstehen.
+1. [Vergleichen Sie Daten in Adobe Analytics aus Ihrer alten Implementierung mit Daten aus Ihrer neuen Implementierung in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/data-validation-aa-cja) und stellen Sie sicher, dass Sie die Unterschiede und ihre Gründe verstehen.
 
 1. Übertragen von historischen Daten aus Adobe Analytics mithilfe des Analytics-Quell-Connectors:
 

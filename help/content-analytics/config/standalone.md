@@ -43,7 +43,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '2631'
 ht-degree: 10%
@@ -76,8 +76,8 @@ In diesem Handbuch werden verschiedene technische Begriffe aus Experience Platfo
 | **Verbindung** | [Verbindungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-connections/overview) definieren, welche Experience Platform-Datensätze aufgenommen werden. Eine Verbindung definiert die Verknüpfung zwischen Ihrem Datensatz (in dem Daten in AEP gespeichert werden) und Customer Journey Analytics (in dem Sie ihn analysieren). Eine Verbindung stellt Ihre erfassten Daten für das Reporting zur Verfügung. |
 | **Datenansicht** | Eine [Datenansicht](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/data-views) ist ein Container, mit dem Sie bestimmen können, wie Daten aus einer Verbindung interpretiert werden. Eine Datenansicht gibt alle Dimensionen und Metriken an, über die Sie Berichte erstellen können. Eine Datenansicht ist wie eine Konfiguration, die die Zeilen und Spalten bestimmt, die Sie in Ihrer Analyse verwenden können. |
 | **Analysis Workspace** | [Analysis Workspace](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/home) ist eine Drag-and-Drop-Browser-Oberfläche, mit der Sie Berichte und Analysen für Content Analytics erstellen können. |
-| **Erlebnis** | In Content Analytics bezieht sich [Erlebnis](https://experienceleague.adobe.com/de/docs/analytics-platform/using/content-analytics/content-analytics#terminology) auf den gesamten Textinhalt auf einer Web-Seite, der basierend auf der Seiten-URL erfasst und analysiert werden kann. |
-| **Asset** | In Content Analytics ist [Asset](https://experienceleague.adobe.com/de/docs/analytics-platform/using/content-analytics/content-analytics#terminology) ein individueller und eindeutiger Inhalt, wie z. B. ein Bild. |
+| **Erlebnis** | In Content Analytics bezieht sich [Erlebnis](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) auf den gesamten Textinhalt auf einer Web-Seite, der basierend auf der Seiten-URL erfasst und analysiert werden kann. |
+| **Asset** | In Content Analytics ist [Asset](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) ein individueller und eindeutiger Inhalt, wie z. B. ein Bild. |
 
 
 ## Setup-Übersicht
@@ -89,7 +89,7 @@ Diese Konfiguration führt Sie beim Einrichten aller Anwendungen, die für eine 
 1. **Konfigurieren Sie die Zugriffssteuerung und Berechtigungen** um die Content Analytics-Konfiguration und -Implementierung zu unterstützen.
 1. **Richten Sie ein Schema und einen** ein, um das Modell (Schema) der Daten zu definieren, aus denen Sie Inhaltsanalyseeinblicke erfassen möchten, und um festzulegen, wo diese Daten (Datensatz) erfasst werden sollen.
 
-**Phase 2** - [Konfigurieren der &#x200B;](#configure-data-collection). In dieser Phase erstellen Sie die Pipeline, die Inhaltsdaten von Ihrer Website erfasst. Content Analytics weiß also, mit welchen Inhalten Besucherinnen und Besucher interagieren.
+**Phase 2** - [Konfigurieren der ](#configure-data-collection). In dieser Phase erstellen Sie die Pipeline, die Inhaltsdaten von Ihrer Website erfasst. Content Analytics weiß also, mit welchen Inhalten Besucherinnen und Besucher interagieren.
 
 1. **Einrichten eines Datenstroms**, um zu konfigurieren, wie Ihre erfassten Daten an den Datensatz weitergeleitet werden.
 1. **Website-Tags verwenden** um Regeln und Datenelemente entsprechend den Daten in Ihrer Datenschicht auf Ihrer Website zu konfigurieren und sicherzustellen, dass Daten an den konfigurierten Datenstrom gesendet werden.
@@ -242,7 +242,7 @@ Für Content Analytics müssen Sie überprüfen, ob die folgenden Customer Journ
   * Zugriff auf Audit-Protokolle
   * Projekt-Links für alle freigeben
   * Prognose
-  * KI-Assistent: Produktkenntnisse
+  * KI-Assistent: Produktkenntnisse <!-- FOLLOW-UP (waiting on PM): These two permissions haven't been updated in the product yet. Update when the PM confirms the Coworker permission name. -->
   * Data Insights Agent
   * Intelligente Beschriftungen
 
@@ -270,7 +270,7 @@ So überprüfen und aktualisieren Sie diese Berechtigungen für Customer Journey
 
 ### Einrichten von Schema und Datensatz
 
-Um Daten von Ihrer Website für Content Analytics Insights zu erfassen, müssen Sie zunächst definieren, welche Art von Daten Sie erfassen möchten. Außerdem müssen Sie festlegen, wie diese Daten gespeichert werden. Beide Konzepte werden in der Kurzanleitung [Einrichten eines Schemas und &#x200B;](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset)) [Aufnehmen von Daten über die Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) und [Aufnehmen von Daten über die Adobe Experience Platform Mobile SDK](/help/data-ingestion/aepmobilesdk.md) erläutert.
+Um Daten von Ihrer Website für Content Analytics Insights zu erfassen, müssen Sie zunächst definieren, welche Art von Daten Sie erfassen möchten. Außerdem müssen Sie festlegen, wie diese Daten gespeichert werden. Beide Konzepte werden in der Kurzanleitung [Einrichten eines Schemas und ](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset)) [Aufnehmen von Daten über die Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) und [Aufnehmen von Daten über die Adobe Experience Platform Mobile SDK](/help/data-ingestion/aepmobilesdk.md) erläutert.
 
 
 ## Konfigurieren der Datenerfassung
@@ -314,7 +314,7 @@ Sie haben jetzt alle Voraussetzungen, um Content Analytics zu konfigurieren.
 
 #### Geführte Konfiguration
 
-Verwenden Sie den [Konfigurationsassistenten](guided.md) und wählen Sie die Datenansicht aus, die Sie im Rahmen des Schritts [Einrichten einer &#x200B;](#set-up-a-data-view)&quot; erstellt haben. Durch diese Auswahl wird sichergestellt, dass Content Analytics zusätzlich zu den Daten konfiguriert und implementiert wird, die Sie auf Ihrer Website und in Ihrer Mobile App erfassen.
+Verwenden Sie den [Konfigurationsassistenten](guided.md) und wählen Sie die Datenansicht aus, die Sie im Rahmen des Schritts [Einrichten einer ](#set-up-a-data-view)&quot; erstellt haben. Durch diese Auswahl wird sichergestellt, dass Content Analytics zusätzlich zu den Daten konfiguriert und implementiert wird, die Sie auf Ihrer Website und in Ihrer Mobile App erfassen.
 
 Beachten Sie, dass der Assistent Geführte Konfiguration die folgenden zusätzlichen spezifischen Content Analytics-Objekte konfiguriert:
 
@@ -329,7 +329,7 @@ Beachten Sie, dass der Assistent Geführte Konfiguration die folgenden zusätzli
 
 #### Manuelle Konfiguration
 
-Um Content Analytics für Ihre Website zu implementieren, müssen Sie die Content Analytics Tags-Eigenschaft [manuell) &#x200B;](manual.md).
+Um Content Analytics für Ihre Website zu implementieren, müssen Sie die Content Analytics Tags-Eigenschaft [manuell) ](manual.md).
 
 
 ### Einrichten eines Projekts

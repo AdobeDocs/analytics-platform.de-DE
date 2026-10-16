@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 10%
@@ -46,15 +46,17 @@ Die **[!UICONTROL Datenansichten]** zeigt eine Tabelle aller verfügbaren Datena
 
 Die folgenden Spalten und Symbole sind in der Tabelle verfügbar:
 
+<!-- FOLLOW-UP (engineering): The Data views table UI still shows a Data Insights Agent column, a Data Insights Agent Status pop-up, and Enable/Disable for Data Insights Agent context menu options. These presumably should change to Coworker. Log with engineering, then update the labels, descriptions, and the data-views-dia-status.png screenshot. -->
+
 | Spalte oder Symbol | Beschreibung |
 | --- | --- |
 | **[!UICONTROL Name]** | Der Name der Datenansicht. |
 | ![Information](/help/assets/icons/InfoOutline.svg) | Um Informationen zur Datenansicht anzuzeigen, wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) neben dem Namen der Datenansicht aus<br/>. In einem Popup-Fenster werden Details zur Datenansicht angezeigt. |
-| ![Mehr](/help/assets/icons/More.svg) | Wählen Sie ![Mehr](/help/assets/icons/More.svg) aus, um ein Kontextmenü zu öffnen. Sie können Folgendes auswählen<br/>![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]**, um [&#x200B; Datenansicht &#x200B;](#edit-data-views) bearbeiten.<br/>![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]**, um [eine Datenansicht zu kopieren](#copy-data-views).<br/>![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** um [Löschen](#delete-data-views) eine Datenansicht.<br/>![DateiCSV](/help/assets/icons/FileCSV.svg)**[!UICONTROL Exportieren in CSV]** zu [Exportieren der Datenansicht in eine CSV-Datei](#export-data-views-to-csv).<br/>![&#128279;](/help/assets/icons/AddCircle.svg)ProjektHinzufügen **[[!UICONTROL Erstellen eines neuen Workspace-Projekts]](#create-project-from-data-views) für die Datenansicht.<br/>**&#x200B;**<br/>![&#x200B; &#x200B;](/help/assets/icons/RemoveCircle.svg)**&#x200B;**&#x200B;Hinzufügen![](/help/assets/icons/ProjectAdd.svg)Für Data Insights Agentaktivieren, um eine Datenansicht für die Data Insights Agent zu aktivieren.&rbrack;** EntfernenCircleCircle&lbrack;DeaktivierenDeaktivieren Sie eine Datenansicht für die Data Insights Agent. |
+| ![Mehr](/help/assets/icons/More.svg) | Wählen Sie ![Mehr](/help/assets/icons/More.svg) aus, um ein Kontextmenü zu öffnen. Sie können Folgendes auswählen<br/>![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]**, um [ Datenansicht ](#edit-data-views) bearbeiten.<br/>![Kopieren](/help/assets/icons/Copy.svg) **[!UICONTROL Kopieren]**, um [eine Datenansicht zu kopieren](#copy-data-views).<br/>![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** um [Löschen](#delete-data-views) eine Datenansicht.<br/>![DateiCSV](/help/assets/icons/FileCSV.svg)**[!UICONTROL Exportieren in CSV]** zu [Exportieren der Datenansicht in eine CSV-Datei](#export-data-views-to-csv).<br/>![ProjektHinzufügen **[!UICONTROL Erstellen eines neuen Workspace-Projekts](#create-project-from-data-views) für die Datenansicht.<br/>![](/help/assets/icons/AddCircle.svg)****<br/>![ ](/help/assets/icons/RemoveCircle.svg)****Hinzufügen](/help/assets/icons/ProjectAdd.svg)Für Data Insights Agentaktivieren, um eine Datenansicht für die Data Insights Agent zu aktivieren.]** EntfernenCircleCircle[DeaktivierenDeaktivieren Sie eine Datenansicht für die Data Insights Agent. |
 | **[!UICONTROL Verbindung]** | Der Name der Verbindung, die der Datenansicht zugeordnet ist. |
 | **[!UICONTROL Sandbox]** | Der Name der Sandbox, die der Datenansicht zugeordnet ist. |
 | **[!UICONTROL Inhabende]** | Der Inhaber der Datenansicht. |
-| **[!UICONTROL Data Insights Agent]** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | Gibt an, ob die [Data Insights Agent](/help/data-analysis-ai.md) für die Datenansicht **[!UICONTROL aktiviert]** oder **[!UICONTROL deaktiviert]** ist. <br/>Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup mit dem Status **[!UICONTROL Data Insights Agent]** in Ihren Datenansichten anzuzeigen. <br/>![Nutzung von Data Insights Agent](/help/data-views/assets/data-views-dia-status.png) |
+| **[!UICONTROL Data Insights Agent]** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | Gibt an, ob die [Data Insights Agent](/help/data-views/create-dataview.md#ai-settings) für die Datenansicht **[!UICONTROL aktiviert]** oder **[!UICONTROL deaktiviert]** ist. <br/>Wählen Sie ![InfoOutline](/help/assets/icons/InfoOutline.svg) aus, um ein Popup mit dem Status **[!UICONTROL Data Insights Agent]** in Ihren Datenansichten anzuzeigen. <br/>![Nutzung von Data Insights Agent](/help/data-views/assets/data-views-dia-status.png) |
 | **[!UICONTROL Integrationen]** | Auflisten von Integrationen mit anderen Lösungen. Beispiel: Adobe Audience Analysis, Content Analytics, Brand Concierge, Journey Optimizer, GenStudio und Usage Analytics. |
 | **[!UICONTROL In CJA verwenden]** | Gibt an, ob die Datenansicht in Customer Journey Analytics verwendet wird. Dieser Wert ist nur **[!UICONTROL Aus]** für Datenansichten, die automatisch im Rahmen der Adobe Journey Optimizer-Integration generiert werden. |
 | **[!UICONTROL Erstellt am]** | Der Zeitstempel, zu dem die Datenansicht erstellt wurde. |
@@ -65,7 +67,7 @@ Um zu konfigurieren, welche Spalten in der Tabelle angezeigt werden sollen, wäh
 
 ## Datenansichten suchen
 
-Sie können mit dem Feld ![&#x200B; schnell nach einer &#x200B;](/help/assets/icons/Search.svg) suchen.
+Sie können mit dem Feld ![ schnell nach einer ](/help/assets/icons/Search.svg) suchen.
 
 ## Datenansichten filtern
 
@@ -120,7 +122,7 @@ Die Datenansicht wird kopiert und der Liste hinzugefügt, wobei **[!UICONTROL (K
 Wenn Sie eine Datenansicht löschen möchten:
 
 1. Klicken Sie ![Mehr](/help/assets/icons/More.svg) neben dem Namen der Datenansicht.
-1. Wählen Sie ![&#x200B; Kontextmenü &#x200B;](/help/assets/icons/Delete.svg)Löschen **[!UICONTROL Löschen]** aus.
+1. Wählen Sie ![ Kontextmenü ](/help/assets/icons/Delete.svg)Löschen **[!UICONTROL Löschen]** aus.
 
 Sie können auch wie folgt vorgehen:
 
@@ -166,7 +168,9 @@ Sie können auch wie folgt vorgehen:
 
 ## Aktivieren oder Deaktivieren von Datenansichten für Data Insights Agent
 
-Sie können eine Datenansicht für die [Data Insights Agent aktivieren oder &#x200B;](/help/data-analysis-ai.md).
+<!-- FOLLOW-UP: This setting is still in the UI, but Data Insights Agent has been replaced by Coworker. Confirm with the SME what the setting does now and whether it will be renamed or removed. This also applies to the Data Insights Agent column above. -->
+
+Sie können eine Datenansicht für die [Data Insights Agent aktivieren oder ](/help/data-views/create-dataview.md#ai-settings).
 
 1. Klicken Sie ![Mehr](/help/assets/icons/More.svg) neben dem Namen der Datenansicht.
 1. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Für Data Insights Agent aktivieren]** oder ![RemoveCircle](/help/assets/icons/RemoveCircle.svg)**[!UICONTROL Deaktivieren für Data Insights Agent]** aus dem Kontextmenü aus.
