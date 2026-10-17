@@ -37,7 +37,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 88%
@@ -91,7 +91,7 @@ Mit Datenansichten können Sie die Schemaelement-Einstellungen spontan ändern, 
 
 * Sie können Ihre Container in einer Datenansicht umbenennen und diese umbenannten Container in einem beliebigen Workspace-Projekt platzieren, das auf dieser Datenansicht basiert.
 
-* Sie können die Data Insights Agent für eine Datenansicht aktivieren oder deaktivieren.
+* Sie können die Data Insights Agent für eine Datenansicht aktivieren oder deaktivieren. <!-- FOLLOW-UP: Data Insights Agent has been replaced by Coworker, but this setting is still in the UI. Confirm with the SME. -->
 
 ## Voraussetzungen für die Datenansicht {#prerequisites}
 

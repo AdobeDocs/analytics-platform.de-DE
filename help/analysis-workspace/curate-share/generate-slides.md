@@ -41,17 +41,12 @@ topic_v2:
     internal-label: Governance
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1660'
 ht-degree: 9%
 ---
 # Data storytelling: Folien-Präsentationen aus Workspace-Berichten generieren {#generate-powerpoint}
-
->[!NOTE]
->
->Data Storytelling ist eine Qualifikation unter Data Insights Agent und steht berechtigten Kunden für eine begrenzte Zeit zur Verfügung. Der Zugriff auf Data Insights Agent endet am 31. März 2026. Um Data Insights Agent oder andere Adobe Experience Platform-Agenten ohne Unterbrechung weiter zu verwenden, wenden Sie sich an Ihren Adobe-Kundenbetreuer, um mehr über die Lizenzierung von Adobe Experience Platform Agent Orchestrator zu erfahren.
-
 
 Benutzende mit [den erforderlichen Berechtigungen](#permission-requirements-to-generate-slides) können automatisch PPTX-Präsentationen basierend auf Analysis Workspace-Projekten generieren. Beim Generieren dieser Folienpräsentationen erstellt Customer Journey Analytics automatisch eine Story aus Ihren Daten, indem wichtige Erkenntnisse identifiziert und in Stakeholder-fähige Folien umgewandelt werden.
 

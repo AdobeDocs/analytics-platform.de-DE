@@ -81,10 +81,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '3109'
-ht-degree: 100%
+source-wordcount: '3102'
+ht-degree: 98%
 ---
 # Unterstützung der Customer Journey Analytics-Funktionen
 
@@ -94,6 +94,8 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen spezifisch für Cus
 
 In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey Analytics verfügbar sind, in Adobe Analytics jedoch nicht unterstützt werden.
 
+<!-- FOLLOW-UP (Thursday): When the in-app Coworker experience launches, point the Coworker row link to /help/analysis-workspace/coworker.md. FOLLOW-UP (later): When Coworker becomes available in Adobe Analytics, remove the "coming soon" sentence and move the Coworker row to the Fully supported table. -->
+
 | Funktion | Mehr Infos |
 | --- | --- |
 | **Möglichkeit zur Kombination von Datensätzen (z. B. Report Suites von Adobe Analytics)** | Mit Customer Journey Analytics können Sie [Daten aus mehreren Report Suites so kombinieren](/help/connections/combined-dataset.md), als bildeten sie eine einzige Report Suite in Adobe Analytics. |
@@ -102,8 +104,8 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | **BI-Erweiterung** | Die [BI-Erweiterung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) ermöglicht es Ihnen, Customer Journey Analytics direkt mit gängigen BI-Visualisierungs-Tools wie PowerBI oder Tableau zu verbinden. Durch die Verwendung dieser Erweiterung können Sie Ihre BI-Berichte exakt mit der Anzeige in Analysis Workspace und anderen Reporting-Schnittstellen von Customer Journey Analytics abstimmen. Mit dieser Erweiterung können Sie BI-Berichte für Customer Journey Analytics wesentlich einfacher abrufen, ohne Berichte/Metriken aus Rohdaten neu erstellen zu müssen. |
 | **Kommentare in Workspace-Projekten** | Mit Kommentaren können Sie im Kontext eines [Analysis Workspace-Projekts](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects?lang=de) Erkenntnisse austauschen und Fragen stellen. Dadurch können Diskussionen über die Daten optimiert werden, sodass Dialoge im Kontext der diskutierten Daten geführt werden. |
 | **Content Analytics** | Mit [Content Analytics](https://experienceleague.adobe.com/de/docs/analytics-platform/using/content-analytics/content-analytics) können Marketing-Fachleute nachvollziehen, wie sich Inhalte auf die von einem Unternehmen definierten wichtigsten Leistungsindikatoren auswirken. Zusätzlich zu den Verhaltensdaten erfasst Content Analytics Daten darüber, wie Inhalte konsumiert werden und wie Inhalte die Auswirkungen steuern. |
+| **Coworker** | [Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/de/docs/coworker/content/chat/use-cases/data-insights/analytics-overview) ist ein KI-Teamkollege, der Fragen zu Ihren Daten in natürlicher Sprache beantwortet. Es verwendet Komponenten aus Ihren Datenansichten und Ihren tatsächlichen Daten, um Visualisierungen zu erstellen, Einblicke zu erhalten und zu erklären, warum sich Metriken geändert haben. Die Kollegin kommt bald nach Adobe Analytics. |
 | **Geräteübergreifende Analyse** | Customer Journey Analytics unterstützt die nahtlose Kombination gerätespezifischer Datensätze aus nicht authentifizierten und authentifizierten Sitzungen. Customer Journey Analytics bietet die Möglichkeit, historische Daten auf bekannte Geräte aufzustocken. In Adobe Analytics ist diese Funktion auf eine einzige Report Suite und die Verwendung eines Gerätediagramms beschränkt. |
-| **Data Insights Agent** | Der [Data Insights Agent](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai?lang=de), Teil des KI-Assistenten in Customer Journey Analytics, ist ein auf generativer KI basierender Konversationsagent. Er nutzt Komponenten aus Ihrer Datenansicht und Ihren tatsächlichen Daten, um datenorientierte Fragen schnell und effizient zu beantworten, indem er relevante Visualisierungen in Analysis Workspace erstellt. |
 | **Verbesserungen bei Dimensionen** | Customer Journey Analytics bietet mehr Flexibilität bei der Verwendung von Dimensionen: <ul><li>**Benutzerdefinierte numerisch basierte Dimensionen**: [Erstellen Sie Ihre eigenen numerisch basierten Dimensionen innerhalb einer Datenansicht](/help/data-views/create-dataview.md#components).</li><li>**Sortieren von String-basierten Dimensionen**: [Sortieren Sie String-basierte Dimensionen alphabetisch in einer Freiformtabelle.](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>In Adobe Analytics waren nur eine Handvoll nativer numerischer Dimensionen verfügbar, und eine Sortierung nach String-basierten Dimensionen war nicht möglich.</p> |
 | **Abgeleitete Felder** | [Abgeleitete Felder](/help/data-views/derived-fields/derived-fields.md) ermöglichen Umwandlungen zum Zeitpunkt der Berichtserstellung für Ihre Daten. Daten können dynamisch kombiniert, korrigiert oder erstellt werden. Diese Umwandlungen gelten rückwirkend für alle Berichte. |
 | **Verbesserte Sicherheits- und Datenschutzoptionen – HIPAA-Fähigkeit** | Customer Journey Analytics ist HIPAA-fähig und bietet [zusätzliche Sicherheitsoptionen](/help/privacy/cmk.md) für die Einhaltung von Vorschriften. Adobe Analytics ist nicht HIPAA-fähig. |
