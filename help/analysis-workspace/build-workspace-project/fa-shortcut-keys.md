@@ -8,33 +8,37 @@ role: User
 TQID: https://experienceleague.adobe.com/YWKW578JfolnUul64XLty6ehTVlsdsdTRAgHQG3wzbY
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 18b3b42cafd437749041bc1d408e60e77b42e1fc
+    internal-label: Insights
+source-git-commit: 0932da0728fd386c366b3c9b3cec45115f4e7e4b
 workflow-type: tm+mt
-source-wordcount: 488
-ht-degree: 78%
-
+source-wordcount: '527'
+ht-degree: 72%
 ---
-
 # Hotkeys
 
 In Analysis Workspace stehen Tastaturbefehle (Tastaturkürzel) für eine nahtlose Navigation, Analyse und Demokratisierung zur Verfügung.
 
 Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verwendet werden:
 
-- **⇧** für die **[!UICONTROL **&#x200B; Umschalttaste &#x200B;**]**
-- **⌘** für die **[!UICONTROL **&#x200B; Befehlstaste &#x200B;**]**.
-- **⌃** für die **[!UICONTROL **&#x200B; Strg-Taste &#x200B;**]**.
-- **⌥** für die **[!UICONTROL **&#x200B; Wahltaste &#x200B;**]**.
-- **⎇** für die **[!UICONTROL **&#x200B; Alt-Taste &#x200B;**]**.
+- **⇧** für die **[!UICONTROL ** Umschalttaste **]**
+- **⌘** für die **[!UICONTROL ** Befehlstaste **]**.
+- **⌃** für die **[!UICONTROL ** Strg-Taste **]**.
+- **⌥** für die **[!UICONTROL ** Wahltaste **]**.
+- **⎇** für die **[!UICONTROL ** Alt-Taste **]**.
 
 ## Navigationsaktionen
 
@@ -97,6 +101,10 @@ Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verw
 | Kürzere Größe ändern | **[!UICONTROL *Befehlstaste + Wahltaste + Umschalttaste + Nach oben *]** | **[!UICONTROL *Strg+Alt+Umsch+Nach oben *]** |
 
 Die Breite wird in Schritten einer Rasterspalte und die Höhe in Schritten einer Rasterzelle geändert (etwa 25 Pixel).
+
+## Aktionen in Tabellenspalten
+
+Sie können die Größe von Tabellenspalten über die Tastatur ändern und neu anordnen. Diese Aktionen sind keine globalen Hotkeys. Sie sind verfügbar, wenn ein Spaltentrennzeichen zur Größenanpassung oder die Schaltfläche **[!UICONTROL Neu anordnen]** in einer Spaltenüberschrift den Fokus hat. Siehe [Tastaturnavigation für Tabellenspalten](/help/analysis-workspace/workspace-faq/aw-accessibility.md#table-columns).
 
 ## Demokratisierungaktionen
 
