@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Experimentation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 6283ecbeab12a19fd5b7229dff772afaaedf3296
 workflow-type: tm+mt
-source-wordcount: '4127'
+source-wordcount: '4133'
 ht-degree: 48%
 ---
 # Komponenteneinstellungen {#component-settings}
@@ -51,7 +51,7 @@ ht-degree: 48%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Komponenteneinstellungen"
->abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen einer Komponente an und konfigurieren Sie sie. Aktivieren Sie dieses Kontrollkästchen, um diese Komponente im Reporting für Benutzende ohne Administratorrechte auszublenden. Admins können weiterhin auf die Komponente zugreifen, indem sie in einem Workspace-Projekt auf **[!UICONTROL Alle Komponenten anzeigen]** klicken."
+>abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen einer Komponente an und konfigurieren Sie sie. Aktivieren Sie dieses Kontrollkästchen, um diese Komponente in der Analysis Workspace-Benutzeroberfläche vor Benutzern ohne Administratorrechte auszublenden. Admins können weiterhin auf die Komponente zugreifen, indem sie in einem Workspace-Projekt auf **[!UICONTROL Alle Komponenten anzeigen]** klicken."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -83,7 +83,7 @@ Die folgenden Informationen beschreiben die Einstellungen, die eine Datenansicht
 | [!UICONTROL Komponenten-ID] | Erforderlich. Die [Customer Journey Analytics-API](https://www.adobe.io/cja-apis/docs) verwendet dieses Feld, um auf die Komponente zu verweisen. Jede Komponente in einer Datenansicht muss eindeutig sein. Adobe generiert automatisch eine ID für jede Komponente. Sie können jedoch auf das Bearbeitungssymbol klicken und die Komponenten-ID ändern. Durch das Ändern der Komponenten-ID funktionieren alle vorhandenen Workspace-Projekte, die diese Komponente enthalten, nicht mehr ordnungsgemäß. Während jede Komponente eine eindeutige ID in einer Datenansicht benötigt, können Sie dieselbe Komponenten-ID in anderen Datenansichten verwenden. Wenn Sie dieselbe Komponenten-ID in anderen Datenansichten verwenden, können Sie Workspace-Projekte über Datenansichten hinweg kompatibel machen. <br/>Bei profil- und suchbasierten Komponenten verfügt die Komponenten-ID über ein ID-Präfix, das auf der Datensatz-ID basiert (z. B.: `642b28fcc1f0ee1c074265a0.person.name.firstName`). Wenn Sie eine profil- oder suchbasierte Komponente wie `person.name.firstName` in Ihrem Workspace-Projekt wiederverwenden und diese Komponente in verschiedenen Datenansichten konfigurieren möchten, stellen Sie sicher, dass Sie die Komponenten-ID in Ihren Datenansichten eindeutig umbenennen (z. B.: `myUniqueID.person.name.firstName`). |
 | [!UICONTROL Path] | Erforderlich. Ein nicht bearbeitbares Feld, das den Schema-Pfad anzeigt, von dem die Komponente stammt. |
 | [!UICONTROL Beschriftungen zur Datennutzung] | Alle Datennutzungsbeschriftungen, die dieser Komponente in Adobe Experience Platform zugewiesen sind. [Weitere Informationen](/help/data-views/data-governance.md). |
-| [!UICONTROL Komponente in Reports verbergen] | Ermöglicht das Kuratieren der Komponente aus der Datenansicht für Benutzer ohne Administratorrechte. Administratoren können weiterhin darauf zugreifen, indem sie in einem Analysis Workspace-Projekt auf [!UICONTROL Alle Komponenten anzeigen] klicken. |
+| [!UICONTROL Komponente in Reports verbergen] | Verhindert, dass Nicht-Admins auf die Komponente in Analysis Workspace zugreifen. Administratoren können weiterhin darauf zugreifen, indem sie auf [!UICONTROL Alle Komponenten anzeigen] klicken. Diese Einstellung gilt nur für die Analysis Workspace-Benutzeroberfläche und beschränkt den Zugriff nicht über die [CJA-APIs](https://developer.adobe.com/cja-apis/docs/). |
 
 {style="table-layout:auto"}
 
@@ -91,7 +91,7 @@ Die folgenden Informationen beschreiben die Einstellungen, die eine Datenansicht
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen zum Komponententyp](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Einstellungen zum Komponententyp](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} finden Sie ein Demovideo.
 
 >[!ENDSHADEBOX]
 
@@ -106,9 +106,9 @@ Kontextbeschriftungen werden auf Komponentenebene (Dimension oder Metrik) ausgef
 
 Aus praktischen Gründen werden Smart-Standard-Kontextbeschriftungen automatisch auf Komponenten angewendet, die auf Feldern mit einem bestimmten XDM-Pfad basieren. Beispielsweise wird die Kontextbeschriftung **[!UICONTROL Commerce: Produktkategorie]** automatisch auf eine Dimension **[!UICONTROL Kategoriename]** angewendet, die auf dem `productListItems.productCategories.categoryName` Schemapfad basiert. Sie können die Kontextbeschriftung jedoch problemlos in eine andere Komponente verschieben.
 
-Um die von Adobe bereitgestellten Projektvorlagen zu optimieren, richten mehrere Integrationen (wie Journey Optimizer, Content Analytics und mehr) Datenansichten ein, bei denen vorkonfigurierte Komponenten auf bestimmte Weise erstellt werden. Und die entsprechenden Kontextbeschriftungen werden automatisch angewendet. Auch hier können Sie einfach eine dieser Kontextkennzeichnungen in andere Komponenten verschieben, die in der Datenansicht erstellt werden, und stattdessen wird Ihre benutzerdefinierte Komponente verwendet.
+Um von Adobe bereitgestellte Projektvorlagen zu optimieren, richten mehrere Integrationen (wie Journey Optimizer, Content Analytics und mehr) Datenansichten ein und fügen Kontextbeschriftungen zu vordefinierten Komponenten hinzu. Sie können jede dieser Kontextkennzeichnungen in andere Komponenten verschieben, die in der Datenansicht erstellt werden, und stattdessen wird Ihre benutzerdefinierte Komponente verwendet.
 
-Kontextkennzeichnungen sind auch für die Offenlegung von Projektvorlagen relevant. Projektvorlagen bilden schnell die Grundlage für die Berichterstellung für verschiedene Anwendungsfälle. Allerdings ist nicht jede Vorlage für jede Datenansicht sinnvoll, und Sie möchten keine nicht anwendbaren Vorlagen anzeigen. Kontextbeschriftungen werden verwendet, um Vorlagen anzuzeigen, je nachdem, ob die Kontextbeschriftungen in der ausgewählten Datenansicht enthalten sind.  Sie können einfach mehr Kontextbeschriftungen zu Ihrer Datenansicht (Komponenten) hinzufügen, und es werden mehr Vorlagen verfügbar. Oder entfernen Sie Kontextbeschriftungen, um bestimmte Vorlagen auszublenden.
+Kontextkennzeichnungen sind auch für die Offenlegung von Projektvorlagen relevant. Projektvorlagen bilden schnell die Grundlage für die Berichterstellung für verschiedene Anwendungsfälle. Es ist jedoch nicht jede Vorlage für jede Datenansicht anwendbar und Sie möchten nicht, dass nicht anwendbare Vorlagen angezeigt werden. Kontextbeschriftungen werden verwendet, um Vorlagen anzuzeigen, je nachdem, ob die Kontextbeschriftungen in der ausgewählten Datenansicht enthalten sind.  Sie können Ihrer Datenansicht (Komponenten) weitere Kontextbeschriftungen hinzufügen, und es werden weitere Vorlagen verfügbar. Alternativ können Sie Kontextbeschriftungen entfernen, um bestimmte Vorlagen auszublenden.
 
 >[!NOTE]
 >
@@ -127,11 +127,11 @@ Die Vorteile von Kontextkennzeichnungen sind:
 
 Kontextkennzeichnungen können in den folgenden Situationen erforderlich sein:
 
-* Um einen Komponentensatz zu definieren, können Sie ihn in Analysis Workspace-Projekten im Experimentier[Reporting über das &#x200B;](/help/analysis-workspace/c-panels/experimentation.md)Experimentier-Bedienfeld“ verwenden.
+* Um einen Komponentensatz zu definieren, den Sie in Analysis Workspace-Projekten im Experimentier[Reporting über das Bedienfeld &quot;](/help/analysis-workspace/c-panels/experimentation.md)&quot; verwenden können.
 
   Weitere Informationen finden Sie unter [Integrieren mit Journey Optimizer](/help/integrations/ajo.md#data-view) und [Zielgruppenberichte](/help/integrations/at.md).
 
-* Um einen Komponentensatz zu definieren, können Sie ihn in der [-](/help/analysis-workspace/visualizations/map.md) in Analysis Workspace-Projekten verwenden.
+* Um einen Komponentensatz zu definieren, den Sie in der [-](/help/analysis-workspace/visualizations/map.md) in Analysis Workspace-Projekten verwenden können.
 
   Weitere Informationen finden Sie unter [Hinzufügen von Kontextbeschriftungen in Datenansichten](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views) in [Map](/help/analysis-workspace/visualizations/map.md).
 
@@ -187,19 +187,19 @@ Die folgenden Gruppen von Kontextbeschriftungen sind mit jeweils einer Liste spe
 
 | Name | Beschreibung |
 |------|-------------|
-| [Inhalts-ID](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/content) | Die eindeutige Kennung für den wiedergegebenen Inhalt. Aktiviert die **[!UICONTROL Content-ID]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
-| [Besuchszeit für Inhalt](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/content-time-spent) | Mit der Anzeige von Inhalten verbrachte Zeit, ohne Anzeigen. Die erweiterte Einstellung **[!UICONTROL Besuchszeit für Inhalt]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) wird unterstützt. |
-| [Folge](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/episode) | Episode Nummer innerhalb einer Serie. Aktiviert das Filtern nach Episode im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Inhalts-ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content) | Die eindeutige Kennung für den wiedergegebenen Inhalt. Aktiviert die **[!UICONTROL Content-ID]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Besuchszeit für Inhalt](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/content-time-spent) | Mit der Anzeige von Inhalten verbrachte Zeit, ohne Anzeigen. Die erweiterte Einstellung **[!UICONTROL Besuchszeit für Inhalt]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) wird unterstützt. |
+| [Folge](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/episode) | Episode Nummer innerhalb einer Serie. Aktiviert das Filtern nach Episode im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
 | Ereignistyp | Der Medienereignistyp, z. B. `media.play` oder `media.ping`. Erforderlich, damit Customer Journey Analytics die abgeleitete Metrik [Gleichzeitige Medienbetrachter](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) berechnet. |
-| [Besuchszeit für Medien](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/media-time-spent) | Gesamtzeit, einschließlich Inhalt, Anzeigen, Pufferung und Pausen. Wirkt sich auf [&#x200B; Bedienfeld „Mit Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) und die erweiterte Einstellung **[!UICONTROL Mit Medienwiedergabe verbrachte Zeit]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) aus. |
-| [Staffel](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/season) | Staffelnummer innerhalb einer Serie. Aktiviert die Filterung nach Saison im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Besuchszeit für Medien](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/media-time-spent) | Gesamtzeit, einschließlich Inhalt, Anzeigen, Pufferung und Pausen. Wirkt sich auf [ Bedienfeld „Mit Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) und die erweiterte Einstellung **[!UICONTROL Mit Medienwiedergabe verbrachte Zeit]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) aus. |
+| [Staffel](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/season) | Staffelnummer innerhalb einer Serie. Aktiviert die Filterung nach Saison im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
 | Sekunden seit dem letzten Aufruf | Zeit in Sekunden seit dem letzten Heartbeat-Ping. Erforderlich, damit Customer Journey Analytics die abgeleitete Metrik [Gleichzeitige Medienbetrachter](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) berechnet, die angibt, wann eine Sitzung noch aktiv ist. |
-| [Anzeigen](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/show) | Der Name des Programms oder der Serie. Aktiviert das Filtern nach Anzeige im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
-| [Zeit bis zum Start](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/time-to-start) | Zeit zwischen Inhaltsauswahl und Beginn der Wiedergabe. In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
-| [Gesamtdauer des Puffers](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | Gesamtdauer der Pufferung während einer Sitzung. In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
-| [Pausierung insgesamt](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/metrics/total-pause-duration) | Gesamtbesuchszeit für Pausen während einer Sitzung In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
-| [Videolänge](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/content-length) | Inhaltsdauer in Sekunden. Erforderlich für den Modus **[!UICONTROL Bestimmter Inhalt]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
-| [Videoname](https://experienceleague.adobe.com/de/docs/media-analytics/using/reporting/dimensions/content-name) | Der Anzeigename des Inhalts. Aktiviert die **[!UICONTROL Videoname]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Anzeigen](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/show) | Der Name des Programms oder der Serie. Aktiviert das Filtern nach Anzeige im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Zeit bis zum Start](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/time-to-start) | Zeit zwischen Inhaltsauswahl und Beginn der Wiedergabe. In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
+| [Gesamtdauer des Puffers](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | Gesamtdauer der Pufferung während einer Sitzung. In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
+| [Pausierung insgesamt](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-pause-duration) | Gesamtbesuchszeit für Pausen während einer Sitzung In die Berechnung der [Bei Medienwiedergabe verbrachte Zeit](/help/analysis-workspace/c-panels/media-playback-time-spent.md) einbezogen. |
+| [Videolänge](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-length) | Inhaltsdauer in Sekunden. Erforderlich für den Modus **[!UICONTROL Bestimmter Inhalt]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| [Videoname](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-name) | Der Anzeigename des Inhalts. Aktiviert die **[!UICONTROL Videoname]** im Bedienfeld [Medien-Zielgruppendurchschnitt pro Minute](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
 
 +++
 
