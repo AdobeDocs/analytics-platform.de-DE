@@ -39,7 +39,7 @@ topic_v2:
 source-git-commit: 4cdf80f86cea6a60e3b098c6efbaab0821a256c7
 workflow-type: tm+mt
 source-wordcount: '7372'
-ht-degree: 82%
+ht-degree: 83%
 ---
 # Konfigurieren einer Journey-Arbeitsflächenvisualisierung
 
@@ -149,8 +149,8 @@ Weitere Informationen zur Journey-Arbeitsfläche finden Sie unter [Journey-Arbei
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_compare_percentages"
->title="Prozentsätze vergleichen"
->abstract="Vergleicht die prozentuale Änderung auf jedem Knoten, Pfeil und Fallout im Journey zwischen dem aktuellen Datumsbereich und dem ausgewählten Vergleichsdatumsbereich, basierend auf der primären Metrik. Wenn diese Option deaktiviert ist, wird der Rohwert in Prozent anstelle der prozentualen Änderung angezeigt."
+>title="Vergleichen von Prozentsätzen"
+>abstract="Vergleicht die prozentuale Änderung für jeden Knoten, jeden Pfeil und jedes Fallout in der Journey zwischen dem aktuellen Datumsbereich und dem ausgewählten Vergleichsdatumsbereich basierend auf der primären Metrik. Wenn diese Option deaktiviert ist, wird der prozentuale Rohwert anstelle der prozentualen Änderung angezeigt."
 
 <!-- markdownlint-enable MD034 -->
 

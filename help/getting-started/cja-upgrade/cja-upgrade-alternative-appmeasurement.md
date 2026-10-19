@@ -41,7 +41,7 @@ topic_v2:
 source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 55%
+ht-degree: 56%
 ---
 # Alternative zum Upgrade: Verwenden der AppMeasurement-Datenerfassung mit dem Experience Platform-Web-SDK und Customer Journey Analytics {#data-collection-appmeasurement}
 
@@ -59,7 +59,7 @@ ht-degree: 55%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic-step"
 >title="Ändern Sie Ihre AppMeasurement-Logik so, dass sie auf die Web-SDK verweist."
->abstract="Dieser Schritt wird angezeigt, weil Sie ausgewählt haben, eine Implementierungsverknüpfung zu verwenden. Kopieren Sie die AppMeasurement-Logik oder ändern Sie sie, um das Datenobjekt anstelle des s-Objekts zu füllen. Ändern Sie beispielsweise die Zuweisung von „s.eVar1“ zu „data.__adobe.analytics.eVar1“ und wiederholen Sie diesen Vorgang für alle Analytics-Variablen."
+>abstract="Dieser Schritt wird angezeigt, weil Sie sich entschieden haben, ein Schnellverfahren zur Implementierung zu nutzen. Kopieren Sie die AppMeasurement-Logik oder ändern Sie sie, um das Datenobjekt anstelle des s-Objekts zu füllen. Ändern Sie beispielsweise die Zuweisung von „s.eVar1“ zu „data.__adobe.analytics.eVar1“ und wiederholen Sie diesen Vorgang für alle Analytics-Variablen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -101,7 +101,7 @@ Die grundlegenden Schritte für die Migration einer Adobe Analytics-Implementier
 
    1. Senden Sie alle Variablen im AppMeasurement-Format über das Datenobjekt.
 
-      Wenn Sie diese Daten auch an Adobe Analytics senden, ordnet Edge Network diese Datenobjektfelder automatisch Adobe Analytics-Variablen zu. Eine Liste der unterstützten Felder finden Sie unter [Datenobjekt-Feldzuordnung zu Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/data-var-mapping). Customer Journey Analytics verwendet diese Zuordnungen nicht. Sie ordnen die Datenobjektfelder in einem späteren Schritt Ihrem XDM-Schema für Customer Journey Analytics zu.
+      Wenn Sie diese Daten auch an Adobe Analytics senden, ordnet Edge Network diese Datenobjektfelder automatisch Adobe Analytics-Variablen zu. Eine Liste der unterstützten Felder finden Sie unter [Datenobjekt-Feldzuordnung zu Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping). Customer Journey Analytics verwendet diese Zuordnungen nicht. Sie ordnen die Datenobjektfelder in einem späteren Schritt Ihrem XDM-Schema für Customer Journey Analytics zu.
 
    1. Wählen Sie Ihr Schema.
 
@@ -127,7 +127,7 @@ Die grundlegenden Schritte für die Migration einer Adobe Analytics-Implementier
 
    1. Verwenden Sie die Datenstrom-Zuordnung , um alle Felder im Datenobjekt Ihrem XDM-Schema zuzuordnen.
 
-      Customer Journey Analytics kann nur die Datenobjektfelder verwenden, die Sie Ihrem Schema zuordnen. Weitere Informationen finden Sie unter [Zuordnung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/data-prep) in der Experience Platform-Dokumentation.
+      Customer Journey Analytics kann nur die Datenobjektfelder verwenden, die Sie Ihrem Schema zuordnen. Weitere Informationen finden Sie unter [Zuordnung](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Datenvorbereitung für die Datenerfassung](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) in der Experience Platform-Dokumentation.
 
 {{upgrade-final-step}}.
 
