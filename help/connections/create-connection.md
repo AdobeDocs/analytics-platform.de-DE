@@ -1017,5 +1017,5 @@ Diese Berechnung wird für jeden Datensatz in der Verbindung durchgeführt.
 >[!MORELIKETHIS]
 >
 >* [Datenaufnahme – Überblick](/help/data-ingestion/data-ingestion.md)
->* Blog: [Verwenden von Ereignis-, Lookup- und Profildatensätzen in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699?profile.language=de)
+>* Blog: [Verwenden von Ereignis-, Lookup- und Profildatensätzen in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699?profile.language=de&lang=de)
 
