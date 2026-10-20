@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
 workflow-type: tm+mt
 source-wordcount: '3924'
-ht-degree: 12%
+ht-degree: 20%
 ---
 # Erstellen eines Daten-Feeds
 
@@ -70,7 +70,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_frequency_granularity"
 >title="Häufigkeit und Granularität"
->abstract="**Versandfrequenz** (Live-Feeds): Wie oft der Daten-Feed bereitgestellt wird. Stündliche Sendungen enthalten Daten für eine Stunde, tägliche Sendungen enthalten Daten für einen Tag. Der Lookback-Datumsbereich und die Verarbeitungsverzögerung können sich auch darauf auswirken, welche Ereignisse einbezogen werden.<p>**Granularität** (Aufstockungs-Feeds): Das Zeitintervall, das zum Aufteilen historischer Daten verwendet wird. Jeder Block enthält Daten für einen Tag und wird so schnell wie möglich bereitgestellt, nicht einmal pro Tag. Dieses Feld ist immer auf Täglich festgelegt und kann nicht geändert werden.</p>"
+>abstract="**Versandhäufigkeit** (Live-Feeds): Wie oft der Daten-Feed gesendet wird. Stündliche Sendungen enthalten die Daten einer Stunde; tägliche Sendungen enthalten die Daten eines Tages. Der Lookback-Datumsbereich und die Verarbeitungsverzögerung können sich ebenfalls darauf auswirken, welche Ereignisse einbezogen werden.<p>**Granularität** (Aufstockungs-Feeds): Das zur Aufteilung historischer Daten verwendete Zeitintervall. Jeder Chunk enthält die Daten eines Tages und wird so schnell wie möglich gesendet, nicht einmal pro Tag. Dieses Feld ist immer auf „Täglich“ festgelegt und kann nicht geändert werden.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -166,7 +166,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    | [!UICONTROL **Häufigkeit**]<br/> Nur für Live-Feeds verfügbar | Legen Sie fest, wie oft der Daten-Feed gesendet werden soll. Ereignisse mit Zeitstempeln, die in das Häufigkeitsfenster fallen, werden in den Daten-Feed-Versand aufgenommen. Die Felder [!UICONTROL **Lookback**] Datumsbereich und [!UICONTROL **Verarbeitungsverzögerung**] können sich auch darauf auswirken, welche Ereignisse für die von Ihnen gewählte Versandfrequenz in die Daten aufgenommen werden.<p>Wählen Sie diese Option aus, um Daten aus einer Stunde oder aus Daten aus einem Tag aufzunehmen.</p><ul><li>**Täglich**: Feeds enthalten Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht.</li><li>**Stündlich**: Feeds enthalten Daten für eine einzige Stunde.</li></ul> |
    | [!UICONTROL **Granularität**]<br/> Nur für Aufstockungs-Feeds verfügbar | Das Zeitintervall, das zum Aufteilen historischer Daten in Blöcke verwendet wird. Jeder Chunk enthält Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht. <p>Die Granularität bestimmt, wie die Daten gruppiert werden, und nicht, wie oft sie bereitgestellt werden. Aufstockungsdaten werden so schnell wie möglich bereitgestellt, nicht einmal pro Tag.</p><p>Dieses Feld ist immer auf &quot;[!UICONTROL **&quot; festgelegt**] kann nicht geändert werden.</p> |
    | [!UICONTROL **Lookback-Datumsbereich**] | Steuert, wie weit Customer Journey Analytics bei der Verarbeitung der Daten-Feed-Bereitstellung zurückblickt. Der Standardwert ist 30 Tage.<p>Das Häufigkeitsfenster (Stunde oder Tag) bestimmt, welche Ereignisse im Daten-Feed enthalten sind, während der **Lookback-Datumsbereich** den erforderlichen historischen Kontext bereitstellt, um diese Ereignisse korrekt zu klassifizieren.</p><p>Segmentqualifikation, Dimensionspersistenz, Sitzungsberechnung und Transformationen abgeleiteter Felder können sich auf alle eingeschlossenen Ereignisse auswirken.</p> <p>Bevor Sie diese Option konfigurieren, lesen Sie die Details und Beispiele im folgenden Abschnitt [Grundlegendes zum Lookback-Datumsbereich](#data-feed-lookback-date-range).</p> |
-   | [!UICONTROL **Verarbeitungsverzögerung**] | Wählen Sie die Zeitspanne aus, die Customer Journey Analytics wartet, bevor eine Daten-Feed-Datei verarbeitet wird. Alle spät eintreffenden Ereignisse, die während der Verarbeitungsverzögerung eintreten, sind im Daten-Feed enthalten. <p>Die minimale Verarbeitungsverzögerung beträgt 2 Stunden, aber einige Datentypen erfordern eine längere Verzögerung. Die ausgewählte Verzögerung hängt von den Datentypen in Ihrer Verbindung ab, z. B. Streaming-, Batch-, zugeordnete, Lookup- oder Profildaten.</p><p>Wählen Sie eine Verzögerung aus, die lang genug ist, damit die langsamsten Daten in Ihrer Verbindung die Verarbeitung abschließen. Wenn die Verzögerung zu kurz ist, werden Daten, die noch verarbeitet werden, nicht in die Daten-Feed-Datei aufgenommen.</p><p>Bevor Sie diese Option konfigurieren, lesen Sie die Details und Beispiele im folgenden Abschnitt [Grundlegendes zur Verarbeitungsverzögerung](#data-feed-processing-delay).</p> |
+   | [!UICONTROL **Verarbeitungsverzögerung**] | Wählen Sie die Zeitspanne aus, die Customer Journey Analytics wartet, bevor eine Daten-Feed-Datei verarbeitet wird. Alle verspätet eintreffenden Ereignisse, die während der Verarbeitungsverzögerung eingehen, werden im Daten-Feed berücksichtigt. <p>Die Mindestdauer für die Verarbeitungsverzögerung beträgt 2 Stunden, für einige Arten von Daten ist jedoch eine längere Verzögerung erforderlich. Die ausgewählte Verzögerung hängt von den Datentypen in Ihrer Verbindung ab, z. B. Streaming-, Batch-, zugeordnete, Lookup- oder Profildaten.</p><p>Wählen Sie eine Verzögerung aus, die lang genug ist, damit die langsamsten Daten in Ihrer Verbindung die Verarbeitung abschließen. Wenn die Verzögerung zu kurz ist, werden Daten, die noch verarbeitet werden, nicht in die Daten-Feed-Datei einbezogen.</p><p>Bevor Sie diese Option konfigurieren, lesen Sie die Details und Beispiele im folgenden Abschnitt [Grundlegendes zur Verarbeitungsverzögerung](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Komprimierungsformat**] | Wählen Sie das Komprimierungsformat für die Parquet-Ausgabedateien aus, die an Ihr Cloud-Ziel gesendet werden. Wählen Sie aus den folgenden Formaten:<ul><li>[!UICONTROL **Snappy**]: Schnelle Komprimierung und Dekomprimierung bei moderaten Dateigrößen. Wird von modernen Datenplattformen wie BigQuery, Snowflake und Apache Spark weithin unterstützt.</li><li>[!UICONTROL **GZip**]: Grob kompatibel, auch mit Tools, die Snappy nicht nativ unterstützen. Empfohlen, wenn Ihre nachgelagerte Pipeline einen weithin anerkannten Komprimierungsstandard erfordert.</li><li>[!UICONTROL **Z Standard (Zstd)**]: Hohe Komprimierungseffizienz mit schneller Dekomprimierung. Geeignet, wenn die Minimierung der Dateigröße eine Priorität ist und Ihre Tools Zstd unterstützen.</li></ul> |
 
 1. Konfigurieren Sie auf [!UICONTROL **Registerkarte**] im Abschnitt [!UICONTROL **Ziel**] das Ziel, an das die Daten gesendet werden sollen.
@@ -290,17 +290,17 @@ Alle abgeleiteten Feldfunktionen, die auf Container verweisen, verwenden den Loo
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_processing_delay"
 >title="Verarbeitungsverzögerung"
->abstract="Die Zeit, die Customer Journey Analytics wartet, bevor eine Daten-Feed-Datei verarbeitet wird. Alle spät eintreffenden Ereignisse, die während der Verarbeitungsverzögerung eintreten, sind im Daten-Feed enthalten.<p>Die minimale Verarbeitungsverzögerung beträgt 2 Stunden, aber einige Datentypen erfordern eine längere Verzögerung. Wählen Sie eine Verzögerung aus, die lang genug ist, damit die langsamsten Daten in Ihrer Verbindung im Experience Platform Data Lake ankommen und in Customer Journey Analytics aufgenommen werden. Wenn die Verzögerung zu kurz ist, werden Daten, die noch verarbeitet werden, nicht in die Daten-Feed-Datei aufgenommen.</p><p>Das Zusammenfügen kann bis zu 4 Stunden dauern. Fügen Sie daher für alle zugeordneten Daten 4 Stunden zur Verzögerung hinzu.</p>"
+>abstract="Die Zeitspanne, die Customer Journey Analytics vor dem Verarbeiten einer Daten-Feed-Datei wartet. Alle verspätet eintreffenden Ereignisse, die während der Verarbeitungsverzögerung eingehen, werden im Daten-Feed berücksichtigt.<p>Die Mindestdauer für die Verarbeitungsverzögerung beträgt 2 Stunden, für einige Arten von Daten ist jedoch eine längere Verzögerung erforderlich. Wählen Sie eine Verzögerung, die lang genug ist, damit auch die langsamsten Daten in Ihrer Verbindung im Data Lake in Experience Platform eintreffen und in Customer Journey Analytics aufgenommen werden können. Wenn die Verzögerung zu kurz ist, werden Daten, die noch verarbeitet werden, nicht in die Daten-Feed-Datei einbezogen.</p><p>Die Zuordnung kann bis zu 4 Stunden zusätzlich in Anspruch nehmen. Um dies zu berücksichtigen, fügen Sie für alle zugeordneten Daten 4 Stunden zur Verzögerung hinzu.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
 ### Funktionsweise der Verarbeitungsverzögerung
 
-Die Verarbeitungsverzögerung ist die Zeit, die Customer Journey Analytics wartet, bevor eine Daten-Feed-Datei verarbeitet wird. Alle spät eintreffenden Ereignisse, die während der Verarbeitungsverzögerung eintreten, sind im Daten-Feed enthalten.
+Die Verarbeitungsverzögerung ist die Zeit, die Customer Journey Analytics wartet, bevor eine Daten-Feed-Datei verarbeitet wird. Alle verspätet eintreffenden Ereignisse, die während der Verarbeitungsverzögerung eingehen, werden im Daten-Feed berücksichtigt.
 
 Verarbeitungsverzögerungen sind aus verschiedenen Gründen erforderlich, z. B. um die Pipeline-Latenz zu berücksichtigen, um mobilen Implementierungen die Möglichkeit zu geben, dass Offline-Geräte online gehen und Daten senden, oder um die Server-seitigen Prozesse Ihres Unternehmens bei der Verwaltung zuvor verarbeiteter Dateien zu berücksichtigen.
 
-Die minimale Verarbeitungsverzögerung beträgt 2 Stunden, aber einige Datentypen erfordern eine längere Verzögerung.
+Die Mindestdauer für die Verarbeitungsverzögerung beträgt 2 Stunden, für einige Arten von Daten ist jedoch eine längere Verzögerung erforderlich.
 
 >[!BEGINSHADEBOX]
 
@@ -314,7 +314,7 @@ Angenommen, ein stündlicher Daten-Feed umfasst Daten von 13:00 bis 14:00 Uhr un
 
 Verschiedene Datentypen benötigen unterschiedlich viel Zeit, bis sie in Customer Journey Analytics verfügbar sind. Die Daten durchlaufen zwei Verarbeitungsphasen, wobei die Zeit für jede Phase addiert wird.
 
-Wählen Sie eine Verarbeitungsverzögerung aus, die lang genug ist, damit die langsamsten Daten in Ihrer Verbindung beide Phasen abschließen. Wenn die Verzögerung zu kurz ist, werden Daten, die noch verarbeitet werden, nicht in die Daten-Feed-Datei aufgenommen.
+Wählen Sie eine Verarbeitungsverzögerung aus, die lang genug ist, damit die langsamsten Daten in Ihrer Verbindung beide Phasen abschließen. Wenn die Verzögerung zu kurz ist, werden Daten, die noch verarbeitet werden, nicht in die Daten-Feed-Datei einbezogen.
 
 #### Phase 1: Daten gelangen in den Data Lake von Experience Platform
 
@@ -356,7 +356,7 @@ Die Datenaufnahmezeiten variieren je nachdem, ob für den Datensatz die Zuordnun
 
 Wenn Ihre Verbindung mehrere Datentypen enthält, wählen Sie eine Verzögerung aus, die den langsamsten Daten entspricht. Im folgenden Beispiel sind dies etwa 8 Stunden.
 
-Beim Zusammenfügen können bis zu 4 Stunden für die Aufnahme in Customer Journey Analytics hinzugefügt werden. Fügen Sie daher für alle zugeordneten Daten 4 Stunden zur Verzögerung hinzu.
+Beim Zusammenfügen können bis zu 4 Stunden für die Aufnahme in Customer Journey Analytics hinzugefügt werden. Um dies zu berücksichtigen, fügen Sie für alle zugeordneten Daten 4 Stunden zur Verzögerung hinzu.
 
 | Datenquelle | Phase 1: Ankunft im Data Lake | Phase 2: Aufnahme in Customer Journey Analytics | Gesamt |
 | --- | --- | --- | --- |
