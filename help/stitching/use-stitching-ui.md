@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 49795b40eab1fcd1bfd472ccb756587adf9877b8
+source-git-commit: 5f5e011198decd41ced888904b643d817959dab3
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1971'
 ht-degree: 18%
 ---
 # Aktivieren der Zuordnung
@@ -252,8 +252,6 @@ Für ein gültiges anfängliches Verbindungssetup, das gespeichert wird und eine
 * Live-Daten werden zunächst nach einigen Stunden in Customer Journey Analytics angezeigt (weniger als 14 Stunden). Neue Live-Daten sind innerhalb weniger Stunden verfügbar. Die Live-Daten beginnen mit Ereignis-Zeitstempelwerten, die mit dem tatsächlichen Zeitpunkt übereinstimmen, zu dem die Zuordnungsaktivierung abgeschlossen wurde.
 
   Um sicherzustellen, dass Live-Daten eingehen, aktivieren Sie die Option **[!UICONTROL Alle neuen Daten importieren]** für den Datensatz.
-
-  Neue Daten, die in den Experience Platform-Quellereignis-Datensatz aufgenommen werden, werden innerhalb von vier Stunden in Customer Journey Analytics angezeigt.
 
 * Aufstockte Daten (falls ursprünglich angefordert) werden etwa zur gleichen Zeit wie Live-Daten in Customer Journey Analytics angezeigt, deren vollständige Verarbeitung jedoch je nach Volumen Tage dauern kann. Die aufgestockten Daten beginnen mit den ältesten Zeitstempelwerten des Ereignisses.
 
