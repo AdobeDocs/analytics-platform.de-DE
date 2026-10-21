@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: a02b8d1d6bae6ed8269668d49ed9559688001833
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 16%
+source-wordcount: '1185'
+ht-degree: 14%
 ---
 # Erstellen oder Bearbeiten von Konfigurationen
 
@@ -46,7 +46,7 @@ Wenn Sie eine Conversation Insights-Konfiguration erstellen oder bearbeiten, geb
 
 Nur Systemadministratoren können Conversation Insights-Konfigurationen erstellen oder bearbeiten.
 
-Sie können Konfigurationen über die Benutzeroberfläche „Conversation Insights[Konfigurationen“ erstellen oder &#x200B;](./manage.md).
+Sie können Konfigurationen über die Benutzeroberfläche „Conversation Insights[Konfigurationen“ erstellen oder ](./manage.md).
 
 ## Fehlenden kombinierten Datensatz wiederherstellen
 
@@ -64,7 +64,7 @@ Für jede Konfiguration:
    | Feld | Beschreibung |
    |---------|----------|
    | **[!UICONTROL Name]** | Geben Sie einen Namen für die Konfiguration an. |
-   | **[!UICONTROL Sandbox]** | Wählen Sie die Experience Platform-Sandbox aus, die die Eingabeaufforderungen, Antworten und Feedback-Ereignis-Datensätze enthält, die Sie Ihrer Verbindung hinzufügen möchten. |
+   | **[!UICONTROL Sandbox]** | Wählen Sie die Experience Platform-Sandbox aus, die die Eingabeaufforderungen, Antworten und Feedback-Ereignis-Datensätze enthält, die Sie Ihrer Verbindung hinzufügen möchten. Sie werden benachrichtigt, wenn für die ausgewählte Sandbox keine kompatiblen Datensätze verfügbar sind. |
 
 1. Geben **[!UICONTROL im Abschnitt]** die folgenden Informationen an:
 
@@ -75,6 +75,13 @@ Für jede Konfiguration:
    | **[!UICONTROL Eingabeaufforderung für Ereignisdatensatz]** | Wählen Sie den Datensatz aus, der die Eingabeaufforderungsereignisdaten enthält. |
    | **[!UICONTROL Datensatz für Antwortereignisse]** | Wählen Sie den Datensatz aus, der die Ereignisdaten für Antworten enthält. |
    | **[!UICONTROL Feedback-Ereignisdatensatz]** | Wählen Sie den Datensatz aus, der die Feedback-Ereignisdaten enthält. |
+
+   Wenn ein Datensatz sowohl Eingabeaufforderungen als auch Antworten enthält, wählen Sie denselben Datensatz für **[!UICONTROL Eingabeaufforderungsereignis-Datensatz]** und **[!UICONTROL Antwortereignis-Datensatz]**.
+
+   Die Option [Angeben von gemischten Unterhaltungen](#blend-specification) über **[!UICONTROL Konfigurieren von gemischten Spezifikationen]** ist nur einmal verfügbar:
+   * Diese Konfiguration ist abgeschlossen.
+   * Alle Datensätze sind verfügbar.
+   * Sie verfügen über Customer Journey Analytics [Berechtigungen zum Bearbeiten von Verbindungen](/help/technotes/access-control.md).
 
 1. Wenn im Abschnitt **[!UICONTROL Verbindung]** bereits keine Verbindung konfiguriert ist, wählen Sie mit **[!UICONTROL Verbindung auswählen]** eine Verbindung aus.
 
@@ -123,14 +130,56 @@ Für jede Konfiguration:
 
    * Wählen Sie **[!UICONTROL Beenden]** aus, um alle Änderungen an der Konfiguration zu ignorieren.
 
+## Mischspezifikation
+
+
+>[!CONTEXTUALHELP]
+>id="conversationinsights_blend_specification"
+>title="Mischspezifikation konfigurieren"
+>abstract="Sie können die Mischungsspezifikation erst bearbeiten, nachdem Sie diese Konfiguration für Konversationserkenntnisse abgeschlossen haben, alle Datensätze verfügbar sind und Sie über Customer Journey Analytics-Berechtigungen zum Bearbeiten von Verbindungen verfügen."
+>additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/technotes/access-control" text="Zugangssteuerung"
+
+
+>[!CONTEXTUALHELP]
+>id="conversationinsights_dataset_winner"
+>title="Datensatzgewinner"
+>abstract="Wählen Sie den Datensatz aus, der den Wert für entsprechend benannte Felder (wenn es sich um einen Container handelt) im gemischten Konversations-Datensatz bestimmt."
+
+Nachdem Sie eine Konfiguration erstellt haben, können Sie konfigurieren[ wie Konversationen aus den Eingabeaufforderungen, Antworten, Feedback- und Signaldatensätzen gemischt werden](/help/conversation-insights/overview.md#how-it-works).
+
+Mit dieser Spezifikation können Sie den Datensatz auswählen, der den Wert für entsprechend benannte Felder (wenn es sich um einen Container handelt) im gemischten Konversations-Datensatz bestimmt.
+
+Beispiel: Wenn Sie möchten, dass der Feldname **[!UICONTROL Produziert von]** im gemischten Konversationsdatensatz anhand dieses ähnlichen benannten Felds im Feedback-Datensatz definiert wird, wählen Sie **[!UICONTROL Feedback-]** aus dem Dropdown-Menü **[!UICONTROL Datensatzsieger]** für dieses Feld aus.
+
+So geben Sie die gemischte Konversation an:
+
+1. Wählen Sie **[!UICONTROL Mischspezifikation konfigurieren]**.
+
+1. Überprüfen Sie **[!UICONTROL Dialogfeld]** Mischungsspezifikation“ für jeden **[!UICONTROL Feldnamen]** den vorgeschlagenen **[!UICONTROL Datensatzsieger]** und wählen Sie optional einen anderen Datensatz aus.
+
+   * Wählen Sie für jedes aktivierte Feld optional einen anderen **[!UICONTROL Datensatzgewinner]**. Sie können zwischen **[!UICONTROL Eingabeaufforderungen-Datensatz]**, **[!UICONTROL Antwortdatensatz]** und **[!UICONTROL Feedback-Datensatz]**.
+   * Wählen Sie optional für jedes Container-Feld einen anderen **[!UICONTROL Datensatzgewinner]** aus, um alle Felder zu aktualisieren, die zum Container gehören. Sie können zwischen **[!UICONTROL Eingabeaufforderungen-Datensatz]**, **[!UICONTROL Antwortdatensatz]** und **[!UICONTROL Feedback-Datensatz]**.
+   * Sie können keinen **[!UICONTROL Datensatzgewinner“ für]** auswählen, die von den Unterhaltungsdatensätzen gemeinsam verwendet werden (Eingabeaufforderungen, Antworten, Feedback und Signale). Diese Felder sind Teil der folgenden Feldergruppen:
+
+     | Feldname | Feldergruppe | Datensatzgewinner |
+     |---|---|---|
+     | **[!UICONTROL prompt]** | `conversation.prompt.*` | **[!UICONTROL Eingabeaufforderungen - Datensatz]** |
+     | **[!UICONTROL response]** | `conversation.response.*` | **[!UICONTROL Antwortdatensatz]** |
+     | **[!UICONTROL Feedback]** | `conversation.feedback.*` | **[!UICONTROL Feedback-Datensatz]** |
+     | **[!UICONTROL agentExperience]** | `agentExperience.*` | **[!UICONTROL Antwortdatensatz]** |
+     | **[!UICONTROL Signale]** | `conversation.signals.*` | **[!UICONTROL Signaldatensatz]** |
+
+   * Für bestimmte Identitätsfelder **[!UICONTROL keine]** Datensatzgewinner“ verfügbar, z. B. **[!UICONTROL Konversations-ID]** oder **[!UICONTROL Turn-ID]**.
+
+1. Klicken Sie **[!UICONTROL Speichern]**, um die Spezifikation zu speichern. Wählen Sie **[!UICONTROL Abbrechen]**, um die Spezifikation aufzuheben.
 
 ## Verifizierung der Datenansicht
 
-Die Datenansichten, die Sie in [Konfigurationsschritte](#configuration-steps) konfiguriert haben, haben **[!UICONTROL Konversationserkenntnisse]** als Wert für **[!UICONTROL Integrationen]** in [Datenansichten](/help/data-views/manage-dataviews.md).
+Die Datenansichten, die Sie in [Konfigurationsschritte](#configuration-steps) konfiguriert haben, **[!UICONTROL Konversationserkenntnisse]** als Wert für **[!UICONTROL Integrationen]** in [Datenansichten](/help/data-views/manage-dataviews.md).
 
 Für jede der konfigurierten Datenansichten:
 
-* **Container**: Die [Registerkarte Container](/help/data-views/create-dataview.md#containers) enthält einen neuen **[!UICONTROL Container-Namen]**: **[!UICONTROL Konversation]** mit **[!UICONTROL Anzeigename]**: **[!UICONTROL Container]** als zusätzlichen **&#x200B;**&#x200B;System **[!UICONTROL Container-Typ]**.
+* **Container**: Die [Registerkarte Container](/help/data-views/create-dataview.md#containers) enthält einen neuen **[!UICONTROL Container-Namen]**: **[!UICONTROL Konversation]** mit **[!UICONTROL Anzeigename]**: **[!UICONTROL Container]** als zusätzlichen **** System **[!UICONTROL Container-Typ]**.
 * **Komponenten**: Es werden zusätzliche Ordner mit Schemafeldern angezeigt. Beispiel: agentExperience und Konversation. Darüber hinaus werden die folgenden Komponenten automatisch hinzugefügt:
 
   | Metrik | Datentyp des Schemas | Pfad des Schemas |
