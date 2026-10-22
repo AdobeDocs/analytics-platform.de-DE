@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 39d7aae2c47754899a2ac7d1a544a0b585d99b8b
+source-git-commit: bccb25182630e18943a52ceca621cdfd6696b819
 workflow-type: tm+mt
-source-wordcount: '4362'
-ht-degree: 15%
+source-wordcount: '4243'
+ht-degree: 16%
 ---
 # Erstellen eines Daten-Feeds
 
@@ -71,24 +71,6 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 >id="cja_datafeed_frequency_granularity"
 >title="Häufigkeit und Granularität"
 >abstract="**Versandhäufigkeit** (Live-Feeds): Wie oft der Daten-Feed gesendet wird. Stündliche Sendungen enthalten die Daten einer Stunde; tägliche Sendungen enthalten die Daten eines Tages. Der Lookback-Datumsbereich und die Verarbeitungsverzögerung können sich ebenfalls darauf auswirken, welche Ereignisse einbezogen werden.<p>**Granularität** (Aufstockungs-Feeds): Das zur Aufteilung historischer Daten verwendete Zeitintervall. Jeder Chunk enthält die Daten eines Tages und wird so schnell wie möglich gesendet, nicht einmal pro Tag. Dieses Feld ist immer auf „Täglich“ festgelegt und kann nicht geändert werden.</p>"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-df-export-file-name"
->title="Pfad- oder Dateiname"
->abstract="Geben Sie einen Pfad oder einen Dateinamen (oder beides) an, um zu bestimmen, wohin Dateien am ausgewählten Speicherort gesendet werden sollen. Um Dateien im Ordner der obersten Ebene des Speicherorts zu speichern, geben Sie `/` an.<br/>Bei Live-Feeds können Sie Variablen verwenden, um den Pfad oder Dateinamen dynamisch zu machen. <br/>Wenn Sie beispielsweise `${yyyy}/${MM}/${dd}/my-feed-${instance_id}-${idx}` angeben, hätte ein Live-Feed, der am 15. Januar 2027 bereitgestellt wird, den folgenden Dateipfad und -namen: `[prefix_folder_name]/2027/01/15/my-feed-[UUID]-1.parquet` <br/>Wählen Sie den Link unten aus, um eine Liste der verfügbaren Variablen zu erhalten."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-df-export-file-name-override"
->title="Standardpfad oder Dateinamen überschreiben"
->abstract="Aktivieren Sie diese Option, um den für diesen Speicherort festgelegten Standardpfad oder Dateinamen zu überschreiben. Die Überschreibung gilt nur für diesen Daten-Feed und bestimmt, wohin Daten-Feed-Dateien gesendet werden."
 
 <!-- markdownlint-enable MD034 -->
 
