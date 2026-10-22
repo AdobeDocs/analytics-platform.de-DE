@@ -22,17 +22,17 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: c6330935bb6b36fab622b7884e9182ebd4bdc610
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 63%
+source-wordcount: '470'
+ht-degree: 60%
 ---
 # Best Practices für die Attribution
 
 Welches Attributionsmodells für Ihr Unternehmen am besten geeignet ist, hängt von einer Reihe von Überlegungen ab. In diesem Artikel werden eine Methodik und einige allgemeine Best Practices untersucht:
 
 * [Explorative Analyse](#exploratory-analysis)
-* [Regelbasierte Attributionen](#rule-base-attribution)
+* [Regelbasierte Attribution](#rule-based-attribution)
 * [Algorithmische Attribution verwenden](#use-algorithmic-attribution)
 
 ## Explorative Analyse
@@ -46,11 +46,11 @@ In dieser vorbereitenden Phase geht es darum, ein Verständnis des Kundenverhalt
 * Der Anteil/die Verteilung dieser Verhaltensweisen
 
 Wenn beispielsweise 50 % der Kunden vor ihrer Konversion über drei Kanäle mit Ihnen in Kontakt kommen, besteht dann eine Interaktion zwischen diesen drei Kanälen?
-Sie können dann eine Analyse des oberen und des unteren Ende des Trichters durchführen, um Ihr Verständnis zu erweitern.
+Um Ihr Verständnis zu erweitern, führen Sie Analysen der oberen und unteren funnel durch.
 
 ### Analyse des oberen Ende des Trichters
 
-Bei der Analyse des oberen Ende des Trichters werden diejenigen Kanäle untersucht, die zur Förderung der Marken- oder Produktwahrnehmung dienen. So zielen etwa TV-Werbespots in der Regel auf die Markenwahrnehmung ab. Hierfür empfiehlt sich das [Attributionsmodell des Zeitverfalls](/help/analysis-workspace/attribution/models.md) da Ihr TV-Werbespot im Zeitverlauf aus dem Gedächtnis Ihrer Zielgruppe verschwinden wird.
+Bei der Analyse des oberen Ende des Trichters werden diejenigen Kanäle untersucht, die zur Förderung der Marken- oder Produktwahrnehmung dienen. So zielen etwa TV-Werbespots in der Regel auf die Markenwahrnehmung ab. Verwenden Sie [ Attributionsmodell des Zeitverfalls](/help/analysis-workspace/attribution/models.md) da Ihr TV-Werbespot im Zeitverlauf aus dem Gedächtnis Ihrer Zielgruppe verschwinden wird.
 
 ### Analyse des unteren Ende des Trichters
 
@@ -64,15 +64,19 @@ Dieser Schritt dient der Validierung Ihrer Hypothesen.
 
 Angenommen, Ihre Hypothese lautet: &quot;*Mein Erstkontaktkanal hat eine größere Auswirkung auf die Konversion als mein Letztkontaktkanal.*&quot;
 
-In diesem Fall würden Sie das [Umgekehrte J-förmige Attributionsmodell) verwenden](/help/analysis-workspace/attribution/models.md) um diese Hypothese zu testen. Dieses Modell schreibt dem ersten Kontaktpunkt (bzw. „Touchpoint“) eine Gewichtung von 60 % zu.
+Verwenden Sie in diesem Fall das [Umgekehrte J-förmige Attributionsmodell](/help/analysis-workspace/attribution/models.md) um diese Hypothese zu testen. Dieses Modell schreibt dem ersten Kontaktpunkt (bzw. „Touchpoint“) eine Gewichtung von 60 % zu.
 
 **Beispiel 2**
 
-Angenommen, Ihre Hypothese lautet: *„In einer bestimmten Branche (z. B. der Reisebranche) beträgt das Attributionsfenster 60 oder 90 Tage, nicht 30 Tage, da Kunden viel recherchieren, bevor sie ein Produkt kaufen.*&quot;
+Angenommen, Ihre Hypothese lautet: *„In der Reisebranche beträgt das Attributionsfenster 60 oder 90 Tage, nicht 30, da Kunden vor dem Kauf viel recherchieren.“*
 
-In diesem Fall würden Sie Ihr [Lookback-Fenster](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/attribution/models) auf 90 Tage ändern.
+Ändern Sie in diesem Fall Ihr [Lookback-Fenster](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/models) auf 90 Tage.
 
 ## Algorithmische Attribution verwenden
+
+>[!NOTE]
+>
+>Sie müssen über das Customer Journey Analytics **Ultimate**-Paket verfügen, um die algorithmische Attribution verwenden zu können. Wenden Sie sich an Ihre bzw. Ihren Admin, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
 
 Wenn Sie noch kein Attributionsmodell haben, das alle Ihre Fragen zufriedenstellend beantwortet, können Sie die [algorithmische Attribution](/help/analysis-workspace/attribution/algorithmic.md) verwenden. Da es sehr schwierig ist, eine große Anzahl möglicher Hypothesen und Kombinationen zu validieren, werden bei der algorithmischen Attribution integrierte Algorithmen verwendet, um auf die einzelnen Dimensionen Punkte zu verteilen.
 
@@ -80,5 +84,5 @@ Wenn Sie noch kein Attributionsmodell haben, das alle Ihre Fragen zufriedenstell
 
 * Möglicherweise sollten Sie ergänzend zu Analysis Workspace einen Datenwissenschaftler hinzuziehen.
 * Sie können sich auf Rohdaten verlassen, wie in Daten-Feeds von Adobe.
-* Erwägen Sie beispielsweise die Verwendung von [&#128279;](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)Customer Journey Analytics), wenn Sie Ihre Impressionsdaten berücksichtigen möchten.
+* Erwägen Sie beispielsweise die Verwendung von [](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)Customer Journey Analytics), wenn Sie Ihre Impressionsdaten berücksichtigen möchten.
 
