@@ -70,7 +70,7 @@ Verwenden Sie in diesem Fall das [Umgekehrte J-förmige Attributionsmodell](/hel
 
 Angenommen, Ihre Hypothese lautet: *„In der Reisebranche beträgt das Attributionsfenster 60 oder 90 Tage, nicht 30, da Kunden vor dem Kauf viel recherchieren.“*
 
-Ändern Sie in diesem Fall Ihr [Lookback-Fenster](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/models) auf 90 Tage.
+Ändern Sie in diesem Fall Ihr [Lookback-Fenster](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/attribution/models) auf 90 Tage.
 
 ## Algorithmische Attribution verwenden
 
@@ -84,5 +84,5 @@ Wenn Sie noch kein Attributionsmodell haben, das alle Ihre Fragen zufriedenstell
 
 * Möglicherweise sollten Sie ergänzend zu Analysis Workspace einen Datenwissenschaftler hinzuziehen.
 * Sie können sich auf Rohdaten verlassen, wie in Daten-Feeds von Adobe.
-* Erwägen Sie beispielsweise die Verwendung von [&#128279;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)Customer Journey Analytics), wenn Sie Ihre Impressionsdaten berücksichtigen möchten.
+* Erwägen Sie beispielsweise die Verwendung von [&#128279;](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)Customer Journey Analytics), wenn Sie Ihre Impressionsdaten berücksichtigen möchten.
 
