@@ -34,9 +34,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 9e9722a8c5848cba2e657a9c538d61e9453b0d09
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '514'
 ht-degree: 10%
 ---
 # Transformieren von Datensätzen für B2B-Lookups
@@ -45,10 +45,10 @@ Um personenbasierte Suchen nach B2B-Daten (einschließlich Konten, Opportunitys,
 
 Diese Umwandlung ist nur für Datensätze mit Daten für B2B-Lookup-Schemas verfügbar, die auf den folgenden Klassen basieren:
 
-* [XDM Business Account Person Relation](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM Business Marketing List Members](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [XDM Business Campaign Members](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [XDM Business Account Person Relation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM Business Opportunity Person Relation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM Business Marketing List Members](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM Business Campaign Members](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
@@ -56,9 +56,9 @@ Diese Umwandlung ist nur für Datensätze mit Daten für B2B-Lookup-Schemas verf
 
 >[!PREREQUISITES]
 >
->Damit die Aufnahme ordnungsgemäß funktioniert, müssen Sie überprüfen, ob die B2B-Lookup-Datensätze Daten für die folgenden Felder enthalten (wie in den B2B-Lookup-Schemata definiert):
+>Damit die Aufnahme ordnungsgemäß funktioniert, muss jeder Datensatz in der folgenden Tabelle das angegebene Feld enthalten, das mit Daten ausgefüllt ist:
 >
->| Datensatz, der schemakonforme Daten enthält | Mit Daten ausgefülltes Feld |
+>| Datensatz, der schemakonforme Daten enthält | Erforderliches Feld mit Daten ausgefüllt |
 >|---|---|
 >| XDM Business Account Person Relation | `accountPersonID` |
 >| XDM Business-Opportunity-Person | `opportunityPersonID` |
