@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: adc7e85339e89c181375c0d3ea5c228d473239a7
+source-git-commit: 5006a5e7f48fb107cc32cf56051062cc88f35c8e
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 43%
+source-wordcount: '1548'
+ht-degree: 40%
 ---
 # Komponentenverfügbarkeit in Daten-Feeds
 
@@ -28,7 +28,7 @@ ht-degree: 43%
 
 Nicht alle Customer Journey Analytics-Komponenten können in Daten-Feeds verwendet werden. Einige Dimensionen sind in jedem Daten-Feed enthalten, einige Komponenten können nicht einbezogen werden und einige Metriken müssen durch einen Ersatz ersetzt werden.
 
-Verwenden Sie die folgenden Informationen, um zu verstehen, welche Komponenten Sie beim [Erstellen eines Daten-Feeds) &#x200B;](/help/components/exports/cja-data-feeds/create-feed.md) können.
+Verwenden Sie die folgenden Informationen, um zu verstehen, welche Komponenten Sie beim [Erstellen eines Daten-Feeds) ](/help/components/exports/cja-data-feeds/create-feed.md) können.
 
 ## Erforderliche Dimensionen {#required-dimensions}
 
@@ -98,8 +98,6 @@ Die folgenden Customer Journey Analytics-Standardmetriken können nicht in Daten
 
 <!-- markdownlint-disable MD034 -->
 
-<!-- pretty sure this isn't being used -->
-
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
 >title=""
@@ -107,20 +105,37 @@ Die folgenden Customer Journey Analytics-Standardmetriken können nicht in Daten
 
 <!-- markdownlint-enable MD034 -->
 
->[!IMPORTANT]
->
->Bestimmte Dimensionen können nicht zusammen in Experience Platform-Datensätzen verwendet werden und können daher nicht in denselben Daten-Feed aufgenommen werden.
->
->Wenn Sie sich dafür entscheiden, entweder die **Benutzeragent**- oder **Mobile ID**-Dimensionen in Ihren Daten-Feed aufzunehmen, können die unten aufgeführten Dimensionen nicht zum Daten-Feed hinzugefügt werden.
->
->Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
+Bestimmte Dimensionen können nicht zusammen in Experience Platform-Datensätzen verwendet werden. Ein Daten-Feed kann Dimensionen aus einer der folgenden Gruppen enthalten, jedoch nicht aus beiden:
 
-Die folgenden Dimensionen können nicht zusammen mit den Dimensionen **Benutzeragent** oder **Mobile ID** verwendet werden:
+* Die Dimensionen **Benutzeragent** und **Mobile ID**. <!--UI shows "Type identifier" for device.typeID; align with docs name "Mobile ID" (open question for Danny Carmen).-->
+
+* Dimensionen der Gerätesuche, z. B. Browser-, Mobilgerät- und Betriebssystemdimensionen. Die vollständige Liste finden Sie unter [Dimensionen der Gerätesuche](#device-lookup-dimensions).
+
+>[!NOTE]
+>
+>Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von ](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
+
+### Lösen von Dimensionskonflikten
+
+Beim Hinzufügen von Dimensionen, die nicht zusammen verwendet werden können, wird ein Dialogfeld angezeigt, in dem aufgelistet wird, welche Dimensionen hinzugefügt und welche nicht hinzugefügt oder entfernt werden. Was passiert, hängt davon ab, wo der Konflikt liegt:
+
+* **Die Dimensionen, die Sie hinzufügen, stehen im Konflikt mit Dimensionen, die sich bereits im Daten-Feed befinden**: Die Dimensionen, die Sie hinzufügen, haben Priorität. Im Dialogfeld werden Sie aufgefordert, Ihre Auswahl hinzuzufügen und die widersprüchlichen Dimensionen aus dem Daten-Feed zu entfernen.
+
+* **Die Dimensionen, die Sie hinzufügen, stehen in Konflikt miteinander**: Die Dimensionen **Benutzeragent** und **Mobile ID** haben Priorität. Sie werden im Dialogfeld aufgefordert, sie hinzuzufügen. Die Dimensionen für die Gerätesuche in Ihrer Auswahl werden nicht hinzugefügt.
+
+Um den Daten-Feed unverändert zu lassen, wählen Sie **[!UICONTROL Abbrechen]** aus.
+
+<!--Open questions for Danny Carmen: behavior when a batch contains both groups and the feed already has conflicting dimensions; whether "add all" adds the full selection or only the listed dimensions.-->
+
+### Dimensionen der Gerätesuche {#device-lookup-dimensions}
+
+Die folgenden Dimensionen können nicht im selben Daten-Feed wie die Dimensionen **Benutzeragent** oder **Mobile ID** enthalten sein.
 
 >[!NOTE]
 >
 >Die folgende Liste verwendet standardmäßige Dimensionsnamen. Dimensionen, die in Ihrer Datenansicht umbenannt werden, werden in Daten-Feeds mit ihren benutzerdefinierten Namen angezeigt.
 
+<!--Engineering lists 30 device lookup fields; this list has 28. Likely missing: environment.operatingSystemIDStr and environment.browserIDStr. Confirm display names with Danny Carmen.-->
 
 * Browser-Typ
 * Browser
