@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
+source-git-commit: 39d7aae2c47754899a2ac7d1a544a0b585d99b8b
 workflow-type: tm+mt
-source-wordcount: '3924'
-ht-degree: 20%
+source-wordcount: '4362'
+ht-degree: 15%
 ---
 # Erstellen eines Daten-Feeds
 
@@ -71,6 +71,24 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 >id="cja_datafeed_frequency_granularity"
 >title="Häufigkeit und Granularität"
 >abstract="**Versandhäufigkeit** (Live-Feeds): Wie oft der Daten-Feed gesendet wird. Stündliche Sendungen enthalten die Daten einer Stunde; tägliche Sendungen enthalten die Daten eines Tages. Der Lookback-Datumsbereich und die Verarbeitungsverzögerung können sich ebenfalls darauf auswirken, welche Ereignisse einbezogen werden.<p>**Granularität** (Aufstockungs-Feeds): Das zur Aufteilung historischer Daten verwendete Zeitintervall. Jeder Chunk enthält die Daten eines Tages und wird so schnell wie möglich gesendet, nicht einmal pro Tag. Dieses Feld ist immer auf „Täglich“ festgelegt und kann nicht geändert werden.</p>"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-df-export-file-name"
+>title="Pfad- oder Dateiname"
+>abstract="Geben Sie einen Pfad oder einen Dateinamen (oder beides) an, um zu bestimmen, wohin Dateien am ausgewählten Speicherort gesendet werden sollen. Um Dateien im Ordner der obersten Ebene des Speicherorts zu speichern, geben Sie `/` an.<br/>Bei Live-Feeds können Sie Variablen verwenden, um den Pfad oder Dateinamen dynamisch zu machen. <br/>Wenn Sie beispielsweise `${yyyy}/${MM}/${dd}/my-feed-${instance_id}-${idx}` angeben, hätte ein Live-Feed, der am 15. Januar 2027 bereitgestellt wird, den folgenden Dateipfad und -namen: `[prefix_folder_name]/2027/01/15/my-feed-[UUID]-1.parquet` <br/>Wählen Sie den Link unten aus, um eine Liste der verfügbaren Variablen zu erhalten."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-df-export-file-name-override"
+>title="Standardpfad oder Dateinamen überschreiben"
+>abstract="Aktivieren Sie diese Option, um den für diesen Speicherort festgelegten Standardpfad oder Dateinamen zu überschreiben. Die Überschreibung gilt nur für diesen Daten-Feed und bestimmt, wohin Daten-Feed-Dateien gesendet werden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -137,13 +155,24 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
    Spaltenbreiten werden in einem Cookie gespeichert und bleiben erhalten, wenn Sie das nächste Mal im selben Browser zu diesem Daten-Feed zurückkehren.
 
-1. (Optional) Ändern Sie die Komponenten-ID, die in der Daten-Feed-Ausgabe angezeigt wird.
+1. (Optional) Ändern der Ausgabe-ID einer Komponente. Die Ausgabe-ID ist der Spaltenname in der Daten-Feed-Ausgabe.
 
-   1. Bewegen Sie den Mauszeiger über eine Komponente auf der Arbeitsfläche und klicken Sie dann auf das Informationssymbol.
+   Standardmäßig ist die Ausgabe-ID die Komponenten-ID im snake_case. Eine Änderung der Ausgabe-ID wirkt sich nur auf diesen Daten-Feed aus. Die Komponenten-ID in der Datenansicht wird nicht geändert. Die Schemavorschau zeigt sowohl die Komponenten-ID als auch die Ausgabe-ID an.
 
-   1. Geben Sie im Feld Komponenten-ID eine neue Komponenten-ID an.
+   1. Bewegen Sie den Mauszeiger über eine Komponente auf der Arbeitsfläche und klicken Sie dann auf das Informationssymbol ![Info](/help/assets/icons/InfoOutline.svg).
+
+   1. Klicken Sie auf das Bearbeitungssymbol ![Bearbeiten](/help/assets/icons/Edit.svg) neben der ID und geben Sie dann eine neue Ausgabe-ID an.
 
       <!--add screenshot-->
+
+   Ausgabe-IDs müssen:
+
+   * Innerhalb des Daten-Feeds eindeutig sein.
+   * Nur Buchstaben, Zahlen und Unterstriche (`_`) enthalten. Leerzeichen, Punkte (`.`), Bindestriche (`-`), Schrägstriche (`/`) und andere Sonderzeichen sind nicht zulässig.
+   * Beginnen Sie mit einem Buchstaben oder einem Unterstrich.
+   * 255 Zeichen oder weniger sein.
+
+   Ausgabe-IDs können nicht mit `_cja` beginnen, das für die Verwendung in Adobe reserviert ist.
 
 1. (Optional) Verwenden Sie die Bedienfelder **[!UICONTROL Feed]** Zusammenfassung und **[!UICONTROL Schemavorschau]** auf der rechten Seite der Seite, um Ihre Datenstruktur zu überprüfen, bevor Sie fortfahren:
 
@@ -166,7 +195,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    | [!UICONTROL **Häufigkeit**]<br/> Nur für Live-Feeds verfügbar | Legen Sie fest, wie oft der Daten-Feed gesendet werden soll. Ereignisse mit Zeitstempeln, die in das Häufigkeitsfenster fallen, werden in den Daten-Feed-Versand aufgenommen. Die Felder [!UICONTROL **Lookback**] Datumsbereich und [!UICONTROL **Verarbeitungsverzögerung**] können sich auch darauf auswirken, welche Ereignisse für die von Ihnen gewählte Versandfrequenz in die Daten aufgenommen werden.<p>Wählen Sie diese Option aus, um Daten aus einer Stunde oder aus Daten aus einem Tag aufzunehmen.</p><ul><li>**Täglich**: Feeds enthalten Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht.</li><li>**Stündlich**: Feeds enthalten Daten für eine einzige Stunde.</li></ul> |
    | [!UICONTROL **Granularität**]<br/> Nur für Aufstockungs-Feeds verfügbar | Das Zeitintervall, das zum Aufteilen historischer Daten in Blöcke verwendet wird. Jeder Chunk enthält Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht. <p>Die Granularität bestimmt, wie die Daten gruppiert werden, und nicht, wie oft sie bereitgestellt werden. Aufstockungsdaten werden so schnell wie möglich bereitgestellt, nicht einmal pro Tag.</p><p>Dieses Feld ist immer auf &quot;[!UICONTROL **&quot; festgelegt**] kann nicht geändert werden.</p> |
    | [!UICONTROL **Lookback-Datumsbereich**] | Steuert, wie weit Customer Journey Analytics bei der Verarbeitung der Daten-Feed-Bereitstellung zurückblickt. Der Standardwert ist 30 Tage.<p>Das Häufigkeitsfenster (Stunde oder Tag) bestimmt, welche Ereignisse im Daten-Feed enthalten sind, während der **Lookback-Datumsbereich** den erforderlichen historischen Kontext bereitstellt, um diese Ereignisse korrekt zu klassifizieren.</p><p>Segmentqualifikation, Dimensionspersistenz, Sitzungsberechnung und Transformationen abgeleiteter Felder können sich auf alle eingeschlossenen Ereignisse auswirken.</p> <p>Bevor Sie diese Option konfigurieren, lesen Sie die Details und Beispiele im folgenden Abschnitt [Grundlegendes zum Lookback-Datumsbereich](#data-feed-lookback-date-range).</p> |
-   | [!UICONTROL **Verarbeitungsverzögerung**] | Wählen Sie die Zeitspanne aus, die Customer Journey Analytics wartet, bevor eine Daten-Feed-Datei verarbeitet wird. Alle verspätet eintreffenden Ereignisse, die während der Verarbeitungsverzögerung eingehen, werden im Daten-Feed berücksichtigt. <p>Die Mindestdauer für die Verarbeitungsverzögerung beträgt 2 Stunden, für einige Arten von Daten ist jedoch eine längere Verzögerung erforderlich. Die ausgewählte Verzögerung hängt von den Datentypen in Ihrer Verbindung ab, z. B. Streaming-, Batch-, zugeordnete, Lookup- oder Profildaten.</p><p>Wählen Sie eine Verzögerung aus, die lang genug ist, damit die langsamsten Daten in Ihrer Verbindung die Verarbeitung abschließen. Wenn die Verzögerung zu kurz ist, werden Daten, die noch verarbeitet werden, nicht in die Daten-Feed-Datei einbezogen.</p><p>Bevor Sie diese Option konfigurieren, lesen Sie die Details und Beispiele im folgenden Abschnitt [Grundlegendes zur Verarbeitungsverzögerung](#data-feed-processing-delay).</p> |
+   | [!UICONTROL **Verarbeitungsverzögerung**] | Die Zeitspanne, die Customer Journey Analytics vor dem Verarbeiten einer Daten-Feed-Datei wartet. Alle verspätet eintreffenden Ereignisse, die während der Verarbeitungsverzögerung eingehen, werden im Daten-Feed berücksichtigt. <p>Wählen Sie eine Verzögerung aus, die lang genug ist, damit die langsamsten Daten in Ihrer Verbindung die Verarbeitung abschließen. Wenn die Verzögerung zu kurz ist, werden Daten, die noch verarbeitet werden, nicht in die Daten-Feed-Datei einbezogen.</p><p>Die minimale Verarbeitungsverzögerung beträgt 2 Stunden. Die Standardeinstellung basiert auf den Datensätzen in Ihrer Verbindung. Wenn das Zusammenfügen beispielsweise aktiviert ist, ist der Standardwert 6 Stunden. Einige Datentypen erfordern eine längere Verzögerung. Die ausgewählte Verzögerung hängt von den Datentypen in Ihrer Verbindung ab, z. B. Streaming-, Batch-, zugeordnete, Lookup- oder Profildaten.</p><p>Bevor Sie diese Option konfigurieren, lesen Sie die Details und Beispiele im folgenden Abschnitt [Grundlegendes zur Verarbeitungsverzögerung](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Komprimierungsformat**] | Wählen Sie das Komprimierungsformat für die Parquet-Ausgabedateien aus, die an Ihr Cloud-Ziel gesendet werden. Wählen Sie aus den folgenden Formaten:<ul><li>[!UICONTROL **Snappy**]: Schnelle Komprimierung und Dekomprimierung bei moderaten Dateigrößen. Wird von modernen Datenplattformen wie BigQuery, Snowflake und Apache Spark weithin unterstützt.</li><li>[!UICONTROL **GZip**]: Grob kompatibel, auch mit Tools, die Snappy nicht nativ unterstützen. Empfohlen, wenn Ihre nachgelagerte Pipeline einen weithin anerkannten Komprimierungsstandard erfordert.</li><li>[!UICONTROL **Z Standard (Zstd)**]: Hohe Komprimierungseffizienz mit schneller Dekomprimierung. Geeignet, wenn die Minimierung der Dateigröße eine Priorität ist und Ihre Tools Zstd unterstützen.</li></ul> |
 
 1. Konfigurieren Sie auf [!UICONTROL **Registerkarte**] im Abschnitt [!UICONTROL **Ziel**] das Ziel, an das die Daten gesendet werden sollen.
@@ -189,7 +218,9 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    | [!UICONTROL **Anzeigen von Zielen für alle Benutzer**] | Wenn Sie Systemadministrator sind, können Sie diese Option aktivieren, um Ziele anzuzeigen, die von allen Benutzern in Ihrer Organisation erstellt wurden. Wenn diese Option deaktiviert ist, werden nur von Ihnen erstellte Ziele angezeigt. |
    | [!UICONTROL **Konto**] | Führen Sie einen der folgenden Schritte aus:<ul><li>**Vorhandenes Konto verwenden:** Wählen Sie das Dropdown-Menü neben dem Feld **[!UICONTROL Konto]** aus. Oder geben Sie den Kontonamen ein und wählen Sie ihn dann aus dem Dropdown-Menü aus. <p>Konten stehen Ihnen nur zur Verfügung, wenn Sie sie konfiguriert haben oder wenn sie für eine Organisation freigegeben wurden, der Sie angehören.</p></li><li>**Neues Konto erstellen:** Wählen Sie **[!UICONTROL Konto hinzufügen]** im **[!UICONTROL Konto]** Dropdown-Menü aus. Informationen zum Konfigurieren des Kontos finden Sie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md).</li></ul> |
    | [!UICONTROL **Ort**] | Führen Sie einen der folgenden Schritte aus:<ul><li>**Vorhandenen Speicherort verwenden:** Wählen Sie das Dropdown-Menü neben dem Feld **[!UICONTROL Speicherort]** aus. Oder geben Sie den Ortsnamen ein und wählen Sie ihn dann aus dem Dropdown-Menü aus.</li><li>**Neuen Speicherort erstellen:** Wählen Sie **[!UICONTROL Speicherort hinzufügen]** im **[!UICONTROL Speicherort]** Dropdown-Menü aus. Informationen zum Konfigurieren des Speicherorts finden Sie unter [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).</li></ul> |
-   | [!UICONTROL **Nach Abschluss per E-Mail benachrichtigen**] | Geben Sie eine oder mehrere E-Mail-Adressen an, an die eine Benachrichtigung gesendet werden soll, nachdem der Daten-Feed erfolgreich gesendet wurde oder nicht gesendet werden kann. Mehrere E-Mail-Adressen müssen durch ein Komma getrennt werden. |
+   | [!UICONTROL **Überschreiben des Standardpfads oder Dateinamens**] | Aktivieren Sie diese Option, um den Standardpfad oder Dateinamen zu überschreiben, der für den ausgewählten Speicherort festgelegt ist. Die Überschreibung gilt nur für diesen Daten-Feed und bestimmt, wohin Daten-Feed-Dateien gesendet werden.<p>Wenn diese Option aktiviert ist, wird das [!UICONTROL **Pfad oder Dateiname**] angezeigt.</p> |
+   | [!UICONTROL **Pfad oder Dateiname**]<br/> Nur verfügbar, wenn [!UICONTROL **Standardpfad oder Dateiname überschreiben**] aktiviert ist | Geben Sie einen Pfad oder einen Dateinamen (oder beides) an, um zu bestimmen, wohin Dateien am ausgewählten Speicherort gesendet werden sollen. Um Dateien im Ordner der obersten Ebene des Speicherorts zu speichern, geben Sie `/` an.<p>Bei Live-Feeds können Sie eine der folgenden Variablen verwenden, um den Pfad oder Dateinamen dynamisch zu machen:</p><ul><li>**{yyyy}**: 4-stelliges Kalenderjahr (von Schreibweise abhängig)</li><li>**{yy}**: 2-stelliges Kalenderjahr (von Schreibweise abhängig)</li><li>**{MM}**: 2-stelliger Monat (von Schreibweise abhängig)</li><li>**{dd}**: 2-stelliger Tag (von Schreibweise abhängig)</li><li>**{HH}**: 2-stellige Stunde (Groß-/Kleinschreibung beachten)</li><li>**{mm}**: 2-stellige Minuten (von Schreibweise abhängig)</li><li>**{ss}**: 2-stellige Sekunden (von Schreibweise abhängig)</li><li>**{fff}**: 3-stellige Nanosekunden (Groß-/Kleinschreibung beachten)</li><li>**{instance_id}**: Anfrage (Instanz)-UUID</li><li>**{export_id}**: Export (Zeitplan) UUID</li><li>**{idx}**: Index beginnt bei 0 (für jede Datei inkrementiert)</li><li>**{total}**: Gesamtzahl der Dateien für den gesamten Übertragungsauftrag</li><li>**{completion_millis}**: Übertragungszeit in Millisekunden</li></ul><p>Wenn Sie beispielsweise `${yyyy}/${MM}/${dd}/my-feed-${instance_id}-${idx}` angeben, hätte ein Live-Feed, der am 15. Januar 2027 bereitgestellt wird, den folgenden Dateipfad und -namen: `[prefix_folder_name]/2027/01/15/my-feed-[UUID]-1.parquet`</p> |
+   | [!UICONTROL **Benachrichtigen Sie über Probleme, wenn sie abgeschlossen sind und ablaufen**] | Geben Sie eine oder mehrere E-Mail-Adressen an, an die bei Abschluss oder Ablauf des Daten-Feeds bzw. bei Auftreten von Problemen eine Benachrichtigung gesendet werden soll. Trennen Sie mehrere E-Mail-Adressen durch ein Komma. |
    | [!UICONTROL **Manifest aktivieren**] | Wählen Sie aus, ob bei jeder Daten-Feed-Bereitstellung eine Manifestdatei enthalten sein soll. Die Manifestdatei enthält Informationen für jede Datei, die im Daten-Feed enthalten ist. |
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
@@ -290,7 +321,7 @@ Alle abgeleiteten Feldfunktionen, die auf Container verweisen, verwenden den Loo
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_processing_delay"
 >title="Verarbeitungsverzögerung"
->abstract="Die Zeitspanne, die Customer Journey Analytics vor dem Verarbeiten einer Daten-Feed-Datei wartet. Alle verspätet eintreffenden Ereignisse, die während der Verarbeitungsverzögerung eingehen, werden im Daten-Feed berücksichtigt.<p>Die Mindestdauer für die Verarbeitungsverzögerung beträgt 2 Stunden, für einige Arten von Daten ist jedoch eine längere Verzögerung erforderlich. Wählen Sie eine Verzögerung, die lang genug ist, damit auch die langsamsten Daten in Ihrer Verbindung im Data Lake in Experience Platform eintreffen und in Customer Journey Analytics aufgenommen werden können. Wenn die Verzögerung zu kurz ist, werden Daten, die noch verarbeitet werden, nicht in die Daten-Feed-Datei einbezogen.</p><p>Die Zuordnung kann bis zu 4 Stunden zusätzlich in Anspruch nehmen. Um dies zu berücksichtigen, fügen Sie für alle zugeordneten Daten 4 Stunden zur Verzögerung hinzu.</p>"
+>abstract="Die Zeit, die das System wartet, bevor es eine Daten-Feed-Datei verarbeitet. Alle verspäteten Ereignisse, die während der Verzögerung eintreten, sind im Feed enthalten.<p>Die minimale Verarbeitungsverzögerung beträgt 2 Stunden, einige Datentypen erfordern jedoch mehr Zeit. Wählen Sie eine Verzögerung aus, die für die langsamsten Daten in Ihrer Verbindung lang genug ist. Wenn die Verarbeitungsverzögerung zu kurz ist, werden einige Daten möglicherweise nicht in den Feed eingeschlossen.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -316,6 +347,8 @@ Verschiedene Datentypen benötigen unterschiedlich viel Zeit, bis sie in Custome
 
 Wählen Sie eine Verarbeitungsverzögerung aus, die lang genug ist, damit die langsamsten Daten in Ihrer Verbindung beide Phasen abschließen. Wenn die Verzögerung zu kurz ist, werden Daten, die noch verarbeitet werden, nicht in die Daten-Feed-Datei einbezogen.
 
+Wenn Sie einen Daten-Feed erstellen, wird die Verarbeitungsverzögerung standardmäßig auf einen empfohlenen Wert basierend auf den Datensätzen in Ihrer Verbindung zurückgesetzt. Wenn beispielsweise das Zusammenfügen für die Verbindung aktiviert ist, ist der Standardwert 6 Stunden. Sie können eine kürzere Verzögerung bis zum 2-Stunden-Minimum auswählen, es wird jedoch eine Warnung angezeigt, da einige Daten möglicherweise nicht im Daten-Feed enthalten sind.
+
 #### Phase 1: Daten gelangen in den Data Lake von Experience Platform
 
 Die Ankunftszeiten variieren je nach Art der Daten, die Sie erfassen. Wählen Sie eine Verzögerung aus, die dem erfassten Datentyp entspricht.
@@ -324,7 +357,7 @@ Die Ankunftszeiten variieren je nach Art der Daten, die Sie erfassen. Wählen Si
 
 * **Analytics-Quell-Connector** Datensätze: Daten gelangen normalerweise innerhalb von 2,25 Stunden in den Data Lake (siehe [Latenzen](/help/technotes/guardrails.md#latencies)).
 
-  <!--When using the Analytics Source Connector, the minimum processing delay increases from 2 hours to 6 hours (?) to account for the source connector data. (checking to see if this is feasible) -->
+  <!--Default delay for Analytics source connector datasets is TBD (Oct 19 decision); add when confirmed.-->
 
 * **Datensätze aus anderen Quell-Connectoren**: Die Latenz variiert je nach Quell-Connector und nach dem Zeitpunkt des Batch-Versands. Die Upstream-Verarbeitung in Experience Platform, z. B. die Datenvorbereitung, kann mehr Zeit hinzufügen.
 
@@ -346,9 +379,7 @@ Die Datenaufnahmezeiten variieren je nachdem, ob für den Datensatz die Zuordnun
 
 * **Nicht zugeordnete Datensätze**: Dies kann bis zu 90 Minuten dauern (siehe [Latenzen](/help/technotes/guardrails.md#latencies)).
 
-* **Zusammengefügte Datensätze**: Beim Zusammenfügen können zusätzlich zu den 90 Minuten, die für nicht zusammengefügte Datensätze erforderlich sind, bis zu 4 Stunden hinzugefügt werden (siehe [Latenzen](/help/technotes/guardrails.md#latencies)). Wenn für die Verbindung das Stitching aktiviert ist, setzen Sie die Verzögerung auf mindestens 6 Stunden und möglicherweise 8 Stunden. Daten, die durch eine Zusammenfügungs-Wiederholung aktualisiert werden, sind im Allgemeinen nicht in den Daten-Feed-Dateien enthalten, die bereits verarbeitet wurden.
-
-  Wenn das Zusammenfügen aktiviert ist, erhöht sich die minimale Verarbeitungsverzögerung von 2 auf 6 Stunden, um die zusammengefügten Daten zu berücksichtigen.
+* **Zusammengefügte Datensätze**: Beim Zusammenfügen können zusätzlich zu den 90 Minuten, die für nicht zusammengefügte Datensätze erforderlich sind, bis zu 4 Stunden hinzugefügt werden (siehe [Latenzen](/help/technotes/guardrails.md#latencies)). Wenn das Zusammenfügen für die Verbindung aktiviert ist, beträgt die Standardverzögerung 6 Stunden. Daten, die durch eine Zusammenfügungs-Wiederholung aktualisiert werden, sind im Allgemeinen nicht in den Daten-Feed-Dateien enthalten, die bereits verarbeitet wurden.
 
 >[!BEGINSHADEBOX]
 
