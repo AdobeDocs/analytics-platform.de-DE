@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 21a2b0cc296d30de7f656a658d7e382c8c4ea835
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 33%
+source-wordcount: '1216'
+ht-degree: 31%
 ---
 # Operatoren
 
@@ -51,13 +51,19 @@ Beispiel: Sie haben einen Seitennamen mit dem Namen *Mein cooles Produkt*.
 
 ## Standardoperatoren
 
+>[!NOTE]
+>
+>Wenn Sie Standardoperatoren verwenden, geben die eingegebenen Werte Ergebnisse unabhängig von der Groß-/Kleinschreibung zurück, mit Ausnahme von **[!UICONTROL Übereinstimmungen]** und **[!UICONTROL stimmt nicht überein]**.
+>
+>Beispiel: **[!UICONTROL Seitenname]** **[!UICONTROL gleich]** `search results` gibt *Suchergebnisse*, *Suchergebnisse* und *SUCHERGEBNISSE* zurück.
+
 | Operator | Die ausgewählte Dimension, das ausgewählte Segment oder das ausgewählte Metrikereignis… |
 |--- |--- |
 | **[!UICONTROL Gleich]** | Gibt Elemente mit einer exakten Entsprechung für numerische oder Zeichenfolgewerte wieder. Hinweis: Wenn Sie Platzhalterzeichen verwenden, verwenden Sie den Operator **[!UICONTROL stimmt überein]**. |
 | **[!UICONTROL Ist nicht gleich]** | Gibt alle Elemente zurück, die keine exakte Übereinstimmung mit dem eingegebenen Wert enthalten.  Hinweis: Wenn Sie Platzhalterzeichen verwenden, verwenden Sie den Operator **[!UICONTROL stimmt nicht überein]**. |
 | **[!UICONTROL Entspricht einem von]** | Gibt Elemente zurück, die exakt mit einem beliebigen Wert im Eingabefeld übereinstimmen (bis zu 500 Elemente). Wenn Sie beispielsweise `Search Results, Homepage` für die Dimension **[!UICONTROL Seitenname]** mit diesem Operator eingeben, stimmen *Suchergebnisse* und *Homepage* und zählen als zwei Elemente. Das Eingabefeld für diesen Operator ist kommagetrennt. |
 | **[!UICONTROL Entspricht keinem von]** | Identifiziert Elemente, die exakt mit einem beliebigen Wert im Eingabefeld übereinstimmen, (bis zu 500 Elemente) und gibt dann nur Elemente ohne diese Werte zurück. Wenn Sie beispielsweise `Search Results, Homepage` mit diesem Operator für die Dimension **[!UICONTROL Seitenname]** eingeben, werden *Suchergebnisse* und *Homepage* identifiziert und dann **ausgeschlossen** aus den zurückgegebenen Elementen. Dieses Beispiel würde als 2 Elemente zählen. Das Eingabefeld für diesen Operator ist kommagetrennt. |
-| **[!UICONTROL Enthält]** | Gibt Elemente zurück, die mit den Unterzeichenfolgen der eingegebenen Werte vergleichbar sind. Wenn die Regel beispielsweise **[!UICONTROL Seitenname]** **[!UICONTROL enthält]** `Search` lautet, stimmt diese Regel mit allen Seiten überein, die die `Search` der Unterzeichenfolge enthalten, einschließlich *Suchergebnisse*, *Suche* und *Suchen*. Bei der Klausel „Enthält“ wird in Adobe Analytics die Groß- und Kleinschreibung nicht berücksichtigt, in Customer Journey Analytics jedoch schon. |
+| **[!UICONTROL Enthält]** | Gibt Elemente zurück, die mit den Unterzeichenfolgen der eingegebenen Werte vergleichbar sind. Wenn die Regel beispielsweise **[!UICONTROL Seitenname]** **[!UICONTROL enthält]** `Search` lautet, stimmt diese Regel mit allen Seiten überein, die die `Search` der Unterzeichenfolge enthalten, einschließlich *Suchergebnisse*, *Suche* und *Suchen*. |
 | **[!UICONTROL Enthält nicht]** | Gibt die Umkehrung der Regel **[!UICONTROL contains]** zurück. Insbesondere werden alle Elemente, die dem eingegebenen Wert entsprechen, aus den eingegebenen Werten ausgeschlossen. Wenn die Regel beispielsweise **[!UICONTROL Seitenname]** **[!UICONTROL Enthält nicht]** `Search` lautet, stimmt sie mit keiner Seite überein, die die `Search` der Unterzeichenfolge enthält, einschließlich *Suchergebnisse*, *Suche* und *Suchen*. Diese Werte werden aus den Ergebnissen ausgeschlossen. |
 | **[!UICONTROL Enthält alle von]** | Gibt Elemente zurück, die mit den Unterzeichenfolgen verglichen werden, einschließlich mehrerer miteinander verbundener Werte. Wenn Sie beispielsweise `Search Results` mit diesem Operator für die Dimension **[!UICONTROL Seitenname]** eingeben, stimmen *Suchergebnisse* und *Suchergebnisse* überein, jedoch nicht *Suche* oder *Ergebnisse*. Die Regel würde mit *Suche* UND *Ergebnisse* übereinstimmen. Das Eingabefeld für diesen Operator ist durch Leerzeichen getrennt (100 Wörter). |
 | **[!UICONTROL Enthält nicht alle von]** | Identifiziert Elemente im Vergleich zu Unterzeichenfolgen, einschließlich mehrerer miteinander verbundener Werte, und gibt dann nur Elemente ohne diese Werte zurück. Wenn Sie beispielsweise `Search Results` mit diesem Operator für die Dimension **[!UICONTROL Seitenname]** eingeben, werden *Suchergebnisse* und *Suchergebnisse* (aber nicht *Suche* oder *Ergebnisse* einzeln) identifiziert und diese Elemente ausgeschlossen. Das Eingabefeld für diesen Operator ist durch Leerzeichen getrennt (100 Wörter). |
@@ -67,7 +73,7 @@ Beispiel: Sie haben einen Seitennamen mit dem Namen *Mein cooles Produkt*.
 | **[!UICONTROL beginnt nicht mit]** | Gibt alle Elemente zurück, die nicht mit dem eingegebenen Zeichenfolgenwert beginnen. Dies ist das Gegenteil des Operators **[!UICONTROL Beginnt mit]**. |
 | **[!UICONTROL Endet mit]** | Gibt Elemente zurück, die mit eingegebenem Zeichenfolgenwert enden. |
 | **[!UICONTROL Endet nicht mit]** | Gibt alle Elemente zurück, die nicht mit dem eingegebenen Zeichenfolgenwert enden. Dies ist das Gegenteil des Operators **[!UICONTROL Endet mit]**. |
-| **[!UICONTROL Übereinstimmungen]** | Gibt Elemente zurück, die exakt mit einem angegebenen numerischen oder Zeichenfolgenwert übereinstimmen. Bei **[!UICONTROL matches]**-Klausel wird in Adobe Analytics und in Customer Journey Analytics zwischen Groß- und Kleinschreibung unterschieden. **Hinweis**: Verwenden Sie diesen Operator bei der Verwendung von [Platzhalterfunktionen](#wildcards) (Globbing). Beispiele für „Globbing“:<ul><li>`a*e` würde übereinstimmen mit `ae`, `abcde`, `adobe` und `a whole sentence`</li><li>`adob*` würde übereinstimmen mit `adobe`, `adobe analytics` und `adobo recipe`</li><li>`*dobe` würde übereinstimmen mit `dobe`, `adobe` und `cute little dobe`</li></ul> |
+| **[!UICONTROL Übereinstimmungen]** | Gibt Elemente zurück, die exakt mit einem angegebenen numerischen oder Zeichenfolgenwert übereinstimmen. **Hinweis**: Verwenden Sie diesen Operator bei der Verwendung von [Platzhalterfunktionen](#wildcards) (Globbing). Beispiele für „Globbing“:<ul><li>`a*e` würde übereinstimmen mit `ae`, `abcde`, `adobe` und `a whole sentence`</li><li>`adob*` würde übereinstimmen mit `adobe`, `adobe analytics` und `adobo recipe`</li><li>`*dobe` würde übereinstimmen mit `dobe`, `adobe` und `cute little dobe`</li></ul> |
 | **[!UICONTROL stimmt nicht überein mit]** | Gibt alle Elemente zurück, die keine exakte Übereinstimmung mit dem eingegebenen Wert enthalten. Hinweis: Verwenden Sie diesen Operator bei der Verwendung [Platzhalter](#wildcards)-Funktionen (Globbing). |
 | **[!UICONTROL vorhanden]** | Gibt die Anzahl der vorhandenen Elemente zurück. Wenn Sie beispielsweise die Dimension **[!UICONTROL Seiten nicht gefunden]** mit dem Operator **[!UICONTROL vorhanden]** auswerten, wird die Anzahl der vorhandenen Fehlerseiten zurückgegeben. |
 | **[!UICONTROL Ist nicht vorhanden]** | Gibt alle nicht vorhandenen Elemente zurück. Wenn Sie beispielsweise die Dimension **[!UICONTROL Seiten nicht gefunden]** mit dem Operator **[!UICONTROL Nicht vorhanden]** auswerten, wird die Anzahl der Seiten zurückgegeben, auf denen diese Fehlerseite nicht vorhanden war. |

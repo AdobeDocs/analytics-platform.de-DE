@@ -49,14 +49,14 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 952a54cc63b5d725c40c8f99cb1821e8b8e9f362
+source-git-commit: fbfd8f635d4a861d3d52dc2448ff8ae5d5f5b149
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1047'
 ht-degree: 22%
 ---
 # Aktuelle Customer Journey Analytics-Versionshinweise (Oktober 2026)
 
-**Letztes Update**: 20. Oktober 2026
+**Letzte Aktualisierung**: 22. Oktober 2026
 
 Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Oktober 2026. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -69,7 +69,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom Okto
 | **Adobe Brand Visibility-Integration**<br/> Verbinden Sie Adobe Brand Visibility mit den Customer Journey Analytics-Daten Ihres Unternehmens, damit Sie messen können, wie sich die KI-gesteuerte Erkennung in echte Website-Interaktion und Geschäftsergebnisse niederschlägt.<p>Weitere Informationen finden Sie unter [Adobe Brand Visibility-Integration](/help/integrations/bv/bv.md).</p> | | &#x200B;8. Oktober 2026 |
 | **Journey-Arbeitsfläche: Prozentsätze vergleichen**<br/> Beim Vergleichen einer Journey mit einem vorherigen Zeitraum können Sie jetzt die neue Option [!UICONTROL Prozentsätze vergleichen] aktivieren, um die Änderung in Prozentpunkten für jeden Knoten, jeden Pfeil und jeden Fallout anzuzeigen. Dies ist beim Vergleich von Raten nützlich, z. B. bei der Bindung zwischen Knoten oder beim Fallout, da der Vergleich auch dann genau bleibt, wenn die Anzahl der Personen auf dem Journey zwischen Datumsbereichen unterschiedlich ist.<p>Weitere Informationen finden Sie unter „Vergleichen von Prozentsätzen“ in [Konfigurieren einer Journey-Arbeitsflächen-Visualisierung](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings).</p> | | &#x200B;19. Oktober 2026 |
 | **Komponentenbeschreibungen automatisch generieren** <br/>Sie können jetzt automatisch Beschreibungen für Dimensionen, Metriken, berechnete Metriken, Segmente und Datumsbereiche generieren. Auf diese Weise können Workspace-Benutzende verstehen, welche Komponenten verwendet werden sollen, insbesondere in Organisationen mit großen Komponentenbibliotheken. <p>Sie können für eine einzelne Komponente eine Beschreibung oder für viele Komponenten gleichzeitig Beschreibungen erstellen.</p> <p>(Link zur Dokumentation folgt.)<!--For more information, see [Automatically generate descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).--></p> | | &#x200B;28. Oktober 2026 |
-| **Produktinternes Erlebnis für**<br/>-Mitarbeiter ist jetzt in einem Chat-Bedienfeld in Analysis Workspace verfügbar. Ein Mitarbeiter verwendet das Projekt, das Sie geöffnet haben, als Kontext, sodass Sie Fragen zu Ihrer Analyse stellen können, ohne zu erklären, was das Projekt enthält.<p>Mithilfe des produktinternen Erlebnisses für Kollegen können Sie:</p><ul><li>Fassen Sie das geöffnete Projekt zusammen, finden Sie Erkenntnisse und führen Sie eine Ursachenanalyse durch.</li><li>Erstellen und bearbeiten Sie das Projekt mit Eingabeaufforderungen in natürlicher Sprache. Sie können beispielsweise Bedienfelder und Tabellen hinzufügen, Daten aufschlüsseln, Visualisierungstypen und Datumsbereiche ändern und Segmente erstellen.</li></ul><p>(Dokumentationsaktualisierungen folgen.)<!-- For more information, see [Use the in-product experience for Coworker](/help/analysis-workspace/coworker.md). --></p> | &#x200B;22. Oktober 2026 (ursprünglich für den 15. Oktober 2026 geplant) | TBD |
+| **Produktinternes Erlebnis für**<br/>-Mitarbeiter ist jetzt in einem Chat-Bedienfeld in Analysis Workspace verfügbar. Ein Mitarbeiter verwendet das Projekt, das Sie geöffnet haben, als Kontext, sodass Sie Fragen zu Ihrer Analyse stellen können, ohne zu erklären, was das Projekt enthält.<p>Mithilfe des produktinternen Erlebnisses für Kollegen können Sie:</p><ul><li>Fassen Sie das geöffnete Projekt zusammen, finden Sie Erkenntnisse und führen Sie eine Ursachenanalyse durch.</li><li>Erstellen und bearbeiten Sie das Projekt mit Eingabeaufforderungen in natürlicher Sprache. Sie können beispielsweise Bedienfelder und Tabellen hinzufügen, Daten aufschlüsseln, Visualisierungstypen und Datumsbereiche ändern und Segmente erstellen.</li></ul><p>(Dokumentationsaktualisierungen folgen.)<!-- For more information, see [Use the in-product experience for Coworker](/help/analysis-workspace/coworker.md). --></p> | TBD (ursprünglich für den 15. Oktober 2026 geplant) | TBD |
 
 
 ### Fehlerbehebungen in Customer Journey Analytics
