@@ -14,9 +14,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
+source-git-commit: a4ea9270d5bf27234fa229e8ba3df5998ecea0e1
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1303'
 ht-degree: 1%
 ---
 # Komponenten von Unterereignissen in Daten-Feeds
@@ -110,7 +110,7 @@ Informationen zum Hinzufügen von Komponenten, einschließlich Unterereigniskomp
 
 Da Unterereignisdaten [in Customer Journey Analytics-Daten-Feeds anders angezeigt werden](#sub-event-differences-between-adobe-analytics-and-customer-journey-analytics) unterscheiden sich die Abfragen, die Sie dafür verwenden, von denen, die Sie für Adobe Analytics-Daten-Feeds verwenden.
 
-Die folgenden Beispiele zeigen, wie Sie Ereignisse finden, die ein bestimmtes Produkt enthalten. Die Beispiele verwenden die Google BigQuery-Syntax. Andere Data Warehouses, wie Snowflake und Databricks, unterstützen denselben Ansatz mit geringfügigen Syntaxunterschieden.
+Die folgenden Beispiele zeigen, wie Sie Ereignisse finden, die ein bestimmtes Produkt enthalten. Die Beispiele verwenden die Google BigQuery-Syntax, bei der `UNNEST` ein Array in Zeilen erweitert. Andere Data Warehouses unterstützen denselben Ansatz mit eigenen Array-Funktionen, wie `FLATTEN` in Snowflake oder `explode` in Databricks.
 
 +++ Abfragen von Produktdaten in Customer Journey Analytics-Daten-Feeds
 
@@ -133,7 +133,7 @@ Wie Sie die Abfrage schreiben, hängt davon ab, ob Sie eine Zeile pro Ereignis o
 
 **Gibt eine Zeile pro Ereignis zurück**
 
-Um Ereignisse zu filtern, ohne die Anzahl der Zeilen zu ändern, verwenden Sie `UNNEST` in einer `EXISTS` Unterabfrage:
+Um Ereignisse zu filtern, ohne die Anzahl der Zeilen zu ändern, verwenden Sie eine Array-Funktion wie `UNNEST` innerhalb einer `EXISTS` Unterabfrage:
 
 ```sql
 SELECT row_id, timestamp_utc, product_list_items
@@ -149,7 +149,7 @@ Diese Abfrage gibt für jedes übereinstimmende Ereignis eine Zeile zurück, wob
 
 **Gibt eine Zeile pro übereinstimmendem Produkt zurück**
 
-Um für jedes übereinstimmende Produkt eine Zeile zurückzugeben, verschieben Sie `UNNEST` in die äußere `FROM`:
+Um für jedes übereinstimmende Produkt eine Zeile zurückzugeben, verschieben Sie die Array-Funktion in die äußere `FROM`:
 
 ```sql
 SELECT f.row_id, f.timestamp_utc, item.product, item.quantity, item.revenue
@@ -220,7 +220,7 @@ In der Daten-Feed-Ausgabe sind `survey_question` und `survey_answer` die Kompone
 
 ### Identitätszuordnung
 
-Jede Identität im [`identityMap`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/profile/identitymap) wird als ein Objekt exportiert. Das -Objekt enthält den Identity-Namespace (den Schlüssel), die Kennung, den authentifizierten Status und das primäre Flag. Der Namespace wiederholt sich für jede Identität in diesem Namespace.
+Jede Identität im [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) wird als ein Objekt exportiert. Das -Objekt enthält den Identity-Namespace (den Schlüssel), die Kennung, den authentifizierten Status und das primäre Flag. Der Namespace wiederholt sich für jede Identität in diesem Namespace.
 
 Nur die Identitätszuordnungsattribute, die als Dimensionen in Ihrer Datenansicht vorhanden sind und die Sie dem Daten-Feed hinzufügen, werden exportiert.
 
