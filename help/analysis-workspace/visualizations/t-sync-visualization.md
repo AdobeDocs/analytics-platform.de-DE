@@ -57,7 +57,7 @@ Jede Visualisierung in Analysis Workspace basiert auf einer Datenquelle, normale
 
 1. Wechseln Sie in Analysis Workspace zu der Visualisierung, deren Datenquelle oder Sperreinstellungen Sie konfigurieren möchten.
 
-1. Bewegen Sie den Mauszeiger über die Visualisierung und wählen Sie dann das Symbol **[!UICONTROL Einstellungen]** (![) ](/help/assets/icons/Setting.svg).
+1. Bewegen Sie den Mauszeiger über die Visualisierung und wählen Sie dann das Symbol **[!UICONTROL Einstellungen]** (![) &#x200B;](/help/assets/icons/Setting.svg).
 
 1. Wählen Sie die **[!UICONTROL Datenquelle]** aus.
 
