@@ -74,11 +74,11 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel wird die Zuordnungsvisualisierung in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)_ für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel wird die Zuordnungsvisualisierung in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Map](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization)_ für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
-Mit der ![Globe](/help/assets/icons/Globe.svg)**[!UICONTROL Map]**-Visualisierung in Analysis Workspace können Sie eine visuelle Zuordnung einer beliebigen Metrik (einschließlich berechneter Metriken) erstellen. Sie ist hilfreich bei der Erfassung und dem Vergleich von Metrikdaten über verschiedene geographische Regionen hinweg.
+Mit der ![Globe](/help/assets/icons/Globe.svg)**[!UICONTROL Map]**-Visualisierung in Analysis Workspace können Sie eine visuelle Zuordnung einer beliebigen Metrik (einschließlich berechneter Metriken) erstellen. Sie ist hilfreich bei der Identifizierung und dem Vergleich von Metriken über verschiedene geografische Regionen hinweg.
 
 >[!BEGINSHADEBOX]
 
@@ -188,7 +188,7 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 | Erstellen eines Trends aus einer Auswahl | Erstellen Sie eine Trend-Liniendiagramm-Visualisierung basierend auf einem bestimmten Bereich, den Sie in der Kartenvisualisierung auswählen. <p>Weitere Informationen finden Sie unter [Erstellen eines Trendliniendiagramms aus der Kartenvisualisierung](#create-a-trended-line-chart-from-the-map-visualization). <!-- is this correct? --> | Es kann kein Trend aus der Kartenvisualisierung erstellt werden. |
 | Aufschlüsselung aus einer Auswahl hinzufügen | Schlüsseln Sie ein bestimmtes Dimensionselement, eine bestimmte Metrik, ein bestimmtes Segment oder einen bestimmten Datumsbereich auf, den Sie in der Kartenvisualisierung auswählen. <p>Weitere Informationen finden Sie unter [Aufschlüsselung über die Kartenvisualisierung hinzufügen](#add-a-breakdown-from-the-map-visualization). | Es kann keine Aufschlüsselung aus der Kartenvisualisierung hinzugefügt werden. |
 
-## Eine Zuordnungsvisualisierung erstellen {#begin-building-map}
+## Eine Kartenvisualisierung aufbauen {#begin-building-map}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -260,7 +260,7 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
      Um die Karte auf ihre ursprüngliche Nordausrichtung zurückzusetzen, wählen Sie das Kompasssymbol ![Kompasssymbol](assets/map-compass-icon.png).
 
-   * **Auswahl-Tool**: Sie können einen Bereich der Zuordnung auswählen, um [ein Segment &#x200B;](#create-a-segment-from-the-map-visualization), [einen Trend zu &#x200B;](#create-a-trended-line-chart-from-the-map-visualization) oder [eine Aufschlüsselung hinzuzufügen](#add-a-breakdown-from-the-map-visualization).
+   * **Auswahl-Tool**: Sie können einen Bereich der Zuordnung auswählen, um [ein Segment ](#create-a-segment-from-the-map-visualization), [einen Trend zu ](#create-a-trended-line-chart-from-the-map-visualization) oder [eine Aufschlüsselung hinzuzufügen](#add-a-breakdown-from-the-map-visualization).
 
      Klicken Sie auf das Auswahlwerkzeug ![Zuordnungsauswahlsymbol](assets/map-selection-icon.png) und ziehen Sie dann die Maus, um den gewünschten Bereich auszuwählen.
 
@@ -285,9 +285,9 @@ Die Zuordnungsvisualisierung in Customer Journey Analytics unterscheidet sich vo
 
 So konfigurieren Sie Einstellungen für die Zuordnungsvisualisierung:
 
-1. Öffnen Sie in Analysis Workspace eine vorhandene Kartenvisualisierung oder erstellen [&#x200B; eine neue](#begin-building-a-map-visualization).
+1. Öffnen Sie in Analysis Workspace eine vorhandene Kartenvisualisierung oder erstellen [ eine neue](#begin-building-a-map-visualization).
 
-1. Bewegen Sie den Mauszeiger über die Kartenvisualisierung und wählen Sie dann in der Visualisierungskopfzeile das ![&#x200B; „Einstellungen](/help/assets/icons/Setting.svg) aus.
+1. Bewegen Sie den Mauszeiger über die Kartenvisualisierung und wählen Sie dann in der Visualisierungskopfzeile das ![ „Einstellungen](/help/assets/icons/Setting.svg) aus.
 
    Die folgenden Optionen sind verfügbar:
 
@@ -298,7 +298,7 @@ So konfigurieren Sie Einstellungen für die Zuordnungsvisualisierung:
    | | **[!UICONTROL Heatmap]** | Zeichnet Ereignisse mithilfe einer Heatmap. Eine Heatmap ist eine grafische Darstellung von Daten, bei der die einzelnen in einer Matrix enthaltenen Werte als Farben dargestellt werden. |
    | **[!UICONTROL Stile]** | | |
    | | **[!UICONTROL Farbschema]** | Zeigt das Farbschema für die Heatmap und die Blasen an. Sie können zwischen Korallen, Rot, Grün oder Blau wählen. Der Standardwert ist „Koralle“. |
-   | | **[!UICONTROL Zuordnungsstil]** | Sie können zwischen „Allgemein“, „Straßen“, „Leuchtend“ „Hell“, „Dunkel“ und „Satellit“ auswählen. |
+   | | **[!UICONTROL Zuordnungsstil]** | Sie können zwischen „Standard“, „Straßen“, „Leuchtend“, „Hell“, „Dunkel“ und „Satellit“ auswählen. |
    | | **[!UICONTROL Cluster-Radius]** | Gruppiert Datenpunkte zusammen, die sich innerhalb der festgelegten Pixel-Anzahl befinden. Die Standardeinstellung ist „50“.<p>Diese Option ist nur verfügbar **[!UICONTROL wenn &quot;]**&quot; als **[!UICONTROL Zuordnungstyp“]**.</p> |
    | | **[!UICONTROL Benutzerdefinierter Maximalwert]** | Ermöglicht die Änderung des Schwellenwerts für den Maximalwert der Zuordnung. Durch die Anpassung dieses Werts wird der Maßstab für die Blasen- oder Heatmap-Werte (Farbe und Größe) relativ zum von Ihnen festgelegten benutzerdefinierten Maximalwert angepasst. |
    | | **[!UICONTROL Anmerkungen anzeigen]** | Zeigt die Anmerkungen an, die für diese Visualisierung gemacht wurden. |
