@@ -21,9 +21,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 21a2b0cc296d30de7f656a658d7e382c8c4ea835
+source-git-commit: ef2836930bd1fefb99115d4a73b9b0d4a178ccd3
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1211'
 ht-degree: 31%
 ---
 # Operatoren
@@ -53,7 +53,7 @@ Beispiel: Sie haben einen Seitennamen mit dem Namen *Mein cooles Produkt*.
 
 >[!NOTE]
 >
->Wenn Sie Standardoperatoren verwenden, geben die eingegebenen Werte Ergebnisse unabhängig von der Groß-/Kleinschreibung zurück, mit Ausnahme von **[!UICONTROL Übereinstimmungen]** und **[!UICONTROL stimmt nicht überein]**.
+>Bei Verwendung von Standardoperatoren wird die Groß-/Kleinschreibung nicht beachtet, mit Ausnahme von **[!UICONTROL Übereinstimmungen]** und **[!UICONTROL stimmt nicht überein]**.
 >
 >Beispiel: **[!UICONTROL Seitenname]** **[!UICONTROL gleich]** `search results` gibt *Suchergebnisse*, *Suchergebnisse* und *SUCHERGEBNISSE* zurück.
 
