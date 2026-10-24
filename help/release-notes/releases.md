@@ -7,27 +7,33 @@ autotag-review: '2026-05-19T09:19:46.530Z'
 TQID: 'https://experienceleague.adobe.com/nNV-qOa3LVmHUMLf-R2MwNHY0N67hxG2DWbVrpA-ZpI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+    internal-label: Release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
-workflow-type: ht
-source-wordcount: 402
+workflow-type: tm+mt
+source-wordcount: '402'
 ht-degree: 100%
-
 ---
-
 # Strategie zur Veröffentlichung von Customer Journey Analytics-Funktionen
 
-Customer Journey Analytics-Versionen basieren auf einem Modell der kontinuierlichen Bereitstellung, das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht.
+Customer Journey Analytics-Versionen basieren auf einem Modell der kontinuierlichen Bereitstellung, das einen skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht.
 
 ## Veröffentlichungsstrategie
 
@@ -39,17 +45,17 @@ Customer Journey Analytics-Versionen basieren auf einem Modell der kontinuierlic
 
 * **Allgemeine Verfügbarkeit (GA)**: Die Funktion steht 100 % der berechtigten CX Experience-Organisationen zur Verfügung und die Veröffentlichung der Funktion ist abgeschlossen.
 
-Bei jeder Funktionsveröffentlichung kann die Timeline von RTP bis GA variieren. Ziel ist es, die Veröffentlichungen kurz zu halten, sodass innerhalb von 2 Monaten nach Beginn der Veröffentlichung (RTP) eine Funktion allgemein verfügbar (GA) ist.
+Bei jeder Funktionsveröffentlichung kann die Timeline von RTP bis GA variieren. Ziel ist es, die Veröffentlichungen kurz zu halten, sodass innerhalb von 2 Monaten nach dem Release-Start (RTP) eine Funktion allgemein verfügbar (GA) ist.
 
 ## Funktionsmarkierungen
 
-Mithilfe von Funktionsmarkierungen wird die Sichtbarkeit neuer Funktionen während der Veröffentlichung gesteuert. Adobe empfiehlt, `app.launchdarkly.com` über die Firewall Ihres Unternehmens zuzulassen, um eine optimale Nutzung während der Veröffentlichungen zu gewährleisten. Diese Flags werden entfernt, nachdem eine Funktion für alle veröffentlicht wird. Weitere Informationen finden Sie unter [Domains, die von Customer Journey Analytics verwendet werden](../technotes/domains.md).
+Mithilfe von Feature Flags wird die Sichtbarkeit neuer Funktionen während der Veröffentlichung gesteuert. Adobe empfiehlt, `app.launchdarkly.com` über die Firewall Ihres Unternehmens zuzulassen, um eine optimale Nutzung während der Veröffentlichungen zu gewährleisten. Diese Feature Flags werden entfernt, nachdem eine Funktion für alle freigegeben wurde. Weitere Informationen finden Sie unter [Domains, die von Customer Journey Analytics verwendet werden](../technotes/domains.md).
 
 Sie können sich Ihre aktiven Funktionsmarkierungen jederzeit unter **Hilfe > Über den Workspace > Aktive Funktionsmarkierungen** ansehen.
 
 ## Vorteile
 
-Die stufenweise Veröffentlichung ermöglicht es Adobe, den Software-Bereitstellungsprozess besser zu skalieren und sicherzustellen, dass die Funktionen vor der allgemeinen Verfügbarkeit vollständig gehärtet sind. Außerdem können Funktionen veröffentlicht werden, sobald sie verfügbar sind, anstatt sich an ein festes monatliches Veröffentlichungsfenster zu halten.
+Stufenweise Veröffentlichungen ermöglichen es Adobe, den Software-Bereitstellungsprozess besser zu skalieren und sicherzustellen, dass Funktionen vor der allgemeinen Verfügbarkeit vollständig robust sind. Außerdem können Funktionen veröffentlicht werden, sobald sie verfügbar sind, anstatt sich an ein festes monatliches Veröffentlichungsfenster zu halten.
 
 ## Häufig gestellte Fragen (FAQ)
 

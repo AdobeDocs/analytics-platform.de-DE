@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ef2836930bd1fefb99115d4a73b9b0d4a178ccd3
+source-git-commit: f7d853a3b658328f952b675f838ce314b7c30fb1
 workflow-type: tm+mt
-source-wordcount: '7364'
-ht-degree: 94%
+source-wordcount: '7412'
+ht-degree: 93%
 ---
 
 # Customer Journey Analytics – Aktualisierungen der Dokumentation
@@ -70,6 +70,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 |---|---|
 | **Oktober 2026** | |
+| Auswahl für Visualisierungen sperren | Umstrukturierung [Datenquellen verwalten](/help/analysis-workspace/visualizations/t-sync-visualization.md) um die Konfiguration von Datenquelleneinstellungen von der Sperrung der Auswahl zu trennen. Es wurde auch erläutert[&#x200B; wie &quot;](/help/analysis-workspace/visualizations/t-sync-visualization.md#lock-selection)&quot; funktioniert, wenn eine Visualisierung in Zeilen in einer Freiformtabelle gesperrt ist, einschließlich der Vorgehensweise, wenn gesperrte Aufschlüsselungszeilen nicht mehr in der Tabelle sind. |
 | Groß-/Kleinschreibung für Segmentoperatoren | Es wurde klargestellt, dass bei Verwendung [Standardoperatoren](/help/components/segments/seg-operators.md#standard-operators) die Ergebnisse nicht zwischen Groß- und Kleinschreibung unterschieden werden, mit Ausnahme von **[!UICONTROL Übereinstimmungen]** und **[!UICONTROL stimmt nicht überein]**. |
 | Tastaturnavigation für Tabellenspalten | Es wurde beschrieben[&#x200B; wie &#x200B;](/help/analysis-workspace/workspace-faq/aw-accessibility.md#resize-columns) Tabellenspalten in Analysis Workspace mithilfe der Tastatur [skaliert) und neu &#x200B;](/help/analysis-workspace/workspace-faq/aw-accessibility.md#rearrange-columns)angeordnet werden, einschließlich Feedback für Bildschirmlesehilfen. Es wurde auch ein Abschnitt [Tabellenspaltenaktionen](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#table-column-actions) zu Hotkeys hinzugefügt. |
 | KI-Assistent und Data Insights Agent durch Kollegen ersetzt | Die Artikel zum KI-Assistenten und zu Data Insights Agent wurden entfernt. Adobe CX Enterprise Coworker ersetzt beide Funktionen. Weitere Informationen finden Sie unter [Analysieren von Daten mit dem Kollegen-Chat](https://experienceleague.adobe.com/de/docs/coworker/content/chat/use-cases/data-insights/analytics-overview). Die Funktionsunterstützung für [Customer Journey Analytics wurde &#x200B;](/help/getting-started/aa-vs-cja/cja-aa.md#cja-not-aa) aktualisiert, um die Änderung widerzuspiegeln. |
