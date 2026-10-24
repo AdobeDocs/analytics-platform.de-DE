@@ -62,11 +62,11 @@ Das folgende Bild und die zugehörige Tabelle erläutern die Hauptelemente der B
 | A | Enthält den Projektnamen, eine Menüstruktur für den Zugriff auf die Funktionen, eine Schaltfläche ![Zurück-Schaltfläche](/help/assets/icons/ChevronLeft.svg) zum Zurückkehren zur Projektliste und eine Schaltfläche **[!UICONTROL Freigabe]** zum [Freigeben Ihres Workspace-Projekts](/help/analysis-workspace/curate-share/share-projects.md). <br/>Sie können jederzeit den Namen Ihres Projekts (z. B. „Neues Projekt“) auswählen, um den Namen zu ändern. <br/>Wählen Sie ![Favorisierung aufheben](/help/assets/icons/StarOutline.svg) aus, um Ihr Projekt als bevorzugtes Projekt ![Favorisieren](/help/assets/icons/Star.svg) zu markieren. |
 | B | **Schaltflächen-Panel**: Enthält Schaltflächen für den Zugriff auf die wichtigsten [Funktionen](#features) von Analysis Workspace:<ul><li>![Web-Seite](/help/assets/icons/WebPage.svg) [[!UICONTROL Panels]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Geführte Analyse](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Geführte Analyse]](/help/guided-analysis/overview.md)</li><li>![VertikaleGrafikbalken](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualisierungen]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Kuratieren](/help/assets/icons/Curate.svg) [[!UICONTROL Komponenten]](/help/components/overview.md)</li><li>![Ansichtsliste](/help/assets/icons/ViewList.svg) [[!UICONTROL Inhaltsverzeichnis]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Lesezeichen](/help/assets/icons/Bookmark.svg) [[!UICONTROL Datenwörterbuch]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | C | **Linkes Bedienfeld:** Dieser Bereich enthält einzelne Bedienfelder, Visualisierungen, Komponenten oder Listen. Der Inhalt hängt von der im Schaltflächenbedienfeld ausgewählten Schaltfläche ab. |
-| D | **Arbeitsfläche:** Der Hauptbereich, in den Sie Inhalte aus dem linken Bedienfeld ziehen, um Ihr Projekt zu erstellen. Das Projekt wird dynamisch aktualisiert, wenn Sie Bedienfelder hinzufügen, Visualisierungen zu Bedienfeldern hinzufügen und Komponenten zu Visualisierungen hinzufügen. Sie können mehrere Bedienfelder erstellen und in jedem Bedienfeld können Sie mehrere Visualisierungen erstellen.<br/>Jedes Bedienfeld basiert auf einer ausgewählten Datenansicht. Die ausgewählte Datenansicht bestimmt verfügbare Komponenten wie Metriken und Dimensionen. Weitere Informationen finden Sie unter [Bedienfelder – Datenansicht](/help/analysis-workspace/c-panels/panels.md#data-view). |
+| D | **Arbeitsfläche:** Der Hauptbereich, in den Sie Inhalte aus dem linken Bedienfeld ziehen, um Ihr Projekt zu erstellen. Das Projekt wird dynamisch aktualisiert, wenn Sie Bedienfelder hinzufügen, Visualisierungen zu Bedienfeldern hinzufügen und Komponenten zu Visualisierungen hinzufügen. Sie können mehrere Panels erstellen und in jedem Panel können Sie mehrere Visualisierungen erstellen.<br/>Jedes Bedienfeld basiert auf einer ausgewählten Datenansicht. Die ausgewählte Datenansicht bestimmt verfügbare Komponenten wie Metriken und Dimensionen. Weitere Informationen finden Sie unter [Bedienfelder – Datenansicht](/help/analysis-workspace/c-panels/panels.md#data-view). |
 
 ## Funktionen
 
-Die Hauptfunktionen von Analysis Workspace sind über das Schaltflächenbedienfeld zugänglich:
+Die Hauptfunktionen von Analysis Workspace sind über die Schaltflächenleiste zugänglich:
 
 | Symbol | Funktion | Beschreibung |
 |:---:|---|---|
@@ -80,9 +80,9 @@ Die Hauptfunktionen von Analysis Workspace sind über das Schaltflächenbedienfe
 
 ## Menü
 
-Die meisten Analysis Workspace-Funktionen sind per Drag-and-Drop und über Kontextmenüs in Bedienfeldern, Visualisierungen und Komponenten verfügbar.
+Die meisten Funktionen von Analysis Workspace sind per Drag-and-Drop und über Kontextmenüs in Panels, Visualisierungen und Komponenten verfügbar.
 
-Die Funktionen können auch über das Workspace-Menü sowie über Tastaturbefehle oder Hotkeys aufgerufen werden. Die Tastaturbefehle unterscheiden sich je nach Betriebssystem, unter dem der Browser ausgeführt wird. Eine entsprechende Übersicht finden Sie in den nachfolgenden Tabellen.
+Die Funktionen können auch über das Menü „Workspace“ sowie über Tastaturbefehle oder Hotkeys aufgerufen werden. Die Tastaturbefehle unterscheiden sich je nach Betriebssystem, unter dem der Browser ausgeführt wird. Eine entsprechende Übersicht finden Sie in den nachfolgenden Tabellen.
 
 Beachten Sie, dass auf Ihrer Tastatur möglicherweise die folgenden Symbole verwendet werden:
 
@@ -96,7 +96,7 @@ Eine Übersicht über die verfügbaren Menüs finden Sie in den nachfolgenden Ta
 
 | **[!UICONTROL Projekt]** | Mac-Tastaturbefehl | Windows-Tastaturbefehl | Beschreibung |
 |---|---|---|---|
-| **[!UICONTROL Erstellen eines Projekts]** | **[!UICONTROL *Umschalt+Befehlstaste+P *]** | **[!UICONTROL *Umschalt+Strg+P *]** | Erstellen eines neuen Projekts. |
+| **[!UICONTROL Erstellen eines Projekts]** | **[!UICONTROL *Umschalt+Befehlstaste+P *]** | **[!UICONTROL *Umschalt+Strg+P *]** | Erstellen Sie ein neues Projekt. |
 | **[!UICONTROL Erstellen einer mobilen Scorecard]** | | | [Erstellen einer neuen mobilen Scorecard](/help/mobile-app/create-scorecard.md). |
 | **[!UICONTROL Öffnen…]** | **[!UICONTROL *Befehlstaste+O *]** | **[!UICONTROL *Strg+O *]** | [Öffnen eines vorhandenen Projekts](/help/analysis-workspace/build-workspace-project/save-projects.md#open-another-project). |
 | **[!UICONTROL Vorherige Version öffnen…]** | **[!UICONTROL *Wahltaste+Befehlstaste+O *]** | **[!UICONTROL *Alt+Strg+O *]** | [Öffnen früherer Versionen Ihres Projekts](/help/analysis-workspace/build-workspace-project/save-projects.md#open-previous-version). |
@@ -104,9 +104,9 @@ Eine Übersicht über die verfügbaren Menüs finden Sie in den nachfolgenden Ta
 | **[!UICONTROL Mit Hinweisen speichern…]** | **[!UICONTROL *Wahltaste+Befehlstaste+S *]** | **[!UICONTROL *Alt+Strg+S *]** | [Hinzufügen von Hinweisen zur gespeicherten Projektversion](/help/analysis-workspace/build-workspace-project/save-projects.md#save-project-options). |
 | **[!UICONTROL Speichern unter…]** | **[!UICONTROL *Umschalt+Befehlstaste+S *]** | **[!UICONTROL *Umschalt+Strg+S *]** | [Speichern des Projekts unter einem anderen Namen und mit anderen Details](/help/analysis-workspace/build-workspace-project/save-projects.md#save-project-options) |
 | **[!UICONTROL Projekt aktualisieren]** | **[!UICONTROL *Wahltaste+R *]** | **[!UICONTROL *Alt+R *]** | Aktualisieren des Projekts. |
-| **[!UICONTROL CSV herunterladen]** | **[!UICONTROL *Umschalt+Befehlstaste+V *]** | **[!UICONTROL *Umschalt+Strg+V *]** | Herunterladen des Projekts als CSV-Datei |
-| **[!UICONTROL PDF herunterladen]** | **[!UICONTROL *Umschalt+Befehlstaste+B *]** | **[!UICONTROL *Umschalt+Strg+B *]** | Herunterladen des Projekts als PDF-Dokument. |
-| **[!UICONTROL Projektinfo und Einstellungen]** | | | Definieren der Einstellungen für Ihre Projekte, wie z. B. Name, Tags, Farbpalette und mehr. |
+| **[!UICONTROL CSV herunterladen]** | **[!UICONTROL *Umschalt+Befehlstaste+V *]** | **[!UICONTROL *Umschalt+Strg+V *]** | Laden Sie das Projekt als CSV-Datei herunter. |
+| **[!UICONTROL PDF herunterladen]** | **[!UICONTROL *Umschalt+Befehlstaste+B *]** | **[!UICONTROL *Umschalt+Strg+B *]** | Laden Sie das Projekt als PDF-Dokument herunter. |
+| **[!UICONTROL Projektinfo und Einstellungen]** | | | Definieren Sie Einstellungen für Ihre Projekte, wie z. B. Name, Tags, Farbpalette und mehr. |
 | **[!UICONTROL Benutzereinstellungen]** | | | [Konfigurieren der Voreinstellungen für die Verwendung von Analysis Workspace](/help/analysis-workspace/user-preferences.md). |
 
 
@@ -153,8 +153,8 @@ Eine Übersicht über die verfügbaren Menüs finden Sie in den nachfolgenden Ta
 |---|---|
 | **[!UICONTROL Videos]** | Öffnen Sie den YouTube-Kanal von Customer Journey Analytics in einer neuen Browser-Registerkarte. |
 | **[!UICONTROL Hilfedokumentation]** | Öffnen Sie die -Dokumentation (Sie lesen tatsächlich gerade…) in einer neuen Browser-Registerkarte. |
-| **[!UICONTROL Hilfeforum]** | Öffnen Sie das Communitys-Forum von Adobe Analytics Experience League in einer neuen Browser-Registerkarte. |
-| **[!UICONTROL Tastaturbefehle]** | Anzeigen einer Übersicht der Hotkeys (Tastaturbefehle), die Sie in Workspace verwenden können. |
+| **[!UICONTROL Hilfeforum]** | Öffnen Sie das Experience League Community-Forum für Adobe Analytics in einer neuen Browser-Registerkarte. |
+| **[!UICONTROL Tastaturbefehle]** | Zeigt einen Überblick über die Hotkeys (Tastaturbefehle) an, die Sie in Workspace verwenden können. |
 | **[!UICONTROL Debugger aktivieren]** | Aktivieren des Debuggers. Ihr Projekt wird neu geladen. |
 | **[!UICONTROL Debugger deaktivieren]** | Deaktivieren des Debuggers. Ihr Projekt wird neu geladen. |
 | **[!UICONTROL Leistung]** | Anzeigen eines Dialogfelds mit Metriken zur **[!UICONTROL Analysis Workspace-Leistung]**. Verwenden Sie **[!UICONTROL Als CSV herunterladen]**, um eine CSV-Datei mit den Leistungsmetriken herunterzuladen. |
@@ -167,9 +167,9 @@ Durch Synchronisieren von Visualisierungen können Sie kontrollieren, welche Dat
 ## Verwenden von Analysis Workspace
 
 
-So verwenden Sie Analysis Workspace:
+So beginnen Sie mit Analysis Workspace:
 
-1. Melden Sie sich mit Ihren Adobe ID[&#128279;](https://experience.adobe.com)Anmeldeinformationen bei Adobe CX Enterprise an.
+1. Melden Sie sich mit Ihren Adobe ID](https://experience.adobe.com)Anmeldeinformationen bei [Adobe CX Enterprise an.
 1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** im App-Umschalter ![App](/help/assets/icons/Apps.svg) oben rechts in der Benutzeroberfläche aus.
 1. Standardmäßig wird die Seite **[!UICONTROL Projekte]** von Analysis Workspace angezeigt. Wenn ein bestimmtes Projekt für Sie ausgewählt wurde oder Sie kürzlich daran gearbeitet haben, wird dieses Projekt standardmäßig angezeigt.
 
@@ -181,7 +181,7 @@ Sie können ein Projekt in Analysis Workspace erstellen, wie unter [Erstellen vo
 
 Projekte können in Ordner und Unterordner unterteilt werden, wie unter [Ordner in Analysis Workspace](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md) beschrieben.
 
-### Kuratieren und Freigeben eines Projekts
+### Ein Projekt speichern und freigeben
 
 Bei der Erstellung einer Analyse in Analysis Workspace wird Ihre Arbeit [automatisch gespeichert](/help/analysis-workspace/build-workspace-project/save-projects.md).
 
