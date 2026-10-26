@@ -4,12 +4,12 @@ title: Trend-Themen
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
+source-git-commit: 85311bf19368560ef54a3361edf2e7c13590929c
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 7%
+source-wordcount: '424'
+ht-degree: 8%
 ---
-# Trend-Themen
+# Trend-Themen {#trending-topics}
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
@@ -25,21 +25,26 @@ Die ![Feed](/help/assets/icons/Feed.svg)**[!UICONTROL Trendthemen]**-Visualisier
 
 Sie können nach bestimmten Themen suchen und die Anzahl und den Prozentsatz für jedes Thema auf jeder Ebene mit anderen Datenbereichen vergleichen.
 
-## Erstellen und konfigurieren
+## Erstellen und konfigurieren {#trendimg-topics-create-and-configure}
 
 >[!CONTEXTUALHELP]
->id="workspace_trendingtopics_attribution"
->title="Metrikattribution bei Trendthemen"
->abstract="Aktivieren Sie ein nicht standardmäßiges Attribution-Modell für die ausgewählte Metrik."
+>id="workspace_trendingtopics_usenondefaultattributionmodel"
+>title="Nicht standardmäßiges Attribution-Modell verwenden"
+>abstract="Aktivieren Sie ein nicht standardmäßiges Attributionsmodell für diese Metrik."
 
-So erstellen und konfigurieren Sie eine Visualisierung von Trend-Themen:
+>[!CONTEXTUALHELP]
+>id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"
+>title="Nicht standardmäßiges Attribution-Modell verwenden"
+>abstract="Nicht-Standard-Attributionsmodelle sind für diese Metrik nicht verfügbar."
 
-1. Fügen Sie ![&#x200B; Visualisierung &#x200B;](/help/assets/icons/Feed.svg)Feed **[!UICONTROL Trendthemen]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+So erstellen und konfigurieren Sie eine **[!UICONTROL Trendthemen]**-Visualisierung:
+
+1. Fügen Sie ![ Visualisierung ](/help/assets/icons/Feed.svg)Feed **[!UICONTROL Trendthemen]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. In den **[!UICONTROL Trending Topics]** Visualisierungskonfiguration:
 
    1. Wählen Sie eine **[!UICONTROL Rangfolgenmetrik]**. Beispiel: **[!UICONTROL Konversationen]**.
-   1. Wenn Sie optional [Attribution) für &#x200B;](/help/analysis-workspace/attribution/models.md) Metrik festlegen möchten, wählen Sie **[!UICONTROL Attribution festlegen]** und **[!UICONTROL Modell]**, **[!UICONTROL Container]** und **[!UICONTROL Lookback-Fenster]**.
+   1. Wenn Sie optional ein nicht standardmäßiges [Attribution](/help/analysis-workspace/attribution/models.md)-Modell für die Metrik verwenden möchten, wählen Sie **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]** und **[!UICONTROL Modell]**, **[!UICONTROL Container]** und **[!UICONTROL Lookback-Fenster]**.
 1. Wählen **[!UICONTROL Erstellen]**, um die Visualisierung zu erstellen. Wählen **[!UICONTROL Zurücksetzen]**, um die Konfigurationswerte auf die Standardwerte zurückzusetzen.
 
 Um die Visualisierung der Trendthemen neu zu konfigurieren, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) neben **[!UICONTROL Rangfolgenmetrik: _Rangfolgenmetrik_ | Unterthemenebenen: _x_]**.
