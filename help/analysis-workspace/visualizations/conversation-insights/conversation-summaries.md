@@ -22,7 +22,7 @@ ht-degree: 8%
 >abstract="Zusammenfassen einer gefilterten Gruppe von Unterhaltungen. Legen Sie die Länge der Zusammenfassung fest. Siehe repräsentative Anführungszeichen von Kunden zur Validierung der Genauigkeit der extrahierten Signale. Wählen Sie ein Angebot aus, um die vollständige Unterhaltungswiederholung zu öffnen."
 
 
-Mit ![ Visualisierung ](/help/assets/icons/Summarize.svg)Zusammenfassen **[!UICONTROL Konversationszusammenfassungen]** können Sie eine gefilterte Gruppe von Konversationen zusammenfassen.
+Mit ![&#x200B; Visualisierung &#x200B;](/help/assets/icons/Summarize.svg)Zusammenfassen **[!UICONTROL Konversationszusammenfassungen]** können Sie eine gefilterte Gruppe von Konversationen zusammenfassen.
 
 Die Visualisierung zeigt eine Zusammenfassung der ausgewählten Metrik (z. B. Konversationen) und zeigt Unterthemen oder wörtliche Kommentare an, wenn Sie die Visualisierung so konfiguriert haben, dass sie Unterthemen enthält.
 
@@ -41,12 +41,12 @@ So erstellen und konfigurieren Sie eine **[!UICONTROL Konversationszusammenfassu
 1. In der **[!UICONTROL Konversationszusammenfassungen]** Visualisierungskonfiguration:
 
    1. Wählen Sie eine **[!UICONTROL Metrik]** aus. Beispiel: **[!UICONTROL Konversationen]**.
-   1. Wenn Sie optional [Attribution) für die Metrik ](/help/analysis-workspace/attribution/models.md) möchten, wählen Sie **[!UICONTROL Attribution festlegen]** und **[!UICONTROL Modell]**, **[!UICONTROL Container]** und **[!UICONTROL Lookback-Fenster]**.
+   1. Wenn Sie optional [Attribution) für die Metrik &#x200B;](/help/analysis-workspace/attribution/models.md) möchten, wählen Sie **[!UICONTROL Attribution festlegen]** und **[!UICONTROL Modell]**, **[!UICONTROL Container]** und **[!UICONTROL Lookback-Fenster]**.
    1. Optional können Sie ein Segment auf die Visualisierung anwenden. Wählen Sie ein Segment aus dem Dropdown **[!UICONTROL Menü]** Segmente“ aus.
 
 1. Wählen **[!UICONTROL Erstellen]**, um die Visualisierung zu erstellen. Wählen **[!UICONTROL Zurücksetzen]**, um die Konfigurationswerte auf die Standardwerte zurückzusetzen. Wählen Sie **[!UICONTROL Abbrechen]**, um die Konfiguration abzubrechen.
 
-Um die Visualisierung **[!UICONTROL Konversationszusammenfassungen]** neu zu konfigurieren, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) neben **[!UICONTROL Metrik: _metric_]**oder **[!UICONTROL Metrik:_metric_]** | **[!UICONTROL Segmente: _segments_]**.
+Um die Visualisierung **[!UICONTROL Konversationszusammenfassungen]** neu zu konfigurieren, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) neben **[!UICONTROL Metrik: _metric_]**&#x200B;oder **[!UICONTROL Metrik:_metric_]** | **[!UICONTROL Segmente: _segments_]**.
 
 ## Verwenden
 
