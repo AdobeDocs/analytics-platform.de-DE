@@ -4,10 +4,10 @@ title: Konversationszusammenfassungen
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
+source-git-commit: 2cca5dfaec6be8f22308e09a023e9e57bec387b7
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 8%
+source-wordcount: '351'
+ht-degree: 10%
 ---
 # Konversationszusammenfassungen {#conversation-summaries}
 
@@ -22,7 +22,7 @@ ht-degree: 8%
 >abstract="Zusammenfassen einer gefilterten Gruppe von Unterhaltungen. Legen Sie die Länge der Zusammenfassung fest. Siehe repräsentative Anführungszeichen von Kunden zur Validierung der Genauigkeit der extrahierten Signale. Wählen Sie ein Angebot aus, um die vollständige Unterhaltungswiederholung zu öffnen."
 
 
-Mit ![&#x200B; Visualisierung &#x200B;](/help/assets/icons/Summarize.svg)Zusammenfassen **[!UICONTROL Konversationszusammenfassungen]** können Sie eine gefilterte Gruppe von Konversationen zusammenfassen.
+Mit ![ Visualisierung ](/help/assets/icons/Summarize.svg)Zusammenfassen **[!UICONTROL Konversationszusammenfassungen]** können Sie eine gefilterte Gruppe von Konversationen zusammenfassen.
 
 Die Visualisierung zeigt eine Zusammenfassung der ausgewählten Metrik (z. B. Konversationen) und zeigt Unterthemen oder wörtliche Kommentare an, wenn Sie die Visualisierung so konfiguriert haben, dass sie Unterthemen enthält.
 
@@ -30,9 +30,14 @@ Die Visualisierung zeigt eine Zusammenfassung der ausgewählten Metrik (z. B. Ko
 ## Erstellen und konfigurieren {#conversation-summaries-create-configure}
 
 >[!CONTEXTUALHELP]
->id="workspace_conversationsummaries_attribution"
->title="Attribution von Konversationszusammenfassungen"
->abstract="Aktivieren Sie ein nicht standardmäßiges Attribution-Modell für die ausgewählte Metrik."
+>id="workspace_conversationsummaries_usenondefaultattributionmodel"
+>title="Nicht standardmäßiges Attribution-Modell verwenden"
+>abstract="Aktivieren Sie ein nicht standardmäßiges Attributionsmodell für diese Metrik."
+
+>[!CONTEXTUALHELP]
+>id="workspace_conversationsummaries_usenondefaultattributionmodel_disabled"
+>title="Nicht standardmäßiges Attribution-Modell verwenden"
+>abstract="Nicht-Standard-Attributionsmodelle sind für diese Metrik nicht verfügbar."
 
 So erstellen und konfigurieren Sie eine **[!UICONTROL Konversationszusammenfassungen]** Visualisierung:
 
@@ -41,12 +46,12 @@ So erstellen und konfigurieren Sie eine **[!UICONTROL Konversationszusammenfassu
 1. In der **[!UICONTROL Konversationszusammenfassungen]** Visualisierungskonfiguration:
 
    1. Wählen Sie eine **[!UICONTROL Metrik]** aus. Beispiel: **[!UICONTROL Konversationen]**.
-   1. Wenn Sie optional [Attribution) für die Metrik &#x200B;](/help/analysis-workspace/attribution/models.md) möchten, wählen Sie **[!UICONTROL Attribution festlegen]** und **[!UICONTROL Modell]**, **[!UICONTROL Container]** und **[!UICONTROL Lookback-Fenster]**.
+   1. Wenn Sie optional ein nicht standardmäßiges [Attribution](/help/analysis-workspace/attribution/models.md)-Modell für die Metrik verwenden möchten, wählen Sie **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]** und **[!UICONTROL Modell]**, **[!UICONTROL Container]** und **[!UICONTROL Lookback-Fenster]**.
    1. Optional können Sie ein Segment auf die Visualisierung anwenden. Wählen Sie ein Segment aus dem Dropdown **[!UICONTROL Menü]** Segmente“ aus.
 
 1. Wählen **[!UICONTROL Erstellen]**, um die Visualisierung zu erstellen. Wählen **[!UICONTROL Zurücksetzen]**, um die Konfigurationswerte auf die Standardwerte zurückzusetzen. Wählen Sie **[!UICONTROL Abbrechen]**, um die Konfiguration abzubrechen.
 
-Um die Visualisierung **[!UICONTROL Konversationszusammenfassungen]** neu zu konfigurieren, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) neben **[!UICONTROL Metrik: _metric_]**&#x200B;oder **[!UICONTROL Metrik:_metric_]** | **[!UICONTROL Segmente: _segments_]**.
+Um die Visualisierung **[!UICONTROL Konversationszusammenfassungen]** neu zu konfigurieren, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) neben **[!UICONTROL Metrik: _metric_]**oder **[!UICONTROL Metrik:_metric_]** | **[!UICONTROL Segmente: _segments_]**.
 
 ## Verwenden
 

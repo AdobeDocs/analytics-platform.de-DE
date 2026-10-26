@@ -27,7 +27,7 @@ topic_v2:
     internal-label: Customer engagement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 2cca5dfaec6be8f22308e09a023e9e57bec387b7
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 74%
@@ -39,7 +39,7 @@ Mithilfe der [!UICONTROL Spalteneinstellungen] können Sie die Spaltenformatieru
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://experienceleague.adobe.com/de/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} finden Sie ein Demovideo.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Zeilen- und Spalteneinstellungen in einer Freiformtabelle](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} finden Sie ein Demovideo.
 
 {{videoaa}}
 
@@ -55,20 +55,20 @@ Sie können Einstellungen für mehrere Spalten gleichzeitig bearbeiten. Wählen 
 
 | Option | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Summen anzeigen]** | Zeigt eine Client-seitige Summe der Spalte an. Bei dieser Summe werden Metriken wie Sitzungen oder Personen **nicht** dedupliziert. |
+| **[!UICONTROL Summen anzeigen]** | Zeigen Sie eine Client-seitige Summe der Spalte an. Bei dieser Summe werden Metriken wie Sitzungen oder Personen **nicht** dedupliziert. |
 | **[!UICONTROL Gesamtsumme anzeigen]** | Zeigt eine Server-seitige Summe der Spalte an. Bei dieser Gesamtsumme werden Metriken wie Sitzungen oder Personen dedupliziert. |
 | **[!UICONTROL Sparkline zeigen]** | Zeigt ein Liniendiagramm in der Spaltenüberschrift an. |
-| **[!UICONTROL Nummer]** | Bestimmt, ob in einer Zelle der numerische Wert der Metrik ein-/ausgeblendet wird. Wenn die Metrik beispielsweise Seitenansichten lautet, ist der numerische Wert die Anzahl der Seitenansichten für das Zeilenelement. |
+| **[!UICONTROL Nummer]** | Bestimmen Sie, ob in einer Zelle der numerische Wert der Metrik ein- bzw. ausgeblendet wird. Wenn die Metrik beispielsweise Seitenansichten lautet, ist der numerische Wert die Anzahl der Seitenansichten für das Zeilenelement. |
 | **[!UICONTROL Percent]** | Bestimmt, ob in einer Zelle der Prozentwert der Metrik ein-/ausgeblendet wird. Ist die Metrik beispielsweise „Seitenansichten“, ist der Prozentwert die Anzahl an Seitenansichten für dieses Zeilenelement geteilt durch die Gesamtanzahl der Seitenansichten für diese Spalte.  Hinweis: Prozentsätze über 100 % sind möglich, um Genauigkeit sicherzustellen. Die Begrenzung kann auf 1.000 % verschoben werden, um zu verhindern, dass die Spaltenbreite zu groß wird. |
 | **[!UICONTROL Anomalien zeigen]** | Bestimmen Sie, ob die Anomalieerkennung für die Werte dieser Spalte ausgeführt wird. |
 | **[!UICONTROL Prognose anzeigen]** | Bestimmen Sie, ob Prognosewerte in dieser Spalte angezeigt werden. |
-| **[!UICONTROL Kopfzeilentext umbrechen]** | Lassen Sie den Kopfzeilentext in Freiformtabellen umbrechen, damit Kopfzeilen besser lesbar und Tabellen einfacher freizugeben sind. Ein Umbruch ist beim PDF-Rendern und für Metriken mit langen Namen nützlich. Standardmäßig aktiviert. |
+| **[!UICONTROL Kopfzeilentext umbrechen]** | Lassen Sie den Kopfzeilentext in Freiformtabellen umbrechen, damit Kopfzeilen besser lesbar und Tabellen einfacher freizugeben sind. Ein Umbruch ist bei der PDF-Ausgabe und für Metriken mit langen Namen nützlich. Standardmäßig aktiviert. |
 | **[!UICONTROL Null nicht als Wert interpretieren]** | Bestimmen Sie, ob in Zellen mit 0-Wert eine 0 oder eine leere Zelle angezeigt wird. Diese Interpretation ist nützlich, wenn Sie die Daten für einzelne Tage eines Monats anzeigen und einige Tage noch in der Zukunft liegen.  Statt für in der Zukunft liegende Daten eine 0 anzuzeigen, werden stattdessen leere Zellen angezeigt. Diagramme berücksichtigen diese Einstellung ebenfalls (die Diagramme zeigen also keine Linie bzw. keinen Balken mit 0-Werten an). |
-| **[!UICONTROL Hintergrund]** | Bestimmen Sie, ob in einer Zelle alle Zellformatierungen ein-/ausgeblendet werden, einschließlich Balkendiagramm und bedingter Formatierung |
-| **[!UICONTROL Balkendiagramm]** | Zeigte ein horizontales Balkendiagramm mit dem Zellenwert in Relation zum Gesamtwert der Spalte an. |
+| **[!UICONTROL Hintergrund]** | Bestimmen Sie, ob in einer Zelle alle Zellformatierungen, einschließlich Balkendiagramm und bedingter Formatierung, ein- bzw. ausgeblendet werden. |
+| **[!UICONTROL Balkendiagramm]** | Zeigt ein horizontales Balkendiagramm mit dem Zellenwert in Relation zum Gesamtwert der Spalte an. |
 | **[!UICONTROL Bedingte Formatierung]** | Verwendet eine bedingte Formatierung. Weitere Informationen dazu finden Sie im unten stehenden [Abschnitt](#conditional-formatting). |
-| **[!UICONTROL Vorschau der Tabellenzelle]** | Zeigt die jeweiligen Zellen mit allen ausgewählten Formatierungsoptionen in einer Vorschau an. |
-| **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]** | Zum Verwenden eines nicht standardmäßigen Attributionsmodells. Weitere Informationen dazu finden Sie im unten stehenden [Abschnitt](#use-non-default-attribution-model). |
+| **[!UICONTROL Vorschau der Tabellenzelle]** | Zeigt eine Vorschau, wie jede Zelle mit den aktuell ausgewählten Formatierungsoptionen angezeigt wird. |
+| **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]** | Verwenden Sie ein nicht standardmäßiges Attributionsmodell. Weitere Informationen dazu finden Sie im unten stehenden [Abschnitt](#use-non-default-attribution-model). |
 
 ## Bedingte Formatierung {#conditional-formatting}
 
@@ -78,10 +78,10 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 
 | Optionen der bedingten Formatierung | Beschreibung |
 | --- | --- |
-| **[!UICONTROL Prozentuale Limits verwenden]** | Ändert das Limit so, dass es auf Prozentsätzen basiert anstatt auf absoluten Werten. Ein Bereich prozentualer Limits funktioniert bei Metriken, die rein prozentbasiert sind (beispielweise Absprungrate) und eine Anzahl sowie einen Prozentsatz aufweisen (beispielsweise Seitenansichten). |
+| **[!UICONTROL Prozentuale Limits verwenden]** | Ändern Sie den Grenzbereich so, dass er auf Prozentsätzen statt auf absoluten Werten basiert. Ein Bereich prozentualer Grenzwerte funktioniert bei Metriken, die rein prozentbasiert sind (beispielsweise Bounce Rate), und bei Metriken, die sowohl eine Anzahl als auch einen Prozentsatz aufweisen (beispielsweise Seitenansichten). |
 | **[!UICONTROL Automatisch erstellt]** | Obere/mittlere/untere Limits automatisch auf Basis der Daten berechnen. Die Obergrenze ist der größte Wert in dieser Spalte. Die untere Grenze ist die niedrigste, und der Mittelpunkt ist der Durchschnitt der oberen und unteren Grenzen. |
 | **[!UICONTROL Benutzerspezifisch]** | Weisen Sie **[!UICONTROL Oberes Limit]**, **[!UICONTROL Mittel]** und **[!UICONTROL Unteres Limit]** manuell zu. Mit Limits können Sie flexibel bestimmen, ob der Wert einer Spalte als gut, durchschnittlich oder schlecht angesehen wird. |
-| **[!UICONTROL Bedingte Formatierungspalette]** | Wendet einen vorkonfigurierten Farbsatz auf Zellen an. Je nachdem, welches der vier ausgewählten Farbschemata verwendet wird, werden hohen, mittleren und niedrigen Werten unterschiedliche Farben zugewiesen. <br> Durch Ersetzen einer Dimension in der Tabelle werden die bedingten Formatierungsbeschränkungen zurückgesetzt. Wenn Sie eine Metrik ersetzen, werden die Grenzwerte für diese Spalte zurückgesetzt (dabei wird eine Metrik auf der x-Achse und eine Dimension auf der y-Achse dargestellt). |
+| **[!UICONTROL Bedingte Formatierungspalette]** | Wendet einen vorkonfigurierten Farbsatz auf Zellen an. Je nachdem, welches der vier ausgewählten Farbschemata verwendet wird, werden hohen, mittleren und niedrigen Werten unterschiedliche Farben zugewiesen. <br> Durch Ersetzen einer Dimension in der Tabelle werden die bedingten Formatierungsbeschränkungen zurückgesetzt. Wenn Sie eine Metrik ersetzen, werden die Grenzwerte für diese Spalte neu berechnet (dabei wird eine Metrik auf der x-Achse und eine Dimension auf der y-Achse dargestellt). |
 
 ## Verwenden eines nicht standardmäßigen Attributionsmodells {#use-non-default-attribution-model}
 
@@ -99,13 +99,13 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
 >title="Verwenden eines nicht standardmäßigen Attributionsmodells"
->abstract="Der nicht standardmäßige Attributionsmodus ist für diese Metrik nicht verfügbar."
+>abstract="Nicht-Standard-Attributionsmodelle sind für diese Metrik nicht verfügbar."
 
 <!-- markdownlint-enable MD034 -->
 
 
 
-Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert &#x200B;](/help/data-views/component-settings/attribution.md).
+Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot;[&quot; konfiguriert ](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Sie können das standardmäßige Attributionsmodell überschreiben, das in &quot
 
 So verwenden Sie ein nicht standardmäßiges Attributionsmodell für eine Metrik in einer Analysis Workspace:
 
-1. Wählen Sie **[!UICONTROL Nicht standardmäßiges Zuordnungsmodell verwenden]** aus. Wenn die Option ausgewählt ist, verwenden Sie **[!UICONTROL Bearbeiten]**, um das Attributionsmodell zu bearbeiten. Um zum standardmäßigen Attributionsmodell zurückzukehren, haben Sie die Auswahl auf.
+1. Wählen Sie **[!UICONTROL Nicht standardmäßiges Zuordnungsmodell verwenden]** aus. Wenn die Option ausgewählt ist, verwenden Sie **[!UICONTROL Bearbeiten]**, um das Attributionsmodell zu bearbeiten. Oder heben Sie die Auswahl auf, um zum Standard-Attributionsmodell zurückzukehren.
 
    ![Spalteneinstellungsoptionen mit aktivierter Option „Dateneinstellungen“: Nicht standardmäßiges Zuordnungsmodell verwenden](assets/attribution-checkbox.png)
 
