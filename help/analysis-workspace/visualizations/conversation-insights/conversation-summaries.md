@@ -22,7 +22,7 @@ ht-degree: 10%
 >abstract="Zusammenfassen einer gefilterten Gruppe von Unterhaltungen. Legen Sie die Länge der Zusammenfassung fest. Siehe repräsentative Anführungszeichen von Kunden zur Validierung der Genauigkeit der extrahierten Signale. Wählen Sie ein Angebot aus, um die vollständige Unterhaltungswiederholung zu öffnen."
 
 
-Mit ![ Visualisierung ](/help/assets/icons/Summarize.svg)Zusammenfassen **[!UICONTROL Konversationszusammenfassungen]** können Sie eine gefilterte Gruppe von Konversationen zusammenfassen.
+Mit ![&#x200B; Visualisierung &#x200B;](/help/assets/icons/Summarize.svg)Zusammenfassen **[!UICONTROL Konversationszusammenfassungen]** können Sie eine gefilterte Gruppe von Konversationen zusammenfassen.
 
 Die Visualisierung zeigt eine Zusammenfassung der ausgewählten Metrik (z. B. Konversationen) und zeigt Unterthemen oder wörtliche Kommentare an, wenn Sie die Visualisierung so konfiguriert haben, dass sie Unterthemen enthält.
 
@@ -51,7 +51,7 @@ So erstellen und konfigurieren Sie eine **[!UICONTROL Konversationszusammenfassu
 
 1. Wählen **[!UICONTROL Erstellen]**, um die Visualisierung zu erstellen. Wählen **[!UICONTROL Zurücksetzen]**, um die Konfigurationswerte auf die Standardwerte zurückzusetzen. Wählen Sie **[!UICONTROL Abbrechen]**, um die Konfiguration abzubrechen.
 
-Um die Visualisierung **[!UICONTROL Konversationszusammenfassungen]** neu zu konfigurieren, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) neben **[!UICONTROL Metrik: _metric_]**oder **[!UICONTROL Metrik:_metric_]** | **[!UICONTROL Segmente: _segments_]**.
+Um die Visualisierung **[!UICONTROL Konversationszusammenfassungen]** neu zu konfigurieren, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) neben **[!UICONTROL Metrik: _metric_]**&#x200B;oder **[!UICONTROL Metrik:_metric_]** | **[!UICONTROL Segmente: _segments_]**.
 
 ## Verwenden
 
