@@ -1,7 +1,7 @@
 ---
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
 workflow-type: tm+mt
-source-wordcount: '5584'
+source-wordcount: '5605'
 ht-degree: 95%
 ---
 # Snippets
@@ -129,6 +129,7 @@ Ein Attributions-Container definiert den gewünschten Umfang für die Attributio
 
 * **Sitzung:** Blickt bis zum Beginn einer Sitzung zurück, in der eine Konversion stattgefunden hat. Sitzungs-Lookback-Fenster berücksichtigen das geänderte [Sitzungs-Timeout](/help/data-views/create-dataview.md#session-settings) in einer Datenansicht. Wenn **[!UICONTROL Sitzung]** ausgewählt ist, wird das [Attributions-Lookback-Fenster](#atribution-lookback-window) automatisch auf **[!UICONTROL Reporting-Fenster]** festgelegt und kann nicht geändert werden.
 * **Person**: Untersucht Konversionen ausgehend vom Umfang des Personen-Containers.
+* **Konversation**: Betrachtet Konversionen aus dem Umfang des Konversations-Containers. Dieser Container ist für Visualisierungen [Conversation Insights](/help/conversation-insights/overview.md) und Komponenten verfügbar.
 * **Globales Konto** [!BADGE B2B Edition]{type=Informative}: Untersucht Konversionen ausgehend vom Umfang des Containers für globale Konten.
 * **Konten** [!BADGE B2B Edition]{type=Informative}: Untersucht Konversionen ausgehend vom Umfang des Personen-Containers.
 * **Opportunity** [!BADGE B2B Edition]{type=Informative}: Untersucht Konversionen ausgehend vom Umfang des Opportunity-Containers.

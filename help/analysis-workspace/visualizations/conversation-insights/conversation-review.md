@@ -1,13 +1,13 @@
 ---
 description: Verwenden Sie die Visualisierung der Konversation, um eine einzelne Konversation im Detail zu überprüfen.
-title: Gesprächsüberprüfung
+title: Konversationsprüfung
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: 65d4115d4c292cff7e074d37a91563d369072ba5
+source-git-commit: f1f19b229d06a69ae180bff7dc8648a350465aa0
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 10%
+source-wordcount: '173'
+ht-degree: 9%
 ---
 # Konversationsüberprüfung
 
@@ -19,7 +19,30 @@ ht-degree: 10%
 >[!CONTEXTUALHELP]
 >id="workspace_conversationreview_panel"
 >title="Konversationsüberprüfung"
->abstract="Verstehen des Kontexts und des Flusses eines individuellen Gesprächs, einschließlich Zeitstempel, Signale (Intent, Sentiment, Ton und Feedback). Festlegen, welche Signale angezeigt werden sollen."
+>abstract="Verstehen des Kontexts und des Flusses einer einzelnen Konversation, einschließlich Zeitstempel und Signale. Konfigurieren Sie, welche Signale angezeigt werden sollen."
 
-![Chat](/help/assets/icons/Chat.svg)
 
+Die Visualisierung ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Konversationsüberprüfung]** zeigt den vollständigen Turn-by-Turn-Austausch als Teil der Konversation zwischen Kunde und Agent.
+
+Die Visualisierung hilft Ihnen, den Kontext und den Fluss einer einzelnen Konversation zu verstehen, einschließlich Zeitstempeln und Signalen. Sie können konfigurieren, welche Signale angezeigt oder nicht angezeigt werden sollen.
+
+## Erstellen und konfigurieren
+
+So erstellen und konfigurieren Sie eine Visualisierung ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Konversationsüberprüfung]**:
+
+1. Fügen Sie eine Visualisierung ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Konversationsüberprüfung]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+
+1. In der **[!UICONTROL Konversationsüberprüfung]** Visualisierungskonfiguration:
+
+   1. Wählen Sie eine **[!UICONTROL Konversation]** aus.
+
+1. Wählen **[!UICONTROL Erstellen]**, um die Visualisierung zu erstellen. Wählen **[!UICONTROL Zurücksetzen]**, um die Konfigurationswerte auf die Standardwerte zurückzusetzen. Wählen Sie **[!UICONTROL Abbrechen]**, um die Konfiguration abzubrechen.
+
+Um die Visualisierung **[!UICONTROL Konversationsüberprüfung]** neu zu konfigurieren, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) neben **[!UICONTROL Konversation: _Konversation_]**.
+
+## Verwenden
+
+So verwenden Sie die Visualisierung:
+
+
+## Einstellungen

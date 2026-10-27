@@ -4,12 +4,12 @@ title: Trend-Themen
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: 65d4115d4c292cff7e074d37a91563d369072ba5
+source-git-commit: 85311bf19368560ef54a3361edf2e7c13590929c
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 5%
+source-wordcount: '424'
+ht-degree: 8%
 ---
-# Trend-Themen
+# Trend-Themen {#trending-topics}
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
@@ -25,22 +25,26 @@ Die ![Feed](/help/assets/icons/Feed.svg)**[!UICONTROL Trendthemen]**-Visualisier
 
 Sie können nach bestimmten Themen suchen und die Anzahl und den Prozentsatz für jedes Thema auf jeder Ebene mit anderen Datenbereichen vergleichen.
 
-## Erstellen und konfigurieren
+## Erstellen und konfigurieren {#trendimg-topics-create-and-configure}
 
-So erstellen und konfigurieren Sie eine Visualisierung von Trend-Themen:
+>[!CONTEXTUALHELP]
+>id="workspace_trendingtopics_usenondefaultattributionmodel"
+>title="Nicht standardmäßiges Attribution-Modell verwenden"
+>abstract="Aktivieren Sie ein nicht standardmäßiges Attributionsmodell für diese Metrik."
+
+>[!CONTEXTUALHELP]
+>id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"
+>title="Nicht standardmäßiges Attribution-Modell verwenden"
+>abstract="Nicht-Standard-Attributionsmodelle sind für diese Metrik nicht verfügbar."
+
+So erstellen und konfigurieren Sie eine **[!UICONTROL Trendthemen]**-Visualisierung:
 
 1. Fügen Sie ![&#x200B; Visualisierung &#x200B;](/help/assets/icons/Feed.svg)Feed **[!UICONTROL Trendthemen]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. In den **[!UICONTROL Trending Topics]** Visualisierungskonfiguration:
 
    1. Wählen Sie eine **[!UICONTROL Rangfolgenmetrik]**. Beispiel: **[!UICONTROL Konversationen]**.
-   1. Wählen Sie optional **[!UICONTROL Attribution festlegen]** und wählen Sie **[!UICONTROL Modell]**, **[!UICONTROL Container]** und **[!UICONTROL Lookback-Fenster]**.
-   1. Wählen Sie eine Ebene für **[!UICONTROL Unterthemenebenen begrenzen]** aus. Der Standardwert ist **[!UICONTROL Stufe 5]**.
-
-      >[!NOTE]
-      >
-      >Die **[!UICONTROL Unterthemenebene begrenzen]** definiert die maximale Anzahl von Ebenen, die für Themen in der Visualisierung aufgeschlüsselt werden. Wenn auf einer Ebene innerhalb dieser definierten maximalen Anzahl keine Themen mehr verfügbar sind, wird ![DataUnavailable](/help/assets/icons/DataUnavailable.svg) **[!UICONTROL No topics found]** angezeigt.
-
+   1. Wenn Sie optional ein nicht standardmäßiges [Attribution](/help/analysis-workspace/attribution/models.md)-Modell für die Metrik verwenden möchten, wählen Sie **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]** und **[!UICONTROL Modell]**, **[!UICONTROL Container]** und **[!UICONTROL Lookback-Fenster]**.
 1. Wählen **[!UICONTROL Erstellen]**, um die Visualisierung zu erstellen. Wählen **[!UICONTROL Zurücksetzen]**, um die Konfigurationswerte auf die Standardwerte zurückzusetzen.
 
 Um die Visualisierung der Trendthemen neu zu konfigurieren, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) neben **[!UICONTROL Rangfolgenmetrik: _Rangfolgenmetrik_ | Unterthemenebenen: _x_]**.
@@ -49,13 +53,24 @@ Um die Visualisierung der Trendthemen neu zu konfigurieren, wählen Sie ![Bearbe
 
 So verwenden Sie die Visualisierung:
 
-* Um einen Drilldown durchzuführen und Trends von Unterthemen für ein Thema auf einer niedrigeren Ebene anzuzeigen, wählen Sie ein Thema auf einer bestimmten Ebene aus.
+![Verwenden der Visualisierung für Trendthemen](assets/trending-topics.png)
 
-* Um Themen mit einem anderen Datumsbereich zu vergleichen, wählen Sie einen Datumsbereich von Vergleichen mit aus. So verwenden Sie einen benutzerdefinierten Datumsbereich:
-  * Wählen Sie im Dropdown-Menü Benutzerdefinierter Datumsbereich aus und definieren und speichern Sie im Dialogfeld Neuer Datumsbereich einen benutzerdefinierten Datumsbereich.
+* Bewegen Sie den Mauszeiger über ein Thema, um ein Popup mit weiteren Details anzuzeigen. ➊
+
+* Um Trend-Unterthemen für ein Thema auf einer niedrigeren Ebene anzuzeigen, wählen Sie ein Thema auf einer bestimmten Ebene aus. Wenn auf einer Unterebene keine Themen verfügbar sind, sehen Sie ![DataRemove](/help/assets/icons/DataRemove.svg) **[!UICONTROL Keine Unterthemen gefunden für _topic > Unterthema > …]**.
+
+* Verwenden Sie ![Suche](/help/assets/icons/Search.svg) **[!UICONTROL _Suchthemen_]**, um schnell nach Themen zu suchen. ➋
+
+* Um Themen mit einem anderen Datumsbereich zu vergleichen, wählen Sie einen Datumsbereich aus **[!UICONTROL Vergleichen mit]**. ➌
+
+  So verwenden Sie einen benutzerdefinierten Datumsbereich:
+
+  * Wählen Sie **[!UICONTROL Benutzerdefinierter Datumsbereich]** aus dem Dropdown-Menü aus und definieren und speichern Sie **[!UICONTROL Dialogfeld „Neuer]**&quot; einen benutzerdefinierten Datumsbereich.
   * Wählen Sie diesen benutzerdefinierten Datumsbereich aus.
 
-* Um ein Liniendiagramm für die aktuelle Themenauswahl anzuzeigen, legen Sie eine [Linien](/help/analysis-workspace/visualizations/line.md)-Visualisierung in der **[!UICONTROL Trendthemen]**-Visualisierung ab. Die **[!UICONTROL Line]**-Visualisierung ist automatisch mit der **[!UICONTROL Trendthemen]**-Visualisierung verknüpft.
+* Um ein Liniendiagramm für die aktuelle Themenauswahl anzuzeigen, legen Sie eine [Linien](/help/analysis-workspace/visualizations/line.md)-Visualisierung in der **[!UICONTROL Trendthemen]**-Visualisierung ab. Die **[!UICONTROL Linie]**-Visualisierung wird automatisch mit der **[!UICONTROL Trendthemen]**-Visualisierung verknüpft und zeigt eine Linie für das ausgewählte Thema an.
+
+  ![Trending Topic Line Visualization](assets/trending-topics-line-viz.png)
 
 ## Einstellungen
 
@@ -65,6 +80,3 @@ Die folgenden spezifischen [Visualisierungseinstellungen](/help/analysis-workspa
 |---|---|
 | **[!UICONTROL Tatsächlichen Wert anzeigen]** | Zeigt den tatsächlichen Wert für ein Thema an. |
 | **[!UICONTROL Prozentsatz anzeigen]** | Zeigt den Prozentsatz für ein Thema an. |
-
-
-
