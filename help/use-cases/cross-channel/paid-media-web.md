@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 role: Admin
-source-git-commit: 3fc129c2eeb5fd86e8ef4d885a4682dd819fc481
+source-git-commit: 11bc93e0adabd8e8109bda1734e1a098ce8bef1e
 workflow-type: tm+mt
 source-wordcount: '3907'
 ht-degree: 3%
@@ -47,7 +47,7 @@ Paid-Media-Zusammenfassungsdatensätze enthalten tägliche Metriken ohne Persone
 
 Eine Verknüpfung ist nur auf Ebenen möglich, deren IDs in den URLs der Landingpage oder in den Feldern für vorhandene Ereignisse angezeigt werden. Beispielsweise unterstützt das Tagging auf Kampagnenebene das Reporting auf Kampagnenebene, nicht jedoch das Reporting auf Anzeigenebene. Joins auf Erlebnis- und Asset-Ebene erfordern zusätzliche URL-Parameter und liegen außerhalb des Rahmens dieses Handbuchs.
 
-Siehe [Zusammenfassungsdaten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/summary-data) und [Zusammenfassungsdatengruppen-Komponenteneinstellungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group) als Referenz.
+Siehe [Zusammenfassungsdaten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/summary-data) und [Zusammenfassungsdatengruppen-Komponenteneinstellungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group) als Referenz.
 
 ### Join-Schlüssel auswählen
 
@@ -81,7 +81,7 @@ Vergewissern Sie sich, dass Folgendes vorliegt:
 * [!DNL Customer Journey Analytics] Auswählen oder höher mit Zugriff auf die hier verwendeten abgeleiteten Feldfunktionen: [URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse), [Case When](/help/data-views/derived-fields/derived-fields.md#case-when), [Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace) und [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup).
 * [!DNL Adobe Experience Platform] Berechtigungen zum Verwalten von Schemata, Datensätzen und Datenströmen in der Ziel-Sandbox sowie zum Zugriff auf Datensätze und den Abfrage-Service zur Überprüfung.
 * [!DNL Customer Journey Analytics] Berechtigung zum Bearbeiten der Zielverbindung und der Datenansicht.
-* Paid-Media-Quell-Connectoren, die in derselben Sandbox konfiguriert sind und Zusammenfassungs- und Lookup-Datensätze aufnehmen. Einen Beispiel-Connector finden Sie unter [Meta Ads-Quelle](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/advertising/meta-ads).
+* Paid-Media-Quell-Connectoren, die in derselben Sandbox konfiguriert sind und Zusammenfassungs- und Lookup-Datensätze aufnehmen. Einen Beispiel-Connector finden Sie unter [Meta Ads-Quelle](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads).
 * Website-Ereignisse, die die vollständige Landingpage-URL erfassen, einschließlich der Abfragezeichenfolge oder gleichwertiger Felder mit den Netzwerk-IDs.
 
 
@@ -158,7 +158,7 @@ Entfernen oder ändern Sie keine vom System bereitgestellten Datensätze oder sc
 1. Benennen Sie den Datenstrom und wählen Sie Ihr Ereignisschema als Zuordnungsschema aus.
 1. Speichern Sie und wählen Sie dann **[!UICONTROL Service hinzufügen]** > **[!UICONTROL Adobe Experience Platform]**.
 1. Wählen Sie die Sandbox und den Ereignis-Datensatz aus und klicken Sie auf **[!UICONTROL Speichern]**.
-1. Verwenden Sie die Datenstrom-ID, um die [Experience Platform Web SDK zu &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/js-overview).
+1. Verwenden Sie die Datenstrom-ID, um die [Experience Platform Web SDK zu ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview).
 
 Folgendes erfassen:
 
@@ -363,7 +363,7 @@ Fügen Sie das abgeleitete Feld Paid Landings als Metrik hinzu und konfigurieren
 
 Die ursprünglichen Metriken **[!UICONTROL Bestellungen]** und **[!UICONTROL Umsatz]** unverändert lassen, um vorhandene Berichte beizubehalten. Für dieses Setup ist eine explizite Aktivierung der Überschreibung erforderlich, auch wenn die angezeigten Standardeinstellungen zu entsprechen scheinen.
 
-Für die Konversionszuweisung bei wiederkehrenden Besuchen sollten Sie stattdessen einen **[!UICONTROL Person]**-Container und ein entsprechendes Lookback-Fenster in Betracht ziehen. Siehe [Anwendungsfall für Zusammenfassungsdaten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-usecases/data-views/summary-data).
+Für die Konversionszuweisung bei wiederkehrenden Besuchen sollten Sie stattdessen einen **[!UICONTROL Person]**-Container und ein entsprechendes Lookback-Fenster in Betracht ziehen. Siehe [Anwendungsfall für Zusammenfassungsdaten](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/summary-data).
 
 Verwenden Sie die Metrikattribution, anstatt den Web-ID-Dimensionen Persistenz hinzuzufügen. Um zu vermeiden, dass die Anzahl der als Landingpages interpretierten Elemente ansteigt, sollten die IDs nicht für spätere Ereignisse beibehalten werden, da dadurch geändert wird, welche Ereignisse in den Kampagnenzeilen angezeigt werden.
 
@@ -420,7 +420,7 @@ Jede Gruppe unterstützt bis zu 10 Dimensionen. Um Metriken aus einem anderen Zu
 
 Speichern Sie die Datenansicht.
 
-## Erstellen von berechneten Metriken
+### Erstellen von berechneten Metriken
 
 Gehen Sie in Workspace zu **[!UICONTROL Komponenten]** > **[!UICONTROL Berechnete]** und erstellen Sie die folgenden Metriken mithilfe der konfigurierten Datenansicht:
 
