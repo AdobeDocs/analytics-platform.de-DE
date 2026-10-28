@@ -158,7 +158,7 @@ Entfernen oder ändern Sie keine vom System bereitgestellten Datensätze oder sc
 1. Benennen Sie den Datenstrom und wählen Sie Ihr Ereignisschema als Zuordnungsschema aus.
 1. Speichern Sie und wählen Sie dann **[!UICONTROL Service hinzufügen]** > **[!UICONTROL Adobe Experience Platform]**.
 1. Wählen Sie die Sandbox und den Ereignis-Datensatz aus und klicken Sie auf **[!UICONTROL Speichern]**.
-1. Verwenden Sie die Datenstrom-ID, um die [Experience Platform Web SDK zu ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview).
+1. Verwenden Sie die Datenstrom-ID, um die [Experience Platform Web SDK zu &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview).
 
 Folgendes erfassen:
 
