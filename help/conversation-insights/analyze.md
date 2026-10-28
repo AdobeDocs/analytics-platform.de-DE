@@ -24,23 +24,37 @@ topic_v2:
     internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: d08ee4bf4c5e53e16389c5d58971a97dd5f78c0e
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '190'
 ht-degree: 0%
 ---
 
 # Analysieren von Konversationserkenntnissen
 
-## Einfache Analyse
 
 Um Konversationseinblicke zu analysieren, erstellen oder bearbeiten Sie ein Projekt in Analysis Workspace und verwenden Sie eine der konfigurierten Datenansichten als Datenansicht für eines oder mehrere der Bedienfelder in Ihrem Projekt.
 
+## Einfache Analyse
+
+Verwenden Sie zum Erstellen von Freiformtabellen oder Visualisierungen die Konversationsmetriken (**[!UICONTROL Turns]**, **[!UICONTROL Conversations]**, **[!UICONTROL Sentiment]**, **[!UICONTROL Conversation Tone]** und mehr), um einen Überblick über die Konversationen zu erhalten.
+
 +++ Beispielprojekt
 
-![Einfaches Beispielprojekt für Conversation Insights](assets/conversation-insights-analyze-sample-project-basic.png)
+![Einfaches Beispielprojekt für Conversation Insights](assets/conversation-insights-analyze-sample-project-basic.png){zoomable="yes"}
 
 +++
+
+## Detaillierte Analyse
+
+Um eine detaillierte Analyse von Unterhaltungen durchzuführen, verwenden Sie die Visualisierungen [Trendthemen](/help/analysis-workspace/visualizations/conversation-insights/trending-topics.md), [Konversationszusammenfassungen](/help/analysis-workspace/visualizations/conversation-insights/conversation-summaries.md) und [Konversationsüberprüfung](/help/analysis-workspace/visualizations/conversation-insights/conversation-review.md). Diese Visualisierungen bieten verschiedene Perspektiven auf die Gesprächsdaten.
+
++++ Beispielprojekt
+
+![Detailliertes Beispielprojekt für Conversation Insights](assets/conversation-insights-analyze-sample-project-detailed.png){zoomable="yes"}
+
++++
+
 
 ## Unterhaltungen skaliert und kontextbezogen analysieren
 
@@ -52,6 +66,6 @@ So analysieren Sie Konversationen in großem Maßstab und stellen den Kontext f�
 
 +++ Beispielprojekt
 
-Noch festzulegen.
+Ausstehend.
 
 +++ 
