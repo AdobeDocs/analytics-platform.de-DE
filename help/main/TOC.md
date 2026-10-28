@@ -2,9 +2,9 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Adobe Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 89dc7258649e9c16d6a43c15ced42e1af7c6009a
+source-git-commit: 3fc129c2eeb5fd86e8ef4d885a4682dd819fc481
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1528'
 ht-degree: 88%
 ---
 
@@ -336,7 +336,7 @@ ht-degree: 88%
   + [Anwendungsfälle für Branchen](../guided-analysis/industry-use-cases.md)
   + [Häufig gestellte Fragen](../guided-analysis/faq.md)
 
-+ Conversation Insights {#conversation-insights}
++ Konversationserkenntnisse {#conversation-insights}
   + [Überblick](/help/conversation-insights/overview.md)
   + [Konfigurieren](/help/conversation-insights/configure.md)
   + [Verwalten](/help/conversation-insights/manage.md)
@@ -524,6 +524,7 @@ ht-degree: 88%
   + Kanalübergreifende Daten {#cross-channel}
     + [Kanalübergreifendes Analysieren von Daten](../use-cases/cross-channel/cross-channel.md)
     + [Importieren von Callcenter- und Web-Daten](../use-cases/cross-channel/call-center.md)
+    + {hide-from-toc}[Paid-Media-Daten mit Web-Daten verbinden](../use-cases/cross-channel/paid-media-web.md)
   + Datenexport {#data-export}
     + [Überblick](../use-cases/data-export/overview.md)
     + [BI-Erweiterung](../use-cases/data-export/bi-extension.md)
@@ -536,7 +537,7 @@ ht-degree: 88%
   + Datenaufnahme {#data-ingestion}
     + [Aufnehmen und Verwenden von Marketo Engage-Daten](../use-cases/data-ingestion/marketo.md)
     + [Aufnehmen und Verwenden von Experience Platform-Zielgruppen](../use-cases/data-ingestion/ingest-aep-segments.md)
-    + {hide-from-toc}[Aufnehmen und Verwenden von Paid-Media-Daten](/help/use-cases/data-ingestion/paid-media.md)
+    + {hide-from-toc}[Aufnehmen und Verwenden von Paid-Media-Daten](/help/use-cases/cross-channel/paid-media-web.md)
   + Datenansichten {#data-views}
     + [Anwendungsfälle für Datenansichten](/help/use-cases/data-views/data-views-usecases.md)
     + [Verwenden von Bindungsdimensionen und Metriken](/help/use-cases/data-views/binding-dimensions-metrics.md)
