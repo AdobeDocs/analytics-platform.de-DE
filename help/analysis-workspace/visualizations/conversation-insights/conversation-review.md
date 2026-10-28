@@ -4,10 +4,10 @@ title: Konversationsprüfung
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: f1f19b229d06a69ae180bff7dc8648a350465aa0
+source-git-commit: d08ee4bf4c5e53e16389c5d58971a97dd5f78c0e
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 9%
+source-wordcount: '188'
+ht-degree: 8%
 ---
 # Konversationsüberprüfung
 
@@ -22,7 +22,7 @@ ht-degree: 9%
 >abstract="Verstehen des Kontexts und des Flusses einer einzelnen Konversation, einschließlich Zeitstempel und Signale. Konfigurieren Sie, welche Signale angezeigt werden sollen."
 
 
-Die Visualisierung ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Konversationsüberprüfung]** zeigt den vollständigen Turn-by-Turn-Austausch als Teil der Konversation zwischen Kunde und Agent.
+Die Visualisierung ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Konversationsüberprüfung]** zeigt den vollständigen turnusmäßigen Austausch zwischen Kunde und Agent.
 
 Die Visualisierung hilft Ihnen, den Kontext und den Fluss einer einzelnen Konversation zu verstehen, einschließlich Zeitstempeln und Signalen. Sie können konfigurieren, welche Signale angezeigt oder nicht angezeigt werden sollen.
 
@@ -34,15 +34,21 @@ So erstellen und konfigurieren Sie eine Visualisierung ![Chat](/help/assets/icon
 
 1. In der **[!UICONTROL Konversationsüberprüfung]** Visualisierungskonfiguration:
 
-   1. Wählen Sie eine **[!UICONTROL Konversation]** aus.
+   * Wählen Sie eine **[!UICONTROL Konversation]** aus.
 
 1. Wählen **[!UICONTROL Erstellen]**, um die Visualisierung zu erstellen. Wählen **[!UICONTROL Zurücksetzen]**, um die Konfigurationswerte auf die Standardwerte zurückzusetzen. Wählen Sie **[!UICONTROL Abbrechen]**, um die Konfiguration abzubrechen.
 
-Um die Visualisierung **[!UICONTROL Konversationsüberprüfung]** neu zu konfigurieren, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) neben **[!UICONTROL Konversation: _Konversation_]**.
+Um die Visualisierung **[!UICONTROL Konversationsüberprüfung]** neu zu konfigurieren, wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus.
 
 ## Verwenden
 
-So verwenden Sie die Visualisierung:
+Verwenden Sie die vertikale segmentierte Bildlaufleiste, um durch die Konversation zu navigieren.
+
+**[!UICONTROL Sitzungsstart]** gibt den Beginn der Konversation an. **[!UICONTROL Sitzungsende]** gibt das Ende der Konversation an.
+
+![Konversationsüberprüfung](assets/conversation-review.png)
 
 
-## Einstellungen
+
+
+
