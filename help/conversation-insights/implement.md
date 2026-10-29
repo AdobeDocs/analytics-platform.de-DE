@@ -479,7 +479,7 @@ Unten finden Sie ein Beispiel für die Verwendung der Feldergruppe „Konversati
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/de", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
@@ -519,7 +519,7 @@ Unten finden Sie ein Beispiel für die Verwendung der Feldergruppe „Konversati
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/de", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
@@ -560,7 +560,7 @@ Unten finden Sie ein Beispiel für die Verwendung der Feldergruppe „Konversati
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/de", "name": "Home Page" }
   },
   "conversation": {
     "conversationID": "conv-001",
@@ -593,7 +593,7 @@ Unten finden Sie ein Beispiel für die Verwendung der Feldergruppe „Konversati
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/de", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-xyz789",
@@ -698,7 +698,7 @@ Jeder Zeichenfolgenwert ist akzeptabel. Adobe füllt jedoch während des Signale
     ]
   },
   "web":{
-    "webPageDetails":{ "URL":"https://www.adobe.com", "name":"Home Page" }
+    "webPageDetails":{ "URL":"https://www.adobe.com/de", "name":"Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
