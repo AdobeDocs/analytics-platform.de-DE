@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: 5b0c9d764d17daa63316f8ab294aa9c8f7f94427
 workflow-type: tm+mt
 source-wordcount: '2440'
 ht-degree: 12%
@@ -119,14 +119,14 @@ Einige der Funktionen und ihr zugehöriger Wert für das Limit hängen vom Custo
 |---|--:|---|---|
 | Zielgruppensegmente | 20 | Vom System erzwungene Leitplanken | Maximale Anzahl [Segmente](../components/segments/seg-overview.md) pro Zielgruppe. |
 | Anzahl der Zielgruppenidentitäten | 20 Million | Vom System erzwungene Leitplanken | Maximale Anzahl von Identitäten pro Zielgruppe. |
-| Häufigkeit der Zielgruppenaktualisierung | 4 | Vom System erzwungene Leitplanken | Die maximale Häufigkeit in Stunden, in [&#x200B; eine &#x200B;](../components/audiences/audiences-overview.md) aktualisiert werden kann. |
+| Häufigkeit der Zielgruppenaktualisierung | 4 | Vom System erzwungene Leitplanken | Die maximale Häufigkeit in Stunden, in [ eine ](../components/audiences/audiences-overview.md) aktualisiert werden kann. |
 | Lookback-Fenster zur Zielgruppenaktualisierung | 90 | Vom System erzwungene Leitplanken | Maximale Anzahl von Tagen für das Aktualisierungs-Lookback-Fenster |
 | Ablaufdatum der Zielgruppe aktualisieren | 13 | Vom System erzwungene Leitplanken | Die maximale Anzahl von Monaten, die die Zielgruppe ab dem Erstellungsdatum nicht mehr aktualisiert wird. Kunden können dies um weitere 13 Monate verlängern. |
 | Anzahl der aktualisierten Zielgruppen | 75 - 150 | Vom System erzwungene Leitplanken | Maximale Anzahl [Zielgruppen, die für die Aktualisierung konfiguriert sind](/help/components/audiences/publish.md#audience-builder) in geplanten Abständen (einmalige Aktualisierungen werden für dieses Limit nicht angerechnet). Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattform](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/guardrails/overview).
+Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview).
 
 
 ## Automatisierte Datensatzgültigkeit
@@ -144,7 +144,7 @@ Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattfo
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
 | Projekte | 50.000 | Vom System erzwungene Leitplanken | Maximale Anzahl von Projekten für eine Organisation. |
-| Datenansichten | 2.000 | Vom System erzwungene Leitplanken | Maximale Anzahl [Datenansichten](../data-views/data-views.md) für eine Organisation. |
+| Datenansichten | 5.000 | Vom System erzwungene Leitplanken | Maximale Anzahl [Datenansichten](../data-views/data-views.md) für eine Organisation. |
 | Datenansichten | 500-1000 | Vom System erzwungene Leitplanken | Maximale Anzahl von Datenansichten für eine Verbindung. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 | Datensätze | 100 | Vom System erzwungene Leitplanken | Maximale Anzahl [Datensätze](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=de) pro Verbindung |
 | Verbindungen | 1.000 | Vom System erzwungene Leitplanken | Maximale Anzahl von [Verbindungen](../connections/overview.md) für eine Organisation. |
@@ -153,7 +153,7 @@ Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattfo
 | Dimensionen | 5.000 | Vom System erzwungene Leitplanken | Maximale Anzahl von Dimensionen in einer Datenansicht. |
 | Titel der Anmerkung | 100 | Vom System erzwungene Leitplanken | Maximale Zeichenanzahl für einen Anmerkungstitel. |
 | Beschreibung der Anmerkung | 250 | Vom System erzwungene Leitplanken | Maximale Zeichenanzahl für eine Anmerkungsbeschreibung |
-| Schemafelder | 10 | Vom System erzwungene Leitplanken | Maximale Anzahl von Schemafeldern (ohne Standardfelder) beim Definieren von Regeln für ein ([&#x200B; Feld](../data-views/derived-fields/derived-fields.md). |
+| Schemafelder | 10 | Vom System erzwungene Leitplanken | Maximale Anzahl von Schemafeldern (ohne Standardfelder) beim Definieren von Regeln für ein ([ Feld](../data-views/derived-fields/derived-fields.md). |
 | Lookup-/Profilfelder | 3 | Vom System erzwungene Leitplanken | Maximale Anzahl von Lookup- oder Profilschemafeldern innerhalb der maximalen Anzahl von Schemafeldern (ohne Standardfelder) beim Definieren von Regeln für ein abgeleitetes Feld. |
 | Abgeleitete Felder | 100 - 500 | Vom System erzwungene Leitplanken | Maximale Anzahl abgeleiteter Felder pro Verbindung Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 
@@ -173,7 +173,7 @@ Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattfo
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=de).
+Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Zieldatenexport
@@ -185,7 +185,7 @@ Siehe auch Experience Platform [Schutzmaßnahmen bei der Datenaufnahme](https://
 
 {style="table-layout:auto"}
 
-Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://experienceleague.adobe.com/de/docs/experience-platform/destinations/guardrails#dataset-exports)
+Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Data Landing Zone
@@ -303,7 +303,7 @@ Siehe auch Experience Platform [Leitplanken für den Datensatzexport](https://ex
 
 >[!NOTE]
 >
->Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Die spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie [&#x200B; Experience Platform &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=de)Leitplanken für die Datenaufnahme).
+>Die folgenden Verarbeitungszeiten sind Leitplanken, keine vertraglichen Service Level Agreements (SLAs). Die Latenz variiert je nach Kundenkonfiguration, Datenvolumen und Kundenanwendungen. Häufig sind die tatsächlichen Verarbeitungszeiten schneller. Die spezifischen Vertragsbedingungen und SLAs finden Sie in Ihrem Customer Journey Analytics-Vertrag. Weitere Informationen finden Sie [ Experience Platform ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)Leitplanken für die Datenaufnahme).
 
 | Datenfluss | Erwartete Latenz |
 |---|---|
