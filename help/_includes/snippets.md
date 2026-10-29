@@ -1,7 +1,7 @@
 ---
-source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '5605'
+source-wordcount: '5607'
 ht-degree: 95%
 ---
 # Snippets
@@ -94,7 +94,7 @@ In diesem Video werden die Funktionen mithilfe von Adobe Analytics demonstriert.
 
 | Andere Filter | Beschreibung |
 |---|---|
-| ![Sonstige Filter](/help/assets/filter-other.png){width="300"} | Im Abschnitt **[!UICONTROL Andere Filter]** können Sie nach anderen vordefinierten Filtern filtern.<ul><li>Sie können eine oder mehrere der folgenden Optionen auswählen:<ul><li> **[!UICONTROL Alle anzeigen]**</li><li>**[!UICONTROL Mit mir geteilt]**</li><li>**[!UICONTROL Meine]**</li><li>**[!UICONTROL Genehmigt]**</li><li>**[!UICONTROL Favoriten]**</li></ul> Was Sie auswählen können, hängt von Ihrer Rolle und Ihren Berechtigungen ab.</li><li>Sie können mehr als einen Filter auswählen. Die anderen verfügbaren Filter hängen von der Auswahl ab, die in anderen Abschnitten im Panel „Filter“ vorgenommen wurde.</li><li>Die Zahlen geben Folgendes an:<ul><li>**(1)**: Die Anzahl der ausgewählten anderen Filter (wenn mindestens ein Filter ausgewählt ist).</li><li>**5︎⃣**: Die Anzahl weiterer Filter, die für die aus dem aktuellen Filter resultierenden Elemente verfügbar sind.</li><li>4︎⃣: Die Anzahl der Elemente, die mit dem jeweiligen anderen Filter verknüpft sind.</li></ul></li></ul> |
+| ![Sonstige Filter](/help/assets/filter-other.png){width="300"} | Im Abschnitt **[!UICONTROL Andere Filter]** können Sie nach anderen vordefinierten Filtern filtern.<ul><li>Sie können eine oder mehrere der folgenden Optionen auswählen:<ul><li> **[!UICONTROL Alle anzeigen]**</li><li>**[!UICONTROL Mit mir geteilt]**</li><li>**[!UICONTROL Meine]**</li><li>**[!UICONTROL Genehmigt]**</li><li>**[!UICONTROL Favoriten]**</li><li>**[!UICONTROL Fehlende Beschreibung]**</li></ul> Was Sie auswählen können, hängt von Ihrer Rolle und Ihren Berechtigungen ab.</li><li>Sie können mehr als einen Filter auswählen. Die anderen verfügbaren Filter hängen von der Auswahl ab, die in anderen Abschnitten im Panel „Filter“ vorgenommen wurde.</li><li>Die Zahlen geben Folgendes an:<ul><li>**(1)**: Die Anzahl der ausgewählten anderen Filter (wenn mindestens ein Filter ausgewählt ist).</li><li>**5︎⃣**: Die Anzahl weiterer Filter, die für die aus dem aktuellen Filter resultierenden Elemente verfügbar sind.</li><li>4︎⃣: Die Anzahl der Elemente, die mit dem jeweiligen anderen Filter verknüpft sind.</li></ul></li></ul> |
 
 ## Abschnitt zum Datumsbereichsfilter  {#daterangefiltersection}
 

@@ -32,16 +32,16 @@ role_v2:
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
     internal-label: Experimentation
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 63%
+source-wordcount: '1523'
+ht-degree: 49%
 ---
 # Bearbeiten von Komponenteneinträgen
 
 Customer Journey Analytics-Admins können Komponenteneinträge im Datenwörterbuch für eine bestimmte Datenansicht bearbeiten. Alle vorgenommenen Änderungen sind für alle Benutzer der Datenansicht sichtbar.
 
-Bearbeiten einer Komponente im Datenwörterbuch:
+So bearbeiten Sie eine Komponente im Datenwörterbuch:
 
 1. Wechseln Sie zum Analysis Workspace-Projekt, das die zu bearbeitende Komponente enthält.
 
@@ -84,7 +84,7 @@ Bearbeiten einer Komponente im Datenwörterbuch:
    | **[!UICONTROL Fehlende Beschreibung]** | Nur Komponenten anzeigen, die noch keine Beschreibung im Feld „Beschreibung“ haben. Diese Option steht nur Admins zur Verfügung. |
    | **[!UICONTROL Duplikate anzeigen]** | Nur Komponenten anzeigen, die in der ausgewählten Datenansicht denselben Namen oder dieselbe Beschreibung wie eine andere Komponente haben. Dazu gehören sowohl von Ihnen erstellte als auch von Adobe bereitgestellte Komponenten. Namen oder Beschreibungen müssen exakt übereinstimmen, damit sie als Duplikate angezeigt werden. Diese Option steht nur Admins zur Verfügung. |
    | **[!UICONTROL Keine aktuellen Daten]** | Nur Komponenten anzeigen, die in den letzten 90 Tagen keine Daten erfasst haben. Diese Option steht nur Admins zur Verfügung. |
-   | **[!UICONTROL Erstellt von Adobe]** <!-- I don't see this option--> | Nur Komponenten anzeigen, die von Adobe erstellt wurden. Beispiel: **[!UICONTROL Adobe Target]**. Komponenten, die von Admins oder anderen Benutzenden in deren Organisation erstellt wurden, werden nicht angezeigt. |
+   | **[!UICONTROL Erstellt von Adobe]** <!-- I don't see this option--> | Nur Komponenten anzeigen, die von Adobe erstellt wurden. Beispiel: **[!UICONTROL Adobe Target]**. Komponenten, die von Administrierenden oder anderen Benutzenden in Ihrer Organisation erstellt wurden, werden nicht angezeigt. |
 
    {style="table-layout:auto"}
 
@@ -92,7 +92,7 @@ Bearbeiten einer Komponente im Datenwörterbuch:
 
    | Option | Funktion |
    |---------|----------|
-   | [!UICONTROL **Empfohlen**] | Sortiert Komponenten nach den am Anfang der Liste empfohlenen Komponenten. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrem Unternehmen verwendet werden, werden weiter oben in der Liste angezeigt. |
+   | [!UICONTROL **Empfohlen**] | Sortiert Komponenten so, dass empfohlene Komponenten am Anfang der Liste stehen. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrem Unternehmen verwendet werden, werden weiter oben in der Liste angezeigt. |
    | [!UICONTROL **Alphabetisch**] | Sortiert Komponenten alphabetisch. |
    | [!UICONTROL **Kategorisch**] | Sortiert Komponenten nach Komponententyp (Dimension, Metrik, Segment, Datumsbereich). |
 
@@ -101,17 +101,18 @@ Bearbeiten einer Komponente im Datenwörterbuch:
 1. Wählen Sie aus der Komponentenliste die Komponente aus, die Sie bearbeiten möchten.
 
 1. Wählen Sie das Symbol **Bearbeiten** ![Datenwörterbuch bearbeiten](/help/assets/icons/Edit.svg) neben dem Komponentennamen.
+   ![Dialogfeld „Komponente bearbeiten“ im Datenwörterbuch](assets/data-dictionary-edit-component.png)
 
 1. Bearbeiten Sie eine der folgenden Informationen zur Komponente:
 
    | Option | Funktion |
    |---------|----------|
    | **[!UICONTROL Genehmigt]** | <p>Zeigt an, dass die Komponente von der bzw. dem Admin geprüft und genehmigt wurde.</p><p>Admins wird eine Option zum **[!UICONTROL Nicht genehmigen“]**. Bei Auswahl dieser Option wird die Komponente für Benutzer als „Nicht genehmigt“ markiert.</p> |
-   | **[!UICONTROL Nicht genehmigt]** | <p>Zeigt an, dass die Komponente noch nicht von der bzw. dem Admin geprüft und genehmigt wurde.</p><p>Admins wird eine Option zum **[!UICONTROL Genehmigen]** angezeigt. Bei Auswahl dieser Option wird die Komponente gegenüber Benutzenden als „Genehmigt“ gekennzeichnet.</p> |
-   | **[!UICONTROL Beschreibung]** | Beschreibt die beabsichtigte Funktion der Komponente. (Diese Informationen werden vom Analytics-Admins hinzugefügt, wie unter [Komponentenbeschreibungen hinzufügen](/help/components/add-component-descriptions.md) beschrieben.) |
+   | **[!UICONTROL Genehmigen]** | <p>Weist Admins darauf hin, dass die Komponente noch nicht von Admins geprüft und genehmigt wurde.</p><p>Nicht-Admins sehen den Titel **[!UICONTROL Nicht genehmigt]**. Bei Auswahl dieser Option wird die Komponente gegenüber Benutzenden als „Genehmigt“ gekennzeichnet.</p> |
+   | **[!UICONTROL Beschreibung]** | Beschreibt die beabsichtigte Funktion der Komponente. Nur Analytics-Admins können Komponentenbeschreibungen hinzufügen. <p>Sie können eine Beschreibung auf eine der folgenden Arten hinzufügen:</p><ul><li>Beschreibung manuell eingeben</li><li>Wählen Sie **[!UICONTROL Beschreibung generieren]** aus, damit Adobe eine Beschreibung für Sie generiert. <p>Zu den generierten Beschreibungen **[!UICONTROL der Text „Wird von Adobe mithilfe von KI generiert]** und Sie können sie nach der Generierung bearbeiten.</p><p>Informationen zum gleichzeitigen Generieren von Beschreibungen für mehrere Komponenten finden Sie unter [Generieren von Beschreibungen für mehrere Komponenten](#generate-descriptions-for-multiple-components).</p></li></ul> <p>Weitere Informationen finden Sie unter [Beschreibungen automatisch generieren](/help/components/add-component-descriptions.md#automatically-generate-descriptions).</p> |
    | **[!UICONTROL Häufig verwendet mit]** | <p>Zeigt Komponenten an, die am häufigsten mit der Komponente verwendet werden, die Sie anzeigen.</p><p>Es werden bis zu 5 Komponenten für die 5 primären Komponententypen angezeigt: Metrik, Berechnete Metrik, Dimension, Segment und Datumsbereich.</p><p>Diese Liste basiert auf Daten aus den letzten 90 Tagen. Es werden nur Komponenten angezeigt, auf die Sie zur Ansicht Zugriff haben.</p><p>Admins können die Komponenten, die Benutzende in diesem Abschnitt sehen, kuratieren, indem sie die gewünschten Komponenten in den Dropdown-Feldern **[!UICONTROL Immer einschließen]** und **[!UICONTROL Immer ausschließen]** auswählen. Bevor Sie die Komponenten kuratieren, die Benutzenden angezeigt werden, wenden Sie zunächst das Segment **Alle anzeigen** an, um sicherzustellen, dass Sie alle Komponenten sehen, die nicht für Sie freigegeben sind und möglicherweise von einem anderen Administrator hinzugefügt wurden.<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p> |
    | **[!UICONTROL Ähnlich wie]** | <p>Zeigt Komponenten mit ähnlichen Namen wie die angezeigte Komponente an.</p><p>Es werden bis zu 5 Komponenten für die 5 primären Komponententypen angezeigt: Metrik, Berechnete Metrik, Dimension, Segment und Datumsbereich.</p><p>Es werden nur Komponenten angezeigt, auf die Sie Zugriff haben.</p><p>Hier werden alle doppelten Komponenten in Ihrer Datenansicht angezeigt. Analytics-Admins sollten alle doppelten Komponenten identifizieren und entfernen, wie unter [Überwachen des Zustands des Datenwörterbuchs](/help/components/data-dictionary/monitor-data-dictionary-health.md) beschrieben.</p><p>Adminis können die Komponenten, die Benutzende in diesem Abschnitt sehen, kuratieren, indem sie die gewünschten Komponenten in den Dropdown-Feldern **[!UICONTROL Immer einschließen]** und **[!UICONTROL Immer ausschließen]** auswählen. Bevor Sie die Komponenten kuratieren, die Benutzenden angezeigt werden, wenden Sie zunächst das Segment **Alle anzeigen** an, um sicherzustellen, dass Sie alle Komponenten sehen, die nicht für Sie freigegeben sind und möglicherweise von einem anderen Administrator hinzugefügt wurden.<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p><p>**HINWEIS:** Derzeit enthält der Abschnitt **Ähnlich wie** nur von Ihnen erstellte Komponenten und nicht die von Adobe bereitgestellten Komponenten. Von Adobe bereitgestellte Komponenten werden in einer zukünftigen Version hinzugefügt.</p> |
-   | **[!UICONTROL Produktkompatibilität]** | Gibt an, wo in Customer Journey Analytics diese berechnete Metrik verwendet werden kann. <p>Die möglichen Werte sind:</p><ul><li>**[!UICONTROL Überall in Customer Journey Analytics]**: Die berechnete Metrik kann in ganz Customer Journey Analytics verwendet werden, einschließlich Analysis Workspace, Report Builder usw.</li><li>**[!UICONTROL Überall in Customer Journey Analytics (außer beim Experimentieren)]**: Die berechnete Metrik kann überall in Customer Journey Analytics verwendet werden, mit Ausnahme des Panels „Experimentieren“.</li> <p>Informationen zu den Kriterien, die bestimmen, ob eine berechnete Metrik beim Experimentieren verwendet werden kann, finden Sie unter [Verwenden berechneter Metriken im Bedienfeld &#x200B;](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel)Experimentieren[&#x200B; im Bedienfeld Experimentieren](/help/analysis-workspace/c-panels/experimentation.md).</p></ul> |
+   | **[!UICONTROL Produktkompatibilität]** | Gibt an, wo in Customer Journey Analytics diese berechnete Metrik verwendet werden kann. <p>Die möglichen Werte sind:</p><ul><li>**[!UICONTROL Überall in Customer Journey Analytics]**: Die berechnete Metrik kann in ganz Customer Journey Analytics verwendet werden, einschließlich Analysis Workspace, Report Builder usw.</li><li>**[!UICONTROL Überall in Customer Journey Analytics (außer beim Experimentieren)]**: Die berechnete Metrik kann überall in Customer Journey Analytics verwendet werden, mit Ausnahme des Panels „Experimentieren“.</li> <p>Informationen zu den Kriterien, die bestimmen, ob eine berechnete Metrik beim Experimentieren verwendet werden kann, finden Sie unter [Verwenden berechneter Metriken im Bedienfeld ](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel)Experimentieren[ im Bedienfeld Experimentieren](/help/analysis-workspace/c-panels/experimentation.md).</p></ul> |
    | **[!UICONTROL Tags]** | Zeigt alle Tags an, die auf die Komponente angewendet werden. Benutzende mit Administratorzugriff können bei der Bearbeitung der Komponente Tags hinzufügen. |
    | **[!UICONTROL Typ der Komponente]** | Listet den Typ der Komponente auf, also ob es sich um eine Dimension, eine Metrik, ein Segment oder einen Datumsbereich handelt. |
    | **[!UICONTROL Erstellt von]** | Zeigt den Namen der Person an, die die Komponente erstellt hat. |
@@ -121,3 +122,29 @@ Bearbeiten einer Komponente im Datenwörterbuch:
    {style="table-layout:auto"}
 
 1. Klicken Sie auf das Symbol **Speichern** ![Datenwörterbuch speichern](/help/assets/icons/SaveFloppy.svg), um Ihre Änderungen zu speichern.
+
+## Beschreibungen für mehrere Komponenten generieren
+
+Customer Journey Analytics-Admins können von Adobe gleichzeitig Beschreibungen für mehrere Komponenten generieren lassen. Weitere Informationen finden Sie unter [Beschreibungen automatisch generieren](/help/components/add-component-descriptions.md#automatically-generate-descriptions).
+
+>[!IMPORTANT]
+>
+>Das Erzeugen von Beschreibungen für mehrere Komponenten ersetzt alle vorhandenen Beschreibungen für die ausgewählten Komponenten. Um zu vermeiden, dass vorhandene Beschreibungen überschrieben werden, filtern Sie die Liste so, dass nur Komponenten angezeigt werden, die noch keine Beschreibung haben, bevor Sie Komponenten auswählen.
+
+So generieren Sie Beschreibungen für mehrere Komponenten im Datenwörterbuch:
+
+1. Öffnen Sie das Datenwörterbuch, wie unter „Zugriff auf das Datenwörterbuch“ in [Datenwörterbuch - Übersicht](/help/components/data-dictionary/data-dictionary-overview.md) beschrieben.
+
+1. Stellen Sie sicher, dass im Dropdown-Menü die richtige Datenansicht ausgewählt ist.
+
+1. (Empfohlen) Wählen Sie das **Filter**-Symbol ![Datenwörterbuchfiltersymbol](/help/assets/icons/Filter.svg) und wählen Sie dann **[!UICONTROL Fehlende Beschreibung]** aus, um nur Komponenten anzuzeigen, die keine Beschreibung aufweisen.
+
+1. Wählen Sie die Komponenten aus, für die Sie Beschreibungen generieren möchten.
+
+1. Wählen Sie ![AI](/help/assets/icons/AI.svg) **[!UICONTROL Beschreibung generieren]** oberhalb der Komponentenliste aus.
+
+1. Wählen Sie **[!UICONTROL Beschreibungen erstellen]** aus, um zu bestätigen.
+
+   Eine Bestätigungsmeldung zeigt die Anzahl der hinzugefügten Beschreibungen an.
+
+   Wenn Sie eine große Anzahl von Komponenten ausgewählt haben, werden die Beschreibungen im Hintergrund generiert. Wenn die Anfrage abgeschlossen ist, erhalten Sie eine In-App[Benachrichtigung](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) die anzeigt, wie viele Beschreibungen generiert wurden und wie viele fehlgeschlagen sind.
