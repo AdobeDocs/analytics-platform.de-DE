@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 role: Admin
-source-git-commit: 11bc93e0adabd8e8109bda1734e1a098ce8bef1e
+source-git-commit: c5a7403374f26ebc641f3491a88dc14c5f8693c6
 workflow-type: tm+mt
-source-wordcount: '3907'
+source-wordcount: '3910'
 ht-degree: 3%
 ---
 # Paid-Media-Daten mit Web-Daten verbinden
@@ -47,7 +47,7 @@ Paid-Media-Zusammenfassungsdatensätze enthalten tägliche Metriken ohne Persone
 
 Eine Verknüpfung ist nur auf Ebenen möglich, deren IDs in den URLs der Landingpage oder in den Feldern für vorhandene Ereignisse angezeigt werden. Beispielsweise unterstützt das Tagging auf Kampagnenebene das Reporting auf Kampagnenebene, nicht jedoch das Reporting auf Anzeigenebene. Joins auf Erlebnis- und Asset-Ebene erfordern zusätzliche URL-Parameter und liegen außerhalb des Rahmens dieses Handbuchs.
 
-Siehe [Zusammenfassungsdaten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/summary-data) und [Zusammenfassungsdatengruppen-Komponenteneinstellungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group) als Referenz.
+Siehe [Zusammenfassungsdaten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/summary-data) und [Zusammenfassungsdatengruppen-Komponenteneinstellungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group) als Referenz.
 
 ### Join-Schlüssel auswählen
 
@@ -81,7 +81,7 @@ Vergewissern Sie sich, dass Folgendes vorliegt:
 * [!DNL Customer Journey Analytics] Auswählen oder höher mit Zugriff auf die hier verwendeten abgeleiteten Feldfunktionen: [URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse), [Case When](/help/data-views/derived-fields/derived-fields.md#case-when), [Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace) und [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup).
 * [!DNL Adobe Experience Platform] Berechtigungen zum Verwalten von Schemata, Datensätzen und Datenströmen in der Ziel-Sandbox sowie zum Zugriff auf Datensätze und den Abfrage-Service zur Überprüfung.
 * [!DNL Customer Journey Analytics] Berechtigung zum Bearbeiten der Zielverbindung und der Datenansicht.
-* Paid-Media-Quell-Connectoren, die in derselben Sandbox konfiguriert sind und Zusammenfassungs- und Lookup-Datensätze aufnehmen. Einen Beispiel-Connector finden Sie unter [Meta Ads-Quelle](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/advertising/meta-ads).
+* Paid-Media-Quell-Connectoren, die in derselben Sandbox konfiguriert sind und Zusammenfassungs- und Lookup-Datensätze aufnehmen. Einen Beispiel-Connector finden Sie unter [Meta Ads-Quelle](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads).
 * Website-Ereignisse, die die vollständige Landingpage-URL erfassen, einschließlich der Abfragezeichenfolge oder gleichwertiger Felder mit den Netzwerk-IDs.
 
 
@@ -93,7 +93,7 @@ Identifizieren Sie die Abfrageparameter, die Ihre Kampagnen-, Anzeigengruppen- u
 |---|---|---|---|
 | Meta-IDs in der Website-URL | <code>campaign_id={{campaign.id}}</code> | <code>adset_id={{adset.id}}</code> | <code>ad_id={{ad.id}}</code> |
 | Meta-IDs in UTM-Parametern | <code>utm_campaign={{campaign.id}}</code> | <code>utm_term={{adset.id}}</code> | <code>utm_content={{ad.id}}</code> |
-| Google Ads-IDs in UTM-Parametern | <code>utm_campaign={campaignid}</code> | <code>utm_term={adgroupid}</code> | <code>utm_content={creative}</code> |
+| Google Ads-IDs in UTM-Parametern | <code>utm_campaign={{campaignId}}</code> | <code>utm_term={{adGroupId}}</code> | <code>utm_content={{creative}}</code> |
 
 Beim Meta-UTM-Tagging kann ein Quellwert wie `utm_source=fb` das Netzwerk identifizieren. Verwenden Sie für das UTM-Tagging von Google Ads einen Quellwert wie `utm_source=google`.
 
@@ -158,7 +158,7 @@ Entfernen oder ändern Sie keine vom System bereitgestellten Datensätze oder sc
 1. Benennen Sie den Datenstrom und wählen Sie Ihr Ereignisschema als Zuordnungsschema aus.
 1. Speichern Sie und wählen Sie dann **[!UICONTROL Service hinzufügen]** > **[!UICONTROL Adobe Experience Platform]**.
 1. Wählen Sie die Sandbox und den Ereignis-Datensatz aus und klicken Sie auf **[!UICONTROL Speichern]**.
-1. Verwenden Sie die Datenstrom-ID, um die [Experience Platform Web SDK zu &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/js-overview).
+1. Verwenden Sie die Datenstrom-ID, um die [Experience Platform Web SDK zu ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview).
 
 Folgendes erfassen:
 
@@ -363,7 +363,7 @@ Fügen Sie das abgeleitete Feld Paid Landings als Metrik hinzu und konfigurieren
 
 Die ursprünglichen Metriken **[!UICONTROL Bestellungen]** und **[!UICONTROL Umsatz]** unverändert lassen, um vorhandene Berichte beizubehalten. Für dieses Setup ist eine explizite Aktivierung der Überschreibung erforderlich, auch wenn die angezeigten Standardeinstellungen zu entsprechen scheinen.
 
-Für die Konversionszuweisung bei wiederkehrenden Besuchen sollten Sie stattdessen einen **[!UICONTROL Person]**-Container und ein entsprechendes Lookback-Fenster in Betracht ziehen. Siehe [Anwendungsfall für Zusammenfassungsdaten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-usecases/data-views/summary-data).
+Für die Konversionszuweisung bei wiederkehrenden Besuchen sollten Sie stattdessen einen **[!UICONTROL Person]**-Container und ein entsprechendes Lookback-Fenster in Betracht ziehen. Siehe [Anwendungsfall für Zusammenfassungsdaten](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/summary-data).
 
 Verwenden Sie die Metrikattribution, anstatt den Web-ID-Dimensionen Persistenz hinzuzufügen. Um zu vermeiden, dass die Anzahl der als Landingpages interpretierten Elemente ansteigt, sollten die IDs nicht für spätere Ereignisse beibehalten werden, da dadurch geändert wird, welche Ereignisse in den Kampagnenzeilen angezeigt werden.
 
