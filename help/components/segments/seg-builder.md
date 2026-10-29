@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 73%
+source-wordcount: '1978'
+ht-degree: 71%
 ---
 # Erstellen von Segmenten {#build-segments}
 
@@ -63,7 +63,7 @@ Das Dialogfeld **[!UICONTROL Segment Builder]** wird zum Erstellen neuer oder zu
    | **[!UICONTROL Datenansicht]** | Sie können die Datenansicht für das Segment auswählen.  Das von Ihnen definierte Segment ist als Segment in der Registerkarte [Einstellungen](/help/data-views/create-dataview.md#settings-filters) einer Datenansicht verfügbar. |
    | **[!UICONTROL Projektspezifische Segmente]** | Ein Informationsfeld, in dem erklärt wird, dass das Segment nur in dem Projekt sichtbar ist, in dem es erstellt wurde, und dass das Segment nicht zu Ihrer Komponentenliste hinzugefügt wird. Aktivieren Sie **[!UICONTROL Dieses Segment für alle Projekte verfügbar machen und der Komponentenliste hinzufügen]**, um diese Einstellung zu ändern. Dieses Infofeld wird nur angezeigt, wenn Sie ein [Schnellsegment](seg-quick.md) erstellen und dieses mithilfe von **[!UICONTROL Builder öffnen]** in der Oberfläche [!UICONTROL Schnellsegment] in ein reguläres Segment umwandeln. |
    | **[!UICONTROL Titel]** ![Erforderlich](/help/assets/icons/Required.svg) | Benennen Sie das Segment, beispielsweise mit `Last month mobile customers`. |
-   | **[!UICONTROL Beschreibung]** | Geben Sie eine Beschreibung für das Segment ein, beispielsweise `Segment to define the mobile customers for the last month`. |
+   | **[!UICONTROL Beschreibung]** | <p>Geben Sie eine Beschreibung für das Segment ein, beispielsweise `Segment to define the mobile customers for the last month`.</p><p>Um Adobe eine Beschreibung für Sie generieren zu lassen, wählen Sie **[!UICONTROL Beschreibung generieren]** aus. Diese Option ist erst verfügbar, wenn Sie die Segmentdefinition erstellt haben.</p><p>Zu den generierten Beschreibungen **[!UICONTROL der Text „Wird von Adobe mithilfe von KI generiert]** und Sie können sie nach der Generierung bearbeiten. Weitere Informationen finden Sie unter [Beschreibungen automatisch generieren](/help/components/add-component-descriptions.md#automatically-generate-descriptions).</p> |
    | **[!UICONTROL Tags]** | Organisieren Sie das Segment, indem Sie ein oder mehrere Tags erstellen oder anwenden. Beginnen Sie mit der Eingabe, um nach vorhandenen Tags zu suchen, die Sie auswählen können. Oder drücken Sie die **[!UICONTROL Eingabetaste]**, um ein neues Tag hinzuzufügen. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Tag zu entfernen. |
    | **[!UICONTROL Definition]** ![Required](/help/assets/icons/Required.svg) | Definieren Sie Ihr Segment mit dem [Definition Builder](#definition-builder). |
 

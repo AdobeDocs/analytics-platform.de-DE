@@ -30,12 +30,14 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: a02b8d1d6bae6ed8269668d49ed9559688001833
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1187'
 ht-degree: 14%
 ---
 # Erstellen oder Bearbeiten von Konfigurationen
+
+{{release-limited-testing}}
 
 Mit Conversation Insights können Sie Konversationen aus den Agentenerlebnissen analysieren, die Sie Ihren Kunden anbieten. Diese Agentenerlebnisse können auf großen Sprachmodellen (LLM) oder auf menschlichen Konversationen basieren. Beispielsweise ein Chatbot, der mit einem Kunden oder einem Callcenter interagiert.
 Mithilfe von Conversation Insights sind Sie in der Lage, die Auswirkungen von Agenten auf tatsächliche Benutzerergebnisse zu verstehen.
@@ -111,7 +113,7 @@ Für jede Konfiguration:
 
    1. Wählen Sie eine oder mehrere Datenansichten aus, die Sie für die Conversation Insights-Konfiguration verwenden möchten.
 
-   1. Wählen **[!UICONTROL Verwenden von Datenansichten]** aus, um die Datenansichten zu verwenden. Wählen Sie zum Abbrechen die Option „Abbrechen“ aus.
+   1. Wählen **[!UICONTROL Verwenden von Datenansichten]** aus, um die Datenansichten zu verwenden. Wählen Sie „Abbrechen“ aus, um abzubrechen.
 
    * Um in der Liste der auszuwählenden Datenansichten zu suchen, verwenden Sie das Feld ![Suche](/help/assets/icons/Search.svg).
    * Um zu konfigurieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) aus. Wählen **[!UICONTROL Dialogfeld „Tabelle anpassen]** die anzuzeigenden Spalten aus. Wählen Sie dann **[!UICONTROL Übernehmen]** aus.
@@ -159,7 +161,7 @@ So geben Sie die gemischte Konversation an:
 
    * Wählen Sie für jedes aktivierte Feld optional einen anderen **[!UICONTROL Datensatzgewinner]**. Sie können zwischen **[!UICONTROL Eingabeaufforderungen-Datensatz]**, **[!UICONTROL Antwortdatensatz]** und **[!UICONTROL Feedback-Datensatz]**.
    * Wählen Sie optional für jedes Container-Feld einen anderen **[!UICONTROL Datensatzgewinner]** aus, um alle Felder zu aktualisieren, die zum Container gehören. Sie können zwischen **[!UICONTROL Eingabeaufforderungen-Datensatz]**, **[!UICONTROL Antwortdatensatz]** und **[!UICONTROL Feedback-Datensatz]**.
-   * Sie können keinen **[!UICONTROL Datensatzgewinner“ für]** auswählen, die von den Unterhaltungsdatensätzen gemeinsam verwendet werden (Eingabeaufforderungen, Antworten, Feedback und Signale). Diese Felder sind Teil der folgenden Feldergruppen:
+   * Sie können keinen **[!UICONTROL Datensatzgewinner“ für]** auswählen, die von den Unterhaltungsdatensätzen gemeinsam verwendet werden (Eingabeaufforderungen, Antworten, Feedback und Signale). Diese Felder sind Teil der folgenden Feldgruppen:
 
      | Feldname | Feldergruppe | Datensatzgewinner |
      |---|---|---|

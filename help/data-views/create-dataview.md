@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '3165'
-ht-degree: 77%
+source-wordcount: '3192'
+ht-degree: 76%
 ---
 # Erstellen oder Bearbeiten einer Datenansicht
 
@@ -108,11 +108,11 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 
 Bietet Einstellungen, die angewendet werden können, wenn Adobe Journey Optimizer zusätzlich zu Customer Journey Analytics verwendet wird.
 
-Dieser Abschnitt ist nur für Admins sichtbar, denen Journey Optimizer bereitgestellt wird.
+Dieser Abschnitt ist nur für Administratrierende sichtbar, denen Journey Optimizer bereitgestellt wird.
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!UICONTROL **Als Standard-Datenansicht in Adobe Journey Optimizer festlegen**] | Diese Konfigurationsoption standardisiert die Berichterstellung zwischen Journey Optimizer und Customer Journey Analytics. Sie können auch eine erweiterte Analyse Ihrer Adobe Journey Optimizer-Daten in Customer Journey Analytics durchführen (indem Sie in Journey Optimizer ![Öffnen](/help/assets/icons/OpenInLight.svg) [!UICONTROL **In CJA analysieren**] auswählen).<p>Für die Durchführung dieser Art von Analyse benötigt Journey Optimizer Zugriff auf eine Customer Journey Analytics-Datenansicht.<p>Aktivieren Sie diese Option, um diese Datenansicht als Standardansicht für die Journey Optimizer-Berichterstellung für Ihre Sandbox zu verwenden.</p><p>Diese Konfigurationsoption führt Folgendes automatisch durch:</p><ul><li>Konfiguration alle rerforderlichen Journey Optimizer-Datensätze in der zugehörigen Verbindung in Customer Journey Analytics für die Verwendung mit Journey Optimizer.</li><li>Erstellung eines Satzes von Journey Optimizer-Metriken und -Dimensionen in der Datenansicht (einschließlich abgeleiteter Felder und berechneter Metriken). Kontextbezeichnungen werden für alle diese Metriken und Dimensionen automatisch festgelegt.</li><li>Aktiviert automatisch die Option **[!UICONTROL In CJA verwenden]** in der Verbindung, die mit dieser Datenansicht verknüpft ist. (Weitere Informationen zu dieser Option finden Sie unter [Verwenden einer Journey Optimizer-Verbindung in Customer Journey Analytics](/help/connections/manage-connections.md).)<p>Wenn Sie diese Einstellung nach der Aktivierung manuell deaktivieren, werden die Verbindung und alle zugehörigen Datenansichten auf ihren Standardstatus zurückgesetzt. Dies kann zu Datenänderungen in Ihren Berichten führen.</p></li></ul><p><p>Beachten Sie beim Aktivieren dieser Option Folgendes: <ul><li>Sie können die Standarddatenansicht zu einem späteren Zeitpunkt ändern. Hierdurch können sich jedoch Ihre Journey Optimizer-Berichtsdaten ändern. Wenn Sie diese Option deaktivieren, nachdem sie aktiviert war, werden Sie aufgefordert, eine neue Standarddatenansicht auszuwählen.</li><li>Wenn Sie bereits manuelle Anpassungen an den Datensätzen, Dimensionen oder Metriken in der Customer Journey Analytics-Datenansicht vorgenommen haben, bleiben Ihre manuellen Anpassungen beim Aktivieren dieser Konfigurationsoption erhalten. Diese Option ermöglicht zusätzliche Anpassungen, die die Berichterstellung zwischen Journey Optimizer und Customer Journey Analytics weiter standardisieren. Sie können manuelle Anpassungen auch nach dem Aktivieren dieser Option vornehmen.</li><li>Wenn diese Option ausgewählt ist, kann die mit der Datenansicht verknüpfte Verbindung nicht gelöscht werden.</li></ul>Weitere Informationen finden Sie unter [Integrieren von Adobe Journey Optimizer mit Adobe Customer Journey Analytics](/help/integrations/ajo.md). |
+| [!UICONTROL **Als Standard-Datenansicht in Adobe Journey Optimizer festlegen**] | Diese Konfigurationsoption standardisiert das Reporting zwischen Journey Optimizer und Customer Journey Analytics. Sie können auch eine erweiterte Analyse Ihrer Adobe Journey Optimizer-Daten in Customer Journey Analytics durchführen (indem Sie in Journey Optimizer ![Öffnen](/help/assets/icons/OpenInLight.svg) [!UICONTROL **In CJA analysieren**] auswählen).<p>Für die Durchführung dieser Art von Analyse benötigt Journey Optimizer Zugriff auf eine Customer Journey Analytics-Datenansicht.<p>Aktivieren Sie diese Option, um diese Datenansicht als Standard-Datenansicht für das Reporting in Journey Optimizer für Ihre Sandbox zu verwenden.</p><p>Diese Konfigurationsoption führt Folgendes automatisch durch:</p><ul><li>Konfiguriert alle erforderlichen Journey Optimizer-Datensätze in der zugehörigen Verbindung in Customer Journey Analytics für die Verwendung mit Journey Optimizer.</li><li>Erstellt einen Satz von Journey Optimizer-Metriken und -Dimensionen in der Datenansicht (einschließlich abgeleiteter Felder und berechneter Metriken). Kontextbezeichnungen werden für alle diese Metriken und Dimensionen automatisch festgelegt.</li><li>Aktiviert automatisch die Option **[!UICONTROL In CJA verwenden]** in der Verbindung, die mit dieser Datenansicht verknüpft ist. (Weitere Informationen zu dieser Option finden Sie unter [Verwenden einer Journey Optimizer-Verbindung in Customer Journey Analytics](/help/connections/manage-connections.md).)<p>Wenn Sie diese Einstellung nach der Aktivierung manuell deaktivieren, werden die Verbindung und alle zugehörigen Datenansichten auf ihren Standardstatus zurückgesetzt. Dies kann zu Datenänderungen in Ihren Berichten führen.</p></li></ul><p><p>Beachten Sie beim Aktivieren dieser Option Folgendes: <ul><li>Sie können die Standarddatenansicht zu einem späteren Zeitpunkt ändern, dies kann jedoch Auswirkungen auf Ihre Journey Optimizer-Berichtsdaten haben. Wenn Sie diese Option deaktivieren, nachdem sie aktiviert war, werden Sie aufgefordert, eine neue Standarddatenansicht auszuwählen.</li><li>Wenn Sie bereits manuelle Anpassungen an den Datensätzen, Dimensionen oder Metriken in der Customer Journey Analytics-Datenansicht vorgenommen haben, bleiben Ihre manuellen Anpassungen beim Aktivieren dieser Konfigurationsoption erhalten. Diese Option ermöglicht zusätzliche Anpassungen, die die Berichterstellung zwischen Journey Optimizer und Customer Journey Analytics weiter standardisieren. Sie können manuelle Anpassungen auch nach dem Aktivieren dieser Option vornehmen.</li><li>Wenn diese Option ausgewählt ist, kann die mit der Datenansicht verknüpfte Verbindung nicht gelöscht werden.</li></ul>Weitere Informationen finden Sie unter [Integrieren von Adobe Journey Optimizer mit Adobe Customer Journey Analytics](/help/integrations/ajo.md). |
 
 {style="table-layout:auto"}
 
@@ -139,7 +139,7 @@ Gibt das Kalenderformat an, dem die Datenansicht folgen soll. Sie können mehrer
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!UICONTROL **Zeitzone**] | Wählen Sie die Zeitzone aus, in der Ihre Daten angezeigt werden sollen. Wenn Sie eine Zeitzone auswählen, die mit der Sommerzeit arbeitet, werden die Daten automatisch entsprechend angepasst. Im Frühling, wenn die Uhren eine Stunde vor gestellt werden, besteht eine Lücke von einer Stunde. Im Herbst, wenn die Uhren eine Stunde zurück gestellt werden, wird während der Sommerzeit eine Stunde wiederholt. |
+| [!UICONTROL **Zeitzone**] | Wählen Sie die Zeitzone aus, in der Ihre Daten angezeigt werden sollen. Wenn Sie eine Zeitzone auswählen, die mit der Sommerzeit arbeitet, werden die Daten automatisch entsprechend angepasst. Im Frühling, wenn die Uhren eine Stunde vor gestellt werden, besteht eine Lücke von einer Stunde. Im Herbst, wenn die Uhren um eine Stunde zurückgestellt werden, wird während der Sommerzeitumstellung eine Stunde wiederholt. |
 | [!UICONTROL **Kalendertyp**] | Bestimmen Sie, wie die Wochen des Monats gruppiert werden <br>**gregorianisch:** Standardkalenderformat. Die Quartale sind nach Monat gruppiert.<br>**4-5-4 Einzelhandel:** Ein standardisierter 4-5-4 Einzelhandelskalender. Der erste und der letzte Monat des Quartals enthalten 4 Wochen, während der zweite Monat des Quartals 5 Wochen umfasst.<br>**Benutzerspezifisch (4-5-4):** Ähnlich wie der 4-5-4-Kalender, mit dem Unterschied, dass Sie den ersten Tag des Jahres und das Jahr auswählen können, in dem die „zusätzliche“ Woche liegt.<br>**Benutzerspezifisch (4-4-5):** Der erste und zweite Monat jedes Quartals enthalten 4 Wochen, während die letzte Woche jedes Quartals 5 Wochen umfasst.<br>**Benutzerspezifisch (5-4-4):** Der erste Monat jedes Quartals umfasst 5 Wochen, während der zweite und dritte Monat jedes Quartals 4 Wochen umfassen. |
 | [!UICONTROL **Erster Monat des Jahres**] und [!UICONTROL **Erster Wochentag**] | Sichtbar für den gregorianischen Kalender. Geben Sie an, mit welchem Monat das Kalenderjahr beginnen soll und mit welchem Tag jede Woche beginnen soll. |
 | [!UICONTROL **Erster Tag des aktuellen Jahres**] | Für benutzerdefinierte Kalendertypen sichtbar. Geben Sie an, an welchem Tag des Jahres das aktuelle Jahr beginnen soll. Der Kalender formatiert automatisch den ersten Wochentag auf Grundlage dieses Werts. |
@@ -247,14 +247,14 @@ Als Nächstes können Sie die Komponenten einer Datenansicht festlegen, d. h., 
 1. Suchen Sie nach einem Schemafeld mit ![Suchsymbol](/help/assets/icons/Search.svg) **[!UICONTROL Suchschemafeldern]** oder suchen Sie ein Feld, indem Sie in eine der Datensatzsammlungen wechseln, z. B. ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL Ereignisdatensätze]** oder ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL Lookup-Datensätze]**. Für Ereignis-Datensätze sind separate Sammlungen für ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL XDM-]** und ![Ordner](/help/assets/icons/Folder.svg) **[!UICONTROL Adhoc- und relationale Felder]** verfügbar.<br/>Alternativ können Sie ein abgeleitetes Feld mit ![Datensymbol](/help/assets/icons/Data.svg)**Abgeleitetes Feld erstellen**. Weitere Informationen finden Sie unter [Abgeleitete Felder](./derived-fields/derived-fields.md).
 
 1. Wenn Sie Ihr spezifisches Schemafeld gefunden oder Ihr abgeleitetes Feld definiert haben, ziehen Sie dieses Feld, z. B. ![Griffsymbol](/help/assets/icons/DragHandle.svg) **[!UICONTROL Seitenname]**, aus der linken Leiste in den Abschnitt **[!UICONTROL Metriken]** oder **[!UICONTROL Dimensionen]** unter **[!UICONTROL Eingeschlossene Komponenten]**.
-Sie können dasselbe Schema mehrmals in die Bereiche „Dimensionen“ oder „Metriken“ ziehen und dieselbe Dimension bzw. Metrik auf unterschiedliche Weise konfigurieren. Erstellen Sie beispielsweise im Feld pageName `Product Pages` und `Error pages` Sie Dimensionen mithilfe verschiedener [Komponenteneinstellungen](component-settings/overview.md) auf der rechten Seite.
+Sie können dasselbe Schemafeld mehrmals in die Bereiche „Dimensionen“ oder „Metriken“ ziehen und dieselbe Dimension bzw. Metrik auf unterschiedliche Weise konfigurieren. Erstellen Sie beispielsweise im Feld pageName `Product Pages` und `Error pages` Sie Dimensionen mithilfe verschiedener [Komponenteneinstellungen](component-settings/overview.md) auf der rechten Seite.
 Wenn Sie einen Ordner mit Schemafeldern aus der linken Leiste ziehen, werden die Felder in diesem Ordner automatisch in die passenden Abschnitte einsortiert. Zeichenfolgenfelder landen im Abschnitt [!UICONTROL Dimensionen] und numerische Schematypen landen im Abschnitt [!UICONTROL Metriken]. Sie können auch auf **[!UICONTROL Alle hinzufügen]** klicken. Dann werden alle Schemafelder in ihren jeweiligen Abschnitt eingefügt.
 
 1. Nachdem Sie eine Komponente ausgewählt haben, werden die Einstellungen auf der rechten Seite angezeigt.
 
    ![Ausgewählte Datenansichtskomponente](assets/dataview-component-pagename.png)
 
-   Konfigurieren Sie die Komponente mit [Komponenteneinstellungen](component-settings/overview.md). Die verfügbaren Komponenteneinstellungen hängen davon ab, ob es sich bei der Komponente um eine Dimension/Metrik und um den Schemadatentyp handelt. Zu den Einstellungen gehören:
+   Konfigurieren Sie die Komponente mit [Komponenteneinstellungen](component-settings/overview.md). Die verfügbaren Komponenteneinstellungen hängen davon ab, ob es sich bei der Komponente um eine Dimension oder Metrik handelt und welcher Schema-Datentyp vorliegt. Zu den Einstellungen gehören:
 
    * [[!UICONTROL Attribution]](component-settings/attribution.md)
    * [[!UICONTROL Verhalten]](component-settings/behavior.md)
@@ -269,7 +269,7 @@ Wenn Sie einen Ordner mit Schemafeldern aus der linken Leiste ziehen, werden die
 
 ### Duplizieren von Metriken oder Dimensionen
 
-Das Duplizieren von Metriken oder Dimensionen und das anschließende Ändern spezifischer Einstellungen ist eine effiziente Möglichkeit, mehrere Metriken oder Dimensionen aus einem einzelnen Schemafeld zu erstellen. Wählen Sie die Einstellung [!UICONTROL Duplizieren] unter dem Namen der Metrik oder Dimension oben rechts aus. Ändern Sie dann die neue Dimension oder Metrik und speichern Sie sie unter einem aussagekräftigeren Namen.
+Das Duplizieren von Metriken oder Dimensionen und das anschließende Ändern spezifischer Einstellungen ist eine effiziente Möglichkeit, mehrere Metriken oder Dimensionen aus einem einzelnen Schemafeld zu erstellen. Wählen Sie die Einstellung [!UICONTROL Duplizieren] unter dem Namen der Metrik oder Dimension oben rechts aus. Ändern Sie dann die neue Dimension oder Metrik und speichern Sie sie unter einem beschreibenderen Namen.
 
 ### Filtern von Schemafeldern oder Datensätzen
 
@@ -288,19 +288,19 @@ Sie können ![Filtersymbol](/help/assets/icons/Filter.svg) Schemafelder in der l
 >id="dataview_includedcomponents_filter_datagovernance_custom"
 >title="Benutzerdefinierte Labels"
 >abstract="Zusätzlich zu den von Adobe bereitgestellten Labels können Sie auch eigene benutzerdefinierte Labels für Ihr Unternehmen definieren."
->additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Überblick"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Überblick über Datennutzungs-Labels"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_contract"
 >title="Vertrags-Labels"
->abstract="Vertrags-Labels (Contract Labels, C Labels) dienen der Kategorisierung von Daten, die vertragliche Bestimmungen aufweisen oder mit Data-Governance-Richtlinien Ihrer Organisation in Zusammenhang stehen."
->additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Überblick"
+>abstract="Vertrags-Labels (C-Labels) dienen der Kategorisierung von Daten, die vertraglichen Verpflichtungen unterliegen oder mit den Data-Governance-Richtlinien Ihrer Organisation in Zusammenhang stehen."
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Überblick über Datennutzungs-Labels"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_identity"
 >title="Identitäts-Labels"
->abstract="Identitäts-Labels (I Labels) dienen der Kategorisierung von Daten, mit denen sich eine bestimmte Person identifizieren oder kontaktieren lässt."
->additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Überblick"
+>abstract="Identity-Labels (I-Labels) dienen der Kategorisierung von Daten, mit denen sich eine bestimmte Person identifizieren oder kontaktieren lässt."
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Überblick über Datennutzungs-Labels"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_sensitive"
@@ -313,20 +313,20 @@ Sie können ![Filtersymbol](/help/assets/icons/Filter.svg) Schemafelder in der l
 >id="dataview_includedcomponents_filter_datagovernance_partnerecosystem"
 >title="Partner-Ökosystem"
 >abstract="Labels für Partner-Ökosysteme (P Labels) dienen der Kategorisierung von Daten, die mit Drittanbieter-Partnern geteilt werden."
->additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Überblick"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Überblick über Datennutzungs-Labels"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_policies"
 >title="Richtlinien"
 >abstract="Implementieren Sie Datennutzungsrichtlinien, um die Daten-Compliance zu unterstützen. Diese Richtlinien beschreiben zulässige oder eingeschränkte Marketing-Aktionen für Daten in Experience Platform. Die Richtlinienfilter wenden die aktivierte Richtlinie auf die Datenansicht an."
->additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Überblick"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Überblick über Datennutzungs-Labels"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_responsibleengagement"
 >title="Labels für verantwortungsvolle Interaktion"
 >abstract="Labels für verantwortungsvolle Interaktion dienen der Unterstützung verantwortungsvoller Interaktion."
->additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Datennutzungs-Labels – Überblick"
+>additional-url="https://experienceleague.adobe.com/de/docs/experience-platform/data-governance/labels/overview" text="Überblick über Datennutzungs-Labels"
 
 
 Der Abschnitt **[!UICONTROL Enthaltene Komponenten]** enthält die Liste der **[!UICONTROL Metriken]** und **[!UICONTROL Dimensionen]** die Sie für die Datenansicht konfigurieren.
@@ -341,7 +341,17 @@ Der Abschnitt **[!UICONTROL Enthaltene Komponenten]** enthält die Liste der **[
   * **[!UICONTROL Datentyp]** – Sie können einen oder mehrere der folgenden Datentypen auswählen: [!UICONTROL String], [!UICONTROL Integer], [!UICONTROL Short], [!UICONTROL Boolean], [!UICONTROL Double], [!UICONTROL Byte], [!UICONTROL Long], [!UICONTROL Date] oder [!UICONTROL Date-Time].
   * **[!UICONTROL Datensätze]** – Wählen Sie einen oder mehrere Datensätze aus.
   * **[!UICONTROL Data Governance]**: Wählen Sie eine oder mehrere Kennzeichnungen aus den Unterkategorien [!UICONTROL Benutzerdefinierte Kennzeichnungen], [!UICONTROL Vertragskennzeichnungen], [!UICONTROL Identitätskennzeichnungen], [!UICONTROL Sensitivitätskennzeichnungen], [!UICONTROL Partner-Ökosystem] oder [!UICONTROL Richtlinien] aus.
-  * **[!UICONTROL Sonstige]** – Wählen Sie eine oder mehrere der Optionen [!UICONTROL Enthält Daten], [!UICONTROL Ist Identität] oder [!UICONTROL Ist nicht veraltet] aus.
+  * **[!UICONTROL Sonstige]** - Wählen Sie eine oder mehrere der folgenden Optionen aus:
+
+    * [!UICONTROL Enthält Daten]
+
+    * [!UICONTROL Ist Identität]
+
+    * [!UICONTROL Wird nicht mehr unterstützt]
+
+    * [!UICONTROL Fehlende Beschreibung]
+
+      Verwenden Sie diese Option, um nur Komponenten anzuzeigen, die noch keine Beschreibung haben, z. B. bevor Sie [Beschreibungen generieren](/help/data-views/component-settings/overview.md) für mehrere Komponenten gleichzeitig verwenden.
 
   Wählen Sie **[!UICONTROL Übernehmen]** aus, um die Filter anzuwenden.
 

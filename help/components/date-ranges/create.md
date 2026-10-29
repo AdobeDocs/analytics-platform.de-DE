@@ -7,20 +7,23 @@ role: User
 TQID: https://experienceleague.adobe.com/hXe1cEXGvuuBSd0bpavJGEJpEXng2zctXUxPinGu4es
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 8ab47e74ee442d97e8e7b1b9e92129025a5b1d1f
 workflow-type: tm+mt
-source-wordcount: 542
-ht-degree: 92%
-
+source-wordcount: '589'
+ht-degree: 85%
 ---
-
 # Erstellen von Datumsbereichen
 
 
@@ -64,6 +67,11 @@ Das Dialogfeld **[!UICONTROL Neuer Datumsbereich]** oder **[!UICONTROL Datumsber
 
 1. Geben Sie einen **[!UICONTROL Titel]** für den Datumsbereich ein: z. B. **[!UICONTROL Quartalsweise]**.
 1. Geben Sie optional eine **[!UICONTROL Beschreibung]** an.
+
+   Um Adobe eine Beschreibung für Sie generieren zu lassen, wählen Sie **[!UICONTROL Beschreibung generieren]** aus. Diese Option ist erst verfügbar, wenn Sie die Datumsbereichsdefinition erstellt haben.
+
+   Zu den generierten Beschreibungen **[!UICONTROL der Text „Wird von Adobe mithilfe von KI generiert]** und Sie können sie nach der Generierung bearbeiten. Weitere Informationen finden Sie unter [Beschreibungen automatisch generieren](/help/components/add-component-descriptions.md#automatically-generate-descriptions).
+
 1. Organisieren Sie das Segment, indem Sie ein oder mehrere **[!UICONTROL Tags“ erstellen oder]**. Beginnen Sie mit der Eingabe, um nach vorhandenen Tags zu suchen, die Sie auswählen können. Oder drücken Sie die **[!UICONTROL Eingabetaste]**, um ein neues Tag hinzuzufügen. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um ein Tag zu entfernen. |
 1. Wählen Sie einen **[!UICONTROL Datumsbereich]** aus, indem Sie zuerst das Startdatum und dann das Enddatum auswählen.
 Alternativ können Sie eine **[!UICONTROL Voreinstellung]** aus dem Dropdown-Menü [!UICONTROL *Voreinstellung auswählen*] auswählen.
@@ -79,7 +87,7 @@ Alternativ können Sie eine **[!UICONTROL Voreinstellung]** aus dem Dropdown-Men
 
      1. Wählen Sie **[!UICONTROL Anfang von]**, **[!UICONTROL Ende von]** oder **[!UICONTROL Festgelegter Tag]** aus.
      1. Wenn Sie **[!UICONTROL Anfang von]** oder **[!UICONTROL Ende von]** ausgewählt haben, können Sie einen vollständigen Ausdruck erstellen. Beispiel: **[!UICONTROL Ende von]** **[!UICONTROL Aktuelles Quartal]** **[!UICONTROL minus]** `20` **[!UICONTROL Tage]**. Wählen Sie den entsprechenden Wert für jeden einzelnen Teil des Ausdrucks aus.
-        * Wählen Sie einen Wert für den aktuellen Zeitraum aus, z. B. **[!UICONTROL Aktuelles Quartal]**.
+        * Wählen Sie einen Wert für den aktuellen Zeitraum aus. z. B. **[!UICONTROL Aktuelles Quartal]**.
         * Wählen Sie einen Wert für die zusätzliche Berechnung aus, z. B., **[!UICONTROL minus]**.
         * Wenn Sie eine zusätzliche Berechnung angegeben haben, geben Sie einen Wert an. Zum Beispiel `20`.
         * Wenn Sie eine zusätzliche Berechnung angegeben haben, wählen Sie den Zeitraum aus, der für die Berechnung verwendet werden soll, Zum Beispiel **[!UICONTROL Tage]**.

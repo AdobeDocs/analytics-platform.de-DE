@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: d29e3bac31db1a0de40a5ade47ed5ee53fcb5480
 workflow-type: tm+mt
-source-wordcount: '21458'
+source-wordcount: '21470'
 ht-degree: 98%
 ---
 # Verwenden von Vorlagen
@@ -1168,20 +1168,20 @@ Die folgenden Vorlagen sind verfügbar:
 | [!UICONTROL **Aktivität der B2B-Käufergruppe**] | Visualisieren Sie die Aktivitäten der Käufergruppen innerhalb jedes Kundenkontos, um die Marketing-Aktivitäten für Kundenkonten und Käufergruppen zu optimieren.<p>**Dies kann Ihnen helfen**, zu visualisieren, welche Käufergruppen und welche Personen innerhalb dieser Käufergruppen am aktivsten sind, und Lücken in der Gruppenbeteiligung aufzuzeigen.</p><p>**Basierend auf Ihren Erkenntnissen können Sie** verschiedene Maßnahmen ergreifen, z. B. versuchen, mehr mit Personen in Käufergruppen zu interagieren, die nicht beteiligt zu sein scheinen.</p> |
 
 
-### Mix Modeler {#mix-modeler-templates}
+### Marketing Campaign Analytics {#marketing-campaign-analytics-templates}
 
 <!-- CJA only -->
 
 >[!CONTEXTUALHELP]
 >id="template--mixmodeler-incremental-models-insights"
->title="Zeigen Sie Erkenntnisse ausgewählter Modelle an, die von Mix Modeler generiert wurden."
->abstract="**Dies kann Ihnen helfen**, die inkrementellen Erkenntnisse aus den in Mix Modeler generierten Modellen besser zu verstehen. <br/>**Basierend auf diesen Erkenntnissen** können Sie folgende Schritte ausführen:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul>"
+>title="Einblicke aus ausgewählten, von Marketing Campaign Analytics generierten Modellen anzeigen."
+>abstract="**Dies kann Ihnen helfen** die inkrementellen Einblicke aus Modellen besser zu verstehen, die in Marketing Campaign Analytics (früher Mix Modeler) generiert wurden. <br/>**Basierend auf diesen Erkenntnissen** können Sie folgende Schritte ausführen:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul>"
 
 Die folgenden Vorlagen sind verfügbar:
 
 &#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| [!UICONTROL **Inkrementelle Mix Modeler-Modelleinblicke**] | Zeigen Sie Erkenntnisse ausgewählter Modelle an, die von Mix Modeler generiert wurden.<p>**Dies kann Ihnen helfen**, die inkrementellen Erkenntnisse aus den in Mix Modeler generierten Modellen besser zu verstehen. <p>**Basierend auf diesen Erkenntnissen** können Sie folgende Schritte ausführen:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul></p> |
+| [!UICONTROL **Inkrementelle Marketing Campaign Analytics-Modelleinblicke**] | Einblicke aus ausgewählten, von Marketing Campaign Analytics generierten Modellen anzeigen.<p>**Dies kann Ihnen helfen** die inkrementellen Einblicke aus Modellen besser zu verstehen, die in Marketing Campaign Analytics (früher Mix Modeler) generiert wurden.<p>**Basierend auf diesen Erkenntnissen** können Sie folgende Schritte ausführen:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul></p> |
 
 
 

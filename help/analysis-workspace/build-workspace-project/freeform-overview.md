@@ -1,5 +1,5 @@
 ---
-description: Erfahren Sie, wie Sie mit Projekten in Analysis Workspace arbeiten. Mit dem Manager für Projekte können Sie Projekte verwalten (erstellen, löschen, verschieben, freigeben, genehmigen, anheften, kopieren und taggen).
+description: Erfahren Sie, wie Sie mit Projekten in Analysis Workspace arbeiten. Mit dem Manager für Projekte können Sie Projekte verwalten (erstellen, löschen, verschieben, freigeben, genehmigen, anheften, kopieren und mit Tags versehen).
 keywords: Analysis Workspace
 title: Überblick über Projekte
 feature: Workspace Basics
@@ -8,26 +8,30 @@ role: User
 TQID: https://experienceleague.adobe.com/VKMyO7uNXu1Gj5QpJMxPD7WRBs2mHSLBg5H4iTgMI6w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 6883ea7ea65827315805720142186eec75ad7558
 workflow-type: tm+mt
-source-wordcount: 1675
+source-wordcount: '1675'
 ht-degree: 100%
-
 ---
-
 # Überblick über Projekte
 
 Mit Workspace-Projekten können Sie Panels, Visualisierungen und Komponenten kombinieren, um Ihre Analyse zu erstellen und sie für andere Mitarbeitende Ihrer Organisation freizugeben. Bevor Sie mit Ihrem ersten Projekt beginnen, sollten Sie sich damit vertraut machen, wie Sie auf Projekte zugreifen, durch sie navigieren und diese verwalten.
 
-Um auf Projekte in Customer Journey Analytics zuzugreifen, wählen Sie **[!UICONTROL Arbeitsbereich]** aus.  Der Manager **[!UICONTROL Projekte]** listet alle Projekte auf, die Ihnen gehören bzw. die für Sie freigegeben wurden. Mit der Projektliste ist er zudem die standardmäßige Landingpage von Customer Journey Analytics, sofern Sie in den Voreinstellungen nichts anderes konfiguriert haben.
+Um auf Projekte in Customer Journey Analytics zuzugreifen, wählen Sie **[!UICONTROL Arbeitsbereich]** aus.  Der Manager **[!UICONTROL Projekte]** listet alle Projekte auf, die Ihnen gehören bzw. die für Sie freigegeben wurden. Der Projektmanager oder die Projektmanagerin mit der Projektliste ist außerdem die standardmäßige Startseite von Customer Journey Analytics, sofern Sie in den Voreinstellungen nichts anderes konfiguriert haben.
 
 ![Projekt-Landingpage mit der Projektliste.](assets/projects.png)
 
@@ -37,7 +41,7 @@ Um auf Projekte in Customer Journey Analytics zuzugreifen, wählen Sie **[!UICON
 Im Titelbereich ➊ können Sie ein Projekt erstellen, einen Ordner anlegen, Voreinstellungen bearbeiten und ein Panel mit zusätzlichen Kacheln ein- oder ausblenden.
 
 * Um links ein Panel ein- oder auszublenden, in dem Sie zwischen **[!UICONTROL Projekte]** und **[!UICONTROL Lernen]** wählen können, wählen Sie ![Rail](/help/assets/icons/Rail.svg) aus.
-* Als Titel wird „Projekte“ angezeigt, optional ergänzt mit dem Pfad zum ausgewählten Ordner, z. B. [!UICONTROL Projekte] > **[!UICONTROL Unternehmensordner]**. Sie können einzelne Unterordnerteile auswählen, um direkt zum jeweiligen Ordner zu gelangen.
+* Als Titel wird „Projekte“ angezeigt, optional ergänzt um den Pfad zum ausgewählten Ordner. z. B. [!UICONTROL Projekte] > **[!UICONTROL Unternehmensordner]**. Sie können einzelne Unterordnerteile auswählen, um direkt zum jeweiligen Ordner zu gelangen.
 * Um Kacheln für [**[!UICONTROL Leeres Projekt]**](create-projects.md), [**[!UICONTROL Leere mobile Scorecard]**](/help/mobile-app/create-scorecard.md), [**[!UICONTROL Geführte Analyse]**](/help/guided-analysis/overview.md), **[!UICONTROL Dokumentation öffnen]** und **[!UICONTROL Versionshinweise öffnen]** anzuzeigen, wählen Sie ![](/help/assets/icons/ChevronDown.svg) ChevronDown **[!UICONTROL Mehr zeigen]** aus. Um den Bereich mit den Kacheln auszublenden, wählen Sie ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Weniger zeigen]** aus.
 * Je nachdem, was angezeigt werden soll, können Sie mit der Auswahl [Anzeigen](#show-selector) Voreinstellungen bearbeiten und Aktionen für den aktuellen unter **[!UICONTROL Projekte]** angezeigten Ordner durchführen:
 
@@ -92,7 +96,7 @@ Sie können Aktionen für ein oder mehrere Projekte mithilfe des Kontextmenüs !
 | Symbol | Aktion | Beschreibung |
 |:---:| ---|---|
 | ![CrossSize75](/help/assets/icons/Close.svg) | **[!UICONTROL *x *ausgewählt]** | Heben Sie die Auswahl der ausgewählten Projekte und Ordner auf und entfernen Sie die blaue Aktionsleiste. |
-| ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie ein oder mehrere Projekte oder Ordner. Sie werden zur Bestätigung aufgefordert.<p>Für gelöschte Projekte gilt Folgendes:</p><ul><li>Keine Wiederherstellung möglich</li><li>Entfernung aus der Projektliste</li><li>Kein weiterer Zugriff über ihre URL</li><li>Entfernung aus geplanten Bereitstellungen (sofern sie zuvor für geplante Bereitstellungen konfiguriert wurden)<br/>Informationen zu geplanten Bereitstellungen finden Sie unter [Geplante Projekte](/help/components/scheduled-projects-manager.md).  </p> |
+| ![Löschen](/help/assets/icons/Delete.svg) | **[!UICONTROL Löschen]** | Löschen Sie ein oder mehrere Projekte oder Ordner. Sie werden zur Bestätigung aufgefordert.<p>Gelöschte Projekte:</p><ul><li>Keine Wiederherstellung möglich</li><li>Werden aus der Projektliste entfernt</li><li>Es ist kein Zugriff mehr über ihre URL möglich.</li><li>Entfernung aus geplanten Bereitstellungen (sofern sie zuvor für geplante Bereitstellungen konfiguriert wurden)<br/>Informationen zu geplanten Bereitstellungen finden Sie unter [Geplante Projekte](/help/components/scheduled-projects-manager.md).  </p> |
 | ![Freigeben](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Freigeben]** | Geben Sie ein Projekt frei. Weitere Informationen finden Sie unter [Freigeben eines Projekts](/help/analysis-workspace/curate-share/share-projects.md). |
 | ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Benennen Sie ein Projekt um. Öffnet ein **[!UICONTROL Dialogfeld „Umbenennen *Projektname *]**“. Geben Sie einen neuen Namen ein und wählen Sie**[!UICONTROL Speichern ]**aus. |
 | ![Kopieren](/help/assets/icons/Copy.svg) | **[!UICONTROL Kopieren]** | Kopieren Sie ein oder mehrere Projekte. Das Projekt erhält denselben Namen und dasselbe Suffix `(Copy)`. |
@@ -125,7 +129,7 @@ Das Panel „Filter“ besteht aus den folgenden Abschnitten.
 
 | Tags | Beschreibung |
 |---|---|
-| ![Tags](/help/analysis-workspace/build-workspace-project/assets/projects-filters-tags.png){width="300"} | Im Abschnitt **[!UICONTROL Tags]** können Sie nach Tags filtern. <ul><li>Mit ![Search](/help/assets/icons/Search.svg) *Tags suchen* können Sie nach Tags suchen, die Sie zum Filtern verwenden möchten.</li><li>Sie können auch mehr als ein Tag auswählen. Die verfügbaren Tags hängen von der Auswahl ab, die in anderen Abschnitten im Panel „Filter“ vorgenommen wurde.</li><li>Die Zahlen geben Folgendes an:<ul><li>**2︎⃣**: Die Anzahl der Tags, die für die aus dem aktuellen Filter resultierenden Projekte verfügbar sind.</li><li>7︎⃣: Die Anzahl der Projekte, die mit dem jeweiligen Tag verknüpft sind.</li></ul></li></ul> |
+| ![Tags](/help/analysis-workspace/build-workspace-project/assets/projects-filters-tags.png){width="300"} | Im Abschnitt **[!UICONTROL Tags]** können Sie nach Tags filtern. <ul><li>Mit ![Search](/help/assets/icons/Search.svg) *Tags suchen* können Sie nach Tags suchen, die Sie zum Filtern verwenden möchten.</li><li>Sie können auch mehr als ein Tag auswählen. Die verfügbaren Tags hängen von der Auswahl ab, die in anderen Abschnitten des Filterbedienfelds vorgenommen wurde.</li><li>Die Zahlen geben Folgendes an:<ul><li>**2︎⃣**: Die Anzahl der Tags, die für die aus dem aktuellen Filter resultierenden Projekte verfügbar sind.</li><li>7︎⃣: Die Anzahl der Projekte, die mit dem jeweiligen Tag verknüpft sind.</li></ul></li></ul> |
 
 
 ### Datenansicht
@@ -168,8 +172,8 @@ Wenn der Platz für die Anzeige der einzelnen Filter begrenzt ist, sehen Sie **[
 
 * So entfernen Sie einen Filter:
 
-   1. Verwenden Sie **[!UICONTROL *x *Filter]**![ChevronDown](/help/assets/icons/ChevronDown.svg), um ein Kontextmenü mit einer Liste der Filtertypen und der einzelnen Filter zu öffnen.
-   1. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um einen Filter zu entfernen.
+  1. Verwenden Sie **[!UICONTROL *x *Filter]**![ChevronDown](/help/assets/icons/ChevronDown.svg), um ein Kontextmenü mit einer Liste der Filtertypen und der einzelnen Filter zu öffnen.
+  1. Wählen Sie ![CrossSize75](/help/assets/icons/CrossSize75.svg) aus, um einen Filter zu entfernen.
 
 
 <!--
@@ -234,7 +238,7 @@ Settings include:
 |  Created By  | Project owner name  |
 |  Last Modified  | Date of last modification to the project.  |
 |  Tags  |Lists any tags applied to a project for easier categorization.  |
-|  Description  | A description is useful for clarifying the purpose of a project. You can double-click the description to edit it.  |
+|  Description  | A description is useful for clarifying the purpose of a project. You can double-click the description to edit it. <p>To have Adobe generate a description for you, select **[!UICONTROL Generate description]** below the description field. Adobe analyzes several panels in the project and summarizes them into a description. Generated descriptions include the text **[!UICONTROL Generated by Adobe using AI]** and can be edited. This option requires your organization to agree to certain generative AI legal terms.</p> |
 |  Count repeat instances in project  | Specifies whether repeat instances are counted in reports. Note: this setting does not apply to Flow or Fallout visualizations.  |
 |  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
 | [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. |

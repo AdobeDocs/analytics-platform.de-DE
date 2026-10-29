@@ -7,21 +7,25 @@ role: User
 TQID: https://experienceleague.adobe.com/zGfFrHDk1cHYcR-AU7Ulmw1YPRE2axM3t0YxEgavV34
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
+    internal-label: User
+source-git-commit: e9ee69c84d5a8992acacf44d1ba5c9231c9cda5f
 workflow-type: tm+mt
-source-wordcount: 590
-ht-degree: 25%
-
+source-wordcount: '657'
+ht-degree: 23%
 ---
-
 # Verwalten von Datumsbereichen
 
 
@@ -67,6 +71,7 @@ Sie können Aktionen für Datumsbereiche mithilfe der Aktionsleiste ➋. Die Akt
 | ![Bearbeiten](/help/assets/icons/Edit.svg) | **[!UICONTROL Umbenennen]** | Umbenennen eines einzelnen ausgewählten Datumsbereichs. Wenn diese Option aktiviert ist, können Sie den Datumsbereich inline umbenennen. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Genehmigen]** | Genehmigen Sie die ausgewählten Datumsbereiche. |
 | ![Kopieren](/help/assets/icons/Copy.svg) | **[!UICONTROL Kopieren]** | Kopieren Sie die ausgewählten Datumsbereiche. Neue Datumsbereiche werden mit demselben Namen und Suffix (Kopie) erstellt |
+| ![AI](/help/assets/icons/AI.svg) | **[!UICONTROL Beschreibungen generieren]** | <p>Generieren von Beschreibungen für die ausgewählten Datumsbereiche, wobei vorhandene Beschreibungen ersetzt werden.</p><p>Um zu vermeiden, dass vorhandene Beschreibungen überschrieben werden[&#x200B; wählen Sie zunächst (](#filter-panel)) die Liste aus, um nur Datumsbereiche ohne Beschreibung anzuzeigen (wählen Sie im Filter unter [!UICONTROL **Andere Filter**] die Option [!UICONTROL **Fehlende Beschreibung**]).</p><p>Sie werden zur Bestätigung aufgefordert. Große Anfragen werden im Hintergrund ausgeführt und Sie erhalten eine Benachrichtigung, wenn sie abgeschlossen sind.</p><p>Weitere Informationen finden [&#x200B; unter &#x200B;](/help/components/add-component-descriptions.md#automatically-generate-descriptions) von Beschreibungen generieren .</p> |
 | ![CSV-Datei](/help/assets/icons/FileCSV.svg) | **[!UICONTROL In CSV exportieren]** | Exportiert die ausgewählten Datumsbereiche in eine `Date ranges List.csv`. |
 
 ### Aktive Filterleiste

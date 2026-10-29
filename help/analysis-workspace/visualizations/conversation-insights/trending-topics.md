@@ -4,7 +4,7 @@ title: Trend-Themen
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: 85311bf19368560ef54a3361edf2e7c13590929c
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 8%
@@ -21,6 +21,8 @@ ht-degree: 8%
 >title="Trend-Themen"
 >abstract="Analyse von Trend-Themen basierend auf der ausgewählten Rangfolgenmetrik Wählen Sie Themen aus, um einen Drilldown in bis zu fünf Ebenen durchzuführen. Suchen Sie nach bestimmten Themen und vergleichen Sie Themen mit anderen Datumsbereichen."
 
+{{release-limited-testing}}
+
 Die ![Feed](/help/assets/icons/Feed.svg)**[!UICONTROL Trendthemen]**-Visualisierung ermöglicht es Ihnen, die Trendthemen im Rahmen von Conversation Insights zu untersuchen und zu analysieren.
 
 Sie können nach bestimmten Themen suchen und die Anzahl und den Prozentsatz für jedes Thema auf jeder Ebene mit anderen Datenbereichen vergleichen.
@@ -36,6 +38,7 @@ Sie können nach bestimmten Themen suchen und die Anzahl und den Prozentsatz fü
 >id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"
 >title="Nicht standardmäßiges Attribution-Modell verwenden"
 >abstract="Nicht-Standard-Attributionsmodelle sind für diese Metrik nicht verfügbar."
+
 
 So erstellen und konfigurieren Sie eine **[!UICONTROL Trendthemen]**-Visualisierung:
 
@@ -57,7 +60,7 @@ So verwenden Sie die Visualisierung:
 
 * Bewegen Sie den Mauszeiger über ein Thema, um ein Popup mit weiteren Details anzuzeigen. ➊
 
-* Um Trend-Unterthemen für ein Thema auf einer niedrigeren Ebene anzuzeigen, wählen Sie ein Thema auf einer bestimmten Ebene aus. Wenn auf einer Unterebene keine Themen verfügbar sind, sehen Sie ![DataRemove](/help/assets/icons/DataRemove.svg) **[!UICONTROL Keine Unterthemen gefunden für _topic > Unterthema > …]**.
+* Um Trend-Unterthemen für ein Thema auf einer niedrigeren Ebene anzuzeigen, wählen Sie ein Thema auf einer bestimmten Ebene aus. Wenn auf einer Unterebene keine Themen verfügbar sind, sehen Sie ![DataRemove](/help/assets/icons/DataRemove.svg) **[!UICONTROL Keine Unterthemen gefunden für _Thema > Unterthema_ > …]**.
 
 * Verwenden Sie ![Suche](/help/assets/icons/Search.svg) **[!UICONTROL _Suchthemen_]**, um schnell nach Themen zu suchen. ➋
 

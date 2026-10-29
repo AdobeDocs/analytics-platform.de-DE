@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: d16771a675504a6330a59478f15bf6112ae444d6
+source-git-commit: a80a12b061bee5165667b361a9e4bc1888d86c95
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 3%
@@ -49,7 +49,7 @@ Die meisten Unternehmen verwenden den folgenden übergeordneten Workflow, um Dim
 1. Überprüfen Sie alle Komponenten, die dieselbe Komponenten-ID, aber unterschiedliche Komponenteneinstellungen verwenden. Wählen Sie für jede Gruppe doppelter Komponenten die gewünschten Komponenteneinstellungen aus, die auf alle anderen Komponenten mit dieser Komponenten-ID angewendet werden sollen.
 1. Überprüfen Sie alle Komponenten, die dieselbe Komponenten-ID verwenden und dieselben Komponenteneinstellungen haben. Diese Dimensionen oder Metriken können einfach und sicher zusammengeführt werden.
 
-## [!UICONTROL Freigegebene Metriken und Dimensionen] Manager
+## [!UICONTROL Freigegebene Metriken und Dimensionen] Manager {#smd-manager}
 
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Datenansichten]** > **[!UICONTROL Freigegebene Metriken und Dimensionen]**
 

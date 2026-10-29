@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f7d853a3b658328f952b675f838ce314b7c30fb1
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '7412'
+source-wordcount: '7431'
 ht-degree: 93%
 ---
 
@@ -70,6 +70,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 |---|---|
 | **Oktober 2026** | |
+| Paid-Media-Daten mit Web-Daten verbinden | [Leitfaden für Anwendungsfälle](/help/use-cases/cross-channel/paid-media-web.md) So verbinden Sie Paid-Media-Daten mit Web-Daten. |
 | Auswahl für Visualisierungen sperren | Umstrukturierung [Datenquellen verwalten](/help/analysis-workspace/visualizations/t-sync-visualization.md) um die Konfiguration von Datenquelleneinstellungen von der Sperrung der Auswahl zu trennen. Es wurde auch erläutert[&#x200B; wie &quot;](/help/analysis-workspace/visualizations/t-sync-visualization.md#lock-selection)&quot; funktioniert, wenn eine Visualisierung in Zeilen in einer Freiformtabelle gesperrt ist, einschließlich der Vorgehensweise, wenn gesperrte Aufschlüsselungszeilen nicht mehr in der Tabelle sind. |
 | Groß-/Kleinschreibung für Segmentoperatoren | Es wurde klargestellt, dass bei Verwendung [Standardoperatoren](/help/components/segments/seg-operators.md#standard-operators) die Ergebnisse nicht zwischen Groß- und Kleinschreibung unterschieden werden, mit Ausnahme von **[!UICONTROL Übereinstimmungen]** und **[!UICONTROL stimmt nicht überein]**. |
 | Tastaturnavigation für Tabellenspalten | Es wurde beschrieben[&#x200B; wie &#x200B;](/help/analysis-workspace/workspace-faq/aw-accessibility.md#resize-columns) Tabellenspalten in Analysis Workspace mithilfe der Tastatur [skaliert) und neu &#x200B;](/help/analysis-workspace/workspace-faq/aw-accessibility.md#rearrange-columns)angeordnet werden, einschließlich Feedback für Bildschirmlesehilfen. Es wurde auch ein Abschnitt [Tabellenspaltenaktionen](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#table-column-actions) zu Hotkeys hinzugefügt. |
