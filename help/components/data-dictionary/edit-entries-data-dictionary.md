@@ -147,4 +147,4 @@ So generieren Sie Beschreibungen für mehrere Komponenten im Datenwörterbuch:
 
    Eine Bestätigungsmeldung zeigt die Anzahl der hinzugefügten Beschreibungen an.
 
-   Wenn Sie eine große Anzahl von Komponenten ausgewählt haben, werden die Beschreibungen im Hintergrund generiert. Wenn die Anfrage abgeschlossen ist, erhalten Sie eine In-App[Benachrichtigung](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) die anzeigt, wie viele Beschreibungen generiert wurden und wie viele fehlgeschlagen sind.
+   Wenn Sie eine große Anzahl von Komponenten ausgewählt haben, werden die Beschreibungen im Hintergrund generiert. Wenn die Anfrage abgeschlossen ist, erhalten Sie eine In-App[Benachrichtigung](https://experienceleague.adobe.com/de/docs/core-services/interface/features/account-preferences#view-notifications) die anzeigt, wie viele Beschreibungen generiert wurden und wie viele fehlgeschlagen sind.
