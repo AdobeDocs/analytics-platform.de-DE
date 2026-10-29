@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 5006a5e7f48fb107cc32cf56051062cc88f35c8e
+source-git-commit: 56f881fc811f0eeffb9633872b3edbe0eb2d7070
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 40%
+source-wordcount: '1596'
+ht-degree: 39%
 ---
 # Komponentenverfügbarkeit in Daten-Feeds
 
@@ -28,7 +28,7 @@ ht-degree: 40%
 
 Nicht alle Customer Journey Analytics-Komponenten können in Daten-Feeds verwendet werden. Einige Dimensionen sind in jedem Daten-Feed enthalten, einige Komponenten können nicht einbezogen werden und einige Metriken müssen durch einen Ersatz ersetzt werden.
 
-Verwenden Sie die folgenden Informationen, um zu verstehen, welche Komponenten Sie beim [Erstellen eines Daten-Feeds) &#x200B;](/help/components/exports/cja-data-feeds/create-feed.md) können.
+Verwenden Sie die folgenden Informationen, um zu verstehen, welche Komponenten Sie beim [Erstellen eines Daten-Feeds) ](/help/components/exports/cja-data-feeds/create-feed.md) können.
 
 ## Erforderliche Dimensionen {#required-dimensions}
 
@@ -100,7 +100,7 @@ Die folgenden Customer Journey Analytics-Standardmetriken können nicht in Daten
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
->title=""
+>title="Dimensionen, die nicht zusammen verwendet werden können"
 >abstract="Benutzer-Agent-Daten und Gerätesuchdaten können nicht in derselben Daten-Feed-Konfiguration vorhanden sein."
 
 <!-- markdownlint-enable MD034 -->
@@ -111,17 +111,35 @@ Bestimmte Dimensionen können nicht zusammen in Experience Platform-Datensätzen
 
 * Dimensionen der Gerätesuche, z. B. Browser-, Mobilgerät- und Betriebssystemdimensionen. Die vollständige Liste finden Sie unter [Dimensionen der Gerätesuche](#device-lookup-dimensions).
 
+Diese Einschränkung gilt auch für abgeleitete Felder, die auf diese Dimensionen verweisen.
+
 >[!NOTE]
 >
->Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
+>Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von ](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
+
+<!--
+SME CHECK (derived fields; from Slack thread with Ron Fulkerson, Matt Freestone, Courtney Ferguson). Assumptions to confirm:
+1. Derived fields are restricted only when combined with dimensions from the other group. They aren't blocked from data feeds entirely.
+2. The restriction applies in both directions. Derived fields that reference User agent or Mobile ID conflict with device lookup dimensions, not only the reverse.
+3. The restriction applies to nested derived fields (a derived field that references another derived field that references a restricted dimension).
+4. "Device Atlas sourced" dimensions are the same set as the device lookup dimensions listed on this page.
+5. The restriction itself is permanent.
+6. Derived fields get the same conflict dialog experience as dimensions (per Matt Freestone). This requires the UI to identify which derived fields reference these dimensions; Courtney Ferguson said the UI doesn't have that information today. Confirm this will be built before release.
+7. The priority rules in "Resolve dimension conflicts" apply to derived fields the same way they apply to the dimensions they reference. For example, a derived field that references User agent takes priority over device lookup dimensions in the same selection.
+8. Editing a derived field that is already in a data feed so that it references a conflicting dimension fails when the user adds the conflicting dimension to the derived field. Does this check every data feed that uses the derived field? What does the error say?
+Open question: Can a derived field that references dimensions from BOTH groups be added to any data feed?
+-->
 
 ### Lösen von Dimensionskonflikten
 
-Beim Hinzufügen von Dimensionen, die nicht zusammen verwendet werden können, wird ein Dialogfeld angezeigt, in dem aufgelistet wird, welche Dimensionen hinzugefügt und welche nicht hinzugefügt oder entfernt werden. Was passiert, hängt davon ab, wo der Konflikt liegt:
+Beim Hinzufügen von Dimensionen, die nicht zusammen verwendet werden können (einschließlich abgeleiteter Felder, die auf diese Dimensionen verweisen), wird ein Dialogfeld angezeigt, in dem aufgelistet wird, welche Dimensionen hinzugefügt werden und welche nicht hinzugefügt oder entfernt werden. Die folgende Tabelle zeigt, was passiert, je nachdem, wo der Konflikt liegt:
 
-* **Die Dimensionen, die Sie hinzufügen, stehen im Konflikt mit Dimensionen, die sich bereits im Daten-Feed befinden**: Die Dimensionen, die Sie hinzufügen, haben Priorität. Im Dialogfeld werden Sie aufgefordert, Ihre Auswahl hinzuzufügen und die widersprüchlichen Dimensionen aus dem Daten-Feed zu entfernen.
+| Konflikt | Hat Priorität | Ergebnis |
+|---|---|---|
+| Die Dimensionen, die Sie hinzufügen, stehen in Konflikt mit Dimensionen, die sich bereits im Daten-Feed befinden | Die Dimensionen, die Sie hinzufügen | Die neuen Dimensionen ersetzen die widersprüchlichen Dimensionen, die sich bereits im Daten-Feed befinden. |
+| Die Dimensionen, die Sie hinzufügen, stehen in Konflikt miteinander | Die Dimensionen **Benutzeragent** und **Mobile ID** (und abgeleitete Felder, die darauf verweisen) | Die Dimensionen der Gerätesuche in Ihrer Auswahl (und abgeleitete Felder, die darauf verweisen) werden nicht hinzugefügt. Der Rest Ihrer Auswahl wird dem Daten-Feed hinzugefügt. |
 
-* **Die Dimensionen, die Sie hinzufügen, stehen in Konflikt miteinander**: Die Dimensionen **Benutzeragent** und **Mobile ID** haben Priorität. Sie werden im Dialogfeld aufgefordert, sie hinzuzufügen. Die Dimensionen für die Gerätesuche in Ihrer Auswahl werden nicht hinzugefügt.
+{style="table-layout:auto"}
 
 Um den Daten-Feed unverändert zu lassen, wählen Sie **[!UICONTROL Abbrechen]** aus.
 
@@ -129,7 +147,7 @@ Um den Daten-Feed unverändert zu lassen, wählen Sie **[!UICONTROL Abbrechen]**
 
 ### Dimensionen der Gerätesuche {#device-lookup-dimensions}
 
-Die folgenden Dimensionen können nicht im selben Daten-Feed wie die Dimensionen **Benutzeragent** oder **Mobile ID** enthalten sein.
+Die folgenden Dimensionen (und alle abgeleiteten Felder, die darauf verweisen) können nicht in denselben Daten-Feed aufgenommen werden wie die Dimensionen **Benutzeragent** oder **Mobile ID**.
 
 >[!NOTE]
 >
