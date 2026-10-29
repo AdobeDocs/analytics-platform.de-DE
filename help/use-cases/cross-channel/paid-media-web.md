@@ -127,7 +127,7 @@ Makros in gespeicherten Ziel-URLs können prozentual kodiert werden. Validieren 
 | | Ausgangspunkt | Vorhandene Konfiguration | Zu befolgende Schritte |
 |---|---|---|---|
 | A | Content Analytics mit Web- oder mobilen und bezahlten Medien | [Paid-Media-Datensätze und -](/help/content-analytics/config/paid-media.md) sowie Content Analytics-Ereignis- und Lookup-Datensätze. | Fügen Sie bei Bedarf Ihren Website-Ereignis-Datensatz hinzu und konfigurieren Sie dann die aus dem Web abgeleiteten Felder und Berichtsgruppen. |
-| B | Content Analytics nur mit bezahlten Medien | [Paid-Media-Datensätze ](/help/content-analytics/config/paid-media.md) -Komponenten; Datensätze für die Suche nach freigegebenen Inhalten können ebenfalls vorhanden sein. | Fügen Sie Ihren Website-Ereignis-Datensatz hinzu und konfigurieren Sie dann die aus dem Web abgeleiteten Felder und Berichtsgruppen. |
+| B | Content Analytics nur mit bezahlten Medien | [Paid-Media-Datensätze &#x200B;](/help/content-analytics/config/paid-media.md) -Komponenten; Datensätze für die Suche nach freigegebenen Inhalten können ebenfalls vorhanden sein. | Fügen Sie Ihren Website-Ereignis-Datensatz hinzu und konfigurieren Sie dann die aus dem Web abgeleiteten Felder und Berichtsgruppen. |
 | C | Bezahlte Medien ohne Content Analytics-Bereitstellung | Paid-Media-Datensätze sind in Experience Platform vorhanden, aber die Verbindung und die Datenansicht enthalten nicht die Paid-Media-Konfiguration. | Fügen Sie die Website- und Paid-Media-Datensätze hinzu und erstellen Sie dann die Paid-Media- und Web-Komponenten. |
 | D | Content Analytics ohne bezahlte Medien | Nur Content Analytics-Komponenten. | Aktivieren Sie den Paid-Media-Kanal in der Content Analytics-Konfiguration und folgen Sie dann dem Pfad „existing-configuration“. |
 
@@ -162,7 +162,7 @@ Entfernen oder ändern Sie keine vom System bereitgestellten Datensätze oder sc
 1. Benennen Sie den Datenstrom und wählen Sie Ihr Ereignisschema als Zuordnungsschema aus.
 1. Speichern Sie und wählen Sie dann **[!UICONTROL Service hinzufügen]** > **[!UICONTROL Adobe Experience Platform]**.
 1. Wählen Sie die Sandbox und den Ereignis-Datensatz aus und klicken Sie auf **[!UICONTROL Speichern]**.
-1. Verwenden Sie die Datenstrom-ID, um die [Experience Platform Web SDK zu ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview).
+1. Verwenden Sie die Datenstrom-ID, um die [Experience Platform Web SDK zu &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview).
 
 Folgendes erfassen:
 
