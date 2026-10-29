@@ -30,12 +30,14 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: a02b8d1d6bae6ed8269668d49ed9559688001833
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1187'
 ht-degree: 14%
 ---
 # Erstellen oder Bearbeiten von Konfigurationen
+
+{{release-limited-testing}}
 
 Mit Conversation Insights können Sie Konversationen aus den Agentenerlebnissen analysieren, die Sie Ihren Kunden anbieten. Diese Agentenerlebnisse können auf großen Sprachmodellen (LLM) oder auf menschlichen Konversationen basieren. Beispielsweise ein Chatbot, der mit einem Kunden oder einem Callcenter interagiert.
 Mithilfe von Conversation Insights sind Sie in der Lage, die Auswirkungen von Agenten auf tatsächliche Benutzerergebnisse zu verstehen.
@@ -46,7 +48,7 @@ Wenn Sie eine Conversation Insights-Konfiguration erstellen oder bearbeiten, geb
 
 Nur Systemadministratoren können Conversation Insights-Konfigurationen erstellen oder bearbeiten.
 
-Sie können Konfigurationen über die Benutzeroberfläche „Conversation Insights[Konfigurationen“ erstellen oder &#x200B;](./manage.md).
+Sie können Konfigurationen über die Benutzeroberfläche „Conversation Insights[Konfigurationen“ erstellen oder ](./manage.md).
 
 ## Fehlenden kombinierten Datensatz wiederherstellen
 
@@ -111,7 +113,7 @@ Für jede Konfiguration:
 
    1. Wählen Sie eine oder mehrere Datenansichten aus, die Sie für die Conversation Insights-Konfiguration verwenden möchten.
 
-   1. Wählen **[!UICONTROL Verwenden von Datenansichten]** aus, um die Datenansichten zu verwenden. Wählen Sie zum Abbrechen die Option „Abbrechen“ aus.
+   1. Wählen **[!UICONTROL Verwenden von Datenansichten]** aus, um die Datenansichten zu verwenden. Wählen Sie „Abbrechen“ aus, um abzubrechen.
 
    * Um in der Liste der auszuwählenden Datenansichten zu suchen, verwenden Sie das Feld ![Suche](/help/assets/icons/Search.svg).
    * Um zu konfigurieren, welche Spalten in der Tabelle angezeigt werden sollen, wählen Sie ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) aus. Wählen **[!UICONTROL Dialogfeld „Tabelle anpassen]** die anzuzeigenden Spalten aus. Wählen Sie dann **[!UICONTROL Übernehmen]** aus.
@@ -145,7 +147,7 @@ Für jede Konfiguration:
 >title="Datensatzgewinner"
 >abstract="Wählen Sie den Datensatz aus, der den Wert für entsprechend benannte Felder (wenn es sich um einen Container handelt) im gemischten Konversations-Datensatz bestimmt."
 
-Nachdem Sie eine Konfiguration erstellt haben, können Sie konfigurieren[&#x200B; wie Konversationen aus den Eingabeaufforderungen, Antworten, Feedback- und Signaldatensätzen gemischt werden](/help/conversation-insights/overview.md#how-it-works).
+Nachdem Sie eine Konfiguration erstellt haben, können Sie konfigurieren[ wie Konversationen aus den Eingabeaufforderungen, Antworten, Feedback- und Signaldatensätzen gemischt werden](/help/conversation-insights/overview.md#how-it-works).
 
 Mit dieser Spezifikation können Sie den Datensatz auswählen, der den Wert für entsprechend benannte Felder (wenn es sich um einen Container handelt) im gemischten Konversations-Datensatz bestimmt.
 
@@ -159,7 +161,7 @@ So geben Sie die gemischte Konversation an:
 
    * Wählen Sie für jedes aktivierte Feld optional einen anderen **[!UICONTROL Datensatzgewinner]**. Sie können zwischen **[!UICONTROL Eingabeaufforderungen-Datensatz]**, **[!UICONTROL Antwortdatensatz]** und **[!UICONTROL Feedback-Datensatz]**.
    * Wählen Sie optional für jedes Container-Feld einen anderen **[!UICONTROL Datensatzgewinner]** aus, um alle Felder zu aktualisieren, die zum Container gehören. Sie können zwischen **[!UICONTROL Eingabeaufforderungen-Datensatz]**, **[!UICONTROL Antwortdatensatz]** und **[!UICONTROL Feedback-Datensatz]**.
-   * Sie können keinen **[!UICONTROL Datensatzgewinner“ für]** auswählen, die von den Unterhaltungsdatensätzen gemeinsam verwendet werden (Eingabeaufforderungen, Antworten, Feedback und Signale). Diese Felder sind Teil der folgenden Feldergruppen:
+   * Sie können keinen **[!UICONTROL Datensatzgewinner“ für]** auswählen, die von den Unterhaltungsdatensätzen gemeinsam verwendet werden (Eingabeaufforderungen, Antworten, Feedback und Signale). Diese Felder sind Teil der folgenden Feldgruppen:
 
      | Feldname | Feldergruppe | Datensatzgewinner |
      |---|---|---|
@@ -179,7 +181,7 @@ Die Datenansichten, die Sie in [Konfigurationsschritte](#configuration-steps) ko
 
 Für jede der konfigurierten Datenansichten:
 
-* **Container**: Die [Registerkarte Container](/help/data-views/create-dataview.md#containers) enthält einen neuen **[!UICONTROL Container-Namen]**: **[!UICONTROL Konversation]** mit **[!UICONTROL Anzeigename]**: **[!UICONTROL Container]** als zusätzlichen **&#x200B;**&#x200B;System **[!UICONTROL Container-Typ]**.
+* **Container**: Die [Registerkarte Container](/help/data-views/create-dataview.md#containers) enthält einen neuen **[!UICONTROL Container-Namen]**: **[!UICONTROL Konversation]** mit **[!UICONTROL Anzeigename]**: **[!UICONTROL Container]** als zusätzlichen **** System **[!UICONTROL Container-Typ]**.
 * **Komponenten**: Es werden zusätzliche Ordner mit Schemafeldern angezeigt. Beispiel: agentExperience und Konversation. Darüber hinaus werden die folgenden Komponenten automatisch hinzugefügt:
 
   | Metrik | Datentyp des Schemas | Pfad des Schemas |

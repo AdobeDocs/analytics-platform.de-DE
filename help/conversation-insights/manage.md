@@ -26,12 +26,14 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 6%
 ---
 # Konfigurationen verwalten
+
+{{release-limited-testing}}
 
 Nachdem Sie [Conversation Insights-Konfigurationen erstellt haben](/help/conversation-insights/configure.md) können Sie diese Konfigurationen anzeigen, bearbeiten oder löschen.
 
@@ -90,7 +92,7 @@ So bearbeiten Sie eine vorhandene Conversation Insights-Konfiguration:
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Wählen Sie den Namen der Konfiguration aus, die Sie bearbeiten möchten.
-   * Aktivieren Sie das Kontrollkästchen neben der Konfiguration, die Sie bearbeiten möchten, und wählen Sie dann ![&#x200B; blaue Aktionsleiste &#x200B;](/help/assets/icons/Edit.svg)Bearbeiten **[!UICONTROL Bearbeiten]** aus.
+   * Aktivieren Sie das Kontrollkästchen neben der Konfiguration, die Sie bearbeiten möchten, und wählen Sie dann ![ blaue Aktionsleiste ](/help/assets/icons/Edit.svg)Bearbeiten **[!UICONTROL Bearbeiten]** aus.
    * Wählen Sie ![Mehr](/help/assets/icons/More.svg) für die Konfiguration aus, die Sie bearbeiten möchten. Wählen Sie im Kontextmenü die Option ![Bearbeiten](/help/assets/icons/Edit.svg) **[!UICONTROL Bearbeiten]** aus.
 
 1. Verwenden Sie das [**[!UICONTROL Konfiguration / _Name der Konfiguration_]**](./configure.md), um Konversationseinblicke zu verwalten.
@@ -101,7 +103,7 @@ So löschen Sie eine vorhandene Conversation Insights-Konfiguration:
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Aktivieren Sie das Kontrollkästchen neben der Konfiguration, die Sie löschen möchten, und wählen Sie dann ![&#x200B; blaue Aktionsleiste &#x200B;](/help/assets/icons/Delete.svg)Löschen **&#x200B;**&#x200B;aus.
+   * Aktivieren Sie das Kontrollkästchen neben der Konfiguration, die Sie löschen möchten, und wählen Sie dann ![ blaue Aktionsleiste ](/help/assets/icons/Delete.svg)Löschen **** aus.
    * Wählen Sie ![Mehr](/help/assets/icons/More.svg) für die Konfiguration aus, die Sie bearbeiten möchten. Wählen Sie im Kontextmenü die Option ![Löschen](/help/assets/icons/Delete.svg) **[!UICONTROL Löschen]** aus.
 
 1. Wählen Sie im Dialogfeld **[!UICONTROL Konfiguration löschen]** die Option **[!UICONTROL Löschen]** aus, um die Konfiguration zu löschen. Wählen Sie zum Abbrechen **[!UICONTROL Abbrechen]** aus.

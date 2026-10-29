@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: '1650'
 ht-degree: 43%
 ---
 
@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor, um einen neuen Content Analytics-Bericht zu erstellen:
 
 1. Erstellen Sie ein [neues Projekt](/help/analysis-workspace/build-workspace-project/create-projects.md) oder öffnen Sie ein [vorhandenes Projekt](/help/analysis-workspace/build-workspace-project/open-projects.md) in Workspace.
 1. Stellen Sie sicher, dass Sie für das Content Analytics-Reporting eine [Datenansicht auswählen](/help/analysis-workspace/c-panels/panels.md#data-view). Das Content Analytics-Reporting ist nur für Datenansichten verfügbar, die für Content Analytics [konfiguriert](/help/content-analytics/config/configuration.md) sind.
-1. Ziehen Sie ![&#x200B; Visualisierung &#x200B;](/help/assets/icons/Table.svg)Tabelle[/Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) auf die Arbeitsfläche.
+1. Ziehen Sie ![ Visualisierung ](/help/assets/icons/Table.svg)Tabelle[/Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) auf die Arbeitsfläche.
 1. Verwenden Sie [spezifische Content Analytics-Komponenten](components.md) und andere allgemeine [Komponenten](/help/components/overview.md) (wie Segmente, Datumsbereiche, Anmerkungen), um Erkenntnisse zu Content Analytics zu erhalten.
 1. Verwenden Sie andere [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), um Ihr Projekt zu verbessern.
 
@@ -60,7 +60,7 @@ Basierend auf den Content Analytics-spezifischen Dimensionen, die Sie in Ihrem P
 
 ![Content Analytics-Miniaturen](../assets/aca-thumbnails.png)
 
-Standardmäßig werden Miniaturansichten in einer [Freiformtabelle“ &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). So konfigurieren Sie die Anzeige von Miniaturen für eine Content Analytics-Dimension:
+Standardmäßig werden Miniaturansichten in einer [Freiformtabelle“ ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). So konfigurieren Sie die Anzeige von Miniaturen für eine Content Analytics-Dimension:
 
 * Bewegen Sie den Mauszeiger über eine Kopfzeile für eine Content Analytics-Dimension. z. B. **[!UICONTROL Asset-IDs]** oder **[!UICONTROL Erlebnis-IDs]**.
 * Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) aus.
@@ -85,7 +85,7 @@ Miniaturansichten werden angezeigt, wenn Sie den Mauszeiger über einen Datenpun
 
 ![Content Analytics-Miniaturen für Zeile](/help/content-analytics/assets/aca-line-thumbnail.png)
 
-Miniaturen werden angezeigt, wenn Sie den Mauszeiger über einen Datenpunkt in einer [&#x200B; bewegen](/help/analysis-workspace/visualizations/line.md).
+Miniaturen werden angezeigt, wenn Sie den Mauszeiger über einen Datenpunkt in einer [ bewegen](/help/analysis-workspace/visualizations/line.md).
 
 ## Vorschau
 
@@ -129,7 +129,7 @@ So verwenden Sie die Vorlage:
 
 Ein Projekt vom Typ **[!UICONTROL Übersicht über Content Analytics]** wird in [Analysis Workspace](/help/analysis-workspace/home.md) geöffnet. Das Projekt besteht aus vier [Bedienfeldern](/help/analysis-workspace/c-panels/panels.md) in denen jedes Bedienfeld [Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) und [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) zur Beantwortung einer bestimmten Frage bereitstellt.
 
-Sie können die Aufschlüsselung **[!UICONTROL Inhaltskanal]** verwenden, um das (/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) **für den Inhaltskanal, an dem Sie interessiert sind, [aufzuschlüsseln]** oder **[!UICONTROL mobil]**.
+Sie können die Aufschlüsselung **[!UICONTROL Inhaltskanal]** verwenden, um das ](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) **[!UICONTROL für den Inhaltskanal, an dem Sie interessiert sind, [aufzuschlüsseln]** oder **[!UICONTROL mobil]**.
 
 ![Aufschlüsselung zum Inhaltskanal im Bedienfeld in Analysis Workspace](/help/content-analytics/assets/aca-content-channel-selector.png)
 
@@ -142,7 +142,7 @@ In diesem Bedienfeld wird ermittelt, welche Erlebnisse und Assets die Interaktio
 
     >[!NOTE]
     >
-    >Diese Visualisierungen werden nur dann in Ihrer Vorlage angezeigt, wenn Sie das System so konfiguriert haben[&#x200B; dass Erlebnisse in &#x200B;](/help/content-analytics/config/guided.md#experience-capture-and-definition) Content Analytics-Konfiguration aufgenommen werden.
+    >Diese Visualisierungen werden nur dann in Ihrer Vorlage angezeigt, wenn Sie das System so konfiguriert haben[ dass Erlebnisse in ](/help/content-analytics/config/guided.md#experience-capture-and-definition) Content Analytics-Konfiguration aufgenommen werden.
     > 
 
     * **Experience CTR**: eine Visualisierung [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) die Experience CTR anzeigt.
@@ -172,7 +172,7 @@ Content Analytics verwendet KI und GenAI, um jedem Asset automatisch Metadaten u
   * **Attributtrend**
     Eine [-](/help/analysis-workspace/visualizations/line.md)-Visualisierung, die den Attributtrend für das ausgewählte am häufigsten konvertierende Asset-Attribut anzeigt.
   * **Asset-Vordergrundfarbe**
-    Ein Beispiel [Freiformtabelle), &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die Leistung von Elementen aus einer einzelnen Asset-Attributkategorie vergleicht: Vordergrundfarben. Sie können dieses Asset-Attribut durch andere Dimensionen der Asset-Attributkategorie ersetzen.
+    Ein Beispiel [Freiformtabelle), ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die Leistung von Elementen aus einer einzelnen Asset-Attributkategorie vergleicht: Vordergrundfarben. Sie können dieses Asset-Attribut durch andere Dimensionen der Asset-Attributkategorie ersetzen.
 
 * **Welche Erlebnisattribute tragen zu Konversionen bei?**
 
@@ -190,11 +190,11 @@ Content Analytics verwendet KI und GenAI, um jedem Asset automatisch Metadaten u
     Die besten Konvertierungserlebnisattribute im Vergleich zu den vorherigen 30 Tagen
     Eine [horizontale Balken](/help/analysis-workspace/visualizations/horizontal-bar.md) Visualisierung, die die wichtigsten Konvertierungserlebnisattribute im Vergleich zu den letzten 30 Tagen zeigt, basierend auf der ausgewählten Konversionsmetrik.
   * **Top-Konvertierung von Erlebnisattributdaten**
-    Eine [Freiformtabelle), &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die wichtigsten Konvertierungserlebnisse basierend auf der ausgewählten Konversionsmetrik anzeigt. Wählen Sie eine Zeile in der Tabelle aus, um die Visualisierung „Linie“ zu aktualisieren.
+    Eine [Freiformtabelle), ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die wichtigsten Konvertierungserlebnisse basierend auf der ausgewählten Konversionsmetrik anzeigt. Wählen Sie eine Zeile in der Tabelle aus, um die Visualisierung „Linie“ zu aktualisieren.
   * **line**
     Eine [-](/help/analysis-workspace/visualizations/line.md)-Visualisierung, die den Trend für das ausgewählte am häufigsten konvertierte Erlebnisattribut anzeigt.
   * **Erlebnis-Keywords**
-    Eine [Freiformtabelle“, &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die wichtigsten Erlebnisschlüsselwörter basierend auf der ausgewählten Konversionsmetrik anzeigt.
+    Eine [Freiformtabelle“, ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) die wichtigsten Erlebnisschlüsselwörter basierend auf der ausgewählten Konversionsmetrik anzeigt.
 
 * **Wo werden Assets auf meiner Site angezeigt?**
 In dieser Freiformtabelle wird angegeben, wo die am häufigsten angezeigten Assets angezeigt werden. Verwenden Sie diese Analyse, um leistungsstarke Seiten zu identifizieren und die Asset-Platzierung zu optimieren.
@@ -228,4 +228,5 @@ Ein **[!UICONTROL Content Analytics - Paid Media Summary Data]**-Projekt wird in
 >
 >[Content Analytics-Komponenten](components.md)
 >[Verwenden von Vorlagen](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>[Paid-Media-Daten mit Web-Daten verbinden](/help/use-cases/cross-channel/paid-media-web.md)
 >

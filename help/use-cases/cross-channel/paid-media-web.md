@@ -3,11 +3,10 @@ title: Paid-Media-Daten mit Web-Daten in Customer Journey Analytics verbinden
 description: Daten der Paid Media-Zusammenfassung mit Website-Ereignissen in Adobe Customer Journey Analytics verbinden, um Anzeigenausgaben, Klicks, Bestellungen, Umsatz und den Ertrag der Anzeigenausgaben zu vergleichen.
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: true
 role: Admin
-source-git-commit: c5a7403374f26ebc641f3491a88dc14c5f8693c6
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '3910'
+source-wordcount: '3912'
 ht-degree: 3%
 ---
 # Paid-Media-Daten mit Web-Daten verbinden
@@ -45,9 +44,14 @@ Paid-Media-Zusammenfassungsdatensätze enthalten tägliche Metriken ohne Persone
 
 ## Grundlagen zum Reporting-Join
 
-Eine Verknüpfung ist nur auf Ebenen möglich, deren IDs in den URLs der Landingpage oder in den Feldern für vorhandene Ereignisse angezeigt werden. Beispielsweise unterstützt das Tagging auf Kampagnenebene das Reporting auf Kampagnenebene, nicht jedoch das Reporting auf Anzeigenebene. Joins auf Erlebnis- und Asset-Ebene erfordern zusätzliche URL-Parameter und liegen außerhalb des Rahmens dieses Handbuchs.
+Eine Verknüpfung ist nur auf Ebenen möglich, deren IDs in den URLs der Landingpage oder in den Feldern für vorhandene Ereignisse angezeigt werden. Beispielsweise unterstützt das Tagging auf Kampagnenebene das Reporting auf Kampagnenebene, nicht jedoch das Reporting auf Anzeigenebene.
 
-Siehe [Zusammenfassungsdaten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/summary-data) und [Zusammenfassungsdatengruppen-Komponenteneinstellungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group) als Referenz.
+>[!NOTE]
+>
+>Für Joins auf Erlebnis- und Asset-Ebene von Content Analytics sind zusätzliche URL-Parameter erforderlich, die außerhalb des Rahmens dieses Handbuchs liegen.
+
+
+Siehe [Zusammenfassungsdaten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/summary-data) und [Zusammenfassungsdatengruppen-Komponenteneinstellungen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group) als Referenz.
 
 ### Join-Schlüssel auswählen
 
@@ -81,7 +85,7 @@ Vergewissern Sie sich, dass Folgendes vorliegt:
 * [!DNL Customer Journey Analytics] Auswählen oder höher mit Zugriff auf die hier verwendeten abgeleiteten Feldfunktionen: [URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse), [Case When](/help/data-views/derived-fields/derived-fields.md#case-when), [Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace) und [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup).
 * [!DNL Adobe Experience Platform] Berechtigungen zum Verwalten von Schemata, Datensätzen und Datenströmen in der Ziel-Sandbox sowie zum Zugriff auf Datensätze und den Abfrage-Service zur Überprüfung.
 * [!DNL Customer Journey Analytics] Berechtigung zum Bearbeiten der Zielverbindung und der Datenansicht.
-* Paid-Media-Quell-Connectoren, die in derselben Sandbox konfiguriert sind und Zusammenfassungs- und Lookup-Datensätze aufnehmen. Einen Beispiel-Connector finden Sie unter [Meta Ads-Quelle](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/advertising/meta-ads).
+* Paid-Media-Quell-Connectoren, die in derselben Sandbox konfiguriert sind und Zusammenfassungs- und Lookup-Datensätze aufnehmen. Einen Beispiel-Connector finden Sie unter [Meta Ads-Quelle](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads).
 * Website-Ereignisse, die die vollständige Landingpage-URL erfassen, einschließlich der Abfragezeichenfolge oder gleichwertiger Felder mit den Netzwerk-IDs.
 
 
@@ -122,10 +126,10 @@ Makros in gespeicherten Ziel-URLs können prozentual kodiert werden. Validieren 
 
 | | Ausgangspunkt | Vorhandene Konfiguration | Zu befolgende Schritte |
 |---|---|---|---|
-| A | Content Analytics mit Web- oder mobilen und bezahlten Medien | Paid-Media-Datensätze und -Komponenten sowie Content Analytics-Ereignis- und Lookup-Datensätze | Fügen Sie bei Bedarf Ihren Website-Ereignis-Datensatz hinzu und konfigurieren Sie dann die aus dem Web abgeleiteten Felder und Berichtsgruppen |
-| B | Content Analytics nur mit bezahlten Medien | Paid-Media-Datensätze und -Komponenten; Datensätze für die Suche nach freigegebenen Inhalten können ebenfalls vorhanden sein | Fügen Sie Ihren Website-Ereignis-Datensatz hinzu und konfigurieren Sie dann die aus dem Web abgeleiteten Felder und Berichtsgruppen |
-| C | Bezahlte Medien ohne Content Analytics-Bereitstellung | Paid-Media-Datensätze sind in Experience Platform vorhanden, aber die Verbindung und die Datenansicht enthalten nicht die Paid-Media-Konfiguration | Fügen Sie die Website- und Paid-Media-Datensätze hinzu und erstellen Sie dann die Paid-Media- und Web-Komponenten |
-| D | Content Analytics ohne bezahlte Medien | Nur Content Analytics-Komponenten | Aktivieren Sie den Paid-Media-Kanal in der Content Analytics-Konfiguration und folgen Sie dann dem Pfad der vorhandenen Konfiguration . |
+| A | Content Analytics mit Web- oder mobilen und bezahlten Medien | [Paid-Media-Datensätze und -](/help/content-analytics/config/paid-media.md) sowie Content Analytics-Ereignis- und Lookup-Datensätze. | Fügen Sie bei Bedarf Ihren Website-Ereignis-Datensatz hinzu und konfigurieren Sie dann die aus dem Web abgeleiteten Felder und Berichtsgruppen. |
+| B | Content Analytics nur mit bezahlten Medien | [Paid-Media-Datensätze ](/help/content-analytics/config/paid-media.md) -Komponenten; Datensätze für die Suche nach freigegebenen Inhalten können ebenfalls vorhanden sein. | Fügen Sie Ihren Website-Ereignis-Datensatz hinzu und konfigurieren Sie dann die aus dem Web abgeleiteten Felder und Berichtsgruppen. |
+| C | Bezahlte Medien ohne Content Analytics-Bereitstellung | Paid-Media-Datensätze sind in Experience Platform vorhanden, aber die Verbindung und die Datenansicht enthalten nicht die Paid-Media-Konfiguration. | Fügen Sie die Website- und Paid-Media-Datensätze hinzu und erstellen Sie dann die Paid-Media- und Web-Komponenten. |
+| D | Content Analytics ohne bezahlte Medien | Nur Content Analytics-Komponenten. | Aktivieren Sie den Paid-Media-Kanal in der Content Analytics-Konfiguration und folgen Sie dann dem Pfad „existing-configuration“. |
 
 Entfernen oder ändern Sie keine vom System bereitgestellten Datensätze oder schreibgeschützten Komponenten beim Erweitern einer von Content Analytics verwalteten Verbindung.
 
@@ -143,10 +147,10 @@ Entfernen oder ändern Sie keine vom System bereitgestellten Datensätze oder sc
 
    | Feldergruppe | Erforderliche Daten |
    |---|---|
-   | AEP Web SDK ExperienceEvent | Seiten-URL, Seitenansichten, Referrer und anderer Web-Kontext |
-   | Commerce-Details | Bestellanzahl, Bestellwert, Währung, Kauf-ID und Produktdetails |
-   | Details zum Kampagnen-Marketing, optional | Trackingcodes, wenn Ihre Implementierung sie separat erfasst |
-   | IdentityMap, falls noch nicht vorhanden | Die Personenkennung, z. B. ECID |
+   | AEP Web SDK ExperienceEvent | Seiten-URL, Seitenansichten, Referrer und anderer Web-Kontext. |
+   | Commerce-Details | Bestellanzahl, Bestellwert, Währung, Kauf-ID und Produktdetails. |
+   | Details zum Kampagnen-Marketing, optional | Trackingcodes, wenn Ihre Implementierung sie separat erfasst. |
+   | IdentityMap, falls noch nicht vorhanden | Die Personenkennung, z. B. ECID. |
 
 1. Speichern Sie das Schema. Für diesen Reporting-Anwendungsfall ist keine Profilaktivierung erforderlich.
 1. Wechseln Sie **[!UICONTROL Daten-Management]** > **[!UICONTROL Datensätze]** > **[!UICONTROL Datensatz erstellen]** > **[!UICONTROL Datensatz aus Schema erstellen]**.
@@ -158,7 +162,7 @@ Entfernen oder ändern Sie keine vom System bereitgestellten Datensätze oder sc
 1. Benennen Sie den Datenstrom und wählen Sie Ihr Ereignisschema als Zuordnungsschema aus.
 1. Speichern Sie und wählen Sie dann **[!UICONTROL Service hinzufügen]** > **[!UICONTROL Adobe Experience Platform]**.
 1. Wählen Sie die Sandbox und den Ereignis-Datensatz aus und klicken Sie auf **[!UICONTROL Speichern]**.
-1. Verwenden Sie die Datenstrom-ID, um die [Experience Platform Web SDK zu &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/js-overview).
+1. Verwenden Sie die Datenstrom-ID, um die [Experience Platform Web SDK zu ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview).
 
 Folgendes erfassen:
 
@@ -195,11 +199,11 @@ Um den Web-Ereignis-Datensatz in Customer Journey Analytics aufzunehmen, müssen
 
    | Einstellung | Wert |
    |---|---|
-   | Personen-ID | `identityMap` mit dem ECID-Namespace oder dem Personen-ID-Feld Ihrer Implementierung |
+   | Personen-ID | `identityMap` mit dem ECID-Namespace oder dem Personen-ID-Feld Ihrer Implementierung. |
    | Zeitstempel | `timestamp` |
    | Datenquellentyp | Web-Daten |
    | Alle neuen Daten importieren | Aktiviert |
-   | Aufstockung aller vorhandenen Daten | Aktiviert für den benötigten historischen Zeitraum |
+   | Aufstockung aller vorhandenen Daten | Aktiviert für den benötigten historischen Zeitraum. |
 
 1. Fügen Sie den Datensatz hinzu und speichern Sie die Verbindung.
 
@@ -286,11 +290,11 @@ Erstellen Sie ein abgeleitetes Feld pro Berichtebene. Die folgende Struktur beha
 
 | Regel | Funktion | Konfiguration |
 |---|---|---|
-| 1 | [URL-Parsen](/help/data-views/derived-fields/derived-fields.md#url-parse) | Lesen des ebenenspezifischen Meta-Parameters aus der Seiten-URL |
-| 2 | [URL-Parsen](/help/data-views/derived-fields/derived-fields.md#url-parse) | Lesen des ebenenspezifischen UTM-Parameters von der Seiten-URL |
-| 3 | [URL-Parsen](/help/data-views/derived-fields/derived-fields.md#url-parse) | `s_kwcid` aus Seiten-URL lesen |
-| 4 | [Regex ersetzen](/help/data-views/derived-fields/derived-fields.md#regex-replace) | Anwenden des ebenenspezifischen Ausdrucks auf Regel 3; Ausgabe `$1` |
-| 5 | [Wenn](/help/data-views/derived-fields/derived-fields.md#case-when) | Wenn Regel 3 festgelegt ist, Regel 4 zurückgeben; andernfalls, wenn Regel 1 festgelegt ist, Regel 1 zurückgeben; andernfalls Regel 2 zurückgeben |
+| 1 | [URL-Parsen](/help/data-views/derived-fields/derived-fields.md#url-parse) | Lesen Sie den ebenenspezifischen Meta-Parameter aus der Seiten-URL. |
+| 2 | [URL-Parsen](/help/data-views/derived-fields/derived-fields.md#url-parse) | Lesen Sie den ebenenspezifischen UTM-Parameter aus der Seiten-URL. |
+| 3 | [URL-Parsen](/help/data-views/derived-fields/derived-fields.md#url-parse) | `s_kwcid` aus Seiten-URL lesen. |
+| 4 | [Regex ersetzen](/help/data-views/derived-fields/derived-fields.md#regex-replace) | Anwenden des ebenenspezifischen Ausdrucks auf Regel 3; Ausgabe `$1`. |
+| 5 | [Wenn](/help/data-views/derived-fields/derived-fields.md#case-when) | Wenn Regel 3 festgelegt ist, geben Sie Regel 4 zurück; andernfalls, wenn Regel 1 festgelegt ist, geben Sie Regel 1 zurück; andernfalls geben Sie Regel 2 zurück. |
 
 Verwenden Sie die folgenden Werte:
 
@@ -363,7 +367,7 @@ Fügen Sie das abgeleitete Feld Paid Landings als Metrik hinzu und konfigurieren
 
 Die ursprünglichen Metriken **[!UICONTROL Bestellungen]** und **[!UICONTROL Umsatz]** unverändert lassen, um vorhandene Berichte beizubehalten. Für dieses Setup ist eine explizite Aktivierung der Überschreibung erforderlich, auch wenn die angezeigten Standardeinstellungen zu entsprechen scheinen.
 
-Für die Konversionszuweisung bei wiederkehrenden Besuchen sollten Sie stattdessen einen **[!UICONTROL Person]**-Container und ein entsprechendes Lookback-Fenster in Betracht ziehen. Siehe [Anwendungsfall für Zusammenfassungsdaten](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-usecases/data-views/summary-data).
+Für die Konversionszuweisung bei wiederkehrenden Besuchen sollten Sie stattdessen einen **[!UICONTROL Person]**-Container und ein entsprechendes Lookback-Fenster in Betracht ziehen. Siehe [Anwendungsfall für Zusammenfassungsdaten](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/summary-data).
 
 Verwenden Sie die Metrikattribution, anstatt den Web-ID-Dimensionen Persistenz hinzuzufügen. Um zu vermeiden, dass die Anzahl der als Landingpages interpretierten Elemente ansteigt, sollten die IDs nicht für spätere Ereignisse beibehalten werden, da dadurch geändert wird, welche Ereignisse in den Kampagnenzeilen angezeigt werden.
 
