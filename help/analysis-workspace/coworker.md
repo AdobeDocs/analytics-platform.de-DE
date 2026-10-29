@@ -44,13 +44,13 @@ Das produktinterne Erlebnis für Kollegen ist in einem Chat-Panel auf der rechte
 <!--
 FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME.
 
-* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
 
 -->
 
 ### Wählen Sie zwischen Coworker in Workspace und der Coworker-Anwendung
 
-Das produktinterne Erlebnis für Mitarbeiter verfügt über viele Funktionen wie das [CX Enterprise Coworker-Programm](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-chat) einschließlich der Fähigkeiten, auf die Sie Zugriff haben. Es gibt jedoch wichtige Unterschiede, die bestimmen, wann Sie eine verwenden können:
+Das produktinterne Erlebnis für Mitarbeiter verfügt über viele Funktionen wie das [CX Enterprise Coworker-Programm](https://experienceleague.adobe.com/de/docs/coworker/content/chat/use-cases/data-insights/analytics-chat) einschließlich der Fähigkeiten, auf die Sie Zugriff haben. Es gibt jedoch wichtige Unterschiede, die bestimmen, wann Sie eine verwenden können:
 
 | | Produktinternes Erlebnis für Mitarbeiter | Partneranwendung |
 | --- | --- | --- |
