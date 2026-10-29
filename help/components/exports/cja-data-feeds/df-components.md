@@ -28,7 +28,7 @@ ht-degree: 39%
 
 Nicht alle Customer Journey Analytics-Komponenten können in Daten-Feeds verwendet werden. Einige Dimensionen sind in jedem Daten-Feed enthalten, einige Komponenten können nicht einbezogen werden und einige Metriken müssen durch einen Ersatz ersetzt werden.
 
-Verwenden Sie die folgenden Informationen, um zu verstehen, welche Komponenten Sie beim [Erstellen eines Daten-Feeds) ](/help/components/exports/cja-data-feeds/create-feed.md) können.
+Verwenden Sie die folgenden Informationen, um zu verstehen, welche Komponenten Sie beim [Erstellen eines Daten-Feeds) &#x200B;](/help/components/exports/cja-data-feeds/create-feed.md) können.
 
 ## Erforderliche Dimensionen {#required-dimensions}
 
@@ -115,7 +115,7 @@ Diese Einschränkung gilt auch für abgeleitete Felder, die auf diese Dimensione
 
 >[!NOTE]
 >
->Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von ](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
+>Wenn Sie die Web-SDK verwenden, wird diese Einschränkung in Datenströmen erzwungen, bevor Daten in einem Experience Platform-Datensatz eingehen. Weitere Informationen finden Sie unter [Konfigurieren der Gerätesuche](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Erstellen und Konfigurieren von &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure)) im Datenerfassungshandbuch.
 
 <!--
 SME CHECK (derived fields; from Slack thread with Ron Fulkerson, Matt Freestone, Courtney Ferguson). Assumptions to confirm:
