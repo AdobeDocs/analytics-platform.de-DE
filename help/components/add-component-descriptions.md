@@ -100,7 +100,7 @@ Wählen Sie einen Speicherort aus, um zu erfahren, wie Sie dort Beschreibungen g
 
 ### Beschreibungen für freigegebene Metriken und Dimensionen generieren
 
-Sie können Beschreibungen für freigegebene Metriken und Dimensionen nur in einer Datenansicht generieren, wie in der Tabelle unter [Beschreibungen von verschiedenen Speicherorten generieren](#generate-descriptions-from-various-locations) dargestellt. Sie können keine Beschreibungen über den Manager [Freigegebene Metriken und Dimensionen“ ](/help/data-views/shared-metrics-dimensions/smd-overview.md#smd-manager).
+Sie können Beschreibungen für freigegebene Metriken und Dimensionen nur in einer Datenansicht generieren, wie in der Tabelle unter [Beschreibungen von verschiedenen Speicherorten generieren](#generate-descriptions-from-various-locations) dargestellt. Sie können keine Beschreibungen über den Manager [Freigegebene Metriken und Dimensionen“ &#x200B;](/help/data-views/shared-metrics-dimensions/smd-overview.md#smd-manager).
 
 Beachten Sie Folgendes, wenn Sie eine Beschreibung für eine freigegebene Metrik oder Dimension in einer Datenansicht generieren:
 
