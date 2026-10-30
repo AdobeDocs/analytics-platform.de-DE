@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 27b268c88c84b530d9fbbc454eae23cc43d4d041
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 86%
+source-wordcount: '2035'
+ht-degree: 76%
 ---
 # Visualisierungsübersicht
 
@@ -49,18 +49,18 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | ![Ringdiagramm](/help/assets/icons/GraphDonut.svg) | [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) | Ähnlich einem Tortendiagramm zeigt eine Ringvisualisierung die Daten als Teile oder Segmente eines Ganzen. |
 | ![Konversionstrichter](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Eine Visualisierung „Fallout“ zeigt, wo Personen eine Site verlassen haben und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind). |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md) | Eine Visualisierung vom Typ „Fluss“ zeigt genaue Kundenpfade durch Ihre Websites und Apps an. |
-| ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Eine Visualisierung „Freiformtabelle“ ist eine interaktive Visualisierung. Die Visualisierung „Freiformtabelle“ bildet die Grundlage für die Datenanalyse in Workspace. |
-| ![GraphHistogramm](/help/assets/icons/Histogram.svg) | [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | Eine Visualisierung vom Typ „Histogramm“ fasst Personen, Besuche oder Ereignisse basierend auf einem Metrikvolumen in Buckets zusammen. |
+| ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Eine Visualisierung vom Typ „Freiformtabelle“ ist eine interaktive Visualisierung. Die Visualisierung vom Typ „Freiformtabelle“ bildet die Grundlage für die Datenanalyse in Workspace. |
+| ![GraphHistogramm](/help/assets/icons/Histogram.svg) | [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | Eine Visualisierung vom Typ „Histogramm“ fasst Personen, Besuche oder Ereignisse basierend auf dem Volumen einer Metrik in Buckets zusammen. |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) | Eine Visualisierung vom Typ „Horizontalbalken“ zeigt Horizontalbalken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Horizontalbalken gestapelt](/help/analysis-workspace/visualizations/horizontal-bar.md) | Eine Visualisierung vom Typ „Horizontalbalken gestapelt“ zeigt Horizontalbalken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | ![Branch3](/help/assets/icons/Branch3.svg) | [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Eine Visualisierung vom Typ „Journey-Arbeitsfläche“ hilft Ihnen, die Journey zu analysieren und Erkenntnisse zu gewinnen, die Sie Ihren Benutzenden sowie Kundinnen und Kunden bereitstellen können. |
-| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Zusammenfassung einer Schlüsselmetrik](/help/analysis-workspace/visualizations/key-metric.md) | Eine Visualisierung vom Typ „Zusammenfassung einer Schlüsselmetrik“ kombiniert die Linien-, Zusammenfassungsänderungs- und Zusammenfassungszahl-Visualisierungen. |
+| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Zusammenfassung einer Schlüsselmetrik](/help/analysis-workspace/visualizations/key-metric.md) | Eine Visualisierung vom Typ „Zusammenfassung von Schlüsselmetriken“ kombiniert die Visualisierungen Linie, Zusammenfassungsänderung und Zusammenfassungszahl. |
 | ![Trends-Grafik](/help/assets/icons/GraphTrend.svg) | [Linie](/help/analysis-workspace/visualizations/line.md) | Eine Visualisierung vom Typ „Linie“ stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm verwendet die Zeit entlang der X-Achse. |
 | ![Streudiagramm](/help/assets/icons/GraphScatter.svg) | [Streuung](/help/analysis-workspace/visualizations/scatterplot.md) | Eine Visualisierung vom Typ „Streudiagramm“ zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken an. |
 | ![PageRule](/help/assets/icons/PageRule.svg) | [Abschnittskopfzeile](section-header.md) | Zum Identifizieren und Gliedern von Abschnitten in einem Panel. |
 | ![NachObenUnten](/help/assets/icons/MoveUpDown.svg) | [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) | Eine Visualisierung vom Typ „Zusammenfassungsänderung“ zeigt die Änderung zwischen den ausgewählten Zellen als eine große Zahl oder einen großen Prozentsatz an. |
 | ![123](/help/assets/icons/123.svg)</p> | [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md) | Eine Visualisierung vom Typ „Zusammenfassungszahl“ zeigt die ausgewählte Zelle als eine große Zahl an. |
-| ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | Eine Visualisierung vom Typ „Text“ ermöglicht es Ihnen, benutzerdefinierten Text zu Ihrem Arbeitsbereich hinzuzufügen. Hilfreich zum Hinzufügen zusätzlicher Kontexte zu Ihrer Analyse und zu Einblicken, zusätzlich zum Nutzen der Beschreibungen im Bedienfeld oder in Visualisierungen |
+| ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | Eine Visualisierung vom Typ „Text“ ermöglicht es Ihnen, benutzerdefinierten Text zu Ihrem Arbeitsbereich hinzuzufügen. Hilfreich, um zusätzlichen Kontext zu Ihrer Analyse und zu Ihren Insights hinzuzufügen, zusätzlich zur Nutzung der Beschreibungen in Panels und Visualisierungen |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p> | Eine Visualisierung „Baumkarte“ zeigt hierarchische (baumstrukturierte) Daten als Satz verschachtelter Rechtecke an. |
 | ![Typ](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | Eine Venn-Visualisierung verwendet Kreise, um die Metriküberschneidung von bis zu drei Segmenten darzustellen. |
 
@@ -111,19 +111,43 @@ Sie können eine Visualisierung verwalten, wenn Sie den Mauszeiger über die Vis
 
 ## Legende
 
-Eine Visualisierungslegende hilft Ihnen, das Datum in einer Ausgangstabelle mit der dargestellten Serie in der Visualisierung zu verknüpfen. Die Legende ist interaktiv: Sie können ein Legendenelement auswählen, um eine Reihe in der Visualisierung ein- oder auszublenden. Dies ist hilfreich, wenn Sie die visualisierten Daten vereinfachen möchten.
+Eine Visualisierungslegende hilft Ihnen, Daten in einer Quelltabelle den dargestellten Reihen in der Visualisierung zuzuordnen. Die Legende ist interaktiv: Sie können ein Legendenelement auswählen, um eine Reihe in der Visualisierung ein- oder auszublenden. Dies ist hilfreich, wenn Sie die visualisierten Daten vereinfachen möchten.
 
 Darüber hinaus können Sie Legendenbeschriftungen umbenennen, um Visualisierungen benutzerfreundlicher zu gestalten. Hinweis: Die Bearbeitung der Legenden ist für die folgenden Visualisierungen **nicht** möglich: Treemap, Aufzählung, Zusammenfassungsänderung oder -nummer, Text, Freiform, Histogramm, Kohorten- oder Flussvisualisierung.
 
-So bearbeiten Sie eine Legendenbezeichnung:
+So bearbeiten Sie ein Legenden-Label:
 
 1. Klicken Sie mit der rechten Maustaste auf eine der Legendenbeschriftungen.
 1. Klicken Sie auf **[!UICONTROL Bezeichnung bearbeiten]**.
 
    ![Ein Legenden-Label und die Option „Label bearbeiten“.](assets/edit-label.png)
 
-1. Geben Sie den neuen Beschriftungstext ein.
+1. Geben Sie den neuen Label-Text ein.
 1. Drücken Sie zum Speichern die **[!UICONTROL Eingabetaste]**.
+
+### Präzise Labels
+
+Wenn jede Serie in der Visualisierung dieselbe Metrik, dasselbe Segment, dasselbe Dimensionselement oder denselben Datumsbereich verwendet, wird sie von jeder Legendenbeschriftung wiederholt. Kennzeichnungen können länger werden, und der Text, der sie unterscheidet, ist oft nur sichtbar, wenn Sie den Mauszeiger über eine einzelne Kennzeichnung bewegen.
+
+Die Einstellung **[!UICONTROL Präzise Beschriftungen]** konzentriert sich intelligent auf die Informationen, die eine Beschriftung von einer anderen unterscheiden. Metriken, Segmente, Dimensionselemente oder Datumsbereichsnamen werden nur entfernt, wenn der Name in jeder Beschriftung angezeigt wird. Wenn beispielsweise ein Segment auf jede Spalte in der Quelltabelle angewendet wird, wird das Segment aus den Legendenbeschriftungen entfernt. Wenn das Segment auf jede Spalte mit Ausnahme einer Spalte angewendet wird, enthalten die Legendenbeschriftungen weiterhin das Segment. Um die vollständige Beschriftung anzuzeigen, bewegen Sie den Mauszeiger über eine Legendenbeschriftung.
+
+Präzise Beschriftungen sind standardmäßig deaktiviert. So aktivieren Sie knappe Beschriftungen für eine Visualisierung:
+
+1. Wählen Sie ![Einstellung](/help/assets/icons/Setting.svg) **[!UICONTROL Einstellungen]** in der Visualisierungskopfzeile aus.
+1. Wählen Sie die Registerkarte **[!UICONTROL Einstellungen]** aus.
+1. Stellen Sie sicher **[!UICONTROL dass „Legende sichtbar]** ausgewählt ist. **[!UICONTROL Präzise Beschriftungen]** ist nur verfügbar, wenn die Legende sichtbar ist.
+1. Wählen Sie **[!UICONTROL Präzise Beschriftungen]** aus.
+
+Für die folgenden Visualisierungen stehen knappe Beschriftungen zur Verfügung:
+
+* [Bereich und Bereich gestapelt](area.md)
+* [Balken und Balken gestapelt](bar.md)
+* [Kombination](combo-charts.md)
+* [Ringdiagramm](donut.md)
+* [Histogramm](histogram.md)
+* [Horizontalbalken und Horizontalbalken gestapelt](horizontal-bar.md)
+* [Linie](line.md)
+* [Venn](venn.md)
 
 
 ## Einstellungen
@@ -152,20 +176,21 @@ Welche Visualisierungseinstellungen verfügbar sind, ist von der jeweiligen Visu
 | **[!UICONTROL Prozentsätze]** | Zeigen Sie Werte als Prozentzahlen an. |
 | **[!UICONTROL 100 % gestapelt]** | Wandeln Sie das Diagramm in eine 100 % gestapelte Visualisierung um.  Gilt nur für eine gestapelte Visualisierung „Bereich“, „Balken“ und „Horizontalbalken“. |
 | **[!UICONTROL Legende eingeblendet]** | Zeigen Sie den Legendentext an. |
+| **[!UICONTROL Präzise Beschriftungen]** | Kürzen Sie Legendenbeschriftungen, um sich auf die Informationen zu konzentrieren, mit denen sich eine Beschriftung von einer anderen unterscheidet. Namen von Metriken, Segmenten, Dimensionselementen und Datumsbereichen, die in jeder Kennzeichnung angezeigt werden, werden entfernt. Diese Einstellung ist nur verfügbar, wenn **[!UICONTROL Legende sichtbar]** ausgewählt ist und standardmäßig deaktiviert ist. Weitere Informationen finden Sie unter [Präzise Beschriftungen](#concise-labels). |
 | **[!UICONTROL Grenzwert für max. Anzahl von Elementen]** | Begrenzen Sie die Anzahl der Elemente, die in einer Visualisierung angezeigt werden. Wenn diese Option ausgewählt ist, definieren Sie die Anzahl der maximalen Elemente. |
 | **[!UICONTROL Anmerkungen anzeigen]** | Zeigen Sie die Anmerkungen an, die für diese Visualisierung erstellt wurden. |
 | **[!UICONTROL Titel ausblenden]** | Blenden Sie den Titel der Visualisierung aus. |
-| **[!UICONTROL Y-Achse bei null verankern]** | Setzen Sie durch, dass der untere Teil der Y-Achse bei null liegt. Wenn alle im Diagramm dargestellten Werte deutlich größer als null sind, wird der untere Teil der Y-Achse standardmäßig zu nicht-null gemacht. Wenn Sie diese Option aktivieren, wird die Y-Achse auf null gesetzt (und das Diagramm wird neu gezeichnet). |
-| **[!UICONTROL Zwei Achsen anzeigen]** | Zeigen Sie die linke und rechte Y-Achse für zwei verschiedene Metriken an. Diese Option gilt nur, wenn zwei Metriken vorliegen. Zwei Achsen sind hilfreich, wenn grafisch dargestellte Metriken unterschiedliche Größenordnungen aufweisen. |
+| **[!UICONTROL Y-Achse bei null verankern]** | Setzen Sie durch, dass der untere Teil der Y-Achse bei null liegt. Wenn alle im Diagramm dargestellten Werte deutlich größer als null sind, beginnt die Y-Achse standardmäßig nicht bei null. Wenn Sie diese Option aktivieren, wird die Y-Achse auf null gesetzt (und das Diagramm wird neu gezeichnet). |
+| **[!UICONTROL Zwei Achsen anzeigen]** | Zeigen Sie die linke und rechte Y-Achse für zwei verschiedene Metriken an. Diese Option gilt nur, wenn Sie zwei Metriken haben. Zwei Achsen sind hilfreich, wenn grafisch dargestellte Metriken unterschiedliche Größenordnungen aufweisen. |
 | **[!UICONTROL X-Achse anzeigen]** | Zeigen Sie die X-Achse in der Visualisierung an. |
 | **[!UICONTROL y-Achse anzeigen]** | Zeigen Sie die Y-Achse in der Visualisierung an. |
-| **[!UICONTROL Balken auf Linien anzeigen]** | Zeigen Sie Balken in der Visualisierung „Linie“ in einer Visualisierung „Kombinationsdiagramm“ an. |
-| **[!UICONTROL Normalisierung]** | Erzwingen Sie Metriken gleicher Proportion. Gleiche Proportionen sind hilfreich, wenn grafisch dargestellte Metriken unterschiedliche Größenordnungen aufweisen. |
+| **[!UICONTROL Balken auf Linien anzeigen]** | Zeigen Sie Barbells in der Visualisierung „Linie“ in einer Visualisierung „Kombinationsdiagramm“ an. |
+| **[!UICONTROL Normalisierung]** | Erzwingen Sie Metriken gleicher Proportion. Gleiche Verhältnisse sind hilfreich, wenn grafisch dargestellte Metriken unterschiedliche Größenordnungen aufweisen. |
 | **[!UICONTROL Anomalien zeigen]** | Verbessern Sie Liniendiagramme und Freiformtabellen durch Anzeige der Anomalieerkennung. Die Anomalieerkennung in Linienvisualisierungen umfasst einen erwarteten Wert (gestrichelte Linie) und einen erwarteten Bereich (schattiertes Band). |
 | **[!UICONTROL Prognose anzeigen]** | Verbessern Sie Liniendiagramme und Freiformtabellen durch Anzeige von Prognosewerten. |
 | **[!UICONTROL Min. zeigen]** | Zeigen Sie den Minimalwert in der Visualisierung an. |
 | **[!UICONTROL Max. zeigen]** | Zeigen Sie den Maximalwert in der Visualisierung an. |
-| **[!UICONTROL Trend-Linie anzeigen]** | Zeigen Sie eine Trend-Linie in der Visualisierung. Wenn ausgewählt, können Sie den Typ der Trendlinie aus dem Dropdown-Menü auswählen. |
+| **[!UICONTROL Trend-Linie anzeigen]** | Zeigen Sie eine Trendlinie in der Visualisierung an. Wenn ausgewählt, können Sie den Typ der Trendlinie aus dem Dropdown-Menü auswählen. |
 
 Sie können die Einstellungen für alle von Ihnen erstellten Visualisierungen anpassen. Weitere Informationen finden Sie unter [Benutzervoreinstellungen](/help/analysis-workspace/user-preferences.md).
 
@@ -198,6 +223,6 @@ Einige Visualisierungen (z. B. „Kohortentabelle“, „Fallout“, „Fluss�
 
 ## Visualisieren
 
-Wenn Sie sich nicht sicher sind, welche Visualisierung Sie auswählen sollen, bewegen Sie den Mauszeiger über eine beliebige Freiformtabellenzeile und klicken Sie auf das dann erscheinende Symbol ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualisieren]**. Dies ist die schnellste Möglichkeit, eine Visualisierung hinzuzufügen. Analysis Workspace sucht nach der Visualisierung, die aufgrund der vorhandenen Fakten am besten zu Ihren Daten passt. Wenn Sie beispielsweise eine einzelne Zeile ausgewählt haben, wird ein Trend-[Liniendiagramm](line.md) erstellt. Wenn Sie drei Segmentzeilen ausgewählt haben, wird ein &quot;[&quot;-](venn.md) erstellt.
+Wenn Sie sich nicht sicher sind, welche Visualisierung Sie auswählen sollen, bewegen Sie den Mauszeiger über eine beliebige Freiformtabellenzeile und klicken Sie auf das dann erscheinende Symbol ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualisieren]**. Dies ist die schnellste Möglichkeit, eine Visualisierung hinzuzufügen. Analysis Workspace trifft eine fundierte Annahme darüber, welche Visualisierung am besten zu Ihren Daten passt. Wenn Sie beispielsweise eine einzelne Zeile ausgewählt haben, wird ein Trend-[Liniendiagramm](line.md) erstellt. Wenn Sie drei Segmentzeilen ausgewählt haben, wird ein &quot;[&quot;-](venn.md) erstellt.
 
 ![Schnellvisualisierung](assets/quick-viz.png)

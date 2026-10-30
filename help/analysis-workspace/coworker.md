@@ -4,7 +4,6 @@ description: Verwenden Sie das produktinterne Erlebnis für Kollegen, um das ge�
 role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -23,14 +22,16 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: 88e67c92fc170b340149c9ab73ad5eea2122da2b
 workflow-type: tm+mt
-source-wordcount: '1945'
-ht-degree: 0%
+source-wordcount: '1960'
+ht-degree: 1%
 ---
 # Verwenden des produktinternen Erlebnisses für Kollegen
 
-{{release-limited-testing}}
+>[!AVAILABILITY]
+>
+>Die in diesem Abschnitt beschriebenen Funktionen befinden sich in der eingeschränkten Testphase der Version und sind möglicherweise noch nicht in Ihrer Umgebung verfügbar. Darüber hinaus verwendet Coworker generative KI, was zu ungenauen oder unerwarteten Ergebnissen führen kann. Überprüfen Sie die Antworten der Kollegen und alle Änderungen, die sie an Ihrem Projekt vornehmen, bevor Sie sie bearbeiten oder das Projekt freigeben.
 
 Das produktinterne Erlebnis für Kollegen ist in einem Chat-Panel auf der rechten Seite von Analysis Workspace verfügbar. Coworker verwendet das geöffnete Projekt als Kontext, sodass Sie nach Ihrer Analyse fragen oder ein Coworker das Projekt erstellen lassen kann, ohne zu erklären, was es enthält.
 
@@ -42,11 +43,14 @@ Das produktinterne Erlebnis für Kollegen ist in einem Chat-Panel auf der rechte
 
   Wenn Sie in Workspace nicht auf einen Mitarbeiter zugreifen können, wenden Sie sich an Ihren Administrator. Weitere Informationen finden Sie unter [IMS-Organisationsvoreinstellungen](/help/analysis-workspace/user-preferences.md#ims-organization-preferences). <!-- need to update this section with the new toggle -->
 
-<!-- FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME. -->
-
-* **Berechtigungen**: In der [!UICONTROL Adobe Admin Console] bestimmt die Berechtigung  Reporting-Tools **[!UICONTROL Coworker]** den Zugriff auf einen Coworker. Ein [Produktprofil-Administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) muss diese Berechtigung zu Ihrem Produktprofil hinzufügen. Weitere Informationen finden Sie unter [Zugriffssteuerung](/help/technotes/access-control.md#access-control).
-
 * **Datenansichtszugriff**: Der -Mitarbeiter verwendet Ihre bestehenden Analysis Workspace- und Datenansichtsberechtigungen. Es kann nicht auf Daten oder Komponenten zugreifen, auf die Sie noch keinen Zugriff haben.
+
+<!--
+FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME.
+
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
+
+-->
 
 ### Wählen Sie zwischen Coworker in Workspace und der Coworker-Anwendung
 

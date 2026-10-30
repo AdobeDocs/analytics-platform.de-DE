@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
+source-git-commit: 5b0c9d764d17daa63316f8ab294aa9c8f7f94427
 workflow-type: tm+mt
-source-wordcount: '7431'
+source-wordcount: '7452'
 ht-degree: 93%
 ---
 
@@ -70,6 +70,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 |---|---|
 | **Oktober 2026** | |
+| Leitplanken für Datenansichten | Die [Leitplanke](/help/technotes/guardrails.md) für die maximale Anzahl von Datenansichten für eine Organisation (von 2.000 auf 5.000) wurde aktualisiert. |
 | Paid-Media-Daten mit Web-Daten verbinden | [Leitfaden für Anwendungsfälle](/help/use-cases/cross-channel/paid-media-web.md) So verbinden Sie Paid-Media-Daten mit Web-Daten. |
 | Auswahl für Visualisierungen sperren | Umstrukturierung [Datenquellen verwalten](/help/analysis-workspace/visualizations/t-sync-visualization.md) um die Konfiguration von Datenquelleneinstellungen von der Sperrung der Auswahl zu trennen. Es wurde auch erläutert[&#x200B; wie &quot;](/help/analysis-workspace/visualizations/t-sync-visualization.md#lock-selection)&quot; funktioniert, wenn eine Visualisierung in Zeilen in einer Freiformtabelle gesperrt ist, einschließlich der Vorgehensweise, wenn gesperrte Aufschlüsselungszeilen nicht mehr in der Tabelle sind. |
 | Groß-/Kleinschreibung für Segmentoperatoren | Es wurde klargestellt, dass bei Verwendung [Standardoperatoren](/help/components/segments/seg-operators.md#standard-operators) die Ergebnisse nicht zwischen Groß- und Kleinschreibung unterschieden werden, mit Ausnahme von **[!UICONTROL Übereinstimmungen]** und **[!UICONTROL stimmt nicht überein]**. |

@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: 5b0c9d764d17daa63316f8ab294aa9c8f7f94427
 workflow-type: tm+mt
 source-wordcount: '2440'
 ht-degree: 12%
@@ -144,7 +144,7 @@ Siehe auch Experience Platform [Leitplanken für die Echtzeit-Kundendatenplattfo
 | Name | Wert | Art von Limit | Beschreibung |
 |---|--:|---|---|
 | Projekte | 50.000 | Vom System erzwungene Leitplanken | Maximale Anzahl von Projekten für eine Organisation. |
-| Datenansichten | 2.000 | Vom System erzwungene Leitplanken | Maximale Anzahl [Datenansichten](../data-views/data-views.md) für eine Organisation. |
+| Datenansichten | 5.000 | Vom System erzwungene Leitplanken | Maximale Anzahl [Datenansichten](../data-views/data-views.md) für eine Organisation. |
 | Datenansichten | 500-1000 | Vom System erzwungene Leitplanken | Maximale Anzahl von Datenansichten für eine Verbindung. Der Wert variiert je nach Customer Journey Analytics-Paket (siehe Produktbeschreibung). |
 | Datensätze | 100 | Vom System erzwungene Leitplanken | Maximale Anzahl [Datensätze](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=de) pro Verbindung |
 | Verbindungen | 1.000 | Vom System erzwungene Leitplanken | Maximale Anzahl von [Verbindungen](../connections/overview.md) für eine Organisation. |
