@@ -38,13 +38,13 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
+source-git-commit: 80d2b7da2e2b6c12a44d7e9bffd821e58dbeeecc
 workflow-type: tm+mt
-source-wordcount: '4844'
+source-wordcount: '4894'
 ht-degree: 55%
 ---
 
-# Geführte Content Analytics-Konfiguration
+# Geführte Konfiguration für Content Analytics
 
 Mit der geführten Konfiguration können Sie Content Analytics schnell und einfach konfigurieren. Bei der geführten Konfiguration wird ein Assistent verwendet, um die Anforderungen für die automatische Konfiguration von Content Analytics für Ihre Organisation festzulegen. Im Bildschirm **[!UICONTROL Konfiguration]** können Sie entweder eine neue Konfiguration erstellen oder eine vorhandene Konfiguration bearbeiten.
 
@@ -69,8 +69,8 @@ Für jede Konfiguration stehen die folgenden Details zur Verfügung:
 |---|---|
 | **[!UICONTROL Name]** | Der Name der Konfiguration. |
 | **[!UICONTROL Erstellt von]** | Das technische Konto, mit dem die Konfiguration erstellt wurde. |
-| **[!UICONTROL Erstellt am]** | Der Zeitstempel, wann die Konfiguration erstellt wurde. |
-| **[!UICONTROL Geändert am]** | Der Zeitstempel, wann die Konfiguration zuletzt geändert wurde. |
+| **[!UICONTROL Erstellt am]** | Der Zeitstempel, zu dem die Konfiguration erstellt wurde. |
+| **[!UICONTROL Geändert am]** | Der Zeitstempel, zu dem die Konfiguration zuletzt geändert wurde. |
 | **[!UICONTROL Sandbox]** | Die Sandbox in der Organisation, in der Content Analytics (voraussichtlich) konfiguriert und implementiert wird. |
 | **[!UICONTROL Status]** | Der Status der Konfiguration. Der Status gibt an, für wie viele der aktivierten Kanäle die Konfiguration abgeschlossen ist. Verwenden ![InfoOutline](/help/assets/icons/InfoOutline.svg), um ein Popup mit weiteren Details zu öffnen. |
 
@@ -146,7 +146,7 @@ Wenn Sie bereits eine Verbindung ausgewählt haben, diese jedoch ändern möchte
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="Datenansicht"
->abstract="Für die Konfiguration der Inhaltsanalyse müssen Sie eine vorhandene Datenansicht auswählen. So können Sie Ihre Content Analytics-Daten mit anderen Daten zusammenführen."
+>abstract="Für die Konfiguration von Content Analytics müssen Sie eine vorhandene Datenansicht auswählen. So können Sie Ihre Content Analytics-Daten mit anderen Daten zusammenführen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
@@ -161,7 +161,7 @@ Wenn Sie bereits eine Verbindung ausgewählt haben, diese jedoch ändern möchte
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="Neue Datenansicht"
->abstract="Sie haben eine neue Datenansicht für diese Konfiguration ausgewählt. Die neue Datenansicht wird aktualisiert, sodass sie die Dimensionen und Metriken der Inhaltsanalyse einschließt. Diese Metriken und Dimensionen werden aus der ursprünglich ausgewählten Datenansicht entfernt.<br/><br/>Wenn der neuen Datenansicht eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Datensätze der Inhaltsanalyse einschließt. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt."
+>abstract="Sie haben eine neue Datenansicht für diese Konfiguration ausgewählt. Die neue Datenansicht wird aktualisiert, sodass sie die Content Analytics-Metriken und -Dimensionen einschließt. Diese Metriken und Dimensionen werden aus der ursprünglich ausgewählten Datenansicht entfernt.<br/><br/>Wenn der neuen Datenansicht eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Datensätze der Inhaltsanalyse einschließt. Die Content Analytics-Datensätze werden nicht aus der ursprünglich ausgewählten Verbindung entfernt."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
@@ -176,7 +176,7 @@ Wenn Sie bereits eine Verbindung ausgewählt haben, diese jedoch ändern möchte
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_new_dialog"
 >title="Neue Datenansicht"
->abstract="Sie haben eine neue Datenansicht für diese Konfiguration ausgewählt. Die neue Datenansicht wird aktualisiert, sodass sie die Dimensionen und Metriken der Inhaltsanalyse einschließt. Ähnliche Metriken und Dimensionen werden aus der vorhandenen Datenansicht entfernt.<br/>Wenn der neuen Datenansicht eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Datensätze der Inhaltsanalyse einschließt. Beachten Sie, dass Datensätze der Inhaltsanalyse nicht aus der vorhandenen Konfiguration entfernt werden."
+>abstract="Sie haben eine neue Datenansicht für diese Konfiguration ausgewählt. Die neue Datenansicht wird aktualisiert, sodass sie die Content Analytics-Metriken und -Dimensionen einschließt. Ähnliche Metriken und Dimensionen werden aus der vorhandenen Datenansicht entfernt.<br/>Wenn der neuen Datenansicht eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Datensätze der Inhaltsanalyse einschließt. Beachten Sie, dass Content Analytics-Datensätze nicht aus der vorhandenen Konfiguration entfernt werden."
 
 
 >[!CONTEXTUALHELP]
@@ -197,22 +197,22 @@ Wenn Sie bereits eine Verbindung ausgewählt haben, diese jedoch ändern möchte
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_new_dialog"
 >title="Ausgewählte Datenansichten"
->abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Content Analytics-Datensätze umfasst. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
+>abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Content Analytics-Datensätze umfasst. Die Content Analytics-Datensätze werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_change_dialog"
 >title="Ausgewählte Datenansichten"
->abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Content Analytics-Datensätze umfasst. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
+>abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Content Analytics-Datensätze umfasst. Die Content Analytics-Datensätze werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_current_cleanup_labels_dialog"
 >title="Ausgewählte Datenansichten"
->abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Content Analytics-Datensätze umfasst. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
+>abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Content Analytics-Datensätze umfasst. Die Content Analytics-Datensätze werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_prev_cleanup_labels_dialog"
 >title="Ausgewählte Datenansichten"
->abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Content Analytics-Datensätze umfasst. Die Datensätze der Inhaltsanalyse werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
+>abstract="Sie haben die ausgewählten Datenansichten für diese Konfiguration geändert. Die ausgewählten Datenansichten werden aktualisiert, sodass sie Content Analytics-Metriken und -Dimensionen umfassen. Diese Metriken und Dimensionen werden aus zuvor ausgewählten Datenansichten entfernt, die nicht mehr ausgewählt sind.<br/><br/>Wenn den ausgewählten Datenansichten eine andere Verbindung zugeordnet ist, wird die Verbindung aktualisiert, sodass sie Content Analytics-Datensätze umfasst. Die Content Analytics-Datensätze werden nicht aus der ursprünglich ausgewählten Verbindung entfernt.<br/><br/>Alle ausgewählten Datenansichten übernehmen die Kanäle, die Teil dieser Konfiguration sind."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_channels_button"
@@ -264,7 +264,7 @@ Anschließend können Sie den Kanal detaillierter konfigurieren. Diese Konfigura
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
->title="Datenerfassung für Speicherorte für mobile Erlebnisse"
+>title="Datenerfassung für Standorte mobiler Erlebnisse"
 >abstract="**Auszuschließende Erlebnisspeicherorte**"
 
 >[!CONTEXTUALHELP]
@@ -298,6 +298,8 @@ Für den mobilen Kanal können Sie [Erlebniserfassung und -definition](#experien
 
 In diesem Abschnitt können Sie auswählen, ob Erlebnisse in die Mobile-Daten einbezogen werden sollen, die Sie mit Content Analytics erfassen.  Für den Mobile-Kanal haben Sie sich mit der Adobe Experience Platform SDK für Content Analytics als Erlebnis registriert.
 
+Erlebnisdimensionen sind in Ihrem Datensatz und in Ihrer Datenansicht standardmäßig aktiviert. Die **[!UICONTROL Erlebnisse einschließen]** dient dazu, Content Analytics-Erlebnisse in der Datenerfassung zu aktivieren.
+
 Standardmäßig ist **[!UICONTROL Erlebnisse einschließen]** deaktiviert.
 
 Erwägen Sie nur, Erlebnisse einzubeziehen, wenn Sie Ihre Mobile App so instrumentiert haben, dass Erlebnisse registriert und Erlebnisansichten und -klicks verfolgt werden.
@@ -322,7 +324,7 @@ Konfigurieren der Datenerfassung:
     1. Geben Sie einen **[!UICONTROL Tags-Namen]** an, z. B. `ACA Test for Documentation`.
     1. Geben Sie **[!UICONTROL Domains]** an, z. B. `example.com`.
 
-* Geben Sie an, welche Erlebnisspeicherorte bei der Datenerfassung für Content Analytics ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Erlebnisspeicherorte ausschließen.
+* Geben Sie an, welche Erlebnisspeicherorte bei der Datenerfassung für Content Analytics ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Erlebnis-Speicherorte ausschließen.
 
   Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL Auszuschließende Erlebnisspeicherorte]** an. <br/>Beispiel: `^(?!.*documentation).*`, um alle Dokumentations-Erlebnisspeicherorte von Content Analytics auszuschließen.
 
@@ -372,7 +374,7 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_parameters_header"
 >title="Erlebniserfassung und -definition"
->abstract="Geben Sie die Parameter an, die bestimmen, wie Inhalte auf Ihrer Website gerendert werden."
+>abstract="Geben Sie die Parameter an, die bestimmen, wie Content auf Ihrer Website gerendert wird."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_new_include_experiences"
@@ -409,7 +411,7 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_header"
 >title="Datenerfassung"
->abstract="Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Seiten ausschließen."
+>abstract="Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Sorgen Sie dafür, dass Sie personenbezogene Seiten ausschließen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_boldheader"
@@ -419,17 +421,17 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="Datenerfassung"
->abstract="Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Assets ausschließen."
+>abstract="Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Sorgen Sie dafür, dass Sie personenbezogene Assets ausschließen."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="Datenerfassung"
->abstract="Sie können die Einstellungen für Seiten in der Adobe-Erweiterung für die Inhaltsanalyse in der Tag-Eigenschaft bearbeiten, die mit der aktuellen Konfiguration verknüpft ist."
+>abstract="Sie können die Einstellungen für Seiten in der Adobe Content Analytics-Erweiterung in der Tag-Eigenschaft bearbeiten, die mit der aktuellen Konfiguration verknüpft ist."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="Datenerfassung"
->abstract="Sie können die Einstellungen für Assets in der Adobe-Erweiterung für die Inhaltsanalyse in der Tag-Eigenschaft bearbeiten, die mit der aktuellen Konfiguration verknüpft ist."
+>abstract="Sie können die Einstellungen für Assets in der Adobe Content Analytics-Erweiterung in der Tags-Eigenschaft bearbeiten, die mit der aktuellen Konfiguration verknüpft ist."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tags_disabled_description "
@@ -457,7 +459,7 @@ Für den Web-Kanal können Sie [Erlebniserfassung und -definition](#experience-c
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_header"
 >title="Datenerfassung für Web-Assets"
->abstract="Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Assets ausschließen."
+>abstract="Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics **eingeschlossen** oder **ausgeschlossen** werden sollen. Sorgen Sie dafür, dass Sie personenbezogene Assets ausschließen."
 
 
 ### Erlebniserfassung und -definition {#web-experience-capture-and-definition}
@@ -468,8 +470,10 @@ Standardmäßig ist **[!UICONTROL Erlebnisse einschließen]** deaktiviert. Wenn 
 
 Ziehen Sie das Einschließen von Erlebnissen nur in Betracht, wenn Folgendes zutrifft:
 
-* Die Seiten auf der Site müssen unter Verwendung der Seiten-URL reproduzierbar sein.
+* Die Seiten auf der Website müssen unter Verwendung der Seiten-URL reproduzierbar sein.
 * Der Textinhalt, der einer Person angezeigt wird, kann über die Seiten-URL reproduziert werden und hängt nicht von Cookies oder anderen Personalisierungsmechanismen ab.
+
+Erlebnisdimensionen sind in Ihrem Datensatz und in Ihrer Datenansicht standardmäßig aktiviert. Die **[!UICONTROL Erlebnisse einschließen]** dient dazu, Content Analytics-Erlebnisse in der Datenerfassung zu aktivieren.
 
 >[!IMPORTANT]
 >
@@ -481,11 +485,11 @@ So schließen Sie Erlebnisse in eine neue oder nicht implementierte Konfiguratio
 
 ![Erfassung und Definition von Erlebnissen bei der Konfiguration von Content Analytics](../assets/aca-configuration-experience.png)
 
-1. Aktivieren Sie **[!UICONTROL Erlebnisse einschließen]**. Das Umschalten zum Aktivieren von Erlebnissen wirkt sich auf Folgendes aus:
+1. Aktivieren Sie **[!UICONTROL Erlebnisse einschließen]**. Der Umschalter zum Aktivieren von Erlebnissen wirkt sich auf Folgendes aus:
 
    * die Datenerfassung in der Content Analytics-Erweiterung
    * den Prozess, der Erlebnisattribute aus Content Analytics-Ereignisdaten generiert
-   * die Berichtsvorlage in Customer Journey Analytics
+   * Die Berichtsvorlage in Customer Journey Analytics.
 
 1. Wählen Sie **[!UICONTROL Regex hinzufügen]**, um eine Kombination aus einem regulären Domain-Ausdruck und Abfrageparametern hinzuzufügen.
 1. Geben Sie an, wie Inhalte auf Ihrer Website gerendert werden, indem Sie Kombinationen aus einem **[!UICONTROL regulären Domain-]**) und **[!UICONTROL Abfrageparametern]** definieren, die sich auf den Seiteninhalt auswirken.
@@ -530,11 +534,11 @@ Konfigurieren der Datenerfassung:
 
     Verwenden Sie eine neue Tags-Eigenschaft, wenn Sie mithilfe der [Content Analytics JavaScript-Bibliothek eine Tags-unabhängige Implementierung für den Webkanal erstellen &#x200B;](/help/content-analytics/config/tags-agnostic.md). Die Tags-Eigenschaft wird erstellt, Sie verwenden die Eigenschaft jedoch nicht in der agnostischen Implementierung. Für die agnostische Implementierung müssen Sie jedoch den Assistenten für geführte Konfigurationen mindestens einmal ausgeführt haben.
 
-* Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Seiten ausschließen.
+* Geben Sie an, welche Seiten bei der Datenerfassung für Content Analytics ein- oder ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie personenbezogene Seiten ausschließen.
 
   Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL Seiten zum Ein-/Ausschließen]** an. <br/>Beispiel: `^(?!.*documentation).*`, um alle Dokumentationsseiten aus Content Analytics auszuschließen.
 
-* Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics eingeschlossen oder ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie persönlich identifizierbare Assets ausschließen.
+* Geben Sie an, welche Assets bei der Datenerfassung für Content Analytics eingeschlossen oder ausgeschlossen werden sollen. Sorgen Sie dafür, dass Sie personenbezogene Assets ausschließen.
 
   Geben Sie eine **[!UICONTROL Zeichenfolge für reguläre Ausdrücke]** für **[!UICONTROL Ein-/Auszuschließendes Asset]** an. <br/>Beispiel: `^(?!.*(logo\.jpg)).*$`, um alle Logo-Bilder im JPEG-Format aus Content Analytics auszuschließen.
 
@@ -549,7 +553,7 @@ Konfigurieren der Datenerfassung:
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_header"
 >title="Überschreibungen des Headers"
->abstract="Erweiterte Funktion zur Umgehung der Bot-Erkennung oder des Gate-Traffics. Content Analytics schließt beim Aufrufen Ihrer Endpunkte Ihre benutzerdefinierten HTTP-Header ein."
+>abstract="Erweiterte Funktion zur Umgehung der Bot-Erkennung oder zur Steuerung des Traffics. Content Analytics schließt beim Aufrufen Ihrer Endpunkte Ihre benutzerdefinierten HTTP-Header ein."
 
 <!-- needs modification for mobile channel -->
 
@@ -733,7 +737,7 @@ Nachdem Sie alle erforderlichen Details angegeben haben, werden die Informatione
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="Bestätigung der Implementierung"
->abstract="Wenn Sie **[!UICONTROL Implementieren]** auswählen, konfigurieren Sie die Inhaltsanalyse basierend auf den in diesem Workflow getätigten Eingaben. Standardmäßig werden mehrere Einstellungen auf Grundlage dessen ausgewählt, was im Allgemeinen für die Inhaltsanalyse nützlich ist. Als für die Daten verantwortliche Person müssen Sie jedoch die Einstellungen der einzelnen Artefakte überprüfen, um zu bestätigen, dass die Einstellungen in Übereinstimmung mit Ihrer Datenschutzrichtlinie, Ihren vertraglichen Rechten und Pflichten sowie den Einverständnisanforderungen nach geltendem Recht implementiert werden.<br/><br/>Beachten Sie, dass Daten erst dann erfasst werden, wenn die mit dieser Konfiguration verknüpfte Tag-Bibliothek manuell veröffentlicht wird.<br/><br/>Um Bild- und Textattribute abzuleiten, ruft Adobe die Attribute ab, und zwar mithilfe:<ol><li>der URL der Seite, die zum Zeitpunkt des Site-Besuchs von Benutzenden gemäß den von Ihnen konfigurierten Datenerfassungseinstellungen erfasst wurde, und</li><li>der URL, unter der das Bild gehostet wird.</li></ol>Bilder, die auf Websites von Drittanbietern gehostet werden, dürfen nicht mit Tags versehen werden."
+>abstract="Wenn Sie **[!UICONTROL Implementieren]** auswählen, konfigurieren Sie die Inhaltsanalyse basierend auf den in diesem Workflow getätigten Eingaben. Standardmäßig werden mehrere Einstellungen auf Grundlage dessen ausgewählt, was im Allgemeinen für Content Analytics nützlich ist. Sie als Datenverantwortlicher müssen jedoch die Einstellungen der einzelnen Artefakte prüfen, um zu bestätigen, dass die Einstellungen in Übereinstimmung mit Ihrer Datenschutzrichtlinie, Ihren vertraglichen Rechten und Pflichten sowie den Einverständnisanforderungen nach geltendem Recht implementiert werden.<br/><br/>Beachten Sie, dass Daten erst dann erfasst werden, wenn die mit dieser Konfiguration verknüpfte Tag-Bibliothek manuell veröffentlicht wird.<br/><br/>Um Bild- und Textattribute abzuleiten, ruft Adobe die Attribute ab, und zwar mithilfe:<ol><li>der URL der Seite, die zum Zeitpunkt des Site-Besuchs von Benutzenden gemäß den von Ihnen konfigurierten Datenerfassungseinstellungen erfasst wurde, und</li><li>Die URL, unter der das Bild gehostet wird.</li></ol>Bilder, die auf Websites von Drittanbietern gehostet werden, dürfen nicht mit Tags versehen werden."
 
 Wenn Sie eine Konfiguration erstellen oder bearbeiten, haben Sie die folgenden Optionen:
 
@@ -754,7 +758,7 @@ Wenn Sie eine Konfiguration erstellen oder bearbeiten, haben Sie die folgenden O
 
 
   * **[!UICONTROL Konfiguration der Datenerfassung]**:
-    * Die neue oder vorhandene Tags-Eigenschaft ist so konfiguriert, dass sie die Content Analytics-Datenerfassung unterstützt. Diese Konfiguration impliziert die Einbeziehung der Content Analytics-Erweiterung von Adobe für Tags.
+    * Die neue oder vorhandene Tags-Eigenschaft ist so konfiguriert, dass sie die Content Analytics-Datenerfassung unterstützt. Diese Konfiguration impliziert die Einbeziehung der Adobe Content Analytics-Erweiterung für Tags.
     * Ein Datenstrom wird für Content Analytics-Ereignisse erstellt.
     * Die Content Analytics-Erweiterung von Adobe ist so konfiguriert, dass Content Analytics-Ereignisse an den Datenstrom für Content Analytics gesendet werden.
     * Wenn die Web-SDK oder Mobile-SDK nicht für die Tags-Eigenschaft konfiguriert ist, wird eine neue Web-SDK- oder Mobile-SDK-Konfiguration erstellt, um nur Content Analytics-Ereignisse zu senden.
