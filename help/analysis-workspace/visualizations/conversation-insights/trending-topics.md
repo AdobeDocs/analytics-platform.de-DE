@@ -7,19 +7,19 @@ hide: true
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 8%
+ht-degree: 16%
 ---
-# Trend-Themen {#trending-topics}
+# Themen im Trend {#trending-topics}
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
->title="Trend-Themen"
+>title="Themen im Trend"
 >abstract="Erstellen Sie eine Visualisierung, die eine hierarchische Aufschlüsselung der Trend-Themen mit Vorkommen und Prozentsätzen zeigt, damit Sie wichtige Themen in Konversationen identifizieren können."
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_panel"
->title="Trend-Themen"
->abstract="Analyse von Trend-Themen basierend auf der ausgewählten Rangfolgenmetrik Wählen Sie Themen aus, um einen Drilldown in bis zu fünf Ebenen durchzuführen. Suchen Sie nach bestimmten Themen und vergleichen Sie Themen mit anderen Datumsbereichen."
+>title="Themen im Trend"
+>abstract="Analysieren Sie Themen im Trend basierend auf der ausgewählten Ranking-Metrik. Wählen Sie Themen aus, um einen Drilldown bis zu fünf Ebenen tief durchzuführen. Suchen Sie nach bestimmten Themen und vergleichen Sie Themen mit anderen Datumsbereichen."
 
 {{release-limited-testing}}
 
@@ -42,7 +42,7 @@ Sie können nach bestimmten Themen suchen und die Anzahl und den Prozentsatz fü
 
 So erstellen und konfigurieren Sie eine **[!UICONTROL Trendthemen]**-Visualisierung:
 
-1. Fügen Sie ![&#x200B; Visualisierung &#x200B;](/help/assets/icons/Feed.svg)Feed **[!UICONTROL Trendthemen]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Fügen Sie ![ Visualisierung ](/help/assets/icons/Feed.svg)Feed **[!UICONTROL Trendthemen]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. In den **[!UICONTROL Trending Topics]** Visualisierungskonfiguration:
 
