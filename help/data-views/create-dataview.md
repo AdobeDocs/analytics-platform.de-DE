@@ -126,7 +126,7 @@ Dieser Abschnitt ist nur für Administratrierende sichtbar, denen Journey Optimi
 >[!CONTEXTUALHELP]
 >id="cja-enable-data-insights-data-view"
 >title="Für Data Insights Agent aktivieren"
->abstract="Diese Option aktiviert diese Datenansicht für die Verwendung mit Data Insights Agent. Data Insights Agent ist ein generativer KI-Konversationsagent, mit dem Sie Ihre Daten schnell mit Textaufforderungen analysieren können. Er erstellt relevante Visualisierungen in Analysis Workspace mithilfe von Komponenten aus Ihrer Datenansicht und unter Verwendung Ihrer tatsächlichen Daten."
+>abstract="Diese Option aktiviert diese Datenansicht für die Verwendung mit Data Insights Agent. Data Insights Agent ist ein auf generativer KI basierender Konversations-Agent, mit dem Sie Ihre Daten schnell mit Text-Prompts analysieren können. Er erstellt relevante Visualisierungen in Analysis Workspace mithilfe von Komponenten aus Ihrer Datenansicht und unter Verwendung Ihrer tatsächlichen Daten."
 
 <!-- markdownlint-enable MD034 -->
 

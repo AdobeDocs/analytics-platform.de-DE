@@ -7,19 +7,19 @@ hide: true
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 10%
+ht-degree: 20%
 ---
-# Konversationszusammenfassungen {#conversation-summaries}
+# Konversationszusammenfassung {#conversation-summaries}
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_button"
->title="Konversationszusammenfassungen"
->abstract="Erstellen Sie eine Visualisierung, die eine gefilterte Gruppe von Unterhaltungen zusammenfasst."
+>title="Konversationszusammenfassung"
+>abstract="Erstellen Sie eine Visualisierung, die eine gefilterte Gruppe von Konversationen zusammenfasst."
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_panel"
->title="Konversationszusammenfassungen"
->abstract="Zusammenfassen einer gefilterten Gruppe von Unterhaltungen. Legen Sie die Länge der Zusammenfassung fest. Siehe repräsentative Anführungszeichen von Kunden zur Validierung der Genauigkeit der extrahierten Signale. Wählen Sie ein Angebot aus, um die vollständige Unterhaltungswiederholung zu öffnen."
+>title="Konversationszusammenfassung"
+>abstract="Fassen Sie eine gefilterte Gruppe von Konversationen zusammen. Legen Sie die Länge der Zusammenfassung fest. Zeigen Sie repräsentative Zitate von Kundinnen und Kunden an, um die Genauigkeit der extrahierten Signale zu verifizieren. Wählen Sie ein Angebot aus, um die vollständige Unterhaltungswiederholung zu öffnen."
 
 {{release-limited-testing}}
 
