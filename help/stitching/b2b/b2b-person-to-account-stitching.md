@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: c244c7d5c08f2059046603d09b09fbe70f8bff07
 workflow-type: tm+mt
-source-wordcount: '2292'
+source-wordcount: '2330'
 ht-degree: 25%
 ---
 # B2B-Person mit Kontenzuordnung
@@ -46,7 +46,7 @@ Ohne Personen-Konto-Zuordnung wird jedes Ereignis, das keine Konto-ID enthält, 
 
 Die Zuordnung von Person zu Konto führt die folgenden Vorgänge für Ihre Datensätze aus:
 
-* **Personenidentität erhöhen**: Ähnlich wie beim [B2C-Stitching-](/help/stitching/overview.md) konfigurieren Sie ein Feld, das persistente Personen-IDs enthält. Mithilfe des Identitätsdiagramms wird die persistente Personen-ID für jedes Ereignis aus dem konfigurierten Namespace der Personenkennung zu einer Personen-ID hochgestuft.
+* **Personenidentität erhöhen**: Ähnlich wie beim [B2C-Stitching-Ansatz](/help/stitching/overview.md) konfigurieren Sie ein Feld, das persistente Personen-IDs enthält. Mithilfe des Identitätsdiagramms wird die persistente Personen-ID für jedes Ereignis aus dem konfigurierten Namespace der Personenkennung zu einer Personen-ID hochgestuft.
 * **Hinzufügen fehlender Kontoidentitäten**: Nachdem Sie die Personen-ID-Informationen für ein Ereignis abgerufen haben, wird die [Zuordnung von Person zu &#x200B;](#prerequisites)) verwendet, um die Kontoidentitätsinformationen abzuleiten und hinzuzufügen. Jede Kontoidentität, die für das Ereignis selbst verfügbar ist, wird als Fallback-Methode verwendet.
 
 ## Funktionsweise der B2B-Person-Konto-Zuordnung
@@ -70,7 +70,7 @@ In Customer Journey Analytics B2B edition werden Ereignisse ohne Konto-ID in die
 Die Zuordnung von B2B-Personen zu Konten verhindert, dass Ereignisse ignoriert und nicht aufgenommen werden, indem die folgenden Vorgänge verwendet werden:
 
 * [Personenidentitäten &#x200B;](#elevate-person-identities).
-* [Fügen Sie fehlende Kontoidentitäten hinzu](#add-missing-account-identitiers).
+* [Fügen Sie fehlende Kontoidentitäten hinzu](#add-missing-account-identities).
 
 
 ### Personenidentitäten erhöhen
@@ -89,8 +89,8 @@ Der Namespace der Personen-ID aus dem Datensatz „Person zu Konto“ kann mit d
 | B978BBW9 | Allgegenwart |
 | FS453GHI | Adobe |
 
-Diese Person wird mithilfe der diagrammbasierten Zuordnung zum Kontozuordnungsdatensatz erhöht. Beachten Sie, dass dies im Backend geschieht und nicht in den Daten des tatsächlichen Datensatzes widergespiegelt wird.
-In unserem Beispiel, bei dem Identitätsdiagramm-Links zwischen CRM-ID- und E-Mail-Namespaces verwendet werden, ist das Ergebnis eine aktualisierte Person, die einem Account-Zuordnungsdatensatz mit erhöhten Personen-IDs zugeordnet ist.
+Diese Person wird mithilfe der diagrammbasierten Zuordnung zum Kontozuordnungsdatensatz erhöht. Dies geschieht im Hintergrund und wird nicht in den Daten des tatsächlichen Datensatzes angezeigt.
+In dem Beispiel, bei dem Identitätsdiagramm-Links zwischen CRM-ID- und E-Mail-Namespaces verwendet werden, ist das Ergebnis eine aktualisierte Person, die einem Account-Zuordnungsdatensatz mit erhöhten Personen-IDs zugeordnet ist.
 
 | CRM-ID | Erhöhte Personen-ID | Konto-ID |
 |---|---|---|
@@ -136,7 +136,7 @@ Der Datensatz „Person zu Konto“ wird verwendet, um die Konto-IDs im Erlebnis
 
 ### Ergebnis
 
-Dieses Beispiel zeigt, wie die B2B-Personen-Konto-Zuordnung Ihre Erlebnisereignisdaten mit fehlenden Personenkennungen und fehlenden oder falschen Kontokennungen aktualisiert, basierend auf Identitätsdiagrammdaten und dem von Ihnen als Eingabe angegebenen Datensatz für die Zuordnung von Person zu Konto.
+Dieses Beispiel zeigt, wie die B2B-Personen-Konto-Zuordnung Ihre Erlebnisereignisdaten mit fehlenden Personenkennungen und fehlenden oder falschen Kontokennungen aktualisiert, basierend auf Identitätsdiagrammdaten und Ihrem bereitgestellten Personenkonto-Zuordnungsdatensatz.
 
 
 ## Voraussetzungen
@@ -149,7 +149,8 @@ Bevor Sie die Zuordnung von B2B-Personen zu Konten aktivieren, bereiten Sie die 
 
 >[!IMPORTANT]
 >
->Das Feld Personen-ID in Ihrem Personenkonto-Datensatz muss in Ihrem Schema als Identität markiert sein.
+>* Das Feld Personen-ID in Ihrem Personenkonto-Datensatz muss in Ihrem Schema als Identität markiert sein.
+>* Der Datensatz für die Suche nach einer Person im Konto kann das standardmäßige B2B-Schema verwenden, das auf der Klasse „XDM Business Account Person Relation“ basiert, oder ein benutzerdefiniertes relationales Schema, bei dem die Felder „Personen-ID“ und „Konto-ID“ einfache Zeichenfolgen sind. Schemata, die das Array **[!UICONTROL Objekt „personComponents]** zum Abrufen von Konto-ID-Informationen verwenden, werden für Personenkonto-Datensätze nicht unterstützt.
 
 ## Aktivieren der Person-zu-Konto-Zuordnung {#enable-account-stitching}
 
@@ -277,7 +278,7 @@ Nachdem Sie die Konfiguration der B2B-Person für die Kontozuordnung konfigurier
 
 >[!IMPORTANT]
 >
->Sobald eine Verbindung gespeichert wurde, wird die Konfiguration der B2B-Person-Konto-Zuordnung unveränderlich. Um Ihre Einstellungen nach dem Speichern anzuzeigen, wählen Sie **B2B-Stitching-Konfiguration öffnen**. Alle Felder befinden sich in einem schreibgeschützten Zustand. Wenn außerdem der Datensatz, der für die Zuordnung [Person zu Konto](#prerequisites) verwendet wird, in Experience Platform gelöscht wird, wird die Zuordnungskonfiguration gelöscht und die Verbindung geht in einen ungültigen Status über, der mit einer Warnmeldung in der Benutzeroberfläche signalisiert wird.
+>Sobald eine Verbindung gespeichert wurde, wird die Konfiguration der B2B-Person-Konto-Zuordnung unveränderlich. Um Ihre Einstellungen nach dem Speichern anzuzeigen, wählen Sie **B2B-Stitching-Konfiguration öffnen**. Alle Felder befinden sich in einem schreibgeschützten Zustand. Wenn außerdem der Datensatz [Person-Konto-Zuordnung](#prerequisites) in Experience Platform gelöscht wird, wird die Zuordnungskonfiguration gelöscht und die Verbindung wird ungültig, was durch eine Warnung signalisiert wird.
 
 ## Zeitplan für die Datenaktualisierung
 
