@@ -2,7 +2,7 @@
 user-guide-title: Handbuch zu Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Adobe Experience Platform.
 breadcrumb-title: Handbuch zu Customer Journey Analytics
-source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
+source-git-commit: e498c374e8bfe12d7adda6ff9e7870a86f91dd5c
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 88%
@@ -241,9 +241,9 @@ ht-degree: 88%
       + [Überblick](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
       + [Konfigurieren](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
       + [Fehlerbehebung](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
-    + {hide-from-toc}[Konversationsüberprüfung](../analysis-workspace/visualizations/conversation-insights/conversation-review.md)
-    + {hide-from-toc}[Konversationszusammenfassungen](../analysis-workspace/visualizations/conversation-insights/conversation-summaries.md)
-    + {hide-from-toc}[Trendthemen](../analysis-workspace/visualizations/conversation-insights/trending-topics.md)
+    + [Konversationsüberprüfung](../analysis-workspace/visualizations/conversation-insights/conversation-review.md)
+    + [Konversationszusammenfassung](../analysis-workspace/visualizations/conversation-insights/conversation-summaries.md)
+    + [Themen im Trend](../analysis-workspace/visualizations/conversation-insights/trending-topics.md)
     + [Bereich (gestapelt)](../analysis-workspace/visualizations/area.md)
     + [Balken (gestapelt)](../analysis-workspace/visualizations/bar.md)
     + [Bullet](../analysis-workspace/visualizations/bullet-graph.md)

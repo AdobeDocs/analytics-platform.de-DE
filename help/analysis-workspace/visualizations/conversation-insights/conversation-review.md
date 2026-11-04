@@ -3,10 +3,9 @@ description: Verwenden Sie die Visualisierung der Konversation, um eine einzelne
 title: Konversationsprüfung
 feature: Visualizations
 role: User
-hide: true
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: 6b84720eae3c0c6cd6cfd204591fb9d5f1f5cdb0
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '193'
 ht-degree: 16%
 ---
 # Konversationsüberprüfung
@@ -24,7 +23,7 @@ ht-degree: 16%
 >abstract="Verstehen des Kontexts und des Flusses einer einzelnen Konversation, einschließlich Zeitstempel und Signale. Konfigurieren Sie, welche Signale angezeigt werden sollen."
 
 
-Die Visualisierung ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Konversationsüberprüfung]** zeigt den vollständigen turnusmäßigen Austausch zwischen Kunde und Agent.
+Die Visualisierung ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Konversationsüberprüfung]** zeigt den vollständigen turnusmäßigen Austausch zwischen Kunde und Agent als Teil von [Konversationserkenntnissen](/help/conversation-insights/overview.md).
 
 Die Visualisierung hilft Ihnen, den Kontext und den Fluss einer einzelnen Konversation zu verstehen, einschließlich Zeitstempeln und Signalen. Sie können konfigurieren, welche Signale angezeigt oder nicht angezeigt werden sollen.
 
