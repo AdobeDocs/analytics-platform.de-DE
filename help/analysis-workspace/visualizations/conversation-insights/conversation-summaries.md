@@ -3,11 +3,10 @@ description: Verwenden Sie die Visualisierung der Konversationszusammenfassungen
 title: Konversationszusammenfassungen
 feature: Visualizations
 role: User
-hide: true
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: 30311dc0e753778c6e5316d82ffba25748d8315e
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 20%
+source-wordcount: '407'
+ht-degree: 17%
 ---
 # Konversationszusammenfassung {#conversation-summaries}
 
@@ -23,7 +22,7 @@ ht-degree: 20%
 
 {{release-limited-testing}}
 
-Mit ![&#x200B; Visualisierung &#x200B;](/help/assets/icons/Summarize.svg)Zusammenfassen **[!UICONTROL Konversationszusammenfassungen]** können Sie eine gefilterte Gruppe von Konversationen zusammenfassen.
+Die ![KI](/help/assets/icons/AI.svg) **[!UICONTROL Konversationszusammenfassungen]** Visualisierung ermöglicht es Ihnen, eine gefilterte Gruppe von Konversationen als Teil von &quot;[&#x200B; Insights“ &#x200B;](/help/conversation-insights/overview.md).
 
 Die Visualisierung zeigt eine Zusammenfassung der ausgewählten Metrik (z. B. Konversationen) und zeigt Unterthemen oder wörtliche Kommentare an, wenn Sie die Visualisierung so konfiguriert haben, dass sie Unterthemen enthält.
 
@@ -42,7 +41,7 @@ Die Visualisierung zeigt eine Zusammenfassung der ausgewählten Metrik (z. B. Ko
 
 So erstellen und konfigurieren Sie eine **[!UICONTROL Konversationszusammenfassungen]** Visualisierung:
 
-1. Fügen Sie eine Visualisierung ![Zusammenfassen](/help/assets/icons/Summarize.svg) **[!UICONTROL Konversationszusammenfassungen]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Fügen Sie eine ![KI](/help/assets/icons/AI.svg)-Visualisierung **[!UICONTROL Konversationszusammenfassungen]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. In der **[!UICONTROL Konversationszusammenfassungen]** Visualisierungskonfiguration:
 
@@ -72,6 +71,13 @@ So verwenden Sie die Visualisierung:
 
 * Wenn Sie [Unterthemen eingebunden haben](#settings) wählen Sie **[!UICONTROL Unterthemen]**, um Unterthemen anzuzeigen, oder **[!UICONTROL Ausführliche Kommentare]**, um ausführliche Kommentare anzuzeigen.
 * Wenn Sie &quot;**[!UICONTROL Kommentare]** ausgewählt haben, wählen Sie ![DateiSuchen](/help/assets/icons/FileSearch.svg), um eine neue Visualisierung [**[!UICONTROL Konversationsüberprüfung]**](./conversation-review.md) für die spezifische Konversation zu öffnen, zu der der wörtliche Kommentar gehört.
+
+So durchsuchen Sie schnell mehrere Konversationsüberprüfungen:
+
+1. Erstellen Sie eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) mit **[!UICONTROL Konversations-ID]** und **[!UICONTROL Konversationsname]** als Dimensionen.
+1. Wählen Sie die Freiformtabelle als Datenquelle für die Visualisierung **[!UICONTROL Konversationsüberprüfung]** aus.
+
+Wählen Sie eine Konversation in der Freiformtabelle aus, um die **[!UICONTROL Konversationsüberprüfung]** automatisch mit den Details der ausgewählten Konversation zu aktualisieren.
 
 ## Einstellungen
 

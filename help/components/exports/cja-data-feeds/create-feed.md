@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: bccb25182630e18943a52ceca621cdfd6696b819
+source-git-commit: 22ec8a3fc4334e49e06986fdf52b27f3e97bef75
 workflow-type: tm+mt
-source-wordcount: '4243'
-ht-degree: 16%
+source-wordcount: '4056'
+ht-degree: 13%
 ---
 # Erstellen eines Daten-Feeds
 
@@ -43,9 +43,9 @@ Stellen Sie Adobe beim Erstellen eines Daten-Feeds Folgendes zur Verfügung:
 
 * Die Häufigkeit, mit der Daten gesendet werden (einschließlich der Verarbeitungsverzögerung zur Erfassung verspäteter Ereignisse)
 
-Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse zu Daten-Feeds verfügen und sicherstellen, dass Sie alle Voraussetzungen erfüllen. Weitere Informationen finden Sie unter [Datenfeeds – Überblick](data-feed-overview.md).
+Bevor Sie einen Datenfeed erstellen, ist es wichtig, dass Sie die Grundlagen von Datenfeeds verstehen und sicherstellen, dass Sie alle Voraussetzungen erfüllen. Weitere Informationen finden Sie unter [Datenfeeds – Überblick](data-feed-overview.md).
 
-## Erstellen oder Konfigurieren eines Daten-Feeds {#create-and-configure-data-feed}
+## Erstellen und Konfigurieren eines Daten-Feeds {#create-and-configure-data-feed}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -70,7 +70,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_frequency_granularity"
 >title="Häufigkeit und Granularität"
->abstract="**Versandhäufigkeit** (Live-Feeds): Wie oft der Daten-Feed gesendet wird. Stündliche Sendungen enthalten die Daten einer Stunde; tägliche Sendungen enthalten die Daten eines Tages. Der Lookback-Datumsbereich und die Verarbeitungsverzögerung können sich ebenfalls darauf auswirken, welche Ereignisse einbezogen werden.<p>**Granularität** (Aufstockungs-Feeds): Das zur Aufteilung historischer Daten verwendete Zeitintervall. Jeder Chunk enthält die Daten eines Tages und wird so schnell wie möglich gesendet, nicht einmal pro Tag. Dieses Feld ist immer auf „Täglich“ festgelegt und kann nicht geändert werden.</p>"
+>abstract="**Versandhäufigkeit** (Live-Feeds): Wie oft der Daten-Feed gesendet wird. Stündliche Sendungen enthalten die Daten einer Stunde; tägliche Sendungen enthalten die Daten eines Tages.<p>Jeder Versand blickt außerdem auf ein rollierendes 30-tägiges Verarbeitungsfenster zurück, um Segmente zu qualifizieren, Sitzungen zu berechnen und Dimensionswerte beizubehalten. Das Verarbeitungsfenster und die Verarbeitungsverzögerung können sich darauf auswirken, welche Ereignisse einbezogen werden.</p><p>**Granularität** (Aufstockungs-Feeds): Das Zeitintervall, das zum Aufteilen historischer Daten verwendet wird. Jeder Chunk enthält die Daten eines Tages und wird so schnell wie möglich gesendet, nicht einmal pro Tag. Dieses Feld ist immer auf „Täglich“ festgelegt und kann nicht geändert werden.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -94,7 +94,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Name**] | Der Name des Daten-Feeds. Namen müssen in der ausgewählten Datenansicht eindeutig sein und können bis zu 255 Zeichen lang sein. <!--[Learn more](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique)--> |
+   | [!UICONTROL **Name**] | Der Name des Datenfeeds. Namen müssen in der ausgewählten Datenansicht eindeutig sein und können bis zu 255 Zeichen lang sein. <!--[Learn more](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique)--> |
    | [!UICONTROL **Tags**] | Wenden Sie beliebige Tags auf den Daten-Feed an, um die Kategorisierung zu erleichtern. <!--You can filter on tags as described in [Filter and search the list of data feeds](/help/export/analytics-data-feed/df-manage-feeds.md#filter-and-search-the-list-of-data-feeds) in [Manage data feeds](/help/export/analytics-data-feed/df-manage-feeds.md).--> |
    | [!UICONTROL **Beschreibung**] | Geben Sie eine Beschreibung für den Daten-Feed ein (bis zu 500 Zeichen). Die von Ihnen hinzugefügte Beschreibung ist beim Bearbeiten des Daten-Feeds sichtbar. |
    | [!UICONTROL **Datenansicht**] | Wählen Sie die Datenansicht aus, die die zu exportierenden Daten enthält.<p>Beachten Sie bei der Auswahl einer Datenansicht Folgendes:</p> <ul><li>Wenn mehrere Daten-Feeds für dieselbe Datenansicht erstellt werden, muss jeder Daten-Feed unterschiedliche Spaltendefinitionen haben.</li><li>Die Liste der verfügbaren Spalten hängt vom Anmeldeunternehmen ab, zu dem die ausgewählte Datenansicht gehört. Wenn Sie die Datenansicht ändern, kann sich die Liste der verfügbaren Spalten ändern. </li></ul> |
@@ -115,7 +115,7 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
    | Option | Funktion |
    | --------- | ---------- |
-   | [!UICONTROL **Empfohlen**] | Sortiert Komponenten nach den am Anfang der Liste empfohlenen Komponenten. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrem Unternehmen verwendet werden, werden weiter oben in der Liste angezeigt. |
+   | [!UICONTROL **Empfohlen**] | Sortiert Komponenten so, dass empfohlene Komponenten am Anfang der Liste stehen. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrem Unternehmen verwendet werden, werden weiter oben in der Liste angezeigt. |
    | [!UICONTROL **Alphabetisch**] | Sortiert Komponenten alphabetisch. |
    | [!UICONTROL **Kategorisch**] | Sortiert Komponenten ähnlich wie [!UICONTROL **Empfohlen**] mit dem Unterschied, dass berechnete Metriken und Standardmetriken separat gruppiert werden, anstatt zusammengemischt zu werden. |
 
@@ -174,9 +174,8 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
    | [!UICONTROL **Startdatum**] | Das Datum, an dem der Daten-Feed beginnt. Bei Live-Feeds muss dies heute oder ein Datum in der Zukunft sein. Bei Aufstockungs-Feeds muss es sich um ein vergangenes Datum im Datenaufbewahrungsfenster der Datenansicht handeln. Das Startdatum basiert auf der Zeitzone der Datenansicht. |
    | [!UICONTROL **Ablaufdatum**] <br/>Nur für Live-Feeds verfügbar | Das Datum, an dem der Daten-Feed abläuft und nicht mehr ausgeführt wird. Das Datum basiert auf der Zeitzone der Datenansicht. |
    | [!UICONTROL **Enddatum**]<br/> Nur für Aufstockungs-Feeds verfügbar | Das Datum, an dem der Daten-Feed endet. Das Enddatum darf nicht in der Zukunft liegen. Das Datum basiert auf der Zeitzone der Datenansicht. |
-   | [!UICONTROL **Häufigkeit**]<br/> Nur für Live-Feeds verfügbar | Legen Sie fest, wie oft der Daten-Feed gesendet werden soll. Ereignisse mit Zeitstempeln, die in das Häufigkeitsfenster fallen, werden in den Daten-Feed-Versand aufgenommen. Die Felder [!UICONTROL **Lookback**] Datumsbereich und [!UICONTROL **Verarbeitungsverzögerung**] können sich auch darauf auswirken, welche Ereignisse für die von Ihnen gewählte Versandfrequenz in die Daten aufgenommen werden.<p>Wählen Sie diese Option aus, um Daten aus einer Stunde oder aus Daten aus einem Tag aufzunehmen.</p><ul><li>**Täglich**: Feeds enthalten Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht.</li><li>**Stündlich**: Feeds enthalten Daten für eine einzige Stunde.</li></ul> |
+   | [!UICONTROL **Häufigkeit**]<br/> Nur für Live-Feeds verfügbar | Legen Sie fest, wie oft der Daten-Feed gesendet werden soll. Ereignisse mit Zeitstempeln, die in das Häufigkeitsfenster fallen, werden in den Daten-Feed-Versand aufgenommen. <p>Wählen Sie diese Option aus, um Daten aus einer Stunde oder aus Daten aus einem Tag aufzunehmen.</p><ul><li>**Täglich**: Feeds enthalten Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht.</li><li>**Stündlich**: Feeds enthalten Daten für eine einzige Stunde.</li></ul> <p>Jeder Versand verwendet außerdem ein rollierendes 30-tägiges Verarbeitungsfenster, das zum Häufigkeitsfenster führt und dieses einschließt, um Segmente zu qualifizieren, Sitzungen zu berechnen und Dimensionswerte beizubehalten. Das Verarbeitungsfenster und das Feld [!UICONTROL **Verarbeitungsverzögerung**] können sich beide darauf auswirken, welche Ereignisse eingeschlossen werden. Weitere Informationen finden Sie unter [Grundlegendes zum Verarbeitungsfenster](#data-feed-processing-window) und [Grundlegendes zur Verarbeitungsverzögerung](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Granularität**]<br/> Nur für Aufstockungs-Feeds verfügbar | Das Zeitintervall, das zum Aufteilen historischer Daten in Blöcke verwendet wird. Jeder Chunk enthält Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht. <p>Die Granularität bestimmt, wie die Daten gruppiert werden, und nicht, wie oft sie bereitgestellt werden. Aufstockungsdaten werden so schnell wie möglich bereitgestellt, nicht einmal pro Tag.</p><p>Dieses Feld ist immer auf &quot;[!UICONTROL **&quot; festgelegt**] kann nicht geändert werden.</p> |
-   | [!UICONTROL **Lookback-Datumsbereich**] | Steuert, wie weit Customer Journey Analytics bei der Verarbeitung der Daten-Feed-Bereitstellung zurückblickt. Der Standardwert ist 30 Tage.<p>Das Häufigkeitsfenster (Stunde oder Tag) bestimmt, welche Ereignisse im Daten-Feed enthalten sind, während der **Lookback-Datumsbereich** den erforderlichen historischen Kontext bereitstellt, um diese Ereignisse korrekt zu klassifizieren.</p><p>Segmentqualifikation, Dimensionspersistenz, Sitzungsberechnung und Transformationen abgeleiteter Felder können sich auf alle eingeschlossenen Ereignisse auswirken.</p> <p>Bevor Sie diese Option konfigurieren, lesen Sie die Details und Beispiele im folgenden Abschnitt [Grundlegendes zum Lookback-Datumsbereich](#data-feed-lookback-date-range).</p> |
    | [!UICONTROL **Verarbeitungsverzögerung**] | Die Zeitspanne, die Customer Journey Analytics vor dem Verarbeiten einer Daten-Feed-Datei wartet. Alle verspätet eintreffenden Ereignisse, die während der Verarbeitungsverzögerung eingehen, werden im Daten-Feed berücksichtigt. <p>Wählen Sie eine Verzögerung aus, die lang genug ist, damit die langsamsten Daten in Ihrer Verbindung die Verarbeitung abschließen. Wenn die Verzögerung zu kurz ist, werden Daten, die noch verarbeitet werden, nicht in die Daten-Feed-Datei einbezogen.</p><p>Die minimale Verarbeitungsverzögerung beträgt 2 Stunden. Die Standardeinstellung basiert auf den Datensätzen in Ihrer Verbindung. Wenn das Zusammenfügen beispielsweise aktiviert ist, ist der Standardwert 6 Stunden. Einige Datentypen erfordern eine längere Verzögerung. Die ausgewählte Verzögerung hängt von den Datentypen in Ihrer Verbindung ab, z. B. Streaming-, Batch-, zugeordnete, Lookup- oder Profildaten.</p><p>Bevor Sie diese Option konfigurieren, lesen Sie die Details und Beispiele im folgenden Abschnitt [Grundlegendes zur Verarbeitungsverzögerung](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Komprimierungsformat**] | Wählen Sie das Komprimierungsformat für die Parquet-Ausgabedateien aus, die an Ihr Cloud-Ziel gesendet werden. Wählen Sie aus den folgenden Formaten:<ul><li>[!UICONTROL **Snappy**]: Schnelle Komprimierung und Dekomprimierung bei moderaten Dateigrößen. Wird von modernen Datenplattformen wie BigQuery, Snowflake und Apache Spark weithin unterstützt.</li><li>[!UICONTROL **GZip**]: Grob kompatibel, auch mit Tools, die Snappy nicht nativ unterstützen. Empfohlen, wenn Ihre nachgelagerte Pipeline einen weithin anerkannten Komprimierungsstandard erfordert.</li><li>[!UICONTROL **Z Standard (Zstd)**]: Hohe Komprimierungseffizienz mit schneller Dekomprimierung. Geeignet, wenn die Minimierung der Dateigröße eine Priorität ist und Ihre Tools Zstd unterstützen.</li></ul> |
 
@@ -207,31 +206,19 @@ Bevor Sie einen Daten-Feed erstellen, müssen Sie über grundlegende Kenntnisse 
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-## Grundlegendes zum Lookback-Datumsbereich {#data-feed-lookback-date-range}
+## Erläuterung des Verarbeitungsfensters {#data-feed-processing-window}
 
-<!-- markdownlint-disable MD034 -->
+Das **Verarbeitungsfenster** ist ein rollierender Zeitraum von 30 Tagen, der zum ausgewählten Häufigkeitsfenster (Stunde oder Tag) führt und dieses einschließt. Customer Journey Analytics verwendet die Daten im Verarbeitungsfenster, um jeden Daten-Feed-Versand zu verarbeiten. Das Verarbeitungsfenster beträgt immer 30 Tage und kann nicht geändert werden.
 
->[!CONTEXTUALHELP]
->id="cja_datafeed_lookback_date_range"
->title="Lookback-Datumsbereich"
->abstract="Steuert, wie weit Customer Journey Analytics bei der Verarbeitung jeder Bereitstellung zurückblickt.<p>Das Häufigkeitsfenster (Stunde oder Tag) bestimmt, welche Ereignisse im Daten-Feed enthalten sind, während der **Lookback-Datumsbereich** den erforderlichen historischen Kontext bereitstellt, um diese Ereignisse korrekt zu klassifizieren.</p><p>Segmentqualifikation, Dimensionspersistenz, Sitzungsberechnung und Transformationen abgeleiteter Felder können sich auf alle eingeschlossenen Ereignisse auswirken.</p><p>Ein längerer Lookback-Zeitraum verbessert die Genauigkeit, ein kürzerer Lookback-Zeitraum verbessert die Leistung.</p>"
+Das Häufigkeitsfenster bestimmt, welche Ereignisse im Versand enthalten sind. Das Verarbeitungsfenster liefert den historischen Kontext, der erforderlich ist, um diese Ereignisse korrekt zu klassifizieren, z. B. welche Segmente sie für sich qualifizieren, zu welcher Sitzung sie gehören und welche Dimensionswerte für sie bestehen bleiben.
 
-<!-- markdownlint-enable MD034 -->
+Das Verarbeitungsfenster funktioniert zusammen mit dem Häufigkeitsfenster ähnlich wie das Analysis Workspace-Berichtsfenster. Es gibt jedoch [wesentliche Unterschiede](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#processing-window). Diese Unterschiede können zu Datendiskrepanzen zwischen Workspace-Berichten und Daten-Feed-Sendungen führen.
 
-Der Lookback-Datumsbereich steuert, wie weit Customer Journey Analytics bei der Verarbeitung jedes Daten-Feed-Versands zurückblickt.
-
-Ereignisse müssen weiterhin Zeitstempel aufweisen, die in das Häufigkeitsfenster (Stunde oder Tag) fallen, damit sie in den Versand einbezogen werden. Die Daten, die in den **Lookback-Datumsbereich** fallen, bieten jedoch den erforderlichen historischen Kontext, um diese Ereignisse korrekt zu klassifizieren.
-
-Beachten Sie beim Konfigurieren dieser Option die folgenden wichtigen Konzepte:
-
-* Ein längerer Lookback-Datumsbereich führt in der Regel zu genaueren Daten; ein kürzerer Bereich führt zu einer besseren Versandleistung.
-* Der Lookback-Datumsbereich funktioniert zusammen mit dem Häufigkeitsfenster ähnlich wie der Datumsbereich des Analysis Workspace-Berichts. Es gibt jedoch [wesentliche Unterschiede](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). Diese Unterschiede können zu Datendiskrepanzen zwischen Workspace-Berichten und Daten-Feed-Sendungen führen.
-
-Segmentqualifikation, Sitzungsberechnung, Dimensionspersistenz und abgeleitete Feldtransformationen werden bei der Verarbeitung von Daten im Lookback-Datumsbereich jeweils berücksichtigt:
+Segmentqualifikation, Sitzungsberechnung, Dimensionspersistenz und abgeleitete Feldtransformationen werden jeweils bei der Verarbeitung von Daten im Verarbeitungsfenster berücksichtigt:
 
 ### Segmentqualifikation
 
-Wenn ein Segment auf Ihre Daten-Feed-Definition angewendet wird, bestimmen Daten innerhalb des Lookback-Datumsbereichs, welche Ereignisse, Sitzungen oder Personen für das Segment qualifiziert sind. Die Container-Einstellung des Segments bestimmt den Umfang. (Mögliche Container sind: Person, Sitzung oder Ereignis. B2B umfasst die folgenden zusätzlichen Container: Globales Konto, Konto, Opportunity, Einkaufsgruppe.)
+Wenn ein Segment auf Ihre Daten-Feed-Definition angewendet wird, bestimmen Daten innerhalb des Verarbeitungsfensters, welche Ereignisse, Sitzungen oder Personen für das Segment qualifiziert sind. Die Container-Einstellung des Segments bestimmt den Umfang. (Mögliche Container sind: Person, Sitzung oder Ereignis. B2B umfasst die folgenden zusätzlichen Container: Globales Konto, Konto, Opportunity, Einkaufsgruppe.)
 
 >[!BEGINSHADEBOX]
 
@@ -244,35 +231,33 @@ Zu diesem Zweck wenden Sie ein Segment mit dem Namen _Benutzer in Campaign B_ au
 In diesem Fall werden Benutzer nur dann in den Daten-Feed aufgenommen, wenn sie **beide** der folgenden Bedingungen erfüllen:
 
 * Der Benutzer hatte ein Ereignis mit einem Zeitstempel, das sich im Datenfeed-Häufigkeitsfenster befindet (die angegebene Stunde oder der angegebene Tag des Daten-Feeds).
-* Der Benutzer hat sich für das Segment _Campaign B_ **irgendwann innerhalb des Lookback-Datumsbereichs)**.
+* Der Benutzer hat sich für das Segment _Campaign B_ **irgendwann im Verarbeitungsfenster)**.
 
-  Für ein qualifizierendes Ereignis, das vor 9 Tagen aufgetreten ist, bedeutet dies, dass der Benutzer **wäre**) in den Daten-Feed aufgenommen würde, wenn der Lookback-Datumsbereich auf 30 Tage festgelegt wäre, der Benutzer **wäre aber nicht** Daten-Feed eingeschlossen, wenn der Lookback-Datumsbereich auf 7 Tage festgelegt wäre.
+  Beispielsweise ist ein Benutzer, der sich vor 9 Tagen für das Segment qualifiziert hat **im Daten** Feed enthalten. Ein Benutzer, der sich zuletzt vor 45 Tagen qualifiziert hat **ist nicht**, da dieses Ereignis außerhalb des 30-tägigen Verarbeitungsfensters liegt.
 
 >[!ENDSHADEBOX]
 
 ### Sitzungsberechnung
 
-Die Sitzungsgrenzen werden anhand aller Ereignisse im Lookback-Datumsbereich berechnet, nicht nur anhand der Ereignisse im Versandfenster. Eine Sitzung, die vor dem Versandfenster gestartet wurde, wird weiterhin als dieselbe Sitzung erkannt.
+Sitzungsgrenzen werden anhand aller Ereignisse im Verarbeitungsfenster berechnet, nicht nur anhand der Ereignisse im Häufigkeitsfenster. Eine Sitzung, die vor dem Frequenzfenster gestartet wurde, wird weiterhin als dieselbe Sitzung erkannt.
 
 Die Sitzungs-ID basiert auf der Person, der Sitzungsstartzeit und den Sitzungseinstellungen in Ihrer Datenansicht. Eine Sitzung behält die gleiche Sitzungs-ID für alle Sendungen bei, sodass Sie Ereignisse aus einer Sitzung verbinden können, die mehrere stündliche oder tägliche Sendungen umfasst.
 
 Beachten Sie beim Arbeiten mit Sitzungen in Daten-Feeds Folgendes:
 
-* Wenn eine Sitzung vor dem Lookback-Datumsbereich gestartet wurde, sind die früheren Ereignisse nicht verfügbar, sodass die Sitzungswerte von Analysis Workspace abweichen können. Weitere Informationen finden Sie unter [Grundlegendes zu Datendiskrepanzen zwischen Daten-Feeds und Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md).
+* Wenn eine Sitzung vor dem Verarbeitungsfenster gestartet wurde, sind ihre früheren Ereignisse nicht verfügbar, sodass die Sitzungswerte von Analysis Workspace abweichen können. Weitere Informationen finden Sie unter [Grundlegendes zu Datendiskrepanzen zwischen Daten-Feeds und Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md).
 * Durch Ändern der Sitzungseinstellungen in der Datenansicht werden Sitzungs-IDs geändert. Die Sitzungs-IDs in späteren Sendungen stimmen nicht mit den Sitzungs-IDs in früheren Sendungen überein.
 
 ### Dimension-Persistenz
 
 Wenn Sie die Persistenz für eine einzelne Dimension festlegen, legen Sie auch eine Gültigkeit fest, um zu bestimmen, wie lange das Dimensionselement über das Ereignis hinaus bestehen bleibt, für das es festgelegt ist.
 
-Der Lookback-Datumsbereich wirkt sich auf die Persistenz der Dimensionen aus, wenn die Gültigkeit auf eine der folgenden Optionen in der Datenansicht eingestellt ist:
+Das Verarbeitungsfenster wirkt sich auf die Persistenz der Dimensionen aus, wenn die Gültigkeit auf eine der folgenden Optionen in der Datenansicht eingestellt ist:
 
-* [!UICONTROL **Fenster „Personenberichterstattung“**]: Der Datumsbereich des Lookback wird zum neuen Berichtsfenster für jede Dimension in der Daten-Feed-Definition, die das [!UICONTROL **Fenster „Personenberichterstattung“**] als Ablaufdatum verwendet.
-* [!UICONTROL **Benutzerdefinierte Zeit**]: Wenn die ausgewählte benutzerdefinierte Zeit über den Lookback-Datumsbereich hinausgeht, wird die benutzerdefinierte Zeit ignoriert, und der Lookback-Datumsbereich wird für den Ablauf der Dimension für jede Dimension in der Daten-Feed-Definition verwendet, die [!UICONTROL **Benutzerdefinierte Zeit**] als Ablauf verwendet. Werte, die vor dem Lookback-Datumsbereich aufgetreten sind, werden nicht berücksichtigt.
+* [!UICONTROL **Fenster „Personen-Reporting**]: Das Verarbeitungsfenster wird zum neuen Berichtsfenster für jede Dimension in der Daten-Feed-Definition, die [!UICONTROL **Fenster „Personen-Reporting**] als Ablaufdatum verwendet.
+* [!UICONTROL **Benutzerdefinierte Zeit**]: Wenn die ausgewählte benutzerdefinierte Zeit über das Verarbeitungsfenster hinausgeht, wird die benutzerdefinierte Zeit ignoriert, und das Verarbeitungsfenster wird für den Ablauf von Dimensionen für jede Dimension in der Daten-Feed-Definition verwendet, die [!UICONTROL **benutzerdefinierte Zeit**] als Ablauf verwendet. Werte, die vor dem Verarbeitungsfenster aufgetreten sind, werden nicht berücksichtigt.
 
   Weitere Informationen zum Festlegen der Persistenz für Dimensionen in der Datenansicht finden Sie unter [Persistenzkomponenteneinstellungen](/help/data-views/component-settings/persistence.md).
-
-Um die genauesten Daten zu erhalten, sollten Sie den Datumsbereich des Lookback auf einen Wert festlegen, der gleich oder größer dem Persistenzwert ist, der für Dimensionen in Ihren Daten festgelegt ist. Beachten Sie jedoch, dass ein kürzerer Lookback-Datumsbereich zu einer besseren Leistung für Daten-Feed-Sendungen führt.
 
 >[!BEGINSHADEBOX]
 
@@ -286,15 +271,15 @@ In diesem Fall wird die ursprüngliche Kampagne nur dann in der Daten-Feed-Ausga
 
 * Der Benutzer hatte ein Ereignis mit einem Zeitstempel, das sich im Datenfeed-Häufigkeitsfenster befindet (die angegebene Stunde oder der angegebene Tag des Daten-Feeds).
 
-* Der Benutzer hat sich für die ursprüngliche Kampagne qualifiziert **manchmal innerhalb des Lookback-Datumsbereichs**.
+* Der Benutzer hat sich für die ursprüngliche Kampagne qualifiziert **irgendwann im Verarbeitungsfenster**.
 
-  Wenn sich der Benutzer vor 9 Tagen für die ursprüngliche Kampagne qualifiziert hat, **die ursprüngliche Kampagne** ist enthalten) im Daten-Feed, wenn der Datumsbereich des Lookback auf 30 Tage festgelegt ist, aber die ursprüngliche Kampagne **ist nicht enthalten** im Daten-Feed, wenn der Datumsbereich des Lookback auf 7 Tage festgelegt ist.
+  Wenn sich der Benutzer vor 9 Tagen für die ursprüngliche Kampagne qualifiziert hat, **die ursprüngliche Kampagne (**) im Daten-Feed enthalten. Wenn sich der Benutzer vor 45 Tagen qualifiziert hat, **die ursprüngliche Kampagne nicht enthalten** da sie außerhalb des 30-tägigen Verarbeitungsfensters liegt.
 
 >[!ENDSHADEBOX]
 
 ### Abgeleitete Feldtransformationen
 
-Alle abgeleiteten Feldfunktionen, die auf Container verweisen, verwenden den Lookback-Datumsbereich in Daten-Feed-Exporten. Welche Datumsfunktionen sind in abgeleiteten Feldern vorhanden? <!--Not sure how this applies.-->
+Alle abgeleiteten Feldfunktionen, die auf Container verweisen, verwenden das Verarbeitungsfenster in Daten-Feed-Exporten. Welche Datumsfunktionen sind in abgeleiteten Feldern vorhanden? <!--Not sure how this applies.-->
 
 ## Informationen zur Verarbeitungsverzögerung {#data-feed-processing-delay}
 

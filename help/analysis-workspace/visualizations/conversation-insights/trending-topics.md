@@ -3,8 +3,7 @@ description: Verwenden Sie die Visualisierung von Trendthemen, um Trendthemen in
 title: Trend-Themen
 feature: Visualizations
 role: User
-hide: true
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: e498c374e8bfe12d7adda6ff9e7870a86f91dd5c
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 16%
@@ -23,7 +22,7 @@ ht-degree: 16%
 
 {{release-limited-testing}}
 
-Die ![Feed](/help/assets/icons/Feed.svg)**[!UICONTROL Trendthemen]**-Visualisierung ermöglicht es Ihnen, die Trendthemen im Rahmen von Conversation Insights zu untersuchen und zu analysieren.
+Die ![Aufschlüsselung](/help/assets/icons/Breakdown.svg) **[!UICONTROL Trendthemen]** Visualisierung ermöglicht es Ihnen, die Trendthemen im Rahmen von [Konversationseinblicke](/help/conversation-insights/overview.md) zu untersuchen und zu analysieren.
 
 Sie können nach bestimmten Themen suchen und die Anzahl und den Prozentsatz für jedes Thema auf jeder Ebene mit anderen Datenbereichen vergleichen.
 
@@ -42,7 +41,7 @@ Sie können nach bestimmten Themen suchen und die Anzahl und den Prozentsatz fü
 
 So erstellen und konfigurieren Sie eine **[!UICONTROL Trendthemen]**-Visualisierung:
 
-1. Fügen Sie ![&#x200B; Visualisierung &#x200B;](/help/assets/icons/Feed.svg)Feed **[!UICONTROL Trendthemen]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Fügen Sie ![&#x200B; Visualisierung &#x200B;](/help/assets/icons/Breakdown.svg)Aufschlüsselung/**[!UICONTROL /]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. In den **[!UICONTROL Trending Topics]** Visualisierungskonfiguration:
 

@@ -15,9 +15,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
+source-git-commit: 03beb4bd52769a5428ca084beacefd8996d4c810
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '760'
 ht-degree: 0%
 ---
 # Datendiskrepanzen zwischen Daten-Feeds und Analysis Workspace verstehen
@@ -26,24 +26,26 @@ ht-degree: 0%
 
 Die Daten in einem Daten-Feed-Export stimmen nicht immer genau mit den Daten überein, die Sie in Analysis Workspace sehen. Die Informationen auf dieser Seite erläutern einige der Hauptgründe.
 
-## Lookback-Datumsbereich (Daten-Feeds) im Vergleich zum Reporting-Datumsbereich (Analysis Workspace)
+## Verarbeitungsfenster (Daten-Feeds) im Vergleich zum Reporting-Fenster (Analysis Workspace) {#processing-window}
 
-Der Lookback-Datumsbereich in Daten-Feeds bestimmt, wie weit Customer Journey Analytics zurückblickt, wenn Ereignisse gefunden werden, die für eine Daten-Feed-Bereitstellung qualifiziert sind. Weitere Informationen zum Lookback-Datumsbereich, einschließlich Beispiele, finden Sie unter [Grundlegendes zum Lookback-Datumsbereich](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-lookback-date-range).
+Jeder Daten-Feed-Versand verwendet ein rollierendes 30-tägiges Verarbeitungsfenster. Das Verarbeitungsfenster liefert den historischen Kontext, der zur Klassifizierung der Ereignisse in einem Daten-Feed-Versand benötigt wird. Einzelheiten zum Verarbeitungsfenster, einschließlich Beispiele, finden Sie unter [Grundlegendes zum Verarbeitungsfenster](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-processing-window).
 
-In diesem Sinne ähnelt der Lookback-Datumsbereich dem Berichtsdatumsbereich in Analysis Workspace. Es gibt jedoch wesentliche Unterschiede.
+In diesem Sinne ähnelt das Verarbeitungsfenster dem Berichtsfenster in Analysis Workspace (dem Datumsbereich, den Sie für einen Bericht auswählen). Es gibt jedoch wesentliche Unterschiede.
 
-| Die wichtigsten Unterschiede | Datumsbereich für Berichte (Analysis Workspace) | Lookback-Datumsbereich (Daten-Feeds) |
+| Die wichtigsten Unterschiede | Reporting-Fenster (Analysis Workspace) | Verarbeitungsfenster (Daten-Feeds) |
 |---------|---------|----------|
-| **Datengrenze**<br/> Ob Daten in einem Bericht oder Feed enthalten sind | Flexibel<p>Ereignisse, die außerhalb des Datumsbereichs des Berichts liegen, können weiterhin in einen Workspace-Bericht aufgenommen werden, wenn die Ereignisse durch einen der folgenden Faktoren beeinflusst werden:</p><ul><li>**Dimension-Persistenz**: Kann bei Verwendung von „Sitzung“, „Benutzerdefinierte Zeit“ oder „Metrik-[&quot; über den Datumsbereich des Berichts &#x200B;](/help/data-views/component-settings/persistence.md#expiration-settings). Entspricht dem Datumsbereich für die Berichterstellung bei Verwendung des Fensters „Person [&quot; (Ablauf](/help/data-views/component-settings/persistence.md#expiration-settings). Daten werden aggregiert.</li><li>**Segmentqualifikation**: Segmente können standardmäßig über den Datumsbereich des Berichts hinaus erweitert werden.<p>Benutzer können das Segment beim Erstellen auf den Datumsbereich des Berichts beschränken.<!--add link to new docs--></p></li><li>**Sitzungsberechnung**: Sitzungen können über den Datumsbereich des Berichts hinausgehen. </li><li>**Abgeleitete Feldtransformationen**</li></ul> | Fest<p>Ereignisse, die außerhalb des Lookback-Datumsbereichs liegen, werden nie in einen Daten-Feed eingeschlossen, unabhängig davon, ob sie durch die folgenden Faktoren beeinflusst werden:</p></p><ul><li>**Dimension-Persistenz**: Die Persistenz kann unabhängig von den ([) Einstellungen nicht über den Lookback](/help/data-views/component-settings/persistence.md#expiration-settings)Datumsbereich hinaus beibehalten werden. Daten werden nicht aggregiert.</li><li>**Segmentqualifikation**: Immer auf den Datumsbereich des Lookback beschränkt.</li><li>**Sitzungsberechnung**: Immer auf den Lookback-Datumsbereich beschränkt.</li><li>**Abgeleitete Feldtransformationen**: Alle abgeleiteten Feldfunktionen, die auf Container verweisen, verwenden den Lookback-Datumsbereich in Daten-Feed-Exporten.</li></ul><p>Weitere Informationen zum Konfigurieren des Lookback-Datumsbereichs finden Sie unter [Erstellen eines Daten-Feeds](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-data-feed).</p> |
-| **Reporting-Fenster**<br/> Der Zeitrahmen, über den berichtet werden soll | Wie das Reporting-Fenster (der Zeitrahmen, über den Sie einen Bericht erstellen möchten). | Nicht identisch mit dem Zeitrahmen, über den Sie einen Bericht erstellen möchten. <p>Der Zeitrahmen für den Bericht ist das Häufigkeitsfenster, das eine einzelne Stunde oder ein einzelner Tag sein kann.</p> |
+| **Datengrenze**<br/> Ob Daten in einem Bericht oder Feed enthalten sind | Flexibel<p>Ereignisse, die nicht in das Reporting-Fenster fallen, können dennoch in einen Workspace-Bericht aufgenommen werden, wenn die Ereignisse durch einen der folgenden Faktoren beeinflusst werden:</p><ul><li>**Dimension-Persistenz**: Kann bei Verwendung von Sitzung, benutzerdefinierter Zeit oder Metrik ([) über das Berichtsfenster hinaus bestehen bleiben](/help/data-views/component-settings/persistence.md#expiration-settings). Wie das Reporting-Fenster bei Verwendung des Fensters „Person Reporting[&#x200B; (Ablauf](/help/data-views/component-settings/persistence.md#expiration-settings). Daten werden aggregiert.</li><li>**Segmentqualifikation**: Segmente können standardmäßig über das Reporting-Fenster hinaus erweitert werden.<p>Benutzer können das Segment beim Erstellen auf das Reporting-Fenster beschränken.<!--add link to new docs--></p></li><li>**Sitzungsberechnung**: Sitzungen können über das Berichtsfenster hinaus ausgeführt werden. </li><li>**Abgeleitete Feldtransformationen**</li></ul> | Fest<p>Ereignisse, die außerhalb des Verarbeitungsfensters liegen, beeinflussen in der Regel keinen Daten-Feed. Das Verarbeitungsfenster gilt für die folgenden Faktoren:</p><ul><li>**Dimension-Persistenz**: Kann bei Verwendung der benutzerdefinierten Zeitdauer (Ablauf) über das Verarbeitungsfenster hinaus bestehen bleiben (bis [&#x200B; 90 Tage](/help/data-views/component-settings/persistence.md#expiration-settings) wie in Workspace. Kann nicht über das Verarbeitungsfenster hinaus bestehen bleiben, wenn das Fenster „Person Reporting“ [Ablauf](/help/data-views/component-settings/persistence.md#expiration-settings). Daten werden nicht aggregiert.</li><li>**Segmentqualifikation**: Immer auf das Verarbeitungsfenster beschränkt.</li><li>**Sitzungsberechnung**: Immer auf das Verarbeitungsfenster beschränkt.</li><li>**Abgeleitete Feldtransformationen**: Alle abgeleiteten Feldfunktionen, die auf Container verweisen, verwenden das Verarbeitungsfenster in Daten-Feed-Exporten.</li></ul> |
+| **Zeitrahmen für den Bericht**<br/> Welche Ereignisse sind in einem Bericht oder Feed enthalten? | Wie im Reporting-Fenster. | Nicht dasselbe wie das Verarbeitungsfenster. <p>Der Zeitrahmen für den Bericht ist das Häufigkeitsfenster, das eine einzelne Stunde oder ein einzelner Tag am Ende des Verarbeitungsfensters sein kann.</p> |
 
 >[!BEGINSHADEBOX]
 
 **Beispiel**
 
-Das folgende Beispiel zeigt, wie Unterschiede zwischen dem Berichtsdatumsbereich und dem Lookback-Datumsbereich zu Datendiskrepanzen zwischen Workspace-Berichten und Daten-Feed-Sendungen führen können.
+Das folgende Beispiel zeigt, wie Unterschiede zwischen dem Reporting-Fenster und dem Verarbeitungsfenster zu Datendiskrepanzen zwischen Workspace-Berichten und Daten-Feed-Sendungen führen können.
 
-Ereignis A trat vor 85 Tagen auf und befindet sich in einer Dimension mit einer Persistenzeinstellung von 90 Tagen (z. B. ein Attributionsfenster, auf das eine Kampagne klickt). Das Ereignis wird im Analysis Workspace-Bericht und nicht in der Daten-Feed-Bereitstellung angezeigt.
+Ein Benutzer hat sich vor 45 Tagen für ein Segment mit einem Personen-Container qualifiziert und hat heute ein Ereignis. Ein Workspace-Bericht mit einem 30-tägigen Berichtsfenster enthält das Benutzerereignis, da Segmente standardmäßig über das Berichtsfenster hinaus erweitert werden können. Die Daten-Feed-Bereitstellung für heute umfasst nicht das Ereignis, da die Segmentqualifikation auf das 30-tägige Verarbeitungsfenster beschränkt ist.
+
+<!-- update the following graphic -->
 
 ![Datenunterschiede zwischen Workspace und Daten-Feeds](assets/data-feed-data-differences.png)
 
@@ -68,7 +70,7 @@ Daten-Feeds und Analysis Workspace funktionieren hinsichtlich vergangener Ereign
 
 * **Daten-Feeds**: Exportiert Daten innerhalb eines festen Zeitfensters, basierend auf dem Zeitpunkt, zu dem Ereignisse empfangen werden.
 
-  Ereignisse, die nach dem Schließen des Fensters eingehen, werden möglicherweise nicht in den Export einbezogen. Dies wird durch den [Lookback-Datumsbereich](#lookback-date-range-data-feeds-vs-reporting-date-range-analysis-workspace) beeinflusst.
+  Ereignisse, die nach dem Schließen des Fensters eingehen, werden möglicherweise nicht in den Export einbezogen. Dies wird durch die von [&#x200B; gewählte &#x200B;](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-processing-delay) beeinflusst.
 
 * **Analysis Workspace**: Verarbeitet Daten zum Zeitpunkt des Berichts, sodass Ereignisse in Berichten unabhängig vom Zeitpunkt ihres Eingangs enthalten sind.
 
