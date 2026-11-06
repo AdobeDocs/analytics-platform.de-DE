@@ -1631,10 +1631,10 @@ Sie möchten einen Teil einer URL erfassen und als eindeutige Seitenkennung zur 
 
 | Seiten-URL |
 |---|
-| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/de/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/de/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/de/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/de/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
@@ -2114,8 +2114,8 @@ Sie möchten den Wert des Parameters `cid` einer Abfragezeichenfolge in einer [!
 
 | [!DNL Page URL] |
 |----|
-| `https://www.adobe.com/?cid=abc123` |
-| `https://www.adobe.com/?em=email1234&cid=def123` |
+| `https://www.adobe.com/de/?cid=abc123` |
+| `https://www.adobe.com/de/?em=email1234&cid=def123` |
 | `https://www.adobe.com/landingpage?querystring1=test&test2=1234&cid=xyz123` |
 
 {style="table-layout:auto"}
