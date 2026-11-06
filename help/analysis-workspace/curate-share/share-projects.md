@@ -93,7 +93,7 @@ Sie können eine bestimmte Rolle für Benutzende oder Gruppen freigeben oder ein
 
 Beachten Sie beim Freigeben einer bestimmten Projektrolle für Benutzende und Gruppen in Ihrer Organisation Folgendes:
 
-* Projektrollen (**[!UICONTROL Original bearbeiten]**, **[!UICONTROL Kopie bearbeiten]** und **[!UICONTROL Schreibgeschützt]**) sind an die Benutzenden und die spezifische Projekt-ID gebunden. Projektrollen sind unabhängig von Benutzerberechtigungen, die in der [CX Enterprise Admin Console verwaltet ](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/admin-getting-started).
+* Projektrollen (**[!UICONTROL Original bearbeiten]**, **[!UICONTROL Kopie bearbeiten]** und **[!UICONTROL Schreibgeschützt]**) sind an die Benutzenden und die spezifische Projekt-ID gebunden. Projektrollen sind unabhängig von Benutzerberechtigungen, die in der [CX Enterprise Admin Console verwaltet &#x200B;](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/admin-getting-started).
 
 * In Customer Journey Analytics werden Gruppen durch Produktprofile in der [CX Enterprise-Admin Console definiert](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/admin-getting-started). Die von Admins durchgeführte Freigabe ist für jede Gruppe möglich, einschließlich *Alle*. Nicht-Admins können Freigaben für Gruppen durchführen, denen sie angehören (mit Ausnahme von *Alle*).
 
