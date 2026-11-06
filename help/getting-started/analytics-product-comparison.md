@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 34959e37a7040bcd861a506968895ad6f051b686
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 44%
+source-wordcount: '461'
+ht-degree: 43%
 ---
 
 # Analytics-Produktvergleich
@@ -37,7 +37,7 @@ Auf dieser Seite können Sie die Berichts- und Exportwerkzeuge von Customer Jour
 |---|---|---|---|---|---|---|---|---|
 | **Zugriffsmethode** | Browser | Microsoft Excel | Browser | Über Browser einrichten | RESTful-API-Tools | MCP-kompatible Tools | BI-Tools | MCP-kompatible Tools |
 | **Datengranularität** | Aggregiert | Aggregiert | Aggregiert | Ereignis | Aggregiert | Aggregiert | Aggregiert | Aggregiert |
-| **Experience Cloud ID (ECID) verfügbar** | Nein | Nein | Nein | Ja | Nein | Nein | Nein | Nein |
+| **ECID verfügbar** | Nein | Nein | Nein | Ja | Nein | Nein | Nein | Nein |
 | **Zeitstempel verfügbar** | Nein | Nein | Nein | Ja | Nein | Nein | Nein | Nein |
 | **Verarbeitungsstufe** | Vollständig verarbeitet | Vollständig verarbeitet, mit separatem Echtzeitbericht | Vollständig verarbeitet | Vollständig verarbeitet | Vollständig verarbeitet | Vollständig verarbeitet | Vollständig verarbeitet | Vollständig verarbeitet |
 | **Wo Bot-Filterung angewendet wird** | Innerhalb des [Datenstroms](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/bot-detection) und/oder innerhalb von [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) | Innerhalb des [Datenstroms](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/bot-detection) und/oder innerhalb von [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) | Innerhalb des [Datenstroms](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/bot-detection) und/oder innerhalb von [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) | Innerhalb des [Datenstroms](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/bot-detection) und/oder innerhalb von [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) |  |  | Innerhalb des [Datenstroms](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/bot-detection) und/oder innerhalb von [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) | |
@@ -49,7 +49,7 @@ Auf dieser Seite können Sie die Berichts- und Exportwerkzeuge von Customer Jour
 | **Berechnete Metriken** <br> [Weitere Informationen](/help/components/calc-metrics/calc-metr-overview.md) | Ja | Ja | Ja, mit [Einschränkungen](/help/analysis-workspace/export/export-cloud.md#calculated-metric-functions-support) | Nein | Ja | Ja | Ja | Ja |
 | **Abgeleitete Felder** <br> [Weitere Informationen](/help/data-views/derived-fields/derived-fields.md) | Ja | Ja | Ja | Ja | Ja | Ja | Ja | Ja |
 | **Attribution** <br> [Weitere Informationen](/help/analysis-workspace/attribution/overview.md) | Ja | Begrenzt | Ja, mit [Einschränkungen](/help/analysis-workspace/export/export-cloud.md#attribution-behavior) | Nein | Ja | Ja | Ja | Ja |
-| **Geplanter Versand** | Ja | Ja | Ja | Ja | – | — | — | – |
-| **Versandziele** | E-Mail | E-Mail | Amazon S3, Azure RBAC, Azure SAS, GCP | Amazon S3, Azure RBAC, Azure SAS, GCP | – | — | — | — |
+| **Geplanter Versand** | Ja | Ja | Ja | Ja | — | — | — | — |
+| **Versandziele** | E-Mail | E-Mail | Amazon S3, Azure RBAC, Azure SAS, GCP | Amazon S3, Azure RBAC, Azure SAS, GCP | — | — | — | — |
 
 {style="table-layout:auto"}

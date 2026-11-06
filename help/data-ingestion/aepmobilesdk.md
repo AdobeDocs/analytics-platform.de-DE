@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '3512'
-ht-degree: 63%
+source-wordcount: '3504'
+ht-degree: 61%
 ---
 # Aufnehmen von Daten über die Mobile SDK
 
@@ -123,7 +123,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
-   1. Wählen Sie [!UICONTROL &#x200B; Dialogfeld Feldergruppen hinzufügen &#x200B;] Feldergruppe **[!UICONTROL AEP Mobile SDK ExperienceEvent]** aus der Liste aus.
+   1. Wählen Sie [!UICONTROL  Dialogfeld Feldergruppen hinzufügen ] Feldergruppe **[!UICONTROL AEP Mobile SDK ExperienceEvent]** aus der Liste aus.
 
       ![AEP Mobile Lifecycle Details-Feldergruppe](./assets/select-aepmobilesdk-experienceevent.png)
 
@@ -147,7 +147,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Identifizierungsobjekt](./assets/identification-field-mobile.png)
 
-   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile mithilfe Ihrer Mobile App mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Daneben stehen auch noch viele weitere Attribute zum Tracken der Personenidentifizierung zur Verfügung (z. B. Kunden-ID, Treueprogramm-ID).
+   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile mithilfe Ihrer Mobile App mithilfe der ECID und der E-Mail-Adresse identifizieren. Daneben stehen auch noch viele weitere Attribute zur Verfügung, um die Identifizierung von Personen zu erfassen (z. B. Kunden-ID, Loyalty-ID).
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
@@ -155,7 +155,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Spezifizieren Sie die ECID als Identität](./assets/specify-identity-mobile.png)
 
-   Sie spezifizieren die Experience Cloud-Identität als primäre Identität, die Adobe Experience Platform Identity Service verwenden kann, um das Verhalten von Profilen, die dieselbe ECID haben, zu kombinieren (Stitching).
+   Sie spezifizieren die ECID als primäre Identität, die der Adobe Experience Platform Identity Service verwenden kann, um das Verhalten von Profilen mit derselben ECID zu kombinieren (Stitching).
 
    Wählen Sie **[!UICONTROL Anwenden]** aus. Daraufhin erscheint ein Fingerabdruck-Symbol im ECID-Attribut.
 
@@ -183,7 +183,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
 
-Sie haben ein Minimalschema erstellt, das die Daten modelliert, die Sie mit Ihrer Mobile App erfassen können. Mithilfe des Schemas können Profile anhand der Experience Cloud-Identität und -E-Mail-Adresse identifiziert werden. Durch die Aktivierung des Schemas für das Profil stellen Sie sicher, dass die über Ihre Mobile App erfassten Daten zum Echtzeit-Kundenprofil hinzugefügt werden.
+Sie haben ein Minimalschema erstellt, das die Daten modelliert, die Sie mit Ihrer Mobile App erfassen können. Das Schema ermöglicht die Identifizierung von Profilen mithilfe der ECID und der E-Mail-Adresse. Durch die Aktivierung des Schemas für das Profil stellen Sie sicher, dass die über Ihre Mobile App erfassten Daten zum Echtzeit-Kundenprofil hinzugefügt werden.
 
 Neben Verhaltensdaten können Sie auch Profilattributdaten aus Ihrer Mobile App erfassen (z. B. Details zu Profilen, die einen Newsletter abonnieren).
 
@@ -191,11 +191,11 @@ Um Profildaten zu erfassen, gehen Sie folgendermaßen vor:
 
 - Erstellen Sie ein Schema basierend auf der Klasse „XDM Individual Profile“.
 
-- Fügen Sie die Feldergruppe „Profile Core v2“ zum Schema hinzu.
+- Fügen Sie die Feldgruppe „Profile Core v2“ zum Schema hinzu.
 
-- Fügen Sie ein Identifizierungsobjekt hinzu, das auf der Feldergruppe „Profile Core v2“ basiert.
+- Fügen Sie ein Identifizierungsobjekt hinzu, das auf der Feldgruppe „Profile Core v2“ basiert.
 
-- Definieren Sie die Experience Cloud-ID als primäre Kennung und die E-Mail als Kennung.
+- Definieren Sie ECID als primäre Kennung und E-Mail als Kennung.
 
 - Aktivieren Sie dieses Schema für das Profil
 
@@ -235,7 +235,7 @@ Gehen Sie folgendermaßen vor, um einen Datensatz einzurichten:
 
    ![Aktivieren eines Schemas für ein Profil](./assets/aepwebsdk-dataset-profile.png)
 
-Im [Handbuch zur Datensatz-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=de) können Sie nachlesen, wie ein Datensatz angezeigt, in der Vorschau angesehen, erstellt und gelöscht werden kann und wie ein Datensatz für das Echtzeit-Kundenprofil aktiviert wird.
+Im [Handbuch zur Datensatz-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=de) können Sie nachlesen, wie ein Datensatz angezeigt, in der Vorschau angesehen, erstellt und gelöscht werden kann Und wie ein Datensatz für das Real-Time-Kundenprofil aktiviert wird.
 
 ## Einrichten eines Datenstroms
 
@@ -312,11 +312,11 @@ So erstellen und konfigurieren Sie die Adobe Experience Platform Mobile SDK-Erwe
 
    ![Erweiterungskonfiguration für AEP Mobile SDK](./assets/aepmobilesdk-extension-datastream.png)
 
-1. Geben Sie Ihre **[!UICONTROL Edge Network-Domain]** unter &quot;[!UICONTROL -Konfiguration“ &#x200B;]. Verwenden Sie in der Regel `<organizationName>.data.adobedc.net`.
+1. Geben Sie Ihre **[!UICONTROL Edge Network-Domain]** unter &quot;[!UICONTROL -Konfiguration“ ]. Verwenden Sie in der Regel `<organizationName>.data.adobedc.net`.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Weitere [&#x200B; finden Sie unter „Konfigurieren der Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/edge-network)Edge Network-Erweiterung“.
+Weitere [ finden Sie unter „Konfigurieren der Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/edge-network)Edge Network-Erweiterung“.
 
 Sie sollten auch die folgenden zusätzlichen Erweiterungen über den Katalog einrichten:
 
@@ -324,7 +324,7 @@ Sie sollten auch die folgenden zusätzlichen Erweiterungen über den Katalog ein
 - AEP Assurance.
 - Einverständnis
 
-Weitere [&#x200B; zu Erweiterungen und ihrer Konfiguration finden Sie &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=de) Tutorial zum Konfigurieren einer Tag-Eigenschaft im Mobile-App-Tutorial für Experience Platform.
+Weitere [ zu Erweiterungen und ihrer Konfiguration finden Sie ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=de) Tutorial zum Konfigurieren einer Tag-Eigenschaft im Mobile-App-Tutorial für Experience Platform.
 
 #### **Datenelemente**
 
@@ -430,7 +430,7 @@ Gehen Sie folgendermaßen vor, um Ihr Tag zu erstellen und zu veröffentlichen:
 
    - Wählen Sie **[!UICONTROL Speichern und in Entwicklung erstellen]** aus.
 
-   Ihr Tag wird gespeichert und für Ihre Entwicklungsumgebung erstellt. Ein grüner Punkt kennzeichnet eine erfolgreiche Erstellung Ihres Tags in Ihrer Entwicklungsumgebung.
+   Ihr Tag wird gespeichert und für Ihre Entwicklungsumgebung erstellt. Ein grüner Punkt kennzeichnet ein erfolgreiches Build Ihres Tags in Ihrer Entwicklungsumgebung.
 
 4. Sie können **[!UICONTROL ...]** auswählen, um die Bibliothek neu zu erstellen oder in eine Staging- oder Produktionsumgebung zu verschieben.
 
@@ -449,7 +449,7 @@ So erhalten Sie Code-Anweisungen, in denen die Einrichtung Ihrer Mobile App und 
 
 2. Wählen Sie in der Liste der Umgebungen die richtige Install (![)-](/help/assets/icons/Box.svg) aus.
 
-   Wählen Sie [!UICONTROL &#x200B; Dialogfeld „Mobile-]&quot; die entsprechende Plattform ([!UICONTROL iOS], [!UICONTROL Android]). Verwenden Sie dann die Schaltfläche ![Kopieren](/help/assets/icons/Copy.svg) neben jedem der relevanten Code-Snippets, die Sie zum Einrichten und Initialisieren Ihrer Mobile App verwenden möchten:
+   Wählen Sie [!UICONTROL  Dialogfeld „Mobile-]&quot; die entsprechende Plattform ([!UICONTROL iOS], [!UICONTROL Android]). Verwenden Sie dann die Schaltfläche ![Kopieren](/help/assets/icons/Copy.svg) neben jedem der relevanten Code-Snippets, die Sie zum Einrichten und Initialisieren Ihrer Mobile App verwenden möchten:
 
    ![Umgebung](./assets/environment-mobile.png)
 
@@ -465,13 +465,13 @@ Sie können den Code jetzt in Ihrer Mobile App bereitstellen. Nach der Bereitste
 
 Validieren Sie Ihre Implementierung, korrigieren Sie sie bei Bedarf und stellen Sie sie mithilfe der Publishing-Workflow-Funktion von Tags in Ihrer Staging- und Produktionsumgebung bereit.
 
-Im [Tutorial zur Implementierung von Adobe Experience Cloud in &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de) Apps“ finden Sie wesentlich detailliertere Informationen.
+Im [Tutorial zur Implementierung von Adobe Experience Cloud in ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de) Apps“ finden Sie wesentlich detailliertere Informationen.
 
 ## Einrichten einer Verbindung
 
 Um die Adobe Experience Platform-Daten in Customer Journey Analytics verwenden zu können, erstellen Sie eine Verbindung, die die Daten enthält, die aus der Einrichtung Ihres Schemas, Datensatzes und Workflows resultieren.
 
-Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Arbeitsbereich integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
+Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Analysis Workspace integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
 
 Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
@@ -549,7 +549,7 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
    Behalten Sie die Einstellungen bei und wählen Sie **[!UICONTROL Speichern und beenden]**.
 
-Weitere [&#x200B; dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
+Weitere [ dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
 
 
 ## Einrichten eines Projekts

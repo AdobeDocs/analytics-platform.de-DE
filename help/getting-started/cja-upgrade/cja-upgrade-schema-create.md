@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines benutzerdefinierten Schemas für Customer Journey Analytics
+title: Erstellen Sie ein benutzerdefiniertes Schema für Customer Journey Analytics
 description: Erfahren Sie, wie Sie ein benutzerdefiniertes Schema für Customer Journey Analytics erstellen
 role: Admin
 solution: Customer Journey Analytics
@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 100%
+source-wordcount: '1286'
+ht-degree: 94%
 ---
 # Erstellen eines benutzerdefinierten Schemas für Customer Journey Analytics {#create-custom-schema}
 
@@ -48,13 +48,13 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
->title="Schema mithilfe der ExperienceEvent-Feldergruppe in Adobe Analytics erstellen"
+>title="Schema mithilfe der Feldgruppe „Adobe Analytics ExperienceEvent“ erstellen"
 >abstract="Verwenden Sie die Feldergruppe „Adobe Analytics ExperienceEvent“, um in Adobe Experience Platform ein Schema zu erstellen, das alle von Adobe Analytics verwendeten Felder enthält.<br><br>Das Erstellen eines Schemas basierend auf der Feldergruppe „Adobe Analytics ExperienceEvent“ ist einfach und dauert nur wenige Minuten."
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
 >title="Ihr Schema für das Profil aktivieren"
->abstract="Aktivieren Sie das Profil in Ihrem Schema zur Verwendung in der Adobe Real-Time CDP. Dieser Schritt wird angezeigt, weil Sie die Integration mit Adobe Real-Time CDP ausgewählt haben.<br><br>Da Sie bei diesem Schritt auf ein einziges Feld klicken müssen, dauert er nur wenige Minuten."
+>abstract="Aktivieren Sie das Profil in Ihrem Schema zur Verwendung in der Adobe Real-time CDP. Dieser Schritt wird angezeigt, weil Sie die Integration mit Adobe Real-Time CDP ausgewählt haben.<br><br>Da Sie bei diesem Schritt auf ein einziges Feld klicken müssen, dauert er nur wenige Minuten."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->Bevor Sie mit der Erstellung Ihres benutzerdefinierten Schemas beginnen, wenden Sie sich an Ihr Daten-Team und andere Beteiligte in Ihrem Unternehmen, um das ideale Schema-Design Ihres Unternehmens für Customer Journey Analytics und die anderen von Ihnen verwendeten Adobe Experience Platform-Programme zu ermitteln. Weitere Informationen finden Sie unter [Planen Ihres Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+>Bevor Sie mit der Erstellung Ihres benutzerdefinierten Schemas beginnen, arbeiten Sie mit Ihrem Datenteam und anderen Beteiligten in Ihrem Unternehmen zusammen, um das ideale Schema-Design Ihres Unternehmens für Customer Journey Analytics und die anderen von Ihnen verwendeten Adobe Experience Platform-Anwendungen zu ermitteln. Weitere Informationen finden Sie unter [Planen Ihres Schemas zur Verwendung mit Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
 In den folgenden Abschnitten wird beschrieben, wie Sie ein Schema erstellen, das mit Customer Journey Analytics verwendet werden kann. Die folgenden Schemaoptionen sind verfügbar:
 
@@ -76,7 +76,7 @@ Weitere Informationen zu diesen Schemaoptionen finden Sie unter [Auswählen Ihre
 
 Das benutzerdefinierte Schema, das Sie für Ihre Web-SDK-Implementierung definieren, stellt das Modell der Daten dar, die Sie in Adobe Experience Platform erfassen.
 
-So erstellen Sie ein benutzerspezifisches Schema:
+So erstellen Sie ein benutzerdefiniertes Schema:
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
@@ -153,7 +153,7 @@ So erstellen Sie ein benutzerspezifisches Schema:
 
    ![Identifizierungsobjekt](assets/identification-field.png)
 
-   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile, die Ihre Website besuchen, mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Daneben stehen auch noch viele weitere Attribute zum Tracken der Personenidentifizierung zur Verfügung (z. B. Kunden-ID, Treueprogramm-ID).
+   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile, die Ihre Site besuchen, mithilfe der ECID und der E-Mail-Adresse identifizieren. Daneben stehen auch noch viele weitere Attribute zur Verfügung, um die Identifizierung von Personen zu erfassen (z. B. Kunden-ID, Loyalty-ID).
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
@@ -161,7 +161,7 @@ So erstellen Sie ein benutzerspezifisches Schema:
 
    ![Spezifizieren Sie die ECID als Identität](./assets/specify-identity.png)
 
-   Sie spezifizieren die Experience Cloud-Identität als primäre Identität, die Adobe Experience Platform Identity Service verwenden kann, um das Verhalten von Profilen, die dieselbe ECID haben, zu kombinieren (Stitching).
+   Sie spezifizieren die ECID als primäre Identität, die der Adobe Experience Platform Identity Service verwenden kann, um das Verhalten von Profilen mit derselben ECID zu kombinieren (Stitching).
 
    Wählen Sie **[!UICONTROL Anwenden]** aus. Daraufhin erscheint ein Fingerabdruck-Symbol im ECID-Attribut.
 
@@ -189,7 +189,7 @@ So erstellen Sie ein benutzerspezifisches Schema:
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
 
-   Sie haben ein Minimalschema erstellt, das die Daten modelliert, die Sie auf Ihrer Website erfassen können. Mithilfe des Schemas können Profile anhand der Experience Cloud-Identität und -E-Mail-Adresse identifiziert werden. Durch die Aktivierung des Schemas für das Profil können die auf Ihrer Website erfassten Daten zum Echtzeit-Kundenprofil hinzugefügt werden.
+   Sie haben ein Minimalschema erstellt, das die Daten modelliert, die Sie auf Ihrer Website erfassen können. Das Schema ermöglicht die Identifizierung von Profilen mithilfe der ECID und der E-Mail-Adresse. Durch die Aktivierung des Schemas für das Profil können die auf Ihrer Website erfassten Daten zum Echtzeit-Kundenprofil hinzugefügt werden.
 
    Neben den Verhaltensdaten können Sie auch Profilattributdaten auf Ihrer Website erfassen (z. B. Details zu Profilen, die einen Newsletter abonnieren).
 
@@ -197,11 +197,11 @@ So erstellen Sie ein benutzerspezifisches Schema:
 
    * Erstellen Sie ein Schema basierend auf der Klasse „XDM Individual Profile“.
 
-   * Fügen Sie die Feldergruppe „Profile Core v2“ zum Schema hinzu.
+   * Fügen Sie die Feldgruppe „Profile Core v2“ zum Schema hinzu.
 
-   * Fügen Sie ein Identifizierungsobjekt hinzu, das auf der Feldergruppe „Profile Core v2“ basiert.
+   * Fügen Sie ein Identifizierungsobjekt hinzu, das auf der Feldgruppe „Profile Core v2“ basiert.
 
-   * Definieren Sie die Experience Cloud-ID als primäre Kennung und die E-Mail als Kennung.
+   * Definieren Sie ECID als primäre Kennung und E-Mail als Kennung.
 
    * Aktivieren Sie dieses Schema für das Profil
 

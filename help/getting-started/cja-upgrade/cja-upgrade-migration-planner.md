@@ -17,9 +17,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '2338'
+source-wordcount: '2335'
 ht-degree: 16%
 ---
 # Migrieren von Tags zu XDM {#upgrade-migration-planner}
@@ -80,7 +80,7 @@ Bevor Sie eine Migration erstellen, stellen Sie Folgendes sicher:
 
 * Eine unterstützte Adobe Analytics-Implementierung (die Analytics-Erweiterung für Tags). Siehe [Unterstützte Adobe Analytics-Implementierungen](#supported-adobe-analytics-implementations).
 
-* Zugriff auf die Adobe Tags-Eigenschaft, die Sie migrieren möchten, in der Experience Cloud-Organisation, bei der Sie angemeldet sind.
+* Zugriff auf die Adobe Tags-Eigenschaft, die Sie migrieren möchten, in der Adobe-Organisation, bei der Sie angemeldet sind.
 
 * Zugriff auf die Adobe Analytics Report Suite, deren Variablen Sie XDM zuordnen möchten.
 
@@ -114,11 +114,11 @@ Eine Migration durchläuft drei Phasen: [!UICONTROL **Audit**], [!UICONTROL **Ma
 
 1. Wählen Sie die Tag-Eigenschaft aus, die Sie migrieren möchten, und klicken Sie dann auf [!UICONTROL **Weiter**].
 
-   Es werden nur die Tag-Eigenschaften angezeigt, die für Ihre angemeldete Experience Cloud-Organisation verfügbar sind.
+   Es werden nur die Tag-Eigenschaften angezeigt, die für Ihre angemeldete Organisation verfügbar sind.
 
 1. Wählen Sie den Snapshot der Tag-Bibliothek aus, den Sie migrieren möchten, und klicken Sie dann auf [!UICONTROL **Weiter**].
 
-   Der Snapshot bestimmt, auf welcher Version Ihrer Tag-Bibliothek die Migration basiert. Jeder Schnappschuss zeigt seine Umgebung an ([!UICONTROL **Entwicklung**], [!UICONTROL **Staging**] oder [!UICONTROL **&#x200B;**]).
+   Der Snapshot bestimmt, auf welcher Version Ihrer Tag-Bibliothek die Migration basiert. Jeder Schnappschuss zeigt seine Umgebung an ([!UICONTROL **Entwicklung**], [!UICONTROL **Staging**] oder [!UICONTROL ****]).
 
 1. Wählen Sie den Zuordnungssatz aus, um zu bestimmen, wie Analytics-Variablen XDM-Schemafeldern zugeordnet werden sollen.
 
@@ -134,7 +134,7 @@ Eine Migration durchläuft drei Phasen: [!UICONTROL **Audit**], [!UICONTROL **Ma
 
 1. Wählen Sie [!UICONTROL **Migration erstellen**] aus.
 
-1. Fahren Sie mit dem folgenden Abschnitt fort: [&#x200B; und Bereitstellen einer Migration](#validate-and-deploy-a-migration).
+1. Fahren Sie mit dem folgenden Abschnitt fort: [ und Bereitstellen einer Migration](#validate-and-deploy-a-migration).
 
 ## Validieren und Bereitstellen einer Migration
 

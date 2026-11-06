@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 95%
+source-wordcount: '2322'
+ht-degree: 94%
 ---
 # Häufig gestellte Fragen
 
@@ -61,9 +61,9 @@ Nein, [!UICONTROL Private Device Graph] oder [!UICONTROL Device Coop] sind für 
 +++
 
 
-+++**Benötige ich eine [!UICONTROL Experience Cloud ID] (ECID) für [!UICONTROL Customer Journey Analytics]?**
++++**Benötige ich eine ECID für [!UICONTROL Customer Journey Analytics]?**
 
-Nein, [!UICONTROL Customer Journey Analytics] unterstützt alle IDs in einem Datensatz, unabhängig davon, ob es sich um eine [!UICONTROL ECID] oder eine andere ID handelt.
+Nein, [!UICONTROL Customer Journey Analytics] unterstützt alle IDs in einem Datensatz, unabhängig davon, ob es sich um eine ECID oder eine andere ID handelt.
 
 +++
 
@@ -112,7 +112,7 @@ Nach der ersten Aktivierung bietet Adobe eine Aufstockung von zugeordneten Daten
 
 +++
 
-## &#x200B;3. Daten in [!UICONTROL Customer Journey Analytics &#x200B;] {#ingest}
+## &#x200B;3. Daten in [!UICONTROL Customer Journey Analytics ] {#ingest}
 
 +++**Kann ich Daten aus verschiedenen [!UICONTROL Adobe Experience Platform]-Sandboxen in einer [!UICONTROL Customer Journey Analytics]-Verbindung kombinieren?**
 
@@ -151,7 +151,7 @@ Ein paar Stunden für eine erste Ansicht und ein paar Tage, um die Daten der let
 
 +++**Sind PII-Daten notwendig, um Verbindungen zwischen den Daten herzustellen?**
 
-Nein, Sie können eine beliebige ID verwenden, einschließlich eines Hash einer Kunden-ID, bei der es sich nicht um personenbezogene Daten handelt.
+Nein, Sie können eine beliebige ID verwenden, einschließlich eines Hashs einer Kunden-ID, bei der es sich nicht um personenbezogene Daten handelt.
 
 +++
 
@@ -181,9 +181,9 @@ Adobe hat kürzlich die Verarbeitung von Daten in Customer Journey Analytics ge�
 
 ## &#x200B;5. Festlegen eines rollierenden Fensters für [!UICONTROL Verbindung] Datenaufbewahrung {#data-retention}
 
-Mit der Einstellung [**[!UICONTROL Rollierendes Datenfenster aktivieren &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) können Sie die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (drei Monate, sechs Monate usw.) definieren. Sie wird auf einer [!UICONTROL Verbindungs]-Ebene, nicht auf einer [!UICONTROL Datensatz]-Ebene festgelegt. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
+Mit der Einstellung [**[!UICONTROL Rollierendes Datenfenster aktivieren ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) können Sie die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (drei Monate, sechs Monate usw.) definieren. Sie wird auf einer [!UICONTROL Verbindungs]-Ebene, nicht auf einer [!UICONTROL Datensatz]-Ebene festgelegt. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
 
-Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.
+Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko zusätzlicher Kosten zu reduzieren.
 
 ## &#x200B;6. Auswirkungen des Löschens von Objekten oder Komponenten {#deletion}
 
@@ -222,7 +222,7 @@ Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connecto
 
 ## &#x200B;8. [!UICONTROL Adobe Analytics]-Komponenten
 
-+++**Kann ich [!UICONTROL Zielgruppen“ von [!DNL Customer Journey Analytics] für Experience Platform Real-Time CDP oder &#x200B;] andere CX Enterprise-Programme freigeben/veröffentlichen?**
++++**Kann ich [!UICONTROL Zielgruppen“ von [!DNL Customer Journey Analytics] für Experience Platform Real-Time CDP oder ] andere CX Enterprise-Programme freigeben/veröffentlichen?**
 
 Sie können in Customer Journey Analytics identifizierte [Zielgruppen erstellen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/audiences/publish) und im Echtzeit-Kundenprofil in Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden.
 
@@ -254,7 +254,7 @@ In [!UICONTROL Customer Journey Analytics] gibt es keine Beschränkungen hinsich
 
 +++**Kann ich als bestehender [!DNL Data Workbench]-Kunde jetzt zu [!UICONTROL Customer Journey Analytics] wechseln?**
 
-Das hängt von Ihrem Anwendungsfall ab. Bitte wenden Sie sich an Ihr Adobe-Accountteam. Möglicherweise eignen sich Ihre aktuellen Anwendungsfälle gut für Customer Journey Analytics!
+Das hängt von Ihrem Anwendungsfall ab. Bitte wenden Sie sich an Ihr Adobe-Accountteam. Ihr aktueller Anwendungsfall eignet sich möglicherweise bereits gut für Customer Journey Analytics!
 
 +++
 
@@ -266,7 +266,7 @@ Siehe [Nutzung von Verbindungen](/help/connections/manage-connections.md#usage).
 
 Nutzungsbeschränkungen werden von Adobe regelmäßig überwacht und durchgesetzt. „Datenzeilen“ sind die täglichen durchschnittlichen Datenzeilen, die innerhalb von Customer Journey Analytics für die Analyse verfügbar sind.
 
-Gehen wir beispielsweise davon aus, Ihr Vertrag berechtigt Sie zu einer Million Datenzeilen. Angenommen, Sie laden am 1. Tag der Verwendung von Customer Journey Analytics zwei Millionen Datenzeilen hoch. Am 2. Tag löschen Sie 1 Million Zeilen und halten Ihre Nutzung für den Rest Ihrer Lizenzlaufzeit auf diesem festgelegten Maximum (d. h. eine Million Datenzeilen). Abhängig von Ihren Vertragsbedingungen können Ihnen für Tag 1 anteilige zusätzliche Nutzungsgebühren entstehen, da Sie die Lizenzberechtigung für „Datenzeilen“ überschritten haben.
+Gehen wir beispielsweise davon aus, Ihr Vertrag berechtigt Sie zu einer Million Datenzeilen. Angenommen, Sie laden am ersten Tag der Nutzung von Customer Journey Analytics zwei Millionen Datenzeilen hoch. Am 2. Tag löschen Sie 1 Million Zeilen und halten Ihre Nutzung für den Rest Ihrer Lizenzlaufzeit auf diesem festgelegten Maximum (d. h. eine Million Datenzeilen). Abhängig von Ihren Vertragsbedingungen können Ihnen für Tag 1 anteilige zusätzliche Nutzungsgebühren entstehen, da Sie die Lizenzberechtigung für „Datenzeilen“ überschritten haben.
 
 ## &#x200B;11. Diagnose von Datendiskrepanzen {#discrepancies}
 
@@ -283,15 +283,15 @@ Weitere Informationen über die [Implikationen beim Löschen von Datensätzen un
 
 ## &#x200B;12. Regionale Datenerfassung
 
-Adobe CX Enterprise verwendet die regionale Datenerfassung (Regional Data Collection, RDC), damit die Interaktionen zwischen Ihren Besucherinnen und Besuchern sowie Adobe- und Nicht-Adobe-Lösungen so nah wie möglich bei Ihren Besucherinnen und Besuchern stattfinden. Sobald Daten regional in einem Datenerfassungszentrum (DCC, auch als Edge-Site bezeichnet, Teil des Platform Edge-Netzwerks) erfasst wurden, werden sie über eine sichere Verbindung zu den relevanten Lösungen weitergeleitet, die auf der Konfiguration Ihres Datenstroms und/oder der Ereignisweiterleitung basieren.
+Adobe CX Enterprise verwendet die regionale Datenerfassung (Regional Data Collection, RDC), damit die Interaktionen zwischen Ihren Besucherinnen und Besuchern sowie Adobe- und Nicht-Adobe-Lösungen so nah wie möglich bei Ihren Besucherinnen und Besuchern stattfinden. Sobald Daten regional in einem Data Collection Center (DCC, auch als Edge Site bezeichnet, Teil des Platform Edge Network) erfasst wurden, werden sie über eine sichere Verbindung an die relevanten Lösungen weitergeleitet, abhängig von der Konfiguration Ihres Datenstroms und/oder der Ereignisweiterleitung.
 
 ![Datenfluss mithilfe von Edge-Netzwerken](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=de)
 
 Der regionale Datenerfassungsprozess umfasst die folgenden Schritte:
 
-1. DNS löst den Hostnamen der Sammlung automatisch in die IP-Adresse des Datenerfassungszentrums auf, das den Besuchenden am nächsten liegt.
+1. DNS löst den Erfassungs-Hostnamen automatisch in die IP-Adresse des Datenerfassungszentrums auf, das dem Besucher oder der Besucherin am nächsten liegt.
 1. Die Besucherin oder der Besucher sendet die Daten an diesen Ort.
-1. Die Daten werden sofort über eine sichere Verbindung an die Lösungen weitergeleitet, die durch die Konfiguration der Datenspeicherung oder Ereignisweiterleitung definiert wurden.
+1. Die Daten werden sofort über eine sichere Verbindung an die Lösungen weitergeleitet, die durch die Datastream- oder Ereignisweiterleitungskonfiguration definiert wurden.
 
 Die Verwendung der regionalen Datenerfassung bietet verschiedene Vorteile:
 
@@ -310,7 +310,7 @@ RDC enthält derzeit die folgenden Speicherorte (kann sich ändern):
 
 {style="table-layout:auto"}
 
-Wenn die Daten das regionale Rechenzentrum erreichen, bestimmt die Konfiguration des Datenspeichers, wie die Daten weitergeleitet werden.
+Wenn die Daten das regionale Rechenzentrum erreichen, bestimmt die Datastream-Konfiguration, wie die Daten weitergeleitet werden.
 
 Für Customer Journey Analytics werden Datensätze von Adobe Experience Platform benötigt. Ihre Datenstrom-/Ereignisweiterleitungskonfiguration erfordert daher, dass der Adobe Experience Platform-Dienst die Daten vom regionalen Rechenzentrum an das Rechenzentrum weiterleitet, in dem sich Ihre Adobe Experience Platform-Instanz befindet. Customer Journey Analytics und die zugehörigen unterstützenden Dienste und Infrastrukturen werden in derselben Adobe Experience Platform-Instanz bereitgestellt.
 

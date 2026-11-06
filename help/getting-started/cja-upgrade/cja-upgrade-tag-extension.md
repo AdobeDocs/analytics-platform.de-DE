@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '323'
 ht-degree: 85%
 ---
 # Hinzufügen der Web SDK-Erweiterung zum Tag {#upgrade-tag-extension}
@@ -48,15 +48,15 @@ ht-degree: 85%
 
 {{upgrade-note-step}}
 
-Sie können die Tags-Funktion in Adobe Experience Platform verwenden, um Code zur Datenerfassung auf Ihrer Website zu implementieren. Mit dieser Tag-Management-Lösung können Sie Code zusammen mit anderen Tagging-Anforderungen bereitstellen. Tags ermöglichen die nahtlose Integration mit Adobe Experience Platform über die Adobe Experience Platform Web SDK-Erweiterung.
+Sie können die Tags-Funktion in Adobe Experience Plattform verwenden, um Code zur Datenerfassung auf Ihrer Website zu implementieren. Mit dieser Tag-Management-Lösung können Sie Code zusammen mit anderen Tagging-Anforderungen bereitstellen. Tags ermöglichen die nahtlose Integration mit Adobe Experience Platform über die Adobe Experience Platform Web SDK-Erweiterung.
 
-Im Folgenden wird beschrieben, wie Sie Ihrem Tag die Web SDK-Erweiterung hinzufügen. Ergänzende Informationen finden Sie unter [Konfigurieren der Tag-Erweiterung des Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in der Dokumentation zu Experience Platform. Der Web SDK umfasst den Experience Platform Identity Service. Sie müssen also die Erweiterung [!UICONTROL Experience Cloud ID Service] nicht zu Ihrem Tag hinzufügen.
+Im Folgenden wird beschrieben, wie Sie Ihrem Tag die Web SDK-Erweiterung hinzufügen. Ergänzende Informationen finden Sie unter [Konfigurieren der Tag-Erweiterung des Web SDK](https://experienceleague.adobe.com/de/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in der Dokumentation zu Experience Platform. Die Web-SDK ruft die ECID von der Edge Network ab, sodass Sie die Erweiterung [!UICONTROL Experience Cloud ID-Service] nicht zu Ihrem Tag hinzufügen müssen.
 
 Nachdem Sie ein [Tag erstellt](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md) haben, müssen Sie es mit der Adobe Experience Platform Web SDK-Erweiterung konfigurieren. Dadurch wird sichergestellt, dass Sie Daten (über Ihren Datenstrom) an Adobe Experience Platform senden können.
 
 So fügen Sie Ihrem Tag die Web SDK-Erweiterung hinzu:
 
-1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen bei experiencecloud.adobe.com an.
+1. Melden Sie sich mit Ihren Adobe ID-Anmeldedaten bei experience.adobe.com an.
 
 1. Navigieren Sie in Adobe Experience Platform zu **[!UICONTROL Datenerfassung]** > **[!UICONTROL Tags]**.
 
