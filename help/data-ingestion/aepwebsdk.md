@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '3523'
-ht-degree: 85%
+source-wordcount: '3516'
+ht-degree: 83%
 ---
 # Aufnehmen von Daten über die Web-SDK
 
@@ -84,7 +84,7 @@ Alle in Adobe Experience Platform aufgenommene Daten müssen einem vordefinierte
 
 ### Einrichten eines Schemas
 
-Angenommen, Sie möchten einige Daten von Profilen tracken, die Ihre Website besuchen, z. B. Seitenname und Identifizierung.
+Angenommen, Sie möchten einige minimale Daten von Profilen tracken, die Ihre Website besuchen, z. B. den Seitennamen und eine Identifizierung.
 Zunächst müssen Sie ein Schema definieren, das diese Daten modelliert.
 
 Gehen Sie folgendermaßen vor, um das Schema einzurichten:
@@ -146,7 +146,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Identifizierungsobjekt](./assets/identification-field.png)
 
-   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile, die Ihre Website besuchen, mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Daneben stehen auch noch viele weitere Attribute zum Tracken der Personenidentifizierung zur Verfügung (z. B. Kunden-ID, Treueprogramm-ID).
+   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile, die Ihre Site besuchen, mithilfe der ECID und der E-Mail-Adresse identifizieren. Daneben stehen auch noch viele weitere Attribute zur Verfügung, um die Identifizierung von Personen zu erfassen (z. B. Kunden-ID, Loyalty-ID).
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
@@ -154,7 +154,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Spezifizieren Sie die ECID als Identität](./assets/specify-identity.png)
 
-   Sie spezifizieren die Experience Cloud-Identität als primäre Identität, die Adobe Experience Platform Identity Service verwenden kann, um das Verhalten von Profilen, die dieselbe ECID haben, zu kombinieren (Stitching).
+   Sie spezifizieren die ECID als primäre Identität, die der Adobe Experience Platform Identity Service verwenden kann, um das Verhalten von Profilen mit derselben ECID zu kombinieren (Stitching).
 
    Wählen Sie **[!UICONTROL Anwenden]** aus. Daraufhin erscheint ein Fingerabdruck-Symbol im ECID-Attribut.
 
@@ -182,7 +182,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
 
-Sie haben ein Minimalschema erstellt, das die Daten modelliert, die Sie auf Ihrer Website erfassen können. Mithilfe des Schemas können Profile anhand der Experience Cloud-Identität und -E-Mail-Adresse identifiziert werden. Durch die Aktivierung des Schemas für das Profil können die auf Ihrer Website erfassten Daten zum Echtzeit-Kundenprofil hinzugefügt werden.
+Sie haben ein Minimalschema erstellt, das die Daten modelliert, die Sie auf Ihrer Website erfassen können. Das Schema ermöglicht die Identifizierung von Profilen mithilfe der ECID und der E-Mail-Adresse. Durch die Aktivierung des Schemas für das Profil können die auf Ihrer Website erfassten Daten zum Echtzeit-Kundenprofil hinzugefügt werden.
 
 Neben den Verhaltensdaten können Sie auch Profilattributdaten auf Ihrer Website erfassen (z. B. Details zu Profilen, die einen Newsletter abonnieren).
 
@@ -190,11 +190,11 @@ Um diese Profildaten zu erfassen, gehen Sie folgendermaßen vor:
 
 - Erstellen Sie ein Schema basierend auf der Klasse „XDM Individual Profile“.
 
-- Fügen Sie die Feldergruppe „Profile Core v2“ zum Schema hinzu.
+- Fügen Sie die Feldgruppe „Profile Core v2“ zum Schema hinzu.
 
-- Fügen Sie ein Identifizierungsobjekt hinzu, das auf der Feldergruppe „Profile Core v2“ basiert.
+- Fügen Sie ein Identifizierungsobjekt hinzu, das auf der Feldgruppe „Profile Core v2“ basiert.
 
-- Definieren Sie die Experience Cloud-ID als primäre Kennung und die E-Mail als Kennung.
+- Definieren Sie ECID als primäre Kennung und E-Mail als Kennung.
 
 - Aktivieren Sie dieses Schema für das Profil
 
@@ -234,7 +234,7 @@ Gehen Sie folgendermaßen vor, um einen Datensatz einzurichten:
 
    ![Aktivieren eines Schemas für ein Profil](./assets/aepwebsdk-dataset-profile.png)
 
-Im [Handbuch zur Datensatz-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=de) können Sie nachlesen, wie ein Datensatz angezeigt, in der Vorschau angesehen, erstellt und gelöscht werden kann und wie ein Datensatz für das Echtzeit-Kundenprofil aktiviert wird.
+Im [Handbuch zur Datensatz-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=de) können Sie nachlesen, wie ein Datensatz angezeigt, in der Vorschau angesehen, erstellt und gelöscht werden kann Und wie ein Datensatz für das Real-Time-Kundenprofil aktiviert wird.
 
 ## Einrichten eines Datenstroms
 
@@ -317,7 +317,7 @@ Gehen Sie folgendermaßen vor, um die Adobe Experience Platform Web SDK-Erweiter
 
 Weitere Informationen finden Sie unter [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=de).
 
-Der Web-SDK umfasst den Experience Platform Identity Service. Sie müssen also die Tag-Erweiterung [!UICONTROL Experience Cloud ID-]) nicht zu Ihrer Eigenschaft hinzufügen.
+Die Web-SDK ruft die ECID von der Edge Network ab, sodass Sie die Tag[!UICONTROL Erweiterung „Experience Cloud ID Service] nicht zu Ihrer Eigenschaft hinzufügen müssen.
 
 #### **Datenelemente**
 
@@ -349,7 +349,7 @@ Gehen Sie folgendermaßen vor, um ein Datenelement für den Seitennamen zu defin
 
    - Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Als Nächstes möchten Sie nun jedes Ihrer spezifischen Datenelemente dem zuvor definierten Schema zuordnen. Sie definieren ein weiteres Datenelement, das Ihrem XDM-Schema entspricht.
+Als Nächstes möchten Sie nun jedes Ihrer spezifischen Datenelemente dem zuvor definierten Schema zuordnen. Sie definieren ein weiteres Datenelement, das eine Darstellung Ihres XDM-Schemas bereitstellt.
 
 Gehen Sie folgendermaßen vor, um ein XDM-Objekt-Datenelement zu definieren:
 
@@ -378,7 +378,7 @@ Gehen Sie folgendermaßen vor, um ein XDM-Objekt-Datenelement zu definieren:
 
 #### **Regeln**
 
-Tags in Adobe Experience Platform folgen einem regelbasierten System. Sie suchen nach Benutzerinteraktionen und zugehörigen Daten. Wenn die in Ihren Regeln formulierten Kriterien erfüllt sind, löst die Regel die jeweils definierte Erweiterung, das Skript oder den Client-seitigen Code aus. Sie können mithilfe von Regeln Daten (wie ein XDM-Objekt) unter Verwendung der der Adobe Experience Platform Web SDK-Erweiterung an Adobe Experience Platform senden.
+Tags in Adobe Experience Platform folgen einem regelbasierten System. Sie suchen nach Benutzerinteraktionen und zugehörigen Daten. Wenn die in Ihren Regeln formulierten Kriterien erfüllt sind, löst die Regel die jeweils definierte Erweiterung, das Skript oder den Client-seitigen Code aus. Sie können mithilfe von Regeln Daten (wie ein XDM-Objekt) mithilfe der Adobe Experience Platform Web SDK-Erweiterung an Adobe Experience Platform senden.
 
 Gehen Sie folgendermaßen vor, um eine Regel zu definieren:
 
@@ -454,7 +454,7 @@ Gehen Sie folgendermaßen vor, um Ihr Tag zu erstellen und zu veröffentlichen:
 
    - Wählen Sie **[!UICONTROL Speichern und in Entwicklung erstellen]** aus.
 
-   Ihr Tag wird gespeichert und für Ihre Entwicklungsumgebung erstellt. Ein grüner Punkt kennzeichnet eine erfolgreiche Erstellung Ihres Tags in Ihrer Entwicklungsumgebung.
+   Ihr Tag wird gespeichert und für Ihre Entwicklungsumgebung erstellt. Ein grüner Punkt kennzeichnet ein erfolgreiches Build Ihres Tags in Ihrer Entwicklungsumgebung.
 
 4. Sie können **[!UICONTROL ...]** auswählen, um die Bibliothek neu zu erstellen oder in eine Staging- oder Produktionsumgebung zu verschieben.
 
@@ -465,11 +465,11 @@ Adobe Experience Platform-Tags unterstützen einfache bis komplexe Veröffentlic
 Weitere Informationen finden Sie unter [Veröffentlichung – Überblick](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=de).
 
 
-### Abrufen des Tag-Codes
+### Abrufen des Tag-Symbols
 
 Schließlich müssen Sie Ihr Tag auf der Website installieren, die Sie verfolgen möchten, was bedeutet, dass Sie Code in das Kopfzeilen-Tag der Vorlage Ihrer Website einfügen müssen.
 
-Gehen Sie folgendermaßen vor, um Code abzurufen, der auf Ihr Tag verweist:
+Gehen Sie folgendermaßen vor, um das Symbol abzurufen, das auf Ihr Tag verweist:
 
 1. Wählen Sie **[!UICONTROL Umgebungen]** in der linken Leiste aus.
 
@@ -485,7 +485,7 @@ Gehen Sie folgendermaßen vor, um Code abzurufen, der auf Ihr Tag verweist:
 
 3. Wählen Sie **[!UICONTROL Schließen]** aus.
 
-Anstelle des Codes für die Entwicklungsumgebung hätten Sie auch eine andere Umgebung (Staging, Produktion) auswählen können, je nachdem, wo Sie das Adobe Experience Platform Web SDK bereitstellen möchten.
+Anstelle des Symbols für die Entwicklungsumgebung hätten Sie auch eine andere Umgebung (Staging, Produktion) auswählen können, je nachdem, in welcher Phase des Bereitstellungsprozesses für das Adobe Experience Platform Web SDK Sie sich befinden.
 
 Weitere Informationen finden Sie in [Umgebungen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=de?).
 
@@ -499,7 +499,7 @@ Validieren Sie Ihre Implementierung, korrigieren Sie sie bei Bedarf und stellen 
 
 Um die Adobe Experience Platform-Daten in Customer Journey Analytics verwenden zu können, erstellen Sie eine Verbindung, die die Daten enthält, die aus der Einrichtung Ihres Schemas, Datensatzes und Workflows resultieren.
 
-Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Arbeitsbereich integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
+Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Analysis Workspace integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
 
 Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 

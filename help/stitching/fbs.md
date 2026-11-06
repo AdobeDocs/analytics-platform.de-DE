@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 82%
+source-wordcount: '1923'
+ht-degree: 81%
 ---
 # Feldbasierte Zuordnung
 
@@ -39,7 +39,7 @@ Bei der feldbasierten Zuordnung geben Sie einen Ereignis-Datensatz sowie die per
 
 Wenn die Personen-ID-Informationen für ein Ereignis nicht abgerufen werden können, wird stattdessen die persistente ID für dieses (nicht *)* verwendet. Daher enthält in einer [Datenansicht](/help/data-views/data-views.md) die mit einer [Verbindung“ verknüpft ist, &#x200B;](/help/connections/overview.md) den Datensatz enthält, der für das Zusammenfügen aktiviert ist, die Personen-ID-Komponente entweder den Personen-ID-Wert oder den beständigen ID-Wert auf der Ereignisebene.
 
-Sie können das feldbasierte Stitching verwenden, wenn Sie Customer Journey Analytics als eigenständige Lösung verwenden (ohne Zugriff auf den Experience Platform Identity Service und das zugehörige Identitätsdiagramm). Oder wenn Sie das verfügbare Identitätsdiagramm nicht verwenden möchten.
+Sie können das feldbasierte Stitching verwenden, wenn Sie Customer Journey Analytics als eigenständige Lösung verwenden (ohne Zugriff auf den Experience Platform Identity Service und das zugehörige Identitätsdiagramm). Oder wenn Sie den verfügbaren Identitätsdiagramm nicht verwenden möchten.
 
 ![Feldbasierte Zuordnung](/help/stitching/assets/fbs.png)
 
@@ -115,15 +115,15 @@ Die feldbasierte Zuordnung unterstützt die Verwendung der [`identityMap`-Felder
 
 ## Funktionsweise der Zuordnung
 
-Beim Zuordnen werden in einem Datensatz mindestens zwei Datendurchläufe durchgeführt.
+Beim Stitching werden in einem bestimmten Datensatz mindestens zwei Durchläufe über die Daten durchgeführt.
 
-- **Live-Zuordnung:**: Versucht, bei Eingang jeden Treffer (Ereignis) zuzuordnen. Treffer von Geräten, die *neu* im Datensatz sind (sich noch nie authentifiziert haben), werden in der Regel nicht auf dieser Ebene zugeordnet. Treffer von bereits erkannten Geräten werden sofort zugeordnet.
+- **Live-Zuordnung:**: Versucht, bei Eingang jeden Treffer (Ereignis) zuzuordnen. Treffer von Geräten, die *neu* im Datensatz sind (sich noch nie authentifiziert haben), werden in der Regel nicht auf dieser Ebene zugeordnet. Treffer von bereits erkannten Geräten werden sofort gestitcht.
 
 - **Wiederholte Zuordnung:** *Wiederholt* Daten basierend auf eindeutigen Kennungen (Personen-IDs). In diesem Schritt werden Treffer von zuvor unbekannten Geräten (persistente IDs) zugeordnet (zu Personen-IDs). Zwei Parameter bestimmen die Wiederholung: **Häufigkeit** und **Lookback-Fenster**. Adobe bietet die folgenden Kombinationen dieser Parameter:
-  - **Täglicher Lookback mit täglicher Häufigkeit:** Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Personen müssen sich jedoch am selben Tag authentifizieren, an dem sie Ihre Website besuchen.
-  - **Wöchentlicher Lookback in wöchentlicher Häufigkeit:** Die Daten werden einmal wöchentlich mit einem wöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als eine Woche alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
-  - **Vierzehntägiger Lookback mit wöchentlicher Häufigkeit:** Die Daten werden einmal wöchentlich mit einem zweiwöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als zwei Wochen alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
-  - **Monatlicher Lookback mit wöchentlicher Häufigkeit:** Daten werden wöchentlich mit einem monatlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefassten Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als einen Monat alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+  - **Täglicher Lookback mit täglicher Häufigkeit:** Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Profile müssen sich jedoch an demselben Tag authentifizieren, an dem sie Ihre Website besuchen.
+  - **Wöchentlicher Lookback in wöchentlicher Häufigkeit:** Die Daten werden einmal wöchentlich mit einem wöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option hat den Vorteil, dass nicht authentifizierte Sitzungen deutlich mehr Zeit für die Authentifizierung haben. Nicht zugeordnete Daten, die weniger als eine Woche alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+  - **Vierzehntägiger Lookback mit wöchentlicher Häufigkeit:** Die Daten werden einmal wöchentlich mit einem zweiwöchentlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#)). Diese Option hat den Vorteil, dass nicht authentifizierte Sitzungen deutlich mehr Zeit für die Authentifizierung haben. Nicht zugeordnete Daten, die weniger als zwei Wochen alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
+  - **Monatlicher Lookback mit wöchentlicher Häufigkeit:** Daten werden wöchentlich mit einem monatlichen Lookback-Fenster wiederholt (siehe [Optionen](overview.md#options)). Diese Option hat den Vorteil, dass nicht authentifizierte Sitzungen deutlich mehr Zeit für die Authentifizierung haben. Nicht zugeordnete Daten, die weniger als einen Monat alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
 
 - **Datenschutz**: Wenn datenschutzbezogene Anfragen empfangen werden, muss neben dem Entfernen der angeforderten Identität auch jede Zuordnung dieser Identität zu nicht authentifizierten Ereignissen rückgängig gemacht werden.
 
@@ -133,7 +133,7 @@ Beim Zuordnen werden in einem Datensatz mindestens zwei Datendurchläufe durchge
   > 
 
 
-Daten, die über das Lookback-Fenster hinausgehen, werden nicht wiederholt. Ein Profil muss innerhalb eines gegebenen Lookback-Fensters authentifiziert werden, damit ein nicht authentifizierter Besuch und ein authentifizierter Besuch gemeinsam identifiziert werden können. Sobald ein Gerät erkannt wurde, wird dieses Gerät von diesem Punkt an live zugeordnet.
+Daten, die über das Lookback-Fenster hinausgehen, werden nicht erneut verarbeitet. Ein Profil muss innerhalb eines gegebenen Lookback-Fensters authentifiziert werden, damit ein nicht authentifizierter Besuch und ein authentifizierter Besuch gemeinsam identifiziert werden können. Sobald ein Gerät erkannt wurde, wird dieses Gerät von diesem Punkt an live zugeordnet.
 
 ### Schritt 1: Live-Zuordnung
 
@@ -161,21 +161,21 @@ Betrachten Sie das folgende Beispiel, bei dem Bob verschiedene Ereignisse als Te
 | 12 | 2023-05-12 12:12 | `81911` | – | **`Bob`** |
 | | | **3 Geräte** | | **4 Personen:**<br/>`246`, `Bob`, `3579`, `81911` |
 
-Sowohl nicht authentifizierte als auch authentifizierte Ereignisse auf neuen Geräten werden (vorübergehend) als separate Personen gezählt. Nicht authentifizierte Ereignisse auf erkannten Geräten werden live zugeordnet.
+Sowohl nicht authentifizierte als auch authentifizierte Ereignisse auf neuen Geräten werden (vorübergehend) als separate Personen gezählt. Nicht authentifizierte Ereignisse auf erkannten Geräten werden live zusammengeführt.
 
 Die Attribution funktioniert, wenn die Identifizierung der benutzerdefinierten Variablen an ein Gerät gebunden ist. Im obigen Beispiel werden alle Ereignisse mit Ausnahme der Ereignisse 1, 8, 9 und 10 live zugeordnet (sie verwenden alle die Kennung `Bob`). Die Live-Zuordnung „löst“ die resultierende ID für Ereignis 4, 6 und 12 auf.
 
-Verzögerte Daten (Daten mit einem Zeitstempel älter als 24 Stunden) werden „nach bestem Bemühen“ verarbeitet, wobei die Zuordnung aktueller Daten für die höchste Qualität priorisiert wird.
+Verzögerte Daten (Daten mit einem Zeitstempel, der mehr als 24 Stunden zurückliegt) werden nach dem Prinzip der „bestmöglichen Verarbeitung“ behandelt, wobei die Zusammenführung aktueller Daten für eine möglichst hohe Qualität priorisiert wird.
 
 +++ 
 
 ### Schritt 2: Wiederholte Zuordnung
 
-In regelmäßigen Abständen (einmal pro Woche oder einmal pro Tag, je nach ausgewähltem Lookback-Fenster) berechnet die wiederholte Zuordnung historische Daten erneut basierend auf Geräten, die es jetzt erkennt. Wenn ein nicht authentifiziertes Gerät anfänglich Daten sendet und sich dann anmeldet, verknüpft die wiederholte Zuordnung diese nicht authentifizierten Ereignisse mit der richtigen Person.
+In regelmäßigen Abständen (einmal pro Woche oder einmal pro Tag, je nach ausgewähltem Lookback-Fenster) berechnet das Replay-Stitching historische Daten erneut auf der Grundlage von Geräten, die jetzt erkannt werden. Wenn ein Gerät zunächst Daten sendet, während es nicht authentifiziert ist, und sich dann anmeldet, verknüpft das Replay-Stitching diese nicht authentifizierten Ereignisse mit der richtigen Person.
 
 +++ Details
 
-Die folgende Tabelle stellt dieselben Daten wie oben dar, zeigt jedoch unterschiedliche Zahlen basierend auf der Wiederholung der Daten.
+Die folgende Tabelle stellt dieselben Daten wie oben dar, zeigt jedoch unterschiedliche Zahlen basierend auf der erneuten Verarbeitung der Daten.
 
 *Dieselben Daten nach der Wiederholung:*
 
@@ -197,7 +197,7 @@ Die folgende Tabelle stellt dieselben Daten wie oben dar, zeigt jedoch unterschi
 
 {style="table-layout:auto"}
 
-Die Attribution funktioniert, wenn die Identifizierung der benutzerdefinierten Variablen an ein Gerät gebunden ist. Im obigen Beispiel werden Ereignis 1 und 10 als Ergebnis der Wiederholung zugeordnet, sodass nur Ereignis 8 und 9 nicht zugeordnet sind und die Metrik für Personen (kumulativ) auf 2 reduziert wird.
+Die Attribution funktioniert, wenn die Identifizierung der benutzerdefinierten Variablen an ein Gerät gebunden ist. Im obigen Beispiel werden Ereignis 1 und 10 durch das Replay zusammengeführt, sodass nur Ereignis 8 und 9 nicht zusammengeführt sind. und die Metrik für Personen (kumulativ) auf 2 reduziert wird.
 
 +++ 
 
@@ -231,12 +231,12 @@ Die folgende Tabelle stellt dieselben Daten wie oben dar, zeigt jedoch die Auswi
 
 ## Voraussetzungen
 
-Die folgenden Voraussetzungen gelten speziell für feldbasierte Zuordnung:
+Die folgenden Voraussetzungen gelten speziell für feldbasiertes Stitching:
 
-- Der Ereignisdatensatz in Adobe Experience Platform, auf den Sie eine Zuordnung anwenden möchten, muss zwei Spalten aufweisen, die die Identifizierung von Profilen erleichtern:
+- Der Ereignis-Datensatz in Adobe Experience Platform, auf den Sie Stitching anwenden möchten, muss zwei Spalten aufweisen, die zur Identifizierung von Profilen dienen:
 
-  - Eine **persistente ID**, eine Kennung, die in jeder Zeile vorhanden ist. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde, oder eine vom Adobe Experience Platform Identity Service generierte ECID.
-  - Eine **Personen-ID**, eine Kennung, die nur in einigen Zeilen vorhanden ist. Beispielsweise ein gehashter Benutzername oder eine gehashte E-Mail-Adresse, wenn sich ein Profil authentifiziert. Sie können praktisch jede gewünschte Kennung verwenden. Beim Zuordnen wird davon ausgegangen, dass dieses Feld die tatsächlichen Informationen der Personen-ID enthält. Um die besten Ergebnisse beim Zuordnen zu erzielen, sollte eine Personen-ID mindestens einmal für jede persistente ID innerhalb der Ereignisse des Datensatzes gesendet werden. Wenn Sie diesen Datensatz in eine Customer Journey Analytics-Verbindung einbeziehen möchten, sollten die anderen Datensätze auch eine ähnliche gemeinsame Kennung haben.
+  - Eine **persistente ID**, eine Kennung, die in jeder Zeile vorhanden ist. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde, oder eine von Edge Network generierte ECID.
+  - Eine **Personen-ID**, eine Kennung, die nur in einigen Zeilen vorhanden ist. Beispielsweise ein gehashter Benutzername oder eine gehashte E-Mail-Adresse, wenn sich ein Profil authentifiziert. Sie können praktisch jede gewünschte Kennung verwenden. Beim Stitching wird davon ausgegangen, dass dieses Feld die tatsächlichen Informationen zur Personen-ID enthält. Um die besten Ergebnisse beim Zuordnen zu erzielen, sollte innerhalb der Ereignisse des Datensatzes für jede persistente ID mindestens einmal eine Personen-ID gesendet werden. Wenn Sie diesen Datensatz in eine Customer Journey Analytics-Verbindung einbeziehen möchten, sollten die anderen Datensätze ebenfalls eine ähnliche gemeinsame Kennung aufweisen.
 
 <!--
 - Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
@@ -245,14 +245,14 @@ Die folgenden Voraussetzungen gelten speziell für feldbasierte Zuordnung:
 
 ## Einschränkungen
 
-Die folgenden Einschränkungen gelten speziell für die feldbasierte Zuordnung:
+Die folgenden Einschränkungen gelten speziell für feldbasiertes Stitching:
 
-- Die aktuellen Funktionen zur Neuzuweisung sind auf einen Schritt beschränkt (persistente ID zu Personen-ID). Eine mehrstufige Neuzuweisung wird nicht unterstützt, beispielsweise persistente ID zu Personen-ID und dann zu einer anderen Personen-ID.
+- Die aktuellen Funktionen zur Neuzuweisung sind auf einen Schritt beschränkt (persistente ID zu Personen-ID). Eine mehrstufige Rekeying-Operation wird nicht unterstützt, beispielsweise von einer persistenten ID zu einer Personen-ID und anschließend zu einer weiteren Personen-ID.
 - Wenn mehrere Personen ein Gerät gemeinsam nutzen und die Gesamtzahl der Transitionen zwischen den Benutzern 50.000 überschreitet, stoppt Customer Journey Analytics das Zusammenfügen von Daten für dieses Gerät.
 - Benutzerdefinierte ID-Maps, die in Ihrem Unternehmen verwendet werden, werden nicht unterstützt.
 - Bei der Zuordnung ist die Groß-/Kleinschreibung zu beachten. Für Datensätze, die über den Analytics-Quell-Connector generiert werden, empfiehlt Adobe die Prüfung aller VISTA-Regeln oder Verarbeitungsregeln, die für das Personen-ID-Feld gelten. Mit dieser Prüfung wird sichergestellt, dass keine dieser Regeln neue Formen derselben ID einführt. So sollten Sie beispielsweise sicherstellen, dass keine VISTA- oder Verarbeitungsregeln dafür sorgen, dass im Feld für die Personen-ID nur für einen Teil der Ereignisse Kleinschreibung verwendet wird.
-- Bei der Zuordnung werden Felder nicht kombiniert oder verkettet.
+- Beim Stitching werden Felder nicht kombiniert oder verkettet.
 - Das Feld für die Personen-ID sollte nur einen ID-Typ enthalten (IDs aus einem einzigen Namespace). Das Feld für die Personen-ID sollte beispielsweise keine Kombination aus Anmelde-IDs und E-Mail-IDs enthalten.
-- Wenn mehrere Ereignisse mit demselben Zeitstempel für dieselbe persistente ID auftreten, jedoch unterschiedliche Werte im Feld für die Personen-ID vorliegen, wird bei der Zuordnung die ID nach alphabetischer Reihenfolge ausgewählt. Wenn also eine persistente ID A zwei Ereignisse mit demselben Zeitstempel hat und eines der Ereignisse „Bob“ und das andere „Ann“ angibt, wählt die Zuordnung „Ann“ aus.
+- Wenn mehrere Ereignisse mit demselben Zeitstempel für dieselbe persistente ID auftreten, jedoch unterschiedliche Werte im Feld für die Personen-ID vorliegen, wird bei der Zuordnung die ID nach alphabetischer Reihenfolge ausgewählt. Wenn also eine persistente ID A zwei Ereignisse mit demselben Zeitstempel hat und eines der Ereignisse „Bob“ und das andere „Ann“ angibt, wählt das Stitching „Ann“ aus.
 - Seien Sie vorsichtig bei Szenarien, in denen die Personen-IDs Platzhalterwerte enthalten, z. B. `Undefined`. Weitere Informationen finden Sie unter [Häufig gestellte Fragen](faq.md).
 - Sie können nicht denselben Namespace sowohl für die persistente ID als auch für die Personen-ID verwenden. Die Namespaces müssen sich gegenseitig ausschließen.

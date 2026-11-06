@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 91%
 ---
 # Strategie zur Veröffentlichung von Customer Journey Analytics-Funktionen
 
@@ -41,9 +41,9 @@ Customer Journey Analytics-Versionen basieren auf einem Modell der kontinuierlic
 
 * **Eingeschränktes Testen**: Eine schrittweise Veröffentlichung beginnt mit Tests durch Adobe-interne Benutzende. Sie wird dann einer kleinen Gruppe von Kundenkonten zur Verfügung gestellt, um sicherzustellen, dass die Funktion den Kundenanforderungen und Erwartungen entspricht.
 
-* **Start des Rollouts**: Der Rollout einer stufenweisen Veröffentlichung beginnt mit der eingeschränkten Testphase. Die Verfügbarkeit der Version für Kunden wird dann im Laufe einiger Monate von 0 % auf 100 % skaliert. Die schrittweise Einführung erfolgt auf der CX Enterprise-Organisationsebene, sodass alle Benutzenden mit Berechtigung in einem Unternehmen dasselbe Erlebnis erhalten.
+* **Start des Rollouts**: Der Rollout einer stufenweisen Veröffentlichung beginnt mit der eingeschränkten Testphase. Die Verfügbarkeit der Version für Kunden wird dann im Laufe einiger Monate von 0 % auf 100 % skaliert. Der schrittweise Rollout erfolgt auf Adobe-Organisationsebene, sodass alle berechtigten Benutzenden in einer Organisation dasselbe Erlebnis erhalten.
 
-* **Allgemeine Verfügbarkeit (GA)**: Die Funktion steht 100 % der berechtigten CX Experience-Organisationen zur Verfügung und die Veröffentlichung der Funktion ist abgeschlossen.
+* **Allgemeine Verfügbarkeit (GA)**: Die Funktion steht 100 % der berechtigten Organisationen zur Verfügung und die Funktionsveröffentlichung ist abgeschlossen.
 
 Bei jeder Funktionsveröffentlichung kann die Timeline von RTP bis GA variieren. Ziel ist es, die Veröffentlichungen kurz zu halten, sodass innerhalb von 2 Monaten nach dem Release-Start (RTP) eine Funktion allgemein verfügbar (GA) ist.
 

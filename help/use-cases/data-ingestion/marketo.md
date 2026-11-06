@@ -47,7 +47,7 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 9%
@@ -149,7 +149,7 @@ Kunden mit B2B/B2P CDP können eine B2C-Analyse in Customer Journey Analytics du
 
    ![Freiformtabelle mit Ereignissen nach Monat.](../assets/marketo-freeform.png)
 
-1. Oder ziehen Sie die folgenden Dimensionen in die Tabelle: Personen-Schlüssel oder geschäftliche E-Mail-Adresse. Mit dieser Aktion erhalten Sie die Web-Seitenbesuche nach Lead:
+1. Oder rufen Sie die folgenden Dimensionen ab: Person Key oder Work Email Address. Mit dieser Aktion erhalten Sie die Web-Seitenbesuche nach Lead:
 
    ![Freiformtabelle mit Ereignissen und „workEmail.Address“ und Web-Seitenansichten.](../assets/marketo-freeform2.png)
 

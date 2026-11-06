@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Customer Journey Analytics-spezifischen Funktionen
+title: Einzigartige Funktionen von Customer Journey Analytics verstehen
 description: Erfahren Sie mehr über Customer Journey Analytics-spezifische Funktionen
 role: Admin
 solution: Customer Journey Analytics
@@ -33,19 +33,19 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '589'
+ht-degree: 94%
 ---
-# Informationen zu Customer Journey Analytics-spezifischen Funktionen {#feature-support-upgrade}
+# Einzigartige Funktionen von Customer Journey Analytics verstehen {#feature-support-upgrade}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tie-data"
 >title="Verbinden von Daten aus unterschiedlichen Quellen"
->abstract="(Empfohlen) Verknüpfen Sie Daten aus verschiedenen Web-, Mobile- und Offline-Eigenschaften, um eine einzige, konsolidierte Ansicht des Kundenverhaltens zu erstellen. Diese Fähigkeit, Analysedaten aus anderen Kanälen zu kombinieren, ist der wichtigste Anwendungsfall für Customer Journey Analytics."
+>abstract="(Empfohlen) Verknüpfen Sie Daten aus verschiedenen Web-, Mobile- und Offline-Kanälen, um eine konsolidierte Ansicht des Kundenverhaltens zu erstellen. Diese Fähigkeit, Analysedaten aus anderen Kanälen zu kombinieren, ist der wichtigste Anwendungsfall für Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
 >title="Zusammenfügen von Treffern aus mehreren Datensätzen"
->abstract="Wenn einer Ihrer Datensätze keine primäre Kennung (z. B. eine Experience Cloud-ID) aufweist, können Sie diese Daten dennoch mithilfe einer anderen Dimension, z. B. Anmeldename oder E-Mail-Adresse, zusammenfügen."
+>abstract="Wenn einer Ihrer Datensätze keine primäre Kennung (z. B. eine ECID) aufweist, können Sie diese Daten dennoch mithilfe einer anderen Dimension zusammenfügen, z. B. Anmeldename oder E-Mail-Adresse."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,7 +63,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
 >title="Zuordnung für relevante Datensätze aktivieren"
->abstract="Wenn Sie über ein Feld verfügen, das eine Kennung enthält, die in mehreren Datensätzen vorhanden ist, aber nicht die primäre Kennung ist, können Sie die Daten mithilfe der Zuordnung in einen oder mehrere Datensätze einbinden."
+>abstract="Wenn Sie über ein Feld verfügen, das eine Kennung enthält, die in mehreren Datensätzen vorhanden ist, aber nicht die primäre Kennung ist, können Sie mithilfe von Stitching diese Daten in einem oder mehreren dieser Datensätze zusammenführen."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -71,7 +71,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-rtcdp"
->title="Integrieren mit Real-time CDP"
+>title="Integrieren Sie mit Real-Time CDP"
 >abstract="Kombinieren Sie Profildaten aus verschiedenen Quellen, um Zielgruppen und Segmente basierend auf Benutzereigenschaften zu generieren."
 
 <!-- markdownlint-enable MD034 -->
@@ -80,8 +80,8 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-target"
->title="Vorübergehendes Integrieren mit Adobe Target"
->abstract="Adobe empfiehlt für Personalisierungs-Anwendungsfälle die Integration mit Adobe Journey Optimizer. Die Integration mit Adobe Target ist möglich, ist aber nur eine kurzfristige Lösung."
+>title="Vorübergehend mit Adobe Target integrieren"
+>abstract="Adobe empfiehlt für Personalisierungsanwendungsfälle die Integration mit Adobe Journey Optimizer. Die Integration mit Adobe Target ist möglich, ist aber nur eine kurzfristige Lösung."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -89,7 +89,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-ajo"
->title="Integrieren mit Journey Optimizer"
+>title="Mit Journey Optimizer integrieren"
 >abstract="Stellen Sie Ihren Kundinnen und Kunden vernetzte, kontextuelle und personalisierte Erlebnisse bereit."
 
 <!-- markdownlint-enable MD034 -->
@@ -114,6 +114,6 @@ In der folgenden Liste sind nur die Customer Journey Analytics-Funktionen aufgef
 | [Web-Daten mit Daten aus anderen Quellen (z. B. Daten des Kontakt-Centers) verbinden](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) | Customer Journey Analytics wird mit der Fähigkeit von Experience Platform kombiniert, alle Arten von Datenschemata und -typen zu speichern. Mithilfe des [Experience-Datenmodells (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) können Daten einheitlich dargestellt und organisiert werden, sodass sie kombiniert und untersucht werden können. Adobe Analytics konzentriert sich hauptsächlich auf Web-basierte und Mobile-Analysedaten, wobei verschiedene Funktionen für den [Datenimport](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=de) zur Verfügung stehen. |
 | [Treffer aus anderen Datensätzen mithilfe einer benutzerdefinierten Dimension zuordnen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/stitching/overview) | Mit Customer Journey Analytics können Sie [Daten aus mehreren Report Suites so kombinieren](/help/connections/combined-dataset.md), als bildeten sie eine einzige Report Suite in Adobe Analytics. |
 | [Mit Adobe Real-Time CDP integrieren](/help/components/audiences/audiences-overview.md) | Sie können in Customer Journey Analytics identifizierte [Zielgruppen erstellen](/help/components/audiences/audiences-overview.md) und im Echtzeit-Kundenprofil in Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden. |
-| [Mit Adobe Target (A4T) integrieren](/help/integrations/at.md) | Mit dem Target-Reporting in Customer Journey Analytics können Sie [Adobe Target-Aktivitäten](/help/integrations/at.md) direkt in Customer Journey Analytics messen und Berichte dazu erstellen. Adobe empfiehlt für Personalisierungs-Anwendungsszenarien jedoch die Integration mit Adobe Journey Optimizer. |
+| [Mit Adobe Target (A4T) integrieren](/help/integrations/at.md) | Mit dem Target-Reporting in Customer Journey Analytics können Sie [Adobe Target-Aktivitäten](/help/integrations/at.md) direkt in Customer Journey Analytics messen und Berichte dazu erstellen. Adobe empfiehlt für Personalisierungsanwendungsfälle jedoch die Integration mit Adobe Journey Optimizer. |
 | [Mit Adobe Journey Optimizer integrieren](/help/integrations/ajo.md) | Sie können von Journey Optimizer generierte Daten konfigurieren, um [eine erweiterte Analyse in Customer Journey Analytics durchzuführen](/help/integrations/ajo.md). |
 | [Mit Adobe Audience Manager integrieren](https://experienceleague.adobe.com/de/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing) | Sie können [Audience Manager-Eigenschaften und -Segmente für Adobe Experience Platform freigeben](https://experienceleague.adobe.com/de/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing). Adobe empfiehlt für zielgruppenbasierte Anwendungsfälle jedoch die Integration mit Adobe Real-time CDP. |

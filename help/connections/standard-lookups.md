@@ -29,27 +29,25 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: 452
+source-wordcount: '451'
 ht-degree: 43%
-
 ---
-
-# Hinzufügen von Standardsuchen zu Ihren Datensätzen
+# Hinzufügen von Standard-Lookups zu Ihren Datensätzen
 
 >[!IMPORTANT]
 >
 >Standardsuchen sind nur für Analytics-Quell-Connector-Datenquellen in Customer Journey Analytics verfügbar. Sie können sie mit standardmäßigen Adobe Analytics-Implementierungen, mit dem [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de) oder mit den Datenerfassungs-APIs von Experience Platform verwenden.
 >
 
-Anhand von Standardsuchen (auch als von Adobe bereitgestellte Suchen bekannt) kann Customer Journey Analytics Berichte zu bestimmten Dimensionen/Attributen erstellen, die nicht für sich genommen, aber bei der Verknüpfung mit anderen Daten nützlich sind. Dies können beispielsweise Attribute von Smartphones oder Tablets und Attribute von Betriebssystem- und Browser-Dimensionen wie etwa die Versionsnummern von Browsern sein. Eine „Standardsuche“ ähnelt einem Lookup-Datensatz. Standardsuchen sind auf alle CX Enterprise-Organisationen anwendbar. Sie werden automatisch auf alle Ereignis-Datensätze angewendet, die bestimmte XDM-Schemafelder enthalten (die jeweiligen Felder finden Sie unten). Für jeden Schemaspeicherort, den Adobe klassifiziert, ist ein Standardsuchdatensatz vorhanden.
+Anhand von Standard-Lookups (auch als von Adobe bereitgestellte Lookups bekannt) kann Customer Journey Analytics über bestimmte Dimensionen/Attribute Bericht erstatten, die für sich genommen nicht, aber bei der Verknüpfung mit anderen Daten nützlich sind. Dies können beispielsweise Attribute von Smartphones oder Tablets und Attribute von Betriebssystem- und Browser-Dimensionen wie etwa die Versionsnummern von Browsern sein. Eine „Standardsuche“ ähnelt einem Lookup-Datensatz. Standardsuchen sind auf alle Adobe-Organisationen anwendbar. Sie werden automatisch auf alle Ereignis-Datensätze angewendet, die bestimmte XDM-Schemafelder enthalten (die jeweiligen Felder finden Sie unten). Für jeden Schemaspeicherort, den Adobe klassifiziert, ist ein Standardsuchdatensatz vorhanden.
 
-Im herkömmlichen Adobe Analytics werden diese Dimensionen eigenständig angezeigt. In Customer Journey Analytics hingegen müssen Sie diese Dimensionen beim Erstellen von Datenansichten aktiv einbeziehen. Im Verbindungs-Workflow wählen Sie einen Datensatz aus, der mit einem Schlüssel für die Standardsuche gekennzeichnet ist. In der Datenansichts-Benutzeroberfläche werden automatisch alle Dimensionen der Standardsuche einbezogen, die für Berichte verfügbar sind. Die Lookup-Dateien werden automatisch aktualisiert und stehen für alle Regionen und Accounts zur Verfügung. Sie werden in regionsspezifischen Organisationen gespeichert, die dem Kunden zugeordnet sind.
+Im herkömmlichen Adobe Analytics werden diese Dimensionen eigenständig angezeigt. In Customer Journey Analytics hingegen müssen Sie diese Dimensionen beim Erstellen von Datenansichten aktiv einbeziehen. Wählen Sie im Verbindungs-Workflow einen Datensatz aus, der als Datensatz mit einem Schlüssel für Standard-Lookup gekennzeichnet ist. In der Datenansichtsoberfläche werden automatisch alle Standard-Lookup-Dimensionen einbezogen, die für das Reporting verfügbar sind. Die Lookup-Dateien werden automatisch aktualisiert und stehen für alle Regionen und Accounts zur Verfügung. Sie werden in regionsspezifischen Organisationen gespeichert, die dem Kunden zugeordnet sind.
 
 ## Verwenden von Standardsuchen mit Analytics Source Connector-Datensätzen
 
-Datensätze für die Standardsuche werden zum Zeitpunkt der Berichterstellung automatisch angewendet. Wenn Sie den Analytics-Quell-Connector verwenden und eine Dimension einbringen, für die Adobe eine Standardsuche bereitstellt, wird diese Standardsuche automatisch angewendet. Wenn ein Ereignis-Datensatz XDM-Felder enthält, können Standardsuchen darauf angewendet werden.
+Standard-Lookup-Datensätze werden zum Zeitpunkt der Berichtserstellung automatisch angewendet. Wenn Sie den Analytics-Quell-Connector verwenden und eine Dimension einbringen, für die Adobe eine Standardsuche bereitstellt, wird diese Standardsuche automatisch angewendet. Wenn ein Ereignisdatensatz XDM-Felder enthält, können Standard-Lookups darauf angewendet werden.
 
 <!--
 ### Specific IDs that need to be populated
@@ -64,7 +62,7 @@ You need these mixins with the three IDs populated (device/typeID, environment/b
 The catch here is that they can only populate those IDs today if they have a direct relationship with Device Atlas. They are Device Atlas IDs, and they provide an API to allow a customer to look them up. This is a significant hurdle, and we may just want to take the reference to this capability out of the product documentation until we have a productized way to expose the Device Atlas ID lookup functionality.
 -->
 
-### Verfügbare Standardsuchfelder
+### Verfügbare Standard-Lookup-Felder
 
 * `browser`
   * `browser`, `group_id`, `id`
@@ -97,7 +95,7 @@ The catch here is that they can only populate those IDs today if they have a dir
 * `mobile_screen_width`
 * `mobile_video_support - multi`
 
-## Bericht zu Dimensionen der Standardsuche
+## Berichterstellung für Standard-Lookup-Dimensionen
 
 Um Berichte zu Dimensionen der Standardsuche in Adobe zu erstellen, müssen Sie eine oder mehrere dieser Dimensionen hinzufügen, wenn Sie eine [Datenansicht](/help/data-views/data-views.md) in Customer Journey Analytics erstellen. In **[!UICONTROL Datenansicht]** > **[!UICONTROL Komponenten]**:
 

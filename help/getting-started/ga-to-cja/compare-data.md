@@ -22,9 +22,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1297'
 ht-degree: 0%
 ---
 
@@ -95,7 +95,7 @@ GA4 verwendet ein kaskadierendes Identitätsmodell, um Benutzer zu identifiziere
 2. Google-Signale (wenn die Benutzerin bzw. der Benutzer bei einem Google-Konto mit aktivierter Personalisierung angemeldet ist)
 3. Geräte-ID (Cookie-basierte Client-ID)
 
-In den meisten Implementierungen ist diese Personen-ID eine ECID (Experience Cloud ID). Die optionale **[!UICONTROL Stitching]**-Funktion kann dann geräte- und kanalübergreifende Identitäten mithilfe feldbasierter oder diagrammbasierter Methoden auflösen, sodass eine Mobile-App-Sitzung und eine Desktop-Browser-Sitzung derselben Person zugeordnet werden können.
+In den meisten Implementierungen ist diese Personen-ID eine ECID. Die optionale **[!UICONTROL Stitching]**-Funktion kann dann geräte- und kanalübergreifende Identitäten mithilfe feldbasierter oder diagrammbasierter Methoden auflösen, sodass eine Mobile-App-Sitzung und eine Desktop-Browser-Sitzung derselben Person zugeordnet werden können.
 
 Da die Identitätsauflösung zwischen den Plattformen unterschiedlich ist, stimmen die Zahlen auf Benutzerebene selten genau überein. Diese Diskrepanz ist zu erwarten und weist nicht auf ein Datenqualitätsproblem hin.
 

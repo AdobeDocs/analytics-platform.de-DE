@@ -47,9 +47,9 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '3921'
+source-wordcount: '3918'
 ht-degree: 48%
 ---
 # Zuordnen von Adobe Analytics-Daten-Feed-Spalten zu Customer Journey Analytics
@@ -66,7 +66,7 @@ Diese Referenz hilft Dateningenieuren, Adobe Analytics-Daten-Feed-Spalten zu bew
 
 +++**`accept_language`**
 
-Führt alle unterstützten Sprachen, wie im HTTP-Header Accept-Language angegeben, in einer Bildanforderung auf.
+Listet alle akzeptierten Sprachen auf, wie im HTTP-Header Accept-Language in einer Bildanforderung angegeben.
 
 +++
 
@@ -169,7 +169,7 @@ Die Dimension Site-Abschnitte .
 
 +++**`ch_hdr`**
 
-Client-Hinweise, die über die Kopfzeile der HTTP-Anfrage erfasst werden.
+Client-Hinweise, die über den HTTP-Request-Header erfasst werden.
 
 In Adobe Analytics wurden Client-Hinweise als verkettete Zeichenfolge in diese Spalte aufgenommen. Es gilt als modernerer Ansatz als die `user_agent`.
 
@@ -179,7 +179,7 @@ In Adobe Analytics wurden Client-Hinweise als verkettete Zeichenfolge in diese S
 
 +++**`ch_js`**
 
-Client-Hinweise, die über die JavaScript-API für Client-Hinweise von Benutzeragenten erfasst werden.
+Client-Hinweise, die über die JavaScript-API „User-Agent Client Hints“ erfasst werden.
 
 In Adobe Analytics wurden Client-Hinweise als verkettete Zeichenfolge in diese Spalte aufgenommen. Es gilt als modernerer Ansatz als die `user_agent`.
 
@@ -383,7 +383,7 @@ Sie können `xdm.timestamp` verwenden und die Komponenteneinstellung **[!UICONTR
 
 +++**`domain`**
 
-Die Dimension Domain . Basierend auf dem Internetzugangspunkt der Besuchenden.
+Die Dimension Domain . Basierend auf dem Internetzugangspunkt des Besuchers oder der Besucherin.
 
 Aktivieren **[!UICONTROL Netzwerksuche]** beim [Konfigurieren eines Datenstroms](https://experienceleague.adobe.com/de/docs/experience-platform/datastreams/configure). Das XDM-Feld wird `xdm.environment.domain`, wenn es in Ihrem Schema enthalten ist.
 
@@ -411,7 +411,7 @@ Customer Journey Analytics hat kein einzelnes Feld, das als Deduplizierungs-Mark
 
 +++**`duplicate_purchase`**
 
-Markierung, die bestimmt, ob das Kaufereignis für diesen Treffer ignoriert wird, weil es ein Duplikat ist.
+Eine Markierung, die bestimmt, ob das Kaufereignis für diesen Treffer ignoriert wird, weil es ein Duplikat ist.
 
 Es gibt zwar keine direkte Übersetzung für diese Analytics-Daten-Feed-Spalte, aber die Funktion, Käufe zu deduplizieren, ist noch vorhanden. Bei Verwendung der Feldergruppe [[!UICONTROL Commerce-]](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/event/commerce-details)Details&#39; können Sie [Metrik-Deduplizierung - Komponenteneinstellungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) festlegen, bei die **[!UICONTROL Deduplizierungs-ID]** `xdm.commerce.purchases.id` ist.
 
@@ -491,7 +491,7 @@ Ausgeschlossene Treffer sind jetzt nicht in Customer Journey Analytics-Berichten
 
 +++**`first_hit_pagename`**
 
-Die ursprüngliche Dimension der Einstiegsseite. Der Name der ursprünglichen Entrypage des Besuchers.
+Die ursprüngliche Dimension der Einstiegsseite. Der Name der ursprünglichen Einstiegsseite des Besuchers oder der Besucherin.
 
 +++
 
@@ -509,13 +509,13 @@ Die allererste verweisende URL des Besuchers.
 
 +++**`first_hit_ref_domain`**
 
-Die Dimension Ursprünglich verweisende Domain . Basierend auf `first_hit_referrer`. Die allererste verweisende Domain des Besuchers.
+Die Dimension Ursprünglich verweisende Domain . Basierend auf `first_hit_referrer`. Die allererste verweisende Referrer-Domain des Besuchers oder der Besucherin.
 
 +++
 
 +++**`first_hit_ref_type`**
 
-Numerische ID, die den Referrer-Typ des ursprünglichen Referrers der oder des Besuchenden darstellt.
+Numerische ID, die den Referrer-Typ des ursprünglichen Referrers des Besuchers oder der Besucherin darstellt.
 
 {{cja-df-lookup}}
 
@@ -523,7 +523,7 @@ Numerische ID, die den Referrer-Typ des ursprünglichen Referrers der oder des B
 
 +++**`first_hit_time_gmt`**
 
-Zeitstempel des allerersten Treffers der Besucherin oder des Besuchers in UNIX®-Zeit.
+Zeitstempel des allerersten Treffers des Besuchers oder der Besucherin in UNIX®-Zeit.
 
 +++
 
@@ -577,13 +577,13 @@ Quelle, aus der der Treffer stammt. Die Trefferquellen 1 und 2 werden in Rechnun
 
 +++**`hit_time_gmt`**
 
-Der Zeitstempel des Zeitpunkts, wo der Adobe-Datenerfassungs-Server den Treffer erhielt, basierend auf der UNIX®-Zeit.
+Der Zeitstempel des Zeitpunkts, zu dem der Adobe-Datenerfassungs-Server den Treffer erhielt, basierend auf der UNIX®-Zeit.
 
 +++
 
 +++**`hourly_visitor`**
 
-Markierung, die bestimmt, ob es sich bei dem Treffer um eine neue stündliche Besucherin oder einen neuen stündlichen Besucher handelt.
+Markierung, die bestimmt, ob es sich bei dem Treffer um einen neuen stündlichen Besucher oder eine neue stündliche Besucherin handelt.
 
 +++
 
@@ -623,7 +623,7 @@ Vom Browser unterstützte JavaScript-Version.
 
 +++**`language`**
 
-Numerische ID, die die Sprache der oder des Besuchenden darstellt.
+Numerische ID, die die Sprache des Besuchers oder der Besucherin darstellt.
 
 {{cja-df-lookup}}
 
@@ -667,13 +667,13 @@ Standort (bis 1 m)
 
 +++**`mcvisid`**
 
-Experience Cloud-Besucher-ID. 128-Bit-Zahl bestehend aus zwei verketteten 64-Bit-Zahlen verteilt auf 19 Ziffern.
+ECID. 128-Bit-Zahl, die aus zwei verketteten 64-Bit-Zahlen besteht und auf 19 Ziffern aufgefüllt wird.
 
 +++
 
 +++**`mc_audiences`**
 
-Liste der Segment-IDs von Audience Manager, zu denen der Besucher gehört. Die Spalte `post_mc_audiences` ändert das Trennzeichen in `--**--`.
+Liste der Segmentkennungen in Adobe Audience Manager, zu denen der Besucher oder die Besucherin gehört. Die Spalte `post_mc_audiences` ändert das Trennzeichen in `--**--`.
 
 {{cja-df-post}}
 
@@ -681,7 +681,7 @@ Liste der Segment-IDs von Audience Manager, zu denen der Besucher gehört. Die S
 
 +++**`mobileaction`**
 
-Mobile Aktion. Wird automatisch erfasst, wenn in mobilen Implementierungen `trackAction` aufgerufen wird. Ermöglicht automatisches Action Pathing in der App.
+Mobile Aktion. Wird automatisch erfasst, wenn in mobilen Implementierungen `trackAction` aufgerufen wird. Ermöglicht automatisches &quot;Action Pathing&quot; in der App.
 
 {{cja-df-post}}
 
@@ -699,19 +699,19 @@ ID der Mobile App. Speichert den Namen und die Version der App im folgenden Form
 
 +++**`mobileappperformanceappid`**
 
-Wird im Apteligent-Daten-Connector verwendet. Die in Apteligent verwendete App-ID.
+Wird im Apteligent Datenconnector verwendet. Die in Apteligent verwendete App ID.
 
 +++
 
 +++**`mobileappperformancecrashid`**
 
-Wird im Apteligent-Daten-Connector verwendet. Die in Apteligent verwendete Absturz-ID.
+Wird im Apteligent Datenconnector verwendet. Die in Apteligent verwendete Absturz-ID.
 
 +++
 
 +++**`mobileappstoreobjectid`**
 
-Wird im [!DNL Appfigures]-Daten-Connector verwendet. App Store-Objekt-ID.
+Wird im [!DNL Appfigures]-Daten-Connector verwendet. Appstore-Objekt-ID.
 
 +++
 
@@ -741,7 +741,7 @@ Mobile Services-Beacon UUID
 
 +++**`mobilecampaigncontent`**
 
-Der Name oder die ID des Inhalts, der den Link angezeigt hat. Erfasst durch App-Akquise.
+Der Name oder die ID des Inhalts, der den Link angezeigt hat. Erfasst durch Mobile App Acquisition.
 
 {{cja-df-post}}
 
@@ -749,7 +749,7 @@ Der Name oder die ID des Inhalts, der den Link angezeigt hat. Erfasst durch App-
 
 +++**`mobilecampaignmedium`**
 
-Marketing-Medium, z. B. ein Banner oder eine E-Mail. Erfasst durch App-Akquise.
+Marketing-Medium, z. B. ein Banner oder eine E-Mail. Erfasst durch Mobile App Acquisition.
 
 {{cja-df-post}}
 
@@ -757,7 +757,7 @@ Marketing-Medium, z. B. ein Banner oder eine E-Mail. Erfasst durch App-Akquise.
 
 +++**`mobilecampaignname`**
 
-Name der Kampagne, der zusätzlich in der Kampagnenvariable gespeichert wird. Erfasst durch App-Akquise.
+Name der Kampagne, der zusätzlich in der Kampagnenvariable gespeichert wird. Erfasst durch Mobile App Acquisition.
 
 {{cja-df-post}}
 
@@ -765,7 +765,7 @@ Name der Kampagne, der zusätzlich in der Kampagnenvariable gespeichert wird. Er
 
 +++**`mobilecampaignsource`**
 
-Ursprünglicher Referrer, z. B. ein Newsletter oder ein Social Media-Netzwerk. Erfasst durch App-Akquise.
+Ursprünglicher Referrer, z. B. ein Newsletter oder ein Social Media-Netzwerk. Erfasst durch Mobile App Acquisition.
 
 {{cja-df-post}}
 
@@ -773,7 +773,7 @@ Ursprünglicher Referrer, z. B. ein Newsletter oder ein Social Media-Netzwerk. E
 
 +++**`mobilecampaignterm`**
 
-Bezahlte Suchbegriffe oder andere Begriffe, die Sie mit dieser Akquise verfolgen möchten. Erfasst durch App-Akquise.
+Bezahlte Suchbegriffe oder andere Begriffe, die Sie mit dieser Akquisition tracken möchten. Erfasst durch Mobile App Acquisition.
 
 {{cja-df-post}}
 
@@ -827,7 +827,7 @@ Gibt die Stunde des Tages an, zu der die App gestartet wurde. Angaben im 24-Stun
 
 +++**`mobileinstalldate`**
 
-Installationsdatum der Mobile App. Stellt das Datum zur Verfügung, an dem eine Person die Mobile App erstmalig geöffnet hat.
+Installationsdatum der Mobile App. Stellt das Datum zur Verfügung, an dem ein Benutzer oder eine Benutzerin die Mobile App erstmalig geöffnet hat.
 
 {{cja-df-lookback}}
 
@@ -837,7 +837,7 @@ Installationsdatum der Mobile App. Stellt das Datum zur Verfügung, an dem eine 
 
 +++**`mobilelaunchnumber`**
 
-Wird immer dann erhöht, wenn die Mobile App gestartet wird.
+Wird bei jedem Start der Mobile-App um eins erhöht.
 
 {{cja-df-lookback}}
 
@@ -847,7 +847,7 @@ Wird immer dann erhöht, wenn die Mobile App gestartet wird.
 
 +++**`mobilemessagebuttonname`**
 
-Erfasst mit der Kontextdatenvariablen `a.message.button.id`. Wird für In-App-Nachrichten verwendet, um die Schaltfläche zu identifizieren, mit der die Nachricht geschlossen wurde.
+Erfasst mit der Kontextdatenvariablen `a.message.button.id`. Wird für In-App-Messaging verwendet, um die Schaltfläche zu identifizieren, mit der die Nachricht geschlossen wurde.
 
 {{cja-df-post}}
 
@@ -871,7 +871,7 @@ In-App-Online-Nachricht
 
 +++**`mobilemessagepushoptin`**
 
-Erfasst mit der Kontextdatenvariablen `a.push.optin`. Setzen Sie sie auf „true“, wenn sich der Benutzer für Push-Nachrichten anmeldet; andernfalls ist der Wert „false“.
+Erfasst mit der Kontextdatenvariablen `a.push.optin`. Wird auf „true“ gesetzt, wenn der Benutzer oder die Benutzerin Push-Messaging aktiviert; andernfalls ist der Wert „false“.
 
 {{cja-df-post}}
 
@@ -879,7 +879,7 @@ Erfasst mit der Kontextdatenvariablen `a.push.optin`. Setzen Sie sie auf „true
 
 +++**`mobilemessagepushpayloadid`**
 
-Erfasst mit der Kontextdatenvariablen `a.push.payloadid`. Wird in Push-Nachrichten als Payload-ID verwendet.
+Erfasst mit der Kontextdatenvariablen `a.push.payloadid`. Wird in Push-Messaging als Payload-Kennung verwendet.
 
 {{cja-df-post}}
 
@@ -907,7 +907,7 @@ Erfasst mit der Kontextdatenvariablen `a.loc.category`. Beschreibt die Kategorie
 
 +++**`mobileplaceid`**
 
-Erfasst mit der Kontextdatenvariablen `a.loc.id`. Kennung für einen bestimmten Zielpunkt.
+Erfasst mit der Kontextdatenvariablen `a.loc.id`. Kennung für einen bestimmten Interessenspunkt.
 
 +++
 
@@ -929,31 +929,31 @@ Mobile Services-Push-Payload-ID
 
 +++**`mobilerelaunchcampaigncontent`**
 
-Startinhalte für Mobile Services
+Mobile Services-Launch-Content
 
 +++
 
 +++**`mobilerelaunchcampaignmedium`**
 
-Startmedium für Mobile Services
+Mobile Services Launch Medium
 
 +++
 
 +++**`mobilerelaunchcampaignsource`**
 
-Startquelle für Mobile Services
+Mobile Services Launch-Quelle
 
 +++
 
 +++**`mobilerelaunchcampaignterm`**
 
-Startbedingung für Mobile Services
+Mobile Services Launch Term
 
 +++
 
 +++**`mobilerelaunchcampaigntrackingcode`**
 
-Erfasst mit der Kontextdatenvariablen `a.launch.campaign.trackingcode`. Wird bei der Akquise als Trackingcode für die Startkampagne verwendet.
+Erfasst mit der Kontextdatenvariablen `a.launch.campaign.trackingcode`. Wird bei der Akquise als Tracking-Code für die Launch-Kampagne verwendet.
 
 +++
 
@@ -966,7 +966,7 @@ Auflösung des Mobilgeräts. `[Width] x [Height]` in Pixel.
 +++
 
 +++**`mobile_id`**
-Die numerische Geräte-ID, wenn die Person ein Mobilgerät verwendet.
+Wenn der Benutzer oder die Benutzerin ein Mobilgerät verwendet, die numerische ID des Geräts.
 
 {{cja-df-lookup}}
 
@@ -1002,7 +1002,7 @@ Markierung, die bestimmt, ob es sich bei dem aktuellen Treffer um einen neuen Be
 
 +++**`os`**
 
-Numerische ID, die das Betriebssystem der oder des Besuchenden darstellt. Basierend auf der Spalte `user_agent`.
+Eine numerische ID, die das Betriebssystem des Besuchers oder der Besucherin darstellt. Basierend auf der Spalte `user_agent`.
 
 {{cja-df-lookup}}
 
@@ -1034,7 +1034,7 @@ Die Dimension Seite . Wenn die Variable `pagename` leer ist, verwendet Analytics
 
 +++**`page_event`**
 
-Die Art des Treffers, die in der Bildanforderung gesendet wird (Standardtreffer, Downloadlink, benutzerspezifischer Link, Exitlink).
+Die Art des Treffers, die in der Bildanforderung gesendet wird (Standardtreffer, Downloadlink, benutzerdefinierter Link, Exitlink).
 
 {{cja-df-post}}
 
@@ -1044,7 +1044,7 @@ Die Art des Treffers, die in der Bildanforderung gesendet wird (Standardtreffer,
 
 +++**`page_event_var1`**
 
-Wird nur bei Bildanforderungen für Linktracking verwendet. Die URL des angeklickten Downloadlinks, Exitlinks oder benutzerspezifischen Links.
+Wird nur bei Bildanforderungen für Link-Tracking verwendet. Die URL des angeklickten Downloadlinks, Exitlinks oder benutzerdefinierten Links.
 
 {{cja-df-post}}
 
@@ -1052,7 +1052,7 @@ Wird nur bei Bildanforderungen für Linktracking verwendet. Die URL des angeklic
 
 +++**`page_event_var2`**
 
-Wird nur bei Bildanforderungen für Linktracking verwendet. Benutzerdefinierter Name des Links (falls angegeben). Legt den benutzerspezifischen Link, den Downloadlink oder den Exitlink abhängig vom Wert in `page_event` fest.
+Wird nur bei Bildanforderungen für Link-Tracking verwendet. Benutzerdefinierter Name des Links (falls angegeben). Legt den benutzerspezifischen Link, den Downloadlink oder den Exitlink abhängig vom Wert in `page_event` fest.
 
 {{cja-df-post}}
 
@@ -1076,13 +1076,13 @@ Die Dimension Seiten nicht gefunden , die normalerweise für 404 Seiten verwende
 
 +++**`paid_search`**
 
-Markierung, die bestimmt, ob der Treffer mit Paid-Search-Erkennung übereinstimmt.
+Markierung, die bestimmt, ob der Treffer mit der Paid Search-Erkennung übereinstimmt.
 
 +++
 
 +++**`persistent_cookie`**
 
-Wird in der Dimension Unterstützung persistenter Cookies verwendet. Gibt an, ob der Benutzer Cookies unterstützt, die nicht nach jedem Treffer gelöscht werden.
+Wird in der Dimension Unterstützung persistenter Cookies verwendet. Gibt an, ob der Besucher oder die Besucherin Cookies unterstützt, die nicht nach jedem Treffer gelöscht werden.
 
 {{cja-df-post}}
 
@@ -1114,7 +1114,7 @@ Seitenvariable `products`. Hilft beim Ausfüllen verschiedener Dimensionen und M
 
 +++**`prop1`** – **`prop75`**
 
-Benutzerdefinierte Traffic-Variablen 1 bis 75. Wird in Propenabmessungen verwendet.
+Benutzerdefinierte Traffic-Variablen 1–75. Wird in Propenabmessungen verwendet.
 
 {{cja-df-post}}
 
@@ -1132,7 +1132,7 @@ Eindeutige Kennung für einen Kauf, so wie durch das Festlegen der Variable `pur
 
 +++**`quarterly_visitor`**
 
-Markierung, die bestimmt, ob es sich bei dem Treffer um eine neue Quartals-Besucherin oder einen neuen Quartals-Besucher handelt.
+Markierung, die bestimmt, ob es sich bei dem Treffer um einen neuen Quartals-Besucher oder eine neue Quartals-Besucherin handelt.
 
 +++
 
@@ -1159,7 +1159,7 @@ Numerische ID, die den Referenztyp für den Treffer darstellt. Wird in der Dimen
 
 +++**`resolution`**
 
-Numerische ID, die die Auflösung des Bildschirms darstellt. Wird in der Dimension Monitor Resolution verwendet.
+Numerische ID, die die Auflösung des Monitors darstellt. Wird in der Dimension Monitor Resolution verwendet.
 
 {{cja-df-lookup}}
 
@@ -1177,7 +1177,7 @@ Numerische ID, die die Suchmaschine darstellt, über die die Besucherin oder der
 
 +++**`search_page_num`**
 
-Wird von der Dimension „Rangansicht aller Suchseiten“ verwendet. Gibt an, auf welcher Seite der Suchergebnisse Ihre Site angezeigt wurde, ehe die Person sich zu Ihrer Site durchgeklickt hat.
+Wird von der Dimension „Rang aller Suchergebnisseiten“ verwendet. Gibt an, auf welcher Seite der Suchergebnisse Ihre Site angezeigt wurde, ehe die Person sich zu Ihrer Site durchgeklickt hat.
 
 +++
 
@@ -1201,7 +1201,7 @@ Nicht verwendet. Interner Adobe-Server, der den Treffer verarbeitet hat.
 
 +++**`s_kwcid`**
 
-Die Keyword-ID, die in Adobe Advertising-Integrationen verwendet wird.
+Die Keyword-ID, die in Adobe Advertising Integrationen verwendet wird.
 
 {{cja-df-post}}
 
@@ -1215,7 +1215,7 @@ Rohwert der Bildschirmauflösung. Erfasst mit der JavaScript-Funktion `screen.wi
 
 +++**`tnt`**
 
-Wird in Adobe Target-Integrationen verwendet. Stellt alle Tests dar, für die er derzeit qualifiziert ist. Das Format ist: `TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`.
+Wird in Adobe Target-Integrationen verwendet. Stellt alle Tests dar, für die derzeit eine Qualifikation vorliegt. Das Format ist: `TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`.
 
 {{cja-df-post}}
 
@@ -1267,7 +1267,7 @@ Nicht verwendet. Die numerische ID für die Report Suite-ID. Verwenden Sie statt
 
 +++**`username`**
 
-Die Report Suite-ID für den Treffer.
+Die Report Suite ID für den Treffer.
 
 +++
 
@@ -1683,7 +1683,7 @@ Markierung, die bestimmt, ob der Treffer eine neu generierte Besucher-ID enthäl
 
 +++**`visid_timestamp`**
 
-Wurde eine Besucher-ID neu generiert, wird der Zeitstempel (in UNIX®-Zeit) der Generierung der Besucher-ID bereitgestellt.
+Wenn eine Besucher-ID neu generiert wird, wird der Zeitstempel in UNIX®-Zeit angegeben, zu dem die Besucher-ID generiert wurde.
 
 +++
 
@@ -1717,19 +1717,19 @@ Die Dimension Treffertiefe . Erhöht sich um 1 für jeden von Besuchenden generi
 
 +++**`visit_referrer`**
 
-Die erste verweisende Stelle des Besuchs.
+Der erste Referrer des Besuchs.
 
 +++
 
 +++**`visit_ref_domain`**
 
-Basierend auf der Spalte `visit_referrer`. Die allererste verweisende Domain des Besuchs.
+Basierend auf der Spalte `visit_referrer`. Die erste Referrer-Domain des Besuchs.
 
 +++
 
 +++**`visit_ref_type`**
 
-Numerische ID, die den Referrer-Typ des ursprünglichen Referrers des Besuchs darstellt.
+Numerische ID, die den Referrer-Typ des ersten Referrers des Besuchs darstellt.
 
 {{cja-df-lookup}}
 
@@ -1737,7 +1737,7 @@ Numerische ID, die den Referrer-Typ des ursprünglichen Referrers des Besuchs da
 
 +++**`visit_search_engine`**
 
-Numerische ID, die die erste Suchmaschine des Besuchs darstellt.
+Eine numerische ID, die die erste Suchmaschine des Besuchs darstellt.
 
 {{cja-df-lookup}}
 

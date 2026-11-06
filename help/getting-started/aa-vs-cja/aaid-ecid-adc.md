@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '623'
 ht-degree: 90%
 ---
 # AAID, ECID, AACUSTOMID und der Analytics-Quell-Connector
@@ -48,13 +48,13 @@ Im Analytics-Quell-Connector wird AAID in `HEX(post_visid_high) + "-" + HEX(post
 
 ## ECID
 
-ECID (Experience Cloud-ID), manchmal auch als MCID (Marketing Cloud-ID) bezeichnet, ist ein separates Gerätekennungsfeld, das in Adobe Analytics ausgefüllt wird, wenn Analytics mithilfe des [Visitor ID Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=de) (AppMeasurement) oder des Experience Platform Identity Services (Web SDK) implementiert wird. ECID wird in den Adobe Analytics-Daten-Feeds durch die Spalte `mcvisid` dargestellt.
+ECID, manchmal auch als MCID (Marketing Cloud-ID) bezeichnet, ist ein separates Gerätekennungsfeld, das in Adobe Analytics ausgefüllt wird, wenn Analytics mithilfe des [Visitor ID Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=de) (AppMeasurement) oder der Web-SDK implementiert wird. ECID wird in den Adobe Analytics-Daten-Feeds durch die Spalte `mcvisid` dargestellt.
 
-Wenn eine ECID für ein Ereignis vorhanden ist, kann AAID auf ECID basieren, je nachdem, ob die Analytics-Variable [Nachfrist](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=de) konfiguriert ist oder nicht. Siehe auch [Anforderungen an die Analytics- und Experience Cloud-ID](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=de).
+Wenn eine ECID für ein Ereignis vorhanden ist, kann AAID auf ECID basieren, je nachdem, ob die Analytics-Variable [Nachfrist](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=de) konfiguriert ist oder nicht. Siehe auch: [Analytics- und ECID-Anfragen](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=de).
 
 ## AACUSTOMID
 
-AACUSTOMID ist ein separates Kennungsfeld, das in Adobe Analytics auf der Grundlage der Verwendung der Variable `s.VisitorID` in der Analytics-Implementierung ausgefüllt wird. AACUSTOMID wird in Adobe Analytics-Daten-Feeds durch die Spalte `cust_visid` dargestellt. Wenn AACUSTOMID vorhanden ist, basiert AAID auf AACUSTOMID. (AACUSTOMID überträgt alle anderen Kennungen, wie durch die Reihenfolge der oben genannten Vorgänge definiert.)
+AACUSTOMID ist ein separates Kennungsfeld, das in Adobe Analytics auf der Grundlage der Verwendung der Variable `s.VisitorID` in der Analytics-Implementierung ausgefüllt wird. AACUSTOMID wird in Adobe Analytics-Daten-Feeds durch die Spalte `cust_visid` dargestellt. Wenn AACUSTOMID vorhanden ist, basiert AAID auf AACUSTOMID. (AACUSTOMID hat Vorrang vor allen anderen Kennungen, wie durch die Reihenfolge der oben genannten Vorgänge definiert.)
 
 ## Behandlung dieser Identitäten durch den Analytics-Quell-Connector
 

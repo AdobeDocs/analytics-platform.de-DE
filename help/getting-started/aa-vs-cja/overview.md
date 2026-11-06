@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '892'
+ht-degree: 98%
 ---
 # Vergleich mit Adobe Analytics
 
@@ -85,7 +85,7 @@ Weitere Informationen finden Sie unter [Virtual Report Suites, Datenansichten, A
 
 ## Identitäten
 
-Customer Journey Analytics unterstützt die Identitäten, die Sie als Teil der Schemata definieren, denen die Datensätze entsprechen, die Ihre Daten enthalten. Identitäten sind also ein grundlegendes Konzept von Experience Platform, das Customer Journey Analytics beim Einrichten einer [Verbindung](../../connections/overview.md) verwendet (durch Definition der Personen-ID für jeden Datensatz) und beim Anwenden der [Zuordnung](../../stitching/overview.md) für die kanalübergreifende Analyse. Eine wichtige Identität, die von den SDKs und der API von Experience Platform verwendet wird, ist die Experience Cloud-ID (ECID).
+Customer Journey Analytics unterstützt die Identitäten, die Sie als Teil der Schemata definieren, denen die Datensätze entsprechen, die Ihre Daten enthalten. Identitäten sind also ein grundlegendes Konzept von Experience Platform, das Customer Journey Analytics beim Einrichten einer [Verbindung](../../connections/overview.md) verwendet (durch Definition der Personen-ID für jeden Datensatz) und beim Anwenden der [Zuordnung](../../stitching/overview.md) für die kanalübergreifende Analyse. Eine wichtige Identität, die von den Experience Platform SDKs und der API verwendet wird, ist die ECID.
 
 Adobe Analytics verwendet einen klarer definierten Satz von Identitätsfeldern, z. B. die Adobe Analytics-ID (AAID). Bei Verwendung des Analytics-Quell-Connectors werden diese Adobe Analytics-Identifizierungsfelder besonders behandelt. Weitere Informationen sind zu finden unter [AAID, ECID, AACUSTOMID und der Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=de).
 

@@ -31,9 +31,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '719'
 ht-degree: 65%
 ---
 # Einrichten von Führungskräften für die Verwendung von Dashboards
@@ -83,9 +83,9 @@ Nach dem Herunterladen und der Installation können sich ausführende Benutzer m
 
    Der Bildschirm **[!UICONTROL Unternehmen auswählen]** wird angezeigt. Auf diesem Bildschirm werden die Anmeldeunternehmen angezeigt, zu denen die bzw. der ausführende Benutzer gehört.
 
-1. Fordern Sie sie auf, den Namen des Anmeldeunternehmens oder die CX Enterprise-Organisation für die von Ihnen freigegebene Scorecard anzutippen.
+1. Fordern Sie sie auf, den Namen des Anmeldeunternehmens oder der Adobe-Organisation anzutippen, der bzw. die für die von Ihnen freigegebene Scorecard gilt.
 
-   Die Scorecard-Liste zeigt alle Scorecards an, die für den ausführenden Benutzer mit dieser Unternehmensanmeldung freigegeben wurden.
+   Die Scorecard-Liste zeigt dann alle Scorecards an, die für die bzw. den ausführende Benutzende unter diesem Anmeldeunternehmen freigegeben wurden.
 
 1. Helfen Sie den Benutzern, diese Liste ggf. nach der **[!UICONTROL zuletzt geänderten Scorecard]** zu sortieren.
 

@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 95%
+source-wordcount: '328'
+ht-degree: 96%
 ---
 # Glossar zu Customer Journey Analytics
 
@@ -47,9 +47,9 @@ Einige Begriffe in Customer Journey Analytics weichen von der bisherigen Verwend
 
 | Neuer Begriff in Customer Journey Analytics | Begriff in Adobe Analytics | Beschreibung |
 | --- | --- | --- |
-| Lookup-Datensatz | Klassifizierung | Mit „Lookup“ können Sie den Wert eines bestimmten Datensatzes anhand eines Schlüssels/übereinstimmenden Schlüssels (in einem Ereignisdatensatz) abrufen, wenn eine Eins-zu-Eins-Beziehung vorliegt. So können Sie z. B. „tracking_code“ als den mit „tracking_code“ im Ereignis-Datensatz übereinstimmenden Schlüssel angeben. |
-| Profildatensatz | Kundenattribut | Wenn Sie Daten von Unternehmenskunden in einer CRM-Datenbank (CRM = Customer Relationship Management) erfassen, können Sie diese Daten in einen Profildatensatz in Adobe Experience Platform hochladen. Nachdem Sie eine Verbindung zu diesem Datensatz in Customer Journey Analytics hergestellt und eine Datenansicht erstellt haben, können Sie die Daten in Arbeitsbereich nutzen. |
-| Organisation von CX Enterprise (Experience Cloud) | Anmeldeunternehmen | Siehe [Organisationen und Kontoverknüpfung](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=de#topic_C31CB834F109465A82ED57FF0563B3F1). |
+| Lookup-Datensatz | Klassifizierung | Mit „Lookup“ können Sie den Wert eines bestimmten Datensatzes anhand eines Schlüssels/übereinstimmenden Schlüssels (in einem Ereignisdatensatz) abrufen, wenn eine Eins-zu-Eins-Beziehung vorliegt. So können Sie z. B. „tracking_code“ als den mit „tracking_code“ im Ereignisdatensatz übereinstimmenden Schlüssel angeben. |
+| Profildatensatz | Kundenattribut | Wenn Sie Unternehmenskundendaten in einer CRM-Datenbank erfassen, können Sie diese Daten in einen Profildatensatz in Adobe Experience Platform hochladen. Nachdem Sie eine Verbindung zu diesem Datensatz in Customer Journey Analytics hergestellt und eine Datenansicht erstellt haben, können Sie die Daten in Workspace nutzen. |
+| Adobe-Organisation | Anmeldeunternehmen | Siehe [Organisationen und Kontoverknüpfung](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=de#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | nicht angegeben | Report Suite | Report Suites im traditionellen Sinne von Adobe Analytics existieren nicht mehr. Stattdessen erstellen Sie (virtuelle) [Datenansichten](/help/data-views/create-dataview.md) aus den Platform-Datensätzen, mit denen Sie Verbindungen hergestellt haben. |
 | Segment | Segment | Segmente waren früher „Filter“. Sie wurden in „Segmente“ umbenannt. |
 | Datenansicht | Virtual Report Suite | In Adobe Analytics ist eine Virtual Report Suite eine gefilterte Ansicht einer übergeordneten Report Suite. Der Hauptunterschied zwischen einer Virtual Report Suite und einer Datenansicht in Customer Journey Analytics besteht darin, dass die Virtual Report Suite eine Untergruppe einer „Basis“- oder „übergeordneten“ Report Suite ist und daher einige ihrer Einstellungen übernimmt. Da es keine übergeordneten/Basis-Report Suites mehr gibt, definieren Sie Datenansichten mit ihren eigenen Einstellungen. |
