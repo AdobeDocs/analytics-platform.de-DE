@@ -58,7 +58,7 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [intelligente B
 
 Um automatisch generierte intelligente Beschriftungen für eine Visualisierung einzusetzen, wählen Sie oben rechts in der Visualisierung die Option ![Intelligente Beschriftungen](/help/assets/icons/AI.svg) aus. Durch diese Auswahl werden Erkenntnisse in natürlicher Sprache generiert.
 
-![Einsetzen des Fensters „Analyse“ mit intelligenten Beschriftungen für „Produktansichten – Trend“. ](assets/intelligent-captions.gif)
+![Einsetzen des Fensters „Analyse“ mit intelligenten Beschriftungen für „Produktansichten – Trend“. &#x200B;](assets/intelligent-captions.gif)
 
 
 Bedenken Sie Folgendes:

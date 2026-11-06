@@ -123,7 +123,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
-   1. Wählen Sie [!UICONTROL  Dialogfeld Feldergruppen hinzufügen ] Feldergruppe **[!UICONTROL AEP Mobile SDK ExperienceEvent]** aus der Liste aus.
+   1. Wählen Sie [!UICONTROL &#x200B; Dialogfeld Feldergruppen hinzufügen &#x200B;] Feldergruppe **[!UICONTROL AEP Mobile SDK ExperienceEvent]** aus der Liste aus.
 
       ![AEP Mobile Lifecycle Details-Feldergruppe](./assets/select-aepmobilesdk-experienceevent.png)
 
@@ -312,11 +312,11 @@ So erstellen und konfigurieren Sie die Adobe Experience Platform Mobile SDK-Erwe
 
    ![Erweiterungskonfiguration für AEP Mobile SDK](./assets/aepmobilesdk-extension-datastream.png)
 
-1. Geben Sie Ihre **[!UICONTROL Edge Network-Domain]** unter &quot;[!UICONTROL -Konfiguration“ ]. Verwenden Sie in der Regel `<organizationName>.data.adobedc.net`.
+1. Geben Sie Ihre **[!UICONTROL Edge Network-Domain]** unter &quot;[!UICONTROL -Konfiguration“ &#x200B;]. Verwenden Sie in der Regel `<organizationName>.data.adobedc.net`.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Weitere [ finden Sie unter „Konfigurieren der Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/edge-network)Edge Network-Erweiterung“.
+Weitere [&#x200B; finden Sie unter „Konfigurieren der Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/edge-network)Edge Network-Erweiterung“.
 
 Sie sollten auch die folgenden zusätzlichen Erweiterungen über den Katalog einrichten:
 
@@ -324,7 +324,7 @@ Sie sollten auch die folgenden zusätzlichen Erweiterungen über den Katalog ein
 - AEP Assurance.
 - Einverständnis
 
-Weitere [ zu Erweiterungen und ihrer Konfiguration finden Sie ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=de) Tutorial zum Konfigurieren einer Tag-Eigenschaft im Mobile-App-Tutorial für Experience Platform.
+Weitere [&#x200B; zu Erweiterungen und ihrer Konfiguration finden Sie &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=de) Tutorial zum Konfigurieren einer Tag-Eigenschaft im Mobile-App-Tutorial für Experience Platform.
 
 #### **Datenelemente**
 
@@ -449,7 +449,7 @@ So erhalten Sie Code-Anweisungen, in denen die Einrichtung Ihrer Mobile App und 
 
 2. Wählen Sie in der Liste der Umgebungen die richtige Install (![)-](/help/assets/icons/Box.svg) aus.
 
-   Wählen Sie [!UICONTROL  Dialogfeld „Mobile-]&quot; die entsprechende Plattform ([!UICONTROL iOS], [!UICONTROL Android]). Verwenden Sie dann die Schaltfläche ![Kopieren](/help/assets/icons/Copy.svg) neben jedem der relevanten Code-Snippets, die Sie zum Einrichten und Initialisieren Ihrer Mobile App verwenden möchten:
+   Wählen Sie [!UICONTROL &#x200B; Dialogfeld „Mobile-]&quot; die entsprechende Plattform ([!UICONTROL iOS], [!UICONTROL Android]). Verwenden Sie dann die Schaltfläche ![Kopieren](/help/assets/icons/Copy.svg) neben jedem der relevanten Code-Snippets, die Sie zum Einrichten und Initialisieren Ihrer Mobile App verwenden möchten:
 
    ![Umgebung](./assets/environment-mobile.png)
 
@@ -465,7 +465,7 @@ Sie können den Code jetzt in Ihrer Mobile App bereitstellen. Nach der Bereitste
 
 Validieren Sie Ihre Implementierung, korrigieren Sie sie bei Bedarf und stellen Sie sie mithilfe der Publishing-Workflow-Funktion von Tags in Ihrer Staging- und Produktionsumgebung bereit.
 
-Im [Tutorial zur Implementierung von Adobe Experience Cloud in ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de) Apps“ finden Sie wesentlich detailliertere Informationen.
+Im [Tutorial zur Implementierung von Adobe Experience Cloud in &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=de) Apps“ finden Sie wesentlich detailliertere Informationen.
 
 ## Einrichten einer Verbindung
 
@@ -549,7 +549,7 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
    Behalten Sie die Einstellungen bei und wählen Sie **[!UICONTROL Speichern und beenden]**.
 
-Weitere [ dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
+Weitere [&#x200B; dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
 
 
 ## Einrichten eines Projekts
