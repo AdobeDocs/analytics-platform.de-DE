@@ -29,7 +29,7 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: fec14c8ed1f94e16423682a165198dbda760f78d
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1943'
 ht-degree: 58%
@@ -37,7 +37,7 @@ ht-degree: 58%
 
 # Content Analytics-Komponenten
 
-Content Analytics fügt die folgenden Komponentenkategorien (Dimensionen, [berechnete] Metriken, abgeleitete Felder) zu den bereits verfügbaren Komponenten in Customer Journey Analytics hinzu:
+Content Analytics fügt die folgenden Komponentenkategorien (Dimensionen, (berechnete) Metriken, abgeleitete Felder) zu den bereits verfügbaren Komponenten in Customer Journey Analytics hinzu:
 
 * [Erlebnismetadaten](#experience-metadata)
 * [Erlebnisattribute](#experience-attributes)
@@ -56,13 +56,13 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 |---|---|---|
 | ID SOURCE | Für Content Analytics lautet der Wert `ContentAnalytics`. | Dimension |
 | Kanal | Kanal für das Erlebnis. Wert ist entweder `Web`, `Mobile` oder `Paid Media`. | Dimension |
-| Content Experience ID | Eindeutige ID für das Erlebnis. <br>Für **Web**: URL der Webseite. <br/>Für **granulares Web**: Ein Client-seitiger Hash-Wert, der auf der Inhalts-Payload (Texte, Bilder, CTAS) mit dem Präfix `web-` basiert. <br/>Für **mobile**: Ein Client-seitiger Hash-Wert, der auf der Inhalts-Payload (Texte, Bilder, CTAs) mit dem Präfix `mobile-` basiert. | Dimension |
+| Content Experience ID | Eindeutige ID für das Erlebnis. <br>Für **Web**: URL der Webseite. <br/>Für **granulares Web**: Ein Client-seitiger Hash-Wert, der auf der Inhalts-Payload (Texte, Bilder, CTAS) mit dem Präfix `web-` basiert. <br/>Für **mobile**: Ein Hash, der Client-seitig basierend auf der Inhalts-Payload (Texte, Bilder, CTAS) mit dem Präfix `mobile-` berechnet wird. | Dimension |
 | Content Experience Source | Für **web**: die URL der Web-Seite.<br/>Für **mobil**: Der Name des Bildschirms, der über die Experience Platform Mobile SDK übergeben wird. | Dimension |
 | Erlebniskanal (veraltet) | Kanal für das Erlebnis. Wert ist entweder `Web` oder `Mobile`. | Dimension |
 | Erlebnis-Extras | Alle anderen zusätzlichen Daten, die Sie verfolgen möchten. Wie externe ID oder Platzierung. | Dimension |
 | Erlebnis – URL der Miniaturansicht | URL für die Miniatur des Erlebnisses. | Dimension |
-| Erlebnis – Horizontale Prozentsatz-Tiefe | Quantifizierbarer Wert der horizontalen Prozentsatz-Tiefe des Erlebnisses. | Dimension<br/>Abgeleitetes Feld |
-| Erlebnis – Vertikale Prozentsatz-Tiefe | Quantifizierbarer Wert der vertikalen Prozentsatz-Tiefe des Erlebnisses. | Dimension<br/>Abgeleitetes Feld |
+| Erlebnis – Horizontale Prozentsatz-Tiefe | Quantifizierbarer Wert der horizontalen prozentualen Tiefe des Erlebnisses. | Dimension<br/>Abgeleitetes Feld |
+| Erlebnis – Vertikale Prozentsatz-Tiefe | Quantifizierbarer Wert der vertikalen prozentualen Tiefe des Erlebnisses. | Dimension<br/>Abgeleitetes Feld |
 
 {style="table-layout:fixed"}
 
@@ -73,9 +73,9 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 | Titel | Beschreibung | Typ |
 |---|---|---|
 | Erlebnis – Attribute | ![KI generiert](/help/assets/icons/AI.svg) Vollständige Liste aller Namen und Werte von Erlebnisattributen. | Dimension<br>Abgeleitetes Feld |
-| Erlebnis – Lesbarkeit – Wert | ![KI generiert](/help/assets/icons/AI.svg) Lesbarkeitswert für das Erlebnis. | Dimension |
+| Erlebnis – Lesbarkeit – Wert | ![KI generiert](/help/assets/icons/AI.svg) Lesbarkeitswert des Erlebnisses | Dimension |
 | Erlebnis – Keywords | ![KI-generiert](/help/assets/icons/AI.svg) Keywords für das Erlebnis. | Dimension<br>Abgeleitetes Feld |
-| Erlebnis – Überzeugungsstrategien | ![KI-generiert](/help/assets/icons/AI.svg) Im jeweiligen Erlebnis vorhandene Überzeugungsstrategien. Die möglichen Werte sind: soziale Identität, Social Proof, Autorität, Konkretheit, Fuß in der Tür, Überwindung von Reaktanz, Reziprozität, Verankerung und Vergleich, soziale Wirkung, Mangel und Anthropomorphismus. | Dimension<br/>Abgeleitetes Feld |
+| Erlebnis – Überzeugungsstrategien | ![KI-generiert](/help/assets/icons/AI.svg) Im jeweiligen Erlebnis vorhandene Überzeugungsstrategien. Die möglichen Werte sind: Social Identity, Social Proof, Authority, Concreteness, Foot in the Door, Overcoming Reactance, Reciprocity, Anchoring and Comparison, Social Impact, Scarcity und Anthropomorphism. | Dimension<br/>Abgeleitetes Feld |
 | Erlebnis – Narrative | ![KI-generiert](/help/assets/icons/AI.svg) Narrative, die das Erlebnis aus der Perspektive einer Marketing-Fachkraft aufgrund der Relevanz aufbaut. | Dimension<br/>Abgeleitetes Feld |
 | Erlebnis – Töne | ![KI-generiert](/help/assets/icons/AI.svg) Töne, die das Erlebnis aus der Perspektive einer Marketing-Fachkraft aufgrund der Relevanz aufbaut. | Dimension<br/>Abgeleitetes Feld |
 | Erlebnis – Marketing-Emotionen | ![KI generiert](/help/assets/icons/AI.svg) Die Emotionen, die beim Lesen des als Teil des Erlebnisses verwendeten Texts bei der Leserin bzw. dem Leser geweckt werden: Dringlichkeit, Exklusivität, Ermutigung, Herausforderung, Neugier, Leistung, Vertrauen, Einfachheit und Faszination. | Dimension<br/>Abgeleitetes Feld |
@@ -95,7 +95,7 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 | Titel | Beschreibung | Typ |
 |---|---|---|
 | Erlebnis – Ansichten | Quantifizierbares Maß für die Anzahl der Ansichten des Erlebnisses. | Metrik |
-| Erlebnis – Klicks | Quantifizierbares Maß für die Anzahl der Klicks des Erlebnisses. | Metrik |
+| Erlebnis – Klicks | Quantifizierbare Messung der Anzahl der Klicks der Experience. | Metrik |
 
 {style="table-layout:fixed"}
 
@@ -107,10 +107,10 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 | Element-ID | Eindeutige Kennung des Assets. Die Asset-Binärdatei bestimmt die Eindeutigkeit. Wenn sich die Asset-Binärdatei ändert, ändert sich die ID. Die eindeutige ID kann die URL sein, es kann aber auch ein Hash erstellt werden. | Dimension |
 | Asset-Quelle | | Dimension |
 | Asset – HTML-Pfad | Verketteter HTML-Pfad für das Asset. | Dimension |
-| Asset – Link-URL | Nächster Seitenanker für das Asset. | Dimension |
-| Asset – Anzeigebreite | Anzeigebreite des Inhalts-Assets. | Dimension |
-| Asset – Anzeigehöhe | Anzeigehöhe des Inhalts-Assets. | Dimension |
-| Asset – Absolut – Links | Absolute linke Seite des Inhalts-Assets. | Dimension |
+| Asset – Link-URL | Nächstgelegener Seitenanker für das Asset. | Dimension |
+| Asset – Anzeigebreite | Anzeigebreite des Content-Assets. | Dimension |
+| Asset – Anzeigehöhe | Anzeigehöhe des Content-Assets. | Dimension |
+| Asset – Absolut – Links | Absolute linke Position des Content-Assets. | Dimension |
 | Asset – Absolut – Oben | Absolute Oberseite des Inhalts-Assets. | Dimension |
 | Asset-Extras | Alle anderen zusätzlichen Daten, die Sie verfolgen möchten. Wie externe ID oder Platzierung. | Dimension |
 
@@ -130,14 +130,14 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 | Asset – Szenen | ![KI-generiert](/help/assets/icons/AI.svg) Szenen für das Asset. | Dimension<br/>Abgeleitetes Feld |
 | Asset – Objekte | ![KI-generiert](/help/assets/icons/AI.svg) Objekte des Assets. | Dimension<br/>Abgeleitetes Feld |
 | Asset – Fotografie-Stile | ![KI-generiert](/help/assets/icons/AI.svg) Fotografie-Stile des Assets. | Dimension<br/>Abgeleitetes Feld |
-| Asset – Bildtyp | ![KI-generiert](/help/assets/icons/AI.svg) Bildtyp des Assets. Mögliche Werte sind: Foto, Skizze, Bild, Digital_Cartoon, Infografiken, Grapfik_Design, Collage und Software_Screenshot. | Dimension<br/>Abgeleitetes Feld |
+| Asset – Bildtyp | ![KI-generiert](/help/assets/icons/AI.svg) Bildtyp des Assets. Mögliche Werte sind: photograph, sketch, painting, digital_cartoon, infographics, graphic_design, collage und software_screenshot. | Dimension<br/>Abgeleitetes Feld |
 | Asset – Kamerapositionen | ![KI-generiert](/help/assets/icons/AI.svg) Kamerapositionen des Assets. | Dimension<br/>Abgeleitetes Feld |
 | Asset – Kameraumgebung | ![KI-generiert](/help/assets/icons/AI.svg) Kameraumgebung des Assets. | Dimension<br/>Abgeleitetes Feld |
 | Asset – Personenkategorien | ![KI-generiert](/help/assets/icons/AI.svg) Personenkategorien für das Asset. Mögliche Werte sind: Person, Mann, Frau, Gesellschaftsgruppe, Menschenmenge, Menschen, Junge, Mädchen und Kind. | Dimension<br/>Abgeleitetes Feld |
 | Asset – Dichte der visuellen Inhalte | ![KI-generiert](/help/assets/icons/AI.svg) Dichte der visuellen Inhalte des Assets. Mögliche Werte sind: niedrig, mittel oder hoch. Eine niedrige Inhaltsdichte impliziert eine geringe Menge an Informationen pro Flächeneinheit des Bildes. | Dimension |
 | Asset – Verteilung der visuellen Aufmerksamkeit | ![KI generiert](/help/assets/icons/AI.svg) Verteilung der visuellen Aufmerksamkeit des Assets. Mögliche Werte sind: niedrig, mittel oder hoch. Die Verteilung der Aufmerksamkeit bezieht sich auf den Grad, in dem die Aufmerksamkeit einer Betrachterin bzw. eines Betrachters auf verschiedene Teile eines Bildes aufgeteilt wird. | Dimension<br/>Abgeleitetes Feld |
-| Asset – Lichtverhältnisse | ![KI-generiert](/help/assets/icons/AI.svg) Lichtverhältnisse des Assets. Mögliche Werte sind: goldene Stunde, blaue Stunde, Mittag, bedeckt, Nacht, High-Key, Low-Key, Tageslicht, glühend, Kaltlicht, bunt und Studio. | Dimension<br/>Abgeleitetes Feld |
-| Asset – Kameraeinstellung | ![KI-generiert](/help/assets/icons/AI.svg) Kameraeinstellung des Assets. Mögliche Werte sind: schnelle Verschlussgeschwindigkeit, lange Belichtung, Bokeh-Unschärfe, Bewegungsunschärfe, Tilt-Shift, Blitz, Weitwinkel, Schwarzweiß, Surreal, Doppelbelichtung, Makro und normaler Modus. | Dimension<br/>Abgeleitetes Feld |
+| Asset – Lichtverhältnisse | ![KI-generiert](/help/assets/icons/AI.svg) Lichtverhältnisse des Assets. Mögliche Werte sind: goldene Stunde, blaue Stunde, Mittag, bedeckt, Nacht, High-Key, Low-Key, Tageslicht, Glühlampenlicht, Leuchtstofflicht, bunt und Studio. | Dimension<br/>Abgeleitetes Feld |
+| Asset – Kameraeinstellung | ![KI-generiert](/help/assets/icons/AI.svg) Kameraeinstellung des Assets. Mögliche Werte sind: schnelle Verschlussgeschwindigkeit, lange Belichtung. Bokeh-Unschärfe, Bewegungsunschärfe, Tilt-Shift, Blitz, Weitwinkel, Schwarzweiß, Surreal, Doppelbelichtung, Makro und normaler Modus. | Dimension<br/>Abgeleitetes Feld |
 
 {style="table-layout:fixed"}
 
@@ -179,7 +179,7 @@ In den folgenden Tabellen gibt ![KI generiert](/help/assets/icons/AI.svg) ein vo
 
 ## Paid Media
 
-Diese Komponenten werden einer Datenansicht hinzugefügt, wenn der Kanal **Bezahlte Medien** über einen [Quell-Connector für bezahlte Adobe Experience Platform-Medien aktiviert &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home). Sie ermöglichen Ihnen Berichte zu Paid-Media-Kampagnen, Kreativen und Ausgaben neben Ihren Web- und mobilen Inhalten. Verfügbarkeit und ausgefüllte Werte hängen vom Werbenetzwerk und der Berichtsgröße ab.
+Diese Komponenten werden einer Datenansicht hinzugefügt, wenn der Kanal **Bezahlte Medien** über einen [Quell-Connector für bezahlte Adobe Experience Platform-Medien aktiviert ](https://experienceleague.adobe.com/de/docs/experience-platform/sources/home). Sie ermöglichen Ihnen Berichte zu Paid-Media-Kampagnen, Kreativen und Ausgaben neben Ihren Web- und mobilen Inhalten. Verfügbarkeit und ausgefüllte Werte hängen vom Werbenetzwerk und der Berichtsgröße ab.
 
 Die oben beschriebenen KI-generierten [Asset](#asset-attributes)Attribute und [Erlebnisattribute](#experience-attributes) sind auch für Kreative mit bezahlten Medien verfügbar. Die gleiche Funktion ist über die Kanäle Web, Mobile und Paid Media verfügbar.
 

@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1530'
-ht-degree: 97%
+ht-degree: 96%
 ---
 # Analysis Workspace – Überblick {#analysis-workspace-overview}
 
@@ -80,7 +80,7 @@ Die Hauptfunktionen von Analysis Workspace sind über die Schaltflächenleiste z
 
 ## Menü
 
-Die meisten Funktionen von Analysis Workspace sind per Drag-and-Drop und über Kontextmenüs in Panels, Visualisierungen und Komponenten verfügbar.
+Die meisten Funktionen von Analysis Workspace sind per Drag-and-Drop und über Kontextmenüs in Bedienfeldern, Visualisierungen und Komponenten verfügbar.
 
 Die Funktionen können auch über das Menü „Workspace“ sowie über Tastaturbefehle oder Hotkeys aufgerufen werden. Die Tastaturbefehle unterscheiden sich je nach Betriebssystem, unter dem der Browser ausgeführt wird. Eine entsprechende Übersicht finden Sie in den nachfolgenden Tabellen.
 
@@ -169,7 +169,7 @@ Durch Synchronisieren von Visualisierungen können Sie kontrollieren, welche Dat
 
 So beginnen Sie mit Analysis Workspace:
 
-1. Melden Sie sich mit Ihren Adobe ID[&#128279;](https://experience.adobe.com)Anmeldeinformationen bei Adobe CX Enterprise an.
+1. Melden Sie sich mit Ihren Adobe ID](https://experience.adobe.com)Anmeldeinformationen bei [Adobe CX Enterprise an.
 1. Wählen Sie **[!UICONTROL Customer Journey Analytics]** im App-Umschalter ![App](/help/assets/icons/Apps.svg) oben rechts in der Benutzeroberfläche aus.
 1. Standardmäßig wird die Seite **[!UICONTROL Projekte]** von Analysis Workspace angezeigt. Wenn ein bestimmtes Projekt für Sie ausgewählt wurde oder Sie kürzlich daran gearbeitet haben, wird dieses Projekt standardmäßig angezeigt.
 

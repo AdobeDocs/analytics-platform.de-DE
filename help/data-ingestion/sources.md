@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2150'
-ht-degree: 75%
+ht-degree: 76%
 ---
 # Aufnehmen und Verwenden von Daten über Quell-Connectors
 
@@ -103,7 +103,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    1. Geben Sie einen **[!UICONTROL Schema-Anzeigenamen]** für Ihr Schema und (optional) eine **[!UICONTROL Beschreibung]** ein.
 
-      ![Fenster Schema erstellen mit den Feldern zum Benennen des Schemas &#x200B;](./assets/create-pr-schema-wizard-step-2.png)
+      ![Fenster Schema erstellen mit den Feldern zum Benennen des Schemas ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Wählen Sie **[!UICONTROL Beenden]** aus.
 
@@ -131,7 +131,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Beispiel für die Schaltfläche zum Hinzufügen eines Feldes zum Schema](./assets/example-loalty-schema-plus.png)
 
-1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]&#x200B;**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL Profile Core v2]** aus.
+1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL Profile Core v2]** aus.
 
    ![Identifizierungsobjekt](./assets/identifcation-loyalty-field.png)
 
@@ -141,7 +141,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie das Feld **[!UICONTROL E-Mail]** im soeben hinzugefügten Identifizierungsobjekt aus und danach **[!UICONTROL Identität]** und **[!UICONTROL E-Mail]** in [!UICONTROL Identity-Namespace] im Bedienfeld [!UICONTROL Feldeigenschaften].
 
-   ![Spezifizieren von E-Mail als Identität](./assets/specify-email-loyalty-id.png)
+   ![E-Mail als Identität angeben](./assets/specify-email-loyalty-id.png)
 
    Sie spezifizieren die E-Mail-Adresse als die Identität, die Adobe Experience Platform Identity Service verwenden kann, um das Verhalten von Profilen zu kombinieren (zusammenzufügen).
 
@@ -208,11 +208,11 @@ Abhängig davon, woher Sie Ihre Treueprogramm-Daten erhalten, wählen Sie einen 
 
 Sie können Daten aus einer Vielzahl von Quellen aufnehmen. Im Folgenden sind nur einige der vielen verfügbaren Quellen aufgeführt:
 
-- Adobe-Programme (Quell-Connectoren umfassen [Adobe Analytics](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) und mehr)
+- Adobe-Programme (Quell-Connectoren umfassen [Adobe Analytics](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) und mehr)
 
-- Cloud-Speicher (Quell-Connectoren umfassen [Amazon S3](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/cloud-storage/blob) und mehr)
+- Cloud-Speicher (Quell-Connectoren umfassen [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob) und mehr)
 
-- Datenbanken (Quell-Connectoren umfassen [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/sql-server) und mehr)
+- Datenbanken (Quell-Connectoren umfassen [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server) und mehr)
 
 Gehen Sie folgendermaßen vor, um einen Quell-Connector einzurichten:
 
@@ -242,18 +242,18 @@ Gehen Sie folgendermaßen vor, um einen Quell-Connector einzurichten:
 
    1. Wählen Sie **[!UICONTROL Dokumentation anzeigen]** aus.
 
-Weitere [&#x200B; zur Verwendung des Adobe Analytics-Quell-Connectors finden Sie &#x200B;](./analytics.md) „Aufnehmen und Verwenden von Daten aus Adobe Analytics&quot;.
+Weitere [ zur Verwendung des Adobe Analytics-Quell-Connectors finden Sie ](./analytics.md) „Aufnehmen und Verwenden von Daten aus Adobe Analytics&quot;.
 
-Informationen [&#x200B; Verwendung des HTTP-API-Quell](./streaming.md)Connectors finden Sie unter „Aufnehmen und Verwenden von Streaming-Daten“.
+Informationen [ Verwendung des HTTP-API-Quell](./streaming.md)Connectors finden Sie unter „Aufnehmen und Verwenden von Streaming-Daten“.
 
-Einen Überblick über Quell-Connectoren einschließlich Links zu weiteren Informationen zu jedem einzelnen Connector finden Sie unter [Übersicht über Quell-Connectoren](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=de#terms-and-conditions).
+Einen Überblick über Quell-Connectoren einschließlich Links zu weiteren Informationen zu jedem einzelnen Connector finden Sie unter [Übersicht über Quell-Connectoren](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions).
 
 
 ## Einrichten einer Verbindung
 
 Um die Adobe Experience Platform-Daten in Customer Journey Analytics verwenden zu können, erstellen Sie eine Verbindung, die die Daten enthält, die aus der Einrichtung Ihres Schemas, Datensatzes und Workflows resultieren.
 
-Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Arbeitsbereich integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
+Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Analysis Workspace integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
 
 Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
@@ -295,7 +295,7 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
    1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen, z. B. [Auswählen und Kombinieren von &#x200B;](/help/connections/combined-dataset.md), [Überprüfen des Status der Datensätze einer Verbindung und des Status der Datenaufnahme](/help/connections/manage-connections.md) und mehr.
+Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen, z. B. [Auswählen und Kombinieren von ](/help/connections/combined-dataset.md), [Überprüfen des Status der Datensätze einer Verbindung und des Status der Datenaufnahme](/help/connections/manage-connections.md) und mehr.
 
 ## Einrichten einer Datenansicht
 
@@ -331,7 +331,7 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
    Behalten Sie die Einstellungen bei und wählen Sie **[!UICONTROL Speichern und beenden]**.
 
-Weitere [&#x200B; dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
+Weitere [ dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
 
 
 ## Einrichten eines Projekts

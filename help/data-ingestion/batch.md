@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1998'
 ht-degree: 86%
@@ -130,7 +130,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Beispiel für die Schaltfläche zum Hinzufügen eines Feldes zum Schema](./assets/example-loalty-schema-plus.png)
 
-1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]&#x200B;**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL Profile Core v2]** aus.
+1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL Profile Core v2]** aus.
 
    ![Identifizierungsobjekt](./assets/identifcation-loyalty-field.png)
 
@@ -140,7 +140,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie das Feld **[!UICONTROL E-Mail]** im soeben hinzugefügten Identifizierungsobjekt aus und danach **[!UICONTROL Identität]** und **[!UICONTROL E-Mail]** in [!UICONTROL Identity-Namespace] im Bedienfeld [!UICONTROL Feldeigenschaften].
 
-   ![Spezifizieren von E-Mail als Identität](./assets/specify-email-loyalty-id.png)
+   ![E-Mail als Identität angeben](./assets/specify-email-loyalty-id.png)
 
    Sie spezifizieren die E-Mail-Adresse als die Identität, die Adobe Experience Platform Identity Service verwenden kann, um Profile zu kombinieren (zusammenzufügen).
 
@@ -205,7 +205,7 @@ Im [Handbuch zur Datensatz-Benutzeroberfläche](https://experienceleague.adobe.c
 
 ## Verwenden von Workflows
 
-Die Workflow-Funktion wird verwendet, um Ihre Batch-Daten in Adobe Experience Platform hochzuladen. Die von Ihnen verwendete beispielhafte Batch-Datei ist eine CSV-Datei mit folgendem Inhalt:
+Die Workflow-Funktion wird verwendet, um Ihre Batch-Daten in Adobe Experience Platform hochzuladen. Die von Ihnen verwendete Beispiel-Batch-Datei ist eine CSV-Datei mit folgendem Inhalt:
 
 ```
 email,loyaltyID,points,status
@@ -253,7 +253,7 @@ Gehen Sie folgendermaßen vor, um Workflows zu verwenden:
 
 6. Wählen Sie **[!UICONTROL Beenden]**, um Ihre Batch-Daten in Adobe Experience Platform aufzunehmen.
 
-Weitere [&#x200B; zu finden Sie unter „Zuordnen CSV-Datei zu einem vorhandenen XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=de)Schema“:
+Weitere [ zu finden Sie unter „Zuordnen CSV-Datei zu einem vorhandenen XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=de)Schema“:
 
 - Erfahren Sie, wie Sie Daten zuordnen, wenn Ihre eingehenden Daten nicht mit Ihrem XDM-Schema kompatibel sind.
 - Verwenden von Zuordnungsvorlagen,
@@ -265,7 +265,7 @@ Weitere [&#x200B; zu finden Sie unter „Zuordnen CSV-Datei zu einem vorhandenen
 
 Um die Adobe Experience Platform-Daten in Customer Journey Analytics verwenden zu können, erstellen Sie eine Verbindung, die die Daten enthält, die aus der Einrichtung Ihres Schemas, Datensatzes und Workflows resultieren.
 
-Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Arbeitsbereich integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
+Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Analysis Workspace integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
 
 Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
@@ -343,7 +343,7 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
    Behalten Sie die Einstellungen bei und wählen Sie **[!UICONTROL Speichern und beenden]**.
 
-Weitere [&#x200B; dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
+Weitere [ dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment](../data-views/data-views.md) und Sitzungseinstellungen verwenden, finden Sie unter Datenansichten - Übersicht .
 
 
 ## Einrichten eines Projekts
@@ -376,4 +376,4 @@ Weitere Informationen zum Erstellen von Projekten und zum Durchführen einer Ana
 
 >[!SUCCESS]
 >
->Sie haben jetzt alle Schritte ausgeführt. Sie haben zunächst definiert, welche Treueprogramm-Daten erfasst werden sollen (Schema) und wo sie in Adobe Experience Platform gespeichert werden sollen (Datensatz). Dann haben Sie einen Workflow konfiguriert, um Treueprogramm-Batch-Daten in einen Datensatz hochzuladen. Sie haben eine Verbindung in Customer Journey Analytics definiert, um die aufgenommenen Treueprogramm-Daten und andere Daten zu verwenden. Durch die Definition Ihrer Datenansicht konnten Sie festlegen, welche Dimension und Metriken verwendet werden sollen. Abschließend haben Sie Ihr erstes Projekt erstellt, in dem Ihre Daten visualisiert und analysiert wurden.
+>Sie haben jetzt alle Schritte ausgeführt. Sie haben zunächst definiert, welche Treueprogramm-Daten erfasst werden sollen (Schema) und wo sie in Adobe Experience Platform gespeichert werden sollen (Datensatz). Dann haben Sie einen Workflow konfiguriert, um Treueprogramm-Batch-Daten in einen Datensatz hochzuladen. Sie haben eine Verbindung in Customer Journey Analytics definiert, um die aufgenommenen Loyalty-Daten und andere Daten zu verwenden. Durch die Definition Ihrer Datenansicht konnten Sie festlegen, welche Dimension und Metriken verwendet werden sollen. Abschließend haben Sie Ihr erstes Projekt erstellt, in dem Ihre Daten visualisiert und analysiert wurden.

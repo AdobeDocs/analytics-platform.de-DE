@@ -23,21 +23,21 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 69%
+ht-degree: 64%
 ---
 # Balken (gestapelt)
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel werden die Visualisierungen mit Balken und gestapelten Balken in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Balken und Balken gestapelt](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/bar)_ für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** Version dieses Artikels._
+_In diesem Artikel werden die Visualisierungen mit Balken und gestapelten Balken in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Balken und Balken gestapelt](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/bar)_ für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** Version dieses Artikels._
 
 
 >[!ENDSHADEBOX]
 
-Die Visualisierung „Balken“ bietet die Optionen „Standardmäßig“ und „Gestapelt“.
+Die Visualisierung „Balken“ bietet die Optionen „Standard“ und „Gestapelt“.
 
 ## Balken {#bar}
 
@@ -54,7 +54,7 @@ Die Visualisierung „Balken“ bietet die Optionen „Standardmäßig“ und �
 
 Die ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) Visualisierung **[!UICONTROL Balken]** zeigt vertikale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen.
 
-![Vertikale Visualisierung Balken mit mehreren Metriken wie Seitenansichten, Besuche, Eintritte und Ausstiege.](assets/bar.png)
+![Vertikale Balkenvisualisierung mit mehreren Metriken, einschließlich Seitenansichten, Besuchen, Eintritten und Austritten.](assets/bar.png)
 
 In den Visualisierungseinstellungen können Sie über ein Dropdown-Menü für die Granularität eine Trend-Visualisierung (z. B. Linie, Balken) von täglich über wöchentlich zu monatlich usw. ändern.
 
@@ -80,7 +80,7 @@ Verwenden Sie die Option **[!UICONTROL 100 % gestapelt]** in den ![Einstellung](
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bereichsvisualisierung](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bereichsvisualisierung](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 

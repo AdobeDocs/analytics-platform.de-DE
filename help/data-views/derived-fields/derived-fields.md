@@ -1,6 +1,6 @@
 ---
 title: Abgeleitete Felder
-description: Ein abgeleitetes Feld gibt die Bearbeitung der Berichtszeit von Schemafeldern und/oder Standardkomponenten über einen Satz verfügbarer Funktionen und Funktionsvorlagen an.
+description: Ein abgeleitetes Feld legt fest, wie Schemafelder und/oder Standardkomponenten zur Berichtserstellung mithilfe eines Satzes verfügbarer Funktionen und Funktionsvorlagen manipuliert werden.
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
@@ -37,7 +37,7 @@ topic_v2:
     internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '10578'
 ht-degree: 98%
@@ -63,7 +63,7 @@ Abgeleitete Felder werden in [Datenansichten](../data-views.md) definiert, basie
 
 Beispielhafte Anwendungsfälle sind:
 
-- Definieren Sie ein abgeleitetes Feld „Seitenname“, das falsche erfasste Seitennamenwerte korrigiert, um Seitennamenwerte zu korrigieren.
+- Definieren Sie ein abgeleitetes Feld „Seitenname“, das falsch erfasste Seitennamenwerte in korrekte Seitennamenwerte umwandelt.
 
 - Definieren Sie ein abgeleitetes Marketing-Kanal-Feld, das den richtigen Marketing-Kanal auf der Grundlage einer oder mehrerer Bedingungen bestimmt (z. B. URL-Parameter, Seiten-URL, Seitenname).
 
@@ -86,8 +86,8 @@ Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die Ober
 |---------|----------|--------|
 | 1 | **Auswahl** | Sie verwenden den Auswahlbereich, um Ihre Funktion, Funktionsvorlage, das Schemafeld oder das Standardfeld auszuwählen und per Drag-and-Drop auf den Regel-Builder zu ziehen. <br/>Verwenden Sie die Dropdown-Liste, um zwischen Folgendem auszuwählen: <br/>![Funktion](assets/Smock_Function_18_N.svg) [!UICONTROL Funktionen] - listet verfügbare [Funktionen](#function-reference) auf, </br>![Funktionsvorlagensymbol](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Funktionsvorlagen] - listet verfügbare [Funktionsvorlagen](#function-templates) auf, <br/>![Schemafeldsymbol](assets/Smock_Folder_18_N.svg) [!UICONTROL Schemafelder] - listet verfügbare Felder aus Datensatzkategorien (Ereignis, Profil, Lookup) und zuvor definierte abgeleitete Felder auf, und <br/>![Standardfeldsymbol](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standardfelder] - verfügbare Standardfelder (wie Plattform-Datensatz-ID). In der Auswahl werden nur Zeichenfolgen- und numerische Standardfelder angezeigt. Wenn die Funktion andere Datentypen unterstützt, können Standardfelder mit diesen anderen Datentypen für Werte oder Felder in der Oberfläche für Regeln ausgewählt werden.<br/>Sie können mithilfe des Suchfelds ![Suchsymbol](assets/Smock_Search_18_N.svg) nach Funktion, Funktionsvorlagen, Schema und Standardfeldern suchen. <br/>Sie können die ausgewählte Objektliste filtern, indem Sie ![Filtersymbol](assets/Smock_Filter_18_N.svg) auswählen und im Dialogfeld [!UICONTROL Felder filtern nach] Filter angeben. Sie können jeden Filter einfach mit ![Symbol „Schließen“](assets/CrossSize75.svg) entfernen. |
 | 2 | **Regel-Builder** | Das abgeleitete Feld wird sequenziell mit einer oder mehreren Regeln erstellt. Eine Regel ist eine spezifische Implementierung einer Funktion und wird daher immer nur einer Funktion zugeordnet. Sie erstellen eine Regel, indem Sie eine Funktion per Drag-and-Drop in den Regel-Builder ziehen. Der Funktionstyp bestimmt die Oberfläche der Regel.<br/>Weitere Informationen finden Sie auf der [Oberfläche für Regeln](#rule-interface). <br/>Sie können eine Funktion am Anfang, Ende oder zwischen Regeln einfügen, die bereits im Regel-Builder verfügbar sind. Die letzte Regel im Regel-Builder bestimmt die endgültige Ausgabe des abgeleiteten Felds. |
-| 3 | **[!UICONTROL **&#x200B; Feldeinstellungen &#x200B;**]** | Sie können Ihr abgeleitetes Feld benennen, beschreiben und seinen Feldtyp überprüfen. |
-| 4 | **[!UICONTROL **&#x200B; Endgültige Ausgabe &#x200B;**]** | Dieser Bereich zeigt eine spontan aktualisierte Vorschau der Ausgabewerte, basierend auf den Daten der letzten 30 Tage und den Änderungen, die Sie an dem abgeleiteten Feld im Regel-Builder vornehmen. |
+| 3 | **[!UICONTROL ** Feldeinstellungen **]** | Sie können Ihr abgeleitetes Feld benennen, beschreiben und seinen Feldtyp überprüfen. |
+| 4 | **[!UICONTROL ** Endgültige Ausgabe **]** | Dieser Bereich zeigt eine spontan aktualisierte Vorschau der Ausgabewerte, basierend auf den Daten der letzten 30 Tage und den Änderungen, die Sie an dem abgeleiteten Feld im Regel-Builder vornehmen. |
 
 {style="table-layout:auto"}
 
@@ -95,8 +95,8 @@ Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die Ober
 
 Beim erstmaligen Zugriff auf die Oberfläche für abgeleitete Felder wird der Assistent [!UICONTROL Mit einer Feldvorlage beginnen] angezeigt.
 
-1. Wählen Sie die Vorlage aus, die die Art des Feldes, das erstellt werden soll, am besten beschreibt.
-2. Wählen Sie zum Fortfahren die Schaltfläche **[!UICONTROL **&#x200B; Auswählen &#x200B;**]** aus.
+1. Wählen Sie die Vorlage aus, die die Art des Feldes, das Sie erstellen möchten, am besten beschreibt.
+2. Wählen Sie zum Fortfahren die Schaltfläche **[!UICONTROL ** Auswählen **]** aus.
 
 Das Dialogfeld für das abgeleitete Feld wird mit Regeln (und Funktionen) gefüllt, die für den ausgewählten Feldtyp erforderlich oder nützlich sind. Weitere Informationen zu den verfügbaren Vorlagen finden Sie unter [Funktionsvorlagen](#function-templates).
 
@@ -110,7 +110,7 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Oberfläche f
 |---------|----------|--------|
 | A | **Regelname** | Standardmäßig lautet der Regelname **Regel X** (X verweist auf eine Sequenznummer). Wählen Sie zum Bearbeiten eines Regelnamens den Namen aus und geben Sie den neuen Namen ein, z. B. `Query Parameter`. |
 | B | **Funktionsname** | Der ausgewählte Funktionsname für die Regel, z. B. [!UICONTROL URL PARSE]. Wenn die Funktion die letzte in der Sequenz der Funktionen ist und die endgültigen Ausgabewerte bestimmt, folgt auf den Funktionsnamen [!UICONTROL - ENDGÜLTIGE AUSGABE], zum Beispiel [!UICONTROL URL-PARSEN - ENDGÜLTIGE AUSGABE]. <br/>Um ein Popup mit weiteren Informationen zur Funktion anzuzeigen, wählen Sie ![Hilfesymbol](assets/Smock_HelpOutline_18_N.svg) aus. |
-| C | **Regelbeschreibung** | Sie können optional eine Beschreibung zu einer Regel hinzufügen.<br/>Wählen Sie ![Mehr-Symbol](assets/More.svg) und dann **[!UICONTROL ** Beschreibung hinzufügen **]** aus, um eine Beschreibung hinzuzufügen, oder **[!UICONTROL **&#x200B; Beschreibung bearbeiten &#x200B;**]**, um eine vorhandene Beschreibung zu bearbeiten.<br/>Verwenden Sie den Editor, um eine Beschreibung einzugeben. Sie können den Text mithilfe der Symbolleiste formatieren (mit Stilauswahl, Fett, Kursiv, Unterstrichen, Rechts, Links, Zentriert, Farbe, Zahlenliste, Aufzählungsliste) und Links zu externen Informationen hinzufügen. <br/>Um die Bearbeitung der Beschreibung abzuschließen, klicken Sie auf eine Stelle außerhalb des Editors. |
+| C | **Regelbeschreibung** | Sie können optional eine Beschreibung zu einer Regel hinzufügen.<br/>Wählen Sie ![Mehr-Symbol](assets/More.svg) und dann **[!UICONTROL ** Beschreibung hinzufügen **]** aus, um eine Beschreibung hinzuzufügen, oder **[!UICONTROL ** Beschreibung bearbeiten **]**, um eine vorhandene Beschreibung zu bearbeiten.<br/>Verwenden Sie den Editor, um eine Beschreibung einzugeben. Sie können den Text mithilfe der Symbolleiste formatieren (mit Stilauswahl, Fett, Kursiv, Unterstrichen, Rechts, Links, Zentriert, Farbe, Zahlenliste, Aufzählungsliste) und Links zu externen Informationen hinzufügen. <br/>Um die Bearbeitung der Beschreibung abzuschließen, klicken Sie auf eine Stelle außerhalb des Editors. |
 | D | **Funktionsbereich** | Definiert die Logik der Funktion. Die Oberfläche hängt vom Typ der Funktion ab. Das Dropdown-Menü für [!UICONTROL Feld] oder [!UICONTROL Wert] zeigt alle verfügbaren Feldkategorien (Regeln, Standardfelder, Felder) basierend auf dem von der Funktion erwarteten Eingabetyp an. Alternativ können Sie ein Feld aus der Auswahl „Schema und Standardfelder“ per Drag-and-Drop auf ein Feld oder einen Wert ziehen. Wenn dieses gezogene Feld aus einem Lookup-Datensatz stammt, wird automatisch eine Lookup-Funktion vor der von Ihnen definierten Funktion eingefügt. <br/>Ausführliche Informationen zu jeder der unterstützten Funktionen finden Sie unter [Funktionsreferenz](#function-reference). |
 
 {style="table-layout:auto"}
@@ -119,24 +119,24 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Oberfläche f
 
 1. Wählen Sie eine vorhandene Datenansicht aus oder erstellen Sie eine Datenansicht. Weitere Informationen finden Sie unter [Datenansichten](../data-views.md).
 
-2. Wählen Sie die Registerkarte **[!UICONTROL **&#x200B; Komponenten &#x200B;**]** der Datenansicht aus.
+2. Wählen Sie die Registerkarte **[!UICONTROL ** Komponenten **]** der Datenansicht aus.
 
-3. Wählen Sie in der linken Leiste **[!UICONTROL **&#x200B; Abgeleitetes Feld erstellen &#x200B;**]** aus.
+3. Wählen Sie in der linken Leiste **[!UICONTROL ** Abgeleitetes Feld erstellen **]** aus.
 
 4. Um Ihr abgeleitetes Feld zu definieren, verwenden Sie die Oberfläche [!UICONTROL Abgeleitetes Feld erstellen]. Siehe [Oberfläche für abgeleitete Felder](#derived-field-interface).
 
-   Wählen Sie zum Speichern des neuen abgeleiteten Felds **[!UICONTROL **&#x200B; Speichern &#x200B;**]** aus.
+   Wählen Sie zum Speichern des neuen abgeleiteten Felds **[!UICONTROL ** Speichern **]** aus.
 
-5. Das neue abgeleitete Feld wird zu [!UICONTROL „Abgeleitete Felder“ >] „Container“ als Teil der **[!UICONTROL **&#x200B; Schemafelder &#x200B;**]** in der linken Leiste der Datenansicht hinzugefügt.
+5. Das neue abgeleitete Feld wird zu [!UICONTROL „Abgeleitete Felder“ >] „Container“ als Teil der **[!UICONTROL ** Schemafelder **]** in der linken Leiste der Datenansicht hinzugefügt.
 
 
 ## Bearbeiten eines abgeleiteten Felds {#edit}
 
 1. Wählen Sie eine vorhandene Datenansicht aus. Weitere Informationen finden Sie unter [Datenansichten](../data-views.md).
 
-2. Wählen Sie die Registerkarte **[!UICONTROL **&#x200B; Komponenten &#x200B;**]** der Datenansicht aus.
+2. Wählen Sie die Registerkarte **[!UICONTROL ** Komponenten **]** der Datenansicht aus.
 
-3. Wählen Sie links im Bereich [!UICONTROL Verbindung] die Registerkarte **[!UICONTROL **&#x200B; Schemafelder &#x200B;**]** aus.
+3. Wählen Sie links im Bereich [!UICONTROL Verbindung] die Registerkarte **[!UICONTROL ** Schemafelder **]** aus.
 
 4. Wählen Sie **[!UICONTROL **„Abgeleitete Felder“ >**]** „Container“ aus.
 
@@ -144,11 +144,11 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Oberfläche f
 
 6. Verwenden Sie zum Bearbeiten des abgeleiteten Felds die Oberfläche [!UICONTROL Abgeleitetes Feld bearbeiten]. Siehe [Oberfläche für abgeleitete Felder](#derived-field-interface).
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Speichern &#x200B;**]**, um das aktualisierte abgeleitete Feld zu speichern.
+   - Wählen Sie **[!UICONTROL ** Speichern **]**, um das aktualisierte abgeleitete Feld zu speichern.
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Abbrechen &#x200B;**]**, um alle Änderungen am abgeleiteten Feld abzubrechen.
+   - Wählen Sie **[!UICONTROL ** Abbrechen **]**, um alle Änderungen am abgeleiteten Feld abzubrechen.
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Speichern unter &#x200B;**]**, um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld, dem `(copy)` hinzugefügt wurde.
+   - Wählen Sie **[!UICONTROL ** Speichern unter **]**, um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld, dem `(copy)` hinzugefügt wurde.
 
 Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder Metriken in Ihrer Datenansicht verwendet haben:
 
@@ -158,11 +158,11 @@ Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder 
 
 1. Verwenden Sie zum Bearbeiten des abgeleiteten Felds die Oberfläche [!UICONTROL Abgeleitetes Feld bearbeiten]. Siehe [Oberfläche für abgeleitete Felder](#derived-field-interface).
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Speichern &#x200B;**]**, um das aktualisierte abgeleitete Feld zu speichern.
+   - Wählen Sie **[!UICONTROL ** Speichern **]**, um das aktualisierte abgeleitete Feld zu speichern.
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Abbrechen &#x200B;**]**, um alle Änderungen am abgeleiteten Feld abzubrechen.
+   - Wählen Sie **[!UICONTROL ** Abbrechen **]**, um alle Änderungen am abgeleiteten Feld abzubrechen.
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Speichern unter &#x200B;**]**, um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld, dem `(copy)` hinzugefügt wurde.
+   - Wählen Sie **[!UICONTROL ** Speichern unter **]**, um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld, dem `(copy)` hinzugefügt wurde.
 
 
 
@@ -170,11 +170,11 @@ Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder 
 
 1. Wählen Sie eine vorhandene Datenansicht aus. Weitere Informationen finden Sie unter [Datenansichten](../data-views.md).
 
-2. Wählen Sie die Registerkarte **[!UICONTROL **&#x200B; Komponenten &#x200B;**]** der Datenansicht aus.
+2. Wählen Sie die Registerkarte **[!UICONTROL ** Komponenten **]** der Datenansicht aus.
 
-3. Wählen Sie im Bereich [!UICONTROL Verbindung] die Registerkarte **[!UICONTROL **&#x200B; Schemafelder &#x200B;**]** aus.
+3. Wählen Sie im Bereich [!UICONTROL Verbindung] die Registerkarte **[!UICONTROL ** Schemafelder **]** aus.
 
-4. Wählen Sie **[!UICONTROL **„Abgeleitete Felder“ > „Container“ &#x200B;**]**.
+4. Wählen Sie **[!UICONTROL **„Abgeleitete Felder“ > „Container“ **]**.
 
 5. Bewegen Sie den Mauszeiger über das abgeleitete Feld, das Sie löschen möchten, und wählen Sie ![Bearbeiten-Symbol](assets/Smock_Edit_18_N.svg).
 
@@ -182,7 +182,7 @@ Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder 
 
    Sie werden im Dialogfeld [!UICONTROL Komponente löschen] aufgefordert, den Löschvorgang zu bestätigen. Berücksichtigen Sie eventuell vorhandene externe Verweise auf das abgeleitete Feld außerhalb der Datenansicht.
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Weiter &#x200B;**]**, um das abgeleitete Feld zu löschen.
+   - Wählen Sie **[!UICONTROL ** Weiter **]**, um das abgeleitete Feld zu löschen.
 
 Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder Metriken in Ihrer Datenansicht verwendet haben:
 
@@ -194,7 +194,7 @@ Alternativ, wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder 
 
    Sie werden im Dialogfeld [!UICONTROL Komponente löschen] aufgefordert, den Löschvorgang zu bestätigen. Berücksichtigen Sie eventuell vorhandene externe Verweise auf das abgeleitete Feld außerhalb der Datenansicht.
 
-   - Wählen Sie **[!UICONTROL **&#x200B; Weiter &#x200B;**]**, um das abgeleitete Feld zu löschen.
+   - Wählen Sie **[!UICONTROL ** Weiter **]**, um das abgeleitete Feld zu löschen.
 
 >[!NOTE]
 >
@@ -209,7 +209,7 @@ Es stehen Funktionsvorlagen für das schnelle Erstellen eines abgeleiteten Felds
 
 ### Marketing-Kanäle {#mchannel}
 
-Diese Funktionsvorlage verwendet eine Sammlung von Regeln zum Erstellen von Marketing-Kanälen.
+Diese Funktionsvorlage verwendet eine Sammlung von Regeln zum Erstellen von Marketingkanälen.
 
 +++ Details
 
@@ -315,7 +315,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 ![Screenshot des Regel-Builders für „Alle Werte in durch Trennzeichen getrennter Liste abrufen“](assets/function-template-get-all-values-in-delimited-list.png)
 
-Das abgeleitete Feld wird als [benutzerdefinierter Container“ verfügbar](/help/data-views/create-dataview.md#containers-1) den Sie in Ihrer Datenansicht auswählen und für die [Analyse von Unterereignissen) in &#x200B;](/help/components/segments/sub-event.md) Workspace-Projekt verwenden können.
+Das abgeleitete Feld wird als [benutzerdefinierter Container“ verfügbar](/help/data-views/create-dataview.md#containers-1) den Sie in Ihrer Datenansicht auswählen und für die [Analyse von Unterereignissen) in ](/help/components/segments/sub-event.md) Workspace-Projekt verwenden können.
 
 +++
 
@@ -419,7 +419,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 ### Downloadlink {#download}
 
-Diese Funktionsvorlage kennzeichnet allgemeine Download-Links.
+Diese Funktionsvorlage kennzeichnet häufig verwendete Download-Links.
 
 +++ Details
 
@@ -434,7 +434,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 ### Breitengrad des Bundesstaats {#state-latitude}
 
-Diese Funktionsvorlage erhält den Breitengrad für einen US-Bundesstaat mit einer Genauigkeit von 5 Stellen.
+Diese Funktionsvorlage ermittelt den Breitengrad für einen US-Bundesstaat mit einer Genauigkeit von 5 Stellen.
 
 +++ Details
 
@@ -449,7 +449,7 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 ### Längengrad des Bundesstaats {#state-longitude}
 
-Diese Funktionsvorlage erhält den Längengrad für einen US-Bundesstaat mit einer Genauigkeit von 5 Stellen.
+Diese Funktionsvorlage ermittelt den Längengrad für einen US-Bundesstaat mit einer Genauigkeit von 5 Stellen.
 
 +++ Details
 
@@ -526,7 +526,7 @@ Wendet Bedingungen basierend auf definierten Kriterien aus einem oder mehreren F
 
 | Eingabedatentyp | Eingabe | Enthaltene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Wenn], [!UICONTROL Ansonsten, Wenn]-Container:</p><ul><li>[!UICONTROL Wert]</li><ul><li>Regeln</li><li>Standardfeldern</li><li>Felder</li></ul><li>[!UICONTROL Kriterium] (siehe eingeschlossene Operatoren, basierend auf ausgewähltem Werttyp)</li></ul></li><li>[!UICONTROL Wert setzen auf], [!UICONTROL Ansonsten Wert setzen auf]:</p><ul><li>[!UICONTROL Wert]</li><ul><li>Regeln</li><li>Standardfeldern</li><li>Felder</li></ul></ul></li></ul> | <p>Zeichenfolgen</p><ul><li>Gleich</li><li>Gleich jedem Begriff</li><li>Enthält die Wortgruppe</li><li>Enthält einen der Begriffe</li><li>Enthält alle Begriffe</li><li>Beginnt mit</li><li>Beginnt mit einem beliebigen Begriff</li><li>Endet mit</li><li>Endet mit einem beliebigen Begriff</li><li>Ist nicht gleich</li><li>Entspricht keinem Begriff</li><li>Enthält nicht die Wortgruppe</li><li>Enthält keine Begriffe</li><li>Enthält nicht alle Begriffe</li><li>Beginnt nicht mit</li><li>Beginnt mit keinem Begriff</li><li>Endet nicht mit</li><li>Endet mit keinem Begriff</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p>Numerisch</p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Ist größer als</li><li>Ist größer als oder gleich</li><li>Ist kleiner als</li><li>Ist kleiner als oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p>Daten</p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>ist später als</li><li>Ist später als oder gleich</li><li>ist vor</li><li>Ist vor oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul> | <ul><li>5 Funktionen pro abgeleitetem Feld</li><li>200 [Operatoren](#operators) pro abgeleitetem Feld. Ein Beispiel für einen einzelnen Operator ist „Verweisende Domain enthält Google“. </li></ul> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Wenn], [!UICONTROL Ansonsten, Wenn]-Container:</p><ul><li>[!UICONTROL Wert]</li><ul><li>Regeln</li><li>Standardfeldern</li><li>Felder</li></ul><li>[!UICONTROL Kriterium] (siehe eingeschlossene Operatoren, basierend auf ausgewähltem Werttyp)</li></ul></li><li>[!UICONTROL Wert setzen auf], [!UICONTROL Ansonsten Wert setzen auf]:</p><ul><li>[!UICONTROL Wert]</li><ul><li>Regeln</li><li>Standardfeldern</li><li>Felder</li></ul></ul></li></ul> | <p>Zeichenfolgen</p><ul><li>Gleich</li><li>Gleich jedem Begriff</li><li>Enthält die Wortgruppe</li><li>Enthält einen der Begriffe</li><li>Enthält alle Begriffe</li><li>Beginnt mit</li><li>Beginnt mit einem beliebigen Begriff</li><li>Endet mit</li><li>Endet mit einem beliebigen Begriff</li><li>Ist nicht gleich</li><li>Entspricht keinem Begriff</li><li>Enthält nicht die Wortgruppe</li><li>Enthält keine Begriffe</li><li>Enthält nicht alle Begriffe</li><li>Beginnt nicht mit</li><li>Beginnt mit keinem Begriff</li><li>Endet nicht mit</li><li>Endet mit keinem Begriff</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p>Numerisch</p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Ist größer als</li><li>Ist größer als oder gleich</li><li>Ist kleiner als</li><li>Ist kleiner als oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p>Daten</p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>ist später als</li><li>Ist später als oder gleich</li><li>ist vor</li><li>Ist vor oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul> | <ul><li>5 Funktionen pro abgeleitetem Feld</li><li>200 [Operatoren](#operators) pro abgeleitetem Feld. Ein Beispiel für einen einzelnen Operator ist „Referrer-Domain enthält google“. </li></ul> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -838,7 +838,7 @@ Wenn Sie Originalwerte einbeziehen möchten, die Sie nicht als Teil der zu klass
 
 ## Anwendungsfall 2 {#classify-uc2}
 
-Sie haben für mehrere Seiten URLs anstelle des Anzeigenamens erfasst. Durch diese gemischte Erfassung von Werten wird das Reporting ungültig.
+Sie haben für mehrere Seiten URLs anstelle des benutzerfreundlichen Seitennamens erfasst. Durch diese gemischte Erfassung von Werten wird das Reporting beeinträchtigt.
 
 ### Daten vor {#classify-uc2-databefore}
 
@@ -875,7 +875,7 @@ Sie definieren ein abgeleitetes `Page Name (updated)`-Feld. Mit der Funktion [!U
 
 ## Weitere Informationen {#classify-moreinfo}
 
-Die folgende zusätzliche Funktion ist in der Oberfläche „Regel klassifizieren“ verfügbar:
+Die folgende zusätzliche Funktionalität ist in der Oberfläche „Regel klassifizieren“ verfügbar:
 
 - Um alle Tabellenwerte schnell zu löschen, wählen Sie ![Löschen](/help/assets/icons/Erase.svg) **[!UICONTROL Alle Tabellenwerte löschen]** aus.
 - Um eine CSV-Datei mit den Originalwerten für „Wenn die Werte gleich sind“ und neuen Werten für „Werte ersetzen durch“ hochzuladen, wählen Sie ![CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL CSV hochladen]**.
@@ -919,7 +919,7 @@ Derzeit erfassen Sie die Codes von Herkunfts- und Zielflughäfen Codes als separ
 Annahmen:
 
 - Herkunfts- und Zielwerte werden in separaten Feldern in derselben Tabelle erfasst.
-- Die Benutzerin oder der Benutzer legt fest, dass das Trennzeichen „-“ zwischen den Werten verwendet werden soll.
+- Der Benutzer oder die Benutzerin legt fest, dass das Trennzeichen „-“ zwischen den Werten verwendet werden soll.
 
 Stellen Sie sich vor, dass folgende Buchungen stattfinden:
 
@@ -992,14 +992,14 @@ Gibt die Differenz zwischen zwei Datumsangaben oder zwei Datums-/Uhrzeitfeldern 
 
 | Eingabedatentyp | Eingabe | Enthaltene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Datum</li><li>Datum-Uhrzeit</li></ul> | <ul><li>[!UICONTROL Anwendungsbereich]<ul><li>Ereignis</li><li>Sitzung</li><li>Person</li></ul></li><li>[!UICONTROL Wert]:<ul><li>Datum</li><li>Datum/Uhrzeit</li><li>Statisches Datum (Benutzereingabe)</li><li>Statische Datums-/Uhrzeitangabe (Benutzereingabe)</li><li>Dynamisches Datum<ul><li>Am aktuellen Tag</li></ul></li><li>Dynamische Datums-/Uhrzeitangabe<ul><li>Jetzt</li></ul></li></ul></li><li>[!UICONTROL Granularität:]<ul><li>Seconds</li><li>Minutes</li><li>Stunden</li><li>Days</li><li>Weeks</li><li>Months</li><li>Quartale</li><li>Jahre</li></ul></li><li>Für jede Datums- oder Datums-/Uhrzeitangabe:<ul><li>Erste(s) (für Sitzung oder Person)</li><li>Letzte(s) (für Sitzung oder Person)</li></ul></li></ul> | <p>-/-</p> | <p>2 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Datum</li><li>Datum-Uhrzeit</li></ul> | <ul><li>[!UICONTROL Anwendungsbereich]<ul><li>Ereignis</li><li>Sitzung</li><li>Person</li></ul></li><li>[!UICONTROL Wert]:<ul><li>Datum</li><li>Datum/Uhrzeit</li><li>Statisches Datum (Benutzereingabe)</li><li>Statische Datums-/Uhrzeitangabe (Benutzereingabe)</li><li>Dynamisches Datum<ul><li>Am aktuellen Tag</li></ul></li><li>Dynamische Datums-/Uhrzeitangabe<ul><li>Jetzt</li></ul></li></ul></li><li>[!UICONTROL Granularität:]<ul><li>Seconds</li><li>Minutes</li><li>Stunden</li><li>Days</li><li>Weeks</li><li>Months</li><li>Quartale</li><li>Jahre</li></ul></li><li>Für jede Datums- oder Datums-/Uhrzeitangabe:<ul><li>Erste(s) (innerhalb einer Sitzung oder Person)</li><li>Letzte(s) (innerhalb einer Sitzung oder Person)</li></ul></li></ul> | <p>-/-</p> | <p>2 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
 
 ## Anwendungsfall 1 {#datemath-uc1}
 
-Als Marketing-Analysefachkraft eines Hotelunternehmens möchten Sie den Unterschied der Anzahl der Tage zwischen dem Check-in-Datum von Personen und dem Buchungstermin über die letzte Woche verstehen.
+Als Marketing-Analyst eines Hotelunternehmens möchten Sie den Unterschied in der Anzahl der Tage zwischen den Check-in-Daten von Kunden und Kundinnen und den Buchungsdaten in der letzten Woche verstehen.
 
 
 ### Abgeleitetes Feld {#datemath-uc1-derivedfield}
@@ -1011,7 +1011,7 @@ Sie definieren ein abgeleitetes `Days between booking and check-in`-Feld. Mit de
 
 ## Anwendungsfall 2 {#datemath-uc2}
 
-Als Marketing-Analysefachkraft eines Ladengeschäfts möchten Sie verstehen, vor wie vielen Tagen eine Person zuletzt im Geschäft war. Sie verwenden Geolocation-Funktionen innerhalb einer Mobile App und Beacons im Geschäft, um physische Besuche von Kundinnen und Kunden zu erfassen.
+Als Marketing-Analyst eines Ladengeschäfts möchten Sie verstehen, wie viele Tage seit dem letzten Besuch eines Kunden oder einer Kundin im Geschäft vergangen sind. Sie verwenden Geolocation-Funktionen innerhalb einer Mobile App und Beacons im Geschäft, um physische Besuche von Kundinnen und Kunden zu erfassen.
 
 ### Abgeleitetes Feld {#datemath-uc2-derivedfield}
 
@@ -1095,7 +1095,7 @@ Sie definieren ein abgeleitetes `Booking Confirmation`-Feld. Mit der Funktion [!
 
 ## Anwendungsfall 2 {#deduplicate-uc2}
 
-Sie verwenden Ereignisse als Proxy für Kampagnenklickraten mit externen Marketing-Kampagnen. Durch Neuladungen und Umleitungen wird die Ereignismetrik in die Höhe getrieben. Sie möchten die Trackingcode-Dimension deduplizieren, damit nur das erste erfasst und die Ereignisüberzählung minimiert wird.
+Sie verwenden Ereignisse als Proxy für Kampagnenklicks bei externen Marketingkampagnen. Durch Neuladungen und Umleitungen wird die Ereignismetrik in die Höhe getrieben. Sie möchten die Trackingcode-Dimension deduplizieren, damit nur das erste erfasst und die Ereignisüberzählung minimiert wird.
 
 ### Daten vor {#deduplicate-uc2-databefore}
 
@@ -1199,7 +1199,7 @@ Findet alle Werte in einem ausgewählten Feld und ersetzt diese Werte durch eine
 
 ## Anwendungsfall {#findreplace-uc}
 
-Sie haben einige fehlerhafte Werte für Ihren Bericht zu externen Marketing-Kanälen erhalten, z. B. `email%20 marketing` statt `email marketing`. Diese falsch formatierten Werte brechen Ihre Berichte und machen es schwieriger, die Leistung von E-Mails zu erkennen. Ersetzen Sie `email%20marketing` durch `email marketing`.
+Sie haben einige fehlerhafte Werte für Ihren Bericht zu externen Marketing-Kanälen erhalten, z. B. `email%20 marketing` statt `email marketing`. Diese falsch formatierten Werte zersplittern Ihre Berichte und machen es schwieriger, zu erkennen, wie E-Mail performt. Ersetzen Sie `email%20marketing` durch `email marketing`.
 
 **Originalbericht**
 
@@ -1301,7 +1301,7 @@ Sie können schnell eine [!UICONTROL Lookup]-Funktion in den Regel-Builder einf�
 1. Wählen Sie **[!UICONTROL Schemafelder]** aus der Auswahl aus.
 1. Wählen Sie ![Schemafeldsymbol](assets/Smock_Folder_18_N.svg) **[!UICONTROL Datensätze nachschlagen]** aus.
 1. Wählen Sie Ihren Lookup-Datensatz aus und suchen Sie das Feld, das Sie für die Suche verwenden möchten.
-1. Ziehen Sie das Suchfeld per Drag-and-Drop auf eines der verfügbaren Eingabefelder für eine Funktion (z. B. Fall wenn). Wenn gültig, können Sie das Feld in einem blauen Feld mit der Bezeichnung **[!UICONTROL + Hinzufügen]** ablegen und automatisch eine Lookup-Funktion vor der Funktion ablegen, auf die Sie das Suchfeld abgelegt haben. Die eingefügte Lookup-Funktion wird automatisch mit relevanten Werten für alle Felder ausgefüllt.
+1. Ziehen Sie das Lookup-Feld per Drag-and-Drop auf eines der verfügbaren Eingabefelder für eine Funktion (z. B. Case When). Wenn gültig, können Sie das Feld in einem blauen Feld mit der Bezeichnung **[!UICONTROL + Hinzufügen]** ablegen und automatisch eine Lookup-Funktion vor der Funktion ablegen, auf die Sie das Suchfeld abgelegt haben. Die eingefügte Lookup-Funktion wird automatisch mit relevanten Werten für alle Felder ausgefüllt.
    ![Ziehen des Lookup-Felds](assets/lookup-drag.png)
 
 +++
@@ -1314,7 +1314,7 @@ Sie können schnell eine [!UICONTROL Lookup]-Funktion in den Regel-Builder einf�
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lowercase"
 >title="Kleinschreibung"
->abstract="Diese Funktion wandel die gesamte Zeichenkette in Kleinschreibung um."
+>abstract="Diese Funktion wandelt die gesamte Zeichenfolge in Kleinschreibung um."
 
 
 Konvertiert Werte aus einem Feld in Kleinbuchstaben und speichert sie in einem neuen abgeleiteten Feld.
@@ -1446,7 +1446,7 @@ Beim Arbeiten mit statischen Zahlen in der Funktion [!UICONTROL MATHEMATIK] sind
   - Diese Formel ist gültig.
     ![Weitere Informationen zur Mathematik 5](assets/math-more-info-5.png)
 
-Verwenden Sie die mathematische Funktion für Berechnungen auf Trefferebene. Verwenden Sie die Funktion [Zusammenfassen](#summarize) für Berechnungen, die auf dem Umfang „Ereignis“, „Sitzung“ oder „Person“ basieren.
+Verwenden Sie die Funktion **Math** für Berechnungen auf Trefferebene. Verwenden Sie die Funktion [Zusammenfassen](#summarize) für Berechnungen, die auf dem Umfang „Ereignis“, „Sitzung“ oder „Person“ basieren.
 
 +++
 
@@ -1595,7 +1595,7 @@ Sie können nur Felder auswählen, die zur Besuchs- oder Ereignistabelle gehöre
 
 [!UICONTROL Wiederholungen einschließen] bestimmt, wie sich wiederholende Werte für die Funktion [!UICONTROL WEITER ODER ZURÜCK] behandelt werden.
 
-- „Wiederholungen einschließen“ prüft die nächsten oder vorherigen Werte. Wenn [!UICONTROL Wiederholungen einschließen] ausgewählt ist, werden alle sequenziellen Wiederholungen der nächsten oder vorherigen Werte aus dem aktuellen Treffer ignoriert.
+- „Wiederholungen einschließen“ umfasst Wiederholungen sowie die nächsten oder vorherigen Werte. Wenn [!UICONTROL Wiederholungen einschließen] ausgewählt ist, werden alle sequenziellen Wiederholungen der nächsten oder vorherigen Werte aus dem aktuellen Treffer ignoriert.
 
 - In Zeilen ohne (leere) Werte für ein ausgewähltes Feld werden keine nächsten oder vorherigen Werte als Teil der Ausgabe der Funktionsausgabe [!UICONTROL WEITER ODER ZURÜCK] zurückgegeben.
 
@@ -1611,7 +1611,7 @@ Sie können nur Felder auswählen, die zur Besuchs- oder Ereignistabelle gehöre
 >abstract="Diese Funktion bietet die Möglichkeit, Teile einer Zeichenfolge mithilfe regulärer Ausdrücke zu extrahieren."
 
 
-Ersetzt einen Wert aus einem Feld mithilfe eines regulären Ausdrucks in ein neues abgeleitetes Feld.
+Ersetzt einen Wert aus einem Feld mithilfe eines regulären Ausdrucks und speichert das Ergebnis in einem neuen abgeleiteten Feld.
 
 +++ Details
 
@@ -1631,10 +1631,10 @@ Sie möchten einen Teil einer URL erfassen und als eindeutige Seitenkennung zur 
 
 | Seiten-URL |
 |---|
-| `https://business.adobe.com/de/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/de/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/de/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/de/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
@@ -1685,7 +1685,7 @@ Customer Journey Analytics verwendet eine Teilmenge der Perl-Regex-Syntax. Die f
 | `(?:...)` | Nicht-kennzeichnende Erfassung. Verhindert, dass in der Ausgabezeichenfolge auf die Übereinstimmung verwiesen wird. |
 | `a?` | Null oder eins von `a`. |
 | `a*` | Null oder mehr von `a`. |
-| `a+` | Eines oder mehr von `a`. |
+| `a+` | Eines oder mehrere von `a`. |
 | `a{3}` | Genau 3 von `a`. |
 | `a{3,}` | 3 oder mehr von `a`. |
 | `a{3,6}` | Zwischen 3 und 6 von `a`. |
@@ -1734,9 +1734,9 @@ Sie erfassen Voice-App-Antworten in einer durch Trennzeichen getrennten Liste in
 
 | Voice-App-Antworten | Ereignisse |
 |---|--:|
-| Es war großartig, ergab Sinn, werde ich weiterempfehlen | 1 |
-| Es war gut, etwas verwirrend, werde ich weiterempfehlen | 1 |
-| Es war nicht besonders gut, sehr verwirrend, werde ich nicht weiterempfehlen | 1 |
+| Es war großartig, ergab Sinn, werde es weiterempfehlen | 1 |
+| Es war gut, etwas verwirrend, werde es weiterempfehlen | 1 |
+| Es war nicht besonders gut, sehr verwirrend, werde es nicht weiterempfehlen | 1 |
 
 {style="table-layout:auto"}
 
@@ -1768,9 +1768,9 @@ Sie erfassen Voice-App-Antworten in einer durch Trennzeichen getrennten Liste in
 
 | Antworten | Ereignisse |
 |---|--:|
-| Es war großartig, ergab Sinn, werde ich weiterempfehlen | 1 |
-| Es war gut, etwas verwirrend, werde ich weiterempfehlen | 1 |
-| Es war nicht besonders gut, sehr verwirrend, werde ich nicht weiterempfehlen | 1 |
+| Es war großartig, ergab Sinn, werde es weiterempfehlen | 1 |
+| Es war gut, etwas verwirrend, werde es weiterempfehlen | 1 |
+| Es war nicht besonders gut, sehr verwirrend, werde es nicht weiterempfehlen | 1 |
 
 {style="table-layout:auto"}
 
@@ -1802,7 +1802,7 @@ Sie erstellen ein abgeleitetes `Second Response`-Feld, um den letzten Wert aus d
 
 ## Benutzerdefinierter Container
 
-Das abgeleitete Feld wird als [benutzerdefinierter Container“ verfügbar](/help/data-views/create-dataview.md#containers-1) den Sie in Ihrer Datenansicht auswählen und für die [Analyse von Unterereignissen) in &#x200B;](/help/components/segments/sub-event.md) Workspace-Projekt verwenden können.
+Das abgeleitete Feld wird als [benutzerdefinierter Container“ verfügbar](/help/data-views/create-dataview.md#containers-1) den Sie in Ihrer Datenansicht auswählen und für die [Analyse von Unterereignissen) in ](/help/components/segments/sub-event.md) Workspace-Projekt verwenden können.
 
 +++
 
@@ -1816,7 +1816,7 @@ Das abgeleitete Feld wird als [benutzerdefinierter Container“ verfügbar](/hel
 >abstract="Diese Funktion bietet die Möglichkeit, Werte auf Ereignis-, Sitzungs- oder Personenebene zu aggregieren. Je nach Feldtyp für das Auswahlfeld stehen verschiedene Optionen zur Verfügung."
 
 
-Wendet Aggregationstypfunktionen auf Ereignis-, Sitzungs- und Benutzerebene auf Metriken oder Dimensionen an.
+Wendet Aggregationstypfunktionen auf Metriken oder Dimensionen an, und zwar auf Ereignis-, Sitzungs- und Benutzerebene.
 
 +++ Details
 
@@ -1824,7 +1824,7 @@ Wendet Aggregationstypfunktionen auf Ereignis-, Sitzungs- und Benutzerebene auf 
 
 | Eingabedatentyp | Eingabe | Enthaltene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Wert<ul><li>Regeln</li><li>Standardfeldern</li><li>Felder</li></ul></li><li>Methoden zusammenfassen</li><li>Anwendungsbereich<ul><li>Ereignis</li><li>Sitzung</li><li>Person</li></ul></li></ul> | <ul><li>Numerisch<ul><li>MAX - Gibt den größten Wert aus einem Satz von Werten zurück</li><li>MIN - Gibt den kleinsten Wert aus einem Satz von Werten zurück</li><li>MEDIAN - Gibt den Median für einen Satz von Werten zurück</li><li>MEAN - Gibt den Durchschnitt für einen Satz von Werten zurück</li><li>SUM - Gibt die Summe für einen Satz von Werten zurück</li><li>COUNT - Gibt die Anzahl der empfangenen Werte zurück</li><li>DISTINCT - Gibt einen Satz unterschiedlicher Werte zurück</li></ul></li><li>Zeichenfolgen<ul><li>DISTINCT - Gibt einen Satz unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - Gibt die Anzahl der eindeutigen Werte zurück</li><li>MOST COMMON - Gibt den Zeichenfolgenwert zurück, der am häufigsten empfangen wurde</li><li>LEAST COMMON - Gibt den Zeichenfolgenwert zurück, der am seltensten empfangen wurde</li><li>FIRST - Der erste empfangene Wert; gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der zuletzt empfangene Wert; gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li><li>Daten<ul><li>DISTINCT - Gibt einen Satz unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - Gibt die Anzahl der eindeutigen Werte zurück</li><li>MOST COMMON - Gibt den Zeichenfolgenwert zurück, der am häufigsten empfangen wurde</li><li>LEAST COMMON - Gibt den Zeichenfolgenwert zurück, der am seltensten empfangen wurde</li><li>FIRST - Der erste empfangene Wert; gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der zuletzt empfangene Wert; gilt nur für die Sitzungs- und Ereignistabellen</li><li>EARLIEST - Der früheste empfangene Wert (bestimmt durch die Zeit); gilt nur für die Sitzungs- und Ereignistabellen</li><li>LATEST - Der zuletzt empfangene Wert (bestimmt durch die Zeit); gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li></ul> | 3 Funktionen pro abgeleitetem Feld | Neues abgeleitetes Feld |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Wert<ul><li>Regeln</li><li>Standardfeldern</li><li>Felder</li></ul></li><li>Methoden zusammenfassen</li><li>Anwendungsbereich<ul><li>Ereignis</li><li>Sitzung</li><li>Person</li></ul></li></ul> | <ul><li>Numerisch<ul><li>MAX - Gibt den größten Wert aus einem Satz von Werten zurück</li><li>MIN - Gibt den kleinsten Wert aus einem Satz von Werten zurück</li><li>MEDIAN - Gibt den Median für einen Satz von Werten zurück</li><li>MEAN - Gibt den Durchschnitt für einen Satz von Werten zurück</li><li>SUM - Gibt die Summe für einen Satz von Werten zurück</li><li>COUNT - Gibt die Anzahl der empfangenen Werte zurück</li><li>DISTINCT - Gibt eine Menge unterschiedlicher Werte zurück</li></ul></li><li>Zeichenfolgen<ul><li>DISTINCT - Gibt eine Menge unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - Gibt die Anzahl der eindeutigen Werte zurück</li><li>MOST COMMON - Gibt den Zeichenfolgenwert zurück, der am häufigsten empfangen wurde</li><li>LEAST COMMON - Gibt den Zeichenfolgenwert zurück, der am seltensten empfangen wurde</li><li>FIRST - Der erste empfangene Wert; gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der zuletzt empfangene Wert; gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li><li>Daten<ul><li>DISTINCT - Gibt einen Satz unterschiedlicher Werte zurück</li><li>COUNT DISTINCT - Gibt die Anzahl der eindeutigen Werte zurück</li><li>MOST COMMON - Gibt den Zeichenfolgenwert zurück, der am häufigsten empfangen wurde</li><li>LEAST COMMON - Gibt den Zeichenfolgenwert zurück, der am seltensten empfangen wurde</li><li>FIRST - Der erste empfangene Wert; gilt nur für die Sitzungs- und Ereignistabellen</li><li>LAST - Der zuletzt empfangene Wert; gilt nur für die Sitzungs- und Ereignistabellen</li><li>EARLIEST - Der früheste empfangene Wert (bestimmt durch die Zeit); gilt nur für die Sitzungs- und Ereignistabellen</li><li>LATEST - Der zuletzt empfangene Wert (bestimmt durch die Zeit); gilt nur für die Sitzungs- und Ereignistabellen</li></ul></li></ul> | 3 Funktionen pro abgeleitetem Feld | Neues abgeleitetes Feld |
 
 {style="table-layout:auto"}
 
@@ -1840,21 +1840,21 @@ Annahmen:
 
 Szenarien:
 
-- KundeABC123 fügt 35 $ für ProduktABC zum Warenkorb hinzu und fügt dann gesondert 75 $ für ProduktDEF zum Warenkorb hinzu.
+- KundeABC123 fügt 35 $ für ProduktABC zum Warenkorb hinzu und fügt dann gesondert 75 $ für ProduktDEF zum Warenkorb hinzu.
 - KundeDEF456 fügt 50 $ für ProduktGHI zum Warenkorb hinzu und fügt dann gesondert 275 $ für ProduktJKL zum Warenkorb hinzu.
 - KundeGHI789 fügt 500 $ für ProduktMNO zum Warenkorb hinzu.
 
 Logik:
 
-- Wenn der Gesamtumsatz für „Hinzufügen zum Warenkorb“ für eine Person weniger als 150 $ beträgt, setzen Sie ihn auf „Klein“.
-- Wenn der Gesamtumsatz für „Hinzufügen zum Warenkorb“ für eine Person mehr als 150 $, aber weniger als 500 $ beträgt, setzen Sie ihn auf „Mittel“.
-- Wenn der Gesamtumsatz für „Hinzufügen zum Warenkorb“ für eine Person mindestens 500 $ beträgt, setzen Sie ihn auf „Groß“.
+- Wenn der Gesamtumsatz für „Hinzufügen zum Warenkorb“ für einen Besucher oder eine Besucherin weniger als 150 $ beträgt, legen Sie ihn auf „Klein“ fest.
+- Wenn der Gesamtumsatz für „Hinzufügen zum Warenkorb“ für einen Besucher oder eine Besucherin mehr als 150 $, aber weniger als 500 $ beträgt, legen Sie ihn auf „Mittel“ fest.
+- Wenn der Gesamtumsatz für „Hinzufügen zum Warenkorb“ für einen Besucher oder eine Besucherin mindestens 500 $ beträgt, legen Sie ihn auf „Groß“ fest.
 
 Ergebnisse:
 
 - Gesamtumsatz für „Hinzufügen zum Warenkorb“ für 110 $ für KundeABC123.
 - Gesamtumsatz für „Hinzufügen zum Warenkorb“ für 325 $ für KundeDEF456.
-- Gesamtumsatz für „Hinzufügen zum Warenkorb“ für 500 $ für KundeGHI789.
+- Gesamtumsatz durch „Hinzufügen zum Warenkorb“ in Höhe von 500 $ für KundeGHI789.
 
 ### Abgeleitetes Feld {#summarize-uc-derivedfield}
 
@@ -1890,7 +1890,7 @@ Verwenden Sie die Funktion „Zusammenfassen“ für Berechnungen, die auf dem U
 >abstract="Diese Funktion bietet die Möglichkeit, Leer- oder Sonderzeichen entweder am Anfang oder am Ende einer Zeichenfolge zu entfernen. Außerdem kann die Anzahl der Zeichen angegeben werden, die für den zurückgegebenen Wert verwendet werden sollen (entweder vom Anfang oder vom Ende der Zeichenfolge aus gesehen)."
 
 
-Schneidet Leerzeichen, Sonderzeichen oder die Anzahl von Zeichen entweder vom Anfang oder Ende der Feldwerte in ein neues abgeleitetes Feld zu.
+Entfernt Leerzeichen, Sonderzeichen oder eine bestimmte Anzahl von Zeichen entweder vom Anfang oder vom Ende der Feldwerte und schreibt das Ergebnis in ein neues abgeleitetes Feld.
 
 +++ Details
 
@@ -1903,7 +1903,7 @@ Schneidet Leerzeichen, Sonderzeichen oder die Anzahl von Zeichen entweder vom An
 
 ## Anwendungsfall 1 {#trim-uc1}
 
-Sie erfassen Produktdaten. Diese Daten enthalten jedoch ausgeblendete Leerzeichen, die Berichte fragmentieren. Sie möchten überschüssige Leerzeichen einfach zuschneiden
+Sie erfassen Produktdaten. Diese Daten enthalten jedoch ausgeblendete Leerzeichen, die Berichte fragmentieren. Sie möchten überschüssige Leerzeichen einfach entfernen
 
 ### Daten vor {#trim-uc1-databefore}
 
@@ -1931,7 +1931,7 @@ Sie erstellen ein abgeleitetes `Product Identifier`-Feld. Mit der Funktion [!UIC
 
 ## Anwendungsfall 2 {#trim-uc2}
 
-Ihre erfassten Daten zu Seitennamen enthalten einige fehlerhafte Sonderzeichen am Ende des Seitennamen, die entfernt werden müssen.
+Ihre erfassten Daten zu Seitennamen enthalten einige fehlerhafte Sonderzeichen am Ende des Seitennamens, die entfernt werden müssen.
 
 ### Daten vor {#trim-uc2-databefore}
 
@@ -2017,7 +2017,7 @@ Sie erstellen ein abgeleitetes  `Store Identifier`-Feld. Mit der Funktion [!UICO
 
 | Eingabedatentyp | Eingabe | Enthaltene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Numerisch</li><li>Datum</li><li>Datum-Uhrzeit</li><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Feld] | <p><ul><li>Ganzzahl<ul><li>In Zeichenfolge</li></ul></li><li>Duplikat<ul><li>In Zeichenfolge<ul><li>Anzahl der zu übernehmenden Dezimalstellen einschließen (max. 5?)</li></ul></li><li>Zu Ganzzahl</li></ul></li><li>Byte<ul><li>In Zeichenfolge</li></ul></li><li>Lang<ul><li>In Zeichenfolge</li></ul></li><li>Datum<ul><li>In Zeichenfolge<ul><li>Möglichkeit zur Definition des Ausgabeformats</li></ul></li><li>Beispiele<ul><li>Datum (Beispiel: 7. Januar 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">MM-TT-JJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-TT-JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">TT-MM-JJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">TT-MM-JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJ-MM-TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJJJ-MM-TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/TT/JJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/TT/JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJJJ/MM/TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJ/MM/TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM TT, JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 7. Januar 2025</li></ul></li></ul></li></ul></li></ul></li><li>Datum-Uhrzeit<ul><li>In Zeichenfolge<ul><li>Möglichkeit zur Definition des Ausgabeformats</li></ul></li><li>Beispiele<ul><li data-stringify-indent="0" data-stringify-border="0">Datum-Uhrzeit (Beispiel: 7. Januar 2025 um 13:30 Uhr, 52 Sekunden)<ul><li data-stringify-indent="2" data-stringify-border="0">MM-TT-JJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-TT-JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">TT-MM-JJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">TT-MM-JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJ-MM-TT hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJJJ-MM-TT hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/TT/JJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/TT/JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJJJ/MM/TT hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJ/MM/TT hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM TT, JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. Januar 07, 2025 13:30:52</li></ul></li></ul></li></ul></li><li>Zeichenfolge<ul><li>Zu numerischem Wert<ul><li>Werte, die nicht numerischer Natur sind, geben null zurück.</li><li>Wir müssen die Präzision und das zu verwendende Gebietsschema eingeben. </li></ul></li></ul></li></ul></li></ul></p> | <p>3 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Numerisch</li><li>Datum</li><li>Datum-Uhrzeit</li><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Feld] | <p><ul><li>Ganzzahl<ul><li>In Zeichenfolge</li></ul></li><li>Duplikat<ul><li>In Zeichenfolge<ul><li># der zu übernehmenden Dezimalstellen angeben (max. 5?)</li></ul></li><li>Zu Ganzzahl</li></ul></li><li>Byte<ul><li>In Zeichenfolge</li></ul></li><li>Lang<ul><li>In Zeichenfolge</li></ul></li><li>Datum<ul><li>In Zeichenfolge<ul><li>Möglichkeit zur Definition des Ausgabeformats</li></ul></li><li>Beispiele<ul><li>Datum (Beispiel: 7. Januar 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">MM-TT-JJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-TT-JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">TT-MM-JJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">TT-MM-JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJ-MM-TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJJJ-MM-TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/TT/JJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/TT/JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJJJ/MM/TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">JJ/MM/TT<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM TT, JJJJ<ul><li data-stringify-indent="2" data-stringify-border="0">z. B. 7. Januar 2025</li></ul></li></ul></li></ul></li></ul></li><li>Datum-Uhrzeit<ul><li>In Zeichenfolge<ul><li>Möglichkeit zur Definition des Ausgabeformats</li></ul></li><li>Beispiele<ul><li data-stringify-indent="0" data-stringify-border="0">Datum-Uhrzeit (Beispiel: 7. Januar 2025 um 13:30 Uhr, 52 Sekunden)<ul><li data-stringify-indent="2" data-stringify-border="0">MM-TT-JJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-TT-JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">TT-MM-JJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">TT-MM-JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJ-MM-TT hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJJJ-MM-TT hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/TT/JJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/TT/JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJJJ/MM/TT hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">JJ/MM/TT hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM TT, JJJJ hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">z. B. Januar 07, 2025 13:30:52</li></ul></li></ul></li></ul></li><li>Zeichenfolge<ul><li>Zu numerischem Wert<ul><li>Werte, die nicht numerischer Natur sind, geben null zurück.</li><li>Der Benutzer oder die Benutzerin muss die gewünschte Genauigkeit und das zu verwendende Gebietsschema eingeben. </li></ul></li></ul></li></ul></li></ul></p> | <p>3 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -2057,10 +2057,10 @@ Sie definieren ein abgeleitetes  `Revenue (integer)`-Feld. Mit der Funktion [!UI
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_urlparse"
 >title="URL parsen"
->abstract="Diese Funktion bietet die Möglichkeit, verschiedene Teile einer URL, einschließlich Host-, Pfad- oder Abfrageparameter, auszuparsen."
+>abstract="Diese Funktion bietet die Möglichkeit, verschiedene Teile einer URL, einschließlich Host-, Pfad- oder Abfrageparameter, zu extrahieren."
 
 
-Analysiert verschiedene Teile einer URL, einschließlich Protokoll-, Host-, Pfad- oder Abfrageparametern.
+Extrahiert verschiedene Teile einer URL, einschließlich Protokoll, Host, Pfad oder Abfrageparametern.
 
 +++ Details
 
@@ -2114,8 +2114,8 @@ Sie möchten den Wert des Parameters `cid` einer Abfragezeichenfolge in einer [!
 
 | [!DNL Page URL] |
 |----|
-| `https://www.adobe.com/de/?cid=abc123` |
-| `https://www.adobe.com/de/?em=email1234&cid=def123` |
+| `https://www.adobe.com/?cid=abc123` |
+| `https://www.adobe.com/?em=email1234&cid=def123` |
 | `https://www.adobe.com/landingpage?querystring1=test&test2=1234&cid=xyz123` |
 
 {style="table-layout:auto"}
@@ -2140,11 +2140,11 @@ Sie definieren ein abgeleitetes `Query String CID`-Feld. Mit der Funktion [!UICO
 
 ## Einschränkungen
 
-Die folgenden Einschränkungen gelten generell für die Funktionalität „Abgeleitetes Feld“:
+Die folgenden Einschränkungen gelten generell für die Funktionen des abgeleiteten Felds:
 
 - Beim Definieren von Regeln für ein abgeleitetes Feld können Sie maximal zehn verschiedene Schemafelder (ohne Standardfelder) verwenden.
   - Von diesen maximal zehn verschiedenen Schemafeldern sind nur maximal drei Lookup-Schema- oder Profilschemafelder zulässig.
-- Je nach zu lizenzierendem Paket kann eine maximale Anzahl abgeleiteter Felder pro Customer Journey Analytics-Verbindung vorhanden sein. Weitere Informationen finden Sie in der [Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html){target="_blank"}.
+- Die maximale Anzahl abgeleiteter Felder pro Customer Journey Analytics-Verbindung hängt von dem Paket ab, das Sie lizenziert haben. Weitere Informationen finden Sie in der [Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/customer-journey-analytics.html){target="_blank"}.
 
 
 ### Zusammenfassung der Funktionsbeschränkungen
@@ -2154,7 +2154,7 @@ Die folgenden Einschränkungen gelten generell für die Funktionalität „Abgel
 | <p>Fall wenn</p> | <ul><li>5 „Fall Wenn“-Funktionen pro abgeleitetem Feld</li><li>200 [Operatoren](#operators) pro abgeleitetem Feld</li></ul> |
 | <p>Klassifizieren</p> | <ul><li>5 Klassifizierungsfunktionen pro abgeleitetem Feld</li><li>200 [Operatoren](#operators) pro abgeleitetem Feld</li></ul> |
 | <p>Verketten</p> | <ul><li>2 Verkettungsfunktionen pro abgeleitetem Feld</li><li>3 Werte pro Verkettungsfunktion</ul> |
-| <p>Date Math</p> | <ul><li>5 „Date Math“-Funktionen pro abgeleitetem Feld</li></ul> |
+| <p>Date Math</p> | <ul><li>2 „Date Math“-Funktionen pro abgeleitetem Feld</li></ul> |
 | <p>Deduplizieren</p> | <ul><li>5 Deduplizierungsfunktionen pro abgeleitetem Feld</li></ul> |
 | <p>Tiefe</p> | <ul><li>2 Tiefe-Funktionen pro abgeleitetem Feld</li></ul> |
 | <p>Suchen und Ersetzen</p> | <ul><li>2 „Suchen und ersetzen“-Funktionen pro abgeleitetem Feld</li></ul> |
@@ -2168,7 +2168,7 @@ Die folgenden Einschränkungen gelten generell für die Funktionalität „Abgel
 | <p>Zusammenfassen</p> | <ul><li>3 Zusammenfassungsfunktionen pro abgeleitetem Feld</li></ul> |
 | <p>Zuschneiden</p> | <ul><li>1 Zuschneidefunktion pro abgeleitetem Feld</li></ul> |
 | <p>Typecast</p> | <ul><li>2 Typecast-Funktionen pro abgeleitetem Feld</li></ul> |
-| <p>URL-Parsen</p> | <ul><li>5 „URL-Parsen“-Funktionen pro abgeleitetem Feld</li></ul> |
+| <p>URL-Parsen</p> | <ul><li>5 URL-Parsing-Funktionen pro abgeleitetem Feld</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -2189,9 +2189,9 @@ Die unten stehende Klassifizierungsregel verwendet beispielsweise drei Operatore
 
 ## Weitere Informationen {#trim-more-info}
 
-[`Trim`](#trim) und [`Lowercase`](#lowercase) sind Funktionen, die bereits in den Komponenteneinstellungen in [Datenansichten](../component-settings/overview.md) verfügbar sind. Durch die Verwendung abgeleiteter Felder können Sie diese Funktionen kombinieren, um komplexere Datenumwandlungen direkt in Customer Journey Analytics durchzuführen. Zum Beispiel können Sie mit `Lowercase` die Groß-/Kleinschreibung in einem Ereignisfeld entfernen und dann mit [`Lookup`](#lookup) das neue Feld „Kleinschreibung“ einem Lookup-Datensatz zuordnen, der nur lookup key in Kleinbuchstaben enthält. Außerdem können Sie mit `Trim` Zeichen entfernen, bevor Sie `Lookup` für das neue Feld einrichten.
+[`Trim`](#trim) und [`Lowercase`](#lowercase) sind Funktionen, die bereits in den Komponenteneinstellungen in [Datenansichten](../component-settings/overview.md) verfügbar sind. Durch die Verwendung abgeleiteter Felder können Sie diese Funktionen kombinieren, um komplexere Datentransformationen direkt in Customer Journey Analytics durchzuführen. Zum Beispiel können Sie mit `Lowercase` die Groß-/Kleinschreibung in einem Ereignisfeld entfernen und dann mit [`Lookup`](#lookup) das neue Feld „Kleinschreibung“ einem Lookup-Datensatz zuordnen, der nur lookup key in Kleinbuchstaben enthält. Außerdem können Sie mit `Trim` Zeichen entfernen, bevor Sie `Lookup` für das neue Feld einrichten.
 
-Die Unterstützung für Lookup- und Profilfelder in abgeleiteten Feldern ermöglicht die Umwandlung von Daten basierend auf Ereignissuchen und Profilattributen. Dies kann besonders in B2B-Szenarien mit Daten auf Kontoebene in Lookup- oder Profildatensätzen hilfreich sein. Darüber hinaus ist diese Unterstützung nützlich, um Daten in allgemeinen Feldern aus LookupDaten (wie Kampagneninformationen und Angebotstyp) oder aus Profildaten (wie Mitgliedsebene und Kontotyp) zu bearbeiten.
+Die Unterstützung für Lookup- und Profilfelder in abgeleiteten Feldern ermöglicht die Transformation von Daten basierend auf Ereignis-Lookups und Profilattributen. Dies kann besonders in B2B-Szenarien mit Daten auf Kontoebene in Lookup- oder Profildatensätzen hilfreich sein. Darüber hinaus ist diese Unterstützung nützlich, um Daten in allgemeinen Feldern aus Lookup-Daten (wie Kampagneninformationen und Angebotstyp) oder aus Profildaten (wie Mitgliedsstufe und Kontotyp) zu bearbeiten.
 
 >[!MORELIKETHIS]
 >

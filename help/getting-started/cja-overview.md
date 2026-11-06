@@ -39,20 +39,20 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1186'
-ht-degree: 96%
+ht-degree: 93%
 ---
 # Überblick über Customer Journey Analytics
 
-Customer Journey Analytics ist eine Analytics-Lösung der nächsten Generation von Adobe, mit der Sie die Funktionen von Analysis Workspace mit Daten von Adobe Experience Platform nutzen können. Sie kann die Daten mehrerer Jahre aufschlüsseln, segmentieren, abfragen und visualisieren und wird mit der Fähigkeit von Platform kombiniert, alle Arten von Datenschemata und -typen zu speichern. Mithilfe des **Experience-Datenmodells (XDM)** können Daten einheitlich dargestellt und organisiert werden, sodass sie kombiniert und untersucht werden können. Mit dem **Abfrage-Service von Adobe Experience Platform** können Sie SQL-kompatible Tools und Frameworks verwenden, um alle Ihre Daten abzufragen und zu bearbeiten.
+Customer Journey Analytics ist eine Analyselösung der nächsten Generation von Adobe, mit der Sie die Funktionen von Analysis Workspace mit Daten von Adobe Experience Platform nutzen können. Sie kann die Daten mehrerer Jahre aufschlüsseln, segmentieren, abfragen und visualisieren und wird mit der Fähigkeit von Platform kombiniert, alle Arten von Datenschemata und -typen zu speichern. Mithilfe des **Experience-Datenmodells (XDM)** können Daten einheitlich dargestellt und organisiert werden, sodass sie kombiniert und untersucht werden können. Mit dem **Abfrage-Service von Adobe Experience Platform** können Sie SQL-kompatible Tools und Frameworks verwenden, um alle Ihre Daten abzufragen und zu bearbeiten.
 
 Die allgemeine Architektur von Customer Journey Analytics ist im Folgenden dargestellt:
 
 ![Customer Journey Analytics-Architektur](assets/cja-overview.png)
 
-Diese Architektur veranschaulicht, wie Customer Journey Analytics Folgendes ermöglicht:
+Diese Architektur veranschaulicht, wie Customer Journey Analytics Ihnen Folgendes ermöglicht:
 
 * Kombinieren mehrerer Datensätze ![Daten](/help/assets/icons/Data.svg) in einer [Verbindung](/help/connections/overview.md).
 * Definieren und Konfigurieren von Dimensionen ![Dimensionen](/help/assets/icons/Dimensions.svg) und Metriken ![Ereignis](/help/assets/icons/Event.svg) in einer [Datenansicht](/help/data-views/data-views.md) basierend auf den Feldern, die in den von Ihnen in Ihrer Verbindung definierten Datensätzen verfügbar sind.
@@ -61,7 +61,7 @@ Diese Architektur veranschaulicht, wie Customer Journey Analytics Folgendes erm�
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey-Analysen: Analytik für das Erlebnis-Business](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics){target="_blank"} finden Sie ein Einführungsvideo zu Customer Journey Analytics.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey-Analysen: Analytik für das Erlebnis-Business](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics){target="_blank"} finden Sie ein Einführungsvideo zu Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
@@ -83,14 +83,14 @@ Die erste Version von Customer Journey Analytics enthält viele der in Adobe Ana
 
 ## Wichtige Anwendungsfälle
 
-Customer Journey Analytics unterstützt folgende Anwendungsfälle:
+Customer Journey Analytics ermöglicht Folgendes:
 
-* **Kunden im Journey-Kontext anzeigen**: Sie können Daten sequenziell über mehrere Kanal hinweg anzeigen und analysieren. Daten aus Ihrem Callcenter, aus PoS-Systemen und aus Online-Eigenschaften können zu einer Berichterstellungsansicht zusammengefasst werden.
+* **Kunden im Journey-Kontext anzeigen**: Sie können Daten sequenziell über mehrere Kanal hinweg anzeigen und analysieren. Daten aus Ihrem Callcenter, aus POS-Systemen und aus Online-Angeboten können zu einer einzigen Reporting-Ansicht zusammengefasst werden.
 * **Einblicke für jedermann zugänglich machen**: Geben Sie allen Benutzern Datenzugriff, sodass mehr Benutzer datengestützte Geschäftsentscheidungen treffen können. Jeder in der Organisation, der für einen Aspekt des Kundenerlebnisses verantwortlich ist, kann auf der Grundlage vollständigerer Daten schneller echte Entscheidungen treffen.
 * **Möglichkeiten der Datenwissenschaft für Ihre Analysten nutzen**: Mit Customer Journey Analytics können normale Menschen mithilfe der Datenwissenschaft tiefe Einblicke und Analysen gewinnen.
 * **Datensätze visualisieren und mit ihnen mithilfe von Ad-hoc-Berichten interagieren**: Der Arbeitsbereich kann jeden Datensatz aus Adobe Experience Platform verwenden, sofern er einigen Grundregeln entspricht.
 * **Nicht-Webdaten anzeigen**: Arbeitsbereich ist nicht mehr auf eine starre Definition eines „Treffers“ oder „Ereignisses“ beschränkt. Benutzerdefinierte Schemata ermöglichen die vollständige Kontrolle über Daten und Definitionen.
-* **Mehr Kontrolle über die Datenmanipulationen**: Sie können Daten ändern, die Sie hochgeladen haben, Datensätze erstellen und sie in den Arbeitsbereich importieren. Adobe Experience Platform bietet Tools zum Abfragen, Extrahieren, Transformieren und Laden über den Abfrage-Service von Experience Platform.
+* **Mehr Kontrolle über die Datenmanipulationen**: Sie können Daten ändern, die Sie hochgeladen haben, Datensätze erstellen und sie in den Arbeitsbereich importieren. Adobe Experience Platform bietet Tools zum Abfragen, Extrahieren, Transformieren und Laden über den Experience Platform Query Service.
 
 ## Voraussetzungen
 
@@ -121,9 +121,9 @@ Customer Journey Analytics ist eine von vielen Funktionen, die auf Adobe Experie
 
 Mit Adobe Experience Platform können Sie Kundendaten und Inhalte aus beliebigen Systemen zentral zusammenführen und standardisieren sowie mithilfe von Datenwissenschaft und maschinellem Lernen die Gestaltung und Bereitstellung personalisierter Erlebnisse verbessern. Kundendaten in Platform werden als Datensätze gespeichert, die aus einem Schema und Datenstapeln bestehen. Weitere Informationen zu Platform finden Sie unter [Übersicht über die Adobe Experience Platform-Architektur](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=de).
 
-Von der Datenerfassung bis zum direkten SQL-Zugriff sind mehrere Komponenten von Experience Platform für Customer Journey Analytics von zentraler Bedeutung und dienen als Ergänzung:
+Von der Datenaufnahme bis zum direkten SQL-Zugriff sind mehrere Komponenten von Adobe Experience Platform für Customer Journey Analytics von zentraler Bedeutung und ergänzen es:
 
-* [Abfrage-Service von Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de): Verwenden Sie Standard-SQL, um Daten von Adobe Experience Platform abzurufen, z. B. Adobe-Lösungsdaten, Erstanbieter-Kundendaten oder andere Platform-Daten. Es handelt sich dabei um ein Server-loses Tool, mit dem Sie beliebige Datensätze zusammenführen und die Abfrageergebnisse als neuen Datensatz erfassen können. Dieser kann in Berichten oder zur Aufnahme in den Profil-Service verwendet werden. Mit dem Abfrage-Service von Experience Platform können Sie Ökosysteme für die Datenanalyse erstellen und sich ein Bild über die Verbraucherinnen und Verbraucher über ihre verschiedenen Interaktionskanäle hinweg machen. Zu diesen Kanälen gehören beispielsweise PoS-Systeme, Web-, mobile und CRM-Systeme usw.
+* [Abfrage-Service von Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de): Verwenden Sie Standard-SQL, um Daten von Adobe Experience Platform abzurufen, z. B. Adobe-Lösungsdaten, Erstanbieter-Kundendaten oder andere Platform-Daten. Es handelt sich dabei um ein serverloses Tool, mit dem Sie beliebige Datensätze zusammenführen und die Abfrageergebnisse als neuen Datensatz erfassen können. Dieser kann in Berichten oder zur Aufnahme in den Profile Service verwendet werden. Mit dem Abfrage-Service von Experience Platform können Sie Ökosysteme für die Datenanalyse erstellen und sich ein Bild über die Verbraucherinnen und Verbraucher über ihre verschiedenen Interaktionskanäle hinweg machen. Zu diesen Kanälen gehören beispielsweise PoS-Systeme, Web-, mobile und CRM-Systeme usw.
 * [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de):
 * [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de)
 
@@ -131,13 +131,13 @@ Von der Datenerfassung bis zum direkten SQL-Zugriff sind mehrere Komponenten von
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit Daten in Customer Journey Analytics](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/data-prep/working-with-data-in-cja){target="_blank"} finden Sie ein Einführungsvideo zum Arbeiten mit Daten in Customer Journey Analytics.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeiten mit Daten in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-prep/working-with-data-in-cja){target="_blank"} finden Sie ein Einführungsvideo zur Verwendung von Daten in Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architektur und Integration](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/architecture/architecture-and-integrations-of-cja){target="_blank"} finden Sie ein Einführungsvideo zur Architektur und Integration von Customer Journey Analytics.
+Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architektur und Integration](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/architecture/architecture-and-integrations-of-cja){target="_blank"} finden Sie ein Einführungsvideo zur Architektur und Integration von Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 

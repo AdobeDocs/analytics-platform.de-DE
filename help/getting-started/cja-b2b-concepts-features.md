@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1592'
 ht-degree: 3%
@@ -104,13 +104,13 @@ Sie können die B2B-Container für bestimmte B2B-Funktionen in Analysis Workspac
 * **Attribution**: Sie können die neuen B2B-Container im [Attributionsbereich](/help/analysis-workspace/c-panels/attribution.md), in [Attributionskomponenteneinstellungen](/help/data-views/component-settings/attribution.md), in [berechneten Metriken](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) oder in [Spalten in einer Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). Account-Lookbacks werden auf 13 Monate verlängert.
 
 * **Visualisierungen**: [Ausfallen](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md), [Journey-Arbeitsfläche](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) und [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) Visualisierungen unterstützen die neuen B2B-Container. Beispiel: Sie können die neuen Container verwenden, um zu verstehen, wie Einkaufsgruppen Inhalte konsumieren oder wie sich Opportunity-Kohorten dem Verkaufsabschluss nähern.
-Sie können auch den Standard-Container für diese Visualisierungen unter [Benutzereinstellungen“ &#x200B;](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+Sie können auch den Standard-Container für diese Visualisierungen unter [Benutzereinstellungen“ ](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 
 Segmente, Attribution und Visualisierungen unterstützen Sie zusammen mit den B2B-Containern bei der umfassenden B2B-Analyse und bei der Erweiterung Ihrer Erkenntnisse.
 
 ## Schemata
 
-Der Customer Journey Analytics B2B-Editor verwendet das [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de), um B2B-Daten zu standardisieren und Schemas für Ihre B2B-Daten zu definieren. Sie können Ihre Schemata auf den [Standardklassen basieren, die in Real-Time CDP B2B edition bereitgestellt werden](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/schemas/b2b) oder Sie können Ihre eigenen benutzerdefinierten Klassen und Schemata verwenden. Die [Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)-Artikel verwenden Real-Time CDP B2B edition-Klassen und -Schemata. Eine Real-Time CDP B2B edition-Lizenz ist jedoch nicht erforderlich, um die Standardklassen und -schemata zu verwenden.
+Customer Journey Analytics B2B edition verwendet das [Adobe Experience-Datenmodell (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) um B2B-Daten zu standardisieren und Schemas für Ihre B2B-Daten zu definieren. Sie können Ihre Schemata auf den [Standardklassen basieren, die in Real-Time CDP B2B edition bereitgestellt werden](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/schemas/b2b) oder Sie können Ihre eigenen benutzerdefinierten Klassen und Schemata verwenden. Die [Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)-Artikel verwenden Real-Time CDP B2B edition-Klassen und -Schemata. Eine Real-Time CDP B2B edition-Lizenz ist jedoch nicht erforderlich, um die Standardklassen und -schemata zu verwenden.
 
 ## Datensätze
 

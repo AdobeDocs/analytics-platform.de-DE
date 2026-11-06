@@ -19,20 +19,20 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 65%
+ht-degree: 58%
 ---
 # Horizontalbalken (gestapelt)
 
 >[!BEGINSHADEBOX]
 
-_In diesem Artikel werden die Visualisierungen „Horizontalbalken“ und „Horizontalbalken gestapelt“ in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Siehe [Horizontalbalken und Horizontalbalken gestapelt](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar)_ für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-Version dieses Artikels._
+_In diesem Artikel werden die Visualisierungen „Horizontalbalken“ und „Horizontalbalken gestapelt“ in_![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Siehe [Horizontalbalken und Horizontalbalken gestapelt](https://experienceleague.adobe.com/de/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar)_ für die ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-Version dieses Artikels._
 
 >[!ENDSHADEBOX]
 
-Die Visualisierung „Horizontalbalken“ bietet die Optionen „Standardmäßig“ und „Gestapelt“.
+Die Visualisierung „Horizontalbalken“ bietet die Optionen „Standard“ und „gestapelt“.
 
 ## Horizontalbalken {#horizontal-bar}
 
@@ -46,7 +46,7 @@ Die Visualisierung „Horizontalbalken“ bietet die Optionen „Standardmäßig
 <!-- markdownlint-enable MD034 -->
 
 
-Die ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) Visualisierung **[!UICONTROL Horizontalbalken]** zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen.
+Die Visualisierung ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Horizontalbalken]** zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen.
 
 ![Horizontaler Balken mit Metriken wie Seitenansichten, Seitengeschwindigkeit, Besuche, Einstiege und Ausstiege.](assets/horizontal-bar.png)
 
@@ -72,7 +72,7 @@ Verwenden Sie die Option **[!UICONTROL 100 % gestapelt]** in den ![Einstellung](
 
 >[!BEGINSHADEBOX]
 
-Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bereichsvisualisierung](https://experienceleague.adobe.com/de/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} für ein Demovideo.
+Siehe ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bereichsvisualisierung](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} für ein Demovideo.
 
 >[!ENDSHADEBOX]
 

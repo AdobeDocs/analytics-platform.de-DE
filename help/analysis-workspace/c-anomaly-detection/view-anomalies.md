@@ -19,7 +19,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 46%
@@ -40,7 +40,7 @@ Sie können Anomalien in einer Freiformtabelle für Zeitreihen anzeigen.
 
    Ein ◥ wird in der oberen rechten Ecke jeder Zeile angezeigt, in der eine Datenanomalie erkannt wird.
 
-   Die **farbige senkrechte Linie** in jeder Zeile zeigt ➋ den erwarteten Wert an. Der **farbig schattierte Bereich** in jeder Zeile zeigt ➊ den tatsächlichen Wert an. Der Vergleich der Linie (erwarteter Wert) mit dem schattierten Bereich (tatsächlicher Wert) bestimmt, ob eine Anomalie vorliegt. (Eine Anomalie wird durch die fortschrittlichen statistischen Verfahren festgestellt, die im Abschnitt [In der Anomalieerkennung verwendete statistische Verfahren“ beschrieben &#x200B;](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
+   Die **farbige senkrechte Linie** in jeder Zeile zeigt ➋ den erwarteten Wert an. Der **farbig schattierte Bereich** in jeder Zeile zeigt ➊ den tatsächlichen Wert an. Der Vergleich der Linie (erwarteter Wert) mit dem schattierten Bereich (tatsächlicher Wert) bestimmt, ob eine Anomalie vorliegt. (Eine Anomalie wird durch die fortschrittlichen statistischen Verfahren festgestellt, die im Abschnitt [In der Anomalieerkennung verwendete statistische Verfahren“ beschrieben ](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
 
 1. Wählen Sie ◥ in der oberen rechten Ecke einer Zeile aus, um Details zur Anomalie anzuzeigen. Angezeigt wird das Ausmaß (in Prozent), in dem der tatsächliche Wert über oder unter dem erwarteten Wert liegt.
 
@@ -60,7 +60,7 @@ So stellen Sie Anomalien in einem Liniendiagramm dar:
 
    ![Anomalieerkennung für Linienvisualisierung](assets/anomaly-detected-line.png)
 
-   Ein **weißer Punkt** auf der Linie bedeutet, dass an dieser Stelle eine Datenanomalie erkannt wurde. (Eine Anomalie wird durch die fortschrittlichen statistischen Verfahren festgestellt, die im Abschnitt [In der Anomalieerkennung verwendete statistische Verfahren“ beschrieben &#x200B;](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
+   Ein **weißer Punkt** auf der Linie bedeutet, dass an dieser Stelle eine Datenanomalie erkannt wurde. (Eine Anomalie wird durch die fortschrittlichen statistischen Verfahren festgestellt, die im Abschnitt [In der Anomalieerkennung verwendete statistische Verfahren“ beschrieben ](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
 
    Der **hell schattierte Bereich** ist das Konfidenzband bzw. der erwartete Bereich, in dem Werte auftreten sollten. Jeder Wert, der außerhalb dieses erwarteten Bereichs liegt, ist eine Anomalie.
 
@@ -102,7 +102,7 @@ You can view anomalies in a time-series Freeform Table.
 
    A **dark gray triangle** appears in the upper-right corner of each row where a data anomaly is detected.
 
-   The colored **vertical line** in each row indicates the expected value. The colored **shaded area** in each row indicates the actual value. How the line (expected value) compares with the shaded area (actual value) determines whether there is an anomaly. (An observation is considered anomolous based on the advanced statistical techniques described in [Statistical techniques used in anomaly detection](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
+   The colored **vertical line** in each row indicates the expected value. The colored **shaded area** in each row indicates the actual value. How the line (expected value) compares with the shaded area (actual value) determines whether there is an anomaly. (An observation is considered anomalous based on the advanced statistical techniques described in [Statistical techniques used in anomaly detection](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
 
 1. Select the gray triangle in the upper-right corner of a row to view details about the anomaly. This shows the extent (as a percentage) to which the actual value diverges either above or below the expected value.
 
@@ -124,7 +124,7 @@ To view anomalies in a line chart:
 
    Anomalies are shown in the line chart as follows:
    
-   A **white dot** appears on the line wherever a data anomaly is detected. (An observation is considered anomolous based on the advanced statistical techniques described in [Statistical techniques used in anomaly detection](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
+   A **white dot** appears on the line wherever a data anomaly is detected. (An observation is considered anomalous based on the advanced statistical techniques described in [Statistical techniques used in anomaly detection](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
 
    The **light shaded area** is the confidence band, or expected range, where values should occur. Any value that falls outside of this expected range is an anomaly. 
 

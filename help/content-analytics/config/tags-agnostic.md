@@ -25,15 +25,13 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 484
-ht-degree: 4%
-
+source-wordcount: '484'
+ht-degree: 5%
 ---
 
-
-# Content Analytics JavaScript-Bibliothek
+# Content Analytics-JavaScript-Bibliothek
 
 Die Adobe Content Analytics JavaScript-Bibliothek ermöglicht das Tracking von inhaltsbezogenen Ereignissen auf Websites, indem Inhaltsdaten über die Experience Platform Edge Network an Adobe Experience Platform gesendet werden. Verwenden Sie diese Bibliothek, wenn Sie Content Analytics ohne Adobe Experience Platform Tags implementieren möchten.
 
@@ -73,7 +71,7 @@ Installieren Sie die Bibliothek mithilfe von `npm`.
 
 Laden Sie die Bibliothek direkt vom CDN.
 
-1. Initialisieren Sie die [Web SDK JavaScript-Bibliothek](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/install/library) und laden Sie das Content Analytics-Bundle:
+1. Initialisieren Sie die [Web SDK JavaScript-Bibliothek](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library) und laden Sie das Content Analytics-Bundle:
 
    ```html
    <!-- 1. Load and configure Alloy first -->
@@ -95,7 +93,7 @@ Laden Sie die Bibliothek direkt vom CDN.
    ```
 
    wobei
-   * `alloy/2.x.x` bezieht sich auf die Version, die Sie mit der [Web SDK JavaScript Library) verwenden &#x200B;](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/install/library).
+   * `alloy/2.x.x` bezieht sich auf die Version, die Sie mit der [Web SDK JavaScript Library) verwenden ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library).
    * `content-analytics/1.x.x` bezieht sich auf die Version, die Sie mit der Content Analytics SDK-Bibliothek verwenden möchten.
 
 2. Der eigenständige Build stellt `window.contentAnalytics` als Initialisierungsfunktion bereit.
@@ -115,7 +113,7 @@ initializeContentLibrary({
 });
 ```
 
-## Erlebniserfassung und -definition
+## Erfassung und Definition von Erlebnissen
 
 Erlebnis-Tracking aktivieren und steuern, wie Erlebnisse auf Ihrer Website identifiziert werden. Erlebnisse werden durch die Kombination eines **regulären Ausdrucks der Domain** mit optionalen **Abfrageparametern** die innerhalb übereinstimmender Seiten ein Erlebnis von einem anderen unterscheiden, definiert.
 

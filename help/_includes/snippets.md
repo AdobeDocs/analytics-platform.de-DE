@@ -1,5 +1,5 @@
 ---
-source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '5607'
 ht-degree: 95%
@@ -41,7 +41,7 @@ ht-degree: 95%
 | Option | Funktion |
 |---------|----------|
 | **[!UICONTROL Empfohlen]** | Sortiert Komponenten für jeden Typ (Dimension, Metrik, Segment und Datumsbereich) basierend auf ihrer Empfehlung. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrem Unternehmen verwendet werden, werden weiter oben in jeder Liste angezeigt. |
-| **[!UICONTROL Zuletzt geändert]** | Sortiert Komponenten für jeden Typ (Dimension, Metrik, Segment und Datumsbereich) basierend auf dem Datum ihrer letzten Änderung. Komponenten, die zuletzt geändert wurden, werden in jeder Liste weiter oben angezeigt. |
+| **[!UICONTROL Zuletzt geändert]** | Sortiert Komponenten für jeden Typ (Dimension, Metrik, Segment und Datumsbereich) basierend auf dem Datum ihrer letzten Änderung. Komponenten, die zuletzt geändert wurden, werden höher in jeder Liste angezeigt. |
 | **[!UICONTROL Alphabetisch]** | Sortiert Komponenten für jeden Typ (Dimension, Metrik, Segment und Datumsbereich) in aufsteigender alphabetischer Reihenfolge. |
 | **[!UICONTROL Kategorisch]** | Sortiert Komponenten für jeden Typ (Dimension, Metrik, Segment und Datumsbereich) basierend auf ihrer Kategorie. Zum Beispiel kuratierte im Vergleich zu nicht kuratierten Datenansichtskomponenten. |
 

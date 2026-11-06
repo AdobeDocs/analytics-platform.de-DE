@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 59%
+ht-degree: 58%
 ---
 # Verwenden von Objekt-Arrays
 
@@ -97,7 +97,7 @@ Beim Erstellen einer Datenansicht sind die folgenden Dimensionen und die folgend
   * Produkt: Name
   * Produkt: Bestell-ID
   * Produkt: Garantie: Gültigkeit
-  * Produkt: Garantie: Länge
+  * Produkt : Garantie : Länge
   * Produkt: Garantie: Name
   * Produkt: Garantie: Typ
 * **Metriken:**
@@ -295,5 +295,5 @@ Durch Anwendung dieser berechneten Metrik werden die gewünschten Ergebnisse ang
 
 ## Einschränkungen
 
-Einschränkungen gelten für Arrays in Daten, die von Customer Journey Analytics verwendet und als Teil eines Schemas in Experience Platform modelliert werden. Siehe [Datenmodellbeschränkungen](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails#data-model-limits) und [Datengrößenbeschränkungen](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails#data-size-limits) in den [Standardleitplanken für Echtzeit-Kundenprofildaten und -segmentierung](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails).
+Einschränkungen gelten für Arrays in Daten, die von Customer Journey Analytics verwendet und als Teil eines Schemas in Experience Platform modelliert werden. Siehe [Datenmodellbeschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) und [Datengrößenbeschränkungen](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) in den [Standardleitplanken für Echtzeit-Kundenprofildaten und -segmentierung](https://experienceleague.adobe.com/de/docs/experience-platform/profile/guardrails).
 

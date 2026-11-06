@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 94%
@@ -145,7 +145,7 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
    ![Beispiel für die Schaltfläche zum Hinzufügen eines Feldes zum Schema](assets/example-schema-plus.png)
 
-1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]&#x200B;**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL ExperienceEvent Core v2.1]** aus.
+1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL ExperienceEvent Core v2.1]** aus.
 
    >[!NOTE]
    >
@@ -159,7 +159,7 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
 1. Wählen Sie im soeben hinzugefügten Identifizierungsobjekt das Feld **[!UICONTROL ECID]** aus und danach im rechten Bedienfeld **[!UICONTROL Identität]** und **[!UICONTROL Primäre Identität]** sowie die Option **[!UICONTROL ECID]** in der Liste [!UICONTROL Identity-Namespace].
 
-   ![Spezifizieren Sie die ECID als Identität](./assets/specify-identity.png)
+   ![ECID als Identität angeben](./assets/specify-identity.png)
 
    Sie spezifizieren die ECID als primäre Identität, die der Adobe Experience Platform Identity Service verwenden kann, um das Verhalten von Profilen mit derselben ECID zu kombinieren (Stitching).
 
@@ -167,7 +167,7 @@ So erstellen Sie ein benutzerdefiniertes Schema:
 
 1. Wählen Sie das Feld **[!UICONTROL E-Mail]** im soeben hinzugefügten Identifizierungsobjekt aus und danach **[!UICONTROL Identität]** und **[!UICONTROL E-Mail]** in der Liste [!UICONTROL Identity-Namespace] im Bedienfeld [!UICONTROL Feldeigenschaften].
 
-   ![Spezifizieren von E-Mail als Identität](./assets/specify-email-identity.png)
+   ![E-Mail als Identität angeben](./assets/specify-email-identity.png)
 
    Sie spezifizieren die E-Mail-Adresse als weitere Identität, die Adobe Experience Platform Identity Service verwenden kann, um das Verhalten von Profilen zu kombinieren (Stitching).
 

@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 15%
@@ -196,9 +196,9 @@ Definieren Sie ein Schema, das diese Daten modelliert. So legen Sie Ihr Schema f
 
      ![Versionsdeskriptor](assets/platform-schema-id.png)
 
-     In einem realen Szenario empfiehlt es sich, ein geeigneteres Feld als [Versionsdeskriptor“ &#x200B;](aep.md#schema). Beispiel: ein Feld, in dem die letzte Änderungszeit erfasst wird.
+     In einem realen Szenario empfiehlt es sich, ein geeigneteres Feld als [Versionsdeskriptor“ ](aep.md#schema). Beispiel: ein Feld, in dem die letzte Änderungszeit erfasst wird.
 
-   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
+   * Das Feld **[!UICONTROL personid]** wird zusammen mit **[!UICONTROL timestamp]** als Primärer Schlüssel **** konfiguriert. Wählen Sie ![Hinzufügen](/help/assets/icons/Add.svg) **[!UICONTROL Zusammengesetzten Primärschlüssel erstellen]** aus, um einen zusammengesetzten Schlüssel zu erstellen.
 
      ![Zusammengesetzter Schlüssel](assets/platform-schema-compositekey.png)
 
@@ -208,7 +208,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. So legen Sie Ihr Schema f
 
      Das **[!UICONTROL personid]**-Feld muss nicht der **[!UICONTROL Primäre Schlüssel sein]**. In einem realen Szenario haben Sie wahrscheinlich ein anderes Feld, um den Primärschlüssel getrennt von der &quot;**[!UICONTROL &quot;]** verfolgen.
 
-   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als Primärer Schlüssel **&#x200B;**&#x200B;konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für relationale Zeitreihendaten definieren.
+   * Das Feld **[!UICONTROL Zeitstempel]** wird zusammen mit dem Feld **[!UICONTROL personid]** als Primärer Schlüssel **** konfiguriert. Das **[!UICONTROL Zeitstempel]**-Feld wird auch als **[!UICONTROL Zeitstempeldeskriptor]** konfiguriert. Sie müssen nur ein Feld als **[!UICONTROL Zeitstempeldeskriptor]** für relationale Zeitreihendaten definieren.
 
      ![Zeitstempel-Deskriptor](assets/platform-schema-timestamp.png)
 
@@ -217,7 +217,7 @@ Definieren Sie ein Schema, das diese Daten modelliert. So legen Sie Ihr Schema f
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
 
-Auf ähnliche Weise können Sie ein auf Datensätzen basierendes relationales [Schema) &#x200B;](aep.md#schema). Beispielsweise , um Profil- und Suchdaten zu enthalten.
+Auf ähnliche Weise können Sie ein auf Datensätzen basierendes relationales [Schema) ](aep.md#schema). Beispielsweise , um Profil- und Suchdaten zu enthalten.
 
 
 ## Verwenden eines Quell-Connectors
@@ -248,7 +248,7 @@ Wählen **[!UICONTROL im Schritt]** Authentifizierung“ Folgendes aus:
 
   1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-  In der Experience Platform-Dokumentation finden Sie Einzelheiten zur Verbindung und Authentifizierung bei der Verwendung des [Azure Databricks](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/databricks) oder [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake)-Connectors.
+  In der Experience Platform-Dokumentation finden Sie Einzelheiten zur Verbindung und Authentifizierung bei der Verwendung des [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) oder [Snowflake](https://experienceleague.adobe.com/de/docs/experience-platform/sources/connectors/databases/snowflake)-Connectors.
 
 
 ### Daten auswählen
@@ -353,7 +353,7 @@ In der Benutzeroberfläche von Customer Journey Analytics:
    1. Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen. Beispielsweise [Auswählen und Kombinieren &#x200B;](/help/connections/combined-dataset.md) Datensätzen[&#x200B; Überprüfen des Status der Datensätze einer Verbindung und des Status &#x200B;](/help/connections/manage-connections.md) Datenaufnahme).
+Nachdem Sie eine [Verbindung](/help/connections/overview.md) erstellt haben, können Sie verschiedene Verwaltungsaufgaben ausführen. Beispielsweise [Auswählen und Kombinieren ](/help/connections/combined-dataset.md) Datensätzen[ Überprüfen des Status der Datensätze einer Verbindung und des Status ](/help/connections/manage-connections.md) Datenaufnahme).
 
 
 ## Festlegen einer Datenansicht
@@ -401,16 +401,16 @@ Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
    Behalten Sie die Einstellungen bei und wählen Sie **[!UICONTROL Speichern und beenden]**.
 
-Weitere Informationen [&#x200B; Erstellen und Bearbeiten einer Datenansicht finden &#x200B;](../data-views/data-views.md) unter Datenansichten - Übersicht . Und welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment- und Sitzungseinstellungen verwenden.
+Weitere Informationen [ Erstellen und Bearbeiten einer Datenansicht finden ](../data-views/data-views.md) unter Datenansichten - Übersicht . Und welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Sie Segment- und Sitzungseinstellungen verwenden.
 
 
-## Einrichten eines Projekts
+## Projekt einrichten
 
 Analysis Workspace ist ein flexibles Browser-Tool, mit dem Sie schnell Analysen erstellen und Erkenntnisse basierend auf Ihren Daten austauschen können. Mit Analysis Workspace-Projekten können Sie Datenkomponenten, Tabellen und Visualisierungen kombinieren, um eine Analyse zu erstellen, und diese für andere Personen in Ihrem Unternehmen freigeben.
 
 Gehen Sie folgendermaßen vor, um ein Projekt zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche im oberen **die Option** Workspace.
+1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche im oberen ]**die Option**[!UICONTROL  Workspace.
 
 2. Wählen Sie **[!UICONTROL Projekte]** in der linken Navigation aus.
 

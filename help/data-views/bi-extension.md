@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '3765'
-ht-degree: 81%
+ht-degree: 77%
 ---
 # Customer Journey Analytics-BI-Erweiterung
 
@@ -48,7 +48,7 @@ ht-degree: 81%
 
 Der [!DNL Customer Journey Analytics BI extension] ermöglicht SQL-Zugriff auf [Datenansichten](./data-views.md), die Sie in Customer Journey Analytics definiert haben. Ihre Dateningenieurinnen und -ingenieure sowie Ihre Datenanalytikerinnen und -analytiker sind möglicherweise besser mit Power BI, Tableau Desktop oder anderen Business Intelligence- und Visualisierungs-Tools (im Folgenden „BI-Tools“ genannt) vertraut. Sie können jetzt Berichte und Dashboards basierend auf denselben Datenansichten erstellen, die Benutzerinnen und Benutzer von Customer Journey Analytics beim Erstellen ihrer Analysis Workspace-Projekte verwenden.
 
-Der [Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/home) von Adobe Experience Platform ist die SQL-Schnittstelle zu Daten, die im Data Lake von Experience Platform verfügbar sind. Wenn der [!DNL Customer Journey Analytics BI extension] aktiviert ist, wird die Funktionalität von [!DNL Query Service] erweitert, damit Ihre Datenansichten von Customer Journey Analytics als Tabellen oder Ansichten in einer [!DNL Query Service]-Sitzung zu sehen sind. Daher profitieren Business-Intelligence-Tools, die [!DNL Query Service] als Ihre PostgresSQL-Schnittstelle verwenden, nahtlos von dieser erweiterten Funktion.
+Der [Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/home) von Adobe Experience Platform ist die SQL-Schnittstelle zu Daten, die im Data Lake von Experience Platform verfügbar sind. Wenn der [!DNL Customer Journey Analytics BI extension] aktiviert ist, wird die Funktionalität von [!DNL Query Service] erweitert, damit Ihre Datenansichten von Customer Journey Analytics als Tabellen oder Ansichten in einer [!DNL Query Service]-Sitzung zu sehen sind. Daher profitieren Business Intelligence-Tools, die [!DNL Query Service] als PostgreSQL-Schnittstelle verwenden, nahtlos von dieser erweiterten Funktionalität.
 
 Die wichtigsten Vorteile sind:
 
@@ -64,7 +64,7 @@ Im Folgenden finden Sie zusätzliche Schritte zum Einrichten der erforderlichen 
 
 ### Ablaufende Anmeldeinformationen
 
-Um ablaufende Anmeldeinformationen zu verwenden, können Sie wie folgt vorgehen:
+Um ablaufende Anmeldedaten zu verwenden, können Sie wie folgt vorgehen:
 
 * Zugriff auf Experience Platform und Customer Journey Analytics gewähren.
 * Gewähren Sie Produktadministratorzugriff auf Customer Journey Analytics, damit Sie Verbindungen und Datenansichten anzeigen, bearbeiten, aktualisieren oder löschen können.
@@ -78,7 +78,7 @@ Oder Sie können:
 
 So verwenden Sie unbefristete Anmeldedaten:
 
-1. Erstellen Sie [unbefristete Anmeldedaten in Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials#non-expiring-credentials). Wenn Sie bereits vorhandene, nicht ablaufende Anmeldedaten verwenden möchten, stellen Sie sicher, dass diese Anmeldedaten [nach OAuth migriert](https://experienceleague.adobe.com/de/docs/experience-platform/query/ui/credentials#migrate-credentials).
+1. Erstellen Sie [unbefristete Anmeldedaten in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials). Wenn Sie bereits vorhandene, nicht ablaufende Anmeldedaten verwenden möchten, stellen Sie sicher, dass diese Anmeldedaten [nach OAuth migriert](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials).
 
 1. Stellen Sie sicher, dass die nicht ablaufenden Anmeldedaten für die Customer Journey Analytics-Produkt- und -Produktprofile verfügbar sind. Sie müssen Systemadministrator für die Organisation sein, um die folgenden Schritte ausführen zu können.
    1. Wählen Sie **[!UICONTROL Admin Console]** aus ![App](/help/assets/icons/Apps.svg).
@@ -113,15 +113,15 @@ Um die Funktion [!DNL Customer Journey Analytics BI extension] zu verwenden, kö
 
 ### SQL
 
-Sie können die Funktion direkt in SQL-Anweisungen verwenden, indem Sie entweder den Abfrage-Editor oder einen standardmäßigen Client der Befehlszeilenschnittstelle (CLI) von Postgres verwenden.
+Sie können die Funktion direkt in SQL-Anweisungen verwenden, indem Sie entweder den Abfrage-Editor oder einen Standard-Client der PostgreSQL-Befehlszeilenschnittstelle (CLI) verwenden.
 
 +++ Abfrage-Editor
 
 In Adobe Experience Platform:
 
-1. Wählen Sie **[!UICONTROL ** Abfragen **]** unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]** in der linken Leiste aus.
+1. Wählen Sie **[!UICONTROL ** Abfragen **]** unter **[!UICONTROL ** DATEN-MANAGEMENT **]** in der linken Leiste aus.
 
-1. Wählen Sie ![Abfrage erstellen](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **&#x200B; Abfrage erstellen &#x200B;**]** aus.
+1. Wählen Sie ![Abfrage erstellen](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Abfrage erstellen **]** aus.
 
 1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
@@ -130,17 +130,17 @@ In Adobe Experience Platform:
 +++
 
 
-+++ PostgresSQL-CLI
++++ PostgreSQL-CLI
 
-1. Suchen und Kopieren Ihrer PostgresSQL-Anmeldedaten in Adobe Experience Platform:
+1. Suchen und Kopieren Ihrer PostgreSQL-Anmeldeinformationen in Adobe Experience Platform:
 
-   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]**) aus.
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
 
-   1. Wählen Sie **[!UICONTROL **&#x200B; Anmeldeinformationen &#x200B;**]** aus der oberen Leiste aus.
+   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
    1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
-   1. Um die Befehlszeichenfolge zu kopieren, verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg) im Abschnitt **[!UICONTROL **&#x200B; PSQL-Befehl &#x200B;**]**.
+   1. Um die Befehlszeichenfolge zu kopieren, verwenden Sie ![Kopieren](assets/Smock_Copy_18_N.svg) im Abschnitt **[!UICONTROL ** PSQL-Befehl **]**.
 
 1. Öffnen Sie ein Befehls- oder Terminal-Fenster.
 
@@ -157,11 +157,11 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 +++ Power BI
 
-1. Suchen der Details Ihrer PostgresSQL-Anmeldedaten in Adobe Experience Platform:
+1. Nachschlagen der Details Ihrer PostgreSQL-Anmeldeinformationen in Adobe Experience Platform:
 
-   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]**) aus.
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
 
-   1. Wählen Sie **[!UICONTROL **&#x200B; Anmeldeinformationen &#x200B;**]** aus der oberen Leiste aus.
+   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
    1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
@@ -169,28 +169,28 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 1. In Power BI:
 
-   1. Wählen Sie im Hauptfenster **[!UICONTROL **&#x200B; Daten abrufen &#x200B;**]** aus der oberen Symbolleiste aus.
+   1. Wählen Sie im Hauptfenster **[!UICONTROL ** Daten abrufen **]** aus der oberen Symbolleiste aus.
 
    1. Wählen Sie **[!UICONTROL Mehr...]** in der linken Leiste aus.
 
-   1. Suchen Sie im Bildschirm **Daten abrufen** nach `PostgresSQL` und wählen Sie die **[!UICONTROL **&#x200B; PostgresSQL-Datenbank &#x200B;**]** aus der Liste aus.
+   1. Suchen Sie im Bildschirm **Daten abrufen** nach `PostgreSQL` und wählen Sie die **[!UICONTROL ** PostgreSQL-Datenbank **]** aus der Liste aus.
 
-   1. Im Dialogfeld **[!UICONTROL **&#x200B; PostgresSQL-Datenbank &#x200B;**]**:
+   1. Im Dialogfeld **[!UICONTROL ** PostgreSQL-Datenbank **]**:
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Host **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Server &#x200B;**]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Host **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Server **]** ein.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Datenbank **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Datenbank &#x200B;**]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Datenbank **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Datenbank **]** ein.
 
-         Fügen Sie `?FLATTEN` zum Parameter **[!UICONTROL **&#x200B; Datenbank &#x200B;**]** hinzu, damit er sich beispielsweise liest wie `prod:cja?FLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data).
+         Fügen Sie `?FLATTEN` zum Parameter **[!UICONTROL ** Datenbank **]** hinzu, damit er sich beispielsweise liest wie `prod:cja?FLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
       1. Wenn Sie zur Wahl des Modus **[!UICONTROL Datenkonnektivität]** aufgefordert werden, wählen Sie **[!UICONTROL DirectQuery]** aus.
 
       1. Sie werden aufgefordert, **[!UICONTROL Benutzername]** und **[!UICONTROL Passwort]** einzugeben. Verwenden Sie die entsprechenden Parameter aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen.
 
 
-   1. Nach erfolgreicher Anmeldung sehen Sie die Datenansichtstabellen von Customer Journey Analytics im **[!UICONTROL **&#x200B; Navigator &#x200B;**]** von Power BI.
+   1. Nach erfolgreicher Anmeldung sehen Sie die Datenansichtstabellen von Customer Journey Analytics im **[!UICONTROL ** Navigator **]** von Power BI.
 
-   1. Wählen Sie die Datenansichtstabellen aus, die Sie verwenden möchten, und wählen Sie dann **[!UICONTROL **&#x200B; Laden &#x200B;**]** aus.
+   1. Wählen Sie die Datenansichtstabellen aus, die Sie verwenden möchten, und wählen Sie dann **[!UICONTROL ** Laden **]** aus.
 
    Alle Dimensionen und Metriken, die mit einer oder mehreren ausgewählten Tabellen verknüpft sind, werden im rechten Bereich angezeigt und können in Ihren Visualisierungen verwendet werden.
 
@@ -200,11 +200,11 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 +++Tableau Desktop
 
-1. Suchen der Details Ihrer PostgresSQL-Anmeldedaten in Adobe Experience Platform:
+1. Nachschlagen der Details Ihrer PostgreSQL-Anmeldeinformationen in Adobe Experience Platform:
 
-   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]**) aus.
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
 
-   1. Wählen Sie **[!UICONTROL **&#x200B; Anmeldeinformationen &#x200B;**]** aus der oberen Leiste aus.
+   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
    1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
@@ -212,29 +212,29 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 1. In Tableau Desktop:
 
-   1. Wählen Sie **[!UICONTROL ** Mehr **]** aus **[!UICONTROL **&#x200B; Zu einem Server &#x200B;**]** in der linken Leiste aus.
+   1. Wählen Sie **[!UICONTROL ** Mehr **]** aus **[!UICONTROL ** Zu einem Server **]** in der linken Leiste aus.
 
-   1. Wählen Sie **[!UICONTROL **&#x200B; PostgresSQL &#x200B;**]** aus der Liste aus.
+   1. Wählen Sie **[!UICONTROL ** PostgreSQL **]** aus der Liste aus.
 
-   1. Im Dialogfeld [!UICONTROL PostgresSQL]:
+   1. Im Dialogfeld [!UICONTROL PostgreSQL]:
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Host **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Server &#x200B;**]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Host **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Server **]** ein.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Port **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Port &#x200B;**]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Port **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Port **]** ein.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Datenbank **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Datenbank &#x200B;**]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Datenbank **]** aus den [!UICONTROL Anmeldedaten] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Datenbank **]** ein.
 
-         Fügen Sie `%3FFLATTEN` zum Parameter **[!UICONTROL **&#x200B; Datenbank &#x200B;**]** hinzu, damit er sich beispielsweise liest wie `prod:cja%3FFLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data).
+         Fügen Sie `%3FFLATTEN` zum Parameter **[!UICONTROL ** Datenbank **]** hinzu, damit er sich beispielsweise liest wie `prod:cja%3FFLATTEN`. Weitere Informationen finden Sie unter [Reduzieren verschachtelter Datenstrukturen für die Verwendung mit BI-Tools von Drittanbietern](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
-      1. Wählen Sie **[!UICONTROL ** Benutzername und Passwort **]** aus der Liste **[!UICONTROL **&#x200B; Authentifizierung &#x200B;**]** aus.
+      1. Wählen Sie **[!UICONTROL ** Benutzername und Passwort **]** aus der Liste **[!UICONTROL ** Authentifizierung **]** aus.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Benutzername **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Benutzername &#x200B;**]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Benutzername **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Benutzername **]** ein.
 
-      1. Fügen Sie den Parameter **[!UICONTROL ** Passwort **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL **&#x200B; Passwort &#x200B;**]** ein.
+      1. Fügen Sie den Parameter **[!UICONTROL ** Passwort **]** aus den [!UICONTROL Anmeldeinformationen] von Experience Platform-Abfragen in das Textfeld **[!UICONTROL ** Passwort **]** ein.
 
-      1. Wählen Sie **[!UICONTROL **&#x200B; Anmelden &#x200B;**]** aus.
+      1. Wählen Sie **[!UICONTROL ** Anmelden **]** aus.
 
-   1. Datenansichten von Customer Journey Analytics werden als Tabellen in der Liste **[!UICONTROL **&#x200B; Tabellen &#x200B;**]** angezeigt.
+   1. Datenansichten von Customer Journey Analytics werden als Tabellen in der Liste **[!UICONTROL ** Tabellen **]** angezeigt.
 
    1. Ziehen Sie die Tabellen, die Sie verwenden möchten, auf die Arbeitsfläche.
 
@@ -246,11 +246,11 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 +++ Looker
 
-1. Suchen der Details Ihrer PostgresSQL-Anmeldedaten in Adobe Experience Platform:
+1. Nachschlagen der Details Ihrer PostgreSQL-Anmeldeinformationen in Adobe Experience Platform:
 
-   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]**) aus.
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
 
-   1. Wählen Sie **[!UICONTROL **&#x200B; Anmeldeinformationen &#x200B;**]** aus der oberen Leiste aus.
+   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
    1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
@@ -273,11 +273,11 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 +++ Jupyter Notebook
 
-1. Suchen der Details Ihrer PostgresSQL-Anmeldedaten in Adobe Experience Platform:
+1. Nachschlagen der Details Ihrer PostgreSQL-Anmeldeinformationen in Adobe Experience Platform:
 
-   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]**) aus.
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
 
-   1. Wählen Sie **[!UICONTROL **&#x200B; Anmeldeinformationen &#x200B;**]** aus der oberen Leiste aus.
+   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
    1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
@@ -297,11 +297,11 @@ Derzeit wird die [!DNL Customer Journey Analytics BI extension] für die unten a
 
 +++ RStudio
 
-1. Suchen der Details Ihrer PostgresSQL-Anmeldedaten in Adobe Experience Platform:
+1. Nachschlagen der Details Ihrer PostgreSQL-Anmeldeinformationen in Adobe Experience Platform:
 
-   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL **&#x200B; DATEN-MANAGEMENT &#x200B;**]**) aus.
+   1. Wählen Sie **[!UICONTROL ** Abfragen **]** aus der linken Leiste (unter **[!UICONTROL ** DATEN-MANAGEMENT **]**) aus.
 
-   1. Wählen Sie **[!UICONTROL **&#x200B; Anmeldeinformationen &#x200B;**]** aus der oberen Leiste aus.
+   1. Wählen Sie **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste aus.
 
    1. Wählen Sie die `cja` für Ihre Sandbox aus der Liste der Datenbanken im Dropdown **[!UICONTROL Menü]** Datenbank“ aus. Zum Beispiel `prod:cja`.
 
@@ -350,7 +350,7 @@ prod:cja=> \dv
 
 ### Verschachtelt oder reduziert
 
-Standardmäßig verwendet das Schema Ihrer Datenansichten verschachtelte Strukturen wie die ursprünglichen XDM-Schemata. Die Integration unterstützt auch die Option `FLATTEN`. Mit dieser Option können Sie erzwingen, dass das Schema für die Datenansichten (und jede andere Tabelle in der Sitzung) reduziert wird. Die Reduzierung ermöglicht eine einfachere Verwendung in BI-Tools, die keine strukturierten Schemata unterstützen. Weitere Informationen finden Sie unter [Arbeiten mit verschachtelten Datenstrukturen im Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data).
+Standardmäßig verwendet das Schema Ihrer Datenansichten verschachtelte Strukturen wie die ursprünglichen XDM-Schemata. Die Integration unterstützt auch die Option `FLATTEN`. Mit dieser Option können Sie erzwingen, dass das Schema für die Datenansichten (und jede andere Tabelle in der Sitzung) abgeflacht wird. Flattening ermöglicht eine einfachere Verwendung in BI-Tools, die keine strukturierten Schemata unterstützen. Weitere Informationen finden Sie unter [Arbeiten mit verschachtelten Datenstrukturen im Abfrage-Service](https://experienceleague.adobe.com/de/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 
 ### Standardwerte und Einschränkungen
@@ -362,7 +362,7 @@ Die folgenden zusätzlichen Standardwerte und Einschränkungen gelten für die V
 * Die BI-Erweiterung erfordert Aggregatabfragen. Sie können kein SQL wie `SELECT * FROM ...` verwenden, um die rohen, zugrunde liegenden Zeilen abzurufen. Ihre Aggregatabfragen sollten auf allgemeiner Ebene Folgendes verwenden:
   * Gesamtsummen mit `SUM` und/oder `COUNT` auswählen.<br/> Beispiel: `SELECT SUM(metric1), COUNT(*) FROM ...`
   * Auswählen von Metriken, die nach einer Dimension aufgeschlüsselt sind. <br/>Zum Beispiel `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
-  * Auswählen unterschiedlicher Metrikwerte.<br/>Zum Beispiel `SELECT DISTINCT dimension1 FROM ...`
+  * Wählen Sie unterschiedliche Metrikwerte aus.<br/>Zum Beispiel `SELECT DISTINCT dimension1 FROM ...`
 
     Weitere Informationen finden Sie unter [Unterstütztes SQL](#supported-sql).
 
@@ -515,7 +515,7 @@ FROM (
 ) rows
 GROUP BY 1
 ORDER BY total</code></pre>
-Ebenen, die CTE WITH verwenden:
+Ebenen, die CTEs mit dem Schlüsselwort WITH verwenden:
 <pre><code>WITH rows AS (
   WITH _ AS (
     SELECT * FROM data_ares
@@ -555,8 +555,8 @@ Sie können jede der Dimensionen auswählen, die standardmäßig verfügbar oder
 Folgende Metriken stehen zur Auswahl:
 
 * Metriken, die standardmäßig verfügbar sind;
-* Metriken, die in der Datenansicht definiert wurden;
-* berechnete Metriken, die mit der Datenansicht kompatibel sind, auf die die Benutzerin bzw. der Benutzer Zugriff hat.
+* In der Datenansicht definiert;
+* Berechnete Metriken, die mit der Datenansicht kompatibel sind, auf die der Benutzer oder die Benutzerin Zugriff hat.
 
 Sie wählen eine Metrik anhand ihrer ID aus, die in einen `SUM(metric)`-Ausdruck eingeschlossen ist, wie Sie es mit jeder SQL-Quelle tun würden.
 
@@ -568,7 +568,7 @@ Sie können:
 
 #### Zählen von eindeutigen Werten
 
-Aufgrund der zugrunde liegenden Funktionsweise von Customer Journey Analytics ist die einzige Dimension, für die Sie die Anzahl der eindeutigen Werte genau bestimmen können, die Dimension `adobe_personid`. Die folgenden SQL-Ausdrücke `SELECT COUNT(DISTINCT adobe_personid)` oder `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` geben den Wert der Standardmetrik Personen zurück, die der Anzahl der eindeutigen Personen entspricht. Bei anderen Dimensionen wird eine ungefähre Zählung der eindeutigen Personen zurückgegeben.
+Aufgrund der zugrunde liegenden Funktionsweise von Customer Journey Analytics ist die einzige Dimension, für die Sie die Anzahl der eindeutigen Werte genau bestimmen können, die Dimension `adobe_personid`. Die folgenden SQL-Ausdrücke `SELECT COUNT(DISTINCT adobe_personid)` oder `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` geben den Wert der Standardmetrik Personen zurück, die der Anzahl der eindeutigen Personen entspricht. Bei anderen Dimensionen wird eine ungefähre Zählung der eindeutigen Werte zurückgegeben.
 
 #### Bedingte Metriken
 
@@ -586,12 +586,12 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN metric1 END) AS m1
 
 #### Inline-Berechnungen
 
-Sie können zusätzliche Mathematik auf Metrikausdrücke in `SELECT` anwenden. Statt die Mathematik in einer berechneten Metrik zu definieren, kann diese Mathematik verwendet werden. In der folgenden Tabelle ist aufgeführt, welche Arten von Ausdrücken unterstützt werden.
+Sie können zusätzliche Mathematik auf Metrikausdrücke in `SELECT` anwenden. Statt die Berechnung in einer berechneten Metrik zu definieren, kann diese Berechnung verwendet werden. In der folgenden Tabelle ist aufgeführt, welche Arten von Ausdrücken unterstützt werden.
 
 | Operator oder Funktion | Details |
 |---|---|
-| `+`, `-`, `*`, `/`, und `%` | Addieren, subtrahieren, multiplizieren, dividieren und modulo/Rest |
-| `-X` oder `+X` | Ändern des Zeichens oder einer Metrik, wobei X der Metrikausdruck ist |
+| `+`, `-`, `*`, `/`, und `%` | Addieren, subtrahieren, multiplizieren, dividieren und Modulus/Rest |
+| `-X` oder `+X` | Ändern des Zeichens einer Metrik, wobei X der Metrikausdruck ist |
 | `PI()` | Konstante π |
 | `POSITIVE`, `NEGATIVE`, `ABS`, `FLOOR`, `CEIL`, `CEILING`, `EXP`, `LN`, `LOG10`, `LOG1P`, `SQRT`, `CBRT`, `DEGREES`, `RADIANS`, `SIN`, `COS`, `TAN`, `ACOS`, `ASIN`, `ATAN`, `COSH`, `SINH` und `TANH` | Unäre mathematische Funktionen |
 | `MOD`, `POW`, `POWER`, `ROUND`, `LOG` | Binäre mathematische Funktionen |
@@ -607,10 +607,10 @@ Die spezielle Spalte `timestamp` wird verwendet, um die Datumsbereiche für die 
 
 * Wenn nur ein Minimum angegeben wird (`timestamp > X` oder ` timestamp >= X`), reicht der Bereich von X bis jetzt.
 * Wenn nur ein Maximum angegeben wird (`timestamp < X` oder `timestamp <= X`), reicht der Bereich von X bis die 30 Tage vor X.
-* Wenn nichts angegeben wird, umfasst der Bereich die letzten 30 Tage bis jetzt.
+* Wenn nichts angegeben wird, reicht der Bereich von jetzt minus 30 Tage bis jetzt.
 
 Der Zeitstempelbereich wird in der Rangfolgenanfrage in ein globales Segment für den Datumsbereich konvertiert.
-Das Zeitstempelfeld kann auch als Datums-/Uhrzeitfunktion verwendet werden, um den Zeitstempel des Ereignisses zu analysieren und zu kürzen.
+Das Zeitstempelfeld kann auch in Datums-/Uhrzeitfunktionen verwendet werden, um den Zeitstempel des Ereignisses zu analysieren oder zu kürzen.
 
 #### Datumsbereich
 
@@ -687,21 +687,21 @@ Diese Funktionen können für Dimensionen in der `WHERE`- oder `SELECT`-Klausel 
 | [Jahr](https://spark.apache.org/docs/latest/api/sql/index.html#year) | ``SELECT YEAR(`timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. |
 | [Monat](https://spark.apache.org/docs/latest/api/sql/index.html#month) | ``SELECT MONTH(`timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. |
 | [Tag](https://spark.apache.org/docs/latest/api/sql/index.html#day) | ``SELECT DAY(`timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. |
-| [Wochentag](https://spark.apache.org/docs/latest/api/sql/index.html#dayofweek) | ``SELECT DAYOFWEEK(`timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. Verwenden Sie die Element-ID anstelle des Werts, wo Sie die Nummer und nicht den Anzeigenamen benötigen. |
+| [Wochentag](https://spark.apache.org/docs/latest/api/sql/index.html#dayofweek) | ``SELECT DAYOFWEEK(`timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. Verwenden Sie die Element-ID anstelle des Werts, wenn Sie die Nummer und nicht den Anzeigenamen benötigen. |
 | [Tag des Jahres](https://spark.apache.org/docs/latest/api/sql/index.html#dayofyear) | ``SELECT DAYOFYEAR(`timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. |
 | [Woche](https://spark.apache.org/docs/latest/api/sql/index.html#week) | ``SELECT WEEK(`timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. |
 | [Quartal](https://spark.apache.org/docs/latest/api/sql/index.html#quarter) | ``SELECT QUARTER(`timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. |
-| [Stunde](https://spark.apache.org/docs/latest/api/sql/index.html#hour) | ``SELECT HOUR(`timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. Verwenden Sie die Element-ID anstelle des Werts, wo Sie die Nummer und nicht den Anzeigenamen benötigen. |
+| [Stunde](https://spark.apache.org/docs/latest/api/sql/index.html#hour) | ``SELECT HOUR(`timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. Verwenden Sie die Element-ID anstelle des Werts, wenn Sie die Nummer und nicht den Anzeigenamen benötigen. |
 | [Minute](https://spark.apache.org/docs/latest/api/sql/index.html#minute) | ``SELECT MINUTE(`timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. |
-| [Extract](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. Verwenden Sie die Element-ID anstelle des Werts für einige Teile dieser Funktion, wo Sie die Nummer und nicht den Anzeigenamen benötigen.<br/>Unterstützte Teile: <br>- Schlüsselwörter: `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `'Y'`, `'DAYOFMONTH'`, `MINUTE`, <br/>, `'YEAR'`, `'MONTH'`, `'D'`, `'M'`, `'DAY'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'` `'DOY'` `'WEEK'` `'WOY` `'W'` `'QUARTER'` `'QOY'` `'Q'` `'HOUR'` `'MINUTE'`, |
-| [Date (part)](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. Verwenden Sie die Element-ID anstelle des Werts für einige Teile dieser Funktion, wo Sie die Nummer und nicht den Anzeigenamen benötigen.<br/>Unterstützte Zeichenfolgenteile sind: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`o der `'MINUTE'`. |
-| [Datum (gekürzt)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld.<br/>Folgende Zeichenfolgengranularitäten werden unterstützt: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` oder `'MINUTE'`. |
+| [Extract](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Generieren Sie eine dynamische Dimension-Identität für das übergebene Feld. Verwenden Sie die Element-ID anstelle des Werts für einige Teile dieser Funktion, wenn Sie die Nummer und nicht den Anzeigenamen benötigen.<br/>Unterstützte Teile: <br>- Schlüsselwörter: `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `'Y'`, `'DAYOFMONTH'`, `MINUTE`, <br/>, `'YEAR'`, `'MONTH'`, `'D'`, `'M'`, `'DAY'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'` `'DOY'` `'WEEK'` `'WOY` `'W'` `'QUARTER'` `'QOY'` `'Q'` `'HOUR'` `'MINUTE'`, |
+| [Date (part)](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | Generiert eine dynamische Dimensionsidentität für das übergebene Feld. Verwenden Sie die Element-ID anstelle des Werts für einige Teile dieser Funktion, wenn Sie die Nummer und nicht den Anzeigenamen benötigen.<br/>Unterstützte Zeichenfolgenteile sind: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`o der `'MINUTE'`. |
+| [Datum (gekürzt)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Generieren Sie eine dynamische Dimension-Identität für das übergebene Feld.<br/>Folgende Zeichenfolgengranularitäten werden unterstützt: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` oder `'MINUTE'`. |
 
 {style="table-layout:auto"}
 
 ### Teilweise Unterstützung
 
-Einige SQL-Funktionen werden von der BI-Erweiterung nur teilweise unterstützt und geben nicht dieselben Ergebnisse zurück, die Sie bei anderen Datenbanken sehen.  Diese spezifische Funktion wird in SQL verwendet, das von verschiedenen BI-Tools generiert wurde, für die die BI-Erweiterung keine exakte Übereinstimmung aufweist. Daher konzentriert sich die BI-Erweiterung auf eine begrenzte Implementierung, die die minimale Verwendung von BI-Tools abdeckt, ohne Fehler auszulösen. Weitere Informationen finden Sie in der Tabelle unten.
+Einige SQL-Funktionen werden von der BI-Erweiterung nur teilweise unterstützt und geben nicht dieselben Ergebnisse zurück, die Sie bei anderen Datenbanken sehen.  Diese spezifische Funktionalität wird in SQL verwendet, das von verschiedenen BI-Tools generiert wurde, für die die BI-Erweiterung keine exakte Übereinstimmung aufweist. Daher konzentriert sich die BI-Erweiterung auf eine begrenzte Implementierung, die die minimale Nutzung von BI-Tools abdeckt, ohne Fehler auszulösen. Weitere Informationen finden Sie in der Tabelle unten.
 
 | Funktion | Beispiel | Details |
 |---|---|---|
