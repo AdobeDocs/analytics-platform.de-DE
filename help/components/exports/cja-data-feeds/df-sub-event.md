@@ -220,7 +220,7 @@ In der Daten-Feed-Ausgabe sind `survey_question` und `survey_answer` die Kompone
 
 ### Identitätszuordnung
 
-Jede Identität im [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) wird als ein Objekt exportiert. Das -Objekt enthält den Identity-Namespace (den Schlüssel), die Kennung, den authentifizierten Status und das primäre Flag. Der Namespace wiederholt sich für jede Identität in diesem Namespace.
+Jede Identität im [`identityMap`](https://experienceleague.adobe.com/de/docs/experience-platform/xdm/field-groups/profile/identitymap) wird als ein Objekt exportiert. Das -Objekt enthält den Identity-Namespace (den Schlüssel), die Kennung, den authentifizierten Status und das primäre Flag. Der Namespace wiederholt sich für jede Identität in diesem Namespace.
 
 Nur die Identitätszuordnungsattribute, die als Dimensionen in Ihrer Datenansicht vorhanden sind und die Sie dem Daten-Feed hinzufügen, werden exportiert.
 
