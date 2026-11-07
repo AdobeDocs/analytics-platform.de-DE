@@ -290,7 +290,7 @@ Das Verarbeitungsfenster begrenzt die Persistenz für jede Ablaufeinstellung. We
 
 * [!UICONTROL **Metrik**]: Die Werte bleiben so lange bestehen, bis die ausgewählte Metrik auftritt. Werte, die vor dem Verarbeitungsfenster festgelegt wurden, werden nicht berücksichtigt.
 
-Weitere Informationen zum Festlegen der Persistenz für Dimensionen in der Datenansicht finden Sie unter [Persistenzkomponenteneinstellungen](/help/data-views/component-settings/persistence.md). Weitere Informationen darüber, wie sich die Persistenz in Daten-Feeds von Analysis Workspace unterscheidet, finden [ unter „Grundlegendes zu Datendiskrepanzen zwischen Daten-Feeds und Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#processing-window).
+Weitere Informationen zum Festlegen der Persistenz für Dimensionen in der Datenansicht finden Sie unter [Persistenzkomponenteneinstellungen](/help/data-views/component-settings/persistence.md). Weitere Informationen darüber, wie sich die Persistenz in Daten-Feeds von Analysis Workspace unterscheidet, finden [&#x200B; unter „Grundlegendes zu Datendiskrepanzen zwischen Daten-Feeds und Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#processing-window).
 
 >[!BEGINSHADEBOX]
 
