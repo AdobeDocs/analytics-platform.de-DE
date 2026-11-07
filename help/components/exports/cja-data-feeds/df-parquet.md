@@ -57,7 +57,7 @@ In der folgenden Tabelle werden die Unterschiede zwischen Parquet, CSV, TSV und 
 
 ## Abfragen oder Laden von Parquet-Dateien
 
-Die Daten-Feed-Dateien werden im Parquet-Format an den Cloud-Speicherort bereitgestellt, den Sie beim Erstellen [ Daten-Feeds ausgewählt ](/help/components/exports/cja-data-feeds/create-feed.md).
+Die Daten-Feed-Dateien werden im Parquet-Format an den Cloud-Speicherort bereitgestellt, den Sie beim Erstellen [&#x200B; Daten-Feeds ausgewählt &#x200B;](/help/components/exports/cja-data-feeds/create-feed.md).
 
 Anstatt die Dateien herunterzuladen, verbinden Sie Ihr Data Warehouse normalerweise mit dem Speicherort. Sie können die Parquet-Dateien dann auf eine der folgenden Arten verwenden:
 
