@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 22ec8a3fc4334e49e06986fdf52b27f3e97bef75
+source-git-commit: 6db3ace5744a4277477c2a712c12fdd9a5f57c82
 workflow-type: tm+mt
-source-wordcount: '4056'
-ht-degree: 13%
+source-wordcount: '4331'
+ht-degree: 12%
 ---
 # Erstellen eines Daten-Feeds
 
@@ -70,7 +70,7 @@ Bevor Sie einen Datenfeed erstellen, ist es wichtig, dass Sie die Grundlagen von
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_frequency_granularity"
 >title="Häufigkeit und Granularität"
->abstract="**Versandhäufigkeit** (Live-Feeds): Wie oft der Daten-Feed gesendet wird. Stündliche Sendungen enthalten die Daten einer Stunde; tägliche Sendungen enthalten die Daten eines Tages.<p>Jeder Versand blickt außerdem auf ein rollierendes 30-tägiges Verarbeitungsfenster zurück, um Segmente zu qualifizieren, Sitzungen zu berechnen und Dimensionswerte beizubehalten. Das Verarbeitungsfenster und die Verarbeitungsverzögerung können sich darauf auswirken, welche Ereignisse einbezogen werden.</p><p>**Granularität** (Aufstockungs-Feeds): Das Zeitintervall, das zum Aufteilen historischer Daten verwendet wird. Jeder Chunk enthält die Daten eines Tages und wird so schnell wie möglich gesendet, nicht einmal pro Tag. Dieses Feld ist immer auf „Täglich“ festgelegt und kann nicht geändert werden.</p>"
+>abstract="**Versandhäufigkeit** (Live-Feeds): Wie oft der Daten-Feed gesendet wird. Stündliche Sendungen enthalten die Daten einer Stunde; tägliche Sendungen enthalten die Daten eines Tages.<p>Jeder Versand blickt außerdem auf ein rollierendes 30-tägiges Verarbeitungsfenster zurück, um Segmente zu qualifizieren, Sitzungen zu berechnen und Dimensionswerte beizubehalten. Sowohl das Verarbeitungsfenster als auch die Verarbeitungsverzögerung können sich darauf auswirken, welche Ereignisse eingeschlossen werden.</p><p>**Granularität** (Aufstockungs-Feeds): Das Zeitintervall, das zum Aufteilen historischer Daten verwendet wird. Jeder Chunk enthält die Daten eines Tages und wird so schnell wie möglich gesendet, nicht einmal pro Tag. Dieses Feld ist immer auf „Täglich“ festgelegt und kann nicht geändert werden.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -117,7 +117,7 @@ Bevor Sie einen Datenfeed erstellen, ist es wichtig, dass Sie die Grundlagen von
    | --------- | ---------- |
    | [!UICONTROL **Empfohlen**] | Sortiert Komponenten so, dass empfohlene Komponenten am Anfang der Liste stehen. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrem Unternehmen verwendet werden, werden weiter oben in der Liste angezeigt. |
    | [!UICONTROL **Alphabetisch**] | Sortiert Komponenten alphabetisch. |
-   | [!UICONTROL **Kategorisch**] | Sortiert Komponenten ähnlich wie [!UICONTROL **Empfohlen**] mit dem Unterschied, dass berechnete Metriken und Standardmetriken separat gruppiert werden, anstatt zusammengemischt zu werden. |
+   | [!UICONTROL **Kategorisch**] | Sortiert Komponenten ähnlich wie [!UICONTROL **Empfohlen**] mit dem Unterschied, dass Komponenten separat gruppiert werden, anstatt miteinander gemischt zu werden. |
 
 1. Fügen Sie Komponenten zur Daten-Feed-Konfiguration hinzu. In der linken Leiste werden nur Komponenten angezeigt, die für Daten-Feeds gültig sind.
 
@@ -139,13 +139,7 @@ Bevor Sie einen Datenfeed erstellen, ist es wichtig, dass Sie die Grundlagen von
 
 1. (Optional) Ändern der Ausgabe-ID einer Komponente. Die Ausgabe-ID ist der Spaltenname in der Daten-Feed-Ausgabe.
 
-   Standardmäßig ist die Ausgabe-ID die Komponenten-ID im snake_case. Eine Änderung der Ausgabe-ID wirkt sich nur auf diesen Daten-Feed aus. Die Komponenten-ID in der Datenansicht wird nicht geändert. Die Schemavorschau zeigt sowohl die Komponenten-ID als auch die Ausgabe-ID an.
-
-   1. Bewegen Sie den Mauszeiger über eine Komponente auf der Arbeitsfläche und klicken Sie dann auf das Informationssymbol ![Info](/help/assets/icons/InfoOutline.svg).
-
-   1. Klicken Sie auf das Bearbeitungssymbol ![Bearbeiten](/help/assets/icons/Edit.svg) neben der ID und geben Sie dann eine neue Ausgabe-ID an.
-
-      <!--add screenshot-->
+   Standardmäßig ist die Ausgabe-ID die Komponenten-ID im snake_case. Eine Änderung der Ausgabe-ID wirkt sich nur auf diesen Daten-Feed aus. Die Komponenten-ID in der Datenansicht wird nicht geändert. In der Schemavorschau ist der `id` die Ausgabe-ID.
 
    Ausgabe-IDs müssen:
 
@@ -156,6 +150,36 @@ Bevor Sie einen Datenfeed erstellen, ist es wichtig, dass Sie die Grundlagen von
 
    Ausgabe-IDs können nicht mit `_cja` beginnen, das für die Verwendung in Adobe reserviert ist.
 
+   Sie können Ausgabe-IDs einzeln oder stapelweise ändern:
+
+   +++ So ändern Sie die Ausgabe-ID einer einzelnen Komponente
+
+   1. Bewegen Sie den Mauszeiger über eine Komponente auf der Arbeitsfläche und klicken Sie dann auf das Informationssymbol ![Info](/help/assets/icons/InfoOutline.svg).
+
+   1. Klicken Sie auf das Bearbeitungssymbol ![Bearbeiten](/help/assets/icons/Edit.svg) neben der ID und geben Sie dann eine neue Ausgabe-ID an.
+
+      <!--add screenshot-->
+
+   +++
+
+   +++ So ändern Sie mehrere Ausgabe-IDs gleichzeitig
+
+   1. Wählen Sie unter dem **[!UICONTROL Schemavorschau]** die Option **[!UICONTROL Massenbearbeitung von Ausgabe-IDs]** aus.
+
+   1. Wählen Sie **[!UICONTROL Kopieren]** aus und fügen Sie dann die JSON-Datei in einen Texteditor oder ein anderes Tool ein.
+
+   1. Aktualisieren Sie die `id`, d. h. die Ausgabe-IDs. Komponentennamen (`name`) oder -typen (`type` und `dataType`) können nicht geändert werden.
+
+   1. Fügen Sie die bearbeitete JSON-Datei wieder in das Dialogfeld ein, ersetzen Sie die vorhandene JSON-Datei und wählen Sie dann **[!UICONTROL Validieren]** aus.
+
+   1. Überprüfen Sie die Anzahl der geänderten IDs, der unveränderten IDs und der Fehler. Wenn Fehler auftreten, wählen Sie &quot;**[!UICONTROL &quot; aus]** um diese zu beheben.
+
+   1. Wählen **[!UICONTROL Änderungen anwenden]** aus.
+
+   <!--SME CHECK: How are JSON entries matched to components (order or name)? What happens if entries are reordered, removed, or added? Where are error details shown?-->
+
+   +++
+
 1. (Optional) Verwenden Sie die Bedienfelder **[!UICONTROL Feed]** Zusammenfassung und **[!UICONTROL Schemavorschau]** auf der rechten Seite der Seite, um Ihre Datenstruktur zu überprüfen, bevor Sie fortfahren:
 
    * Die **[!UICONTROL Feed-Zusammenfassung]** zeigt die Live-Anzahl aller hinzugefügten Komponenten, Spalten, Dimensionen und Metriken an.
@@ -164,7 +188,7 @@ Bevor Sie einen Datenfeed erstellen, ist es wichtig, dass Sie die Grundlagen von
 
    <!--add screenshot-->
 
-1. Wählen Sie auf der [!UICONTROL **Versand**] im Abschnitt [!UICONTROL **Planung**] den Feed-Typ aus, den Sie erstellen möchten (Live oder Aufstockung), und geben Sie dann das Reporting-Fenster, die Häufigkeit und andere Konfigurationsoptionen an:
+1. Wählen Sie auf der [!UICONTROL **Versand**] im Abschnitt [!UICONTROL **Planung**] den Feed-Typ aus, den Sie erstellen möchten (Live oder Aufstockung), und geben Sie dann die Häufigkeit, die Verarbeitungsverzögerung und andere Konfigurationsoptionen an:
 
    <!--add screenshot-->
 
@@ -174,10 +198,10 @@ Bevor Sie einen Datenfeed erstellen, ist es wichtig, dass Sie die Grundlagen von
    | [!UICONTROL **Startdatum**] | Das Datum, an dem der Daten-Feed beginnt. Bei Live-Feeds muss dies heute oder ein Datum in der Zukunft sein. Bei Aufstockungs-Feeds muss es sich um ein vergangenes Datum im Datenaufbewahrungsfenster der Datenansicht handeln. Das Startdatum basiert auf der Zeitzone der Datenansicht. |
    | [!UICONTROL **Ablaufdatum**] <br/>Nur für Live-Feeds verfügbar | Das Datum, an dem der Daten-Feed abläuft und nicht mehr ausgeführt wird. Das Datum basiert auf der Zeitzone der Datenansicht. |
    | [!UICONTROL **Enddatum**]<br/> Nur für Aufstockungs-Feeds verfügbar | Das Datum, an dem der Daten-Feed endet. Das Enddatum darf nicht in der Zukunft liegen. Das Datum basiert auf der Zeitzone der Datenansicht. |
-   | [!UICONTROL **Häufigkeit**]<br/> Nur für Live-Feeds verfügbar | Legen Sie fest, wie oft der Daten-Feed gesendet werden soll. Ereignisse mit Zeitstempeln, die in das Häufigkeitsfenster fallen, werden in den Daten-Feed-Versand aufgenommen. <p>Wählen Sie diese Option aus, um Daten aus einer Stunde oder aus Daten aus einem Tag aufzunehmen.</p><ul><li>**Täglich**: Feeds enthalten Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht.</li><li>**Stündlich**: Feeds enthalten Daten für eine einzige Stunde.</li></ul> <p>Jeder Versand verwendet außerdem ein rollierendes 30-tägiges Verarbeitungsfenster, das zum Häufigkeitsfenster führt und dieses einschließt, um Segmente zu qualifizieren, Sitzungen zu berechnen und Dimensionswerte beizubehalten. Das Verarbeitungsfenster und das Feld [!UICONTROL **Verarbeitungsverzögerung**] können sich beide darauf auswirken, welche Ereignisse eingeschlossen werden. Weitere Informationen finden Sie unter [Grundlegendes zum Verarbeitungsfenster](#data-feed-processing-window) und [Grundlegendes zur Verarbeitungsverzögerung](#data-feed-processing-delay).</p> |
+   | [!UICONTROL **Häufigkeit**]<br/> Nur für Live-Feeds verfügbar | Legen Sie fest, wie oft der Daten-Feed gesendet werden soll. Ereignisse mit Zeitstempeln, die in das Häufigkeitsfenster fallen, werden in den Daten-Feed-Versand aufgenommen. <p>Wählen Sie diese Option aus, um Daten aus einer Stunde oder aus Daten aus einem Tag aufzunehmen.</p><ul><li>**Täglich**: Feeds enthalten Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht.</li><li>**Stündlich**: Feeds enthalten Daten für eine einzige Stunde.</li></ul> <p>Jeder Versand verwendet außerdem ein rollierendes 30-tägiges Verarbeitungsfenster, das zum Häufigkeitsfenster führt und dieses einschließt, um Segmente zu qualifizieren, Sitzungen zu berechnen und Dimensionswerte beizubehalten. Sowohl das Verarbeitungsfenster als auch die Einstellung [!UICONTROL **Verarbeitungsverzögerung**] können sich darauf auswirken, welche Ereignisse eingeschlossen werden. Weitere Informationen finden Sie unter [Grundlegendes zum Verarbeitungsfenster](#data-feed-processing-window) und [Grundlegendes zur Verarbeitungsverzögerung](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Granularität**]<br/> Nur für Aufstockungs-Feeds verfügbar | Das Zeitintervall, das zum Aufteilen historischer Daten in Blöcke verwendet wird. Jeder Chunk enthält Daten eines ganzen Tages von Mitternacht bis Mitternacht in der Zeitzone der Datenansicht. <p>Die Granularität bestimmt, wie die Daten gruppiert werden, und nicht, wie oft sie bereitgestellt werden. Aufstockungsdaten werden so schnell wie möglich bereitgestellt, nicht einmal pro Tag.</p><p>Dieses Feld ist immer auf &quot;[!UICONTROL **&quot; festgelegt**] kann nicht geändert werden.</p> |
    | [!UICONTROL **Verarbeitungsverzögerung**] | Die Zeitspanne, die Customer Journey Analytics vor dem Verarbeiten einer Daten-Feed-Datei wartet. Alle verspätet eintreffenden Ereignisse, die während der Verarbeitungsverzögerung eingehen, werden im Daten-Feed berücksichtigt. <p>Wählen Sie eine Verzögerung aus, die lang genug ist, damit die langsamsten Daten in Ihrer Verbindung die Verarbeitung abschließen. Wenn die Verzögerung zu kurz ist, werden Daten, die noch verarbeitet werden, nicht in die Daten-Feed-Datei einbezogen.</p><p>Die minimale Verarbeitungsverzögerung beträgt 2 Stunden. Die Standardeinstellung basiert auf den Datensätzen in Ihrer Verbindung. Wenn das Zusammenfügen beispielsweise aktiviert ist, ist der Standardwert 6 Stunden. Einige Datentypen erfordern eine längere Verzögerung. Die ausgewählte Verzögerung hängt von den Datentypen in Ihrer Verbindung ab, z. B. Streaming-, Batch-, zugeordnete, Lookup- oder Profildaten.</p><p>Bevor Sie diese Option konfigurieren, lesen Sie die Details und Beispiele im folgenden Abschnitt [Grundlegendes zur Verarbeitungsverzögerung](#data-feed-processing-delay).</p> |
-   | [!UICONTROL **Komprimierungsformat**] | Wählen Sie das Komprimierungsformat für die Parquet-Ausgabedateien aus, die an Ihr Cloud-Ziel gesendet werden. Wählen Sie aus den folgenden Formaten:<ul><li>[!UICONTROL **Snappy**]: Schnelle Komprimierung und Dekomprimierung bei moderaten Dateigrößen. Wird von modernen Datenplattformen wie BigQuery, Snowflake und Apache Spark weithin unterstützt.</li><li>[!UICONTROL **GZip**]: Grob kompatibel, auch mit Tools, die Snappy nicht nativ unterstützen. Empfohlen, wenn Ihre nachgelagerte Pipeline einen weithin anerkannten Komprimierungsstandard erfordert.</li><li>[!UICONTROL **Z Standard (Zstd)**]: Hohe Komprimierungseffizienz mit schneller Dekomprimierung. Geeignet, wenn die Minimierung der Dateigröße eine Priorität ist und Ihre Tools Zstd unterstützen.</li></ul> |
+   | [!UICONTROL **Komprimierungsformat**] | Wählen Sie das Komprimierungsformat für die Parquet-Ausgabedateien aus, die an Ihr Cloud-Ziel gesendet werden. Wählen Sie aus den folgenden Formaten:<ul><li>[!UICONTROL **Snappy**]: Schnelle Komprimierung und Dekomprimierung bei moderaten Dateigrößen. Wird von modernen Datenplattformen wie BigQuery, Snowflake und Apache Spark weithin unterstützt.</li><li>[!UICONTROL **GZip**]: Grob kompatibel, auch mit Tools, die Snappy nicht nativ unterstützen. Empfohlen, wenn Ihre nachgelagerte Pipeline einen weithin anerkannten Komprimierungsstandard erfordert.</li><li>[!UICONTROL **Z Standard (Zstd)**]: Hohe Komprimierungseffizienz mit schneller Dekomprimierung. Geeignet, wenn die Minimierung der Dateigröße eine Priorität ist und Ihre Tools Zstd unterstützen.</li></ul><p>Alle Formate komprimieren Daten in jeder Parquet-Datei spaltenweise, sodass Ihr Data Warehouse weiterhin nur die Spalten lesen kann, die eine Abfrage benötigt.</p><p>Informationen zu den Vorteilen von Parquet und zum Abfragen oder Laden der Dateien nach der Bereitstellung finden Sie unter [Arbeiten mit Parquet-Dateien in Daten-Feeds](/help/components/exports/cja-data-feeds/df-parquet.md).</p> |
 
 1. Konfigurieren Sie auf [!UICONTROL **Registerkarte**] im Abschnitt [!UICONTROL **Ziel**] das Ziel, an das die Daten gesendet werden sollen.
 
@@ -250,14 +274,23 @@ Beachten Sie beim Arbeiten mit Sitzungen in Daten-Feeds Folgendes:
 
 ### Dimension-Persistenz
 
-Wenn Sie die Persistenz für eine einzelne Dimension festlegen, legen Sie auch eine Gültigkeit fest, um zu bestimmen, wie lange das Dimensionselement über das Ereignis hinaus bestehen bleibt, für das es festgelegt ist.
+Wenn Sie die Persistenz für eine Dimension festlegen, legen Sie auch eine Gültigkeit fest, die bestimmt, wie lange das Dimensionselement über das Ereignis hinaus bestehen bleibt, für das es festgelegt ist.
 
-Das Verarbeitungsfenster wirkt sich auf die Persistenz der Dimensionen aus, wenn die Gültigkeit auf eine der folgenden Optionen in der Datenansicht eingestellt ist:
+Das Verarbeitungsfenster begrenzt die Persistenz für jede Ablaufeinstellung. Werte, die vor dem Verarbeitungsfenster festgelegt wurden, werden nicht berücksichtigt, es sei denn, sie haben [!UICONTROL **benutzerdefinierte Zeit**] Gültigkeit:
 
-* [!UICONTROL **Fenster „Personen-Reporting**]: Das Verarbeitungsfenster wird zum neuen Berichtsfenster für jede Dimension in der Daten-Feed-Definition, die [!UICONTROL **Fenster „Personen-Reporting**] als Ablaufdatum verwendet.
-* [!UICONTROL **Benutzerdefinierte Zeit**]: Wenn die ausgewählte benutzerdefinierte Zeit über das Verarbeitungsfenster hinausgeht, wird die benutzerdefinierte Zeit ignoriert, und das Verarbeitungsfenster wird für den Ablauf von Dimensionen für jede Dimension in der Daten-Feed-Definition verwendet, die [!UICONTROL **benutzerdefinierte Zeit**] als Ablauf verwendet. Werte, die vor dem Verarbeitungsfenster aufgetreten sind, werden nicht berücksichtigt.
+* [!UICONTROL **Sitzung**]: Die Werte bleiben bis zum Ende der Sitzung bestehen. Wenn eine Sitzung vor dem Verarbeitungsfenster gestartet wurde, werden vor dem Verarbeitungsfenster festgelegte Werte nicht berücksichtigt.
+* [!UICONTROL **Fenster „Personen-Reporting**]: Das 30-tägige Verarbeitungsfenster wird als Ablauf verwendet. Nur Werte, die innerhalb des Verarbeitungsfensters festgelegt wurden, bleiben erhalten.
+* [!UICONTROL **Benutzerdefinierte Zeit**]: Die Werte bleiben für die benutzerdefinierte Zeit bestehen, die für die Dimension festgelegt wurde. Wenn die benutzerdefinierte Zeit länger als das 30-tägige Verarbeitungsfenster ist, schaut der Daten-Feed vor dem Start des Verarbeitungsfensters zurück (bis zu 90 Tage), sodass Dimensionswerte, die vor dem Verarbeitungsfenster festgelegt wurden, auf Ereignisse im Versand beibehalten werden können.
 
-  Weitere Informationen zum Festlegen der Persistenz für Dimensionen in der Datenansicht finden Sie unter [Persistenzkomponenteneinstellungen](/help/data-views/component-settings/persistence.md).
+  <!--FOLLOW-UP: Remove this note when the persistence back-end change (AN-495620) ships. Also remove the matching sentence in df-comparison-workspace.md (Dimension persistence bullet).-->
+
+  >[!NOTE]
+  >
+  >Derzeit sind benutzerdefinierte Zeitabläufe auf das 30-tägige Verarbeitungsfenster beschränkt. Wenn die benutzerdefinierte Zeit länger als 30 Tage ist, wird stattdessen das Verarbeitungsfenster als Ablauf verwendet, und die vor dem Verarbeitungsfenster festgelegten Werte werden nicht berücksichtigt. Die Unterstützung benutzerdefinierter Zeiten, die über das Verarbeitungsfenster hinausgehen, wird bald verfügbar sein.
+
+* [!UICONTROL **Metrik**]: Die Werte bleiben so lange bestehen, bis die ausgewählte Metrik auftritt. Werte, die vor dem Verarbeitungsfenster festgelegt wurden, werden nicht berücksichtigt.
+
+Weitere Informationen zum Festlegen der Persistenz für Dimensionen in der Datenansicht finden Sie unter [Persistenzkomponenteneinstellungen](/help/data-views/component-settings/persistence.md). Weitere Informationen darüber, wie sich die Persistenz in Daten-Feeds von Analysis Workspace unterscheidet, finden [ unter „Grundlegendes zu Datendiskrepanzen zwischen Daten-Feeds und Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#processing-window).
 
 >[!BEGINSHADEBOX]
 
@@ -265,7 +298,7 @@ Das Verarbeitungsfenster wirkt sich auf die Persistenz der Dimensionen aus, wenn
 
 Angenommen, Sie möchten in Ihrem Daten-Feed wissen, welche Marketing-Kampagnen-Benutzer ursprünglich gesehen haben, bevor sie zu Ihrer Site kamen.
 
-Hierzu legen Sie die Persistenz für die Dimension Kampagnen mit Original als Zuordnungsmodell fest.
+Zu diesem Zweck legen Sie die Persistenz für die Dimension Kampagnen mit Original als Zuordnungsmodell und [!UICONTROL **Fenster für Personenberichte**] als Gültigkeit fest.
 
 In diesem Fall wird die ursprüngliche Kampagne nur dann in der Daten-Feed-Ausgabe angezeigt, wenn Benutzende **beide** der folgenden Bedingungen erfüllen:
 
