@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '212'
-ht-degree: 93%
+ht-degree: 90%
 ---
 # Fehlen von Berechtigungen
 
@@ -51,12 +51,12 @@ Beispiel: Nach der Erstellung einer [Verbindung](../connections/overview.md) und
 
 1. Stellen Sie sicher, dass Sie über die richtige Zugriffskontrolle verfügen:
 
-   * Sie müssen über System- oder Produktadministratorberechtigungen für eine Organisation verfügen, die ein Experience Platform-Produkt besitzt. Weiterführende Informationen dazu finden Sie unter [Zugriffskontrolle – Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home#platform-permissions).
+   * Sie müssen über System- oder Produktadministratorberechtigungen für eine Organisation verfügen, die ein Adobe Experience Platform-Produkt besitzt. Weiterführende Informationen dazu finden Sie unter [Zugriffskontrolle – Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home#platform-permissions).
 
-   * Sie müssen eine Benutzerin oder ein Benutzer im Produktprofil „AEP-Default-All-Users“ sein. Fragen Sie Ihre Admins, ob Sie nicht berechtigt sind, sich diesem Profil hinzuzufügen. Weitere Informationen finden Sie unter [Zugriffskontrolle – Hierarchie und Workflow](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home#access-control-hierarchy-and-workflow).
+   * Sie müssen eine Benutzerin oder ein Benutzer im Produktprofil „AEP-Default-All-Users“ sein. Fragen Sie Ihren Administrator oder Ihre Administratorin, falls Sie nicht über die Berechtigungen verfügen, um sich selbst zu diesem Profil hinzuzufügen. Weitere Informationen finden Sie unter [Zugriffskontrolle – Hierarchie und Workflow](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home#access-control-hierarchy-and-workflow).
 
 
-1. Navigieren Sie zur Benutzeroberfläche von Adobe Experience Cloud.
+1. Navigieren Sie zur Adobe Experience Platform-Benutzeroberfläche.
 
 1. Wählen Sie **[!UICONTROL Berechtigungen]** in der linken Leiste aus.
 

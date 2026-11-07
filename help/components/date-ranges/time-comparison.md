@@ -21,13 +21,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a4b5baeec55de64b1fbaf009b9da34c93cf12f24
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 798
-ht-degree: 75%
-
+source-wordcount: '798'
+ht-degree: 73%
 ---
-
 # Datumsvergleich
 
 Mit dem Datumsvergleich in Analysis Workspace können Sie eine beliebige Spalte mit einem Datumsbereich verwenden und einen allgemeinen Datumsvergleich erstellen, z. B. Jahres-, Quartals- oder Monatsvergleich.
@@ -89,9 +87,9 @@ Sie können jeder Spalte in einer Tabelle jetzt einen Zeitraum hinzufügen. Auf 
    >
    >Wenn Sie eine benutzerdefinierte Anzahl an Tagen auswählen, z. B. 7.–20. Oktober (ein Zeitraum von 14 Tagen), stehen nur zwei Optionen zur Verfügung: **[!UICONTROL Vorhergehende 14 Tage vor diesem Datumsbereich]** und **[!UICONTROL Benutzerdefinierter Datumsbereich vor diesem Datumsbereich]**.
 
-1. Der Zeitraum wird am Anfang der ausgewählten Spalte eingefügt:
+1. Der Zeitraum wird oben in der ausgewählten Spalte eingefügt:
 
-   ![Freiformtabelle mit Vorfällen für den aktuellen Kalenderzeitraum und den vorherigen Kalendermonat.](assets/add-time-period-column2.png)
+   ![Freiformtabelle mit Vorkommnissen für den aktuellen Kalenderzeitraum und den vorherigen Kalendermonat.](assets/add-time-period-column2.png)
 
 1. Sie können so viele Zeitspalten hinzufügen, wie Sie möchten, sowie verschiedene Datumsbereiche kombinieren:
 

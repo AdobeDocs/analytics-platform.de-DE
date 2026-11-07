@@ -24,13 +24,11 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 5381
+source-wordcount: '5381'
 ht-degree: 95%
-
 ---
-
 # Erweiterte Funktionen
 
 Mit dem [Generator für berechnete Metriken](cm-workflow/cm-build-metrics.md) können Sie statistische und mathematische Funktionen anwenden. In diesem Artikel werden die erweiterten Funktionen und ihre Definitionen alphabetisch aufgelistet.
@@ -45,11 +43,11 @@ Gegebenenfalls wird einer Funktion eine Anmerkung mit dem Typ der Funktion hinzu
 
 ## Was bedeutet der Parameter „include-zeros“?
 
-Damit wird angegeben, ob Nullen in die Berechnung einbezogen werden sollen. In manchen Fällen bedeutet eine Null *nichts*, in anderen Fällen kann sie aber auch wichtig sein.
+Damit wird festgelegt, ob Nullen in die Berechnung einbezogen werden. In manchen Fällen bedeutet eine Null *nichts*, in anderen Fällen kann sie aber auch wichtig sein.
 
 Beispiel: Wenn Sie mit einer Umsatzmetrik arbeiten und dem Bericht dann eine Seitenansichtsmetrik hinzufügen, gibt es plötzlich mehr Zeilen für den Umsatz, die alle Nullwerte enthalten. Sie möchten wahrscheinlich nicht, dass sich diese zusätzliche Metrik auf Berechnungen wie **[ARITHMETISCHES MITTEL](cm-functions.md#mean)**, **[ZEILENMINIMUM](cm-functions.md#row-min)**, **[QUARTIL](cm-functions.md#quartile)** usw. auswirkt, die sich in der Umsatzspalte befinden. In diesem Fall müssen Sie den Parameter `include-zeros` aktivieren.
 
-Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse haben und eine Metrik einen höheren Durchschnitt oder ein höheres Minimum aufweist, da einige der Zeilen Nullen sind.  In diesem Fall können Sie festlegen, dass der Parameter nicht auf Nullen überprüft werden soll.
+Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse haben und eine Metrik einen höheren Durchschnitt oder ein höheres Minimum aufweist, da einige der Zeilen Nullen sind.  In diesem Fall können Sie darauf verzichten, den Parameter zum Einschließen von Nullen zu aktivieren.
 
 
 ## Und {#and}
@@ -59,17 +57,17 @@ Ein alternatives Szenario besteht darin, dass Sie zwei Metriken von Interesse ha
 >[!CONTEXTUALHELP]
 >id="functions-and"
 >title="Und"
->abstract="Verbindung. „Ungleich null“ gilt als „True“ und „Gleich null“ gilt als „False“. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
+>abstract="Verbindung. „Ungleich null“ gilt als „wahr“ und „gleich null“ gilt als „falsch“. Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL AND(logical_test)]**
 
-Verbindung. „Ungleich null“ gilt als „True“ und „Gleich null“ gilt als „False“. Die Ausgabe ist entweder 0 (False) oder 1 (True).
+Verbindung. „Ungleich null“ gilt als „wahr“ und „gleich null“ gilt als „falsch“. Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr).
 
 | Argument | Beschreibung |
 |---|---|
-| logical_test | Erfordert mindestens einen Parameter, kann jedoch eine beliebige Anzahl von Parametern verwenden. Jeder Wert oder Ausdruck, der als TRUE oder FALSE ausgewertet werden kann |
+| logical_test | Erfordert mindestens einen Parameter, kann jedoch eine beliebige Anzahl von Parametern verwenden. Jeder Wert oder Ausdruck, der als „wahr“ oder „falsch“ ausgewertet werden kann |
 
 
 ## Ungefähre Zählung Verschiedener {#approximate_count_distinct}
@@ -79,14 +77,14 @@ Verbindung. „Ungleich null“ gilt als „True“ und „Gleich null“ gilt a
 >[!CONTEXTUALHELP]
 >id="functions-count-distinct-metric"
 >title="Ungefähre Zählung Verschiedener"
->abstract="Gibt die ungefähre Anzahl von Dimensionselementen für die ausgewählte Dimension zurück."
+>abstract="Gibt die ungefähre Anzahl verschiedener Dimensionselemente für die ausgewählte Dimension zurück."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL APPROXIMATE COUNT DISTINCT(dimension)]**
 
 
-Gibt die ungefähre Anzahl von Dimensionselementen für die ausgewählte Dimension zurück.
+Gibt die ungefähre Anzahl verschiedener Dimensionselemente für die ausgewählte Dimension zurück.
 
 
 | Argument | Beschreibung |
@@ -106,14 +104,14 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 >[!CONTEXTUALHELP]
 >id="functions-acos"
 >title="Arcuscosinus"
->abstract="Gibt den Arcuscosinus (d. h. die Umkehrung des Cosinus) einer Metrik zurück. Der Arcuscosinus ist der Winkel, dessen Cosinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich von 0 (Null) bis pi angegeben. Wenn Sie das Ergebnis von Radianten in Grad umrechnen möchten, multiplizieren Sie es mit 180/PI()."
+>abstract="Gibt den Arcuscosinus (d. h. die Umkehrung des Cosinus) einer Metrik zurück. Der Arcuscosinus ist der Winkel, dessen Cosinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird im Bogenmaß im Bereich von 0 (Null) bis pi angegeben. Wenn Sie das Ergebnis von Radianten in Grad umrechnen möchten, multiplizieren Sie es mit 180/PI()."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINE(metric)]**
 
 
-[!BADGE Zeile]{type="Neutral"} Gibt den Arkuscosinus (die Umkehrung des Cosinus) einer Metrik zurück. Der Arcuscosinus ist der Winkel, dessen Cosinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich von 0 (Null) bis pi angegeben. Wenn Sie das Ergebnis von Radianten in Grad umrechnen möchten, multiplizieren Sie es mit 180/PI().
+[!BADGE Zeile]{type="Neutral"} Gibt den Arkuscosinus (die Umkehrung des Cosinus) einer Metrik zurück. Der Arcuscosinus ist der Winkel, dessen Cosinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird im Bogenmaß im Bereich von 0 (Null) bis pi angegeben. Wenn Sie das Ergebnis von Radianten in Grad umrechnen möchten, multiplizieren Sie es mit 180/PI().
 
 
 | Argument | Beschreibung |
@@ -129,14 +127,14 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 >[!CONTEXTUALHELP]
 >id="functions-asin"
 >title="Arcussinus"
->abstract="Gibt den Arcussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arcussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI()"
+>abstract="Gibt den Arcussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird im Bogenmaß im Bereich von -pi/2 bis pi/2 angegeben. Um den Arcussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI()"
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE Zeile &#x200B;]{type="Neutral"} Gibt den Arkussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
+[!BADGE Zeile &#x200B;]{type="Neutral"} Gibt den Arkussinus (die Umkehrung des Sinus) einer Zahl zurück. Der Arcussinus ist der Winkel, dessen Sinus eine gegebene Zahl ist. Der zurückgegebene Winkel wird im Bogenmaß im Bereich von -pi/2 bis pi/2 angegeben. Um den Arkussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
 
 
 | Argument | Beschreibung |
@@ -152,14 +150,14 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 >[!CONTEXTUALHELP]
 >id="functions-atan"
 >title="Arkustangens"
->abstract="Gibt den Arkustangens, d. h. die Umkehrung des Tangens, einer Zahl zurück. Der Arkustangens ist der Winkel, dessen Tangens eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkustangens in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI()."
+>abstract="Gibt den Arkustangens, d. h. die Umkehrung des Tangens, einer Zahl zurück. Der Arkustangens ist der Winkel, dessen Tangens eine gegebene Zahl ist. Der zurückgegebene Winkel wird im Bogenmaß im Bereich von -pi/2 bis pi/2 angegeben. Um den Arkustangens in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI()."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
 
-[!BADGE Zeile]{type="Neutral"} Gibt den Arkustangens (die Umkehrung des Tangens) einer Zahl zurück. Der Arkustangens ist der Winkel, dessen Tangens eine gegebene Zahl ist. Der zurückgegebene Winkel wird in Radiant im Bereich -pi/2 bis pi/2 angegeben. Um den Arkustangens in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
+[!BADGE Zeile]{type="Neutral"} Gibt den Arkustangens (die Umkehrung des Tangens) einer Zahl zurück. Der Arkustangens ist der Winkel, dessen Tangens eine gegebene Zahl ist. Der zurückgegebene Winkel wird im Bogenmaß im Bereich von -pi/2 bis pi/2 angegeben. Um den Arkustangens in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI().
 
 
 | Argument | Beschreibung |
@@ -175,18 +173,18 @@ Ein gängiger Anwendungsfall für diese Funktion ist, wenn Sie eine ungefähre A
 >[!CONTEXTUALHELP]
 >id="functions-cdf-t"
 >title="Cdf-T"
->abstract="Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable mit studentscher t-Verteilung mit n Freiheitsgraden einen z-Wert hat, der unter dem Spaltenwert liegt."
+>abstract="Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable mit Student-t-Verteilung mit n Freiheitsgraden einen Z-Wert hat, der unter dem Spaltenwert liegt."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T(metric, number)]**
 
-Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable mit studentscher t-Verteilung mit n Freiheitsgraden einen z-Wert hat, der unter dem Spaltenwert liegt.
+Gibt die Wahrscheinlichkeit dafür zurück, dass eine Zufallsvariable mit Student-t-Verteilung mit n Freiheitsgraden einen Z-Wert hat, der unter dem Spaltenwert liegt.
 
 | Argument | Beschreibung |
 |---|---|
-| metric | Die Metrik, für die die kumulative Verteilungsfunktion der studentischen t-Verteilung angezeigt werden soll |
-| number | Die Freiheitsgrade für die kumulative Verteilungsfunktion der studentischen t-Verteilung |
+| metric | Die Metrik, für die Sie die kumulative Verteilungsfunktion der studentischen t-Verteilung erhalten möchten |
+| number | Die Freiheitsgrade für die kumulative Verteilungsfunktion der Student-t-Verteilung |
 
 ### Beispiel
 
@@ -263,14 +261,14 @@ CDF-Z(-3) ? 0.0013499
 
 Berechnet die jederzeit gültige Konfidenz mithilfe der WASKR-Methode, wie in [Zeiteinheitlicher zentraler Grenzwertsatz und asymptotische Konfidenzintervalle (Time-uniform central limit theory and asymptotic confidence sequences)](https://arxiv.org/pdf/2103.06476) beschrieben.
 
-Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Bei einer höheren Konfidenz deutet weniger darauf hin, dass die Annahme stimmt, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
+Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Eine höhere Konfidenz liefert weniger Hinweise darauf, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
 
 | Argument | Beschreibung |
 | --- | --- |
 | normalizing-container | Die Grundlage (Personen, Sitzungen oder Ereignisse) für die Ausführung eines Tests. |
-| success-metric | Die Metrik oder Metriken, die eine Benutzerin bzw. ein Benutzer verwendet. |
+| success-metric | Die Metrik oder Metriken, mit denen ein Benutzer oder eine Benutzerin Varianten vergleicht. |
 | control | Die Variante, mit der alle anderen Varianten im Experiment verglichen werden. Geben Sie den Namen des Dimensionselements der Kontrollvariante ein. |
-| significance-threshold | Der Schwellenwert in dieser Funktion ist auf den Standardwert 95 % eingestellt. |
+| significance-threshold | Der Schwellenwert in dieser Funktion ist standardmäßig auf 95 % festgelegt. |
 
 
 ## Confidence (Lower) {#confidence-lower}
@@ -288,14 +286,14 @@ Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine be
 
 Berechnet die jederzeit gültige **niedrigere** Konfidenz mithilfe der WASKR-Methode, wie in [Zeiteinheitlicher zentraler Grenzwertsatz und asymptotische Konfidenzintervalle (Time-uniform central limit theory and asymptotic confidence sequences)](https://arxiv.org/pdf/2103.06476) beschrieben.
 
-Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Bei einer höheren Konfidenz deutet weniger darauf hin, dass die Annahme stimmt, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
+Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Eine höhere Konfidenz liefert weniger Hinweise darauf, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
 
 | Argument | Beschreibung |
 | --- | --- |
 | normalizing-container | Die Grundlage (Personen, Sitzungen oder Ereignisse) für die Ausführung eines Tests. |
-| success-metric | Die Metrik oder Metriken, die eine Benutzerin bzw. ein Benutzer verwendet. |
+| success-metric | Die Metrik oder Metriken, mit denen ein Benutzer oder eine Benutzerin Varianten vergleicht. |
 | control | Die Variante, mit der alle anderen Varianten im Experiment verglichen werden. Geben Sie den Namen des Dimensionselements der Kontrollvariante ein. |
-| significance-threshold | Der Schwellenwert in dieser Funktion ist auf den Standardwert 95 % eingestellt. |
+| significance-threshold | Der Schwellenwert in dieser Funktion ist standardmäßig auf 95 % festgelegt. |
 
 ## Confidence (Upper) {#confidence-upper}
 
@@ -312,14 +310,14 @@ Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine be
 
 Berechnet die jederzeit gültige **höhere** Konfidenz mithilfe der WASKR-Methode, wie in [Zeiteinheitlicher zentraler Grenzwertsatz und asymptotische Konfidenzintervalle (Time-uniform central limit theory and asymptotic confidence sequences)](https://arxiv.org/pdf/2103.06476) beschrieben.
 
-Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Bei einer höheren Konfidenz deutet weniger darauf hin, dass die Annahme stimmt, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
+Konfidenz ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Eine höhere Konfidenz liefert weniger Hinweise darauf, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
 
 | Argument | Beschreibung |
 | --- | --- |
 | normalizing-container | Die Grundlage (Personen, Sitzungen oder Ereignisse) für die Ausführung eines Tests. |
-| success-metric | Die Metrik oder Metriken, die eine Benutzerin bzw. ein Benutzer verwendet. |
+| success-metric | Die Metrik oder Metriken, mit denen ein Benutzer oder eine Benutzerin Varianten vergleicht. |
 | control | Die Variante, mit der alle anderen Varianten im Experiment verglichen werden. Geben Sie den Namen des Dimensionselements der Kontrollvariante ein. |
-| significance-threshold | Der Schwellenwert in dieser Funktion ist auf den Standardwert 95 % eingestellt. |
+| significance-threshold | Der Schwellenwert in dieser Funktion ist standardmäßig auf 95 % festgelegt. |
 
 
 ## Cosine {#cosine}
@@ -372,17 +370,17 @@ Gibt die positive Kubikwurzel einer Zahl zurück. Die Kubikwurzel einer Zahl ist
 >[!CONTEXTUALHELP]
 >id="functions-cumul"
 >title="Kumulativ"
->abstract="Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente oder x summiert. Wenn n &lt; 0, werden alle vorhergehenden Elemente summiert."
+>abstract="Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x summiert. Wenn n &lt; 0, werden die vorhergehenden Elemente summiert."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE(number, metric)]**
 
-Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente oder x summiert. Wenn n &lt; 0, werden alle vorhergehenden Elemente summiert.
+Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x summiert. Wenn n &lt; 0, werden alle vorhergehenden Elemente summiert.
 
 | Argument | Beschreibung |
 | --- | --- |
-| number | Die letzte Anzahl N von Zeilen, für die die Summe zurückgegeben werden soll. Wenn N &lt;= 0 ist, werden alle vorherigen Zeilen verwendet. |
+| number | Die letzten N Zeilen, für die die Summe zurückgegeben werden soll. Wenn N &lt;= 0 ist, werden alle vorherigen Zeilen verwendet. |
 | metric | Die Metrik, für die die kumulative Summe angezeigt werden soll. |
 
 ### Beispiele
@@ -401,22 +399,22 @@ Gibt die Summe der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werd
 >[!CONTEXTUALHELP]
 >id="functions-cumul-avg"
 >title="Cumulative (Average)"
->abstract="Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente oder x summiert. Wenn n &lt; 0, werden alle vorhergehenden Elemente summiert."
+>abstract="Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x summiert. Wenn n &lt; 0, werden alle vorhergehenden Elemente summiert."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE AVERAGE(number, metric)]**
 
-Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente oder x summiert. Wenn n &lt; 0, werden alle vorhergehenden Elemente summiert.
+Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 ist, werden die letzten n Elemente von x summiert. Wenn n &lt; 0, werden alle vorhergehenden Elemente summiert.
 
 | Argument | Beschreibung |
 | --- | --- |
-| number | Die letzte Anzahl N von Zeilen, für die der Durchschnitt zurückgegeben werden soll. Wenn N &lt;= 0 ist, werden alle vorherigen Zeilen verwendet. |
+| number | Die letzten N Zeilen, für die der Durchschnitt zurückgegeben werden soll. Wenn N &lt;= 0 ist, werden alle vorherigen Zeilen verwendet. |
 | metric | Die Metrik, für die der kumulative Durchschnitt ermittelt werden soll. |
 
 >[!NOTE]
 >
->Diese Funktion funktioniert nicht mit Satzmetriken wie Umsatz pro Person. Die Funktion ermittelt den Durchschnitt der Sätze, anstatt den Umsatz der letzten N zu summieren und die Personen der letzten N zu summieren und dann zu teilen. <br/>Verwenden Sie stattdessen [**[!UICONTROL CUMULATIVE(Revenue)]**](#cumulative) ![Divide](/help/assets/icons/Divide.svg) [**[!UICONTROL CUMULATIVE(person)]**](#cumulative).
+>Diese Funktion funktioniert nicht mit Ratenmetriken wie Umsatz pro Person. Die Funktion bildet den Durchschnitt der Kennzahlen, anstatt den Umsatz der letzten N Zeilen zu summieren, die Personen der letzten N Zeilen zu summieren und anschließend diese Werte zu dividieren. <br/>Verwenden Sie stattdessen [**[!UICONTROL CUMULATIVE(Revenue)]**](#cumulative) ![Divide](/help/assets/icons/Divide.svg) [**[!UICONTROL CUMULATIVE(person)]**](#cumulative).
 >
 
 
@@ -427,13 +425,13 @@ Gibt den Durchschnitt der letzten n Elemente der Spalte x zurück. Wenn n > 0 is
 >[!CONTEXTUALHELP]
 >id="functions-eq"
 >title="Gleich"
->abstract="Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
+>abstract="Gleich. Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EQUAL()]**
 
-Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
+Gleich. Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr).
 
 
 | Argument | Beschreibung |
@@ -488,8 +486,8 @@ Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
-| metric_Y | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
+| metric_X | Eine Metrik, die Sie als unabhängige Daten festlegen möchten. |
+| metric_Y | Eine Metrik, die Sie als abhängige Daten festlegen möchten. |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -511,8 +509,8 @@ Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -535,8 +533,8 @@ Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -567,13 +565,13 @@ Gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-gt"
 >title="Größer als"
->abstract="Die Ausgabe ist entweder 0 (False) oder 1 (True)."
+>abstract="Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN()]**
 
-Die Ausgabe ist entweder 0 (False) oder 1 (True).
+Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr).
 
 | Argument | Beschreibung |
 |---|---|
@@ -592,13 +590,13 @@ Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-ge"
 >title="Größer als oder gleich"
->abstract="Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
+>abstract="Größer als oder gleich. Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL GREATER THAN OR EQUAL()]**
 
-Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
+Größer als oder gleich. Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr).
 
 | Argument | Beschreibung |
 |---|---|
@@ -681,7 +679,7 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-if"
 >title="Wenn"
->abstract="Wenn der Bedingungsparameter einen Wert ungleich null (true) aufweist, ist das Ergebnis der Wert des Parameters „value_if_true“. Andernfalls ist es der Wert des Parameters „value_if_false“."
+>abstract="Wenn der Bedingungsparameter einen Wert ungleich null (wahr) aufweist, ist das Ergebnis der Wert des Parameters „value_if_true“. Andernfalls ist es der Wert des Parameters „value_if_false“."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -693,7 +691,7 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 
 | Argument | Beschreibung |
 |---|---|
-| logical_test | Erforderlich. Jeder Wert oder Ausdruck, der als TRUE oder FALSE ausgewertet werden kann |
+| logical_test | Erforderlich. Jeder Wert oder Ausdruck, der als „wahr“ oder „falsch“ ausgewertet werden kann |
 | value_if_true | Der Wert, der zurückgegeben werden soll, wenn das logical_test-Argument als TRUE ausgewertet wird. (Dieses Argument ist standardmäßig auf 0 gesetzt, wenn es nicht enthalten ist.) |
 | value_if_false | Der Wert, der zurückgegeben werden soll, wenn das logical_test-Argument FALSE ergibt. (Dieses Argument ist standardmäßig auf 0 gesetzt, wenn es nicht enthalten ist.) |
 
@@ -705,13 +703,13 @@ Größer als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-lt"
 >title="Weniger als"
->abstract="Die Ausgabe ist entweder 0 (False) oder 1 (True)."
+>abstract="Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN()]**
 
-Die Ausgabe ist entweder 0 (False) oder 1 (True).
+Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr).
 
 | Argument | Beschreibung |
 |---|---|
@@ -730,13 +728,13 @@ Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-le"
 >title="Kleiner als oder gleich"
->abstract="Kleiner als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
+>abstract="Kleiner als oder gleich. Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL LESS THAN OR EQUAL()]**
 
-Kleiner als oder gleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
+Kleiner als oder gleich. Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr).
 
 | Argument | Beschreibung |
 |---|---|
@@ -767,7 +765,7 @@ Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert.
 | Argument | Beschreibung |
 | --- | --- |
 | normalizing-container | Die Grundlage (Personen, Sitzungen oder Ereignisse) für die Ausführung eines Tests. |
-| success-metric | Die Metrik oder Metriken, die eine Benutzerin bzw. ein Benutzer verwendet. |
+| success-metric | Die Metrik oder Metriken, mit denen ein Benutzer oder eine Benutzerin Varianten vergleicht. |
 | control | Die Variante, mit der alle anderen Varianten im Experiment verglichen werden. Geben Sie den Namen des Dimensionselements der Kontrollvariante ein. |
 
 
@@ -816,8 +814,8 @@ Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert.
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -841,8 +839,8 @@ Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert.
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -864,8 +862,8 @@ Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert.
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -888,7 +886,7 @@ Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert.
 
 | Argument | Beschreibung |
 |---|---|
-| metric | Die positive reale Zahl, deren Logarithmus zur Basis 10 gewünscht ist |
+| metric | Die positive reelle Zahl, für die der Logarithmus zur Basis 10 berechnet werden soll. |
 
 
 ## Logarithmische Regression: Korrelationskoeffizient {#log-regression-correlation-coefficient}
@@ -897,8 +895,8 @@ Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert.
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-log"
->title="Logarithmische Regression: Korrelationskoeffizient"
->abstract="Logistische Regression: Y = a ln(X) + b. Gibt den Korrelationskoeffizienten zurück."
+>title="Log-Regression: Korrelationskoeffizient"
+>abstract="Log-Regression: Y = a ln(X) + b. Gibt den Korrelationskoeffizienten zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -920,7 +918,7 @@ Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert.
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-log"
 >title="Logarithmische Regression: Schnittpunkt"
->abstract="Logistische Regression: Y = a ln(X) + b. Gibt b zurück."
+>abstract="Log-Regression: Y = a ln(X) + b. Gibt b zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -930,8 +928,8 @@ Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert.
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -943,7 +941,7 @@ Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert.
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-log"
 >title="Logarithmische Regression: Vorhersage für Y"
->abstract="Logistische Regression: Y = a ln(X) + b. Gibt Y zurück."
+>abstract="Log-Regression: Y = a ln(X) + b. Gibt Y zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -953,8 +951,8 @@ Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert.
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -966,7 +964,7 @@ Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert.
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-log"
 >title="Logistische Regression: Steigung"
->abstract="Logistische Regression: Y = a ln(X) + b. Gibt a zurück."
+>abstract="Log-Regression: Y = a ln(X) + b. Gibt a zurück."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -976,8 +974,8 @@ Der Lift (Anstieg) des Verhältnisses im Vergleich zum Kontrollwert.
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -1010,13 +1008,13 @@ Gibt den natürlichen Logarithmus einer Zahl zurück. Natürliche Logarithmen ba
 >[!CONTEXTUALHELP]
 >id="functions-not"
 >title="Nicht"
->abstract="Negation als boolescher Wert. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
+>abstract="Negation als boolescher Wert. Die Ausgabe ist entweder eine 0 (falsch) oder 1 (wahr)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL NOT(logical)]**
 
-Negation als boolescher Wert. Die Ausgabe ist entweder 0 (False) oder 1 (True).
+Negation als boolescher Wert. Die Ausgabe ist entweder eine 0 (falsch) oder 1 (wahr).
 
 | Argument | Beschreibung |
 |---|---|
@@ -1031,14 +1029,14 @@ Negation als boolescher Wert. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-ne"
 >title="Not Equal"
->abstract="Ungleich. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
+>abstract="Ungleich. Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL NOT EQUAL()]**
 
 
-Ungleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
+Ungleich. Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr).
 
 
 | Argument | Beschreibung |
@@ -1058,24 +1056,24 @@ Ungleich. Die Ausgabe ist entweder 0 (False) oder 1 (True).
 >[!CONTEXTUALHELP]
 >id="functions-or"
 >title="Oder"
->abstract="ODER-Verknüpfung. „Ungleich null“ gilt als „True“ und „Gleich null“ gilt als „False“. Die Ausgabe ist entweder 0 (False) oder 1 (True)."
+>abstract="ODER-Verknüpfung. „Ungleich null“ gilt als „wahr“ und „gleich null“ gilt als „falsch“. Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL OR(logical_test)]**
 
 
-[!BADGE Zeile]{type="Neutral"} Oder-Verknüpfung. „Ungleich null“ gilt als „True“ und „Gleich null“ gilt als „False“. Die Ausgabe ist entweder 0 (False) oder 1 (True).
+[!BADGE Zeile]{type="Neutral"} Oder-Verknüpfung. „Ungleich null“ gilt als „wahr“ und „gleich null“ gilt als „falsch“. Die Ausgabe ist entweder 0 (falsch) oder 1 (wahr).
 
 
 | Argument | Beschreibung |
 |---|---|
-| logical_test | Erfordert mindestens einen Parameter, kann jedoch eine beliebige Anzahl Parameter annehmen. Jeder Wert oder Ausdruck, der als TRUE oder FALSE ausgewertet werden kann |
+| logical_test | Erfordert mindestens einen Parameter, kann jedoch eine beliebige Anzahl Parameter annehmen. Jeder Wert oder Ausdruck, der als „wahr“ oder „falsch“ ausgewertet werden kann |
 
 
 >[!NOTE]
 >
->0 (null) bedeutet „Falsch“ und jeder andere Wert „Wahr“.
+>0 (Null) bedeutet „Falsch“ und jeder andere Wert „Wahr“.
 
 
 ## Pi {#pi}
@@ -1136,8 +1134,8 @@ Gibt Pi zurück: 3,14159...
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -1158,8 +1156,8 @@ Gibt Pi zurück: 3,14159...
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -1181,19 +1179,19 @@ Gibt Pi zurück: 3,14159...
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
 
-## Quadratische Regression: Korrelationskoeffizient {#quadratic-regression-correlation-coefficient}
+## Quadratische Regression: Korrelation (Korrelationskoeffizient) {#quadratic-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-quadratic"
->title="Quadratische Regression: Korrelationskoeffizient"
+>title="Quadratische Regression: Korrelation (Korrelationskoeffizient)"
 >abstract="Quadratische Regression: Y = (a + bX) ^ 2. Gibt den Korrelationskoeffizienten zurück."
 
 <!-- markdownlint-enable MD034 -->
@@ -1225,8 +1223,8 @@ Gibt Pi zurück: 3,14159...
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -1247,8 +1245,8 @@ Gibt Pi zurück: 3,14159...
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -1269,8 +1267,8 @@ Gibt Pi zurück: 3,14159...
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -1314,8 +1312,8 @@ Gibt Pi zurück: 3,14159...
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -1336,8 +1334,8 @@ Gibt Pi zurück: 3,14159...
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -1358,8 +1356,8 @@ Gibt Pi zurück: 3,14159...
 
 | Argument | Beschreibung |
 |---|---|
-| metric_X | Eine Metrik, die als abhängiges Datenelement zugewiesen werden soll |
-| metric_Y | Die Metrik, die als unabhängiges Datenelement zugewiesen werden soll |
+| metric_X | Eine Metrik, die als abhängige Daten zugewiesen werden soll |
+| metric_Y | Die Metrik, die als unabhängige Daten zugewiesen werden soll |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 
@@ -1380,7 +1378,7 @@ Berechnet eine Schätzung der Stichprobenvarianz anhand der Formel (sum(metric^2
 | Argument | Beschreibung |
 | --- | --- |
 | normalizing-container | Die Grundlage (Personen, Sitzungen oder Ereignisse) für die Ausführung eines Tests. |
-| success-metric | Die Metrik oder Metriken, die eine Benutzerin bzw. ein Benutzer verwendet. |
+| success-metric | Die Metrik oder Metriken, mit denen ein Benutzer oder eine Benutzerin Varianten vergleicht. |
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1460,7 +1458,7 @@ Die Signatur ist T-TEST(metric, degrees, tails). Darunter wird einfach ***m*** !
 - ***n*** ist der Freiheitsgrad. Dies sollte eine konstante Zahl für den gesamten Bericht sein, d. h., sie ändert sich nicht Zeile für Zeile.
 - ***X*** ist die t-Test-Statistik. Hierbei handelt es sich häufig um eine auf einer Metrik basierende Formel (z. B. **[Z-WERT](#z-score)**), die in jeder Zeile bewertet wird.
 
-Der Rückgabewert ist die Wahrscheinlichkeit, die Teststatistik x zu erhalten, bei gegebenen Freiheitsgraden und der Anzahl an Seiten.
+Der Rückgabewert ist die Wahrscheinlichkeit, die Teststatistik x zu erhalten, bei gegebenen Freiheitsgraden und der Anzahl der Verteilungsschwänze.
 
 ### Beispiele
 
@@ -1516,7 +1514,7 @@ Gibt den Tangens des gegebenen Winkels zurück. Wenn der Winkel in Grad angegebe
 
 | Argument | Beschreibung |
 |---|---|
-| metric | Die Metrik, für die der z-Wert angezeigt werden soll |
+| metric | Die Metrik, für die Sie den Z-Wert berechnen möchten |
 | include_zeros | Gibt an, ob Nullwerte in die Berechnungen einbezogen werden sollen oder nicht |
 
 Ein z-Wert von 0 (null) gibt an, dass der Wert mit dem arithmetischen Mittel identisch ist. Ein Z-Score kann positiv oder negativ sein und angeben, ob er über oder unter dem Mittelwert liegt und um wie viele Standardabweichungen es sich handelt.
@@ -1551,7 +1549,7 @@ Führt einen n-seitigen z-Test mit einem z-Wert von x durch.
 | Argument | Beschreibung |
 |---|---|
 | metric | Die Metrik, für die ein z-Test durchgeführt werden soll |
-| Longtails | Die Länge des Longtails, der für die Durchführung des z-Tests verwendet werden soll |
+| Longtails | Die Länge des Longtails, der für die Durchführung des Z‑Tests verwendet werden soll |
 
 >[!NOTE]
 >
@@ -1765,7 +1763,7 @@ TANH(metric)
 
 |  Argument  | Description  |
 |---|---|
-|  *metric* | The angle in radians for which you want to find the hyperbolic tanget.  |
+|  *metric* | The angle in radians for which you want to find the hyperbolic tangent.  |
 
 ## IF (Row)
 

@@ -17,13 +17,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 219
-ht-degree: 91%
-
+source-wordcount: '219'
+ht-degree: 87%
 ---
-
 # Farbpaletten für die Visualisierung {#visualization-color-palettes}
 
 <!-- markdownlint-disable MD034 -->
@@ -36,7 +34,7 @@ ht-degree: 91%
 <!-- markdownlint-enable MD034 -->
 
 
-Sie können die in Workspace verwendete Farbpalette für die Visualisierung ändern. Sie können eine vordefinierte Farbpalette auswählen oder eine eigene Palette festlegen, die den Markenfarben Ihres Unternehmens entspricht. Diese Funktion wirkt sich auf die meisten Visualisierungen in Workspace aus. Die Zusammenfassungsänderung, die bedingte Formatierung in Freiformtabellen und die Zuordnungsvisualisierung sind davon jedoch **nicht** betroffen.
+Sie können die in Workspace verwendete Farbpalette für die Visualisierung ändern. Sie können eine vordefinierte Farbpalette auswählen oder eine eigene Palette festlegen, die dem Branding Ihrer Firma entspricht. Diese Funktion wirkt sich auf die meisten Visualisierungen in Workspace aus. Die Zusammenfassungsänderung, die bedingte Formatierung in Freiformtabellen und die Zuordnungsvisualisierung sind davon jedoch **nicht** betroffen.
 
 >[!NOTE]
 >
@@ -46,7 +44,7 @@ Sie können die in Workspace verwendete Farbpalette für die Visualisierung änd
 
 Beachten Sie:
 
-* Es stehen sechs voreingestellte Farbpaletten zur Auswahl. Die Standardpalette und die zweite aufgeführte Palette wurden für Kontrast optimiert und sind bei Farbenblindheit besser geeignet.
+* Es stehen sechs voreingestellte Farbpaletten zur Auswahl. Die Standardpalette und die zweite aufgeführte Palette wurden für Kontrast optimiert und sind für Benutzende mit Farbenblindheit besser zugänglich.
 * Die anderen Paletten wurden für die Farbharmonie optimiert.
 
 ## So ändern Sie Ihre Farbpalette:

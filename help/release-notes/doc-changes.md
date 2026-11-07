@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 5b0c9d764d17daa63316f8ab294aa9c8f7f94427
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '7452'
-ht-degree: 93%
+ht-degree: 92%
 ---
 
 # Customer Journey Analytics – Aktualisierungen der Dokumentation
@@ -99,7 +99,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | **April 2026** | |
 | Richtlinien für abgeleitete Felder | Ein Artikel mit [Richtlinien](/help/use-cases/data-views/derived-fields/guidelines.md) (Best Practices, Schutzmechanismen und häufige Fallstricke) für die Arbeit mit abgeleiteten Feldern wurde hinzugefügt. |
 | Fehlende Dokumentation für zwei Datensätze hinzugefügt, die bei der Integration von Journey Optimizer einbezogen werden können | [Zwei zusätzliche vom System und nicht profilgenerierte Datensätze](/help/integrations/ajo.md#high-throughput-add-on-datasets) werden in die Verbindung aufgenommen, wenn das Add-on für Transaktionsnachrichten mit hohem Durchsatz für Ihre IMS-Organisation aktiviert ist. |
-| Aktualisierte Anwendungsfälle für die Kohortenanalyse | Basierend auf Feedback wurden den Anwendungsfällen der Kohortenanalyse Analysis Workspace-Beispiele hinzugefügt. |
+| Aktualisierte Anwendungsfälle für die Kohortenanalyse | Auf der Grundlage des Feedbacks wurden Analysis Workspace-Beispiele zu den Anwendungsfällen der Kohortenanalyse hinzugefügt. |
 | **März 2026** | |
 | Aufschlüsseln eines Panels | Die Dokumentation um den [Ablagebereich für ein Panel](/help/analysis-workspace/c-panels/panels.md#drop-zone) wurde neu strukturiert, um die neue Funktion [Aufschlüsseln](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) zu unterstützen. |
 | Technote zu fehlerhaften IDs (BAVIDs) | Neue [Technote zu fehlerhaften IDs](/help/technotes/badids.md). In der Technote wird erläutert, wie eine fehlerhafte ID definiert wird, wo in der Customer Journey Analytics-Benutzeroberfläche fehlerhafte IDs verwendet werden und wie Daten in Ihrer Verbindung auf fehlerhafte IDs untersucht werden. |
@@ -131,7 +131,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Daten vor 1900 | Ein [Hinweis](/help/connections/create-connection.md#datasets), wie Daten vor 1900 von Customer Journey Analytics verarbeitet werden, wurde hinzugefügt. |
 | Echtzeit-Reporting | Es wurde Dokumentation zum [Echtzeit-Reporting](/help/components/real-time/real-time.md) in Customer Journey Analytics hinzugefügt. |
 | Benutzeroberfläche | Es wurde eine Dokumentation für die aktualisierte [Benutzeroberfläche](/help/connections/manage-connections.md#usage) in Verbindungen hinzugefügt. |
-| Verknüpfen von Journey Optimizer-Datensätzen | Die [Liste der automatisch generierten Journey Optimizer-Datensätze](/help/stitching/overview.md#journey-optimizer-datasets) wurde dokumentiert, die bei der Zuordnung verwendet werden können. |
+| Verknüpfen von Journey Optimizer-Datensätzen | Dokumentierte [Liste der automatisch generierten Journey Optimizer-Datensätze](/help/stitching/overview.md#journey-optimizer-datasets) die beim Zusammenfügen verwendet werden können. |
 | Kontext-Labels | Es wurden weitere Hintergrundinformationen zur Verwendung und zum Zweck von [Kontext-Labels](/help/data-views/component-settings/overview.md#context-labels) in Datenansichtskomponenten hinzugefügt. |
 | **August 2025** | |
 | Neue Integration mit Adobe Advertising | Es wurden Informationen zur [Integration mit Adobe Advertising](/help/integrations/advertising.md) hinzugefügt. |

@@ -23,10 +23,10 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 69%
+ht-degree: 64%
 ---
 # Balken (gestapelt)
 
@@ -37,7 +37,7 @@ _In diesem Artikel werden die Visualisierungen mit Balken und gestapelten Balken
 
 >[!ENDSHADEBOX]
 
-Die Visualisierung „Balken“ bietet die Optionen „Standardmäßig“ und „Gestapelt“.
+Die Visualisierung „Balken“ bietet die Optionen „Standard“ und „Gestapelt“.
 
 ## Balken {#bar}
 
@@ -54,7 +54,7 @@ Die Visualisierung „Balken“ bietet die Optionen „Standardmäßig“ und �
 
 Die ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) Visualisierung **[!UICONTROL Balken]** zeigt vertikale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen.
 
-![Vertikale Visualisierung Balken mit mehreren Metriken wie Seitenansichten, Besuche, Eintritte und Ausstiege.](assets/bar.png)
+![Vertikale Balkenvisualisierung mit mehreren Metriken, einschließlich Seitenansichten, Besuchen, Eintritten und Austritten.](assets/bar.png)
 
 In den Visualisierungseinstellungen können Sie über ein Dropdown-Menü für die Granularität eine Trend-Visualisierung (z. B. Linie, Balken) von täglich über wöchentlich zu monatlich usw. ändern.
 

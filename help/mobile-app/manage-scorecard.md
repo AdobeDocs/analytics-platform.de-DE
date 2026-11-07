@@ -35,7 +35,7 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 81%
@@ -44,7 +44,7 @@ ht-degree: 81%
 
 In diesem Abschnitt erfahren Kuratoren von Customer Journey Analytics-Daten, wie sie Scorecard-Elemente anzeigen und verwalten können.
 
-## Anzeigen und Konfigurieren von Kacheleigenschaften {#tiles}
+## Ansicht und Konfiguration von Kacheleigenschaften {#tiles}
 
 Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste die Eigenschaften und Merkmale an, die mit dieser Kachel und ihrer Detailfolie verbunden sind. In dieser Leiste können Sie einen neuen **Titel** für die Kachel erstellen und die Kachel konfigurieren, indem Sie Segmente anwenden.
 
@@ -52,7 +52,7 @@ Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste d
 
 ## Anzeigen von Detailfolien {#view-detail-slides}
 
-Wenn Sie auf Kacheln klicken, wird in einem dynamischen Popup-Fenster angezeigt, wie die Detailfolie für ausführende Benutzende in der Mobile App dargestellt wird. Sie können Dimensionen hinzufügen, um Ihre Daten für Ihre spezifischen Anforderungen aufzuschlüsseln. Wenn keine Dimension angewandt wurde, ist die Aufschlüsselungs-Dimension **Stunde** oder **Tage**, je nach dem standardmäßigen Datumsbereich.
+Wenn Sie auf Kacheln klicken, wird in einem dynamischen Popup-Fenster angezeigt, wie die Detailfolie für ausführende Benutzende in der Mobile-App dargestellt wird. Sie können Dimensionen hinzufügen, um Ihre Daten für Ihre spezifischen Anforderungen aufzuschlüsseln. Wenn keine Dimension angewandt wurde, ist die Aufschlüsselungs-Dimension **Stunde** oder **Tage**, je nach dem standardmäßigen Datumsbereich.
 
 Aufschlüsselungen verfeinern Ihre Analyse, indem sie die Metriken nach Dimensionselementen wie den folgenden aufschlüsseln:
 
@@ -66,7 +66,7 @@ Jede der Kachel hinzugefügte Dimension wird in einem Dropdown-Menü in der Deta
 
 ## Anpassen von Detailfolien {#customize-detail-slide}
 
-Benutzerdefinierte Detailansichten ermöglichen es Ihnen, Ihre Zielgruppe mit noch zielgerichteteren Informationen anzusprechen.
+Benutzerdefinierte Detailfolien ermöglichen es Ihnen, noch gezielter zu entscheiden, welche Informationen Sie mit Ihrem Publikum teilen.
 
 >[!BEGINSHADEBOX]
 
@@ -75,13 +75,13 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Benutzerdefini
 >[!ENDSHADEBOX]
 
 
-Sie können das Layout für jede Detailfolie ändern und Text hinzufügen, um Endbenutzenden zu helfen, die Daten besser zu verstehen. Sie können auch über das Dropdown-Menü den Diagrammtyp ändern.
+Sie können das Layout für jede Detailfolie ändern und Text hinzufügen, um Endbenutzenden zu helfen, die Daten besser zu verstehen. Sie können auch über die Dropdown-Liste den Diagrammtyp ändern.
 
 ![Benutzerdefinierte Detailfolie](assets/custom-detail-slide.png)
 
 ### Ändern des Folien-Layouts
 
-Ändern Sie das Folien-Layout, um die Aufmerksamkeit der Betrachtenden zu fokussieren. Sie können beispielsweise das Layout so ändern, dass nur ein Diagramm oder nur eine Tabelle angezeigt wird. Um das Folien-Layout zu ändern, wählen Sie eines der vordefinierten Formate aus.
+Ändern Sie das Folien-Layout, um sich auf die wichtigsten Informationen zu konzentrieren. Sie können beispielsweise das Layout so ändern, dass nur ein Diagramm oder nur eine Tabelle angezeigt wird. Um das Folien-Layout zu ändern, wählen Sie eines der vordefinierten Formate aus.
 
 ![Folien-Layout](assets/layout.png)
 
@@ -91,9 +91,9 @@ Sie können das Folien-Layout auch ändern, indem Sie Visualisierungskomponenten
 
 ### Hinzufügen von beschreibendem Text zu einer Folie
 
-Sie können Text hinzufügen, um aussagekräftige Informationen über den Inhalt der Diagramme oder die Bedeutung von Daten bereitzustellen.
+Sie können Text hinzufügen, um aussagekräftige Informationen über den Inhalt der Diagramme oder über Nuancen in den Daten bereitzustellen.
 
-Um einer Detailfolie Text hinzuzufügen, wählen Sie ein Layout aus, für das das Symbol `T` angezeigt wird, oder ziehen Sie die Textvisualisierungskomponente aus der linken Leiste und legen Sie diese ab. Der Texteditor wird automatisch geöffnet, wenn eine neue Textvisualisierung hinzugefügt oder ein Folien-Layout mit Text ausgewählt wird. Der Texteditor bietet alle Standardoptionen zur Textformatierung, Sie können Textstile wie Absätze, Überschriften und Unterüberschriften anwenden und eine fett oder kursiv formatierte Schriftart auswählen. Sie können Text ausrichten sowie Listen mit Aufzählungszeichen, Nummerierungen und Links hinzufügen. Wenn Sie die Bearbeitung abgeschlossen haben, klicken Sie oben rechts im Texteditor auf die Schaltfläche „Minimieren“, um den Texteditor zu schließen. Um bereits hinzugefügten Text zu bearbeiten, wählen Sie zum erneuten Öffnen des Texteditors das Stiftsymbol aus.
+Um einer Detailfolie Text hinzuzufügen, wählen Sie ein Layout aus, für das das Symbol `T` angezeigt wird, oder ziehen Sie die Textvisualisierungskomponente aus der linken Leiste und legen Sie diese ab. Der Texteditor wird automatisch geöffnet, wenn eine neue Textvisualisierung hinzugefügt oder ein Folien-Layout mit Text ausgewählt wird. Der Texteditor bietet alle Standardoptionen zur Textformatierung. Sie können Textstile wie Absätze, Überschriften und Unterüberschriften anwenden und Text fett oder kursiv formatieren. Sie können Text ausrichten sowie Listen mit Aufzählungszeichen, Nummerierungen und Links hinzufügen. Wenn Sie die Bearbeitung abgeschlossen haben, klicken Sie oben rechts im Texteditor auf die Schaltfläche „Minimieren“, um den Texteditor zu schließen. Um bereits hinzugefügten Text zu bearbeiten, wählen Sie zum erneuten Öffnen des Texteditors das Stiftsymbol aus.
 
 ![Ändern des Folien-Layouts](assets/add-descriptive-text.png)
 
@@ -107,7 +107,7 @@ Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, 
 
 Eine Daten-Story ist eine Sammlung unterstützender Datenpunkte, Geschäftskontexte und verwandter Metriken, die auf einem zentralen Thema oder einer zentralen Metrik basieren.
 
-Wenn Sie sich beispielsweise auf den Webtraffic konzentrieren, können Besuche Ihre wichtigste Metrik sein. Neue Personen oder Unique Persons sind für Sie aber möglicherweise ebenfalls interessant. Vielleicht möchten Sie auch Daten sehen, die nach Web-Seite oder dem Gerätetyp aufgeschlüsselt sind, von dem der Traffic stammt. Daten-Storys in mobilen Scorecard-Projekten ermöglichen es Ihnen, die wichtigsten Metriken in den Vordergrund zu stellen und gleichzeitig die gesamte Story hinter den Metriken mithilfe mehrerer Detailfolien zu erzählen.
+Wenn Sie sich beispielsweise auf den Webtraffic konzentrieren, können Besuche Ihre wichtigste Metrik sein. Neue Personen oder Unique Persons sind für Sie aber möglicherweise ebenfalls interessant. Vielleicht möchten Sie auch Daten sehen, die nach Seite oder dem Gerätetyp aufgeschlüsselt sind, von dem der Traffic stammt. Daten-Storys in mobilen Scorecard-Projekten ermöglichen es Ihnen, die wichtigsten Metriken in den Vordergrund zu stellen und gleichzeitig die gesamte Story hinter den Metriken mithilfe mehrerer Detailfolien zu erzählen.
 
 Sehen Sie sich das Video an, um mehr über das Erstellen von Daten-Storys in Mobile-Scorecard-Projekten in Analysis Workspace zu erfahren.
 
@@ -127,8 +127,8 @@ Erstellen Sie Ihre Daten-Story, indem Sie einer Kachel mehrere Detailfolien hinz
 1. Wählen Sie eine Kachel aus, anhand der Sie eine Story erstellen möchten.
    ![Erstellen einer Daten-Story](assets/data-story1.png)
    ![Symbole zum Erstellen einer Daten-Story](assets/create-data-story.png){width=".50%"}
-1. Fügen Sie Folien hinzu, um Ihre Daten-Story zu erstellen. Die erste Folie wird standardmäßig generiert.
-Um neue Folien hinzuzufügen, bewegen Sie den Mauszeiger über eine Folie oder klicken Sie auf sie. Wählen Sie dann eine der verfügbaren Optionen aus:
+1. Fügen Sie Folien hinzu, um Ihre Daten-Story aufzubauen. Die erste Folie wird standardmäßig generiert.
+Um neue Folien hinzuzufügen, bewegen Sie den Mauszeiger über eine Folie oder klicken Sie auf sie und wählen Sie dann eine der verfügbaren Optionen aus:
    * Tippen Sie auf das Pluszeichen (+), um eine neue Folie zu erstellen.
    * Tippen Sie auf das Duplizieren-Symbol, um die vorhandene Folie zu duplizieren.
 1. Wenn Sie eine leere Folie erstellen, ziehen Sie Komponenten per Drag-and-Drop aus der linken Leiste oder wählen Sie ein Layout aus, um die Folie automatisch mit den Daten aus der Kachel aufzufüllen.
@@ -141,7 +141,7 @@ Mit Daten-Storys können Sie alles anpassen, sodass Sie Informationen, die Sie w
 
 **Anpassen von Kacheln**
 
-1. Tippen Sie auf eine Kachel. Die ausgewählte Kachel wird blau dargestellt, und im rechten Bereich werden die Kacheleigenschaften angezeigt.
+1. Tippen Sie auf eine Kachel. Die ausgewählte Kachel wird blau dargestellt, und im rechten Panel werden die Kacheleigenschaften angezeigt.
 1. Ändern Sie den Titel, den Diagrammtyp und andere Kacheloptionen.
 1. Ziehen Sie eine Komponente auf die Kachel.
    ![Erstellen einer Daten-Story](assets/data-story3.png)
@@ -192,7 +192,7 @@ Sie können eine Vorschau davon anzeigen, wie die Scorecard nach ihrer Veröffen
 
 ## Freigeben von Scorecards {#share}
 
-So geben Sie die Scorecard für eine Führungskraft frei:
+So geben Sie die Scorecard für einen leitenden Benutzer oder eine leitende Benutzerin frei:
 
 1. Klicken Sie auf das Menü **[!UICONTROL Freigeben]** und wählen Sie **[!UICONTROL Scorecard freigeben]**.
 
@@ -225,9 +225,9 @@ So geben Sie eine Scorecard über einen Freigabe-Link frei:
 
    Wenn der Link von einer Empfängerin oder einem Empfänger über eine Desktop-Anwendung oder einen Browser aufgerufen wird, wird das mobile Scorecard-Projekt in Workspace geöffnet.
 
-   Wenn der Link von einer Empfängerin oder einem Empfänger auf einem Mobilgerät aufgerufen, wird die Scorecard direkt in der Adobe Analytics-Dashboards-App geöffnet.
+   Wenn der Link von einem Empfänger oder einer Empfängerin auf einem Mobilgerät aufgerufen wird, wird die Scorecard direkt in der Adobe Analytics-Dashboards-App geöffnet.
 
-   Wenn eine Empfängerin oder ein Empfänger die App nicht heruntergeladen hat, wird diese Person zur App-Liste im App Store oder Google Play Store weitergeleitet, wo sie sie herunterladen kann.
+   Wenn ein Empfänger oder eine Empfängerin die App nicht heruntergeladen hat, wird diese Person zur App-Liste im Appstore oder im Google Play Store weitergeleitet, wo sie die App installieren kann.
 
 
 ## Dimensionselement des Typs [!UICONTROL Nicht angegeben] entfernen {#remove-dims}
@@ -237,7 +237,7 @@ Wenn Sie Dimensionselemente des Typs [!UICONTROL Nicht angegeben] aus Ihren Date
 1. Wählen Sie die richtige Kachel aus.
 1. Wählen Sie in der rechten Leiste unter **[!UICONTROL Drill-ins]** den Rechtspfeil neben dem Dimensionselement aus, für das Sie Elemente des Typs **[!UICONTROL Nicht angegeben]** entfernen möchten.
 
-   ![Eigenschaften mit einem Pfeil, der auf den Pfeil nach rechts neben dem Dimensionsnamen zeigt.](assets/unspecified.png)
+   ![Eigenschaften mit Pfeil, der auf den Rechtspfeil neben dem Dimensionsnamen zeigt.](assets/unspecified.png)
 
 1. Klicken Sie auf das Symbol neben **[!UICONTROL Nicht angegeben]**, um nicht spezifizierte Daten aus Ihrem Reporting zu entfernen. (Sie können auch jedes andere Dimensionselement entfernen.)
 

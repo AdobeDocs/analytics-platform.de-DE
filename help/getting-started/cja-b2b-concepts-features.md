@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1592'
 ht-degree: 3%
@@ -110,7 +110,7 @@ Segmente, Attribution und Visualisierungen unterstützen Sie zusammen mit den B2
 
 ## Schemata
 
-Der Customer Journey Analytics B2B-Editor verwendet das [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de), um B2B-Daten zu standardisieren und Schemas für Ihre B2B-Daten zu definieren. Sie können Ihre Schemata auf den [Standardklassen basieren, die in Real-Time CDP B2B edition bereitgestellt werden](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/schemas/b2b) oder Sie können Ihre eigenen benutzerdefinierten Klassen und Schemata verwenden. Die [Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)-Artikel verwenden Real-Time CDP B2B edition-Klassen und -Schemata. Eine Real-Time CDP B2B edition-Lizenz ist jedoch nicht erforderlich, um die Standardklassen und -schemata zu verwenden.
+Customer Journey Analytics B2B edition verwendet das [Adobe Experience-Datenmodell (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) um B2B-Daten zu standardisieren und Schemas für Ihre B2B-Daten zu definieren. Sie können Ihre Schemata auf den [Standardklassen basieren, die in Real-Time CDP B2B edition bereitgestellt werden](https://experienceleague.adobe.com/de/docs/experience-platform/rtcdp/schemas/b2b) oder Sie können Ihre eigenen benutzerdefinierten Klassen und Schemata verwenden. Die [Anwendungsfälle](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)-Artikel verwenden Real-Time CDP B2B edition-Klassen und -Schemata. Eine Real-Time CDP B2B edition-Lizenz ist jedoch nicht erforderlich, um die Standardklassen und -schemata zu verwenden.
 
 ## Datensätze
 

@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 83%
+ht-degree: 80%
 ---
 # Vorlagen für berechnete Metriken
 
@@ -41,10 +41,10 @@ Customer Journey Analytics bietet die folgenden Vorlagen für berechnete Metrike
 | **[!UICONTROL Sitzungsendrate]** | Der Prozentsatz, zu dem ein Dimensionselement im letzten Ereignis einer Sitzung aufgetreten ist. <p>Diese berechnete Metrik wird Workspace automatisch hinzugefügt, wenn Sie die [Standardkomponente](/help/data-views/component-reference.md) [!UICONTROL Sitzung endet] in Ihrer[Datenansicht](/help/data-views/create-dataview.md) einbeziehen.</p>Zusammenfassung: **(** ![Event](/help/assets/icons/Event.svg) **Sitzung endet** ![Divide](/help/assets/icons/Divide.svg) ![Event](/help/assets/icons/Event.svg) **Sitzungen** **)** |
 | **[!UICONTROL Web-Sitzungen]** | Die Anzahl der Sitzungen, die auf der Website stattgefunden haben. |
 | **[!UICONTROL Abschlussrate der Umfrage]** | Die Rate, mit der Personen eine Umfrage abgeschlossen haben, nachdem sie sie gestartet haben. |
-| **[!UICONTROL Rate der Sitzungen in mehreren Kanälen]** | Das Verhältnis der Sitzungen mit mehreren Kanälen (z. B. Webtraffic und mobiler Traffic) im Vergleich zu denen mit nur einem einzigen. |
+| **[!UICONTROL Rate der Sitzungen in mehreren Kanälen]** | Das Verhältnis der Sitzungen mit mehreren Kanälen (z. B. Web-Traffic und Mobile-Traffic) im Vergleich zu denen mit nur einem einzigen Kanal. |
 | **[!UICONTROL Rate der Personen mit mehreren Kanälen]** | Das Verhältnis der Personen, die an mehreren Kanälen teilgenommen haben, im Vergleich zu denen, die nur an einem einzigen Kanal teilgenommen haben. |
-| **[!UICONTROL App-Sitzungen]** | Die Anzahl der Sitzungen in der App. |
-| **[!UICONTROL Kanalübergreifende Web- und App-Sitzungen]** | Die Anzahl der Sitzungen mit Webtraffic und mobilem Traffic. |
+| **[!UICONTROL App-Sitzungen]** | Die Anzahl der Sitzungen in der Mobile-App. |
+| **[!UICONTROL Kanalübergreifende Web- und App-Sitzungen]** | Die Anzahl der aufgetretenen Sitzungen, in denen sowohl Web-Traffic als auch Mobile-Traffic enthalten waren. |
 | **[!UICONTROL Anrufkosten]** | Die Gesamtkosten für Callcenter-Anrufe. <!-- <p>Summary: Call length</p> --> |
 | **[!UICONTROL Durchschnittliche Anrufdauer]** | Die durchschnittliche Dauer von Anrufen beim Callcenter. |
 | **[!UICONTROL Durchschnittliche Kosten pro Anruf]** | Die durchschnittlichen Kosten von Anrufen beim Callcenter. |

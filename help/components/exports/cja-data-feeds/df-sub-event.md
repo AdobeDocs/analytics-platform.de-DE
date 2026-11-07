@@ -14,9 +14,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: a4ea9270d5bf27234fa229e8ba3df5998ecea0e1
+source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1320'
 ht-degree: 1%
 ---
 # Komponenten von Unterereignissen in Daten-Feeds
@@ -102,7 +102,7 @@ Felder desselben Unterereignisses werden auf der Arbeitsfläche als ausblendbare
 
 Diese Gruppe spiegelt die zugrunde liegende Datenstruktur wider.
 
-In der Daten-Feed-Ausgabe werden alle diese Komponenten als verschachteltes Array in einer einzigen Spalte angezeigt.
+In der Daten-Feed-Ausgabe werden alle diese Komponenten als verschachteltes Array in einer einzigen Spalte angezeigt. Parquet-Dateien unterstützen nativ verschachtelte Arrays. Weitere Informationen finden Sie unter [Arbeiten mit Parquet-Dateien in Daten-Feeds](/help/components/exports/cja-data-feeds/df-parquet.md).
 
 Informationen zum Hinzufügen von Komponenten, einschließlich Unterereigniskomponenten, zu einem Daten-Feed finden Sie unter [Erstellen eines Daten-Feeds](/help/components/exports/cja-data-feeds/create-feed.md).
 

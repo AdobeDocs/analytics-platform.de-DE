@@ -39,7 +39,7 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2044'
 ht-degree: 83%
@@ -139,7 +139,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie das Feld **[!UICONTROL E-Mail]** im soeben hinzugefügten Identifizierungsobjekt aus und danach **[!UICONTROL Identität]** und **[!UICONTROL E-Mail]** in [!UICONTROL Identity-Namespace] im Bedienfeld [!UICONTROL Feldeigenschaften].
 
-   ![Spezifizieren von E-Mail als Identität](./assets/specify-email-loyalty-id.png)
+   ![E-Mail als Identität angeben](./assets/specify-email-loyalty-id.png)
 
    Sie spezifizieren die E-Mail-Adresse als die Identität, die Adobe Experience Platform Identity Service verwenden kann, um das Verhalten von Profilen zu kombinieren (zusammenzufügen).
 
@@ -281,7 +281,7 @@ In [Erstellen einer HTTP-API-Streaming-Verbindung über die Benutzeroberfläche]
 
 Um die Adobe Experience Platform-Daten in Customer Journey Analytics verwenden zu können, erstellen Sie eine Verbindung, die die Daten enthält, die aus der Einrichtung Ihres Schemas, Datensatzes und Workflows resultieren.
 
-Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Arbeitsbereich integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
+Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Analysis Workspace integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
 
 Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 

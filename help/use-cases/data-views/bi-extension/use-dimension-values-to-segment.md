@@ -26,10 +26,10 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 0%
+ht-degree: 1%
 ---
 # Segmentieren von Dimensionswerten
 
@@ -121,7 +121,7 @@ Es wird eine Visualisierung mit **[!UICONTROL Fehler beim Abrufen von Daten für
    1. Wählen Sie aus der Liste der Felder **[!UICONTROL ‣ Produktkategorie]** aus.
 1. Stellen Sie **[!UICONTROL is]** als Auswahl für den Filter sicher.
 
-![AlertRed](/help/assets/icons/AlertRed.svg) Lookes zeigt nicht die Liste der möglichen Werte für **[!UICONTROL Produktkategorie]**.
+![AlertRed](/help/assets/icons/AlertRed.svg) Looker zeigt keine Liste möglicher Werte für **[!UICONTROL Produktkategorie]** an.
 
 ![Looker-Anzahl unterschiedlich](../assets/uc10-looker-result.png)
 
@@ -174,7 +174,7 @@ Es wird eine Visualisierung mit **[!UICONTROL Fehler beim Abrufen von Daten für
 
 >[!TAB RStudio]
 
-1. Geben Sie den folgenden Code-Block in einen neuen Block ein. Stellen Sie sicher, dass Sie eine geeignete Kategorie verwenden. Beispiel: `Hunting`.
+1. Geben Sie den folgenden Code-Block in einen neuen Block ein. Stellen Sie sicher, dass Sie eine geeignete Kategorie verwenden. Zum Beispiel `Hunting`.
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value

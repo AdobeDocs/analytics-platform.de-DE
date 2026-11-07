@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '802'
-ht-degree: 100%
+ht-degree: 98%
 ---
 # Intelligente Beschriftungen {#intelligent-captions}
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 >abstract="Generieren Sie Erkenntnisse in natürlicher Sprache, um Daten für diese Visualisierung leichter verstehen und interpretieren zu können."
 
 
-Die Funktion „Intelligente Beschriftungen“ nutzt fortschrittliche generative KI, um wichtige Erkenntnisse zu den am häufigsten verwendeten Workspace-Visualisierungen in natürlicher Sprache bereitzustellen.
+Die Funktionen „Intelligente Beschriftungen“ nutzen fortschrittliche generative KI, um wichtige Erkenntnisse zu den am häufigsten verwendeten Workspace-Visualisierungen in natürlicher Sprache bereitzustellen.
 
 Intelligente Beschriftungen richten sich an:
 
@@ -58,7 +58,7 @@ Unter ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [intelligente B
 
 Um automatisch generierte intelligente Beschriftungen für eine Visualisierung einzusetzen, wählen Sie oben rechts in der Visualisierung die Option ![Intelligente Beschriftungen](/help/assets/icons/AI.svg) aus. Durch diese Auswahl werden Erkenntnisse in natürlicher Sprache generiert.
 
-![Einsetzen des Fensters „Analyse“ mit intelligenten Beschriftungen für „Produktansichten – Trend“. ](assets/intelligent-captions.gif)
+![Einsetzen des Fensters „Analyse“ mit intelligenten Beschriftungen für „Produktansichten – Trend“. &#x200B;](assets/intelligent-captions.gif)
 
 
 Bedenken Sie Folgendes:
@@ -105,7 +105,7 @@ Sie können die Beschriftungen in die Zwischenablage kopieren und in PowerPoint 
 Sie können auswählen, ob alle intelligenten Beschriftungen gleichzeitig in einer erweiterten Ansicht oder einzelne intelligente Beschriftungen in einer Einzelansicht angezeigt werden sollen.
 
 * Um alle intelligenten Beschriftungen anzuzeigen, wählen Sie ![Alle intelligenten Beschriftungen anzeigen](/help/assets/icons/Maximize.svg) aus.
-* Um einzelne intelligente Beschriftungen anzuzeigen, wählen Sie ![Einzelne intelligente Beschriftungen anzeigen](/help/assets/icons/Minimize.svg) aus.
+* Um einzelne intelligente Beschriftungen einzeln anzuzeigen, wählen Sie ![Einzelne intelligente Beschriftungen anzeigen](/help/assets/icons/Minimize.svg) aus.
 
 ### Bearbeiten der Anzeige {#edit}
 
@@ -146,7 +146,7 @@ Wenn Sie lieber keine intelligenten Beschriftungen verwenden möchten, können S
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Voreinstellung zu speichern.
 
 
-## Intelligente Beschriftungen in mobilen Scorecards
+## Intelligente Beschriftungen in Mobile Scorecards
 
 Intelligente Beschriftungen sind auch in [mobilen Scorecards](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) von Customer Journey Analytics verfügbar.
 
@@ -160,7 +160,7 @@ Die folgenden Parameter regeln den Zugriff auf intelligente Beschriftungen:
 
 * **Berechtigungen**: In der [!UICONTROL Adobe Admin Console] bestimmt die [!UICONTROL Reporting-Tools-Berechtigung] **[!UICONTROL Intelligente Beschriftungen]** den Zugriff. Sie als [Produktprofil-Admin](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html) müssen diese Schritte in der [!UICONTROL Admin Console] ausführen:
   1. Navigieren Sie zu **[!UICONTROL Admin Console]** > **[!UICONTROL Produkte und Dienste]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Produktprofile]**.
-  1. Wählen Sie den Titel des Produktprofils aus, für das Zugriff auf die Funktion „Intelligente Beschriftungen“ gewährt werden soll.
+  1. Wählen Sie den Titel des Produktprofils aus, für das Sie Zugriff auf die Funktion „Intelligente Beschriftungen“ gewähren möchten.
   1. Wählen Sie im entsprechenden Produktprofil die Option **[!UICONTROL Berechtigungen]** aus.
   1. Wählen Sie ![Bearbeiten](/help/assets/icons/Edit.svg) aus, um **[!UICONTROL Reporting-Tools]** zu bearbeiten.
   1. Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) aus, um **Intelligente Beschriftungen** zu **[!UICONTROL Eingeschlossene Berechtigungseinträge]** hinzuzufügen.

@@ -45,7 +45,7 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '3516'
 ht-degree: 83%
@@ -152,7 +152,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie im soeben hinzugefügten Identifizierungsobjekt das Feld **[!UICONTROL ECID]** aus und danach im rechten Bedienfeld **[!UICONTROL Identität]** und **[!UICONTROL Primäre Identität]** sowie die Option **[!UICONTROL ECID]** in der Liste [!UICONTROL Identity-Namespace].
 
-   ![Spezifizieren Sie die ECID als Identität](./assets/specify-identity.png)
+   ![ECID als Identität angeben](./assets/specify-identity.png)
 
    Sie spezifizieren die ECID als primäre Identität, die der Adobe Experience Platform Identity Service verwenden kann, um das Verhalten von Profilen mit derselben ECID zu kombinieren (Stitching).
 
@@ -160,7 +160,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie das Feld **[!UICONTROL E-Mail]** im soeben hinzugefügten Identifizierungsobjekt aus und danach **[!UICONTROL Identität]** und **[!UICONTROL E-Mail]** in der Liste [!UICONTROL Identity-Namespace] im Bedienfeld [!UICONTROL Feldeigenschaften].
 
-   ![Spezifizieren von E-Mail als Identität](./assets/specify-email-identity.png)
+   ![E-Mail als Identität angeben](./assets/specify-email-identity.png)
 
    Sie spezifizieren die E-Mail-Adresse als weitere Identität, die Adobe Experience Platform Identity Service verwenden kann, um das Verhalten von Profilen zu kombinieren (Stitching).
 

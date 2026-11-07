@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer engagement
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '689'
-ht-degree: 82%
+ht-degree: 81%
 ---
 # Panel „Attribution“ {#attribution-panel}
 
@@ -44,13 +44,13 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_button"
 >title="Attribution"
->abstract="Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen für eine Erfolgsmetrik, einen Kanal und das Lookback-Fenster."
+>abstract="Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attribution-Modellen für eine Erfolgsmetrik, einen Kanal und das Lookback-Fenster."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ-Bedienfeld"
 
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_panel"
 >title="Panel „Attribution“"
->abstract="Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen für eine Erfolgsmetrik. Wählen Sie den Kanal (Dimension), die einzuschließenden Modelle und das Lookback-Fenster aus."
+>abstract="Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attribution-Modellen für eine Erfolgsmetrik. Wählen Sie den Kanal (Dimension), die einzuschließenden Modelle und das Lookback-Fenster aus."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ-Bedienfeld"
 
 <!-- markdownlint-enable MD034 -->
@@ -61,16 +61,16 @@ _In diesem Artikel wird das Attributionsbedienfeld in_![CustomerJourneyAnalytics
 
 >[!ENDSHADEBOX]
 
-Das **[!UICONTROL Attributionsbedienfeld]** bietet eine einfache Möglichkeit, eine Analyse zu erstellen, mit der verschiedene Attributionsmodelle verglichen werden. Das Panel bietet Ihnen einen speziellen Arbeitsbereich zum Verwenden und Vergleichen von Attributionsmodellen.
+Das **[!UICONTROL Attributionsbedienfeld]** bietet eine einfache Möglichkeit, eine Analyse zu erstellen, mit der verschiedene Attributionsmodelle verglichen werden. Das Panel bietet Ihnen einen speziellen Arbeitsbereich zum Verwenden und Vergleichen von Attribution-Modellen.
 
 Customer Journey Analytics erweitert die Attribution und ermöglicht Ihnen Folgendes:
 
-* Die Attribution über bezahlte Medien definieren: Dimensionen, Metriken, Kanäle oder Ereignisse können auf Modelle (z. B. die interne Suche) angewendet werden, nicht nur Marketing-Kampagnen.
+* Die Attribution über Paid Media hinaus definieren: Dimensionen, Metriken, Kanäle oder Ereignisse können auf Modelle (z. B. die interne Suche) angewendet werden, nicht nur auf Marketing-Kampagnen.
 * Den Vergleich für unbegrenzte Attributionsmodelle verwenden: Vergleichen Sie dynamisch so viele Modelle, wie Sie möchten.
-* Implementierungsänderungen vermeiden: Mit der Berichtszeitverarbeitung und kontextabhängigen Sitzungen kann Customer Journey-Kontext erstellt und zur Laufzeit angewendet werden.
+* Änderungen an der Implementierung vermeiden: Mit der Berichtszeitverarbeitung und kontextabhängigen Sitzungen kann Customer-Journey-Kontext erstellt und zur Laufzeit angewendet werden.
 * Die Sitzung erstellen, die Ihrem Attributionsszenario am ehesten entspricht.
 * Die Attribution nach Segmenten aufschlüsseln: Vergleichen Sie problemlos die Leistung Ihrer Marketing-Kanäle über jedes wichtige Segment hinweg (z. B. Neu- mit Bestandskunden, Produkt X vs. Produkt Y, Treuestufe oder CLV).
-* Wechsel zwischen Kanälen und Multi-Touch-Analyse beachten: Verwenden Sie Venn-Diagramme und Histogramme und erstellen Sie Trends anhand von Attributionsergebnissen.
+* Überschneidungen zwischen Kanälen und Multi-Touch-Analysen untersuchen: Verwenden Sie Venn-Diagramme und Histogramme und stellen Sie Verläufe der Attributionsergebnisse dar.
 * Wichtige Marketing-Sequenzen visuell analysieren: Erkunden Sie zur Konversion führende Pfade visuell mithilfe von mehrknotigen Fluss- und Fallout-Visualisierungen.
 * Berechnete Metriken erstellen: Verwenden Sie eine beliebige Anzahl an Attributionszuordnungsmethoden.
 
@@ -88,7 +88,7 @@ So verwenden Sie das Panel **[!UICONTROL Attribution]**:
 
 Sie können das Panel „Attribution“ mithilfe der folgenden Eingabeeinstellungen konfigurieren:
 
-1. Fügen Sie eine **[!UICONTROL Erfolgsmetrik]** und eine Dimension aus dem **[!UICONTROL Kanal]** für die Attribution hinzu. Beispiele sind Marketing-Kanäle oder benutzerdefinierte Dimensionen wie interne Promotions.
+1. Fügen Sie eine **[!UICONTROL Erfolgsmetrik]** und eine Dimension aus dem **[!UICONTROL Kanal]** für die Attribution hinzu. Beispiele sind Marketing-Kanäle oder benutzerdefinierte Dimensionen wie interne Promotionen.
 
    ![Das Fenster des Panels „Attribution“ mit mehreren ausgewählten Dimensionen und Metriken.](assets/attribution-panel.png)
 
@@ -104,7 +104,7 @@ Das Panel **[!UICONTROL Attribution]** gibt einen umfangreichen Satz an Daten un
 
 ### Visualisierungen der Attribution
 
-Die folgenden Visualisierungen sind Teil der Panel-Ausgabe.
+Die folgende Visualisierung ist Teil der Bedienfeldausgabe.
 
 * **Summenmetrik**: Die Gesamtzahl der Konversionen, die im Berichtszeitfenster stattgefunden haben und der ausgewählten Dimension zugeordnet wurden.
 * **Balkendiagramm für den Vergleich der Metrik-Attribution**: Vergleicht visuell die zugeordneten Konversionen über die einzelnen Dimensionselemente der von Ihren ausgewählten Dimension hinweg. Jede Balkenfarbe stellt ein bestimmtes Attributionsmodell dar.

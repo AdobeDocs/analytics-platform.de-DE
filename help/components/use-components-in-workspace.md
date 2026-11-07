@@ -32,7 +32,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 92%
@@ -129,7 +129,7 @@ Informationen zum Verwenden des Segment-Ablegebereichs in einem Panel, um das Pa
 Wenn Sie einer Spalte in einer Freiformtabelle Segmente hinzufügen, werden die Segmente auf alle Inhalte in der Tabellenspalte angewendet. Sie können Segmente auch als Teil einer Fallout-Visualisierung hinzufügen.
 
 * Verwenden von Segmenten in Komponenten
-Wenn Sie Komponenten wie [berechnete Metriken](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [Anmerkungen](/help/components/annotations/create-annotations.md#annotation-builder) oder sogar [Segmente) definieren](/help/components/segments/seg-builder.md) können Sie Segmente als Teil der Definition verwenden.
+Wenn Sie Komponenten wie [berechnete Metriken](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [Anmerkungen](/help/components/annotations/create-annotations.md#annotation-builder) oder sogar [Segmente](/help/components/segments/seg-builder.md) definieren, können Sie Segmente als Teil der Definition verwenden.
 
 
 ### Hinzufügen von Datumsbereichen zu einem Projekt

@@ -1,6 +1,6 @@
 ---
 title: Komponenteneinstellungen für die Metrik-Deduplizierung
-description: Zählen Sie nur das erste Vorkommen einer Metrik in Berichten.
+description: Nur das erste Vorkommen einer Metrik in Berichten zählen.
 exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
@@ -24,13 +24,11 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 342
-ht-degree: 79%
-
+source-wordcount: '342'
+ht-degree: 76%
 ---
-
 # Komponenteneinstellungen für die Metrik-Deduplizierung {#metric-deduplication-component-settings}
 
 <!-- markdownlint-disable MD034 -->
@@ -58,4 +56,4 @@ Mit der Metrik-Deduplizierung können Sie eine Metrik so konfigurieren, dass Wer
 
 >[!CAUTION]
 >
->Deduplizierung im Umfang einer _Person_ wird nach vollständigen Monaten in UTC-Zeit bewertet. Ein Berichtsfenster für einen Teil des Monats zeigt möglicherweise nicht alle ersten oder letzten Instanzen an, wenn einige innerhalb des ganzen Monats, aber außerhalb der Berichtsdaten aufgetreten sind.
+>Deduplizierung im Umfang einer _Person_ wird nach vollständigen Monaten in UTC-Zeit bewertet. Ein Reporting-Fenster für einen Teil des Monats zeigt möglicherweise nicht alle ersten oder letzten Instanzen an, wenn einige innerhalb des ganzen Monats, aber außerhalb der Berichtsdaten aufgetreten sind.

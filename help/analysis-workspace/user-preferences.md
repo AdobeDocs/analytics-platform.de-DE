@@ -43,7 +43,7 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '4354'
 ht-degree: 93%
@@ -221,7 +221,7 @@ Wählen Sie die verlinkten Abschnittstitel aus, um weitere Informationen und den
 >abstract="Wählen Sie den Standard-Container aus, der für [!UICONTROL Journey-Arbeitsflächen]-Visualisierungen verwendet werden soll. Wenn die ausgewählte Datenansicht nicht den ausgewählten Standard-Container enthält, wechselt die Visualisierung vom Typ [!UICONTROL Journey-Arbeitsfläche] automatisch zu einem anderen primären Container."
 
 
-Sie können die Visualisierungsvoreinstellungen für alle in Analysis Workspace neu erstellten Projekte aktualisieren. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Bearbeiten von Voreinstellungen](#edit-preferences).
+Sie können die Voreinstellungen für Visualisierungen für alle in Analysis Workspace neu erstellten Projekte aktualisieren. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Bearbeiten von Voreinstellungen](#edit-preferences).
 
 Einige dieser Voreinstellungen können auch für individuelle Visualisierungen angepasst werden.
 

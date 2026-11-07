@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 8%
@@ -72,7 +72,7 @@ Sie haben einen **&#x200B;**&#x200B;[&#x200B; benutzerdefinierten Container](/he
 
 Im Segmentierungs-Builder oder als Teil eines **[!UICONTROL Schnellsegments]** geben Sie an, **[!UICONTROL &lbrace;4]** Dimension **&#x200B;**[!UICONTROL &#x200B; product_category &#x200B;]**&#x200B;gleich**[!UICONTROL **&#x200B;**&#x200B;Professional Suites &#x200B;]&#x200B;**im**&#x200B;[!UICONTROL &#x200B; Product Details &#x200B;]&#x200B;**-Container auszuschließen.**
 
-![Bedienfeld, das die Segmentierung auf der Ebene untergeordneter Treffer anzeigt, um die Produktkategoriemänner auszuschließen](./assets/product-category-segmentation-subevents-exclude.png)
+![Bedienfeld, das die Segmentierung auf der Ebene der Untertreffer anzeigt, um die Produktkategoriemänner auszuschließen](./assets/product-category-segmentation-subevents-exclude.png)
 
 Um auf Produktebene Ereignisse auszuschließen, die mindestens ein Produkt enthalten, wird der Ausschluss auf der Ebene der Unterereignisse innerhalb dieses Bereichs angewendet. Dieser Ausschluss unterscheidet sich vom Ausschluss auf Ereignisebene, wodurch das gesamte Ereignis ausgeschlossen wird.
 

@@ -1,6 +1,6 @@
 ---
 title: Datenaufnahme – Übersicht
-description: Hier erhalten Sie Informationen über die unterschiedlichen Methoden der Datenaufnahme in Customer Journey Analytics
+description: Informieren Sie sich über die verschiedenen Möglichkeiten, Daten in Customer Journey Analytics aufzunehmen.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1129'
-ht-degree: 100%
+ht-degree: 99%
 ---
 # Überblick über die Datenaufnahme
 
@@ -48,7 +48,7 @@ Die allgemeine Architektur von Customer Journey Analytics ist im Folgenden darge
 
 ![Customer Journey Analytics-Architektur](/help/getting-started/assets/cja-overview.png)
 
-Diese Architektur veranschaulicht, wie Customer Journey Analytics Folgendes ermöglicht:
+Diese Architektur veranschaulicht, wie Customer Journey Analytics Ihnen Folgendes ermöglicht:
 
 * Kombinieren mehrerer Datensätze ![Daten](/help/assets/icons/Data.svg) in einer [Verbindung](/help/connections/overview.md).
 * Definieren und Konfigurieren von Dimensionen ![Dimensionen](/help/assets/icons/Dimensions.svg) und Metriken ![Ereignis](/help/assets/icons/Event.svg) in einer [Datenansicht](/help/data-views/data-views.md) basierend auf den Feldern, die in den von Ihnen in Ihrer Verbindung definierten Datensätzen verfügbar sind.
@@ -64,7 +64,7 @@ Die Datensätze in der Architektur können aus verschiedenen Quellen stammen:
 
 * Daten aus dem Tracking Ihrer Website/App unter Verwendung des Adobe Experience Platform Web/Mobile SDK
 
-* Daten aus dem Tracking einer Desktop-Anwendung, eines Konsolenspiels, einer Set-top-Box oder eines IoT-Geräts mithilfe des Adobe Experience Platform Edge Network-Server-API oder
+* Daten aus dem Tracking einer Desktop-Anwendung, eines Konsolenspiels, einer Set-top-Box oder eines IoT-Geräts mithilfe der Adobe Experience Platform Edge Network Server-API oder
 
 * Daten von einem Third-Party-Datenanbieter, für die Adobe einen Quell-Connector bereitstellt
 
@@ -84,7 +84,7 @@ Beachten Sie, dass sich diese Funktion je nach dem von Ihrem Unternehmen erworbe
 
 * Priority Ingestion Advanced: 1 Woche alte Daten werden innerhalb von 90 Minuten mit SLT verarbeitet (verfügbar für **CJA Ultimate**)
 
-## Aufnehmen und Verwenden von Daten aus Adobe Analytics
+## Daten aus herkömmlichem Adobe Analytics aufnehmen und verwenden
 
 Sie haben Adobe Analytics bereits bereitgestellt und möchten diese Daten in Adobe Experience Platform aufnehmen und in Customer Journey Analytics gemeinsam mit Daten aus anderen Kanälen und Datenquellen nutzen, kombinieren und analysieren.
 
@@ -131,7 +131,7 @@ Weitere Informationen finden Sie unter [Aufnehmen und Verwenden von Daten über 
 
 ## Aufnehmen und Verwenden von Ad-hoc-Daten
 
-Sie verfügen über Ad-hoc-Daten, die nur einen einzigen Datensatz in Experience Platform und nicht die Konfiguration eines Experience-Datenmodellschemas (XDM) erfordern. Dieses Szenario wird als Ad-hoc-Schema bezeichnet. Ad-hoc-Schemata werden in verschiedenen Datenaufnahme-Workflows für Experience Platform verwendet, einschließlich der Aufnahme von CSV-Dateien und der Erstellung bestimmter Arten von Quellverbindungen.
+Sie verfügen über Ad-hoc-Daten, für die nur ein einzelner Datensatz in Experience Platform erforderlich ist und für die kein Experience-Datenmodell-Schema (XDM) konfiguriert werden muss. Dieses Szenario wird als Ad-hoc-Schema bezeichnet. Ad-hoc-Schemata werden in verschiedenen Datenaufnahme-Workflows für Experience Platform verwendet, einschließlich der Aufnahme von CSV-Dateien und der Erstellung bestimmter Arten von Quellverbindungen.
 
 Siehe [Aufnehmen und Verwenden von Ad-hoc-Daten](./adhoc.md)
 

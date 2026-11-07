@@ -1,11 +1,11 @@
 ---
-title: Vergleichen von Analytics-Quell-Connector-Daten mit Adobe Analytics
+title: Vergleich von Analytics-Quell-Connector-Daten mit Adobe Analytics
 description: Erfahren Sie mehr über die Unterschiede der Daten beim Anzeigen ähnlicher Berichte in Adobe Analytics und Customer Journey Analytics.
 role: Developer, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
-keywords: abfrage-Service;Abfrage-Service;SQL-Syntax
+keywords: query service;Query service;SQL-Syntax
 TQID: 'https://experienceleague.adobe.com/WT2Phz0aaiJ0Jp403fr6byx9QkncKjvRJpxl9yxPKLE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -34,12 +34,12 @@ topic_v2:
     internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 100%
+ht-degree: 96%
 ---
-# Vergleichen von Analytics-Quell-Connector-Daten mit Adobe Analytics
+# Vergleich von Analytics-Quell-Connector-Daten mit Adobe Analytics
 
 Wenn Ihr Unternehmen Customer Journey Analytics einsetzt, kann es bei den Daten zwischen Adobe Analytics und Customer Journey Analytics zu Unterschieden kommen. Diese Unterschiede sind normal und können aus verschiedenen Gründen auftreten. Customer Journey Analytics soll es Ihnen ermöglichen, Verbesserungen bezüglich einiger Einschränkungen bei Daten in Adobe Analytics vorzunehmen. Diese Flexibilität kann zu Unterschieden bei der Interpretation von Daten durch Customer Journey Analytics führen. In diesem Artikel erfahren Sie mehr über die möglichen Unterschiede beim Umgang mit Daten durch Customer Journey Analytics und Adobe Analytics.
 
@@ -54,7 +54,7 @@ Nachfolgend finden Sie mögliche Gründe dafür, warum die Daten auf verschieden
 * **Zusätzliche Datensätze**: Customer Journey Analytics bietet die Möglichkeit, mehrere Datensätze in eine einzelne Verbindung aufzunehmen. Zu diesen Unterschieden gehören zusätzliche Ereignis-, Profil- oder Lookup-Datensätze. Diese Funktion ist ein wichtiges Unterscheidungsmerkmal zwischen Adobe Analytics und Customer Journey Analytics und ermöglicht Erkenntnisse zu Cross-Channel-Daten.
 * **Zusammengefügte Datensätze**: Adobe bietet die Möglichkeit, Personen-IDs aus zwei Datensätzen zu analysieren, was zu einem neuen Datensatz mit zusammengefügten IDs führt. Diese [zusammengefügten Datensätze](/help/stitching/overview.md) enthalten zusätzliche Daten, die über die Angebote einer Report Suite von Adobe Analytics hinausgehen.
 * **Datenquellen**: Customer Journey Analytics enthält keine [Datenquellen](https://experienceleague.adobe.com/de/docs/analytics/import/data-sources/overview), die in eine Report Suite von Adobe Analytics hochgeladen wurden, auch keine zusammenfassenden Datenquellen oder Transaktions-ID-Datenquellen.
-* **Einstellungen für Dimension und Metriken**: Innerhalb einer Datenansicht enthält jede Dimension und Metrik ihre eigenen Einstellungen, die Ihr Unternehmen ändern kann. Diese Änderungen gelten zum Zeitpunkt der Berichtsausführung und werden daher rückwirkend angewendet. Die Einstellungen für Dimension und Metriken in Adobe Analytics ändern die Art und Weise, wie Daten erfasst werden. Das bedeutet, diese Änderungen gelten ab diesem Zeitpunkt. Wenn Sie Komponenteneinstellungen in einem der Produkte geändert haben, können diese Unterschiede beim Reporting verursachen. Wenn Sie sich auf eine bestimmte Dimension konzentrieren, stellen Sie sicher, dass die Einstellungen für Attribution und Persistenz in Adobe Analytics und Customer Journey Analytics übereinstimmen.
+* **Einstellungen für Dimension und Metriken**: Innerhalb einer Datenansicht enthält jede Dimension und Metrik ihre eigenen Einstellungen, die Ihr Unternehmen ändern kann. Diese Änderungen gelten zum Zeitpunkt der Berichtsausführung und werden daher rückwirkend angewendet. Die Einstellungen für Dimension und Metrik in Adobe Analytics ändern die Art und Weise, wie Daten erfasst werden, sodass diese Änderungen ab diesem Zeitpunkt gelten. Wenn Sie Komponenteneinstellungen in einem der Produkte geändert haben, können diese Unterschiede beim Reporting verursachen. Wenn Sie sich auf eine bestimmte Dimension konzentrieren, stellen Sie sicher, dass die Einstellungen für Attribution und Persistenz in Adobe Analytics und Customer Journey Analytics übereinstimmen.
 
   >[!TIP]
   >
@@ -81,7 +81,7 @@ Wenn sich alle oben genannten Einstellungen ähneln und Sie zumindest die Anzahl
    ORDER BY Day;
    ```
 
-1. Generieren Sie in [Daten-Feeds](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-overview) von Adobe Analytics Feed-Dateien für den gewünschten Datumsbereich. Zählen Sie die Anzahl der Zeilen innerhalb jeder Datei und identifizieren Sie die folgenden Zeilen und schließen Sie sie aus:
+1. Generieren Sie in [Daten-Feeds](https://experienceleague.adobe.com/de/docs/analytics/export/analytics-data-feed/data-feed-overview) von Adobe Analytics Feed-Dateien für den gewünschten Datumsbereich. Zählen Sie die Anzahl der Zeilen innerhalb jeder Datei, identifizieren Sie die folgenden Zeilen und schließen Sie sie aus:
 
    * `exclude_hit` ist nicht `0` (Daten werden in beiden Produkten aus Analysis Workspace ausgeschlossen)
    * `hit_source` ist `0`, `3`, `5`, `7`, `8`, `9` oder `10` (Datenquellen und andere Nicht-Trefferdaten)
@@ -89,4 +89,4 @@ Wenn sich alle oben genannten Einstellungen ähneln und Sie zumindest die Anzahl
 
    Zeilen, die einem der oben genannten Kriterien entsprechen, sind vom Aufnahme-Workflow des Analytics-Quell-Connectors ausgeschlossen und sollten daher auch beim Zählen von Daten-Feed-Zeilen ausgeschlossen werden.
 
-1. Die Gesamtzahl der Einträge in den Abfrage-Services sollte mit der Anzahl der Zeilen in einem Daten-Feed für denselben Zeitraum übereinstimmen.
+1. Die Gesamtzahl der Einträge in Query Services sollte mit der Anzahl der Zeilen in einem Daten-Feed für denselben Zeitraum übereinstimmen.

@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 54%
@@ -50,7 +50,7 @@ ht-degree: 54%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-layer"
 >title="Senden der Datenschicht an Adobe"
->abstract="Statt Daten über ein XDM-Objekt zu senden, können Sie die gesamte Datenschicht über das Datenobjekt an Adobe senden.<br><br>Mit dieser Option sparen Sie Implementierungszeit, da Sie die Datenschicht XDM zuordnen können, anstatt ein XDM-Objekt von Grund auf neu zu befüllen. Diese Zuordnung ist jedoch sehr aufwändig, da eine erhebliche Datenmenge vorhanden ist, die Adobe nicht ohne weiteres interpretieren kann. Außerdem führt diese Option im Laufe der Zeit zu zusätzlicher Komplexität, da jedes Feld, das Sie den Daten später hinzufügen, im Datenstrom XDM zugeordnet werden muss."
+>abstract="Statt Daten über ein XDM-Objekt zu senden, können Sie die gesamte Datenschicht über das Datenobjekt an Adobe senden.<br><br>Mit dieser Option sparen Sie Implementierungszeit, da Sie die Datenschicht XDM zuordnen können, anstatt ein XDM-Objekt von Grund auf neu zu befüllen. Diese Zuordnung ist jedoch sehr aufwändig, da eine erhebliche Datenmenge vorhanden ist, die Adobe nicht ohne weiteres interpretieren kann. Außerdem führt diese Option im Laufe der Zeit zu zusätzlicher Komplexität, da jedes Feld, das Sie den Daten später hinzufügen, dem XDM-Schema im Datenstrom zugeordnet werden muss."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,7 +59,7 @@ ht-degree: 54%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-send-data-layer"
 >title="Senden der Datenschicht an Adobe"
->abstract="Konfigurieren Sie die Implementierung so, dass Daten zum gewünschten Zeitpunkt an Adobe gesendet werden, und konfigurieren Sie die JSON-Payload so, dass sie Ihre vollständige Datenschicht ist."
+>abstract="Konfigurieren Sie die Implementierung so, dass Daten zum gewünschten Zeitpunkt an Adobe gesendet werden, und konfigurieren Sie die JSON-Payload so, dass sie Ihre Datenschicht in ihrer Gesamtheit enthält."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -67,7 +67,7 @@ ht-degree: 54%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-layer-map"
->title="Zuweisen jedes Datenschichtelements zu XDM"
+>title="Jedem Datenschichtelement XDM zuweisen"
 >abstract="Ordnen Sie jedes Datenschichtelement dem gewünschten XDM-Feld zu. Alle Datenschichtelemente, die keinem XDM-Feld zugeordnet sind, werden dauerhaft verworfen, da Adobe nicht weiß, wo und wie diese Daten gespeichert werden sollen."
 
 <!-- markdownlint-enable MD034 -->

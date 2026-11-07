@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 56f881fc811f0eeffb9633872b3edbe0eb2d7070
+source-git-commit: e4a2c292024e2d88c3dec02b86711d4f58d1c82c
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 39%
+source-wordcount: '1669'
+ht-degree: 38%
 ---
 # Komponentenverfügbarkeit in Daten-Feeds
 
@@ -93,6 +93,12 @@ Die folgenden Customer Journey Analytics-Standardmetriken können nicht in Daten
 | Globales Kontoprofil von Adobe | | Nicht verfügbar |
 | Adobe Persons Union | | Nicht verfügbar |
 | Adobe Persons Profile | | Nicht verfügbar |
+
+## Berechnete Metriken {#calculated-metrics}
+
+Berechnete Metriken können nicht in Daten-Feeds enthalten sein. Eine berechnete Metrik wird zur Berichtszeit durch Aggregation vieler Ereignisse berechnet, sodass sie in einer einzelnen Ereigniszeile keinen Wert hat.
+
+Wenn Sie berechnete Metrikergebnisse außerhalb von Customer Journey Analytics benötigen, können Sie die [Customer Journey Analytics BI-Erweiterung](/help/data-views/bi-extension.md) verwenden. Die BI-Erweiterung gibt Ergebnisse auf Berichtsebene anstelle von Ereigniszeilen zurück. Daher sollte sie zusammen mit Daten-Feeds und nicht als Ersatz verwendet werden.
 
 ## Dimensionen, die nicht zusammen verwendet werden können {#incompatible-dimensions}
 

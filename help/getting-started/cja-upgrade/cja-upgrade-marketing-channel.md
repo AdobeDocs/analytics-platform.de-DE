@@ -27,7 +27,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 100%
@@ -45,9 +45,9 @@ ht-degree: 100%
 
 {{upgrade-note-step}}
 
-Bei Verwendung des Analytics-Quell-Connectors fließen Marketing-Kanal-Daten über diesen Connector in Customer Journey Analytics. Regeln für Marketing-Kanäle werden im herkömmlichen Adobe Analytics-Tool konfiguriert, und einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie unter [Verwenden von Marketing-Kanal-Dimensionen](/help/use-cases/aa-data/marketing-channels.md).
+Bei Verwendung des Analytics-Quell-Connectors fließen Marketing-Kanal-Daten über diesen Connector in Customer Journey Analytics. Marketing-Kanal-Regeln werden im herkömmlichen Adobe Analytics konfiguriert, und einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie unter [Verwenden von Marketing-Kanal-Dimensionen](/help/use-cases/aa-data/marketing-channels.md).
 
-Um Marketing-Kanäle in Customer Journey Analytics bei Verwendung des Experience Platform-Web-SDK zu verwenden, können Sie mithilfe von abgeleiteten Feldern in einer Datenansicht dieselben Marketing-Kanäle und Verarbeitungsregeln für Customer Journey Analytics neu erstellen.
+Um Marketing-Kanäle in Customer Journey Analytics bei Verwendung des Adobe Experience Platform Web SDK zu verwenden, können Sie mithilfe von abgeleiteten Feldern in einer Datenansicht dieselben Marketing-Kanäle und Verarbeitungsregeln für Customer Journey Analytics reproduzieren.
 
 1. Wählen Sie in Customer Journey Analytics die Datenansicht aus, der Sie Marketing-Kanäle hinzufügen möchten.
 

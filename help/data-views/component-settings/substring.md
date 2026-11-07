@@ -22,13 +22,11 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 955
+source-wordcount: '955'
 ht-degree: 91%
-
 ---
-
 # Einstellungen der Teilzeichenfolge-Komponente {#substring-component-settings}
 
 <!-- markdownlint-disable MD034 -->
@@ -49,15 +47,15 @@ Mit Einstellungen der [!UICONTROL Teilzeichenfolge]-Komponente können Sie mehre
 
 ## Von links/rechts
 
-Hiermit stellen Sie einen Teil einer Zeichenfolge je nach ihrer Position an den Beginn oder das Ende einer Zeichenfolge. **[!UICONTROL Von links]** und **[!UICONTROL Von rechts]** verfügen über zwei Dropdown-Menüs: **[!UICONTROL Von]** (wo die Ausgabe beginnt) und **[!UICONTROL Bis]** (wo die Ausgabe endet).
+Nehmen Sie einen Teil einer Zeichenfolge basierend auf ihrer Position am Anfang oder am Ende der Zeichenfolge. **[!UICONTROL Von links]** und **[!UICONTROL Von rechts]** verfügen über zwei Dropdown-Menüs: **[!UICONTROL Von]** (wo die Ausgabe beginnt) und **[!UICONTROL Bis]** (wo die Ausgabe endet).
 
 * **[!UICONTROL Zeichenfolgen-Start]**: Der Beginn der Zeichenfolge.
 * **[!UICONTROL Zeichenfolge-Ende]**: Das Ende der Zeichenfolge.
 * **[!UICONTROL Position]**: Eine statische Anzahl von Zeichen je nach Methode von links oder rechts.
 * **[!UICONTROL Zeichenfolge]**: Ordnen Sie ein Zeichen oder eine Zeichenfolge zu, um den Beginn oder das Ende einer Zeichenfolge anzugeben. In diesem Dropdown-Menü werden auch zusätzliche Optionen angezeigt:
-   * **[!UICONTROL Übereinstimmung]**: Die zuzuordnende Zeichenfolge. Wenn die Eingabe nicht mit diesem Feld übereinstimmt, werden [keine Wertoptionen](no-value-options.md) angewendet.
-   * **[!UICONTROL Index]**: Die **[!UICONTROL Übereinstimmungskriterien]** können in einer Zeichenfolge mehrmals vorkommen. Diese Ganzzahl bestimmt, welche Übereinstimmung je nach Methode die Ausgabe starten oder beenden soll. Beispiel: Ein Index von `1` stellt die erste Übereinstimmung dar. Wenn der Index höher ist als die Anzahl der verfügbaren Übereinstimmungen, werden [keine Wertoptionen](no-value-options.md) angewendet.
-   * **[!UICONTROL Zeichenfolge einschließen]**: Ist dieses Kontrollkästchen aktiviert, wird die **[!UICONTROL Übereinstimmungszeichenfolge]** in der Ausgabe einbezogen.
+  * **[!UICONTROL Übereinstimmung]**: Die zuzuordnende Zeichenfolge. Wenn die Eingabe nicht mit diesem Feld übereinstimmt, werden [keine Wertoptionen](no-value-options.md) angewendet.
+  * **[!UICONTROL Index]**: Die **[!UICONTROL Übereinstimmungskriterien]** können in einer Zeichenfolge mehrmals vorkommen. Diese Ganzzahl bestimmt, welche Übereinstimmung je nach Methode die Ausgabe starten oder beenden soll. Beispiel: Ein Index von `1` stellt die erste Übereinstimmung dar. Wenn der Index höher ist als die Anzahl der verfügbaren Übereinstimmungen, werden [keine Wertoptionen](no-value-options.md) angewendet.
+  * **[!UICONTROL Zeichenfolge einschließen]**: Ist dieses Kontrollkästchen aktiviert, wird die **[!UICONTROL Übereinstimmungszeichenfolge]** in der Ausgabe einbezogen.
 * **[!UICONTROL Länge]**: Eine Ganzzahl, die angibt, wie hoch die einzubeziehende Zeichenzahl nach der Startposition der Ausgabe sein soll. Nur im Dropdown-Menü &quot;**[!UICONTROL &quot;]**.
 
 ## Trennzeichen
@@ -65,9 +63,9 @@ Hiermit stellen Sie einen Teil einer Zeichenfolge je nach ihrer Position an den 
 Verwenden Sie diese Methode für Felder, die ein Trennzeichen einsetzen, um mehrere Zeichenfolgenwerte zu trennen. Sie können entweder ein einzelnes Element extrahieren, das als Ausgabe verwendet werden soll, oder die Zeichenfolge in ein Objekt-Array-Schemaelement konvertieren.
 
 * **[!UICONTROL Kriterium]**: Hiermit geben Sie an, wie Sie die durch Trennzeichen getrennte Werteliste handhaben möchten.
-   * **[!UICONTROL Von links]**: Starten Sie am Beginn der durch Trennzeichen getrennten Liste und zählen Sie weiter.
-   * **[!UICONTROL Von rechts]**: Beginnen Sie am Ende der durch Trennzeichen getrennten Liste und zählen Sie rückwärts.
-   * **[!UICONTROL In Array konvertieren]**: Hiermit wird diese Dimension so gehandhabt, als wäre sie ein Objekt-Array-Schemaelement. Die Dimension wird als [benutzerdefinierter Container](/help/data-views/create-dataview.md#containers-1) verfügbar, den Sie in Ihrer Datenansicht auswählen und für die [Analyse von Unterereignissen](/help/components/segments/sub-event.md) in einem Workspace-Projekt verwenden können.
+  * **[!UICONTROL Von links]**: Starten Sie am Beginn der durch Trennzeichen getrennten Liste und zählen Sie weiter.
+  * **[!UICONTROL Von rechts]**: Beginnen Sie am Ende der durch Trennzeichen getrennten Liste und zählen Sie rückwärts.
+  * **[!UICONTROL In Array konvertieren]**: Hiermit wird diese Dimension so gehandhabt, als wäre sie ein Objekt-Array-Schemaelement. Die Dimension wird als [benutzerdefinierter Container](/help/data-views/create-dataview.md#containers-1) verfügbar, den Sie in Ihrer Datenansicht auswählen und für die [Analyse von Unterereignissen](/help/components/segments/sub-event.md) in einem Workspace-Projekt verwenden können.
 * **[!UICONTROL Trennzeichen]**: Das Trennzeichen, das vom Feld verwendet wird.
 * **[!UICONTROL Index]**: Nur vorhanden, wenn das Kriterium „Von links/rechts“ ist. Die Elementnummer, als ob sie sich in einem Array befände. Wenn die Zeichenfolgeneingabe beispielsweise `"Fox,Turtle,Rabbit,Wolf"` mit einem Index von 3 ist, ist die Ausgabe `"Rabbit"`. Wenn der Index höher ist als die Anzahl der durch Trennzeichen getrennten Elemente, werden [Keine Wertoptionen](no-value-options.md) angewendet.
 
@@ -127,12 +125,12 @@ Customer Journey Analytics verwendet eine Teilmenge der Perl-Regex-Syntax. Wenn 
 | `(?:...)` | Nicht-kennzeichnende Erfassung. Verhindert, dass in der Ausgabezeichenfolge auf die Übereinstimmung verwiesen wird. |
 | `a?` | Null oder eins von `a`. |
 | `a*` | Null oder mehr von `a`. |
-| `a+` | Eines oder mehr von `a`. |
+| `a+` | Eines oder mehrere von `a`. |
 | `a{3}` | Genau 3 von `a`. |
 | `a{3,}` | 3 oder mehr von `a`. |
 | `a{3,6}` | Zwischen 3 und 6 von `a`. |
 
-Ausgabe-Platzhalter werden ebenfalls unterstützt. Sie können diese Sequenzen im **[!UICONTROL Ausgabeformat]** beliebig oft und in beliebiger Reihenfolge verwenden, um die gewünschte Zeichenfolgenausgabe zu erlangen.
+Ausgabeplatzhalter werden ebenfalls unterstützt. Sie können diese Sequenzen im **[!UICONTROL Ausgabeformat]** beliebig oft und in beliebiger Reihenfolge verwenden, um die gewünschte Zeichenfolgenausgabe zu erlangen.
 
 | Ausgabe-Platzhaltersequenz | Beschreibung |
 | --- | --- |

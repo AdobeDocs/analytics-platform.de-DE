@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1852'
-ht-degree: 80%
+ht-degree: 79%
 ---
 # Konfigurieren einer Flussvisualisierung {#configure-a-flow-visualization}
 
@@ -69,7 +69,7 @@ ht-degree: 80%
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_limit_occurrence"
->title="Begrenzung auf erstes/letztes Auftreten"
+>title="Begrenzung auf erstes/letztes Vorkommen"
 >abstract="Die Ergebnisse sind auf Pfade beschränkt, wenn der erste/letzte Touchpoint ein Ein-/Ausstieg ist."
 
 >[!CONTEXTUALHELP]
@@ -107,7 +107,7 @@ Sie können den Beginn oder das Ende des Pfads konfigurieren, an dem Sie interes
    Jede dieser Kategorien wird auf dem Bildschirm als ein *Ablagebereich* angezeigt. Sie können den Ablagebereich auf drei Arten füllen:
 
    * Verwenden Sie das Dropdown-Menü, um Metriken oder Dimensionen auszuwählen.
-   * Ziehen Sie Dimensionen oder Metriken per Drag-and-Drop aus dem linken Bedienfeld.
+   * Ziehen Sie Dimensionen oder Metriken per Drag-and-Drop aus dem linken Panel.
    * Beginnen Sie mit der Eingabe des Namens einer Dimension oder Metrik und wählen Sie ihn aus, wenn er im Dropdown-Menü angezeigt wird.
 
    >[!IMPORTANT]
@@ -125,8 +125,8 @@ Sie können den Beginn oder das Ende des Pfads konfigurieren, an dem Sie interes
    | --- | --- |
    | **[!UICONTROL Beschriftungen umbrechen]** | Die Beschriftungen der Flusselemente werden üblicherweise aus Platzgründen auf dem Bildschirm abgeschnitten. Aktivieren Sie dieses Kontrollkästchen, um die gesamte Beschriftung anzuzeigen.  Standard = deaktiviert. |
    | **[!UICONTROL Wiederholungsinstanzen einschließen]** | Flussvisualisierungen basieren auf Instanzen einer Dimension. Diese Einstellung gibt Ihnen die Möglichkeit, wiederholte Instanzen ein- oder auszuschließen, z. B. Seitenneuladungen. Wiederholungen können jedoch nicht aus Flussvisualisierungen entfernt werden, die Dimensionen mit mehreren Werten enthalten, wie listVars, listProps, s.product, Merchandising-eVars usw. <p>Standardmäßig ist diese Option deaktiviert.</p> |
-   | **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** | Begrenzen Sie Pfade auf diejenigen, die mit dem ersten/letzten Auftreten einer Dimension, eines Elements oder einer Metrik beginnen oder enden. Eine ausführlichere Erläuterung finden Sie unter [Begrenzung auf erstes/letztes Auftreten](#example-scenario-for-limit-to-firstlast-occurrence). |
-   | **[!UICONTROL Anzahl der Spalten]** | Die Anzahl der Spalten, die Ihr Flussdiagramm enthalten soll. Sie können maximal 5 Spalten angeben. |
+   | **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** | Begrenzen Sie Pfade auf diejenigen, die mit dem ersten/letzten Vorkommen einer Dimension, eines Elements oder einer Metrik beginnen oder enden. Eine ausführlichere Erläuterung finden Sie unter [Begrenzung auf erstes/letztes Auftreten](#example-scenario-for-limit-to-firstlast-occurrence). |
+   | **[!UICONTROL Anzahl der Spalten]** | Die Anzahl der Spalten, die Ihre Flow-Visualisierung enthalten soll. Sie können maximal 5 Spalten angeben. |
    | **[!UICONTROL Erweiterte Elemente pro Spalte]** | Die Anzahl der Elemente, die jede Spalte enthalten soll. Sie können pro Spalte maximal 10 erweiterte Elemente angeben. |
    | **[!UICONTROL Fluss-Container]** | Zur Pfadanalyse können Sie zwischen **[!UICONTROL Globales Konto]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Buying Group]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Sessions]** und **[!UICONTROL Person]** wechseln. Diese Einstellungen helfen Ihnen, die Interaktion auf einer bestimmten Container-Ebene (sitzungsübergreifend) zu verstehen oder die Analyse auf eine einzelne Sitzung einzuschränken. |
 
@@ -142,9 +142,9 @@ Sie können den Beginn oder das Ende des Pfads konfigurieren, an dem Sie interes
 
 Angenommen, Sie möchten den Pfad verfolgen, den Benutzende zu und von den beliebtesten Seiten Ihrer Site eingeschlagen haben.
 
-1. Erstellen Sie eine Flussvisualisierung, wie oben beschrieben.
+1. Erstellen Sie eine Flow-Visualisierung, wie oben beschrieben.
 1. Ziehen Sie die Dimension [!UICONTROL **Seite**] in das Feld **[!UICONTROL Enthält]** und wählen Sie [!UICONTROL **Erstellen**] aus.
-1. Die Flussvisualisierung wird mit der am häufigsten angezeigten Seite erstellt, die im Fokusknoten in der Mitte der Visualisierung angezeigt wird. Sie sehen auch die Top-Seiten, die zu dieser Seite führen (links neben dem Fokusknoten), sowie die Top-Seiten, die von dieser Seite weg führen (rechts neben dem Fokusknoten).
+1. Die Flow-Visualisierung wird erstellt, wobei die am häufigsten angezeigte Seite im Fokusknoten in der Mitte der Visualisierung angezeigt wird. Sie sehen auch die Top-Seiten, die zu dieser Seite führen (links neben dem Fokusknoten), sowie die Top-Seiten, die von dieser Seite wegführen (rechts neben dem Fokusknoten).
 1. Analysieren Sie die Daten im Fluss, wie unter [Konfigurieren](#configure) beschrieben.
 
 
@@ -152,19 +152,19 @@ Angenommen, Sie möchten den Pfad verfolgen, den Benutzende zu und von den belie
 
 Eine Zusammenfassung der Flusskonfiguration wird oben in den Visualisierungen angezeigt. Die Pfade im Diagramm sind proportional. Pfade mit mehr Aktivität werden dicker angezeigt.
 
-![Beispiel für eine Flussausgabe mit „Endet mit“-Besuchen, Pfaddimension: Seite und Fluss-Container: Besucher.](assets/flow-output.png)
+![Beispiel für eine Flussausgabe mit „Endet mit Besuchen“, Pfaddimension: Seite und Fluss-Container: Besucher.](assets/flow-output.png)
 
-Um die Daten weiter zu untersuchen, haben Sie mehrere Möglichkeiten:
+Um die Daten weiter aufzuschlüsseln, haben Sie mehrere Möglichkeiten:
 
 * Das Flussdiagramm ist interaktiv. Bewegen Sie den Mauszeiger über das Diagramm, um die angezeigten Details zu ändern.
 
-* Wenn Sie einen Knoten im Diagramm auswählen, werden die Details für diesen Knoten angezeigt. Wählen Sie den Knoten erneut aus, um ihn wieder zu reduzieren.
+* Wenn Sie einen Knoten im Diagramm auswählen, werden die Details für diesen Knoten angezeigt. Wählen Sie den Knoten erneut aus, um ihn wieder einzuklappen.
 
   Wenn mehrere Knoten in einer Flussvisualisierung erweitert bleiben, kann sich dies auf die Berichtszeit auswirken. Als allgemeine Richtlinie gilt, dass nicht mehr als 10 Knoten gleichzeitig erweitert bleiben sollten.
 
   ![Beispiel für ein interaktives Flussdiagramm mit Knotendetails.](assets/node-details.png)
 
-* Sie können eine Spalte so filtern, dass nur bestimmte Ergebnisse angezeigt werden, z. B. das Ein- und Ausschließen, die Angabe von Kriterien usw.
+* Sie können eine Spalte so filtern, dass nur bestimmte Ergebnisse angezeigt werden, z. B. durch Ein- und Ausschließen oder die Angabe von Kriterien.
 
 * Wählen Sie ![AddCircle](/help/assets/icons/AddCircle.svg) auf der linken oder rechten Seite aus, um eine Spalte zu erweitern.
 
@@ -174,12 +174,12 @@ Um die Daten weiter zu untersuchen, haben Sie mehrere Möglichkeiten:
 
 ## Filter
 
-Über jeder Spalte wird ein Filter ![Filter](/help/assets/icons/Filter.svg) angezeigt, wenn Sie den Mauszeiger darüber bewegen. Wenn Sie den Filter auswählen, sehen Sie dasselbe Filterdialogfeld, das heute auch in der Freiformtabelle vorhanden ist. Siehe [Filtern und Sortieren](freeform-table/../../freeform-table/filter-and-sort.md).
+Über jeder Spalte wird ein Filter ![Filter](/help/assets/icons/Filter.svg) angezeigt, wenn Sie den Mauszeiger darüber bewegen. Wenn Sie den Filter auswählen, wird dasselbe Filterdialogfeld angezeigt, das auch in der Freiformtabelle vorhanden ist. Siehe [Filtern und Sortieren](freeform-table/../../freeform-table/filter-and-sort.md).
 
 * Verwenden Sie **[!UICONTROL Erweiterte Optionen anzeigen]** zum Konfigurieren der erweiterten Einstellungen, um bestimmte Kriterien in die Benutzerliste aufzunehmen oder auszuschließen. Weitere Informationen finden Sie unter [Filtern und sortieren](../freeform-table/filter-and-sort.md).
-* Nachdem Sie eine Spalte gefiltert haben, spiegelt diese spezifische Spalte die Filterung wider. Ein blauer ![Filter](/help/assets/icons/FilterColored.svg) bedeutet, dass die Spalte gefiltert wird.  Der Filter reduziert die Spalte entweder, um nur das im Filter zulässige Element anzuzeigen, oder er entfernt alle Elemente mit Ausnahme des Elements, das Sie im Filter verwenden möchten.
+* Nachdem Sie eine Spalte gefiltert haben, spiegelt diese spezifische Spalte die Filterung wider. Ein blauer ![Filter](/help/assets/icons/FilterColored.svg) bedeutet, dass die Spalte gefiltert wird.  Der Filter reduziert die Spalte entweder, um nur das im Filter zulässige Element anzuzeigen, Oder er entfernt alle Elemente mit Ausnahme des Elements, das Sie im Filter verwenden möchten.
 * Alle vor- und nachgelagerten Spalten werden beibehalten, solange Daten in die verbleibenden Knoten fließen.
-* Um einen Filter zu entfernen, wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus. Daraufhin wird das Filtermenü geöffnet. Entfernen Sie alle angewendeten Filter und wählen Sie **[!UICONTROL Speichern]** aus. Der Fluss sollte zum vorherigen, ungefilterten Status zurückkehren.
+* Um einen Filter zu entfernen, wählen Sie ![Filter](/help/assets/icons/Filter.svg) aus. Daraufhin wird das Filtermenü geöffnet. Entfernen Sie alle angewendeten Filter und wählen Sie **[!UICONTROL Speichern]** aus. Die Flow-Visualisierung sollte zum vorherigen, ungefilterten Status zurückkehren.
 
 ## Kontextmenü
 
@@ -190,7 +190,7 @@ Verwenden Sie ein Kontextmenü auf einem beliebigen Knoten in der Flussvisualisi
 | **[!UICONTROL Auf diesen Knoten fokussieren]** | Ändern Sie den Fokus auf den ausgewählten Knoten. Der Fokusknoten wird in der Mitte des Flussdiagramms angezeigt. |
 | **[!UICONTROL Neu starten]** | Bringt Sie wieder zurück in den Freiform-Diagramm-Builder, in dem Sie ein neues Flussdiagramm erstellen können. |
 | **[!UICONTROL Erstellen Sie ein Segment für diesen Pfad]** | Erstellen eines Segments. Diese Auswahl führt Sie zum Segment Builder, in dem Sie das neue Segment konfigurieren können. |
-| **[!UICONTROL Aufschlüsselung]** | Hiermit können Sie den Knoten nach verfügbaren Dimensionen, Metriken oder Zeiten aufschlüsseln. |
+| **[!UICONTROL Aufschlüsselung]** | Schlüsseln Sie den Knoten nach verfügbaren Dimensionen, Metriken oder Zeiten auf. |
 | **[!UICONTROL Spalte filtern]** | Es werden dieselben Filteroptionen angezeigt, die auch in der Freiformtabelle verfügbar sind. Weitere Informationen zu den verfügbaren Optionen finden Sie im Abschnitt „Anwenden eines einfachen oder erweiterten Filters auf eine Tabelle“ in [Filtern und Sortieren von Tabellen](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
 | **[!UICONTROL Element ausschließen]** oder **[!UICONTROL Ausgeschlossene Elemente wiederherstellen]** | Entfernt einen bestimmten Knoten aus der Spalte und erstellt daraus automatisch einen Filter oben in der Spalte. Um das ausgeschlossene Element wiederherzustellen, wählen Sie im Kontextmenü **[!UICONTROL Ausgeschlossenes Element wiederherstellen]** aus. Sie können das Segment auch oben in der Spalte öffnen und die Box mit dem Element entfernen, das Sie gerade ausgeschlossen haben. |
 | **[!UICONTROL Trend]** | Mit dieser Option erstellen Sie ein Trenddiagramm für den Knoten. |
@@ -200,7 +200,7 @@ Verwenden Sie ein Kontextmenü auf einem beliebigen Knoten in der Flussvisualisi
 | **[!UICONTROL Zielgruppe aus Auswahl erstellen]** | Erstellt eine Zielgruppe basierend auf der ausgewählten Spalte. |
 | **[!UICONTROL Gesamte Spalte reduzieren]** | Diese Option blendet alle Knoten in einer Spalte aus. |
 
-## Begrenzung auf erstes/letztes Auftreten
+## Begrenzung auf erstes/letztes Vorkommen
 
 Beachten Sie bei Verwendung dieser Option Folgendes:
 

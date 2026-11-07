@@ -31,9 +31,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1679'
 ht-degree: 14%
 ---
 # Aufnehmen und Verwenden von Experience Platform-Zielgruppen
@@ -363,7 +363,7 @@ In der Experience Platform-Benutzeroberfläche:
    1. (Optional) Geben Sie eine &quot;**[!UICONTROL &quot;]**.
    1. Wählen Sie **[!UICONTROL Beenden]** aus.
 1. Richten Sie Ihr Schema so ein, dass es eine benutzerdefinierte Feldergruppe (mit dem Namen **[!UICONTROL Zielgruppenmitgliedschaft]**) enthält, die zwei Felder mit dem Namen **[!UICONTROL audienceMembershipId]** und **[!UICONTROL audienceMembershipName]** enthält.
-1. Stellen Sie sicher **[!UICONTROL dass das Feld]** personID) eine **[!UICONTROL Identität]** **[!UICONTROL Primäre Identität]** ist und **[!UICONTROL email]** als I&#x200B;**[!UICONTROL identity-Namespace]** hat.
+1. Stellen Sie sicher **[!UICONTROL dass das Feld]** personID) eine **[!UICONTROL Identität]**, **[!UICONTROL Primäre Identität]** ist und **[!UICONTROL email]** den **[!UICONTROL Identity-Namespace]**.
 
    ![Segment für den Export](assets/segment-for-export.png)
 
@@ -413,7 +413,7 @@ In der Customer Journey Analytics-Benutzeroberfläche:
 
 +++
 
-### Erstellen einer Datenansicht
+### Konfigurieren einer Datenansicht
 
 Konfigurieren Sie eine Datenansicht für die Verbindung, die Sie gerade erstellt oder bearbeitet haben.
 
@@ -507,7 +507,7 @@ You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `pe
 
 * Sie sollten diesen Prozess regelmäßig durchführen, damit die Zielgruppendaten in Customer Journey Analytics ständig aktualisiert werden.
 * Sie können mehrere Zielgruppen in eine Customer Journey Analytics-Verbindung importieren. Dies erhöht zwar die Komplexität des Prozesses, es ist jedoch möglich. Damit dies funktioniert, müssen Sie einige Änderungen am obigen Prozess vornehmen:
-  1. Führen Sie diesen Prozess für jede gewünschte Zielgruppe in Ihrer Zielgruppensammlung innerhalb des Echtzeit-Kundenprofis aus.
+  1. Führen Sie diesen Prozess für jede gewünschte Zielgruppe in Ihrer Zielgruppensammlung innerhalb von Real-time Customer Profile aus.
   1. Customer Journey Analytics unterstützt Arrays/Objekt-Arrays in Profildatensätzen. Es [&#x200B; sich, für die `audienceMembershipId` oder `audienceMembershipIdName` ein &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=de)Array von Objekten“ zu verwenden.
   1. Erstellen Sie in Ihrer Datenansicht eine neue Dimension mithilfe der Teilzeichenfolgenumwandlung des `audienceMembershipId`-Felds, um die Zeichenfolge mit kommagetrennten Werten in ein Array zu konvertieren. HINWEIS: Derzeit besteht für das Array eine Beschränkung von 10 Werten.
   1. Jetzt können Sie in Customer Journey Analytics Workspace Berichte zu diesem neuen `audienceMembershipIds` erstellen.

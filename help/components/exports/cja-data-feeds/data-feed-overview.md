@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 34959e37a7040bcd861a506968895ad6f051b686
+source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '562'
 ht-degree: 1%
 ---
 # Übersicht über Daten-Feeds
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 Daten-Feeds exportieren Rohdaten auf Ereignisebene von Customer Journey Analytics in ein Cloud-Ziel. Sie können diese Daten auf anderen Plattformen außerhalb von Adobe verwenden, z. B. in einem Data Warehouse.
 
-Daten-Feeds werden aus den Komponenten in einer Datenansicht erstellt. Jede Dimension und Metrik, die Sie einbeziehen, wird zu einer Spalte im Daten-Feed, und Einstellungen der Datenansicht wie Persistenz, abgeleitete Felder und Segmente werden auf die Daten angewendet. Die Dateien werden im Parquet-Format bereitgestellt.
+Daten-Feeds werden aus den Komponenten in einer Datenansicht erstellt. Jede Dimension und Metrik, die Sie einbeziehen, wird zu einer Spalte im Daten-Feed, und Einstellungen der Datenansicht wie Persistenz, abgeleitete Felder und Segmente werden auf die Daten angewendet. Die Dateien werden im [Parquet-Format](/help/components/exports/cja-data-feeds/df-parquet.md) ausgeliefert.
 
 Sie können die folgenden Arten von Daten-Feeds erstellen:
 
@@ -71,13 +71,15 @@ Verwenden Sie die folgenden Artikel, um Ihre Daten-Feeds zu planen, zu migrieren
 
 ### Planen von Daten-Feeds
 
-* [Vergleichen von Daten-Feeds in Customer Journey Analytics und Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md): Verstehen Sie Unterschiede bei Funktionen und Konzepten, wenn Sie zuvor Adobe Analytics-Daten-Feeds verwendet haben.
-
 * [Datendiskrepanzen zwischen Daten-Feeds und Analysis Workspace verstehen](/help/components/exports/cja-data-feeds/df-comparison-workspace.md): Erfahren Sie, warum die Daten-Feed-Ausgabe möglicherweise nicht mit Berichten in Analysis Workspace übereinstimmt.
 
 * [Komponentenverfügbarkeit in Daten-Feeds](/help/components/exports/cja-data-feeds/df-components.md): Erfahren Sie, welche Dimensionen und Metriken in Daten-Feeds erforderlich, nicht unterstützt oder eingeschränkt sind.
 
+* [Arbeiten mit Parquet-Dateien in Daten-Feeds](/help/components/exports/cja-data-feeds/df-parquet.md): Erfahren Sie, warum Daten-Feeds Parquet verwenden und wie Sie die Dateien in Ihrem Data Warehouse abfragen oder laden.
+
 ### Migrieren von Adobe Analytics-Daten-Feeds
+
+1. [Vergleichen von Daten-Feeds in Customer Journey Analytics und Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md): Verstehen Sie Unterschiede bei Funktionen und Konzepten, wenn Sie zuvor Adobe Analytics-Daten-Feeds verwendet haben.
 
 1. [Vorbereiten der Zuordnung von Daten-Feed-Spalten](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md): Verstehen Sie die Faktoren, die die Zuordnung von Adobe Analytics-Spalten zu Customer Journey Analytics beeinflussen.
 

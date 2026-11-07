@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 20%
@@ -34,7 +34,7 @@ ht-degree: 20%
 
 Sie können Warnhinweise erstellen, wie unter [Erstellen von Warnhinweisen](/help/components/c-intelligent-alerts/alert-builder.md) beschrieben.
 
-In den folgenden Abschnitten werden die beispielhaften Anwendungsszenarien beschrieben, die bei der Erstellung von Warnhinweisen zu berücksichtigen sind.
+In den folgenden Abschnitten werden beispielhafte Anwendungsfälle beschrieben, die Sie bei der Erstellung von Warnhinweisen berücksichtigen sollten.
 
 ## Warnhinweise filtern
 

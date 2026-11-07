@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 65%
+ht-degree: 58%
 ---
 # Horizontalbalken (gestapelt)
 
@@ -32,7 +32,7 @@ _In diesem Artikel werden die Visualisierungen „Horizontalbalken“ und „Hor
 
 >[!ENDSHADEBOX]
 
-Die Visualisierung „Horizontalbalken“ bietet die Optionen „Standardmäßig“ und „Gestapelt“.
+Die Visualisierung „Horizontalbalken“ bietet die Optionen „Standard“ und „gestapelt“.
 
 ## Horizontalbalken {#horizontal-bar}
 
@@ -46,7 +46,7 @@ Die Visualisierung „Horizontalbalken“ bietet die Optionen „Standardmäßig
 <!-- markdownlint-enable MD034 -->
 
 
-Die ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) Visualisierung **[!UICONTROL Horizontalbalken]** zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen.
+Die Visualisierung ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Horizontalbalken]** zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen.
 
 ![Horizontaler Balken mit Metriken wie Seitenansichten, Seitengeschwindigkeit, Besuche, Einstiege und Ausstiege.](assets/horizontal-bar.png)
 
