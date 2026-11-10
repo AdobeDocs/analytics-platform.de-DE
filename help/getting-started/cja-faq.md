@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
-source-wordcount: '2322'
-ht-degree: 94%
+source-wordcount: '2334'
+ht-degree: 93%
 ---
 # Häufig gestellte Fragen
 
@@ -112,7 +112,7 @@ Nach der ersten Aktivierung bietet Adobe eine Aufstockung von zugeordneten Daten
 
 +++
 
-## &#x200B;3. Daten in [!UICONTROL Customer Journey Analytics &#x200B;] {#ingest}
+## &#x200B;3. Daten in [!UICONTROL Customer Journey Analytics ] {#ingest}
 
 +++**Kann ich Daten aus verschiedenen [!UICONTROL Adobe Experience Platform]-Sandboxen in einer [!UICONTROL Customer Journey Analytics]-Verbindung kombinieren?**
 
@@ -181,7 +181,7 @@ Adobe hat kürzlich die Verarbeitung von Daten in Customer Journey Analytics ge�
 
 ## &#x200B;5. Festlegen eines rollierenden Fensters für [!UICONTROL Verbindung] Datenaufbewahrung {#data-retention}
 
-Mit der Einstellung [**[!UICONTROL Rollierendes Datenfenster aktivieren &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) können Sie die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (drei Monate, sechs Monate usw.) definieren. Sie wird auf einer [!UICONTROL Verbindungs]-Ebene, nicht auf einer [!UICONTROL Datensatz]-Ebene festgelegt. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
+Mit der Einstellung [**[!UICONTROL Rollierendes Datenfenster aktivieren ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) können Sie die Customer Journey Analytics-Datenspeicherung als rollierendes Fenster in Monaten (drei Monate, sechs Monate usw.) definieren. Sie wird auf einer [!UICONTROL Verbindungs]-Ebene, nicht auf einer [!UICONTROL Datensatz]-Ebene festgelegt. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
 
 Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko zusätzlicher Kosten zu reduzieren.
 
@@ -222,7 +222,7 @@ Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connecto
 
 ## &#x200B;8. [!UICONTROL Adobe Analytics]-Komponenten
 
-+++**Kann ich [!UICONTROL Zielgruppen“ von [!DNL Customer Journey Analytics] für Experience Platform Real-Time CDP oder &#x200B;] andere CX Enterprise-Programme freigeben/veröffentlichen?**
++++**Kann ich [!UICONTROL Zielgruppen“ von [!DNL Customer Journey Analytics] für Experience Platform Real-Time CDP oder ] andere CX Enterprise-Programme freigeben/veröffentlichen?**
 
 Sie können in Customer Journey Analytics identifizierte [Zielgruppen erstellen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-components/audiences/publish) und im Echtzeit-Kundenprofil in Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden.
 
@@ -285,7 +285,7 @@ Weitere Informationen über die [Implikationen beim Löschen von Datensätzen un
 
 Adobe CX Enterprise verwendet die regionale Datenerfassung (Regional Data Collection, RDC), damit die Interaktionen zwischen Ihren Besucherinnen und Besuchern sowie Adobe- und Nicht-Adobe-Lösungen so nah wie möglich bei Ihren Besucherinnen und Besuchern stattfinden. Sobald Daten regional in einem Data Collection Center (DCC, auch als Edge Site bezeichnet, Teil des Platform Edge Network) erfasst wurden, werden sie über eine sichere Verbindung an die relevanten Lösungen weitergeleitet, abhängig von der Konfiguration Ihres Datenstroms und/oder der Ereignisweiterleitung.
 
-![Datenfluss mithilfe von Edge-Netzwerken](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=de)
+Eine Abbildung des Datenflusses durch die Edge Network finden Sie unter [Datenerfassung - Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/collection/home).
 
 Der regionale Datenerfassungsprozess umfasst die folgenden Schritte:
 
@@ -315,4 +315,4 @@ Wenn die Daten das regionale Rechenzentrum erreichen, bestimmt die Datastream-Ko
 Für Customer Journey Analytics werden Datensätze von Adobe Experience Platform benötigt. Ihre Datenstrom-/Ereignisweiterleitungskonfiguration erfordert daher, dass der Adobe Experience Platform-Dienst die Daten vom regionalen Rechenzentrum an das Rechenzentrum weiterleitet, in dem sich Ihre Adobe Experience Platform-Instanz befindet. Customer Journey Analytics und die zugehörigen unterstützenden Dienste und Infrastrukturen werden in derselben Adobe Experience Platform-Instanz bereitgestellt.
 
 
-Weitere Informationen über den Datenerfassungsprozess außerhalb von Adobe Experience Platform Edge Network und der entsprechenden regionalen Rechenzentren finden Sie unter [Datenerfassung – Übersicht](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=de).
+Weitere Informationen über den Datenerfassungsprozess außerhalb von Adobe Experience Platform Edge Network und der entsprechenden regionalen Rechenzentren finden Sie unter [Datenerfassung – Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/collection/home).

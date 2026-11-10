@@ -1,5 +1,5 @@
 ---
-title: Weitere Informationen zu Ihrer Adobe Analytics-Implementierung und deren Wirkung auf Ihr Customer Journey Analytics-Upgrade
+title: Verstehen Sie Ihre Adobe Analytics-Implementierung und wie sie sich auf Ihr Upgrade auf Customer Journey Analytics auswirkt
 description: Erfahren Sie, wie sich Ihre Adobe Analytics-Implementierungsmethode auf die für Customer Journey Analytics verfügbaren Aktualisierungspfade auswirkt.
 role: Admin
 solution: Customer Journey Analytics
@@ -36,12 +36,12 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 96%
+source-wordcount: '995'
+ht-degree: 95%
 ---
-# Weitere Informationen zu Ihrer Adobe Analytics-Implementierung und deren Wirkung auf Ihr Customer Journey Analytics-Upgrade {#implementation-affects-upgrade}
+# Verstehen Sie Ihre Adobe Analytics-Implementierung und wie sie sich auf Ihr Upgrade auf Customer Journey Analytics auswirkt {#implementation-affects-upgrade}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -57,7 +57,7 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-analyticsextension"
 >title="Adobe Analytics-Erweiterung (Tags)"
->abstract="Eine Tags-Implementierung, die die Adobe Experience Platform-Datenerfassung (früher als Launch bekannt) lädt. Für das Tag ist die Adobe Analytics-Erweiterung installiert."
+>abstract="Eine Tags-Implementierung, die Adobe Experience Platform Data Collection (früher als Launch bekannt) lädt. Für das Tag ist die Adobe Analytics-Erweiterung installiert."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -74,7 +74,7 @@ ht-degree: 96%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdkextension"
->title="Web SDK-Erweiterung (Tag)"
+>title="Web SDK-Erweiterung (Tags)"
 >abstract="Eine Tags-Implementierung, die die Adobe Experience Platform-Datenerfassung (früher als Launch bekannt) lädt. Für das Tag ist die Web SDK-Erweiterung installiert."
 
 <!-- markdownlint-enable MD034 -->
@@ -84,7 +84,7 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-api"
 >title="Dateneinfüge-API"
->abstract="Eine Implementierung, die die App zum Einfügen von Daten oder die App zum Einfügen von Massendaten verwendet."
+>abstract="Eine Implementierung, die die Data Insertion API oder die Bulk Data Insertion API verwendet."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -119,7 +119,7 @@ ht-degree: 96%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-determine-implementation"
->title="Bestimmen des vorhandenen Implementierungstyps"
+>title="Bestimmen Sie den vorhandenen Implementierungstyp"
 >abstract="Arbeiten Sie intern in Ihrem Unternehmen zusammen, um zu ermitteln, welchen Implementierungstyp Sie derzeit zum Senden von Daten an Adobe Analytics verwenden. Arbeiten Sie beim Upgrade auf Customer Journey Analytics mit der Person oder dem Team zusammen, die bzw. das über diese Informationen verfügt.<br><br>Nachdem Sie den Implementierungstyp ermittelt haben, den Ihr Unternehmen verwendet, ändern Sie Ihre Antwort im Aktualisierungshandbuch zu Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
@@ -130,16 +130,16 @@ Es gibt verschiedene Möglichkeiten für die Implementierung von Adobe Analytics
 
 Verwenden Sie die folgenden Informationen, um mehr über Ihre aktuelle Adobe Analytics-Implementierung und die für Ihre Organisation verfügbaren Upgrade-Pfade zu erfahren.
 
-Wenden Sie sich an den Adobe-Support, wenn Sie konkretere Ratschläge, Anleitungen oder Unterstützung benötigen.
+Wenden Sie sich an Ihre Adobe-Ansprechperson, wenn Sie konkretere Ratschläge, Anleitungen oder Unterstützung benötigen.
 
 | Vorhandene Adobe Analytics-Implementierung | Beschreibung | Verfügbare Upgrade-Pfade |
 |---------|----------|----------|
-| AppMeasurement | AppMeasurement für JavaScript ist seit jeher eine gängige Methode zur Implementierung von Adobe Analytics.<p>Weitere Informationen zu diesem Implementierungstyp finden Sie unter [Implementieren von Adobe Analytics mit AppMeasurement für JavaScript](https://experienceleague.adobe.com/de/docs/analytics/implementation/js/overview).</p> | <ul><li>[(Empfohlen) Neue Implementierung des Experience Platform Web SDK für die fortlaufende Datenerfassung; der Analytics-Quell-Connector für historische Daten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Neue Implementierung des Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) </li><li>[Migrieren von Adobe Analytics zum Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)</li><li>[Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)</li></ul> |
+| AppMeasurement | AppMeasurement für JavaScript ist seit jeher eine gängige Methode, um Adobe Analytics zu implementieren.<p>Weitere Informationen zu diesem Implementierungstyp finden Sie unter [Implementieren von Adobe Analytics mit AppMeasurement für JavaScript](https://experienceleague.adobe.com/de/docs/analytics/implementation/js/overview).</p> | <ul><li>[(Empfohlen) Neue Implementierung des Experience Platform Web SDK für die fortlaufende Datenerfassung; der Analytics-Quell-Connector für historische Daten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Neue Implementierung des Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) </li><li>[Migrieren von Adobe Analytics zum Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)</li><li>[Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)</li></ul> |
 | Adobe Analytics-Erweiterung (Tags) | <p>Tags in Adobe Experience Platform ist eine Tag-Management-Lösung, mit der Sie Analytics-Code bereitstellen und weitere Tagging-Vorgaben erfüllen können. Adobe bietet Integrationen mit anderen Lösungen und Produkten und ermöglicht die Bereitstellung von benutzerdefiniertem Code. Alle diese Aufgaben können ausgeführt werden, ohne dass Entwicklungsteams in Ihrer Organisation Code auf Ihrer Website aktualisieren müssen.</p><p>Weitere Informationen zu diesem Implementierungstyp finden Sie unter [Implementieren von Adobe Analytics mit der Analytics-Erweiterung](https://experienceleague.adobe.com/de/docs/analytics/implementation/launch/overview).</p> | <ul><li>[(Empfohlen) Neue Implementierung des Experience Platform Web SDK für die fortlaufende Datenerfassung; der Analytics-Quell-Connector für historische Daten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Neue Implementierung des Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) </li><li>[Migrieren von Adobe Analytics zum Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)</li><li>[Analytics-Quell-Connector](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)</li></ul> |
-| Experience Platform-Web-SDK (alloy.js) | Das Experience Platform Web-SDK ist die derzeit von Adobe empfohlene Methode zur Implementierung von Adobe Analytics. Mit dem Adobe Experience Platform Edge Network können Sie Daten, die für mehrere Produkte bestimmt sind, an einen zentralen Ort senden. <p>Weitere Informationen zu diesem Implementierungstyp finden Sie unter [Implementieren von Adobe Analytics mit dem Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/overview).</p> | <ul><li>[(Empfohlen) Neue Implementierung des Experience Platform Web SDK für die fortlaufende Datenerfassung; der Analytics-Quell-Connector für historische Daten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Neue Implementierung des Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) </li><li>[Konfigurieren der Adobe Analytics Web SDK-Implementierung zum Senden von Daten an Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
-| Experience Platform-Web-SDK-Erweiterung (Tags) | Das Experience Platform-Web-SDK ist die derzeit von Adobe empfohlene Methode zur Implementierung von Adobe Analytics für Web-Daten. Mit dem Adobe Experience Platform Edge Network können Sie Daten, die für mehrere Produkte bestimmt sind, an einen zentralen Ort senden. <p>Weitere Informationen zu diesem Implementierungstyp finden Sie unter [Implementieren von Adobe Analytics mit dem Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/web-sdk/overview)</p> | <ul><li>[(Empfohlen) Neue Implementierung des Experience Platform Web SDK für die fortlaufende Datenerfassung; der Analytics-Quell-Connector für historische Daten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Neue Implementierung des Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md)</li><li>[Konfigurieren der Adobe Analytics Web SDK-Implementierung zum Senden von Daten an Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
-| Experience Platform Mobile SDK | Das Experience Platform Mobile SDK ist die derzeit von Adobe empfohlene Methode zur Implementierung von Adobe Analytics für mobile Daten. Mit dem Adobe Experience Platform Edge Network können Sie Daten, die für mehrere Produkte bestimmt sind, an einen zentralen Ort senden.<p>Mit der Adobe Experience Platform Mobile SDK können Sie die CX Enterprise-Lösungen und -Services von Adobe in Ihren Mobile Apps nutzen. </p><p>Weitere Informationen zu diesem Implementierungstyp finden Sie unter [Implementieren von Adobe Analytics mit dem Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/mobile-sdk/overview)</p> | <ul><li>[(Empfohlen) Neue Implementierung des Experience Platform Web SDK für die fortlaufende Datenerfassung; der Analytics-Quell-Connector für historische Daten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Neue Implementierung des Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) </li><li>[Konfigurieren der Adobe Analytics Web SDK-Implementierung zum Senden von Daten an Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
-| Bulk-Dateneinfüge-API | Die Bulk-Dateneinfüge-API (BDIA) ist eine Adobe Analytics-Funktion, mit der Sie Server-Aufrufdaten in Dateistapeln hochladen können, anstatt Client-seitige Bibliotheken wie AppMeasurement zu verwenden. </p><p>Weitere Informationen zu diesem Implementierungstyp finden Sie unter [Bulk Data Insertion-API](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/).</p> | <ul><li>[(Empfohlen) Neue Implementierung des Experience Platform Web SDK für die fortlaufende Datenerfassung; der Analytics-Quell-Connector für historische Daten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Neue Implementierung des Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md)</li><li>[Adobe Experience Platform Edge Network Server API und Edge Network](/help/data-ingestion/serverapi.md)</li></ul> |
+| Adobe Experience Platform Web SDK (alloy.js) | Das Experience Platform Web-SDK ist die derzeit von Adobe empfohlene Methode zur Implementierung von Adobe Analytics. Mit dem Adobe Experience Platform Edge Network können Sie Daten, die für mehrere Produkte bestimmt sind, an einen zentralen Ort senden. <p>Weitere Informationen zu diesem Implementierungstyp finden Sie unter [Implementieren von Adobe Analytics mit dem Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/overview).</p> | <ul><li>[(Empfohlen) Neue Implementierung des Experience Platform Web SDK für die fortlaufende Datenerfassung; der Analytics-Quell-Connector für historische Daten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Neue Implementierung des Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) </li><li>[Konfigurieren der Adobe Analytics Web SDK-Implementierung zum Senden von Daten an Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
+| Adobe Experience Platform Web SDK-Erweiterung (Tags) | Das Experience Platform-Web-SDK ist die derzeit von Adobe empfohlene Methode zur Implementierung von Adobe Analytics für Web-Daten. Mit dem Adobe Experience Platform Edge Network können Sie Daten, die für mehrere Produkte bestimmt sind, an einen zentralen Ort senden. <p>Weitere Informationen zu diesem Implementierungstyp finden Sie unter [Implementieren von Adobe Analytics mit dem Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/web-sdk/overview)</p> | <ul><li>[(Empfohlen) Neue Implementierung des Experience Platform Web SDK für die fortlaufende Datenerfassung; der Analytics-Quell-Connector für historische Daten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Neue Implementierung des Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md)</li><li>[Konfigurieren der Adobe Analytics Web SDK-Implementierung zum Senden von Daten an Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
+| Adobe Experience Platform Mobile SDK | Das Experience Platform Mobile SDK ist die derzeit von Adobe empfohlene Methode zur Implementierung von Adobe Analytics für mobile Daten. Mit dem Adobe Experience Platform Edge Network können Sie Daten, die für mehrere Produkte bestimmt sind, an einen zentralen Ort senden.<p>Mit der Adobe Experience Platform Mobile SDK können Sie die CX Enterprise-Lösungen und -Services von Adobe in Ihren Mobile Apps nutzen. </p><p>Weitere Informationen zu diesem Implementierungstyp finden Sie unter [Implementieren von Adobe Analytics mit dem Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/mobile-sdk/overview)</p> | <ul><li>[(Empfohlen) Neue Implementierung des Experience Platform Web SDK für die fortlaufende Datenerfassung; der Analytics-Quell-Connector für historische Daten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Neue Implementierung des Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) </li><li>[Konfigurieren der Adobe Analytics Web SDK-Implementierung zum Senden von Daten an Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
+| Bulk-Dateneinfüge-API | Die Bulk-Dateneinfüge-API (BDIA) ist eine Adobe Analytics-Funktion, mit der Sie Daten zu Server-Aufrufen in Batches von Dateien hochladen können, anstatt Client-seitige Bibliotheken wie AppMeasurement zu verwenden. </p><p>Weitere Informationen zu diesem Implementierungstyp finden Sie unter [Bulk Data Insertion-API](https://developer.adobe.com/analytics-collection-apis/methods/bulk-data-insertion/).</p> | <ul><li>[(Empfohlen) Neue Implementierung des Experience Platform Web SDK für die fortlaufende Datenerfassung; der Analytics-Quell-Connector für historische Daten](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Neue Implementierung des Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md)</li><li>[Adobe Experience Platform Edge Network Server API und Edge Network](/help/data-ingestion/serverapi.md)</li></ul> |
 
 {style="table-layout:auto"}
 
