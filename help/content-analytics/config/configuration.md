@@ -84,7 +84,7 @@ Stellen Sie vor dem Konfigurieren von Content Analytics sicher, dass die folgend
 
 ### Mobile
 
-* Stellen Sie sicher, dass die Erweiterungen {0](https://developer.adobe.com/client-sdks/edge/edge-network/) Experience Platform Edge Network und [Experience Platform Identity for Edge Network](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/) für die Mobile App aktiviert sind.[
+* Stellen Sie sicher, dass die Erweiterungen &lbrace;0[&#128279;](https://developer.adobe.com/client-sdks/edge/edge-network/) Experience Platform Edge Network und [Experience Platform Identity for Edge Network](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/) für die Mobile App aktiviert sind.
 * Sie verfügen über die Rolle „Customer Journey Analytics-Produktadministrator oder -Produktadministratorin“ mit zusätzlichen Berechtigungen zum Verwalten von Verbindungen und Datenansichten.
 * Sie müssen über [Berechtigungen zur Datenerfassung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"} verfügen.
   * [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions#platform-permissions){target="_blank"}-Berechtigungen.
