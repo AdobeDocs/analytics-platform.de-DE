@@ -14,7 +14,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
+source-git-commit: f77f416ad958b28a8489d7a6eb13100ba699236e
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 1%
@@ -35,7 +35,9 @@ Parquet eignet sich aus den folgenden Gründen besser für die Datenfeed-Ausgabe
 
 * **Verschachtelte Felder**: Parquet stellt verschachtelte Felder, z. B. eine Produktliste, nativ dar. CSV und TSV können sie nur darstellen, indem sie in Zeichenfolgen codiert werden. Weitere Informationen finden Sie unter [Komponenten von Unterereignissen in Daten-Feeds](/help/components/exports/cja-data-feeds/df-sub-event.md).
 
-* **Große Exporte**: Parkett reduziert in der Regel die Lager- und Transferkosten. Außerdem werden das Parsen von Text und das Raten von Typen beim Laden der Daten vermieden.
+* **Integriertes Schema**: Jede Parquet-Datei speichert ein eigenes Schema, einschließlich Spaltennamen, Datentypen und verschachtelten Strukturen. Da sich das Schema in der Datei befindet, kann Ihr Data Warehouse Tabellen direkt aus den Dateien erstellen. Sie müssen keine separate Kopfzeilendatei oder Schemadefinition bereitstellen und das Data Warehouse muss keine Datentypen ableiten.
+
+* **Große Exporte**: Parkett reduziert in der Regel die Lager- und Transferkosten. Außerdem wird das Parsen von Text beim Laden der Daten vermieden.
 
 ## Vergleich von Parquet mit CSV, TSV und JSON
 
@@ -49,7 +51,6 @@ In der folgenden Tabelle werden die Unterschiede zwischen Parquet, CSV, TSV und 
 
 | Kennlinie | Parquet | CSV oder TSV | JSON |
 | --- | --- | --- | --- |
-| **Dateigröße** | Kleinste. Die Komprimierung ist in die Datei integriert, und Tools dekomprimieren nur die Spalten, die eine Abfrage liest. | Größer. Komprimierung, wie gzip, gilt für die gesamte Datei, sodass Tools die gesamte Datei dekomprimieren müssen, um sie zu lesen und oft nicht parallel lesen können. | Größte. Feldnamen werden in jedem Datensatz wiederholt. |
 | **Abfrageschwindigkeit** | Schnell. Eine Abfrage liest nur die benötigten Spalten. | Langsamer. Ganze Zeilen müssen gelesen und analysiert werden. | Langsamer. Ganze Zeilen müssen gelesen und analysiert werden. |
 | **Datentypen** | Eingegeben. Das Schema ist in die Datei eingebettet. | Nicht typisiert. Alle Werte sind Textwerte, und beim Laden der Daten werden die Typen abgeleitet. | Lose Typisierung. |
 | **Verschachtelte Daten** | Arrays und Objekte werden nativ unterstützt. | Nicht unterstützt. Arrays und Objekte müssen reduziert oder als Zeichenfolgen codiert werden. | Arrays und Objekte werden nativ unterstützt. |
