@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 930ce593b744f0afc0e97dda1acf48e009e9e30a
 workflow-type: tm+mt
-source-wordcount: '7452'
+source-wordcount: '7485'
 ht-degree: 92%
 ---
 
@@ -69,6 +69,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 |---|---|
+| **November 2026** | |
+| Metrik-Deduplizierungsumfang | Die Vorsicht wurde entfernt, die angewendet wurde[&#x200B; wenn der Deduplizierungsumfang einer Metrik auf Person](/help/data-views/component-settings/metric-deduplication.md) festgelegt wurde, die angibt, dass die Metrik nach vollständigen Kalendermonaten ausgewertet wurde. Für eine Metrik mit dem Deduplizierungsumfang „Person“ wird die Deduplizierung jetzt nur noch innerhalb des ausgewählten Reporting-Fensters angewendet. |
 | **Oktober 2026** | |
 | Leitplanken für Datenansichten | Die [Leitplanke](/help/technotes/guardrails.md) für die maximale Anzahl von Datenansichten für eine Organisation (von 2.000 auf 5.000) wurde aktualisiert. |
 | Paid-Media-Daten mit Web-Daten verbinden | [Leitfaden für Anwendungsfälle](/help/use-cases/cross-channel/paid-media-web.md) So verbinden Sie Paid-Media-Daten mit Web-Daten. |
@@ -165,7 +167,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Mediensammlung: Adobe-Quell-Connector-Aktualisierungen für neues Medien-Reporting-XDM | Der Analytics Source Connector ordnet Streaming-Mediendaten in Adobe Analytics automatisch den Feldern zu, die vom Web SDK verwendet werden. Zuvor wurden die Daten sowohl den alten als auch den neuen Speicherorten zugeordnet, in Zukunft wird jedoch nur der neue Speicherort verwendet. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **Februar 2025** |  |
 | Mediensammlung: Adobe-Quell-Connector-Aktualisierungen für neues Medien-Reporting-XDM | Der Analytics Source Connector [ordnet Streaming-Mediendaten in Adobe Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=de) automatisch den Feldern zu, die vom Web SDK verwendet werden. Zuvor wurden die Daten sowohl den alten als auch den neuen Speicherorten zugeordnet, in Zukunft wird jedoch nur der neue Speicherort verwendet. |
-| BI-Erweiterung – Erweiterte Unterstützung | Die BI-Erweiterung für Customer Journey Analytics unterstützt jetzt [Looker, Jupyter Notebook und R Studio](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=de). |
+| BI-Erweiterung – Erweiterte Unterstützung | Die BI-Erweiterung für Customer Journey Analytics unterstützt jetzt [Looker, Jupyter Notebook und R Studio](/help/use-cases/data-views/bi-extension-usecases.md). |
 | **Januar 2025** |  |
 | Das Erlebnis zur Nutzung von Verbindungen wurde aktualisiert | Die Registerkarte [Nutzung](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-connections/manage-connections?lang=de#connections-usage) unter „Verbindung“ bietet jetzt erweiterte Visualisierungen für diese Arten von berichtsfähigen Zeilen: Kern-, aufgenommene und historische Daten. Sie können die Nutzungsdaten auch nach Verbindung, Datensatz, Sandbox oder Tag anzeigen und aufschlüsseln. |
 | Nutzungsmetriken | Die Dokumentation zur verbesserten Benutzeroberfläche [Nutzungsmetriken](/help/connections/manage-connections.md#usage) wurde aktualisiert. |

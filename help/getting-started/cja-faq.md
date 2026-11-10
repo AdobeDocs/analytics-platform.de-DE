@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
-source-wordcount: '2322'
-ht-degree: 94%
+source-wordcount: '2334'
+ht-degree: 93%
 ---
 # Häufig gestellte Fragen
 
@@ -285,7 +285,7 @@ Weitere Informationen über die [Implikationen beim Löschen von Datensätzen un
 
 Adobe CX Enterprise verwendet die regionale Datenerfassung (Regional Data Collection, RDC), damit die Interaktionen zwischen Ihren Besucherinnen und Besuchern sowie Adobe- und Nicht-Adobe-Lösungen so nah wie möglich bei Ihren Besucherinnen und Besuchern stattfinden. Sobald Daten regional in einem Data Collection Center (DCC, auch als Edge Site bezeichnet, Teil des Platform Edge Network) erfasst wurden, werden sie über eine sichere Verbindung an die relevanten Lösungen weitergeleitet, abhängig von der Konfiguration Ihres Datenstroms und/oder der Ereignisweiterleitung.
 
-![Datenfluss mithilfe von Edge-Netzwerken](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=de)
+Eine Abbildung des Datenflusses durch die Edge Network finden Sie unter [Datenerfassung - Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/collection/home).
 
 Der regionale Datenerfassungsprozess umfasst die folgenden Schritte:
 
@@ -315,4 +315,4 @@ Wenn die Daten das regionale Rechenzentrum erreichen, bestimmt die Datastream-Ko
 Für Customer Journey Analytics werden Datensätze von Adobe Experience Platform benötigt. Ihre Datenstrom-/Ereignisweiterleitungskonfiguration erfordert daher, dass der Adobe Experience Platform-Dienst die Daten vom regionalen Rechenzentrum an das Rechenzentrum weiterleitet, in dem sich Ihre Adobe Experience Platform-Instanz befindet. Customer Journey Analytics und die zugehörigen unterstützenden Dienste und Infrastrukturen werden in derselben Adobe Experience Platform-Instanz bereitgestellt.
 
 
-Weitere Informationen über den Datenerfassungsprozess außerhalb von Adobe Experience Platform Edge Network und der entsprechenden regionalen Rechenzentren finden Sie unter [Datenerfassung – Übersicht](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=de).
+Weitere Informationen über den Datenerfassungsprozess außerhalb von Adobe Experience Platform Edge Network und der entsprechenden regionalen Rechenzentren finden Sie unter [Datenerfassung – Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/collection/home).
