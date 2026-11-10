@@ -68,12 +68,12 @@ Stellen Sie vor dem Konfigurieren von Content Analytics sicher, dass die folgend
 ### Web
 
 * Sie haben den Benutzeragenten und die IP-Adresse für den in Content Analytics verwendeten Featurisierungs-Service auf die Zulassungsliste gesetzt. Die zu konfigurierende Benutzeragenten-Zeichenfolge lautet: <code>AdobeFeaturization/1.0</code>.
-* Wenn Sie das [Web SDK mit JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library){target="_blank"} zur regulären Verhaltensdatenerfassung implementiert haben, stellen Sie sicher, dass Sie den Standardnamen <code>alloy</code> für die JavaScript-Bibliothek.
+* Wenn Sie das [Web SDK mit JavaScript](https://experienceleague.adobe.com/de/docs/experience-platform/collection/js/install/library){target="_blank"} zur regulären Verhaltensdatenerfassung implementiert haben, stellen Sie sicher, dass Sie den Standardnamen <code>alloy</code> für die JavaScript-Bibliothek.
 * Sie verfügen über die Rolle „Customer Journey Analytics-Produktadministrator oder -Produktadministratorin“ mit zusätzlichen Berechtigungen zum Verwalten von Verbindungen und Datenansichten.
 * Wenn Sie sich entscheiden, Content Analytics-Erlebnisse zu erfassen, stellen Sie sicher, dass Sie die Content Analytics-Versionierung basierend auf Änderungen an Ihren Web-Seiten einrichten und aktualisieren.
-* Sie müssen über [Berechtigungen zur Datenerfassung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"} verfügen.
-  * [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions#platform-permissions){target="_blank"}-Berechtigungen.
-  * [Berechtigungen für die Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions#admin-console){target="_blank"}Datenerfassung.
+* Sie müssen über [Berechtigungen zur Datenerfassung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/admin/user-permissions){target="_blank"} verfügen.
+  * [Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/tags/admin/user-permissions#platform-permissions){target="_blank"}-Berechtigungen.
+  * [Berechtigungen für die Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/tags/admin/user-permissions#admin-console){target="_blank"}Datenerfassung.
 * Sie haben die folgenden wichtigen Konfigurationsoptionen sorgfältig geprüft:
 
   * Ihre Site ist für das Reporting zu Erlebnissen geeignet. Ein ordnungsgemäßes Reporting zu Erlebnissen ist nur möglich, wenn die folgenden Bedingungen erfüllt sind:
@@ -86,9 +86,9 @@ Stellen Sie vor dem Konfigurieren von Content Analytics sicher, dass die folgend
 
 * Stellen Sie sicher, dass die Erweiterungen &lbrace;0[&#128279;](https://developer.adobe.com/client-sdks/edge/edge-network/) Experience Platform Edge Network und [Experience Platform Identity for Edge Network](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/) für die Mobile App aktiviert sind.
 * Sie verfügen über die Rolle „Customer Journey Analytics-Produktadministrator oder -Produktadministratorin“ mit zusätzlichen Berechtigungen zum Verwalten von Verbindungen und Datenansichten.
-* Sie müssen über [Berechtigungen zur Datenerfassung](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"} verfügen.
-  * [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions#platform-permissions){target="_blank"}-Berechtigungen.
-  * [Berechtigungen für die Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions#admin-console){target="_blank"}Datenerfassung.
+* Sie müssen über [Berechtigungen zur Datenerfassung](https://experienceleague.adobe.com/de/docs/experience-platform/tags/admin/user-permissions){target="_blank"} verfügen.
+  * [Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/tags/admin/user-permissions#platform-permissions){target="_blank"}-Berechtigungen.
+  * [Berechtigungen für die Experience Platform](https://experienceleague.adobe.com/de/docs/experience-platform/tags/admin/user-permissions#admin-console){target="_blank"}Datenerfassung.
 
 
 
