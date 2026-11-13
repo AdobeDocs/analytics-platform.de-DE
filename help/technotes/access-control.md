@@ -1,6 +1,6 @@
 ---
 title: Zugriffssteuerung für Customer Journey Analytics
-description: Informationen über die Implementierung der Zugriffssteuerung in Customer Journey Analytics.
+description: Erfahren Sie, wie Sie die Zugriffssteuerung in Customer Journey Analytics implementieren.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
@@ -70,14 +70,14 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: a48eccd77887e94bce5c0ef18bd070877601ddbd
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 74%
+source-wordcount: '1773'
+ht-degree: 72%
 ---
 # Zugriffssteuerung
 
-Drei Zugriffsebenen oder drei Rollen gelten in Customer Journey Analytics: Produktadmin-Rolle, Produktprofil-Admin-Rolle und Benutzerzugriff. In diesem Thema werden diese Rollen ausführlicher erläutert.
+Drei Zugriffsebenen bzw. drei Rollen steuern Customer Journey Analytics: die Produktadministratorrolle, die Produktprofil-Administratorrolle und der Benutzerzugriff. In diesem Thema werden diese Rollen ausführlicher erläutert.
 
 Darüber hinaus werden in diesem Artikel granulare Möglichkeiten zur Einschränkung des Zugriffs behandelt, beispielsweise die Workspace-Kuratierung und die Zugriffssteuerung auf Zeilen- und Werteebene.
 
@@ -89,7 +89,7 @@ Die folgenden rollenbasierten Zugriffssteuerungsebenen sind verfügbar.
 
 Benutzende, denen die Rolle „Produktadmin“ zugewiesen ist, erhalten standardmäßig die erforderlichen Berechtigungen, um die meisten Aufgaben in Customer Journey Analytics auszuführen. Für einige Aufgaben sind jedoch zusätzliche Berechtigungen erforderlich.
 
-So fügen Sie eine Person als Produktadmin hinzu:
+So fügen Sie einen Benutzer oder eine Benutzerin als Produktadministrator oder Produktadministatorin hinzu:
 
 1. Öffnen Sie die [Admin Console](https://adminconsole.adobe.com/enterprise/).
 
@@ -97,14 +97,14 @@ So fügen Sie eine Person als Produktadmin hinzu:
 
    Die hinzugefügten Personen erhalten die [Standardberechtigungen für Produktadmins](#product-admin-default-permissions). Bei Bedarf können Sie ihnen auch [zusätzliche Berechtigungen](#product-admin-additional-permissions) erteilen.
 
-#### Standardberechtigungen für Produktadmins
+#### Standardberechtigungen für Produktadministrierende
 
-Produktadmins sind berechtigt, die meisten Aufgaben in Customer Journey Analytics auszuführen.
+Produktadministrierende sind berechtigt, die meisten Aufgaben in Customer Journey Analytics auszuführen.
 
 Produktadmins erhalten standardmäßig die erforderlichen Berechtigungen, um die folgenden Aufgaben auszuführen:
 
 * Aktualisieren/Löschen von Projekten, Segmenten, berechneten Metriken, Zielgruppen, Kommentaren oder von anderen Benutzenden erstellten Segmenten
-* Freigeben von Workspace-Projekten für alle Benutzenden
+* Workspace-Projekte für alle Benutzenden freigeben
 * Anzeigen der Berichtsaktivität im [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)
 * [Exportieren vollständiger Tabellen](/help/analysis-workspace/export/export-cloud.md) aus Analysis Workspace
 
@@ -121,7 +121,7 @@ Neben dem Hinzufügen als Produktadmin zum **Customer Journey Analytics-Produktp
   |---|---|---|
   | [!UICONTROL Sandboxes] | [!UICONTROL Mindestens eine] | Zugriff auf relevante Sandboxes für Verbindungen. |
   | [!UICONTROL Datenmodellierung] | [!UICONTROL Anzeigen von Schemata] | Schreibgeschützter Zugriff auf Schemata und zugehörige Ressourcen. |
-  | [!UICONTROL Datenmodellierung] | [!UICONTROL Verwalten von Schemata] | Zugriff auf das Lesen, Erstellen, Bearbeiten und Löschen von Schemata und zugehörigen Ressourcen. |
+  | [!UICONTROL Datenmodellierung] | [!UICONTROL Verwalten von Schemata] | Zugriff zum Lesen, Erstellen, Bearbeiten und Löschen von Schemata und zugehörigen Ressourcen. |
   | [!UICONTROL Daten-Management] | [!UICONTROL Anzeigen von Datensätzen] | Schreibgeschützter Zugriff auf Datensätze und Schemata. |
   | [!UICONTROL Identitätsverwaltung] | [!UICONTROL Anzeigen von Identity-Namespaces] | Schreibgeschützter Zugriff für Identity-Namespaces. |
 
@@ -155,33 +155,33 @@ Neben dem Hinzufügen als Produktadmin zum **Customer Journey Analytics-Produktp
   | Kategorie | Berechtigung | Beschreibung |
   |---|---|---|
   | [!UICONTROL Ziele] | [!UICONTROL Verwalten von Zielen] | Zugriff zum Lesen, Erstellen und Löschen von Zielverbindungen und Zielkonten. |
-  | [!UICONTROL Ziele] | [!UICONTROL Aktivieren von Zielen] | Ermöglicht Benutzerinnen und Benutzern das Aktivieren von Segmenten für vorhandene Ziele. Aktiviert den Zuordnungsschritt im Aktivierungs-Workflow. Diese Berechtigung erfordert, dass Benutzenden, die Daten für Ziele aktivieren, auch die Berechtigung „Anzeigen von Zielen“ gewährt wird. |
+  | [!UICONTROL Ziele] | [!UICONTROL Aktivieren von Zielen] | Ermöglicht Benutzerinnen und Benutzern das Aktivieren von Segmenten für vorhandene Ziele. Aktiviert den Zuordnungsschritt im Aktivierungs-Workflow. Diese Berechtigung erfordert, dass Benutzenden, die Daten für Ziele aktivieren, auch die Berechtigung „Ziele anzeigen“ gewährt wird. |
 
   Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Sandboxes und Berechtigungen](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home#sandboxes-and-permissions).
 
 
 * Verwenden der [BI-Erweiterung](../data-views/bi-extension.md)
 
-  Für Benutzende, die die BI-Erweiterung verwenden möchten, muss ein Produktadmin
+  Für Benutzende, die die BI-Erweiterung verwenden möchten, muss ein Produktadministrator oder eine Produktadministratorin
 
   * Sie müssen sicherstellen, dass die Experience Platform-Berechtigungen für den -Benutzer eine Rolle enthalten, die über die Ressource „Abfrage-Service“ mit den Optionen „Abfragen verwalten“ und „Abfrage-Service-Integration verwalten“ verfügt. Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Zugriffssteuerung - Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home).
 
     | Kategorie | Berechtigung | Beschreibung |
     |---|---|---|
     | [!UICONTROL Abfrage-Service] | [!UICONTROL Verwalten von Abfragen] | Zugriff auf das Lesen, Erstellen, Bearbeiten und Löschen strukturierter SQL-Abfragen für Platform-Daten. |
-    | [!UICONTROL Abfrage-Service] | [!UICONTROL Verwalten der Integration des Abfrage-Service] | Zugriff auf das Erstellen, Aktualisieren und Löschen nicht ablaufender Anmeldedaten für den Zugriff auf den Abfrage-Service. |
+    | [!UICONTROL Abfrage-Service] | [!UICONTROL Verwalten der Integration des Abfrage-Service] | Zugriff auf das Erstellen, Aktualisieren und Löschen nicht ablaufender Anmeldedaten für den Zugriff auf den Query Service. |
 
   * sicherstellen, dass die Person über die richtigen Customer Journey Analytics-Berechtigungen verfügt:
     * Berechtigung zum Zugriff auf die relevanten Datenansichten. Siehe [!UICONTROL Datenansichten] unter [Zugriff auf Benutzerebene](#user-level-access).
-    * Berechtigung zum Zugriff auf die Customer Journey Analytics-BI-Erweiterung. Siehe [!UICONTROL Datenansichts-Tools] unter [Zugriff auf Benutzerebene](#user-level-access).
+    * Berechtigung zum Zugriff auf die Customer Journey Analytics BI-Erweiterung. Siehe [!UICONTROL Datenansichts-Tools] unter [Zugriff auf Benutzerebene](#user-level-access).
 
-### Produktprofil-Admin-Rolle
+### Produktprofil-Administratorrolle
 
-Ein Produktprofil ist ein Satz von Berechtigungen. Produktadmins erstellen Produktprofile und können Produktprofil-Admins zuweisen, um ein oder mehrere Produktprofile zu verwalten. Ein Produktprofil-Admin kann dann:
+Ein Produktprofil ist ein Satz von Berechtigungen. Produktadministrierende erstellen Produktprofile und können Produktprofil-Administrierende zuweisen, um ein oder mehrere Produktprofile zu verwalten. Ein Produktprofiladministrator oder eine Produktadministratorin kann dann:
 
 * Verwalten Sie die zugewiesenen Produktprofile, indem Sie Benutzende oder Benutzergruppen hinzufügen oder entfernen und die Berechtigungen für die Produktprofile ändern.
 
-* Datenansichten in Customer Journey Analytics bearbeiten, die Teil eines zugewiesenen Produktprofils sind. Produktprofil-Admins können keine neuen Datenansichten erstellen.
+* Datenansichten in Customer Journey Analytics bearbeiten, die Teil eines zugewiesenen Produktprofils sind. Produktprofil-Administrierende können keine neuen Datenansichten erstellen.
 
 ### Zugriff auf Benutzerebene
 
@@ -195,12 +195,12 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 
 | Kategorie | Berechtigung | Beschreibung |
 | --- | --- | ---|
-| [!UICONTROL Datenansichten] | *Name der Datenansicht* | Wenn **[!UICONTROL Auto-Include]** auf **[!UICONTROL Ein]** umgeschaltet wird, können Benutzende, die Teil dieses Produktprofils sind, alle vorhandenen und neu erstellten Datenansichten anzeigen. Wenn diese Einstellung auf **[!UICONTROL Aus]** gesetzt ist, können bestimmte Datenansichten ausgewählt werden, auf die Benutzende Zugriff haben. |
+| [!UICONTROL Datenansichten] | *Name der Datenansicht* | Wenn Sie **[!UICONTROL Auto-Include]** auf **[!UICONTROL Ein]** umschalten, können Benutzer, die Teil dieses Produktprofils sind, alle vorhandenen und neu erstellten Datenansichten anzeigen. Dazu gehören Datenansichten, die Adobe für Sie erstellt.<p>Wenn diese Einstellung auf **[!UICONTROL Aus]** gesetzt ist, können bestimmte Datenansichten ausgewählt werden, auf die Benutzende Zugriff haben.  </p> |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zugriff auf geführte Analysen] | Ermöglicht Benutzenden den Zugriff auf [Geführte Analyse](/help/guided-analysis/overview.md). |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Erstellung berechneter Metriken] | Ermöglicht Benutzenden die Erstellung von [berechneten Metriken](/help/components/calc-metrics/calc-metr-overview.md). Benutzer können nur die berechneten Metriken, die sie erstellen, oder die berechneten Metriken, die für sie freigegeben wurden, taggen, freigeben, löschen oder umbenennen. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Erstellung von Segmenten] | Ermöglicht Benutzenden die Erstellung von [Segmenten](/help/components/segments/seg-overview.md). Benutzer können nur die Segmente, die sie erstellen, oder die Segmente, die für sie freigegeben wurden, taggen, freigeben, löschen oder umbenennen. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Labs-Zugriff] | Ermöglicht Benutzenden den Zugriff auf die Registerkarte [Labs](/help/labs/labs.md) in Customer Journey Analytics. |
-| [!UICONTROL Reporting-Tools] | [!UICONTROL Anmerkungserstellung] | Ermöglicht Benutzenden die Erstellung von [Anmerkungen](/help/components/annotations/overview.md). Benutzende können nur die Anmerkungen taggen, freigeben, löschen und umbenennen, die sie erstellen oder die für sie freigegeben sind. |
+| [!UICONTROL Reporting-Tools] | [!UICONTROL Anmerkungserstellung] | Ermöglicht Benutzenden die Erstellung von [Anmerkungen](/help/components/annotations/overview.md). Benutzende können nur die Anmerkungen mit Tags versehen, freigeben, löschen und umbenennen, die sie erstellen oder die für sie freigegeben sind. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zielgruppenansicht] | Ermöglicht Benutzenden die Ansicht von [Zielgruppen](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Zielgruppenerstellung] | Ermöglicht Benutzenden das Erstellen von [Zielgruppen](/help/components/audiences/audiences-overview.md). Erfordert [Segmente verwalten](https://experienceleague.adobe.com/de/docs/experience-platform/access-control/home) in Adobe Experience Platform. |
 | [!UICONTROL Reporting-Tools] | [!UICONTROL Daten-Storytelling] | Ermöglicht Benutzenden das [Generieren von Folien-Präsentationen basierend auf Workspace-Projekten](/help/analysis-workspace/curate-share/generate-slides.md). |
@@ -230,7 +230,7 @@ Hier sind einige Anwendungsfälle, die zeigen, wie die Zugriffskontrolle in real
 
 ### Zugriff durch Dritte
 
-Sie können einem Teamleiter eines Drittanbieters, mit dem Ihr Unternehmen zusammenarbeitet, Zugriff zur Verwaltung von Produktprofilen gewähren. Diese Admins können diesem Produktprofil Benutzende des Teams aus dem Unternehmen hinzufügen. Diese Produktprofil-Admins können Zugriff auf bestimmte Datenansichten gewähren und andere Benutzende auf Drittanbieterseite zu diesem Produktprofil hinzufügen. Produktprofil-Admins können Datenansichten an die Anforderungen des Drittanbieter-Teams anpassen.
+Sie können einem Teamleiter eines Drittanbieters, mit dem Ihr Unternehmen zusammenarbeitet, Zugriff zur Verwaltung von Produktprofilen gewähren. Dieser Administrator oder diese Administratorin kann diesem Produktprofil Benutzende des Unternehmens-Teams hinzufügen. Diese Produktprofil-Admins können Zugriff auf bestimmte Datenansichten gewähren und andere Benutzende auf Drittanbieterseite zu diesem Produktprofil hinzufügen. Produktprofil-Admins können Datenansichten an die Anforderungen des Drittanbieter-Teams anpassen.
 
 ### Zugriffskontrolle auf Zeilenebene
 
@@ -245,3 +245,6 @@ Sie möchten Benutzenden nur auf die Daten eines bestimmten Tages Zugriff gewäh
 Benutzende, die Zugriff auf eine Datenansicht haben, können nur mit den Metriken und Dimensionen arbeiten, die vom Admin in diese Datenansicht aufgenommen worden sind. Admins können die Komponenteneinstellungen [Einschließen/Ausschließen](/help/data-views/component-settings/include-exclude-values.md) oder [Wert-Bucketing](../data-views/component-settings/value-bucketing.md) in einer Datenansicht verwenden, um bestimmte Dimensionswerte aus einer Datenansicht auszuschließen oder zu aggregieren.
 
 Beispiel: Sie erstellen eine Metrik namens *Hypertonie* in einer Datenansicht aus einer Komponente, die individuelle Patientendaten aus dem Datensatz enthält. Sie verwenden Werte-Bucketing, um nur Zugriff auf Werte mit Buckets zu gewähren, sodass Benutzende der Daten die Daten einzelner Patienten nicht sehen.
+
+
+
