@@ -6,14 +6,14 @@ role: User
 source-git-commit: e498c374e8bfe12d7adda6ff9e7870a86f91dd5c
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 16%
+ht-degree: 25%
 ---
 # Themen im Trend {#trending-topics}
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
 >title="Themen im Trend"
->abstract="Erstellen Sie eine Visualisierung, die eine hierarchische Aufschlüsselung der Trend-Themen mit Vorkommen und Prozentsätzen zeigt, damit Sie wichtige Themen in Konversationen identifizieren können."
+>abstract="Erstellen Sie eine Visualisierung, die eine hierarchische Aufschlüsselung der Themen im Trend mit Vorkommen und Prozentsätzen zeigt, damit Sie wichtige Themen in Konversationen identifizieren können."
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_panel"
@@ -36,12 +36,12 @@ Sie können nach bestimmten Themen suchen und die Anzahl und den Prozentsatz fü
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"
 >title="Nicht standardmäßiges Attribution-Modell verwenden"
->abstract="Nicht-Standard-Attributionsmodelle sind für diese Metrik nicht verfügbar."
+>abstract="Nicht standardmäßige Attributionsmodelle sind für diese Metrik nicht verfügbar."
 
 
 So erstellen und konfigurieren Sie eine **[!UICONTROL Trendthemen]**-Visualisierung:
 
-1. Fügen Sie ![&#x200B; Visualisierung &#x200B;](/help/assets/icons/Breakdown.svg)Aufschlüsselung/**[!UICONTROL /]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Fügen Sie ![ Visualisierung ](/help/assets/icons/Breakdown.svg)Aufschlüsselung/**[!UICONTROL /]** hinzu. Weitere Informationen finden Sie unter [Hinzufügen einer Visualisierung in einem Bedienfeld](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. In den **[!UICONTROL Trending Topics]** Visualisierungskonfiguration:
 
