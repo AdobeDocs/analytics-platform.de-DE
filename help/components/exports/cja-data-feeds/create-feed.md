@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: 6db3ace5744a4277477c2a712c12fdd9a5f57c82
 workflow-type: tm+mt
 source-wordcount: '4331'
-ht-degree: 12%
+ht-degree: 14%
 ---
 # Erstellen eines Daten-Feeds
 
@@ -321,7 +321,7 @@ Alle abgeleiteten Feldfunktionen, die auf Container verweisen, verwenden das Ver
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_processing_delay"
 >title="Verarbeitungsverzögerung"
->abstract="Die Zeit, die das System wartet, bevor es eine Daten-Feed-Datei verarbeitet. Alle verspäteten Ereignisse, die während der Verzögerung eintreten, sind im Feed enthalten.<p>Die minimale Verarbeitungsverzögerung beträgt 2 Stunden, einige Datentypen erfordern jedoch mehr Zeit. Wählen Sie eine Verzögerung aus, die für die langsamsten Daten in Ihrer Verbindung lang genug ist. Wenn die Verarbeitungsverzögerung zu kurz ist, werden einige Daten möglicherweise nicht in den Feed eingeschlossen.</p>"
+>abstract="Die Zeitspanne, die das System vor dem Verarbeiten einer Daten-Feed-Datei wartet. Alle verspäteten, während der Verzögerung eingehenden Ereignisse werden im Feed berücksichtigt.<p>Die Mindestdauer für die Verarbeitungsverzögerung beträgt 2 Stunden, für einige Arten von Daten ist jedoch eine längere Verzögerung erforderlich. Wählen Sie eine Verzögerung aus, die lang genug für die langsamsten Daten in Ihrer Verbindung ist. Wenn die Verarbeitungsverzögerung zu kurz ist, werden einige Daten möglicherweise nicht in den Feed einbezogen.</p>"
 
 <!-- markdownlint-enable MD034 -->
 

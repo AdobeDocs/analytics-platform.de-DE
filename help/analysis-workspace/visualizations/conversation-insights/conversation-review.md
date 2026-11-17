@@ -6,7 +6,7 @@ role: User
 source-git-commit: 6b84720eae3c0c6cd6cfd204591fb9d5f1f5cdb0
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 16%
+ht-degree: 26%
 ---
 # Konversationsüberprüfung
 
@@ -20,7 +20,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_conversationreview_panel"
 >title="Konversationsüberprüfung"
->abstract="Verstehen des Kontexts und des Flusses einer einzelnen Konversation, einschließlich Zeitstempel und Signale. Konfigurieren Sie, welche Signale angezeigt werden sollen."
+>abstract="Verstehen Sie den Kontext und den Fluss einer individuellen Konversation, einschließlich Zeitstempel und Signale. Konfigurieren Sie, welche Signale angezeigt werden sollen."
 
 
 Die Visualisierung ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Konversationsüberprüfung]** zeigt den vollständigen turnusmäßigen Austausch zwischen Kunde und Agent als Teil von [Konversationserkenntnissen](/help/conversation-insights/overview.md).

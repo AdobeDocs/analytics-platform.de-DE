@@ -33,7 +33,7 @@ topic_v2:
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '1187'
-ht-degree: 14%
+ht-degree: 18%
 ---
 # Erstellen oder Bearbeiten von Konfigurationen
 
@@ -137,15 +137,15 @@ Für jede Konfiguration:
 
 >[!CONTEXTUALHELP]
 >id="conversationinsights_blend_specification"
->title="Mischspezifikation konfigurieren"
->abstract="Sie können die Mischungsspezifikation erst bearbeiten, nachdem Sie diese Konfiguration für Konversationserkenntnisse abgeschlossen haben, alle Datensätze verfügbar sind und Sie über Customer Journey Analytics-Berechtigungen zum Bearbeiten von Verbindungen verfügen."
+>title="Konfigurieren der Mischspezifikation"
+>abstract="Sie können die Mischspezifikation erst bearbeiten, wenn Sie diese Konfiguration für Konversationserkenntnisse abgeschlossen haben, alle Datensätze verfügbar sind und Sie über Customer Journey Analytics-Berechtigungen zum Bearbeiten von Verbindungen verfügen."
 >additional-url="https://experienceleague.adobe.com/de/docs/analytics-platform/using/technotes/access-control" text="Zugangssteuerung"
 
 
 >[!CONTEXTUALHELP]
 >id="conversationinsights_dataset_winner"
 >title="Datensatzgewinner"
->abstract="Wählen Sie den Datensatz aus, der den Wert für entsprechend benannte Felder (wenn es sich um einen Container handelt) im gemischten Konversations-Datensatz bestimmt."
+>abstract="Wählen Sie den Datensatz aus, der den Wert für entsprechend benannte Felder (wenn es sich um einen Container handelt) im gemischten Konversationsdatensatz bestimmt."
 
 Nachdem Sie eine Konfiguration erstellt haben, können Sie konfigurieren[&#x200B; wie Konversationen aus den Eingabeaufforderungen, Antworten, Feedback- und Signaldatensätzen gemischt werden](/help/conversation-insights/overview.md#how-it-works).
 

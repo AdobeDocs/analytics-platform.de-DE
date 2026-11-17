@@ -42,7 +42,7 @@ topic_v2:
 source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
 source-wordcount: '4342'
-ht-degree: 45%
+ht-degree: 46%
 ---
 # Komponenteneinstellungen {#component-settings}
 
@@ -51,7 +51,7 @@ ht-degree: 45%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Komponenteneinstellungen"
->abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen einer Komponente an und konfigurieren Sie sie. Aktivieren Sie dieses Kontrollkästchen, um diese Komponente in der Analysis Workspace-Benutzeroberfläche vor Benutzern ohne Administratorrechte auszublenden. Admins können weiterhin auf die Komponente zugreifen, indem sie in einem Workspace-Projekt auf **[!UICONTROL Alle Komponenten anzeigen]** klicken."
+>abstract="Zeigen Sie den Namen, die Beschreibung und andere Einstellungen einer Komponente an und konfigurieren Sie sie. Aktivieren Sie dieses Kontrollkästchen, um diese Komponente in der Analysis Workspace-Oberfläche für Benutzende ohne Administratorrechte auszublenden. Admins können weiterhin auf die Komponente zugreifen, indem sie in einem Workspace-Projekt auf **[!UICONTROL Alle Komponenten anzeigen]** klicken."
 
 <!-- markdownlint-enable MD034 -->
 

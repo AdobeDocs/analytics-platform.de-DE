@@ -1174,14 +1174,14 @@ Die folgenden Vorlagen sind verfügbar:
 
 >[!CONTEXTUALHELP]
 >id="template--mixmodeler-incremental-models-insights"
->title="Einblicke aus ausgewählten, von Marketing Campaign Analytics generierten Modellen anzeigen."
->abstract="**Dies kann Ihnen helfen** die inkrementellen Einblicke aus Modellen besser zu verstehen, die in Marketing Campaign Analytics (früher Mix Modeler) generiert wurden. <br/>**Basierend auf diesen Erkenntnissen** können Sie folgende Schritte ausführen:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul>"
+>title="Zeigen Sie Erkenntnisse ausgewählter Modelle an, die von Marketing Campaign Analytics generiert wurden."
+>abstract="**Dies kann Ihnen helfen**, die inkrementellen Erkenntnisse aus den in Marketing Campaign Analytics (ehemals Mix Modeler) generierten Modellen besser zu verstehen. <br/>**Basierend auf diesen Erkenntnissen** können Sie folgende Schritte ausführen:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul>"
 
 Die folgenden Vorlagen sind verfügbar:
 
 &#x200B;| Vorlagenname | Warum diese Vorlage verwenden?<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| [!UICONTROL **Inkrementelle Marketing Campaign Analytics-Modelleinblicke**] | Einblicke aus ausgewählten, von Marketing Campaign Analytics generierten Modellen anzeigen.<p>**Dies kann Ihnen helfen** die inkrementellen Einblicke aus Modellen besser zu verstehen, die in Marketing Campaign Analytics (früher Mix Modeler) generiert wurden.<p>**Basierend auf diesen Erkenntnissen** können Sie folgende Schritte ausführen:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul></p> |
+| [!UICONTROL **Inkrementelle Marketing Campaign Analytics-Modelleinblicke**] | Zeigen Sie Erkenntnisse ausgewählter Modelle an, die von Marketing Campaign Analytics generiert wurden.<p>**Dies kann Ihnen helfen**, die inkrementellen Erkenntnisse aus den in Marketing Campaign Analytics (ehemals Mix Modeler) generierten Modellen besser zu verstehen.<p>**Basierend auf diesen Erkenntnissen** können Sie folgende Schritte ausführen:<ul><li>Visualisieren und quantifizieren Sie die Auswirkungen der Marketing-Maßnahmen Ihres Unternehmens.</li><li>Identifizieren Sie, welche Kanäle besonders leistungsstark sind.</li><li>Identifizieren Sie, welche Kanäle möglicherweise optimiert werden müssen.</li></ul></p> |
 
 
 

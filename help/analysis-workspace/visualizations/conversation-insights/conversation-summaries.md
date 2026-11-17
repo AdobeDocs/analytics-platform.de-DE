@@ -6,7 +6,7 @@ role: User
 source-git-commit: 30311dc0e753778c6e5316d82ffba25748d8315e
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 17%
+ht-degree: 22%
 ---
 # Konversationszusammenfassung {#conversation-summaries}
 
@@ -18,7 +18,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_panel"
 >title="Konversationszusammenfassung"
->abstract="Fassen Sie eine gefilterte Gruppe von Konversationen zusammen. Legen Sie die Länge der Zusammenfassung fest. Zeigen Sie repräsentative Zitate von Kundinnen und Kunden an, um die Genauigkeit der extrahierten Signale zu verifizieren. Wählen Sie ein Angebot aus, um die vollständige Unterhaltungswiederholung zu öffnen."
+>abstract="Fassen Sie eine gefilterte Gruppe von Konversationen zusammen. Legen Sie die Länge der Zusammenfassung fest. Zeigen Sie repräsentative Zitate von Kundinnen und Kunden an, um die Genauigkeit der extrahierten Signale zu verifizieren. Wählen Sie ein Zitat aus, um die vollständige Wiederholung der Konversation zu öffnen."
 
 {{release-limited-testing}}
 
@@ -37,7 +37,7 @@ Die Visualisierung zeigt eine Zusammenfassung der ausgewählten Metrik (z. B. Ko
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_usenondefaultattributionmodel_disabled"
 >title="Nicht standardmäßiges Attribution-Modell verwenden"
->abstract="Nicht-Standard-Attributionsmodelle sind für diese Metrik nicht verfügbar."
+>abstract="Nicht standardmäßige Attributionsmodelle sind für diese Metrik nicht verfügbar."
 
 So erstellen und konfigurieren Sie eine **[!UICONTROL Konversationszusammenfassungen]** Visualisierung:
 
