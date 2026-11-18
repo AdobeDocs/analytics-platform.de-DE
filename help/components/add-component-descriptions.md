@@ -25,7 +25,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: b46a27ff9faca74c3c2baa7938a588b643633705
+source-git-commit: 3199a70eee577f4e283208e2c5089c05fe20ed0d
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 10%
@@ -55,8 +55,6 @@ Allgemeine Informationen zum Datenwörterbuch finden Sie unter [Datenwörterbuch
 >
 
 ## Beschreibungen automatisch generieren
-
-{{release-limited-testing-section}}
 
 Anstatt jede Beschreibung manuell zu schreiben, kann Customer Journey Analytics generative KI verwenden, um Beschreibungen für Sie zu schreiben. Sie können für eine einzelne Komponente eine Beschreibung oder für viele Komponenten gleichzeitig Beschreibungen erstellen.
 
@@ -100,7 +98,7 @@ Wählen Sie einen Speicherort aus, um zu erfahren, wie Sie dort Beschreibungen g
 
 ### Beschreibungen für freigegebene Metriken und Dimensionen generieren
 
-Sie können Beschreibungen für freigegebene Metriken und Dimensionen nur in einer Datenansicht generieren, wie in der Tabelle unter [Beschreibungen von verschiedenen Speicherorten generieren](#generate-descriptions-from-various-locations) dargestellt. Sie können keine Beschreibungen über den Manager [Freigegebene Metriken und Dimensionen“ &#x200B;](/help/data-views/shared-metrics-dimensions/smd-overview.md#smd-manager).
+Sie können Beschreibungen für freigegebene Metriken und Dimensionen nur in einer Datenansicht generieren, wie in der Tabelle unter [Beschreibungen von verschiedenen Speicherorten generieren](#generate-descriptions-from-various-locations) dargestellt. Sie können keine Beschreibungen über den Manager [Freigegebene Metriken und Dimensionen“ ](/help/data-views/shared-metrics-dimensions/smd-overview.md#smd-manager).
 
 Beachten Sie Folgendes, wenn Sie eine Beschreibung für eine freigegebene Metrik oder Dimension in einer Datenansicht generieren:
 
