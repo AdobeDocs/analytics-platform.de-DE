@@ -32,7 +32,7 @@ Die Matrixvisualisierung ist ein Raster von Werten, die zeigen, wie Dimensionsel
 
 ## Matrix-Übersicht
 
-Weitere [&#x200B; zur &#x200B;](/help/analysis-workspace/visualizations/matrix/matrix.md) finden Sie unter „Matrix-Übersicht“, einschließlich:
+Weitere [ zur ](/help/analysis-workspace/visualizations/matrix/matrix.md) finden Sie unter „Matrix-Übersicht“, einschließlich:
 
 * Wichtigste Funktionen
 
@@ -65,7 +65,7 @@ Weitere [&#x200B; zur &#x200B;](/help/analysis-workspace/visualizations/matrix/m
    |---------|----------|
    | [!UICONTROL **Zeilenbegrenzung**] | Die maximale Anzahl von Zeilen, die die Matrix-Visualisierung anzeigt. Der Standardwert lautet 10. <!-- SME CHECK: Which items are shown (top items by the metric?)? Does the limit also apply to columns? What's the maximum? --> |
    | [!UICONTROL **Überlappungspalette**] | Die Farbskala für Zellen, wenn die Matrix [Überlappungszahlen](#view-overlap-count-or-correlation-strength) anzeigt. |
-   | [!UICONTROL **Korrelationspalette**] | Die Farbskala für Zellen, wenn die Matrix &quot;[&quot; &#x200B;](#view-overlap-count-or-correlation-strength). Negative und positive Korrelationen verwenden unterschiedliche Farben. |
+   | [!UICONTROL **Korrelationspalette**] | Die Farbskala für Zellen, wenn die Matrix &quot;[&quot; ](#view-overlap-count-or-correlation-strength). Negative und positive Korrelationen verwenden unterschiedliche Farben. |
    | [!UICONTROL **Korrelationsgranularität**] | Die Zeitgranularität, die zur Berechnung [Korrelationsstärke“ verwendet wird](#view-overlap-count-or-correlation-strength) z. B. **[!UICONTROL Tag]**. Dieser Wert wird automatisch auf der Grundlage des Datumsbereichs des Bedienfelds festgelegt. Du kannst es nicht ändern. <p>Die folgenden Granularitäten werden je nach Datumsbereich des Bedienfelds ausgewählt:</p><ul><li>[!UICONTROL **Stunde**]: Für Datumsbereiche von 7 Tagen oder weniger ausgewählt</li><li>[!UICONTROL **Tag**]: Für Datumsbereiche von mehr als 7 Tagen bis zu 3 Monaten ausgewählt</li><li>[!UICONTROL **Woche**]: Für Datumsbereiche von mehr als 3 Monaten bis zu 1 Jahr ausgewählt</li><li>[!UICONTROL **Monat**]: Für Datumsbereiche von mehr als 1 Jahr ausgewählt</li></ul><!-- SME CHECK: The granularities and date range thresholds in this list are a best guess. Confirm which granularities are used for which date ranges. --> |
    | [!UICONTROL **Diagonale Zellenwerte**] | Die Matrix-Visualisierung zeigt Zellen, wo ein Dimensionselement auf sich selbst trifft. Diese Einstellung ist nur verfügbar, wenn die Zeilendimension und die Spaltendimension identisch sind.<ul><li>**[!UICONTROL Anzeigen]:** Zeigt den Wert an.</li><li>**[!UICONTROL Dash]:** Zeigt einen Bindestrich anstelle des Werts an.</li><li>**[!UICONTROL Leer]:** Lässt die Zelle leer.</li></ul> |
 
@@ -88,7 +88,7 @@ Weitere [&#x200B; zur &#x200B;](/help/analysis-workspace/visualizations/matrix/m
 
 Sie können die Matrixvisualisierung umschalten, um die Überschneidungsanzahl oder Korrelationsstärke anzuzeigen. Die Überschneidungsanzahl wird standardmäßig angezeigt.
 
-1. Öffnen Sie in Analysis Workspace eine Matrix-Visualisierung oder [&#x200B; Sie eine neue &#x200B;](#build-a-matrix-visualization).
+1. Öffnen Sie in Analysis Workspace eine Matrix-Visualisierung oder [ Sie eine neue ](#build-a-matrix-visualization).
 
 1. Wählen Sie in der linken oberen Ecke der Matrixvisualisierung eine der folgenden Optionen aus:
 
@@ -118,9 +118,9 @@ Nachdem Sie eine Matrixvisualisierung erstellt haben, können Sie deren Einstell
 
 So bearbeiten Sie die Matrix-Einstellungen:
 
-1. Wählen Sie in einer ![-Visualisierung &#x200B;](/help/assets/icons/Edit.svg)Bearbeiten) neben dem Untertitel oben in der Visualisierung aus. Der Untertitel fasst die aktuellen Einstellungen wie die Metrik und die Dimensionen zusammen.
+1. Wählen Sie in einer ![-Visualisierung ](/help/assets/icons/Edit.svg)Bearbeiten) neben dem Untertitel oben in der Visualisierung aus. Der Untertitel fasst die aktuellen Einstellungen wie die Metrik und die Dimensionen zusammen.
 
-1. Ändern Sie alle Einstellungen, die unter &quot;[&#x200B; einer Matrixvisualisierung“ beschrieben &#x200B;](#build-a-matrix-visualization).
+1. Ändern Sie alle Einstellungen, die unter &quot;[ einer Matrixvisualisierung“ beschrieben ](#build-a-matrix-visualization).
 
 1. Wählen Sie [!UICONTROL **Erstellen**] aus.
 
@@ -128,7 +128,7 @@ So bearbeiten Sie die Matrix-Einstellungen:
 
 ## Anzeigen von Trend-Daten
 
-Sie können die Trenddaten für eine Zelle in einer [-Visualisierung &#x200B;](/help/analysis-workspace/visualizations/line.md). Die Linienvisualisierung zeigt, wie sich die ausgewählte Metrik über den Datumsbereich des Bedienfelds ändert. Die angezeigten Linien hängen davon ab, ob die Matrix [Überlappungsanzahl oder Korrelationsstärke](#view-overlap-count-or-correlation-strength) anzeigt.
+Sie können die Trenddaten für eine Zelle in einer [-Visualisierung ](/help/analysis-workspace/visualizations/line.md). Die Linienvisualisierung zeigt, wie sich die ausgewählte Metrik über den Datumsbereich des Bedienfelds ändert. Die angezeigten Linien hängen davon ab, ob die Matrix [Überlappungsanzahl oder Korrelationsstärke](#view-overlap-count-or-correlation-strength) anzeigt.
 
 So zeigen Sie Trenddaten an:
 
@@ -146,7 +146,7 @@ So zeigen Sie Trenddaten an:
 
 ## Überschneidung in einer Venn-Visualisierung anzeigen
 
-Sie können die Überschneidung zwischen dem Zeilendimensionselement und dem Spaltendimensionselement für eine Zelle in einer (Venn[Visualisierung &#x200B;](/help/analysis-workspace/visualizations/venn.md).
+Sie können die Überschneidung zwischen dem Zeilendimensionselement und dem Spaltendimensionselement für eine Zelle in einer (Venn[Visualisierung ](/help/analysis-workspace/visualizations/venn.md).
 
 Weitere Informationen dazu, wann eine Matrix- oder Venn-Visualisierung verwendet wird, finden Sie unter [Auswahl zwischen Matrix-, Freiformtabellen-, Venn- oder Streuvisualisierungen](/help/analysis-workspace/visualizations/matrix/matrix.md#choose-between-matrix-freeform-table-venn-or-scatter-visualizations) in [Matrix-Übersicht](/help/analysis-workspace/visualizations/matrix/matrix.md).
 
