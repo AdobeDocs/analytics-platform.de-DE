@@ -93,7 +93,7 @@ Adobe Analytics verwendet einen klarer definierten Satz von Identitätsfeldern, 
 
 ## Dimensionen hoher Kardinalität
 
-Customer Journey Analytics speichert ganze Dimensionswerte, und es gibt keine Begrenzung dafür, wie viele eindeutige Werte eine Dimension umfassen kann. Im Gegensatz dazu verwendet Adobe Analytics 32-Bit-Hashes, um Dimensionswerte zuzuordnen und so das Reporting und die Speicherung zu optimieren. Dieses Verhalten kann zu Hash[Kollisionen ](https://experienceleague.adobe.com/en/docs/analytics/implementation/validate/hash-collisions) Berichten führen. Adobe Analytics fasst Werte auch im Zeileneintrag [Geringer Traffic](https://experienceleague.adobe.com/en/docs/analytics/technotes/low-traffic) zusammen, sobald der eindeutige Grenzwert erreicht ist. Segmente, die diese Dimensionen verwenden, können Diskrepanzen zwischen Adobe Analytics- und Customer Journey Analytics-Berichten anzeigen.
+Customer Journey Analytics speichert ganze Dimensionswerte, und es gibt keine Begrenzung dafür, wie viele eindeutige Werte eine Dimension umfassen kann. Im Gegensatz dazu verwendet Adobe Analytics 32-Bit-Hashes, um Dimensionswerte zuzuordnen und so das Reporting und die Speicherung zu optimieren. Dieses Verhalten kann zu Hash[Kollisionen &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/implementation/validate/hash-collisions) Berichten führen. Adobe Analytics fasst Werte auch im Zeileneintrag [Geringer Traffic](https://experienceleague.adobe.com/en/docs/analytics/technotes/low-traffic) zusammen, sobald der eindeutige Grenzwert erreicht ist. Segmente, die diese Dimensionen verwenden, können Diskrepanzen zwischen Adobe Analytics- und Customer Journey Analytics-Berichten anzeigen.
 
 ## Unterstützte Funktionen
 

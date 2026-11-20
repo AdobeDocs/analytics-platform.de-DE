@@ -72,7 +72,7 @@ Um Marketing-Kanäle in Customer Journey Analytics mit der Experience Platform W
 
 {{upgrade-final-step}}
 
-# Unterschiede zwischen Marketing-Kanälen in Adobe Analytics und Customer Journey Analytics
+&#x200B;# Unterschiede zwischen Marketing-Kanälen in Adobe Analytics und Customer Journey Analytics
 
 Abgeleitete Felder bieten zwar eine ähnliche regelbasierte Verarbeitungslogik für Marketing-Kanäle in Adobe Analytics, jedoch können architektonische Unterschiede zwischen den beiden Plattformen dazu führen, dass die Ergebnisse zwischen den beiden Plattformen unterschiedlich ausfallen.
 
