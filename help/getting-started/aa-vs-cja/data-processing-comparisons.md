@@ -32,17 +32,17 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 388edf58e0950e0d018ce08b2aa2d0a562252c5a
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 63%
+source-wordcount: '1373'
+ht-degree: 57%
 ---
 # Vergleich der Datenverarbeitung zwischen Adobe Analytics und Customer Journey Analytics
 
 Häufig ist es erforderlich, Daten zu verarbeiten, damit sie für Berichte nützlich werden. Sie können diese Daten in verschiedenen Phasen der Journey verarbeiten, von der Datenerfassung bis zur Erstellung des Berichts oder der Visualisierung.
 
-In Adobe Analytics erfolgt der Großteil dieser Datenverarbeitung unmittelbar nach der Datenerfassung. Funktionen wie VISTA-Regeln, Verarbeitungsregeln und Verarbeitungsregeln für Marketing-Kanäle sind verfügbar, um diese **Verarbeitung zur Sammlungszeit“**.
-Die Daten werden dann gespeichert, und zum Zeitpunkt der Berichtserstellung kann eine zusätzliche Verarbeitung durchgeführt werden. Beispielsweise können Sie Dimensionen aufschlüsseln, eine Segmentierung anwenden oder ein anderes Attributionsmodell auswählen. Diese **Verarbeitung zum Zeitpunkt der Berichtserstellung** erfolgt in Echtzeit.
+In Adobe Analytics erfolgt die Verarbeitung der Daten größtenteils unmittelbar nach der Erfassung der Daten und ist dauerhaft, nachdem sie an die Report Suite gesendet wurden. Funktionen wie VISTA-Regeln, Verarbeitungsregeln und Verarbeitungsregeln für Marketing-Kanäle sind verfügbar, um diese **Verarbeitung zur Sammlungszeit“**.
+Zum Zeitpunkt der Berichterstellung können Sie zusätzliche Verarbeitungsschritte anwenden, z. B. Dimensionen aufschlüsseln, Segmentierung anwenden oder ein anderes Attributionsmodell auswählen. Diese **Verarbeitung zum Zeitpunkt der Berichtserstellung** erfolgt in Echtzeit.
 
 In Adobe Analytics ist der Verarbeitungsumfang zum Zeitpunkt der Berichtserstellung normalerweise kleiner als zum Zeitpunkt der Erfassung.
 
@@ -52,11 +52,13 @@ Im Gegensatz dazu ist Customer Journey Analytics so konzipiert, dass eine minima
 
 ![Verarbeitung zum Zeitpunkt der Berichtserstellung mit Customer Journey Analytics](../assets/cja-processing.png)
 
-Das Verständnis der Unterschiede bei der Datenverarbeitung für die verschiedenen Berichtsfunktionen kann hilfreich sein, um zu verstehen, welche Metriken wo verfügbar sind und warum sie sich unterscheiden können.
+Wenn Sie die Unterschiede in der Datenverarbeitung für die verschiedenen Reporting-Funktionen verstehen, können Sie besser verstehen, welche Metriken wo und warum unterschiedlich sein können.
 
 Beispielsweise wird *Besuche* zur Datenverarbeitungszeit als Metrik in Adobe Analytics definiert. Und *Sitzungen* wird in Customer Journey Analytics zum Zeitpunkt der Berichterstellung als Metrik berechnet. Daher können die beiden Metriken je nach den Regeln für die Sitzungsdefinition in einer Customer Journey Analytics-Datenansicht unterschiedlich sein.
 
-Außerdem sind Besuche und Sitzungen als Metrik in Datensätzen, die vom Analytics-Quell-Connector erstellt wurden, nicht verfügbar. Daher müssten Sie die Sitzung in Ihrer Abfragelogik definieren, um Vergleiche durchzuführen.
+Darüber hinaus identifiziert Analytics *Unique Visitors* anhand der [Identifizierungsmethode](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/overview) die zum Zeitpunkt der Datenerfassung verfügbar ist. Customer Journey Analytics identifiziert *Personen* anhand des Felds, das als Personen-ID im Ereignis [Datensatzeinstellungen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-connections/create-connection#dataset-settings) der Verbindung konfiguriert wurde.
+
+
 
 ## Terminologie {#terms}
 

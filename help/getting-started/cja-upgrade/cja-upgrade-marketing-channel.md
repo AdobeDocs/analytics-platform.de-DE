@@ -27,10 +27,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 1f480cda20e0b2d54dd42b909bfa8bf8a2bc0c95
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 100%
+source-wordcount: '397'
+ht-degree: 57%
 ---
 # Erstellen eines abgeleiteten Marketing-Kanal-Felds für Customer Journey Analytics {#create-marketing-channel-derived-field}
 
@@ -47,8 +47,7 @@ ht-degree: 100%
 
 Bei Verwendung des Analytics-Quell-Connectors fließen Marketing-Kanal-Daten über diesen Connector in Customer Journey Analytics. Marketing-Kanal-Regeln werden im herkömmlichen Adobe Analytics konfiguriert, und einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie unter [Verwenden von Marketing-Kanal-Dimensionen](/help/use-cases/aa-data/marketing-channels.md).
 
-Um Marketing-Kanäle in Customer Journey Analytics bei Verwendung des Adobe Experience Platform Web SDK zu verwenden, können Sie mithilfe von abgeleiteten Feldern in einer Datenansicht dieselben Marketing-Kanäle und Verarbeitungsregeln für Customer Journey Analytics reproduzieren.
-
+Um Marketing-Kanäle in Customer Journey Analytics mit der Experience Platform Web SDK zu verwenden, verwenden Sie abgeleitete Felder in einer Datenansicht, um dieselben Marketing-Kanäle und Verarbeitungsregeln neu zu erstellen.
 1. Wählen Sie in Customer Journey Analytics die Datenansicht aus, der Sie Marketing-Kanäle hinzufügen möchten.
 
 1. Wählen Sie in der Datenansicht die Registerkarte **[!UICONTROL Komponenten]** aus.
@@ -61,7 +60,7 @@ Um Marketing-Kanäle in Customer Journey Analytics bei Verwendung des Adobe Expe
 
 1. Ziehen Sie die Vorlage **[!UICONTROL Marketing-Kanäle]** auf die leere Arbeitsfläche.
 
-1. Passen Sie die Logik für jeden Marketing-Kanal an, um sicherzustellen, dass sie mit der Logik übereinstimmt, die Sie zum Identifizieren der einzelnen Kanäle verwenden.
+1. Die Logik für jeden Marketing-Kanal anpassen. Stellen Sie sicher, dass sie mit der Logik übereinstimmt, die Sie zum Identifizieren der einzelnen Kanäle in Ihrer Adobe Analytics-Umgebung verwenden.
 
    Sie können die Namen der Ausgabekanäle ändern oder eine Logik hinzufügen, um zusätzliche Kanäle zu identifizieren, die für Ihre Organisation spezifisch sind.
 
@@ -72,3 +71,12 @@ Um Marketing-Kanäle in Customer Journey Analytics bei Verwendung des Adobe Expe
    Ihr neues abgeleitetes Feld wird als Teil von Schemafeldern in der linken Leiste Ihrer Datenansicht zu „Abgeleitete Felder“ > „Container“ hinzugefügt.
 
 {{upgrade-final-step}}
+
+&#x200B;# Unterschiede zwischen Marketing-Kanälen in Adobe Analytics und Customer Journey Analytics
+
+Abgeleitete Felder bieten zwar eine ähnliche regelbasierte Verarbeitungslogik für Marketing-Kanäle in Adobe Analytics, jedoch können architektonische Unterschiede zwischen den beiden Plattformen dazu führen, dass die Ergebnisse zwischen den beiden Plattformen unterschiedlich ausfallen.
+
+* Die Einstellung [Last Touch-Kanal überschreiben](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices) wird nur in Adobe Analytics unterstützt
+
+* [Marketing-](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement)-Kanalgültigkeit“ beginnt nach einer gewissen Zeit der Inaktivität, während die Persistenz-Gültigkeit von Customer Journey Analytics auf der Instanziierung des Werts basiert.
+
