@@ -237,7 +237,7 @@ Jeder Schritt bietet eine allgemeine Erklärung eines detaillierteren Prozesses.
 
 ## Generieren Sie Upgrade-Schritte für Ihre Organisation dynamisch
 
-Abhängig von verschiedenen Faktoren, wie z. B. Timeline- und Ressourcenbeschränkungen, sind die empfohlenen Upgrade-Schritte, die unter [Empfohlene Upgrade-Schritte für die meisten ](#upgrade-process) beschrieben sind, möglicherweise für Ihr Unternehmen nicht praktikabel. In diesem Fall können Sie die Upgrade-Schritte für die individuellen Bedingungen Ihrer Organisation dynamisch generieren.
+Abhängig von verschiedenen Faktoren, wie z. B. Timeline- und Ressourcenbeschränkungen, sind die empfohlenen Upgrade-Schritte, die unter [Empfohlene Upgrade-Schritte für die meisten &#x200B;](#upgrade-process) beschrieben sind, möglicherweise für Ihr Unternehmen nicht praktikabel. In diesem Fall können Sie die Upgrade-Schritte für die individuellen Bedingungen Ihrer Organisation dynamisch generieren.
 
 Jede der folgenden Methoden generiert dieselben benutzerdefinierten Upgrade-Schritte. Sie unterscheiden sich darin, wie viel Hilfe Sie erhalten, wenn Sie die Schritte abschließen:
 
