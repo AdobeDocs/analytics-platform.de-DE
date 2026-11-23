@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 930ce593b744f0afc0e97dda1acf48e009e9e30a
+source-git-commit: a46dfefa38e5c4d7f4daa51871b4de75bf5304e1
 workflow-type: tm+mt
-source-wordcount: '7485'
-ht-degree: 92%
+source-wordcount: '7516'
+ht-degree: 91%
 ---
 
 # Customer Journey Analytics – Aktualisierungen der Dokumentation
@@ -70,6 +70,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 |---|---|
 | **November 2026** | |
+| Bei der Aktualisierung auf Customer Journey Analytics Kollegen verwenden | Das [Upgrade von Adobe Analytics auf Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) wurde mit Links zu neuen Adobe CX Enterprise Coworker-Funktionen aktualisiert, z. B. zum Generieren von Upgrade-Schritten und zum Überprüfen Ihrer Daten. |
 | Metrik-Deduplizierungsumfang | Die Vorsicht wurde entfernt, die angewendet wurde[&#x200B; wenn der Deduplizierungsumfang einer Metrik auf Person](/help/data-views/component-settings/metric-deduplication.md) festgelegt wurde, die angibt, dass die Metrik nach vollständigen Kalendermonaten ausgewertet wurde. Für eine Metrik mit dem Deduplizierungsumfang „Person“ wird die Deduplizierung jetzt nur noch innerhalb des ausgewählten Reporting-Fensters angewendet. |
 | **Oktober 2026** | |
 | Leitplanken für Datenansichten | Die [Leitplanke](/help/technotes/guardrails.md) für die maximale Anzahl von Datenansichten für eine Organisation (von 2.000 auf 5.000) wurde aktualisiert. |
@@ -162,7 +163,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | **März 2025** | |
 | Anwendungsfälle für Quantum Metric | Es wurden Anwendungsfälle für die Erfassung von Daten aus der [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md) hinzugefügt. |
 | Vorlage „Produktnutzung“ | Mit einer neuen Workspace-Vorlage können Sie anzeigen, wie das Customer Journey Analytics-Produkt in Ihrer Organisation verwendet wird. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-workspace/templates/use-templates). |
-| Leitfaden für das Upgrade auf Customer Journey Analytics | Ermöglicht die Erstellung eines schrittweisen Leitfadens für das Upgrade von Adobe Analytics auf Customer Journey Analytics. Um mit der Erstellung Ihres benutzerdefinierten Leitfadens zu beginnen, melden Sie sich bei [!DNL Customer Journey Analytics] an und wählen Sie dann auf der Registerkarte **[!UICONTROL Arbeitsbereich]** die Option **[!UICONTROL Upgrade auf Customer Journey Analytics]** aus. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |
+| Leitfaden für das Upgrade auf Customer Journey Analytics | Ermöglicht die Erstellung eines schrittweisen Leitfadens für das Upgrade von Adobe Analytics auf Customer Journey Analytics. Um mit der Erstellung Ihres benutzerdefinierten Leitfadens zu beginnen, melden Sie sich bei [!DNL Customer Journey Analytics] an und wählen Sie dann auf der Registerkarte **[!UICONTROL Arbeitsbereich]** die Option **[!UICONTROL Upgrade auf Customer Journey Analytics]** aus. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#upgrade-process) |
 | Aktualisierungen des Zeileneintrags „Kein Wert“ in numerischen Dimensionen | Bei numerischen Dimensionen können Sie dank dieser Aktualisierung das Dimensionselement „Kein Wert“ in einem Segment verwenden und eine Aufschlüsselung in einem Bericht für den Zeileneintrag „Kein Wert“ durchführen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
 | Mediensammlung: Adobe-Quell-Connector-Aktualisierungen für neues Medien-Reporting-XDM | Der Analytics Source Connector ordnet Streaming-Mediendaten in Adobe Analytics automatisch den Feldern zu, die vom Web SDK verwendet werden. Zuvor wurden die Daten sowohl den alten als auch den neuen Speicherorten zugeordnet, in Zukunft wird jedoch nur der neue Speicherort verwendet. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **Februar 2025** |  |
