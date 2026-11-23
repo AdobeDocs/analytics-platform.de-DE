@@ -27,7 +27,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 1f480cda20e0b2d54dd42b909bfa8bf8a2bc0c95
+source-git-commit: da6fd038a1ec8a662550b5c31382e18dca18a9c3
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 57%
@@ -72,11 +72,11 @@ Um Marketing-Kanäle in Customer Journey Analytics mit der Experience Platform W
 
 {{upgrade-final-step}}
 
-&#x200B;# Unterschiede zwischen Marketing-Kanälen in Adobe Analytics und Customer Journey Analytics
+## Unterschiede zwischen Marketing-Kanälen in Adobe Analytics und Customer Journey Analytics
 
 Abgeleitete Felder bieten zwar eine ähnliche regelbasierte Verarbeitungslogik für Marketing-Kanäle in Adobe Analytics, jedoch können architektonische Unterschiede zwischen den beiden Plattformen dazu führen, dass die Ergebnisse zwischen den beiden Plattformen unterschiedlich ausfallen.
 
-* Die Einstellung [Last Touch-Kanal überschreiben](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices) wird nur in Adobe Analytics unterstützt
+* Die Einstellung [Last Touch-Kanal überschreiben](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices) wird nur in Adobe Analytics unterstützt
 
-* [Marketing-](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement)-Kanalgültigkeit“ beginnt nach einer gewissen Zeit der Inaktivität, während die Persistenz-Gültigkeit von Customer Journey Analytics auf der Instanziierung des Werts basiert.
+* [Marketing-](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement)-Kanalgültigkeit“ beginnt nach einer gewissen Zeit der Inaktivität, während die Persistenz-Gültigkeit von Customer Journey Analytics auf der Instanziierung des Werts basiert.
 
