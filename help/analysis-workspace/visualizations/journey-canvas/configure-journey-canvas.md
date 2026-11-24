@@ -149,7 +149,7 @@ Weitere Informationen zur Journey-Arbeitsfläche finden Sie unter [Journey-Arbei
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_compare_percentages"
->title="Vergleichen von Prozentsätzen"
+>title="Prozentsätze vergleichen"
 >abstract="Diese Option ändert die Art und Weise, wie Vergleichsprozentsätze für jeden Knoten, Pfeil und Fallout berechnet werden, wenn der aktuelle Datumsbereich mit einem früheren Datumsbereich verglichen wird.<p>**Wenn aktiviert**: Vergleicht die _Änderung in Prozentpunkten (die Rate)_ der Verschiebung zwischen Knoten oder Fallout von der Journey. Dies misst beispielsweise die Rate der Personen, die von einem Knoten zum nächsten beibehalten wurden oder die an einem bestimmten Knoten aus der Journey ausstiegen.</p><p>**Wenn deaktiviert** (Standard): Vergleicht die _prozentuale Veränderung der Gesamtzahl_ (z. B. Personen oder Sitzungen) zu einem bestimmten Zeitpunkt in der Journey.</p>"
 
 <!-- markdownlint-enable MD034 -->

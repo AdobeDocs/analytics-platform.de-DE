@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: 6db3ace5744a4277477c2a712c12fdd9a5f57c82
 workflow-type: tm+mt
 source-wordcount: '4331'
-ht-degree: 14%
+ht-degree: 15%
 ---
 # Erstellen eines Daten-Feeds
 
@@ -70,7 +70,7 @@ Bevor Sie einen Datenfeed erstellen, ist es wichtig, dass Sie die Grundlagen von
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_frequency_granularity"
 >title="Häufigkeit und Granularität"
->abstract="**Versandhäufigkeit** (Live-Feeds): Wie oft der Daten-Feed gesendet wird. Stündliche Sendungen enthalten die Daten einer Stunde; tägliche Sendungen enthalten die Daten eines Tages.<p>Jeder Versand blickt außerdem auf ein rollierendes 30-tägiges Verarbeitungsfenster zurück, um Segmente zu qualifizieren, Sitzungen zu berechnen und Dimensionswerte beizubehalten. Sowohl das Verarbeitungsfenster als auch die Verarbeitungsverzögerung können sich darauf auswirken, welche Ereignisse eingeschlossen werden.</p><p>**Granularität** (Aufstockungs-Feeds): Das Zeitintervall, das zum Aufteilen historischer Daten verwendet wird. Jeder Chunk enthält die Daten eines Tages und wird so schnell wie möglich gesendet, nicht einmal pro Tag. Dieses Feld ist immer auf „Täglich“ festgelegt und kann nicht geändert werden.</p>"
+>abstract="**Versandhäufigkeit** (Live-Feeds): Wie oft der Daten-Feed gesendet wird. Stündliche Sendungen enthalten die Daten einer Stunde; tägliche Sendungen enthalten die Daten eines Tages.<p>Jede Sendung berücksichtigt außerdem rückwirkend ein rollierendes 30-tägiges Verarbeitungsfenster, um Segmente zu qualifizieren, Sitzungen zu berechnen und Dimensionswerte beizubehalten. Sowohl das Verarbeitungsfenster als auch die Verarbeitungsverzögerung können sich darauf auswirken, welche Ereignisse eingeschlossen werden.</p><p>**Granularität** (Aufstockungs-Feeds): Das zur Aufteilung historischer Daten verwendete Zeitintervall. Jeder Chunk enthält die Daten eines Tages und wird so schnell wie möglich gesendet, nicht einmal pro Tag. Dieses Feld ist immer auf „Täglich“ festgelegt und kann nicht geändert werden.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -290,7 +290,7 @@ Das Verarbeitungsfenster begrenzt die Persistenz für jede Ablaufeinstellung. We
 
 * [!UICONTROL **Metrik**]: Die Werte bleiben so lange bestehen, bis die ausgewählte Metrik auftritt. Werte, die vor dem Verarbeitungsfenster festgelegt wurden, werden nicht berücksichtigt.
 
-Weitere Informationen zum Festlegen der Persistenz für Dimensionen in der Datenansicht finden Sie unter [Persistenzkomponenteneinstellungen](/help/data-views/component-settings/persistence.md). Weitere Informationen darüber, wie sich die Persistenz in Daten-Feeds von Analysis Workspace unterscheidet, finden [&#x200B; unter „Grundlegendes zu Datendiskrepanzen zwischen Daten-Feeds und Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#processing-window).
+Weitere Informationen zum Festlegen der Persistenz für Dimensionen in der Datenansicht finden Sie unter [Persistenzkomponenteneinstellungen](/help/data-views/component-settings/persistence.md). Weitere Informationen darüber, wie sich die Persistenz in Daten-Feeds von Analysis Workspace unterscheidet, finden [ unter „Grundlegendes zu Datendiskrepanzen zwischen Daten-Feeds und Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#processing-window).
 
 >[!BEGINSHADEBOX]
 

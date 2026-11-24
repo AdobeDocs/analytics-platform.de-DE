@@ -38,7 +38,7 @@ ht-degree: 57%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channel"
->title="Erstellen eines abgeleiteten Marketing-Kanal-Felds"
+>title="Erstellen eines abgeleiteten Felds für Marketing-Kanäle"
 >abstract="Abgeleitete Felder werden in einer Datenansicht erstellt.<br><br>Die Verwendung einer standardmäßigen Marketing-Kanaleinrichtung dauert nur einige Minuten. Das Erstellen einer hochgradig benutzerdefinierten Marketing-Kanaleinrichtung kann mehrere Stunden dauern."
 
 <!-- markdownlint-enable MD034 -->
@@ -76,7 +76,7 @@ Um Marketing-Kanäle in Customer Journey Analytics mit der Experience Platform W
 
 Abgeleitete Felder bieten zwar eine ähnliche regelbasierte Verarbeitungslogik für Marketing-Kanäle in Adobe Analytics, jedoch können architektonische Unterschiede zwischen den beiden Plattformen dazu führen, dass die Ergebnisse zwischen den beiden Plattformen unterschiedlich ausfallen.
 
-* Die Einstellung [Last Touch-Kanal überschreiben](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices) wird nur in Adobe Analytics unterstützt
+* Die Einstellung [Last Touch-Kanal überschreiben](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices) wird nur in Adobe Analytics unterstützt
 
-* [Marketing-](https://experienceleague.adobe.com/de/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement)-Kanalgültigkeit“ beginnt nach einer gewissen Zeit der Inaktivität, während die Persistenz-Gültigkeit von Customer Journey Analytics auf der Instanziierung des Werts basiert.
+* [Marketing-](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement)-Kanalgültigkeit“ beginnt nach einer gewissen Zeit der Inaktivität, während die Persistenz-Gültigkeit von Customer Journey Analytics auf der Instanziierung des Werts basiert.
 
