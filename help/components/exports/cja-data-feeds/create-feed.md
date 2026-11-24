@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: 6db3ace5744a4277477c2a712c12fdd9a5f57c82
 workflow-type: tm+mt
 source-wordcount: '4331'
-ht-degree: 14%
+ht-degree: 15%
 ---
 # Erstellen eines Daten-Feeds
 
@@ -70,7 +70,7 @@ Bevor Sie einen Datenfeed erstellen, ist es wichtig, dass Sie die Grundlagen von
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_frequency_granularity"
 >title="Häufigkeit und Granularität"
->abstract="**Versandhäufigkeit** (Live-Feeds): Wie oft der Daten-Feed gesendet wird. Stündliche Sendungen enthalten die Daten einer Stunde; tägliche Sendungen enthalten die Daten eines Tages.<p>Jeder Versand blickt außerdem auf ein rollierendes 30-tägiges Verarbeitungsfenster zurück, um Segmente zu qualifizieren, Sitzungen zu berechnen und Dimensionswerte beizubehalten. Sowohl das Verarbeitungsfenster als auch die Verarbeitungsverzögerung können sich darauf auswirken, welche Ereignisse eingeschlossen werden.</p><p>**Granularität** (Aufstockungs-Feeds): Das Zeitintervall, das zum Aufteilen historischer Daten verwendet wird. Jeder Chunk enthält die Daten eines Tages und wird so schnell wie möglich gesendet, nicht einmal pro Tag. Dieses Feld ist immer auf „Täglich“ festgelegt und kann nicht geändert werden.</p>"
+>abstract="**Versandhäufigkeit** (Live-Feeds): Wie oft der Daten-Feed gesendet wird. Stündliche Sendungen enthalten die Daten einer Stunde; tägliche Sendungen enthalten die Daten eines Tages.<p>Jede Sendung berücksichtigt außerdem rückwirkend ein rollierendes 30-tägiges Verarbeitungsfenster, um Segmente zu qualifizieren, Sitzungen zu berechnen und Dimensionswerte beizubehalten. Sowohl das Verarbeitungsfenster als auch die Verarbeitungsverzögerung können sich darauf auswirken, welche Ereignisse eingeschlossen werden.</p><p>**Granularität** (Aufstockungs-Feeds): Das zur Aufteilung historischer Daten verwendete Zeitintervall. Jeder Chunk enthält die Daten eines Tages und wird so schnell wie möglich gesendet, nicht einmal pro Tag. Dieses Feld ist immer auf „Täglich“ festgelegt und kann nicht geändert werden.</p>"
 
 <!-- markdownlint-enable MD034 -->
 

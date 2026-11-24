@@ -38,7 +38,7 @@ ht-degree: 57%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channel"
->title="Erstellen eines abgeleiteten Marketing-Kanal-Felds"
+>title="Erstellen eines abgeleiteten Felds für Marketing-Kanäle"
 >abstract="Abgeleitete Felder werden in einer Datenansicht erstellt.<br><br>Die Verwendung einer standardmäßigen Marketing-Kanaleinrichtung dauert nur einige Minuten. Das Erstellen einer hochgradig benutzerdefinierten Marketing-Kanaleinrichtung kann mehrere Stunden dauern."
 
 <!-- markdownlint-enable MD034 -->

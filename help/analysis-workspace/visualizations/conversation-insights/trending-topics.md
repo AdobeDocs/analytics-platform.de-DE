@@ -30,12 +30,12 @@ Sie können nach bestimmten Themen suchen und die Anzahl und den Prozentsatz fü
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_usenondefaultattributionmodel"
->title="Nicht standardmäßiges Attribution-Modell verwenden"
+>title="Nicht standardmäßiges Attributionsmodell verwenden"
 >abstract="Aktivieren Sie ein nicht standardmäßiges Attributionsmodell für diese Metrik."
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"
->title="Nicht standardmäßiges Attribution-Modell verwenden"
+>title="Nicht standardmäßiges Attributionsmodell verwenden"
 >abstract="Nicht standardmäßige Attributionsmodelle sind für diese Metrik nicht verfügbar."
 
 

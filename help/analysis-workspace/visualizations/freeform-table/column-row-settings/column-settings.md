@@ -98,7 +98,7 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
->title="Verwenden eines nicht standardmäßigen Attributionsmodells"
+>title="Nicht standardmäßiges Attributionsmodell verwenden"
 >abstract="Nicht standardmäßige Attributionsmodelle sind für diese Metrik nicht verfügbar."
 
 <!-- markdownlint-enable MD034 -->

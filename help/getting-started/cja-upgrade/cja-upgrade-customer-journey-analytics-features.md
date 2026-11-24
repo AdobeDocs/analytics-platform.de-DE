@@ -36,7 +36,7 @@ topic_v2:
 source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 94%
+ht-degree: 100%
 ---
 # Einzigartige Funktionen von Customer Journey Analytics verstehen {#feature-support-upgrade}
 
@@ -54,7 +54,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
 >title="Zusammenfügen von Treffern aus mehreren Datensätzen"
->abstract="Wenn einer Ihrer Datensätze keine primäre Kennung (z. B. eine ECID) aufweist, können Sie diese Daten dennoch mithilfe einer anderen Dimension zusammenfügen, z. B. Anmeldename oder E-Mail-Adresse."
+>abstract="Wenn Ihre Datensätze keine gemeinsame primäre Kennung (z. B. eine ECID) haben, können Sie diese Daten dennoch mithilfe einer anderen Dimension, z. B. Anmeldename oder E-Mail-Adresse, zusammenfügen."
 
 <!-- markdownlint-enable MD034 -->
 
